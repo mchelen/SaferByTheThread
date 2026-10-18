@@ -37,7 +37,7 @@ jobs:
           node-version: 22
 
       - name: Unit tests
-        run: node --test 'tests/*.test.js'
+        run: node --test "tests/unit/*.test.js"
 
       - name: Check prices
         env:
@@ -55,8 +55,10 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           BRANCH: prices/auto-update
         run: |
-          if git diff --quiet data.json; then
-            echo "data.json unchanged; nothing to propose."
+          # Only propose a PR when a price text changed, not when only the price_checked stamps moved.
+          if ! git diff -U0 data.json | grep -E '^[+-]' | grep -vE '^(\+\+\+|---)' | grep -vE '"(price_checked|updated)":' | grep -q .; then
+            echo "No price changed; nothing to propose."
+            git checkout -- data.json
             exit 0
           fi
           DATE=$(date -u +%Y-%m-%d)

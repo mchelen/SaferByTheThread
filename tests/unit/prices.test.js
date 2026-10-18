@@ -3,7 +3,7 @@
 'use strict';
 const test = require('node:test');
 const assert = require('node:assert/strict');
-const P = require('../tools/prices.js');
+const P = require('../../tools/prices.js');
 
 const JSON_LD_PAGE = `<!doctype html><html><head><title>Rattle</title>
 <script type="application/ld+json">
