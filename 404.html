@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Saved by the Thread</title>
+<meta name="robots" content="noindex">
+<script>
+  // GitHub Pages serves this file for any path it has no file for. The site renders its pages in the
+  // browser, so send the visitor to the app with the path they asked for; app.js restores it.
+  (function () {
+    if (/[?&]p=/.test(location.search)) { return; } // already handed off once: nothing more to try
+    var p = location.pathname.split('/').filter(Boolean);
+    var base = '/';
+    // Repository site: /<repo>/..., and a pull request preview: /<repo>/pr/<n>/...
+    var routes = ['shop', 'd', 'c', 'b', 'search', 'p', 'brands', 'glossary', 'about', 'saved', 'compare'];
+    if (p.length && routes.indexOf(p[0]) < 0 && !/\./.test(p[0])) { base += p.shift() + '/'; }
+    if (p[0] === 'pr' && /^\d+$/.test(p[1] || '')) { base += 'pr/' + p[1] + '/'; p.splice(0, 2); }
+    var rest = '/' + p.join('/');
+    location.replace(base + '?p=' + encodeURIComponent(rest + location.search.replace(/^\?/, rest.indexOf('?') >= 0 ? '&' : '?').replace(/^\?$/, '')) + location.hash);
+  })();
+</script>
+</head>
+<body>
+<p>Taking you to <a href="/">Saved by the Thread</a>…</p>
+</body>
+</html>

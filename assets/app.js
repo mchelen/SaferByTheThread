@@ -1,88 +1,134 @@
-/* Saved by the Thread: shop-style front end. Hash routes:
-   #/            catalog (query: q, dept, cat, brand, mat, std, age, ship, price, sort, misses)
-   #/p/<id>      product page          #/brands     brand index
-   #/glossary    glossary (#/glossary/<term> opens at a term)   #/about   how the guide works */
+/* Saved by the Thread: storefront front end. Pages render in the browser from data.json; URLs are clean paths
+   under the site's base (GitHub Pages serves 404.html for them, which hands the path back to this script):
+     /                home                 /shop            every product, with filters in the query string
+     /d/<dept>        a department         /c/<type>        a product type        /b/<brand>   a brand
+     /search?q=       search results       /p/<id>          a product page
+     /brands  /glossary[/<term>]  /about  /saved  /compare
+   Filters in the query string: q, cat, brand, price, mat, std, age, ship, sort, all (show items the material
+   filters exclude), m (material criteria that are on, when they differ from the defaults), strict. */
 (function () {
   'use strict';
   var S = window.SBTT;
   var main = document.getElementById('main');
   var live = document.getElementById('live');
-  var C, TERMS = {}, GLOSS = null, RULES = {}, STRICT = false;
-  var RULES_KEY = 'sbtt-filters-2';
-  var FACETS = ['dept', 'cat', 'brand', 'mat', 'std', 'age', 'ship', 'price'];
-  var openPanels = { rules: true, cat: true, price: true, brand: true, mat: true };
-  var scrollMem = {}, lastHash = null, lastRoute = '';
+  var C, TERMS = {}, GLOSS = null, CRIT = {}, STRICT = false;
+  var PREF_KEY = 'sbtt-filters-3', SAVED_KEY = 'sbtt-saved', CMP_KEY = 'sbtt-compare', RECENT_KEY = 'sbtt-recent';
+  var FACETS = ['cat', 'brand', 'price', 'mat', 'std', 'age', 'ship'];
+  var PAGE = 24;
+  var openGroups = { crit: true, cat: true, price: true, brand: false, mat: true, std: false, age: false, ship: false };
+  var scrollMem = {}, lastUrl = null, pageShown = PAGE, PEND = null;
+
+  // ---------- base path and URLs ----------
+  var SCRIPT = document.currentScript && document.currentScript.src || (location.origin + '/assets/app.js');
+  var BASE = new URL(SCRIPT.replace(/assets\/app\.js.*$/, ''), location.href);
+  var BASE_PATH = BASE.pathname.replace(/\/?$/, '/');
+  function U(path, query) {
+    var qs = query ? encodeQuery(query) : '';
+    return BASE_PATH + String(path || '/').replace(/^\//, '') + (qs ? '?' + qs : '');
+  }
+  function asset(p) { return BASE_PATH + p; }
+  function encodeQuery(q) {
+    return Object.keys(q).filter(function (k) { return q[k] !== '' && q[k] != null && q[k] !== false; })
+      .map(function (k) { return encodeURIComponent(k) + '=' + encodeURIComponent(String(q[k])).replace(/%2C/g, ','); }).join('&');
+  }
+  function parseQuery(qs) {
+    var q = {};
+    String(qs || '').replace(/^\?/, '').split('&').forEach(function (kv) {
+      if (!kv) return; var p = kv.split('='); q[decodeURIComponent(p[0])] = decodeURIComponent((p[1] || '').replace(/\+/g, ' '));
+    });
+    return q;
+  }
+  function currentPath() {
+    var p = location.pathname;
+    if (p.indexOf(BASE_PATH) === 0) p = p.slice(BASE_PATH.length - 1);
+    return p || '/';
+  }
+  function go(url, replace) {
+    if (lastUrl !== null) scrollMem[lastUrl] = window.scrollY;
+    try { history[replace ? 'replaceState' : 'pushState'](null, '', url); } catch (e) { location.href = url; return; }
+    route();
+  }
 
   // ---------- helpers ----------
   function esc(x) { return String(x == null ? '' : x).replace(/[&<>"']/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]; }); }
   function $(sel, el) { return (el || document).querySelector(sel); }
   function $$(sel, el) { return Array.prototype.slice.call((el || document).querySelectorAll(sel)); }
   function plural(n, one, many) { return n + ' ' + (n === 1 ? one : (many || one + 's')); }
+  function icon(id) { return '<svg aria-hidden="true"><use href="#i-' + id + '"/></svg>'; }
+  function byId(id) { return C.items.filter(function (i) { return i.id === id; })[0]; }
+  function catOf(id) { return C.cats[id]; }
+  function groupOf(id) { return C.groups.filter(function (g) { return g.id === id; })[0]; }
+  function matLabel(id) { var m = S.MATERIALS.filter(function (x) { return x.id === id; })[0]; return m ? m.label : id; }
+  function brandList() { return Object.keys(C.brands).map(function (k) { return C.brands[k]; }).sort(function (a, b) { return S.fold(a.name).localeCompare(S.fold(b.name)); }); }
   function termsIn(text) {
     var ids = [];
     S.termRuns(text, TERMS).forEach(function (r) { if (r[1] && ids.indexOf(r[1]) < 0) ids.push(r[1]); });
     return ids;
   }
-  // A checklist chip: one link for the whole chip, opening its first glossary term; other terms ride along in data-also.
   function chip(text) {
     var ids = termsIn(text);
     if (!ids.length) return '<span class="chip">' + esc(text) + '</span>';
-    return '<a class="chip term-link" href="#/glossary/' + ids[0] + '" data-term="' + ids[0] + '"' + (ids.length > 1 ? ' data-also="' + ids.slice(1).join(',') + '"' : '') + '>' + esc(text) + '</a>';
+    return '<a class="chip term-link" href="' + U('/glossary/' + ids[0]) + '" data-term="' + ids[0] + '"' + (ids.length > 1 ? ' data-also="' + ids.slice(1).join(',') + '"' : '') + '>' + esc(text) + '</a>';
   }
   function termLink(id, label) {
-    return TERMS[id] ? '<a class="term-link" href="#/glossary/' + id + '" data-term="' + id + '">' + esc(label) + '</a>' : esc(label);
+    return TERMS[id] ? '<a class="term-link" href="' + U('/glossary/' + id) + '" data-term="' + id + '">' + esc(label) + '</a>' : esc(label);
   }
-  function catTitle(id) { return C.cats[id] ? C.cats[id].title : id; }
-  function groupOf(id) { return C.groups.filter(function (g) { return g.id === id; })[0]; }
-  function ruleLabel(c) { return c.label.charAt(0).toUpperCase() + c.label.slice(1); }
+  function store(key, val) {
+    try { if (val === undefined) return JSON.parse(localStorage.getItem(key) || 'null'); localStorage.setItem(key, JSON.stringify(val)); } catch (e) { return null; }
+  }
 
-  // ---------- material rules (switches) ----------
-  function loadRules() {
-    C.criteria.forEach(function (c) { RULES[c.id] = !!c['default']; });
-    STRICT = false;
-    try {
-      var s = JSON.parse(localStorage.getItem(RULES_KEY) || 'null');
-      if (s) { Object.keys(s.c || {}).forEach(function (k) { if (k in RULES) RULES[k] = !!s.c[k]; }); STRICT = !!s.strict; }
-    } catch (e) {}
+  // ---------- material criteria (filters that persist as a preference) ----------
+  function defaults() { var d = {}; C.criteria.forEach(function (c) { d[c.id] = !!c['default']; }); return d; }
+  function loadPref() {
+    CRIT = defaults(); STRICT = false;
+    var s = store(PREF_KEY);
+    if (s) { Object.keys(s.c || {}).forEach(function (k) { if (k in CRIT) CRIT[k] = !!s.c[k]; }); STRICT = !!s.strict; }
   }
-  function saveRules() { try { localStorage.setItem(RULES_KEY, JSON.stringify({ c: RULES, strict: STRICT })); } catch (e) {} }
-  function rulesAreDefault() { return !STRICT && C.criteria.every(function (c) { return RULES[c.id] === !!c['default']; }); }
-  function rulesOn() { return C.criteria.filter(function (c) { return RULES[c.id]; }).length + (STRICT ? 1 : 0); }
-  function status(item) { return S.evaluate(item, C.criteria, RULES, STRICT); }
+  function savePref() { store(PREF_KEY, { c: CRIT, strict: STRICT }); }
+  function critIsDefault(crit, strict) { var d = defaults(); return !strict && C.criteria.every(function (c) { return !!crit[c.id] === d[c.id]; }); }
+  function critOn(crit, strict) { return C.criteria.filter(function (c) { return crit[c.id]; }).length + (strict ? 1 : 0); }
+  function status(item, crit, strict) { return S.evaluate(item, C.criteria, crit || CRIT, strict == null ? STRICT : strict); }
 
-  // ---------- routing and query state ----------
-  function parseHash() {
-    var h = location.hash.replace(/^#/, '') || '/';
-    var qi = h.indexOf('?'), path = qi >= 0 ? h.slice(0, qi) : h, qs = qi >= 0 ? h.slice(qi + 1) : '';
-    var q = {};
-    qs.split('&').forEach(function (kv) { if (!kv) return; var p = kv.split('='); q[decodeURIComponent(p[0])] = decodeURIComponent((p[1] || '').replace(/\+/g, ' ')); });
-    return { parts: path.split('/').filter(Boolean), q: q };
-  }
-  function readState(q) {
-    var st = { q: q.q || '', sort: q.sort || 'featured', misses: q.misses === '1' };
+  // ---------- listing state ----------
+  function readState(kind, key, q) {
+    var st = { kind: kind, key: key || '', q: q.q || '', sort: q.sort || 'featured', all: q.all === '1' };
     FACETS.forEach(function (f) { st[f] = q[f] ? q[f].split(',').filter(Boolean) : []; });
+    if (kind === 'cat') st.cat = [key]; else if (kind === 'brand') st.brand = [key];
+    if (q.m !== undefined) {
+      var on = q.m.split(',').filter(Boolean), crit = {};
+      C.criteria.forEach(function (c) { crit[c.id] = on.indexOf(c.id) >= 0; });
+      st.crit = crit; st.strict = q.strict === '1';
+    } else { st.crit = Object.assign({}, CRIT); st.strict = STRICT; }
     return st;
   }
-  function stateHash(st) {
-    var parts = [];
-    if (st.q) parts.push('q=' + encodeURIComponent(st.q));
-    FACETS.forEach(function (f) { if (st[f].length) parts.push(f + '=' + st[f].map(encodeURIComponent).join(',')); });
-    if (st.sort && st.sort !== 'featured') parts.push('sort=' + st.sort);
-    if (st.misses) parts.push('misses=1');
-    return '#/' + (parts.length ? '?' + parts.join('&') : '');
+  function stateUrl(st) {
+    var q = {};
+    if (st.q) q.q = st.q;
+    FACETS.forEach(function (f) {
+      if ((f === 'cat' && st.kind === 'cat') || (f === 'brand' && st.kind === 'brand')) return;
+      if (st[f].length) q[f] = st[f].join(',');
+    });
+    if (st.sort && st.sort !== 'featured') q.sort = st.sort;
+    if (st.all) q.all = '1';
+    if (!critIsDefault(st.crit, st.strict)) { q.m = C.criteria.filter(function (c) { return st.crit[c.id]; }).map(function (c) { return c.id; }).join(',') || 'none'; if (st.strict) q.strict = '1'; }
+    var path = st.kind === 'cat' ? '/c/' + st.key : st.kind === 'dept' ? '/d/' + st.key : st.kind === 'brand' ? '/b/' + st.key : st.kind === 'search' ? '/search' : '/shop';
+    return U(path, q);
   }
-  var STATE = readState({});
+  var STATE = null;
+  function copyState(st) { var c = JSON.parse(JSON.stringify(st || STATE)); return c; }
   function setState(st, push) {
-    STATE = st;
-    var h = stateHash(st);
-    if (push) location.hash = h;
-    else { try { history.replaceState(null, '', h); } catch (e) { location.hash = h; } lastHash = h; renderShop(true); }
+    // Material criteria changed on a listing page become the visitor's preference everywhere.
+    CRIT = Object.assign({}, st.crit); STRICT = st.strict; savePref();
+    STATE = st; pageShown = PAGE;
+    var url = stateUrl(st);
+    try { history[push ? 'pushState' : 'replaceState'](null, '', url); } catch (e) {}
+    lastUrl = url;
+    renderList(true);
   }
 
   // ---------- filtering ----------
   function facetValues(item, f) {
     switch (f) {
-      case 'dept': return [item.group];
       case 'cat': return [item.cat];
       case 'brand': return [item.brandId];
       case 'mat': return item.materials;
@@ -90,27 +136,26 @@
       case 'age': return [item.ageBand];
       case 'ship': return item.ships;
       case 'price':
-        return S.PRICE_BANDS.filter(function (b) {
-          return item.min != null && item.min < b.max && (item.max == null ? item.min : item.max) >= b.min;
-        }).map(function (b) { return b.id; }).concat(item.min == null ? ['none'] : []);
+        return S.PRICE_BANDS.filter(function (b) { return item.min != null && item.min < b.max && (item.max == null ? item.min : item.max) >= b.min; })
+          .map(function (b) { return b.id; }).concat(item.min == null ? ['none'] : []);
     }
     return [];
   }
   function matchesFacet(item, f, st) {
     if (!st[f].length) return true;
     var v = facetValues(item, f);
-    if (f === 'mat' || f === 'std') return st[f].every(function (x) { return v.indexOf(x) >= 0; }); // must have all chosen
+    if (f === 'mat' || f === 'std') return st[f].every(function (x) { return v.indexOf(x) >= 0; });
     return st[f].some(function (x) { return v.indexOf(x) >= 0; });
   }
   function matchesQuery(item, q) {
     if (!q) return true;
-    var words = S.fold(q).split(/\s+/).filter(Boolean);
-    return words.every(function (w) { return item.q.indexOf(w) >= 0; });
+    return S.fold(q).split(/\s+/).filter(Boolean).every(function (w) { return item.q.indexOf(w) >= 0; });
   }
-  function filtered(st, except) {
+  function inScope(item, st) { return st.kind !== 'dept' || item.group === st.key; }
+  // Items matching the search, scope and facets, before the material criteria.
+  function base(st, except) {
     return C.items.filter(function (it) {
-      if (!matchesQuery(it, st.q)) return false;
-      return FACETS.every(function (f) { return f === except || matchesFacet(it, f, st); });
+      return inScope(it, st) && matchesQuery(it, st.q) && FACETS.every(function (f) { return f === except || matchesFacet(it, f, st); });
     });
   }
   function sortItems(list, how) {
@@ -125,300 +170,375 @@
     return list.slice().sort(by);
   }
   var SORTS = [['featured', 'Featured'], ['price-asc', 'Price: low to high'], ['price-desc', 'Price: high to low'],
-               ['brand', 'Brand: A to Z'], ['name', 'Product name: A to Z'], ['stated', 'Fewest details not stated']];
+               ['brand', 'Brand: A to Z'], ['name', 'Name: A to Z'], ['stated', 'Fewest details not stated']];
+
+  // ---------- saved, compare, recently viewed ----------
+  function listGet(key) { return store(key) || []; }
+  function listToggle(key, id, max) {
+    var l = listGet(key), i = l.indexOf(id);
+    if (i >= 0) l.splice(i, 1); else { if (max && l.length >= max) return false; l.push(id); }
+    store(key, l); return true;
+  }
+  function recentAdd(id) { var l = listGet(RECENT_KEY).filter(function (x) { return x !== id; }); l.unshift(id); store(RECENT_KEY, l.slice(0, 12)); }
+  function badgeCounts() {
+    var s = listGet(SAVED_KEY).length, c = listGet(CMP_KEY).length;
+    $('#saved-n').textContent = s; $('#saved-n').hidden = !s;
+    $('#compare-n').textContent = c; $('#compare-n').hidden = !c;
+    renderTray();
+  }
+  function saveBtn(item, cls) {
+    var on = listGet(SAVED_KEY).indexOf(item.id) >= 0;
+    return '<button type="button" class="' + (cls || 'save-btn') + '" data-save="' + esc(item.id) + '" aria-pressed="' + on + '" aria-label="' + (on ? 'Remove from saved' : 'Save') + ': ' + esc(item.brand + ' ' + item.line) + '">' + icon('heart') + (cls ? '<span>' + (on ? 'Saved' : 'Save') + '</span>' : '') + '</button>';
+  }
+  function compareBtn(item) {
+    var on = listGet(CMP_KEY).indexOf(item.id) >= 0;
+    return '<button type="button" class="btn-3" data-compare="' + esc(item.id) + '" aria-pressed="' + on + '">' + icon('compare') + '<span>' + (on ? 'In compare' : 'Compare') + '</span></button>';
+  }
 
   // ---------- pieces ----------
-  function photo(item, cls, eager) {
-    var alt = esc(item.brand + ' ' + item.line);
-    if (!item.img) return '<div class="ph ' + (cls || '') + ' empty"><span>No store photo saved</span></div>';
-    return '<div class="ph ' + (cls || '') + '"><img src="' + esc(item.img) + '" alt="' + alt + '" width="640" height="480" decoding="async"' +
+  function photo(item, eager) {
+    if (!item.img) return '<div class="ph empty"><span>No store photo saved</span></div>';
+    return '<div class="ph"><img src="' + esc(asset(item.img)) + '" alt="' + esc(item.brand + ' ' + item.line) + '" width="640" height="800" decoding="async"' +
       (eager ? ' fetchpriority="high"' : ' loading="lazy"') + ' onerror="this.parentNode.classList.add(\'empty\');this.outerHTML=\'<span>No store photo saved</span>\'"></div>';
   }
   function missText(item, r) {
     return r.miss.map(function (c) { return c.short + (c.kind !== 'contains' && item.facts[c.id] === 'unknown' ? ' (not stated)' : ''); }).join(', ');
   }
-  // Cards only carry the exception: what the item misses, or how much isn't stated.
-  function cardStatus(item, r) {
-    if (!r.ok) return '<p class="pill miss">Misses: ' + esc(missText(item, r)) + '</p>';
-    if (r.unst.length) return '<p class="pill quiet">' + plural(r.unst.length, 'detail') + ' not stated</p>';
-    return '<p class="pill quiet">Every covered detail stated</p>';
-  }
-  function pageStatus(item, r) {
-    if (!r.ok) return '<p class="pill miss">Misses: ' + esc(missText(item, r)) + '</p>';
-    return '<p class="pill ok">Meets the ' + plural(rulesOn(), 'rule') + ' you have on' + (r.unst.length ? '<span> · ' + plural(r.unst.length, 'detail') + ' not stated</span>' : '') + '</p>';
-  }
-  function card(item, i) {
-    var r = status(item);
-    var mats = item.materials.slice(0, 3).map(function (m) { return S.MATERIALS.filter(function (x) { return x.id === m; })[0].label; });
-    var abroad = item.ships.indexOf('abroad') >= 0 && item.ships.indexOf('us') < 0;
-    return '<article class="card' + (r.ok ? '' : ' is-miss') + '">' +
-      '<a class="card-link" href="#/p/' + esc(item.id) + '">' + photo(item, '', i != null && i < 4) +
-      (item.products.length > 1 ? '<span class="badge">' + item.products.length + ' products</span>' : '') +
+  function card(item, i, crit, strict) {
+    var r = status(item, crit, strict);
+    var mats = item.materials.slice(0, 3).map(matLabel);
+    var badges = [];
+    if (!r.ok) badges.push('<span class="badge miss">Doesn’t match a filter</span>');
+    if (item.freeShip) badges.push('<span class="badge free">Free shipping</span>');
+    if (item.products.length > 1) badges.push('<span class="badge soft">' + item.products.length + ' stores</span>');
+    return '<article class="card' + (r.ok ? '' : ' is-miss') + '" data-id="' + esc(item.id) + '">' +
+      '<a class="card-link" href="' + U('/p/' + item.id) + '">' + photo(item, i != null && i < 4) +
+      '<div class="ph-badges">' + badges.join('') + '</div>' +
       '<div class="card-body"><p class="brand">' + esc(item.brand) + '</p><h3>' + esc(item.line) + '</h3>' +
-      '<p class="price">' + esc(S.priceLabel(item)) + '</p>' +
-      '<p class="tags">' + mats.map(function (m) { return '<span>' + esc(m) + '</span>'; }).join('') + (abroad ? '<span class="tag-ship">Ships from abroad</span>' : '') + '</p>' +
-      cardStatus(item, r) + '</div></a></article>';
+      '<p class="mats">' + esc(mats.join(' · ') || 'Materials on the product page') + '</p>' +
+      '<p class="price">' + esc(S.priceFrom(item)) + '</p>' +
+      '<p class="meta">' + (r.ok ? (r.unst.length ? plural(r.unst.length, 'detail') + ' not stated' : 'Every covered detail stated') : 'Doesn’t match: ' + esc(missText(item, r))) + '</p>' +
+      '</div></a>' + saveBtn(item) +
+      '<button type="button" class="qv-btn" data-qv="' + esc(item.id) + '">Quick view</button></article>';
+  }
+  function cardRail(items, title, moreHref, moreText) {
+    if (!items.length) return '';
+    return '<section class="sec rail"><div class="sec-h"><h2>' + title + '</h2>' + (moreHref ? '<a href="' + moreHref + '">' + esc(moreText || 'See all') + '</a>' : '') + '</div>' +
+      '<div class="grid rail-grid">' + items.map(function (i) { return card(i); }).join('') + '</div></section>';
+  }
+  function crumbs(list) {
+    return '<ol class="crumbs"><li><a href="' + U('/') + '">Home</a></li>' + list.map(function (c) { return '<li>' + (c[1] ? '<a href="' + c[1] + '">' + esc(c[0]) + '</a>' : '<span aria-current="page">' + esc(c[0]) + '</span>') + '</li>'; }).join('') + '</ol>';
+  }
+  function announce(text) { if (live) { live.textContent = ''; setTimeout(function () { live.textContent = text; }, 50); } }
+  function setTitle(t) { document.title = (t ? t + ' · ' : '') + 'Saved by the Thread'; }
+  function setNav(kind, key) {
+    $$('#cats .cat-a').forEach(function (a) {
+      var d = a.getAttribute('data-nav');
+      var on = d === kind || (kind === 'dept' && d === 'd:' + key) || (kind === 'cat' && C.cats[key] && d === 'd:' + C.cats[key].group) || (kind === 'product' && d === 'd:' + key);
+      a.classList.toggle('on', !!on);
+      if (on) a.setAttribute('aria-current', 'page'); else a.removeAttribute('aria-current');
+    });
   }
 
-  // ---------- shop ----------
-  // Counts per facet value: n = items the visitor would see, h = items hidden by the rules.
+  // ---------- home ----------
+  function renderHome() {
+    var okItems = C.items.filter(function (i) { return status(i).ok; });
+    var art = okItems.filter(function (i) { return i.img; }).filter(function (i, k, a) { return a.findIndex(function (x) { return x.group === i.group; }) === k; }).slice(0, 3);
+    var tiles = C.groups.map(function (g) {
+      var items = C.items.filter(function (i) { return i.group === g.id; });
+      var pic = items.filter(function (i) { return i.img && status(i).ok; })[0] || items.filter(function (i) { return i.img; })[0];
+      return '<a class="tile" href="' + U('/d/' + g.id) + '"><div class="tile-img">' + (pic ? '<img src="' + esc(asset(pic.img)) + '" alt="" loading="lazy" decoding="async">' : '') + '</div>' +
+        '<span class="tile-t">' + esc(g.title) + '</span><span class="tile-n">' + plural(items.length, 'listing') + ' · ' + g.cats.length + ' types</span></a>';
+    }).join('');
+    var types = Object.keys(C.cats).map(function (k) { return C.cats[k]; }).map(function (c) {
+      var n = C.items.filter(function (i) { return i.cat === c.id; }).length;
+      return '<a href="' + U('/c/' + c.id) + '">' + esc(c.title) + ' <span>' + n + '</span></a>';
+    }).join('');
+    var topBrands = brandList().sort(function (a, b) { return b.items.length - a.items.length || S.fold(a.name).localeCompare(S.fold(b.name)); }).slice(0, 18)
+      .map(function (b) { return '<a href="' + U('/b/' + b.id) + '">' + esc(b.name) + '<span>' + b.items.length + '</span></a>'; }).join('');
+    var featured = okItems.filter(function (i) { return i.img; }).filter(function (i, k, a) { return a.findIndex(function (x) { return x.brandId === i.brandId; }) === k; }).slice(0, 8);
+    var hidden = C.items.length - okItems.length;
+    main.innerHTML = '<div class="wrap">' +
+      '<section class="hero"><div><p class="eyebrow">Toys, beds, bedding, ice trays and footwear for babies and toddlers</p>' +
+      '<h1>Reading the fine print so you don’t have to.</h1>' +
+      '<p class="lede">' + C.items.length + ' products from ' + Object.keys(C.brands).length + ' brands, each with what its maker says it is made of, what the maker says is absent, and what no page states. Filter by material, standard, price, brand and more, then buy from the store that sells it.</p>' +
+      '<div class="hero-cta"><a class="btn" href="' + U('/shop') + '">Shop all products</a><a class="btn-2" href="' + U('/about') + '">How the guide works</a></div></div>' +
+      '<div class="hero-art" aria-hidden="true">' + art.map(function (i) { return '<a href="' + U('/p/' + i.id) + '" tabindex="-1"><img src="' + esc(asset(i.img)) + '" alt="" decoding="async"></a>'; }).join('') + '</div></section>' +
+      '<section class="sec"><div class="sec-h"><h2>Shop by department</h2><a href="' + U('/shop') + '">All products →</a></div><div class="tiles">' + tiles + '</div></section>' +
+      '<section class="sec"><div class="sec-h"><h2>Shop by product type</h2></div><div class="types">' + types + '</div></section>' +
+      cardRail(featured, 'Featured products', U('/shop'), 'See all ' + okItems.length) +
+      '<section class="sec"><div class="sec-h"><h2>What every listing tells you</h2><a href="' + U('/about') + '">How we read a product →</a></div><div class="explain">' +
+      '<div class="r-uses"><span class="ic" aria-hidden="true">✓</span><b>Made with</b><p>The materials the maker or store names.</p></div>' +
+      '<div class="r-free"><span class="ic" aria-hidden="true">⊘</span><b>Stated free of</b><p>What the maker says is absent.</p></div>' +
+      '<div class="r-unk"><span class="ic" aria-hidden="true">?</span><b>Not stated</b><p>Parts no page describes, such as thread, glue or dye.</p></div>' +
+      '<div class="r-out"><span class="ic" aria-hidden="true">✕</span><b>Flagged parts</b><p>Parts like a plastic lid or synthetic fill, named so you can decide.</p></div></div></section>' +
+      '<section class="sec"><div class="sec-h"><h2>Brands</h2><a href="' + U('/brands') + '">All ' + Object.keys(C.brands).length + ' brands →</a></div><div class="brand-strip">' + topBrands + '</div></section>' +
+      '</div>' +
+      '<section class="band"><div class="wrap"><div><h2>Your material filters</h2><p>' + plural(critOn(CRIT, STRICT), 'material filter is', 'material filters are') + ' on, so ' + okItems.length + ' of ' + C.items.length + ' products show by default and ' + hidden + ' are set aside. They are ordinary filters: untick one in the filter rail and the products come back.</p><a class="btn-2" href="' + U('/shop') + '">Open the filters</a></div>' +
+      '<div><h2>Materials glossary</h2><p>' + Object.keys(TERMS).length + ' terms from store pages, from superwash wool to LFGB-tested silicone, each with a plain definition, what it means on this site and its sources. Dotted words on any product open a definition in place.</p><a class="btn-2" href="' + U('/glossary') + '">Browse the glossary</a></div></div></section>';
+    setNav('home'); setTitle('');
+  }
+
+  // ---------- listing page ----------
   function countsFor(f, st) {
     var counts = {};
-    filtered(st, f).forEach(function (it) {
-      var ok = status(it).ok;
+    base(st, f).forEach(function (it) {
+      var ok = status(it, st.crit, st.strict).ok;
       facetValues(it, f).forEach(function (v) {
         var c = counts[v] || (counts[v] = { n: 0, h: 0 });
-        if (ok || st.misses) c.n++; else c.h++;
+        if (ok || st.all) c.n++; else c.h++;
       });
     });
     return counts;
   }
-  function optionList(f, opts, counts, st) {
-    return opts.map(function (o) {
+  function optionList(f, opts, counts, st, limit) {
+    var rows = opts.map(function (o) {
       var c = counts[o.id] || { n: 0, h: 0 }, on = st[f].indexOf(o.id) >= 0;
       if (!c.n && !c.h && !on && o.hideEmpty) return '';
       return '<label class="opt' + (c.n || on ? '' : ' dim') + '"><input type="checkbox" data-facet="' + f + '" value="' + esc(o.id) + '" id="f-' + f + '-' + esc(o.id) + '"' + (on ? ' checked' : '') + '>' +
-        '<span>' + esc(o.label) + '</span><span class="n">' + c.n + (c.h ? '<i title="' + plural(c.h, 'item') + ' hidden by your material rules"> +' + c.h + ' hidden</i>' : '') + '</span></label>';
+        '<span class="lbl">' + esc(o.label) + '</span><span class="n">' + c.n + (c.h ? '<span class="sr">, </span><i title="' + plural(c.h, 'more item', 'more items') + ' set aside by your material filters"> +' + c.h + '</i>' : '') + '</span></label>';
+    }).filter(Boolean);
+    if (limit && rows.length > limit) {
+      return rows.slice(0, limit).join('') + '<div class="more-opts-wrap" hidden>' + rows.slice(limit).join('') + '</div>' +
+        '<button type="button" class="more-opts" data-more-opts>Show all ' + rows.length + '</button>';
+    }
+    return rows.join('');
+  }
+  function group(id, title, body, n) {
+    return '<details class="fgroup" data-group="' + id + '"' + (openGroups[id] ? ' open' : '') + '><summary>' + esc(title) + (n ? '<span class="cnt">' + n + '</span>' : '') + icon('chev') + '</summary><div class="fbody">' + body + '</div></details>';
+  }
+  // The material criteria as a filter group: each option narrows the list like any other checkbox.
+  function critGroup(st) {
+    var b = base(st), on = critOn(st.crit, st.strict);
+    var rows = C.criteria.map(function (c) {
+      var crit = Object.assign({}, st.crit); crit[c.id] = true;
+      var n = b.filter(function (it) { return status(it, crit, st.strict).ok; }).length;
+      return '<label class="opt' + (n ? '' : ' dim') + '"><input type="checkbox" data-crit="' + c.id + '" id="f-crit-' + c.id + '"' + (st.crit[c.id] ? ' checked' : '') + '>' +
+        '<span class="lbl">' + esc(S.filterLabel(c)) + (TERMS[c.term] ? ' <a class="q" href="' + U('/glossary/' + c.term) + '" data-term="' + c.term + '" aria-label="What this means: ' + esc(c.short) + '">?</a>' : '') + '<small>' + esc(c.help) + '</small></span><span class="n">' + n + '</span></label>';
     }).join('');
+    var nStrict = b.filter(function (it) { return status(it, st.crit, true).ok; }).length;
+    rows += '<label class="opt"><input type="checkbox" data-crit="strict" id="f-crit-strict"' + (st.strict ? ' checked' : '') + '><span class="lbl">Every detail above is stated<small>Leaves out items whose page doesn’t say, for the filters you have on.</small></span><span class="n">' + nStrict + '</span></label>';
+    var hint = '<p class="hint">Ticked filters leave out products that don’t meet them' + (critIsDefault(st.crit, st.strict) ? '; these start from one family’s preferences.' : '.') + ' <a href="#" data-crit-reset>' + (critIsDefault(st.crit, st.strict) ? 'Untick all' : 'Reset to defaults') + '</a></p>';
+    return group('crit', 'Materials & making', rows + hint, on);
   }
-  function panel(id, title, body, extra) {
-    return '<details class="panel" data-panel="' + id + '"' + (openPanels[id] ? ' open' : '') + '><summary>' + title + (extra || '') + '</summary><div class="panel-body">' + body + '</div></details>';
-  }
-  function cnt(arr) { return arr.length ? '<span class="cnt">' + arr.length + '</span>' : ''; }
-  function switchHtml(c) {
-    return '<label class="switch"><input type="checkbox" data-rule="' + c.id + '" id="r-' + c.id + '"' + (RULES[c.id] ? ' checked' : '') + '><span class="track" aria-hidden="true"></span>' +
-      '<span class="sw-text"><b>' + esc(ruleLabel(c)) + '</b>' + (TERMS[c.term] ? ' <a class="q" href="#/glossary/' + c.term + '" data-term="' + c.term + '" aria-label="What this means: ' + esc(c.short) + '">?</a>' : '') +
-      '<small>' + esc(c.help) + '</small></span></label>';
-  }
-  function rulesPanel() {
-    var kinds = [['avoid contains', 'Hide items that have'], ['require', 'Hide items unless the maker states']];
-    var body = '<p class="hint lead">Each switch that is on hides the items it names. These start from one family\'s preferences; change any of them.</p>' +
-      kinds.map(function (k) {
-        return '<fieldset><legend>' + k[1] + '</legend>' + C.criteria.filter(function (c) { return k[0].split(' ').indexOf(c.kind) >= 0; }).map(switchHtml).join('') + '</fieldset>';
-      }).join('') +
-      '<fieldset><legend>Details that aren\'t stated</legend><label class="switch"><input type="checkbox" id="r-strict"' + (STRICT ? ' checked' : '') + '><span class="track" aria-hidden="true"></span>' +
-      '<span class="sw-text"><b>Count unstated details as misses</b><small>When on, an item is hidden if a detail one of your switches covers isn\'t stated on its page.</small></span></label></fieldset>' +
-      '<button type="button" class="btn-ghost" id="rules-reset"' + (rulesAreDefault() ? ' disabled' : '') + '>Reset to defaults</button>';
-    return panel('rules', 'Material rules', body, '<span class="cnt">' + rulesOn() + ' on' + (rulesAreDefault() ? '' : ', changed') + '</span>');
-  }
-  function sidebar(st) {
-    var h = rulesPanel();
-    var cc = countsFor('cat', st);
-    h += panel('cat', 'Product type', C.groups.map(function (g) {
-      return '<p class="opt-group">' + esc(g.title) + '</p>' + optionList('cat', g.cats.map(function (id) { return { id: id, label: C.cats[id].title }; }), cc, st);
-    }).join(''), cnt(st.cat));
-    h += panel('price', 'Price', optionList('price', S.PRICE_BANDS.concat([{ id: 'none', label: 'Price not listed', hideEmpty: true }]), countsFor('price', st), st) +
-      '<p class="hint">Prices in other currencies are converted roughly to US dollars.</p>', cnt(st.price));
-    var brands = Object.keys(C.brands).map(function (k) { return C.brands[k]; }).sort(function (a, b) { return S.fold(a.name).localeCompare(S.fold(b.name)); });
-    h += panel('brand', 'Brand', '<input type="search" class="brand-find" id="brand-find" placeholder="Find a brand" aria-label="Find a brand">' +
-      '<div class="brand-opts" id="brand-opts">' + optionList('brand', brands.map(function (b) { return { id: b.id, label: b.name }; }), countsFor('brand', st), st) + '</div>', cnt(st.brand));
-    h += panel('mat', 'Made with', optionList('mat', S.MATERIALS, countsFor('mat', st), st) +
-      '<p class="hint">From each product\'s Made with and Flagged parts lists. Ticking several shows products that have all of them.</p>', cnt(st.mat));
-    h += panel('std', 'Standards the maker names', optionList('std', C.standards.map(function (s) { return { id: s.id, label: s.label }; }), countsFor('std', st), st) +
-      '<p class="hint">Listed when a maker or store names the standard. The product page says what the claim covers.</p>', cnt(st.std));
-    h += panel('age', 'Age rating', optionList('age', S.AGE_BANDS.concat([{ id: 'none', label: 'No age rating recorded' }]), countsFor('age', st), st) +
-      '<p class="hint">The age a maker or store states. Most product pages give none.</p>', cnt(st.age));
-    h += panel('ship', 'Ships from', optionList('ship', [{ id: 'us', label: 'The US' }, { id: 'abroad', label: 'Outside the US' }, { id: 'unknown', label: 'Not recorded' }], countsFor('ship', st), st), cnt(st.ship));
+  function filterRail(st) {
+    var h = critGroup(st);
+    if (st.kind !== 'cat') {
+      var cc = countsFor('cat', st);
+      var groups = C.groups.filter(function (g) { return st.kind !== 'dept' || g.id === st.key; });
+      h += group('cat', 'Product type', groups.map(function (g) {
+        return (groups.length > 1 ? '<p class="opt-group">' + esc(g.title) + '</p>' : '') + optionList('cat', g.cats.map(function (id) { return { id: id, label: C.cats[id].title }; }), cc, st);
+      }).join(''), st.cat.length);
+    }
+    h += group('price', 'Price', optionList('price', S.PRICE_BANDS.concat([{ id: 'none', label: 'Price not listed', hideEmpty: true }]), countsFor('price', st), st) +
+      '<p class="hint">Other currencies converted roughly to US dollars.</p>', st.price.length);
+    if (st.kind !== 'brand') {
+      h += group('brand', 'Brand', '<input type="search" class="find" id="brand-find" placeholder="Find a brand" aria-label="Find a brand">' +
+        '<div id="brand-opts">' + optionList('brand', brandList().map(function (b) { return { id: b.id, label: b.name }; }), countsFor('brand', st), st, 8) + '</div>', st.brand.length);
+    }
+    h += group('mat', 'Made with', optionList('mat', S.MATERIALS, countsFor('mat', st), st) + '<p class="hint">Several ticked: products made with all of them.</p>', st.mat.length);
+    h += group('std', 'Standards named', optionList('std', C.standards.map(function (s) { return { id: s.id, label: s.label }; }), countsFor('std', st), st) + '<p class="hint">Listed when a maker or store names the standard.</p>', st.std.length);
+    h += group('age', 'Age rating', optionList('age', S.AGE_BANDS.concat([{ id: 'none', label: 'No age rating recorded' }]), countsFor('age', st), st), st.age.length);
+    h += group('ship', 'Ships from', optionList('ship', [{ id: 'us', label: 'The US' }, { id: 'abroad', label: 'Outside the US' }, { id: 'unknown', label: 'Not recorded' }], countsFor('ship', st), st), st.ship.length);
     return h;
   }
   function activeChips(st) {
     var chips = [];
-    function add(f, v, label) { chips.push('<button type="button" class="chip-x" data-clear="' + f + '" data-val="' + esc(v) + '">' + esc(label) + ' <span aria-hidden="true">×</span><span class="sr"> remove</span></button>'); }
-    if (st.q) add('q', '', '“' + st.q + '”');
-    st.dept.forEach(function (v) { var g = groupOf(v); add('dept', v, g ? g.title : v); });
-    st.cat.forEach(function (v) { add('cat', v, catTitle(v)); });
-    st.brand.forEach(function (v) { add('brand', v, C.brands[v] ? C.brands[v].name : v); });
-    st.mat.forEach(function (v) { var m = S.MATERIALS.filter(function (x) { return x.id === v; })[0]; add('mat', v, m ? m.label : v); });
+    function add(f, v, label) { chips.push('<button type="button" class="chip-x" data-clear="' + f + '" data-val="' + esc(v) + '">' + esc(label) + icon('x') + '<span class="sr"> remove</span></button>'); }
+    if (st.q && st.kind !== 'search') add('q', '', '“' + st.q + '”');
+    if (st.kind !== 'cat') st.cat.forEach(function (v) { add('cat', v, catOf(v) ? catOf(v).title : v); });
+    if (st.kind !== 'brand') st.brand.forEach(function (v) { add('brand', v, C.brands[v] ? C.brands[v].name : v); });
+    st.price.forEach(function (v) { var b = S.PRICE_BANDS.filter(function (x) { return x.id === v; })[0]; if (b || v === 'none') add('price', v, b ? b.label : 'Price not listed'); });
+    st.mat.forEach(function (v) { add('mat', v, matLabel(v)); });
     st.std.forEach(function (v) { var s = C.standards.filter(function (x) { return x.id === v; })[0]; add('std', v, s ? s.label : v); });
     st.age.forEach(function (v) { var a = S.AGE_BANDS.filter(function (x) { return x.id === v; })[0]; add('age', v, a ? a.label : 'No age rating'); });
-    st.ship.forEach(function (v) { add('ship', v, { us: 'Ships from the US', abroad: 'Ships from outside the US', unknown: 'Shipping not recorded' }[v]); });
-    st.price.forEach(function (v) { var b = S.PRICE_BANDS.filter(function (x) { return x.id === v; })[0]; add('price', v, b ? b.label : 'Price not listed'); });
-    if (chips.length > 1) chips.push('<button type="button" class="chip-clear" id="clear-all">Clear all</button>');
+    st.ship.forEach(function (v) { var l = { us: 'Ships from the US', abroad: 'Ships from outside the US', unknown: 'Shipping not recorded' }[v]; if (l) add('ship', v, l); });
+    var d = defaults();
+    C.criteria.forEach(function (c) { if (st.crit[c.id] && !d[c.id]) add('crit', c.id, S.filterLabel(c)); });
+    if (st.strict) add('crit', 'strict', 'Every detail stated');
+    if (chips.length > 1) chips.push('<button type="button" class="chip-clear" data-clear-all>Clear all</button>');
     return chips.join('');
   }
-  function hero() {
-    var tiles = C.groups.map(function (g) {
-      var items = C.items.filter(function (i) { return i.group === g.id; });
-      var pic = items.filter(function (i) { return i.img; })[0];
-      return '<a class="dept" href="#/?dept=' + g.id + '">' + (pic ? '<img src="' + esc(pic.img) + '" alt="" decoding="async">' : '') +
-        '<span class="dept-t">' + esc(g.title) + '</span><span class="dept-n">' + plural(items.length, 'product') + '</span></a>';
-    }).join('');
-    return '<section class="hero"><div class="hero-copy"><p class="eyebrow">For parents and guardians of babies and toddlers</p>' +
-      '<h1>Saved by the Thread</h1><p class="tagline">Reading the fine print so you don’t have to.</p>' +
-      '<p class="lede">Every product lists what its maker says it is made of, what the maker says is absent, and what no page states. The material rules in the sidebar hide what you don\'t want; they start from one family\'s preferences, and you can change them.</p></div>' +
-      '<div class="depts-grid">' + tiles + '</div></section>';
-  }
-  // Zero results: say what was asked and offer the closest brand or product type.
-  function emptyState(st, miss) {
-    var sug = '';
+  function emptyState(st, hidden) {
+    var sug = [];
     if (st.q) {
-      var q = S.fold(st.q);
-      var brands = Object.keys(C.brands).map(function (k) { return C.brands[k]; }).filter(function (b) { return q.split(/\s+/).some(function (w) { return w.length > 2 && S.fold(b.name).indexOf(w) >= 0; }); }).slice(0, 4);
-      var cats = Object.keys(C.cats).map(function (k) { return C.cats[k]; }).filter(function (c) { return q.split(/\s+/).some(function (w) { return w.length > 2 && S.fold(c.title).indexOf(w) >= 0; }); }).slice(0, 4);
-      if (brands.length || cats.length) sug = '<p>Try ' + brands.map(function (b) { return '<a href="#/?brand=' + b.id + '">' + esc(b.name) + '</a>'; })
-        .concat(cats.map(function (c) { return '<a href="#/?cat=' + c.id + '">' + esc(c.title) + '</a>'; })).join(', ') + '.</p>';
+      var words = S.fold(st.q).split(/\s+/).filter(function (w) { return w.length > 2; });
+      brandList().filter(function (b) { return words.some(function (w) { return S.fold(b.name).indexOf(w) >= 0; }); }).slice(0, 4)
+        .forEach(function (b) { sug.push('<a href="' + U('/b/' + b.id) + '">' + esc(b.name) + '</a>'); });
+      Object.keys(C.cats).map(function (k) { return C.cats[k]; }).filter(function (c) { return words.some(function (w) { return S.fold(c.title).indexOf(w) >= 0; }); }).slice(0, 4)
+        .forEach(function (c) { sug.push('<a href="' + U('/c/' + c.id) + '">' + esc(c.title) + '</a>'); });
     }
-    return '<div class="empty-state"><p>Nothing matches ' + (st.q ? '“' + esc(st.q) + '”' + (FACETS.some(function (f) { return st[f].length; }) ? ' with these filters' : '') : 'these filters') +
-      (miss.length && !st.misses ? ', though ' + plural(miss.length, 'item is', 'items are') + ' hidden by your material rules' : '') + '.</p>' + sug +
-      '<p>' + (miss.length && !st.misses ? '<button type="button" class="btn-ghost" id="toggle-misses">Show hidden items</button> ' : '') +
-      '<button type="button" class="btn-ghost" id="clear-all-2">Clear filters</button></p></div>';
+    return '<div class="empty-state"><p><b>Nothing matches</b>' + (st.q ? ' “' + esc(st.q) + '”' : ' these filters') +
+      (hidden && !st.all ? ', though ' + plural(hidden, 'product is', 'products are') + ' set aside by your material filters' : '') + '.</p>' +
+      (sug.length ? '<p>Try:</p><div class="types">' + sug.join('') + '</div>' : '') +
+      '<p style="margin-top:16px">' + (hidden && !st.all ? '<button type="button" class="btn-2" data-toggle-all>Show the ' + hidden + ' set aside</button> ' : '') +
+      '<button type="button" class="btn-2" data-clear-all>Clear filters</button></p></div>';
   }
-  function renderShop(keepFocus) {
-    var st = STATE;
+  function listTitle(st) {
+    if (st.kind === 'cat') return catOf(st.key) ? catOf(st.key).title : st.key;
+    if (st.kind === 'dept') return groupOf(st.key) ? groupOf(st.key).title : st.key;
+    if (st.kind === 'brand') return C.brands[st.key] ? C.brands[st.key].name : st.key;
+    if (st.kind === 'search') return st.q ? 'Results for “' + st.q + '”' : 'Search';
+    return 'All products';
+  }
+  function renderList(keepFocus) {
+    var st = STATE, show = PEND || st;
     var focusId = keepFocus && document.activeElement && document.activeElement.id;
     var brandFind = $('#brand-find') ? $('#brand-find').value : '';
-    var sideOpen = document.body.classList.contains('side-on');
-    var all = sortItems(filtered(st), st.sort);
-    var ok = all.filter(function (i) { return status(i).ok; }), miss = all.filter(function (i) { return !status(i).ok; });
-    var shown = st.misses ? ok.concat(miss) : ok;
-    var anyFilter = st.q || FACETS.some(function (f) { return st[f].length; });
-    var only = function (f) { return st[f].length === 1 && !st.q && FACETS.every(function (g) { return g === f || !st[g].length; }); };
-    var title = st.q ? 'Results for “' + esc(st.q) + '”' : only('cat') ? esc(catTitle(st.cat[0])) : only('dept') ? esc(groupOf(st.dept[0]).title) : only('brand') ? esc(C.brands[st.brand[0]].name) : 'All products';
-    var intro = '';
-    if (only('cat') && C.cats[st.cat[0]].intro) intro = '<p class="cat-intro">' + esc(C.cats[st.cat[0]].intro) + '</p>';
-    else if (only('dept')) {
-      var g = groupOf(st.dept[0]);
-      intro = '<p class="cat-intro">' + esc(g.blurb) + (g.source ? ' <a href="' + esc(g.source) + '" target="_blank" rel="noopener">Read the post</a>.' : '') + '</p>';
-    }
-    var missBar = miss.length ? '<div class="missbar"><p>' + (st.misses
-        ? plural(miss.length, 'item that misses', 'items that miss') + ' your material rules ' + (miss.length === 1 ? 'is' : 'are') + ' shown after the rest, marked “Misses”.'
-        : '<b>' + plural(miss.length, 'more item is', 'more items are') + '</b> hidden by your material rules.') + '</p>' +
-      '<button type="button" class="btn-ghost" id="toggle-misses">' + (st.misses ? 'Hide them' : 'Show them') + '</button>' +
-      '<button type="button" class="btn-link" id="open-rules">Change rules</button></div>' : '';
-    main.innerHTML = (anyFilter ? '' : hero()) +
-      '<div class="shop" id="shop">' +
-      '<aside class="side" id="side" aria-label="Filters"><div class="side-h"><h2>Filters</h2><button type="button" class="btn-ghost side-close" id="side-close">Done</button></div>' + sidebar(st) + '</aside>' +
-      '<section class="results" aria-labelledby="res-h">' +
-      '<div class="res-head"><div><h2 id="res-h">' + title + '</h2>' + intro + '</div>' +
-      '<div class="res-tools"><p class="res-count">' + plural(shown.length, 'product') + '</p>' +
-      '<button type="button" class="btn-ghost filt-btn" id="side-open" aria-expanded="' + (sideOpen ? 'true' : 'false') + '" aria-controls="side">Filters' + (anyFilter ? ' <span class="cnt">on</span>' : '') + '</button>' +
-      '<label class="sort">Sort by <select id="sort">' + SORTS.map(function (s) { return '<option value="' + s[0] + '"' + (st.sort === s[0] ? ' selected' : '') + '>' + s[1] + '</option>'; }).join('') + '</select></label></div></div>' +
-      '<div class="active">' + activeChips(st) + '</div>' + missBar +
-      (shown.length ? '<div class="grid">' + shown.map(card).join('') + '</div>' : emptyState(st, miss)) +
-      '</section></div>';
-    if (sideOpen) openSide(false);
-    $('#q').value = st.q;
-    if (brandFind) { $('#brand-find').value = brandFind; filterBrandList(brandFind); }
-    if (focusId && document.getElementById(focusId)) document.getElementById(focusId).focus();
-    setNav('shop');
-    announce(plural(shown.length, 'product') + (miss.length && !st.misses ? ', ' + miss.length + ' hidden by your rules' : '') + '. List updated.');
-    document.title = (title === 'All products' ? '' : title.replace(/&[^;]+;/g, '') + ' · ') + 'Saved by the Thread';
+    var drawer = document.body.classList.contains('drawer-on');
+    var all = sortItems(base(st), st.sort);
+    var ok = all.filter(function (i) { return status(i, st.crit, st.strict).ok; }), hidden = all.length - ok.length;
+    var list = st.all ? all : ok;
+    var shown = list.slice(0, pageShown);
+    var title = listTitle(st), intro = '', sub = '', trail = [];
+    if (st.kind === 'cat' && catOf(st.key)) {
+      var c = catOf(st.key), g = groupOf(c.group);
+      trail = [[g.title, U('/d/' + g.id)], [c.title]];
+      if (c.intro) intro = c.intro;
+    } else if (st.kind === 'dept' && groupOf(st.key)) {
+      var gg = groupOf(st.key);
+      trail = [[gg.title]];
+      intro = gg.blurb + (gg.source ? ' <a href="' + esc(gg.source) + '" target="_blank" rel="noopener">Read the research post</a>.' : '');
+      sub = '<div class="subcats">' + gg.cats.map(function (id) { var n = C.items.filter(function (i) { return i.cat === id && status(i, st.crit, st.strict).ok; }).length; return '<a href="' + U('/c/' + id) + '">' + esc(C.cats[id].title) + '<span>' + n + '</span></a>'; }).join('') + '</div>';
+    } else if (st.kind === 'brand' && C.brands[st.key]) {
+      var b = C.brands[st.key], bc = {}; b.items.forEach(function (i) { bc[i.cat] = 1; });
+      trail = [['Brands', U('/brands')], [b.name]];
+      intro = plural(b.items.length, 'listing') + ' in ' + Object.keys(bc).map(function (k) { return C.cats[k].title.toLowerCase(); }).join(', ') + '.';
+    } else if (st.kind === 'search') trail = [[st.q ? 'Search: ' + st.q : 'Search']];
+    else trail = [['All products']];
+    var pend = PEND ? (PEND.all ? base(PEND) : base(PEND).filter(function (i) { return status(i, PEND.crit, PEND.strict).ok; })).length : list.length;
+    main.innerHTML = '<div class="wrap">' + crumbs(trail) +
+      '<header class="plp-head"><h1>' + esc(title) + '</h1>' + (intro ? '<p class="intro">' + (st.kind === 'dept' ? intro : esc(intro)) + '</p>' : '') + sub + '</header>' +
+      '<div class="plp">' +
+      '<aside class="rail-f" id="rail" aria-label="Filters"><div class="rail-h"><h2>Filters</h2><div>' + (activeChips(show) ? '<button type="button" class="link-b" data-clear-all>Clear all</button> ' : '') + '<button type="button" class="ib rail-close" data-drawer-close aria-label="Close filters">' + icon('x') + '</button></div></div>' +
+      filterRail(show) +
+      '<div class="drawer-foot"><button type="button" class="btn-2" data-clear-all>Clear</button><button type="button" class="btn" data-drawer-apply>Show ' + plural(pend, 'result') + '</button></div></aside>' +
+      '<section class="results" aria-labelledby="res-count">' +
+      '<div class="toolbar"><p class="count" id="res-count"><b>' + plural(list.length, 'product') + '</b>' + (hidden && !st.all ? ' · ' + hidden + ' set aside' : '') + '</p>' +
+      '<div class="tools"><button type="button" class="btn-3 filt-btn" data-drawer-open aria-expanded="' + drawer + '" aria-controls="rail">' + icon('sliders') + 'Filter & sort' + (activeChips(st) ? ' <span class="cnt">•</span>' : '') + '</button>' +
+      '<label class="sort"><span>Sort by</span><select id="sort" aria-label="Sort by">' + SORTS.map(function (s) { return '<option value="' + s[0] + '"' + (st.sort === s[0] ? ' selected' : '') + '>' + s[1] + '</option>'; }).join('') + '</select></label></div></div>' +
+      '<div class="chips">' + activeChips(st) + '</div>' +
+      (hidden ? '<div class="hidden-note"><p>' + (st.all ? plural(hidden, 'product that doesn’t', 'products that don’t') + ' match your material filters ' + (hidden === 1 ? 'is' : 'are') + ' shown with a badge.' : '<b>' + plural(hidden, 'more product', 'more products') + '</b> set aside by your material filters.') + '</p><button type="button" data-toggle-all>' + (st.all ? 'Hide them' : 'Show them') + '</button></div>' : '') +
+      (shown.length ? '<div class="grid" id="grid">' + shown.map(function (it, i) { return card(it, i, st.crit, st.strict); }).join('') + '</div>' : emptyState(st, hidden)) +
+      (list.length > shown.length ? '<div class="more-wrap"><p>Showing ' + shown.length + ' of ' + list.length + '</p><button type="button" class="btn-2" data-more>Show more</button></div>' : (list.length > PAGE ? '<div class="more-wrap"><p>Showing all ' + list.length + '</p></div>' : '')) +
+      '</section></div></div>';
+    $('#q').value = st.kind === 'search' || st.q ? st.q : '';
+    if (brandFind && $('#brand-find')) { $('#brand-find').value = brandFind; filterBrandList(brandFind); }
+    if (drawer) openDrawer(false);
+    if (focusId && document.getElementById(focusId)) document.getElementById(focusId).focus({ preventScroll: true });
+    setNav(st.kind, st.key);
+    setTitle(title === 'All products' ? 'Shop' : title);
+    announce(plural(list.length, 'product') + (hidden && !st.all ? ', ' + hidden + ' set aside by your material filters' : '') + '. List updated.');
   }
   function filterBrandList(v) {
-    var f = S.fold(v);
-    $$('#brand-opts .opt').forEach(function (l) { l.hidden = f && S.fold(l.textContent).indexOf(f) < 0; });
+    var f = S.fold(v), box = $('#brand-opts'); if (!box) return;
+    $$('.opt', box).forEach(function (l) { l.hidden = !!f && S.fold(l.textContent).indexOf(f) < 0; });
+    var more = $('.more-opts-wrap', box), btn = $('.more-opts', box);
+    if (more) { more.hidden = !f && !more.getAttribute('data-shown'); if (btn) btn.hidden = !!f || !!more.getAttribute('data-shown'); }
   }
-  function announce(text) { if (live) { live.textContent = ''; setTimeout(function () { live.textContent = text; }, 50); } }
-
-  // ---------- search suggestions ----------
-  var sugg = document.getElementById('sugg'), suggT = null;
-  function suggestions(q) {
-    var f = S.fold(q.trim());
-    if (f.length < 2) { sugg.hidden = true; sugg.innerHTML = ''; return; }
-    var out = [];
-    Object.keys(C.brands).map(function (k) { return C.brands[k]; }).filter(function (b) { return S.fold(b.name).indexOf(f) >= 0; }).slice(0, 4)
-      .forEach(function (b) { out.push('<a href="#/?brand=' + b.id + '"><span class="sg-k">Brand</span>' + esc(b.name) + '</a>'); });
-    Object.keys(C.cats).map(function (k) { return C.cats[k]; }).filter(function (c) { return S.fold(c.title).indexOf(f) >= 0; }).slice(0, 3)
-      .forEach(function (c) { out.push('<a href="#/?cat=' + c.id + '"><span class="sg-k">Type</span>' + esc(c.title) + '</a>'); });
-    S.MATERIALS.filter(function (m) { return S.fold(m.label).indexOf(f) >= 0; }).slice(0, 2)
-      .forEach(function (m) { out.push('<a href="#/?mat=' + m.id + '"><span class="sg-k">Made with</span>' + esc(m.label) + '</a>'); });
-    if (GLOSS) Object.keys(TERMS).filter(function (k) { return S.fold(TERMS[k].term).indexOf(f) >= 0; }).slice(0, 2)
-      .forEach(function (k) { out.push('<a href="#/glossary/' + k + '"><span class="sg-k">Glossary</span>' + esc(TERMS[k].term) + '</a>'); });
-    sugg.innerHTML = out.join('');
-    sugg.hidden = !out.length;
-  }
-  function closeSugg() { sugg.hidden = true; }
 
   // ---------- product page ----------
-  var ROWS = [['uses', 'r-uses', '✓', 'Made with'], ['free', 'r-free', '⊘', 'Stated free of'], ['unconfirmed', 'r-unk', '?', 'Not stated'], ['outside', 'r-out', '✕', 'Flagged parts']];
   function checklist(item) {
-    return '<dl class="check" id="checklist">' + ROWS.filter(function (r) { return item[r[0]] && item[r[0]].length; }).map(function (r) {
-      return '<div class="row ' + r[1] + '"><span class="ic" aria-hidden="true">' + r[2] + '</span><dt>' + r[3] + '</dt><dd>' + item[r[0]].map(chip).join('') + '</dd></div>';
-    }).join('') + '</dl>';
+    var rows = [
+      ['r-uses', '✓', 'Made with', 'Materials the maker or store names', item.uses],
+      ['r-free', '⊘', 'Stated free of', 'What the maker says is absent', item.free],
+      ['r-unk', '?', 'Not stated', 'Parts no page describes', item.unconfirmed],
+      ['r-out', '✕', 'Flagged parts', 'Named so you can decide', item.outside]
+    ];
+    return '<div class="check">' + rows.map(function (r) {
+      return '<div class="row ' + r[0] + '"><div class="row-h"><span class="ic" aria-hidden="true">' + r[1] + '</span><span>' + r[2] + '<small>' + r[3] + '</small></span></div>' +
+        '<div class="chips-row">' + (r[4].length ? r[4].map(chip).join('') : '<span class="none">' + (r[0] === 'r-free' ? 'Nothing stated absent' : r[0] === 'r-unk' ? 'Every covered detail is stated' : 'None') + '</span>') + '</div></div>';
+    }).join('') + '</div>';
   }
-  function ruleTable(item) {
+  function filterTable(item) {
     var rows = C.criteria.map(function (c) {
-      var v;
-      if (c.kind === 'contains') v = item.contains.indexOf(c.id) >= 0 ? 'has' : null;
-      else v = item.facts[c.id] || null;
-      if (!v) return '';
-      var txt = { yes: c.kind === 'require' ? 'Stated by the maker' : 'Not present', no: c.kind === 'require' ? 'Not stated' : 'Present', unknown: 'Not stated', has: 'Present' }[v];
-      var cls = { yes: 'ok', no: 'no', unknown: 'unk', has: 'no' }[v];
-      var hides = RULES[c.id] && (v === 'no' || v === 'has' || (c.kind === 'require' && v !== 'yes') || (STRICT && v === 'unknown'));
-      return '<tr' + (hides ? ' class="hides"' : '') + '><th scope="row">' + termLink(c.term, ruleLabel(c)) + '<small>' + esc(c.help) + '</small></th><td><span class="v ' + cls + '">' + txt + '</span></td>' +
-        '<td class="sw"><label class="switch mini"><input type="checkbox" data-rule="' + c.id + '" id="t-' + c.id + '"' + (RULES[c.id] ? ' checked' : '') + '><span class="track" aria-hidden="true"></span><span class="sw-text">' + (RULES[c.id] ? (hides ? 'On, hides this item' : 'On') : 'Off') + '</span></label></td></tr>';
+      var f = item.facts[c.id], has = item.contains.indexOf(c.id) >= 0, res;
+      if (c.kind === 'contains') res = has ? '<span class="no">Has it</span>' : '<span class="ok">Doesn’t have it</span>';
+      else if (f === undefined) res = '<span class="muted">Doesn’t apply</span>';
+      else if (c.kind === 'require') res = f === 'yes' ? '<span class="ok">Stated</span>' : f === 'no' ? '<span class="no">Stated not</span>' : '<span class="unk">Not stated</span>';
+      else res = f === 'yes' ? '<span class="ok">Meets it</span>' : f === 'no' ? '<span class="no">Doesn’t meet it</span>' : '<span class="unk">Not stated</span>';
+      return '<tr><th scope="row">' + esc(S.filterLabel(c)) + (TERMS[c.term] ? ' <a class="q term-link" href="' + U('/glossary/' + c.term) + '" data-term="' + c.term + '" aria-label="What this means">?</a>' : '') + '<small>' + esc(c.help) + '</small></th><td class="res">' + res + '</td>' +
+        '<td class="sw"><label class="opt"><input type="checkbox" data-crit="' + c.id + '" id="t-' + c.id + '"' + (CRIT[c.id] ? ' checked' : '') + '><span class="lbl">' + (CRIT[c.id] ? 'On' : 'Off') + '</span></label></td></tr>';
     }).join('');
-    return '<table class="rules-t"><caption class="sr">How this item reads against each material rule</caption><thead><tr><th scope="col">Rule</th><th scope="col">This item</th><th scope="col">Your switch</th></tr></thead><tbody>' + rows +
-      '<tr><th scope="row">Count unstated details as misses<small>When on, an item is hidden if a detail one of your switches covers isn\'t stated on its page.</small></th><td></td><td class="sw"><label class="switch mini"><input type="checkbox" id="t-strict"' + (STRICT ? ' checked' : '') + '><span class="track" aria-hidden="true"></span><span class="sw-text">' + (STRICT ? 'On' : 'Off') + '</span></label></td></tr></tbody></table>';
+    rows += '<tr><th scope="row">Every detail above is stated<small>Leaves out items whose page doesn’t say.</small></th><td class="res">' + (item.unconfirmed.length ? '<span class="unk">' + plural(item.unconfirmed.length, 'detail') + ' not stated</span>' : '<span class="ok">All stated</span>') + '</td>' +
+      '<td class="sw"><label class="opt"><input type="checkbox" data-crit="strict" id="t-strict"' + (STRICT ? ' checked' : '') + '><span class="lbl">' + (STRICT ? 'On' : 'Off') + '</span></label></td></tr>';
+    return '<table class="ftable"><caption class="sr">How this product reads against each material filter</caption><thead><tr><th scope="col">Filter</th><th scope="col">This product</th><th scope="col">Your filter</th></tr></thead><tbody>' + rows + '</tbody></table>';
   }
-  function renderProduct(id, keepFocus) {
-    var item = C.items.filter(function (i) { return i.id === id; })[0];
-    if (!item) { main.innerHTML = '<div class="page"><h1>Not found</h1><p>No product with that address. <a href="#/">Back to the shop</a>.</p></div>'; return; }
-    var focusId = keepFocus && document.activeElement && document.activeElement.id, y = window.scrollY;
-    var r = status(item), g = groupOf(item.group), cat = C.cats[item.cat];
-    var stds = item.standards.map(function (s) { var d = C.standards.filter(function (x) { return x.id === s; })[0]; return d ? '<li>' + termLink(d.term, d.label) + '</li>' : ''; }).join('');
-    var buy = item.products.map(function (p) {
-      var from = p.ships_from === 'US' ? 'Ships from the US' : p.ships_from ? 'Ships from ' + p.ships_from : 'Shipping not recorded';
-      return '<li class="offer"><div><p class="o-name">' + esc(p.name) + '</p><p class="o-meta">' + esc(p.store) + ' · ' + esc(from) + '</p>' +
-        (p.note ? '<p class="o-note">' + esc(p.note) + '</p>' : '') + '</div>' +
-        '<p class="o-price">' + esc(p.price) + '</p><a class="btn-buy" href="' + esc(p.url) + '" target="_blank" rel="noopener">View at ' + esc(p.store.replace(/\s*\(.*\)$/, '')) + ' <span aria-hidden="true">↗</span></a></li>';
-    }).join('');
+  function offerHtml(p, k) {
+    var from = p.ships_from === 'US' ? 'Ships from the US' : p.ships_from ? 'Ships from ' + p.ships_from : 'Ships from: not recorded';
+    var ship = p.shipping || (/free (?:us )?shipping/i.test(p.price) ? 'Free shipping' : '');
+    return '<li class="offer"><p class="o-name">' + esc(p.name) + '</p><p class="o-price">' + esc(p.price.replace(/,?\s*free (us )?shipping.*$/i, '')) + '</p>' +
+      '<p class="o-meta">' + esc(p.store) + ' · ' + esc(from) + (ship ? ' · <span class="o-ship">' + icon('truck') + esc(ship) + '</span>' : '') + '</p>' +
+      (p.note ? '<p class="o-note">' + esc(p.note) + '</p>' : '') +
+      '<a class="' + (k === 0 ? 'btn' : 'btn-2') + '" href="' + esc(p.url) + '" target="_blank" rel="noopener">Buy at ' + esc(p.store.replace(/\s*\(.*\)$/, '')) + icon('ext') + '</a>' +
+      (p.price_checked ? '<p class="o-checked">Price checked ' + esc(p.price_checked) + '</p>' : '') + '</li>';
+  }
+  function renderProduct(id, keep) {
+    var item = byId(id);
+    if (!item) { renderNotFound(); return; }
+    var y = window.scrollY, focusId = keep && document.activeElement && document.activeElement.id;
+    var r = status(item), cat = catOf(item.cat), g = groupOf(item.group);
+    var stds = item.standards.map(function (s) { var d = C.standards.filter(function (x) { return x.id === s; })[0]; return d ? termLink(d.term, d.label) : esc(s); });
     var more = C.brands[item.brandId].items.filter(function (i) { return i !== item; });
     var also = C.items.filter(function (i) { return i.cat === item.cat && i !== item && i.brandId !== item.brandId && status(i).ok; }).slice(0, 8);
-    var mini = '<div class="mini"><p class="h-sub">Made with</p><p class="mini-chips">' + item.uses.map(chip).join('') + '</p>' +
-      (item.outside.length ? '<p class="h-sub">Flagged parts</p><p class="mini-chips r-out">' + item.outside.map(chip).join('') + '</p>' : '') +
-      '<p class="mini-more"><a href="#/p/' + esc(item.id) + '" data-jump="checklist">Full checklist: ' + plural(item.free.length, 'thing') + ' stated absent, ' + plural(item.unconfirmed.length, 'detail') + ' not stated ↓</a></p></div>';
-    main.innerHTML = '<nav class="crumbs" aria-label="Breadcrumb"><a href="#/">Shop</a><span>/</span><a href="#/?dept=' + g.id + '">' + esc(g.title) + '</a><span>/</span><a href="#/?cat=' + cat.id + '">' + esc(cat.title) + '</a></nav>' +
+    var recent = listGet(RECENT_KEY).filter(function (x) { return x !== item.id; }).map(byId).filter(Boolean).slice(0, 8);
+    recentAdd(item.id);
+    main.innerHTML = '<div class="wrap">' + crumbs([[g.title, U('/d/' + g.id)], [cat.title, U('/c/' + cat.id)], [item.line]]) +
       '<article class="pdp">' +
-      '<div class="pdp-media">' + photo(item, 'big', true) + '</div>' +
-      '<div class="pdp-info">' +
-      '<p class="brand"><a href="#/?brand=' + item.brandId + '">' + esc(item.brand) + '</a></p><h1>' + esc(item.line) + '</h1>' +
-      '<p class="pdp-price">' + esc(S.priceLabel(item)) + (item.products.length > 1 ? '<span> · ' + item.products.length + ' products</span>' : '') + '</p>' +
-      pageStatus(item, r) +
-      (item.quote ? '<blockquote class="ev"><p>' + esc(item.quote) + '</p><footer>From the store page</footer></blockquote>' : item.evidence ? '<p class="ev-p">' + esc(item.evidence) + '</p>' : '') +
-      (item.note ? '<p class="note">' + esc(item.note) + '</p>' : '') +
-      mini +
-      '<h2 class="h-sub">Where to buy</h2><ul class="offers">' + buy + '</ul>' +
-      '<dl class="facts">' +
-      (stds ? '<div><dt>Standards named</dt><dd><ul class="plain">' + stds + '</ul></dd></div>' : '') +
+      '<div class="gallery">' + (item.img ? '<button type="button" class="ph-zoom" data-zoom="' + esc(asset(item.img)) + '" aria-label="Enlarge photo" style="all:unset;display:block;cursor:zoom-in">' + photo(item, true) + '</button><span class="zoom-hint">' + icon('zoom') + 'Enlarge</span>' : photo(item, true)) +
+      (item.img ? '<p class="img-src">Store photo' + (item.products[0] ? ' from ' + esc(item.products[0].store) : '') + '.</p>' : '') + '</div>' +
+      '<div class="buybox">' +
+      '<p class="brand"><a href="' + U('/b/' + item.brandId) + '">' + esc(item.brand) + '</a></p><h1>' + esc(item.line) + '</h1>' +
+      '<p class="price">' + esc(S.priceLabel(item)) + (item.products.length > 1 ? '<small>' + item.products.length + ' stores</small>' : '') + '</p>' +
+      '<div class="status">' + (r.ok ? '<span class="badge free" style="background:var(--accent-soft);color:var(--accent-strong)">Meets your ' + plural(critOn(CRIT, STRICT), 'material filter') + '</span>' : '<span class="badge miss">Doesn’t match: ' + esc(missText(item, r)) + '</span>') +
+      (r.unst.length ? '<span>' + plural(r.unst.length, 'covered detail') + ' not stated</span>' : '') + '</div>' +
+      '<div class="made"><p class="lab">Made with</p><div class="chips-row">' + item.uses.map(chip).join('') + '</div>' +
+      (item.outside.length ? '<p class="lab" style="margin-top:10px">Flagged parts</p><div class="chips-row out">' + item.outside.map(chip).join('') + '</div>' : '') +
+      '<a class="link-b" href="#checklist" data-jump="checklist">Full materials checklist ↓</a></div>' +
+      '<h2 class="sr">Where to buy</h2><ul class="offers">' + item.products.map(offerHtml).join('') + '</ul>' +
+      '<div class="buy-actions">' + saveBtn(item, 'btn-3') + compareBtn(item) + '</div>' +
+      (item.quote ? '<blockquote class="ev"><p>“' + esc(item.quote) + '”</p><footer>From the store page</footer></blockquote>' : item.evidence ? '<p class="ev"><span>' + esc(item.evidence) + '</span></p>' : '') +
+      (item.note ? '<p class="muted" style="font-size:14px">' + esc(item.note) + '</p>' : '') +
+      '<dl class="facts">' + (stds.length ? '<div><dt>Standards named</dt><dd>' + stds.join(', ') + '</dd></div>' : '') +
       '<div><dt>Age rating</dt><dd>' + (item.age ? esc(item.age.text) : 'None recorded') + '</dd></div>' +
-      '<div><dt>Product type</dt><dd><a href="#/?cat=' + cat.id + '">' + esc(cat.title) + '</a></dd></div></dl>' +
+      '<div><dt>Product type</dt><dd><a href="' + U('/c/' + cat.id) + '">' + esc(cat.title) + '</a></dd></div>' +
+      '<div><dt>Department</dt><dd><a href="' + U('/d/' + g.id) + '">' + esc(g.title) + '</a></dd></div></dl>' +
       '</div></article>' +
-      '<section class="pdp-sec"><h2>Materials checklist</h2><p class="sec-lede">What the maker or store names, what they say is absent, and what no page states. Underlined chips open a short definition.</p>' + checklist(item) + '</section>' +
-      '<section class="pdp-sec" id="rules-sec"><h2>Against your material rules</h2><p class="sec-lede">' + (r.ok ? 'This item meets every switch you have on.' : 'This item is hidden in the shop by ' + plural(r.miss.length, 'switch', 'switches') + ' you have on.') + ' Switches changed here apply to the whole shop.</p>' + ruleTable(item) + '</section>' +
-      (cat.intro || cat.outro ? '<section class="pdp-sec"><h2>About ' + esc(cat.title.toLowerCase()) + '</h2>' + (cat.intro ? '<p>' + esc(cat.intro) + '</p>' : '') + (cat.outro ? '<p>' + esc(cat.outro) + '</p>' : '') + '</section>' : '') +
-      (more.length ? '<section class="pdp-sec"><h2>More from ' + esc(item.brand) + '</h2><div class="grid row-grid">' + more.map(function (i) { return card(i); }).join('') + '</div></section>' : '') +
-      (also.length ? '<section class="pdp-sec"><h2>Also in ' + esc(cat.title.toLowerCase()) + '</h2><div class="grid row-grid">' + also.map(function (i) { return card(i); }).join('') + '</div></section>' : '');
-    setNav('shop');
-    document.title = item.brand + ' ' + item.line + ' · Saved by the Thread';
-    if (keepFocus) { window.scrollTo(0, y); if (focusId && document.getElementById(focusId)) document.getElementById(focusId).focus(); }
+      '<div class="pdp-below">' +
+      '<details class="acc" open id="checklist"><summary>Materials checklist' + icon('chev') + '</summary><div class="acc-body"><p class="lede">What the maker or store names, what they say is absent, and what no page states. Dotted chips open a definition.</p>' + checklist(item) + '</div></details>' +
+      '<details class="acc" id="filters-sec"' + (r.ok ? '' : ' open') + '><summary>Against your material filters' + icon('chev') + '</summary><div class="acc-body"><p class="lede">' + (r.ok ? 'This product meets every material filter you have on.' : 'This product is set aside in listings by ' + plural(r.miss.length, 'filter') + ' you have on.') + ' Filters changed here apply across the site.</p>' + filterTable(item) + '</div></details>' +
+      (cat.intro || cat.outro ? '<details class="acc"><summary>About ' + esc(cat.title.toLowerCase()) + icon('chev') + '</summary><div class="acc-body">' + (cat.intro ? '<p>' + esc(cat.intro) + '</p>' : '') + (cat.outro ? '<p>' + esc(cat.outro) + '</p>' : '') + '</div></details>' : '') +
+      '<details class="acc"><summary>Prices and shipping' + icon('chev') + '</summary><div class="acc-body"><p>Prices and shipping statements were read from the store pages and are checked weekly; the date under each store link is the last check. Prices in pounds, euros and other currencies are converted roughly to US dollars for sorting.</p></div></details>' +
+      '</div>' +
+      cardRail(more, 'More from ' + esc(item.brand), U('/b/' + item.brandId), 'All ' + item.brand) +
+      cardRail(also, 'You may also like', U('/c/' + cat.id), 'All ' + cat.title.toLowerCase()) +
+      (recent.length ? '<div class="recent">' + cardRail(recent, 'Recently viewed') + '</div>' : '') +
+      '</div>';
+    setNav('product', item.group);
+    setTitle(item.brand + ' ' + item.line);
+    if (keep) { window.scrollTo(0, y); if (focusId && document.getElementById(focusId)) document.getElementById(focusId).focus({ preventScroll: true }); }
   }
 
-  // ---------- brands ----------
+  // ---------- brands, glossary, about, saved, compare ----------
   function renderBrands() {
-    var list = Object.keys(C.brands).map(function (k) { return C.brands[k]; }).sort(function (a, b) { return S.fold(a.name).localeCompare(S.fold(b.name)); });
-    var by = {};
+    var list = brandList(), by = {};
     list.forEach(function (b) { var L = S.fold(b.name).charAt(0).toUpperCase(); L = /[A-Z]/.test(L) ? L : '#'; (by[L] = by[L] || []).push(b); });
     var letters = Object.keys(by).sort();
-    main.innerHTML = '<div class="page"><h1>Brands</h1><p class="lede">' + list.length + ' brands, each with the products listed for it.</p>' +
-      '<nav class="az" aria-label="Jump to letter">' + letters.map(function (L) { return '<a href="#/brands" data-jump="az-' + L + '">' + L + '</a>'; }).join('') + '</nav>' +
+    main.innerHTML = '<div class="wrap">' + crumbs([['Brands']]) + '<div class="page wide"><h1>Brands</h1><p class="lede">' + list.length + ' brands. Each brand page lists its products with the same filters as the shop.</p>' +
+      '<nav class="az" aria-label="Jump to letter">' + letters.map(function (L) { return '<a href="#az-' + L + '" data-jump="az-' + L + '">' + L + '</a>'; }).join('') + '</nav>' +
       letters.map(function (L) {
         return '<section class="az-sec" id="az-' + L + '"><h2>' + L + '</h2><ul class="brand-list">' + by[L].map(function (b) {
           var cats = {}; b.items.forEach(function (i) { cats[i.cat] = 1; });
-          return '<li><a class="b-name" href="#/?brand=' + b.id + '">' + esc(b.name) + '</a><span class="b-meta">' + plural(b.items.length, 'listing') + ' · ' +
-            Object.keys(cats).map(function (c) { return esc(C.cats[c].short); }).join(', ') + '</span></li>';
+          return '<li><a class="b-name" href="' + U('/b/' + b.id) + '">' + esc(b.name) + '</a><span class="b-meta">' + plural(b.items.length, 'listing') + ' · ' + Object.keys(cats).map(function (c) { return esc(C.cats[c].short); }).join(', ') + '</span></li>';
         }).join('') + '</ul></section>';
-      }).join('') + '</div>';
-    setNav('brands');
-    document.title = 'Brands · Saved by the Thread';
+      }).join('') + '</div></div>';
+    setNav('brands'); setTitle('Brands');
   }
-
-  // ---------- glossary ----------
   function renderGlossary(termId) {
-    if (!GLOSS) { main.innerHTML = '<div class="page"><h1>Glossary</h1><p class="loading">Loading the glossary…</p></div>'; return; }
+    if (!GLOSS) { main.innerHTML = '<div class="wrap"><div class="page"><h1>Glossary</h1><p class="loading">Loading the glossary…</p></div></div>'; return; }
     var types = GLOSS.source_types || {};
-    main.innerHTML = '<div class="page glossary"><h1>' + esc(GLOSS.title || 'Glossary') + '</h1><p class="lede">' + esc(GLOSS.intro || '') + '</p>' +
-      '<nav class="gjump" aria-label="Glossary sections">' + GLOSS.sections.map(function (s) { return '<a href="#/glossary" data-jump="gs-' + s.id + '">' + esc(s.title) + '<span>' + s.terms.length + '</span></a>'; }).join('') + '</nav>' +
+    main.innerHTML = '<div class="wrap">' + crumbs([['Glossary']]) + '<div class="page glossary"><h1>' + esc(GLOSS.title || 'Glossary') + '</h1><p class="lede">' + esc(GLOSS.intro || '') + '</p>' +
+      '<nav class="gjump" aria-label="Glossary sections">' + GLOSS.sections.map(function (s) { return '<a href="#gs-' + s.id + '" data-jump="gs-' + s.id + '">' + esc(s.title) + '<span>' + s.terms.length + '</span></a>'; }).join('') + '</nav>' +
       GLOSS.sections.map(function (s) {
         return '<section class="gsec" id="gs-' + s.id + '"><h2>' + esc(s.title) + '</h2><div class="terms">' + s.terms.map(function (t) {
           var srcs = (t.sources || []).map(function (r) {
@@ -427,108 +547,261 @@
           return '<article class="term" id="t-' + esc(t.id) + '"><h3>' + esc(t.term) + '</h3>' + (t.aka && t.aka.length ? '<p class="aka">Also called ' + esc(t.aka.join(', ')) + '</p>' : '') +
             '<p>' + esc(t.definition) + '</p><p class="lab">On this site</p><p>' + esc(t.on_this_site) + '</p><p class="lab">What sources say</p><p>' + esc(t.what_sources_say) + '</p>' +
             (srcs ? '<details><summary>Sources (' + t.sources.length + ')</summary><ul>' + srcs + '</ul></details>' : '') +
-            '<p class="t-shop"><a href="#/?q=' + encodeURIComponent(t.term) + '">Search products for “' + esc(t.term) + '”</a></p></article>';
+            '<p class="t-shop"><a href="' + U('/search', { q: t.term }) + '">Search products for “' + esc(t.term) + '”</a></p></article>';
         }).join('') + '</div></section>';
-      }).join('') + '</div>';
-    setNav('glossary');
-    document.title = 'Glossary · Saved by the Thread';
+      }).join('') + '</div></div>';
+    setNav('glossary'); setTitle('Glossary');
     if (termId) {
       var el = document.getElementById('t-' + termId);
       if (el) { el.classList.add('hl'); el.scrollIntoView(); var d = el.querySelector('details'); if (d) d.open = true; }
     }
   }
-
-  // ---------- about ----------
   function renderAbout() {
     var nprod = C.items.reduce(function (n, i) { return n + i.products.length; }, 0);
-    main.innerHTML = '<div class="page about"><h1>How this guide works</h1>' +
-      '<p class="lede">Saved by the Thread lists ' + C.items.length + ' listings (' + nprod + ' products from ' + Object.keys(C.brands).length + ' brands) for babies and toddlers. It reports what makers and stores say about materials, finishes and standards, and what they leave out. It doesn\'t rank products by safety or risk.</p>' +
-      '<section><h2>Reading a product</h2><ul class="legend">' +
+    main.innerHTML = '<div class="wrap">' + crumbs([['How this guide works']]) + '<div class="page prose"><h1>How this guide works</h1>' +
+      '<p class="lede">Saved by the Thread lists ' + C.items.length + ' products (' + nprod + ' store listings from ' + Object.keys(C.brands).length + ' brands) for babies and toddlers. It reports what makers and stores say about materials, finishes and standards, and what they leave out. It doesn’t rank products by safety or risk, and it sells nothing: every product links to the store that does.</p>' +
+      '<h2>Reading a product</h2><ul class="legend">' +
       '<li class="r-uses"><span class="ic" aria-hidden="true">✓</span><span><b>Made with</b>: materials the maker or store names.</span></li>' +
       '<li class="r-free"><span class="ic" aria-hidden="true">⊘</span><span><b>Stated free of</b>: things the maker says are absent.</span></li>' +
       '<li class="r-unk"><span class="ic" aria-hidden="true">?</span><span><b>Not stated</b>: parts no page describes, such as thread, glue or dye.</span></li>' +
-      '<li class="r-out"><span class="ic" aria-hidden="true">✕</span><span><b>Flagged parts</b>: parts a rule can leave out, such as plastic, synthetic fill, an unnamed colourant or treated wool.</span></li></ul>' +
-      '<p>A listing covers one product, or a brand\'s line of products made the same way.</p></section>' +
-      '<section><h2>Material rules</h2><p>The switches under Material rules each hide the items that don\'t meet them. They start from the preferences this guide was built around: no plastic or synthetics in the main materials or small parts, no synthetic dyes or paints, solid wood rather than plywood, no superwash wool, no plasticisers in rubber, and silicone only when the maker says the finished product was tested to German LFGB or the French Arrêté. Leather and natural latex can be hidden with their own switches, which start off. A detail that no page states doesn\'t count as a miss unless you turn that on. Your choices are saved in this browser.</p></section>' +
-      '<section><h2>Questions makers can answer</h2><ul>' + C.ask.map(function (a) { return '<li>' + esc(a) + '</li>'; }).join('') + '</ul></section>' +
-      '<section><h2>Prices and stock</h2><p>Prices, stock and shipping were read from store pages and change often. Prices in pounds, euros and other currencies are converted roughly to US dollars for sorting. Last updated ' + esc(C.updated) + '.</p></section></div>';
-    setNav('about');
-    document.title = 'About · Saved by the Thread';
+      '<li class="r-out"><span class="ic" aria-hidden="true">✕</span><span><b>Flagged parts</b>: parts a filter can leave out, such as plastic, synthetic fill, an unnamed colourant or treated wool.</span></li></ul>' +
+      '<p>A listing covers one product, or a brand’s line of products made the same way.</p>' +
+      '<h2>Material filters</h2><p>The “Materials & making” filters work like every other filter: each one you tick leaves out the products that don’t meet it. They start from the preferences this guide was built around: no plastic or synthetics in the main materials or small parts, no synthetic dyes or paints, solid wood rather than plywood, no superwash wool, no plasticisers in rubber, and silicone only when the maker says the finished product was tested to German LFGB or the French Arrêté. Natural latex and leather have their own filters, which start unticked. A detail that no page states doesn’t count against a product unless you tick “Every detail above is stated”. Your choices are kept in this browser, and a link to a filtered page carries them.</p>' +
+      '<h2>Questions makers can answer</h2><ul>' + C.ask.map(function (a) { return '<li>' + esc(a) + '</li>'; }).join('') + '</ul>' +
+      '<h2>Prices, shipping and stock</h2><p>Prices and shipping statements were read from store pages and are checked weekly by a script; the product page shows the date of the last check. Prices in pounds, euros and other currencies are converted roughly to US dollars for sorting. Catalog last updated ' + esc(C.updated) + '.</p>' +
+      '<h2>Source</h2><p>The data and the site are open at <a href="https://github.com/mchelen/SaferByTheThread" target="_blank" rel="noopener">github.com/mchelen/SaferByTheThread</a>.</p></div></div>';
+    setNav('about'); setTitle('About');
+  }
+  function renderSaved() {
+    var items = listGet(SAVED_KEY).map(byId).filter(Boolean);
+    main.innerHTML = '<div class="wrap">' + crumbs([['Saved']]) + '<div class="page wide"><h1>Saved products</h1><p class="lede">' + (items.length ? plural(items.length, 'product') + ' saved in this browser.' : 'Nothing saved yet. The heart on any product keeps it here, in this browser.') + '</p>' +
+      (items.length ? '<div class="grid">' + items.map(function (i) { return card(i); }).join('') + '</div>' : '<p><a class="btn" href="' + U('/shop') + '">Shop all products</a></p>') + '</div></div>';
+    setNav('saved'); setTitle('Saved');
+  }
+  function renderCompare() {
+    var items = listGet(CMP_KEY).map(byId).filter(Boolean);
+    var rows = [];
+    function row(label, cells) { rows.push('<tr><th scope="row">' + label + '</th>' + cells.map(function (c) { return '<td>' + c + '</td>'; }).join('') + '</tr>'); }
+    if (items.length) {
+      row('Price', items.map(function (i) { return esc(S.priceLabel(i)); }));
+      row('Stores', items.map(function (i) { return i.products.map(function (p) { return '<a href="' + esc(p.url) + '" target="_blank" rel="noopener">' + esc(p.store) + '</a>' + (p.shipping ? ' <span class="muted">(' + esc(p.shipping) + ')</span>' : ''); }).join('<br>'); }));
+      row('Your material filters', items.map(function (i) { var r = status(i); return r.ok ? '<span style="color:var(--moss);font-weight:600">Meets them</span>' + (r.unst.length ? '<br><span class="muted">' + plural(r.unst.length, 'detail') + ' not stated</span>' : '') : '<span style="color:var(--clay);font-weight:600">Doesn’t match:</span> ' + esc(missText(i, r)); }));
+      row('Made with', items.map(function (i) { return '<div class="chips-row">' + i.uses.map(chip).join('') + '</div>'; }));
+      row('Stated free of', items.map(function (i) { return i.free.length ? '<div class="chips-row r-free">' + i.free.map(chip).join('') + '</div>' : '<span class="muted">Nothing stated</span>'; }));
+      row('Not stated', items.map(function (i) { return i.unconfirmed.length ? '<div class="chips-row r-unk">' + i.unconfirmed.map(chip).join('') + '</div>' : '<span class="muted">All covered details stated</span>'; }));
+      row('Flagged parts', items.map(function (i) { return i.outside.length ? '<div class="chips-row r-out">' + i.outside.map(chip).join('') + '</div>' : '<span class="muted">None</span>'; }));
+      row('Standards named', items.map(function (i) { return i.standards.length ? i.standards.map(function (s) { var d = C.standards.filter(function (x) { return x.id === s; })[0]; return d ? termLink(d.term, d.label) : esc(s); }).join(', ') : '<span class="muted">None</span>'; }));
+      row('Age rating', items.map(function (i) { return i.age ? esc(i.age.text) : '<span class="muted">None recorded</span>'; }));
+      row('Ships from', items.map(function (i) { return i.products.map(function (p) { return p.ships_from || 'not recorded'; }).filter(function (v, k, a) { return a.indexOf(v) === k; }).join(', '); }));
+    }
+    main.innerHTML = '<div class="wrap">' + crumbs([['Compare']]) + '<div class="page wide"><h1>Compare products</h1><p class="lede">' + (items.length ? plural(items.length, 'product') + ' side by side; up to four at a time, kept in this browser.' : 'Nothing to compare yet. “Compare” on any product page or quick view adds it here, up to four at a time.') + '</p>' +
+      (items.length ? '<div class="cmp"><table><thead><tr><th scope="col"><span class="sr">Attribute</span></th>' + items.map(function (i) {
+        return '<th scope="col"><a href="' + U('/p/' + i.id) + '" style="text-decoration:none">' + photo(i) + '<span class="brand" style="display:block;margin-top:8px;font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted)">' + esc(i.brand) + '</span><span style="font-weight:600">' + esc(i.line) + '</span></a><button type="button" class="rm" data-compare="' + esc(i.id) + '">Remove</button></th>';
+      }).join('') + '</tr></thead><tbody>' + rows.join('') + '</tbody></table></div>' : '<p><a class="btn" href="' + U('/shop') + '">Shop all products</a></p>') + '</div></div>';
+    setNav('compare'); setTitle('Compare');
+  }
+  function renderNotFound() {
+    main.innerHTML = '<div class="wrap"><div class="page"><h1>Page not found</h1><p class="lede">Nothing lives at this address.</p><p><a class="btn" href="' + U('/shop') + '">Shop all products</a></p></div></div>';
+    setTitle('Not found');
   }
 
-  // ---------- nav, router ----------
-  function setNav(which) {
-    $$('.links a').forEach(function (a) { a.classList.toggle('on', a.getAttribute('data-nav') === which); if (a.getAttribute('data-nav') === which) a.setAttribute('aria-current', 'page'); else a.removeAttribute('aria-current'); });
-    $$('#depts a').forEach(function (a) {
-      var d = a.getAttribute('data-dept');
-      a.classList.toggle('on', which === 'shop' && (d === '' ? !STATE.dept.length && !STATE.cat.length : STATE.dept.indexOf(d) >= 0 || STATE.cat.some(function (c) { return C.cats[c] && C.cats[c].group === d; })));
-    });
+  // ---------- quick view, lightbox, compare tray ----------
+  var qv = document.getElementById('qv'), scrim = document.getElementById('scrim'), qvOpener = null;
+  function openQuickView(id, opener) {
+    var item = byId(id); if (!item) return;
+    var r = status(item);
+    qv.innerHTML = '<button type="button" class="ib x" data-qv-close aria-label="Close quick view">' + icon('x') + '</button><div class="qv-in">' + photo(item, true) +
+      '<div><p class="eyebrow">' + esc(item.brand) + '</p><h2 id="qv-h">' + esc(item.line) + '</h2><p class="price">' + esc(S.priceLabel(item)) + '</p>' +
+      '<p class="muted" style="margin:6px 0 0;font-size:14px">' + (r.ok ? 'Meets your material filters' + (r.unst.length ? ' · ' + plural(r.unst.length, 'detail') + ' not stated' : '') : 'Doesn’t match: ' + esc(missText(item, r))) + '</p>' +
+      '<div class="made"><p class="lab">Made with</p><div class="chips-row">' + item.uses.map(chip).join('') + '</div>' + (item.outside.length ? '<p class="lab" style="margin-top:10px">Flagged parts</p><div class="chips-row out">' + item.outside.map(chip).join('') + '</div>' : '') + '</div>' +
+      '<ul class="offers">' + item.products.slice(0, 2).map(offerHtml).join('') + '</ul>' +
+      '<div class="qv-actions"><a class="btn-2" href="' + U('/p/' + item.id) + '">Full details</a>' + saveBtn(item, 'btn-3') + compareBtn(item) + '</div></div></div>';
+    qv.hidden = false; scrim.hidden = false; document.body.classList.add('no-scroll');
+    qvOpener = opener || null;
+    $('[data-qv-close]', qv).focus();
   }
-  function route() {
-    closePop(false); closeSugg();
-    closeSide(false);
-    if (lastHash !== null) scrollMem[lastHash] = window.scrollY;
-    var h = parseHash(), p = h.parts, key = p[0] || '', hash = location.hash || '#/';
-    if (key === 'p' && p[1]) renderProduct(decodeURIComponent(p[1]));
-    else if (key === 'brands') renderBrands();
-    else if (key === 'glossary') renderGlossary(p[1]);
-    else if (key === 'about') renderAbout();
-    else { STATE = readState(h.q); renderShop(); }
-    // Coming back to a page we left (usually the browser's Back button) restores where the visitor was.
-    if (hash in scrollMem && !(key === 'glossary' && p[1])) { window.scrollTo(0, scrollMem[hash]); delete scrollMem[hash]; }
-    else if (!(key === 'glossary' && p[1])) window.scrollTo(0, 0);
-    lastHash = hash; lastRoute = key === '' ? 'shop' : key;
-    toTop.hidden = window.scrollY < 600;
+  function closeQuickView() {
+    if (qv.hidden) return;
+    qv.hidden = true; scrim.hidden = true; document.body.classList.remove('no-scroll');
+    if (qvOpener && document.body.contains(qvOpener)) qvOpener.focus();
+    qvOpener = null;
   }
-  function rerender() {
-    var p = parseHash().parts;
-    if (p[0] === 'p') renderProduct(decodeURIComponent(p[1]), true); else renderShop(true);
+  function openLightbox(src, alt) {
+    var lb = document.createElement('div');
+    lb.className = 'lightbox'; lb.setAttribute('role', 'dialog'); lb.setAttribute('aria-label', 'Enlarged photo');
+    lb.innerHTML = '<button type="button" class="ib x" aria-label="Close">' + icon('x') + '</button><img src="' + esc(src) + '" alt="' + esc(alt || '') + '">';
+    document.body.appendChild(lb); document.body.classList.add('no-scroll');
+    lb.querySelector('button').focus();
+    lb.addEventListener('click', function () { lb.remove(); document.body.classList.remove('no-scroll'); });
+  }
+  var tray = document.getElementById('tray');
+  function renderTray() {
+    var items = listGet(CMP_KEY).map(byId).filter(Boolean);
+    var onCompare = currentPath() === '/compare';
+    if (!items.length || onCompare) { tray.hidden = true; document.body.classList.remove('tray-on'); return; }
+    tray.innerHTML = '<div class="tray-in"><p>Compare (' + items.length + '/4)</p><div class="tray-items">' + items.map(function (i) { return '<a href="' + U('/p/' + i.id) + '" aria-label="' + esc(i.brand + ' ' + i.line) + '">' + (i.img ? '<img src="' + esc(asset(i.img)) + '" alt="">' : '') + '</a>'; }).join('') + '</div>' +
+      '<a class="btn" href="' + U('/compare') + '">Compare</a><button type="button" class="btn-3" data-compare-clear>Clear</button></div>';
+    tray.hidden = false; document.body.classList.add('tray-on');
   }
 
-  // ---------- filter drawer (phone) ----------
-  function openSide(focus) {
-    var side = $('#side'); if (!side) return;
-    document.body.classList.add('side-on');
-    side.setAttribute('role', 'dialog'); side.setAttribute('aria-modal', 'true');
-    var b = $('#side-open'); if (b) b.setAttribute('aria-expanded', 'true');
-    if (focus) $('#side-close').focus();
+  // ---------- phone filter drawer (changes wait for Apply) ----------
+  function isPhone() { return window.matchMedia('(max-width: 900px)').matches; }
+  function openDrawer(focus) {
+    var rail = $('#rail'); if (!rail) return;
+    document.body.classList.add('drawer-on', 'no-scroll');
+    rail.setAttribute('role', 'dialog'); rail.setAttribute('aria-modal', 'true');
+    var b = $('[data-drawer-open]'); if (b) b.setAttribute('aria-expanded', 'true');
+    if (focus) { var c = $('[data-drawer-close]', rail); if (c) c.focus(); }
   }
-  function closeSide(focus) {
-    if (!document.body.classList.contains('side-on')) return;
-    document.body.classList.remove('side-on');
-    var side = $('#side'); if (side) { side.removeAttribute('role'); side.removeAttribute('aria-modal'); }
-    var b = $('#side-open'); if (b) { b.setAttribute('aria-expanded', 'false'); if (focus) b.focus(); }
+  function closeDrawer(focus) {
+    if (!document.body.classList.contains('drawer-on')) return;
+    document.body.classList.remove('drawer-on', 'no-scroll');
+    var rail = $('#rail'); if (rail) { rail.removeAttribute('role'); rail.removeAttribute('aria-modal'); }
+    var b = $('[data-drawer-open]'); if (b) { b.setAttribute('aria-expanded', 'false'); if (focus) b.focus(); }
   }
   function trapTab(ev) {
-    var side = $('#side'); if (!side || !document.body.classList.contains('side-on') || ev.key !== 'Tab') return;
-    var f = $$('a[href], button:not([disabled]), input, select, summary', side).filter(function (el) { return el.offsetParent !== null; });
+    var box = !qv.hidden ? qv : document.body.classList.contains('drawer-on') ? $('#rail') : null;
+    if (!box || ev.key !== 'Tab') return;
+    var f = $$('a[href], button:not([disabled]), input, select, summary, [tabindex="0"]', box).filter(function (el) { return el.offsetParent !== null; });
     if (!f.length) return;
     var first = f[0], last = f[f.length - 1];
     if (ev.shiftKey && document.activeElement === first) { ev.preventDefault(); last.focus(); }
     else if (!ev.shiftKey && document.activeElement === last) { ev.preventDefault(); first.focus(); }
-    else if (!side.contains(document.activeElement)) { ev.preventDefault(); first.focus(); }
+    else if (!box.contains(document.activeElement)) { ev.preventDefault(); first.focus(); }
+  }
+
+  // ---------- header: departments menu and search suggestions ----------
+  function buildNav() {
+    var h = '<div class="menu-x" hidden><button type="button" class="ib" id="menu-close" aria-label="Close menu">' + icon('x') + '</button></div>';
+    h += '<div class="cat-item"><a class="cat-a" href="' + U('/shop') + '" data-nav="shop">All products</a></div>';
+    C.groups.forEach(function (g) {
+      var n = C.items.filter(function (i) { return i.group === g.id; }).length;
+      h += '<div class="cat-item" data-dept="' + g.id + '"><button type="button" class="cat-a" data-nav="d:' + g.id + '" aria-expanded="false" aria-haspopup="true">' + esc(g.title) + icon('chev') + '</button>' +
+        '<div class="mega"><p>' + esc(g.title) + ' · ' + plural(n, 'product') + '</p><ul>' + g.cats.map(function (id) { var c = C.cats[id], k = C.items.filter(function (i) { return i.cat === id; }).length; return '<li><a href="' + U('/c/' + id) + '">' + esc(c.title) + '<span>' + k + '</span></a></li>'; }).join('') + '</ul>' +
+        '<a class="mega-all" href="' + U('/d/' + g.id) + '">Shop all ' + esc(g.title.toLowerCase()) + ' →</a></div></div>';
+    });
+    h += '<span class="spacer"></span>';
+    h += '<div class="cat-item"><a class="cat-a quiet" href="' + U('/brands') + '" data-nav="brands">Brands</a></div>' +
+      '<div class="cat-item"><a class="cat-a quiet" href="' + U('/glossary') + '" data-nav="glossary">Glossary</a></div>' +
+      '<div class="cat-item"><a class="cat-a quiet" href="' + U('/about') + '" data-nav="about">About</a></div>';
+    $('#cats').innerHTML = h;
+    $('#foot-shop').innerHTML = '<li><a href="' + U('/shop') + '">All products</a></li>' + C.groups.map(function (g) { return '<li><a href="' + U('/d/' + g.id) + '">' + esc(g.title) + '</a></li>'; }).join('');
+    $('#foot-brands').innerHTML = brandList().sort(function (a, b) { return b.items.length - a.items.length; }).slice(0, 6).map(function (b) { return '<li><a href="' + U('/b/' + b.id) + '">' + esc(b.name) + '</a></li>'; }).join('') + '<li><a href="' + U('/brands') + '">All brands →</a></li>';
+    $$('a[data-link]').forEach(function (a) { a.href = U(a.getAttribute('href')); });
+  }
+  function closeMegas(except) {
+    $$('#cats .cat-item.open').forEach(function (d) { if (d !== except) { d.classList.remove('open'); var b = $('.cat-a', d); if (b) b.setAttribute('aria-expanded', 'false'); } });
+  }
+  function openMenu() { $('#menu').classList.add('open'); $('#menu-open').setAttribute('aria-expanded', 'true'); $('.menu-x').hidden = false; document.body.classList.add('no-scroll'); $('#menu-close').focus(); }
+  function closeMenu(focus) { var m = $('#menu'); if (!m.classList.contains('open')) return; m.classList.remove('open'); $('#menu-open').setAttribute('aria-expanded', 'false'); $('.menu-x').hidden = true; document.body.classList.remove('no-scroll'); closeMegas(); if (focus) $('#menu-open').focus(); }
+  var hoverT = null;
+  document.addEventListener('mouseover', function (ev) {
+    if (isPhone()) return;
+    var item = ev.target.closest && ev.target.closest('#cats .cat-item[data-dept]');
+    clearTimeout(hoverT);
+    if (item) { closeMegas(item); item.classList.add('open'); $('.cat-a', item).setAttribute('aria-expanded', 'true'); }
+    else if (!ev.target.closest('#cats')) hoverT = setTimeout(closeMegas, 200);
+  });
+  document.addEventListener('mouseleave', function () { if (!isPhone()) hoverT = setTimeout(closeMegas, 200); }, true);
+
+  var sugg = document.getElementById('sugg'), qInput = document.getElementById('q'), suggT = null;
+  function suggestions(q) {
+    var f = S.fold(q.trim());
+    if (f.length < 2) { closeSugg(); return; }
+    var out = [];
+    C.items.filter(function (i) { return matchesQuery(i, q); }).slice(0, 4).forEach(function (i) {
+      out.push('<a href="' + U('/p/' + i.id) + '" role="option">' + (i.img ? '<img class="sg-img" src="' + esc(asset(i.img)) + '" alt="">' : '<span class="sg-img"></span>') + '<span>' + esc(i.brand) + ' ' + esc(i.line) + '</span><span class="sg-p">' + esc(S.priceFrom(i)) + '</span></a>');
+    });
+    brandList().filter(function (b) { return S.fold(b.name).indexOf(f) >= 0; }).slice(0, 3).forEach(function (b) { out.push('<a href="' + U('/b/' + b.id) + '" role="option"><span class="sg-k">Brand</span>' + esc(b.name) + '</a>'); });
+    Object.keys(C.cats).map(function (k) { return C.cats[k]; }).filter(function (c) { return S.fold(c.title).indexOf(f) >= 0; }).slice(0, 3).forEach(function (c) { out.push('<a href="' + U('/c/' + c.id) + '" role="option"><span class="sg-k">Type</span>' + esc(c.title) + '</a>'); });
+    S.MATERIALS.filter(function (m) { return S.fold(m.label).indexOf(f) >= 0; }).slice(0, 2).forEach(function (m) { out.push('<a href="' + U('/shop', { mat: m.id }) + '" role="option"><span class="sg-k">Made with</span>' + esc(m.label) + '</a>'); });
+    if (GLOSS) Object.keys(TERMS).filter(function (k) { return S.fold(TERMS[k].term).indexOf(f) >= 0; }).slice(0, 2).forEach(function (k) { out.push('<a href="' + U('/glossary/' + k) + '" role="option"><span class="sg-k">Glossary</span>' + esc(TERMS[k].term) + '</a>'); });
+    out.push('<a href="' + U('/search', { q: q.trim() }) + '" role="option"><span class="sg-k">Search</span>See all results for “' + esc(q.trim()) + '”</a>');
+    sugg.innerHTML = out.join('');
+    sugg.hidden = false; qInput.setAttribute('aria-expanded', 'true');
+  }
+  function closeSugg() { sugg.hidden = true; qInput.setAttribute('aria-expanded', 'false'); }
+
+  // ---------- router ----------
+  function route() {
+    closeSugg(); closeQuickView(); closeDrawer(false); closeMenu(false); closePop(false); PEND = null;
+    var path = currentPath(), q = parseQuery(location.search), p = path.split('/').filter(Boolean), key = p[0] || '';
+    var url = location.pathname + location.search;
+    if (key === '') renderHome();
+    else if (key === 'shop') { STATE = readState('shop', '', q); pageShown = PAGE; renderList(); }
+    else if (key === 'd' && groupOf(p[1])) { STATE = readState('dept', p[1], q); pageShown = PAGE; renderList(); }
+    else if (key === 'c' && catOf(p[1])) { STATE = readState('cat', p[1], q); pageShown = PAGE; renderList(); }
+    else if (key === 'b' && C.brands[p[1]]) { STATE = readState('brand', p[1], q); pageShown = PAGE; renderList(); }
+    else if (key === 'search') { STATE = readState('search', '', q); pageShown = PAGE; renderList(); }
+    else if (key === 'p' && p[1]) renderProduct(decodeURIComponent(p[1]));
+    else if (key === 'brands') renderBrands();
+    else if (key === 'glossary') renderGlossary(p[1]);
+    else if (key === 'about') renderAbout();
+    else if (key === 'saved') renderSaved();
+    else if (key === 'compare') renderCompare();
+    else renderNotFound();
+    if (key !== 'p' && key !== 'search' && !(key === 'shop' && q.q)) qInput.value = '';
+    if (url in scrollMem && !(key === 'glossary' && p[1])) { window.scrollTo(0, scrollMem[url]); delete scrollMem[url]; }
+    else if (!(key === 'glossary' && p[1]) && !location.hash) window.scrollTo(0, 0);
+    lastUrl = url;
+    badgeCounts();
+    toTop.hidden = window.scrollY < 800;
+  }
+  function rerender() {
+    var key = currentPath().split('/').filter(Boolean)[0] || '';
+    if (key === 'p') {
+      var open = $$('.acc').map(function (d, i) { return d.open ? i : -1; }); // keep the accordions as the visitor left them
+      renderProduct(decodeURIComponent(currentPath().split('/')[2]), true);
+      $$('.acc').forEach(function (d, i) { d.open = open[i] >= 0; });
+    }
+    else if (STATE && ['shop', 'd', 'c', 'b', 'search'].indexOf(key) >= 0) { STATE.crit = Object.assign({}, CRIT); STATE.strict = STRICT; setState(STATE); }
+    else if (key === 'compare') renderCompare();
+    else if (key === 'saved') renderSaved();
+    else if (key === '') renderHome();
+  }
+  // Old links (#/p/<id>, #/?cat=balls, #/glossary/<term>) still arrive; map them onto the new paths.
+  function legacyHash() {
+    var h = location.hash;
+    if (!/^#\//.test(h)) return null;
+    var rest = h.slice(2), qi = rest.indexOf('?'), path = qi >= 0 ? rest.slice(0, qi) : rest, q = parseQuery(qi >= 0 ? rest.slice(qi + 1) : '');
+    var parts = path.split('/').filter(Boolean);
+    if (parts[0] === 'p') return U('/p/' + parts[1]);
+    if (parts[0] === 'brands' || parts[0] === 'about') return U('/' + parts[0]);
+    if (parts[0] === 'glossary') return U('/glossary' + (parts[1] ? '/' + parts[1] : ''));
+    if (q.dept && !q.cat) { var d = q.dept; delete q.dept; return U('/d/' + d, q); }
+    if (q.misses) { delete q.misses; q.all = '1'; }
+    return Object.keys(q).length ? U('/shop', q) : U('/');
   }
 
   // ---------- events ----------
-  function toggleIn(arr, v) { var i = arr.indexOf(v); var out = arr.slice(); if (i >= 0) out.splice(i, 1); else out.push(v); return out; }
-  function copyState() { var st = { q: STATE.q, sort: STATE.sort, misses: STATE.misses }; FACETS.forEach(function (f) { st[f] = STATE[f].slice(); }); return st; }
+  function toggleIn(arr, v) { var i = arr.indexOf(v), out = arr.slice(); if (i >= 0) out.splice(i, 1); else out.push(v); return out; }
+  function editing() { return document.body.classList.contains('drawer-on') ? (PEND || (PEND = copyState())) : copyState(); }
+  function commit(st) {
+    if (document.body.classList.contains('drawer-on')) { PEND = st; renderList(true); }
+    else { PEND = null; setState(st, true); }
+  }
   document.addEventListener('change', function (ev) {
     var t = ev.target;
     if (t.matches('[data-facet]')) {
-      var st = copyState(), f = t.getAttribute('data-facet');
+      var st = editing(), f = t.getAttribute('data-facet');
       st[f] = toggleIn(st[f], t.value);
-      if (f === 'cat') st.dept = [];
-      setState(st);
-    } else if (t.matches('[data-rule]')) {
-      RULES[t.getAttribute('data-rule')] = t.checked; saveRules(); rerender();
-    } else if (t.id === 'r-strict' || t.id === 't-strict') {
-      STRICT = t.checked; saveRules(); rerender();
+      commit(st);
+    } else if (t.matches('[data-crit]')) {
+      var id = t.getAttribute('data-crit');
+      if (STATE && $('#rail')) {
+        var s2 = editing();
+        if (id === 'strict') s2.strict = t.checked; else s2.crit[id] = t.checked;
+        commit(s2);
+      } else {
+        if (id === 'strict') STRICT = t.checked; else CRIT[id] = t.checked;
+        savePref(); rerender();
+      }
     } else if (t.id === 'sort') {
-      var s2 = copyState(); s2.sort = t.value; setState(s2);
+      var s3 = copyState(); s3.sort = t.value; PEND = null; setState(s3, true);
     }
   });
   document.addEventListener('toggle', function (ev) {
-    var d = ev.target; if (d.matches && d.matches('details.panel')) openPanels[d.getAttribute('data-panel')] = d.open;
+    var d = ev.target; if (d.matches && d.matches('details.fgroup')) openGroups[d.getAttribute('data-group')] = d.open;
   }, true);
   document.addEventListener('input', function (ev) {
     if (ev.target.id === 'brand-find') filterBrandList(ev.target.value);
@@ -537,62 +810,121 @@
       clearTimeout(suggT);
       suggT = setTimeout(function () {
         suggestions(v);
-        // Search as you type while on the shop; other pages wait for Enter.
-        if (lastRoute === 'shop' && v.trim() !== STATE.q) { var st = copyState(); st.q = v.trim(); setState(st); }
+        // On a listing page the results follow the typing; elsewhere Enter opens the search page.
+        if (STATE && $('#grid, .empty-state') && (STATE.kind === 'search' || STATE.kind === 'shop') && v.trim() !== STATE.q) { var st = copyState(); st.q = v.trim(); PEND = null; setState(st); }
       }, 180);
     }
   });
   $('#searchform').addEventListener('submit', function (ev) {
-    ev.preventDefault();
-    clearTimeout(suggT); closeSugg();
-    var v = $('#q').value.trim();
-    var st = readState({}); st.q = v; st.sort = STATE.sort;
-    if (lastRoute === 'shop') setState(st); else location.hash = stateHash(st);
-    $('#q').blur();
+    ev.preventDefault(); clearTimeout(suggT); closeSugg();
+    var v = qInput.value.trim();
+    if (!v) return;
+    go(U('/search', { q: v }));
+    qInput.blur();
   });
-  $('#q').addEventListener('focus', function () { if (sugg.innerHTML) sugg.hidden = false; });
+  qInput.addEventListener('focus', function () { if (sugg.innerHTML && qInput.value.trim().length >= 2) { sugg.hidden = false; qInput.setAttribute('aria-expanded', 'true'); } });
+  qInput.addEventListener('keydown', function (ev) {
+    if (sugg.hidden) return;
+    var opts = $$('a', sugg), i = opts.findIndex(function (a) { return a.classList.contains('on'); });
+    if (ev.key === 'ArrowDown' || ev.key === 'ArrowUp') {
+      ev.preventDefault(); i = ev.key === 'ArrowDown' ? Math.min(i + 1, opts.length - 1) : Math.max(i - 1, 0);
+      opts.forEach(function (a, k) { a.classList.toggle('on', k === i); });
+    } else if (ev.key === 'Enter' && i >= 0) { ev.preventDefault(); go(opts[i].getAttribute('href')); }
+  });
+
   document.addEventListener('click', function (ev) {
+    var a = ev.target.closest('a[href]');
+    // Internal links render in place; everything else is left to the browser.
+    if (a && !a.hasAttribute('data-term') && !a.closest('.glossary') && a.origin === location.origin && a.pathname.indexOf(BASE_PATH) === 0 && !a.target && !a.hasAttribute('download') && !ev.metaKey && !ev.ctrlKey && !ev.shiftKey && !ev.altKey && ev.button === 0) {
+      if (a.hasAttribute('data-jump')) {
+        ev.preventDefault(); var el = document.getElementById(a.getAttribute('data-jump'));
+        if (el) { if (el.tagName === 'DETAILS') el.open = true; el.scrollIntoView(); el.setAttribute('tabindex', '-1'); el.focus({ preventScroll: true }); }
+        return;
+      }
+      if (a.getAttribute('href').charAt(0) === '#') return;
+      ev.preventDefault();
+      if (!ev.target.closest('.search')) closeSugg();
+      go(a.pathname + a.search + a.hash);
+      return;
+    }
     if (!ev.target.closest('.search')) closeSugg();
     var t = ev.target.closest('button, a');
-    if (!t) return;
+    if (!t) { if (!ev.target.closest('#cats')) closeMegas(); return; }
     if (t.matches('[data-clear]')) {
-      var st = copyState(), f = t.getAttribute('data-clear');
-      if (f === 'q') st.q = ''; else st[f] = st[f].filter(function (x) { return x !== t.getAttribute('data-val'); });
-      setState(st);
-    } else if (t.id === 'clear-all' || t.id === 'clear-all-2') {
-      var s0 = readState({}); s0.sort = STATE.sort; s0.misses = STATE.misses; setState(s0);
-    } else if (t.id === 'toggle-misses') {
-      var s1 = copyState(); s1.misses = !s1.misses; setState(s1);
-    } else if (t.id === 'rules-reset') {
-      C.criteria.forEach(function (c) { RULES[c.id] = !!c['default']; }); STRICT = false; saveRules(); rerender();
-    } else if (t.id === 'open-rules') {
-      ev.preventDefault(); showRules();
-    } else if (t.id === 'side-open') {
-      openSide(true);
-    } else if (t.id === 'side-close') {
-      closeSide(true);
+      var st = copyState(), f = t.getAttribute('data-clear'), v = t.getAttribute('data-val');
+      if (f === 'q') st.q = ''; else if (f === 'crit') { if (v === 'strict') st.strict = false; else st.crit[v] = false; } else st[f] = st[f].filter(function (x) { return x !== v; });
+      PEND = null; setState(st, true);
+    } else if (t.matches('[data-clear-all]')) {
+      var s0 = readState(STATE.kind, STATE.key, STATE.kind === 'search' ? { q: STATE.q } : {}); s0.sort = STATE.sort; s0.all = STATE.all; s0.crit = defaults(); s0.strict = false;
+      PEND = null; setState(s0, true);
+    } else if (t.matches('[data-crit-reset]')) {
+      ev.preventDefault();
+      var s4 = editing(), d = critIsDefault(s4.crit, s4.strict);
+      C.criteria.forEach(function (c) { s4.crit[c.id] = d ? false : !!c['default']; }); s4.strict = false;
+      commit(s4);
+    } else if (t.matches('[data-toggle-all]')) {
+      var s1 = copyState(); s1.all = !s1.all; PEND = null; setState(s1, true);
+    } else if (t.matches('[data-more]')) {
+      pageShown += PAGE; var n = $$('#grid .card').length; renderList(false);
+      var cards = $$('#grid .card'); if (cards[n]) { var l = $('.card-link', cards[n]); if (l) l.focus({ preventScroll: true }); }
+    } else if (t.matches('[data-more-opts]')) {
+      var w = t.previousElementSibling; if (w) { w.hidden = false; w.setAttribute('data-shown', '1'); } t.hidden = true;
+    } else if (t.matches('[data-drawer-open]')) {
+      PEND = copyState(); openDrawer(true);
+    } else if (t.matches('[data-drawer-close]')) {
+      PEND = null; closeDrawer(true); renderList(false);
+    } else if (t.matches('[data-drawer-apply]')) {
+      var p2 = PEND; PEND = null; closeDrawer(true); if (p2) setState(p2, true);
+    } else if (t.matches('[data-save]')) {
+      listToggle(SAVED_KEY, t.getAttribute('data-save'));
+      var on = listGet(SAVED_KEY).indexOf(t.getAttribute('data-save')) >= 0;
+      $$('[data-save="' + t.getAttribute('data-save') + '"]').forEach(function (b) { b.setAttribute('aria-pressed', on); var s = b.querySelector('span'); if (s) s.textContent = on ? 'Saved' : 'Save'; b.setAttribute('aria-label', (on ? 'Remove from saved: ' : 'Save: ') + b.getAttribute('aria-label').replace(/^(Remove from saved|Save): /, '')); });
+      announce(on ? 'Saved' : 'Removed from saved'); badgeCounts();
+      if (currentPath() === '/saved') renderSaved();
+    } else if (t.matches('[data-compare]')) {
+      var cid = t.getAttribute('data-compare');
+      if (!listToggle(CMP_KEY, cid, 4)) { announce('Compare holds four products; remove one first.'); t.textContent = 'Compare is full (4)'; return; }
+      var inC = listGet(CMP_KEY).indexOf(cid) >= 0;
+      $$('[data-compare="' + cid + '"]').forEach(function (b) { b.setAttribute('aria-pressed', inC); var s = b.querySelector('span'); if (s) s.textContent = inC ? 'In compare' : 'Compare'; });
+      announce(inC ? 'Added to compare' : 'Removed from compare'); badgeCounts();
+      if (currentPath() === '/compare') renderCompare();
+    } else if (t.matches('[data-compare-clear]')) {
+      store(CMP_KEY, []); badgeCounts(); if (currentPath() === '/compare') renderCompare();
+    } else if (t.matches('[data-qv]')) {
+      openQuickView(t.getAttribute('data-qv'), t);
+    } else if (t.matches('[data-qv-close]')) {
+      closeQuickView();
+    } else if (t.matches('[data-zoom]')) {
+      openLightbox(t.getAttribute('data-zoom'), $('img', t) && $('img', t).alt);
+    } else if (t.id === 'menu-open') {
+      openMenu();
+    } else if (t.id === 'menu-close') {
+      closeMenu(true);
+    } else if (t.matches('#cats .cat-item[data-dept] > .cat-a')) {
+      var item = t.parentNode, was = item.classList.contains('open');
+      closeMegas(); if (!was) { item.classList.add('open'); t.setAttribute('aria-expanded', 'true'); }
     } else if (t.id === 'totop') {
-      window.scrollTo({ top: 0, behavior: 'smooth' }); var m = $('#main'); if (m) m.focus();
-    } else if (t.hasAttribute('data-jump')) {
-      ev.preventDefault(); var el = document.getElementById(t.getAttribute('data-jump')); if (el) { el.scrollIntoView(); el.setAttribute('tabindex', '-1'); el.focus({ preventScroll: true }); }
+      window.scrollTo({ top: 0, behavior: 'smooth' }); main.focus({ preventScroll: true });
     }
   });
-  function showRules() {
-    var p = $('[data-panel="rules"]'); if (!p) return;
-    p.open = true; openPanels.rules = true;
-    if (window.matchMedia('(max-width: 900px)').matches) openSide(false);
-    p.scrollIntoView({ block: 'start' });
-    var first = p.querySelector('input'); if (first) first.focus({ preventScroll: true });
-  }
+  scrim.addEventListener('click', closeQuickView);
   document.addEventListener('keydown', function (ev) {
-    if (ev.key === 'Escape') { if (!sugg.hidden) closeSugg(); else if (document.body.classList.contains('side-on')) closeSide(true); }
+    if (ev.key === 'Escape') {
+      if (!sugg.hidden) closeSugg();
+      else if ($('.lightbox')) { $('.lightbox').remove(); document.body.classList.remove('no-scroll'); }
+      else if (!qv.hidden) closeQuickView();
+      else if (document.body.classList.contains('drawer-on')) { PEND = null; closeDrawer(true); renderList(false); }
+      else if ($('#menu').classList.contains('open')) closeMenu(true);
+      else if ($$('#cats .cat-item.open').length) closeMegas();
+    }
     trapTab(ev);
   });
   var toTop = document.getElementById('totop');
-  window.addEventListener('scroll', function () { toTop.hidden = window.scrollY < 600; }, { passive: true });
+  window.addEventListener('scroll', function () { toTop.hidden = window.scrollY < 800; }, { passive: true });
+  window.addEventListener('popstate', function () { if (lastUrl !== null) scrollMem[lastUrl] = window.scrollY; route(); });
 
   // ---------- glossary popover ----------
-  var pop = document.getElementById('gpop'), cur = null, hoverT = null;
+  var pop = document.getElementById('gpop'), cur = null, popT = null;
   var fine = window.matchMedia && window.matchMedia('(hover: hover) and (pointer: fine)').matches;
   function place(a) {
     var r = a.getBoundingClientRect(), w = pop.offsetWidth, vw = document.documentElement.clientWidth;
@@ -602,12 +934,12 @@
     pop.style.top = (below ? r.bottom + window.scrollY + 8 : r.top + window.scrollY - pop.offsetHeight - 8) + 'px';
   }
   function openPop(a, id, also) {
-    var g = TERMS[id];
+    var g = TERMS[id]; if (!g) return;
     var others = (also || []).filter(function (k) { return TERMS[k] && k !== id; });
     pop.innerHTML = '<button type="button" class="x" aria-label="Close">&times;</button><h4 id="gpop-h">' + esc(g.term) + '</h4><p>' + esc(g.definition) + '</p>' +
       (g.on_this_site ? '<p class="lab">On this site</p><p>' + esc(g.on_this_site) + '</p>' : '') +
-      '<p class="gpop-links"><a class="more" href="#/glossary/' + id + '">Full entry and sources →</a>' +
-      (others.length ? '<span class="also">Also in this chip: ' + others.map(function (k) { return '<a href="#/glossary/' + k + '" data-term="' + k + '" data-also="' + [id].concat(others).join(',') + '">' + esc(TERMS[k].term) + '</a>'; }).join(', ') + '</span>' : '') + '</p>';
+      '<p class="gpop-links"><a class="more" href="' + U('/glossary/' + id) + '">Full entry and sources →</a>' +
+      (others.length ? '<span class="also">Also here: ' + others.map(function (k) { return '<a href="' + U('/glossary/' + k) + '" data-term="' + k + '" data-also="' + [id].concat(others).join(',') + '">' + esc(TERMS[k].term) + '</a>'; }).join(', ') + '</span>' : '') + '</p>';
     pop.hidden = false; place(a);
     if (cur && cur !== a) cur.setAttribute('aria-expanded', 'false');
     cur = a; a.setAttribute('aria-expanded', 'true'); a.setAttribute('aria-controls', 'gpop');
@@ -631,13 +963,13 @@
     }
     if (!ev.target.closest('#gpop')) closePop(false);
   }, true);
-  document.addEventListener('keydown', function (ev) { if (ev.key === 'Escape') closePop(true); });
+  document.addEventListener('keydown', function (ev) { if (ev.key === 'Escape' && !pop.hidden) closePop(true); });
   if (fine) {
     document.addEventListener('mouseover', function (ev) {
       var a = ev.target.closest && ev.target.closest('a[data-term]');
-      clearTimeout(hoverT);
-      if (a && a !== cur && !a.closest('#gpop') && TERMS[a.getAttribute('data-term')] && !a.closest('.glossary')) hoverT = setTimeout(function () { openPop(a, a.getAttribute('data-term'), alsoOf(a)); a.removeAttribute('data-click'); }, 250);
-      else if (!a && !ev.target.closest('#gpop') && cur && !pop.hidden && cur.getAttribute('data-click') !== '1') hoverT = setTimeout(function () { closePop(false); }, 300);
+      clearTimeout(popT);
+      if (a && a !== cur && !a.closest('#gpop') && TERMS[a.getAttribute('data-term')] && !a.closest('.glossary')) popT = setTimeout(function () { openPop(a, a.getAttribute('data-term'), alsoOf(a)); a.removeAttribute('data-click'); }, 250);
+      else if (!a && !ev.target.closest('#gpop') && cur && !pop.hidden && cur.getAttribute('data-click') !== '1') popT = setTimeout(function () { closePop(false); }, 300);
     });
   }
   window.addEventListener('resize', function () { if (cur && !pop.hidden) place(cur); });
@@ -648,25 +980,30 @@
   function useGlossary(g) {
     GLOSS = g;
     if (GLOSS) GLOSS.sections.forEach(function (s) { s.terms.forEach(function (t) { TERMS[t.id] = t; }); });
-    // Term links appear once the glossary is here; refresh the page that is showing.
-    var p = parseHash().parts;
-    if (p[0] === 'p') renderProduct(decodeURIComponent(p[1]), true);
-    else if (p[0] === 'glossary') renderGlossary(p[1]);
-    else if (!p[0]) renderShop(true);
+    var key = currentPath().split('/').filter(Boolean)[0] || '';
+    if (key === 'p') {
+      var open = $$('.acc').map(function (d, i) { return d.open ? i : -1; }); // keep the accordions as the visitor left them
+      renderProduct(decodeURIComponent(currentPath().split('/')[2]), true);
+      $$('.acc').forEach(function (d, i) { d.open = open[i] >= 0; });
+    }
+    else if (key === 'glossary') renderGlossary(currentPath().split('/')[2]);
+    else if (key === '') renderHome();
+    else if (STATE) renderList(true);
   }
+  if (isPhone()) qInput.placeholder = 'Search';
   var data = inline('sbtt-data'), gloss = inline('sbtt-glossary');
-  (data ? Promise.resolve(data) : get('data.json')).then(function (d) {
+  (data ? Promise.resolve(data) : get(asset('data.json'))).then(function (d) {
     C = S.build(d);
-    loadRules();
-    $('#depts').innerHTML = '<a href="#/" data-dept="">All</a>' + C.groups.map(function (g) {
-      return '<a href="#/?dept=' + g.id + '" data-dept="' + g.id + '">' + esc(g.title) + '</a>';
-    }).join('');
-    window.addEventListener('hashchange', route);
+    loadPref();
+    buildNav();
+    // A deep link arrives from 404.html as ?p=/c/balls; an old link as #/p/<id>. Put the real address back.
+    var q0 = parseQuery(location.search);
+    if (q0.p) { try { history.replaceState(null, '', U(q0.p.replace(/^\//, ''))); } catch (e) {} }
+    else { var lh = legacyHash(); if (lh) { try { history.replaceState(null, '', lh); } catch (e) {} } }
     route();
-    // The glossary is not needed for the first paint; fetch it after.
     if (gloss) useGlossary(gloss);
-    else get('glossary.json').then(useGlossary, function () { useGlossary(null); });
+    else get(asset('glossary.json')).then(useGlossary, function () { useGlossary(null); });
   }).catch(function (e) {
-    main.innerHTML = '<div class="page"><h1>Couldn\'t load the catalog</h1><p>' + esc(e.message) + '</p></div>';
+    main.innerHTML = '<div class="wrap"><div class="page"><h1>Couldn’t load the catalog</h1><p>' + esc(e.message) + '</p></div></div>';
   });
 })();
