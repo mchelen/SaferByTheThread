@@ -1,13 +1,15 @@
 # Publishes the site to GitHub Pages: `main` at the root, and every open pull request at pr/<number>/.
 # Runs on pushes to main and on pull request changes, and always rebuilds the whole site from the
 # current state of main and the open PRs, so one deployment never removes another's preview.
-# Pages must be set to "Source: GitHub Actions" in Settings → Pages.
+# It uses pull_request_target so the deployment is made from main (the github-pages environment only
+# allows main by default) and so this file, not the PR's copy, is what runs; PR branches are only
+# unpacked with `git archive`, never executed. Pages must be set to "Source: GitHub Actions".
 name: Deploy to GitHub Pages
 
 on:
   push:
     branches: [main]
-  pull_request:
+  pull_request_target:
     types: [opened, synchronize, reopened, closed]
   workflow_dispatch:
 
@@ -81,7 +83,7 @@ jobs:
 
   comment:
     # Leaves (or updates) one comment on the pull request with its preview link.
-    if: github.event_name == 'pull_request' && github.event.action != 'closed'
+    if: github.event_name == 'pull_request_target' && github.event.action != 'closed'
     needs: deploy
     runs-on: ubuntu-latest
     steps:
