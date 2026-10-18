@@ -1,40 +1,103 @@
+# Publishes the site to GitHub Pages: `main` at the root, and every open pull request at pr/<number>/.
+# Runs on pushes to main and on pull request changes, and always rebuilds the whole site from the
+# current state of main and the open PRs, so one deployment never removes another's preview.
+# It uses pull_request_target so the deployment is made from main (the github-pages environment only
+# allows main by default) and so this file, not the PR's copy, is what runs; PR branches are only
+# unpacked with `git archive`, never executed. Pages must be set to "Source: GitHub Actions".
 name: Deploy to GitHub Pages
 
 on:
   push:
     branches: [main]
+  pull_request_target:
+    types: [opened, synchronize, reopened, closed]
   workflow_dispatch:
 
 permissions:
   contents: read
   pages: write
   id-token: write
+  pull-requests: write
 
 concurrency:
   group: pages
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
-  check:
+  build:
     runs-on: ubuntu-latest
+    outputs:
+      previews: ${{ steps.assemble.outputs.previews }}
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-      - run: node tools/check.js
+      - name: Assemble main and open PR previews
+        id: assemble
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          rm -rf _site && mkdir _site
+          git fetch --quiet origin main
+          git archive origin/main | tar -x -C _site
+          rm -rf _site/.github _site/tests _site/tools _site/research
+          # Previews for every open pull request from this repository (not forks).
+          previews=""
+          for n in $(gh pr list --state open --json number,headRepositoryOwner,headRefName \
+                      --jq '.[] | select(.headRepositoryOwner.login == "${{ github.repository_owner }}") | .number'); do
+            ref=$(gh pr view "$n" --json headRefName --jq .headRefName)
+            git fetch --quiet origin "$ref" || continue
+            mkdir -p "_site/pr/$n"
+            git archive FETCH_HEAD | tar -x -C "_site/pr/$n"
+            rm -rf "_site/pr/$n/.github" "_site/pr/$n/tests" "_site/pr/$n/tools" "_site/pr/$n/research"
+            # Old single-page layout (before the shop redesign) has no index.html; nothing to preview.
+            [ -f "_site/pr/$n/index.html" ] || { rm -rf "_site/pr/$n"; continue; }
+            previews="$previews $n"
+          done
+          echo "previews=$previews" >> "$GITHUB_OUTPUT"
+          # No index.html at the root (main still carries the old layout) → placeholder listing the previews.
+          if [ ! -f _site/index.html ]; then
+            { echo '<!doctype html><meta charset="utf-8"><title>Saved by the Thread</title><h1>Saved by the Thread</h1><p>The site has not been published from main yet.</p><ul>'
+              for n in $previews; do echo "<li><a href=\"pr/$n/\">Preview of pull request #$n</a></li>"; done
+              echo '</ul>'; } > _site/index.html
+          fi
+          du -sh _site
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
 
   deploy:
-    needs: check
+    needs: build
     runs-on: ubuntu-latest
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/configure-pages@v5
-      - uses: actions/upload-pages-artifact@v3
-        with:
-          path: .
       - id: deployment
         uses: actions/deploy-pages@v4
+
+  comment:
+    # Leaves (or updates) one comment on the pull request with its preview link.
+    if: github.event_name == 'pull_request_target' && github.event.action != 'closed'
+    needs: deploy
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/github-script@v7
+        env:
+          PAGE_URL: ${{ needs.deploy.outputs.page_url }}
+        with:
+          script: |
+            const marker = '<!-- pr-preview -->';
+            const base = (process.env.PAGE_URL || `https://${context.repo.owner}.github.io/${context.repo.repo}/`).replace(/\/?$/, '/');
+            const url = `${base}pr/${context.issue.number}/`;
+            const sha = context.payload.pull_request.head.sha.slice(0, 7);
+            const body = `${marker}\n**Preview:** ${url}\n\nBuilt from ${sha}. Updated on every push; removed when the pull request closes.`;
+            const { data: comments } = await github.rest.issues.listComments({ ...context.repo, issue_number: context.issue.number, per_page: 100 });
+            const mine = comments.find(c => c.body && c.body.startsWith(marker));
+            if (mine) await github.rest.issues.updateComment({ ...context.repo, comment_id: mine.id, body });
+            else await github.rest.issues.createComment({ ...context.repo, issue_number: context.issue.number, body });
