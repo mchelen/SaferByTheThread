@@ -187,8 +187,100 @@ test('report has a summary line and tables', () => {
   ];
   const md = P.buildReport(rows, '2026-10-19');
   assert.match(md, /^# Price check: 2026-10-19/);
-  assert.match(md, /Checked 4 products: 2 prices found, 1 changed, 1 not found, 1 errors\./);
-  assert.match(md, /\| b \| \[Rattle\]\(https:\/\/x\.test\/p\) \| X \| \$10 \(\$10\) \| \$12 \| meta \| \$12 \|/);
+  assert.match(md, /Checked 4 products: 2 prices found, 1 changed, 0 need a look, 1 not found, 1 errors\./);
+  assert.match(md, /\| b \| \[Rattle\]\(https:\/\/x\.test\/p\) \| X \| \$10 \(\$10\) \| \$12 \| — \| meta \| \$12 \|/);
   assert.match(md, /\| c \| .* \| error: HTTP 403 \(\.js HTTP 404\) \|/);
   assert.match(md, /\| d \| .* \| not found \|/);
+});
+
+const WENDY = { product: { id: 1, variants: [
+  { id: 11, title: 'Puddle 16x32', price: '54.00', available: true },
+  { id: 12, title: 'Crib 27x52', price: '129.00', available: true },
+  { id: 13, title: 'Twin 38x80', price: '229.00', available: true } ] } };
+const ZION = { variants: [
+  { id: 1, title: 'Soft Sole / 1', price: 5900, available: true }, { id: 2, title: 'Soft Sole / 2', price: 5900, available: true },
+  { id: 3, title: 'Hard Sole / 3', price: 6500, available: true }, { id: 4, title: 'Hard Sole / 4', price: 6500, available: false } ] };
+const BOOTS = { variants: [
+  { id: 1, title: 'Green / UK 3/EU 20/USA 4', price: 4100, available: true }, { id: 2, title: 'Green / UK 4/EU 21/USA 5', price: 4100, available: true } ] };
+
+test('shopifyVariants lists every priced variant with its title', () => {
+  const v = P.shopifyVariants(WENDY);
+  assert.deepEqual(v.map(x => [x.title, x.amount, x.source]), [['Puddle 16x32', 54, 'shopify.json'], ['Crib 27x52', 129, 'shopify.json'], ['Twin 38x80', 229, 'shopify.json']]);
+  assert.equal(P.shopifyVariants(ZION)[0].amount, 59);
+  assert.deepEqual(P.shopifyVariants({}), []);
+  const opts = P.shopifyVariants({ variants: [{ id: 9, option1: 'Red', option2: 'L', price: 1000 }] });
+  assert.equal(opts[0].title, 'Red / L');
+});
+
+test('nameTokens folds, joins dimensions and drops filler words', () => {
+  assert.deepEqual(P.nameTokens('Crib pad, 28 x 52 in'), ['crib', 'pad', '28x52']);
+  assert.deepEqual(P.nameTokens('Zion Moccasin Baby Shoe, Soft Sole (sizes 3-5)'), ['zion', 'moccasin', 'baby', 'shoe', 'soft', 'sole', '3-5']);
+  assert.deepEqual(P.nameTokens('Green / UK 3/EU 20/USA 4'), ['green', 'uk', '3', 'eu', '20', 'usa', '4']);
+});
+
+test('pickVariant: one price needs no choosing', () => {
+  const r = P.pickVariant(P.shopifyVariants(BOOTS), { name: 'Rain Boots (USA 6-7)', url: 'https://x.test/products/boots', price: '£41.00' });
+  assert.equal(r.how, 'one price');
+  assert.equal(r.variant.amount, 41);
+});
+
+test('pickVariant: words shared with the product name choose the size', () => {
+  const vs = P.shopifyVariants(WENDY);
+  const crib = P.pickVariant(vs, { name: 'Crib pad, 28 x 52 in', url: 'https://x.test/products/pad', price: '$129' });
+  assert.deepEqual([crib.how, crib.variant.title], ['name', 'Crib 27x52']);
+  const puddle = P.pickVariant(vs, { name: 'Puddle pad, 16 x 32 in', url: 'https://x.test/products/pad', price: '$54' });
+  assert.deepEqual([puddle.how, puddle.variant.title], ['name', 'Puddle 16x32']);
+  const soft = P.pickVariant(P.shopifyVariants(ZION), { name: 'Zion Moccasin Baby Shoe, Soft Sole (sizes 3-5)', url: 'https://x.test/products/zion', price: '$59.00' });
+  assert.deepEqual([soft.how, soft.variant.amount], ['name', 59]);
+  const hard = P.pickVariant(P.shopifyVariants(ZION), { name: 'Zion Moccasin Baby Shoe, Hard Sole (sizes 3-5)', url: 'https://x.test/products/zion', price: '$65.00' });
+  assert.deepEqual([hard.how, hard.variant.amount], ['name', 65]);
+});
+
+test('pickVariant: a ?variant= id or a variant hint wins over the name', () => {
+  const vs = P.shopifyVariants(WENDY);
+  const byUrl = P.pickVariant(vs, { name: 'Crib pad', url: 'https://x.test/products/pad?variant=13', price: '$229' });
+  assert.deepEqual([byUrl.how, byUrl.variant.title], ['url', 'Twin 38x80']);
+  const byHint = P.pickVariant(vs, { name: 'Wool pad', variant: '16 x 32', url: 'https://x.test/products/pad', price: '$54' });
+  assert.deepEqual([byHint.how, byHint.variant.title], ['hint', 'Puddle 16x32']);
+  const miss = P.pickVariant(vs, { name: 'Wool pad', variant: 'Queen', url: 'https://x.test/products/pad', price: '$54' });
+  assert.equal(miss.variant, null);
+  assert.equal(miss.how, 'hint matches nothing');
+});
+
+test('pickVariant: the recorded price settles it when names do not; otherwise ambiguous', () => {
+  const vs = P.shopifyVariants(WENDY);
+  const byPrice = P.pickVariant(vs, { name: 'Wool mattress pad', url: 'https://x.test/products/pad', price: '$129' });
+  assert.deepEqual([byPrice.how, byPrice.variant.title], ['price', 'Crib 27x52']);
+  const amb = P.pickVariant(vs, { name: 'Wool mattress pad', url: 'https://x.test/products/pad', price: '$99' });
+  assert.deepEqual([amb.variant, amb.how, amb.count], [null, 'ambiguous', 3]);
+  assert.equal(P.pickVariant([], {}), null);
+});
+
+test('jsonLdOffers lists offers with names, ProductGroup variants and aggregate low/high', () => {
+  const group = `<script type="application/ld+json">{"@type":"ProductGroup","name":"Pad","hasVariant":[
+    {"@type":"Product","name":"Crib 27x52","offers":{"@type":"Offer","price":"129.00","priceCurrency":"USD"}},
+    {"@type":"Product","name":"Puddle 16x32","offers":{"@type":"Offer","price":"54.00","priceCurrency":"USD"}}]}</script>`;
+  assert.deepEqual(P.jsonLdOffers(group).map(o => [o.title, o.amount, o.currency]), [['Crib 27x52', 129, 'USD'], ['Puddle 16x32', 54, 'USD']]);
+  assert.deepEqual(P.jsonLdOffers(JSON_LD_OFFER_LIST).map(o => o.amount), [44.5, 30]);
+  assert.deepEqual(P.jsonLdOffers(JSON_LD_GRAPH).map(o => o.amount), [653, 899]);
+  assert.deepEqual(P.jsonLdOffers(JSON_LD_PAGE).map(o => [o.title, o.amount]), [['', 29.95]]);
+  assert.deepEqual(P.jsonLdOffers('<html></html>'), []);
+  assert.equal(P.distinctAmounts(P.jsonLdOffers(JSON_LD_GRAPH)), 2);
+});
+
+test('compare reports an ambiguous page as "check" and the report lists it', () => {
+  const amb = { count: 3, min: 54, max: 229, currency: 'USD', how: 'ambiguous', titles: ['Puddle 16x32 $54', 'Crib 27x52 $129', 'Twin 38x80 $229'] };
+  const c = P.compare('$99', null, null, amb);
+  assert.equal(c.status, 'check');
+  assert.match(c.detail, /3 prices on the page, \$54 to \$229/);
+  const product = { name: 'Wool pad', url: 'https://x.test/p', store: 'X', price: '$99' };
+  const rows = [
+    Object.assign({ entry: 'pad', product, found: null, ambiguous: amb, notes: [] }, c),
+    { entry: 'crib', product, status: 'changed', detail: '', notes: [], found: { amount: 119, currency: 'USD', source: 'shopify.js', variant: 'Crib 27x52', how: 'name' }, recordedUsd: 129, newText: '$119' }
+  ];
+  const md = P.buildReport(rows, '2026-10-19');
+  assert.match(md, /Checked 2 products: 1 prices found, 1 changed, 1 need a look, 0 not found, 0 errors\./);
+  assert.match(md, /## Needs a look/);
+  assert.match(md, /\| pad \| .* \| \$99 \| Puddle 16x32 \$54; Crib 27x52 \$129; Twin 38x80 \$229 \|/);
+  assert.match(md, /\| crib \| .* \| \$119 \| Crib 27x52 \(by name\) \| shopify\.js \| \$119 \|/);
 });
