@@ -14,6 +14,7 @@ All notable changes to the site are listed here. The format follows [Keep a Chan
 - A usability review of the redesign in `docs/usability-review.md`.
 
 ### Changed
+- Usability pass: material rules first in the sidebar with a count of switches on; cards show only what an item misses or how many details aren't stated; facet counts show how many items a rule hides; search as you type with brand, type, material and glossary suggestions; a Made with summary and working rule switches on the product page; one dotted underline per checklist chip; the phone filter drawer is a dialog with focus kept inside; "Ships from" naming throughout; back-to-top button, favicon, scroll position kept on Back; the glossary loads after the first paint.
 - Site renamed "Saved by the Thread" with the tagline "Reading the fine print so you don't have to." (#1)
 
 ### Removed
