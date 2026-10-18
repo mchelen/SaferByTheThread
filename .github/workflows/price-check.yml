@@ -1,0 +1,84 @@
+name: Price check
+
+# Fetches every store page in data.json, compares the price with the recorded
+# one and opens (or updates) a pull request from prices/auto-update into main
+# with the report as its body. See tools/prices.js and README.md.
+#
+# For `gh pr create` to work with the default GITHUB_TOKEN, enable
+# "Allow GitHub Actions to create and approve pull requests" in the repository
+# Settings → Actions → General → Workflow permissions.
+
+on:
+  schedule:
+    - cron: '0 9 * * 1'   # Mondays 09:00 UTC
+  workflow_dispatch:
+    inputs:
+      limit:
+        description: 'Only check the first N products (leave empty for all)'
+        required: false
+        default: ''
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: price-check
+  cancel-in-progress: false
+
+jobs:
+  prices:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Unit tests
+        run: node --test 'tests/*.test.js'
+
+      - name: Check prices
+        env:
+          LIMIT: ${{ inputs.limit }}
+        run: |
+          ARGS=""
+          if [ -n "$LIMIT" ]; then ARGS="--limit $LIMIT"; fi
+          node tools/prices.js --write --report price-report.md $ARGS
+
+      - name: Validate data
+        run: node tools/check.js
+
+      - name: Open or update the pull request
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BRANCH: prices/auto-update
+        run: |
+          if git diff --quiet data.json; then
+            echo "data.json unchanged; nothing to propose."
+            exit 0
+          fi
+          DATE=$(date -u +%Y-%m-%d)
+          TITLE="Price check: $DATE"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -B "$BRANCH"
+          git add data.json
+          git commit -m "$TITLE" -m "Automated price check; see the pull request body for the report."
+          git push --force --set-upstream origin "$BRANCH"
+          EXISTING=$(gh pr list --head "$BRANCH" --base main --state open --json number --jq '.[0].number // empty')
+          if [ -n "$EXISTING" ]; then
+            gh pr edit "$EXISTING" --title "$TITLE" --body-file price-report.md
+            echo "Updated pull request #$EXISTING"
+          else
+            gh pr create --base main --head "$BRANCH" --title "$TITLE" --body-file price-report.md
+          fi
+
+      - name: Keep the report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: price-report
+          path: price-report.md
+          if-no-files-found: ignore
