@@ -1,0 +1,183 @@
+/* Saved by the Thread: turns data.json (schema 3) into a flat product catalog with the facets the shop filters on.
+   Runs in the browser (window.SBTT) and in Node (module.exports) so tools/check can test the same rules. */
+(function (root) {
+  'use strict';
+
+  // Approximate conversions for prices quoted in other currencies; such prices are shown with "about".
+  var RATES = { GBP: 1.34, EUR: 1.16, NZD: 0.58, CAD: 0.72 };
+
+  var PRICE_BANDS = [
+    { id: 'u25', label: 'Under $25', min: 0, max: 25 },
+    { id: '25-50', label: '$25 to $50', min: 25, max: 50 },
+    { id: '50-100', label: '$50 to $100', min: 50, max: 100 },
+    { id: '100-250', label: '$100 to $250', min: 100, max: 250 },
+    { id: '250-500', label: '$250 to $500', min: 250, max: 500 },
+    { id: '500+', label: '$500 and up', min: 500, max: Infinity }
+  ];
+
+  var AGE_BANDS = [
+    { id: 'birth', label: 'From birth', test: function (m) { return m === 0; } },
+    { id: '12m', label: '12 months and up', test: function (m) { return m > 0 && m <= 12; } },
+    { id: '18m', label: '18 months and up', test: function (m) { return m > 12 && m <= 18; } },
+    { id: '2y', label: '2 years and up', test: function (m) { return m > 18 && m <= 24; } },
+    { id: '3y', label: '3 years and up', test: function (m) { return m > 24; } }
+  ];
+
+  // "Made with" facet, read from the Made with and Flagged parts rows. Leather and latex come from `contains`.
+  var MATERIALS = [
+    { id: 'wool', label: 'Wool or felt', rx: /wool|merino|felt|mohair|melton/i },
+    { id: 'cotton', label: 'Cotton', rx: /cotton|terry/i },
+    { id: 'linen', label: 'Linen or hemp', rx: /linen|hemp|flax(?!seed)/i },
+    { id: 'silk', label: 'Silk', rx: /silk/i },
+    { id: 'wood', label: 'Wood', rx: /wood|maple|beech|birch|pine|walnut|cherry|oak\b|poplar|\bash\b|hardwood|bamboo|plywood/i },
+    { id: 'latex', label: 'Natural rubber or latex', contains: 'latex' },
+    { id: 'leather', label: 'Leather, suede or sheepskin', contains: 'leather' },
+    { id: 'plant-fill', label: 'Coir, kapok or buckwheat', rx: /coir|kapok|buckwheat/i },
+    { id: 'silicone', label: 'Silicone', rx: /silicone/i },
+    { id: 'metal', label: 'Metal', rx: /stainless|steel|metal|\bbell\b|brass|alumin/i },
+    { id: 'synthetic', label: 'Plastic or synthetics', rx: /plastic|polyester|polypropylene|polyethylene|polycarbonate|pvc|vinyl|\btpu\b|\btpr\b|\beva\b|nylon|acrylic|polyurethane|synthetic|\bpla\b|(?<!latex )foam(?! loop)|micro-fleece|spandex|elastane/i }
+  ];
+
+  // Chip text -> glossary term id. Checked in order; a chip can link several terms, never overlapping.
+  var TERM_KEYS = [
+    ['superwash', 'superwash|shrink-proofing|machine washable|wool treatments?|treatment on the (?:merino|wool)|treatment of the wool'],
+    ['gots', 'gots'], ['gols', 'gols'], ['oeko-tex', 'oeko-tex'],
+    ['flammability', 'flame retardants?|fire barrier'],
+    ['natural-rubber', 'natural (?:vulcanised )?rubber(?: latex)?|rubber additives'],
+    ['latex-foam', '(?:natural |organic )?(?:dunlop |talalay )?latex(?! product)(?: core| insert)?|dunlop|talalay'],
+    ['plasticisers', 'phthalates?|plastici[sz]ers?'], ['pvc', 'pvc|vinyl'],
+    ['bpa', 'bpa|bps'], ['tpr', 'tpr'], ['eva', '(?:algae-based )?eva'],
+    ['synthetic-rubber', 'synthetic rubber|rubber type(?: in outsole)?(?: \\(natural or synthetic\\))?|outsole compound'],
+    ['polyurethane', 'polyurethane(?: film| foam)?|tpu|synthetic foam|(?<!pla )foam'],
+    ['polyester', 'polyester(?: binder)?|synthetic (?:batting|fill)|micro-fleece'],
+    ['platinum', 'platinum(?:-cured)?'], ['lfgb', 'lfgb'], ['arrete', 'arrêté'],
+    ['migration', '(?:published )?test report|finished-product testing|tested to us rules'],
+    ['silicone', 'silicone'],
+    ['chrome', 'chrome(?:-free)?(?: tanning)?|tanning(?: method)?'],
+    ['leather', 'leather|calfskin|suede|sheepskin'],
+    ['merino', 'merino(?: lambswool)?'], ['felt', 'felt(?:ed wool)?|wool melton|melton'],
+    ['wool', '(?:lambs)?wool|mohair'], ['organic', 'organic'], ['cotton', 'cotton'], ['linen', 'linen'],
+    ['silk', 'silk'], ['kapok', 'kapok'], ['coir', 'coir'], ['buckwheat', 'buckwheat(?: hulls)?'],
+    ['food-grade', 'food[- ]grade'], ['non-toxic', 'non-toxic'],
+    ['dyes', '(?:azo-free )?dyes?|pigments?|colou?rant|colouring|printing inks?|ink binder'],
+    ['linseed', 'linseed(?: oil)?|flaxseed(?: oil)?'], ['beeswax', 'beeswax'],
+    ['water-based', 'water-based paint|paint'],
+    ['hardwood', '(?:solid )?hardwood|plywood|particle board|fiberboard|veneer|layered wood|engineered wood|wood frame|wood type|maple|pine|beech|walnut|cherry|oak|birch|poplar|ash|solid wood'],
+    ['plastic', 'plastics?|polypropylene|polycarbonate|polyethylene|pe beans|pla|nylon|viscose|petrochemicals?|synthetics'],
+    ['hidden', '(?:seam |hem |tufting )?thread(?: fibre)?|zippers?|glues?|adhesive(?: resin)?|elastic(?:ized)?|closures?|lining|hook-and-loop|velcro'],
+    ['toy-safety', 'age rating']
+  ];
+
+  function parsePrice(text) {
+    var t = String(text || '').replace(/plus \$[\d,.]+ shipping/ig, '');
+    var foreign = /£|€|NZ\$|CAD ?\$/.test(t);
+    var num = function (s) { return parseFloat(s.replace(/,/g, '')); };
+    if (foreign) {
+      var about = t.match(/about \$([\d,.]+)/);
+      if (about) return { usd: num(about[1]), approx: true };
+      var m = t.match(/(£|€|NZ\$|CAD ?\$)\s?([\d,.]+)/);
+      if (!m) return null;
+      var cur = m[1] === '£' ? 'GBP' : m[1] === '€' ? 'EUR' : m[1] === 'NZ$' ? 'NZD' : 'CAD';
+      return { usd: Math.round(num(m[2]) * RATES[cur] * 100) / 100, approx: true };
+    }
+    var all = (t.match(/\$[\d,]+(?:\.\d+)?/g) || []).map(function (s) { return num(s.slice(1)); });
+    if (!all.length) return null;
+    return { usd: Math.min.apply(null, all), approx: /about/i.test(t) };
+  }
+
+  function money(n) {
+    return '$' + (n >= 100 ? Math.round(n).toLocaleString('en-US') : n.toFixed(2).replace(/\.00$/, ''));
+  }
+
+  function fold(s) { return String(s).normalize('NFKD').replace(/[̀-ͯ]/g, '').toLowerCase(); }
+
+  function slug(s) { return fold(s).replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, ''); }
+
+  // Status of an entry under a set of switches. Mirrors the rules described in README.md.
+  function evaluate(item, criteria, on, strict) {
+    var miss = [], unst = [];
+    criteria.forEach(function (c) {
+      var f = item.facts[c.id];
+      if (c.kind === 'contains') { if (on[c.id] && item.contains.indexOf(c.id) >= 0) miss.push(c); return; }
+      if (!on[c.id] || f === undefined) return;
+      if (f === 'no' || (c.kind === 'require' && f !== 'yes')) miss.push(c);
+      else if (f === 'unknown') { if (strict) miss.push(c); else unst.push(c); }
+    });
+    return { miss: miss, unst: unst, ok: miss.length === 0 };
+  }
+
+  function build(data) {
+    var items = [], cats = {}, groups = [], brands = {};
+    var std = {}; (data.standards || []).forEach(function (s) { std[s.id] = s; });
+    var n = 0;
+    data.groups.forEach(function (g) {
+      var gc = [];
+      g.categories.forEach(function (c) {
+        cats[c.id] = { id: c.id, title: c.title, short: c.short || c.title, intro: c.intro || '', outro: c.outro || '', group: g.id };
+        gc.push(c.id);
+        c.entries.forEach(function (e) {
+          var prods = e.products.map(function (p) {
+            var pr = parsePrice(p.price);
+            return Object.assign({}, p, { usd: pr ? pr.usd : null, approx: pr ? pr.approx : false });
+          });
+          var prices = prods.filter(function (p) { return p.usd != null; }).map(function (p) { return p.usd; });
+          var chips = e.uses.concat(e.outside || []).join(' | ');
+          var mats = MATERIALS.filter(function (m) {
+            return m.contains ? (e.contains || []).indexOf(m.contains) >= 0 : m.rx.test(chips);
+          }).map(function (m) { return m.id; });
+          var age = e.age ? AGE_BANDS.filter(function (b) { return b.test(e.age.min_months); })[0].id : 'none';
+          var ships = {};
+          prods.forEach(function (p) { ships[p.ships_from === 'US' ? 'us' : p.ships_from ? 'abroad' : 'unknown'] = 1; });
+          var item = {
+            id: e.id, n: n++, brand: e.brand, brandId: slug(e.brand), line: e.line, cat: c.id, group: g.id,
+            uses: e.uses, free: e.free, unconfirmed: e.unconfirmed, outside: e.outside || [],
+            facts: e.facts, contains: e.contains || [], standards: e.standards || [], age: e.age || null, ageBand: age,
+            quote: e.quote || '', evidence: e.evidence || '', note: e.note || '',
+            img: e.img ? 'img/' + e.img + '.jpg' : '', products: prods,
+            min: prices.length ? Math.min.apply(null, prices) : null,
+            max: prices.length ? Math.max.apply(null, prices) : null,
+            approx: prods.some(function (p) { return p.approx; }),
+            materials: mats, ships: Object.keys(ships),
+            unstatedCount: e.unconfirmed.length,
+            q: fold([e.brand, e.line, c.title, g.title].concat(e.uses, e.products.map(function (p) { return p.name + ' ' + p.store; })).join(' '))
+          };
+          items.push(item);
+          (brands[item.brandId] = brands[item.brandId] || { id: item.brandId, name: e.brand, items: [] }).items.push(item);
+        });
+      });
+      groups.push({ id: g.id, title: g.title, blurb: g.blurb, source: g.source || '', cats: gc });
+    });
+    return { items: items, cats: cats, groups: groups, brands: brands, criteria: data.criteria, standards: data.standards || [], ask: data.ask, updated: data.updated };
+  }
+
+  function priceLabel(item) {
+    if (item.min == null) return 'See store for price';
+    var a = item.approx ? 'about ' : '';
+    return item.min === item.max ? a + money(item.min) : a + money(item.min) + ' to ' + money(item.max);
+  }
+
+  // Splits chip text into [text, termId|null] runs using TERM_KEYS.
+  var compiled = null;
+  function termRuns(text, known) {
+    if (!compiled) compiled = TERM_KEYS.map(function (k) { return [k[0], new RegExp('(?<![a-zà-ÿ])(?:' + k[1] + ')(?![a-zà-ÿ])', 'gi')]; });
+    var spans = [];
+    compiled.forEach(function (k) {
+      if (known && !known[k[0]]) return;
+      var rx = k[1], m; rx.lastIndex = 0;
+      while ((m = rx.exec(text))) {
+        var a = m.index, b = a + m[0].length;
+        if (b === a) { rx.lastIndex++; continue; }
+        if (!spans.some(function (s) { return a < s[1] && s[0] < b; })) spans.push([a, b, k[0]]);
+      }
+    });
+    spans.sort(function (x, y) { return x[0] - y[0]; });
+    var out = [], pos = 0;
+    spans.forEach(function (s) { if (s[0] > pos) out.push([text.slice(pos, s[0]), null]); out.push([text.slice(s[0], s[1]), s[2]]); pos = s[1]; });
+    if (pos < text.length) out.push([text.slice(pos), null]);
+    return out;
+  }
+
+  var api = { build: build, evaluate: evaluate, parsePrice: parsePrice, priceLabel: priceLabel, money: money, termRuns: termRuns, fold: fold, slug: slug,
+              PRICE_BANDS: PRICE_BANDS, AGE_BANDS: AGE_BANDS, MATERIALS: MATERIALS };
+  if (typeof module === 'object' && module.exports) module.exports = api; else root.SBTT = api;
+})(this);
