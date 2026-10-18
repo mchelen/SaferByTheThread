@@ -4,7 +4,7 @@ Reading the fine print so you don’t have to.
 
 A static shopping-style guide to toys, beds and bedding, ice trays and footwear for babies and toddlers. Each listing shows what its maker says it is made of, what the maker says is absent, and what no page states. Visitors search, filter by product type, brand, materials, standards, age, price and where the shop is, and switch material rules on or off. The site reports what makers and stores say; it does not rate safety or risk.
 
-This repository is the source of truth for the site. Published with GitHub Pages from `main`.
+This repository is the source of truth for the site. Published with GitHub Pages from `main` at https://mchelen.github.io/SaferByTheThread/ (every open pull request gets a preview at `pr/<number>/`).
 
 ## Files
 
