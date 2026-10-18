@@ -14,7 +14,9 @@
    summary, writes a Markdown report with --report, and with --write updates
    the dollar amount in data.json (only when the recorded price text holds
    exactly one dollar amount and the found price is in USD) and stamps every
-   product whose price was found with price_checked.
+   product whose price was found with price_checked. It also reads what the
+   page says about shipping ("Free shipping on orders over $99", "$8.95
+   shipping", "calculated at checkout") into the product's `shipping` field.
 
    Exit code is always 0; blocked or broken pages are reported, not fatal.
    Node 22, no dependencies. The extraction functions are exported for tests. */
@@ -308,12 +310,31 @@ function pickVariant(variants, product) {
   }
   let r = best > 0 ? settle(hits, 'name') : null;
   if (r) return r;
-  const text = String((product && product.price) || '');
-  const recorded = FOREIGN_RX.test(text) ? [] : dollarAmounts(text);
-  const same = priced.filter(function (v) { return recorded.some(function (a) { return !isSignificant(a, v.amount); }); });
-  r = settle(same, 'price');
-  if (r) return r;
+  const recorded = recordedAmounts(product && product.price);
+  if (recorded.length >= 2) {
+    // A recorded range ("$1,295 to $1,995") is the page's own spread when both ends still match.
+    const spread = priceSpread(priced);
+    if (!isSignificant(Math.min.apply(null, recorded), spread.min) && !isSignificant(Math.max.apply(null, recorded), spread.max)) {
+      const low = priced.filter(function (v) { return v.amount === spread.min; })[0];
+      return { variant: Object.assign({}, low, { title: distinctAmounts(priced) + ' prices, ' + money(spread.min, low.currency) + ' to ' + money(spread.max, low.currency), rangeMax: spread.max }), how: 'range' };
+    }
+  } else if (recorded.length === 1) {
+    r = settle(priced.filter(function (v) { return !isSignificant(recorded[0], v.amount); }), 'price');
+    if (r) return r;
+  }
   return { variant: null, how: 'ambiguous', count: distinctAmounts(priced) };
+}
+
+// The amounts a recorded price text holds: dollar amounts, or for a text in
+// another currency the bare numbers after its symbol ("€49.90" -> 49.9).
+function recordedAmounts(text) {
+  text = String(text || '');
+  if (!FOREIGN_RX.test(text)) return dollarAmounts(text);
+  const out = [];
+  const rx = /(?:£|€|NZ\$|CAD ?\$)\s*([\d,]+(?:\.\d+)?)/g;
+  let m;
+  while ((m = rx.exec(text))) out.push(parseFloat(m[1].replace(/,/g, '')));
+  return out;
 }
 
 function priceSpread(variants) {
@@ -328,6 +349,56 @@ function shopifyHandle(url) {
     const m = u.pathname.match(/\/products\/([^/?#]+?)(?:\.js|\.json)?\/?$/);
     return m ? { origin: u.origin, handle: decodeURIComponent(m[1]) } : null;
   } catch (e) { return null; }
+}
+
+// ---------- shipping ----------
+
+// Visible text of a page: scripts, styles and tags removed, whitespace folded.
+function visibleText(html) {
+  return decodeEntities(String(html || '').replace(/<(script|style|noscript|template)\b[^>]*>[\s\S]*?<\/\1\s*>/gi, ' ').replace(/<[^>]+>/g, ' ')).replace(/\s+/g, ' ');
+}
+
+const SHIP_RANK = { 'free over': 4, flat: 3, free: 2, 'at checkout': 1 };
+
+// What a store page says about shipping, as {kind, text, threshold?, amount?}:
+// JSON-LD shippingDetails first, then the page's own words ("Free shipping on
+// orders $99+", "$8.95 flat rate shipping", "Shipping calculated at checkout").
+// The most specific statement wins; null when the page says nothing.
+function findShipping(html) {
+  if (!html) return null;
+  const found = [];
+  for (const block of jsonLdBlocks(html)) {
+    for (const node of walkObjects(block)) {
+      if (!hasType(node, 'OfferShippingDetails') || !node.shippingRate) continue;
+      for (const rate of walkObjects(node.shippingRate)) {
+        if (rate.value == null) continue;
+        const dest = JSON.stringify(node.shippingDestination || '');
+        if (dest && !/US|United States/i.test(dest)) continue;
+        const amount = parseAmount(rate.value);
+        if (amount == null) continue;
+        const cur = normCurrency(rate.currency) || 'USD';
+        if (amount === 0) found.push({ kind: 'free', text: 'Free shipping', source: 'json-ld' });
+        else found.push({ kind: 'flat', text: money(amount, cur) + ' shipping', amount, currency: cur, source: 'json-ld' });
+      }
+    }
+  }
+  const t = visibleText(html);
+  const sym = '(?:\\$|£|€)';
+  let m;
+  const overRx = new RegExp('free (?:standard |ground |economy |domestic |us |u\\.s\\. |continental u\\.?s\\.? )?shipping(?: (?:&|and) (?:free )?returns)?(?: (?:on|for|with) (?:all |us |domestic |[a-z]+ )?orders? (?:over|above|of|from)?\\s*' + sym + '\\s*(\\d+(?:\\.\\d+)?)\\+?)', 'gi');
+  while ((m = overRx.exec(t))) found.push({ kind: 'free over', threshold: parseFloat(m[1]), text: 'Free shipping on orders over $' + formatAmount(parseFloat(m[1])), source: 'page' });
+  const over2 = new RegExp('orders? (?:over|above|of) ' + sym + '\\s*(\\d+(?:\\.\\d+)?)\\+? (?:(?:get |receive |qualify for )?free(?: standard| ground)? shipping|ship(?:ped)? free)', 'gi');
+  while ((m = over2.exec(t))) found.push({ kind: 'free over', threshold: parseFloat(m[1]), text: 'Free shipping on orders over $' + formatAmount(parseFloat(m[1])), source: 'page' });
+  const flatRx = new RegExp('(?:' + sym + '\\s*(\\d+(?:\\.\\d+)?) (?:flat[- ]rate )?shipping(?! (?:protection|insurance))|flat[- ]rate shipping(?: (?:of|is|at))? ' + sym + '\\s*(\\d+(?:\\.\\d+)?))', 'gi');
+  while ((m = flatRx.exec(t))) { const a = parseFloat(m[1] || m[2]); if (a > 0) found.push({ kind: 'flat', amount: a, text: '$' + formatAmount(a) + ' shipping', source: 'page' }); }
+  if (/\bfree (?:standard |ground |economy |domestic |us |u\.s\. |continental u\.?s\.? )?shipping\b(?! (?:on|for|with|over|threshold|protection|insurance|when|if|promo|code|eligible|available|\*))/i.test(t)) found.push({ kind: 'free', text: 'Free shipping', source: 'page' });
+  if (/shipping(?:,? (?:taxes,? )?(?:and|&) (?:handling|discount codes?|discounts?))? (?:is |are |will be )?calculated at checkout/i.test(t)) found.push({ kind: 'at checkout', text: 'Shipping calculated at checkout', source: 'page' });
+  if (!found.length) return null;
+  found.sort(function (a, b) { return (SHIP_RANK[b.kind] - SHIP_RANK[a.kind]) || ((a.threshold || a.amount || 0) - (b.threshold || b.amount || 0)); });
+  const top = found[0];
+  const flat = found.filter(function (f) { return f.kind === 'flat'; })[0];
+  if (top.kind === 'free over' && flat) top.text += ', ' + flat.text.replace(' shipping', '') + ' below';
+  return top;
 }
 
 // ---------- comparison and rewriting ----------
@@ -360,7 +431,8 @@ function compare(priceText, found, fetchError, ambiguous) {
   if (recordedUsd == null) return { status: 'changed', detail: 'no recorded amount', recordedUsd, currency, assumed };
   // Same when the page agrees with any dollar amount in the text ("$185; $140.99 on sale at Babylist").
   const amounts = FOREIGN_RX.test(priceText || '') ? [recordedUsd] : dollarAmounts(priceText);
-  const changed = amounts.every(function (a) { return isSignificant(a, found.amount); });
+  let changed = amounts.every(function (a) { return isSignificant(a, found.amount); });
+  if (!changed && found.rangeMax != null && amounts.length >= 2 && isSignificant(Math.max.apply(null, amounts), found.rangeMax)) changed = true;
   return { status: changed ? 'changed' : 'same', detail: '', recordedUsd, currency, assumed };
 }
 
@@ -415,7 +487,7 @@ function errorLabel(e) {
 // One product: the page first; the Shopify endpoint when the page gave nothing
 // or more than one price, since it names every variant.
 async function checkProduct(product, wait) {
-  const result = { found: null, fetchError: null, http: null, notes: [], ambiguous: null };
+  const result = { found: null, fetchError: null, http: null, notes: [], ambiguous: null, shipping: null };
   let html = '', offers = [], fallback = null, gone = false;
   try {
     await wait(product.url);
@@ -427,7 +499,7 @@ async function checkProduct(product, wait) {
     gone = moved && isHomePage(r.url);
     if (r.ok) {
       html = r.text;
-      if (!gone) { offers = jsonLdOffers(html); fallback = findMetaPrice(html) || findItempropPrice(html); }
+      if (!gone) { offers = jsonLdOffers(html); fallback = findMetaPrice(html) || findItempropPrice(html); result.shipping = findShipping(html); }
     } else result.fetchError = 'HTTP ' + r.status;
   } catch (e) { result.fetchError = errorLabel(e); }
   const pageCurrency = findShopifyCurrency(html);
@@ -454,6 +526,7 @@ async function checkProduct(product, wait) {
     if (pick && pick.variant) {
       const v = pick.variant;
       result.found = { amount: v.amount, currency: v.currency || pageCurrency, source: v.source, variant: pick.how === 'one price' ? '' : v.title, how: pick.how };
+      if (v.rangeMax != null) result.found.rangeMax = v.rangeMax;
       result.fetchError = null;
     } else {
       result.ambiguous = Object.assign(priceSpread(cands), { count: pick.count, how: pick.how, currency: cands[0].currency || pageCurrency,
@@ -538,7 +611,7 @@ function money(n, cur) {
   return (cur === 'USD' ? '$' : cur + ' ') + amount;
 }
 
-const HOW_LABEL = { name: 'by name', hint: 'by hint', url: 'by URL', price: 'by recorded price' };
+const HOW_LABEL = { name: 'by name', hint: 'by hint', url: 'by URL', price: 'by recorded price', range: 'recorded range' };
 function variantCell(found) {
   if (!found || !found.variant) return '—';
   return found.variant + (HOW_LABEL[found.how] ? ' (' + HOW_LABEL[found.how] + ')' : '');
@@ -579,6 +652,14 @@ function buildReport(rows, date) {
     lines.push('## Prices in other currencies', '', '| Listing | Product | Store | Recorded | Found | Source |', '|---|---|---|---|---|---|');
     for (const r of other) lines.push('| ' + [r.entry, '[' + cell(r.product.name) + '](' + r.product.url + ')', r.product.store, cell(r.product.price),
       money(r.found.amount, r.found.currency) + (r.found.variant ? ' (' + cell(r.found.variant) + ')' : ''), r.found.source].map(cell).join(' | ') + ' |');
+    lines.push('');
+  }
+  const ship = rows.filter(function (r) { return r.newShipping; });
+  const shipKnown = rows.filter(function (r) { return r.shipping; }).length;
+  lines.push('## Shipping', '', shipKnown + ' of ' + rows.length + ' pages state a shipping policy' + (ship.length ? '; ' + ship.length + ' new or changed:' : '.'), '');
+  if (ship.length) {
+    lines.push('| Listing | Product | Store | Was | Now |', '|---|---|---|---|---|');
+    for (const r of ship) lines.push('| ' + [r.entry, '[' + cell(r.product.name) + '](' + r.product.url + ')', r.product.store, r.product.shipping || '—', r.newShipping].map(cell).join(' | ') + ' |');
     lines.push('');
   }
   lines.push('## Not found or errored', '');
@@ -627,7 +708,7 @@ async function main() {
   await runPool(order, opts.concurrency, async function (it) {
     const r = await checkProduct(it.product, wait);
     const c = compare(it.product.price, r.found, r.fetchError, r.ambiguous);
-    const row = Object.assign({ entry: it.entry, product: it.product, found: r.found, ambiguous: r.ambiguous, notes: r.notes, http: r.http, newText: null }, c);
+    const row = Object.assign({ entry: it.entry, product: it.product, found: r.found, ambiguous: r.ambiguous, shipping: r.shipping, notes: r.notes, http: r.http, newText: null }, c);
     rows.push(row);
     const tag = row.status.toUpperCase().padEnd(14);
     const what = r.found ? money(r.found.amount, row.currency || r.found.currency) + ' via ' + r.found.source + (r.found.variant ? ' [' + r.found.variant + ', ' + r.found.how + ']' : '') : (row.detail || '');
@@ -635,8 +716,13 @@ async function main() {
   });
   rows.sort(function (a, b) { return items.findIndex(function (i) { return i.product === a.product; }) - items.findIndex(function (i) { return i.product === b.product; }); });
 
-  let textChanges = 0;
+  let textChanges = 0, shipChanges = 0;
   for (const r of rows) {
+    if (r.shipping && r.shipping.text !== r.product.shipping) {
+      r.newShipping = r.shipping.text;
+      shipChanges++;
+      if (opts.write) r.product.shipping = r.shipping.text;
+    }
     const got = r.status === 'same' || r.status === 'changed' || r.status === 'other currency';
     if (!got) continue;
     if (r.status === 'changed' && r.currency === 'USD') {
@@ -649,7 +735,7 @@ async function main() {
     }
   }
   if (opts.write) {
-    if (textChanges) data.updated = today;
+    if (textChanges || shipChanges) data.updated = today;
     fs.writeFileSync(file, JSON.stringify(data, null, 1) + '\n');
   }
 
@@ -657,14 +743,14 @@ async function main() {
   if (opts.report) fs.writeFileSync(opts.report, report);
   console.log('');
   console.log(report.split('\n')[2]);
-  if (opts.write) console.log((textChanges ? textChanges + ' price text(s) updated' : 'no price text updated') + '; price_checked stamped on products whose price was found; data.json written');
+  if (opts.write) console.log((textChanges ? textChanges + ' price text(s) updated' : 'no price text updated') + '; ' + shipChanges + ' shipping statement(s) added or changed; price_checked stamped on products whose price was found; data.json written');
   if (opts.report) console.log('report written to ' + opts.report);
 }
 
 module.exports = {
   decodeEntities, parseAmount, normCurrency, attrs, jsonLdBlocks, findJsonLdPrice, findMetaPrice, findItempropPrice,
   extractPrice, findShopifyCurrency, parseShopifyProduct, shopifyHandle, isSignificant, compare, replaceAmount, dollarAmounts, movedAway, isHomePage,
-  formatAmount, buildReport, interleaveByHost, hostWaiter, jsonLdOffers, shopifyVariants, pickVariant, nameTokens, distinctAmounts
+  formatAmount, buildReport, interleaveByHost, hostWaiter, jsonLdOffers, shopifyVariants, pickVariant, nameTokens, distinctAmounts, recordedAmounts, findShipping, visibleText
 };
 
 if (require.main === module) {

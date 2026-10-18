@@ -14,6 +14,7 @@ All notable changes to the site are listed here. The format follows [Keep a Chan
 - A usability review of the redesign in `docs/usability-review.md`.
 - A weekly price check (`tools/prices.js`, `.github/workflows/price-check.yml`) that opens a pull request when store prices change.
 - The price check reads the price of the size or option a listing names (or a `variant` hint on the product) instead of the cheapest one, and reports pages where no option can be told apart under "Needs a look".
+- The price check records each store's shipping statement (free, free over a threshold, flat rate, or calculated at checkout) in a `shipping` field, shown on the product page.
 
 ### Changed
 - Usability pass: material rules first in the sidebar with a count of switches on; cards show only what an item misses or how many details aren't stated; facet counts show how many items a rule hides; search as you type with brand, type, material and glossary suggestions; a Made with summary and working rule switches on the product page; one dotted underline per checklist chip; the phone filter drawer is a dialog with focus kept inside; "Ships from" naming throughout; back-to-top button, favicon, scroll position kept on Back; the glossary loads after the first paint.

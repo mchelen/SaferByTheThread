@@ -284,3 +284,66 @@ test('compare reports an ambiguous page as "check" and the report lists it', () 
   assert.match(md, /\| pad \| .* \| \$99 \| Puddle 16x32 \$54; Crib 27x52 \$129; Twin 38x80 \$229 \|/);
   assert.match(md, /\| crib \| .* \| \$119 \| Crib 27x52 \(by name\) \| shopify\.js \| \$119 \|/);
 });
+
+test('pickVariant: a recorded range matching the page spread is the whole page', () => {
+  const vs = [{ id: 1, title: 'Raw', amount: 1295, currency: 'USD', source: 'json-ld' }, { id: 2, title: 'Oiled', amount: 1295, currency: 'USD', source: 'json-ld' },
+    { id: 3, title: 'Walnut', amount: 1995, currency: 'USD', source: 'json-ld' }];
+  const r = P.pickVariant(vs, { name: 'Caravan Divan', url: 'https://x.test/divan', price: '$1,295 to $1,995' });
+  assert.equal(r.how, 'range');
+  assert.equal(r.variant.amount, 1295);
+  assert.equal(r.variant.rangeMax, 1995);
+  assert.equal(r.variant.title, '2 prices, $1295 to $1995');
+  assert.equal(P.compare('$1,295 to $1,995', { amount: 1295, currency: 'USD', rangeMax: 1995 }, null).status, 'same');
+  assert.equal(P.compare('$1,295 to $1,995', { amount: 1295, currency: 'USD', rangeMax: 2200 }, null).status, 'changed', 'the top of the range moved');
+  const moved = P.pickVariant(vs, { name: 'Caravan Divan', url: 'https://x.test/divan', price: '$1,100 to $1,995' });
+  assert.equal(moved.how, 'ambiguous', 'a range whose bottom moved needs a look');
+});
+
+test('recordedAmounts reads euro and pound texts for the price rule', () => {
+  assert.deepEqual(P.recordedAmounts('€49.90'), [49.9]);
+  assert.deepEqual(P.recordedAmounts('from £207.50 (about $270), free US shipping'), [207.5]);
+  assert.deepEqual(P.recordedAmounts('$24 to $27.50'), [24, 27.5]);
+  const vs = [{ id: 1, title: 'A', amount: 49.9, currency: 'EUR', source: 'json-ld' }, { id: 2, title: 'B', amount: 51.9, currency: 'EUR', source: 'json-ld' }];
+  const r = P.pickVariant(vs, { name: 'Leather slippers, Bee', url: 'https://x.test/p', price: '€49.90' });
+  assert.deepEqual([r.how, r.variant.title], ['price', 'A']);
+});
+
+test('findShipping reads the page\'s own words, most specific first', () => {
+  const page = (body) => '<html><head><script>var x="Shipping, taxes, and discount codes calculated at checkout"</script></head><body>' + body + '</body></html>';
+  assert.deepEqual(P.findShipping(page('<p>Earn Star Coins » Free Shipping on orders $99+</p><div>Shipping, taxes, and discount codes calculated at checkout.</div>')),
+    { kind: 'free over', threshold: 99, text: 'Free shipping on orders over $99', source: 'page' });
+  assert.equal(P.findShipping(page('<p>Free shipping &amp; returns for Babylist orders $45+</p>')).threshold, 45);
+  assert.deepEqual(P.findShipping(page('<li>📦 Free shipping</li><li>60-day return policy</li>')), { kind: 'free', text: 'Free shipping', source: 'page' });
+  assert.deepEqual(P.findShipping(page('<p>Orders over $75 ship free. $8.95 flat rate shipping otherwise.</p>')),
+    { kind: 'free over', threshold: 75, text: 'Free shipping on orders over $75, $8.95 below', source: 'page' });
+  assert.deepEqual(P.findShipping(page('<p>$6.50 shipping on every order</p>')), { kind: 'flat', amount: 6.5, text: '$6.50 shipping', source: 'page' });
+  assert.equal(P.findShipping(page('<p>Subtotal $ 0.00 Shipping, taxes, and discount codes calculated at checkout.</p>')).kind, 'at checkout', 'a $0 subtotal is not a flat rate');
+  assert.deepEqual(P.findShipping(page('<p>Sale price $54.00 / Shipping calculated at checkout.</p>')), { kind: 'at checkout', text: 'Shipping calculated at checkout', source: 'page' });
+  assert.equal(P.findShipping(page('<p>Shipping Protection available</p><p>Free shipping protection</p>')), null);
+  assert.equal(P.findShipping(page('<p>Nothing about delivery here</p>')), null);
+  assert.equal(P.findShipping(''), null);
+});
+
+test('findShipping prefers JSON-LD shippingDetails for the US', () => {
+  const ld = `<script type="application/ld+json">{"@type":"Product","offers":{"@type":"Offer","price":"20","priceCurrency":"USD",
+    "shippingDetails":[{"@type":"OfferShippingDetails","shippingRate":{"@type":"MonetaryAmount","value":"0","currency":"USD"},"shippingDestination":{"@type":"DefinedRegion","addressCountry":"US"}},
+    {"@type":"OfferShippingDetails","shippingRate":{"@type":"MonetaryAmount","value":"25","currency":"USD"},"shippingDestination":{"@type":"DefinedRegion","addressCountry":"CA"}}]}}</script><p>Shipping calculated at checkout</p>`;
+  assert.deepEqual(P.findShipping(ld), { kind: 'free', text: 'Free shipping', source: 'json-ld' });
+  const paid = `<script type="application/ld+json">{"@type":"OfferShippingDetails","shippingRate":{"value":"7.95","currency":"USD"},"shippingDestination":{"addressCountry":"US"}}</script>`;
+  assert.deepEqual(P.findShipping(paid), { kind: 'flat', text: '$7.95 shipping', amount: 7.95, currency: 'USD', source: 'json-ld' });
+});
+
+test('visibleText drops scripts and tags', () => {
+  assert.equal(P.visibleText('<p>Free <b>shipping</b></p><script>var a = "shipping";</script>').trim(), 'Free shipping');
+});
+
+test('report lists new shipping statements', () => {
+  const product = { name: 'Rattle', url: 'https://x.test/p', store: 'X', price: '$10' };
+  const rows = [
+    { entry: 'a', product, status: 'same', detail: '', notes: [], found: { amount: 10, currency: 'USD', source: 'json-ld' }, recordedUsd: 10, shipping: { kind: 'free', text: 'Free shipping' }, newShipping: 'Free shipping' },
+    { entry: 'b', product: Object.assign({ shipping: 'Free shipping' }, product), status: 'same', detail: '', notes: [], found: { amount: 10, currency: 'USD', source: 'json-ld' }, recordedUsd: 10, shipping: { kind: 'free', text: 'Free shipping' } }
+  ];
+  const md = P.buildReport(rows, '2026-10-19');
+  assert.match(md, /## Shipping\n\n2 of 2 pages state a shipping policy; 1 new or changed:/);
+  assert.match(md, /\| a \| .* \| X \| — \| Free shipping \|/);
+});

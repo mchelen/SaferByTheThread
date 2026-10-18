@@ -359,7 +359,7 @@
     var stds = item.standards.map(function (s) { var d = C.standards.filter(function (x) { return x.id === s; })[0]; return d ? '<li>' + termLink(d.term, d.label) + '</li>' : ''; }).join('');
     var buy = item.products.map(function (p) {
       var from = p.ships_from === 'US' ? 'Ships from the US' : p.ships_from ? 'Ships from ' + p.ships_from : 'Shipping not recorded';
-      return '<li class="offer"><div><p class="o-name">' + esc(p.name) + '</p><p class="o-meta">' + esc(p.store) + ' · ' + esc(from) + '</p>' +
+      return '<li class="offer"><div><p class="o-name">' + esc(p.name) + '</p><p class="o-meta">' + esc(p.store) + ' · ' + esc(from) + (p.shipping ? ' · ' + esc(p.shipping) : '') + '</p>' +
         (p.note ? '<p class="o-note">' + esc(p.note) + '</p>' : '') + '</div>' +
         '<p class="o-price">' + esc(p.price) + '</p><a class="btn-buy" href="' + esc(p.url) + '" target="_blank" rel="noopener">View at ' + esc(p.store.replace(/\s*\(.*\)$/, '')) + ' <span aria-hidden="true">↗</span></a></li>';
     }).join('');
