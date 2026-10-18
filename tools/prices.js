@@ -311,18 +311,24 @@ function pickVariant(variants, product) {
   let r = best > 0 ? settle(hits, 'name') : null;
   if (r) return r;
   const recorded = recordedAmounts(product && product.price);
-  if (recorded.length >= 2) {
+  if (recorded.length >= 2 && isRangeText(product.price)) {
     // A recorded range ("$1,295 to $1,995") is the page's own spread when both ends still match.
     const spread = priceSpread(priced);
     if (!isSignificant(Math.min.apply(null, recorded), spread.min) && !isSignificant(Math.max.apply(null, recorded), spread.max)) {
       const low = priced.filter(function (v) { return v.amount === spread.min; })[0];
       return { variant: Object.assign({}, low, { title: distinctAmounts(priced) + ' prices, ' + money(spread.min, low.currency) + ' to ' + money(spread.max, low.currency), rangeMax: spread.max }), how: 'range' };
     }
-  } else if (recorded.length === 1) {
-    r = settle(priced.filter(function (v) { return !isSignificant(recorded[0], v.amount); }), 'price');
+  } else if (recorded.length) {
+    // One amount, or alternatives ("$185; $140.99 on sale at Babylist"): any of them settles it.
+    r = settle(priced.filter(function (v) { return recorded.some(function (a) { return !isSignificant(a, v.amount); }); }), 'price');
     if (r) return r;
   }
   return { variant: null, how: 'ambiguous', count: distinctAmounts(priced) };
+}
+
+// "$1,295 to $1,995", "$279-$339", "from $24 to $27.50": two amounts joined as a range.
+function isRangeText(text) {
+  return /(?:\$|£|€)\s?[\d,.]+\s*(?:to|-|–|—)\s*(?:\$|£|€)?\s?[\d,.]+/.test(String(text || ''));
 }
 
 // The amounts a recorded price text holds: dollar amounts, or for a text in
@@ -389,8 +395,12 @@ function findShipping(html) {
   while ((m = overRx.exec(t))) found.push({ kind: 'free over', threshold: parseFloat(m[1]), text: 'Free shipping on orders over $' + formatAmount(parseFloat(m[1])), source: 'page' });
   const over2 = new RegExp('orders? (?:over|above|of) ' + sym + '\\s*(\\d+(?:\\.\\d+)?)\\+? (?:(?:get |receive |qualify for )?free(?: standard| ground)? shipping|ship(?:ped)? free)', 'gi');
   while ((m = over2.exec(t))) found.push({ kind: 'free over', threshold: parseFloat(m[1]), text: 'Free shipping on orders over $' + formatAmount(parseFloat(m[1])), source: 'page' });
-  const flatRx = new RegExp('(?:' + sym + '\\s*(\\d+(?:\\.\\d+)?) (?:flat[- ]rate )?shipping(?! (?:protection|insurance))|flat[- ]rate shipping(?: (?:of|is|at))? ' + sym + '\\s*(\\d+(?:\\.\\d+)?))', 'gi');
-  while ((m = flatRx.exec(t))) { const a = parseFloat(m[1] || m[2]); if (a > 0) found.push({ kind: 'flat', amount: a, text: '$' + formatAmount(a) + ' shipping', source: 'page' }); }
+  const flatRx = new RegExp('(?:(?<!(?:over|above|of|from|orders|order|spend|minimum)\\s)' + sym + '\\s*(\\d+(?:\\.\\d+)?)(?!\\+) (?:flat[- ]rate )?shipping(?! (?:protection|insurance|threshold|minimum))|flat[- ]rate shipping(?: (?:of|is|at))? ' + sym + '\\s*(\\d+(?:\\.\\d+)?))', 'gi');
+  const thresholds = found.filter(function (f) { return f.threshold != null; }).map(function (f) { return f.threshold; });
+  while ((m = flatRx.exec(t))) {
+    const a = parseFloat(m[1] || m[2]);
+    if (a > 0 && thresholds.indexOf(a) < 0) found.push({ kind: 'flat', amount: a, text: '$' + formatAmount(a) + ' shipping', source: 'page' });
+  }
   if (/\bfree (?:standard |ground |economy |domestic |us |u\.s\. |continental u\.?s\.? )?shipping\b(?! (?:on|for|with|over|threshold|protection|insurance|when|if|promo|code|eligible|available|\*))/i.test(t)) found.push({ kind: 'free', text: 'Free shipping', source: 'page' });
   if (/shipping(?:,? (?:taxes,? )?(?:and|&) (?:handling|discount codes?|discounts?))? (?:is |are |will be )?calculated at checkout/i.test(t)) found.push({ kind: 'at checkout', text: 'Shipping calculated at checkout', source: 'page' });
   if (!found.length) return null;
@@ -750,7 +760,7 @@ async function main() {
 module.exports = {
   decodeEntities, parseAmount, normCurrency, attrs, jsonLdBlocks, findJsonLdPrice, findMetaPrice, findItempropPrice,
   extractPrice, findShopifyCurrency, parseShopifyProduct, shopifyHandle, isSignificant, compare, replaceAmount, dollarAmounts, movedAway, isHomePage,
-  formatAmount, buildReport, interleaveByHost, hostWaiter, jsonLdOffers, shopifyVariants, pickVariant, nameTokens, distinctAmounts, recordedAmounts, findShipping, visibleText
+  formatAmount, buildReport, interleaveByHost, hostWaiter, jsonLdOffers, shopifyVariants, pickVariant, nameTokens, distinctAmounts, recordedAmounts, isRangeText, findShipping, visibleText
 };
 
 if (require.main === module) {

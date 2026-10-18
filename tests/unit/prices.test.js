@@ -347,3 +347,18 @@ test('report lists new shipping statements', () => {
   assert.match(md, /## Shipping\n\n2 of 2 pages state a shipping policy; 1 new or changed:/);
   assert.match(md, /\| a \| .* \| X \| — \| Free shipping \|/);
 });
+
+test('alternatives in a price text are not a range; any of them settles the variant', () => {
+  assert.equal(P.isRangeText('$1,295 to $1,995'), true);
+  assert.equal(P.isRangeText('$279-$339'), true);
+  assert.equal(P.isRangeText('$185; $140.99 on sale at Babylist'), false);
+  assert.equal(P.isRangeText('$17.95 (sale; regular $30.00)'), false);
+  const vs = [{ id: 1, title: 'Standard', amount: 185, currency: 'USD', source: 'shopify.js' }, { id: 2, title: 'Mega', amount: 295, currency: 'USD', source: 'shopify.js' }];
+  const r = P.pickVariant(vs, { name: 'Checker Toffee Mat', url: 'https://x.test/products/mat', price: '$185; $140.99 on sale at Babylist' });
+  assert.deepEqual([r.how, r.variant.title], ['price', 'Standard']);
+});
+
+test('findShipping does not read a free-shipping threshold as a flat rate', () => {
+  const t = '<p>Free Shipping on orders $99+</p><p>Shipping Protection $2.99</p><p>Orders over $99 shipping is free</p>';
+  assert.deepEqual(P.findShipping(t), { kind: 'free over', threshold: 99, text: 'Free shipping on orders over $99', source: 'page' });
+});
