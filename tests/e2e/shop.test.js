@@ -122,8 +122,8 @@ test('product page shows the buy box, checklist, filter table and a glossary pop
   assert.match(await pop.textContent(), /Full entry/);
   await page.keyboard.press('Escape');
   assert.equal(await pop.isVisible(), false);
-  await page.evaluate(() => document.querySelectorAll('.acc').forEach(d => { d.open = true; }));
-  assert.equal(await page.locator('.ftable input[data-crit]').count(), 13, 'the same material filters, editable from the product page');
+  assert.ok((await page.locator('#materials .ftable tbody tr').count()) >= 3, 'the materials section reads the product against each filter');
+  assert.equal(await page.locator('#materials input').count(), 0, 'no filter switches on the product page');
   assert.deepEqual(page.errors, []);
   await page.close();
 });

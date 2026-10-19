@@ -450,19 +450,18 @@
         '<div class="chips-row">' + (r[4].length ? r[4].map(chip).join('') : '<span class="none">' + (r[0] === 'r-free' ? 'Nothing stated absent' : r[0] === 'r-unk' ? 'Every covered detail is stated' : 'None') + '</span>') + '</div></div>';
     }).join('') + '</div>';
   }
+  // How this product reads against each material filter, as information only: the filters themselves
+  // are set on the listing pages. Criteria that don't apply to the product are left out.
   function filterTable(item) {
     var rows = C.criteria.map(function (c) {
       var f = item.facts[c.id], has = item.contains.indexOf(c.id) >= 0, res;
-      if (c.kind === 'contains') res = has ? '<span class="no">Has it</span>' : '<span class="ok">Doesn’t have it</span>';
-      else if (f === undefined) res = '<span class="muted">Doesn’t apply</span>';
+      if (c.kind === 'contains') { if (!has) return ''; res = '<span class="no">Has it</span>'; }
+      else if (f === undefined) return '';
       else if (c.kind === 'require') res = f === 'yes' ? '<span class="ok">Stated</span>' : f === 'no' ? '<span class="no">Stated not</span>' : '<span class="unk">Not stated</span>';
       else res = f === 'yes' ? '<span class="ok">Meets it</span>' : f === 'no' ? '<span class="no">Doesn’t meet it</span>' : '<span class="unk">Not stated</span>';
-      return '<tr><th scope="row">' + esc(S.filterLabel(c)) + (TERMS[c.term] ? ' <a class="q term-link" href="' + U('/glossary/' + c.term) + '" data-term="' + c.term + '" aria-label="What this means">?</a>' : '') + '<small>' + esc(c.help) + '</small></th><td class="res">' + res + '</td>' +
-        '<td class="sw"><label class="opt"><input type="checkbox" data-crit="' + c.id + '" id="t-' + c.id + '"' + (CRIT[c.id] ? ' checked' : '') + '><span class="lbl">' + (CRIT[c.id] ? 'On' : 'Off') + '</span></label></td></tr>';
+      return '<tr><th scope="row">' + esc(S.filterLabel(c)) + (TERMS[c.term] ? ' <a class="q term-link" href="' + U('/glossary/' + c.term) + '" data-term="' + c.term + '" aria-label="What this means">?</a>' : '') + '<small>' + esc(c.help) + '</small></th><td class="res">' + res + '</td></tr>';
     }).join('');
-    rows += '<tr><th scope="row">Every detail above is stated<small>Leaves out items whose page doesn’t say.</small></th><td class="res">' + (item.unconfirmed.length ? '<span class="unk">' + plural(item.unconfirmed.length, 'detail') + ' not stated</span>' : '<span class="ok">All stated</span>') + '</td>' +
-      '<td class="sw"><label class="opt"><input type="checkbox" data-crit="strict" id="t-strict"' + (STRICT ? ' checked' : '') + '><span class="lbl">' + (STRICT ? 'On' : 'Off') + '</span></label></td></tr>';
-    return '<table class="ftable"><caption class="sr">How this product reads against each material filter</caption><thead><tr><th scope="col">Filter</th><th scope="col">This product</th><th scope="col">Your filter</th></tr></thead><tbody>' + rows + '</tbody></table>';
+    return '<table class="ftable"><caption class="sr">How this product reads against each material filter</caption><thead><tr><th scope="col">Filter</th><th scope="col">This product</th></tr></thead><tbody>' + rows + '</tbody></table>';
   }
   function offerHtml(p, k) {
     var from = p.ships_from === 'US' ? 'Ships from the US' : p.ships_from ? 'Ships from ' + p.ships_from : 'Ships from: not recorded';
@@ -494,7 +493,7 @@
       (r.unst.length ? '<span>' + plural(r.unst.length, 'covered detail') + ' not stated</span>' : '') + '</div>' +
       '<div class="made"><p class="lab">Made with</p><div class="chips-row">' + item.uses.map(chip).join('') + '</div>' +
       (item.outside.length ? '<p class="lab" style="margin-top:10px">Flagged parts</p><div class="chips-row out">' + item.outside.map(chip).join('') + '</div>' : '') +
-      '<a class="link-b" href="#checklist" data-jump="checklist">Full materials checklist ↓</a></div>' +
+      '<a class="link-b" href="#materials" data-jump="materials">Full materials ↓</a></div>' +
       '<h2 class="sr">Where to buy</h2><ul class="offers">' + item.products.map(offerHtml).join('') + '</ul>' +
       '<div class="buy-actions">' + saveBtn(item, 'btn-3') + compareBtn(item) + '</div>' +
       (item.quote ? '<blockquote class="ev"><p>“' + esc(item.quote) + '”</p><footer>From the store page</footer></blockquote>' : item.evidence ? '<p class="ev"><span>' + esc(item.evidence) + '</span></p>' : '') +
@@ -505,8 +504,8 @@
       '<div><dt>Department</dt><dd><a href="' + U('/d/' + g.id) + '">' + esc(g.title) + '</a></dd></div></dl>' +
       '</div></article>' +
       '<div class="pdp-below">' +
-      '<details class="acc" open id="checklist"><summary>Materials checklist' + icon('chev') + '</summary><div class="acc-body"><p class="lede">What the maker or store names, what they say is absent, and what no page states. Dotted chips open a definition.</p>' + checklist(item) + '</div></details>' +
-      '<details class="acc" id="filters-sec"' + (r.ok ? '' : ' open') + '><summary>Against your material filters' + icon('chev') + '</summary><div class="acc-body"><p class="lede">' + (r.ok ? 'This product meets every material filter you have on.' : 'This product is set aside in listings by ' + plural(r.miss.length, 'filter') + ' you have on.') + ' Filters changed here apply across the site.</p>' + filterTable(item) + '</div></details>' +
+      '<details class="acc" open id="materials"><summary>Materials' + icon('chev') + '</summary><div class="acc-body"><p class="lede">What the maker or store names, what they say is absent, and what no page states. Dotted chips open a definition.</p>' + checklist(item) +
+      '<h3 class="sub">By filter</h3><p class="lede">' + (r.ok ? 'This product meets every material filter you have on' : 'This product is set aside in listings by ' + plural(r.miss.length, 'filter') + ' you have on') + (r.unst.length ? ', with ' + plural(r.unst.length, 'covered detail') + ' not stated' : '') + '. Filters are changed on any <a href="' + U('/shop') + '">listing page</a>.</p>' + filterTable(item) + '</div></details>' +
       (cat.intro || cat.outro ? '<details class="acc"><summary>About ' + esc(cat.title.toLowerCase()) + icon('chev') + '</summary><div class="acc-body">' + (cat.intro ? '<p>' + esc(cat.intro) + '</p>' : '') + (cat.outro ? '<p>' + esc(cat.outro) + '</p>' : '') + '</div></details>' : '') +
       '<details class="acc"><summary>Prices and shipping' + icon('chev') + '</summary><div class="acc-body"><p>Prices and shipping statements were read from the store pages and are checked weekly; the date under each store link is the last check. Prices in pounds, euros and other currencies are converted roughly to US dollars for sorting.</p></div></details>' +
       '</div>' +

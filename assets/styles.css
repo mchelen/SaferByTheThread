@@ -325,6 +325,7 @@ h3 { font-size: 15px; }
 .check .none { color: var(--muted); font-size: 14px; }
 a.term-link { text-decoration: underline dotted; text-decoration-thickness: 1.5px; text-underline-offset: 3px; cursor: help; color: inherit; }
 a.term-link:hover { text-decoration-style: solid; }
+.acc-body .sub { margin: 22px 0 6px; font-size: 15px; }
 .ftable { width: 100%; border-collapse: collapse; font-size: 14px; }
 .ftable th, .ftable td { text-align: left; padding: 10px 8px; border-bottom: 1px solid var(--line); vertical-align: top; }
 .ftable th { font-weight: 600; }
@@ -333,7 +334,6 @@ a.term-link:hover { text-decoration-style: solid; }
 .ftable td.res .ok { color: var(--moss); font-weight: 600; }
 .ftable td.res .no { color: var(--clay); font-weight: 600; }
 .ftable td.res .unk { color: var(--wax); font-weight: 600; }
-.ftable td.sw .opt { padding: 0; grid-template-columns: 18px 1fr; }
 .rail { padding: 28px 0 8px; }
 .recent { padding-bottom: 40px; }
 
