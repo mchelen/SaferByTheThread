@@ -1,6 +1,6 @@
 {
  "schema": 3,
- "updated": "2026-10-17",
+ "updated": "2026-10-18",
  "ask": [
   "Thread on any sewn item (cotton or polyester).",
   "Wheels and axles on push toys and cars.",
@@ -43,7 +43,8 @@
          "url": "https://homeofwool.com/shop/baby-play-mat/",
          "store": "Home of Wool",
          "price": "from £207.50 (about $270), free US shipping",
-         "ships_from": "UK"
+         "ships_from": "UK",
+         "price_checked": "2026-10-18"
         }
        ],
        "img": "mat_homeofwool",
@@ -192,7 +193,9 @@
          "url": "https://tokikids.com/products/checker-toffee-mat",
          "store": "Toki Kids",
          "price": "$185; $140.99 on sale at Babylist",
-         "ships_from": "US"
+         "ships_from": "US",
+         "shipping": "Free shipping on orders over $200, $200 below",
+         "price_checked": "2026-10-18"
         }
        ],
        "img": "mat_toki",
@@ -232,7 +235,8 @@
          "url": "https://kodokids.com/products/wool-playscape-mats",
          "store": "Kodo Kids",
          "price": "$105",
-         "ships_from": "US"
+         "ships_from": "US",
+         "price_checked": "2026-10-18"
         }
        ],
        "img": "mat_kodo",
@@ -318,7 +322,8 @@
          "url": "https://www.babylist.com/gp/tiny-kind-baby-quilted-play-mat/71558/2376432",
          "store": "Babylist",
          "price": "$69",
-         "ships_from": "US"
+         "ships_from": "US",
+         "shipping": "Free shipping on orders over $45"
         }
        ],
        "img_src": "https://images.ctfassets.net/50gzycvace50/fadcec51f25b567abd16062c562a955e3f99155470aee16ca70280261df54c73/648531fa4bad3287e11d9b4f38f3d3be/fadcec51f25b567abd16062c562a955e3f99155470aee16ca70280261df54c73.png?fl=progressive&fm=jpg&bg=rgb:fafafa&w=1240&h=1240",
@@ -365,7 +370,8 @@
          "url": "https://shop.lovevery.com/products/the-play-gym",
          "store": "Lovevery",
          "price": "$150",
-         "ships_from": "US"
+         "ships_from": "US",
+         "price_checked": "2026-10-18"
         }
        ],
        "img_src": "https://shop.lovevery.com/cdn/shop/files/03Newborns3Q-1445_FullFrame_Retouched_MB_V1_1_1024x1024.png?v=1707846206",
@@ -408,7 +414,8 @@
          "url": "https://babylist.com/gp/piccalio-play-mat/56890/2131381",
          "store": "Babylist",
          "price": "$189",
-         "ships_from": "US"
+         "ships_from": "US",
+         "shipping": "Free shipping on orders over $45"
         }
        ],
        "img_src": "https://images.ctfassets.net/50gzycvace50/540a44b2567976257a154b4ea2601047d5906b25e60b6da3b5eba1b546a3bfed/49d93cf52271bdb06aeb55da52f59f1d/540a44b2567976257a154b4ea2601047d5906b25e60b6da3b5eba1b546a3bfed.png?fl=progressive&fm=jpg&bg=rgb:fafafa&w=1240&h=1240",
@@ -530,14 +537,17 @@
          "url": "https://www.acorntoyshop.com/collections/all/products/wooden-picture-book-with-ladybug-cover",
          "store": "Acorn Toy Shop",
          "price": "$34",
-         "ships_from": "US"
+         "ships_from": "US",
+         "price_checked": "2026-10-18"
         },
         {
          "name": "Wooden Picture Book",
          "url": "https://thewoodenwagon.com/woodentoy/BAF7009.html",
          "store": "The Wooden Wagon",
          "price": "$24 to $27.50",
-         "ships_from": "US"
+         "ships_from": "US",
+         "shipping": "Free shipping on orders over $125",
+         "price_checked": "2026-10-18"
         }
        ],
        "img": "book_fischer",
@@ -590,14 +600,18 @@
          "url": "https://pacifierkids.com/products/seatailssoftbookbyjellycat",
          "store": "Pacifier",
          "price": "$22",
-         "ships_from": "US"
+         "ships_from": "US",
+         "shipping": "Free shipping on orders over $100",
+         "price_checked": "2026-10-18"
         },
         {
          "name": "Pet Tails - Crinkly Fabric Book by Jellycat",
          "url": "https://pacifierkids.com/products/pettails-crinklyfabricbookbyjellycat",
          "store": "Pacifier",
          "price": "$22",
-         "ships_from": "US"
+         "ships_from": "US",
+         "shipping": "Free shipping on orders over $100",
+         "price_checked": "2026-10-18"
         }
        ],
        "img_src": "https://cdn.shopify.com/s/files/1/0281/8056/files/BK4ST__24795.1727975850.jpg?v=1764638677",
@@ -636,7 +650,8 @@
          "url": "https://www.babylist.com/gp/lamaze-peek-a-boo-forest-cloth-book/2271/3854",
          "store": "Babylist",
          "price": "$14.99",
-         "ships_from": "US"
+         "ships_from": "US",
+         "shipping": "Free shipping on orders over $45"
         }
        ],
        "img_src": "https://images.ctfassets.net/50gzycvace50/d5748e5388391b34ca4fb950c1b55a0dd3ee7f64ca23ee51586a0714b3bc1e48/6caee713f78cf90d2132e01b586afda5/d5748e5388391b34ca4fb950c1b55a0dd3ee7f64ca23ee51586a0714b3bc1e48.png?fl=progressive&fm=jpg&bg=rgb:fafafa&w=1240&h=1240",
@@ -675,7 +690,9 @@
          "url": "https://thebabypenguin.com/products/natural-wooden-shape-stacker",
          "store": "The Baby Penguin",
          "price": "$29.95",
-         "ships_from": "US"
+         "ships_from": "US",
+         "shipping": "Free shipping on orders over $50",
+         "price_checked": "2026-10-18"
         },
         {
          "name": "Shape Sorter Bench",
@@ -722,7 +739,9 @@
          "url": "https://thebabypenguin.com/products/circle-stacker",
          "store": "The Baby Penguin",
          "price": "$34.99",
-         "ships_from": "US"
+         "ships_from": "US",
+         "shipping": "Free shipping on orders over $50",
+         "price_checked": "2026-10-18"
         }
        ],
        "img": "stack_bannor",
@@ -754,7 +773,9 @@
          "url": "https://camdenrose.com/collections/camden-rose-products-auto-collection/products/multi-hardwood-stacker-round",
          "store": "Camden Rose",
          "price": "$39.99",
-         "ships_from": "US"
+         "ships_from": "US",
+         "shipping": "Free shipping",
+         "price_checked": "2026-10-18"
         }
        ],
        "img": "stack_camden",
@@ -794,14 +815,18 @@
          "url": "https://thewoodenwagon.com/woodentoy/BWS75.html",
          "store": "The Wooden Wagon",
          "price": "$46",
-         "ships_from": "US"
+         "ships_from": "US",
+         "shipping": "Free shipping on orders over $125",
+         "price_checked": "2026-10-18"
         },
         {
          "name": "Natural Pyramid Stacker",
          "url": "https://www.mysweetmuffin.com/products/wooden-story-natural-pyramid-stacker",
          "store": "My Sweet Muffin",
          "price": "$52",
-         "ships_from": "US"
+         "ships_from": "US",
+         "shipping": "Free shipping on orders over $75",
+         "price_checked": "2026-10-18"
         },
         {
          "name": "Natural Shape Sorter Box",
@@ -848,7 +873,8 @@
          "url": "https://macrobaby.com/products/fisher-price-eco-rock-a-stack",
          "store": "MacroBaby",
          "price": "$8.99",
-         "ships_from": "US"
+         "ships_from": "US",
+         "price_checked": "2026-10-18"
         }
        ],
        "img_src": "https://cdn.shopify.com/s/files/1/0325/7932/1915/files/fisher-price-eco-rock-a-stack_image_1.jpg?v=1764437160",
@@ -920,7 +946,9 @@
          "url": "https://thebabypenguin.com/a/p/products/my-first-wooden-block-set",
          "store": "The Baby Penguin",
          "price": "$41.95",
-         "ships_from": "US"
+         "ships_from": "US",
+         "shipping": "Free shipping on orders over $50",
+         "price_checked": "2026-10-18"
         },
         {
          "name": "Apprentice Blocks (41 pcs)",
@@ -959,7 +987,9 @@
          "url": "https://camdenrose.com/collections/blocks-sticks-toys/products/wooden-one-size-cube-building-blocks-set-of-24",
          "store": "Camden Rose",
          "price": "$56",
-         "ships_from": "US"
+         "ships_from": "US",
+         "shipping": "Free shipping",
+         "price_checked": "2026-10-18"
         }
        ],
        "img": "blocks_camden",
@@ -1000,14 +1030,18 @@
          "url": "https://thebabypenguin.com/a/p/products/giraffe-push-toy",
          "store": "The Baby Penguin",
          "price": "$34.99",
-         "ships_from": "US"
+         "ships_from": "US",
+         "shipping": "Free shipping on orders over $50",
+         "price_checked": "2026-10-18"
         },
         {
          "name": "Bunny Push Toy (cherry)",
          "url": "https://thebabypenguin.com/products/bunny-push-toy",
          "store": "The Baby Penguin",
          "price": "$34.99",
-         "ships_from": "US"
+         "ships_from": "US",
+         "shipping": "Free shipping on orders over $50",
+         "price_checked": "2026-10-18"
         }
        ],
        "img": "push_giraffe",
@@ -1079,7 +1113,9 @@
          "url": "https://www.lehmans.com/product/eli-and-mattie-pull-wagon-with-blocks",
          "store": "Lehman’s",
          "price": "$84.99",
-         "ships_from": "US"
+         "ships_from": "US",
+         "shipping": "Shipping calculated at checkout",
+         "price_checked": "2026-10-18"
         }
        ],
        "img": "pull_wagon",
@@ -1119,7 +1155,8 @@
          "url": "https://smilingtreetoys.com/products/wood-toy-truck",
          "store": "Smiling Tree Toys",
          "price": "$19",
-         "ships_from": "US"
+         "ships_from": "US",
+         "price_checked": "2026-10-18"
         }
        ],
        "img": "car_truck",
@@ -1188,7 +1225,9 @@
          "url": "https://thebabypenguin.com/products/7-pcs-natural-wooden-cars-set-with-3-pcs-peg-dolls",
          "store": "The Baby Penguin",
          "price": "$28",
-         "ships_from": "US"
+         "ships_from": "US",
+         "shipping": "Free shipping on orders over $50",
+         "price_checked": "2026-10-18"
         }
        ],
        "img": "car_green",
@@ -1272,7 +1311,9 @@
          "url": "https://thebabypenguin.com/products/unfinished-oval-bead-rattle",
          "store": "The Baby Penguin",
          "price": "$14.95",
-         "ships_from": "US"
+         "ships_from": "US",
+         "shipping": "Free shipping on orders over $50",
+         "price_checked": "2026-10-18"
         },
         {
          "name": "Unfinished Bell Rattle",
@@ -1280,7 +1321,9 @@
          "store": "The Baby Penguin",
          "price": "$14.95",
          "note": "Bell is metal",
-         "ships_from": "US"
+         "ships_from": "US",
+         "shipping": "Free shipping on orders over $50",
+         "price_checked": "2026-10-18"
         }
        ],
        "img": "shake_bead",
@@ -1314,7 +1357,9 @@
          "url": "https://www.bellalunatoys.com/collections/waldorf-baby-toys-0-12-months/products/sabo-natural-wooden-flower-rattle",
          "store": "Bella Luna Toys",
          "price": "$18",
-         "ships_from": "US"
+         "ships_from": "US",
+         "shipping": "Free shipping on orders over $99",
+         "price_checked": "2026-10-18"
         }
        ],
        "img": "shake_sabo",
@@ -1362,21 +1407,27 @@
          "url": "https://www.bellalunatoys.com/collections/dolls/products/nanchen-organic-waldorf-baby-doll-pink-stripes",
          "store": "Bella Luna Toys",
          "price": "$79",
-         "ships_from": "US"
+         "ships_from": "US",
+         "shipping": "Free shipping on orders over $99",
+         "price_checked": "2026-10-18"
         },
         {
          "name": "Bella Baby Terry Doll",
          "url": "https://www.bellalunatoys.com/collections/dolls/products/bella-baby-organic-terry-waldorf-dolls",
          "store": "Bella Luna Toys",
          "price": "$29.99",
-         "ships_from": "US"
+         "ships_from": "US",
+         "shipping": "Free shipping on orders over $99",
+         "price_checked": "2026-10-18"
         },
         {
          "name": "Little Dot Blanket Doll",
          "url": "https://www.bellalunatoys.com/collections/dolls/products/nanchen-little-dot-rattle-blanket-doll",
          "store": "Bella Luna Toys",
          "price": "$32.99",
-         "ships_from": "US"
+         "ships_from": "US",
+         "shipping": "Free shipping on orders over $99",
+         "price_checked": "2026-10-18"
         }
        ],
        "img": "doll_nanchen",
@@ -1417,7 +1468,8 @@
          "url": "https://www.sarahssilks.com/collections/waldorf-dolls/products/waldorf-doll-zoe",
          "store": "Sarah’s Silks",
          "price": "$58",
-         "ships_from": "US"
+         "ships_from": "US",
+         "price_checked": "2026-10-18"
         }
        ],
        "img": "doll_sarah",
@@ -1465,14 +1517,18 @@
          "url": "https://www.bellalunatoys.com/collections/soft-toys-stuffed-animals/products/organic-lamb-sheep-plush-stuffed-animal",
          "store": "Bella Luna Toys",
          "price": "$87",
-         "ships_from": "US"
+         "ships_from": "US",
+         "shipping": "Free shipping on orders over $99",
+         "price_checked": "2026-10-18"
         },
         {
          "name": "Organic Floppy Cat",
          "url": "https://www.bellalunatoys.com/collections/soft-toys-stuffed-animals/products/small-floppy-cat-organic-stuffed-animal",
          "store": "Bella Luna Toys",
          "price": "$87",
-         "ships_from": "US"
+         "ships_from": "US",
+         "shipping": "Free shipping on orders over $99",
+         "price_checked": "2026-10-18"
         }
        ],
        "img": "ani_lamb",
@@ -1508,7 +1564,9 @@
          "url": "https://www.bellalunatoys.com/collections/soft-toys-stuffed-animals/products/senger-floppy-squirrel-three-sizes",
          "store": "Bella Luna Toys",
          "price": "$50",
-         "ships_from": "US"
+         "ships_from": "US",
+         "shipping": "Free shipping on orders over $99",
+         "price_checked": "2026-10-18"
         }
        ],
        "img": "ani_squirrel",
@@ -1542,7 +1600,9 @@
          "url": "https://www.bellalunatoys.com/collections/waldorf-baby-toys-0-12-months/products/washcloth-hand-puppet-lion",
          "store": "Bella Luna Toys",
          "price": "$17.90",
-         "ships_from": "US"
+         "ships_from": "US",
+         "shipping": "Free shipping on orders over $99",
+         "price_checked": "2026-10-18"
         }
        ],
        "img": "ani_puppet",
@@ -1590,7 +1650,9 @@
          "url": "https://www.thecrossliving.com/en-us/products/bashful-cream-bunny-med",
          "store": "The Cross",
          "price": "$37",
-         "ships_from": null
+         "ships_from": null,
+         "shipping": "Shipping calculated at checkout",
+         "price_checked": "2026-10-18"
         }
        ],
        "img_src": "https://cdn.shopify.com/s/files/1/0618/4035/9481/files/u0tibaf57llv7kg1doqh.png?v=1778109800",
@@ -1628,7 +1690,9 @@
          "url": "https://coloredorganics.com/products/organic-cotton-large-crocodile-plush-toy",
          "store": "Colored Organics",
          "price": "$36",
-         "ships_from": "US"
+         "ships_from": "US",
+         "shipping": "Free shipping on orders over $50",
+         "price_checked": "2026-10-18"
         }
        ],
        "img_src": "https://cdn.shopify.com/s/files/1/1643/4857/files/infant-unisex-organic-cotton-large-crododile-plush-toy.natural.flat_front.2.jpg?v=1750284581",
@@ -1666,7 +1730,8 @@
          "url": "https://kodokids.com/collections/featured-collection/products/natural-wool-balls",
          "store": "Kodo Kids",
          "price": "$40",
-         "ships_from": "US"
+         "ships_from": "US",
+         "price_checked": "2026-10-18"
         }
        ],
        "img": "ball_kodo",
@@ -1706,7 +1771,8 @@
          "url": "https://enlightenedbaby.com/products/hevea-star-ball",
          "store": "Enlightened Baby",
          "price": "$24.99",
-         "ships_from": "US"
+         "ships_from": "US",
+         "price_checked": "2026-10-18"
         }
        ],
        "img": "ball_hevea",
@@ -1740,7 +1806,9 @@
          "url": "https://www.bellalunatoys.com/collections/waldorf-baby-toys-0-12-months/products/miniland-big-eco-sensory-ball",
          "store": "Bella Luna Toys",
          "price": "$65.99",
-         "ships_from": "US"
+         "ships_from": "US",
+         "shipping": "Free shipping on orders over $99",
+         "price_checked": "2026-10-18"
         }
        ],
        "img": "ball_miniland",
@@ -1776,7 +1844,9 @@
          "url": "https://pacifierkids.com/products/tomato-baby-ball-by-oli-carol",
          "store": "Pacifier",
          "price": "$21.99",
-         "ships_from": "US"
+         "ships_from": "US",
+         "shipping": "Free shipping on orders over $100",
+         "price_checked": "2026-10-18"
         }
        ],
        "img": "ball_oli",
@@ -1812,7 +1882,9 @@
          "url": "https://www.thenaturalbabyco.com/products/caaocho-natural-rainbow-sensory-ball-4",
          "store": "The Natural Baby Co",
          "price": "$21",
-         "ships_from": "US"
+         "ships_from": "US",
+         "shipping": "Shipping calculated at checkout",
+         "price_checked": "2026-10-18"
         }
        ],
        "img": "ball_caaocho",
@@ -1890,7 +1962,8 @@
          "url": "https://www.kids2.com/products/10340-000-bright-starts-oball-classic-easygrasp-toy-redbluegreenyellow",
          "store": "Kids2",
          "price": "$4.99",
-         "ships_from": "US"
+         "ships_from": "US",
+         "price_checked": "2026-10-18"
         }
        ],
        "img_src": "https://cdn.shopify.com/s/files/1/0468/2521/0022/files/27af224d36da99edd13d5ce5c98c287fd5aea97d.jpg?v=1775233825",
@@ -1965,7 +2038,8 @@
          "url": "https://us.heveaplanet.com/products/kawan-rubberduck-1x1",
          "store": "Hevea US",
          "price": "$29.95",
-         "ships_from": "US"
+         "ships_from": "US",
+         "price_checked": "2026-10-18"
         },
         {
          "name": "Duck and Frog Squeeze Set",
@@ -2029,7 +2103,9 @@
          "store": "Bella Luna Toys",
          "price": "$19.20",
          "note": "Dyed",
-         "ships_from": "US"
+         "ships_from": "US",
+         "shipping": "Free shipping on orders over $99",
+         "price_checked": "2026-10-18"
         }
        ],
        "img": "silk_color",
@@ -2060,7 +2136,8 @@
          "url": "https://www.grove.co/products/play-map-under-the-sea",
          "store": "Grove",
          "price": "$15.19",
-         "ships_from": "US"
+         "ships_from": "US",
+         "price_checked": "2026-10-18"
         }
        ],
        "img": "silk_map",
@@ -2135,7 +2212,9 @@
          "url": "https://mytoywagon.com/products/felt-fruits-and-vegetables-set-c-15-pcs",
          "store": "My Toy Wagon",
          "price": "$84, pre-order",
-         "ships_from": "US"
+         "ships_from": "US",
+         "shipping": "Free shipping on orders over $150, $84 below",
+         "price_checked": "2026-10-18"
         }
        ],
        "img": "pretend_tara",
@@ -2200,7 +2279,9 @@
          "url": "https://www.obasan.com/products/baby-organic-rubber-crib-mattress",
          "store": "Obasan",
          "price": "$425",
-         "ships_from": "US"
+         "ships_from": "US",
+         "shipping": "Free shipping",
+         "price_checked": "2026-10-18"
         }
        ],
        "img": "bed_obasan",
@@ -2243,7 +2324,9 @@
          "url": "https://www.greencradle.com/products/gols-organic-crib-latex-mattress-gots-organic-wool-and-organic-cotton",
          "store": "Green Cradle",
          "price": "$499",
-         "ships_from": "US"
+         "ships_from": "US",
+         "shipping": "Shipping calculated at checkout",
+         "price_checked": "2026-10-18"
         }
        ],
        "img": "bed_gcmat",
@@ -2285,7 +2368,8 @@
          "url": "https://cozypure.com/product/cozypure-baby-natural-latex-organic-crib-mattress-3/",
          "store": "CozyPure",
          "price": "$528",
-         "ships_from": "US"
+         "ships_from": "US",
+         "price_checked": "2026-10-18"
         }
        ],
        "img": "bed_cozypure",
@@ -2328,14 +2412,16 @@
          "url": "https://savvyrest.com/product/the-savvy-baby/",
          "store": "Savvy Rest",
          "price": "$599",
-         "ships_from": "US"
+         "ships_from": "US",
+         "price_checked": "2026-10-18"
         },
         {
          "name": "Savvy Baby, Talalay",
          "url": "https://savvyrest.com/product/the-savvy-baby-talalay/",
          "store": "Savvy Rest",
          "price": "$749",
-         "ships_from": "US"
+         "ships_from": "US",
+         "price_checked": "2026-10-18"
         }
        ],
        "img": "bed_savvyd",
@@ -2378,7 +2464,8 @@
          "url": "https://homeofwool.com/shop/crib-wool-mattress/",
          "store": "Home of Wool",
          "price": "from $653",
-         "ships_from": "UK"
+         "ships_from": "UK",
+         "price_checked": "2026-10-18"
         }
        ],
        "img": "bed_howmat",
@@ -2418,7 +2505,8 @@
          "url": "https://www.vivetique.com/product-page/latex-crib-bed",
          "store": "Vivetique",
          "price": "$755",
-         "ships_from": "US"
+         "ships_from": "US",
+         "price_checked": "2026-10-18"
         }
        ],
        "img": "bed_vivetique",
@@ -2460,14 +2548,16 @@
          "store": "White Lotus",
          "price": "$875",
          "note": "28 x 54 in, larger than standard: check the fit",
-         "ships_from": "US"
+         "ships_from": "US",
+         "shipping": "Free shipping"
         },
         {
          "name": "Organic Cotton Toddler Mattress",
          "url": "https://whitelotushome.com/bedding/organic-cotton-toddler-mattresses.html",
          "store": "White Lotus",
          "price": "$704",
-         "ships_from": "US"
+         "ships_from": "US",
+         "shipping": "Free shipping"
         }
        ],
        "quote": "No synthetics, glues, or toxins... a layer of natural wool beneath the organic cotton cover",
@@ -2522,7 +2612,9 @@
          "url": "https://www.naturepedic.com/products/organic-cotton-classic-seamless-baby-crib-mattress-buy",
          "store": "Naturepedic",
          "price": "$279-$339",
-         "ships_from": "US"
+         "ships_from": "US",
+         "shipping": "Free shipping",
+         "price_checked": "2026-10-18"
         }
        ],
        "img_src": "https://www.naturepedic.com/cdn/shop/files/NP_PDP_Mattress_ClassicOrganicCottonCribMattress_List-1.jpg?v=1783597651&width=2048",
@@ -2574,7 +2666,9 @@
          "url": "https://www.newtonbaby.com/products/waterproof-crib-mattress",
          "store": "Newton Baby",
          "price": "$332.50",
-         "ships_from": "US"
+         "ships_from": "US",
+         "shipping": "$50 shipping",
+         "price_checked": "2026-10-18"
         }
        ],
        "img_src": "https://www.newtonbaby.com/cdn/shop/files/Waterproof_Mattress_-_brand_tag_update_2_33581618-fd26-4330-bf72-07a7270580c0.jpg?v=1791982980",
@@ -2621,7 +2715,9 @@
          "url": "https://www.lullabyearth.com/healthy-support-crib-mattress",
          "store": "Lullaby Earth",
          "price": "$179",
-         "ships_from": "US"
+         "ships_from": "US",
+         "shipping": "Free shipping",
+         "price_checked": "2026-10-18"
         }
        ],
        "img_src": "https://www.lullabyearth.com/media/catalog/product/h/s/hswcm.jpeg",
@@ -2665,14 +2761,18 @@
          "url": "https://www.greencradle.com/products/childspose-panel-crib",
          "store": "Green Cradle",
          "price": "$1,695 to $2,595",
-         "ships_from": "US"
+         "ships_from": "US",
+         "shipping": "Shipping calculated at checkout",
+         "price_checked": "2026-10-18"
         },
         {
          "name": "Toddler conversion kit",
          "url": "https://www.greencradle.com/products/toddler-rail-for-childspose-panel-crib",
          "store": "Green Cradle",
          "price": "$450",
-         "ships_from": "US"
+         "ships_from": "US",
+         "shipping": "Shipping calculated at checkout",
+         "price_checked": "2026-10-18"
         }
        ],
        "img": "bed_gccrib",
@@ -2709,14 +2809,16 @@
          "url": "https://kalonstudios.com/shop/caravan/caravan-divan/",
          "store": "Kalon Studios",
          "price": "$1,295 to $1,995",
-         "ships_from": "US"
+         "ships_from": "US",
+         "price_checked": "2026-10-18"
         },
         {
          "name": "Caravan Crib",
          "url": "https://kalonstudios.com/shop/caravan/caravan-crib/",
          "store": "Kalon Studios",
          "price": "$1,295 to $1,495",
-         "ships_from": "US"
+         "ships_from": "US",
+         "price_checked": "2026-10-18"
         }
        ],
        "img": "bed_kalondivan",
@@ -2753,7 +2855,9 @@
          "url": "https://www.snydersfurniture.com/products/amish-solid-wood-eco-toddler-bed",
          "store": "Snyder’s",
          "price": "$1,066",
-         "ships_from": "US"
+         "ships_from": "US",
+         "shipping": "$9.95 shipping",
+         "price_checked": "2026-10-18"
         }
        ],
        "img": "bed_snyder",
@@ -2799,7 +2903,8 @@
          "url": "https://www.ikea.com/us/en/p/sniglar-bed-frame-with-slatted-bed-base-beech-s19185433/",
          "store": "IKEA US",
          "price": "$99.99",
-         "ships_from": "US"
+         "ships_from": "US",
+         "price_checked": "2026-10-18"
         }
        ],
        "img_src": "https://www.ikea.com/us/en/images/products/sniglar-bed-frame-with-slatted-bed-base-beech__0637773_pe698533_s5.jpg",
@@ -2842,7 +2947,8 @@
          "url": "https://www.simplysori.com/products/natural-montessori-floor-bed",
          "store": "Simply Sori",
          "price": "$910",
-         "ships_from": "US"
+         "ships_from": "US",
+         "price_checked": "2026-10-18"
         }
        ],
        "img": "bed_sori",
@@ -2880,14 +2986,18 @@
          "url": "https://radchildrensfurniture.com/products/the-ozarks-house-bed",
          "store": "Rad Children’s Furniture",
          "price": "$709",
-         "ships_from": "US"
+         "ships_from": "US",
+         "shipping": "Free shipping",
+         "price_checked": "2026-10-18"
         },
         {
          "name": "Atlas Platform Bed (6 in high)",
          "url": "https://radchildrensfurniture.com/products/the-atlas-platform-bed",
          "store": "Rad Children’s Furniture",
          "price": "$329",
-         "ships_from": "US"
+         "ships_from": "US",
+         "shipping": "Free shipping",
+         "price_checked": "2026-10-18"
         }
        ],
        "img": "bed_ozarks",
@@ -2922,7 +3032,9 @@
          "url": "https://kdframes.com/products/ekko-platform-bed",
          "store": "KD Frames",
          "price": "$219",
-         "ships_from": "US"
+         "ships_from": "US",
+         "shipping": "Free shipping",
+         "price_checked": "2026-10-18"
         }
        ],
        "img": "bed_kd",
@@ -2960,7 +3072,9 @@
          "url": "https://www.greencradle.com/products/childspose-platform-no-headboard",
          "store": "Green Cradle",
          "price": "from $1,799",
-         "ships_from": "US"
+         "ships_from": "US",
+         "shipping": "Shipping calculated at checkout",
+         "price_checked": "2026-10-18"
         }
        ],
        "img": "bed_gcbed",
@@ -2994,7 +3108,9 @@
          "url": "https://sprout-kids.com/products/low-montessori-floor-bed-for-toddlers",
          "store": "Sprout Kids",
          "price": "$300",
-         "ships_from": "US"
+         "ships_from": "US",
+         "shipping": "Free shipping on orders over $100",
+         "price_checked": "2026-10-18"
         }
        ],
        "img": "bed_sprout",
@@ -3028,7 +3144,8 @@
          "url": "https://goodnightkid.com/usa/urun/montessori-house-floor-bed-twin-long-front-cushion/",
          "store": "Good Night Kid",
          "price": "$2,650 to $3,100",
-         "ships_from": null
+         "ships_from": null,
+         "price_checked": "2026-10-18"
         }
        ],
        "img": "bed_gnk",
@@ -3073,7 +3190,8 @@
          "url": "https://www.piccalio.com/products/montessori-toddler-floor-bed",
          "store": "Piccalio",
          "price": "$499",
-         "ships_from": "US"
+         "ships_from": "US",
+         "price_checked": "2026-10-18"
         }
        ],
        "img_src": "https://piccalio.com/cdn/shop/files/piccalio-bedbed-full-crib-floor-domino-good-housekeeping-lifestyle-1.jpg?v=1787682927&width=2048",
@@ -3119,7 +3237,9 @@
          "url": "https://www.littlepartners.com/products/lil-house-toddler-bed",
          "store": "Little Partners",
          "price": "$199.99",
-         "ships_from": "US"
+         "ships_from": "US",
+         "shipping": "Free shipping on orders over $50",
+         "price_checked": "2026-10-18"
         }
        ],
        "img_src": "https://littlepartners.com/cdn/shop/files/LP71146-Lil_HouseToddlerBed-1_c5dc49e3-a350-48a8-8928-241b4a77e90a.jpg?v=1763735023",
@@ -3160,7 +3280,9 @@
          "url": "https://www.deltachildren.com/products/safari-wood-floor-toddler-bed-with-reusable-stickers",
          "store": "Delta Children",
          "price": "$79.99",
-         "ships_from": "US"
+         "ships_from": "US",
+         "shipping": "Free shipping",
+         "price_checked": "2026-10-18"
         }
        ],
        "img_src": "https://www.deltachildren.com/cdn/shop/files/BB81541GN-1730_animal-wood-toddler-bed_safari_lifestyle_03.jpg?v=1776979890",
@@ -3204,14 +3326,18 @@
          "url": "https://www.greenmountaindiapers.com/products/wendy-anne-wool-moisture-protection-pad",
          "store": "Green Mountain Diapers",
          "price": "$54",
-         "ships_from": "US"
+         "ships_from": "US",
+         "shipping": "Shipping calculated at checkout",
+         "price_checked": "2026-10-18"
         },
         {
          "name": "Crib pad, 28 x 52 in",
          "url": "https://www.greenmountaindiapers.com/products/wendy-anne-wool-moisture-protection-pad",
          "store": "Green Mountain Diapers",
          "price": "$129",
-         "ships_from": "US"
+         "ships_from": "US",
+         "shipping": "Shipping calculated at checkout",
+         "price_checked": "2026-10-18"
         }
        ],
        "img": "bed_wendy",
@@ -3252,21 +3378,27 @@
          "store": "Holy Lamb",
          "price": "$139 ($95 bassinet)",
          "note": "Out of stock when checked",
-         "ships_from": "US"
+         "ships_from": "US",
+         "shipping": "Free shipping on orders over $150",
+         "price_checked": "2026-10-18"
         },
         {
          "name": "Organic Crib Mattress Topper, 1 in",
          "url": "https://holylamborganics.com/products/certified-organic-crib-mattress-topper",
          "store": "Holy Lamb",
          "price": "$285",
-         "ships_from": "US"
+         "ships_from": "US",
+         "shipping": "Free shipping on orders over $150",
+         "price_checked": "2026-10-18"
         },
         {
          "name": "Natural Crib Mattress Topper, 1 in",
          "url": "https://holylamborganics.com/products/natural-crib-wool-mattress-topper",
          "store": "Holy Lamb",
          "price": "$275",
-         "ships_from": "US"
+         "ships_from": "US",
+         "shipping": "Free shipping on orders over $150",
+         "price_checked": "2026-10-18"
         },
         {
          "name": "Child's First Pillow, 9 x 13 in",
@@ -3274,7 +3406,9 @@
          "store": "Holy Lamb",
          "price": "$59",
          "note": "Wool fill, fleece top, moisture barrier back",
-         "ships_from": "US"
+         "ships_from": "US",
+         "shipping": "Free shipping on orders over $150",
+         "price_checked": "2026-10-18"
         }
        ],
        "img": "bed_hltopo",
@@ -3312,7 +3446,8 @@
          "url": "https://www.whitelotushome.com/bedding/toddler-pillows-13x18.html",
          "store": "White Lotus",
          "price": "about $35",
-         "ships_from": "US"
+         "ships_from": "US",
+         "shipping": "Free shipping"
         }
        ],
        "evidence": "Materials as listed on the product page",
@@ -3426,7 +3561,9 @@
          "url": "https://holylamborganics.com/products/organic-crinkled-percale-crib-sheet",
          "store": "Holy Lamb Organics",
          "price": "$48 to $58",
-         "ships_from": "US"
+         "ships_from": "US",
+         "shipping": "Free shipping on orders over $150, $30 below",
+         "price_checked": "2026-10-18"
         }
        ],
        "img": "bed_coyuchi",
@@ -3468,7 +3605,9 @@
          "url": "https://www.naturepedic.com/products/organic-waterproof-baby-crib-protector-pad",
          "store": "Naturepedic",
          "price": "$69-$99",
-         "ships_from": "US"
+         "ships_from": "US",
+         "shipping": "Free shipping",
+         "price_checked": "2026-10-18"
         }
        ],
        "img_src": "https://www.naturepedic.com/cdn/shop/files/np_website_images_baby_pc62w-pc63w-pk63w_3_e0f3295b-c8ea-4bfd-a251-5f9bfaa35c19.jpg?v=1777478461&width=2048",
@@ -3511,7 +3650,8 @@
          "url": "https://www.avocadogreenmattress.com/products/crib-waterproof-protector",
          "store": "Avocado Green Mattress",
          "price": "$76",
-         "ships_from": "US"
+         "ships_from": "US",
+         "price_checked": "2026-10-18"
         }
        ],
        "img_src": "https://www.avocadogreenmattress.com/cdn/shop/files/AvocadoOrganicCribWaterproofProtector.jpg?v=1783447928",
@@ -3551,7 +3691,9 @@
          "url": "https://www.newtonbaby.com/products/essential-waterproof-crib-mattress-pad",
          "store": "Newton Baby",
          "price": "$49.99",
-         "ships_from": "US"
+         "ships_from": "US",
+         "shipping": "$25 shipping",
+         "price_checked": "2026-10-18"
         }
        ],
        "img_src": "https://www.newtonbaby.com/cdn/shop/files/2005-EssentialCribPad3000_8.jpg?v=1766503618",
@@ -3592,7 +3734,9 @@
          "url": "https://www.deltachildren.com/products/eco-cool-cooling-crib-mattress-protector",
          "store": "Delta Children",
          "price": "$19.99",
-         "ships_from": "US"
+         "ships_from": "US",
+         "shipping": "Free shipping",
+         "price_checked": "2026-10-18"
         }
        ],
        "img_src": "https://www.deltachildren.com/cdn/shop/files/B43300-0001-NO_EcoCoolBR_White_Lifestyle_01.jpg?v=1786824357",
@@ -3639,21 +3783,27 @@
          "url": "https://beaba.us/products/silicone-multi-portion-trays-6x3-oz",
          "store": "beaba.us, Target, Amazon",
          "price": "$23.99",
-         "ships_from": "US"
+         "ships_from": "US",
+         "shipping": "Free shipping on orders over $140",
+         "price_checked": "2026-10-18"
         },
         {
          "name": "Multiportions 6 x 5 oz",
          "url": "https://beaba.us/products/silicone-multi-portion-trays-6-5-oz",
          "store": "beaba.us",
          "price": "$26.99",
-         "ships_from": "US"
+         "ships_from": "US",
+         "shipping": "Free shipping on orders over $140",
+         "price_checked": "2026-10-18"
         },
         {
          "name": "Mini Multiportion, 20 x 1.2 oz",
          "url": "https://beaba.us/products/silicone-mini-multiportion-tray-sage-green",
          "store": "beaba.us",
          "price": "$19.99",
-         "ships_from": "US"
+         "ships_from": "US",
+         "shipping": "Free shipping on orders over $140",
+         "price_checked": "2026-10-18"
         }
        ],
        "img": "sil_beaba6",
@@ -3694,7 +3844,9 @@
          "url": "https://cookanyday.com/products/anytime-freezer-tray-set",
          "store": "Anyday",
          "price": "$34",
-         "ships_from": "US"
+         "ships_from": "US",
+         "shipping": "Free shipping on orders over $85",
+         "price_checked": "2026-10-18"
         }
        ],
        "img": "sil_anyday",
@@ -3730,7 +3882,9 @@
          "url": "https://www.soupercubes.com/products/mymilk-breast-milk-freezer-tray",
          "store": "Souper Cubes",
          "price": "$40 for 2",
-         "ships_from": "US"
+         "ships_from": "US",
+         "shipping": "Free shipping on orders over $95",
+         "price_checked": "2026-10-18"
         }
        ],
        "img": "sil_souper",
@@ -3769,7 +3923,8 @@
          "url": "https://kiddofeedo.com/products/baby-food-freezer-tray",
          "store": "Kiddo Feedo",
          "price": "$14.95",
-         "ships_from": "US"
+         "ships_from": "US",
+         "price_checked": "2026-10-18"
         }
        ],
        "img": "sil_kiddo",
@@ -3803,7 +3958,9 @@
          "url": "https://mushie.com/products/baby-food-freezer-tray",
          "store": "Mushie",
          "price": "$19.99",
-         "ships_from": "US"
+         "ships_from": "US",
+         "shipping": "Free shipping on orders over $75",
+         "price_checked": "2026-10-18"
         }
        ],
        "img": "sil_mushie",
@@ -3852,14 +4009,18 @@
          "url": "https://www.weesprout.com/products/silicone-baby-food-freezer-tray",
          "store": "WeeSprout",
          "price": "$14.98",
-         "ships_from": "US"
+         "ships_from": "US",
+         "shipping": "Free shipping on orders over $60",
+         "price_checked": "2026-10-18"
         },
         {
          "name": "Silicone Baby Food Freezer Tray – 3 oz Sections",
          "url": "https://www.weesprout.com/products/large-silicone-baby-food-freezer-tray",
          "store": "WeeSprout",
          "price": "$14.98",
-         "ships_from": "US"
+         "ships_from": "US",
+         "shipping": "Free shipping on orders over $60",
+         "price_checked": "2026-10-18"
         }
        ],
        "img_src": "https://www.weesprout.com/cdn/shop/files/NLC-15-NY.jpg?v=1776574528",
@@ -3898,14 +4059,16 @@
          "url": "https://www.simpleecology.com/shop/silicone-ice-cube-mold",
          "store": "Simple Ecology",
          "price": "$29.95",
-         "ships_from": "US"
+         "ships_from": "US",
+         "price_checked": "2026-10-18"
         },
         {
          "name": "SF105 Cube mould, 15 cubes, no lid",
          "url": "https://www.amazon.com/dp/B00A44H7I0",
          "store": "Amazon",
          "price": "about $23 (about $19 at KaTom)",
-         "ships_from": "US"
+         "ships_from": "US",
+         "shipping": "Free shipping on orders over $35"
         }
        ],
        "img": "sil_ice26",
@@ -3943,7 +4106,8 @@
          "url": "https://www.amazon.com/dp/B01FV1D3X8",
          "store": "Amazon",
          "price": "price on Amazon",
-         "ships_from": "US"
+         "ships_from": "US",
+         "shipping": "Free shipping on orders over $35"
         }
        ],
        "img": "sil_wp",
@@ -4093,7 +4257,9 @@
          "url": "https://www.tovolo.com/products/king-cube-silicone-ice-mold-with-lid",
          "store": "Tovolo",
          "price": "$9.99",
-         "ships_from": "US"
+         "ships_from": "US",
+         "shipping": "Free shipping on orders over $50",
+         "price_checked": "2026-10-18"
         }
        ],
        "img_src": "https://tovolo.com/cdn/shop/files/22021-200_01_King-Cube-Ice-Tray-with-Lid_Charcoal.png?v=1792259085",
@@ -4171,14 +4337,18 @@
          "url": "https://www.webstaurantstore.com/silikomart-gel01m-mini-classic-ice-cream-cake-pop-silicone-baking-mold-pack/980GEL01M.html",
          "store": "WebstaurantStore",
          "price": "2-pack $92.99",
-         "ships_from": "US"
+         "ships_from": "US",
+         "shipping": "Free shipping",
+         "price_checked": "2026-10-18"
         },
         {
          "name": "Classic GEL01, 12 x 3 oz",
          "url": "https://www.webstaurantstore.com/silikomart-gel01-classic-ice-cream-cake-pop-silicone-baking-mold-pack/980GEL01.html",
          "store": "WebstaurantStore",
          "price": "$67.49",
-         "ships_from": "US"
+         "ships_from": "US",
+         "shipping": "Free shipping",
+         "price_checked": "2026-10-18"
         }
        ],
        "img": "sil_gel01m",
@@ -4251,7 +4421,9 @@
          "url": "https://pacifierkids.com/products/icypolemould-yellowbywemightbetiny",
          "store": "Pacifier",
          "price": "$24.95",
-         "ships_from": "US"
+         "ships_from": "US",
+         "shipping": "Free shipping on orders over $100",
+         "price_checked": "2026-10-18"
         }
        ],
        "img": "sil_wmbt",
@@ -4298,7 +4470,9 @@
          "url": "https://www.tovolo.com/products/pop-molds-stackable",
          "store": "Tovolo",
          "price": "$9.99",
-         "ships_from": "US"
+         "ships_from": "US",
+         "shipping": "Free shipping on orders over $50",
+         "price_checked": "2026-10-18"
         }
        ],
        "img_src": "https://tovolo.com/cdn/shop/files/22083-800_Unicorn-Pop-Mold_AMZ_LIFESTYLE-04.jpg?v=1792258413",
@@ -4336,7 +4510,9 @@
          "url": "https://www.mushie.com/products/toddler-ice-pop-tray",
          "store": "Mushie",
          "price": "$15.99",
-         "ships_from": "US"
+         "ships_from": "US",
+         "shipping": "Free shipping on orders over $75",
+         "price_checked": "2026-10-18"
         }
        ],
        "img_src": "https://mushie.com/cdn/shop/files/ToddlerIcePopTray_Blush_b32de10a-6b47-4bd5-8e07-d720c8376ddb.jpg?v=1755101124",
@@ -4378,7 +4554,9 @@
          "url": "https://www.zokuhome.com/products/summer-pops",
          "store": "Zoku",
          "price": "$19.99",
-         "ships_from": "US"
+         "ships_from": "US",
+         "shipping": "Free shipping on orders over $50",
+         "price_checked": "2026-10-18"
         }
        ],
        "img_src": "https://www.zokuhome.com/cdn/shop/products/ZK145_SummerPop_A.jpg?v=1618498048",
@@ -4429,7 +4607,9 @@
          "url": "https://www.glerups.com/products/shoe-kids-charcoal",
          "store": "glerups",
          "price": "$60, free US shipping",
-         "ships_from": null
+         "ships_from": null,
+         "shipping": "Free shipping",
+         "price_checked": "2026-10-18"
         }
        ],
        "img": "shoe_glerups",
@@ -4513,7 +4693,8 @@
          "url": "https://woodlandmod.com/products/felt-childrens-slippers",
          "store": "Woodland Mod (US)",
          "price": "$45",
-         "ships_from": "US"
+         "ships_from": "US",
+         "price_checked": "2026-10-18"
         }
        ],
        "img": "shoe_muskhane",
@@ -4554,14 +4735,16 @@
          "url": "https://popolini.com/en/orangenkinder-slippers-boiled-wool-sheep/",
          "store": "Popolini (Austria)",
          "price": "€48.90",
-         "ships_from": "Austria"
+         "ships_from": "Austria",
+         "price_checked": "2026-10-18"
         },
         {
          "name": "Leather slippers, Bee",
          "url": "https://popolini.com/en/orangenkinder-leather-shoes-bee/",
          "store": "Popolini (Austria)",
          "price": "€49.90",
-         "ships_from": "Austria"
+         "ships_from": "Austria",
+         "price_checked": "2026-10-18"
         }
        ],
        "img": "shoe_okwool",
@@ -4604,7 +4787,8 @@
          "store": "POLOLO",
          "price": "€35",
          "note": "US only through Nature Child",
-         "ships_from": "Germany"
+         "ships_from": "Germany",
+         "price_checked": "2026-10-18"
         }
        ],
        "img": "shoe_pololo",
@@ -4650,7 +4834,9 @@
          "url": "https://robeez.com/products/jasmine-first-kicks-in-pink-rbg21060",
          "store": "Robeez",
          "price": "$48.00",
-         "ships_from": "US"
+         "ships_from": "US",
+         "shipping": "Free shipping",
+         "price_checked": "2026-10-18"
         }
        ],
        "img_src": "https://robeez.com/cdn/shop/files/RBG21060_view_01.jpg?v=1785940150",
@@ -4692,14 +4878,16 @@
          "url": "https://freshlypicked.com/products/zion",
          "store": "Freshly Picked",
          "price": "$59.00",
-         "ships_from": "US"
+         "ships_from": "US",
+         "price_checked": "2026-10-18"
         },
         {
          "name": "Zion Moccasin Baby Shoe, Hard Sole (sizes 3-5)",
          "url": "https://freshlypicked.com/products/zion",
          "store": "Freshly Picked",
          "price": "$65.00",
-         "ships_from": "US"
+         "ships_from": "US",
+         "price_checked": "2026-10-18"
         }
        ],
        "img_src": "https://cdn.shopify.com/s/files/1/0204/2258/files/ZionClassic_1_336328d6-e506-4451-a968-3f78bcd6d86b.webp?v=1774385889",
@@ -4745,7 +4933,9 @@
          "url": "https://saltwater-sandals.com/products/salt-water-original-h-l-baby",
          "store": "Salt Water Sandals",
          "price": "$49.00",
-         "ships_from": "US"
+         "ships_from": "US",
+         "shipping": "Free shipping on orders over $85",
+         "price_checked": "2026-10-18"
         }
        ],
        "img_src": "https://saltwater-sandals.com/cdn/shop/files/800v-tan-baby-1.png?v=1756459742",
@@ -4791,7 +4981,8 @@
          "url": "https://us.wildling.shoes/products/tejo-chocolate-c",
          "store": "Wildling (USA & Canada shop)",
          "price": "$69.00",
-         "ships_from": "US"
+         "ships_from": "US",
+         "price_checked": "2026-10-18"
         }
        ],
        "img_src": "https://us.wildling.shoes/cdn/shop/files/wildling-shoes-TEJO-CHOCOLATE-T-01_5f852a28-62cd-4f3d-b974-7ab430e7d11a.webp?v=1787840972",
@@ -4842,7 +5033,9 @@
          "url": "https://pedterra.com/products/bisgaard-baby-rubber-boots-2-0",
          "store": "PedTerra",
          "price": "$75, free US shipping",
-         "ships_from": "US"
+         "ships_from": "US",
+         "shipping": "Free shipping",
+         "price_checked": "2026-10-18"
         },
         {
          "name": "Baby Basic Rubber Boots",
@@ -4850,14 +5043,18 @@
          "store": "PedTerra",
          "price": "$75",
          "note": "Low shaft, runs narrow",
-         "ships_from": "US"
+         "ships_from": "US",
+         "shipping": "Free shipping",
+         "price_checked": "2026-10-18"
         },
         {
          "name": "Thermo Baby (winter)",
          "url": "https://pedterra.com/products/bisgaard-baby-thermo",
          "store": "PedTerra",
          "price": "$78",
-         "ships_from": "US"
+         "ships_from": "US",
+         "shipping": "Free shipping",
+         "price_checked": "2026-10-18"
         }
        ],
        "img": "boot_bis2",
@@ -4898,7 +5095,8 @@
          "url": "https://crywolfchild.com/products/rain-boots-apple-grove",
          "store": "Crywolf (New Zealand)",
          "price": "about NZ$45",
-         "ships_from": "New Zealand"
+         "ships_from": "New Zealand",
+         "price_checked": "2026-10-18"
         }
        ],
        "img": "boot_crywolf",
@@ -4973,9 +5171,11 @@
         {
          "name": "Puddle Buster Wellington Boots",
          "url": "https://welovefrugi.com/products/puddle-buster-wellington-boots",
+         "variant": "UK 5",
          "store": "Frugi (UK)",
          "price": "£30",
-         "ships_from": "UK"
+         "ships_from": "UK",
+         "price_checked": "2026-10-18"
         }
        ],
        "img": "boot_frugi",
@@ -5021,7 +5221,9 @@
          "url": "https://www.hunterboots.com/products/kids-first-classic-rain-boots-in-dark-red-fhl-k-t5094rma-dre02",
          "store": "Hunter",
          "price": "$75.00",
-         "ships_from": "US"
+         "ships_from": "US",
+         "shipping": "Free shipping on orders over $100",
+         "price_checked": "2026-10-18"
         }
        ],
        "img_src": "https://hunterboots.com/cdn/shop/files/4a35ef57a39dfd7cffb9b02852bba3b4a9e32563.jpg?v=1781534090",
@@ -5066,7 +5268,9 @@
          "url": "https://www.westernchief.com/products/kids-firechief-2-rain-boot-yellow",
          "store": "Western Chief",
          "price": "$17.95 (sale; regular $30.00)",
-         "ships_from": "US"
+         "ships_from": "US",
+         "shipping": "Free shipping on orders over $80",
+         "price_checked": "2026-10-18"
         }
        ],
        "img_src": "https://www.westernchief.com/cdn/shop/files/kids-firechief-2-rain-boot-yellow-5322569.jpg?v=1755374671",
@@ -5105,7 +5309,9 @@
          "url": "https://www.kamik.com/products/stomp-kids-rain-boots",
          "store": "Kamik",
          "price": "$39.99",
-         "ships_from": "US"
+         "ships_from": "US",
+         "shipping": "Free shipping on orders over $129.99, $25 below",
+         "price_checked": "2026-10-18"
         }
        ],
        "img_src": "https://www.kamik.com/cdn/shop/files/Product-Image_STOMP_Stomp-Kids-Sky-Blue-Rain-Boots_SKY_01.jpg?v=1776109696",
@@ -5147,7 +5353,9 @@
          "url": "https://www.bogsfootwear.com/shop/style/73012I-020.html",
          "store": "Bogs",
          "price": "$29.90 (sale; original $50)",
-         "ships_from": "US"
+         "ships_from": "US",
+         "shipping": "Free shipping on orders over $99",
+         "price_checked": "2026-10-18"
         }
        ],
        "img_src": "https://www.bogsfootwear.com/shop/images/73012I-001.jpg",
@@ -5189,7 +5397,9 @@
          "url": "https://littlegreenradicals.com/products/over-the-rainbow-natural-rubber-waterproof-rain-boots",
          "store": "Little Green Radicals (ships to US)",
          "price": "£41.00",
-         "ships_from": "UK"
+         "ships_from": "UK",
+         "shipping": "Shipping calculated at checkout",
+         "price_checked": "2026-10-18"
         }
        ],
        "img_src": "https://cdn.shopify.com/s/files/1/0258/8147/7195/files/A25-771-ERW_2_2000x2000_19ae90cb-a538-442b-a631-f6c7f84a9d18.jpg?v=1785426517",

@@ -44,6 +44,8 @@ for (const g of data.groups) for (const c of g.categories) for (const e of c.ent
     if (!('ships_from' in p)) warn.push(`${where}: product "${p.name}" has no ships_from`);
     if (!S.parsePrice(p.price)) warn.push(`${where}: price "${p.price}" not parsed (sorts last)`);
     if (p.price_checked != null && !/^\d{4}-\d{2}-\d{2}$/.test(p.price_checked)) problems.push(`${where}: price_checked "${p.price_checked}" is not YYYY-MM-DD`);
+    if (p.variant != null && (typeof p.variant !== 'string' || !p.variant.trim())) problems.push(`${where}: variant must be a non-empty string`);
+    if (p.shipping != null && (typeof p.shipping !== 'string' || !p.shipping.trim())) problems.push(`${where}: shipping must be a non-empty string`);
   }
   if (e.img) {
     if (!fs.existsSync(path.join(root, 'img', e.img + '.jpg'))) { problems.push(`${where}: img/${e.img}.jpg missing`); }

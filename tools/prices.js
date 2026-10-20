@@ -1,15 +1,22 @@
 #!/usr/bin/env node
 /* Checks the store pages in data.json for their current prices.
 
-   Usage: node tools/prices.js [--limit N] [--concurrency 4] [--write] [--report FILE]
+   Usage: node tools/prices.js [--limit N] [--only id,id] [--concurrency 4] [--write] [--report FILE]
 
    For every product URL it fetches the page and looks for a price in JSON-LD
    (Product / offers), Open Graph meta tags, itemprop="price" markup and, for
-   Shopify-style URLs, the store's /products/<handle>.js(on) endpoint. It prints
-   one line per product and a summary, writes a Markdown report with --report,
-   and with --write updates the dollar amount in data.json (only when the
-   recorded price text holds exactly one dollar amount and the found price is
-   in USD) and stamps every product whose price was found with price_checked.
+   Shopify-style URLs, the store's /products/<handle>.js(on) endpoint. When a
+   page sells several sizes or options at different prices, pickVariant works
+   out which one the recorded product means (a ?variant= id in the URL, the
+   product's `variant` hint, words shared with the product name, or the variant
+   priced as recorded); when it cannot, the product is reported as "needs a
+   look" and nothing is rewritten. It prints one line per product and a
+   summary, writes a Markdown report with --report, and with --write updates
+   the dollar amount in data.json (only when the recorded price text holds
+   exactly one dollar amount and the found price is in USD) and stamps every
+   product whose price was found with price_checked. It also reads what the
+   page says about shipping ("Free shipping on orders over $99", "$8.95
+   shipping", "calculated at checkout") into the product's `shipping` field.
 
    Exit code is always 0; blocked or broken pages are reported, not fatal.
    Node 22, no dependencies. The extraction functions are exported for tests. */
@@ -118,6 +125,49 @@ function findJsonLdPrice(html) {
   return null;
 }
 
+// Every priced offer in the page's JSON-LD with the name the store gives it:
+// the offer's name or SKU, the item it offers, or the variant Product's own
+// name inside a ProductGroup. An AggregateOffer contributes its low and high.
+function jsonLdOffers(html) {
+  const out = [];
+  const seen = new Set();
+  const done = new Set(); // offer objects already read (a variant Product is also walked on its own)
+  const add = function (amount, currency, title) {
+    amount = parseAmount(amount);
+    if (amount == null || amount <= 0) return;
+    const key = amount + '|' + (currency || '') + '|' + (title || '');
+    if (seen.has(key)) return;
+    seen.add(key);
+    out.push({ amount, currency: normCurrency(currency), title: String(title || '').trim() });
+  };
+  const fromOffers = function (offers, fallbackTitle) {
+    for (const o of walkObjects(offers)) {
+      if (done.has(o)) continue;
+      done.add(o);
+      const title = o.name || o.sku || (o.itemOffered && o.itemOffered.name) || fallbackTitle || '';
+      if (hasType(o, 'AggregateOffer') || o.lowPrice != null) {
+        add(o.lowPrice, o.priceCurrency, title);
+        if (o.highPrice != null) add(o.highPrice, o.priceCurrency, title);
+      }
+      if (o.price != null) add(o.price, o.priceCurrency, title);
+      if (o.priceSpecification && typeof o.priceSpecification === 'object') {
+        for (const ps of walkObjects(o.priceSpecification)) if (ps.price != null) add(ps.price, ps.priceCurrency || o.priceCurrency, title);
+      }
+    }
+  };
+  for (const block of jsonLdBlocks(html)) {
+    for (const node of walkObjects(block)) {
+      if (hasType(node, 'ProductGroup') && Array.isArray(node.hasVariant)) {
+        for (const v of node.hasVariant) if (v && v.offers) fromOffers(v.offers, [v.name, v.size, v.color].filter(Boolean).join(' '));
+      }
+      if (!(hasType(node, 'Product') || hasType(node, 'ProductGroup') || (node.offers && !node['@type']))) continue;
+      if (node.offers) fromOffers(node.offers, [node.size, node.color].filter(Boolean).join(' '));
+    }
+    if (out.length) break; // the first block that prices the product is the product's
+  }
+  return out;
+}
+
 function metaTags(html) {
   const out = [];
   const rx = /<meta\b[^>]*>/gi;
@@ -183,23 +233,119 @@ function findShopifyCurrency(html) {
 // .json response ({product: {variants: [{price: "29.95"}]}}). Prefers variants
 // that are available when any are.
 function parseShopifyProduct(obj) {
-  const product = obj && obj.product ? obj.product : obj;
-  if (!product || !Array.isArray(product.variants) || !product.variants.length) return null;
-  const cents = !(obj && obj.product); // .js gives integer cents, .json gives decimal strings
-  const toAmount = function (v) {
-    const n = parseAmount(v.price);
-    if (n == null) return null;
-    return cents ? n / 100 : n;
-  };
+  const variants = shopifyVariants(obj);
+  if (!variants.length) return null;
   const pick = function (list) {
     let best = null;
-    for (const v of list) { const n = toAmount(v); if (n != null && n > 0 && (best == null || n < best)) best = n; }
+    for (const v of list) if (best == null || v.amount < best) best = v.amount;
     return best;
   };
-  const avail = product.variants.filter(function (v) { return v.available !== false; });
-  const amount = pick(avail.length ? avail : product.variants) ?? pick(product.variants);
-  if (amount == null) return null;
-  return { amount, currency: null, source: cents ? 'shopify.js' : 'shopify.json' };
+  const avail = variants.filter(function (v) { return v.available !== false; });
+  return { amount: pick(avail.length ? avail : variants), currency: null, source: variants[0].source };
+}
+
+// Every priced variant in a Shopify product response: {id, title, amount, available, source}.
+function shopifyVariants(obj) {
+  const product = obj && obj.product ? obj.product : obj;
+  if (!product || !Array.isArray(product.variants)) return [];
+  const cents = !(obj && obj.product); // .js gives integer cents, .json gives decimal strings
+  const out = [];
+  for (const v of product.variants) {
+    const n = parseAmount(v.price);
+    if (n == null || n <= 0) continue;
+    const title = v.title || [v.option1, v.option2, v.option3].filter(Boolean).join(' / ');
+    out.push({ id: v.id, title: String(title || ''), amount: cents ? n / 100 : n, available: v.available !== false, source: cents ? 'shopify.js' : 'shopify.json' });
+  }
+  return out;
+}
+
+// ---------- which variant is the recorded product? ----------
+
+const STOP_WORDS = new Set(['in', 'inch', 'inches', 'cm', 'and', 'or', 'the', 'of', 'with', 'for', 'size', 'sizes', 'mths', 'months', 'month', 'a']);
+
+// Words worth matching between a variant title and a product name: folded,
+// dimensions joined ("28 x 52" -> "28x52"), ranges kept ("3-5"), stop words out.
+function nameTokens(s) {
+  const t = S.fold(String(s || '')).replace(/(\d)\s*[x×]\s*(\d)/g, '$1x$2');
+  return t.split(/[^a-z0-9.\-]+/).map(function (w) { return w.replace(/^[.\-]+|[.\-]+$/g, ''); })
+    .filter(function (w) { return w && !STOP_WORDS.has(w); });
+}
+
+function distinctAmounts(list) {
+  const seen = new Set();
+  list.forEach(function (v) { seen.add(Math.round(v.amount * 100)); });
+  return seen.size;
+}
+
+// Picks, from the priced variants a page offers, the one the recorded product
+// means. In order: all variants cost the same; a ?variant=<id> in the product
+// URL; the product's `variant` hint found in a title; the variants whose titles
+// share the most words with the product name ("Crib", "Soft Sole", "16x32");
+// the variants priced as the recorded text says. A rule only decides when every
+// variant it picks has the same price. Returns {variant, how} with variant null
+// when nothing decides ('ambiguous').
+function pickVariant(variants, product) {
+  const priced = (variants || []).filter(function (v) { return v.amount != null && v.amount > 0; });
+  if (!priced.length) return null;
+  const settle = function (hits, how) { return hits.length && distinctAmounts(hits) === 1 ? { variant: hits[0], how } : null; };
+  if (distinctAmounts(priced) === 1) return { variant: priced[0], how: 'one price' };
+  const url = String((product && product.url) || '');
+  const idm = /[?&]variant=(\d+)/.exec(url);
+  if (idm) {
+    const r = settle(priced.filter(function (v) { return String(v.id) === idm[1]; }), 'url');
+    if (r) return r;
+  }
+  if (product && product.variant) {
+    const want = S.fold(product.variant).replace(/(\d)\s*[x×]\s*(\d)/g, '$1x$2');
+    const hits = priced.filter(function (v) { return S.fold(v.title).replace(/(\d)\s*[x×]\s*(\d)/g, '$1x$2').indexOf(want) >= 0; });
+    const r = settle(hits, 'hint');
+    if (r) return r;
+    return { variant: null, how: hits.length ? 'hint matches several prices' : 'hint matches nothing', count: distinctAmounts(priced) };
+  }
+  const words = new Set(nameTokens(product && product.name));
+  let best = 0, hits = [];
+  for (const v of priced) {
+    const score = nameTokens(v.title).filter(function (w) { return words.has(w); }).length;
+    if (score > best) { best = score; hits = [v]; } else if (score && score === best) hits.push(v);
+  }
+  let r = best > 0 ? settle(hits, 'name') : null;
+  if (r) return r;
+  const recorded = recordedAmounts(product && product.price);
+  if (recorded.length >= 2 && isRangeText(product.price)) {
+    // A recorded range ("$1,295 to $1,995") is the page's own spread when both ends still match.
+    const spread = priceSpread(priced);
+    if (!isSignificant(Math.min.apply(null, recorded), spread.min) && !isSignificant(Math.max.apply(null, recorded), spread.max)) {
+      const low = priced.filter(function (v) { return v.amount === spread.min; })[0];
+      return { variant: Object.assign({}, low, { title: distinctAmounts(priced) + ' prices, ' + money(spread.min, low.currency) + ' to ' + money(spread.max, low.currency), rangeMax: spread.max }), how: 'range' };
+    }
+  } else if (recorded.length) {
+    // One amount, or alternatives ("$185; $140.99 on sale at Babylist"): any of them settles it.
+    r = settle(priced.filter(function (v) { return recorded.some(function (a) { return !isSignificant(a, v.amount); }); }), 'price');
+    if (r) return r;
+  }
+  return { variant: null, how: 'ambiguous', count: distinctAmounts(priced) };
+}
+
+// "$1,295 to $1,995", "$279-$339", "from $24 to $27.50": two amounts joined as a range.
+function isRangeText(text) {
+  return /(?:\$|£|€)\s?[\d,.]+\s*(?:to|-|–|—)\s*(?:\$|£|€)?\s?[\d,.]+/.test(String(text || ''));
+}
+
+// The amounts a recorded price text holds: dollar amounts, or for a text in
+// another currency the bare numbers after its symbol ("€49.90" -> 49.9).
+function recordedAmounts(text) {
+  text = String(text || '');
+  if (!FOREIGN_RX.test(text)) return dollarAmounts(text);
+  const out = [];
+  const rx = /(?:£|€|NZ\$|CAD ?\$)\s*([\d,]+(?:\.\d+)?)/g;
+  let m;
+  while ((m = rx.exec(text))) out.push(parseFloat(m[1].replace(/,/g, '')));
+  return out;
+}
+
+function priceSpread(variants) {
+  const amounts = variants.map(function (v) { return v.amount; });
+  return { min: Math.min.apply(null, amounts), max: Math.max.apply(null, amounts) };
 }
 
 // "https://shop.example.com/collections/x/products/my-toy?variant=1" -> {origin, handle}
@@ -209,6 +355,60 @@ function shopifyHandle(url) {
     const m = u.pathname.match(/\/products\/([^/?#]+?)(?:\.js|\.json)?\/?$/);
     return m ? { origin: u.origin, handle: decodeURIComponent(m[1]) } : null;
   } catch (e) { return null; }
+}
+
+// ---------- shipping ----------
+
+// Visible text of a page: scripts, styles and tags removed, whitespace folded.
+function visibleText(html) {
+  return decodeEntities(String(html || '').replace(/<(script|style|noscript|template)\b[^>]*>[\s\S]*?<\/\1\s*>/gi, ' ').replace(/<[^>]+>/g, ' ')).replace(/\s+/g, ' ');
+}
+
+const SHIP_RANK = { 'free over': 4, flat: 3, free: 2, 'at checkout': 1 };
+
+// What a store page says about shipping, as {kind, text, threshold?, amount?}:
+// JSON-LD shippingDetails first, then the page's own words ("Free shipping on
+// orders $99+", "$8.95 flat rate shipping", "Shipping calculated at checkout").
+// The most specific statement wins; null when the page says nothing.
+function findShipping(html) {
+  if (!html) return null;
+  const found = [];
+  for (const block of jsonLdBlocks(html)) {
+    for (const node of walkObjects(block)) {
+      if (!hasType(node, 'OfferShippingDetails') || !node.shippingRate) continue;
+      for (const rate of walkObjects(node.shippingRate)) {
+        if (rate.value == null) continue;
+        const dest = JSON.stringify(node.shippingDestination || '');
+        if (dest && !/US|United States/i.test(dest)) continue;
+        const amount = parseAmount(rate.value);
+        if (amount == null) continue;
+        const cur = normCurrency(rate.currency) || 'USD';
+        if (amount === 0) found.push({ kind: 'free', text: 'Free shipping', source: 'json-ld' });
+        else found.push({ kind: 'flat', text: money(amount, cur) + ' shipping', amount, currency: cur, source: 'json-ld' });
+      }
+    }
+  }
+  const t = visibleText(html);
+  const sym = '(?:\\$|£|€)';
+  let m;
+  const overRx = new RegExp('free (?:standard |ground |economy |domestic |us |u\\.s\\. |continental u\\.?s\\.? )?shipping(?: (?:&|and) (?:free )?returns)?(?: (?:on|for|with) (?:all |us |domestic |[a-z]+ )?orders? (?:over|above|of|from)?\\s*' + sym + '\\s*(\\d+(?:\\.\\d+)?)\\+?)', 'gi');
+  while ((m = overRx.exec(t))) found.push({ kind: 'free over', threshold: parseFloat(m[1]), text: 'Free shipping on orders over $' + formatAmount(parseFloat(m[1])), source: 'page' });
+  const over2 = new RegExp('orders? (?:over|above|of) ' + sym + '\\s*(\\d+(?:\\.\\d+)?)\\+? (?:(?:get |receive |qualify for )?free(?: standard| ground)? shipping|ship(?:ped)? free)', 'gi');
+  while ((m = over2.exec(t))) found.push({ kind: 'free over', threshold: parseFloat(m[1]), text: 'Free shipping on orders over $' + formatAmount(parseFloat(m[1])), source: 'page' });
+  const flatRx = new RegExp('(?:(?<!(?:over|above|of|from|orders|order|spend|minimum)\\s)' + sym + '\\s*(\\d+(?:\\.\\d+)?)(?!\\+) (?:flat[- ]rate )?shipping(?! (?:protection|insurance|threshold|minimum))|flat[- ]rate shipping(?: (?:of|is|at))? ' + sym + '\\s*(\\d+(?:\\.\\d+)?))', 'gi');
+  const thresholds = found.filter(function (f) { return f.threshold != null; }).map(function (f) { return f.threshold; });
+  while ((m = flatRx.exec(t))) {
+    const a = parseFloat(m[1] || m[2]);
+    if (a > 0 && thresholds.indexOf(a) < 0) found.push({ kind: 'flat', amount: a, text: '$' + formatAmount(a) + ' shipping', source: 'page' });
+  }
+  if (/\bfree (?:standard |ground |economy |domestic |us |u\.s\. |continental u\.?s\.? )?shipping\b(?! (?:on|for|with|over|threshold|protection|insurance|when|if|promo|code|eligible|available|\*))/i.test(t)) found.push({ kind: 'free', text: 'Free shipping', source: 'page' });
+  if (/shipping(?:,? (?:taxes,? )?(?:and|&) (?:handling|discount codes?|discounts?))? (?:is |are |will be )?calculated at checkout/i.test(t)) found.push({ kind: 'at checkout', text: 'Shipping calculated at checkout', source: 'page' });
+  if (!found.length) return null;
+  found.sort(function (a, b) { return (SHIP_RANK[b.kind] - SHIP_RANK[a.kind]) || ((a.threshold || a.amount || 0) - (b.threshold || b.amount || 0)); });
+  const top = found[0];
+  const flat = found.filter(function (f) { return f.kind === 'flat'; })[0];
+  if (top.kind === 'free over' && flat) top.text += ', ' + flat.text.replace(' shipping', '') + ' below';
+  return top;
 }
 
 // ---------- comparison and rewriting ----------
@@ -228,9 +428,10 @@ function isSignificant(recordedUsd, foundUsd) {
 
 // Status of one product given the recorded text and the extracted price.
 //   found: {amount, currency} | null; fetchError: string | null
-function compare(priceText, found, fetchError) {
+function compare(priceText, found, fetchError, ambiguous) {
   const parsed = S.parsePrice(priceText);
   const recordedUsd = parsed ? parsed.usd : null;
+  if (!found && ambiguous) return { status: 'check', detail: ambiguous.count + ' prices on the page, ' + money(ambiguous.min, ambiguous.currency) + ' to ' + money(ambiguous.max, ambiguous.currency), recordedUsd };
   if (!found) return { status: fetchError ? 'error' : 'not found', detail: fetchError || '', recordedUsd };
   let currency = found.currency;
   let assumed = false;
@@ -240,7 +441,8 @@ function compare(priceText, found, fetchError) {
   if (recordedUsd == null) return { status: 'changed', detail: 'no recorded amount', recordedUsd, currency, assumed };
   // Same when the page agrees with any dollar amount in the text ("$185; $140.99 on sale at Babylist").
   const amounts = FOREIGN_RX.test(priceText || '') ? [recordedUsd] : dollarAmounts(priceText);
-  const changed = amounts.every(function (a) { return isSignificant(a, found.amount); });
+  let changed = amounts.every(function (a) { return isSignificant(a, found.amount); });
+  if (!changed && found.rangeMax != null && amounts.length >= 2 && isSignificant(Math.max.apply(null, amounts), found.rangeMax)) changed = true;
   return { status: changed ? 'changed' : 'same', detail: '', recordedUsd, currency, assumed };
 }
 
@@ -292,39 +494,58 @@ function errorLabel(e) {
   return cause ? String(cause) : (e.message || String(e));
 }
 
-// One product: page first, then the Shopify endpoints when the page gave nothing.
+// One product: the page first; the Shopify endpoint when the page gave nothing
+// or more than one price, since it names every variant.
 async function checkProduct(product, wait) {
-  const result = { found: null, fetchError: null, http: null, notes: [] };
-  let html = '';
+  const result = { found: null, fetchError: null, http: null, notes: [], ambiguous: null, shipping: null };
+  let html = '', offers = [], fallback = null, gone = false;
   try {
     await wait(product.url);
     const r = await fetchText(product.url);
     result.http = r.status;
     const moved = movedAway(product.url, r.url);
     if (moved) result.notes.push('redirected to ' + r.url);
+    // A home page may carry structured data for some featured product; never take that.
+    gone = moved && isHomePage(r.url);
     if (r.ok) {
       html = r.text;
-      // A home page may carry structured data for some featured product; never take that.
-      result.found = moved && isHomePage(r.url) ? null : extractPrice(html);
-      if (result.found && !result.found.currency) result.found.currency = findShopifyCurrency(html);
+      if (!gone) { offers = jsonLdOffers(html); fallback = findMetaPrice(html) || findItempropPrice(html); result.shipping = findShipping(html); }
     } else result.fetchError = 'HTTP ' + r.status;
   } catch (e) { result.fetchError = errorLabel(e); }
+  const pageCurrency = findShopifyCurrency(html);
 
-  if (!result.found) {
-    const sh = shopifyHandle(product.url);
-    if (sh) {
-      for (const ext of ['.js', '.json']) {
-        const u = sh.origin + '/products/' + encodeURIComponent(sh.handle) + ext;
-        try {
-          await wait(u);
-          const r = await fetchText(u, 'application/json,*/*;q=0.5');
-          if (!r.ok) { result.notes.push(ext + ' HTTP ' + r.status); continue; }
-          const p = parseShopifyProduct(JSON.parse(r.text));
-          if (p) { p.currency = findShopifyCurrency(html); result.found = p; result.fetchError = null; break; }
-          result.notes.push(ext + ' no variants');
-        } catch (e) { result.notes.push(ext + ' ' + errorLabel(e)); }
-      }
+  let variants = [];
+  const sh = shopifyHandle(product.url);
+  if (sh && (!offers.length || distinctAmounts(offers) > 1)) {
+    for (const ext of ['.js', '.json']) {
+      const u = sh.origin + '/products/' + encodeURIComponent(sh.handle) + ext;
+      try {
+        await wait(u);
+        const r = await fetchText(u, 'application/json,*/*;q=0.5');
+        if (!r.ok) { result.notes.push(ext + ' HTTP ' + r.status); continue; }
+        variants = shopifyVariants(JSON.parse(r.text));
+        if (variants.length) break;
+        result.notes.push(ext + ' no variants');
+      } catch (e) { result.notes.push(ext + ' ' + errorLabel(e)); }
     }
+  }
+
+  const cands = variants.length ? variants : offers.map(function (o) { return Object.assign({ source: 'json-ld' }, o); });
+  if (cands.length) {
+    const pick = pickVariant(cands, product);
+    if (pick && pick.variant) {
+      const v = pick.variant;
+      result.found = { amount: v.amount, currency: v.currency || pageCurrency, source: v.source, variant: pick.how === 'one price' ? '' : v.title, how: pick.how };
+      if (v.rangeMax != null) result.found.rangeMax = v.rangeMax;
+      result.fetchError = null;
+    } else {
+      result.ambiguous = Object.assign(priceSpread(cands), { count: pick.count, how: pick.how, currency: cands[0].currency || pageCurrency,
+        titles: cands.map(function (v) { return (v.title || '?') + ' ' + money(v.amount, v.currency || pageCurrency); }) });
+      result.fetchError = null;
+    }
+  } else if (fallback) {
+    result.found = fallback;
+    if (!result.found.currency) result.found.currency = pageCurrency;
   }
   return result;
 }
@@ -400,29 +621,55 @@ function money(n, cur) {
   return (cur === 'USD' ? '$' : cur + ' ') + amount;
 }
 
+const HOW_LABEL = { name: 'by name', hint: 'by hint', url: 'by URL', price: 'by recorded price', range: 'recorded range' };
+function variantCell(found) {
+  if (!found || !found.variant) return '—';
+  return found.variant + (HOW_LABEL[found.how] ? ' (' + HOW_LABEL[found.how] + ')' : '');
+}
+
 function buildReport(rows, date) {
   const count = function (st) { return rows.filter(function (r) { return r.status === st; }).length; };
   const changed = rows.filter(function (r) { return r.status === 'changed'; });
   const other = rows.filter(function (r) { return r.status === 'other currency'; });
+  const check = rows.filter(function (r) { return r.status === 'check'; });
   const bad = rows.filter(function (r) { return r.status === 'not found' || r.status === 'error'; });
-  const found = rows.length - bad.length;
+  const found = rows.length - bad.length - check.length;
   const lines = [];
   lines.push('# Price check: ' + date, '');
   lines.push('Checked ' + rows.length + ' products: ' + found + ' prices found, ' + count('changed') + ' changed, '
-    + count('not found') + ' not found, ' + count('error') + ' errors.', '');
+    + count('check') + ' need a look, ' + count('not found') + ' not found, ' + count('error') + ' errors.', '');
   lines.push('## Changes', '');
   if (!changed.length) lines.push('No price changed by more than 2% and $1.', '');
   else {
-    lines.push('| Listing | Product | Store | Recorded | Found | Source | New text |', '|---|---|---|---|---|---|---|');
+    lines.push('The Variant column names the size or option the price was read from, and how it was chosen (by the product name, a `variant` hint, a `?variant=` id, or the recorded price).', '');
+    lines.push('| Listing | Product | Store | Recorded | Found | Variant | Source | New text |', '|---|---|---|---|---|---|---|---|');
     for (const r of changed) lines.push('| ' + [r.entry, '[' + cell(r.product.name) + '](' + r.product.url + ')', r.product.store,
       cell(r.product.price) + (r.recordedUsd != null ? ' (' + money(r.recordedUsd, 'USD') + ')' : ''),
-      money(r.found.amount, 'USD') + (r.assumed ? ' (currency assumed)' : ''), r.found.source, r.newText ? cell(r.newText) : '(left alone)'].map(cell).join(' | ') + ' |');
+      money(r.found.amount, 'USD') + (r.assumed ? ' (currency assumed)' : ''), variantCell(r.found), r.found.source, r.newText ? cell(r.newText) : '(left alone)'].map(cell).join(' | ') + ' |');
+    lines.push('');
+  }
+  if (check.length) {
+    lines.push('## Needs a look', '',
+      'These pages sell several sizes or options at different prices and nothing says which one the listing means. Nothing was changed for them. To settle one, add `"variant": "<words from the option name>"` to the product in `data.json`, or a `?variant=<id>` to its URL, and the next run will read that price.', '',
+      '| Listing | Product | Store | Recorded | Prices on the page |', '|---|---|---|---|---|');
+    for (const r of check) {
+      const titles = r.ambiguous.titles.slice(0, 8).join('; ') + (r.ambiguous.titles.length > 8 ? '; … ' + (r.ambiguous.titles.length - 8) + ' more' : '');
+      lines.push('| ' + [r.entry, '[' + cell(r.product.name) + '](' + r.product.url + ')', r.product.store, cell(r.product.price), titles].map(cell).join(' | ') + ' |');
+    }
     lines.push('');
   }
   if (other.length) {
     lines.push('## Prices in other currencies', '', '| Listing | Product | Store | Recorded | Found | Source |', '|---|---|---|---|---|---|');
     for (const r of other) lines.push('| ' + [r.entry, '[' + cell(r.product.name) + '](' + r.product.url + ')', r.product.store, cell(r.product.price),
-      money(r.found.amount, r.found.currency), r.found.source].map(cell).join(' | ') + ' |');
+      money(r.found.amount, r.found.currency) + (r.found.variant ? ' (' + cell(r.found.variant) + ')' : ''), r.found.source].map(cell).join(' | ') + ' |');
+    lines.push('');
+  }
+  const ship = rows.filter(function (r) { return r.newShipping; });
+  const shipKnown = rows.filter(function (r) { return r.shipping; }).length;
+  lines.push('## Shipping', '', shipKnown + ' of ' + rows.length + ' pages state a shipping policy' + (ship.length ? '; ' + ship.length + ' new or changed:' : '.'), '');
+  if (ship.length) {
+    lines.push('| Listing | Product | Store | Was | Now |', '|---|---|---|---|---|');
+    for (const r of ship) lines.push('| ' + [r.entry, '[' + cell(r.product.name) + '](' + r.product.url + ')', r.product.store, r.product.shipping || '—', r.newShipping].map(cell).join(' | ') + ' |');
     lines.push('');
   }
   lines.push('## Not found or errored', '');
@@ -439,14 +686,15 @@ function buildReport(rows, date) {
 // ---------- main ----------
 
 function parseArgs(argv) {
-  const opts = { limit: 0, concurrency: 4, write: false, report: '' };
+  const opts = { limit: 0, only: [], concurrency: 4, write: false, report: '' };
   for (let i = 0; i < argv.length; i++) {
     const a = argv[i];
     if (a === '--limit') opts.limit = parseInt(argv[++i], 10) || 0;
+    else if (a === '--only') opts.only = String(argv[++i] || '').split(',').filter(Boolean);
     else if (a === '--concurrency') opts.concurrency = Math.max(1, parseInt(argv[++i], 10) || 4);
     else if (a === '--write') opts.write = true;
     else if (a === '--report') opts.report = argv[++i] || '';
-    else if (a === '--help' || a === '-h') { console.log('Usage: node tools/prices.js [--limit N] [--concurrency 4] [--write] [--report FILE]'); process.exit(0); }
+    else if (a === '--help' || a === '-h') { console.log('Usage: node tools/prices.js [--limit N] [--only id,id] [--concurrency 4] [--write] [--report FILE]'); process.exit(0); }
     else { console.error('unknown argument ' + a); process.exit(2); }
   }
   return opts;
@@ -461,6 +709,7 @@ async function main() {
 
   let items = [];
   for (const g of data.groups) for (const c of g.categories) for (const e of c.entries) for (const p of e.products) items.push({ entry: e.id, product: p });
+  if (opts.only.length) items = items.filter(function (it) { return opts.only.indexOf(it.entry) >= 0; });
   if (opts.limit) items = items.slice(0, opts.limit);
   const order = interleaveByHost(items);
   const wait = hostWaiter(HOST_DELAY_MS);
@@ -468,17 +717,22 @@ async function main() {
   const rows = [];
   await runPool(order, opts.concurrency, async function (it) {
     const r = await checkProduct(it.product, wait);
-    const c = compare(it.product.price, r.found, r.fetchError);
-    const row = Object.assign({ entry: it.entry, product: it.product, found: r.found, notes: r.notes, http: r.http, newText: null }, c);
+    const c = compare(it.product.price, r.found, r.fetchError, r.ambiguous);
+    const row = Object.assign({ entry: it.entry, product: it.product, found: r.found, ambiguous: r.ambiguous, shipping: r.shipping, notes: r.notes, http: r.http, newText: null }, c);
     rows.push(row);
     const tag = row.status.toUpperCase().padEnd(14);
-    const what = r.found ? money(r.found.amount, row.currency || r.found.currency) + ' via ' + r.found.source : (row.detail || '');
+    const what = r.found ? money(r.found.amount, row.currency || r.found.currency) + ' via ' + r.found.source + (r.found.variant ? ' [' + r.found.variant + ', ' + r.found.how + ']' : '') : (row.detail || '');
     console.log(tag + ' ' + it.entry + ' · ' + it.product.store + ' · "' + it.product.price + '" -> ' + what);
   });
   rows.sort(function (a, b) { return items.findIndex(function (i) { return i.product === a.product; }) - items.findIndex(function (i) { return i.product === b.product; }); });
 
-  let textChanges = 0;
+  let textChanges = 0, shipChanges = 0;
   for (const r of rows) {
+    if (r.shipping && r.shipping.text !== r.product.shipping) {
+      r.newShipping = r.shipping.text;
+      shipChanges++;
+      if (opts.write) r.product.shipping = r.shipping.text;
+    }
     const got = r.status === 'same' || r.status === 'changed' || r.status === 'other currency';
     if (!got) continue;
     if (r.status === 'changed' && r.currency === 'USD') {
@@ -491,7 +745,7 @@ async function main() {
     }
   }
   if (opts.write) {
-    if (textChanges) data.updated = today;
+    if (textChanges || shipChanges) data.updated = today;
     fs.writeFileSync(file, JSON.stringify(data, null, 1) + '\n');
   }
 
@@ -499,14 +753,14 @@ async function main() {
   if (opts.report) fs.writeFileSync(opts.report, report);
   console.log('');
   console.log(report.split('\n')[2]);
-  if (opts.write) console.log((textChanges ? textChanges + ' price text(s) updated' : 'no price text updated') + '; price_checked stamped on products whose price was found; data.json written');
+  if (opts.write) console.log((textChanges ? textChanges + ' price text(s) updated' : 'no price text updated') + '; ' + shipChanges + ' shipping statement(s) added or changed; price_checked stamped on products whose price was found; data.json written');
   if (opts.report) console.log('report written to ' + opts.report);
 }
 
 module.exports = {
   decodeEntities, parseAmount, normCurrency, attrs, jsonLdBlocks, findJsonLdPrice, findMetaPrice, findItempropPrice,
   extractPrice, findShopifyCurrency, parseShopifyProduct, shopifyHandle, isSignificant, compare, replaceAmount, dollarAmounts, movedAway, isHomePage,
-  formatAmount, buildReport, interleaveByHost, hostWaiter
+  formatAmount, buildReport, interleaveByHost, hostWaiter, jsonLdOffers, shopifyVariants, pickVariant, nameTokens, distinctAmounts, recordedAmounts, isRangeText, findShipping, visibleText
 };
 
 if (require.main === module) {
