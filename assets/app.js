@@ -304,7 +304,7 @@
     var sorted = ids.slice().sort(function (x, y) { return typeCount(y) - typeCount(x); });
     return '<div class="ttiles' + (cls ? ' ' + cls : '') + '">' + sorted.map(function (id) {
       var c = C.cats[id], pic = typePic(id);
-      return '<a class="ttile' + (id === current ? ' on' : '') + '" href="' + U('/c/' + id) + '"' + (id === current ? ' aria-current="page"' : '') + '><span class="ttile-img">' + (pic ? '<img src="' + esc(asset(pic.img)) + '" alt="" decoding="async">' : '') + '</span>' +
+      return '<a class="ttile' + (id === current ? ' on' : '') + '" href="' + U('/c/' + id) + '"' + (id === current ? ' aria-current="page"' : '') + '><span class="ttile-img">' + (pic ? '<img src="' + esc(asset(pic.img)) + '" alt="" decoding="async">' : '<span class="ttile-ph" aria-hidden="true">' + esc((c.short || c.title).charAt(0)) + '</span>') + '</span>' +
         '<span class="ttile-t">' + esc(c.short || c.title) + '</span></a>';
     }).join('') + '</div>';
   }
