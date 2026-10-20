@@ -57,6 +57,23 @@ test('a type tile and an age chip on the home page open the matching listing', a
   await page.close();
 });
 
+test('the shop, search results, product pages and empty lists offer picture navigation', async () => {
+  const page = await open('/shop');
+  await page.waitForSelector('.card');
+  assert.ok((await page.locator('.sibling-types .ttile').count()) >= 20, 'the shop lists every type as a tile');
+  await page.goto(base + '/search?q=wool', { waitUntil: 'networkidle' });
+  await page.waitForSelector('.card');
+  const hit = await page.locator('.sibling-types .ttile').count();
+  assert.ok(hit >= 2 && hit < 20, 'search results show only the types with matches');
+  await page.goto(base + '/p/home-of-wool-organic-baby-play-mat', { waitUntil: 'networkidle' });
+  await page.waitForSelector('.row-sec .ttile.on');
+  assert.match(await page.textContent('.row-sec h2'), /More in/);
+  await page.goto(base + '/saved', { waitUntil: 'networkidle' });
+  await page.waitForSelector('.empty-tiles .tile');
+  assert.deepEqual(page.errors, []);
+  await page.close();
+});
+
 test('clean URLs: a nested path loads through 404.html and keeps its path', async () => {
   const page = await open('/c/balls');
   await page.waitForSelector('.card');
