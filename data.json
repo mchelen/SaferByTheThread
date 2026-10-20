@@ -1465,8 +1465,7 @@
    "brand": "Tiny Kind",
    "line": "Baby Quilted Play Mat",
    "uses": [
-    "GOTS-certified organic cotton exterior",
-    "Polyester filling"
+    "GOTS-certified organic cotton exterior"
    ],
    "free": [],
    "unconfirmed": [
@@ -1520,9 +1519,7 @@
    "brand": "Lovevery",
    "line": "The Play Gym",
    "uses": [
-    "Polyester mat",
     "Organic cotton (mouthable pieces)",
-    "Silicone teething rings",
     "FSC-certified wood frame"
    ],
    "free": [
@@ -1633,7 +1630,7 @@
    "uses": [
     "GOTS-certified organic cotton",
     "OEKO-TEX natural latex foam",
-    "Waterproof cover: cotton layers with TPU barrier"
+    "Cotton layers in the waterproof cover"
    ],
    "free": [],
    "unconfirmed": [
@@ -1789,7 +1786,6 @@
    "brand": "Atelier Fischer",
    "line": "Wooden picture books",
    "uses": [
-    "Birch plywood pages",
     "Leather ties"
    ],
    "free": [],
@@ -1819,7 +1815,8 @@
    "img_src": "https://www.acorntoyshop.com/cdn/shop/products/ladybugbook1_1024x1024.png?v=1759255230",
    "note": "Rated 2 or 3 and up.",
    "outside": [
-    "Plywood glue"
+    "Plywood glue",
+    "Birch plywood pages"
    ],
    "facts": {
     "main": "no",
@@ -1858,9 +1855,7 @@
    "brand": "Jellycat",
    "line": "Tails Crinkly Fabric Books",
    "uses": [
-    "Polyester",
-    "Cotton",
-    "Polyester fiber filling"
+    "Cotton"
    ],
    "free": [],
    "unconfirmed": [
@@ -1944,9 +1939,7 @@
    "type": "books",
    "brand": "Lamaze",
    "line": "Peek-a-Boo Forest Cloth Book",
-   "uses": [
-    "Polyester"
-   ],
+   "uses": [],
    "free": [],
    "unconfirmed": [
     "Crinkle layer",
@@ -2251,16 +2244,14 @@
    "type": "stacking",
    "brand": "Fisher-Price",
    "line": "Rock-a-Stack (plant-based)",
-   "uses": [
-    "Plant-based plastic (min. 90% sugarcane-derived ethanol)"
-   ],
+   "uses": [],
    "free": [],
    "unconfirmed": [
     "Remaining 10% of material",
     "Colorants"
    ],
    "outside": [
-    "Bio-based plastic rings and base"
+    "Plant-based plastic rings and base (min. 90% sugarcane-derived ethanol)"
    ],
    "quote": "This Fisher-Price® Rock-a-Stack® toy, made from plant-based materials*, ... (*Toy made from a minimum of 90% ethanol extracted from sugar cane.)",
    "products": [
@@ -2325,8 +2316,7 @@
    "brand": "Melissa & Doug",
    "line": "Classic Rainbow Stacker",
    "uses": [
-    "Wood",
-    "Paint"
+    "Wood"
    ],
    "free": [],
    "unconfirmed": [
@@ -3446,11 +3436,7 @@
    "brand": "Jellycat",
    "line": "Bashful Bunny (Medium)",
    "uses": [
-    "Polyester",
-    "Cotton",
-    "Polyester fibres (fill)",
-    "PE beans",
-    "Hard eyes"
+    "Cotton"
    ],
    "free": [],
    "unconfirmed": [
@@ -3506,8 +3492,7 @@
    "brand": "Best Years",
    "line": "Organic Cotton Knitted Plush",
    "uses": [
-    "Organic cotton knitted fabric",
-    "Recycled polyester fill"
+    "Organic cotton knitted fabric"
    ],
    "free": [],
    "unconfirmed": [
@@ -3905,9 +3890,7 @@
    "type": "balls",
    "brand": "Bright Starts",
    "line": "Oball Classic Easy-Grasp",
-   "uses": [
-    "Plastic"
-   ],
+   "uses": [],
    "free": [],
    "unconfirmed": [
     "Plastic type",
@@ -3994,9 +3977,7 @@
    "type": "balls",
    "brand": "Edushape",
    "line": "Sensory Shapes and Balls",
-   "uses": [
-    "Plastic"
-   ],
+   "uses": [],
    "free": [
     "Phthalates"
    ],
@@ -4923,13 +4904,8 @@
    "line": "Classic Organic Cotton Crib Mattress",
    "uses": [
     "GOTS-certified organic cotton fabric and fill",
-    "Polyethylene waterproofing made from non-GMO sugarcane",
-    "Food-grade polyethylene foam (lightweight models)",
-    "PLA foam loop (2-stage models)",
-    "PLA firmness support layer",
     "Steel coils (innerspring model)",
-    "Steel fasteners",
-    "Polypropylene interlinings"
+    "Steel fasteners"
    ],
    "free": [
     "Flame retardants",
@@ -4945,9 +4921,9 @@
     "Dyes"
    ],
    "outside": [
-    "Polyethylene waterproof surface",
-    "Polyethylene foam core",
-    "PLA foam/support layer",
+    "Polyethylene waterproof surface made from non-GMO sugarcane",
+    "Food-grade polyethylene foam core (lightweight models)",
+    "PLA foam loop and firmness support layer (2-stage models)",
     "Polypropylene interlinings"
    ],
    "quote": "Materials: GOTS-certified organic cotton fabric and fill, polyethylene waterproofing made from non-GMO sugarcane, steel coils (innerspring model), food-grade polyethylene foam (lightweight models), PLA foam loop (2-stage models), PLA firmness support layer, steel fasteners, and polypropylene interlinings.",
@@ -5026,10 +5002,7 @@
    "brand": "Newton Baby",
    "line": "Waterproof Crib Mattress",
    "uses": [
-    "Breathe-thru outer cover of spacer material (polyester)",
-    "TPU waterproof barrier on one side of cover",
-    "Viscose inner cover",
-    "Wovenaire core of food-grade polymer"
+    "Viscose inner cover"
    ],
    "free": [
     "Foam",
@@ -5046,9 +5019,9 @@
     "Thread"
    ],
    "outside": [
-    "Polyester spacer cover",
-    "TPU waterproof barrier",
-    "Polymer (Wovenaire) core"
+    "Breathe-thru outer cover of spacer material (polyester)",
+    "TPU waterproof barrier on one side of cover",
+    "Wovenaire core of food-grade polymer"
    ],
    "quote": "Breathe-thru outer cover - quilted dual-layer cloud pattern, made from cushiony spacer material (polyester)with TPU waterproof barrier on one side ... Wovenaire® core - made of safe, food-grade polymer",
    "products": [
@@ -5132,10 +5105,7 @@
    "type": "mattresses",
    "brand": "Lullaby Earth",
    "line": "Healthy Support Waterproof Crib Mattress",
-   "uses": [
-    "Food-grade polyethylene",
-    "Polyester"
-   ],
+   "uses": [],
    "free": [
     "Polyurethane foam",
     "Vinyl/PVC",
@@ -5151,7 +5121,7 @@
     "Thread"
    ],
    "outside": [
-    "Polyethylene",
+    "Food-grade polyethylene",
     "Polyester"
    ],
    "quote": "Lullaby Earth mattresses are made from food-grade polyethylene and polyester, materials used throughout the food packaging industry due to their recyclability.",
@@ -5467,10 +5437,7 @@
    "brand": "IKEA",
    "line": "SNIGLAR bed frame with slatted bed base",
    "uses": [
-    "Solid beech (legs, sides, guard rail, rails)",
-    "Fiberboard, acrylic paint, paper foil (bed end filling)",
-    "Beech veneer, birch veneer, adhesive resin (layer-glued slats)",
-    "100% polyester (slat ribbon)"
+    "Solid beech (legs, sides, guard rail, rails)"
    ],
    "free": [],
    "unconfirmed": [
@@ -5481,7 +5448,7 @@
     "Fiberboard bed-end panels",
     "Acrylic paint",
     "Paper foil",
-    "Layer-glued veneer slats with adhesive resin",
+    "Layer-glued beech and birch veneer slats with adhesive resin",
     "Polyester ribbon"
    ],
    "quote": "Bed end filling: Fiberboard, Acrylic paint, Paper foil ... Layer glued slats: Beech veneer, Birch veneer, Adhesive resin as coating",
@@ -6025,7 +5992,6 @@
    "brand": "Piccalio",
    "line": "bedBED Montessori Bed",
    "uses": [
-    "FSC Birch plywood",
     "Solid pine",
     "Non-toxic 0-VOC finish"
    ],
@@ -6038,7 +6004,7 @@
     "Hardware"
    ],
    "outside": [
-    "Birch plywood"
+    "FSC birch plywood"
    ],
    "quote": "Materials: FSC® Birch plywood and solid pine. Non-toxic 0-VOC finish",
    "products": [
@@ -6121,10 +6087,7 @@
    "type": "floor-beds",
    "brand": "Little Partners",
    "line": "Lil' House Toddler Bed",
-   "uses": [
-    "Layered birch and poplar (EPA TSCA Title VI compliant)",
-    "Child-safe, non-toxic paints"
-   ],
+   "uses": [],
    "free": [
     "Lead",
     "Heavy metals",
@@ -6136,8 +6099,8 @@
     "Hardware"
    ],
    "outside": [
-    "Layered (plywood-type) birch and poplar",
-    "Paint (type not named)"
+    "Layered (plywood-type) birch and poplar, EPA TSCA Title VI compliant",
+    "Paint (type not named; described as child-safe and non-toxic)"
    ],
    "quote": "The kids' house bed is constructed from the highest-quality layered birch and poplar that is EPA TSCA Title VI compliant. Finished in child-safe, non-toxic paints and materials.",
    "products": [
@@ -6205,8 +6168,7 @@
    "brand": "Delta Children",
    "line": "Wood Floor Toddler Bed with Reusable Stickers",
    "uses": [
-    "Wood frame (species and type not named)",
-    "Reusable vinyl cling stickers"
+    "Wood frame (species and type not named)"
    ],
    "free": [],
    "unconfirmed": [
@@ -6215,7 +6177,7 @@
     "Hardware"
    ],
    "outside": [
-    "Vinyl cling stickers"
+    "Reusable vinyl cling stickers"
    ],
    "quote": "Whimsical reusable vinyl cling stickers ... let little ones decorate and redecorate ... Built from a sturdy wood frame",
    "products": [
@@ -6783,8 +6745,7 @@
    "brand": "Naturepedic",
    "line": "Organic Waterproof Crib Protector Pad",
    "uses": [
-    "GOTS-certified organic cotton",
-    "TPU waterproofing"
+    "GOTS-certified organic cotton"
    ],
    "free": [
     "Vinyl/PVC",
@@ -6858,8 +6819,7 @@
    "brand": "Avocado",
    "line": "Organic Crib Waterproof Protector",
    "uses": [
-    "Two layers of GOTS-certified organic cotton",
-    "Polyurethane waterproof film"
+    "Two layers of GOTS-certified organic cotton"
    ],
    "free": [
     "Vinyl",
@@ -6937,8 +6897,7 @@
    "brand": "Newton Baby",
    "line": "Essential Waterproof Crib Pad",
    "uses": [
-    "Breathe-thru eyelet spacer material",
-    "TPU waterproof lining"
+    "Breathe-thru eyelet spacer material"
    ],
    "free": [],
    "unconfirmed": [
@@ -7023,7 +6982,6 @@
    "brand": "Delta Children",
    "line": "Beautyrest Eco-Cool Cooling Crib Mattress Protector",
    "uses": [
-    "100% polyester",
     "Waterproof backing (material not named)",
     "Elasticized edges"
    ],
@@ -7036,7 +6994,7 @@
     "Odor-control and stain-resistant treatments"
    ],
    "outside": [
-    "Polyester construction"
+    "100% polyester construction"
    ],
    "quote": "CONSTRUCTION: 100% polyester ... the quiet waterproof backing protects the crib mattress from leaks, spills and nighttime accidents",
    "products": [
@@ -7545,8 +7503,7 @@
    "brand": "WeeSprout",
    "line": "Silicone Baby Food Freezer Tray",
    "uses": [
-    "Silicone tray",
-    "Plastic clip-on lid"
+    "Silicone tray"
    ],
    "free": [
     "BPA",
@@ -7949,8 +7906,7 @@
    "brand": "Tovolo",
    "line": "King Cube Silicone Ice Mold with Lid",
    "uses": [
-    "Food-grade silicone",
-    "BPA-free nylon"
+    "Food-grade silicone"
    ],
    "free": [
     "BPA"
@@ -8076,8 +8032,7 @@
    "line": "Classic pop molds",
    "uses": [
     "Platinum liquid silicone",
-    "Wooden sticks (100 included)",
-    "Polycarbonate support tray (doesn’t touch food)"
+    "Wooden sticks (100 included)"
    ],
    "free": [],
    "unconfirmed": [],
@@ -8117,7 +8072,9 @@
    "img_src": "https://www.webstaurantstore.com/images/products/extra_large/581826/2104084.jpg",
    "evidence": "Silikomart declaration (10 Jan 2023) covering all its moulds names the French Arrêté of 25 Nov 1992, BfR XV and ResAP (2004) 5",
    "note": "Thin juice can leak at the stick slots; yogurt or purée holds better.",
-   "outside": [],
+   "outside": [
+    "Polycarbonate support tray (doesn’t touch food)"
+   ],
    "facts": {
     "main": "yes",
     "parts": "yes",
@@ -8256,8 +8213,7 @@
    "brand": "Tovolo",
    "line": "Stackable Pop Molds",
    "uses": [
-    "Silicone",
-    "BPA-free nylon"
+    "Silicone"
    ],
    "free": [
     "BPA"
@@ -9095,10 +9051,7 @@
    "line": "Salt Water Original Hook & Loop - Baby",
    "uses": [
     "Genuine bovine leather straps",
-    "Polyurethane film laminated on one side of the leather",
-    "Hand-stitched TPR sole",
-    "Brass hardware",
-    "Hook-and-loop ankle strap"
+    "Brass hardware"
    ],
    "free": [],
    "unconfirmed": [
@@ -9108,8 +9061,8 @@
     "Dyes"
    ],
    "outside": [
-    "TPR sole",
-    "Polyurethane film on leather",
+    "Hand-stitched TPR sole",
+    "Polyurethane film laminated on one side of the leather",
     "Hook-and-loop strap"
    ],
    "quote": "Crafted with the same scuff-resistant, water-friendly genuine leather and hand-stitched, non-slip TPR sole ... We laminate a poly-urethane film on one side to give it color and help the leather hold its shape.",
@@ -9187,9 +9140,7 @@
    "line": "Tejo (Toddlers)",
    "uses": [
     "Canvas upper (100% recycled cotton)",
-    "Membrane (100% polyester, approx. 75% recycled)",
-    "Lining/mid-sole: felted wool loden (100% virgin wool)",
-    "Outsole: approx. 55% synthetic rubber, 15% silica, 15% recycled rubber and/or cork, 10% natural rubber, 5% processing aids & pigments"
+    "Lining/mid-sole: felted wool loden (100% virgin wool)"
    ],
    "free": [],
    "unconfirmed": [
@@ -9200,8 +9151,8 @@
     "Laces/closures"
    ],
    "outside": [
-    "Polyester membrane",
-    "Synthetic rubber in outsole"
+    "Membrane (100% polyester, approx. 75% recycled)",
+    "Outsole: approx. 55% synthetic rubber, 15% silica, 15% recycled rubber and/or cork, 10% natural rubber, 5% processing aids & pigments"
    ],
    "quote": "Upper: Canvas (100% recycled cotton) – brown Membrane: 100% polyester containing approx. 75% recycled material Lining / mid-sole: Felted wool loden (100% virgin wool) Outsole: approx. 55% synthetic rubber, approx. 15% silica, approx. 15% recycled content (recycled rubber and/or cork), approx. 10% natural rubber, approx. 5% processing aids & pigments.",
    "products": [
@@ -9751,8 +9702,6 @@
    "line": "Kids Firechief 2 Rain Boot",
    "uses": [
     "Waterproof rubber upper",
-    "Polyester/cotton lining",
-    "EVA insole",
     "Rubber lug outsole"
    ],
    "free": [],
@@ -9764,7 +9713,7 @@
    ],
    "outside": [
     "EVA insole",
-    "Polyester in lining"
+    "Polyester/cotton lining"
    ],
    "quote": "Crafted from waterproof high-quality rubber ... The white polyester/cotton lining adds soft comfort, while the EVA insole provides lightweight cushioning ... A rugged rubber lug outsole",
    "products": [
@@ -9831,7 +9780,6 @@
    "brand": "Kamik",
    "line": "Stomp Rain Boots (Toddlers)",
    "uses": [
-    "PVC shell",
     "Felt insole"
    ],
    "free": [],
@@ -9926,7 +9874,6 @@
    "line": "Skipper II Kid's Rainboots (Toddler)",
    "uses": [
     "Rubber upper",
-    "BLOOM algae-based EVA footbed",
     "BOGS Max-Wick moisture-wicking lining",
     "DuraFresh odour treatment"
    ],
@@ -9939,7 +9886,7 @@
     "Dyes"
    ],
    "outside": [
-    "EVA footbed"
+    "BLOOM algae-based EVA footbed"
    ],
    "quote": "Crafted with ultra-soft and flexible rubber. BLOOM eco-friendly, algae-based EVA footbed ... BOGS Max-Wick evaporates sweat to keep feet dry",
    "products": [
@@ -9997,8 +9944,6 @@
    "brand": "Little Green Radicals",
    "line": "Lined Natural Rubber Rain Boots",
    "uses": [
-    "Outer: 90% natural rubber, 10% synthetic rubber",
-    "Lining: 85% natural rubber foam, 15% synthetic rubber, wrapped in recycled polyester",
     "Natural rubber certified by the Fair Rubber Association"
    ],
    "free": [],
@@ -10009,8 +9954,8 @@
     "Plasticisers"
    ],
    "outside": [
-    "Synthetic rubber in outer and lining",
-    "Recycled polyester lining wrap"
+    "Outer: 90% natural rubber, 10% synthetic rubber",
+    "Lining: 85% natural rubber foam, 15% synthetic rubber, wrapped in recycled polyester"
    ],
    "quote": "Outer made from 90% natural rubber blended with 10% synthetic rubber for durability; Lining made from 85% natural rubber foam and 15% synthetic rubber, wrapped in recycled polyester",
    "products": [
@@ -10865,9 +10810,7 @@
    "type": "sleep-sacks",
    "brand": "SwaddleMe by Ingenuity",
    "line": "Compression Swaddle Pod, 0 to 2 months",
-   "uses": [
-    "Cotton and spandex fabric (93% cotton, 7% spandex)"
-   ],
+   "uses": [],
    "free": [],
    "unconfirmed": [
     "Which part is the 10% plastic",
@@ -10875,7 +10818,7 @@
     "Dyes in the print"
    ],
    "outside": [
-    "7% spandex in the fabric",
+    "Cotton and spandex fabric (93% cotton, 7% spandex)",
     "10% plastic in the maker's materials list"
    ],
    "facts": {

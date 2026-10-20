@@ -37,6 +37,7 @@ All notable changes to the site are listed here. The format follows [Keep a Chan
 - A blank strip at the top of every page, and department tiles whose labels sat at different heights.
 
 ### Changed
+- "Every detail stated" now reads "All materials stated" on cards, quick view and the compare table; the filter "Every detail above is stated" is "Materials stated for every part", and the sort "Fewest details not stated" is "Fewest unstated materials".
 - "Not stated" lines on cards, quick view, the compare table and product pages name the parts no page describes ("Not stated: thread · zipper · wool treatment"), from a new `unstated` field that ties each unconfirmed part to its material filter (170 parts tagged).
 - Fourteen listings recorded a guess as fact ("probably plastic", "likely synthetic", "often polyester"); each guessed part is now listed as not stated, so 72 products meet the default filters instead of 64. General context about dyes moved to the silks and pretend play intros. `npm run check` now rejects guessing words in the checklist.
 - Type photo tiles with no listing photo yet show the type's initial on the plate instead of an empty circle.

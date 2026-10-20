@@ -37,6 +37,8 @@ for (const a of data.aisles) {
 }
 
 const ids = new Set();
+const SYNTH = S.MATERIALS.filter(m => m.id === 'synthetic')[0].rx;
+const COMPOSITE = /plywood|\bmdf\b|fib(?:er|re) ?board|particle ?board|veneer|layered (?:birch|wood|poplar)/i;
 const GUESS = /\b(?:probably|likely|often|usually|typically|presumably|possibly|may be|might be|looks like|seems|appears to)\b/i;
 let entries = 0, products = 0, missingImg = 0;
 for (const e of data.entries) {
@@ -55,6 +57,11 @@ for (const e of data.entries) {
   // product type's intro, and the part itself under unconfirmed.
   for (const k of ['uses', 'free', 'unconfirmed', 'outside']) for (const t of e[k] || []) {
     const m = t.match(GUESS); if (m) problems.push(`${where}: ${k} "${t}" guesses ("${m[0]}"); record what the page says and list the part as not stated`);
+  }
+  // Made with lists only what no default filter flags; synthetics and composite wood are flagged parts.
+  for (const t of e.uses || []) {
+    if (SYNTH.test(t) || COMPOSITE.test(t)) problems.push(`${where}: uses "${t}" is synthetic or composite wood; list it under outside`);
+    if ((e.outside || []).includes(t)) problems.push(`${where}: "${t}" is under both uses and outside`);
   }
   for (const [k, parts] of Object.entries(e.unstated || {})) {
     if (!e.facts || e.facts[k] !== 'unknown') problems.push(`${where}: unstated.${k} needs facts.${k} = "unknown"`);
