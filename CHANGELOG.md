@@ -12,6 +12,7 @@ All notable changes to the site are listed here. The format follows [Keep a Chan
 - Unit tests for the catalog rules (`npm test`) and browser smoke tests (`npm run test:e2e`), run in CI on every pull request.
 - Pull request template, this changelog and contributing notes.
 - A usability review of the redesign in `docs/usability-review.md`.
+- Three home page structures for first-time visitors, with a recommendation, in `docs/home-page-options.md`.
 - A proposal for growing the catalog, moving navigation to product types and automating product discovery, in `docs/catalog-growth-plan.md`.
 - A weekly price check (`tools/prices.js`, `.github/workflows/price-check.yml`) that opens a pull request when store prices change.
 - The price check reads the price of the size or option a listing names (or a `variant` hint on the product) instead of the cheapest one, and reports pages where no option can be told apart under "Needs a look".
