@@ -450,7 +450,7 @@
       return '<button type="button" class="qchip" data-quick="' + x[0] + '" data-val="' + esc(x[1]) + '" aria-pressed="' + on + '">' + (on ? icon('check') : '') + esc(x[2]) + '</button>';
     }).join('') + '</div>';
   }
-  function activeChips(st) {
+  function activeChips(st, withDefaults) {
     var chips = [];
     function add(f, v, label) { chips.push('<button type="button" class="chip-x" data-clear="' + f + '" data-val="' + esc(v) + '">' + esc(label) + icon('x') + '<span class="sr"> remove</span></button>'); }
     if (st.q && st.kind !== 'search') add('q', '', '“' + st.q + '”');
@@ -463,9 +463,10 @@
     st.age.forEach(function (v) { var a = S.AGE_BANDS.filter(function (x) { return x.id === v; })[0]; if (a) add('age', v, 'Age: ' + a.label); });
     st.ship.forEach(function (v) { var l = { us: 'Ships from the US', abroad: 'Ships from outside the US', unknown: 'Shipping not recorded' }[v]; if (l) add('ship', v, l); });
     var d = defaults();
-    C.criteria.forEach(function (c) { if (st.crit[c.id] && !d[c.id]) add('crit', c.id, S.filterLabel(c)); });
-    if (st.strict) add('crit', 'strict', 'Materials stated for every part');
-    if (chips.length > 1) chips.push('<button type="button" class="chip-clear" data-clear-all>Clear all</button>');
+    var nd = chips.length;
+    C.criteria.forEach(function (c) { if (st.crit[c.id] && (withDefaults || !d[c.id])) { add('crit', c.id, S.filterLabel(c)); if (!d[c.id]) nd++; } });
+    if (st.strict) { add('crit', 'strict', 'Materials stated for every part'); nd++; }
+    if (nd > 1) chips.push('<button type="button" class="chip-clear" data-clear-all>Clear all</button>');
     return chips.join('');
   }
   function emptyState(st, hidden) {
@@ -539,7 +540,7 @@
       '<div class="tools"><button type="button" class="btn-3 filt-btn" data-drawer-open aria-expanded="' + drawer + '" aria-controls="rail">' + icon('sliders') + 'Filter & sort' + (activeChips(st) ? ' <span class="cnt">•</span>' : '') + '</button>' +
       '<label class="sort"><span>Sort by</span><select id="sort" aria-label="Sort by">' + SORTS.map(function (s) { return '<option value="' + s[0] + '"' + (st.sort === s[0] ? ' selected' : '') + '>' + s[1] + '</option>'; }).join('') + '</select></label></div></div>' +
       quickChips(st, list) +
-      '<div class="chips">' + activeChips(st) + '</div>' +
+      '<div class="chips">' + activeChips(st, true) + '</div>' +
       (hidden ? '<div class="hidden-note"><p>' + (st.all ? plural(hidden, 'product that doesn’t', 'products that don’t') + ' match your material filters ' + (hidden === 1 ? 'is' : 'are') + ' shown.' : '<b>' + plural(hidden, 'more product', 'more products') + '</b> set aside by your material filters.') + '</p><button type="button" data-toggle-all>' + (st.all ? 'Hide them' : 'Show them') + '</button></div>' : '') +
       (shown.length ? '<div class="grid" id="grid">' + shown.map(function (it, i) { return card(it, i, st.crit, st.strict); }).join('') + '</div>' : emptyState(st, hidden)) +
       (list.length > shown.length ? '<div class="more-wrap"><p>Showing ' + shown.length + ' of ' + list.length + '</p><button type="button" class="btn-2" data-more>Show more</button></div>' : (list.length > PAGE ? '<div class="more-wrap"><p>Showing all ' + list.length + '</p></div>' : '')) +
@@ -589,18 +590,20 @@
   function filterTable(item) {
     var row = function (c) {
       var f = item.facts[c.id], has = item.contains.indexOf(c.id) >= 0, res;
+      if (!CRIT[c.id]) return '';
       if (c.kind === 'contains') { if (!has) return ''; res = '<span class="no">Has it</span>'; }
       else if (f === undefined) return '';
       else if (c.kind === 'require') res = f === 'yes' ? '<span class="ok">Stated</span>' : f === 'no' ? '<span class="no">Stated not</span>' : '<span class="unk">Not stated</span>';
       else res = f === 'yes' ? '<span class="ok">Meets it</span>' : f === 'no' ? '<span class="no">Doesn’t meet it</span>' : '<span class="unk">Not stated</span>';
-      return '<tr' + (CRIT[c.id] ? '' : ' class="off"') + '><th scope="row">' + esc(S.filterLabel(c)) + (TERMS[c.term] ? ' <a class="q term-link" href="' + U('/glossary/' + c.term) + '" data-term="' + c.term + '" aria-label="What this means">?</a>' : '') + (CRIT[c.id] ? '' : ' <span class="off-t">Off</span>') + '<small>' + esc(c.help) + '</small></th><td class="res">' + res + '</td></tr>';
+      return '<tr><th scope="row">' + esc(S.filterLabel(c)) + (TERMS[c.term] ? ' <a class="q term-link" href="' + U('/glossary/' + c.term) + '" data-term="' + c.term + '" aria-label="What this means">?</a>' : '') + '<small>' + esc(c.help) + '</small></th><td class="res">' + res + '</td></tr>';
     };
     var groups = C.critGroups.length ? C.critGroups : [{ id: '', title: '' }];
     var body = groups.map(function (g) {
       var rows = C.criteria.filter(function (c) { return !C.critGroups.length || c.group === g.id; }).map(row).join('');
       return rows ? '<tbody>' + (g.title ? '<tr class="grp"><th scope="rowgroup" colspan="2">' + esc(g.title) + '</th></tr>' : '') + rows + '</tbody>' : '';
     }).join('');
-    return '<table class="ftable"><caption class="sr">How this product reads against each material filter</caption><thead><tr><th scope="col">Filter</th><th scope="col">This product</th></tr></thead>' + body + '</table>';
+    if (!body) return '<p class="muted">No material filters are on.</p>';
+    return '<table class="ftable"><caption class="sr">How this product reads against each material filter you have on</caption><thead><tr><th scope="col">Filter</th><th scope="col">This product</th></tr></thead>' + body + '</table>';
   }
   // Several stores: cheapest first (with shipping where known), like a price comparison. One store's sizes or
   // options keep the order the research recorded them in.
