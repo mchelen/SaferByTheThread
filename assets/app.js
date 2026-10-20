@@ -309,15 +309,20 @@
     }).join('') + '</div>';
   }
   function typeCount(id) { return C.items.filter(function (i) { return i.cat === id; }).length; }
-  function renderHome() {
-    var okItems = C.items.filter(function (i) { return status(i).ok; });
-    var groups = C.groups.filter(function (g) { return g.cats.some(function (id) { return typeCount(id) > 0; }); });
-    var art = groups.map(groupPic).filter(Boolean).slice(0, 3);
-    var tiles = groups.map(function (g) {
+  function liveGroups() { return C.groups.filter(function (g) { return g.cats.some(function (id) { return typeCount(id) > 0; }); }); }
+  function liveTypes() { return Object.keys(C.cats).filter(function (id) { return typeCount(id) > 0; }); }
+  function aisleTiles(groups) {
+    return '<div class="tiles">' + (groups || liveGroups()).map(function (g) {
       var pic = groupPic(g);
       return '<a class="tile" href="' + U('/a/' + g.id) + '"><span class="tile-img">' + (pic ? '<img src="' + esc(asset(pic.img)) + '" alt="" decoding="async">' : '') + '</span>' +
         '<span class="tile-t">' + esc(g.title) + '</span></a>';
-    }).join('');
+    }).join('') + '</div>';
+  }
+  function renderHome() {
+    var okItems = C.items.filter(function (i) { return status(i).ok; });
+    var groups = liveGroups();
+    var art = groups.map(groupPic).filter(Boolean).slice(0, 3);
+    var tiles = aisleTiles(groups);
     var ages = S.AGE_BANDS.map(function (b) {
       var n = C.items.filter(function (i) { return i.ageBands.indexOf(b.id) >= 0; }).length;
       return n ? '<a class="age-chip" href="' + U('/shop', { age: b.id }) + '">' + esc(b.label) + '</a>' : '';
@@ -333,7 +338,7 @@
       '<p class="lede">What ' + C.items.length + ' babies’ and toddlers’ things are made of, in their makers’ own words.</p>' +
       '<div class="hero-cta"><a class="btn" href="' + U('/shop') + '">Shop all products</a></div></div>' +
       '<div class="hero-art" aria-hidden="true">' + art.map(function (i) { return '<a href="' + U('/p/' + i.id) + '" tabindex="-1"><img src="' + esc(asset(i.img)) + '" alt="" decoding="async"></a>'; }).join('') + '</div></section>' +
-      '<section class="sec"><div class="sec-h"><h2>Shop by category</h2><a href="' + U('/shop') + '">All products →</a></div><div class="tiles">' + tiles + '</div></section>' +
+      '<section class="sec"><div class="sec-h"><h2>Shop by category</h2><a href="' + U('/shop') + '">All products →</a></div>' + tiles + '</section>' +
       '<section class="sec"><div class="sec-h"><h2>Shop by age</h2></div><div class="ages">' + ages + '</div></section>' +
       rows +
       cardRail(listGet(RECENT_KEY).map(byId).filter(Boolean).slice(0, 8), 'Pick up where you left off', U('/saved'), 'Your saved products') +
@@ -497,8 +502,14 @@
       var b = C.brands[st.key], bc = {}; b.items.forEach(function (i) { bc[i.cat] = 1; });
       trail = [['Brands', U('/brands')], [b.name]];
       intro = plural(b.items.length, 'listing') + ' in ' + Object.keys(bc).map(function (k) { return C.cats[k].title.toLowerCase(); }).join(', ') + '.';
-    } else if (st.kind === 'search') trail = [[st.q ? 'Search: ' + st.q : 'Search']];
-    else trail = [['All products']];
+    } else if (st.kind === 'search') {
+      trail = [[st.q ? 'Search: ' + st.q : 'Search']];
+      var hitTypes = liveTypes().filter(function (id) { return all.some(function (i) { return i.cat === id; }); });
+      if (hitTypes.length > 1) sub = '<nav class="sibling-types" aria-label="Product types in these results">' + typeTiles(hitTypes, 'sm') + '</nav>';
+    } else {
+      trail = [['All products']];
+      sub = '<nav class="sibling-types" aria-label="Product types">' + typeTiles(liveTypes(), 'sm') + '</nav>';
+    }
     var pend = PEND ? (PEND.all ? base(PEND) : base(PEND).filter(function (i) { return status(i, PEND.crit, PEND.strict).ok; })).length : list.length;
     main.innerHTML = '<div class="wrap">' + crumbs(trail) +
       '<header class="plp-head"><h1>' + esc(title) + '</h1>' + (intro ? '<p class="intro">' + (st.kind === 'dept' ? intro : esc(intro)) + '</p>' : '') + sub + '</header>' +
@@ -619,6 +630,7 @@
       '</div>' +
       (similar.length ? '<section class="sec similar"><div class="sec-h"><h2>Compare with similar items</h2><a href="' + U('/compare', { ids: [item.id].concat(similar.map(function (i) { return i.id; })).join(',') }) + '">Open in Compare →</a></div>' +
         compareTable([item].concat(similar), { current: item.id, rows: ['price', 'ship', 'rating', 'filters', 'made', 'unst', 'from'] }) + '</section>' : '') +
+      (groupOf(cat.group) && groupOf(cat.group).cats.length > 1 ? '<section class="sec row-sec"><div class="sec-h"><h2><a href="' + U('/a/' + cat.group) + '">More in ' + esc(groupOf(cat.group).title.toLowerCase()) + '</a></h2><a href="' + U('/a/' + cat.group) + '">All ' + esc(groupOf(cat.group).title.toLowerCase()) + ' →</a></div>' + typeTiles(groupOf(cat.group).cats.filter(function (id) { return typeCount(id) > 0; }), 'sm', cat.id) + '</section>' : '') +
       cardRail(more, 'More from ' + esc(item.brand), U('/b/' + item.brandId), 'All ' + item.brand) +
       cardRail(also, 'You may also like', U('/c/' + cat.id), 'All ' + cat.title.toLowerCase()) +
       (recent.length ? '<div class="recent">' + cardRail(recent, 'Recently viewed') + '</div>' : '') +
@@ -683,12 +695,6 @@
       '<h2>Source</h2><p>The data and the site are open at <a href="https://github.com/mchelen/SaferByTheThread" target="_blank" rel="noopener">github.com/mchelen/SaferByTheThread</a>.</p></div></div>';
     setNav('about'); setTitle('About');
   }
-  function renderSaved() {
-    var items = listGet(SAVED_KEY).map(byId).filter(Boolean);
-    main.innerHTML = '<div class="wrap">' + crumbs([['Saved']]) + '<div class="page wide"><h1>Saved products</h1><p class="lede">' + (items.length ? plural(items.length, 'product') + ' saved in this browser.' : 'Nothing saved yet. The heart on any product keeps it here, in this browser.') + '</p>' +
-      (items.length ? '<div class="grid">' + items.map(function (i) { return card(i); }).join('') + '</div>' : '<p><a class="btn" href="' + U('/shop') + '">Shop all products</a></p>') + '</div></div>';
-    setNav('saved'); setTitle('Saved');
-  }
   function stdLinks(i) { return i.standards.map(function (s) { var d = C.standards.filter(function (x) { return x.id === s; })[0]; return d ? termLink(d.term, d.label) : esc(s); }).join(', '); }
   // Side-by-side table, used by the Compare page and by "Compare with similar items" on product pages.
   var CMP_ROWS = {
@@ -731,18 +737,18 @@
     var items = ids.map(byId).filter(Boolean);
     main.innerHTML = '<div class="wrap">' + crumbs([[shared ? 'Shared list' : 'Saved']]) + '<div class="page wide"><div class="page-h"><h1>' + (shared ? 'Shared list' : 'Saved products') + '</h1>' + (!shared && items.length ? shareBtn('/saved', ids, 'Saved products') : '') + '</div>' +
       (shared ? sharedBar(items.map(function (i) { return i.id; }), '/saved', 'list') : '<p class="lede">' + (items.length ? plural(items.length, 'product') + ' saved in this browser. “Share this list” makes a link that opens the same products on any device, for a gift list or to decide with someone.' : 'Nothing saved yet. The heart on any product keeps it here, in this browser.') + '</p>') +
-      (items.length ? '<div class="grid">' + items.map(function (i) { return card(i); }).join('') + '</div>' : '<p><a class="btn" href="' + U('/shop') + '">Shop all products</a></p>') + '</div></div>';
+      (items.length ? '<div class="grid">' + items.map(function (i) { return card(i); }).join('') + '</div>' : '<div class="empty-tiles"><h2>Shop by category</h2>' + aisleTiles() + '</div>') + '</div></div>';
     setNav('saved'); setTitle(shared ? 'Shared list' : 'Saved');
   }
   function renderCompare() {
     var shared = idsParam(), items = (shared || listGet(CMP_KEY)).map(byId).filter(Boolean).slice(0, 4);
     main.innerHTML = '<div class="wrap">' + crumbs([['Compare']]) + '<div class="page wide"><div class="page-h"><h1>Compare products</h1>' + (!shared && items.length > 1 ? shareBtn('/compare', items.map(function (i) { return i.id; }), 'Compare products') : '') + '</div>' +
       (shared ? sharedBar(items.map(function (i) { return i.id; }), '/compare', 'comparison') : '<p class="lede">' + (items.length ? plural(items.length, 'product') + ' side by side; up to four at a time, kept in this browser.' : 'Nothing to compare yet. “Compare” on any product page or quick view adds it here, up to four at a time.') + '</p>') +
-      (items.length ? compareTable(items, { removable: !shared }) : '<p><a class="btn" href="' + U('/shop') + '">Shop all products</a></p>') + '</div></div>';
+      (items.length ? compareTable(items, { removable: !shared }) : '<div class="empty-tiles"><h2>Shop by category</h2>' + aisleTiles() + '</div>') + '</div></div>';
     setNav('compare'); setTitle('Compare');
   }
   function renderNotFound() {
-    main.innerHTML = '<div class="wrap"><div class="page"><h1>Page not found</h1><p class="lede">Nothing lives at this address.</p><p><a class="btn" href="' + U('/shop') + '">Shop all products</a></p></div></div>';
+    main.innerHTML = '<div class="wrap"><div class="page"><h1>Page not found</h1><p class="lede">Nothing lives at this address.</p><div class="empty-tiles"><h2>Shop by category</h2>' + aisleTiles() + '</div></div></div>';
     setTitle('Not found');
   }
 

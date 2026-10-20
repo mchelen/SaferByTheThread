@@ -183,6 +183,9 @@ h3 { font-size: 15px; }
 .ttile:hover .ttile-img { border-color: var(--line-strong); box-shadow: var(--shadow); }
 .ttile-t { font-size: 14px; font-weight: 500; text-align: center; line-height: 1.25; }
 .band .link-b { display: inline-block; margin-top: 12px; }
+.empty-tiles { margin-top: 24px; }
+.empty-tiles h2 { font-size: 18px; margin-bottom: 12px; }
+.page:not(.wide) .empty-tiles .tiles { grid-template-columns: repeat(2, 1fr); }
 .ttiles.sm { flex-wrap: nowrap; overflow-x: auto; gap: 12px 10px; padding: 12px 2px 6px; scrollbar-width: thin; }
 .ttiles.sm .ttile { flex: none; }
 .ttiles.sm .ttile { width: 88px; gap: 6px; }
