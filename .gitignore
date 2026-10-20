@@ -3,3 +3,5 @@ dist/
 node_modules/
 __pycache__/
 price-report.md
+test-results/
+visual-report/
