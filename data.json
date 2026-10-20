@@ -670,7 +670,6 @@
    ],
    "free": [],
    "unconfirmed": [
-    "Polyester binder in the batting",
     "Thread"
    ],
    "products": [
@@ -687,7 +686,7 @@
    "quote": "GOTS certified organic cotton outer… a soft cotton filling",
    "outside": [],
    "facts": {
-    "main": "unknown",
+    "main": "yes",
     "parts": "unknown",
     "color": "yes",
     "organic": "yes"
