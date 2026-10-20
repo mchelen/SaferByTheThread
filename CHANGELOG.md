@@ -5,6 +5,7 @@ All notable changes to the site are listed here. The format follows [Keep a Chan
 ## [Unreleased]
 
 ### Added
+- `tools/photos.js --browser` reads store pages that refuse scripts in headless Chromium; the daily job uses it, which fills in photos for the White Lotus, Shepherd's Dream, Jan & Jul and Lékué listings (93 listings now have several photos; only 2 have none).
 - Store ratings: cards, quick view and product pages show the star rating and review count from the store page (the store with the most reviews when a product is at several; each option and store in the buy box shows its own), and Compare has a Rating row. The weekly price check reads them (`tools/ratings.js`: JSON-LD, Judge.me, Shopify reviews, Okendo, Loox, Yotpo, Junip) into each product's `rating`; 62 store pages carry one so far.
 - Every photo each store shows for a product, saved as the site's own copy (`tools/photos.js`, 564 photos for 99 listings, 87 with more than one), with thumbnails on the product page and in quick view.
 - Visual regression tests (`npm run test:visual`): screenshots of 13 key views at desktop and phone width, compared on every pull request; a mismatch fails the check and posts the before, after and difference images on the PR. Update them with `npm run test:visual:update` or the `update-screenshots` label. See `tests/visual/README.md`.

@@ -34,7 +34,9 @@ jobs:
           node-version: 22
 
       - name: Install
-        run: npm ci
+        run: |
+          npm ci
+          npx playwright install --with-deps chromium
 
       - name: Discover new products on watched stores
         run: node tools/discover.js --write --report discover-report.md
@@ -43,7 +45,7 @@ jobs:
         run: node tools/ingest.js --report ingest-report.md
 
       - name: Save seller photos for listings without them
-        run: node tools/photos.js --write --report photo-report.md
+        run: node tools/photos.js --write --browser --report photo-report.md
 
       - name: Validate
         run: |

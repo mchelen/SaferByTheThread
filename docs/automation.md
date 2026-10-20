@@ -80,7 +80,11 @@ node tools/photos.js --write --only <listing-id>    # save
 node tools/photos.js --write --refresh --only <id>  # fetch again for a listing that already has photos
 ```
 
-Store pages that refuse scripts (Etsy, Amazon) are reported; those listings keep the photo they have.
+With `--browser`, pages that refuse a plain request (HTTP 403, or photos drawn only by JavaScript) are read again in headless Chromium, which also picks up the large pictures shown on the page outside menus, footers and other-product carousels. The daily job uses it. Pages that refuse a browser too (most Etsy shops, OXO) are reported; those listings keep the photo they have.
+
+```sh
+node tools/photos.js --write --browser --only <listing-id>
+```
 
 ## The daily Claude research session
 
