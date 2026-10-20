@@ -2366,7 +2366,13 @@
    },
    "contains": [],
    "img": "x_melissa_doug_rainbow_stacker",
-   "standards": []
+   "standards": [],
+   "photos": [
+    {
+     "key": "x_melissa_doug_rainbow_stacker",
+     "src": "https://cdn.schoolspecialty.com/7df9b27f-9bde-4245-ad65-b0f00129a63c/1609238_B_JPG%20Output.jpg"
+    }
+   ]
   },
   {
    "id": "maple-landmark-unfinished-maple-block-sets",
@@ -2815,7 +2821,15 @@
     ]
    },
    "contains": [],
-   "standards": []
+   "standards": [],
+   "photos": [
+    {
+     "key": "nature-explore-natural-wooden-vehicles-set-of-4",
+     "src": "https://shop.natureexplore.org/wp-content/uploads/2025/03/7086-Wooden-Vehicles-Square.jpg"
+    }
+   ],
+   "img": "nature-explore-natural-wooden-vehicles-set-of-4",
+   "img_src": "https://shop.natureexplore.org/wp-content/uploads/2025/03/7086-Wooden-Vehicles-Square.jpg"
   },
   {
    "id": "green-elephant-wooden-cars-with-3-peg-dolls",
@@ -4878,7 +4892,23 @@
     ]
    },
    "contains": [],
-   "standards": []
+   "standards": [],
+   "img": "white-lotus-organic-cotton-crib-and-toddler-matt",
+   "img_src": "https://cdn.whitelotushome.com/pimages/gots-organic-cotton-crib-mattress-20231130211415242.jpg",
+   "photos": [
+    {
+     "key": "white-lotus-organic-cotton-crib-and-toddler-matt",
+     "src": "https://cdn.whitelotushome.com/pimages/gots-organic-cotton-crib-mattress-20231130211415242.jpg"
+    },
+    {
+     "key": "white-lotus-organic-cotton-crib-and-toddler-matt_2",
+     "src": "https://cdn.whitelotushome.com/pimages/gots-organic-cotton-crib-mattress-20231130211658361.jpg"
+    },
+    {
+     "key": "white-lotus-organic-cotton-crib-and-toddler-matt_3",
+     "src": "https://cdn.whitelotushome.com/pimages/gots-organic-cotton-crib-mattress-20240205235909007.jpg"
+    }
+   ]
   },
   {
    "id": "naturepedic-classic-organic-crib-mattress",
@@ -6535,7 +6565,23 @@
     ]
    },
    "contains": [],
-   "standards": []
+   "standards": [],
+   "photos": [
+    {
+     "key": "white-lotus-toddler-pillow-kapok-or-buckwheat",
+     "src": "https://cdn.whitelotushome.com/pimages/toddler-pillows-13x18-20220117171420315.jpg"
+    },
+    {
+     "key": "white-lotus-toddler-pillow-kapok-or-buckwheat_2",
+     "src": "https://cdn.whitelotushome.com/pimages/toddler-pillows-13x18-132084441010437216.png"
+    },
+    {
+     "key": "white-lotus-toddler-pillow-kapok-or-buckwheat_3",
+     "src": "https://cdn.whitelotushome.com/pimages/toddler-pillows-13x18-132084441013039708.jpg"
+    }
+   ],
+   "img": "white-lotus-toddler-pillow-kapok-or-buckwheat",
+   "img_src": "https://cdn.whitelotushome.com/pimages/toddler-pillows-13x18-20220117171420315.jpg"
   },
   {
    "id": "shepherd-s-dream-child-s-wool-pillow",
@@ -6580,7 +6626,27 @@
    "age": {
     "min_months": 24,
     "text": "For ages 2 to 8"
-   }
+   },
+   "photos": [
+    {
+     "key": "shepherd-s-dream-child-s-wool-pillow",
+     "src": "https://shepherdsdream.com/wp-content/uploads/2014/01/Childs-Sleep-Pillow-Resized-1.jpg"
+    },
+    {
+     "key": "shepherd-s-dream-child-s-wool-pillow_2",
+     "src": "https://shepherdsdream.com/wp-content/uploads/2021/12/Belvedere-Lifestyle-8.jpg"
+    },
+    {
+     "key": "shepherd-s-dream-child-s-wool-pillow_3",
+     "src": "https://shepherdsdream.com/wp-content/uploads/2014/01/Childs-Sleep-Pillow-Resized-3.jpg"
+    },
+    {
+     "key": "shepherd-s-dream-child-s-wool-pillow_4",
+     "src": "https://shepherdsdream.com/wp-content/uploads/2021/06/Child-Sleep-Pillow-Lifestyle-600x400.jpg"
+    }
+   ],
+   "img": "shepherd-s-dream-child-s-wool-pillow",
+   "img_src": "https://shepherdsdream.com/wp-content/uploads/2014/01/Childs-Sleep-Pillow-Resized-1.jpg"
   },
   {
    "id": "shepherd-s-dream-washable-wool-pads",
@@ -6622,7 +6688,23 @@
     "organic": "no"
    },
    "contains": [],
-   "standards": []
+   "standards": [],
+   "photos": [
+    {
+     "key": "shepherd-s-dream-washable-wool-pads",
+     "src": "https://shepherdsdream.com/wp-content/uploads/2021/06/Puddle-Pad-Lifestyle-Resized.jpg"
+    },
+    {
+     "key": "shepherd-s-dream-washable-wool-pads_2",
+     "src": "https://shepherdsdream.com/wp-content/uploads/2021/06/Puddle-Pad-New.jpg"
+    },
+    {
+     "key": "shepherd-s-dream-washable-wool-pads_3",
+     "src": "https://shepherdsdream.com/wp-content/uploads/2021/06/Puddle-Pad-Resized2.jpg"
+    }
+   ],
+   "img": "shepherd-s-dream-washable-wool-pads",
+   "img_src": "https://shepherdsdream.com/wp-content/uploads/2021/06/Puddle-Pad-Lifestyle-Resized.jpg"
   },
   {
    "id": "coyuchi-crinkled-percale-crib-fitted-sheet",
@@ -7793,7 +7875,15 @@
     ]
    },
    "contains": [],
-   "standards": []
+   "standards": [],
+   "photos": [
+    {
+     "key": "l-ku-xl-square-ice-cube-tray",
+     "src": "https://www.lekue.com/cdn-cgi/image/format=auto,onerror=redirect/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/8/8/887505_1.jpg"
+    }
+   ],
+   "img": "l-ku-xl-square-ice-cube-tray",
+   "img_src": "https://www.lekue.com/cdn-cgi/image/format=auto,onerror=redirect/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/8/8/887505_1.jpg"
   },
   {
    "id": "oxo-covered-silicone-ice-tray",
@@ -8080,7 +8170,19 @@
     ]
    },
    "contains": [],
-   "standards": []
+   "standards": [],
+   "photos": [
+    {
+     "key": "l-ku-small-stackable-popsicle-molds",
+     "src": "https://www.lekue.com/cdn-cgi/image/format=auto,onerror=redirect/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/8/8/882227_1.jpg"
+    },
+    {
+     "key": "l-ku-small-stackable-popsicle-molds_2",
+     "src": "https://www.lekue.com/cdn-cgi/image/format=auto,onerror=redirect/media/resized/productvideo/450/Stackable_Popsicle_Moulds_video.jpg"
+    }
+   ],
+   "img": "l-ku-small-stackable-popsicle-molds",
+   "img_src": "https://www.lekue.com/cdn-cgi/image/format=auto,onerror=redirect/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/8/8/882227_1.jpg"
   },
   {
    "id": "we-might-be-tiny-ice-pop-mold",
@@ -9413,7 +9515,43 @@
    "contains": [
     "latex"
    ],
-   "standards": []
+   "standards": [],
+   "photos": [
+    {
+     "key": "jan-jul-puddle-dry-rain-boots",
+     "src": "https://janandjul.com/wp-content/uploads/BRC-DNL-S-1_22FW.jpg"
+    },
+    {
+     "key": "jan-jul-puddle-dry-rain-boots_2",
+     "src": "https://janandjul.com/wp-content/uploads/BRC-DNL-S-2_22FW.jpg"
+    },
+    {
+     "key": "jan-jul-puddle-dry-rain-boots_3",
+     "src": "https://janandjul.com/wp-content/uploads/BRC-DNL-S-3_22FW.jpg"
+    },
+    {
+     "key": "jan-jul-puddle-dry-rain-boots_4",
+     "src": "https://janandjul.com/wp-content/uploads/BRC-DNL-5_22FW.jpg"
+    },
+    {
+     "key": "jan-jul-puddle-dry-rain-boots_5",
+     "src": "https://janandjul.com/wp-content/uploads/BRC-Feature-1_22FW.jpg"
+    },
+    {
+     "key": "jan-jul-puddle-dry-rain-boots_6",
+     "src": "https://janandjul.com/wp-content/uploads/BRC-Feature-2_22FW.jpg"
+    },
+    {
+     "key": "jan-jul-puddle-dry-rain-boots_7",
+     "src": "https://janandjul.com/wp-content/uploads/BRC-Feature-3_22FW.jpg"
+    },
+    {
+     "key": "jan-jul-puddle-dry-rain-boots_8",
+     "src": "https://janandjul.com/wp-content/uploads/BRC_SizeChart_2024.jpg"
+    }
+   ],
+   "img": "jan-jul-puddle-dry-rain-boots",
+   "img_src": "https://janandjul.com/wp-content/uploads/BRC-DNL-S-1_22FW.jpg"
   },
   {
    "id": "frugi-puddle-buster-wellies",

@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /* Saves every product photo a seller's page shows, as a local cache: img/<key>.jpg, at most 640 px on the long side.
-   Usage: node tools/photos.js [--only id,id] [--limit N] [--max 10] [--refresh] [--write] [--report FILE]
+   Usage: node tools/photos.js [--only id,id] [--limit N] [--max 10] [--refresh] [--browser] [--write] [--report FILE]
    Each listing's first product page is read (the next one when it is blocked): Shopify's /products/<handle>.json
    image list, then JSON-LD Product images, WooCommerce gallery images and og:image. Logos and icons, images under
    300 px and near-duplicates of a photo already kept are skipped. The listing's existing photo stays first.
@@ -128,6 +128,46 @@ async function pageImages(url, wait) {
   return { urls: candidates(lists) };
 }
 
+// Stores that refuse scripts (HTTP 403, Etsy, some WooCommerce hosts) usually serve a real browser. With --browser the
+// page and its images are read again through headless Chromium (Playwright), and the same image rules apply.
+let browserCtx = null;
+async function browser() {
+  if (!browserCtx) {
+    const { chromium } = require('playwright');
+    const b = await chromium.launch();
+    browserCtx = await b.newContext({ userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0 Safari/537.36' });
+    browserCtx.closeAll = () => b.close();
+  }
+  return browserCtx;
+}
+async function browserPageImages(url, wait, name) {
+  await wait(url);
+  const ctx = await browser();
+  const page = await ctx.newPage();
+  try {
+    const r = await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 45000 });
+    if (!r || !r.ok()) return { error: 'HTTP ' + (r ? r.status() : 'no response') + ' in a browser' };
+    await page.waitForTimeout(2500);
+    const html = await page.content(), base = page.url();
+    const ld = jsonLdImages(html, base), found = htmlImages(html, base);
+    // Large pictures the page shows, outside the header, menus, footer and other-product carousels.
+    // Only when the page names no product images itself, and only pictures whose alt text or file name shares a word
+    // with the product's name, so other products on the page stay out.
+    const words = String(name || '').toLowerCase().split(/[^a-z0-9]+/).filter((w) => w.length >= 4);
+    const shown = ld.length || found.length || !words.length ? [] : await page.evaluate((words) => Array.from(document.images).filter((i) => i.naturalWidth >= 300 &&
+      !i.closest('header, nav, footer, [class*="menu"], [class*="nav"], [class*="footer"], [class*="related"], [class*="recommend"], [class*="upsell"], [class*="cross-sell"], [class*="recent"], [class*="similar"], [class*="also"]') &&
+      words.some((w) => ((i.alt || '') + ' ' + (i.currentSrc || i.src)).toLowerCase().indexOf(w) >= 0))
+      .map((i) => i.currentSrc || i.src), words);
+    return { urls: candidates([ld, found, shown, siblingImages(html, base, ld[0] || found[0])]) };
+  } finally { await page.close(); }
+}
+async function browserBuffer(url, wait) {
+  await wait(url);
+  const res = await (await browser()).request.get(url, { timeout: 20000 });
+  if (!res.ok()) throw new Error('HTTP ' + res.status());
+  return Buffer.from(await res.body());
+}
+
 async function photosFor(e, opts, wait) {
   const res = { id: e.id, page: null, kept: [], skipped: 0, error: null };
   let urls = null;
@@ -138,6 +178,16 @@ async function photosFor(e, opts, wait) {
       res.error = got.error || 'no photos found on the page';
     } catch (err) { res.error = P.errorLabel(err); }
   }
+  let viaBrowser = false;
+  if (!urls && opts.browser) {
+    for (const p of e.products) {
+      try {
+        const got = await browserPageImages(p.url, wait, p.name || e.line);
+        if (got.urls && got.urls.length) { urls = got.urls; res.page = p.url; viaBrowser = true; break; }
+        res.error = got.error || 'no photos found on the page, also in a browser';
+      } catch (err) { res.error = P.errorLabel(err) + ' in a browser'; }
+    }
+  }
   if (!urls) return res;
   res.error = null;
   const hashes = [];
@@ -147,11 +197,11 @@ async function photosFor(e, opts, wait) {
     keep.push({ key: e.img, src: e.img_src || '' });
   }
   const stem = e.img || e.id;
-  for (const u of urls) {
+  for (const u of urls.slice(0, opts.max * 4)) {   // a bounded number of tries per listing
     if (keep.length >= opts.max) break;
     if (e.img_src && imageId(u) === imageId(e.img_src)) continue;
     try {
-      const buf = await fetchBuffer(u, wait);
+      const buf = viaBrowser ? await browserBuffer(u, wait) : await fetchBuffer(u, wait);
       const meta = await sharp(buf).metadata();
       if (!meta.width || Math.max(meta.width, meta.height) < MIN_SIDE) { res.skipped++; continue; }
       const h = await dhash(buf);
@@ -167,7 +217,7 @@ async function photosFor(e, opts, wait) {
 }
 
 function parseArgs(argv) {
-  const o = { only: [], limit: 0, max: 10, refresh: false, write: false, report: null, concurrency: 4 };
+  const o = { only: [], limit: 0, max: 10, refresh: false, browser: false, write: false, report: null, concurrency: 4 };
   for (let i = 0; i < argv.length; i++) {
     const a = argv[i];
     if (a === '--only') o.only = argv[++i].split(',').filter(Boolean);
@@ -175,6 +225,7 @@ function parseArgs(argv) {
     else if (a === '--max') o.max = parseInt(argv[++i], 10) || 10;
     else if (a === '--concurrency') o.concurrency = parseInt(argv[++i], 10) || 4;
     else if (a === '--refresh') o.refresh = true;
+    else if (a === '--browser') o.browser = true;
     else if (a === '--write') o.write = true;
     else if (a === '--report') o.report = argv[++i];
   }
@@ -212,6 +263,7 @@ async function main() {
     .concat(failed.length ? ['## Not read', '', '| Listing | Why |', '|---|---|'].concat(failed.map((r) => `| ${r.id} | ${r.error} |`), ['']) : []).join('\n');
   if (opts.report) fs.writeFileSync(opts.report, report);
   console.log(report.split('\n')[2]);
+  if (browserCtx) await browserCtx.closeAll();
 }
 
 module.exports = { imageId, jsonLdImages, htmlImages, siblingImages, shopifyImages, candidates, hamming };
