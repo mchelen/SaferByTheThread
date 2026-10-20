@@ -9,9 +9,12 @@
     "test:e2e": "node --test \"tests/e2e/*.test.js\"",
     "test:all": "npm run check && npm test && npm run test:e2e",
     "serve": "node tools/serve.js 8000",
-    "bundle": "node tools/bundle.js dist"
+    "bundle": "node tools/bundle.js dist",
+    "test:visual": "node tools/visual.js",
+    "test:visual:update": "node tools/visual.js --update-snapshots"
   },
   "devDependencies": {
+    "@playwright/test": "1.56.1",
     "playwright": "1.56.1"
   },
   "engines": {

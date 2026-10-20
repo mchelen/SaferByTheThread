@@ -22,7 +22,7 @@
 
 ## Testing
 
-<!-- What was run: `npm run check`, `npm test`, `npm run test:e2e`, manual checks in a browser and at which widths. -->
+<!-- What was run: `npm run check`, `npm test`, `npm run test:e2e`, `npm run test:visual`, manual checks in a browser and at which widths. If screenshots in tests/visual/screenshots/ changed, list the views and say why the change is intended. -->
 
 ## Data changes
 

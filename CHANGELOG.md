@@ -5,6 +5,7 @@ All notable changes to the site are listed here. The format follows [Keep a Chan
 ## [Unreleased]
 
 ### Added
+- Visual regression tests (`npm run test:visual`): screenshots of 13 key views at desktop and phone width, compared on every pull request; a mismatch fails the check and posts the before, after and difference images on the PR. Update them with `npm run test:visual:update` or the `update-screenshots` label. See `tests/visual/README.md`.
 - Age range filter (birth to 5 years and up) on every listing page, using the maker's age rating or, where none is recorded, the usual ages for the product type; the product page says which.
 - Product pages show every saved store photo with thumbnails, when a listing records more than one (`photos`).
 - An "Added flame retardant chemicals" material filter, on by default, filled in where listings already record it.

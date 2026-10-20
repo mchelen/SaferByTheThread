@@ -15,9 +15,10 @@ npm run check      # validates data.json and glossary.json
 npm test           # unit tests for the catalog rules
 npm ci && npx playwright install chromium
 npm run test:e2e   # browser smoke tests against a local server
+npm run test:visual   # screenshot comparison (needs Docker; see tests/visual/README.md)
 ```
 
-CI runs all three on every pull request. The unit test `data.test.js` pins the number of listings (122) and how many meet the default rules (64); update both numbers in the same PR that adds or changes listings.
+CI runs all four on every pull request. A change that alters how a page looks fails the visual check until its screenshots are updated in the same PR: run `npm run test:visual:update` and commit them, or add the `update-screenshots` label to the PR. Check the changed PNGs in the PR before merging; an unexpected one is a bug. The unit test `data.test.js` pins the number of listings (122) and how many meet the default rules (64); update both numbers in the same PR that adds or changes listings.
 
 ## Data and tone
 
