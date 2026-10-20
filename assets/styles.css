@@ -84,8 +84,8 @@ h3 { font-size: 15px; }
 .btn svg, .btn-2 svg, .btn-3 svg { width: 18px; height: 18px; }
 .link-b { color: var(--accent); text-decoration: underline; text-underline-offset: 2px; }
 
-/* ---------- promo bar + header ---------- */
-.promo { background: var(--ink); color: var(--bg); font-size: 13px; text-align: center; padding: 7px 0; }
+/* ---------- header ---------- */
+.hero-note { margin: 14px 0 0; font-size: 13.5px; color: var(--muted); }
 .hdr { position: sticky; top: 0; z-index: 40; background: var(--bg); border-bottom: 1px solid var(--line); transition: transform .25s; }
 .hdr.hide { transform: translateY(-100%); }
 .hdr-in { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; gap: 24px; height: var(--hdr-h); }
@@ -192,6 +192,16 @@ h3 { font-size: 15px; }
 .card .mats { margin: 0; color: var(--muted); font-size: 13px; display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical; overflow: hidden; }
 .card .price { margin: 2px 0 0; font-weight: 600; font-size: 15px; }
 .card .price small { font-weight: 400; color: var(--muted); font-size: 13px; margin-left: 6px; }
+.card .ship { margin: 0 0 2px; font-size: 12.5px; color: var(--muted); }
+.card .ship.is-free { color: var(--moss); font-weight: 600; }
+.results { min-width: 0; }
+.quick { display: flex; gap: 8px; overflow-x: auto; padding: 2px 0 10px; scrollbar-width: none; }
+.qchip { flex: none; display: inline-flex; align-items: center; gap: 4px; padding: 6px 12px; border: 1px solid var(--line-strong); border-radius: 999px; font-size: 13px; background: var(--bg); color: var(--ink); }
+.filt-btn { white-space: nowrap; }
+.qchip svg { width: 14px; height: 14px; }
+.qchip[aria-pressed="true"] { background: var(--accent-soft); border-color: var(--accent); color: var(--accent-strong); font-weight: 600; }
+.offers-h { font-size: 13px; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); font-weight: 600; margin: 16px 0 8px; }
+.offer .o-price small { display: block; font-size: 12px; font-weight: 400; color: var(--muted); }
 .card .meta { margin: 0; font-size: 12px; color: var(--muted); }
 .card.is-miss .ph { border-color: var(--clay-soft); }
 .rail-grid { display: grid; grid-template-columns: none; grid-auto-flow: column; grid-auto-columns: calc((100% - 3 * 16px) / 4); gap: 16px; overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: 6px; scrollbar-width: thin; }
@@ -465,8 +475,6 @@ body.tray-on .toast { bottom: 88px; }
   :root { --hdr-h: 56px; }
   .hdr-in { grid-template-columns: auto auto minmax(0, 1fr) auto; gap: 8px; }
   .search { min-width: 0; }
-  .promo { font-size: 12px; padding: 6px 0; }
-  .promo-long { display: none; }
   .hdr-menu { display: inline-grid; }
   .logo-t { display: none; }
   .search { max-width: none; height: 40px; }
@@ -523,7 +531,6 @@ body.tray-on .toast { bottom: 88px; }
   .offer .o-price { grid-column: 1; grid-row: auto; text-align: left; }
   .facts { grid-template-columns: 1fr; }
   .brand-list { grid-template-columns: 1fr; }
-  .promo { font-size: 12px; }
 }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { transition: none !important; animation: none !important; scroll-behavior: auto !important; }
