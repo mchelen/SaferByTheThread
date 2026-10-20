@@ -5,6 +5,7 @@ All notable changes to the site are listed here. The format follows [Keep a Chan
 ## [Unreleased]
 
 ### Added
+- Store ratings: cards, quick view and product pages show the star rating and review count from the store page (the store with the most reviews when a product is at several; each option and store in the buy box shows its own), and Compare has a Rating row. The weekly price check reads them (`tools/ratings.js`: JSON-LD, Judge.me, Shopify reviews, Okendo, Loox, Yotpo, Junip) into each product's `rating`; 62 store pages carry one so far.
 - Every photo each store shows for a product, saved as the site's own copy (`tools/photos.js`, 564 photos for 99 listings, 87 with more than one), with thumbnails on the product page and in quick view.
 - Visual regression tests (`npm run test:visual`): screenshots of 13 key views at desktop and phone width, compared on every pull request; a mismatch fails the check and posts the before, after and difference images on the PR. Update them with `npm run test:visual:update` or the `update-screenshots` label. See `tests/visual/README.md`.
 - Automated catalog growth (`docs/automation.md`): a daily GitHub Actions job finds new products on 81 watched maker and shop sites, adds checked listing drafts, saves store photos and publishes; a daily Claude research session reads the queued product pages and writes drafts whose every claim is checked word for word against the saved page text.
@@ -34,6 +35,7 @@ All notable changes to the site are listed here. The format follows [Keep a Chan
 - A blank strip at the top of every page, and department tiles whose labels sat at different heights.
 
 ### Changed
+- Picture navigation on the remaining pages: the shop lists every product type as a photo tile under its title, search results show the types that have matches, a product page ends with "More in <category>" type tiles, and empty Saved, Compare and not-found pages show the category tiles instead of a lone button.
 - Product-type pages show the other types in their category as photo tiles under the title, with the current one marked; the brands directory shows a product photo next to each brand; type suggestions in the search box carry the type's photo.
 - Home page navigates by pictures: category tiles, age chips and a row of round product-type photo tiles under each category, in place of text lists of product types; the explanatory sections (what every listing tells you, your material filters) moved off the home page, which keeps one line of copy under the title. The featured rail no longer squeezes its first cards on phones and tablets.
 - Departments come from the item list instead of the first research topics (`docs/taxonomy.md`): Toys, Beds & bedding, Feeding and Clothing & shoes, with Bath & diapering, Furniture & decor and Strollers & gear appearing once they have listings. The menu and department pages show product types as photo tiles with short names; old aisle links (`/a/play`, `/a/sleep`, `/a/eat`, `/a/wear`) redirect.

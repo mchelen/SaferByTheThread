@@ -185,6 +185,9 @@ h3 { font-size: 15px; }
 .ttile:hover .ttile-img { border-color: var(--line-strong); box-shadow: var(--shadow); }
 .ttile-t { font-size: 14px; font-weight: 500; text-align: center; line-height: 1.25; }
 .band .link-b { display: inline-block; margin-top: 12px; }
+.empty-tiles { margin-top: 24px; }
+.empty-tiles h2 { font-size: 18px; margin-bottom: 12px; }
+.page:not(.wide) .empty-tiles .tiles { grid-template-columns: repeat(2, 1fr); }
 .ttiles.sm { flex-wrap: nowrap; overflow-x: auto; gap: 12px 10px; padding: 12px 2px 6px; scrollbar-width: thin; }
 .ttiles.sm .ttile { flex: none; }
 .ttiles.sm .ttile { width: 88px; gap: 6px; }
@@ -220,6 +223,16 @@ h3 { font-size: 15px; }
 .card .brand { margin: 0; font-size: 11px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
 .card h3 { font-size: 15px; font-weight: 500; line-height: 1.35; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
 .card .mats { margin: 0; color: var(--muted); font-size: 13px; display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical; overflow: hidden; }
+/* Store ratings: stars filled to the value in ink, never in the store-link amber. */
+.rating { margin: 0; display: flex; align-items: center; gap: 5px; font-size: 13px; line-height: 1.2; color: var(--muted); }
+.rating .stars { --pct: calc(var(--rv) / 5 * 100%); font-size: 13px; letter-spacing: 1px; color: transparent;
+  background: linear-gradient(90deg, var(--ink) var(--pct), var(--line-strong) var(--pct)); -webkit-background-clip: text; background-clip: text; }
+.rating .r-v { color: var(--ink); font-weight: 600; }
+.rating-link { display: inline-block; margin: -2px 0 10px; text-decoration: none; }
+.rating-link:hover .r-n { text-decoration: underline; }
+.buybox .rating, .cmp .rating { font-size: 14px; }
+.buybox .rating .stars { font-size: 15px; }
+.offer .rating { grid-column: 1; }
 .card .price { margin: 2px 0 0; font-weight: 600; font-size: 15px; }
 .card .price small { font-weight: 400; color: var(--muted); font-size: 13px; margin-left: 6px; }
 .card .ship { margin: 0 0 2px; font-size: 12.5px; color: var(--muted); }
