@@ -276,44 +276,58 @@
   }
 
   // ---------- home ----------
+  // The home page navigates by pictures, like a shop: category tiles, age chips, then a row of round product-type
+  // tiles per category. Categories and types come from data.json (C.groups and C.cats), so the page follows the
+  // taxonomy without changes here.
+  function typePic(id) {
+    var items = C.items.filter(function (i) { return i.cat === id && i.img; });
+    return items.filter(function (i) { return status(i).ok; })[0] || items[0] || null;
+  }
+  function groupPic(g) {
+    var items = C.items.filter(function (i) { return i.aisles.indexOf(g.id) >= 0 && i.img; });
+    return items.filter(function (i) { return status(i).ok; })[0] || items[0] || null;
+  }
+  function typeTiles(ids, cls) {
+    var sorted = ids.slice().sort(function (x, y) { return typeCount(y) - typeCount(x); });
+    return '<div class="ttiles' + (cls ? ' ' + cls : '') + '">' + sorted.map(function (id) {
+      var c = C.cats[id], pic = typePic(id);
+      return '<a class="ttile" href="' + U('/c/' + id) + '"><span class="ttile-img">' + (pic ? '<img src="' + esc(asset(pic.img)) + '" alt="" decoding="async">' : '') + '</span>' +
+        '<span class="ttile-t">' + esc(c.short || c.title) + '</span></a>';
+    }).join('') + '</div>';
+  }
+  function typeCount(id) { return C.items.filter(function (i) { return i.cat === id; }).length; }
   function renderHome() {
     var okItems = C.items.filter(function (i) { return status(i).ok; });
-    var art = okItems.filter(function (i) { return i.img; }).filter(function (i, k, a) { return a.findIndex(function (x) { return x.group === i.group; }) === k; }).slice(0, 3);
-    var tiles = C.groups.map(function (g) {
-      var items = C.items.filter(function (i) { return i.aisles.indexOf(g.id) >= 0; });
-      var pic = items.filter(function (i) { return i.img && status(i).ok; })[0] || items.filter(function (i) { return i.img; })[0];
-      return '<a class="tile" href="' + U('/a/' + g.id) + '"><div class="tile-img">' + (pic ? '<img src="' + esc(asset(pic.img)) + '" alt="" loading="lazy" decoding="async">' : '') + '</div>' +
-        '<span class="tile-t">' + esc(g.title) + '</span><span class="tile-n">' + plural(items.length, 'listing') + ' · ' + g.cats.length + ' types</span></a>';
+    var groups = C.groups.filter(function (g) { return g.cats.some(function (id) { return typeCount(id) > 0; }); });
+    var art = groups.map(groupPic).filter(Boolean).slice(0, 3);
+    var tiles = groups.map(function (g) {
+      var pic = groupPic(g);
+      return '<a class="tile" href="' + U('/a/' + g.id) + '"><span class="tile-img">' + (pic ? '<img src="' + esc(asset(pic.img)) + '" alt="" decoding="async">' : '') + '</span>' +
+        '<span class="tile-t">' + esc(g.title) + '</span></a>';
     }).join('');
-    var types = C.groups.map(function (g) {
-      return '<div class="type-col"><h3><a href="' + U('/a/' + g.id) + '">' + esc(g.title) + '</a></h3><div class="types">' + g.cats.map(function (id) {
-        var n = C.items.filter(function (i) { return i.cat === id; }).length;
-        return '<a href="' + U('/c/' + id) + '">' + esc(C.cats[id].title) + ' <span>' + n + '</span></a>';
-      }).join('') + '</div></div>';
+    var ages = S.AGE_BANDS.map(function (b) {
+      var n = C.items.filter(function (i) { return i.ageBands.indexOf(b.id) >= 0; }).length;
+      return n ? '<a class="age-chip" href="' + U('/shop', { age: b.id }) + '">' + esc(b.label) + '</a>' : '';
+    }).join('');
+    var rows = groups.map(function (g) {
+      return '<section class="sec row-sec"><div class="sec-h"><h2><a href="' + U('/a/' + g.id) + '">' + esc(g.title) + '</a></h2><a href="' + U('/a/' + g.id) + '">All ' + esc(g.title.toLowerCase()) + ' →</a></div>' + typeTiles(g.cats) + '</section>';
     }).join('');
     var topBrands = brandList().sort(function (a, b) { return b.items.length - a.items.length || S.fold(a.name).localeCompare(S.fold(b.name)); }).slice(0, 18)
-      .map(function (b) { return '<a href="' + U('/b/' + b.id) + '">' + esc(b.name) + '<span>' + b.items.length + '</span></a>'; }).join('');
+      .map(function (b) { return '<a href="' + U('/b/' + b.id) + '">' + esc(b.name) + '</a>'; }).join('');
     var featured = okItems.filter(function (i) { return i.img; }).filter(function (i, k, a) { return a.findIndex(function (x) { return x.brandId === i.brandId; }) === k; }).slice(0, 8);
-    var hidden = C.items.length - okItems.length;
     main.innerHTML = '<div class="wrap">' +
-      '<section class="hero"><div><p class="eyebrow">Toys, beds, bedding, ice trays and footwear for babies and toddlers</p>' +
-      '<h1>Reading the fine print so you don’t have to.</h1>' +
-      '<p class="lede">' + C.items.length + ' products from ' + Object.keys(C.brands).length + ' brands, each with what its maker says it is made of, what the maker says is absent, and what no page states. Filter by material, standard, price, brand and more, then buy from the store that sells it.</p>' +
-      '<div class="hero-cta"><a class="btn" href="' + U('/shop') + '">Shop all products</a><a class="btn-2" href="' + U('/about') + '">How the guide works</a></div><p class="hero-note">An independent guide: nothing is sold here, every product links to the store that sells it, and no listing is rated for safety or risk.</p></div>' +
+      '<section class="hero"><div><h1>Reading the fine print so you don’t have to.</h1>' +
+      '<p class="lede">What ' + C.items.length + ' babies’ and toddlers’ things are made of, in their makers’ own words.</p>' +
+      '<div class="hero-cta"><a class="btn" href="' + U('/shop') + '">Shop all products</a></div></div>' +
       '<div class="hero-art" aria-hidden="true">' + art.map(function (i) { return '<a href="' + U('/p/' + i.id) + '" tabindex="-1"><img src="' + esc(asset(i.img)) + '" alt="" decoding="async"></a>'; }).join('') + '</div></section>' +
-      '<section class="sec"><div class="sec-h"><h2>Shop by product type</h2><a href="' + U('/shop') + '">All products →</a></div><div class="type-cols">' + types + '</div></section>' +
+      '<section class="sec"><div class="sec-h"><h2>Shop by category</h2><a href="' + U('/shop') + '">All products →</a></div><div class="tiles">' + tiles + '</div></section>' +
+      '<section class="sec"><div class="sec-h"><h2>Shop by age</h2></div><div class="ages">' + ages + '</div></section>' +
+      rows +
       cardRail(listGet(RECENT_KEY).map(byId).filter(Boolean).slice(0, 8), 'Pick up where you left off', U('/saved'), 'Your saved products') +
-      '<section class="sec"><div class="sec-h"><h2>Browse by everyday need</h2></div><div class="tiles">' + tiles + '</div></section>' +
       cardRail(featured, 'Featured products', U('/shop'), 'See all ' + okItems.length) +
-      '<section class="sec"><div class="sec-h"><h2>What every listing tells you</h2><a href="' + U('/about') + '">How we read a product →</a></div><div class="explain">' +
-      '<div class="r-uses"><span class="ic" aria-hidden="true">✓</span><b>Made with</b><p>The materials the maker or store names.</p></div>' +
-      '<div class="r-free"><span class="ic" aria-hidden="true">⊘</span><b>Stated free of</b><p>What the maker says is absent.</p></div>' +
-      '<div class="r-unk"><span class="ic" aria-hidden="true">?</span><b>Not stated</b><p>Parts no page describes, such as thread, glue or dye.</p></div>' +
-      '<div class="r-out"><span class="ic" aria-hidden="true">✕</span><b>Flagged parts</b><p>Parts like a plastic lid or synthetic fill, named so you can decide.</p></div></div></section>' +
-      '<section class="sec"><div class="sec-h"><h2>Brands</h2><a href="' + U('/brands') + '">All ' + Object.keys(C.brands).length + ' brands →</a></div><div class="brand-strip">' + topBrands + '</div></section>' +
       '</div>' +
-      '<section class="band"><div class="wrap"><div><h2>Your material filters</h2><p>' + plural(critOn(CRIT, STRICT), 'material filter is', 'material filters are') + ' on, so ' + okItems.length + ' of ' + C.items.length + ' products show by default and ' + hidden + ' are set aside. They are ordinary filters: untick one in the filter rail and the products come back.</p><a class="btn-2" href="' + U('/shop') + '">Open the filters</a></div>' +
-      '<div><h2>Materials glossary</h2><p>' + Object.keys(TERMS).length + ' terms from store pages, from superwash wool to LFGB-tested silicone, each with a plain definition, what it means on this site and its sources. Dotted words on any product open a definition in place.</p><a class="btn-2" href="' + U('/glossary') + '">Browse the glossary</a></div></div></section>';
+      '<section class="band"><div class="wrap"><div><h2>Brands</h2><div class="brand-strip">' + topBrands + '</div><a class="link-b" href="' + U('/brands') + '">All ' + Object.keys(C.brands).length + ' brands</a></div>' +
+      '<div><h2>Materials glossary</h2><p>' + Object.keys(TERMS).length + ' materials and terms from store pages, each with its sources.</p><a class="btn-2" href="' + U('/glossary') + '">Browse the glossary</a></div></div></section>';
     setNav('home'); setTitle('');
   }
 

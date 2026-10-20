@@ -152,7 +152,7 @@ h3 { font-size: 15px; }
 .tile { position: relative; display: block; border-radius: var(--r); overflow: hidden; background: var(--surface); border: 1px solid var(--line); text-decoration: none; color: var(--ink); }
 .tile .tile-img { aspect-ratio: 4 / 3; background: var(--plate); position: relative; overflow: hidden; }
 .tile img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; padding: 10%; }
-.tile .tile-t { display: block; padding: 12px 14px 2px; font-weight: 600; }
+.tile .tile-t { display: block; padding: 12px 14px; font-weight: 600; font-size: 17px; }
 .tile .tile-n { display: block; padding: 0 14px 12px; color: var(--muted); font-size: 13px; }
 .tile:hover { border-color: var(--line-strong); box-shadow: var(--shadow); }
 .types { display: flex; flex-wrap: wrap; gap: 8px; }
@@ -168,6 +168,21 @@ h3 { font-size: 15px; }
 .r-free .ic { background: var(--slate-soft); color: var(--slate); }
 .r-unk .ic { background: var(--wax-soft); color: var(--wax); }
 .r-out .ic { background: var(--clay-soft); color: var(--clay); }
+.tiles .tile-img { display: block; }
+.ages { display: flex; flex-wrap: wrap; gap: 10px; }
+.age-chip { display: inline-flex; align-items: center; padding: 10px 18px; border: 1px solid var(--line-strong); border-radius: 999px; text-decoration: none; color: var(--ink); font-weight: 500; background: var(--bg); }
+.age-chip:hover { border-color: var(--ink); box-shadow: var(--shadow); }
+.row-sec { padding-top: 20px; }
+.row-sec .sec-h h2 a { color: inherit; text-decoration: none; }
+.row-sec .sec-h h2 a:hover { text-decoration: underline; }
+.ttiles { display: flex; flex-wrap: wrap; gap: 18px 14px; padding: 4px 2px 6px; }
+.ttile { width: 128px; }
+.ttile { display: flex; flex-direction: column; align-items: center; gap: 10px; text-decoration: none; color: var(--ink); scroll-snap-align: start; }
+.ttile-img { display: block; width: 112px; height: 112px; border-radius: 50%; background: var(--plate); border: 1px solid var(--line); overflow: hidden; position: relative; transition: box-shadow .15s, border-color .15s; }
+.ttile-img img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; padding: 14%; }
+.ttile:hover .ttile-img { border-color: var(--line-strong); box-shadow: var(--shadow); }
+.ttile-t { font-size: 14px; font-weight: 500; text-align: center; line-height: 1.25; }
+.band .link-b { display: inline-block; margin-top: 12px; }
 .brand-strip { display: flex; flex-wrap: wrap; gap: 8px 20px; }
 .brand-strip a { color: var(--ink); text-decoration: none; font-weight: 500; }
 .brand-strip a:hover { text-decoration: underline; }
@@ -486,7 +501,7 @@ body.tray-on .toast { bottom: 88px; }
 /* ---------- responsive ---------- */
 @media (max-width: 1100px) {
   .grid { grid-template-columns: repeat(3, 1fr); }
-  .rail-grid { grid-auto-columns: calc((100% - 2 * 16px) / 3); }
+  .rail-grid { grid-template-columns: none; grid-auto-columns: calc((100% - 2 * 16px) / 3); }
   .tiles, .explain { grid-template-columns: repeat(2, 1fr); }
   .foot-grid { grid-template-columns: 1fr 1fr; }
 }
@@ -533,11 +548,16 @@ body.tray-on .toast { bottom: 88px; }
 @media (max-width: 600px) {
   body { font-size: 14.5px; }
   .grid, .grid.cols-3 { grid-template-columns: repeat(2, 1fr); gap: 20px 12px; }
-  .rail-grid { grid-auto-columns: calc((100% - 12px) / 2); gap: 12px; }
+  .rail-grid { grid-template-columns: none; grid-auto-columns: calc((100% - 12px) / 2); gap: 12px; }
   .card h3 { font-size: 14px; }
   .card .mats { display: none; }
   .qv-btn { display: none; }
   .tiles, .explain { grid-template-columns: 1fr 1fr; gap: 10px; }
+  .ttiles { flex-wrap: nowrap; overflow-x: auto; gap: 12px; margin: 0 -16px; padding: 4px 16px 8px; scrollbar-width: none; scroll-snap-type: x proximity; }
+  .ttile { flex: none; width: 96px; }
+  .ttile-img { width: 84px; height: 84px; }
+  .ttile-t { font-size: 13px; }
+  .age-chip { padding: 8px 14px; font-size: 14px; }
   .tile .tile-t { padding: 8px 10px 0; font-size: 14px; }
   .tile .tile-n { padding: 0 10px 8px; }
   .foot-grid { grid-template-columns: 1fr; }
