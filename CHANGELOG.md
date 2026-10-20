@@ -5,6 +5,7 @@ All notable changes to the site are listed here. The format follows [Keep a Chan
 ## [Unreleased]
 
 ### Added
+- Every photo each store shows for a product, saved as the site's own copy (`tools/photos.js`, 564 photos for 99 listings, 87 with more than one), with thumbnails on the product page and in quick view.
 - Visual regression tests (`npm run test:visual`): screenshots of 13 key views at desktop and phone width, compared on every pull request; a mismatch fails the check and posts the before, after and difference images on the PR. Update them with `npm run test:visual:update` or the `update-screenshots` label. See `tests/visual/README.md`.
 - Age range filter (birth to 5 years and up) on every listing page, using the maker's age rating or, where none is recorded, the usual ages for the product type; the product page says which.
 - Product pages show every saved store photo with thumbnails, when a listing records more than one (`photos`).
@@ -25,6 +26,8 @@ All notable changes to the site are listed here. The format follows [Keep a Chan
 - Shop patterns borrowed from Amazon and Shopify stores (`docs/ecommerce-patterns.md`): share a Saved or Compare list by link, with "Save all to my list" on the shared page; a Share button on product pages; "Compare with similar items" on product pages; a buy bar at the bottom of phone product pages once the buy box scrolls away; a confirmation with a link when saving; recently viewed products on the home page; the Filter & sort bar stays at the top on phones.
 
 ### Fixed
+- MarnieAndMister Organic Cotton Quilted Mat: the store names a cotton filling, so its main materials count as stated; a guessed "polyester binder in the batting" is removed.
+- The material line on cards and product pages names the filter in full ("Not stated: any plastic or synthetics in the main materials", "Has synthetic dyes, paints or coatings") instead of its short label, which read as if a cotton mat's materials were not stated.
 - A blank strip at the top of every page, and department tiles whose labels sat at different heights.
 
 ### Changed

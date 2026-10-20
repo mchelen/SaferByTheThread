@@ -595,7 +595,7 @@ body.tray-on .toast { bottom: 88px; }
 .fit.is-ok { color: var(--moss); } .fit.is-ok .mk { background: var(--moss-soft); }
 .fit.is-unk { color: var(--wax); } .fit.is-unk .mk { background: var(--wax-soft); }
 .fit.is-miss { color: var(--clay); } .fit.is-miss .mk { background: var(--clay-soft); }
-.card .fit { display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical; overflow: hidden; }
+.card .fit { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
 .card .fit .mk { display: inline-grid; margin-right: 5px; }
 .buybox .status .fit, .qv-in .fit, .cmp .fit { font-size: 14px; }
 .buybox .status { flex-direction: column; align-items: flex-start; gap: 4px; }
