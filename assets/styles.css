@@ -321,7 +321,7 @@ h3 { font-size: 15px; }
 
 /* ---------- product page ---------- */
 .pdp { display: grid; grid-template-columns: minmax(0, 7fr) minmax(320px, 5fr); gap: 40px; align-items: start; padding: 10px 0 32px; }
-.gallery { position: relative; }
+.gallery { position: relative; min-width: 0; }
 .gallery .ph { aspect-ratio: 1 / 1; cursor: zoom-in; }
 .gallery .ph img { padding: 6%; }
 .gallery .zoom-hint { position: absolute; right: 12px; bottom: 12px; display: inline-flex; align-items: center; gap: 6px; padding: 6px 10px; border-radius: 6px; background: rgba(255, 255, 255, .92); color: #1b1b1b; font-size: 12px; font-weight: 600; }
@@ -466,7 +466,7 @@ a.term-link:hover { text-decoration-style: solid; }
 .gpop-links a { color: var(--accent); }
 .qv { position: fixed; z-index: 65; inset: 0; margin: auto; width: min(960px, calc(100vw - 32px)); height: fit-content; max-height: calc(100vh - 32px); overflow: auto; background: var(--bg); border-radius: 12px; box-shadow: var(--shadow-lg); padding: 24px; }
 .qv .x { position: absolute; top: 10px; right: 10px; }
-.qv-in { display: grid; grid-template-columns: 1fr 1.1fr; gap: 24px; }
+.qv-in { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); gap: 24px; }
 .qv .ph { aspect-ratio: 1 / 1; }
 .qv h2 { font-size: 22px; margin: 2px 0 6px; }
 .qv .price { font-size: 20px; font-weight: 600; margin: 0; }
@@ -553,7 +553,7 @@ body.tray-on .toast { bottom: 88px; }
   .hero h1 { font-size: 32px; }
   .hero-art { display: none; }
   .band .wrap { grid-template-columns: 1fr; }
-  .pdp { grid-template-columns: 1fr; gap: 20px; }
+  .pdp { grid-template-columns: minmax(0, 1fr); gap: 20px; }
   .buybox { position: static; }
   .plp { grid-template-columns: 1fr; gap: 0; }
   .filt-btn { display: inline-flex; }
@@ -565,7 +565,7 @@ body.tray-on .toast { bottom: 88px; }
   .drawer-foot { display: flex; gap: 10px; position: fixed; left: 0; right: 0; bottom: 0; padding: 12px 16px calc(12px + env(safe-area-inset-bottom, 0px)); background: var(--bg); border-top: 1px solid var(--line); z-index: 3; }
   .drawer-foot .btn { flex: 1; }
   .brand-list { grid-template-columns: 1fr 1fr; }
-  .qv-in { grid-template-columns: 1fr; }
+  .qv-in { grid-template-columns: minmax(0, 1fr); }
   .check .row { grid-template-columns: 1fr; gap: 6px; }
   html { scroll-padding-top: 72px; }
   .az { top: var(--hdr-h); }
