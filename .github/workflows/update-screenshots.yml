@@ -1,0 +1,62 @@
+# Updates the visual regression screenshots on a pull request after an intended visual change.
+# Add the label "update-screenshots" to the PR: this retakes every screenshot in the pinned
+# Playwright image, commits the changed ones to the PR branch, removes the label and re-runs CI on
+# the new commit. Same result as running `npm run test:visual:update` locally and committing.
+# Only for branches in this repository (a fork's branch can't be pushed to with this token).
+name: Update screenshots
+
+on:
+  pull_request:
+    types: [labeled]
+
+permissions:
+  contents: write
+  pull-requests: write
+  actions: write
+
+concurrency:
+  group: update-screenshots-${{ github.event.pull_request.number }}
+
+jobs:
+  update:
+    if: github.event.label.name == 'update-screenshots' && github.event.pull_request.head.repo.full_name == github.repository
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.ref }}
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Retake the screenshots
+        run: npm run test:visual:update || echo "::warning::Some visual tests failed for a reason other than a changed picture; see the log above."
+      - name: Commit the changed screenshots
+        id: commit
+        env:
+          BRANCH: ${{ github.event.pull_request.head.ref }}
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add tests/visual/screenshots
+          if git diff --cached --quiet; then echo "No screenshot changed."; echo "changed=0" >> "$GITHUB_OUTPUT"; exit 0; fi
+          git diff --cached --stat
+          git commit -qm "test: update visual regression screenshots"
+          git push origin "HEAD:$BRANCH"
+          echo "changed=$(git diff --name-only HEAD~1 | wc -l)" >> "$GITHUB_OUTPUT"
+      - name: Remove the label and re-run CI
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PR: ${{ github.event.pull_request.number }}
+          BRANCH: ${{ github.event.pull_request.head.ref }}
+          CHANGED: ${{ steps.commit.outputs.changed }}
+        run: |
+          gh pr edit "$PR" --repo "$GITHUB_REPOSITORY" --remove-label update-screenshots || true
+          if [ "${CHANGED:-0}" != 0 ]; then
+            gh workflow run ci.yml --repo "$GITHUB_REPOSITORY" --ref "$BRANCH"
+            printf 'Updated %s screenshot(s) in tests/visual/screenshots/ and re-ran CI on the new commit. The Files changed tab shows each one before and after.\n\n---\n_Posted by the Update screenshots workflow_\n' "$CHANGED" > "$RUNNER_TEMP/body.md"
+            gh pr comment "$PR" --repo "$GITHUB_REPOSITORY" --body-file "$RUNNER_TEMP/body.md"
+          fi

@@ -4,6 +4,9 @@ on:
   pull_request:
   push:
     branches: [main]
+  # Lets the "Update screenshots" workflow re-run the checks after it commits new screenshots
+  # (a push made with the workflow token does not start CI by itself).
+  workflow_dispatch:
 
 jobs:
   check:
@@ -29,3 +32,86 @@ jobs:
       - run: npm ci
       - run: npx playwright install --with-deps chromium
       - run: npm run test:e2e
+
+  visual:
+    name: Visual regression
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write        # pushes the images of a failed comparison to the visual-diffs branch
+      pull-requests: write   # one comment on the PR with those images
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      # Runs inside the pinned Playwright Docker image (tools/visual.js), the same renderer as a local run.
+      - name: Compare screenshots with tests/visual/screenshots/
+        id: visual
+        run: npm run test:visual
+      - name: Upload the full report
+        if: failure() && steps.visual.outcome == 'failure'
+        uses: actions/upload-artifact@v4
+        with:
+          name: visual-report
+          path: |
+            visual-report/
+            test-results/visual/
+          retention-days: 14
+      - name: Find the pull request
+        id: pr
+        if: always() && steps.visual.outcome != 'skipped'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          EVENT_PR: ${{ github.event.pull_request.number }}
+          HEAD_REPO: ${{ github.event.pull_request.head.repo.full_name }}
+        run: |
+          n="$EVENT_PR"
+          if [ -n "$n" ] && [ "$HEAD_REPO" != "$GITHUB_REPOSITORY" ]; then n=""; fi   # forks: read-only token
+          if [ -z "$n" ] && [ "$GITHUB_EVENT_NAME" = workflow_dispatch ]; then
+            n=$(gh pr list --head "$GITHUB_REF_NAME" --state open --json number --jq '.[0].number // empty')
+          fi
+          echo "number=$n" >> "$GITHUB_OUTPUT"
+      - name: Publish the changed screenshots to the visual-diffs branch
+        if: failure() && steps.visual.outcome == 'failure' && steps.pr.outputs.number != ''
+        env:
+          PR: ${{ steps.pr.outputs.number }}
+        run: |
+          set -euo pipefail
+          dest="pr-$PR/$GITHUB_RUN_ID-$GITHUB_RUN_ATTEMPT"
+          base="https://raw.githubusercontent.com/$GITHUB_REPOSITORY/visual-diffs/$dest"
+          node tools/visual-report.js "$RUNNER_TEMP/diffs" "$base" "$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID"
+          ls "$RUNNER_TEMP"/diffs/*.png > /dev/null 2>&1 || exit 0   # nothing to show: the run failed before comparing
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          wt="$RUNNER_TEMP/visual-diffs"
+          if git fetch --quiet origin visual-diffs; then git worktree add "$wt" FETCH_HEAD; else git worktree add --detach "$wt" && git -C "$wt" checkout --orphan tmp && git -C "$wt" rm -rfq .; fi
+          cd "$wt"
+          rm -rf "pr-$PR" && mkdir -p "$dest"
+          cp "$RUNNER_TEMP"/diffs/*.png "$dest"/
+          printf 'Images of failed visual comparisons, linked from pull request comments. Safe to delete at any time.\n' > README.md
+          git add -A && git commit -qm "Visual diffs for #$PR (run $GITHUB_RUN_ID)"
+          for i in 1 2 3; do git push --quiet origin HEAD:visual-diffs && break; git fetch --quiet origin visual-diffs && git rebase --quiet FETCH_HEAD; done
+      - name: Comment on the pull request
+        if: always() && steps.visual.outcome != 'skipped' && steps.pr.outputs.number != ''
+        uses: actions/github-script@v7
+        env:
+          PR: ${{ steps.pr.outputs.number }}
+          OUTCOME: ${{ steps.visual.outcome }}
+        with:
+          script: |
+            const fs = require('fs');
+            const marker = '<!-- visual-regression -->';
+            const issue_number = Number(process.env.PR);
+            const sha = context.sha.slice(0, 7);
+            const failed = process.env.OUTCOME === 'failure';
+            const file = `${process.env.RUNNER_TEMP}/diffs/comment.md`;
+            const run = `${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`;
+            const body = !failed ? `${marker}\n### Visual check: all screenshots match\n\nChecked at ${sha}.`
+              : fs.existsSync(file) ? fs.readFileSync(file, 'utf8') + `\nChecked at ${sha}.`
+              : `${marker}\n### Visual check failed\n\nSee the [CI run](${run}) for the error. Checked at ${sha}.`;
+            const comments = await github.paginate(github.rest.issues.listComments, { ...context.repo, issue_number, per_page: 100 });
+            const mine = comments.find(c => c.body && c.body.startsWith(marker));
+            if (mine) await github.rest.issues.updateComment({ ...context.repo, comment_id: mine.id, body });
+            else if (failed) await github.rest.issues.createComment({ ...context.repo, issue_number, body });

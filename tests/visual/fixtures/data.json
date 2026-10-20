@@ -1,0 +1,5889 @@
+{
+ "schema": 4,
+ "updated": "2026-10-18",
+ "ask": [
+  "Thread on any sewn item (cotton or polyester).",
+  "Wheels and axles on push toys and cars.",
+  "Colorants on rubber toys and dyed silks.",
+  "For merino or knitted wool, whether it's superwash (chemically coated).",
+  "Zippers and glue on mattresses and beds."
+ ],
+ "criteria_groups": [
+  {
+   "id": "plastic",
+   "title": "Plastic and synthetics"
+  },
+  {
+   "id": "treat",
+   "title": "Treatments and finishes"
+  },
+  {
+   "id": "tested",
+   "title": "Tested or certified"
+  },
+  {
+   "id": "leave",
+   "title": "Leave out these materials"
+  }
+ ],
+ "criteria": [
+  {
+   "id": "main",
+   "short": "Main materials",
+   "label": "Plastic or synthetics in the main materials",
+   "help": "Body, filling, batting, foam, lining, soles, insoles and waterproof layers.",
+   "kind": "avoid",
+   "default": true,
+   "term": "plastic",
+   "group": "plastic"
+  },
+  {
+   "id": "parts",
+   "short": "Small parts",
+   "label": "Plastic in small parts",
+   "help": "Thread, glue, zippers, elastic, axles, eyes and similar.",
+   "kind": "avoid",
+   "default": true,
+   "term": "hidden",
+   "group": "plastic"
+  },
+  {
+   "id": "accessory",
+   "short": "Extras",
+   "label": "Plastic in lids, stands or optional extras",
+   "help": "Pieces sold with the product that food or the child doesn't touch in normal use, such as a lid that sits on top or a removable cushion.",
+   "kind": "avoid",
+   "default": false,
+   "term": "plastic",
+   "group": "plastic"
+  },
+  {
+   "id": "color",
+   "short": "Dyes and paints",
+   "label": "Synthetic dyes, paints or coatings",
+   "help": "Undyed, unfinished, or finished with named natural dyes, oils or waxes.",
+   "kind": "avoid",
+   "default": true,
+   "term": "dyes",
+   "group": "treat"
+  },
+  {
+   "id": "wood",
+   "short": "Solid wood",
+   "label": "Plywood, MDF or veneer",
+   "help": "For wooden items: hides anything that is not solid wood.",
+   "kind": "avoid",
+   "default": true,
+   "term": "hardwood",
+   "group": "treat"
+  },
+  {
+   "id": "wool",
+   "short": "Wool treatment",
+   "label": "Superwash or shrink-proofed wool",
+   "help": "Wool sold as machine washable counts as superwash unless the seller says it is untreated.",
+   "kind": "avoid",
+   "default": true,
+   "term": "superwash",
+   "group": "treat"
+  },
+  {
+   "id": "rubber",
+   "short": "Rubber additives",
+   "label": "Plasticisers or synthetic rubber",
+   "help": "For rubber items.",
+   "kind": "avoid",
+   "default": true,
+   "term": "plasticisers",
+   "group": "treat"
+  },
+  {
+   "id": "flame",
+   "short": "Flame retardants",
+   "label": "Added flame retardant chemicals",
+   "help": "Mattresses, pads and foam. A wool layer that meets flammability rules on its own is not a chemical treatment.",
+   "kind": "avoid",
+   "default": true,
+   "term": "flammability",
+   "group": "treat"
+  },
+  {
+   "id": "silicone",
+   "short": "Silicone testing",
+   "label": "Silicone tested to LFGB or the French Arrêté",
+   "help": "The maker says the finished product, not just the raw silicone, meets German LFGB or the French Arrêté of 25 November 1992.",
+   "kind": "require",
+   "default": true,
+   "term": "lfgb",
+   "group": "tested"
+  },
+  {
+   "id": "organic",
+   "short": "Organic",
+   "label": "Certified organic fibres or latex",
+   "help": "Organic, GOTS or GOLS stated for the textiles or latex.",
+   "kind": "require",
+   "default": false,
+   "term": "organic",
+   "group": "tested"
+  },
+  {
+   "id": "tanning",
+   "short": "Tanning",
+   "label": "Chrome-free or vegetable-tanned leather",
+   "help": "Stated by the maker.",
+   "kind": "require",
+   "default": false,
+   "term": "chrome",
+   "group": "tested"
+  },
+  {
+   "id": "latex",
+   "short": "Latex",
+   "label": "Natural rubber or latex",
+   "help": "Includes natural latex foam in mattresses and natural rubber toys and boots.",
+   "kind": "contains",
+   "default": false,
+   "term": "latex-allergy",
+   "group": "leave"
+  },
+  {
+   "id": "leather",
+   "short": "Leather",
+   "label": "Leather, suede or sheepskin",
+   "help": "Includes leather soles and sheepskin insoles.",
+   "kind": "contains",
+   "default": false,
+   "term": "leather",
+   "group": "leave"
+  }
+ ],
+ "standards": [
+  {
+   "id": "gots",
+   "label": "GOTS organic textiles",
+   "term": "gots"
+  },
+  {
+   "id": "gols",
+   "label": "GOLS organic latex",
+   "term": "gols"
+  },
+  {
+   "id": "organic-unnamed",
+   "label": "Certified organic (scheme not named)",
+   "term": "organic"
+  },
+  {
+   "id": "oeko-tex",
+   "label": "OEKO-TEX",
+   "term": "oeko-tex"
+  },
+  {
+   "id": "fsc",
+   "label": "FSC wood",
+   "term": "hardwood"
+  },
+  {
+   "id": "lfgb",
+   "label": "LFGB (German food-contact law)",
+   "term": "lfgb"
+  },
+  {
+   "id": "arrete",
+   "label": "French Arrêté of 25 Nov 1992",
+   "term": "arrete"
+  },
+  {
+   "id": "us-toy",
+   "label": "US toy and child-product rules (ASTM, CPSIA)",
+   "term": "toy-safety"
+  },
+  {
+   "id": "fair-rubber",
+   "label": "Fair Rubber Association",
+   "term": "natural-rubber"
+  }
+ ],
+ "aisles": [
+  {
+   "id": "play",
+   "title": "Play",
+   "blurb": "Wood, wool, cotton, silk and natural rubber, for 12 to 24 months.",
+   "was": [
+    "toys"
+   ],
+   "types": [
+    "mats",
+    "books",
+    "stacking",
+    "blocks",
+    "push",
+    "cars",
+    "bench",
+    "rattles",
+    "dolls",
+    "animals",
+    "balls",
+    "bath",
+    "silks",
+    "pretend"
+   ]
+  },
+  {
+   "id": "sleep",
+   "title": "Sleep",
+   "blurb": "Cotton, wool, natural latex, coir and plain or oiled solid wood. Natural latex foam counts as natural. Superwash or \"washable\" wool without an untreated statement is outside the criteria.",
+   "was": [
+    "sleep"
+   ],
+   "types": [
+    "mattresses",
+    "toddler-beds",
+    "floor-beds",
+    "protectors",
+    "pillows",
+    "sheets"
+   ]
+  },
+  {
+   "id": "eat",
+   "title": "Eat and drink",
+   "blurb": "Silicone, measured against the bar in an r/Mommit post: an entry meets the criteria only if the brand says the finished product (not just the raw silicone) is LFGB-certified or meets the French Arrêté of 25 Nov 1992. \"Platinum\" or \"LFGB silicone\" alone counts as meeting most criteria. No entry has a published accredited-lab report, so each rests on the brand's own declaration.",
+   "was": [
+    "feeding"
+   ],
+   "types": [
+    "freezer-trays",
+    "ice-trays",
+    "pop-molds"
+   ],
+   "source": "https://www.reddit.com/r/Mommit/comments/1mjj0vm/not_all_silicone_is_created_equal_safety_claims/"
+  },
+  {
+   "id": "wear",
+   "title": "Wear",
+   "blurb": "Leather is included; the Leather switch under Material rules hides it. Sizes for 12 to 24 months are EU 20 to 23 (US 4 to 7 toddler). No maker states its thread or glue.",
+   "was": [
+    "footwear"
+   ],
+   "types": [
+    "shoes",
+    "rain-boots"
+   ]
+  }
+ ],
+ "types": [
+  {
+   "id": "mats",
+   "title": "Padded play mats",
+   "intro": "Many “organic” play mats contain polyester batting, foam or a plastic waterproof layer.",
+   "ages": {
+    "min_months": 0,
+    "max_months": 24
+   },
+   "room": "nursery",
+   "contact": "skin"
+  },
+  {
+   "id": "books",
+   "title": "Activity and soft books",
+   "intro": "Most cloth books use polyester filling, plastic crinkle film or an acrylic mirror; felt quiet books are usually acrylic felt with hook-and-loop; board books are glued and varnished.",
+   "outro": "Another route for a felt quiet book is a custom order from an Etsy maker, specifying 100% wool felt, cotton thread and buttons instead of hook-and-loop.",
+   "ages": {
+    "min_months": 0,
+    "max_months": 36
+   }
+  },
+  {
+   "id": "stacking",
+   "title": "Stacking and sorting",
+   "ages": {
+    "min_months": 6,
+    "max_months": 36
+   }
+  },
+  {
+   "id": "blocks",
+   "title": "Blocks",
+   "ages": {
+    "min_months": 6,
+    "max_months": 60
+   }
+  },
+  {
+   "id": "push",
+   "title": "Push and pull toys",
+   "ages": {
+    "min_months": 9,
+    "max_months": 36
+   }
+  },
+  {
+   "id": "cars",
+   "title": "Cars and trucks",
+   "ages": {
+    "min_months": 12,
+    "max_months": 60
+   }
+  },
+  {
+   "id": "bench",
+   "title": "Pounding bench",
+   "outro": "No other pounding bench turned up without varnish, stain or paint.",
+   "ages": {
+    "min_months": 18,
+    "max_months": 48
+   }
+  },
+  {
+   "id": "rattles",
+   "title": "Shakers and rattles",
+   "ages": {
+    "min_months": 0,
+    "max_months": 18
+   },
+   "contact": "mouth"
+  },
+  {
+   "id": "dolls",
+   "title": "Dolls",
+   "ages": {
+    "min_months": 6,
+    "max_months": 60
+   },
+   "contact": "skin"
+  },
+  {
+   "id": "animals",
+   "title": "Soft animals",
+   "ages": {
+    "min_months": 0,
+    "max_months": 60
+   },
+   "contact": "skin"
+  },
+  {
+   "id": "balls",
+   "title": "Balls",
+   "intro": "Natural rubber is a latex product. Almost every natural rubber ball is painted or dyed with a colourant the maker doesn't name.",
+   "ages": {
+    "min_months": 0,
+    "max_months": 60
+   },
+   "room": "outdoors",
+   "contact": "hands"
+  },
+  {
+   "id": "bath",
+   "title": "Bath toys",
+   "intro": "Natural rubber is a latex product.",
+   "ages": {
+    "min_months": 6,
+    "max_months": 36
+   },
+   "room": "bath",
+   "contact": "mouth"
+  },
+  {
+   "id": "silks",
+   "title": "Silks for peekaboo and pretend play",
+   "short": "Silks",
+   "ages": {
+    "min_months": 6,
+    "max_months": 60
+   },
+   "contact": "skin"
+  },
+  {
+   "id": "pretend",
+   "title": "Pretend play",
+   "ages": {
+    "min_months": 18,
+    "max_months": 60
+   }
+  },
+  {
+   "id": "mattresses",
+   "title": "Mattresses",
+   "intro": "Every layer is latex, coir, wool or cotton. All fit a standard crib or toddler bed (about 28 x 52 in) unless noted.",
+   "ages": {
+    "min_months": 0,
+    "max_months": 60
+   },
+   "room": "nursery",
+   "contact": "sleep"
+  },
+  {
+   "id": "toddler-beds",
+   "title": "Toddler beds that take a crib mattress",
+   "short": "Toddler beds",
+   "intro": "Solid wood with no finish or a plant-oil finish, and no plywood or MDF. The entries describe the unfinished or oil-finish options; painted or stained versions are made differently.",
+   "ages": {
+    "min_months": 15,
+    "max_months": 60
+   },
+   "room": "nursery",
+   "contact": "sleep"
+  },
+  {
+   "id": "floor-beds",
+   "title": "Low twin floor beds",
+   "short": "Floor beds",
+   "intro": "These grow with the child.",
+   "outro": "Taller adult-style twin frames also meet the material criteria but sit higher, for an older child: Savvy Rest Afton (from $1,049), Puritas Perfect Platform at Shepherd's Dream (from $1,305) and Vermont Woods Vergennes ($1,752).",
+   "ages": {
+    "min_months": 12,
+    "max_months": 72
+   },
+   "room": "nursery",
+   "contact": "sleep"
+  },
+  {
+   "id": "protectors",
+   "title": "Mattress pads, toppers and protectors",
+   "short": "Pads and protectors",
+   "intro": "A felted wool pad is the natural stand-in for a plastic waterproof cover: it soaks up and slows leaks rather than blocking them. Every waterproof crib protector found has a polyurethane or TPU film. Toddler pillows are usually started around age 2.",
+   "was": [
+    "pads"
+   ],
+   "ages": {
+    "min_months": 0,
+    "max_months": 60
+   },
+   "room": "nursery",
+   "contact": "sleep"
+  },
+  {
+   "id": "pillows",
+   "title": "Toddler pillows",
+   "short": "Pillows",
+   "ages": {
+    "min_months": 18,
+    "max_months": 72
+   },
+   "room": "nursery",
+   "contact": "sleep"
+  },
+  {
+   "id": "sheets",
+   "title": "Crib sheets and bedding",
+   "short": "Sheets",
+   "ages": {
+    "min_months": 0,
+    "max_months": 60
+   },
+   "room": "nursery",
+   "contact": "sleep"
+  },
+  {
+   "id": "freezer-trays",
+   "title": "Baby food and breast milk freezer trays",
+   "short": "Freezer trays",
+   "intro": "Béaba is the one brand here whose claim covers the finished tray, and only in emails the brand sent to Reddit users. Béaba US can be asked for the Declaration of Conformity or migration test report for a specific tray.",
+   "ages": {
+    "min_months": 4,
+    "max_months": 24
+   },
+   "room": "kitchen",
+   "contact": "food"
+  },
+  {
+   "id": "ice-trays",
+   "title": "Ice cube trays",
+   "short": "Ice cube trays",
+   "intro": "Silikomart, an Italian maker, is the one brand that publicly lists the French silicone decree and German LMBG migration tests, and its moulds came out clean in UFC-Que Choisir's 2022 lab test. Both claims cover the brand, not a named tray.",
+   "ages": {
+    "min_months": 12,
+    "max_months": 72
+   },
+   "room": "kitchen",
+   "contact": "food"
+  },
+  {
+   "id": "pop-molds",
+   "title": "Ice pop and freezer molds",
+   "short": "Ice pop molds",
+   "intro": "Liewood publishes a declaration for this exact product saying the finished pops were migration-tested to EU limits under LFGB; the other entries rely on brand-wide statements.",
+   "ages": {
+    "min_months": 12,
+    "max_months": 72
+   },
+   "room": "kitchen",
+   "contact": "food"
+  },
+  {
+   "id": "shoes",
+   "title": "Shoes and slippers",
+   "short": "Shoes",
+   "intro": "No maker states its thread or glue. Well-known shoes with TPR or synthetic rubber outsoles are listed under the items that miss the default filters.",
+   "ages": {
+    "min_months": 9,
+    "max_months": 60
+   },
+   "contact": "skin"
+  },
+  {
+   "id": "rain-boots",
+   "title": "Rain boots",
+   "intro": "No brand publishes its glue, thread or rubber additives. Bisgaard lists natural rubber or cotton for every part it names. Natural rubber is a latex product.",
+   "outro": "Makers can answer the open questions. glerups can say what its thread and glue are, Padraig whether the wool is superwash, and Bisgaard (contact@bisgaardshoes.dk) what is under the cotton insole and in the rubber compound.",
+   "ages": {
+    "min_months": 12,
+    "max_months": 72
+   },
+   "room": "outdoors",
+   "contact": "skin"
+  }
+ ],
+ "entries": [
+  {
+   "id": "home-of-wool-organic-baby-play-mat",
+   "type": "mats",
+   "brand": "Home of Wool",
+   "line": "Organic Baby Play Mat",
+   "uses": [
+    "Organic wool batting",
+    "Organic cotton casing",
+    "Linen tufting thread",
+    "Cover: cotton, linen or wool"
+   ],
+   "free": [
+    "Chemical treatment on the fill"
+   ],
+   "unconfirmed": [
+    "Cover closure",
+    "Seam thread",
+    "Shrink-proofing on the wool cover (the cotton and linen covers avoid the question)"
+   ],
+   "products": [
+    {
+     "name": "Organic Baby Play Mat",
+     "url": "https://homeofwool.com/shop/baby-play-mat/",
+     "store": "Home of Wool",
+     "price": "from £207.50 (about $270), free US shipping",
+     "ships_from": "UK",
+     "price_checked": "2026-10-18"
+    }
+   ],
+   "img": "mat_homeofwool",
+   "img_src": "https://homeofwool.com/wp-content/uploads/2025/09/home-of-wool-wool-baby-play-mat.jpg",
+   "quote": "100% organic wool batting… encased in organic cotton fabric… hand-tufted with natural linen thread",
+   "outside": [],
+   "facts": {
+    "main": "yes",
+    "parts": "unknown",
+    "color": "yes",
+    "wool": "unknown",
+    "organic": "yes"
+   },
+   "contains": [],
+   "standards": []
+  },
+  {
+   "id": "woollnest-merino-wool-play-mat",
+   "type": "mats",
+   "brand": "WoollNest",
+   "line": "Merino Wool Play Mat",
+   "uses": [
+    "Cotton outer (not organic)",
+    "Merino wool filling"
+   ],
+   "free": [
+    "Synthetics"
+   ],
+   "unconfirmed": [
+    "Thread",
+    "Dyes",
+    "Superwash treatment on the merino"
+   ],
+   "products": [
+    {
+     "name": "Merino Wool Play Mat",
+     "url": "https://www.etsy.com/listing/4491245939/handmade-merino-lamb-wool-floor-cushion",
+     "store": "Etsy",
+     "price": "from $143.58, free shipping from Türkiye",
+     "ships_from": "Türkiye"
+    }
+   ],
+   "img": "mat_woollnest",
+   "img_src": "https://i.etsystatic.com/64455514/r/il/e13236/8668861928/il_1080xN.8668861928_c63i.jpg",
+   "quote": "Filling: 100% Merino lamb wool… Free from synthetics",
+   "outside": [],
+   "facts": {
+    "main": "yes",
+    "parts": "unknown",
+    "color": "unknown",
+    "wool": "unknown",
+    "organic": "yes"
+   },
+   "contains": [],
+   "standards": []
+  },
+  {
+   "id": "turkishtextileus-merino-wool-play-mat",
+   "type": "mats",
+   "brand": "TurkishTextileUS",
+   "line": "Merino Wool Play Mat",
+   "uses": [
+    "Cotton outer",
+    "Merino lambswool filling"
+   ],
+   "free": [],
+   "unconfirmed": [
+    "Superwash treatment (spot-clean-only care is a good sign)",
+    "Thread",
+    "Zipper on the optional cover (probably plastic; the mat is also sold without it)"
+   ],
+   "products": [
+    {
+     "name": "Merino Wool Play Mat",
+     "url": "https://www.etsy.com/listing/1878314626/handmade-merino-wool-baby-play-mat",
+     "store": "Etsy",
+     "price": "from $88.45 on sale",
+     "ships_from": null
+    }
+   ],
+   "img": "mat_turkish",
+   "img_src": "https://i.etsystatic.com/54580361/r/il/90a65a/7636343129/il_794xN.7636343129_fgci.jpg",
+   "quote": "100% natural Merino lambswool filling",
+   "outside": [],
+   "facts": {
+    "main": "yes",
+    "parts": "unknown",
+    "color": "yes",
+    "wool": "unknown",
+    "organic": "no",
+    "accessory": "unknown"
+   },
+   "contains": [],
+   "standards": []
+  },
+  {
+   "id": "marnieandmister-organic-cotton-quilted-mat",
+   "type": "mats",
+   "brand": "MarnieAndMister",
+   "line": "Organic Cotton Quilted Mat",
+   "uses": [
+    "GOTS organic cotton outer",
+    "Cotton filling"
+   ],
+   "free": [],
+   "unconfirmed": [
+    "Polyester binder in the batting",
+    "Thread"
+   ],
+   "products": [
+    {
+     "name": "Organic Cotton Quilted Mat",
+     "url": "https://www.etsy.com/listing/1757727160/baby-play-mat-organic-cotton-play-mat",
+     "store": "Etsy",
+     "price": "about $98 plus $33 shipping from Australia",
+     "ships_from": "Australia"
+    }
+   ],
+   "img": "mat_marnie",
+   "img_src": "https://i.etsystatic.com/16420195/r/il/fad030/6215561831/il_1080xN.6215561831_4ley.jpg",
+   "quote": "GOTS certified organic cotton outer… a soft cotton filling",
+   "outside": [],
+   "facts": {
+    "main": "unknown",
+    "parts": "unknown",
+    "color": "yes",
+    "organic": "yes"
+   },
+   "contains": [],
+   "standards": [
+    "gots"
+   ]
+  },
+  {
+   "id": "toki-kids-organic-cotton-mat-40x40",
+   "type": "mats",
+   "brand": "Toki Kids",
+   "line": "Organic Cotton Mat (40x40\")",
+   "uses": [
+    "GOTS organic cotton cover",
+    "Natural Dunlop latex insert"
+   ],
+   "free": [],
+   "unconfirmed": [
+    "Lining under the cover"
+   ],
+   "products": [
+    {
+     "name": "Checker Toffee Mat",
+     "url": "https://tokikids.com/products/checker-toffee-mat",
+     "store": "Toki Kids",
+     "price": "$185; $140.99 on sale at Babylist",
+     "ships_from": "US",
+     "shipping": "Free shipping on orders over $200, $200 below",
+     "price_checked": "2026-10-18"
+    }
+   ],
+   "img": "mat_toki",
+   "img_src": "https://tokikids.com/cdn/shop/files/TOFFEE_4028a32b-6cd3-4af0-a43c-f1c43017774a.jpg?v=1750996545&width=800",
+   "note": "Only the organic cotton version has the cotton cover described here.",
+   "outside": [
+    "Side zippers, probably plastic"
+   ],
+   "facts": {
+    "main": "unknown",
+    "parts": "no",
+    "color": "yes",
+    "organic": "yes"
+   },
+   "contains": [
+    "latex"
+   ],
+   "standards": [
+    "gots"
+   ]
+  },
+  {
+   "id": "kodo-kids-wool-playscape-mats-7-pieces",
+   "type": "mats",
+   "brand": "Kodo Kids",
+   "line": "Wool Playscape Mats (7 pieces)",
+   "uses": [
+    "Wool felt",
+    "“Natural dyes”"
+   ],
+   "free": [],
+   "unconfirmed": [
+    "Wool percentage"
+   ],
+   "products": [
+    {
+     "name": "Wool Playscape Mats",
+     "url": "https://kodokids.com/products/wool-playscape-mats",
+     "store": "Kodo Kids",
+     "price": "$105",
+     "ships_from": "US",
+     "price_checked": "2026-10-18"
+    }
+   ],
+   "img": "mat_kodo",
+   "img_src": "https://kodokids.com/cdn/shop/files/DSC_1810.jpg?v=1778342491&width=800",
+   "note": "Made in the USA. Rated 18 months and up.",
+   "outside": [
+    "Not padded: thin felt shapes"
+   ],
+   "facts": {
+    "main": "unknown",
+    "parts": "yes",
+    "color": "unknown",
+    "wool": "unknown",
+    "organic": "no"
+   },
+   "contains": [],
+   "standards": [],
+   "age": {
+    "min_months": 18,
+    "text": "Rated 18 months and up"
+   }
+  },
+  {
+   "id": "finn-emma-organic-wool-play-mat-rug",
+   "type": "mats",
+   "brand": "Finn + Emma",
+   "line": "Organic Wool Play Mat + Rug",
+   "uses": [
+    "Certified organic wool"
+   ],
+   "free": [],
+   "unconfirmed": [
+    "Backing",
+    "Glue",
+    "Thread",
+    "Superwash treatment"
+   ],
+   "products": [
+    {
+     "name": "Organic Wool Play Mat + Rug",
+     "url": "https://easytot.com/products/organic-wool-play-mat-nursery-rug-polar-bear",
+     "store": "EasyTot",
+     "price": "$124 on sale",
+     "ships_from": "US"
+    }
+   ],
+   "quote": "100% certified organic wool",
+   "outside": [
+    "“Eco-friendly dyes”, likely synthetic",
+    "Thin felt, not padded"
+   ],
+   "facts": {
+    "main": "unknown",
+    "parts": "unknown",
+    "color": "no",
+    "wool": "unknown",
+    "organic": "yes"
+   },
+   "contains": [],
+   "standards": [
+    "organic-unnamed"
+   ]
+  },
+  {
+   "id": "tiny-kind-quilted-play-mat",
+   "type": "mats",
+   "brand": "Tiny Kind",
+   "line": "Baby Quilted Play Mat",
+   "uses": [
+    "GOTS-certified organic cotton exterior",
+    "Polyester filling"
+   ],
+   "free": [],
+   "unconfirmed": [
+    "Thread",
+    "Dyes/prints"
+   ],
+   "outside": [
+    "Polyester filling"
+   ],
+   "quote": "100% GOTS-certified organic cotton exterior (meets the highest global standard for organic textiles) ... 100% polyester filling",
+   "products": [
+    {
+     "name": "Tiny Kind Baby Quilted Play Mat - Jungle Family",
+     "url": "https://www.babylist.com/gp/tiny-kind-baby-quilted-play-mat/71558/2376432",
+     "store": "Babylist",
+     "price": "$69",
+     "ships_from": "US",
+     "shipping": "Free shipping on orders over $45"
+    }
+   ],
+   "img_src": "https://images.ctfassets.net/50gzycvace50/fadcec51f25b567abd16062c562a955e3f99155470aee16ca70280261df54c73/648531fa4bad3287e11d9b4f38f3d3be/fadcec51f25b567abd16062c562a955e3f99155470aee16ca70280261df54c73.png?fl=progressive&fm=jpg&bg=rgb:fafafa&w=1240&h=1240",
+   "facts": {
+    "main": "no",
+    "parts": "unknown",
+    "color": "unknown",
+    "organic": "yes"
+   },
+   "contains": [],
+   "img": "x_tiny_kind_quilted_play_mat",
+   "standards": [
+    "gots"
+   ]
+  },
+  {
+   "id": "lovevery-play-gym",
+   "type": "mats",
+   "brand": "Lovevery",
+   "line": "The Play Gym",
+   "uses": [
+    "Polyester mat",
+    "Organic cotton (mouthable pieces)",
+    "Silicone teething rings",
+    "FSC-certified wood frame"
+   ],
+   "free": [
+    "Flame retardants",
+    "PVC"
+   ],
+   "unconfirmed": [
+    "Mat fill/batting type",
+    "Wood construction (solid vs plywood)",
+    "Dyes/finishes",
+    "Thread"
+   ],
+   "outside": [
+    "Polyester mat",
+    "Silicone teething rings"
+   ],
+   "quote": "Mouthable pieces are made with materials such as 100% organic cotton and silicone, and the mat is made with polyester fiber and tested to be baby-safe.",
+   "products": [
+    {
+     "name": "The Play Gym",
+     "url": "https://shop.lovevery.com/products/the-play-gym",
+     "store": "Lovevery",
+     "price": "$150",
+     "ships_from": "US",
+     "price_checked": "2026-10-18"
+    }
+   ],
+   "img_src": "https://shop.lovevery.com/cdn/shop/files/03Newborns3Q-1445_FullFrame_Retouched_MB_V1_1_1024x1024.png?v=1707846206",
+   "facts": {
+    "main": "no",
+    "parts": "unknown",
+    "color": "unknown",
+    "silicone": "unknown",
+    "wood": "unknown",
+    "organic": "yes",
+    "flame": "yes"
+   },
+   "contains": [],
+   "img": "x_lovevery_play_gym",
+   "standards": [
+    "fsc"
+   ]
+  },
+  {
+   "id": "piccalio-play-mat",
+   "type": "mats",
+   "brand": "Piccalio",
+   "line": "Play Mat",
+   "uses": [
+    "GOTS-certified organic cotton",
+    "OEKO-TEX natural latex foam",
+    "Waterproof cover: cotton layers with TPU barrier"
+   ],
+   "free": [],
+   "unconfirmed": [
+    "Thread",
+    "Zipper",
+    "Dyes/prints"
+   ],
+   "outside": [
+    "TPU waterproof barrier"
+   ],
+   "quote": "OEKO-TEX natural latex foam (AKA rubber trees) and 100% GOTS-certified organic cotton ... Waterproof cover contents 100% cotton layers and a TPU barrier",
+   "products": [
+    {
+     "name": "Piccalio Play Mat - Dreamy (Off-White) / Dots (Lion)",
+     "url": "https://babylist.com/gp/piccalio-play-mat/56890/2131381",
+     "store": "Babylist",
+     "price": "$189",
+     "ships_from": "US",
+     "shipping": "Free shipping on orders over $45"
+    }
+   ],
+   "img_src": "https://images.ctfassets.net/50gzycvace50/540a44b2567976257a154b4ea2601047d5906b25e60b6da3b5eba1b546a3bfed/49d93cf52271bdb06aeb55da52f59f1d/540a44b2567976257a154b4ea2601047d5906b25e60b6da3b5eba1b546a3bfed.png?fl=progressive&fm=jpg&bg=rgb:fafafa&w=1240&h=1240",
+   "facts": {
+    "main": "no",
+    "parts": "unknown",
+    "color": "unknown",
+    "rubber": "unknown",
+    "organic": "yes"
+   },
+   "contains": [
+    "latex"
+   ],
+   "img": "x_piccalio_play_mat",
+   "standards": [
+    "gots",
+    "oeko-tex"
+   ]
+  },
+  {
+   "id": "sandjnovelty-organic-cotton-soft-books",
+   "type": "books",
+   "brand": "SandJNovelty",
+   "line": "Organic cotton soft books",
+   "uses": [
+    "Organic cotton twill and knit",
+    "Cotton batting",
+    "Organic cotton ribbon"
+   ],
+   "free": [
+    "Synthetic batting"
+   ],
+   "unconfirmed": [
+    "Printing ink binder (pigment ink is usually synthetic)",
+    "Thread"
+   ],
+   "products": [
+    {
+     "name": "Organic Nursery Rhyme Soft Book",
+     "url": "https://www.etsy.com/listing/703309388/organic-nursery-rhyme-soft-book-handmade",
+     "store": "Etsy",
+     "price": "$39.50, free US shipping",
+     "ships_from": "US"
+    },
+    {
+     "name": "Organic Peter Pan Soft Book",
+     "url": "https://www.etsy.com/listing/1211518242/organic-peter-pan-rhyming-soft-book",
+     "store": "Etsy",
+     "price": "$39.50",
+     "ships_from": null
+    }
+   ],
+   "img": "book_sj1",
+   "img_src": "https://i.etsystatic.com/12166609/r/il/5d003d/4194470494/il_1080xN.4194470494_q36k.jpg",
+   "quote": "Organic cotton twill, organic cotton knit… cotton needled batting",
+   "outside": [],
+   "facts": {
+    "main": "yes",
+    "parts": "unknown",
+    "color": "unknown",
+    "organic": "yes"
+   },
+   "contains": [],
+   "standards": []
+  },
+  {
+   "id": "motherslovecreation1-who-says-woof-cloth-book",
+   "type": "books",
+   "brand": "MothersLoveCreation1",
+   "line": "“Who Says Woof?” Cloth Book",
+   "uses": [
+    "100% cotton fabric (not organic)"
+   ],
+   "free": [],
+   "unconfirmed": [
+    "Quilt batting between pages (often polyester)",
+    "Printing inks"
+   ],
+   "products": [
+    {
+     "name": "Who Says Woof? Cloth Book",
+     "url": "https://www.etsy.com/listing/470544323/who-says-woof-soft-cloth-books-for",
+     "store": "Etsy",
+     "price": "$16.95 plus $5.83 shipping",
+     "ships_from": "US"
+    }
+   ],
+   "img": "book_woof",
+   "img_src": "https://i.etsystatic.com/10679198/r/il/0d0c33/3297565325/il_1080xN.3297565325_wosi.jpg",
+   "outside": [],
+   "facts": {
+    "main": "unknown",
+    "parts": "yes",
+    "color": "unknown",
+    "organic": "yes"
+   },
+   "contains": [],
+   "standards": []
+  },
+  {
+   "id": "atelier-fischer-wooden-picture-books",
+   "type": "books",
+   "brand": "Atelier Fischer",
+   "line": "Wooden picture books",
+   "uses": [
+    "Birch plywood pages",
+    "Leather ties"
+   ],
+   "free": [],
+   "unconfirmed": [],
+   "products": [
+    {
+     "name": "Wooden Picture Book (Ladybug)",
+     "url": "https://www.acorntoyshop.com/collections/all/products/wooden-picture-book-with-ladybug-cover",
+     "store": "Acorn Toy Shop",
+     "price": "$34",
+     "ships_from": "US",
+     "price_checked": "2026-10-18"
+    },
+    {
+     "name": "Wooden Picture Book",
+     "url": "https://thewoodenwagon.com/woodentoy/BAF7009.html",
+     "store": "The Wooden Wagon",
+     "price": "$24 to $27.50",
+     "ships_from": "US",
+     "shipping": "Free shipping on orders over $125",
+     "price_checked": "2026-10-18"
+    }
+   ],
+   "img": "book_fischer",
+   "img_src": "https://www.acorntoyshop.com/cdn/shop/products/ladybugbook1_1024x1024.png?v=1759255230",
+   "note": "Rated 2 or 3 and up.",
+   "outside": [
+    "Plywood glue",
+    "“Water-based paint”, probably acrylic"
+   ],
+   "facts": {
+    "main": "no",
+    "parts": "yes",
+    "color": "no",
+    "wood": "no",
+    "tanning": "unknown"
+   },
+   "contains": [
+    "leather"
+   ],
+   "standards": [],
+   "age": {
+    "min_months": 24,
+    "text": "Rated 2 or 3 and up"
+   }
+  },
+  {
+   "id": "jellycat-tails-crinkly-fabric-books",
+   "type": "books",
+   "brand": "Jellycat",
+   "line": "Tails Crinkly Fabric Books",
+   "uses": [
+    "Polyester",
+    "Cotton",
+    "Polyester fiber filling"
+   ],
+   "free": [],
+   "unconfirmed": [
+    "Crinkle layer",
+    "Thread",
+    "Dyes/prints",
+    "Buggy loop"
+   ],
+   "outside": [
+    "Polyester fabric",
+    "Polyester fiber filling"
+   ],
+   "quote": "Main Materials: Polyester, Cotton Inner Filling: Polyester Fibers",
+   "products": [
+    {
+     "name": "Sea Tails - Crinkly Fabric Book by Jellycat",
+     "url": "https://pacifierkids.com/products/seatailssoftbookbyjellycat",
+     "store": "Pacifier",
+     "price": "$22",
+     "ships_from": "US",
+     "shipping": "Free shipping on orders over $100",
+     "price_checked": "2026-10-18"
+    },
+    {
+     "name": "Pet Tails - Crinkly Fabric Book by Jellycat",
+     "url": "https://pacifierkids.com/products/pettails-crinklyfabricbookbyjellycat",
+     "store": "Pacifier",
+     "price": "$22",
+     "ships_from": "US",
+     "shipping": "Free shipping on orders over $100",
+     "price_checked": "2026-10-18"
+    }
+   ],
+   "img_src": "https://cdn.shopify.com/s/files/1/0281/8056/files/BK4ST__24795.1727975850.jpg?v=1764638677",
+   "facts": {
+    "main": "no",
+    "parts": "unknown",
+    "color": "unknown",
+    "organic": "no"
+   },
+   "contains": [],
+   "img": "x_jellycat_tails_crinkly_fabric_books",
+   "standards": []
+  },
+  {
+   "id": "lamaze-peek-a-boo-forest",
+   "type": "books",
+   "brand": "Lamaze",
+   "line": "Peek-a-Boo Forest Cloth Book",
+   "uses": [
+    "Polyester"
+   ],
+   "free": [],
+   "unconfirmed": [
+    "Crinkle layer",
+    "Fill",
+    "Thread",
+    "Dyes/prints",
+    "Clip"
+   ],
+   "outside": [
+    "Polyester"
+   ],
+   "quote": "Spot clean only ... Polyester",
+   "products": [
+    {
+     "name": "Lamaze Peek-a-Boo Forest Cloth Book",
+     "url": "https://www.babylist.com/gp/lamaze-peek-a-boo-forest-cloth-book/2271/3854",
+     "store": "Babylist",
+     "price": "$14.99",
+     "ships_from": "US",
+     "shipping": "Free shipping on orders over $45"
+    }
+   ],
+   "img_src": "https://images.ctfassets.net/50gzycvace50/d5748e5388391b34ca4fb950c1b55a0dd3ee7f64ca23ee51586a0714b3bc1e48/6caee713f78cf90d2132e01b586afda5/d5748e5388391b34ca4fb950c1b55a0dd3ee7f64ca23ee51586a0714b3bc1e48.png?fl=progressive&fm=jpg&bg=rgb:fafafa&w=1240&h=1240",
+   "facts": {
+    "main": "no",
+    "parts": "unknown",
+    "color": "unknown",
+    "organic": "no"
+   },
+   "contains": [],
+   "img": "x_lamaze_peek_a_boo_forest",
+   "standards": []
+  },
+  {
+   "id": "maple-landmark-unfinished-maple-stackers-and-sor",
+   "type": "stacking",
+   "brand": "Maple Landmark",
+   "line": "Unfinished maple stackers and sorters",
+   "uses": [
+    "Solid maple"
+   ],
+   "free": [
+    "Any finish (unfinished)"
+   ],
+   "unconfirmed": [
+    "Storage pouch on the sorter bench"
+   ],
+   "products": [
+    {
+     "name": "Natural Shape Stacker",
+     "url": "https://thebabypenguin.com/products/natural-wooden-shape-stacker",
+     "store": "The Baby Penguin",
+     "price": "$29.95",
+     "ships_from": "US",
+     "shipping": "Free shipping on orders over $50",
+     "price_checked": "2026-10-18"
+    },
+    {
+     "name": "Shape Sorter Bench",
+     "url": "https://maplelandmark.com/products/shape-sorter-bench",
+     "store": "Maple Landmark",
+     "price": "$37.10",
+     "note": "Rated 2 and up",
+     "ships_from": "US"
+    }
+   ],
+   "img": "stack_ml",
+   "img_src": "https://thebabypenguin.com/cdn/shop/files/maple-landmark-73035-ivory.webp?v=1791479593&width=800",
+   "quote": "Unfinished solid maple, sanded smooth",
+   "outside": [],
+   "facts": {
+    "main": "yes",
+    "parts": "yes",
+    "color": "yes",
+    "wood": "yes",
+    "accessory": "unknown"
+   },
+   "contains": [],
+   "standards": [],
+   "age": {
+    "min_months": 24,
+    "text": "Rated 2 and up (Maple Landmark listing)"
+   }
+  },
+  {
+   "id": "bannor-toys-circle-stacker",
+   "type": "stacking",
+   "brand": "Bannor Toys",
+   "line": "Circle Stacker",
+   "uses": [
+    "Cherry and walnut",
+    "Beeswax and flaxseed oil finish"
+   ],
+   "free": [],
+   "unconfirmed": [
+    "Glue (described only as “non-toxic”)"
+   ],
+   "products": [
+    {
+     "name": "Circle Stacker",
+     "url": "https://thebabypenguin.com/products/circle-stacker",
+     "store": "The Baby Penguin",
+     "price": "$34.99",
+     "ships_from": "US",
+     "shipping": "Free shipping on orders over $50",
+     "price_checked": "2026-10-18"
+    }
+   ],
+   "img": "stack_bannor",
+   "img_src": "https://thebabypenguin.com/cdn/shop/files/Circle-Stacker-_-Made-in-the-USA-Bannor-Toys-58372493.jpg?v=1698092438&width=800",
+   "quote": "Wood finish: beeswax and flaxseed oil",
+   "outside": [],
+   "facts": {
+    "main": "yes",
+    "parts": "unknown",
+    "color": "yes",
+    "wood": "yes"
+   },
+   "contains": [],
+   "standards": []
+  },
+  {
+   "id": "camden-rose-multi-hardwood-stacker",
+   "type": "stacking",
+   "brand": "Camden Rose",
+   "line": "Multi-Hardwood Stacker",
+   "uses": [
+    "Cherry, maple and walnut",
+    "Beeswax polish"
+   ],
+   "free": [],
+   "unconfirmed": [],
+   "products": [
+    {
+     "name": "Multi-Hardwood Stacker",
+     "url": "https://camdenrose.com/collections/camden-rose-products-auto-collection/products/multi-hardwood-stacker-round",
+     "store": "Camden Rose",
+     "price": "$39.99",
+     "ships_from": "US",
+     "shipping": "Free shipping",
+     "price_checked": "2026-10-18"
+    }
+   ],
+   "img": "stack_camden",
+   "img_src": "https://camdenrose.com/cdn/shop/files/3006-cherry-2873.jpg?v=1758217914&width=800",
+   "evidence": "Product page: ages 1 and up, beeswax polish",
+   "note": "Site shows a stock warning.",
+   "outside": [],
+   "facts": {
+    "main": "yes",
+    "parts": "yes",
+    "color": "yes",
+    "wood": "yes"
+   },
+   "contains": [],
+   "standards": [],
+   "age": {
+    "min_months": 12,
+    "text": "Ages 1 and up"
+   }
+  },
+  {
+   "id": "wooden-story-natural-stackers-and-sorter",
+   "type": "stacking",
+   "brand": "Wooden Story",
+   "line": "Natural stackers and sorter",
+   "uses": [
+    "FSC wood (beech)",
+    "Beeswax and botanical oils"
+   ],
+   "free": [],
+   "unconfirmed": [
+    "“Natural dyes” mentioned on the sorter page",
+    "Age rating on the XL stacker"
+   ],
+   "products": [
+    {
+     "name": "4-Across Natural Stacker XL",
+     "url": "https://thewoodenwagon.com/woodentoy/BWS75.html",
+     "store": "The Wooden Wagon",
+     "price": "$46",
+     "ships_from": "US",
+     "shipping": "Free shipping on orders over $125",
+     "price_checked": "2026-10-18"
+    },
+    {
+     "name": "Natural Pyramid Stacker",
+     "url": "https://www.mysweetmuffin.com/products/wooden-story-natural-pyramid-stacker",
+     "store": "My Sweet Muffin",
+     "price": "$52",
+     "ships_from": "US",
+     "shipping": "Free shipping on orders over $75",
+     "price_checked": "2026-10-18"
+    },
+    {
+     "name": "Natural Shape Sorter Box",
+     "url": "https://thewoodenwagon.com/woodentoy/BWS69.html",
+     "store": "The Wooden Wagon",
+     "price": "price on request",
+     "ships_from": "US"
+    }
+   ],
+   "img": "stack_ws4",
+   "img_src": "https://thewoodenwagon.com/Merchant2/graphics/00000001/BWS75-1.jpg",
+   "quote": "Finished with beeswax and botanical oils",
+   "outside": [],
+   "facts": {
+    "main": "yes",
+    "parts": "yes",
+    "color": "unknown",
+    "wood": "yes"
+   },
+   "contains": [],
+   "standards": [
+    "fsc"
+   ]
+  },
+  {
+   "id": "fisher-price-rock-a-stack-eco",
+   "type": "stacking",
+   "brand": "Fisher-Price",
+   "line": "Rock-a-Stack (plant-based)",
+   "uses": [
+    "Plant-based plastic (min. 90% sugarcane-derived ethanol)"
+   ],
+   "free": [],
+   "unconfirmed": [
+    "Remaining 10% of material",
+    "Colorants"
+   ],
+   "outside": [
+    "Bio-based plastic rings and base"
+   ],
+   "quote": "This Fisher-Price® Rock-a-Stack® toy, made from plant-based materials*, ... (*Toy made from a minimum of 90% ethanol extracted from sugar cane.)",
+   "products": [
+    {
+     "name": "Fisher Price Eco Rock-a-stack",
+     "url": "https://macrobaby.com/products/fisher-price-eco-rock-a-stack",
+     "store": "MacroBaby",
+     "price": "$8.99",
+     "ships_from": "US",
+     "price_checked": "2026-10-18"
+    }
+   ],
+   "img_src": "https://cdn.shopify.com/s/files/1/0325/7932/1915/files/fisher-price-eco-rock-a-stack_image_1.jpg?v=1764437160",
+   "facts": {
+    "main": "no",
+    "color": "unknown"
+   },
+   "contains": [],
+   "img": "x_fisher_price_rock_a_stack_eco",
+   "standards": []
+  },
+  {
+   "id": "melissa-doug-rainbow-stacker",
+   "type": "stacking",
+   "brand": "Melissa & Doug",
+   "line": "Classic Rainbow Stacker",
+   "uses": [
+    "Wood",
+    "Paint"
+   ],
+   "free": [],
+   "unconfirmed": [
+    "Wood type of rings (solid vs composite)",
+    "Glue"
+   ],
+   "outside": [
+    "Paint, type not named"
+   ],
+   "quote": "Material: Wood/Paint",
+   "products": [
+    {
+     "name": "Melissa & Doug Classic Rainbow Stacker, 8 Pieces and Solid Wood Base",
+     "url": "https://www.schoolspecialty.com/melissa-doug-classic-rainbow-stacker-8-pieces-and-solid-wood-base-1609238",
+     "store": "School Specialty",
+     "price": "$13.42",
+     "ships_from": "US"
+    }
+   ],
+   "img_src": "https://cdn.schoolspecialty.com/7df9b27f-9bde-4245-ad65-b0f00129a63c/1609238_B_JPG%20Output.jpg",
+   "facts": {
+    "main": "unknown",
+    "parts": "unknown",
+    "color": "no",
+    "wood": "unknown"
+   },
+   "contains": [],
+   "img": "x_melissa_doug_rainbow_stacker",
+   "standards": []
+  },
+  {
+   "id": "maple-landmark-unfinished-maple-block-sets",
+   "type": "blocks",
+   "brand": "Maple Landmark",
+   "line": "Unfinished maple block sets",
+   "uses": [
+    "Maple"
+   ],
+   "free": [
+    "Any finish: “nothing at all”"
+   ],
+   "unconfirmed": [],
+   "products": [
+    {
+     "name": "My First Wooden Block Set",
+     "url": "https://thebabypenguin.com/a/p/products/my-first-wooden-block-set",
+     "store": "The Baby Penguin",
+     "price": "$41.95",
+     "ships_from": "US",
+     "shipping": "Free shipping on orders over $50",
+     "price_checked": "2026-10-18"
+    },
+    {
+     "name": "Apprentice Blocks (41 pcs)",
+     "url": "https://www.maplelandmark.com/products/apprentice-blocks-set-41-pieces",
+     "store": "Maple Landmark",
+     "price": "$87",
+     "ships_from": "US"
+    }
+   ],
+   "img": "blocks_first",
+   "img_src": "https://thebabypenguin.com/cdn/shop/files/maple-landmark-73205-ivory.webp?v=1791472132&width=800",
+   "quote": "Finish: Unfinished wood",
+   "outside": [],
+   "facts": {
+    "main": "yes",
+    "parts": "yes",
+    "color": "yes",
+    "wood": "yes"
+   },
+   "contains": [],
+   "standards": []
+  },
+  {
+   "id": "camden-rose-cube-blocks-24",
+   "type": "blocks",
+   "brand": "Camden Rose",
+   "line": "Cube Blocks (24)",
+   "uses": [
+    "Cherry, maple and walnut",
+    "Beeswax polish"
+   ],
+   "free": [],
+   "unconfirmed": [],
+   "products": [
+    {
+     "name": "One-size Cube Blocks, set of 24",
+     "url": "https://camdenrose.com/collections/blocks-sticks-toys/products/wooden-one-size-cube-building-blocks-set-of-24",
+     "store": "Camden Rose",
+     "price": "$56",
+     "ships_from": "US",
+     "shipping": "Free shipping",
+     "price_checked": "2026-10-18"
+    }
+   ],
+   "img": "blocks_camden",
+   "img_src": "https://camdenrose.com/cdn/shop/files/3061-1.5block3281_009e19b0-fb36-44f3-89b4-ff82c295730f.jpg?v=1733941921&width=800",
+   "evidence": "Stated on the product page",
+   "note": "Stock warning on site.",
+   "outside": [],
+   "facts": {
+    "main": "yes",
+    "parts": "yes",
+    "color": "yes",
+    "wood": "yes"
+   },
+   "contains": [],
+   "standards": []
+  },
+  {
+   "id": "bannor-toys-push-toys",
+   "type": "push",
+   "brand": "Bannor Toys",
+   "line": "Push toys",
+   "uses": [
+    "Maple, cherry and walnut",
+    "Beeswax and flaxseed oil finish"
+   ],
+   "free": [],
+   "unconfirmed": [
+    "Wheels and axles"
+   ],
+   "products": [
+    {
+     "name": "Giraffe Push Toy",
+     "url": "https://thebabypenguin.com/a/p/products/giraffe-push-toy",
+     "store": "The Baby Penguin",
+     "price": "$34.99",
+     "ships_from": "US",
+     "shipping": "Free shipping on orders over $50",
+     "price_checked": "2026-10-18"
+    },
+    {
+     "name": "Bunny Push Toy (cherry)",
+     "url": "https://thebabypenguin.com/products/bunny-push-toy",
+     "store": "The Baby Penguin",
+     "price": "$34.99",
+     "ships_from": "US",
+     "shipping": "Free shipping on orders over $50",
+     "price_checked": "2026-10-18"
+    }
+   ],
+   "img": "push_giraffe",
+   "img_src": "https://thebabypenguin.com/cdn/shop/files/Giraffe-Push-Toy-_-Made-in-the-USA-Bannor-Toys-58385975.jpg?v=1698095189&width=800",
+   "quote": "Wood finish: beeswax and flaxseed oil",
+   "outside": [],
+   "facts": {
+    "main": "yes",
+    "parts": "unknown",
+    "color": "yes",
+    "wood": "yes"
+   },
+   "contains": [],
+   "standards": []
+  },
+  {
+   "id": "little-wooden-wonders-push-lawn-mower",
+   "type": "push",
+   "brand": "Little Wooden Wonders",
+   "line": "Push Lawn Mower",
+   "uses": [
+    "Walnut, oak, birch and maple",
+    "Beeswax and jojoba oil finish",
+    "Wooden balls inside"
+   ],
+   "free": [],
+   "unconfirmed": [
+    "Wheels and axles"
+   ],
+   "products": [
+    {
+     "name": "Wooden Push Toy Lawn Mower",
+     "url": "https://www.etsy.com/listing/73475149/wooden-push-toy-lawn-mower-eco-friendly",
+     "store": "Etsy",
+     "price": "$49.95, free shipping",
+     "ships_from": "US"
+    }
+   ],
+   "img": "push_mower",
+   "img_src": "https://i.etsystatic.com/6284366/r/il/12addd/242678291/il_794xN.242678291.jpg",
+   "quote": "homemade natural beeswax and jojoba oil wood finish",
+   "outside": [],
+   "facts": {
+    "main": "yes",
+    "parts": "unknown",
+    "color": "yes",
+    "wood": "yes"
+   },
+   "contains": [],
+   "standards": []
+  },
+  {
+   "id": "eli-mattie-pull-wagon-with-blocks",
+   "type": "push",
+   "brand": "Eli & Mattie",
+   "line": "Pull Wagon with Blocks",
+   "uses": [
+    "Unfinished poplar",
+    "Wooden wheels",
+    "18 blocks"
+   ],
+   "free": [
+    "Plastic parts"
+   ],
+   "unconfirmed": [
+    "Pull rope"
+   ],
+   "products": [
+    {
+     "name": "Pull Wagon with Blocks",
+     "url": "https://www.lehmans.com/product/eli-and-mattie-pull-wagon-with-blocks",
+     "store": "Lehman’s",
+     "price": "$84.99",
+     "ships_from": "US",
+     "shipping": "Shipping calculated at checkout",
+     "price_checked": "2026-10-18"
+    }
+   ],
+   "img": "pull_wagon",
+   "img_src": "https://www.lehmans.com/cdn/shop/files/ab89d38dd57c393d0520ecd9890a3fda73ba87c9_100021658_2_L.png?v=1777014460&width=800",
+   "quote": "no plastic parts",
+   "outside": [],
+   "facts": {
+    "main": "yes",
+    "parts": "unknown",
+    "color": "yes",
+    "wood": "yes"
+   },
+   "contains": [],
+   "standards": []
+  },
+  {
+   "id": "smiling-tree-toys-wooden-truck",
+   "type": "cars",
+   "brand": "Smiling Tree Toys",
+   "line": "Wooden Truck",
+   "uses": [
+    "Solid hardwood",
+    "Jojoba oil and beeswax finish"
+   ],
+   "free": [],
+   "unconfirmed": [
+    "Wheels and axles"
+   ],
+   "products": [
+    {
+     "name": "Wood Toy Truck",
+     "url": "https://smilingtreetoys.com/products/wood-toy-truck",
+     "store": "Smiling Tree Toys",
+     "price": "$19",
+     "ships_from": "US",
+     "price_checked": "2026-10-18"
+    }
+   ],
+   "img": "car_truck",
+   "img_src": "https://smilingtreetoys.com/cdn/shop/products/toy-trucks-for-kids-wooden-toys-Smiling-Tree-Toys.jpg?v=1653432233&width=800",
+   "quote": "organic oil finish",
+   "outside": [],
+   "facts": {
+    "main": "yes",
+    "parts": "unknown",
+    "color": "yes",
+    "wood": "yes"
+   },
+   "contains": [],
+   "standards": []
+  },
+  {
+   "id": "nature-explore-natural-wooden-vehicles-set-of-4",
+   "type": "cars",
+   "brand": "Nature Explore",
+   "line": "Natural Wooden Vehicles (set of 4)",
+   "uses": [
+    "Maple"
+   ],
+   "free": [
+    "Any finish"
+   ],
+   "unconfirmed": [
+    "Maker",
+    "Axles"
+   ],
+   "products": [
+    {
+     "name": "Natural Wooden Vehicles, set of 4",
+     "url": "https://shop.natureexplore.org/product/natural-wooden-vehicles-set-of-4/",
+     "store": "Nature Explore",
+     "price": "$42, backorder",
+     "ships_from": "US"
+    }
+   ],
+   "quote": "Made of unfinished maple",
+   "outside": [],
+   "facts": {
+    "main": "yes",
+    "parts": "unknown",
+    "color": "yes",
+    "wood": "yes"
+   },
+   "contains": [],
+   "standards": []
+  },
+  {
+   "id": "green-elephant-wooden-cars-with-3-peg-dolls",
+   "type": "cars",
+   "brand": "Green Elephant",
+   "line": "Wooden Cars with 3 Peg Dolls",
+   "uses": [
+    "Beech"
+   ],
+   "free": [
+    "Paint"
+   ],
+   "unconfirmed": [
+    "Axles"
+   ],
+   "products": [
+    {
+     "name": "7-piece Wooden Cars Set with Peg Dolls",
+     "url": "https://thebabypenguin.com/products/7-pcs-natural-wooden-cars-set-with-3-pcs-peg-dolls",
+     "store": "The Baby Penguin",
+     "price": "$28",
+     "ships_from": "US",
+     "shipping": "Free shipping on orders over $50",
+     "price_checked": "2026-10-18"
+    }
+   ],
+   "img": "car_green",
+   "img_src": "https://thebabypenguin.com/cdn/shop/files/7-Pcs-Natural-Wooden-Cars-Set-with-3-pcs-Peg-Dolls-Green-Elephant-Home-and-Toys-122507266.jpg?v=1781455926&width=800",
+   "quote": "Unpainted natural wood",
+   "note": "The peg dolls are small; check their size against choking-hazard guidance.",
+   "outside": [],
+   "facts": {
+    "main": "yes",
+    "parts": "unknown",
+    "color": "yes",
+    "wood": "yes"
+   },
+   "contains": [],
+   "standards": []
+  },
+  {
+   "id": "lapp-s-toys-maple-cobbler-bench",
+   "type": "bench",
+   "brand": "Lapp’s Toys",
+   "line": "Maple Cobbler Bench",
+   "uses": [
+    "Solid maple, 6 pegs"
+   ],
+   "free": [
+    "Any finish"
+   ],
+   "unconfirmed": [
+    "Hammer material"
+   ],
+   "products": [
+    {
+     "name": "Maple Cobbler Bench",
+     "url": "https://www.etsy.com/listing/1585523606/maple-wood-cobbler-bench-toy-kids-hammer",
+     "store": "Etsy",
+     "price": "$49.97, free shipping",
+     "ships_from": "US"
+    }
+   ],
+   "img": "bench_lapp",
+   "img_src": "https://i.etsystatic.com/20241972/r/il/5fc646/5453628596/il_1080xN.5453628596_f353.jpg",
+   "quote": "Color: Unfinished",
+   "outside": [],
+   "facts": {
+    "main": "yes",
+    "parts": "unknown",
+    "color": "yes",
+    "wood": "yes"
+   },
+   "contains": [],
+   "standards": []
+  },
+  {
+   "id": "maple-landmark-unfinished-oval-rattles",
+   "type": "rattles",
+   "brand": "Maple Landmark",
+   "line": "Unfinished oval rattles",
+   "uses": [
+    "Maple",
+    "Wooden beads (bead rattle)",
+    "Metal sleigh bell (bell rattle)"
+   ],
+   "free": [
+    "Any finish"
+   ],
+   "unconfirmed": [],
+   "products": [
+    {
+     "name": "Unfinished Bead Rattle",
+     "url": "https://thebabypenguin.com/products/unfinished-oval-bead-rattle",
+     "store": "The Baby Penguin",
+     "price": "$14.95",
+     "ships_from": "US",
+     "shipping": "Free shipping on orders over $50",
+     "price_checked": "2026-10-18"
+    },
+    {
+     "name": "Unfinished Bell Rattle",
+     "url": "https://thebabypenguin.com/products/unfinished-oval-bell-rattle-natural-usa-made",
+     "store": "The Baby Penguin",
+     "price": "$14.95",
+     "note": "Bell is metal",
+     "ships_from": "US",
+     "shipping": "Free shipping on orders over $50",
+     "price_checked": "2026-10-18"
+    }
+   ],
+   "img": "shake_bead",
+   "img_src": "https://thebabypenguin.com/cdn/shop/files/maple-landmark-72151-ivory.webp?v=1791474211&width=800",
+   "quote": "Finish: Unfinished wood",
+   "outside": [],
+   "facts": {
+    "main": "yes",
+    "parts": "yes",
+    "color": "yes",
+    "wood": "yes"
+   },
+   "contains": [],
+   "standards": []
+  },
+  {
+   "id": "sabo-wooden-flower-rattle",
+   "type": "rattles",
+   "brand": "Sabo",
+   "line": "Wooden Flower Rattle",
+   "uses": [
+    "Beech",
+    "Beeswax oil"
+   ],
+   "free": [],
+   "unconfirmed": [
+    "Inner ball"
+   ],
+   "products": [
+    {
+     "name": "Wooden Flower Rattle",
+     "url": "https://www.bellalunatoys.com/collections/waldorf-baby-toys-0-12-months/products/sabo-natural-wooden-flower-rattle",
+     "store": "Bella Luna Toys",
+     "price": "$18",
+     "ships_from": "US",
+     "shipping": "Free shipping on orders over $99",
+     "price_checked": "2026-10-18"
+    }
+   ],
+   "img": "shake_sabo",
+   "img_src": "https://www.bellalunatoys.com/cdn/shop/files/sabo-wooden-flower-rattle.jpg?v=1779975328&width=800",
+   "quote": "Made of Beech covered with beeswax oil",
+   "note": "Rated 0 to 24 months.",
+   "outside": [],
+   "facts": {
+    "main": "yes",
+    "parts": "unknown",
+    "color": "yes",
+    "wood": "yes"
+   },
+   "contains": [],
+   "standards": [],
+   "age": {
+    "min_months": 0,
+    "text": "Rated 0 to 24 months"
+   }
+  },
+  {
+   "id": "nanchen-natur-organic-cotton-dolls-with-wool-fil",
+   "type": "dolls",
+   "brand": "Nanchen Natur",
+   "line": "Organic cotton dolls with wool fill",
+   "uses": [
+    "Organic cotton (knit, terry or jersey)",
+    "Wool fill (organic on Little Dot)"
+   ],
+   "free": [],
+   "unconfirmed": [
+    "Hair",
+    "Dyes",
+    "Face paint",
+    "Thread"
+   ],
+   "products": [
+    {
+     "name": "Organic Waldorf Baby Doll",
+     "url": "https://www.bellalunatoys.com/collections/dolls/products/nanchen-organic-waldorf-baby-doll-pink-stripes",
+     "store": "Bella Luna Toys",
+     "price": "$79",
+     "ships_from": "US",
+     "shipping": "Free shipping on orders over $99",
+     "price_checked": "2026-10-18"
+    },
+    {
+     "name": "Bella Baby Terry Doll",
+     "url": "https://www.bellalunatoys.com/collections/dolls/products/bella-baby-organic-terry-waldorf-dolls",
+     "store": "Bella Luna Toys",
+     "price": "$29.99",
+     "ships_from": "US",
+     "shipping": "Free shipping on orders over $99",
+     "price_checked": "2026-10-18"
+    },
+    {
+     "name": "Little Dot Blanket Doll",
+     "url": "https://www.bellalunatoys.com/collections/dolls/products/nanchen-little-dot-rattle-blanket-doll",
+     "store": "Bella Luna Toys",
+     "price": "$32.99",
+     "ships_from": "US",
+     "shipping": "Free shipping on orders over $99",
+     "price_checked": "2026-10-18"
+    }
+   ],
+   "img": "doll_nanchen",
+   "img_src": "https://www.bellalunatoys.com/cdn/shop/products/nanchen-waldorf-baby-cuddle-doll-pink.jpg?v=1663824616&width=800",
+   "quote": "Stuffed with 100% pure new wool",
+   "note": "Ages 12 months and up.",
+   "outside": [],
+   "facts": {
+    "main": "yes",
+    "parts": "unknown",
+    "color": "unknown",
+    "wool": "yes",
+    "organic": "yes"
+   },
+   "contains": [],
+   "standards": [],
+   "age": {
+    "min_months": 12,
+    "text": "Ages 12 months and up"
+   }
+  },
+  {
+   "id": "sarah-s-silks-waldorf-dolls-zoe-poppy-leo",
+   "type": "dolls",
+   "brand": "Sarah’s Silks",
+   "line": "Waldorf Dolls (Zoe, Poppy, Leo)",
+   "uses": [
+    "Organic cotton",
+    "Wool fill",
+    "Cotton knit outfit"
+   ],
+   "free": [],
+   "unconfirmed": [
+    "Hair"
+   ],
+   "products": [
+    {
+     "name": "Waldorf Doll Zoe",
+     "url": "https://www.sarahssilks.com/collections/waldorf-dolls/products/waldorf-doll-zoe",
+     "store": "Sarah’s Silks",
+     "price": "$58",
+     "ships_from": "US",
+     "price_checked": "2026-10-18"
+    }
+   ],
+   "img": "doll_sarah",
+   "img_src": "https://www.sarahssilks.com/cdn/shop/files/Dolls3.jpg?v=1704314598&width=800",
+   "quote": "stuffed with wool",
+   "note": "Ages 18 months and up.",
+   "outside": [],
+   "facts": {
+    "main": "yes",
+    "parts": "unknown",
+    "color": "yes",
+    "wool": "yes",
+    "organic": "yes"
+   },
+   "contains": [],
+   "standards": [],
+   "age": {
+    "min_months": 18,
+    "text": "Ages 18 months and up"
+   }
+  },
+  {
+   "id": "senger-naturwelt-organic-floppy-animals",
+   "type": "animals",
+   "brand": "Senger Naturwelt",
+   "line": "Organic floppy animals",
+   "uses": [
+    "Organic cotton",
+    "Organic lambswool fill",
+    "Embroidered face"
+   ],
+   "free": [],
+   "unconfirmed": [
+    "Dyes",
+    "Eyes on the cat"
+   ],
+   "products": [
+    {
+     "name": "Organic Floppy Lamb",
+     "url": "https://www.bellalunatoys.com/collections/soft-toys-stuffed-animals/products/organic-lamb-sheep-plush-stuffed-animal",
+     "store": "Bella Luna Toys",
+     "price": "$87",
+     "ships_from": "US",
+     "shipping": "Free shipping on orders over $99",
+     "price_checked": "2026-10-18"
+    },
+    {
+     "name": "Organic Floppy Cat",
+     "url": "https://www.bellalunatoys.com/collections/soft-toys-stuffed-animals/products/small-floppy-cat-organic-stuffed-animal",
+     "store": "Bella Luna Toys",
+     "price": "$87",
+     "ships_from": "US",
+     "shipping": "Free shipping on orders over $99",
+     "price_checked": "2026-10-18"
+    }
+   ],
+   "img": "ani_lamb",
+   "img_src": "https://www.bellalunatoys.com/cdn/shop/products/senger-organic-lamb-plush-toy.jpg?v=1663826006&width=800",
+   "quote": "filled with pure lambswool",
+   "outside": [],
+   "facts": {
+    "main": "yes",
+    "parts": "unknown",
+    "color": "unknown",
+    "wool": "yes",
+    "organic": "yes"
+   },
+   "contains": [],
+   "standards": []
+  },
+  {
+   "id": "senger-naturwelt-floppy-squirrel-small",
+   "type": "animals",
+   "brand": "Senger Naturwelt",
+   "line": "Floppy Squirrel (small)",
+   "uses": [
+    "Cotton plush",
+    "Long-staple mohair",
+    "Sheep’s wool"
+   ],
+   "free": [],
+   "unconfirmed": [
+    "Eyes"
+   ],
+   "products": [
+    {
+     "name": "Floppy Squirrel, small",
+     "url": "https://www.bellalunatoys.com/collections/soft-toys-stuffed-animals/products/senger-floppy-squirrel-three-sizes",
+     "store": "Bella Luna Toys",
+     "price": "$50",
+     "ships_from": "US",
+     "shipping": "Free shipping on orders over $99",
+     "price_checked": "2026-10-18"
+    }
+   ],
+   "img": "ani_squirrel",
+   "img_src": "https://www.bellalunatoys.com/cdn/shop/products/SengerFloppySquirrel.jpg?v=1666805525&width=800",
+   "quote": "Cotton, long-staple mohair, sheep’s wool",
+   "outside": [],
+   "facts": {
+    "main": "yes",
+    "parts": "unknown",
+    "color": "yes",
+    "wool": "yes",
+    "organic": "no"
+   },
+   "contains": [],
+   "standards": []
+  },
+  {
+   "id": "furnis-organic-lion-washcloth-puppet",
+   "type": "animals",
+   "brand": "Furnis",
+   "line": "Organic Lion Washcloth Puppet",
+   "uses": [
+    "Organic cotton terry"
+   ],
+   "free": [
+    "Any filling"
+   ],
+   "unconfirmed": [],
+   "products": [
+    {
+     "name": "Washcloth Hand Puppet, Lion",
+     "url": "https://www.bellalunatoys.com/collections/waldorf-baby-toys-0-12-months/products/washcloth-hand-puppet-lion",
+     "store": "Bella Luna Toys",
+     "price": "$17.90",
+     "ships_from": "US",
+     "shipping": "Free shipping on orders over $99",
+     "price_checked": "2026-10-18"
+    }
+   ],
+   "img": "ani_puppet",
+   "img_src": "https://www.bellalunatoys.com/cdn/shop/products/furnis-organic-washcloth-hand-puppet-lion-baby-bathing-15934279685.jpg?v=1679002980&width=800",
+   "quote": "100% certified organic terrycloth cotton",
+   "note": "Only 1 left when checked.",
+   "outside": [],
+   "facts": {
+    "main": "yes",
+    "parts": "yes",
+    "color": "yes",
+    "organic": "yes"
+   },
+   "contains": [],
+   "standards": [
+    "organic-unnamed"
+   ]
+  },
+  {
+   "id": "jellycat-bashful-bunny",
+   "type": "animals",
+   "brand": "Jellycat",
+   "line": "Bashful Bunny (Medium)",
+   "uses": [
+    "Polyester",
+    "Cotton",
+    "Polyester fibres (fill)",
+    "PE beans",
+    "Hard eyes"
+   ],
+   "free": [],
+   "unconfirmed": [
+    "Thread",
+    "Dyes"
+   ],
+   "outside": [
+    "Polyester fabric",
+    "Polyester fibre fill",
+    "PE beans",
+    "Hard plastic eyes"
+   ],
+   "quote": "Material Polyester, Cotton, Polyester Fibres, PE Beans, Hard Eye",
+   "products": [
+    {
+     "name": "Jellycat Bashful Cream Bunny | Medium",
+     "url": "https://www.thecrossliving.com/en-us/products/bashful-cream-bunny-med",
+     "store": "The Cross",
+     "price": "$37",
+     "ships_from": null,
+     "shipping": "Shipping calculated at checkout",
+     "price_checked": "2026-10-18"
+    }
+   ],
+   "img_src": "https://cdn.shopify.com/s/files/1/0618/4035/9481/files/u0tibaf57llv7kg1doqh.png?v=1778109800",
+   "facts": {
+    "main": "no",
+    "parts": "unknown",
+    "color": "unknown",
+    "organic": "no"
+   },
+   "contains": [],
+   "img": "x_jellycat_bashful_bunny",
+   "standards": []
+  },
+  {
+   "id": "best-years-organic-knitted-plush",
+   "type": "animals",
+   "brand": "Best Years",
+   "line": "Organic Cotton Knitted Plush",
+   "uses": [
+    "Organic cotton knitted fabric",
+    "Recycled polyester fill"
+   ],
+   "free": [],
+   "unconfirmed": [
+    "Thread",
+    "Dyes",
+    "Eyes/embroidery"
+   ],
+   "outside": [
+    "Recycled polyester fill"
+   ],
+   "quote": "Organic cotton knitted fabric stuffed with recycled polyester fill.",
+   "products": [
+    {
+     "name": "Organic Cotton Large Crocodile Plush Toy",
+     "url": "https://coloredorganics.com/products/organic-cotton-large-crocodile-plush-toy",
+     "store": "Colored Organics",
+     "price": "$36",
+     "ships_from": "US",
+     "shipping": "Free shipping on orders over $50",
+     "price_checked": "2026-10-18"
+    }
+   ],
+   "img_src": "https://cdn.shopify.com/s/files/1/1643/4857/files/infant-unisex-organic-cotton-large-crododile-plush-toy.natural.flat_front.2.jpg?v=1750284581",
+   "facts": {
+    "main": "no",
+    "parts": "unknown",
+    "color": "unknown",
+    "organic": "yes"
+   },
+   "contains": [],
+   "img": "x_best_years_organic_knitted_plush",
+   "standards": []
+  },
+  {
+   "id": "kodo-kids-natural-wool-balls-6",
+   "type": "balls",
+   "brand": "Kodo Kids",
+   "line": "Natural Wool Balls (6)",
+   "uses": [
+    "Undyed felted wool"
+   ],
+   "free": [
+    "Dye"
+   ],
+   "unconfirmed": [],
+   "products": [
+    {
+     "name": "Natural Wool Balls",
+     "url": "https://kodokids.com/collections/featured-collection/products/natural-wool-balls",
+     "store": "Kodo Kids",
+     "price": "$40",
+     "ships_from": "US",
+     "price_checked": "2026-10-18"
+    }
+   ],
+   "img": "ball_kodo",
+   "img_src": "https://kodokids.com/cdn/shop/files/wool_balls.png?v=1778343572&width=800",
+   "quote": "Made from undyed, natural wool",
+   "note": "Rated 18 months and up; the smallest balls are small.",
+   "outside": [],
+   "facts": {
+    "main": "yes",
+    "parts": "yes",
+    "color": "yes",
+    "wool": "yes",
+    "organic": "no"
+   },
+   "contains": [],
+   "standards": [],
+   "age": {
+    "min_months": 18,
+    "text": "Rated 18 months and up"
+   }
+  },
+  {
+   "id": "hevea-star-activity-ball-natural-rubber-colour",
+   "type": "balls",
+   "brand": "Hevea",
+   "line": "Star Activity Ball, “Natural Rubber” colour",
+   "uses": [
+    "Natural rubber, solid, no hole"
+   ],
+   "free": [
+    "Colouring",
+    "Plastics, PVC, petroleum and phthalates"
+   ],
+   "unconfirmed": [],
+   "products": [
+    {
+     "name": "Hevea Star Ball",
+     "url": "https://enlightenedbaby.com/products/hevea-star-ball",
+     "store": "Enlightened Baby",
+     "price": "$24.99",
+     "ships_from": "US",
+     "price_checked": "2026-10-18"
+    }
+   ],
+   "img": "ball_hevea",
+   "img_src": "https://cdn.shopify.com/s/files/1/0707/4850/4296/files/StarBall-high-res-scaled.jpg?v=1730835195",
+   "quote": "Free from BPA, plastics, PVC, petroleum and Phthalates; No Colouring – just the natural colour of rubber",
+   "note": "Only the Natural colour is undyed; Mint and Blue are coloured.",
+   "outside": [],
+   "facts": {
+    "main": "yes",
+    "parts": "yes",
+    "color": "yes",
+    "rubber": "yes"
+   },
+   "contains": [
+    "latex"
+   ],
+   "standards": []
+  },
+  {
+   "id": "miniland-big-eco-sensory-ball",
+   "type": "balls",
+   "brand": "Miniland",
+   "line": "Big Eco Sensory Ball",
+   "uses": [
+    "Natural rubber"
+   ],
+   "free": [],
+   "unconfirmed": [],
+   "products": [
+    {
+     "name": "Big Eco Sensory Ball",
+     "url": "https://www.bellalunatoys.com/collections/waldorf-baby-toys-0-12-months/products/miniland-big-eco-sensory-ball",
+     "store": "Bella Luna Toys",
+     "price": "$65.99",
+     "ships_from": "US",
+     "shipping": "Free shipping on orders over $99",
+     "price_checked": "2026-10-18"
+    }
+   ],
+   "img": "ball_miniland",
+   "img_src": "https://www.bellalunatoys.com/cdn/shop/files/miniland-eco-big-sensory-ball-set_745786c0-d6b7-4d95-b8e1-50cfe648ac4b.jpg?v=1777489099&width=800",
+   "outside": [
+    "Bright colourant that isn’t named"
+   ],
+   "facts": {
+    "main": "yes",
+    "parts": "yes",
+    "color": "no",
+    "rubber": "unknown"
+   },
+   "contains": [
+    "latex"
+   ],
+   "standards": []
+  },
+  {
+   "id": "oli-carol-tomato-baby-ball",
+   "type": "balls",
+   "brand": "Oli & Carol",
+   "line": "Tomato Baby Ball",
+   "uses": [
+    "100% natural rubber, no hole"
+   ],
+   "free": [
+    "Phthalates"
+   ],
+   "unconfirmed": [],
+   "products": [
+    {
+     "name": "Tomato Baby Ball",
+     "url": "https://pacifierkids.com/products/tomato-baby-ball-by-oli-carol",
+     "store": "Pacifier",
+     "price": "$21.99",
+     "ships_from": "US",
+     "shipping": "Free shipping on orders over $100",
+     "price_checked": "2026-10-18"
+    }
+   ],
+   "img": "ball_oli",
+   "img_src": "https://pacifierkids.com/cdn/shop/files/e5de78f909870997493136cac183822479a7aafe7266838cd03b45d88a0309e0.jpg?v=1759655294&width=800",
+   "outside": [
+    "Hand-painted with “food-grade pigments” that aren’t named, likely synthetic"
+   ],
+   "facts": {
+    "main": "yes",
+    "parts": "yes",
+    "color": "no",
+    "rubber": "yes"
+   },
+   "contains": [
+    "latex"
+   ],
+   "standards": []
+  },
+  {
+   "id": "caaocho-rainbow-sensory-ball",
+   "type": "balls",
+   "brand": "CaaOcho",
+   "line": "Rainbow Sensory Ball",
+   "uses": [
+    "100% natural rubber"
+   ],
+   "free": [
+    "Phthalates"
+   ],
+   "unconfirmed": [],
+   "products": [
+    {
+     "name": "Natural Rainbow Sensory Ball",
+     "url": "https://www.thenaturalbabyco.com/products/caaocho-natural-rainbow-sensory-ball-4",
+     "store": "The Natural Baby Co",
+     "price": "$21",
+     "ships_from": "US",
+     "shipping": "Shipping calculated at checkout",
+     "price_checked": "2026-10-18"
+    }
+   ],
+   "img": "ball_caaocho",
+   "img_src": "http://www.thenaturalbabyco.com/cdn/shop/products/4inc.png?v=1684914798",
+   "outside": [
+    "“Food grade paint” not named",
+    "Squeaker inside, probably plastic"
+   ],
+   "facts": {
+    "main": "no",
+    "parts": "yes",
+    "color": "no",
+    "rubber": "yes"
+   },
+   "contains": [
+    "latex"
+   ],
+   "standards": []
+  },
+  {
+   "id": "natruba-leaf-sensory-balls",
+   "type": "balls",
+   "brand": "Natruba",
+   "line": "Leaf Sensory Balls",
+   "uses": [
+    "100% natural rubber"
+   ],
+   "free": [
+    "Phthalates"
+   ],
+   "unconfirmed": [],
+   "products": [
+    {
+     "name": "Leaf Sensory Ball Set",
+     "url": "https://www.designlifekids.com/products/leaf-sensory-ball-set",
+     "store": "Design Life Kids",
+     "price": "$24",
+     "ships_from": "US"
+    }
+   ],
+   "img": "ball_natruba",
+   "img_src": "http://www.designlifekids.com/cdn/shop/files/Screen_Shot_2026-05-19_at_12.06.22_PM_940x828.png?v=1779206803",
+   "outside": [
+    "Unnamed “natural food dyes”"
+   ],
+   "facts": {
+    "main": "yes",
+    "parts": "yes",
+    "color": "no",
+    "rubber": "yes"
+   },
+   "contains": [
+    "latex"
+   ],
+   "standards": []
+  },
+  {
+   "id": "oball-classic",
+   "type": "balls",
+   "brand": "Bright Starts",
+   "line": "Oball Classic Easy-Grasp",
+   "uses": [
+    "Plastic"
+   ],
+   "free": [],
+   "unconfirmed": [
+    "Plastic type",
+    "Colorants"
+   ],
+   "outside": [
+    "Plastic body"
+   ],
+   "quote": "Materials: 100% Plastic",
+   "products": [
+    {
+     "name": "Oball Easy Grasp Classic Ball Baby Toy in Red/Blue/Green/Yellow, 4\"",
+     "url": "https://www.kids2.com/products/10340-000-bright-starts-oball-classic-easygrasp-toy-redbluegreenyellow",
+     "store": "Kids2",
+     "price": "$4.99",
+     "ships_from": "US",
+     "price_checked": "2026-10-18"
+    }
+   ],
+   "img_src": "https://cdn.shopify.com/s/files/1/0468/2521/0022/files/27af224d36da99edd13d5ce5c98c287fd5aea97d.jpg?v=1775233825",
+   "facts": {
+    "main": "no",
+    "color": "unknown"
+   },
+   "contains": [],
+   "img": "x_oball_classic",
+   "standards": []
+  },
+  {
+   "id": "edushape-sensory-balls",
+   "type": "balls",
+   "brand": "Edushape",
+   "line": "Sensory Shapes and Balls",
+   "uses": [
+    "Plastic"
+   ],
+   "free": [
+    "Phthalates"
+   ],
+   "unconfirmed": [
+    "Plastic type",
+    "Colorants"
+   ],
+   "outside": [
+    "Plastic body"
+   ],
+   "quote": "All 9 tactile toys in this set are phthalate-free, durable and safe for any early childhood environment",
+   "products": [
+    {
+     "name": "Edushape Sensory Shapes and Balls, Assorted Colors and Textures, Set of 9",
+     "url": "https://www.schoolspecialty.com/sensory-balls-1594285",
+     "store": "School Specialty",
+     "price": "$72.07",
+     "ships_from": "US"
+    }
+   ],
+   "img_src": "https://cdn.schoolspecialty.com/84828a3c-6196-4e98-b9f6-b0f001220ef5/1594285_A_JPG%20Output.jpg",
+   "facts": {
+    "main": "no",
+    "color": "unknown"
+   },
+   "contains": [],
+   "img": "x_edushape_sensory_balls",
+   "standards": []
+  },
+  {
+   "id": "hevea-natural-rubber-bath-toys",
+   "type": "bath",
+   "brand": "Hevea",
+   "line": "Natural rubber bath toys",
+   "uses": [
+    "Natural rubber latex",
+    "Natural mineral-based pigments"
+   ],
+   "free": [
+    "Holes (Kawan duck only)"
+   ],
+   "unconfirmed": [
+    "Which pigments exactly"
+   ],
+   "products": [
+    {
+     "name": "Kawan Rubber Duck",
+     "url": "https://us.heveaplanet.com/products/kawan-rubberduck-1x1",
+     "store": "Hevea US",
+     "price": "$29.95",
+     "ships_from": "US",
+     "price_checked": "2026-10-18"
+    },
+    {
+     "name": "Duck and Frog Squeeze Set",
+     "url": "https://www.sproutsanfrancisco.com/hevea-squeeze-n-splash-rubber-duck-and-frog-bath-set",
+     "store": "Sprout San Francisco",
+     "price": "$36",
+     "note": "Squeeze hole",
+     "ships_from": "US"
+    }
+   ],
+   "img": "bath_kawan",
+   "img_src": "https://us.heveaplanet.com/cdn/shop/files/HEVEA_Product_Kawan-Original_Marshmallow-white_5710087454584.jpg?v=1777032596&width=800",
+   "quote": "100% natural rubber latex; no holes",
+   "note": "The squeeze set has a hole, so water can collect inside; the Kawan duck is sealed.",
+   "outside": [],
+   "facts": {
+    "main": "yes",
+    "parts": "yes",
+    "color": "unknown",
+    "rubber": "unknown",
+    "organic": "no"
+   },
+   "contains": [
+    "latex"
+   ],
+   "standards": []
+  },
+  {
+   "id": "sarah-s-silks-playsilks",
+   "type": "silks",
+   "brand": "Sarah’s Silks",
+   "line": "Playsilks",
+   "uses": [
+    "Silk"
+   ],
+   "free": [
+    "Dye (white packs)"
+   ],
+   "unconfirmed": [
+    "Hem thread",
+    "Dyes on the coloured silks (probably synthetic)"
+   ],
+   "products": [
+    {
+     "name": "White Playsilks, 6 undyed",
+     "url": "https://www.sarahssilks.com/products/white-playsilk-packs-for-dyeing",
+     "store": "Sarah’s Silks",
+     "price": "$68",
+     "note": "Undyed",
+     "ships_from": "US"
+    },
+    {
+     "name": "Playsilk, red or orange",
+     "url": "https://www.bellalunatoys.com/collections/waldorf-baby-toys-0-12-months/products/playsilks",
+     "store": "Bella Luna Toys",
+     "price": "$19.20",
+     "note": "Dyed",
+     "ships_from": "US",
+     "shipping": "Free shipping on orders over $99",
+     "price_checked": "2026-10-18"
+    }
+   ],
+   "img": "silk_color",
+   "img_src": "https://www.bellalunatoys.com/cdn/shop/products/Sarah_sSilks.jpg?v=1663825059&width=800",
+   "quote": "100% real silk",
+   "outside": [],
+   "facts": {
+    "main": "yes",
+    "parts": "unknown",
+    "color": "unknown",
+    "organic": "no"
+   },
+   "contains": [],
+   "standards": []
+  },
+  {
+   "id": "sarah-s-silks-under-the-sea-play-map",
+   "type": "silks",
+   "brand": "Sarah’s Silks",
+   "line": "Under the Sea Play Map",
+   "uses": [
+    "100% mulberry silk"
+   ],
+   "free": [],
+   "unconfirmed": [],
+   "products": [
+    {
+     "name": "Play Map, Under the Sea",
+     "url": "https://www.grove.co/products/play-map-under-the-sea",
+     "store": "Grove",
+     "price": "$15.19",
+     "ships_from": "US",
+     "price_checked": "2026-10-18"
+    }
+   ],
+   "img": "silk_map",
+   "img_src": "https://www.grove.co/cdn/shop/files/e7gyvw4bydlbcz4khoel.jpg?v=1738611913&width=800",
+   "note": "Small: 21 x 21 in.",
+   "outside": [
+    "Printed with “non-toxic, earth-friendly dyes”, probably synthetic"
+   ],
+   "facts": {
+    "main": "yes",
+    "parts": "yes",
+    "color": "no",
+    "organic": "no"
+   },
+   "contains": [],
+   "standards": []
+  },
+  {
+   "id": "odin-parker-pretend-dinner-set",
+   "type": "pretend",
+   "brand": "Odin Parker",
+   "line": "Pretend Dinner Set",
+   "uses": [
+    "Beech and maple",
+    "Linseed oil and beeswax"
+   ],
+   "free": [],
+   "unconfirmed": [
+    "Age rating"
+   ],
+   "products": [
+    {
+     "name": "Handmade Pretend Dinner Set",
+     "url": "https://odinparker.com/products/handmade-pretend-dinner-set",
+     "store": "Odin Parker",
+     "price": "$35",
+     "ships_from": "US"
+    }
+   ],
+   "quote": "natural linseed oil and beeswax",
+   "outside": [],
+   "facts": {
+    "main": "yes",
+    "parts": "yes",
+    "color": "yes",
+    "wood": "yes"
+   },
+   "contains": [],
+   "standards": []
+  },
+  {
+   "id": "tara-treasures-felt-fruit-and-veg-15-pcs",
+   "type": "pretend",
+   "brand": "Tara Treasures",
+   "line": "Felt Fruit and Veg (15 pcs)",
+   "uses": [
+    "100% New Zealand wool felt"
+   ],
+   "free": [
+    "Synthetic fill"
+   ],
+   "unconfirmed": [
+    "Thread"
+   ],
+   "products": [
+    {
+     "name": "Felt Fruits and Vegetables Set C",
+     "url": "https://mytoywagon.com/products/felt-fruits-and-vegetables-set-c-15-pcs",
+     "store": "My Toy Wagon",
+     "price": "$84, pre-order",
+     "ships_from": "US",
+     "shipping": "Free shipping on orders over $150, $84 below",
+     "price_checked": "2026-10-18"
+    }
+   ],
+   "img": "pretend_tara",
+   "img_src": "https://mytoywagon.com/cdn/shop/files/feltfruitsandvegetables_seta4_c92a160f-37e3-4f26-b71b-5438a7c2ceae.png?v=1738355677&width=800",
+   "note": "Rated 3 and up.",
+   "outside": [
+    "“Azo-free” dyes, likely synthetic"
+   ],
+   "facts": {
+    "main": "yes",
+    "parts": "unknown",
+    "color": "no",
+    "wool": "yes",
+    "organic": "no"
+   },
+   "contains": [],
+   "standards": [],
+   "age": {
+    "min_months": 36,
+    "text": "Rated 3 and up"
+   }
+  },
+  {
+   "id": "obasan-organic-crib-mattress",
+   "type": "mattresses",
+   "brand": "Obasan",
+   "line": "Organic Crib Mattress",
+   "uses": [
+    "Organic latex",
+    "Coconut coir",
+    "Organic wool",
+    "Organic cotton",
+    "Wool moisture pad (included)"
+   ],
+   "free": [
+    "Flame retardants",
+    "Polyurethane foam",
+    "Industrial glue",
+    "Vinyl or plastic in the pad"
+   ],
+   "unconfirmed": [
+    "Thread",
+    "Zipper",
+    "Wool treatment"
+   ],
+   "products": [
+    {
+     "name": "Organic Crib Mattress",
+     "url": "https://www.obasan.com/products/baby-organic-rubber-crib-mattress",
+     "store": "Obasan",
+     "price": "$425",
+     "ships_from": "US",
+     "shipping": "Free shipping",
+     "price_checked": "2026-10-18"
+    }
+   ],
+   "img": "bed_obasan",
+   "img_src": "http://obasan.com/cdn/shop/files/CribMattress2_1.jpg?v=1775080562&width=3600",
+   "quote": "no flame retardants, polyurethane foam, industrial glue, chemical treatments",
+   "note": "Sold out when checked.",
+   "outside": [],
+   "facts": {
+    "main": "yes",
+    "parts": "unknown",
+    "color": "yes",
+    "wool": "unknown",
+    "organic": "yes",
+    "flame": "yes"
+   },
+   "contains": [
+    "latex"
+   ],
+   "standards": []
+  },
+  {
+   "id": "green-cradle-organic-latex-crib-mattress",
+   "type": "mattresses",
+   "brand": "Green Cradle",
+   "line": "Organic Latex Crib Mattress",
+   "uses": [
+    "GOLS organic Dunlop latex core",
+    "Organic wool",
+    "Organic cotton"
+   ],
+   "free": [
+    "Synthetics"
+   ],
+   "unconfirmed": [
+    "Thread",
+    "Zipper",
+    "Wool treatment"
+   ],
+   "products": [
+    {
+     "name": "Organic Latex Crib Mattress",
+     "url": "https://www.greencradle.com/products/gols-organic-crib-latex-mattress-gots-organic-wool-and-organic-cotton",
+     "store": "Green Cradle",
+     "price": "$499",
+     "ships_from": "US",
+     "shipping": "Shipping calculated at checkout",
+     "price_checked": "2026-10-18"
+    }
+   ],
+   "img": "bed_gcmat",
+   "img_src": "http://www.greencradle.com/cdn/shop/files/IMG_2516.jpg?v=1760574458",
+   "quote": "firm 100% GOLS certified organic latex core... no synthetics",
+   "outside": [],
+   "facts": {
+    "main": "yes",
+    "parts": "unknown",
+    "color": "yes",
+    "wool": "unknown",
+    "organic": "yes"
+   },
+   "contains": [
+    "latex"
+   ],
+   "standards": [
+    "gols"
+   ]
+  },
+  {
+   "id": "cozypure-baby-natural-latex-crib-mattress",
+   "type": "mattresses",
+   "brand": "CozyPure",
+   "line": "Baby Natural Latex Crib Mattress",
+   "uses": [
+    "6 in GOLS organic latex",
+    "Organic cotton",
+    "Organic wool"
+   ],
+   "free": [],
+   "unconfirmed": [
+    "Thread",
+    "Zipper",
+    "Wool treatment"
+   ],
+   "products": [
+    {
+     "name": "Baby Natural Latex Crib Mattress",
+     "url": "https://cozypure.com/product/cozypure-baby-natural-latex-organic-crib-mattress-3/",
+     "store": "CozyPure",
+     "price": "$528",
+     "ships_from": "US",
+     "price_checked": "2026-10-18"
+    }
+   ],
+   "img": "bed_cozypure",
+   "img_src": "https://cozypure.com/wp-content/uploads/2019/04/cribmattress.jpg",
+   "quote": "solid 6″ ... GOLS certified organic latex... quilted cover of organic cotton and organic wool",
+   "outside": [],
+   "facts": {
+    "main": "yes",
+    "parts": "unknown",
+    "color": "yes",
+    "wool": "unknown",
+    "organic": "yes"
+   },
+   "contains": [
+    "latex"
+   ],
+   "standards": [
+    "gols"
+   ]
+  },
+  {
+   "id": "savvy-rest-savvy-baby-crib-mattresses",
+   "type": "mattresses",
+   "brand": "Savvy Rest",
+   "line": "Savvy Baby crib mattresses",
+   "uses": [
+    "5 in natural latex (Dunlop or Talalay)",
+    "Organic wool",
+    "Unbleached organic cotton casing"
+   ],
+   "free": [],
+   "unconfirmed": [
+    "Zipper on the casing",
+    "Thread",
+    "Wool treatment",
+    "Whether the Talalay is 100% natural"
+   ],
+   "products": [
+    {
+     "name": "Savvy Baby, Dunlop",
+     "url": "https://savvyrest.com/product/the-savvy-baby/",
+     "store": "Savvy Rest",
+     "price": "$599",
+     "ships_from": "US",
+     "price_checked": "2026-10-18"
+    },
+    {
+     "name": "Savvy Baby, Talalay",
+     "url": "https://savvyrest.com/product/the-savvy-baby-talalay/",
+     "store": "Savvy Rest",
+     "price": "$749",
+     "ships_from": "US",
+     "price_checked": "2026-10-18"
+    }
+   ],
+   "img": "bed_savvyd",
+   "img_src": "https://savvyrest.com/wp-content/uploads/2023/03/IN7A8163_edit_800x533.jpg",
+   "quote": "single, solid 5″ layer of Firm natural Dunlop latex... completely GOTS-certified organic",
+   "outside": [],
+   "facts": {
+    "main": "yes",
+    "parts": "unknown",
+    "color": "yes",
+    "wool": "unknown",
+    "organic": "yes"
+   },
+   "contains": [
+    "latex"
+   ],
+   "standards": [
+    "gots"
+   ]
+  },
+  {
+   "id": "home-of-wool-crib-mattress",
+   "type": "mattresses",
+   "brand": "Home of Wool",
+   "line": "Crib Mattress",
+   "uses": [
+    "Organic wool fill",
+    "Cotton, linen or wool ticking",
+    "Linen tufting thread"
+   ],
+   "free": [
+    "Chemicals, glues and synthetics",
+    "Chemical treatment on the wool"
+   ],
+   "unconfirmed": [
+    "Zipper"
+   ],
+   "products": [
+    {
+     "name": "Crib Wool Mattress",
+     "url": "https://homeofwool.com/shop/crib-wool-mattress/",
+     "store": "Home of Wool",
+     "price": "from $653",
+     "ships_from": "UK",
+     "price_checked": "2026-10-18"
+    }
+   ],
+   "img": "bed_howmat",
+   "img_src": "https://homeofwool.com/wp-content/uploads/2025/09/home-of-wool-crib-mattress-mainn.jpg",
+   "quote": "pure wool without chemicals, glues, or synthetics... hand-tuft each mattress with natural linen thread",
+   "note": "The only mattress maker that names its thread.",
+   "outside": [],
+   "facts": {
+    "main": "yes",
+    "parts": "unknown",
+    "color": "yes",
+    "wool": "yes",
+    "organic": "yes"
+   },
+   "contains": [],
+   "standards": []
+  },
+  {
+   "id": "vivetique-organic-latex-crib-bed",
+   "type": "mattresses",
+   "brand": "Vivetique",
+   "line": "Organic Latex Crib Bed",
+   "uses": [
+    "6 in organic Dunlop latex",
+    "Organic wool",
+    "Organic cotton"
+   ],
+   "free": [],
+   "unconfirmed": [
+    "Size",
+    "Thread",
+    "Zipper",
+    "Wool treatment"
+   ],
+   "products": [
+    {
+     "name": "Organic Latex Crib Bed",
+     "url": "https://www.vivetique.com/product-page/latex-crib-bed",
+     "store": "Vivetique",
+     "price": "$755",
+     "ships_from": "US",
+     "price_checked": "2026-10-18"
+    }
+   ],
+   "img": "bed_vivetique",
+   "img_src": "https://static.wixstatic.com/media/7d959b_5cea0f6b3a0147a3a0cf79c4691d4536~mv2_d_4281_3572_s_4_2.jpg/v1/fit/w_500,h_500,q_90/file.jpg",
+   "quote": "6 inches of Organic Dunlap (firm) Latex wrapped in a quilted cover... Organic Wool and Organic Cotton",
+   "outside": [],
+   "facts": {
+    "main": "yes",
+    "parts": "unknown",
+    "color": "yes",
+    "wool": "unknown",
+    "organic": "yes"
+   },
+   "contains": [
+    "latex"
+   ],
+   "standards": []
+  },
+  {
+   "id": "white-lotus-organic-cotton-crib-and-toddler-matt",
+   "type": "mattresses",
+   "brand": "White Lotus",
+   "line": "Organic cotton crib and toddler mattresses",
+   "uses": [
+    "About 20 layers of organic cotton batting",
+    "Wool fire barrier",
+    "Organic cotton cover"
+   ],
+   "free": [
+    "Synthetics and glues"
+   ],
+   "unconfirmed": [
+    "Thread",
+    "Wool treatment"
+   ],
+   "products": [
+    {
+     "name": "Organic Cotton Crib Mattress (cotton and wool)",
+     "url": "https://whitelotushome.com/bedding/organic-cribs-mattresses-us-made.html",
+     "store": "White Lotus",
+     "price": "$875",
+     "note": "28 x 54 in, larger than standard: check the fit",
+     "ships_from": "US",
+     "shipping": "Free shipping"
+    },
+    {
+     "name": "Organic Cotton Toddler Mattress",
+     "url": "https://whitelotushome.com/bedding/organic-cotton-toddler-mattresses.html",
+     "store": "White Lotus",
+     "price": "$704",
+     "ships_from": "US",
+     "shipping": "Free shipping"
+    }
+   ],
+   "quote": "No synthetics, glues, or toxins... a layer of natural wool beneath the organic cotton cover",
+   "outside": [],
+   "facts": {
+    "main": "yes",
+    "parts": "unknown",
+    "color": "yes",
+    "wool": "unknown",
+    "organic": "yes"
+   },
+   "contains": [],
+   "standards": []
+  },
+  {
+   "id": "naturepedic-classic-organic-crib-mattress",
+   "type": "mattresses",
+   "brand": "Naturepedic",
+   "line": "Classic Organic Cotton Crib Mattress",
+   "uses": [
+    "GOTS-certified organic cotton fabric and fill",
+    "Polyethylene waterproofing made from non-GMO sugarcane",
+    "Food-grade polyethylene foam (lightweight models)",
+    "PLA foam loop (2-stage models)",
+    "PLA firmness support layer",
+    "Steel coils (innerspring model)",
+    "Steel fasteners",
+    "Polypropylene interlinings"
+   ],
+   "free": [
+    "Flame retardants",
+    "Polyurethane foam",
+    "Vinyl/PVC",
+    "Latex",
+    "Wool",
+    "Coir",
+    "Soy"
+   ],
+   "unconfirmed": [
+    "Thread",
+    "Dyes"
+   ],
+   "outside": [
+    "Polyethylene waterproof surface",
+    "Polyethylene foam core",
+    "PLA foam/support layer",
+    "Polypropylene interlinings"
+   ],
+   "quote": "Materials: GOTS-certified organic cotton fabric and fill, polyethylene waterproofing made from non-GMO sugarcane, steel coils (innerspring model), food-grade polyethylene foam (lightweight models), PLA foam loop (2-stage models), PLA firmness support layer, steel fasteners, and polypropylene interlinings.",
+   "products": [
+    {
+     "name": "Classic Organic Cotton Crib Mattress (Lightweight / Lightweight 2-Stage / Innerspring 2-Stage)",
+     "url": "https://www.naturepedic.com/products/organic-cotton-classic-seamless-baby-crib-mattress-buy",
+     "store": "Naturepedic",
+     "price": "$279-$339",
+     "ships_from": "US",
+     "shipping": "Free shipping",
+     "price_checked": "2026-10-18"
+    }
+   ],
+   "img_src": "https://www.naturepedic.com/cdn/shop/files/NP_PDP_Mattress_ClassicOrganicCottonCribMattress_List-1.jpg?v=1783597651&width=2048",
+   "facts": {
+    "main": "no",
+    "parts": "unknown",
+    "color": "unknown",
+    "organic": "yes",
+    "flame": "yes"
+   },
+   "contains": [],
+   "img": "x_naturepedic_classic_organic_crib_mattres",
+   "standards": [
+    "gots"
+   ]
+  },
+  {
+   "id": "newton-waterproof-crib-mattress",
+   "type": "mattresses",
+   "brand": "Newton Baby",
+   "line": "Waterproof Crib Mattress",
+   "uses": [
+    "Breathe-thru outer cover of spacer material (polyester)",
+    "TPU waterproof barrier on one side of cover",
+    "Viscose inner cover",
+    "Wovenaire core of food-grade polymer"
+   ],
+   "free": [
+    "Foam",
+    "Glue",
+    "Latex",
+    "Springs",
+    "Lead",
+    "Phthalates",
+    "Vinyl/PVC"
+   ],
+   "unconfirmed": [
+    "Specific polymer of Wovenaire core",
+    "Zipper",
+    "Thread"
+   ],
+   "outside": [
+    "Polyester spacer cover",
+    "TPU waterproof barrier",
+    "Polymer (Wovenaire) core"
+   ],
+   "quote": "Breathe-thru outer cover - quilted dual-layer cloud pattern, made from cushiony spacer material (polyester)with TPU waterproof barrier on one side ... Wovenaire® core - made of safe, food-grade polymer",
+   "products": [
+    {
+     "name": "Waterproof Crib Mattress (Standard)",
+     "url": "https://www.newtonbaby.com/products/waterproof-crib-mattress",
+     "store": "Newton Baby",
+     "price": "$332.50",
+     "ships_from": "US",
+     "shipping": "$50 shipping",
+     "price_checked": "2026-10-18"
+    }
+   ],
+   "img_src": "https://www.newtonbaby.com/cdn/shop/files/Waterproof_Mattress_-_brand_tag_update_2_33581618-fd26-4330-bf72-07a7270580c0.jpg?v=1791982980",
+   "facts": {
+    "main": "no",
+    "parts": "unknown",
+    "color": "unknown",
+    "organic": "no"
+   },
+   "contains": [],
+   "img": "x_newton_waterproof_crib_mattress",
+   "standards": []
+  },
+  {
+   "id": "lullaby-earth-healthy-support-crib-mattress",
+   "type": "mattresses",
+   "brand": "Lullaby Earth",
+   "line": "Healthy Support Waterproof Crib Mattress",
+   "uses": [
+    "Food-grade polyethylene",
+    "Polyester"
+   ],
+   "free": [
+    "Polyurethane foam",
+    "Vinyl/PVC",
+    "Formaldehyde",
+    "Perfluorinated compounds (PFCs)",
+    "Pesticides",
+    "Glues/adhesives",
+    "GMOs",
+    "Flame retardant chemicals"
+   ],
+   "unconfirmed": [
+    "Which part is polyethylene vs polyester",
+    "Thread"
+   ],
+   "outside": [
+    "Polyethylene",
+    "Polyester"
+   ],
+   "quote": "Lullaby Earth mattresses are made from food-grade polyethylene and polyester, materials used throughout the food packaging industry due to their recyclability.",
+   "products": [
+    {
+     "name": "Healthy Support Waterproof Crib Mattress",
+     "url": "https://www.lullabyearth.com/healthy-support-crib-mattress",
+     "store": "Lullaby Earth",
+     "price": "$179",
+     "ships_from": "US",
+     "shipping": "Free shipping",
+     "price_checked": "2026-10-18"
+    }
+   ],
+   "img_src": "https://www.lullabyearth.com/media/catalog/product/h/s/hswcm.jpeg",
+   "facts": {
+    "main": "no",
+    "parts": "unknown",
+    "color": "unknown",
+    "organic": "no",
+    "flame": "yes"
+   },
+   "contains": [],
+   "img": "x_lullaby_earth_healthy_support_crib_mattr",
+   "standards": []
+  },
+  {
+   "id": "green-cradle-childspose-crib-with-toddler-kit",
+   "type": "toddler-beds",
+   "brand": "Green Cradle",
+   "line": "Childspose Crib with toddler kit",
+   "uses": [
+    "Solid maple, oak, cherry or walnut",
+    "Linseed oil or unfinished",
+    "Solid wood slats"
+   ],
+   "free": [
+    "Plywood, veneers and engineered wood",
+    "Petrochemicals in the finish"
+   ],
+   "unconfirmed": [
+    "Glue"
+   ],
+   "products": [
+    {
+     "name": "Childspose Panel Crib",
+     "url": "https://www.greencradle.com/products/childspose-panel-crib",
+     "store": "Green Cradle",
+     "price": "$1,695 to $2,595",
+     "ships_from": "US",
+     "shipping": "Shipping calculated at checkout",
+     "price_checked": "2026-10-18"
+    },
+    {
+     "name": "Toddler conversion kit",
+     "url": "https://www.greencradle.com/products/toddler-rail-for-childspose-panel-crib",
+     "store": "Green Cradle",
+     "price": "$450",
+     "ships_from": "US",
+     "shipping": "Shipping calculated at checkout",
+     "price_checked": "2026-10-18"
+    }
+   ],
+   "img": "bed_gccrib",
+   "img_src": "http://www.greencradle.com/cdn/shop/files/RenderChildposepanelcribbedroomScaledwithrug.jpg?v=1700799328",
+   "quote": "No Engineered Wood, No Plywoods, and No Veneers Anywhere. Zero VOC Oil Finish Made From Linseed Oil... No Petrochemicals",
+   "note": "Made in the US; ships mid-November.",
+   "outside": [],
+   "facts": {
+    "main": "yes",
+    "parts": "unknown",
+    "color": "yes",
+    "wood": "yes"
+   },
+   "contains": [],
+   "standards": []
+  },
+  {
+   "id": "kalon-studios-caravan-crib-and-divan",
+   "type": "toddler-beds",
+   "brand": "Kalon Studios",
+   "line": "Caravan crib and divan",
+   "uses": [
+    "Solid ash, white oak or walnut",
+    "Raw, or plant-based oil and wax",
+    "Solid wood mattress support (crib)"
+   ],
+   "free": [],
+   "unconfirmed": [
+    "Glue",
+    "Mattress support on the divan"
+   ],
+   "products": [
+    {
+     "name": "Caravan Divan",
+     "url": "https://kalonstudios.com/shop/caravan/caravan-divan/",
+     "store": "Kalon Studios",
+     "price": "$1,295 to $1,995",
+     "ships_from": "US",
+     "price_checked": "2026-10-18"
+    },
+    {
+     "name": "Caravan Crib",
+     "url": "https://kalonstudios.com/shop/caravan/caravan-crib/",
+     "store": "Kalon Studios",
+     "price": "$1,295 to $1,495",
+     "ships_from": "US",
+     "price_checked": "2026-10-18"
+    }
+   ],
+   "img": "bed_kalondivan",
+   "img_src": "https://images.kalonstudios.com/cb:EU5d~4b753/w:1620/h:1080/q:90/f:best/ig:avif/https://kalonstudios.com/wp-content/uploads/2015/07/CaravanToddlerDivan.jpg",
+   "quote": "Raw option is finely sanded and left unfinished",
+   "note": "Made in Europe. The crib converts to a toddler bed as is.",
+   "outside": [],
+   "facts": {
+    "main": "unknown",
+    "parts": "unknown",
+    "color": "yes",
+    "wood": "yes"
+   },
+   "contains": [],
+   "standards": []
+  },
+  {
+   "id": "amish-snyder-s-eco-solid-wood-toddler-bed",
+   "type": "toddler-beds",
+   "brand": "Amish (Snyder’s)",
+   "line": "Eco Solid Wood Toddler Bed",
+   "uses": [
+    "Solid wood",
+    "Linseed oil"
+   ],
+   "free": [
+    "Plywood and particle board"
+   ],
+   "unconfirmed": [
+    "Finish details"
+   ],
+   "products": [
+    {
+     "name": "Amish Eco Solid Wood Toddler Bed",
+     "url": "https://www.snydersfurniture.com/products/amish-solid-wood-eco-toddler-bed",
+     "store": "Snyder’s",
+     "price": "$1,066",
+     "ships_from": "US",
+     "shipping": "$9.95 shipping",
+     "price_checked": "2026-10-18"
+    }
+   ],
+   "img": "bed_snyder",
+   "img_src": "https://www.snydersfurniture.com/cdn/shop/products/amish-eco-solid-wood-toddler-bed-4382805.jpg?v=1792021206",
+   "outside": [
+    "Water-based glue that “is not totally chemical free” (likely PVA)"
+   ],
+   "facts": {
+    "main": "yes",
+    "parts": "no",
+    "color": "unknown",
+    "wood": "yes"
+   },
+   "contains": [],
+   "standards": []
+  },
+  {
+   "id": "ikea-sniglar-junior-bed",
+   "type": "toddler-beds",
+   "brand": "IKEA",
+   "line": "SNIGLAR bed frame with slatted bed base",
+   "uses": [
+    "Solid beech (legs, sides, guard rail, rails)",
+    "Fiberboard, acrylic paint, paper foil (bed end filling)",
+    "Beech veneer, birch veneer, adhesive resin (layer-glued slats)",
+    "100% polyester (slat ribbon)"
+   ],
+   "free": [],
+   "unconfirmed": [
+    "Finish on solid beech parts",
+    "Hardware"
+   ],
+   "outside": [
+    "Fiberboard bed-end panels",
+    "Acrylic paint",
+    "Paper foil",
+    "Layer-glued veneer slats with adhesive resin",
+    "Polyester ribbon"
+   ],
+   "quote": "Bed end filling: Fiberboard, Acrylic paint, Paper foil ... Layer glued slats: Beech veneer, Birch veneer, Adhesive resin as coating",
+   "products": [
+    {
+     "name": "SNIGLAR bed frame with slatted bed base, beech, 27 1/2x63\"",
+     "url": "https://www.ikea.com/us/en/p/sniglar-bed-frame-with-slatted-bed-base-beech-s19185433/",
+     "store": "IKEA US",
+     "price": "$99.99",
+     "ships_from": "US",
+     "price_checked": "2026-10-18"
+    }
+   ],
+   "img_src": "https://www.ikea.com/us/en/images/products/sniglar-bed-frame-with-slatted-bed-base-beech__0637773_pe698533_s5.jpg",
+   "facts": {
+    "main": "no",
+    "parts": "unknown",
+    "color": "no",
+    "wood": "no",
+    "organic": "no"
+   },
+   "contains": [],
+   "img": "x_ikea_sniglar_junior_bed",
+   "standards": []
+  },
+  {
+   "id": "simply-sori-montessori-floor-bed",
+   "type": "floor-beds",
+   "brand": "Simply Sori",
+   "line": "Montessori Floor Bed",
+   "uses": [
+    "Unfinished US poplar",
+    "Wood slats and removable rails"
+   ],
+   "free": [
+    "Glue",
+    "Chemicals"
+   ],
+   "unconfirmed": [],
+   "products": [
+    {
+     "name": "Natural Montessori Floor Bed, twin",
+     "url": "https://www.simplysori.com/products/natural-montessori-floor-bed",
+     "store": "Simply Sori",
+     "price": "$910",
+     "ships_from": "US",
+     "price_checked": "2026-10-18"
+    }
+   ],
+   "img": "bed_sori",
+   "img_src": "http://www.simplysori.com/cdn/shop/files/simply-sori-brand-session-126_websize_1_1200x1200.jpg?v=1786558368",
+   "quote": "Our beds contain no glue, chemicals, or toxic materials. It is just beautiful solid wood in its natural state",
+   "note": "Made in Texas; 4 to 5 weeks.",
+   "outside": [],
+   "facts": {
+    "main": "yes",
+    "parts": "yes",
+    "color": "yes",
+    "wood": "yes"
+   },
+   "contains": [],
+   "standards": []
+  },
+  {
+   "id": "purveyor-15-unfinished-poplar-beds",
+   "type": "floor-beds",
+   "brand": "Purveyor 15",
+   "line": "Unfinished poplar beds",
+   "uses": [
+    "Clear poplar",
+    "Screws (pocket-hole assembly)",
+    "Slats"
+   ],
+   "free": [
+    "Finish (unfinished option)"
+   ],
+   "unconfirmed": [
+    "Glue"
+   ],
+   "products": [
+    {
+     "name": "Ozarks House Bed, twin, unfinished",
+     "url": "https://radchildrensfurniture.com/products/the-ozarks-house-bed",
+     "store": "Rad Children’s Furniture",
+     "price": "$709",
+     "ships_from": "US",
+     "shipping": "Free shipping",
+     "price_checked": "2026-10-18"
+    },
+    {
+     "name": "Atlas Platform Bed (6 in high)",
+     "url": "https://radchildrensfurniture.com/products/the-atlas-platform-bed",
+     "store": "Rad Children’s Furniture",
+     "price": "$329",
+     "ships_from": "US",
+     "shipping": "Free shipping",
+     "price_checked": "2026-10-18"
+    }
+   ],
+   "img": "bed_ozarks",
+   "img_src": "http://radchildrensfurniture.com/cdn/shop/files/ozarkstwinnolegs2.jpg?v=1762459625",
+   "quote": "Handcrafted in the USA from clear grade, locally sourced poplar wood... pocket hole assembly",
+   "outside": [],
+   "facts": {
+    "main": "yes",
+    "parts": "unknown",
+    "color": "yes",
+    "wood": "yes"
+   },
+   "contains": [],
+   "standards": []
+  },
+  {
+   "id": "kd-frames-ekko-platform-bed",
+   "type": "floor-beds",
+   "brand": "KD Frames",
+   "line": "Ekko Platform Bed",
+   "uses": [
+    "Tulip poplar"
+   ],
+   "free": [
+    "Stain or finish"
+   ],
+   "unconfirmed": [
+    "Glue"
+   ],
+   "products": [
+    {
+     "name": "Ekko Platform Bed, twin",
+     "url": "https://kdframes.com/products/ekko-platform-bed",
+     "store": "KD Frames",
+     "price": "$219",
+     "ships_from": "US",
+     "shipping": "Free shipping",
+     "price_checked": "2026-10-18"
+    }
+   ],
+   "img": "bed_kd",
+   "img_src": "http://kdframes.com/cdn/shop/products/EkkoLifestyle_1200x1200.jpg?v=1650315225",
+   "quote": "smooth, unfinished Tulip Poplar hardwood... no stain or finish is required",
+   "note": "10 in high with no rails.",
+   "outside": [],
+   "facts": {
+    "main": "yes",
+    "parts": "unknown",
+    "color": "yes",
+    "wood": "yes"
+   },
+   "contains": [],
+   "standards": []
+  },
+  {
+   "id": "green-cradle-childspose-bed",
+   "type": "floor-beds",
+   "brand": "Green Cradle",
+   "line": "Childspose Bed",
+   "uses": [
+    "Solid maple, oak, cherry or walnut",
+    "Linseed oil or unfinished"
+   ],
+   "free": [
+    "Plywood and petrochemicals"
+   ],
+   "unconfirmed": [
+    "Glue",
+    "Height"
+   ],
+   "products": [
+    {
+     "name": "Childspose Bed, twin",
+     "url": "https://www.greencradle.com/products/childspose-platform-no-headboard",
+     "store": "Green Cradle",
+     "price": "from $1,799",
+     "ships_from": "US",
+     "shipping": "Shipping calculated at checkout",
+     "price_checked": "2026-10-18"
+    }
+   ],
+   "img": "bed_gcbed",
+   "img_src": "http://www.greencradle.com/cdn/shop/files/Bedroom_01-small.jpg?v=1763702563",
+   "evidence": "Same no-plywood, no-petrochemical statements as the crib",
+   "note": "No rails.",
+   "outside": [],
+   "facts": {
+    "main": "yes",
+    "parts": "unknown",
+    "color": "yes",
+    "wood": "yes"
+   },
+   "contains": [],
+   "standards": []
+  },
+  {
+   "id": "sprout-kids-birch-montessori-floor-bed",
+   "type": "floor-beds",
+   "brand": "Sprout Kids",
+   "line": "Birch Montessori Floor Bed",
+   "uses": [
+    "Baltic birch"
+   ],
+   "free": [],
+   "unconfirmed": [
+    "Finish"
+   ],
+   "products": [
+    {
+     "name": "Low Montessori Floor Bed, crib size",
+     "url": "https://sprout-kids.com/products/low-montessori-floor-bed-for-toddlers",
+     "store": "Sprout Kids",
+     "price": "$300",
+     "ships_from": "US",
+     "shipping": "Free shipping on orders over $100",
+     "price_checked": "2026-10-18"
+    }
+   ],
+   "img": "bed_sprout",
+   "img_src": "http://sprout-kids.com/cdn/shop/files/BirchMontessoriFloorBed_2_1200x1200.png?v=1776887790",
+   "outside": [
+    "Plywood with synthetic glue"
+   ],
+   "facts": {
+    "main": "no",
+    "parts": "yes",
+    "color": "unknown",
+    "wood": "no"
+   },
+   "contains": [],
+   "standards": []
+  },
+  {
+   "id": "good-night-kid-montessori-house-floor-bed",
+   "type": "floor-beds",
+   "brand": "Good Night Kid",
+   "line": "Montessori House Floor Bed",
+   "uses": [
+    "Solid ash and pine"
+   ],
+   "free": [
+    "Paint, varnish, glue and chemical treatments"
+   ],
+   "unconfirmed": [],
+   "products": [
+    {
+     "name": "Montessori House Floor Bed, twin",
+     "url": "https://goodnightkid.com/usa/urun/montessori-house-floor-bed-twin-long-front-cushion/",
+     "store": "Good Night Kid",
+     "price": "$2,650 to $3,100",
+     "ships_from": null,
+     "price_checked": "2026-10-18"
+    }
+   ],
+   "img": "bed_gnk",
+   "img_src": "https://goodnightkid.com/usa/wp-content/uploads/2023/03/Full-all-close-tulle.jpg",
+   "outside": [
+    "Bumper cushions are synthetic foam (the maker may sell it without them)"
+   ],
+   "facts": {
+    "main": "yes",
+    "parts": "yes",
+    "color": "yes",
+    "wood": "yes",
+    "accessory": "no"
+   },
+   "contains": [],
+   "standards": []
+  },
+  {
+   "id": "piccalio-bedbed-montessori-floor-bed",
+   "type": "floor-beds",
+   "brand": "Piccalio",
+   "line": "bedBED Montessori Bed",
+   "uses": [
+    "FSC Birch plywood",
+    "Solid pine",
+    "Non-toxic 0-VOC finish"
+   ],
+   "free": [
+    "VOCs (finish)"
+   ],
+   "unconfirmed": [
+    "Finish type",
+    "Plywood adhesive",
+    "Hardware"
+   ],
+   "outside": [
+    "Birch plywood"
+   ],
+   "quote": "Materials: FSC® Birch plywood and solid pine. Non-toxic 0-VOC finish",
+   "products": [
+    {
+     "name": "bedBED Montessori Bed - Birch / Full Crib/Toddler",
+     "url": "https://www.piccalio.com/products/montessori-toddler-floor-bed",
+     "store": "Piccalio",
+     "price": "$499",
+     "ships_from": "US",
+     "price_checked": "2026-10-18"
+    }
+   ],
+   "img_src": "https://piccalio.com/cdn/shop/files/piccalio-bedbed-full-crib-floor-domino-good-housekeeping-lifestyle-1.jpg?v=1787682927&width=2048",
+   "facts": {
+    "main": "unknown",
+    "parts": "unknown",
+    "color": "unknown",
+    "wood": "no",
+    "organic": "no"
+   },
+   "contains": [],
+   "img": "x_piccalio_bedbed_montessori_floor_bed",
+   "standards": [
+    "fsc"
+   ]
+  },
+  {
+   "id": "little-partners-lil-house-toddler-bed",
+   "type": "floor-beds",
+   "brand": "Little Partners",
+   "line": "Lil' House Toddler Bed",
+   "uses": [
+    "Layered birch and poplar (EPA TSCA Title VI compliant)",
+    "Child-safe, non-toxic paints"
+   ],
+   "free": [
+    "Lead",
+    "Heavy metals",
+    "Phthalates (tested to ASTM F963-17)"
+   ],
+   "unconfirmed": [
+    "Paint type",
+    "Adhesive in layered wood",
+    "Hardware"
+   ],
+   "outside": [
+    "Layered (plywood-type) birch and poplar",
+    "Paint (type not named)"
+   ],
+   "quote": "The kids' house bed is constructed from the highest-quality layered birch and poplar that is EPA TSCA Title VI compliant. Finished in child-safe, non-toxic paints and materials.",
+   "products": [
+    {
+     "name": "Lil' House Toddler Bed",
+     "url": "https://www.littlepartners.com/products/lil-house-toddler-bed",
+     "store": "Little Partners",
+     "price": "$199.99",
+     "ships_from": "US",
+     "shipping": "Free shipping on orders over $50",
+     "price_checked": "2026-10-18"
+    }
+   ],
+   "img_src": "https://littlepartners.com/cdn/shop/files/LP71146-Lil_HouseToddlerBed-1_c5dc49e3-a350-48a8-8928-241b4a77e90a.jpg?v=1763735023",
+   "facts": {
+    "main": "unknown",
+    "parts": "unknown",
+    "color": "no",
+    "wood": "no",
+    "organic": "no"
+   },
+   "contains": [],
+   "img": "x_little_partners_lil_house_toddler_bed",
+   "standards": [
+    "us-toy"
+   ]
+  },
+  {
+   "id": "delta-children-wood-floor-toddler-bed",
+   "type": "floor-beds",
+   "brand": "Delta Children",
+   "line": "Wood Floor Toddler Bed with Reusable Stickers",
+   "uses": [
+    "Wood frame (species and type not named)",
+    "Reusable vinyl cling stickers"
+   ],
+   "free": [],
+   "unconfirmed": [
+    "Wood type (solid vs engineered)",
+    "Paint/finish",
+    "Hardware"
+   ],
+   "outside": [
+    "Vinyl cling stickers"
+   ],
+   "quote": "Whimsical reusable vinyl cling stickers ... let little ones decorate and redecorate ... Built from a sturdy wood frame",
+   "products": [
+    {
+     "name": "Safari Wood Floor Toddler Bed with Reusable Stickers",
+     "url": "https://www.deltachildren.com/products/safari-wood-floor-toddler-bed-with-reusable-stickers",
+     "store": "Delta Children",
+     "price": "$79.99",
+     "ships_from": "US",
+     "shipping": "Free shipping",
+     "price_checked": "2026-10-18"
+    }
+   ],
+   "img_src": "https://www.deltachildren.com/cdn/shop/files/BB81541GN-1730_animal-wood-toddler-bed_safari_lifestyle_03.jpg?v=1776979890",
+   "facts": {
+    "main": "unknown",
+    "parts": "unknown",
+    "color": "unknown",
+    "wood": "unknown",
+    "organic": "no",
+    "accessory": "no"
+   },
+   "contains": [],
+   "img": "x_delta_children_wood_floor_toddler_bed",
+   "standards": []
+  },
+  {
+   "id": "wendy-anne-wool-moisture-protection-pad",
+   "type": "protectors",
+   "brand": "Wendy Anne",
+   "line": "Wool Moisture Protection Pad",
+   "uses": [
+    "Undyed wool, milled in the USA"
+   ],
+   "free": [
+    "Wool treatments",
+    "Plasticizers"
+   ],
+   "unconfirmed": [
+    "Thread fibre"
+   ],
+   "products": [
+    {
+     "name": "Puddle pad, 16 x 32 in",
+     "url": "https://www.greenmountaindiapers.com/products/wendy-anne-wool-moisture-protection-pad",
+     "store": "Green Mountain Diapers",
+     "price": "$54",
+     "ships_from": "US",
+     "shipping": "Shipping calculated at checkout",
+     "price_checked": "2026-10-18"
+    },
+    {
+     "name": "Crib pad, 28 x 52 in",
+     "url": "https://www.greenmountaindiapers.com/products/wendy-anne-wool-moisture-protection-pad",
+     "store": "Green Mountain Diapers",
+     "price": "$129",
+     "ships_from": "US",
+     "shipping": "Shipping calculated at checkout",
+     "price_checked": "2026-10-18"
+    }
+   ],
+   "img": "bed_wendy",
+   "img_src": "http://www.greenmountaindiapers.com/cdn/shop/files/wendyannecribfolded.jpg?v=1755569650",
+   "quote": "100% wool milled in USA... untreated wool... No treatments, no plasticizers",
+   "note": "Not fully waterproof; put a cotton layer on top.",
+   "outside": [],
+   "facts": {
+    "main": "yes",
+    "parts": "unknown",
+    "color": "yes",
+    "wool": "yes",
+    "organic": "no"
+   },
+   "contains": [],
+   "standards": []
+  },
+  {
+   "id": "holy-lamb-organics-wool-bedding",
+   "type": "protectors",
+   "brand": "Holy Lamb Organics",
+   "line": "Wool bedding",
+   "uses": [
+    "Wool (organic or Eco Wool)",
+    "Organic cotton sateen",
+    "Cotton elastic straps (toppers)"
+   ],
+   "free": [
+    "Fillers, additives, carbonizing or bleaching (moisture barrier)"
+   ],
+   "unconfirmed": [
+    "Thread",
+    "Stretch core of the topper corner straps"
+   ],
+   "products": [
+    {
+     "name": "Wool Moisture Barrier, crib",
+     "url": "https://holylamborganics.com/products/moisture-barrier",
+     "store": "Holy Lamb",
+     "price": "$139 ($95 bassinet)",
+     "note": "Out of stock when checked",
+     "ships_from": "US",
+     "shipping": "Free shipping on orders over $150",
+     "price_checked": "2026-10-18"
+    },
+    {
+     "name": "Organic Crib Mattress Topper, 1 in",
+     "url": "https://holylamborganics.com/products/certified-organic-crib-mattress-topper",
+     "store": "Holy Lamb",
+     "price": "$285",
+     "ships_from": "US",
+     "shipping": "Free shipping on orders over $150",
+     "price_checked": "2026-10-18"
+    },
+    {
+     "name": "Natural Crib Mattress Topper, 1 in",
+     "url": "https://holylamborganics.com/products/natural-crib-wool-mattress-topper",
+     "store": "Holy Lamb",
+     "price": "$275",
+     "ships_from": "US",
+     "shipping": "Free shipping on orders over $150",
+     "price_checked": "2026-10-18"
+    },
+    {
+     "name": "Child's First Pillow, 9 x 13 in",
+     "url": "https://holylamborganics.com/products/toddler-pillow",
+     "store": "Holy Lamb",
+     "price": "$59",
+     "note": "Wool fill, fleece top, moisture barrier back",
+     "ships_from": "US",
+     "shipping": "Free shipping on orders over $150",
+     "price_checked": "2026-10-18"
+    }
+   ],
+   "img": "bed_hltopo",
+   "img_src": "https://www.holylamborganics.com/cdn/shop/products/cmt_roll_65a3752d-8b8c-4198-8b95-b53926806f71_600x.jpg?v=1568663391",
+   "quote": "100% pure wool... without fillers or additives; never carbonized or bleached",
+   "outside": [],
+   "facts": {
+    "main": "yes",
+    "parts": "unknown",
+    "color": "yes",
+    "wool": "yes",
+    "organic": "yes"
+   },
+   "contains": [],
+   "standards": []
+  },
+  {
+   "id": "white-lotus-toddler-pillow-kapok-or-buckwheat",
+   "type": "pillows",
+   "brand": "White Lotus",
+   "line": "Toddler Pillow, kapok or buckwheat",
+   "uses": [
+    "Organic cotton sateen case",
+    "Kapok (soft) or US buckwheat hulls (firm)"
+   ],
+   "free": [
+    "Zipper (“No Zip” option)"
+   ],
+   "unconfirmed": [
+    "Thread",
+    "Treatment of the wool-fill option"
+   ],
+   "products": [
+    {
+     "name": "Toddler Pillow, 13 x 18 in",
+     "url": "https://www.whitelotushome.com/bedding/toddler-pillows-13x18.html",
+     "store": "White Lotus",
+     "price": "about $35",
+     "ships_from": "US",
+     "shipping": "Free shipping"
+    }
+   ],
+   "evidence": "Materials as listed on the product page",
+   "outside": [],
+   "facts": {
+    "main": "yes",
+    "parts": "unknown",
+    "color": "yes",
+    "wool": "unknown",
+    "organic": "yes"
+   },
+   "contains": [],
+   "standards": []
+  },
+  {
+   "id": "shepherd-s-dream-child-s-wool-pillow",
+   "type": "pillows",
+   "brand": "Shepherd’s Dream",
+   "line": "Child's Wool Pillow",
+   "uses": [
+    "EcoWool batting",
+    "Cotton sateen"
+   ],
+   "free": [],
+   "unconfirmed": [
+    "Whether the wool is untreated",
+    "Whether the cotton is organic"
+   ],
+   "products": [
+    {
+     "name": "Child's Sleep Pillow",
+     "url": "https://shepherdsdream.com/shop/childs-sleep-pillow/",
+     "store": "Shepherd’s Dream",
+     "price": "$35 to $110",
+     "ships_from": "US"
+    }
+   ],
+   "quote": "premium EcoWool batting... encased in soft, durable cotton sateen",
+   "note": "13 x 17 in, for ages 2 to 8.",
+   "outside": [],
+   "facts": {
+    "main": "yes",
+    "parts": "yes",
+    "color": "yes",
+    "wool": "unknown",
+    "organic": "no"
+   },
+   "contains": [],
+   "standards": [],
+   "age": {
+    "min_months": 24,
+    "text": "For ages 2 to 8"
+   }
+  },
+  {
+   "id": "shepherd-s-dream-washable-wool-pads",
+   "type": "protectors",
+   "brand": "Shepherd’s Dream",
+   "line": "Washable wool pads",
+   "uses": [
+    "Wool melton"
+   ],
+   "free": [
+    "Elastic (protector)",
+    "“Harsh chemicals”"
+   ],
+   "unconfirmed": [],
+   "products": [
+    {
+     "name": "Washable Wool Puddle Pad, 19 x 30 in",
+     "url": "https://shepherdsdream.com/shop/puddle-pads/",
+     "store": "Shepherd’s Dream",
+     "price": "$40",
+     "ships_from": "US"
+    },
+    {
+     "name": "Washable Crib Mattress Protector",
+     "url": "https://shepherdsdream.com/shop/washable-crib-mattress-protector/",
+     "store": "Shepherd’s Dream",
+     "price": "$108",
+     "ships_from": "US"
+    }
+   ],
+   "outside": [
+    "Sold as machine washable and dryable, with no statement that the wool isn’t superwash"
+   ],
+   "facts": {
+    "main": "yes",
+    "parts": "yes",
+    "color": "yes",
+    "wool": "no",
+    "organic": "no"
+   },
+   "contains": [],
+   "standards": []
+  },
+  {
+   "id": "coyuchi-crinkled-percale-crib-fitted-sheet",
+   "type": "sheets",
+   "brand": "Coyuchi",
+   "line": "Crinkled Percale Crib Fitted Sheet",
+   "uses": [
+    "100% organic cotton"
+   ],
+   "free": [
+    "Synthetics in the fabric"
+   ],
+   "unconfirmed": [
+    "Elastic in the fitted corners"
+   ],
+   "products": [
+    {
+     "name": "Organic Crinkled Percale Crib Sheet",
+     "url": "https://holylamborganics.com/products/organic-crinkled-percale-crib-sheet",
+     "store": "Holy Lamb Organics",
+     "price": "$48 to $58",
+     "ships_from": "US",
+     "shipping": "Free shipping on orders over $150, $30 below",
+     "price_checked": "2026-10-18"
+    }
+   ],
+   "img": "bed_coyuchi",
+   "img_src": "https://www.holylamborganics.com/cdn/shop/files/pdp_crinkledpercale_fittedsheet_steelblue_b_fall21_12_1db19e54-ccbf-40de-974a-2a1dcf48b01a_600x.jpg?v=1778108845",
+   "note": "No crib sheet found confirms natural-rubber elastic.",
+   "outside": [],
+   "facts": {
+    "main": "yes",
+    "parts": "unknown",
+    "color": "yes",
+    "organic": "yes"
+   },
+   "contains": [],
+   "standards": []
+  },
+  {
+   "id": "naturepedic-organic-waterproof-crib-protector-pad",
+   "type": "protectors",
+   "brand": "Naturepedic",
+   "line": "Organic Waterproof Crib Protector Pad",
+   "uses": [
+    "GOTS-certified organic cotton",
+    "TPU waterproofing"
+   ],
+   "free": [
+    "Vinyl/PVC",
+    "Phthalates"
+   ],
+   "unconfirmed": [
+    "Elastic",
+    "Thread"
+   ],
+   "outside": [
+    "TPU waterproof layer"
+   ],
+   "quote": "Materials: GOTS-certified organic cotton and TPU waterproofing.",
+   "products": [
+    {
+     "name": "Organic Waterproof Crib Protector Pad (Crib Flat / Crib Fitted / Crib Fitted Oval)",
+     "url": "https://www.naturepedic.com/products/organic-waterproof-baby-crib-protector-pad",
+     "store": "Naturepedic",
+     "price": "$69-$99",
+     "ships_from": "US",
+     "shipping": "Free shipping",
+     "price_checked": "2026-10-18"
+    }
+   ],
+   "img_src": "https://www.naturepedic.com/cdn/shop/files/np_website_images_baby_pc62w-pc63w-pk63w_3_e0f3295b-c8ea-4bfd-a251-5f9bfaa35c19.jpg?v=1777478461&width=2048",
+   "facts": {
+    "main": "no",
+    "parts": "unknown",
+    "color": "unknown",
+    "organic": "yes"
+   },
+   "contains": [],
+   "img": "x_naturepedic_organic_waterproof_crib_prot",
+   "standards": [
+    "gots"
+   ]
+  },
+  {
+   "id": "avocado-organic-crib-waterproof-protector",
+   "type": "protectors",
+   "brand": "Avocado",
+   "line": "Organic Crib Waterproof Protector",
+   "uses": [
+    "Two layers of GOTS-certified organic cotton",
+    "Polyurethane waterproof film"
+   ],
+   "free": [
+    "Vinyl",
+    "PVC",
+    "Phthalates"
+   ],
+   "unconfirmed": [
+    "Elastic",
+    "Thread"
+   ],
+   "outside": [
+    "Polyurethane waterproof film"
+   ],
+   "quote": "Crafted with two layers of GOTS-certified organic cotton and a super-thin polyurethane waterproof film, it effectively blocks liquids while still allowing water vapor to pass through",
+   "products": [
+    {
+     "name": "Organic Crib Waterproof Protector",
+     "url": "https://www.avocadogreenmattress.com/products/crib-waterproof-protector",
+     "store": "Avocado Green Mattress",
+     "price": "$76",
+     "ships_from": "US",
+     "price_checked": "2026-10-18"
+    }
+   ],
+   "img_src": "https://www.avocadogreenmattress.com/cdn/shop/files/AvocadoOrganicCribWaterproofProtector.jpg?v=1783447928",
+   "facts": {
+    "main": "no",
+    "parts": "unknown",
+    "color": "unknown",
+    "organic": "yes"
+   },
+   "contains": [],
+   "img": "x_avocado_organic_crib_waterproof_protecto",
+   "standards": [
+    "gots"
+   ]
+  },
+  {
+   "id": "newton-essential-waterproof-crib-pad",
+   "type": "protectors",
+   "brand": "Newton Baby",
+   "line": "Essential Waterproof Crib Pad",
+   "uses": [
+    "Breathe-thru eyelet spacer material",
+    "TPU waterproof lining"
+   ],
+   "free": [],
+   "unconfirmed": [
+    "Spacer material fiber",
+    "Fitted skirt fabric",
+    "Elastic"
+   ],
+   "outside": [
+    "TPU waterproof lining"
+   ],
+   "quote": "TPU Waterproof lining for a breathable fabric waterproof layer. Single-layer of breathe-thru spacer material.",
+   "products": [
+    {
+     "name": "Essential Waterproof Crib Pad",
+     "url": "https://www.newtonbaby.com/products/essential-waterproof-crib-mattress-pad",
+     "store": "Newton Baby",
+     "price": "$49.99",
+     "ships_from": "US",
+     "shipping": "$25 shipping",
+     "price_checked": "2026-10-18"
+    }
+   ],
+   "img_src": "https://www.newtonbaby.com/cdn/shop/files/2005-EssentialCribPad3000_8.jpg?v=1766503618",
+   "facts": {
+    "main": "no",
+    "parts": "unknown",
+    "color": "unknown",
+    "organic": "no"
+   },
+   "contains": [],
+   "img": "x_newton_essential_waterproof_crib_pad",
+   "standards": []
+  },
+  {
+   "id": "delta-beautyrest-eco-cool-crib-protector",
+   "type": "protectors",
+   "brand": "Delta Children",
+   "line": "Beautyrest Eco-Cool Cooling Crib Mattress Protector",
+   "uses": [
+    "100% polyester",
+    "Waterproof backing (material not named)",
+    "Elasticized edges"
+   ],
+   "free": [
+    "VOCs",
+    "Chemical flame retardants"
+   ],
+   "unconfirmed": [
+    "Waterproof backing material",
+    "Odor-control and stain-resistant treatments"
+   ],
+   "outside": [
+    "Polyester construction"
+   ],
+   "quote": "CONSTRUCTION: 100% polyester ... the quiet waterproof backing protects the crib mattress from leaks, spills and nighttime accidents",
+   "products": [
+    {
+     "name": "Eco-Cool Cooling Crib Mattress Protector",
+     "url": "https://www.deltachildren.com/products/eco-cool-cooling-crib-mattress-protector",
+     "store": "Delta Children",
+     "price": "$19.99",
+     "ships_from": "US",
+     "shipping": "Free shipping",
+     "price_checked": "2026-10-18"
+    }
+   ],
+   "img_src": "https://www.deltachildren.com/cdn/shop/files/B43300-0001-NO_EcoCoolBR_White_Lifestyle_01.jpg?v=1786824357",
+   "facts": {
+    "main": "no",
+    "parts": "unknown",
+    "color": "unknown",
+    "organic": "no",
+    "flame": "yes"
+   },
+   "contains": [],
+   "img": "x_delta_beautyrest_eco_cool_crib_protector",
+   "standards": []
+  },
+  {
+   "id": "b-aba-multiportion-silicone-trays",
+   "type": "freezer-trays",
+   "brand": "Béaba",
+   "line": "Multiportion silicone trays",
+   "uses": [
+    "Platinum silicone tray (Made in Italy)"
+   ],
+   "free": [],
+   "unconfirmed": [
+    "A published test report"
+   ],
+   "products": [
+    {
+     "name": "Multiportions 6 x 3 oz",
+     "url": "https://beaba.us/products/silicone-multi-portion-trays-6x3-oz",
+     "store": "beaba.us, Target, Amazon",
+     "price": "$23.99",
+     "ships_from": "US",
+     "shipping": "Free shipping on orders over $140",
+     "price_checked": "2026-10-18"
+    },
+    {
+     "name": "Multiportions 6 x 5 oz",
+     "url": "https://beaba.us/products/silicone-multi-portion-trays-6-5-oz",
+     "store": "beaba.us",
+     "price": "$26.99",
+     "ships_from": "US",
+     "shipping": "Free shipping on orders over $140",
+     "price_checked": "2026-10-18"
+    },
+    {
+     "name": "Mini Multiportion, 20 x 1.2 oz",
+     "url": "https://beaba.us/products/silicone-mini-multiportion-tray-sage-green",
+     "store": "beaba.us",
+     "price": "$19.99",
+     "ships_from": "US",
+     "shipping": "Free shipping on orders over $140",
+     "price_checked": "2026-10-18"
+    }
+   ],
+   "img": "sil_beaba6",
+   "img_src": "http://beaba.us/cdn/shop/files/914000_product_face_1.jpg?v=1755765822&width=2048",
+   "evidence": "Béaba told a Reddit user by email that its silicone is “tested, certified” to the French decree of 25 Nov 1992. Its US pages say only “premium” or “platinum silicone”.",
+   "note": "Also usable as ice cube trays.",
+   "outside": [
+    "Polypropylene lid (sits on top; the tray is what touches food)"
+   ],
+   "facts": {
+    "main": "yes",
+    "parts": "yes",
+    "color": "yes",
+    "silicone": "yes",
+    "accessory": "no"
+   },
+   "contains": [],
+   "standards": [
+    "arrete"
+   ]
+  },
+  {
+   "id": "anyday-anytime-freezer-tray-set",
+   "type": "freezer-trays",
+   "brand": "Anyday",
+   "line": "Anytime Freezer Tray set",
+   "uses": [
+    "Silicone",
+    "Silicone lids",
+    "Steel in the rim"
+   ],
+   "free": [],
+   "unconfirmed": [
+    "Finished-product testing"
+   ],
+   "products": [
+    {
+     "name": "Anytime Freezer Tray Set",
+     "url": "https://cookanyday.com/products/anytime-freezer-tray-set",
+     "store": "Anyday",
+     "price": "$34",
+     "ships_from": "US",
+     "shipping": "Free shipping on orders over $85",
+     "price_checked": "2026-10-18"
+    }
+   ],
+   "img": "sil_anyday",
+   "img_src": "http://cookanyday.com/cdn/shop/files/49002-C2T_1_2CAnytimeFreezerTraySet_Kale.jpg?v=1758583035",
+   "outside": [
+    "“LFGB-certified silicone” reads as the raw material only"
+   ],
+   "facts": {
+    "main": "yes",
+    "parts": "yes",
+    "color": "yes",
+    "silicone": "unknown"
+   },
+   "contains": [],
+   "standards": [
+    "lfgb"
+   ]
+  },
+  {
+   "id": "souper-cubes-mymilk-trays",
+   "type": "freezer-trays",
+   "brand": "Souper Cubes",
+   "line": "MyMilk trays",
+   "uses": [
+    "Platinum-cured silicone"
+   ],
+   "free": [],
+   "unconfirmed": [
+    "Lab name"
+   ],
+   "products": [
+    {
+     "name": "MyMilk Breast Milk Freezer Tray, 16 x ½ oz",
+     "url": "https://www.soupercubes.com/products/mymilk-breast-milk-freezer-tray",
+     "store": "Souper Cubes",
+     "price": "$40 for 2",
+     "ships_from": "US",
+     "shipping": "Free shipping on orders over $95",
+     "price_checked": "2026-10-18"
+    }
+   ],
+   "img": "sil_souper",
+   "img_src": "http://www.soupercubes.com/cdn/shop/files/Product_-_MyMilk_trays_Shopify_7577__2000x2000_13fc754e-d67b-44d6-b4fe-6aa110971ac6.jpg?v=1790627727&width=2048",
+   "outside": [
+    "Polypropylene lids",
+    "LFGB claim is material-level; finished trays tested to US rules only"
+   ],
+   "facts": {
+    "main": "yes",
+    "parts": "yes",
+    "color": "yes",
+    "silicone": "unknown",
+    "accessory": "no"
+   },
+   "contains": [],
+   "standards": [
+    "lfgb"
+   ]
+  },
+  {
+   "id": "kiddo-feedo-freezer-tray",
+   "type": "freezer-trays",
+   "brand": "Kiddo Feedo",
+   "line": "Freezer Tray",
+   "uses": [
+    "Silicone",
+    "Silicone lid"
+   ],
+   "free": [],
+   "unconfirmed": [
+    "Finished-product testing"
+   ],
+   "products": [
+    {
+     "name": "Baby Food Freezer Tray",
+     "url": "https://kiddofeedo.com/products/baby-food-freezer-tray",
+     "store": "Kiddo Feedo",
+     "price": "$14.95",
+     "ships_from": "US",
+     "price_checked": "2026-10-18"
+    }
+   ],
+   "img": "sil_kiddo",
+   "img_src": "http://kiddofeedo.com/cdn/shop/products/Freezer-Tray-Purple-01_1200x1200.jpg?v=1661356392",
+   "outside": [
+    "“Silicone approved by LFGB, FDA, REACH” is material-level only"
+   ],
+   "facts": {
+    "main": "yes",
+    "parts": "yes",
+    "color": "yes",
+    "silicone": "unknown"
+   },
+   "contains": [],
+   "standards": [
+    "lfgb"
+   ]
+  },
+  {
+   "id": "mushie-baby-food-freezer-tray",
+   "type": "freezer-trays",
+   "brand": "Mushie",
+   "line": "Baby Food Freezer Tray",
+   "uses": [
+    "Silicone"
+   ],
+   "free": [],
+   "unconfirmed": [],
+   "products": [
+    {
+     "name": "Baby Food Freezer Tray, 9 x 1.5 oz",
+     "url": "https://mushie.com/products/baby-food-freezer-tray",
+     "store": "Mushie",
+     "price": "$19.99",
+     "ships_from": "US",
+     "shipping": "Free shipping on orders over $75",
+     "price_checked": "2026-10-18"
+    }
+   ],
+   "img": "sil_mushie",
+   "img_src": "http://mushie.com/cdn/shop/files/BabyFoodFreezerTray_CambridgeBlue2.jpg?v=1752248475",
+   "outside": [
+    "Plastic lid",
+    "Tested to US rules only; “LFGB compliant” by email only"
+   ],
+   "facts": {
+    "main": "yes",
+    "parts": "yes",
+    "color": "yes",
+    "silicone": "unknown",
+    "accessory": "no"
+   },
+   "contains": [],
+   "standards": [
+    "lfgb"
+   ]
+  },
+  {
+   "id": "weesprout-silicone-freezer-tray",
+   "type": "freezer-trays",
+   "brand": "WeeSprout",
+   "line": "Silicone Baby Food Freezer Tray",
+   "uses": [
+    "Silicone tray",
+    "Plastic clip-on lid"
+   ],
+   "free": [
+    "BPA",
+    "PVC",
+    "Phthalates"
+   ],
+   "unconfirmed": [
+    "Silicone grade/testing standard",
+    "Lid plastic type",
+    "Pigments"
+   ],
+   "outside": [
+    "Plastic clip-on lid"
+   ],
+   "quote": "A premium clip-on plastic lid prevents freezer burn ... Made from BPA, PVC, and phthalate-free materials. Third-party tested to meet rigorous safety standards",
+   "products": [
+    {
+     "name": "Silicone Baby Food Freezer Tray – 1.5 oz Sections",
+     "url": "https://www.weesprout.com/products/silicone-baby-food-freezer-tray",
+     "store": "WeeSprout",
+     "price": "$14.98",
+     "ships_from": "US",
+     "shipping": "Free shipping on orders over $60",
+     "price_checked": "2026-10-18"
+    },
+    {
+     "name": "Silicone Baby Food Freezer Tray – 3 oz Sections",
+     "url": "https://www.weesprout.com/products/large-silicone-baby-food-freezer-tray",
+     "store": "WeeSprout",
+     "price": "$14.98",
+     "ships_from": "US",
+     "shipping": "Free shipping on orders over $60",
+     "price_checked": "2026-10-18"
+    }
+   ],
+   "img_src": "https://www.weesprout.com/cdn/shop/files/NLC-15-NY.jpg?v=1776574528",
+   "facts": {
+    "main": "yes",
+    "color": "unknown",
+    "silicone": "unknown",
+    "accessory": "no"
+   },
+   "contains": [],
+   "img": "x_weesprout_silicone_freezer_tray",
+   "standards": []
+  },
+  {
+   "id": "silikomart-ice-cube-trays-and-cube-moulds",
+   "type": "ice-trays",
+   "brand": "Silikomart",
+   "line": "Ice cube trays and cube moulds",
+   "uses": [
+    "Platinum liquid silicone"
+   ],
+   "free": [],
+   "unconfirmed": [
+    "Lid material on ICE 26 (looks like silicone)"
+   ],
+   "products": [
+    {
+     "name": "ICE 26 tray with lid, 25 cubes",
+     "url": "https://www.simpleecology.com/shop/silicone-ice-cube-mold",
+     "store": "Simple Ecology",
+     "price": "$29.95",
+     "ships_from": "US",
+     "price_checked": "2026-10-18"
+    },
+    {
+     "name": "SF105 Cube mould, 15 cubes, no lid",
+     "url": "https://www.amazon.com/dp/B00A44H7I0",
+     "store": "Amazon",
+     "price": "about $23 (about $19 at KaTom)",
+     "ships_from": "US",
+     "shipping": "Free shipping on orders over $35"
+    }
+   ],
+   "img": "sil_ice26",
+   "img_src": "https://www.silikomart.com/media/catalog/product/cache/de6c9c866b0987a91c6ba0d6c34e6430/7/0/70.008.36.0065_ICE_26_FINITO.jpg",
+   "evidence": "Brand-wide French Arrêté 25 Nov 1992 and LMBG migration listing, plus the clean Que Choisir result",
+   "outside": [],
+   "facts": {
+    "main": "yes",
+    "parts": "yes",
+    "color": "yes",
+    "silicone": "yes",
+    "accessory": "unknown"
+   },
+   "contains": [],
+   "standards": [
+    "lfgb",
+    "arrete"
+   ]
+  },
+  {
+   "id": "w-p-peak-extra-large-cube-tray",
+   "type": "ice-trays",
+   "brand": "W&P",
+   "line": "Peak Extra Large Cube tray",
+   "uses": [
+    "Silicone",
+    "Steel rim inside"
+   ],
+   "free": [],
+   "unconfirmed": [
+    "Finished-product testing"
+   ],
+   "products": [
+    {
+     "name": "Peak Extra Large Cube tray",
+     "url": "https://www.amazon.com/dp/B01FV1D3X8",
+     "store": "Amazon",
+     "price": "price on Amazon",
+     "ships_from": "US",
+     "shipping": "Free shipping on orders over $35"
+    }
+   ],
+   "img": "sil_wp",
+   "img_src": "https://m.media-amazon.com/images/I/61KteWWtSnL._AC_SL1500_.jpg",
+   "outside": [
+    "“Meets LFGB requirements” with no test named"
+   ],
+   "facts": {
+    "main": "yes",
+    "parts": "yes",
+    "color": "yes",
+    "silicone": "unknown"
+   },
+   "contains": [],
+   "standards": [
+    "lfgb"
+   ]
+  },
+  {
+   "id": "lurch-ice-former-3-cm",
+   "type": "ice-trays",
+   "brand": "Lurch",
+   "line": "Ice Former 3 cm",
+   "uses": [
+    "Platinum silicone, tempered 4 hours at 200 °C"
+   ],
+   "free": [],
+   "unconfirmed": [],
+   "products": [
+    {
+     "name": "Ice Former 3 cm, 20 cubes",
+     "url": "https://www.amazon.com/dp/B07BHYPVQ6",
+     "store": "Amazon",
+     "price": "$39.39",
+     "ships_from": "US"
+    }
+   ],
+   "img": "sil_lurch",
+   "img_src": "https://m.media-amazon.com/images/I/81y6-2GUfIL._AC_SL1500_.jpg",
+   "outside": [
+    "No LFGB or Arrêté named",
+    "Plastic lid"
+   ],
+   "facts": {
+    "main": "yes",
+    "parts": "yes",
+    "color": "yes",
+    "silicone": "unknown",
+    "accessory": "no"
+   },
+   "contains": [],
+   "standards": []
+  },
+  {
+   "id": "l-ku-xl-square-ice-cube-tray",
+   "type": "ice-trays",
+   "brand": "Lékué",
+   "line": "XL Square Ice Cube Tray",
+   "uses": [
+    "Platinum silicone"
+   ],
+   "free": [],
+   "unconfirmed": [
+    "Lid material"
+   ],
+   "products": [
+    {
+     "name": "XL Square Ice Cube Tray",
+     "url": "https://www.lekue.com/us/xl-square-ice-cube-tray-turquoise/",
+     "store": "Lékué",
+     "price": "$13.95",
+     "ships_from": "US"
+    }
+   ],
+   "outside": [
+    "No regulatory claim on the page"
+   ],
+   "facts": {
+    "main": "yes",
+    "parts": "yes",
+    "color": "yes",
+    "silicone": "unknown",
+    "accessory": "unknown"
+   },
+   "contains": [],
+   "standards": []
+  },
+  {
+   "id": "oxo-covered-silicone-ice-tray",
+   "type": "ice-trays",
+   "brand": "OXO",
+   "line": "Good Grips Covered Silicone Ice Cube Tray",
+   "uses": [
+    "Silicone tray",
+    "Frame (material not stated)",
+    "Cover (material not stated)"
+   ],
+   "free": [
+    "BPA"
+   ],
+   "unconfirmed": [
+    "Frame material",
+    "Cover material",
+    "Silicone testing standard",
+    "Pigments"
+   ],
+   "outside": [],
+   "quote": "Flexible silicone allows for easy removal, while the frame provides support during filling, moving and storage. Cover keeps out odors ... Materials: Silicone tray",
+   "products": [
+    {
+     "name": "Covered Silicone Ice Cube Tray-Large Cube",
+     "url": "https://www.oxo.com/covered-silicone-ice-cube-tray-large-cube.html",
+     "store": "OXO",
+     "price": "$14.99",
+     "ships_from": "US"
+    }
+   ],
+   "img_src": "https://www.oxo.com/media/catalog/product/c/o/covered_silicone_ice_cube_tray-large_cube_11154200_77.jpg",
+   "facts": {
+    "main": "unknown",
+    "color": "unknown",
+    "silicone": "unknown"
+   },
+   "contains": [],
+   "img": "x_oxo_covered_silicone_ice_tray",
+   "standards": []
+  },
+  {
+   "id": "tovolo-king-cube-with-lid",
+   "type": "ice-trays",
+   "brand": "Tovolo",
+   "line": "King Cube Silicone Ice Mold with Lid",
+   "uses": [
+    "Food-grade silicone",
+    "BPA-free nylon"
+   ],
+   "free": [
+    "BPA"
+   ],
+   "unconfirmed": [
+    "Silicone testing standard",
+    "Pigments"
+   ],
+   "outside": [
+    "BPA-free nylon lid"
+   ],
+   "quote": "Materials: Silicone, BPA-free nylon. ... The food-grade silicone will not affect the taste of your ice.",
+   "products": [
+    {
+     "name": "King Cube Silicone Ice Mold with Lid",
+     "url": "https://www.tovolo.com/products/king-cube-silicone-ice-mold-with-lid",
+     "store": "Tovolo",
+     "price": "$9.99",
+     "ships_from": "US",
+     "shipping": "Free shipping on orders over $50",
+     "price_checked": "2026-10-18"
+    }
+   ],
+   "img_src": "https://tovolo.com/cdn/shop/files/22021-200_01_King-Cube-Ice-Tray-with-Lid_Charcoal.png?v=1792259085",
+   "facts": {
+    "main": "yes",
+    "color": "unknown",
+    "silicone": "unknown",
+    "accessory": "no"
+   },
+   "contains": [],
+   "img": "x_tovolo_king_cube_with_lid",
+   "standards": []
+  },
+  {
+   "id": "liewood-malik-mini-ice-pops-6-pack",
+   "type": "pop-molds",
+   "brand": "Liewood",
+   "line": "Malik Mini Ice Pops, 6-pack",
+   "uses": [
+    "100% silicone, including the lids that act as handles"
+   ],
+   "free": [
+    "Sticks"
+   ],
+   "unconfirmed": [
+    "Lab name",
+    "US shipping from liewood.com"
+   ],
+   "products": [
+    {
+     "name": "Malik Silicone Ice Moulds, set of 6",
+     "url": "https://www.smallable.com/en/product/malik-silicone-ice-moulds-set-of-6-sea-creaturesandy-liewood-380969",
+     "store": "Smallable (USD)",
+     "price": "about $24 to $33",
+     "ships_from": "France"
+    }
+   ],
+   "img": "sil_liewood",
+   "img_src": "https://staticv3.smallable.com/nsml/gs_211653-2000x2739q80/malik-silicone-ice-moulds-set-of-6.webp",
+   "evidence": "Declaration of Conformity for style LW19961 (20 Nov 2025) cites LFGB sections 30 and 31 and EU overall migration testing. Liewood signed it; it names no lab.",
+   "note": "UFC-Que Choisir advised against a different Liewood baking mould in 2022 (tested hot with fat).",
+   "outside": [],
+   "facts": {
+    "main": "yes",
+    "parts": "yes",
+    "color": "yes",
+    "silicone": "yes"
+   },
+   "contains": [],
+   "standards": [
+    "lfgb"
+   ]
+  },
+  {
+   "id": "silikomart-classic-pop-molds",
+   "type": "pop-molds",
+   "brand": "Silikomart",
+   "line": "Classic pop molds",
+   "uses": [
+    "Platinum liquid silicone",
+    "Wooden sticks (100 included)",
+    "Polycarbonate support tray (doesn’t touch food)"
+   ],
+   "free": [],
+   "unconfirmed": [],
+   "products": [
+    {
+     "name": "Mini Classic GEL01M, 16 x 1.25 oz",
+     "url": "https://www.webstaurantstore.com/silikomart-gel01m-mini-classic-ice-cream-cake-pop-silicone-baking-mold-pack/980GEL01M.html",
+     "store": "WebstaurantStore",
+     "price": "2-pack $92.99",
+     "ships_from": "US",
+     "shipping": "Free shipping",
+     "price_checked": "2026-10-18"
+    },
+    {
+     "name": "Classic GEL01, 12 x 3 oz",
+     "url": "https://www.webstaurantstore.com/silikomart-gel01-classic-ice-cream-cake-pop-silicone-baking-mold-pack/980GEL01.html",
+     "store": "WebstaurantStore",
+     "price": "$67.49",
+     "ships_from": "US",
+     "shipping": "Free shipping",
+     "price_checked": "2026-10-18"
+    }
+   ],
+   "img": "sil_gel01m",
+   "img_src": "https://www.webstaurantstore.com/images/products/extra_large/581826/2104084.jpg",
+   "evidence": "Silikomart declaration (10 Jan 2023) covering all its moulds names the French Arrêté of 25 Nov 1992, BfR XV and ResAP (2004) 5",
+   "note": "Thin juice can leak at the stick slots; yogurt or purée holds better.",
+   "outside": [],
+   "facts": {
+    "main": "yes",
+    "parts": "yes",
+    "color": "yes",
+    "silicone": "yes",
+    "wood": "yes",
+    "accessory": "no"
+   },
+   "contains": [],
+   "standards": [
+    "lfgb",
+    "arrete"
+   ]
+  },
+  {
+   "id": "l-ku-small-stackable-popsicle-molds",
+   "type": "pop-molds",
+   "brand": "Lékué",
+   "line": "Small Stackable Popsicle Molds",
+   "uses": [
+    "Platinum silicone"
+   ],
+   "free": [],
+   "unconfirmed": [
+    "Test report"
+   ],
+   "products": [
+    {
+     "name": "Small Stackable Ice Pop Molds, 4 x 60 ml",
+     "url": "https://www.lekue.com/us/small-stackable-ice-pop-molds-set-of-4-mixed/",
+     "store": "Lékué",
+     "price": "$21.25",
+     "ships_from": "US"
+    }
+   ],
+   "evidence": "Brand says independent labs test to German and French rules (brand-wide, no report)",
+   "outside": [
+    "Plastic sticks and lids",
+    "Que Choisir flagged a Lékué mould"
+   ],
+   "facts": {
+    "main": "no",
+    "parts": "yes",
+    "color": "yes",
+    "silicone": "unknown"
+   },
+   "contains": [],
+   "standards": []
+  },
+  {
+   "id": "we-might-be-tiny-ice-pop-mold",
+   "type": "pop-molds",
+   "brand": "We Might Be Tiny",
+   "line": "Ice Pop Mold",
+   "uses": [
+    "Silicone"
+   ],
+   "free": [],
+   "unconfirmed": [
+    "Stick material"
+   ],
+   "products": [
+    {
+     "name": "Ice Pop Mold",
+     "url": "https://pacifierkids.com/products/icypolemould-yellowbywemightbetiny",
+     "store": "Pacifier",
+     "price": "$24.95",
+     "ships_from": "US",
+     "shipping": "Free shipping on orders over $100",
+     "price_checked": "2026-10-18"
+    }
+   ],
+   "img": "sil_wmbt",
+   "img_src": "http://pacifierkids.com/cdn/shop/products/We_Might_Be_Tiny_Frosties_-_Yellow_low_res_1500x_3845fd1f-b642-47ad-91d0-54cd8eaf5305.jpg?crop=center&height=1200&v=1624124353&width=1200",
+   "quote": "Independently certified to the highest European standards (LFGB)",
+   "note": "Showed out of stock.",
+   "outside": [
+    "LFGB certificate not published"
+   ],
+   "facts": {
+    "main": "yes",
+    "parts": "unknown",
+    "color": "yes",
+    "silicone": "unknown"
+   },
+   "contains": [],
+   "standards": [
+    "lfgb"
+   ]
+  },
+  {
+   "id": "tovolo-stackable-pop-molds",
+   "type": "pop-molds",
+   "brand": "Tovolo",
+   "line": "Stackable Pop Molds",
+   "uses": [
+    "Silicone",
+    "BPA-free nylon"
+   ],
+   "free": [
+    "BPA"
+   ],
+   "unconfirmed": [
+    "Silicone testing standard",
+    "Which parts are nylon",
+    "Pigments"
+   ],
+   "outside": [
+    "BPA-free nylon parts"
+   ],
+   "quote": "Materials: Silicone, BPA-free nylon.",
+   "products": [
+    {
+     "name": "Stackable Pop Molds",
+     "url": "https://www.tovolo.com/products/pop-molds-stackable",
+     "store": "Tovolo",
+     "price": "$9.99",
+     "ships_from": "US",
+     "shipping": "Free shipping on orders over $50",
+     "price_checked": "2026-10-18"
+    }
+   ],
+   "img_src": "https://tovolo.com/cdn/shop/files/22083-800_Unicorn-Pop-Mold_AMZ_LIFESTYLE-04.jpg?v=1792258413",
+   "facts": {
+    "main": "no",
+    "color": "unknown",
+    "silicone": "unknown"
+   },
+   "contains": [],
+   "img": "x_tovolo_stackable_pop_molds",
+   "standards": []
+  },
+  {
+   "id": "mushie-toddler-ice-pop-tray",
+   "type": "pop-molds",
+   "brand": "Mushie",
+   "line": "Toddler Ice Pop Tray",
+   "uses": [
+    "Food-grade silicone tray",
+    "Silicone handles"
+   ],
+   "free": [
+    "BPA",
+    "BPS",
+    "PVC",
+    "Phthalates"
+   ],
+   "unconfirmed": [
+    "Pigments"
+   ],
+   "outside": [],
+   "quote": "100% high-quality food grade silicone - Free of BPA, BPS, PVC and phthalates ... Third-party tested to meet CPSIA, ASTM, and Prop 65 standards",
+   "products": [
+    {
+     "name": "Toddler Ice Pop Tray",
+     "url": "https://www.mushie.com/products/toddler-ice-pop-tray",
+     "store": "Mushie",
+     "price": "$15.99",
+     "ships_from": "US",
+     "shipping": "Free shipping on orders over $75",
+     "price_checked": "2026-10-18"
+    }
+   ],
+   "img_src": "https://mushie.com/cdn/shop/files/ToddlerIcePopTray_Blush_b32de10a-6b47-4bd5-8e07-d720c8376ddb.jpg?v=1755101124",
+   "facts": {
+    "main": "yes",
+    "color": "unknown",
+    "silicone": "no"
+   },
+   "contains": [],
+   "img": "x_mushie_toddler_ice_pop_tray",
+   "standards": [
+    "us-toy"
+   ]
+  },
+  {
+   "id": "zoku-summer-pops",
+   "type": "pop-molds",
+   "brand": "Zoku",
+   "line": "Summer Pops",
+   "uses": [
+    "BPA-free silicone molds",
+    "Spill-resistant lids (material not stated)",
+    "Base (material not stated)"
+   ],
+   "free": [
+    "BPA",
+    "Phthalates"
+   ],
+   "unconfirmed": [
+    "Lid material",
+    "Base material",
+    "Silicone testing standard",
+    "Pigments"
+   ],
+   "outside": [],
+   "quote": "Includes six soft, BPA-free silicone molds ... Made with food-safe, phthalate-free materials.",
+   "products": [
+    {
+     "name": "Summer Pops",
+     "url": "https://www.zokuhome.com/products/summer-pops",
+     "store": "Zoku",
+     "price": "$19.99",
+     "ships_from": "US",
+     "shipping": "Free shipping on orders over $50",
+     "price_checked": "2026-10-18"
+    }
+   ],
+   "img_src": "https://www.zokuhome.com/cdn/shop/products/ZK145_SummerPop_A.jpg?v=1618498048",
+   "facts": {
+    "main": "unknown",
+    "color": "unknown",
+    "silicone": "unknown"
+   },
+   "contains": [],
+   "img": "x_zoku_summer_pops",
+   "standards": []
+  },
+  {
+   "id": "glerups-kids-shoe",
+   "type": "shoes",
+   "brand": "glerups",
+   "line": "Kids Shoe",
+   "uses": [
+    "Pure natural wool upper",
+    "Chrome-free calfskin sole",
+    "Hand-stitched sole"
+   ],
+   "free": [
+    "Chrome tanning",
+    "Closures"
+   ],
+   "unconfirmed": [
+    "Thread",
+    "Tanning method beyond chrome-free"
+   ],
+   "products": [
+    {
+     "name": "Shoe Kids, Charcoal",
+     "url": "https://www.glerups.com/products/shoe-kids-charcoal",
+     "store": "glerups",
+     "price": "$60, free US shipping",
+     "ships_from": null,
+     "shipping": "Free shipping",
+     "price_checked": "2026-10-18"
+    }
+   ],
+   "img": "shoe_glerups",
+   "img_src": "http://www.glerups.com/cdn/shop/products/Shoe_kids-Shoe_with_leather_sole-AK-Charcoal.jpg?v=1670602015",
+   "quote": "pure, natural wool… sole of soft and chrome-free calfskin",
+   "note": "EU 20 and 21 in stock when checked.",
+   "outside": [],
+   "facts": {
+    "main": "yes",
+    "parts": "unknown",
+    "color": "yes",
+    "wool": "yes",
+    "organic": "no",
+    "tanning": "yes"
+   },
+   "contains": [
+    "leather"
+   ],
+   "standards": []
+  },
+  {
+   "id": "padraig-cottage-baby-slippers",
+   "type": "shoes",
+   "brand": "Padraig Cottage",
+   "line": "Baby slippers",
+   "uses": [
+    "Hand-crocheted NZ wool",
+    "Sheepskin insole",
+    "Suede sole"
+   ],
+   "free": [],
+   "unconfirmed": [
+    "Superwash treatment (listed “machine washable”)",
+    "Tie",
+    "Thread",
+    "Dye",
+    "Tanning"
+   ],
+   "products": [
+    {
+     "name": "Baby and toddler wool slippers, Toddler 5",
+     "url": "https://www.softstarshoes.com/padraig-cottage-baby-toddler-wool-slippers.html",
+     "store": "Softstar (US)",
+     "price": "$50, free US shipping",
+     "ships_from": "US"
+    }
+   ],
+   "img": "shoe_padraig",
+   "img_src": "https://www.softstarshoes.com/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/b/a/backyard_04_1.jpg",
+   "outside": [],
+   "facts": {
+    "main": "yes",
+    "parts": "unknown",
+    "color": "unknown",
+    "wool": "no",
+    "organic": "no",
+    "tanning": "unknown"
+   },
+   "contains": [
+    "leather"
+   ],
+   "standards": []
+  },
+  {
+   "id": "muskhane-felt-children-s-slippers",
+   "type": "shoes",
+   "brand": "Muskhane",
+   "line": "Felt children’s slippers",
+   "uses": [
+    "Felted sheep’s wool",
+    "Leather sole"
+   ],
+   "free": [],
+   "unconfirmed": [
+    "Thread",
+    "Glue",
+    "Tanning",
+    "Dyes"
+   ],
+   "products": [
+    {
+     "name": "Felt Children’s Slippers, M or L",
+     "url": "https://woodlandmod.com/products/felt-childrens-slippers",
+     "store": "Woodland Mod (US)",
+     "price": "$45",
+     "ships_from": "US",
+     "price_checked": "2026-10-18"
+    }
+   ],
+   "img": "shoe_muskhane",
+   "img_src": "http://woodlandmod.com/cdn/shop/files/f1eee6f7-8178-4283-9077-1f259adf1b1f_1200x1200.png?v=1786558543",
+   "outside": [],
+   "facts": {
+    "main": "yes",
+    "parts": "unknown",
+    "color": "unknown",
+    "wool": "yes",
+    "organic": "no",
+    "tanning": "unknown"
+   },
+   "contains": [
+    "leather"
+   ],
+   "standards": []
+  },
+  {
+   "id": "orangenkinder-wool-and-leather-slippers",
+   "type": "shoes",
+   "brand": "Orangenkinder",
+   "line": "Wool and leather slippers",
+   "uses": [
+    "Untreated merino boiled wool (Sheep)",
+    "Vegetable-tanned organic nappa leather sole"
+   ],
+   "free": [
+    "Chrome tanning"
+   ],
+   "unconfirmed": [
+    "Elastic ankle band",
+    "Thread",
+    "US delivery"
+   ],
+   "products": [
+    {
+     "name": "Boiled-wool slippers, Sheep",
+     "url": "https://popolini.com/en/orangenkinder-slippers-boiled-wool-sheep/",
+     "store": "Popolini (Austria)",
+     "price": "€48.90",
+     "ships_from": "Austria",
+     "price_checked": "2026-10-18"
+    },
+    {
+     "name": "Leather slippers, Bee",
+     "url": "https://popolini.com/en/orangenkinder-leather-shoes-bee/",
+     "store": "Popolini (Austria)",
+     "price": "€49.90",
+     "ships_from": "Austria",
+     "price_checked": "2026-10-18"
+    }
+   ],
+   "img": "shoe_okwool",
+   "img_src": "https://media.popolini.com/catalog/product/cache/5cf0cd67d985c5a2729a2007397294b6/96742210-00-0307.jpg",
+   "quote": "100% Tyrolean boiled wool – finest untreated merino",
+   "outside": [],
+   "facts": {
+    "main": "yes",
+    "parts": "unknown",
+    "color": "yes",
+    "wool": "yes",
+    "organic": "yes",
+    "tanning": "yes"
+   },
+   "contains": [
+    "leather"
+   ],
+   "standards": []
+  },
+  {
+   "id": "pololo-uni-barefoot-slippers",
+   "type": "shoes",
+   "brand": "POLOLO",
+   "line": "Uni barefoot slippers",
+   "uses": [
+    "Vegetable-tanned IVN natural leather",
+    "Leather sole",
+    "Unlined"
+   ],
+   "free": [
+    "Chrome tanning"
+   ],
+   "unconfirmed": [
+    "Elastic band core",
+    "Thread"
+   ],
+   "products": [
+    {
+     "name": "Barefoot Uni Indoor",
+     "url": "https://www.pololo.com/en/shop/barefoot-uni-indoor-blue/",
+     "store": "POLOLO",
+     "price": "€35",
+     "note": "US only through Nature Child",
+     "ships_from": "Germany",
+     "price_checked": "2026-10-18"
+    }
+   ],
+   "img": "shoe_pololo",
+   "img_src": "https://www.pololo.com/wp-content/uploads/2020/12/pololo-nos-barfuss-hausschuh-uni-ledersohle-blau-frontal.jpeg",
+   "outside": [],
+   "facts": {
+    "main": "yes",
+    "parts": "unknown",
+    "color": "yes",
+    "tanning": "yes"
+   },
+   "contains": [
+    "leather"
+   ],
+   "standards": []
+  },
+  {
+   "id": "robeez-first-kicks",
+   "type": "shoes",
+   "brand": "Robeez",
+   "line": "First Kicks",
+   "uses": [
+    "Leather upper",
+    "Suede split rubber outsole",
+    "Padded/cushioned insole",
+    "Velcro (hook-and-loop) strap"
+   ],
+   "free": [],
+   "unconfirmed": [
+    "Rubber type in outsole",
+    "Insole material",
+    "Lining",
+    "Thread",
+    "Glue",
+    "Dyes/finishes"
+   ],
+   "outside": [
+    "Hook-and-loop (Velcro) strap closure"
+   ],
+   "quote": "Materials: Leather upper, suede split rubber outsole",
+   "products": [
+    {
+     "name": "Jasmine First Kicks in Pink (12-18 / 18-24 Months)",
+     "url": "https://robeez.com/products/jasmine-first-kicks-in-pink-rbg21060",
+     "store": "Robeez",
+     "price": "$48.00",
+     "ships_from": "US",
+     "shipping": "Free shipping",
+     "price_checked": "2026-10-18"
+    }
+   ],
+   "img_src": "https://robeez.com/cdn/shop/files/RBG21060_view_01.jpg?v=1785940150",
+   "facts": {
+    "main": "unknown",
+    "parts": "no",
+    "color": "unknown",
+    "rubber": "unknown",
+    "organic": "no"
+   },
+   "contains": [
+    "leather"
+   ],
+   "img": "x_robeez_first_kicks",
+   "standards": []
+  },
+  {
+   "id": "freshly-picked-classic-moccasin",
+   "type": "shoes",
+   "brand": "Freshly Picked",
+   "line": "Classic Moccasin (Soft Sole / Hard Sole)",
+   "uses": [
+    "Genuine Italian leather",
+    "Elastic ankle opening"
+   ],
+   "free": [],
+   "unconfirmed": [
+    "Sole material (soft sole and hard sole options)",
+    "Lining",
+    "Thread",
+    "Glue",
+    "Elastic composition",
+    "Dyes/finishes"
+   ],
+   "outside": [],
+   "quote": "Handcrafted in Utah. Made from genuine Italian leather. Moccasin fringe detail. Easy-on elastic opening",
+   "products": [
+    {
+     "name": "Zion Moccasin Baby Shoe, Soft Sole (sizes 3-5)",
+     "url": "https://freshlypicked.com/products/zion",
+     "store": "Freshly Picked",
+     "price": "$59.00",
+     "ships_from": "US",
+     "price_checked": "2026-10-18"
+    },
+    {
+     "name": "Zion Moccasin Baby Shoe, Hard Sole (sizes 3-5)",
+     "url": "https://freshlypicked.com/products/zion",
+     "store": "Freshly Picked",
+     "price": "$65.00",
+     "ships_from": "US",
+     "price_checked": "2026-10-18"
+    }
+   ],
+   "img_src": "https://cdn.shopify.com/s/files/1/0204/2258/files/ZionClassic_1_336328d6-e506-4451-a968-3f78bcd6d86b.webp?v=1774385889",
+   "facts": {
+    "main": "unknown",
+    "parts": "unknown",
+    "color": "unknown",
+    "organic": "no"
+   },
+   "contains": [
+    "leather"
+   ],
+   "img": "x_freshly_picked_classic_moccasin",
+   "standards": []
+  },
+  {
+   "id": "salt-water-original-hook-loop-baby",
+   "type": "shoes",
+   "brand": "Salt Water Sandals (Hoy Shoe Co)",
+   "line": "Salt Water Original Hook & Loop - Baby",
+   "uses": [
+    "Genuine bovine leather straps",
+    "Polyurethane film laminated on one side of the leather",
+    "Hand-stitched TPR sole",
+    "Brass hardware",
+    "Hook-and-loop ankle strap"
+   ],
+   "free": [],
+   "unconfirmed": [
+    "Insole/footbed material",
+    "Thread",
+    "Glue",
+    "Dyes"
+   ],
+   "outside": [
+    "TPR sole",
+    "Polyurethane film on leather",
+    "Hook-and-loop strap"
+   ],
+   "quote": "Crafted with the same scuff-resistant, water-friendly genuine leather and hand-stitched, non-slip TPR sole ... We laminate a poly-urethane film on one side to give it color and help the leather hold its shape.",
+   "products": [
+    {
+     "name": "Salt Water Original H&L - Baby (sizes 3-4)",
+     "url": "https://saltwater-sandals.com/products/salt-water-original-h-l-baby",
+     "store": "Salt Water Sandals",
+     "price": "$49.00",
+     "ships_from": "US",
+     "shipping": "Free shipping on orders over $85",
+     "price_checked": "2026-10-18"
+    }
+   ],
+   "img_src": "https://saltwater-sandals.com/cdn/shop/files/800v-tan-baby-1.png?v=1756459742",
+   "facts": {
+    "main": "no",
+    "parts": "no",
+    "color": "no",
+    "rubber": "no",
+    "organic": "no"
+   },
+   "contains": [
+    "leather"
+   ],
+   "img": "x_salt_water_original_hook_loop_baby",
+   "standards": []
+  },
+  {
+   "id": "wildling-tejo-toddler",
+   "type": "shoes",
+   "brand": "Wildling",
+   "line": "Tejo (Toddlers)",
+   "uses": [
+    "Canvas upper (100% recycled cotton)",
+    "Membrane (100% polyester, approx. 75% recycled)",
+    "Lining/mid-sole: felted wool loden (100% virgin wool)",
+    "Outsole: approx. 55% synthetic rubber, 15% silica, 15% recycled rubber and/or cork, 10% natural rubber, 5% processing aids & pigments"
+   ],
+   "free": [],
+   "unconfirmed": [
+    "Wool treatment (superwash or not)",
+    "Dyes",
+    "Thread",
+    "Glue",
+    "Laces/closures"
+   ],
+   "outside": [
+    "Polyester membrane",
+    "Synthetic rubber in outsole"
+   ],
+   "quote": "Upper: Canvas (100% recycled cotton) – brown Membrane: 100% polyester containing approx. 75% recycled material Lining / mid-sole: Felted wool loden (100% virgin wool) Outsole: approx. 55% synthetic rubber, approx. 15% silica, approx. 15% recycled content (recycled rubber and/or cork), approx. 10% natural rubber, approx. 5% processing aids & pigments.",
+   "products": [
+    {
+     "name": "Tejo chocolate, Toddlers (Kids 3-6)",
+     "url": "https://us.wildling.shoes/products/tejo-chocolate-c",
+     "store": "Wildling (USA & Canada shop)",
+     "price": "$69.00",
+     "ships_from": "US",
+     "price_checked": "2026-10-18"
+    }
+   ],
+   "img_src": "https://us.wildling.shoes/cdn/shop/files/wildling-shoes-TEJO-CHOCOLATE-T-01_5f852a28-62cd-4f3d-b974-7ab430e7d11a.webp?v=1787840972",
+   "facts": {
+    "main": "no",
+    "parts": "unknown",
+    "color": "unknown",
+    "wool": "unknown",
+    "rubber": "no",
+    "organic": "no"
+   },
+   "contains": [
+    "latex"
+   ],
+   "img": "x_wildling_tejo_toddler",
+   "standards": []
+  },
+  {
+   "id": "bisgaard-natural-rubber-boots",
+   "type": "rain-boots",
+   "brand": "Bisgaard",
+   "line": "Natural rubber boots",
+   "uses": [
+    "Natural rubber upper and sole",
+    "Cotton lining and insole",
+    "Thermo: lambswool lining, wool insole, latex inner sole"
+   ],
+   "free": [
+    "PVC and phthalates (Basic)"
+   ],
+   "unconfirmed": [
+    "Glue",
+    "Thread",
+    "Insole core",
+    "Rubber additives",
+    "“Thermo” layer on the winter boot"
+   ],
+   "products": [
+    {
+     "name": "Baby Rubber Boots 2.0",
+     "url": "https://pedterra.com/products/bisgaard-baby-rubber-boots-2-0",
+     "store": "PedTerra",
+     "price": "$75, free US shipping",
+     "ships_from": "US",
+     "shipping": "Free shipping",
+     "price_checked": "2026-10-18"
+    },
+    {
+     "name": "Baby Basic Rubber Boots",
+     "url": "https://pedterra.com/products/bisgaard-baby-basic-rubber-boots",
+     "store": "PedTerra",
+     "price": "$75",
+     "note": "Low shaft, runs narrow",
+     "ships_from": "US",
+     "shipping": "Free shipping",
+     "price_checked": "2026-10-18"
+    },
+    {
+     "name": "Thermo Baby (winter)",
+     "url": "https://pedterra.com/products/bisgaard-baby-thermo",
+     "store": "PedTerra",
+     "price": "$78",
+     "ships_from": "US",
+     "shipping": "Free shipping",
+     "price_checked": "2026-10-18"
+    }
+   ],
+   "img": "boot_bis2",
+   "img_src": "http://pedterra.com/cdn/shop/files/Bisgaard_Rubber_Low_Blue_5.png?v=1776105810",
+   "quote": "Upper 100% Natural Rubber… Sole 100% Natural Rubber",
+   "note": "PedTerra is a US shop.",
+   "outside": [],
+   "facts": {
+    "main": "unknown",
+    "parts": "unknown",
+    "color": "yes",
+    "wool": "yes",
+    "rubber": "yes",
+    "organic": "no"
+   },
+   "contains": [
+    "latex"
+   ],
+   "standards": []
+  },
+  {
+   "id": "crywolf-rain-boots",
+   "type": "rain-boots",
+   "brand": "Crywolf",
+   "line": "Rain boots",
+   "uses": [
+    "Natural vulcanised rubber",
+    "Cotton lining (per a retailer)"
+   ],
+   "free": [],
+   "unconfirmed": [
+    "Lining fibre (brand page no longer says)",
+    "Insole",
+    "Glue"
+   ],
+   "products": [
+    {
+     "name": "Rain Boots, Apple Grove",
+     "url": "https://crywolfchild.com/products/rain-boots-apple-grove",
+     "store": "Crywolf (New Zealand)",
+     "price": "about NZ$45",
+     "ships_from": "New Zealand",
+     "price_checked": "2026-10-18"
+    }
+   ],
+   "img": "boot_crywolf",
+   "img_src": "http://crywolfchild.com/cdn/shop/files/CRYWOLF-AW26-Rain-Boots-Apple-Grove-Side-WEB-JPG_1200x1200.jpg?v=1773711659",
+   "note": "Size up.",
+   "outside": [],
+   "facts": {
+    "main": "unknown",
+    "parts": "unknown",
+    "color": "yes",
+    "rubber": "unknown",
+    "organic": "no"
+   },
+   "contains": [
+    "latex"
+   ],
+   "standards": []
+  },
+  {
+   "id": "jan-jul-puddle-dry-rain-boots",
+   "type": "rain-boots",
+   "brand": "Jan & Jul",
+   "line": "Puddle-Dry rain boots",
+   "uses": [
+    "Natural rubber",
+    "100% cotton lining",
+    "Cotton-lined insole"
+   ],
+   "free": [
+    "Lead, cadmium and phthalates"
+   ],
+   "unconfirmed": [
+    "US shipping"
+   ],
+   "products": [
+    {
+     "name": "Puddle-Dry Rain Boots",
+     "url": "https://janandjul.com/product/puddle-dry-rain-boots-dinoland/",
+     "store": "Jan & Jul (Canada)",
+     "price": "CAD $53.99",
+     "ships_from": "Canada"
+    }
+   ],
+   "outside": [
+    "Micro-fleece insole (synthetic; removable)",
+    "Elastic in the opening"
+   ],
+   "facts": {
+    "main": "no",
+    "parts": "no",
+    "color": "yes",
+    "rubber": "yes",
+    "organic": "no"
+   },
+   "contains": [
+    "latex"
+   ],
+   "standards": []
+  },
+  {
+   "id": "frugi-puddle-buster-wellies",
+   "type": "rain-boots",
+   "brand": "Frugi",
+   "line": "Puddle Buster wellies",
+   "uses": [
+    "Natural rubber",
+    "Soft cotton lining"
+   ],
+   "free": [
+    "PVC"
+   ],
+   "unconfirmed": [],
+   "products": [
+    {
+     "name": "Puddle Buster Wellington Boots",
+     "url": "https://welovefrugi.com/products/puddle-buster-wellington-boots",
+     "variant": "UK 5",
+     "store": "Frugi (UK)",
+     "price": "£30",
+     "ships_from": "UK",
+     "price_checked": "2026-10-18"
+    }
+   ],
+   "img": "boot_frugi",
+   "img_src": "https://welovefrugi.com/cdn/shop/files/4ff5130b8ade2c416214f724fae1402aa9d1a41b_500047A5BEHO_1.jpg?v=1776613345&width=1200",
+   "outside": [
+    "Padded insole, likely foam"
+   ],
+   "facts": {
+    "main": "no",
+    "parts": "yes",
+    "color": "yes",
+    "rubber": "unknown",
+    "organic": "no"
+   },
+   "contains": [
+    "latex"
+   ],
+   "standards": []
+  },
+  {
+   "id": "hunter-kids-first-classic",
+   "type": "rain-boots",
+   "brand": "Hunter",
+   "line": "Kids First Classic Rain Boots",
+   "uses": [
+    "Natural rubber upper",
+    "Rubber calendered outsole",
+    "Textile lining (described as recycled)",
+    "Textile sock"
+   ],
+   "free": [],
+   "unconfirmed": [
+    "Lining fibre type",
+    "Sock/insole fibre and foam",
+    "Rubber additives/plasticisers",
+    "Finish/print inks",
+    "Glue"
+   ],
+   "outside": [],
+   "quote": "The Kids First Classic Rain Boot is handcrafted from natural rubber ... Soft recycled lining ... Upper Material: Rubber Outsole Material: Rubber Lining material: Textile Sock material: Textile",
+   "products": [
+    {
+     "name": "Kids First Classic Rain Boots, Dark Red (sizes 5C-7C)",
+     "url": "https://www.hunterboots.com/products/kids-first-classic-rain-boots-in-dark-red-fhl-k-t5094rma-dre02",
+     "store": "Hunter",
+     "price": "$75.00",
+     "ships_from": "US",
+     "shipping": "Free shipping on orders over $100",
+     "price_checked": "2026-10-18"
+    }
+   ],
+   "img_src": "https://hunterboots.com/cdn/shop/files/4a35ef57a39dfd7cffb9b02852bba3b4a9e32563.jpg?v=1781534090",
+   "facts": {
+    "main": "unknown",
+    "parts": "unknown",
+    "color": "unknown",
+    "rubber": "unknown",
+    "organic": "no"
+   },
+   "contains": [
+    "latex"
+   ],
+   "img": "x_hunter_kids_first_classic",
+   "standards": []
+  },
+  {
+   "id": "western-chief-kids-firechief-2",
+   "type": "rain-boots",
+   "brand": "Western Chief",
+   "line": "Kids Firechief 2 Rain Boot",
+   "uses": [
+    "Waterproof rubber upper",
+    "Polyester/cotton lining",
+    "EVA insole",
+    "Rubber lug outsole"
+   ],
+   "free": [],
+   "unconfirmed": [
+    "Rubber type (natural or synthetic)",
+    "Glue",
+    "Pull-on loops",
+    "Dyes"
+   ],
+   "outside": [
+    "EVA insole",
+    "Polyester in lining"
+   ],
+   "quote": "Crafted from waterproof high-quality rubber ... The white polyester/cotton lining adds soft comfort, while the EVA insole provides lightweight cushioning ... A rugged rubber lug outsole",
+   "products": [
+    {
+     "name": "Kids Firechief 2 Rain Boot - Yellow (5-7 Toddler)",
+     "url": "https://www.westernchief.com/products/kids-firechief-2-rain-boot-yellow",
+     "store": "Western Chief",
+     "price": "$17.95 (sale; regular $30.00)",
+     "ships_from": "US",
+     "shipping": "Free shipping on orders over $80",
+     "price_checked": "2026-10-18"
+    }
+   ],
+   "img_src": "https://www.westernchief.com/cdn/shop/files/kids-firechief-2-rain-boot-yellow-5322569.jpg?v=1755374671",
+   "facts": {
+    "main": "no",
+    "parts": "unknown",
+    "color": "unknown",
+    "rubber": "unknown",
+    "organic": "no"
+   },
+   "contains": [],
+   "img": "x_western_chief_kids_firechief_2",
+   "standards": []
+  },
+  {
+   "id": "kamik-stomp",
+   "type": "rain-boots",
+   "brand": "Kamik",
+   "line": "Stomp Rain Boots (Toddlers)",
+   "uses": [
+    "PVC shell",
+    "Felt insole"
+   ],
+   "free": [],
+   "unconfirmed": [
+    "Felt fibre type",
+    "Outsole compound",
+    "Dyes"
+   ],
+   "outside": [
+    "PVC shell"
+   ],
+   "quote": "Material: PVC ... Shell: PVC Lining: N/A ... Insole: Felt ... Made in Canada with domestic and imported materials.",
+   "products": [
+    {
+     "name": "Stomp - Rain Boots - Kids (Toddlers 5T-7T)",
+     "url": "https://www.kamik.com/products/stomp-kids-rain-boots",
+     "store": "Kamik",
+     "price": "$39.99",
+     "ships_from": "US",
+     "shipping": "Free shipping on orders over $129.99, $25 below",
+     "price_checked": "2026-10-18"
+    }
+   ],
+   "img_src": "https://www.kamik.com/cdn/shop/files/Product-Image_STOMP_Stomp-Kids-Sky-Blue-Rain-Boots_SKY_01.jpg?v=1776109696",
+   "facts": {
+    "main": "no",
+    "parts": "unknown",
+    "color": "unknown",
+    "organic": "no"
+   },
+   "contains": [],
+   "img": "x_kamik_stomp",
+   "standards": []
+  },
+  {
+   "id": "bogs-skipper-ii",
+   "type": "rain-boots",
+   "brand": "Bogs",
+   "line": "Skipper II Kid's Rainboots (Toddler)",
+   "uses": [
+    "Rubber upper",
+    "BLOOM algae-based EVA footbed",
+    "BOGS Max-Wick moisture-wicking lining",
+    "DuraFresh odour treatment"
+   ],
+   "free": [],
+   "unconfirmed": [
+    "Rubber type (natural or synthetic)",
+    "Lining fibre",
+    "Outsole compound",
+    "Glue",
+    "Dyes"
+   ],
+   "outside": [
+    "EVA footbed"
+   ],
+   "quote": "Crafted with ultra-soft and flexible rubber. BLOOM eco-friendly, algae-based EVA footbed ... BOGS Max-Wick evaporates sweat to keep feet dry",
+   "products": [
+    {
+     "name": "Skipper II Solid, Gray (Toddler sizes 4-7)",
+     "url": "https://www.bogsfootwear.com/shop/style/73012I-020.html",
+     "store": "Bogs",
+     "price": "$29.90 (sale; original $50)",
+     "ships_from": "US",
+     "shipping": "Free shipping on orders over $99",
+     "price_checked": "2026-10-18"
+    }
+   ],
+   "img_src": "https://www.bogsfootwear.com/shop/images/73012I-001.jpg",
+   "facts": {
+    "main": "no",
+    "parts": "unknown",
+    "color": "unknown",
+    "rubber": "unknown",
+    "organic": "no"
+   },
+   "contains": [],
+   "img": "x_bogs_skipper_ii",
+   "standards": []
+  },
+  {
+   "id": "little-green-radicals-lined-natural-rubber-rain-boots",
+   "type": "rain-boots",
+   "brand": "Little Green Radicals",
+   "line": "Lined Natural Rubber Rain Boots",
+   "uses": [
+    "Outer: 90% natural rubber, 10% synthetic rubber",
+    "Lining: 85% natural rubber foam, 15% synthetic rubber, wrapped in recycled polyester",
+    "Natural rubber certified by the Fair Rubber Association"
+   ],
+   "free": [],
+   "unconfirmed": [
+    "Insole",
+    "Glue",
+    "Pigments/colourants",
+    "Plasticisers"
+   ],
+   "outside": [
+    "Synthetic rubber in outer and lining",
+    "Recycled polyester lining wrap"
+   ],
+   "quote": "Outer made from 90% natural rubber blended with 10% synthetic rubber for durability; Lining made from 85% natural rubber foam and 15% synthetic rubber, wrapped in recycled polyester",
+   "products": [
+    {
+     "name": "Over The Rainbow Lined Natural Rubber Rain Boots (USA 6-7, 12-24 mths)",
+     "url": "https://littlegreenradicals.com/products/over-the-rainbow-natural-rubber-waterproof-rain-boots",
+     "store": "Little Green Radicals (ships to US)",
+     "price": "£41.00",
+     "ships_from": "UK",
+     "shipping": "Shipping calculated at checkout",
+     "price_checked": "2026-10-18"
+    }
+   ],
+   "img_src": "https://cdn.shopify.com/s/files/1/0258/8147/7195/files/A25-771-ERW_2_2000x2000_19ae90cb-a538-442b-a631-f6c7f84a9d18.jpg?v=1785426517",
+   "facts": {
+    "main": "no",
+    "parts": "unknown",
+    "color": "unknown",
+    "rubber": "no",
+    "organic": "no"
+   },
+   "contains": [
+    "latex"
+   ],
+   "img": "x_little_green_radicals_lined_natural_rubb",
+   "standards": [
+    "fair-rubber"
+   ]
+  }
+ ]
+}

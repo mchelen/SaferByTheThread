@@ -6,6 +6,7 @@ All notable changes to the site are listed here. The format follows [Keep a Chan
 
 ### Added
 - Every photo each store shows for a product, saved as the site's own copy (`tools/photos.js`, 564 photos for 99 listings, 87 with more than one), with thumbnails on the product page and in quick view.
+- Visual regression tests (`npm run test:visual`): screenshots of 13 key views at desktop and phone width, compared on every pull request; a mismatch fails the check and posts the before, after and difference images on the PR. Update them with `npm run test:visual:update` or the `update-screenshots` label. See `tests/visual/README.md`.
 - Age range filter (birth to 5 years and up) on every listing page, using the maker's age rating or, where none is recorded, the usual ages for the product type; the product page says which.
 - Product pages show every saved store photo with thumbnails, when a listing records more than one (`photos`).
 - An "Added flame retardant chemicals" material filter, on by default, filled in where listings already record it.
@@ -28,6 +29,7 @@ All notable changes to the site are listed here. The format follows [Keep a Chan
 - A blank strip at the top of every page, and department tiles whose labels sat at different heights.
 
 ### Changed
+- Home page navigates by pictures: category tiles, age chips and a row of round product-type photo tiles under each category, in place of text lists of product types; the explanatory sections (what every listing tells you, your material filters) moved off the home page, which keeps one line of copy under the title. The featured rail no longer squeezes its first cards on phones and tablets.
 - Cards, quick view and the comparison table name which material filter a product misses or can't be judged on ("Not stated: Small parts +1") instead of counting details; the product page leads with the same lines, hides empty checklist rows and explanatory subtitles, and groups the "By filter" table like the filter sidebar with switched-off filters marked. Options in `docs/materials-at-a-glance.md`.
 - Store buttons are the main action: a large amber "Buy at <store>" button right under the price on product pages and in quick view, a "Buy at store" button on every product card and in the Compare table, and the same button in the phone buy bar.
 - Navigation is by product type: departments became aisles in the menu (Play, Sleep, Eat and drink, Wear), each listing names its `type`, and a type can appear in more than one aisle. The home page leads with product types. `data.json` moved to schema 4 (flat `entries`, `types`, `aisles`); `/d/<department>` and `/c/pads` links redirect. "Pads, toppers, pillows and sheets" split into three types.
