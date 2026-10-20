@@ -253,6 +253,26 @@ test('product page compares the item with similar ones and keeps a buy bar in re
   await page.close();
 });
 
+test('a product with many photos keeps the page and the quick view inside a phone screen', async () => {
+  const page = await open('/p/beaba-universal-warm-sleeping-bag', { width: 390, height: 800 });
+  await page.waitForSelector('.gallery .thumbs');
+  assert.ok((await page.locator('.gallery .thumb').count()) >= 8, 'many thumbnails');
+  assert.equal(await page.evaluate(() => document.documentElement.scrollWidth), 390, 'no sideways scroll on the product page');
+  await page.setViewportSize({ width: 1280, height: 900 });
+  await page.goto(base + '/search?q=beaba', { waitUntil: 'networkidle' });
+  await page.hover('.card');
+  await page.click('.card .qv-btn');
+  await page.waitForSelector('.qv .thumbs');
+  const qv = await page.evaluate(() => {
+    const d = document.querySelector('.qv'), cols = document.querySelectorAll('.qv-in > *');
+    return { scroll: d.scrollWidth, client: d.clientWidth, text: cols[cols.length - 1].getBoundingClientRect().width };
+  });
+  assert.ok(qv.scroll <= qv.client + 1, 'quick view does not scroll sideways');
+  assert.ok(qv.text >= 380, 'the thumbnail strip does not squeeze the text column: ' + qv.text);
+  assert.deepEqual(page.errors, []);
+  await page.close();
+});
+
 test('cards show shipping, and the quick filter, shipping facet and price + shipping sort work', async () => {
   const page = await open('/shop');
   await page.waitForSelector('.card .ship');
