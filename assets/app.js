@@ -287,11 +287,11 @@
     var items = C.items.filter(function (i) { return i.aisles.indexOf(g.id) >= 0 && i.img; });
     return items.filter(function (i) { return status(i).ok; })[0] || items[0] || null;
   }
-  function typeTiles(ids, cls) {
+  function typeTiles(ids, cls, current) {
     var sorted = ids.slice().sort(function (x, y) { return typeCount(y) - typeCount(x); });
     return '<div class="ttiles' + (cls ? ' ' + cls : '') + '">' + sorted.map(function (id) {
       var c = C.cats[id], pic = typePic(id);
-      return '<a class="ttile" href="' + U('/c/' + id) + '"><span class="ttile-img">' + (pic ? '<img src="' + esc(asset(pic.img)) + '" alt="" decoding="async">' : '') + '</span>' +
+      return '<a class="ttile' + (id === current ? ' on' : '') + '" href="' + U('/c/' + id) + '"' + (id === current ? ' aria-current="page"' : '') + '><span class="ttile-img">' + (pic ? '<img src="' + esc(asset(pic.img)) + '" alt="" decoding="async">' : '') + '</span>' +
         '<span class="ttile-t">' + esc(c.short || c.title) + '</span></a>';
     }).join('') + '</div>';
   }
@@ -474,6 +474,7 @@
       var c = catOf(st.key), g = groupOf(c.group);
       trail = [[g.title, U('/a/' + g.id)], [c.title]];
       if (c.intro) intro = c.intro;
+      if (g.cats.length > 1) sub = '<nav class="sibling-types" aria-label="Other types in ' + esc(g.title) + '">' + typeTiles(g.cats.filter(function (id) { return typeCount(id) > 0; }), 'sm', c.id) + '</nav>';
     } else if (st.kind === 'dept' && groupOf(st.key)) {
       var gg = groupOf(st.key);
       trail = [[gg.title]];
@@ -623,7 +624,8 @@
       letters.map(function (L) {
         return '<section class="az-sec" id="az-' + L + '"><h2>' + L + '</h2><ul class="brand-list">' + by[L].map(function (b) {
           var cats = {}; b.items.forEach(function (i) { cats[i.cat] = 1; });
-          return '<li><a class="b-name" href="' + U('/b/' + b.id) + '">' + esc(b.name) + '</a><span class="b-meta">' + plural(b.items.length, 'listing') + ' · ' + Object.keys(cats).map(function (c) { return esc(C.cats[c].short); }).join(', ') + '</span></li>';
+          var pic = b.items.filter(function (i) { return i.img && status(i).ok; })[0] || b.items.filter(function (i) { return i.img; })[0];
+          return '<li><a class="b-pic" href="' + U('/b/' + b.id) + '" tabindex="-1" aria-hidden="true">' + (pic ? '<img src="' + esc(asset(pic.img)) + '" alt="" loading="lazy" decoding="async">' : '') + '</a><div><a class="b-name" href="' + U('/b/' + b.id) + '">' + esc(b.name) + '</a><span class="b-meta">' + plural(b.items.length, 'listing') + ' · ' + Object.keys(cats).map(function (c) { return esc(C.cats[c].short); }).join(', ') + '</span></div></li>';
         }).join('') + '</ul></section>';
       }).join('') + '</div></div>';
     setNav('brands'); setTitle('Brands');
@@ -853,7 +855,7 @@
       out.push('<a href="' + U('/p/' + i.id) + '" role="option">' + (i.img ? '<img class="sg-img" src="' + esc(asset(i.img)) + '" alt="">' : '<span class="sg-img"></span>') + '<span>' + esc(i.brand) + ' ' + esc(i.line) + '</span><span class="sg-p">' + esc(S.priceFrom(i)) + '</span></a>');
     });
     brandList().filter(function (b) { return S.fold(b.name).indexOf(f) >= 0; }).slice(0, 3).forEach(function (b) { out.push('<a href="' + U('/b/' + b.id) + '" role="option"><span class="sg-k">Brand</span>' + esc(b.name) + '</a>'); });
-    Object.keys(C.cats).map(function (k) { return C.cats[k]; }).filter(function (c) { return S.fold(c.title).indexOf(f) >= 0; }).slice(0, 3).forEach(function (c) { out.push('<a href="' + U('/c/' + c.id) + '" role="option"><span class="sg-k">Type</span>' + esc(c.title) + '</a>'); });
+    Object.keys(C.cats).map(function (k) { return C.cats[k]; }).filter(function (c) { return S.fold(c.title).indexOf(f) >= 0; }).slice(0, 3).forEach(function (c) { var pic = typePic(c.id); out.push('<a href="' + U('/c/' + c.id) + '" role="option">' + (pic ? '<img class="sg-img" src="' + esc(asset(pic.img)) + '" alt="">' : '<span class="sg-img"></span>') + '<span>' + esc(c.title) + '</span><span class="sg-p">' + plural(typeCount(c.id), 'product') + '</span></a>'); });
     S.MATERIALS.filter(function (m) { return S.fold(m.label).indexOf(f) >= 0; }).slice(0, 2).forEach(function (m) { out.push('<a href="' + U('/shop', { mat: m.id }) + '" role="option"><span class="sg-k">Made with</span>' + esc(m.label) + '</a>'); });
     if (GLOSS) Object.keys(TERMS).filter(function (k) { return S.fold(TERMS[k].term).indexOf(f) >= 0; }).slice(0, 2).forEach(function (k) { out.push('<a href="' + U('/glossary/' + k) + '" role="option"><span class="sg-k">Glossary</span>' + esc(TERMS[k].term) + '</a>'); });
     out.push('<a href="' + U('/search', { q: q.trim() }) + '" role="option"><span class="sg-k">Search</span>See all results for “' + esc(q.trim()) + '”</a>');
