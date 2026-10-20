@@ -179,3 +179,32 @@ test('phone width: nothing overflows, and the filter drawer applies on "Show res
   assert.deepEqual(page.errors, []);
   await page.close();
 });
+
+test('a shared saved list opens from its link and can be saved into this browser', async () => {
+  const ids = 'home-of-wool-organic-baby-play-mat,kodo-kids-natural-wool-balls-6';
+  const page = await open('/saved?ids=' + ids);
+  await page.waitForSelector('.shared-note');
+  assert.equal(await page.locator('.card').count(), 2);
+  assert.equal(await page.evaluate(() => localStorage.getItem('sbtt-saved')), null, 'opening the link saves nothing');
+  await page.click('[data-take]');
+  await page.waitForSelector('.page-h [data-share]');
+  assert.equal(new URL(page.url()).search, '');
+  assert.deepEqual(JSON.parse(await page.evaluate(() => localStorage.getItem('sbtt-saved'))), ids.split(','));
+  assert.deepEqual(page.errors, []);
+  await page.close();
+});
+
+test('product page compares the item with similar ones and keeps a buy bar in reach on phones', async () => {
+  const page = await open('/p/home-of-wool-organic-baby-play-mat', { width: 390, height: 800 });
+  await page.waitForSelector('.similar .cmp');
+  assert.equal(await page.locator('.similar thead th.here').count(), 1);
+  assert.ok((await page.locator('.similar thead th').count()) >= 3, 'at least one similar item');
+  assert.ok(await page.locator('#buybar').isHidden(), 'hidden while the buy box is on screen');
+  await page.evaluate(() => window.scrollTo(0, document.querySelector('#materials').offsetTop));
+  await page.waitForSelector('#buybar:not([hidden])');
+  assert.match(await page.textContent('#buybar'), /Buy at Home of Wool/);
+  await page.goto(base + '/shop', { waitUntil: 'networkidle' });
+  assert.ok(await page.locator('#buybar').isHidden(), 'gone on other pages');
+  assert.deepEqual(page.errors, []);
+  await page.close();
+});
