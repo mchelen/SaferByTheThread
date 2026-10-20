@@ -1195,7 +1195,13 @@
 
   // ---------- boot ----------
   function inline(id) { var el = document.getElementById(id); return el ? JSON.parse(el.textContent) : null; }
-  function get(url) { return fetch(url).then(function (r) { if (!r.ok) throw new Error(url + ' ' + r.status); return r.json(); }); }
+  // The deploy stamps each build into <meta name="build"> and onto the stylesheet and script URLs, so a fix reaches
+  // visitors on their next load instead of after GitHub Pages' ten-minute cache; the data files get the same stamp.
+  var BUILD = (document.querySelector('meta[name="build"]') || {}).content || '';
+  function get(url) {
+    var u = BUILD && BUILD !== 'dev' ? url + (url.indexOf('?') >= 0 ? '&' : '?') + 'v=' + encodeURIComponent(BUILD) : url;
+    return fetch(u).then(function (r) { if (!r.ok) throw new Error(url + ' ' + r.status); return r.json(); });
+  }
   function useGlossary(g) {
     GLOSS = g;
     if (GLOSS) GLOSS.sections.forEach(function (s) { s.terms.forEach(function (t) { TERMS[t.id] = t; }); });

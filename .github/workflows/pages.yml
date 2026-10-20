@@ -66,6 +66,15 @@ jobs:
               echo '</ul>'; } > _site/index.html
           fi
           du -sh _site
+      - name: Stamp the build into asset URLs so browsers fetch fresh files after each deploy
+        run: |
+          set -euo pipefail
+          stamp="${GITHUB_RUN_ID}"
+          for f in _site/index.html _site/pr/*/index.html; do
+            [ -f "$f" ] || continue
+            sed -i -E "s#(href|src)=\"(assets/[A-Za-z0-9_.-]+\.(css|js))\"#\1=\"\2?v=${stamp}\"#g; s#<meta name=\"build\" content=\"[^\"]*\">#<meta name=\"build\" content=\"${stamp}\">#" "$f"
+          done
+          grep -o 'assets/styles.css[^"]*' _site/index.html
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
