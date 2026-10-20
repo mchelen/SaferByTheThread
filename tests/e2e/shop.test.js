@@ -127,7 +127,7 @@ test('search suggests as you type and the results page lists matches', async () 
 });
 
 test('the material line names the filter, not just the part of the product', async () => {
-  const page = await open('/p/marnieandmister-organic-cotton-quilted-mat');
+  const page = await open('/p/toki-kids-organic-cotton-mat-40x40');
   await page.waitForSelector('.buybox .fit');
   const lines = (await page.locator('.buybox .fit').allTextContents()).join(' | ');
   assert.match(lines, /Not stated: any plastic or synthetics in the main materials/);
