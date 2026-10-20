@@ -62,8 +62,8 @@ test('evaluate: contains switches hide latex only when on', () => {
 function sample() {
   return {
     schema: 4, updated: '2026-10-18', ask: [], criteria, standards: [{ id: 'gots', label: 'GOTS', term: 'gots' }],
-    aisles: [{ id: 'play', title: 'Play', blurb: '', was: ['toys'], types: ['balls', 'mats'] }, { id: 'nursery', title: 'Nursery', types: ['mats'] }],
-    types: [{ id: 'balls', title: 'Balls', ages: { min_months: 0, max_months: 60 } }, { id: 'mats', title: 'Play mats', ages: { min_months: 0, max_months: 24 } }],
+    aisles: [{ id: 'play', title: 'Play', blurb: '', was: ['toys'], types: ['balls', 'mats'] }, { id: 'nursery', title: 'Nursery', types: ['rugs', 'mats'] }],
+    types: [{ id: 'balls', title: 'Balls', ages: { min_months: 0, max_months: 60 } }, { id: 'mats', title: 'Play mats', ages: { min_months: 0, max_months: 24 } }, { id: 'rugs', title: 'Rugs', ages: { min_months: 0, max_months: 72 } }],
     entries: [
       { id: 'b-mat', type: 'mats', brand: 'Home of Wool', line: 'Play mat', uses: ['Organic wool batting', 'Organic cotton casing'], free: [], unconfirmed: [], outside: ['Polyester thread'],
         facts: { main: 'yes' }, contains: [], img: 'mat', photos: [{ key: 'mat', src: 'https://example.com/1.jpg' }, { key: 'mat-2', src: 'https://example.com/2.jpg' }],
@@ -90,14 +90,19 @@ test('build orders listings by aisle and type, and derives materials, prices, ag
   assert.deepEqual(mat.ageBands, ['0-6m', '6-12m', '12-24m'], 'no maker rating: the usual ages for the type');
   assert.equal(mat.ageStated, false);
   assert.equal(mat.ageLabel, 'Birth to 2 years');
-  assert.deepEqual(mat.aisles, ['play', 'nursery'], 'a type can sit in two aisles');
+  assert.deepEqual(mat.aisles, ['play'], 'an aisle with no listings of its own types is hidden');
   assert.equal(mat.group, 'play');
   assert.deepEqual(mat.photos, ['img/mat.jpg', 'img/mat-2.jpg']);
   assert.deepEqual(mat.ships.sort(), ['abroad', 'unknown']);
   assert.equal(mat.min, 270);
   assert.equal(S.priceLabel(mat), 'about $270');
   assert.equal(c.brands['home-of-wool'].items.length, 1);
-  assert.deepEqual(c.groups.map(g => g.cats), [['balls', 'mats'], ['mats']]);
+  assert.deepEqual(c.groups.map(g => g.cats), [['balls', 'mats']], 'empty types and borrowed-only aisles are hidden');
+  const d = sample();
+  d.entries.push(Object.assign({}, d.entries[0], { id: 'c-rug', type: 'rugs', line: 'Rug', photos: undefined, img: undefined }));
+  const c2 = S.build(d);
+  assert.deepEqual(c2.groups.map(g => g.cats), [['balls', 'mats'], ['rugs', 'mats']]);
+  assert.deepEqual(c2.items.find(i => i.id === 'b-mat').aisles, ['play', 'nursery'], 'a type can sit in two aisles');
   assert.ok(ball.q.includes('hevea') && ball.q.includes('balls') && ball.q.includes('natural rubber') && ball.q.includes('play'), 'search text covers brand, type, aisle and materials');
 });
 

@@ -78,6 +78,17 @@ TOYDIR = S("Directive 2009/48/EC on the safety of toys", "EUR-Lex, European Unio
 FDA_FCS = S("Understanding How the FDA Regulates Substances that Come into Contact with Food", "US Food and Drug Administration", "regulator", "https://www.fda.gov/food/food-packaging-other-substances-come-contact-food-information-consumers/understanding-how-fda-regulates-substances-come-contact-food")
 ACMI = S("Materials safety: the AP and CL seals and ASTM D-4236", "Art & Creative Materials Institute", "industry", "https://www.acmiart.org/materials-safety")
 
+FDA_MEL = S("Melamine in Tableware Questions and Answers", "US Food and Drug Administration", "regulator", "https://www.fda.gov/food/economically-motivated-adulteration-food-fraud/melamine-tableware-questions-and-answers")
+EC_BAMBOO = S("Food contact materials: Thousands of illegal hazardous products intercepted and recalled in Europe", "European Commission, Directorate-General for Health and Food Safety", "regulator", "https://ec.europa.eu/newsroom/sante/newsletter-archives/42226")
+FI_BAMBOO = S("Plastic products containing bamboo or other unauthorised vegetable fibres", "Finnish Food Authority (Ruokavirasto)", "regulator", "https://www.ruokavirasto.fi/en/foodstuffs/food-sector/packages-and-other-food-contact-materials/question-and-answers/plastic-products-containing-bamboo/")
+NIEHS_PFAS = S("Perfluoroalkyl and Polyfluoroalkyl Substances (PFAS)", "US National Institute of Environmental Health Sciences (NIEHS)", "regulator", "https://www.niehs.nih.gov/health/topics/agents/pfc")
+MN_PFAS = S("Minnesota Statutes 116.943: Products containing PFAS (Amara's Law)", "Minnesota Office of the Revisor of Statutes", "regulation", "https://www.revisor.mn.gov/statutes/cite/116.943")
+NY_PFAS = S("New York Environmental Conservation Law 37-0121: PFAS in apparel and outdoor apparel for severe wet conditions", "New York State Senate", "regulation", "https://www.nysenate.gov/legislation/laws/ENV/37-0121")
+ML_PFAS = S("New York and California bans on PFAS in textiles and apparel begin January 1, 2025", "Morgan Lewis", "news", "https://www.morganlewis.com/pubs/2024/11/new-york-and-california-bans-on-pfas-in-textiles-and-apparel-begin-january-1-2025")
+CPSC_LEAD = S("Total Lead Content Business Guidance", "US Consumer Product Safety Commission", "regulator", "https://www.cpsc.gov/Business--Manufacturing/Business-Education/Lead/Total-Lead-Content")
+CFR_1251 = S("16 CFR Part 1251: Toys, determinations regarding heavy elements limits for certain materials", "eCFR, US Government", "regulation", "https://www.ecfr.gov/current/title-16/chapter-II/subchapter-B/part-1251")
+CPSC_TIBLUE = S("Tiblue Stainless Steel Children's Cups Recalled Due to Violation of Federal Lead Content Ban (Recall Alert 24-724)", "US Consumer Product Safety Commission", "regulator", "https://www.cpsc.gov/Recalls/2024/Tiblue-Stainless-Steel-Childrens-Cups-Recalled-Due-to-Violation-of-Federal-Lead-Content-Ban-Sold-Exclusively-on-Amazon-com-by-FENGM-Recall-Alert")
+
 def T(id, term, definition, on_site, sources_say, sources, aka=None):
     d = {"id": id, "term": term}
     if aka: d["aka"] = aka
@@ -334,11 +345,28 @@ sections = [
     "CPSC's guidance describes both standards as performance-based: they set test results, not a required method or chemical. Mattress pads treated with a chemical flame retardant must be labelled with a “T”. Mattress sets regulated by FDA as medical devices are exempt.",
     [CPSC_MATT, C1632, C1633], aka=["16 CFR 1633", "fire barrier"]),
  ]},
+ {"id": "dishes", "title": "Dishes, finishes and testing", "terms": [
+  T("melamine", "Melamine and “bamboo” dishware",
+    "Melamine tableware is moulded from melamine-formaldehyde resin. Some plates, bowls and cups sold as “bamboo” are bamboo fibre or powder used as a filler in a plastic such as melamine resin, rather than solid bamboo.",
+    "The filter “Melamine or resin-bound bamboo” leaves out dishes, cups and utensils made of melamine resin or of bamboo fibre with a resin binder. Solid bamboo that is not bound with resin is counted as wood.",
+    "The FDA says a small amount of melamine left over from making melamine-formaldehyde tableware can migrate slowly into food, that in tests migration was measured only into acidic foods held at 160 °F for two hours, and that migration can increase when highly acidic foods are heated to 160 °F or higher; it says foods and drinks should not be heated on melamine-based dinnerware in microwave ovens. In the EU, bamboo and other plant fillers are not on the list of authorised substances in the plastics regulation (EU) No 10/2011, so plastic food-contact articles containing them may not be sold; the Finnish Food Authority names bamboo flour, rice husk, maize, wheat straw and coffee bean hulls as examples. In a year-long EU coordinated action that ended in April 2022, authorities notified 748 cases of plastic food-contact articles containing bamboo powder: 644 on the EU market and 104 rejected at the EU border. The European Commission says adding bamboo can speed degradation of the plastic and lead to formaldehyde and melamine migrating into food, and the Finnish Food Authority reports that in many tested products this migration considerably exceeded the migration limits. Its guidance says products made only of bamboo, without plastic, are not covered.",
+    [FDA_MEL, EC_BAMBOO, FI_BAMBOO], aka=["melamine-formaldehyde resin", "bamboo fibre tableware", "bamboo composite"]),
+  T("pfas", "PFAS and water- or stain-repellent finishes",
+    "Per- and polyfluoroalkyl substances (PFAS) are a large group of synthetic chemicals built on chains of carbon and fluorine atoms. They have been used in consumer products since about the 1950s, for example to make clothes and carpets resist stains and to keep food from sticking to packaging or cookware. Because the carbon-fluorine bond is very strong, they break down slowly in the environment.",
+    "The filter “Water, stain or wrinkle resistant treatments” leaves out items whose maker names such a finish. “PFAS-free” is recorded as a stated-free-of line when the maker says it.",
+    "Several US states restrict intentionally added PFAS in products. Minnesota's law (Minn. Stat. 116.943, known as Amara's Law) has, since January 1, 2025, prohibited the sale of products with intentionally added PFAS in eleven categories, including juvenile products, textile furnishings, fabric treatments, upholstered furniture, and carpets or rugs, and from January 1, 2032 it extends to all products unless the use is set by rule as currently unavoidable. New York has prohibited the sale of new apparel containing intentionally added PFAS since January 1, 2025, with outdoor apparel for severe wet conditions following on January 1, 2028. California's AB 1817 has, since January 1, 2025, prohibited new textile articles containing regulated PFAS, defined as intentionally added PFAS or total organic fluorine at or above 100 ppm, falling to 50 ppm on January 1, 2027; carpets and rugs, fabric treatments and personal protective equipment are outside that definition of textile articles.",
+    [NIEHS_PFAS, MN_PFAS, NY_PFAS, ML_PFAS], aka=["per- and polyfluoroalkyl substances", "DWR", "durable water repellent", "fluorinated finish"]),
+  T("heavy-metals", "Lead and heavy-metal testing",
+    "Testing of a product's materials, paints and coatings for lead and other heavy elements. In the US, children's products are subject to federal lead limits, and toys also to limits on soluble heavy elements.",
+    "The filter “Lead or heavy-metal testing stated” keeps only items whose maker says the product was tested for lead or heavy metals.",
+    "Under the CPSIA, a children's product with more than 100 ppm lead in an accessible component is a banned hazardous substance, and paint and similar surface coatings on toys and children's articles may not contain more than 0.009 percent (90 ppm) lead. Manufacturers and importers certify compliance in a Children's Product Certificate. Through ASTM F963, made mandatory by the CPSIA, surface coatings and accessible substrates of toys that can be sucked, mouthed or ingested must meet solubility limits for eight heavy elements, with third-party testing required unless a material is exempted (for example, unfinished and untreated wood). CPSC has recalled stainless-steel children's cups over lead: in the 2023 Tiblue recall (about 84,000 cups), an accessible solder bead on the bottom exterior of the cup contained lead above the federal lead content limit.",
+    [CPSC_LEAD, LEADPAINT, CFR_1251, CPSC_TIBLUE], aka=["CPSIA lead limits", "soluble heavy metals", "heavy elements"]),
+ ]},
 ]
 
 all_terms = [t for s in sections for t in s["terms"]]
 doc = {
-  "updated": "2026-10-17",
+  "updated": "2026-10-20",
   "title": "Glossary",
   "intro": "What each material and term means on this site, and what standards bodies, regulators, researchers and reporters say about it. The guide does not rate safety or risk; it sets out definitions and sources so you can weigh them yourself.",
   "source_types": {"regulation": "Law or regulation", "standard": "Standard or certification", "regulator": "Government agency", "paper": "Peer-reviewed research", "consumer-test": "Consumer testing organisation", "news": "News or trade press", "reference": "Reference or medical society", "industry": "Industry or manufacturer"},

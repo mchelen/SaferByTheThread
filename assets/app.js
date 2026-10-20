@@ -419,7 +419,7 @@
         // A type in several aisles is listed once, under the first aisle shown.
         var ids = g.cats.filter(function (id) { if (seen[id]) return false; seen[id] = 1; return true; });
         if (!ids.length) return '';
-        return (groups.length > 1 ? '<p class="opt-group">' + esc(g.title) + '</p>' : '') + optionList('cat', ids.map(function (id) { return { id: id, label: C.cats[id].title }; }), cc, st);
+        return (groups.length > 1 ? '<p class="opt-group">' + esc(g.title) + '</p>' : '') + optionList('cat', ids.map(function (id) { return { id: id, label: C.cats[id].short }; }), cc, st);
       }).join(''), st.cat.length);
     }
     what += group('age', 'Age range', optionList('age', S.AGE_BANDS, countsFor('age', st), st) +
@@ -502,14 +502,13 @@
     var title = listTitle(st), intro = '', sub = '', trail = [];
     if (st.kind === 'cat' && catOf(st.key)) {
       var c = catOf(st.key), g = groupOf(c.group);
-      trail = [[g.title, U('/a/' + g.id)], [c.title]];
+      trail = g ? [[g.title, U('/a/' + g.id)], [c.title]] : [[c.title]];
       if (c.intro) intro = c.intro;
       if (g.cats.length > 1) sub = '<nav class="sibling-types" aria-label="Other types in ' + esc(g.title) + '">' + typeTiles(g.cats.filter(function (id) { return typeCount(id) > 0; }), 'sm', c.id) + '</nav>';
     } else if (st.kind === 'dept' && groupOf(st.key)) {
       var gg = groupOf(st.key);
       trail = [[gg.title]];
-      intro = gg.blurb + (gg.source ? ' <a href="' + esc(gg.source) + '" target="_blank" rel="noopener">Read the research post</a>.' : '');
-      sub = '<div class="subcats">' + gg.cats.map(function (id) { var n = C.items.filter(function (i) { return i.cat === id && status(i, st.crit, st.strict).ok; }).length; return '<a href="' + U('/c/' + id) + '">' + esc(C.cats[id].title) + '<span>' + n + '</span></a>'; }).join('') + '</div>';
+      sub = typeTiles(gg.cats, 'type-tiles');
     } else if (st.kind === 'brand' && C.brands[st.key]) {
       var b = C.brands[st.key], bc = {}; b.items.forEach(function (i) { bc[i.cat] = 1; });
       trail = [['Brands', U('/brands')], [b.name]];
@@ -853,7 +852,7 @@
     C.groups.forEach(function (g) {
       var n = C.items.filter(function (i) { return i.aisles.indexOf(g.id) >= 0; }).length;
       h += '<div class="cat-item" data-dept="' + g.id + '"><button type="button" class="cat-a" data-nav="d:' + g.id + '" aria-expanded="false" aria-haspopup="true">' + esc(g.title) + icon('chev') + '</button>' +
-        '<div class="mega"><p>' + esc(g.title) + ' · ' + plural(n, 'product') + '</p><ul>' + g.cats.map(function (id) { var c = C.cats[id], k = C.items.filter(function (i) { return i.cat === id; }).length; return '<li><a href="' + U('/c/' + id) + '">' + esc(c.title) + '<span>' + k + '</span></a></li>'; }).join('') + '</ul>' +
+        '<div class="mega"><p>' + esc(g.title) + ' · ' + plural(n, 'product') + '</p>' + typeTiles(g.cats, 'mega-tiles') +
         '<a class="mega-all" href="' + U('/a/' + g.id) + '">Shop all ' + esc(g.title.toLowerCase()) + ' →</a></div></div>';
     });
     h += '<span class="spacer"></span>';
@@ -906,7 +905,7 @@
     if (key === '') renderHome();
     else if (key === 'shop') { STATE = readState('shop', '', q); pageShown = PAGE; renderList(); }
     else if (key === 'a' && groupOf(p[1])) { STATE = readState('dept', p[1], q); pageShown = PAGE; renderList(); }
-    else if (key === 'd' && renamed('groups', p[1])) { go(U('/a/' + renamed('groups', p[1]), q), true); return; }
+    else if ((key === 'd' || key === 'a') && renamed('groups', p[1])) { go(U('/a/' + renamed('groups', p[1]), q), true); return; }
     else if (key === 'c' && catOf(p[1])) { STATE = readState('cat', p[1], q); pageShown = PAGE; renderList(); }
     else if (key === 'c' && renamed('cats', p[1])) { go(U('/c/' + renamed('cats', p[1]), q), true); return; }
     else if (key === 'b' && C.brands[p[1]]) { STATE = readState('brand', p[1], q); pageShown = PAGE; renderList(); }
