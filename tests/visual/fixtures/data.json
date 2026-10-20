@@ -504,7 +504,8 @@
     "max_months": 60
    },
    "contact": "skin",
-   "match": "play ?silks?|silk (?:scarf|scarves|cloth)|playsilk"
+   "match": "play ?silks?|silk (?:scarf|scarves|cloth)|playsilk",
+   "intro": "Coloured silk is usually dyed with acid dyes, which are synthetic; few makers name the dye."
   },
   {
    "id": "pretend",
@@ -514,7 +515,8 @@
     "max_months": 60
    },
    "match": "pretend|play (?:kitchen|food|house)|tea set|doctor(?:'s)? kit|tool (?:set|bench)|doll ?house|cash register",
-   "short": "Pretend play"
+   "short": "Pretend play",
+   "intro": "Wool felt is usually dyed with synthetic acid dyes unless the maker names plant dyes."
   },
   {
    "id": "mattresses",
@@ -1044,6 +1046,15 @@
     "wool": "unknown",
     "organic": "yes"
    },
+   "unstated": {
+    "parts": [
+     "Cover closure",
+     "Seam thread"
+    ],
+    "wool": [
+     "Shrink-proofing on the wool cover (the cotton and linen covers avoid the question)"
+    ]
+   },
    "contains": [],
    "standards": [],
    "photos": [
@@ -1098,6 +1109,17 @@
     "wool": "unknown",
     "organic": "yes"
    },
+   "unstated": {
+    "parts": [
+     "Thread"
+    ],
+    "color": [
+     "Dyes"
+    ],
+    "wool": [
+     "Superwash treatment on the merino"
+    ]
+   },
    "contains": [],
    "standards": []
   },
@@ -1112,9 +1134,9 @@
    ],
    "free": [],
    "unconfirmed": [
-    "Superwash treatment (spot-clean-only care is a good sign)",
+    "Superwash treatment",
     "Thread",
-    "Zipper on the optional cover (probably plastic; the mat is also sold without it)"
+    "Zipper on the optional cover"
    ],
    "products": [
     {
@@ -1136,6 +1158,17 @@
     "wool": "unknown",
     "organic": "no",
     "accessory": "unknown"
+   },
+   "unstated": {
+    "parts": [
+     "Thread"
+    ],
+    "wool": [
+     "Superwash treatment"
+    ],
+    "accessory": [
+     "Zipper on the optional cover"
+    ]
    },
    "contains": [],
    "standards": []
@@ -1172,6 +1205,11 @@
     "color": "yes",
     "organic": "yes"
    },
+   "unstated": {
+    "parts": [
+     "Thread"
+    ]
+   },
    "contains": [],
    "standards": [
     "gots"
@@ -1188,7 +1226,8 @@
    ],
    "free": [],
    "unconfirmed": [
-    "Lining under the cover"
+    "Lining under the cover",
+    "Side zippers"
    ],
    "products": [
     {
@@ -1210,14 +1249,20 @@
    "img": "mat_toki",
    "img_src": "https://tokikids.com/cdn/shop/files/TOFFEE_4028a32b-6cd3-4af0-a43c-f1c43017774a.jpg?v=1750996545&width=800",
    "note": "Only the organic cotton version has the cotton cover described here.",
-   "outside": [
-    "Side zippers, probably plastic"
-   ],
+   "outside": [],
    "facts": {
     "main": "unknown",
-    "parts": "no",
+    "parts": "unknown",
     "color": "yes",
     "organic": "yes"
+   },
+   "unstated": {
+    "main": [
+     "Lining under the cover"
+    ],
+    "parts": [
+     "Side zippers"
+    ]
    },
    "contains": [
     "latex"
@@ -1304,6 +1349,11 @@
     "wool": "unknown",
     "organic": "no"
    },
+   "unstated": {
+    "main": [
+     "Wool percentage"
+    ]
+   },
    "contains": [],
    "standards": [],
    "age": {
@@ -1366,7 +1416,8 @@
     "Backing",
     "Glue",
     "Thread",
-    "Superwash treatment"
+    "Superwash treatment",
+    "Dyes (“eco-friendly”, not named)"
    ],
    "products": [
     {
@@ -1379,15 +1430,29 @@
    ],
    "quote": "100% certified organic wool",
    "outside": [
-    "“Eco-friendly dyes”, likely synthetic",
     "Thin felt, not padded"
    ],
    "facts": {
     "main": "unknown",
     "parts": "unknown",
-    "color": "no",
+    "color": "unknown",
     "wool": "unknown",
     "organic": "yes"
+   },
+   "unstated": {
+    "main": [
+     "Backing"
+    ],
+    "parts": [
+     "Glue",
+     "Thread"
+    ],
+    "color": [
+     "Dyes (“eco-friendly”, not named)"
+    ],
+    "wool": [
+     "Superwash treatment"
+    ]
    },
    "contains": [],
    "standards": [
@@ -1428,6 +1493,14 @@
     "parts": "unknown",
     "color": "unknown",
     "organic": "yes"
+   },
+   "unstated": {
+    "parts": [
+     "Thread"
+    ],
+    "color": [
+     "Dyes/prints"
+    ]
    },
    "contains": [],
    "img": "x_tiny_kind_quilted_play_mat",
@@ -1492,6 +1565,17 @@
     "wood": "unknown",
     "organic": "yes",
     "flame": "yes"
+   },
+   "unstated": {
+    "parts": [
+     "Thread"
+    ],
+    "color": [
+     "Dyes/finishes"
+    ],
+    "wood": [
+     "Wood construction (solid vs plywood)"
+    ]
    },
    "contains": [],
    "img": "x_lovevery_play_gym",
@@ -1579,6 +1663,15 @@
     "rubber": "unknown",
     "organic": "yes"
    },
+   "unstated": {
+    "parts": [
+     "Thread",
+     "Zipper"
+    ],
+    "color": [
+     "Dyes/prints"
+    ]
+   },
    "contains": [
     "latex"
    ],
@@ -1608,7 +1701,7 @@
     "Synthetic batting"
    ],
    "unconfirmed": [
-    "Printing ink binder (pigment ink is usually synthetic)",
+    "Printing ink binder",
     "Thread"
    ],
    "products": [
@@ -1637,6 +1730,14 @@
     "color": "unknown",
     "organic": "yes"
    },
+   "unstated": {
+    "parts": [
+     "Thread"
+    ],
+    "color": [
+     "Printing ink binder"
+    ]
+   },
    "contains": [],
    "standards": []
   },
@@ -1650,7 +1751,7 @@
    ],
    "free": [],
    "unconfirmed": [
-    "Quilt batting between pages (often polyester)",
+    "Quilt batting between pages",
     "Printing inks"
    ],
    "products": [
@@ -1671,6 +1772,14 @@
     "color": "unknown",
     "organic": "yes"
    },
+   "unstated": {
+    "main": [
+     "Quilt batting between pages"
+    ],
+    "color": [
+     "Printing inks"
+    ]
+   },
    "contains": [],
    "standards": []
   },
@@ -1684,7 +1793,9 @@
     "Leather ties"
    ],
    "free": [],
-   "unconfirmed": [],
+   "unconfirmed": [
+    "Paint (“water-based”, type not named)"
+   ],
    "products": [
     {
      "name": "Wooden Picture Book (Ladybug)",
@@ -1708,15 +1819,19 @@
    "img_src": "https://www.acorntoyshop.com/cdn/shop/products/ladybugbook1_1024x1024.png?v=1759255230",
    "note": "Rated 2 or 3 and up.",
    "outside": [
-    "Plywood glue",
-    "“Water-based paint”, probably acrylic"
+    "Plywood glue"
    ],
    "facts": {
     "main": "no",
     "parts": "yes",
-    "color": "no",
+    "color": "unknown",
     "wood": "no",
     "tanning": "unknown"
+   },
+   "unstated": {
+    "color": [
+     "Paint (“water-based”, type not named)"
+    ]
    },
    "contains": [
     "leather"
@@ -1798,6 +1913,14 @@
     "color": "unknown",
     "organic": "no"
    },
+   "unstated": {
+    "parts": [
+     "Thread"
+    ],
+    "color": [
+     "Dyes/prints"
+    ]
+   },
    "contains": [],
    "img": "x_jellycat_tails_crinkly_fabric_books",
    "standards": [],
@@ -1853,6 +1976,15 @@
     "color": "unknown",
     "organic": "no"
    },
+   "unstated": {
+    "parts": [
+     "Thread",
+     "Clip"
+    ],
+    "color": [
+     "Dyes/prints"
+    ]
+   },
    "contains": [],
    "img": "x_lamaze_peek_a_boo_forest",
    "standards": [],
@@ -1907,6 +2039,11 @@
     "wood": "yes",
     "accessory": "unknown"
    },
+   "unstated": {
+    "accessory": [
+     "Storage pouch on the sorter bench"
+    ]
+   },
    "contains": [],
    "standards": [],
    "age": {
@@ -1953,6 +2090,11 @@
     "parts": "unknown",
     "color": "yes",
     "wood": "yes"
+   },
+   "unstated": {
+    "parts": [
+     "Glue (described only as “non-toxic”)"
+    ]
    },
    "contains": [],
    "standards": [],
@@ -2088,6 +2230,11 @@
     "color": "unknown",
     "wood": "yes"
    },
+   "unstated": {
+    "color": [
+     "“Natural dyes” mentioned on the sorter page"
+    ]
+   },
    "contains": [],
    "standards": [
     "fsc"
@@ -2136,6 +2283,11 @@
    "facts": {
     "main": "no",
     "color": "unknown"
+   },
+   "unstated": {
+    "color": [
+     "Colorants"
+    ]
    },
    "contains": [],
    "img": "x_fisher_price_rock_a_stack_eco",
@@ -2200,6 +2352,17 @@
     "parts": "unknown",
     "color": "no",
     "wood": "unknown"
+   },
+   "unstated": {
+    "parts": [
+     "Glue"
+    ],
+    "wood": [
+     "Wood type of rings (solid vs composite)"
+    ],
+    "main": [
+     "Wood type of rings (solid vs composite)"
+    ]
    },
    "contains": [],
    "img": "x_melissa_doug_rainbow_stacker",
@@ -2387,6 +2550,11 @@
     "color": "yes",
     "wood": "yes"
    },
+   "unstated": {
+    "parts": [
+     "Wheels and axles"
+    ]
+   },
    "contains": [],
    "standards": [],
    "photos": [
@@ -2461,6 +2629,11 @@
     "color": "yes",
     "wood": "yes"
    },
+   "unstated": {
+    "parts": [
+     "Wheels and axles"
+    ]
+   },
    "contains": [],
    "standards": []
   },
@@ -2500,6 +2673,11 @@
     "parts": "unknown",
     "color": "yes",
     "wood": "yes"
+   },
+   "unstated": {
+    "parts": [
+     "Pull rope"
+    ]
    },
    "contains": [],
    "standards": [],
@@ -2552,6 +2730,11 @@
     "parts": "unknown",
     "color": "yes",
     "wood": "yes"
+   },
+   "unstated": {
+    "parts": [
+     "Wheels and axles"
+    ]
    },
    "contains": [],
    "standards": [],
@@ -2626,6 +2809,11 @@
     "color": "yes",
     "wood": "yes"
    },
+   "unstated": {
+    "parts": [
+     "Axles"
+    ]
+   },
    "contains": [],
    "standards": []
   },
@@ -2664,6 +2852,11 @@
     "parts": "unknown",
     "color": "yes",
     "wood": "yes"
+   },
+   "unstated": {
+    "parts": [
+     "Axles"
+    ]
    },
    "contains": [],
    "standards": [],
@@ -2734,6 +2927,11 @@
     "parts": "unknown",
     "color": "yes",
     "wood": "yes"
+   },
+   "unstated": {
+    "parts": [
+     "Hammer material"
+    ]
    },
    "contains": [],
    "standards": []
@@ -2837,6 +3035,11 @@
     "color": "yes",
     "wood": "yes"
    },
+   "unstated": {
+    "parts": [
+     "Inner ball"
+    ]
+   },
    "contains": [],
    "standards": [],
    "age": {
@@ -2929,6 +3132,15 @@
     "wool": "yes",
     "organic": "yes"
    },
+   "unstated": {
+    "parts": [
+     "Thread"
+    ],
+    "color": [
+     "Dyes",
+     "Face paint"
+    ]
+   },
    "contains": [],
    "standards": [],
    "age": {
@@ -2997,6 +3209,11 @@
     "color": "yes",
     "wool": "yes",
     "organic": "yes"
+   },
+   "unstated": {
+    "parts": [
+     "Hair"
+    ]
    },
    "contains": [],
    "standards": [],
@@ -3073,6 +3290,14 @@
     "wool": "yes",
     "organic": "yes"
    },
+   "unstated": {
+    "parts": [
+     "Eyes on the cat"
+    ],
+    "color": [
+     "Dyes"
+    ]
+   },
    "contains": [],
    "standards": [],
    "photos": [
@@ -3123,6 +3348,11 @@
     "color": "yes",
     "wool": "yes",
     "organic": "no"
+   },
+   "unstated": {
+    "parts": [
+     "Eyes"
+    ]
    },
    "contains": [],
    "standards": [],
@@ -3238,6 +3468,14 @@
     "color": "unknown",
     "organic": "no"
    },
+   "unstated": {
+    "parts": [
+     "Thread"
+    ],
+    "color": [
+     "Dyes"
+    ]
+   },
    "contains": [],
    "img": "x_jellycat_bashful_bunny",
    "standards": [],
@@ -3284,6 +3522,15 @@
     "parts": "unknown",
     "color": "unknown",
     "organic": "yes"
+   },
+   "unstated": {
+    "parts": [
+     "Thread",
+     "Eyes/embroidery"
+    ],
+    "color": [
+     "Dyes"
+    ]
    },
    "contains": [],
    "img": "x_best_years_organic_knitted_plush",
@@ -3473,7 +3720,9 @@
    "free": [
     "Phthalates"
    ],
-   "unconfirmed": [],
+   "unconfirmed": [
+    "Hand-painted pigments (“food-grade”, not named)"
+   ],
    "products": [
     {
      "name": "Tomato Baby Ball",
@@ -3493,14 +3742,17 @@
    ],
    "img": "ball_oli",
    "img_src": "https://pacifierkids.com/cdn/shop/files/e5de78f909870997493136cac183822479a7aafe7266838cd03b45d88a0309e0.jpg?v=1759655294&width=800",
-   "outside": [
-    "Hand-painted with “food-grade pigments” that aren’t named, likely synthetic"
-   ],
+   "outside": [],
    "facts": {
     "main": "yes",
     "parts": "yes",
-    "color": "no",
+    "color": "unknown",
     "rubber": "yes"
+   },
+   "unstated": {
+    "color": [
+     "Hand-painted pigments (“food-grade”, not named)"
+    ]
    },
    "contains": [
     "latex"
@@ -3536,7 +3788,10 @@
    "free": [
     "Phthalates"
    ],
-   "unconfirmed": [],
+   "unconfirmed": [
+    "Paint (“food grade”, not named)",
+    "Squeaker inside"
+   ],
    "products": [
     {
      "name": "Natural Rainbow Sensory Ball",
@@ -3556,15 +3811,20 @@
    ],
    "img": "ball_caaocho",
    "img_src": "http://www.thenaturalbabyco.com/cdn/shop/products/4inc.png?v=1684914798",
-   "outside": [
-    "“Food grade paint” not named",
-    "Squeaker inside, probably plastic"
-   ],
+   "outside": [],
    "facts": {
-    "main": "no",
+    "main": "unknown",
     "parts": "yes",
-    "color": "no",
+    "color": "unknown",
     "rubber": "yes"
+   },
+   "unstated": {
+    "color": [
+     "Paint (“food grade”, not named)"
+    ],
+    "main": [
+     "Squeaker inside"
+    ]
    },
    "contains": [
     "latex"
@@ -3664,6 +3924,11 @@
     "main": "no",
     "color": "unknown"
    },
+   "unstated": {
+    "color": [
+     "Colorants"
+    ]
+   },
    "contains": [],
    "img": "x_oball_classic",
    "standards": [],
@@ -3743,6 +4008,11 @@
     "main": "no",
     "color": "unknown"
    },
+   "unstated": {
+    "color": [
+     "Colorants"
+    ]
+   },
    "contains": [],
    "img": "x_edushape_sensory_balls",
    "standards": []
@@ -3792,6 +4062,11 @@
     "rubber": "unknown",
     "organic": "no"
    },
+   "unstated": {
+    "color": [
+     "Which pigments exactly"
+    ]
+   },
    "contains": [
     "latex"
    ],
@@ -3820,7 +4095,7 @@
    ],
    "unconfirmed": [
     "Hem thread",
-    "Dyes on the coloured silks (probably synthetic)"
+    "Dyes on the coloured silks"
    ],
    "products": [
     {
@@ -3857,6 +4132,14 @@
     "parts": "unknown",
     "color": "unknown",
     "organic": "no"
+   },
+   "unstated": {
+    "parts": [
+     "Hem thread"
+    ],
+    "color": [
+     "Dyes on the coloured silks"
+    ]
    },
    "contains": [],
    "standards": [],
@@ -3912,7 +4195,9 @@
     "100% mulberry silk"
    ],
    "free": [],
-   "unconfirmed": [],
+   "unconfirmed": [
+    "Print dyes (“non-toxic, earth-friendly”, not named)"
+   ],
    "products": [
     {
      "name": "Play Map, Under the Sea",
@@ -3926,14 +4211,17 @@
    "img": "silk_map",
    "img_src": "https://www.grove.co/cdn/shop/files/e7gyvw4bydlbcz4khoel.jpg?v=1738611913&width=800",
    "note": "Small: 21 x 21 in.",
-   "outside": [
-    "Printed with “non-toxic, earth-friendly dyes”, probably synthetic"
-   ],
+   "outside": [],
    "facts": {
     "main": "yes",
     "parts": "yes",
-    "color": "no",
+    "color": "unknown",
     "organic": "no"
+   },
+   "unstated": {
+    "color": [
+     "Print dyes (“non-toxic, earth-friendly”, not named)"
+    ]
    },
    "contains": [],
    "standards": [],
@@ -4009,7 +4297,8 @@
     "Synthetic fill"
    ],
    "unconfirmed": [
-    "Thread"
+    "Thread",
+    "Dyes (“azo-free”, not named)"
    ],
    "products": [
     {
@@ -4031,15 +4320,21 @@
    "img": "pretend_tara",
    "img_src": "https://mytoywagon.com/cdn/shop/files/feltfruitsandvegetables_seta4_c92a160f-37e3-4f26-b71b-5438a7c2ceae.png?v=1738355677&width=800",
    "note": "Rated 3 and up.",
-   "outside": [
-    "“Azo-free” dyes, likely synthetic"
-   ],
+   "outside": [],
    "facts": {
     "main": "yes",
     "parts": "unknown",
-    "color": "no",
+    "color": "unknown",
     "wool": "yes",
     "organic": "no"
+   },
+   "unstated": {
+    "parts": [
+     "Thread"
+    ],
+    "color": [
+     "Dyes (“azo-free”, not named)"
+    ]
    },
    "contains": [],
    "standards": [],
@@ -4114,6 +4409,15 @@
     "wool": "unknown",
     "organic": "yes",
     "flame": "yes"
+   },
+   "unstated": {
+    "parts": [
+     "Thread",
+     "Zipper"
+    ],
+    "wool": [
+     "Wool treatment"
+    ]
    },
    "contains": [
     "latex"
@@ -4196,6 +4500,15 @@
     "wool": "unknown",
     "organic": "yes"
    },
+   "unstated": {
+    "parts": [
+     "Thread",
+     "Zipper"
+    ],
+    "wool": [
+     "Wool treatment"
+    ]
+   },
    "contains": [
     "latex"
    ],
@@ -4257,6 +4570,15 @@
     "color": "yes",
     "wool": "unknown",
     "organic": "yes"
+   },
+   "unstated": {
+    "parts": [
+     "Thread",
+     "Zipper"
+    ],
+    "wool": [
+     "Wool treatment"
+    ]
    },
    "contains": [
     "latex"
@@ -4334,6 +4656,15 @@
     "color": "yes",
     "wool": "unknown",
     "organic": "yes"
+   },
+   "unstated": {
+    "parts": [
+     "Zipper on the casing",
+     "Thread"
+    ],
+    "wool": [
+     "Wool treatment"
+    ]
    },
    "contains": [
     "latex"
@@ -4417,6 +4748,11 @@
     "wool": "yes",
     "organic": "yes"
    },
+   "unstated": {
+    "parts": [
+     "Zipper"
+    ]
+   },
    "contains": [],
    "standards": [],
    "photos": [
@@ -4463,6 +4799,15 @@
     "color": "yes",
     "wool": "unknown",
     "organic": "yes"
+   },
+   "unstated": {
+    "parts": [
+     "Thread",
+     "Zipper"
+    ],
+    "wool": [
+     "Wool treatment"
+    ]
    },
    "contains": [
     "latex"
@@ -4523,6 +4868,14 @@
     "color": "yes",
     "wool": "unknown",
     "organic": "yes"
+   },
+   "unstated": {
+    "parts": [
+     "Thread"
+    ],
+    "wool": [
+     "Wool treatment"
+    ]
    },
    "contains": [],
    "standards": []
@@ -4586,6 +4939,14 @@
     "color": "unknown",
     "organic": "yes",
     "flame": "yes"
+   },
+   "unstated": {
+    "parts": [
+     "Thread"
+    ],
+    "color": [
+     "Dyes"
+    ]
    },
    "contains": [],
    "img": "x_naturepedic_classic_organic_crib_mattres",
@@ -4677,6 +5038,12 @@
     "parts": "unknown",
     "color": "unknown",
     "organic": "no"
+   },
+   "unstated": {
+    "parts": [
+     "Zipper",
+     "Thread"
+    ]
    },
    "contains": [],
    "img": "x_newton_waterproof_crib_mattress",
@@ -4771,6 +5138,11 @@
     "organic": "no",
     "flame": "yes"
    },
+   "unstated": {
+    "parts": [
+     "Thread"
+    ]
+   },
    "contains": [],
    "img": "x_lullaby_earth_healthy_support_crib_mattr",
    "standards": [],
@@ -4834,6 +5206,11 @@
     "parts": "unknown",
     "color": "yes",
     "wood": "yes"
+   },
+   "unstated": {
+    "parts": [
+     "Glue"
+    ]
    },
    "contains": [],
    "standards": [],
@@ -4916,6 +5293,14 @@
     "color": "yes",
     "wood": "yes"
    },
+   "unstated": {
+    "main": [
+     "Mattress support on the divan"
+    ],
+    "parts": [
+     "Glue"
+    ]
+   },
    "contains": [],
    "standards": [],
    "photos": [
@@ -4974,7 +5359,8 @@
     "Plywood and particle board"
    ],
    "unconfirmed": [
-    "Finish details"
+    "Finish details",
+    "Water-based glue (type not named; the maker says it “is not totally chemical free”)"
    ],
    "products": [
     {
@@ -4995,14 +5381,20 @@
    ],
    "img": "bed_snyder",
    "img_src": "https://www.snydersfurniture.com/cdn/shop/products/amish-eco-solid-wood-toddler-bed-4382805.jpg?v=1792021206",
-   "outside": [
-    "Water-based glue that “is not totally chemical free” (likely PVA)"
-   ],
+   "outside": [],
    "facts": {
     "main": "yes",
-    "parts": "no",
+    "parts": "unknown",
     "color": "unknown",
     "wood": "yes"
+   },
+   "unstated": {
+    "parts": [
+     "Water-based glue (type not named; the maker says it “is not totally chemical free”)"
+    ],
+    "color": [
+     "Finish details"
+    ]
    },
    "contains": [],
    "standards": [],
@@ -5080,6 +5472,11 @@
     "color": "no",
     "wood": "no",
     "organic": "no"
+   },
+   "unstated": {
+    "parts": [
+     "Hardware"
+    ]
    },
    "contains": [],
    "img": "x_ikea_sniglar_junior_bed",
@@ -5253,6 +5650,11 @@
     "color": "yes",
     "wood": "yes"
    },
+   "unstated": {
+    "parts": [
+     "Glue"
+    ]
+   },
    "contains": [],
    "standards": [],
    "photos": [
@@ -5334,6 +5736,11 @@
     "color": "yes",
     "wood": "yes"
    },
+   "unstated": {
+    "parts": [
+     "Glue"
+    ]
+   },
    "contains": [],
    "standards": [],
    "photos": [
@@ -5392,6 +5799,11 @@
     "parts": "unknown",
     "color": "yes",
     "wood": "yes"
+   },
+   "unstated": {
+    "parts": [
+     "Glue"
+    ]
    },
    "contains": [],
    "standards": [],
@@ -5453,6 +5865,11 @@
     "parts": "yes",
     "color": "unknown",
     "wood": "no"
+   },
+   "unstated": {
+    "color": [
+     "Finish"
+    ]
    },
    "contains": [],
    "standards": [],
@@ -5524,7 +5941,7 @@
    "img": "bed_gnk",
    "img_src": "https://goodnightkid.com/usa/wp-content/uploads/2023/03/Full-all-close-tulle.jpg",
    "outside": [
-    "Bumper cushions are synthetic foam (the maker may sell it without them)"
+    "Bumper cushions in synthetic foam"
    ],
    "facts": {
     "main": "yes",
@@ -5612,6 +6029,17 @@
     "wood": "no",
     "organic": "no"
    },
+   "unstated": {
+    "parts": [
+     "Hardware"
+    ],
+    "color": [
+     "Finish type"
+    ],
+    "main": [
+     "Plywood adhesive"
+    ]
+   },
    "contains": [],
    "img": "x_piccalio_bedbed_montessori_floor_bed",
    "standards": [
@@ -5695,6 +6123,14 @@
     "wood": "no",
     "organic": "no"
    },
+   "unstated": {
+    "main": [
+     "Adhesive in layered wood"
+    ],
+    "parts": [
+     "Hardware"
+    ]
+   },
    "contains": [],
    "img": "x_little_partners_lil_house_toddler_bed",
    "standards": [
@@ -5771,6 +6207,20 @@
     "wood": "unknown",
     "organic": "no",
     "accessory": "no"
+   },
+   "unstated": {
+    "parts": [
+     "Hardware"
+    ],
+    "color": [
+     "Paint/finish"
+    ],
+    "wood": [
+     "Wood type (solid vs engineered)"
+    ],
+    "main": [
+     "Wood type (solid vs engineered)"
+    ]
    },
    "contains": [],
    "img": "x_delta_children_wood_floor_toddler_bed",
@@ -5876,6 +6326,11 @@
     "color": "yes",
     "wool": "yes",
     "organic": "no"
+   },
+   "unstated": {
+    "parts": [
+     "Thread fibre"
+    ]
    },
    "contains": [],
    "standards": [],
@@ -5998,6 +6453,11 @@
     "wool": "yes",
     "organic": "yes"
    },
+   "unstated": {
+    "parts": [
+     "Thread"
+    ]
+   },
    "contains": [],
    "standards": [],
    "photos": [
@@ -6066,6 +6526,14 @@
     "wool": "unknown",
     "organic": "yes"
    },
+   "unstated": {
+    "parts": [
+     "Thread"
+    ],
+    "wool": [
+     "Treatment of the wool-fill option"
+    ]
+   },
    "contains": [],
    "standards": []
   },
@@ -6101,6 +6569,11 @@
     "color": "yes",
     "wool": "unknown",
     "organic": "no"
+   },
+   "unstated": {
+    "wool": [
+     "Whether the wool is untreated"
+    ]
    },
    "contains": [],
    "standards": [],
@@ -6186,6 +6659,11 @@
     "color": "yes",
     "organic": "yes"
    },
+   "unstated": {
+    "parts": [
+     "Elastic in the fitted corners"
+    ]
+   },
    "contains": [],
    "standards": [],
    "photos": [
@@ -6256,6 +6734,12 @@
     "color": "unknown",
     "organic": "yes"
    },
+   "unstated": {
+    "parts": [
+     "Elastic",
+     "Thread"
+    ]
+   },
    "contains": [],
    "img": "x_naturepedic_organic_waterproof_crib_prot",
    "standards": [
@@ -6324,6 +6808,12 @@
     "parts": "unknown",
     "color": "unknown",
     "organic": "yes"
+   },
+   "unstated": {
+    "parts": [
+     "Elastic",
+     "Thread"
+    ]
    },
    "contains": [],
    "img": "x_avocado_organic_crib_waterproof_protecto",
@@ -6395,6 +6885,11 @@
     "parts": "unknown",
     "color": "unknown",
     "organic": "no"
+   },
+   "unstated": {
+    "parts": [
+     "Elastic"
+    ]
    },
    "contains": [],
    "img": "x_newton_essential_waterproof_crib_pad",
@@ -6474,6 +6969,11 @@
     "color": "unknown",
     "organic": "no",
     "flame": "yes"
+   },
+   "unstated": {
+    "color": [
+     "Odor-control and stain-resistant treatments"
+    ]
    },
    "contains": [],
    "img": "x_delta_beautyrest_eco_cool_crib_protector",
@@ -6665,6 +7165,11 @@
     "color": "yes",
     "silicone": "unknown"
    },
+   "unstated": {
+    "silicone": [
+     "Finished-product testing"
+    ]
+   },
    "contains": [],
    "standards": [
     "lfgb"
@@ -6822,6 +7327,11 @@
     "parts": "yes",
     "color": "yes",
     "silicone": "unknown"
+   },
+   "unstated": {
+    "silicone": [
+     "Finished-product testing"
+    ]
    },
    "contains": [],
    "standards": [
@@ -7003,6 +7513,14 @@
     "silicone": "unknown",
     "accessory": "no"
    },
+   "unstated": {
+    "color": [
+     "Pigments"
+    ],
+    "silicone": [
+     "Silicone grade/testing standard"
+    ]
+   },
    "contains": [],
    "img": "x_weesprout_silicone_freezer_tray",
    "standards": [],
@@ -7043,7 +7561,7 @@
    ],
    "free": [],
    "unconfirmed": [
-    "Lid material on ICE 26 (looks like silicone)"
+    "Lid material on ICE 26"
    ],
    "products": [
     {
@@ -7073,6 +7591,11 @@
     "color": "yes",
     "silicone": "yes",
     "accessory": "unknown"
+   },
+   "unstated": {
+    "accessory": [
+     "Lid material on ICE 26"
+    ]
    },
    "contains": [],
    "standards": [
@@ -7123,6 +7646,11 @@
     "parts": "yes",
     "color": "yes",
     "silicone": "unknown"
+   },
+   "unstated": {
+    "silicone": [
+     "Finished-product testing"
+    ]
    },
    "contains": [],
    "standards": [
@@ -7259,6 +7787,11 @@
     "silicone": "unknown",
     "accessory": "unknown"
    },
+   "unstated": {
+    "accessory": [
+     "Lid material"
+    ]
+   },
    "contains": [],
    "standards": []
   },
@@ -7297,6 +7830,18 @@
     "main": "unknown",
     "color": "unknown",
     "silicone": "unknown"
+   },
+   "unstated": {
+    "main": [
+     "Frame material",
+     "Cover material"
+    ],
+    "color": [
+     "Pigments"
+    ],
+    "silicone": [
+     "Silicone testing standard"
+    ]
    },
    "contains": [],
    "img": "x_oxo_covered_silicone_ice_tray",
@@ -7345,6 +7890,14 @@
     "color": "unknown",
     "silicone": "unknown",
     "accessory": "no"
+   },
+   "unstated": {
+    "color": [
+     "Pigments"
+    ],
+    "silicone": [
+     "Silicone testing standard"
+    ]
    },
    "contains": [],
    "img": "x_tovolo_king_cube_with_lid",
@@ -7521,6 +8074,11 @@
     "color": "yes",
     "silicone": "unknown"
    },
+   "unstated": {
+    "silicone": [
+     "Test report"
+    ]
+   },
    "contains": [],
    "standards": []
   },
@@ -7559,6 +8117,11 @@
     "parts": "unknown",
     "color": "yes",
     "silicone": "unknown"
+   },
+   "unstated": {
+    "parts": [
+     "Stick material"
+    ]
    },
    "contains": [],
    "standards": [
@@ -7622,6 +8185,14 @@
     "main": "no",
     "color": "unknown",
     "silicone": "unknown"
+   },
+   "unstated": {
+    "color": [
+     "Pigments"
+    ],
+    "silicone": [
+     "Silicone testing standard"
+    ]
    },
    "contains": [],
    "img": "x_tovolo_stackable_pop_molds",
@@ -7712,6 +8283,11 @@
     "color": "unknown",
     "silicone": "no"
    },
+   "unstated": {
+    "color": [
+     "Pigments"
+    ]
+   },
    "contains": [],
    "img": "x_mushie_toddler_ice_pop_tray",
    "standards": [
@@ -7799,6 +8375,18 @@
     "color": "unknown",
     "silicone": "unknown"
    },
+   "unstated": {
+    "main": [
+     "Lid material",
+     "Base material"
+    ],
+    "color": [
+     "Pigments"
+    ],
+    "silicone": [
+     "Silicone testing standard"
+    ]
+   },
    "contains": [],
    "img": "x_zoku_summer_pops",
    "standards": [],
@@ -7858,6 +8446,11 @@
     "wool": "yes",
     "organic": "no",
     "tanning": "yes"
+   },
+   "unstated": {
+    "parts": [
+     "Thread"
+    ]
    },
    "contains": [
     "leather"
@@ -7926,6 +8519,18 @@
     "organic": "no",
     "tanning": "unknown"
    },
+   "unstated": {
+    "parts": [
+     "Tie",
+     "Thread"
+    ],
+    "color": [
+     "Dye"
+    ],
+    "tanning": [
+     "Tanning"
+    ]
+   },
    "contains": [
     "leather"
    ],
@@ -7973,6 +8578,18 @@
     "wool": "yes",
     "organic": "no",
     "tanning": "unknown"
+   },
+   "unstated": {
+    "parts": [
+     "Thread",
+     "Glue"
+    ],
+    "color": [
+     "Dyes"
+    ],
+    "tanning": [
+     "Tanning"
+    ]
    },
    "contains": [
     "leather"
@@ -8052,6 +8669,12 @@
     "organic": "yes",
     "tanning": "yes"
    },
+   "unstated": {
+    "parts": [
+     "Elastic ankle band",
+     "Thread"
+    ]
+   },
    "contains": [
     "leather"
    ],
@@ -8115,6 +8738,12 @@
     "parts": "unknown",
     "color": "yes",
     "tanning": "yes"
+   },
+   "unstated": {
+    "parts": [
+     "Elastic band core",
+     "Thread"
+    ]
    },
    "contains": [
     "leather"
@@ -8191,6 +8820,18 @@
     "color": "unknown",
     "rubber": "unknown",
     "organic": "no"
+   },
+   "unstated": {
+    "main": [
+     "Insole material",
+     "Lining"
+    ],
+    "color": [
+     "Dyes/finishes"
+    ],
+    "rubber": [
+     "Rubber type in outsole"
+    ]
    },
    "contains": [
     "leather"
@@ -8276,6 +8917,20 @@
     "parts": "unknown",
     "color": "unknown",
     "organic": "no"
+   },
+   "unstated": {
+    "main": [
+     "Sole material (soft sole and hard sole options)",
+     "Lining"
+    ],
+    "parts": [
+     "Thread",
+     "Glue",
+     "Elastic composition"
+    ],
+    "color": [
+     "Dyes/finishes"
+    ]
    },
    "contains": [
     "leather"
@@ -8460,6 +9115,19 @@
     "rubber": "no",
     "organic": "no"
    },
+   "unstated": {
+    "parts": [
+     "Thread",
+     "Glue",
+     "Laces/closures"
+    ],
+    "color": [
+     "Dyes"
+    ],
+    "wool": [
+     "Wool treatment (superwash or not)"
+    ]
+   },
    "contains": [
     "latex"
    ],
@@ -8563,6 +9231,16 @@
     "rubber": "yes",
     "organic": "no"
    },
+   "unstated": {
+    "main": [
+     "Insole core",
+     "“Thermo” layer on the winter boot"
+    ],
+    "parts": [
+     "Glue",
+     "Thread"
+    ]
+   },
    "contains": [
     "latex"
    ],
@@ -8643,6 +9321,15 @@
     "color": "yes",
     "rubber": "unknown",
     "organic": "no"
+   },
+   "unstated": {
+    "main": [
+     "Lining fibre (brand page no longer says)",
+     "Insole"
+    ],
+    "parts": [
+     "Glue"
+    ]
    },
    "contains": [
     "latex"
@@ -8740,7 +9427,9 @@
    "free": [
     "PVC"
    ],
-   "unconfirmed": [],
+   "unconfirmed": [
+    "Padded insole"
+   ],
    "products": [
     {
      "name": "Puddle Buster Wellington Boots",
@@ -8760,15 +9449,18 @@
    ],
    "img": "boot_frugi",
    "img_src": "https://welovefrugi.com/cdn/shop/files/4ff5130b8ade2c416214f724fae1402aa9d1a41b_500047A5BEHO_1.jpg?v=1776613345&width=1200",
-   "outside": [
-    "Padded insole, likely foam"
-   ],
+   "outside": [],
    "facts": {
-    "main": "no",
+    "main": "unknown",
     "parts": "yes",
     "color": "yes",
     "rubber": "unknown",
     "organic": "no"
+   },
+   "unstated": {
+    "main": [
+     "Padded insole"
+    ]
    },
    "contains": [
     "latex"
@@ -8857,6 +9549,21 @@
     "rubber": "unknown",
     "organic": "no"
    },
+   "unstated": {
+    "main": [
+     "Lining fibre type",
+     "Sock/insole fibre and foam"
+    ],
+    "parts": [
+     "Glue"
+    ],
+    "color": [
+     "Finish/print inks"
+    ],
+    "rubber": [
+     "Rubber additives/plasticisers"
+    ]
+   },
    "contains": [
     "latex"
    ],
@@ -8941,6 +9648,17 @@
     "rubber": "unknown",
     "organic": "no"
    },
+   "unstated": {
+    "parts": [
+     "Glue"
+    ],
+    "color": [
+     "Dyes"
+    ],
+    "rubber": [
+     "Rubber type (natural or synthetic)"
+    ]
+   },
    "contains": [],
    "img": "x_western_chief_kids_firechief_2",
    "standards": [],
@@ -9005,6 +9723,11 @@
     "parts": "unknown",
     "color": "unknown",
     "organic": "no"
+   },
+   "unstated": {
+    "color": [
+     "Dyes"
+    ]
    },
    "contains": [],
    "img": "x_kamik_stomp",
@@ -9094,6 +9817,18 @@
     "rubber": "unknown",
     "organic": "no"
    },
+   "unstated": {
+    "parts": [
+     "Glue"
+    ],
+    "color": [
+     "Dyes"
+    ],
+    "rubber": [
+     "Rubber type (natural or synthetic)",
+     "Outsole compound"
+    ]
+   },
    "contains": [],
    "img": "x_bogs_skipper_ii",
    "standards": []
@@ -9144,6 +9879,14 @@
     "color": "unknown",
     "rubber": "no",
     "organic": "no"
+   },
+   "unstated": {
+    "parts": [
+     "Glue"
+    ],
+    "color": [
+     "Pigments/colourants"
+    ]
    },
    "contains": [
     "latex"

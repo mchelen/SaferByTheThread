@@ -35,6 +35,8 @@ All notable changes to the site are listed here. The format follows [Keep a Chan
 - A blank strip at the top of every page, and department tiles whose labels sat at different heights.
 
 ### Changed
+- "Not stated" lines on cards, quick view, the compare table and product pages name the parts no page describes ("Not stated: thread · zipper · wool treatment"), from a new `unstated` field that ties each unconfirmed part to its material filter (170 parts tagged).
+- Fourteen listings recorded a guess as fact ("probably plastic", "likely synthetic", "often polyester"); each guessed part is now listed as not stated, so 72 products meet the default filters instead of 64. General context about dyes moved to the silks and pretend play intros. `npm run check` now rejects guessing words in the checklist.
 - Type photo tiles with no listing photo yet show the type's initial on the plate instead of an empty circle.
 - Picture navigation on the remaining pages: the shop lists every product type as a photo tile under its title, search results show the types that have matches, a product page ends with "More in <category>" type tiles, and empty Saved, Compare and not-found pages show the category tiles instead of a lone button.
 - Product-type pages show the other types in their category as photo tiles under the title, with the current one marked; the brands directory shows a product photo next to each brand; type suggestions in the search box carry the type's photo.

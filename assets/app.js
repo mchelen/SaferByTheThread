@@ -215,21 +215,33 @@
       }).join('') + '</div>' : '') +
       '<p class="img-src">' + (item.photos.length > 1 ? item.photos.length + ' store photos' : 'Store photo') + src + '.</p></div>';
   }
-  // One line per filter on how a listing reads against the visitor's material filters, in the filter's own words:
-  // what it has that a filter hides, else what no page states, else that every detail is stated.
-  // Cards show the first and a count; product pages show them all.
+  // How a listing reads against the visitor's material filters. A miss names what the listing has that a filter
+  // hides, one line each. Otherwise one "Not stated" line names the parts no page describes (the filter itself when
+  // the listing doesn't say which part), else every detail is stated. Cards show the first and a count.
   function factText(item, c) {
     var l = c.label.charAt(0).toLowerCase() + c.label.slice(1), f = item.facts[c.id];
     if (c.kind === 'contains') return 'Has ' + l;
     if (f === 'unknown') return 'Not stated: ' + (c.kind === 'avoid' ? 'any ' : '') + l;
     return (c.kind === 'require' ? 'Not ' : 'Has ') + l;
   }
+  function lc(t) { return /^[A-Z][a-z]/.test(t) ? t.charAt(0).toLowerCase() + t.slice(1) : t; }
+  function unstatedParts(item, list) {
+    var out = [];
+    list.forEach(function (c) {
+      (item.unstated[c.id] || [(c.kind === 'avoid' ? 'any ' : '') + lc(c.label)]).forEach(function (p) { p = lc(p); if (out.indexOf(p) < 0) out.push(p); });
+    });
+    return out;
+  }
+  function fitP(cls, mk, text) { return '<p class="fit ' + cls + '"><span class="mk" aria-hidden="true">' + mk + '</span>' + esc(text) + '</p>'; }
   function fitLine(item, r, max) {
-    var list = r.ok ? r.unst : r.miss;
-    if (!list.length) return '<p class="fit is-ok"><span class="mk" aria-hidden="true">✓</span>Every detail stated</p>';
-    var t = list.map(function (c) { return factText(item, c); });
+    if (r.ok && !r.unst.length) return fitP('is-ok', '✓', 'Every detail stated');
+    if (r.ok) {
+      var p = unstatedParts(item, r.unst);
+      return fitP('is-unk', '?', 'Not stated: ' + (max && p.length > max ? p.slice(0, max).join(' · ') + ' (+' + (p.length - max) + ' more)' : p.join(' · ')));
+    }
+    var t = r.miss.map(function (c) { return factText(item, c); });
     if (max && t.length > max) t = t.slice(0, max - 1).concat([t[max - 1] + ' (+' + (t.length - max) + ' more)']);
-    return t.map(function (x) { return '<p class="fit ' + (r.ok ? 'is-unk' : 'is-miss') + '"><span class="mk" aria-hidden="true">' + (r.ok ? '?' : '✕') + '</span>' + esc(x) + '</p>'; }).join('');
+    return t.map(function (x) { return fitP('is-miss', '✕', x); }).join('');
   }
   // Stars filled to the rating, the number, and the review count; the store it came from is in the label.
   function storeName(s) { return s.replace(/\s*\(.*\)$/, ''); }

@@ -25,9 +25,9 @@ test('the default rules keep the same set of listings as the published site', ()
   const c = S.build(data);
   const on = Object.fromEntries(c.criteria.map(x => [x.id, !!x.default]));
   const ok = c.items.filter(i => S.evaluate(i, c.criteria, on, false).ok);
-  // 64 of 122 met the defaults when the site moved to the repo on 2026-10-18. Update both numbers when listings are added.
+  // 64 of 122 met the defaults on 2026-10-18; 72 since 2026-10-20, when guessed materials ("probably plastic") became "not stated". Update both numbers when listings change.
   assert.equal(c.items.length, 122);
-  assert.equal(ok.length, 64);
+  assert.equal(ok.length, 72);
 });
 
 test('every checklist chip links at least one glossary term where the term list covers it', () => {

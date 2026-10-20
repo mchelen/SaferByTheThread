@@ -37,6 +37,7 @@ for (const a of data.aisles) {
 }
 
 const ids = new Set();
+const GUESS = /\b(?:probably|likely|often|usually|typically|presumably|possibly|may be|might be|looks like|seems|appears to)\b/i;
 let entries = 0, products = 0, missingImg = 0;
 for (const e of data.entries) {
   entries++;
@@ -49,6 +50,15 @@ for (const e of data.entries) {
   for (const [k, v] of Object.entries(e.facts || {})) {
     if (!critIds.has(k)) problems.push(`${where}: unknown criterion ${k}`);
     if (!['yes', 'no', 'unknown'].includes(v)) problems.push(`${where}: fact ${k} = ${v}`);
+  }
+  // Listings report what pages say; a guess about a part ("probably plastic", "often polyester") belongs in the
+  // product type's intro, and the part itself under unconfirmed.
+  for (const k of ['uses', 'free', 'unconfirmed', 'outside']) for (const t of e[k] || []) {
+    const m = t.match(GUESS); if (m) problems.push(`${where}: ${k} "${t}" guesses ("${m[0]}"); record what the page says and list the part as not stated`);
+  }
+  for (const [k, parts] of Object.entries(e.unstated || {})) {
+    if (!e.facts || e.facts[k] !== 'unknown') problems.push(`${where}: unstated.${k} needs facts.${k} = "unknown"`);
+    for (const t of parts) if (!(e.unconfirmed || []).includes(t)) problems.push(`${where}: unstated.${k} "${t}" is not in unconfirmed`);
   }
   for (const x of e.contains || []) if (!['latex', 'leather'].includes(x)) problems.push(`${where}: unknown contains ${x}`);
   for (const x of e.standards || []) if (!stdIds.has(x)) problems.push(`${where}: unknown standard ${x}`);
