@@ -55,8 +55,8 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           BRANCH: prices/auto-update
         run: |
-          # Only propose a PR when a price text changed, not when only the price_checked stamps moved.
-          if ! git diff -U0 data.json | grep -E '^[+-]' | grep -vE '^(\+\+\+|---)' | grep -vE '"(price_checked|updated)":' | grep -q .; then
+          # Only propose a PR when a price, shipping or rating changed, not when only the date stamps moved.
+          if ! git diff -U0 data.json | grep -E '^[+-]' | grep -vE '^(\+\+\+|---)' | grep -vE '"(price_checked|updated|checked)":' | grep -q .; then
             echo "No price changed; nothing to propose."
             git checkout -- data.json
             exit 0
