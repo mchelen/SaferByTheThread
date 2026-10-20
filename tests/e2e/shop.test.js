@@ -117,12 +117,13 @@ test('facets, chips and sort work together', async () => {
   await page.waitForSelector('.card');
   await page.check('#rail input[data-facet="cat"][value="mats"]');
   assert.match(page.url(), /cat=mats/);
-  assert.equal(await page.locator('.chips .chip-x').count(), 1);
+  assert.equal(await page.locator('.chips .chip-x[data-clear="cat"]').count(), 1);
+  assert.ok((await page.locator('.chips .chip-x[data-clear="crit"]').count()) >= 3, 'the chips row lists the material filters that are on');
   await page.selectOption('#sort', 'price-asc');
   const prices = (await page.locator('.card .price').allTextContents()).map(t => parseFloat(t.replace(/[^\d.]/g, '')));
   assert.ok(prices.length >= 2);
   assert.deepEqual(prices, prices.slice().sort((a, b) => a - b));
-  await page.click('.chips .chip-x');
+  await page.click('.chips .chip-x[data-clear="cat"]');
   assert.doesNotMatch(page.url(), /cat=/);
   await page.goBack();
   await page.waitForTimeout(200);

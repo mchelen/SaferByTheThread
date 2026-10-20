@@ -39,6 +39,7 @@ All notable changes to the site are listed here. The format follows [Keep a Chan
 - A blank strip at the top of every page, and department tiles whose labels sat at different heights.
 
 ### Changed
+- Listing pages show every material filter that is on as a chip above the results, defaults included, each with its own remove button; the product page's "By filter" table lists only the filters that are on, instead of every filter with an "Off" tag.
 - Search result cards and quick view no longer show a line when a product meets your filters with nothing unstated, since every result meets them; only "Not stated" lines remain. The compare table says "Meets them all".
 - "Every detail stated" now reads "All materials stated" on cards, quick view and the compare table; the filter "Every detail above is stated" is "Materials stated for every part", and the sort "Fewest details not stated" is "Fewest unstated materials".
 - "Not stated" lines on cards, quick view, the compare table and product pages name the parts no page describes ("Not stated: thread · zipper · wool treatment"), from a new `unstated` field that ties each unconfirmed part to its material filter (170 parts tagged).

@@ -615,5 +615,3 @@ body.tray-on .toast { bottom: 88px; }
 .buybox .status { flex-direction: column; align-items: flex-start; gap: 4px; }
 .qv-in .fit { margin-top: 6px; }
 .ftable tr.grp th { padding: 16px 8px 6px; font-size: 12px; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); border-bottom: 1px solid var(--line); }
-.ftable tr.off th, .ftable tr.off td { opacity: .6; }
-.ftable .off-t { font-size: 11px; font-weight: 600; letter-spacing: .04em; text-transform: uppercase; padding: 1px 6px; border-radius: 4px; background: var(--surface-2); color: var(--muted); }
