@@ -40,6 +40,7 @@ All notable changes to the site are listed here. The format follows [Keep a Chan
 - A blank strip at the top of every page, and department tiles whose labels sat at different heights.
 
 ### Changed
+- Made with lists only parts whose material the page names. 26 lines on 16 listings that named a part by construction alone ("Fleece lining", "Padding, 300 g/m²", "Frame (material not stated)") now read under Not stated as the fibre or material no page gives; `npm run check` rejects such lines under `uses`. A "Fleece (fabric)" glossary entry explains that fleece names a knit, not a fibre, and "lining" no longer opens the hidden-parts entry. The Strollers type intro says how footmuff pages describe materials.
 - Remarks about testing or certificates ("LFGB certificate not published", "No regulatory claim on the page") on 9 silicone tray and mould listings now read as what is not stated, under Not stated, instead of as flagged parts; "thin felt, not padded" on two play mats and a Que Choisir note on a Lékué mould moved to the listing note. `npm run check` rejects such remarks under `outside`.
 - Listing pages show every material filter that is on as a chip above the results, defaults included, each with its own remove button; the product page's "By filter" table lists only the filters that are on, instead of every filter with an "Off" tag.
 - Search result cards and quick view no longer show a line when a product meets your filters with nothing unstated, since every result meets them; only "Not stated" lines remain. The compare table says "Meets them all".

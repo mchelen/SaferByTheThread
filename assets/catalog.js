@@ -63,7 +63,8 @@
     ['bpa', 'bpa|bps'], ['tpr', 'tpr'], ['eva', '(?:algae-based )?eva'],
     ['synthetic-rubber', 'synthetic rubber|rubber type(?: in outsole)?(?: \\(natural or synthetic\\))?|outsole compound'],
     ['polyurethane', 'polyurethane(?: film| foam)?|tpu|synthetic foam|(?<!pla )foam'],
-    ['polyester', 'polyester(?: binder)?|synthetic (?:batting|fill)|micro-fleece'],
+    ['polyester', 'polyester(?: binder)?|synthetic (?:batting|fill)'],
+    ['fleece', '(?:polar |micro-?|cotton |polyester )?fleece(?:-lined)?'],
     ['platinum', 'platinum(?:-cured)?'], ['lfgb', 'lfgb'], ['arrete', 'arrêté'],
     ['migration', '(?:published )?test report|finished-product testing|tested to us rules'],
     ['silicone', 'silicone'],
@@ -78,7 +79,7 @@
     ['water-based', 'water-based paint|paint'],
     ['hardwood', '(?:solid )?hardwood|plywood|particle board|fiberboard|veneer|layered wood|engineered wood|wood frame|wood type|maple|pine|beech|walnut|cherry|oak|birch|poplar|ash|solid wood'],
     ['plastic', 'plastics?|polypropylene|polycarbonate|polyethylene|pe beans|pla|nylon|viscose|petrochemicals?|synthetics'],
-    ['hidden', '(?:seam |hem |tufting )?thread(?: fibre)?|zippers?|glues?|adhesive(?: resin)?|elastic(?:ized)?|closures?|lining|hook-and-loop|velcro'],
+    ['hidden', '(?:seam |hem |tufting )?thread(?: fibre)?|zippers?|glues?|adhesive(?: resin)?|elastic(?:ized)?|closures?|hook-and-loop|velcro'],
     ['toy-safety', 'age rating']
   ];
 

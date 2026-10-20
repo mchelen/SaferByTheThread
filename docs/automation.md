@@ -97,9 +97,9 @@ A scheduled Claude Code session on this repository does the part a script cannot
    - For each type, keep 3 to 5 conventional listings (the plastic or synthetic version most shops sell) alongside the natural-material ones, so the filters have something to set aside. Record what their pages say like any other listing.
 3. **Save the page text.** `node tools/snapshot.js <listing-id> <product url> [<materials or FAQ page url> ...]`. The listing id is a lowercase slug, `<brand>-<product>`.
 4. **Write the draft** in `research/drafts/<listing-id>.json`, quoting the snapshot for every claim:
-   - `uses`: every material the page names, as short noun phrases ("organic cotton cover", "natural latex core").
+   - `uses`: the parts whose material the page names, as short noun phrases ("organic cotton cover", "natural latex core"). A part the page names only by its construction or job ("fleece lining", "padding 300 g/m²", "windproof outer fabric", "frame") names no material: it goes under `unconfirmed`, not `uses`. Fleece, felt, textile, fabric, foam and padding are constructions, not fibres.
    - `free`: what the page says is absent ("no polyurethane foam", "no flame retardant chemicals").
-   - `unconfirmed`: parts no page describes (thread, dyes, glue, coating).
+   - `unconfirmed`: parts no page describes (thread, dyes, glue, coating), including every part listed only by construction ("Fibre of the fleece lining"), tagged in `unstated` for the filter it leaves open.
    - `outside`: parts that fall outside the default filters (plastic lid, polyester fill, unnamed paint, superwash wool).
    - `facts`: one entry per criterion in `data.json` that applies, `yes`, `no` or `unknown`.
    - `standards`, `age`, `contains`, `products` (name, URL, store, price as shown, `ships_from`).
