@@ -234,7 +234,7 @@
   }
   function fitP(cls, mk, text) { return '<p class="fit ' + cls + '"><span class="mk" aria-hidden="true">' + mk + '</span>' + esc(text) + '</p>'; }
   function fitLine(item, r, max) {
-    if (r.ok && !r.unst.length) return fitP('is-ok', '✓', 'All materials stated');
+    if (r.ok && !r.unst.length) return '';
     if (r.ok) {
       var p = unstatedParts(item, r.unst);
       return fitP('is-unk', '?', 'Not stated: ' + (max && p.length > max ? p.slice(0, max).join(' · ') + ' (+' + (p.length - max) + ' more)' : p.join(' · ')));
@@ -713,10 +713,10 @@
     stores: ['Stores', function (i) { return i.products.map(function (p) { return '<a href="' + esc(p.url) + '" target="_blank" rel="noopener">' + esc(p.store) + '</a>' + (p.shipping ? ' <span class="muted">(' + esc(p.shipping) + ')</span>' : ''); }).join('<br>'); }],
     ship: ['Shipping', function (i) { return esc(i.shipLine); }],
     rating: ['Rating', function (i) { return i.rating ? stars(i.rating, true) : '<span class="muted">None on the store page</span>'; }],
-    filters: ['Your material filters', function (i) { return fitLine(i, status(i)); }],
+    filters: ['Your material filters', function (i) { var r = status(i); return r.ok && !r.unst.length ? fitP('is-ok', '✓', 'Meets them all') : fitLine(i, r); }],
     made: ['Made with', function (i) { return i.uses.length ? '<div class="chips-row">' + i.uses.map(chip).join('') + '</div>' : '<span class="muted">None</span>'; }],
     free: ['Stated free of', function (i) { return i.free.length ? '<div class="chips-row r-free">' + i.free.map(chip).join('') + '</div>' : '<span class="muted">Nothing stated</span>'; }],
-    unst: ['Not stated', function (i) { return i.unconfirmed.length ? '<div class="chips-row r-unk">' + i.unconfirmed.map(chip).join('') + '</div>' : '<span class="muted">All materials stated</span>'; }],
+    unst: ['Not stated', function (i) { return i.unconfirmed.length ? '<div class="chips-row r-unk">' + i.unconfirmed.map(chip).join('') + '</div>' : '<span class="muted">None</span>'; }],
     out: ['Flagged parts', function (i) { return i.outside.length ? '<div class="chips-row r-out">' + i.outside.map(chip).join('') + '</div>' : '<span class="muted">None</span>'; }],
     std: ['Standards named', function (i) { return i.standards.length ? stdLinks(i) : '<span class="muted">None</span>'; }],
     age: ['Age', function (i) { return esc(i.ageLabel) + (i.ageStated ? '' : ' <span class="muted">(usual for the type)</span>'); }],
