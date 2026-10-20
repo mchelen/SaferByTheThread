@@ -39,6 +39,7 @@ for (const a of data.aisles) {
 const ids = new Set();
 const SYNTH = S.MATERIALS.filter(m => m.id === 'synthetic')[0].rx;
 const COMPOSITE = /plywood|\bmdf\b|fib(?:er|re) ?board|particle ?board|veneer|layered (?:birch|wood|poplar)/i;
+const REMARK = /\bLFGB\b|certif|regulatory|\bclaim\b|not published|\btested?\b|\btesting\b|not padded|flagged/i;
 const GUESS = /\b(?:probably|likely|often|usually|typically|presumably|possibly|may be|might be|looks like|seems|appears to)\b/i;
 let entries = 0, products = 0, missingImg = 0;
 for (const e of data.entries) {
@@ -62,6 +63,11 @@ for (const e of data.entries) {
   for (const t of e.uses || []) {
     if (SYNTH.test(t) || COMPOSITE.test(t)) problems.push(`${where}: uses "${t}" is synthetic or composite wood; list it under outside`);
     if ((e.outside || []).includes(t)) problems.push(`${where}: "${t}" is under both uses and outside`);
+  }
+  // Flagged parts name a material or part; a remark about a test, a claim or a page goes under unconfirmed (tagged in
+  // unstated) when it is something no page states, or in note otherwise.
+  for (const t of e.outside || []) {
+    const m = t.match(REMARK); if (m) problems.push(`${where}: outside "${t}" is a remark ("${m[0]}"), not a part; list what is not stated under unconfirmed, or put it in note`);
   }
   for (const [k, parts] of Object.entries(e.unstated || {})) {
     if (!e.facts || e.facts[k] !== 'unknown') problems.push(`${where}: unstated.${k} needs facts.${k} = "unknown"`);

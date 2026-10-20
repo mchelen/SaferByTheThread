@@ -1338,10 +1338,8 @@
    ],
    "img": "mat_kodo",
    "img_src": "https://kodokids.com/cdn/shop/files/DSC_1810.jpg?v=1778342491&width=800",
-   "note": "Made in the USA. Rated 18 months and up.",
-   "outside": [
-    "Not padded: thin felt shapes"
-   ],
+   "note": "Made in the USA. Rated 18 months and up. Thin felt shapes, not padded.",
+   "outside": [],
    "facts": {
     "main": "unknown",
     "parts": "yes",
@@ -1429,9 +1427,7 @@
     }
    ],
    "quote": "100% certified organic wool",
-   "outside": [
-    "Thin felt, not padded"
-   ],
+   "outside": [],
    "facts": {
     "main": "unknown",
     "parts": "unknown",
@@ -1457,7 +1453,8 @@
    "contains": [],
    "standards": [
     "organic-unnamed"
-   ]
+   ],
+   "note": "Thin felt, not padded."
   },
   {
    "id": "tiny-kind-quilted-play-mat",
@@ -7181,7 +7178,7 @@
    ],
    "free": [],
    "unconfirmed": [
-    "Finished-product testing"
+    "Finished-product test (“LFGB-certified silicone” names the raw material only)"
    ],
    "products": [
     {
@@ -7202,9 +7199,7 @@
    ],
    "img": "sil_anyday",
    "img_src": "http://cookanyday.com/cdn/shop/files/49002-C2T_1_2CAnytimeFreezerTraySet_Kale.jpg?v=1758583035",
-   "outside": [
-    "“LFGB-certified silicone” reads as the raw material only"
-   ],
+   "outside": [],
    "facts": {
     "main": "yes",
     "parts": "yes",
@@ -7213,7 +7208,7 @@
    },
    "unstated": {
     "silicone": [
-     "Finished-product testing"
+     "Finished-product test (“LFGB-certified silicone” names the raw material only)"
     ]
    },
    "contains": [],
@@ -7261,7 +7256,8 @@
    ],
    "free": [],
    "unconfirmed": [
-    "Lab name"
+    "Lab name",
+    "LFGB test on the finished tray (the LFGB claim is for the silicone; the trays are tested to US rules)"
    ],
    "products": [
     {
@@ -7283,8 +7279,7 @@
    "img": "sil_souper",
    "img_src": "http://www.soupercubes.com/cdn/shop/files/Product_-_MyMilk_trays_Shopify_7577__2000x2000_13fc754e-d67b-44d6-b4fe-6aa110971ac6.jpg?v=1790627727&width=2048",
    "outside": [
-    "Polypropylene lids",
-    "LFGB claim is material-level; finished trays tested to US rules only"
+    "Polypropylene lids"
    ],
    "facts": {
     "main": "yes",
@@ -7338,7 +7333,12 @@
      "key": "sil_souper_10",
      "src": "https://cdn.shopify.com/s/files/1/0023/4995/7235/files/Product_-_MyMilk_trays_Shopify_7581__2000x2000_1bc07172-fbb9-45da-bcae-d01387d2a3cb.jpg?v=1790620435"
     }
-   ]
+   ],
+   "unstated": {
+    "silicone": [
+     "LFGB test on the finished tray (the LFGB claim is for the silicone; the trays are tested to US rules)"
+    ]
+   }
   },
   {
    "id": "kiddo-feedo-freezer-tray",
@@ -7351,7 +7351,7 @@
    ],
    "free": [],
    "unconfirmed": [
-    "Finished-product testing"
+    "Finished-product test (“silicone approved by LFGB, FDA, REACH” names the material only)"
    ],
    "products": [
     {
@@ -7365,9 +7365,7 @@
    ],
    "img": "sil_kiddo",
    "img_src": "http://kiddofeedo.com/cdn/shop/products/Freezer-Tray-Purple-01_1200x1200.jpg?v=1661356392",
-   "outside": [
-    "“Silicone approved by LFGB, FDA, REACH” is material-level only"
-   ],
+   "outside": [],
    "facts": {
     "main": "yes",
     "parts": "yes",
@@ -7376,7 +7374,7 @@
    },
    "unstated": {
     "silicone": [
-     "Finished-product testing"
+     "Finished-product test (“silicone approved by LFGB, FDA, REACH” names the material only)"
     ]
    },
    "contains": [],
@@ -7419,7 +7417,9 @@
     "Silicone"
    ],
    "free": [],
-   "unconfirmed": [],
+   "unconfirmed": [
+    "LFGB test (the page names US testing; “LFGB compliant” came by email only)"
+   ],
    "products": [
     {
      "name": "Baby Food Freezer Tray, 9 x 1.5 oz",
@@ -7440,8 +7440,7 @@
    "img": "sil_mushie",
    "img_src": "http://mushie.com/cdn/shop/files/BabyFoodFreezerTray_CambridgeBlue2.jpg?v=1752248475",
    "outside": [
-    "Plastic lid",
-    "Tested to US rules only; “LFGB compliant” by email only"
+    "Plastic lid"
    ],
    "facts": {
     "main": "yes",
@@ -7495,7 +7494,12 @@
      "key": "sil_mushie_10",
      "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/Flat_laysdec-37.jpg?v=1771360880"
     }
-   ]
+   ],
+   "unstated": {
+    "silicone": [
+     "LFGB test (the page names US testing; “LFGB compliant” came by email only)"
+    ]
+   }
   },
   {
    "id": "weesprout-silicone-freezer-tray",
@@ -7669,7 +7673,7 @@
    ],
    "free": [],
    "unconfirmed": [
-    "Finished-product testing"
+    "Finished-product test (“meets LFGB requirements” names no test)"
    ],
    "products": [
     {
@@ -7683,9 +7687,7 @@
    ],
    "img": "sil_wp",
    "img_src": "https://m.media-amazon.com/images/I/61KteWWtSnL._AC_SL1500_.jpg",
-   "outside": [
-    "“Meets LFGB requirements” with no test named"
-   ],
+   "outside": [],
    "facts": {
     "main": "yes",
     "parts": "yes",
@@ -7694,7 +7696,7 @@
    },
    "unstated": {
     "silicone": [
-     "Finished-product testing"
+     "Finished-product test (“meets LFGB requirements” names no test)"
     ]
    },
    "contains": [],
@@ -7741,7 +7743,9 @@
     "Platinum silicone, tempered 4 hours at 200 °C"
    ],
    "free": [],
-   "unconfirmed": [],
+   "unconfirmed": [
+    "LFGB or Arrêté test"
+   ],
    "products": [
     {
      "name": "Ice Former 3 cm, 20 cubes",
@@ -7754,7 +7758,6 @@
    "img": "sil_lurch",
    "img_src": "https://m.media-amazon.com/images/I/81y6-2GUfIL._AC_SL1500_.jpg",
    "outside": [
-    "No LFGB or Arrêté named",
     "Plastic lid"
    ],
    "facts": {
@@ -7799,7 +7802,12 @@
      "key": "sil_lurch_8",
      "src": "https://m.media-amazon.com/images/I/61txJ6HHhDL._AC_SL1181_.jpg"
     }
-   ]
+   ],
+   "unstated": {
+    "silicone": [
+     "LFGB or Arrêté test"
+    ]
+   }
   },
   {
    "id": "l-ku-xl-square-ice-cube-tray",
@@ -7811,7 +7819,8 @@
    ],
    "free": [],
    "unconfirmed": [
-    "Lid material"
+    "Lid material",
+    "LFGB or Arrêté test (no regulatory claim on the page)"
    ],
    "products": [
     {
@@ -7822,9 +7831,7 @@
      "ships_from": "US"
     }
    ],
-   "outside": [
-    "No regulatory claim on the page"
-   ],
+   "outside": [],
    "facts": {
     "main": "yes",
     "parts": "yes",
@@ -7835,6 +7842,9 @@
    "unstated": {
     "accessory": [
      "Lid material"
+    ],
+    "silicone": [
+     "LFGB or Arrêté test (no regulatory claim on the page)"
     ]
    },
    "contains": [],
@@ -8118,8 +8128,7 @@
    ],
    "evidence": "Brand says independent labs test to German and French rules (brand-wide, no report)",
    "outside": [
-    "Plastic sticks and lids",
-    "Que Choisir flagged a Lékué mould"
+    "Plastic sticks and lids"
    ],
    "facts": {
     "main": "no",
@@ -8145,7 +8154,8 @@
     }
    ],
    "img": "l-ku-small-stackable-popsicle-molds",
-   "img_src": "https://www.lekue.com/cdn-cgi/image/format=auto,onerror=redirect/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/8/8/882227_1.jpg"
+   "img_src": "https://www.lekue.com/cdn-cgi/image/format=auto,onerror=redirect/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/8/8/882227_1.jpg",
+   "note": "The French consumer magazine Que Choisir flagged a Lékué mould in its silicone mould tests."
   },
   {
    "id": "we-might-be-tiny-ice-pop-mold",
@@ -8157,7 +8167,8 @@
    ],
    "free": [],
    "unconfirmed": [
-    "Stick material"
+    "Stick material",
+    "LFGB certificate (not published)"
    ],
    "products": [
     {
@@ -8174,9 +8185,7 @@
    "img_src": "http://pacifierkids.com/cdn/shop/products/We_Might_Be_Tiny_Frosties_-_Yellow_low_res_1500x_3845fd1f-b642-47ad-91d0-54cd8eaf5305.jpg?crop=center&height=1200&v=1624124353&width=1200",
    "quote": "Independently certified to the highest European standards (LFGB)",
    "note": "Showed out of stock.",
-   "outside": [
-    "LFGB certificate not published"
-   ],
+   "outside": [],
    "facts": {
     "main": "yes",
     "parts": "unknown",
@@ -8186,6 +8195,9 @@
    "unstated": {
     "parts": [
      "Stick material"
+    ],
+    "silicone": [
+     "LFGB certificate (not published)"
     ]
    },
    "contains": [],
