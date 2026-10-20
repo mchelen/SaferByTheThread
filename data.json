@@ -4029,7 +4029,13 @@
    },
    "contains": [],
    "img": "x_edushape_sensory_balls",
-   "standards": []
+   "standards": [],
+   "photos": [
+    {
+     "key": "x_edushape_sensory_balls",
+     "src": "https://cdn.schoolspecialty.com/84828a3c-6196-4e98-b9f6-b0f001220ef5/1594285_A_JPG%20Output.jpg"
+    }
+   ]
   },
   {
    "id": "hevea-natural-rubber-bath-toys",
@@ -9969,7 +9975,21 @@
    },
    "contains": [],
    "img": "x_bogs_skipper_ii",
-   "standards": []
+   "standards": [],
+   "photos": [
+    {
+     "key": "x_bogs_skipper_ii",
+     "src": "https://www.bogsfootwear.com/shop/images/73012I-001.jpg"
+    },
+    {
+     "key": "x_bogs_skipper_ii_2",
+     "src": "https://www.bogsfootwear.com/shop/rotate/73012I-020/07.jpg"
+    },
+    {
+     "key": "x_bogs_skipper_ii_3",
+     "src": "https://www.bogsfootwear.com/shop/rotate/73012I-020/08.jpg"
+    }
+   ]
   },
   {
    "id": "little-green-radicals-lined-natural-rubber-rain-boots",
