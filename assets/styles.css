@@ -12,6 +12,7 @@
   --accent-strong: #2f4b32;
   --accent-soft: #e6eee5;
   --on-accent: #ffffff;
+  --buy: #f4b73f; --buy-strong: #e6a422; --on-buy: #1b1b1b;   /* store links: the one action that leaves the site */
   --moss: #3f6142; --moss-soft: #e6eee5;   /* checklist: made with */
   --slate: #3d5a73; --slate-soft: #e3eaf0; /* stated free of */
   --wax: #7d5a0c; --wax-soft: #f7edd3;     /* not stated */
@@ -78,6 +79,11 @@ h3 { font-size: 15px; }
 .btn:hover { background: var(--accent-strong); }
 .btn-2 { background: var(--bg); color: var(--ink); border-color: var(--ink); }
 .btn-2:hover { background: var(--surface); }
+.btn-buy { display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 52px; padding: 0 22px; border-radius: var(--r); background: var(--buy); color: var(--on-buy); font-size: 17px; font-weight: 700; text-decoration: none; border: 1px solid var(--buy-strong); box-shadow: 0 1px 2px rgba(0, 0, 0, .12); }
+.btn-buy:hover { background: var(--buy-strong); }
+.btn-buy:focus-visible { outline: 3px solid var(--ink); outline-offset: 2px; }
+.btn-buy svg { width: 18px; height: 18px; }
+.btn-buy.sm { min-height: 40px; font-size: 14.5px; padding: 0 14px; }
 .btn-3 { background: var(--surface); color: var(--ink); min-height: 36px; padding: 0 14px; font-weight: 500; }
 .btn-3:hover { background: var(--surface-2); }
 .btn-3[aria-pressed="true"] { background: var(--accent-soft); color: var(--accent-strong); }
@@ -317,7 +323,10 @@ h3 { font-size: 15px; }
 .offer .o-ship svg { width: 14px; height: 14px; }
 .offer .o-note { margin: 0; font-size: 13px; grid-column: 1; }
 .offer .o-price { margin: 0; grid-column: 2; grid-row: 1; font-weight: 600; font-size: 17px; text-align: right; }
-.offer .btn, .offer .btn-2 { grid-column: 1 / -1; width: 100%; }
+.offer .btn-buy { grid-column: 1 / -1; width: 100%; }
+.offer:first-child { border: 2px solid var(--buy); }
+.card-buy { margin: 8px 0 0; width: 100%; white-space: nowrap; }
+.cmp-buy { display: flex; margin-top: 10px; max-width: 220px; }
 .offer .o-checked { grid-column: 1 / -1; margin: 0; font-size: 12px; color: var(--muted); }
 .buy-actions { display: flex; gap: 10px; margin: 14px 0 0; flex-wrap: wrap; }
 .facts { margin: 18px 0 0; display: grid; grid-template-columns: 1fr 1fr; gap: 10px 16px; font-size: 14px; }
@@ -334,10 +343,9 @@ h3 { font-size: 15px; }
 .acc-body .lede { margin: 0 0 14px; color: var(--muted); max-width: 80ch; }
 .pdp-below { max-width: 880px; }
 .check { display: grid; gap: 10px; }
-.check .row { display: grid; grid-template-columns: 170px 1fr; gap: 12px; align-items: start; padding: 12px 14px; border-radius: var(--r); background: var(--surface); }
+.check .row { display: grid; grid-template-columns: 150px 1fr; gap: 12px; align-items: center; padding: 12px 14px; border-radius: var(--r); background: var(--surface); }
 .check .row-h { display: flex; align-items: center; gap: 8px; font-weight: 600; }
 .check .row-h .ic { display: inline-grid; place-items: center; width: 24px; height: 24px; border-radius: 50%; font-size: 13px; font-weight: 700; flex: none; }
-.check .row-h small { display: block; font-weight: 400; color: var(--muted); font-size: 12.5px; }
 .check .chips-row { display: flex; flex-wrap: wrap; gap: 6px; }
 .chip { display: inline-block; padding: 4px 10px; border-radius: 6px; font-size: 13.5px; line-height: 1.4; background: var(--surface-2); color: var(--ink); }
 .r-uses .chip { background: var(--moss-soft); color: var(--moss); }
@@ -455,7 +463,7 @@ body.tray-on .toast { bottom: 88px; }
   .bb-t { flex: 1; min-width: 0; display: flex; flex-direction: column; }
   .bb-name { font-size: 13px; color: var(--muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
   .bb-price { font-weight: 700; }
-  .buybar .btn { flex: none; }
+  .buybar .btn-buy { flex: none; min-height: 48px; font-size: 16px; }
   body.buybar-on .toast, body.buybar-on .totop { bottom: 84px; }
   body.tray-on.buybar-on .toast { bottom: 156px; }
   body.tray-on.buybar-on .totop { bottom: 152px; }
@@ -546,3 +554,18 @@ body.tray-on .toast { bottom: 88px; }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { transition: none !important; animation: none !important; scroll-behavior: auto !important; }
 }
+
+/* Materials at a glance: one line on how a listing reads against the visitor's material filters. */
+.fit { margin: 0; font-size: 12.5px; line-height: 1.4; display: flex; gap: 6px; align-items: baseline; }
+.fit .mk { flex: none; display: inline-grid; place-items: center; width: 16px; height: 16px; border-radius: 50%; font-size: 10px; font-weight: 700; transform: translateY(2px); }
+.fit.is-ok { color: var(--moss); } .fit.is-ok .mk { background: var(--moss-soft); }
+.fit.is-unk { color: var(--wax); } .fit.is-unk .mk { background: var(--wax-soft); }
+.fit.is-miss { color: var(--clay); } .fit.is-miss .mk { background: var(--clay-soft); }
+.card .fit { display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical; overflow: hidden; }
+.card .fit .mk { display: inline-grid; margin-right: 5px; }
+.buybox .status .fit, .qv-in .fit, .cmp .fit { font-size: 14px; }
+.buybox .status { flex-direction: column; align-items: flex-start; gap: 4px; }
+.qv-in .fit { margin-top: 6px; }
+.ftable tr.grp th { padding: 16px 8px 6px; font-size: 12px; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); border-bottom: 1px solid var(--line); }
+.ftable tr.off th, .ftable tr.off td { opacity: .6; }
+.ftable .off-t { font-size: 11px; font-weight: 600; letter-spacing: .04em; text-transform: uppercase; padding: 1px 6px; border-radius: 4px; background: var(--surface-2); color: var(--muted); }

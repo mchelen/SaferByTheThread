@@ -60,7 +60,7 @@ test('the shop lists the products that meet the default material filters and set
   await page.click('.hidden-note button[data-toggle-all]');
   assert.match(await page.textContent('.toolbar .count'), /122 products/);
   assert.match(page.url(), /all=1/);
-  assert.ok((await page.locator('.card .badge.miss').count()) >= 1, 'set-aside products carry a badge once shown');
+  assert.ok((await page.locator('.card .fit.is-miss').count()) >= 1, 'set-aside products say which filter they miss once shown');
   assert.deepEqual(page.errors, []);
   await page.close();
 });
@@ -113,8 +113,9 @@ test('product page shows the buy box, checklist, filter table and a glossary pop
   const page = await open('/p/obasan-organic-crib-mattress');
   await page.waitForSelector('.pdp');
   assert.match(await page.textContent('.buybox h1'), /Organic Crib Mattress/);
-  assert.ok((await page.locator('.offer .btn').count()) >= 1);
-  assert.match(await page.textContent('.offer .btn'), /Buy at/);
+  assert.ok((await page.locator('.offer .btn-buy').count()) >= 1);
+  assert.match(await page.textContent('.offer .btn-buy'), /Buy at/);
+  assert.ok(await page.evaluate(() => document.querySelector('.buybox .offers').compareDocumentPosition(document.querySelector('.buybox .made')) & Node.DOCUMENT_POSITION_FOLLOWING), 'store buttons come before the materials summary');
   assert.ok((await page.locator('.check .row').count()) >= 3);
   await page.click('.check .term-link');
   const pop = page.locator('#gpop');
@@ -213,6 +214,7 @@ test('cards show shipping, and the quick filter, shipping facet and price + ship
   const page = await open('/shop');
   await page.waitForSelector('.card .ship');
   assert.equal(await page.locator('.card').count(), await page.locator('.card .ship').count());
+  assert.equal(await page.locator('.card').count(), await page.locator('.card a.card-buy[target="_blank"]').count(), 'every card links to its store');
   await page.click('.quick [data-quick="deliv"][data-val="free"]');
   await page.waitForSelector('.quick [data-quick="deliv"][aria-pressed="true"]');
   assert.match(new URL(page.url()).search, /deliv=free/);

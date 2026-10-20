@@ -28,6 +28,8 @@ All notable changes to the site are listed here. The format follows [Keep a Chan
 - A blank strip at the top of every page, and department tiles whose labels sat at different heights.
 
 ### Changed
+- Cards, quick view and the comparison table name which material filter a product misses or can't be judged on ("Not stated: Small parts +1") instead of counting details; the product page leads with the same lines, hides empty checklist rows and explanatory subtitles, and groups the "By filter" table like the filter sidebar with switched-off filters marked. Options in `docs/materials-at-a-glance.md`.
+- Store buttons are the main action: a large amber "Buy at <store>" button right under the price on product pages and in quick view, a "Buy at store" button on every product card and in the Compare table, and the same button in the phone buy bar.
 - Navigation is by product type: departments became aisles in the menu (Play, Sleep, Eat and drink, Wear), each listing names its `type`, and a type can appear in more than one aisle. The home page leads with product types. `data.json` moved to schema 4 (flat `entries`, `types`, `aisles`); `/d/<department>` and `/c/pads` links redirect. "Pads, toppers, pillows and sheets" split into three types.
 - The filter rail is grouped into What it is, What it's made of, and Price and delivery, and the material filters into named sets (plastic and synthetics, treatments and finishes, tested or certified, materials to leave out).
 - The "independent guide" banner moved from the top of every page to the home page; cards say "N options" instead of "N stores" when the options come from one store.
