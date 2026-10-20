@@ -41,6 +41,22 @@ Most of the shop furniture from the big sites is already here after #8, so this 
 - **Urgency cues** ("only 3 left", countdowns). Not true for a guide, and against its factual tone.
 - **Infinite scroll.** The grid uses "Show more", which keeps the footer reachable and Back working, and with 122 listings there is little to load.
 
+## Google Shopping
+
+Added 2026-10-20 at M's request. Google Shopping is a price-comparison site rather than a shop: it lists the same product from many stores, so its pages put price, shipping and the store side by side, and its filters lead with price and delivery. Patterns it uses, per [Google's own shopping posts](https://blog.google/products/shopping/save-money-price-insights-price-alerts/) and the live site:
+
+| Pattern on Google Shopping | Here |
+| --- | --- |
+| Shipping under the price on every result ("Free delivery", "+$5.99 delivery") | **Added.** Each card has a shipping line under the price, from the cheapest store listing: "Free shipping", "+ $9.95 shipping", "Free shipping over $50", "Shipping at checkout" or "Shipping not recorded". Free-over-a-minimum counts as free when the price is over the minimum. This replaces the "Free shipping" photo badge. |
+| A row of one-tap refinement chips above the results (free delivery, price ranges, top brands or features) | **Added.** "Free shipping", "Ships from the US", the first three price bands and the three most common materials in the current list, shown only when they would leave something. They are the same filters as the rail, so a chip and its checkbox stay in step. |
+| Free-delivery filter | **Added** as a "Shipping to the US" group in the filter rail (free, cost stated, or free over a minimum / at checkout / not recorded). |
+| Sort by total price | **Added** "Price + shipping: low to high". Where a store's shipping isn't known, the item price is used. |
+| "Compare prices" on a product: every store's offer, cheapest first, with item price and delivery | **Added.** When a listing is sold by more than one store the product page heads the offers "Prices at N stores, lowest first" and sorts them by price with shipping where known; a stated flat rate shows the total ("about $X with shipping"). One store's sizes or options keep the order the research recorded. The card badge now says "2 stores" only for different stores, and "3 options" for one store's options. |
+| Price insights (low, typical or high for the last three months) and price-drop alerts | **Not yet.** The weekly price check overwrites the price; keeping a short history in `data.json` would let product pages say when the price last changed and the range seen. Alerts need accounts and email. |
+| Ratings, "deals" and sponsored placement | Not taken, as above. |
+
+Also from M's feedback the same day: the black banner at the top of every page ("An independent guide: nothing is sold here…") moved to a line under the home page's buttons. The same statement stays in the footer and on the About page.
+
 ## Possible next steps
 
 - A printable or plain-text version of a shared list, for sending by email or message.

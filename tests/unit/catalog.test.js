@@ -108,3 +108,15 @@ test('fold and slug normalise accents and punctuation', () => {
   assert.equal(S.fold('Lékué Béaba'), 'lekue beaba');
   assert.equal(S.slug("Sarah’s Silks"), 'sarah-s-silks');
 });
+
+test('shipping cost reads free, flat, free-over-a-minimum and checkout statements', () => {
+  assert.equal(S.shipCost({ price: '$40', usd: 40, shipping: 'Free shipping' }), 0);
+  assert.equal(S.shipCost({ price: '$40', usd: 40, shipping: '$9.95 shipping' }), 9.95);
+  assert.equal(S.shipCost({ price: '$60', usd: 60, shipping: 'Free shipping on orders over $50' }), 0);
+  assert.equal(S.shipCost({ price: '$40', usd: 40, shipping: 'Free shipping on orders over $50' }), null);
+  assert.equal(S.shipCost({ price: '$40', usd: 40, shipping: 'Free shipping on orders over $129.99, $25 below' }), 25);
+  assert.equal(S.shipCost({ price: '$84', usd: 84, shipping: 'Free shipping on orders over $150, $84 below' }), null, 'a rate equal to the price is a misread');
+  assert.equal(S.shipCost({ price: '$40', usd: 40, shipping: 'Shipping calculated at checkout' }), null);
+  assert.equal(S.shipCost({ price: '$39.50, free US shipping', usd: 39.5 }), 0);
+  assert.equal(S.shipCost({ price: '$30 plus $8 shipping', usd: 30 }), 8);
+});

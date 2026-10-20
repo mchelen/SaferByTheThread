@@ -85,6 +85,31 @@
     return { usd: Math.min.apply(null, all), approx: /about/i.test(t) };
   }
 
+  // US shipping for one store listing, from its `shipping` statement or its price text: 0 when free (or the
+  // price is over the free-shipping threshold), a dollar amount when a flat rate is stated, null when unknown.
+  function shipCost(p) {
+    var num = function (x) { return parseFloat(x.replace(/,/g, '')); };
+    var plus = String(p.price || '').match(/plus \$(\d{1,3}(?:,\d{3})*(?:\.\d+)?) shipping/i);
+    if (plus) return num(plus[1]);
+    var t = p.shipping || (/free (?:us )?shipping/i.test(p.price || '') ? 'Free shipping' : '');
+    if (/^free shipping$/i.test(t)) return 0;
+    var m = t.match(/^\$(\d{1,3}(?:,\d{3})*(?:\.\d+)?) shipping$/i);
+    if (m) return num(m[1]);
+    m = t.match(/free shipping on orders over \$(\d{1,3}(?:,\d{3})*(?:\.\d+)?)(?:, \$(\d{1,3}(?:,\d{3})*(?:\.\d+)?) below)?/i);
+    if (!m || p.usd == null) return null;
+    if (p.usd >= num(m[1])) return 0;
+    // The rate under the threshold, unless it repeats the item price or the threshold (a misread store page).
+    var below = m[2] ? num(m[2]) : null;
+    return below != null && below < num(m[1]) && below !== p.usd ? below : null;
+  }
+  function shipLine(p) {
+    if (p.shipCost === 0) return 'Free shipping';
+    if (p.shipCost != null) return '+ ' + money(p.shipCost) + ' shipping';
+    var over = (p.shipping || '').match(/free shipping on orders over (\$\d{1,3}(?:,\d{3})*(?:\.\d+)?)/i);
+    if (over) return 'Free shipping over ' + over[1];
+    return /checkout/i.test(p.shipping || '') ? 'Shipping at checkout' : 'Shipping not recorded';
+  }
+
   function money(n) {
     return '$' + (n >= 100 ? Math.round(n).toLocaleString('en-US') : n.toFixed(2).replace(/\.00$/, ''));
   }
@@ -118,8 +143,14 @@
         c.entries.forEach(function (e) {
           var prods = e.products.map(function (p) {
             var pr = parsePrice(p.price);
-            return Object.assign({}, p, { usd: pr ? pr.usd : null, approx: pr ? pr.approx : false });
+            var o = Object.assign({}, p, { usd: pr ? pr.usd : null, approx: pr ? pr.approx : false });
+            o.shipCost = shipCost(o); o.total = o.usd != null && o.shipCost != null ? Math.round((o.usd + o.shipCost) * 100) / 100 : null;
+            o.shipLine = shipLine(o);
+            return o;
           });
+          // Store listings cheapest first, by price with shipping where known, as a price comparison reads.
+          var byCost = prods.slice().sort(function (a, b) { var x = a.total != null ? a.total : a.usd, y = b.total != null ? b.total : b.usd; return (x == null) - (y == null) || x - y; });
+          var totals = prods.filter(function (p) { return p.total != null; }).map(function (p) { return p.total; });
           var prices = prods.filter(function (p) { return p.usd != null; }).map(function (p) { return p.usd; });
           var chips = e.uses.concat(e.outside || []).join(' | ');
           var mats = MATERIALS.filter(function (m) {
@@ -141,6 +172,9 @@
             max: prices.length ? Math.max.apply(null, prices) : null,
             approx: prods.some(function (p) { return p.approx; }),
             materials: mats, ships: Object.keys(ships), shipping: shipTexts, freeShip: freeShip,
+            total: totals.length ? Math.min.apply(null, totals) : null, byCost: byCost, shipLine: byCost[0] ? byCost[0].shipLine : '',
+            // Shipping facet: what the card shows, the cheapest listing's shipping.
+            deliv: !byCost[0] || byCost[0].shipCost == null ? 'unknown' : byCost[0].shipCost === 0 ? 'free' : 'paid',
             unstatedCount: e.unconfirmed.length,
             q: fold([e.brand, e.line, c.title, g.title].concat(e.uses, e.products.map(function (p) { return p.name + ' ' + p.store; })).join(' '))
           };
@@ -196,7 +230,7 @@
     return out;
   }
 
-  var api = { build: build, evaluate: evaluate, parsePrice: parsePrice, priceLabel: priceLabel, priceFrom: priceFrom, filterLabel: filterLabel, money: money, termRuns: termRuns, fold: fold, slug: slug,
+  var api = { build: build, evaluate: evaluate, parsePrice: parsePrice, priceLabel: priceLabel, priceFrom: priceFrom, shipCost: shipCost, filterLabel: filterLabel, money: money, termRuns: termRuns, fold: fold, slug: slug,
               PRICE_BANDS: PRICE_BANDS, AGE_BANDS: AGE_BANDS, MATERIALS: MATERIALS };
   if (typeof module === 'object' && module.exports) module.exports = api; else root.SBTT = api;
 })(this);

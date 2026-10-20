@@ -208,3 +208,19 @@ test('product page compares the item with similar ones and keeps a buy bar in re
   assert.deepEqual(page.errors, []);
   await page.close();
 });
+
+test('cards show shipping, and the quick filter, shipping facet and price + shipping sort work', async () => {
+  const page = await open('/shop');
+  await page.waitForSelector('.card .ship');
+  assert.equal(await page.locator('.card').count(), await page.locator('.card .ship').count());
+  await page.click('.quick [data-quick="deliv"][data-val="free"]');
+  await page.waitForSelector('.quick [data-quick="deliv"][aria-pressed="true"]');
+  assert.match(new URL(page.url()).search, /deliv=free/);
+  const lines = await page.locator('.card .ship').allTextContents();
+  assert.ok(lines.length > 0 && lines.every(t => t === 'Free shipping'), 'only free-shipping products: ' + lines.join(', '));
+  assert.equal(await page.locator('#f-deliv-free').isChecked(), true, 'the rail checkbox follows the chip');
+  await page.selectOption('#sort', 'total');
+  assert.match(new URL(page.url()).search, /sort=total/);
+  assert.deepEqual(page.errors, []);
+  await page.close();
+});
