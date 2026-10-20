@@ -5,6 +5,7 @@ All notable changes to the site are listed here. The format follows [Keep a Chan
 ## [Unreleased]
 
 ### Added
+- Every photo each store shows for a product, saved as the site's own copy (`tools/photos.js`, 564 photos for 99 listings, 87 with more than one), with thumbnails on the product page and in quick view.
 - Visual regression tests (`npm run test:visual`): screenshots of 13 key views at desktop and phone width, compared on every pull request; a mismatch fails the check and posts the before, after and difference images on the PR. Update them with `npm run test:visual:update` or the `update-screenshots` label. See `tests/visual/README.md`.
 - Age range filter (birth to 5 years and up) on every listing page, using the maker's age rating or, where none is recorded, the usual ages for the product type; the product page says which.
 - Product pages show every saved store photo with thumbnails, when a listing records more than one (`photos`).
