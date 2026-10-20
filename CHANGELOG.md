@@ -31,6 +31,7 @@ All notable changes to the site are listed here. The format follows [Keep a Chan
 - A blank strip at the top of every page, and department tiles whose labels sat at different heights.
 
 ### Changed
+- Picture navigation on the remaining pages: the shop lists every product type as a photo tile under its title, search results show the types that have matches, a product page ends with "More in <category>" type tiles, and empty Saved, Compare and not-found pages show the category tiles instead of a lone button.
 - Product-type pages show the other types in their category as photo tiles under the title, with the current one marked; the brands directory shows a product photo next to each brand; type suggestions in the search box carry the type's photo.
 - Home page navigates by pictures: category tiles, age chips and a row of round product-type photo tiles under each category, in place of text lists of product types; the explanatory sections (what every listing tells you, your material filters) moved off the home page, which keeps one line of copy under the title. The featured rail no longer squeezes its first cards on phones and tablets.
 - Cards, quick view and the comparison table name which material filter a product misses or can't be judged on ("Not stated: Small parts +1") instead of counting details; the product page leads with the same lines, hides empty checklist rows and explanatory subtitles, and groups the "By filter" table like the filter sidebar with switched-off filters marked. Options in `docs/materials-at-a-glance.md`.
