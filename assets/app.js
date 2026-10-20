@@ -208,8 +208,8 @@
   function gallery(item) {
     if (!item.photos.length) return '<div class="gallery">' + photo(item, true) + '</div>';
     var alt = item.brand + ' ' + item.line, src = item.products[0] ? ' from ' + esc(item.products[0].store) : '';
-    return '<div class="gallery"><button type="button" class="ph-zoom" data-zoom="' + esc(asset(item.photos[0])) + '" aria-label="Enlarge photo" style="all:unset;display:block;cursor:zoom-in">' +
-      '<div class="ph"><img id="g-main" src="' + esc(asset(item.photos[0])) + '" alt="' + esc(alt) + '" width="640" height="800" decoding="async" fetchpriority="high"></div></button><span class="zoom-hint">' + icon('zoom') + 'Enlarge</span>' +
+    return '<div class="gallery"><button type="button" class="ph-zoom" data-zoom="' + esc(asset(item.photos[0])) + '" aria-label="Enlarge photo" style="all:unset;display:block;position:relative;cursor:zoom-in">' +
+      '<div class="ph"><img id="g-main" src="' + esc(asset(item.photos[0])) + '" alt="' + esc(alt) + '" width="640" height="800" decoding="async" fetchpriority="high"></div><span class="zoom-hint">' + icon('zoom') + 'Enlarge</span></button>' +
       (item.photos.length > 1 ? '<div class="thumbs" role="group" aria-label="Photos">' + item.photos.map(function (p, k) {
         return '<button type="button" class="thumb" data-photo="' + esc(asset(p)) + '" aria-pressed="' + (k === 0) + '" aria-label="Photo ' + (k + 1) + ' of ' + item.photos.length + '"><img src="' + esc(asset(p)) + '" alt="" loading="lazy" decoding="async"></button>';
       }).join('') + '</div>' : '') +
@@ -719,7 +719,7 @@
   function openQuickView(id, opener) {
     var item = byId(id); if (!item) return;
     var r = status(item);
-    qv.innerHTML = '<button type="button" class="ib x" data-qv-close aria-label="Close quick view">' + icon('x') + '</button><div class="qv-in">' + photo(item, true) +
+    qv.innerHTML = '<button type="button" class="ib x" data-qv-close aria-label="Close quick view">' + icon('x') + '</button><div class="qv-in">' + gallery(item) +
       '<div><p class="eyebrow">' + esc(item.brand) + '</p><h2 id="qv-h">' + esc(item.line) + '</h2><p class="price">' + esc(S.priceLabel(item)) + '</p>' +
       fitLine(item, r) +
       '<ul class="offers">' + offersOf(item).slice(0, 2).map(offerHtml).join('') + '</ul>' +
