@@ -708,7 +708,7 @@ async function main() {
   const today = new Date().toISOString().slice(0, 10);
 
   let items = [];
-  for (const g of data.groups) for (const c of g.categories) for (const e of c.entries) for (const p of e.products) items.push({ entry: e.id, product: p });
+  for (const e of data.entries) for (const p of e.products) items.push({ entry: e.id, product: p });
   if (opts.only.length) items = items.filter(function (it) { return opts.only.indexOf(it.entry) >= 0; });
   if (opts.limit) items = items.slice(0, opts.limit);
   const order = interleaveByHost(items);

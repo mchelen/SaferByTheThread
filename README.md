@@ -8,7 +8,7 @@ This repository is the source of truth for the site. Published with GitHub Pages
 
 ## Files
 
-- `index.html`, `assets/styles.css`, `assets/app.js`: the site. Plain HTML, CSS and JavaScript; no build step. `app.js` renders every page from the data below and uses clean URLs (`/shop`, `/d/<department>`, `/c/<product type>`, `/b/<brand>`, `/p/<product>`, `/search?q=`, `/brands`, `/glossary/<term>`, `/about`, `/saved`, `/compare`). Filters and sort live in the query string (`cat`, `brand`, `price`, `mat`, `std`, `age`, `ship`, `sort`, `all`; `m` and `strict` only when the material filters differ from the defaults). Old `#/…` links still land on the right page.
+- `index.html`, `assets/styles.css`, `assets/app.js`: the site. Plain HTML, CSS and JavaScript; no build step. `app.js` renders every page from the data below and uses clean URLs (`/shop`, `/a/<aisle>`, `/c/<product type>`, `/b/<brand>`, `/p/<product>`, `/search?q=`, `/brands`, `/glossary/<term>`, `/about`, `/saved`, `/compare`). Filters and sort live in the query string (`cat`, `brand`, `price`, `mat`, `std`, `age`, `ship`, `sort`, `all`; `m` and `strict` only when the material filters differ from the defaults). Old `#/…` links still land on the right page, and so do old department and type links (`/d/toys` → `/a/play`, `/c/pads` → `/c/protectors`) through the `was` lists below.
 - `404.html`: GitHub Pages serves it for any path with no file; it sends the browser to `index.html` with the requested path in `?p=`, and `app.js` restores it. This is how the clean URLs work on a static host (a deep link does answer with a 404 status before the hand-off).
 - `assets/catalog.js`: turns `data.json` into the catalog the shop filters on (price parsing, materials and age facets, the material-rule evaluation, glossary term linking). Shared by the browser and `tools/check.js`.
 - `data.json`: every listing (schema 3), the filter criteria and the "questions makers can answer" list.
@@ -54,39 +54,43 @@ When `data.json` changed, the workflow pushes the branch `prices/auto-update` an
 
 ## Data
 
-`data.json` top level: `schema: 3`, `updated`, `ask`, `groups`, `criteria`, `standards`.
+`data.json` top level: `schema: 4`, `updated`, `ask`, `criteria_groups`, `criteria`, `standards`, `aisles`, `types`, `entries`.
 
-`criteria` are the material-rule switches, each `{id, short, label, help, kind, default, term}`:
+Product type is the main axis. Every listing names one `type`; `types` lists them, and `aisles` are only the menu: each aisle lists the types it shows, and a type can sit in more than one aisle (the first aisle that lists it is its home in breadcrumbs). Adding a product type is one entry in `types` plus its id in one or more aisles.
 
-- `kind: "avoid"`: when on, a listing misses if its fact is `"no"`. `"unknown"` only counts when the visitor turns on "Count unstated details as misses".
+- `types`: `{id, title, short?, intro?, outro?, ages: {min_months, max_months}, room?, contact?, was?}`. `ages` is the usual age range for the type; the Age range filter uses it for listings without a maker's age rating. `room` (nursery, kitchen, bath, outdoors) and `contact` (mouth, food, skin, sleep, hands) describe the type for later facets. `was` lists old type ids that should redirect here.
+- `aisles`: `{id, title, blurb, source?, types: [type ids], was?}`, in menu order. `was` lists old department ids (`/d/<id>` redirects to the aisle).
+- `criteria_groups`: `{id, title}`, the named sets the material filters are shown in.
+
+`criteria` are the material filters, each `{id, short, label, help, kind, default, term, group}`:
+
+- `kind: "avoid"`: when on, a listing misses if its fact is `"no"`. `"unknown"` only counts when the visitor turns on "Every detail above is stated".
 - `kind: "require"`: when on, a listing misses unless its fact is `"yes"` (silicone testing, organic, tanning).
 - `kind: "contains"`: when on, listings whose `contains` lists that id miss (latex, leather; both off by default).
 
-Every switch works one way: on = hide items that don't meet it. Labels name what gets hidden.
+Every filter works one way: on = hide items that don't meet it. Labels name what gets hidden. A criterion only judges listings that carry a fact for it, so a new criterion (such as `flame`, added flame retardant chemicals) starts with facts where the checklist already records them and fills in as listings are re-read.
 
 `standards` lists the certifications and test schemes the Standards facet offers: `{id, label, term}`.
 
-`groups` (departments) → `categories` (product types) → `entries` (listings). A listing is one product, or several products from the same brand that share the same materials.
+`entries` are the listings, in any order (the site orders them by aisle and type). A listing is one product, or several products from the same brand that share the same materials.
 
 Listing fields:
 
-- `id` (unique slug), `brand`, `line`
+- `id` (unique slug), `type` (a `types` id), `brand`, `line`
 - the checklist, as short noun phrases: `uses` (materials named), `free` (stated absent), `unconfirmed` (no page says), `outside` (flagged parts: plastic lid, synthetic foam, unnamed paint, treated wool)
 - `facts`: `{criterion id: "yes" | "no" | "unknown"}` for every criterion that applies (omit ones that don't)
 - `contains`: `["latex"]` for natural rubber or latex foam, `["leather"]` for leather, suede, sheepskin
 - `standards`: ids from the top-level `standards` list that the maker or store names
-- `age`: `{min_months, text}` when a maker or store states an age rating
+- `age`: `{min_months, max_months?, text}` when a maker or store states an age rating; without one the listing takes its type's `ages`
 - `quote` (verbatim store-page text) or `evidence`; optional `note`
-- `img` (photo key), `img_src` (URL the photo came from)
+- `img` (main photo key), `img_src` (URL the photo came from); `photos`: optional `[{key, src}]`, every store photo in page order, with `img` equal to the first `key`
 - `products`: list of `{name, url, store, price, ships_from, note?, variant?, price_checked?}`. `price` is the text from the store page (the site parses the first dollar amount; pounds, euros, NZ and Canadian dollars are converted roughly). `ships_from` is `"US"`, a country name, or `null` when not recorded. `shipping` is what the store page says about shipping, written by the price check ("Free shipping on orders over $99, $8.95 below"). `variant` is an optional hint for the price check: words from the store's option name ("16 x 32", "Hard Sole") when the page sells several prices and the product name doesn't say which. `price_checked` is the date the price check last found a price on the page.
 
-The "Made with" facet is derived from `uses` and `outside` by the patterns in `assets/catalog.js` (`MATERIALS`); the age facet from `age.min_months`.
-
-Category fields: `id, title, short?, intro?, outro?, entries`. Group fields: `id, title, blurb, source?`.
+The "Made with" facet is derived from `uses` and `outside` by the patterns in `assets/catalog.js` (`MATERIALS`). The Age range facet (birth to 6 months, 6 to 12 months, 12 to 24 months, 2 to 3 years, 3 to 5 years, 5 years and up) matches every band a listing's age range overlaps: from the maker's rating, open-ended up to the type's upper age, or the type's `ages` when no rating is recorded.
 
 ## Adding listings
 
-1. Add the entry to `data.json` under its category, with every field above. Record items that miss the default rules too; nothing is left out of the data.
+1. Add the entry to `entries` in `data.json` with its `type` and every field above (add the type to `types` and an aisle first if it is new). Record items that miss the default rules too; nothing is left out of the data.
 2. Save its photo as `img/<key>.jpg` (640 px max, JPEG) and set `img`.
 3. `node tools/check.js`, then open the site locally and look at the listing.
 4. Commit and push; Pages redeploys from `main`.

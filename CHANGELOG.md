@@ -5,6 +5,9 @@ All notable changes to the site are listed here. The format follows [Keep a Chan
 ## [Unreleased]
 
 ### Added
+- Age range filter (birth to 5 years and up) on every listing page, using the maker's age rating or, where none is recorded, the usual ages for the product type; the product page says which.
+- Product pages show every saved store photo with thumbnails, when a listing records more than one (`photos`).
+- An "Added flame retardant chemicals" material filter, on by default, filled in where listings already record it.
 - Shop-style site: search box, department tabs, filter sidebar (product type, price, brand, made with, standards, age, sold from, material rules), sort options, a product page per listing with the full materials checklist, store links and glossary popovers, and Brands, Glossary and About pages. (#1)
 - `standards`, `age` and `ships_from` fields in `data.json`, read from the existing listing text. (#1)
 - `tools/check.js` to validate the data and `tools/bundle.js` to write a single-file copy of the site. (#1)
@@ -24,6 +27,8 @@ All notable changes to the site are listed here. The format follows [Keep a Chan
 - A blank strip at the top of every page, and department tiles whose labels sat at different heights.
 
 ### Changed
+- Navigation is by product type: departments became aisles in the menu (Play, Sleep, Eat and drink, Wear), each listing names its `type`, and a type can appear in more than one aisle. The home page leads with product types. `data.json` moved to schema 4 (flat `entries`, `types`, `aisles`); `/d/<department>` and `/c/pads` links redirect. "Pads, toppers, pillows and sheets" split into three types.
+- The filter rail is grouped into What it is, What it's made of, and Price and delivery, and the material filters into named sets (plastic and synthetics, treatments and finishes, tested or certified, materials to leave out).
 - The "independent guide" banner moved from the top of every page to the home page; cards say "N options" instead of "N stores" when the options come from one store.
 - Storefront rewrite along the lines of the usual shop template: a department menu with drop-downs, a home page with department tiles and featured products, listing pages per department, product type, brand and search with a left filter rail (material filters as ordinary checkboxes next to type, price, brand and the rest, with counts and removable chips), a product page with a sticky buy box, shipping line, "Buy at <store>" links and one Materials section (the checklist plus how the product reads against each filter, with no switches: filters are changed on listing pages), quick view, Save and Compare lists, clean URLs (`/c/balls`, `/p/<id>`) via `404.html`, and a phone layout with a full-screen filter drawer that applies on "Show N results". Browser tests rewritten for the new pages; `npm run serve` now uses `tools/serve.js`.
 - Usability pass: material rules first in the sidebar with a count of switches on; cards show only what an item misses or how many details aren't stated; facet counts show how many items a rule hides; search as you type with brand, type, material and glossary suggestions; a Made with summary and working rule switches on the product page; one dotted underline per checklist chip; the phone filter drawer is a dialog with focus kept inside; "Ships from" naming throughout; back-to-top button, favicon, scroll position kept on Back; the glossary loads after the first paint.

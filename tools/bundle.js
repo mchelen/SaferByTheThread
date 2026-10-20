@@ -23,7 +23,7 @@ fs.mkdirSync(path.join(out, 'img'), { recursive: true });
 fs.writeFileSync(path.join(out, 'index.html'), html);
 const used = new Set();
 const data = JSON.parse(read('data.json'));
-for (const g of data.groups) for (const c of g.categories) for (const e of c.entries) if (e.img) used.add(e.img);
+for (const e of data.entries) { if (e.img) used.add(e.img); for (const p of e.photos || []) used.add(p.key); }
 const files = {};
 for (const k of used) {
   const src = path.join(root, 'img', k + '.jpg');

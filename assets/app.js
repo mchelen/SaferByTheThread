@@ -1,7 +1,7 @@
 /* Saved by the Thread: storefront front end. Pages render in the browser from data.json; URLs are clean paths
    under the site's base (GitHub Pages serves 404.html for them, which hands the path back to this script):
      /                home                 /shop            every product, with filters in the query string
-     /d/<dept>        a department         /c/<type>        a product type        /b/<brand>   a brand
+     /a/<aisle>       an aisle (menu)      /c/<type>        a product type        /b/<brand>   a brand
      /search?q=       search results       /p/<id>          a product page
      /brands  /glossary[/<term>]  /about  /saved  /compare
    Filters in the query string: q, cat, brand, price, deliv (shipping), mat, std, age, ship, sort, all (show items the material
@@ -16,7 +16,7 @@
   var FACETS = ['cat', 'brand', 'price', 'deliv', 'mat', 'std', 'age', 'ship'];
   var DELIV = [{ id: 'free', label: 'Free shipping' }, { id: 'paid', label: 'Shipping cost stated' }, { id: 'unknown', label: 'Free over a minimum, at checkout or not recorded' }];
   var PAGE = 24;
-  var openGroups = { crit: true, cat: true, price: true, brand: false, mat: true, std: false, age: false, ship: false };
+  var openGroups = { crit: true, cat: true, age: true, price: true, brand: false, mat: false, std: false, ship: false, deliv: false };
   var scrollMem = {}, lastUrl = null, pageShown = PAGE, PEND = null;
 
   // ---------- base path and URLs ----------
@@ -112,7 +112,7 @@
     if (st.sort && st.sort !== 'featured') q.sort = st.sort;
     if (st.all) q.all = '1';
     if (!critIsDefault(st.crit, st.strict)) { q.m = C.criteria.filter(function (c) { return st.crit[c.id]; }).map(function (c) { return c.id; }).join(',') || 'none'; if (st.strict) q.strict = '1'; }
-    var path = st.kind === 'cat' ? '/c/' + st.key : st.kind === 'dept' ? '/d/' + st.key : st.kind === 'brand' ? '/b/' + st.key : st.kind === 'search' ? '/search' : '/shop';
+    var path = st.kind === 'cat' ? '/c/' + st.key : st.kind === 'dept' ? '/a/' + st.key : st.kind === 'brand' ? '/b/' + st.key : st.kind === 'search' ? '/search' : '/shop';
     return U(path, q);
   }
   var STATE = null;
@@ -134,7 +134,7 @@
       case 'brand': return [item.brandId];
       case 'mat': return item.materials;
       case 'std': return item.standards;
-      case 'age': return [item.ageBand];
+      case 'age': return item.ageBands;
       case 'ship': return item.ships;
       case 'deliv': return [item.deliv];
       case 'price':
@@ -153,7 +153,7 @@
     if (!q) return true;
     return S.fold(q).split(/\s+/).filter(Boolean).every(function (w) { return item.q.indexOf(w) >= 0; });
   }
-  function inScope(item, st) { return st.kind !== 'dept' || item.group === st.key; }
+  function inScope(item, st) { return st.kind !== 'dept' || item.aisles.indexOf(st.key) >= 0; }
   // Items matching the search, scope and facets, before the material criteria.
   function base(st, except) {
     return C.items.filter(function (it) {
@@ -203,6 +203,17 @@
     if (!item.img) return '<div class="ph empty"><span>No store photo saved</span></div>';
     return '<div class="ph"><img src="' + esc(asset(item.img)) + '" alt="' + esc(item.brand + ' ' + item.line) + '" width="640" height="800" decoding="async"' +
       (eager ? ' fetchpriority="high"' : ' loading="lazy"') + ' onerror="this.parentNode.classList.add(\'empty\');this.outerHTML=\'<span>No store photo saved</span>\'"></div>';
+  }
+  // Product page photos: the first large, the rest as thumbnails that swap into the main frame.
+  function gallery(item) {
+    if (!item.photos.length) return '<div class="gallery">' + photo(item, true) + '</div>';
+    var alt = item.brand + ' ' + item.line, src = item.products[0] ? ' from ' + esc(item.products[0].store) : '';
+    return '<div class="gallery"><button type="button" class="ph-zoom" data-zoom="' + esc(asset(item.photos[0])) + '" aria-label="Enlarge photo" style="all:unset;display:block;cursor:zoom-in">' +
+      '<div class="ph"><img id="g-main" src="' + esc(asset(item.photos[0])) + '" alt="' + esc(alt) + '" width="640" height="800" decoding="async" fetchpriority="high"></div></button><span class="zoom-hint">' + icon('zoom') + 'Enlarge</span>' +
+      (item.photos.length > 1 ? '<div class="thumbs" role="group" aria-label="Photos">' + item.photos.map(function (p, k) {
+        return '<button type="button" class="thumb" data-photo="' + esc(asset(p)) + '" aria-pressed="' + (k === 0) + '" aria-label="Photo ' + (k + 1) + ' of ' + item.photos.length + '"><img src="' + esc(asset(p)) + '" alt="" loading="lazy" decoding="async"></button>';
+      }).join('') + '</div>' : '') +
+      '<p class="img-src">' + (item.photos.length > 1 ? item.photos.length + ' store photos' : 'Store photo') + src + '.</p></div>';
   }
   function missText(item, r) {
     return r.miss.map(function (c) { return c.short + (c.kind !== 'contains' && item.facts[c.id] === 'unknown' ? ' (not stated)' : ''); }).join(', ');
@@ -262,14 +273,16 @@
     var okItems = C.items.filter(function (i) { return status(i).ok; });
     var art = okItems.filter(function (i) { return i.img; }).filter(function (i, k, a) { return a.findIndex(function (x) { return x.group === i.group; }) === k; }).slice(0, 3);
     var tiles = C.groups.map(function (g) {
-      var items = C.items.filter(function (i) { return i.group === g.id; });
+      var items = C.items.filter(function (i) { return i.aisles.indexOf(g.id) >= 0; });
       var pic = items.filter(function (i) { return i.img && status(i).ok; })[0] || items.filter(function (i) { return i.img; })[0];
-      return '<a class="tile" href="' + U('/d/' + g.id) + '"><div class="tile-img">' + (pic ? '<img src="' + esc(asset(pic.img)) + '" alt="" loading="lazy" decoding="async">' : '') + '</div>' +
+      return '<a class="tile" href="' + U('/a/' + g.id) + '"><div class="tile-img">' + (pic ? '<img src="' + esc(asset(pic.img)) + '" alt="" loading="lazy" decoding="async">' : '') + '</div>' +
         '<span class="tile-t">' + esc(g.title) + '</span><span class="tile-n">' + plural(items.length, 'listing') + ' · ' + g.cats.length + ' types</span></a>';
     }).join('');
-    var types = Object.keys(C.cats).map(function (k) { return C.cats[k]; }).map(function (c) {
-      var n = C.items.filter(function (i) { return i.cat === c.id; }).length;
-      return '<a href="' + U('/c/' + c.id) + '">' + esc(c.title) + ' <span>' + n + '</span></a>';
+    var types = C.groups.map(function (g) {
+      return '<div class="type-col"><h3><a href="' + U('/a/' + g.id) + '">' + esc(g.title) + '</a></h3><div class="types">' + g.cats.map(function (id) {
+        var n = C.items.filter(function (i) { return i.cat === id; }).length;
+        return '<a href="' + U('/c/' + id) + '">' + esc(C.cats[id].title) + ' <span>' + n + '</span></a>';
+      }).join('') + '</div></div>';
     }).join('');
     var topBrands = brandList().sort(function (a, b) { return b.items.length - a.items.length || S.fold(a.name).localeCompare(S.fold(b.name)); }).slice(0, 18)
       .map(function (b) { return '<a href="' + U('/b/' + b.id) + '">' + esc(b.name) + '<span>' + b.items.length + '</span></a>'; }).join('');
@@ -281,9 +294,9 @@
       '<p class="lede">' + C.items.length + ' products from ' + Object.keys(C.brands).length + ' brands, each with what its maker says it is made of, what the maker says is absent, and what no page states. Filter by material, standard, price, brand and more, then buy from the store that sells it.</p>' +
       '<div class="hero-cta"><a class="btn" href="' + U('/shop') + '">Shop all products</a><a class="btn-2" href="' + U('/about') + '">How the guide works</a></div><p class="hero-note">An independent guide: nothing is sold here, every product links to the store that sells it, and no listing is rated for safety or risk.</p></div>' +
       '<div class="hero-art" aria-hidden="true">' + art.map(function (i) { return '<a href="' + U('/p/' + i.id) + '" tabindex="-1"><img src="' + esc(asset(i.img)) + '" alt="" decoding="async"></a>'; }).join('') + '</div></section>' +
-      '<section class="sec"><div class="sec-h"><h2>Shop by department</h2><a href="' + U('/shop') + '">All products →</a></div><div class="tiles">' + tiles + '</div></section>' +
+      '<section class="sec"><div class="sec-h"><h2>Shop by product type</h2><a href="' + U('/shop') + '">All products →</a></div><div class="type-cols">' + types + '</div></section>' +
       cardRail(listGet(RECENT_KEY).map(byId).filter(Boolean).slice(0, 8), 'Pick up where you left off', U('/saved'), 'Your saved products') +
-      '<section class="sec"><div class="sec-h"><h2>Shop by product type</h2></div><div class="types">' + types + '</div></section>' +
+      '<section class="sec"><div class="sec-h"><h2>Browse by everyday need</h2></div><div class="tiles">' + tiles + '</div></section>' +
       cardRail(featured, 'Featured products', U('/shop'), 'See all ' + okItems.length) +
       '<section class="sec"><div class="sec-h"><h2>What every listing tells you</h2><a href="' + U('/about') + '">How we read a product →</a></div><div class="explain">' +
       '<div class="r-uses"><span class="ic" aria-hidden="true">✓</span><b>Made with</b><p>The materials the maker or store names.</p></div>' +
@@ -328,38 +341,50 @@
   // The material criteria as a filter group: each option narrows the list like any other checkbox.
   function critGroup(st) {
     var b = base(st), on = critOn(st.crit, st.strict);
-    var rows = C.criteria.map(function (c) {
+    function row(c) {
       var crit = Object.assign({}, st.crit); crit[c.id] = true;
       var n = b.filter(function (it) { return status(it, crit, st.strict).ok; }).length;
       return '<label class="opt' + (n ? '' : ' dim') + '"><input type="checkbox" data-crit="' + c.id + '" id="f-crit-' + c.id + '"' + (st.crit[c.id] ? ' checked' : '') + '>' +
         '<span class="lbl">' + esc(S.filterLabel(c)) + (TERMS[c.term] ? ' <a class="q" href="' + U('/glossary/' + c.term) + '" data-term="' + c.term + '" aria-label="What this means: ' + esc(c.short) + '">?</a>' : '') + '<small>' + esc(c.help) + '</small></span><span class="n">' + n + '</span></label>';
-    }).join('');
+    }
+    // Criteria sit in small named sets ("Plastic and synthetics", "Treatments and finishes", ...); ungrouped ones go last.
+    var sets = C.critGroups.map(function (g) { return { title: g.title, list: C.criteria.filter(function (c) { return c.group === g.id; }) }; })
+      .concat([{ title: C.critGroups.length ? 'Other' : '', list: C.criteria.filter(function (c) { return !C.critGroups.some(function (g) { return g.id === c.group; }); }) }])
+      .filter(function (x) { return x.list.length; });
+    var rows = sets.map(function (x) { return (x.title ? '<p class="opt-group">' + esc(x.title) + '</p>' : '') + x.list.map(row).join(''); }).join('');
     var nStrict = b.filter(function (it) { return status(it, st.crit, true).ok; }).length;
-    rows += '<label class="opt"><input type="checkbox" data-crit="strict" id="f-crit-strict"' + (st.strict ? ' checked' : '') + '><span class="lbl">Every detail above is stated<small>Leaves out items whose page doesn’t say, for the filters you have on.</small></span><span class="n">' + nStrict + '</span></label>';
+    rows += '<p class="opt-group">Unstated details</p><label class="opt"><input type="checkbox" data-crit="strict" id="f-crit-strict"' + (st.strict ? ' checked' : '') + '><span class="lbl">Every detail above is stated<small>Leaves out items whose page doesn’t say, for the filters you have on.</small></span><span class="n">' + nStrict + '</span></label>';
     var hint = '<p class="hint">Ticked filters leave out products that don’t meet them' + (critIsDefault(st.crit, st.strict) ? '; these start from one family’s preferences.' : '.') + ' <a href="#" data-crit-reset>' + (critIsDefault(st.crit, st.strict) ? 'Untick all' : 'Reset to defaults') + '</a></p>';
     return group('crit', 'Materials & making', rows + hint, on);
   }
+  // The rail in three headed sections: what the product is, what it is made of, and price and delivery.
+  function railSec(title, body) { return body ? '<section class="rail-sec"><h3 class="rail-sec-h">' + esc(title) + '</h3>' + body + '</section>' : ''; }
   function filterRail(st) {
-    var h = critGroup(st);
+    var what = '';
     if (st.kind !== 'cat') {
-      var cc = countsFor('cat', st);
+      var cc = countsFor('cat', st), seen = {};
       var groups = C.groups.filter(function (g) { return st.kind !== 'dept' || g.id === st.key; });
-      h += group('cat', 'Product type', groups.map(function (g) {
-        return (groups.length > 1 ? '<p class="opt-group">' + esc(g.title) + '</p>' : '') + optionList('cat', g.cats.map(function (id) { return { id: id, label: C.cats[id].title }; }), cc, st);
+      what += group('cat', 'Product type', groups.map(function (g) {
+        // A type in several aisles is listed once, under the first aisle shown.
+        var ids = g.cats.filter(function (id) { if (seen[id]) return false; seen[id] = 1; return true; });
+        if (!ids.length) return '';
+        return (groups.length > 1 ? '<p class="opt-group">' + esc(g.title) + '</p>' : '') + optionList('cat', ids.map(function (id) { return { id: id, label: C.cats[id].title }; }), cc, st);
       }).join(''), st.cat.length);
     }
-    h += group('price', 'Price', optionList('price', S.PRICE_BANDS.concat([{ id: 'none', label: 'Price not listed', hideEmpty: true }]), countsFor('price', st), st) +
-      '<p class="hint">Other currencies converted roughly to US dollars.</p>', st.price.length);
-    h += group('deliv', 'Shipping to the US', optionList('deliv', DELIV, countsFor('deliv', st), st) + '<p class="hint">As the store page states it. Free-over-a-minimum counts as free when the price is over it.</p>', st.deliv.length);
+    what += group('age', 'Age range', optionList('age', S.AGE_BANDS, countsFor('age', st), st) +
+      '<p class="hint">The maker’s age rating where one is recorded, otherwise the usual ages for the product type. Several ticked: products for any of them.</p>', st.age.length);
     if (st.kind !== 'brand') {
-      h += group('brand', 'Brand', '<input type="search" class="find" id="brand-find" placeholder="Find a brand" aria-label="Find a brand">' +
+      what += group('brand', 'Brand', '<input type="search" class="find" id="brand-find" placeholder="Find a brand" aria-label="Find a brand">' +
         '<div id="brand-opts">' + optionList('brand', brandList().map(function (b) { return { id: b.id, label: b.name }; }), countsFor('brand', st), st, 8) + '</div>', st.brand.length);
     }
-    h += group('mat', 'Made with', optionList('mat', S.MATERIALS, countsFor('mat', st), st) + '<p class="hint">Several ticked: products made with all of them.</p>', st.mat.length);
-    h += group('std', 'Standards named', optionList('std', C.standards.map(function (s) { return { id: s.id, label: s.label }; }), countsFor('std', st), st) + '<p class="hint">Listed when a maker or store names the standard.</p>', st.std.length);
-    h += group('age', 'Age rating', optionList('age', S.AGE_BANDS.concat([{ id: 'none', label: 'No age rating recorded' }]), countsFor('age', st), st), st.age.length);
-    h += group('ship', 'Ships from', optionList('ship', [{ id: 'us', label: 'The US' }, { id: 'abroad', label: 'Outside the US' }, { id: 'unknown', label: 'Not recorded' }], countsFor('ship', st), st), st.ship.length);
-    return h;
+    var made = critGroup(st) +
+      group('mat', 'Made with', optionList('mat', S.MATERIALS, countsFor('mat', st), st) + '<p class="hint">Several ticked: products made with all of them.</p>', st.mat.length) +
+      group('std', 'Standards named', optionList('std', C.standards.map(function (s) { return { id: s.id, label: s.label }; }), countsFor('std', st), st) + '<p class="hint">Listed when a maker or store names the standard.</p>', st.std.length);
+    var buy = group('price', 'Price', optionList('price', S.PRICE_BANDS.concat([{ id: 'none', label: 'Price not listed', hideEmpty: true }]), countsFor('price', st), st) +
+        '<p class="hint">Other currencies converted roughly to US dollars.</p>', st.price.length) +
+      group('deliv', 'Shipping to the US', optionList('deliv', DELIV, countsFor('deliv', st), st) + '<p class="hint">As the store page states it. Free-over-a-minimum counts as free when the price is over it.</p>', st.deliv.length) +
+      group('ship', 'Ships from', optionList('ship', [{ id: 'us', label: 'The US' }, { id: 'abroad', label: 'Outside the US' }, { id: 'unknown', label: 'Not recorded' }], countsFor('ship', st), st), st.ship.length);
+    return railSec('What it is', what) + railSec('What it’s made of', made) + railSec('Price and delivery', buy);
   }
   // One-tap refinements above the grid, as on Google Shopping: the same facets as the rail, shown as toggles.
   function quickChips(st, list) {
@@ -384,7 +409,7 @@
     st.deliv.forEach(function (v) { var d = DELIV.filter(function (x) { return x.id === v; })[0]; if (d) add('deliv', v, d.label); });
     st.mat.forEach(function (v) { add('mat', v, matLabel(v)); });
     st.std.forEach(function (v) { var s = C.standards.filter(function (x) { return x.id === v; })[0]; add('std', v, s ? s.label : v); });
-    st.age.forEach(function (v) { var a = S.AGE_BANDS.filter(function (x) { return x.id === v; })[0]; add('age', v, a ? a.label : 'No age rating'); });
+    st.age.forEach(function (v) { var a = S.AGE_BANDS.filter(function (x) { return x.id === v; })[0]; if (a) add('age', v, 'Age: ' + a.label); });
     st.ship.forEach(function (v) { var l = { us: 'Ships from the US', abroad: 'Ships from outside the US', unknown: 'Shipping not recorded' }[v]; if (l) add('ship', v, l); });
     var d = defaults();
     C.criteria.forEach(function (c) { if (st.crit[c.id] && !d[c.id]) add('crit', c.id, S.filterLabel(c)); });
@@ -426,7 +451,7 @@
     var title = listTitle(st), intro = '', sub = '', trail = [];
     if (st.kind === 'cat' && catOf(st.key)) {
       var c = catOf(st.key), g = groupOf(c.group);
-      trail = [[g.title, U('/d/' + g.id)], [c.title]];
+      trail = [[g.title, U('/a/' + g.id)], [c.title]];
       if (c.intro) intro = c.intro;
     } else if (st.kind === 'dept' && groupOf(st.key)) {
       var gg = groupOf(st.key);
@@ -523,10 +548,9 @@
     var similar = C.items.filter(function (i) { return i.cat === item.cat && i !== item; })
       .sort(function (a, b) { return (status(b).ok - status(a).ok) || (!!b.img - !!a.img); }).slice(0, 3);
     recentAdd(item.id);
-    main.innerHTML = '<div class="wrap">' + crumbs([[g.title, U('/d/' + g.id)], [cat.title, U('/c/' + cat.id)], [item.line]]) +
+    main.innerHTML = '<div class="wrap">' + crumbs([[g.title, U('/a/' + g.id)], [cat.title, U('/c/' + cat.id)], [item.line]]) +
       '<article class="pdp">' +
-      '<div class="gallery">' + (item.img ? '<button type="button" class="ph-zoom" data-zoom="' + esc(asset(item.img)) + '" aria-label="Enlarge photo" style="all:unset;display:block;cursor:zoom-in">' + photo(item, true) + '</button><span class="zoom-hint">' + icon('zoom') + 'Enlarge</span>' : photo(item, true)) +
-      (item.img ? '<p class="img-src">Store photo' + (item.products[0] ? ' from ' + esc(item.products[0].store) : '') + '.</p>' : '') + '</div>' +
+      gallery(item) +
       '<div class="buybox">' +
       '<p class="brand"><a href="' + U('/b/' + item.brandId) + '">' + esc(item.brand) + '</a></p><h1>' + esc(item.line) + '</h1>' +
       '<p class="price">' + esc(S.priceLabel(item)) + (item.products.length > 1 ? '<small>' + (storeCount(item) > 1 ? storeCount(item) + ' stores' : item.products.length + ' options') + '</small>' : '') + '</p>' +
@@ -540,9 +564,9 @@
       (item.quote ? '<blockquote class="ev"><p>“' + esc(item.quote) + '”</p><footer>From the store page</footer></blockquote>' : item.evidence ? '<p class="ev"><span>' + esc(item.evidence) + '</span></p>' : '') +
       (item.note ? '<p class="muted" style="font-size:14px">' + esc(item.note) + '</p>' : '') +
       '<dl class="facts">' + (stds.length ? '<div><dt>Standards named</dt><dd>' + stds.join(', ') + '</dd></div>' : '') +
-      '<div><dt>Age rating</dt><dd>' + (item.age ? esc(item.age.text) : 'None recorded') + '</dd></div>' +
+      '<div><dt>Age</dt><dd>' + esc(item.ageLabel) + (item.ageStated ? ' <small class="muted">(maker’s rating)</small>' : ' <small class="muted">(usual for ' + esc(cat.title.toLowerCase()) + '; no maker rating recorded)</small>') + '</dd></div>' +
       '<div><dt>Product type</dt><dd><a href="' + U('/c/' + cat.id) + '">' + esc(cat.title) + '</a></dd></div>' +
-      '<div><dt>Department</dt><dd><a href="' + U('/d/' + g.id) + '">' + esc(g.title) + '</a></dd></div></dl>' +
+      '<div><dt>Browse</dt><dd>' + cat.aisles.map(function (id) { return '<a href="' + U('/a/' + id) + '">' + esc(groupOf(id).title) + '</a>'; }).join(', ') + '</dd></div></dl>' +
       '</div></article>' +
       '<div class="pdp-below">' +
       '<details class="acc" open id="materials"><summary>Materials' + icon('chev') + '</summary><div class="acc-body"><p class="lede">What the maker or store names, what they say is absent, and what no page states. Dotted chips open a definition.</p>' + checklist(item) +
@@ -633,7 +657,7 @@
     unst: ['Not stated', function (i) { return i.unconfirmed.length ? '<div class="chips-row r-unk">' + i.unconfirmed.map(chip).join('') + '</div>' : '<span class="muted">All covered details stated</span>'; }],
     out: ['Flagged parts', function (i) { return i.outside.length ? '<div class="chips-row r-out">' + i.outside.map(chip).join('') + '</div>' : '<span class="muted">None</span>'; }],
     std: ['Standards named', function (i) { return i.standards.length ? stdLinks(i) : '<span class="muted">None</span>'; }],
-    age: ['Age rating', function (i) { return i.age ? esc(i.age.text) : '<span class="muted">None recorded</span>'; }],
+    age: ['Age', function (i) { return esc(i.ageLabel) + (i.ageStated ? '' : ' <span class="muted">(usual for the type)</span>'); }],
     from: ['Ships from', function (i) { return esc(i.products.map(function (p) { return p.ships_from || 'not recorded'; }).filter(function (v, k, a) { return a.indexOf(v) === k; }).join(', ')); }]
   };
   function compareTable(items, opt) {
@@ -758,22 +782,22 @@
     else if (!box.contains(document.activeElement)) { ev.preventDefault(); first.focus(); }
   }
 
-  // ---------- header: departments menu and search suggestions ----------
+  // ---------- header: aisle menu and search suggestions ----------
   function buildNav() {
     var h = '<div class="menu-x" hidden><button type="button" class="ib" id="menu-close" aria-label="Close menu">' + icon('x') + '</button></div>';
     h += '<div class="cat-item"><a class="cat-a" href="' + U('/shop') + '" data-nav="shop">All products</a></div>';
     C.groups.forEach(function (g) {
-      var n = C.items.filter(function (i) { return i.group === g.id; }).length;
+      var n = C.items.filter(function (i) { return i.aisles.indexOf(g.id) >= 0; }).length;
       h += '<div class="cat-item" data-dept="' + g.id + '"><button type="button" class="cat-a" data-nav="d:' + g.id + '" aria-expanded="false" aria-haspopup="true">' + esc(g.title) + icon('chev') + '</button>' +
         '<div class="mega"><p>' + esc(g.title) + ' · ' + plural(n, 'product') + '</p><ul>' + g.cats.map(function (id) { var c = C.cats[id], k = C.items.filter(function (i) { return i.cat === id; }).length; return '<li><a href="' + U('/c/' + id) + '">' + esc(c.title) + '<span>' + k + '</span></a></li>'; }).join('') + '</ul>' +
-        '<a class="mega-all" href="' + U('/d/' + g.id) + '">Shop all ' + esc(g.title.toLowerCase()) + ' →</a></div></div>';
+        '<a class="mega-all" href="' + U('/a/' + g.id) + '">Shop all ' + esc(g.title.toLowerCase()) + ' →</a></div></div>';
     });
     h += '<span class="spacer"></span>';
     h += '<div class="cat-item"><a class="cat-a quiet" href="' + U('/brands') + '" data-nav="brands">Brands</a></div>' +
       '<div class="cat-item"><a class="cat-a quiet" href="' + U('/glossary') + '" data-nav="glossary">Glossary</a></div>' +
       '<div class="cat-item"><a class="cat-a quiet" href="' + U('/about') + '" data-nav="about">About</a></div>';
     $('#cats').innerHTML = h;
-    $('#foot-shop').innerHTML = '<li><a href="' + U('/shop') + '">All products</a></li>' + C.groups.map(function (g) { return '<li><a href="' + U('/d/' + g.id) + '">' + esc(g.title) + '</a></li>'; }).join('');
+    $('#foot-shop').innerHTML = '<li><a href="' + U('/shop') + '">All products</a></li>' + C.groups.map(function (g) { return '<li><a href="' + U('/a/' + g.id) + '">' + esc(g.title) + '</a></li>'; }).join('');
     $('#foot-brands').innerHTML = brandList().sort(function (a, b) { return b.items.length - a.items.length; }).slice(0, 6).map(function (b) { return '<li><a href="' + U('/b/' + b.id) + '">' + esc(b.name) + '</a></li>'; }).join('') + '<li><a href="' + U('/brands') + '">All brands →</a></li>';
     $$('a[data-link]').forEach(function (a) { a.href = U(a.getAttribute('href')); });
   }
@@ -817,8 +841,10 @@
     var url = location.pathname + location.search;
     if (key === '') renderHome();
     else if (key === 'shop') { STATE = readState('shop', '', q); pageShown = PAGE; renderList(); }
-    else if (key === 'd' && groupOf(p[1])) { STATE = readState('dept', p[1], q); pageShown = PAGE; renderList(); }
+    else if (key === 'a' && groupOf(p[1])) { STATE = readState('dept', p[1], q); pageShown = PAGE; renderList(); }
+    else if (key === 'd' && renamed('groups', p[1])) { go(U('/a/' + renamed('groups', p[1]), q), true); return; }
     else if (key === 'c' && catOf(p[1])) { STATE = readState('cat', p[1], q); pageShown = PAGE; renderList(); }
+    else if (key === 'c' && renamed('cats', p[1])) { go(U('/c/' + renamed('cats', p[1]), q), true); return; }
     else if (key === 'b' && C.brands[p[1]]) { STATE = readState('brand', p[1], q); pageShown = PAGE; renderList(); }
     else if (key === 'search') { STATE = readState('search', '', q); pageShown = PAGE; renderList(); }
     else if (key === 'p' && p[1]) renderProduct(decodeURIComponent(p[1]));
@@ -842,10 +868,18 @@
       renderProduct(decodeURIComponent(currentPath().split('/')[2]), true);
       $$('.acc').forEach(function (d, i) { d.open = open[i] >= 0; });
     }
-    else if (STATE && ['shop', 'd', 'c', 'b', 'search'].indexOf(key) >= 0) { STATE.crit = Object.assign({}, CRIT); STATE.strict = STRICT; setState(STATE); }
+    else if (STATE && ['shop', 'a', 'c', 'b', 'search'].indexOf(key) >= 0) { STATE.crit = Object.assign({}, CRIT); STATE.strict = STRICT; setState(STATE); }
     else if (key === 'compare') renderCompare();
     else if (key === 'saved') renderSaved();
     else if (key === '') renderHome();
+  }
+  // Departments became aisles (/d/toys is now /a/play) and some product types were split or renamed; each aisle and
+  // type lists its old ids in `was`, so old links land on the new page.
+  function renamed(kind, id) {
+    if (kind === 'groups') { if (groupOf(id)) return id; var g = C.groups.filter(function (x) { return x.was.indexOf(id) >= 0; })[0]; return g ? g.id : null; }
+    if (catOf(id)) return id;
+    var c = Object.keys(C.cats).filter(function (k) { return C.cats[k].was.indexOf(id) >= 0; })[0];
+    return c || null;
   }
   // Old links (#/p/<id>, #/?cat=balls, #/glossary/<term>) still arrive; map them onto the new paths.
   function legacyHash() {
@@ -856,7 +890,7 @@
     if (parts[0] === 'p') return U('/p/' + parts[1]);
     if (parts[0] === 'brands' || parts[0] === 'about') return U('/' + parts[0]);
     if (parts[0] === 'glossary') return U('/glossary' + (parts[1] ? '/' + parts[1] : ''));
-    if (q.dept && !q.cat) { var d = q.dept; delete q.dept; return U('/d/' + d, q); }
+    if (q.dept && !q.cat) { var d = q.dept; delete q.dept; return U('/a/' + (renamed('groups', d) || d), q); }
     if (q.misses) { delete q.misses; q.all = '1'; }
     return Object.keys(q).length ? U('/shop', q) : U('/');
   }
@@ -994,6 +1028,10 @@
       openQuickView(t.getAttribute('data-qv'), t);
     } else if (t.matches('[data-qv-close]')) {
       closeQuickView();
+    } else if (t.matches('[data-photo]')) {
+      var gm = $('#g-main'), z = $('.ph-zoom'), ph = t.getAttribute('data-photo');
+      if (gm) gm.src = ph; if (z) z.setAttribute('data-zoom', ph);
+      $$('.thumb').forEach(function (b) { b.setAttribute('aria-pressed', b === t); });
     } else if (t.matches('[data-zoom]')) {
       openLightbox(t.getAttribute('data-zoom'), $('img', t) && $('img', t).alt);
     } else if (t.id === 'menu-open') {

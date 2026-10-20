@@ -243,6 +243,9 @@ h3 { font-size: 15px; }
 .opt .lbl .q { display: inline-grid; place-items: center; width: 20px; height: 20px; margin-left: 4px; border: 1px solid var(--line-strong); border-radius: 50%; font-size: 11px; font-weight: 700; color: var(--muted); text-decoration: none; vertical-align: text-bottom; }
 .opt .lbl .q:hover { border-color: var(--ink); color: var(--ink); }
 .opt-group { margin: 10px 0 2px; font-size: 12px; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+.rail-sec { margin-top: 18px; }
+.rail-sec:first-of-type { margin-top: 8px; }
+.rail-sec-h { margin: 0; padding: 6px 0; font-size: 13px; font-weight: 700; letter-spacing: .02em; color: var(--ink); border-bottom: 2px solid var(--ink); }
 .fbody .more-opts { font-size: 13px; color: var(--accent); margin-top: 4px; }
 .fbody .find { width: 100%; padding: 8px 10px; border: 1px solid var(--line-strong); border-radius: 6px; background: var(--bg); margin: 2px 0 6px; }
 .toolbar { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; padding: 2px 0 12px; border-bottom: 1px solid var(--line); margin-bottom: 14px; }
@@ -280,6 +283,14 @@ h3 { font-size: 15px; }
 .gallery .zoom-hint { position: absolute; right: 12px; bottom: 12px; display: inline-flex; align-items: center; gap: 6px; padding: 6px 10px; border-radius: 6px; background: rgba(255, 255, 255, .92); color: #1b1b1b; font-size: 12px; font-weight: 600; }
 .gallery .zoom-hint svg { width: 16px; height: 16px; }
 .gallery .img-src { margin: 8px 0 0; font-size: 12px; color: var(--muted); }
+.gallery .thumbs { display: flex; gap: 8px; margin-top: 10px; overflow-x: auto; padding-bottom: 4px; }
+.gallery .thumb { flex: none; width: 64px; height: 64px; padding: 0; border: 1px solid var(--line); border-radius: 6px; background: var(--plate); cursor: pointer; overflow: hidden; }
+.gallery .thumb img { width: 100%; height: 100%; object-fit: contain; }
+.gallery .thumb[aria-pressed="true"] { border: 2px solid var(--ink); }
+.type-cols { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 18px 28px; }
+.type-col h3 { margin: 0 0 8px; font-size: 15px; }
+.type-col h3 a { color: inherit; text-decoration: none; }
+.type-col h3 a:hover { text-decoration: underline; }
 .buybox { position: sticky; top: calc(var(--hdr-h) + 56px); }
 .buybox .brand { margin: 0 0 4px; font-size: 12px; letter-spacing: .08em; text-transform: uppercase; }
 .buybox .brand a { color: var(--muted); text-decoration: none; }

@@ -1,4 +1,4 @@
-/* Saved by the Thread: turns data.json (schema 3) into a flat product catalog with the facets the shop filters on.
+/* Saved by the Thread: turns data.json (schema 4) into a flat product catalog with the facets the shop filters on.
    Runs in the browser (window.SBTT) and in Node (module.exports) so tools/check can test the same rules. */
 (function (root) {
   'use strict';
@@ -15,13 +15,24 @@
     { id: '500+', label: '$500 and up', min: 500, max: Infinity }
   ];
 
+  // Age range facet. A listing covers the months from its maker's age rating (or, without one, the usual ages for
+  // its product type) and matches every band that range overlaps.
   var AGE_BANDS = [
-    { id: 'birth', label: 'From birth', test: function (m) { return m === 0; } },
-    { id: '12m', label: '12 months and up', test: function (m) { return m > 0 && m <= 12; } },
-    { id: '18m', label: '18 months and up', test: function (m) { return m > 12 && m <= 18; } },
-    { id: '2y', label: '2 years and up', test: function (m) { return m > 18 && m <= 24; } },
-    { id: '3y', label: '3 years and up', test: function (m) { return m > 24; } }
+    { id: '0-6m', label: 'Birth to 6 months', min: 0, max: 6 },
+    { id: '6-12m', label: '6 to 12 months', min: 6, max: 12 },
+    { id: '12-24m', label: '12 to 24 months', min: 12, max: 24 },
+    { id: '2-3y', label: '2 to 3 years', min: 24, max: 36 },
+    { id: '3-5y', label: '3 to 5 years', min: 36, max: 60 },
+    { id: '5y+', label: '5 years and up', min: 60, max: Infinity }
   ];
+  function ageBands(min, max) { return AGE_BANDS.filter(function (b) { return min < b.max && max > b.min; }).map(function (b) { return b.id; }); }
+  function ageSpan(m) { return m === 0 ? 'birth' : m < 24 ? m + ' months' : (m % 12 ? (m / 12).toFixed(1).replace(/\.0$/, '') : m / 12) + ' years'; }
+  function ageText(min, max) {
+    if (max == null || max >= 72) return min === 0 ? 'From birth' : ageSpan(min).replace(/^./, function (c) { return c.toUpperCase(); }) + ' and up';
+    if (min === 0) return 'Birth to ' + ageSpan(max);
+    if (min < 24 && max <= 24) return min + ' to ' + max + ' months';
+    return ageSpan(min) + ' to ' + ageSpan(max);
+  }
 
   // "Made with" facet, read from the Made with and Flagged parts rows. Leather and latex come from `contains`.
   var MATERIALS = [
@@ -133,14 +144,22 @@
 
   function build(data) {
     var items = [], cats = {}, groups = [], brands = {};
-    var std = {}; (data.standards || []).forEach(function (s) { std[s.id] = s; });
     var n = 0;
-    data.groups.forEach(function (g) {
-      var gc = [];
-      g.categories.forEach(function (c) {
-        cats[c.id] = { id: c.id, title: c.title, short: c.short || c.title, intro: c.intro || '', outro: c.outro || '', group: g.id };
-        gc.push(c.id);
-        c.entries.forEach(function (e) {
+    // Aisles are the menu: each lists the product types it shows, and a type can sit in more than one aisle.
+    data.types.forEach(function (t) {
+      cats[t.id] = { id: t.id, title: t.title, short: t.short || t.title, intro: t.intro || '', outro: t.outro || '', ages: t.ages || null,
+                     room: t.room || '', contact: t.contact || '', was: t.was || [], aisles: [], group: '' };
+    });
+    data.aisles.forEach(function (a) {
+      a.types.forEach(function (id) { if (cats[id]) { cats[id].aisles.push(a.id); if (!cats[id].group) cats[id].group = a.id; } });
+      groups.push({ id: a.id, title: a.title, blurb: a.blurb || '', source: a.source || '', was: a.was || [], cats: a.types.filter(function (id) { return cats[id]; }) });
+    });
+    // Listings in the order of their types in the aisles, so "Featured" groups like products together.
+    var order = []; groups.forEach(function (g) { g.cats.forEach(function (id) { if (order.indexOf(id) < 0) order.push(id); }); });
+    data.types.forEach(function (t) { if (order.indexOf(t.id) < 0) order.push(t.id); });
+    order.forEach(function (tid) {
+      var c = cats[tid];
+      data.entries.filter(function (e) { return e.type === tid; }).forEach(function (e) {
           var prods = e.products.map(function (p) {
             var pr = parsePrice(p.price);
             var o = Object.assign({}, p, { usd: pr ? pr.usd : null, approx: pr ? pr.approx : false });
@@ -156,18 +175,22 @@
           var mats = MATERIALS.filter(function (m) {
             return m.contains ? (e.contains || []).indexOf(m.contains) >= 0 : m.rx.test(chips);
           }).map(function (m) { return m.id; });
-          var age = e.age ? AGE_BANDS.filter(function (b) { return b.test(e.age.min_months); })[0].id : 'none';
+          var tAges = c.ages || { min_months: 0, max_months: 72 };
+          var aMin = e.age ? e.age.min_months : tAges.min_months;
+          var aMax = e.age ? (e.age.max_months != null ? e.age.max_months : Math.max(tAges.max_months, aMin + 12)) : tAges.max_months;
           var ships = {};
           prods.forEach(function (p) { ships[p.ships_from === 'US' ? 'us' : p.ships_from ? 'abroad' : 'unknown'] = 1; });
           // Shipping as the store or the recorded price text states it; "free" when any store ships free with no minimum.
           var shipTexts = prods.map(function (p) { return p.shipping || (/free (?:us )?shipping/i.test(p.price) ? 'Free shipping' : ''); });
           var freeShip = shipTexts.some(function (t) { return /^free shipping$/i.test(t); });
           var item = {
-            id: e.id, n: n++, brand: e.brand, brandId: slug(e.brand), line: e.line, cat: c.id, group: g.id,
+            id: e.id, n: n++, brand: e.brand, brandId: slug(e.brand), line: e.line, cat: c.id, group: c.group, aisles: c.aisles,
             uses: e.uses, free: e.free, unconfirmed: e.unconfirmed, outside: e.outside || [],
-            facts: e.facts, contains: e.contains || [], standards: e.standards || [], age: e.age || null, ageBand: age,
+            facts: e.facts, contains: e.contains || [], standards: e.standards || [], age: e.age || null, ageMin: aMin, ageMax: aMax, ageBands: ageBands(aMin, aMax), ageStated: !!e.age,
+            ageLabel: e.age ? e.age.text : ageText(aMin, aMax),
             quote: e.quote || '', evidence: e.evidence || '', note: e.note || '',
-            img: e.img ? 'img/' + e.img + '.jpg' : '', products: prods,
+            img: e.img ? 'img/' + e.img + '.jpg' : '', photos: (e.photos && e.photos.length ? e.photos.map(function (p) { return p.key; }) : e.img ? [e.img] : []).map(function (k) { return 'img/' + k + '.jpg'; }),
+            products: prods,
             min: prices.length ? Math.min.apply(null, prices) : null,
             max: prices.length ? Math.max.apply(null, prices) : null,
             approx: prods.some(function (p) { return p.approx; }),
@@ -176,15 +199,13 @@
             // Shipping facet: what the card shows, the cheapest listing's shipping.
             deliv: !byCost[0] || byCost[0].shipCost == null ? 'unknown' : byCost[0].shipCost === 0 ? 'free' : 'paid',
             unstatedCount: e.unconfirmed.length,
-            q: fold([e.brand, e.line, c.title, g.title].concat(e.uses, e.products.map(function (p) { return p.name + ' ' + p.store; })).join(' '))
+            q: fold([e.brand, e.line, c.title].concat(c.aisles.map(function (id) { return groups.filter(function (g) { return g.id === id; })[0].title; }), e.uses, e.products.map(function (p) { return p.name + ' ' + p.store; })).join(' '))
           };
           items.push(item);
           (brands[item.brandId] = brands[item.brandId] || { id: item.brandId, name: e.brand, items: [] }).items.push(item);
         });
-      });
-      groups.push({ id: g.id, title: g.title, blurb: g.blurb, source: g.source || '', cats: gc });
     });
-    return { items: items, cats: cats, groups: groups, brands: brands, criteria: data.criteria, standards: data.standards || [], ask: data.ask, updated: data.updated };
+    return { items: items, cats: cats, groups: groups, brands: brands, criteria: data.criteria, critGroups: data.criteria_groups || [], standards: data.standards || [], ask: data.ask, updated: data.updated };
   }
 
   // How a material criterion reads as a filter option: what you get when it is ticked.
@@ -231,6 +252,6 @@
   }
 
   var api = { build: build, evaluate: evaluate, parsePrice: parsePrice, priceLabel: priceLabel, priceFrom: priceFrom, shipCost: shipCost, filterLabel: filterLabel, money: money, termRuns: termRuns, fold: fold, slug: slug,
-              PRICE_BANDS: PRICE_BANDS, AGE_BANDS: AGE_BANDS, MATERIALS: MATERIALS };
+              PRICE_BANDS: PRICE_BANDS, AGE_BANDS: AGE_BANDS, MATERIALS: MATERIALS, ageText: ageText };
   if (typeof module === 'object' && module.exports) module.exports = api; else root.SBTT = api;
 })(this);

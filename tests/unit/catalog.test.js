@@ -61,34 +61,52 @@ test('evaluate: contains switches hide latex only when on', () => {
 
 function sample() {
   return {
-    schema: 3, updated: '2026-10-18', ask: [], criteria, standards: [{ id: 'gots', label: 'GOTS', term: 'gots' }],
-    groups: [{ id: 'toys', title: 'Toys', blurb: '', categories: [{ id: 'balls', title: 'Balls', entries: [
-      { id: 'a-ball', brand: 'Hevea', line: 'Star ball', uses: ['Natural rubber', '“Natural” colour'], free: [], unconfirmed: ['Colourant'], outside: [],
-        facts: { main: 'yes' }, contains: ['latex'], standards: ['gots'], age: { min_months: 18, text: 'Rated 18 months and up' },
-        products: [{ name: 'Star ball', url: 'https://example.com', store: 'Shop', price: '$24.99', ships_from: 'US' }] },
-      { id: 'b-mat', brand: 'Home of Wool', line: 'Play mat', uses: ['Organic wool batting', 'Organic cotton casing'], free: [], unconfirmed: [], outside: ['Polyester thread'],
-        facts: { main: 'yes' }, contains: [],
+    schema: 4, updated: '2026-10-18', ask: [], criteria, standards: [{ id: 'gots', label: 'GOTS', term: 'gots' }],
+    aisles: [{ id: 'play', title: 'Play', blurb: '', was: ['toys'], types: ['balls', 'mats'] }, { id: 'nursery', title: 'Nursery', types: ['mats'] }],
+    types: [{ id: 'balls', title: 'Balls', ages: { min_months: 0, max_months: 60 } }, { id: 'mats', title: 'Play mats', ages: { min_months: 0, max_months: 24 } }],
+    entries: [
+      { id: 'b-mat', type: 'mats', brand: 'Home of Wool', line: 'Play mat', uses: ['Organic wool batting', 'Organic cotton casing'], free: [], unconfirmed: [], outside: ['Polyester thread'],
+        facts: { main: 'yes' }, contains: [], img: 'mat', photos: [{ key: 'mat', src: 'https://example.com/1.jpg' }, { key: 'mat-2', src: 'https://example.com/2.jpg' }],
         products: [{ name: 'Mat', url: 'https://example.com', store: 'Home of Wool', price: 'from £207.50 (about $270)', ships_from: 'UK' },
-                   { name: 'Mat large', url: 'https://example.com', store: 'Home of Wool', price: 'price on request', ships_from: null }] }
-    ] }] }]
+                   { name: 'Mat large', url: 'https://example.com', store: 'Home of Wool', price: 'price on request', ships_from: null }] },
+      { id: 'a-ball', type: 'balls', brand: 'Hevea', line: 'Star ball', uses: ['Natural rubber', '“Natural” colour'], free: [], unconfirmed: ['Colourant'], outside: [],
+        facts: { main: 'yes' }, contains: ['latex'], standards: ['gots'], age: { min_months: 18, text: 'Rated 18 months and up' },
+        products: [{ name: 'Star ball', url: 'https://example.com', store: 'Shop', price: '$24.99', ships_from: 'US' }] }
+    ]
   };
 }
 
-test('build derives materials, prices, age bands and shipping facets', () => {
+test('build orders listings by aisle and type, and derives materials, prices, ages and shipping facets', () => {
   const c = S.build(sample());
   assert.equal(c.items.length, 2);
   const ball = c.items[0], mat = c.items[1];
+  assert.equal(ball.id, 'a-ball', 'types in aisle order, not file order');
   assert.deepEqual(ball.materials, ['latex']);
-  assert.equal(ball.ageBand, '18m');
+  assert.deepEqual(ball.ageBands, ['12-24m', '2-3y', '3-5y'], 'maker rating from 18 months, open-ended up to the type range (5 years)');
+  assert.equal(ball.ageLabel, 'Rated 18 months and up');
   assert.deepEqual(ball.ships, ['us']);
   assert.equal(S.priceLabel(ball), '$24.99');
   assert.deepEqual(mat.materials, ['wool', 'cotton', 'synthetic'], 'flagged parts count towards made-with');
-  assert.equal(mat.ageBand, 'none');
+  assert.deepEqual(mat.ageBands, ['0-6m', '6-12m', '12-24m'], 'no maker rating: the usual ages for the type');
+  assert.equal(mat.ageStated, false);
+  assert.equal(mat.ageLabel, 'Birth to 2 years');
+  assert.deepEqual(mat.aisles, ['play', 'nursery'], 'a type can sit in two aisles');
+  assert.equal(mat.group, 'play');
+  assert.deepEqual(mat.photos, ['img/mat.jpg', 'img/mat-2.jpg']);
   assert.deepEqual(mat.ships.sort(), ['abroad', 'unknown']);
   assert.equal(mat.min, 270);
   assert.equal(S.priceLabel(mat), 'about $270');
   assert.equal(c.brands['home-of-wool'].items.length, 1);
-  assert.ok(ball.q.includes('hevea') && ball.q.includes('balls') && ball.q.includes('natural rubber'), 'search text covers brand, type and materials');
+  assert.deepEqual(c.groups.map(g => g.cats), [['balls', 'mats'], ['mats']]);
+  assert.ok(ball.q.includes('hevea') && ball.q.includes('balls') && ball.q.includes('natural rubber') && ball.q.includes('play'), 'search text covers brand, type, aisle and materials');
+});
+
+test('ageText words month and year ranges', () => {
+  assert.equal(S.ageText(0, 24), 'Birth to 2 years');
+  assert.equal(S.ageText(6, 18), '6 to 18 months');
+  assert.equal(S.ageText(18, 60), '18 months to 5 years');
+  assert.equal(S.ageText(12, 72), '12 months and up');
+  assert.equal(S.ageText(0, 72), 'From birth');
 });
 
 test('priceLabel says when there is no price', () => {
