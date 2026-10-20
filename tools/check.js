@@ -73,6 +73,13 @@ for (const e of data.entries) {
     if (p.price_checked != null && !/^\d{4}-\d{2}-\d{2}$/.test(p.price_checked)) problems.push(`${where}: price_checked "${p.price_checked}" is not YYYY-MM-DD`);
     if (p.variant != null && (typeof p.variant !== 'string' || !p.variant.trim())) problems.push(`${where}: variant must be a non-empty string`);
     if (p.shipping != null && (typeof p.shipping !== 'string' || !p.shipping.trim())) problems.push(`${where}: shipping must be a non-empty string`);
+    if (p.rating != null) {
+      const r = p.rating;
+      if (typeof r.value !== 'number' || r.value <= 0 || r.value > 5) problems.push(`${where}: rating.value must be a number above 0 and at most 5`);
+      if (!Number.isInteger(r.count) || r.count < 1) problems.push(`${where}: rating.count must be a whole number of reviews, 1 or more`);
+      if (typeof r.via !== 'string' || !r.via) problems.push(`${where}: rating.via must name where the rating was read`);
+      if (!/^\d{4}-\d{2}-\d{2}$/.test(r.checked || '')) problems.push(`${where}: rating.checked must be YYYY-MM-DD`);
+    }
   }
   if (e.img) {
     if (!fs.existsSync(path.join(root, 'img', e.img + '.jpg'))) { problems.push(`${where}: img/${e.img}.jpg missing`); }

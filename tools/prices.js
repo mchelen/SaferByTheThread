@@ -16,7 +16,8 @@
    exactly one dollar amount and the found price is in USD) and stamps every
    product whose price was found with price_checked. It also reads what the
    page says about shipping ("Free shipping on orders over $99", "$8.95
-   shipping", "calculated at checkout") into the product's `shipping` field.
+   shipping", "calculated at checkout") into the product's `shipping` field,
+   and the page's star rating and review count into `rating` (tools/ratings.js).
 
    Exit code is always 0; blocked or broken pages are reported, not fatal.
    Node 22, no dependencies. The extraction functions are exported for tests. */
@@ -24,6 +25,7 @@
 const fs = require('fs');
 const path = require('path');
 const S = require('../assets/catalog.js');
+const R = require('./ratings.js');
 
 const USER_AGENT = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36';
 const TIMEOUT_MS = 20000;
@@ -467,13 +469,13 @@ function sleep(ms) { return new Promise(function (r) { setTimeout(r, ms); }); }
 
 const RETRY_DELAY_MS = 6000; // one retry after a 429 or 5xx
 
-async function fetchOnce(url, accept) {
+async function fetchOnce(url, accept, extra) {
   const res = await fetch(url, {
-    headers: {
+    headers: Object.assign({
       'user-agent': USER_AGENT,
       accept: accept || 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
       'accept-language': 'en-US,en;q=0.9'
-    },
+    }, extra || {}),
     redirect: 'follow',
     signal: AbortSignal.timeout(TIMEOUT_MS)
   });
@@ -481,9 +483,9 @@ async function fetchOnce(url, accept) {
   return { ok: res.ok, status: res.status, text, url: res.url };
 }
 
-async function fetchText(url, accept) {
-  const r = await fetchOnce(url, accept);
-  if (r.status === 429 || r.status >= 500) { await sleep(RETRY_DELAY_MS); return fetchOnce(url, accept); }
+async function fetchText(url, accept, extra) {
+  const r = await fetchOnce(url, accept, extra);
+  if (r.status === 429 || r.status >= 500) { await sleep(RETRY_DELAY_MS); return fetchOnce(url, accept, extra); }
   return r;
 }
 
@@ -495,9 +497,11 @@ function errorLabel(e) {
 }
 
 // One product: the page first; the Shopify endpoint when the page gave nothing
-// or more than one price, since it names every variant.
+// or more than one price, since it names every variant. The page's star rating
+// comes along (tools/ratings.js); `read` says the page itself was read, so a
+// rating that is no longer there can be dropped.
 async function checkProduct(product, wait) {
-  const result = { found: null, fetchError: null, http: null, notes: [], ambiguous: null, shipping: null };
+  const result = { found: null, fetchError: null, http: null, notes: [], ambiguous: null, shipping: null, rating: null, read: false };
   let html = '', offers = [], fallback = null, gone = false;
   try {
     await wait(product.url);
@@ -512,6 +516,13 @@ async function checkProduct(product, wait) {
       if (!gone) { offers = jsonLdOffers(html); fallback = findMetaPrice(html) || findItempropPrice(html); result.shipping = findShipping(html); }
     } else result.fetchError = 'HTTP ' + r.status;
   } catch (e) { result.fetchError = errorLabel(e); }
+  if (html && !gone) {
+    result.read = true;
+    result.rating = await R.fetchRating(html, async function (u, headers) {
+      await wait(u);
+      return fetchText(u, 'application/json,*/*;q=0.5', headers);
+    });
+  }
   const pageCurrency = findShopifyCurrency(html);
 
   let variants = [];
@@ -548,6 +559,20 @@ async function checkProduct(product, wait) {
     if (!result.found.currency) result.found.currency = pageCurrency;
   }
   return result;
+}
+
+// Records what the page says about reviews on the product: {value, count, via, checked}.
+// A page that was read and shows no rating loses an old one; a page that could
+// not be read keeps it. Returns 'new', 'changed', 'same', 'dropped' or null.
+function applyRating(product, rating, read, today) {
+  const old = product.rating;
+  if (rating) {
+    const same = old && old.value === rating.value && old.count === rating.count && old.via === rating.via;
+    product.rating = { value: rating.value, count: rating.count, via: rating.via, checked: today };
+    return same ? 'same' : old ? 'changed' : 'new';
+  }
+  if (read && old) { delete product.rating; return 'dropped'; }
+  return null;
 }
 
 // True when the store sent us somewhere else (home page, collection), which
@@ -672,6 +697,15 @@ function buildReport(rows, date) {
     for (const r of ship) lines.push('| ' + [r.entry, '[' + cell(r.product.name) + '](' + r.product.url + ')', r.product.store, r.product.shipping || '—', r.newShipping].map(cell).join(' | ') + ' |');
     lines.push('');
   }
+  const rated = rows.filter(function (r) { return r.rating; });
+  const ratingNews = rows.filter(function (r) { return r.ratingChange === 'new' || r.ratingChange === 'changed' || r.ratingChange === 'dropped'; });
+  lines.push('## Ratings', '', rated.length + ' of ' + rows.length + ' pages show a star rating with a review count' + (ratingNews.length ? '; ' + ratingNews.length + ' new, changed or gone:' : '.'), '');
+  if (ratingNews.length) {
+    lines.push('| Listing | Product | Store | Was | Now |', '|---|---|---|---|---|');
+    const show = function (x) { return x ? x.value + ' from ' + x.count + ' (' + (R.VIA_LABEL[x.via] || x.via) + ')' : '—'; };
+    for (const r of ratingNews) lines.push('| ' + [r.entry, '[' + cell(r.product.name) + '](' + r.product.url + ')', r.product.store, show(r.oldRating), show(r.rating)].map(cell).join(' | ') + ' |');
+    lines.push('');
+  }
   lines.push('## Not found or errored', '');
   if (!bad.length) lines.push('Every page gave a price.', '');
   else {
@@ -718,7 +752,7 @@ async function main() {
   await runPool(order, opts.concurrency, async function (it) {
     const r = await checkProduct(it.product, wait);
     const c = compare(it.product.price, r.found, r.fetchError, r.ambiguous);
-    const row = Object.assign({ entry: it.entry, product: it.product, found: r.found, ambiguous: r.ambiguous, shipping: r.shipping, notes: r.notes, http: r.http, newText: null }, c);
+    const row = Object.assign({ entry: it.entry, product: it.product, found: r.found, ambiguous: r.ambiguous, shipping: r.shipping, rating: r.rating, read: r.read, notes: r.notes, http: r.http, newText: null }, c);
     rows.push(row);
     const tag = row.status.toUpperCase().padEnd(14);
     const what = r.found ? money(r.found.amount, row.currency || r.found.currency) + ' via ' + r.found.source + (r.found.variant ? ' [' + r.found.variant + ', ' + r.found.how + ']' : '') : (row.detail || '');
@@ -728,6 +762,11 @@ async function main() {
 
   let textChanges = 0, shipChanges = 0;
   for (const r of rows) {
+    // Ratings are worked out on a copy so the report can say what changed without --write.
+    r.oldRating = r.product.rating || null;
+    const copy = Object.assign({}, r.product);
+    r.ratingChange = applyRating(copy, r.rating, r.read, today);
+    if (opts.write) applyRating(r.product, r.rating, r.read, today);
     if (r.shipping && r.shipping.text !== r.product.shipping) {
       r.newShipping = r.shipping.text;
       shipChanges++;
@@ -745,7 +784,7 @@ async function main() {
     }
   }
   if (opts.write) {
-    if (textChanges || shipChanges) data.updated = today;
+    if (textChanges || shipChanges || rows.some(function (r) { return r.ratingChange && r.ratingChange !== 'same'; })) data.updated = today;
     fs.writeFileSync(file, JSON.stringify(data, null, 1) + '\n');
   }
 
@@ -753,14 +792,14 @@ async function main() {
   if (opts.report) fs.writeFileSync(opts.report, report);
   console.log('');
   console.log(report.split('\n')[2]);
-  if (opts.write) console.log((textChanges ? textChanges + ' price text(s) updated' : 'no price text updated') + '; ' + shipChanges + ' shipping statement(s) added or changed; price_checked stamped on products whose price was found; data.json written');
+  if (opts.write) console.log((textChanges ? textChanges + ' price text(s) updated' : 'no price text updated') + '; ' + shipChanges + ' shipping statement(s) added or changed; ratings recorded where pages show one; price_checked stamped on products whose price was found; data.json written');
   if (opts.report) console.log('report written to ' + opts.report);
 }
 
 module.exports = {
   decodeEntities, parseAmount, normCurrency, attrs, jsonLdBlocks, findJsonLdPrice, findMetaPrice, findItempropPrice,
   extractPrice, findShopifyCurrency, parseShopifyProduct, shopifyHandle, walkObjects, hasType, fetchText, errorLabel, sleep, USER_AGENT, isSignificant, compare, replaceAmount, dollarAmounts, movedAway, isHomePage,
-  formatAmount, buildReport, interleaveByHost, hostWaiter, jsonLdOffers, shopifyVariants, pickVariant, nameTokens, distinctAmounts, recordedAmounts, isRangeText, findShipping, visibleText
+  formatAmount, buildReport, interleaveByHost, applyRating, checkProduct, hostWaiter, jsonLdOffers, shopifyVariants, pickVariant, nameTokens, distinctAmounts, recordedAmounts, isRangeText, findShipping, visibleText
 };
 
 if (require.main === module) {
