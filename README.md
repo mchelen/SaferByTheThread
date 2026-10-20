@@ -66,7 +66,7 @@ Product type is the main axis. Every listing names one `type`; `types` lists the
 
 `criteria` are the material filters, each `{id, short, label, help, kind, default, term, group}`:
 
-- `kind: "avoid"`: when on, a listing misses if its fact is `"no"`. `"unknown"` only counts when the visitor turns on "Every detail above is stated".
+- `kind: "avoid"`: when on, a listing misses if its fact is `"no"`. `"unknown"` only counts when the visitor turns on "Materials stated for every part".
 - `kind: "require"`: when on, a listing misses unless its fact is `"yes"` (silicone testing, organic, tanning).
 - `kind: "contains"`: when on, listings whose `contains` lists that id miss (latex, leather; both off by default).
 
