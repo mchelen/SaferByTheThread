@@ -183,6 +183,13 @@ h3 { font-size: 15px; }
 .ttile:hover .ttile-img { border-color: var(--line-strong); box-shadow: var(--shadow); }
 .ttile-t { font-size: 14px; font-weight: 500; text-align: center; line-height: 1.25; }
 .band .link-b { display: inline-block; margin-top: 12px; }
+.ttiles.sm { flex-wrap: nowrap; overflow-x: auto; gap: 12px 10px; padding: 12px 2px 6px; scrollbar-width: thin; }
+.ttiles.sm .ttile { flex: none; }
+.ttiles.sm .ttile { width: 88px; gap: 6px; }
+.ttiles.sm .ttile-img { width: 72px; height: 72px; }
+.ttiles.sm .ttile-t { font-size: 12.5px; }
+.ttile.on .ttile-img { border: 2px solid var(--ink); }
+.ttile.on .ttile-t { font-weight: 600; }
 .brand-strip { display: flex; flex-wrap: wrap; gap: 8px 20px; }
 .brand-strip a { color: var(--ink); text-decoration: none; font-weight: 500; }
 .brand-strip a:hover { text-decoration: underline; }
@@ -395,7 +402,9 @@ a.term-link:hover { text-decoration-style: solid; }
 .az-sec { padding: 10px 0 18px; border-top: 1px solid var(--line); }
 .az-sec h2 { margin-bottom: 8px; }
 .brand-list { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px 24px; }
-.brand-list li { padding: 6px 0; }
+.brand-list li { padding: 6px 0; display: flex; align-items: center; gap: 12px; }
+.brand-list .b-pic { flex: none; width: 48px; height: 48px; border-radius: 50%; background: var(--plate); border: 1px solid var(--line); overflow: hidden; display: grid; place-items: center; }
+.brand-list .b-pic img { width: 100%; height: 100%; object-fit: contain; padding: 10%; }
 .brand-list .b-name { font-weight: 600; text-decoration: none; color: var(--ink); }
 .brand-list .b-name:hover { text-decoration: underline; }
 .brand-list .b-meta { display: block; color: var(--muted); font-size: 13px; }
@@ -553,6 +562,8 @@ body.tray-on .toast { bottom: 88px; }
   .card .mats { display: none; }
   .qv-btn { display: none; }
   .tiles, .explain { grid-template-columns: 1fr 1fr; gap: 10px; }
+  .ttiles.sm .ttile { width: 76px; }
+  .ttiles.sm .ttile-img { width: 60px; height: 60px; }
   .ttiles { flex-wrap: nowrap; overflow-x: auto; gap: 12px; margin: 0 -16px; padding: 4px 16px 8px; scrollbar-width: none; scroll-snap-type: x proximity; }
   .ttile { flex: none; width: 96px; }
   .ttile-img { width: 84px; height: 84px; }

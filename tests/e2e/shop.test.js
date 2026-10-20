@@ -47,6 +47,8 @@ test('a type tile and an age chip on the home page open the matching listing', a
   await page.click('.ttile[href$="/c/balls"]');
   await page.waitForSelector('.card');
   assert.match(await page.textContent('h1'), /Balls/);
+  assert.ok((await page.locator('.sibling-types .ttile').count()) >= 10, 'a type page shows its sibling types as tiles');
+  assert.equal(await page.getAttribute('.sibling-types .ttile.on', 'href'), '/c/balls');
   await page.goto(base + '/', { waitUntil: 'networkidle' });
   await page.click('.age-chip[href*="age=0-6m"]');
   await page.waitForSelector('.card');
