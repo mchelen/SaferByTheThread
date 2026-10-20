@@ -229,6 +229,20 @@
   function crumbs(list) {
     return '<ol class="crumbs"><li><a href="' + U('/') + '">Home</a></li>' + list.map(function (c) { return '<li>' + (c[1] ? '<a href="' + c[1] + '">' + esc(c[0]) + '</a>' : '<span aria-current="page">' + esc(c[0]) + '</span>') + '</li>'; }).join('') + '</ol>';
   }
+  var toastEl = document.getElementById('toast'), toastT = null;
+  function toast(html) {
+    clearTimeout(toastT);
+    toastEl.innerHTML = html; toastEl.hidden = false;
+    toastT = setTimeout(function () { toastEl.hidden = true; }, 4000);
+  }
+  // The phone share sheet where there is one, otherwise the link goes to the clipboard.
+  function shareLink(url, title) {
+    if (navigator.share && isPhone()) { navigator.share({ title: title, url: url }).catch(function () {}); return; }
+    var done = function () { toast('Link copied. Paste it anywhere to share.'); };
+    if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(url).then(done, function () { window.prompt('Copy this link', url); });
+    else window.prompt('Copy this link', url);
+  }
+  function idsParam() { var q = parseQuery(location.search); return q.ids ? q.ids.split(',').filter(Boolean) : null; }
   function announce(text) { if (live) { live.textContent = ''; setTimeout(function () { live.textContent = text; }, 50); } }
   function setTitle(t) { document.title = (t ? t + ' · ' : '') + 'Saved by the Thread'; }
   function setNav(kind, key) {
@@ -265,6 +279,7 @@
       '<div class="hero-cta"><a class="btn" href="' + U('/shop') + '">Shop all products</a><a class="btn-2" href="' + U('/about') + '">How the guide works</a></div></div>' +
       '<div class="hero-art" aria-hidden="true">' + art.map(function (i) { return '<a href="' + U('/p/' + i.id) + '" tabindex="-1"><img src="' + esc(asset(i.img)) + '" alt="" decoding="async"></a>'; }).join('') + '</div></section>' +
       '<section class="sec"><div class="sec-h"><h2>Shop by department</h2><a href="' + U('/shop') + '">All products →</a></div><div class="tiles">' + tiles + '</div></section>' +
+      cardRail(listGet(RECENT_KEY).map(byId).filter(Boolean).slice(0, 8), 'Pick up where you left off', U('/saved'), 'Your saved products') +
       '<section class="sec"><div class="sec-h"><h2>Shop by product type</h2></div><div class="types">' + types + '</div></section>' +
       cardRail(featured, 'Featured products', U('/shop'), 'See all ' + okItems.length) +
       '<section class="sec"><div class="sec-h"><h2>What every listing tells you</h2><a href="' + U('/about') + '">How we read a product →</a></div><div class="explain">' +
@@ -481,6 +496,8 @@
     var more = C.brands[item.brandId].items.filter(function (i) { return i !== item; });
     var also = C.items.filter(function (i) { return i.cat === item.cat && i !== item && i.brandId !== item.brandId && status(i).ok; }).slice(0, 8);
     var recent = listGet(RECENT_KEY).filter(function (x) { return x !== item.id; }).map(byId).filter(Boolean).slice(0, 8);
+    var similar = C.items.filter(function (i) { return i.cat === item.cat && i !== item; })
+      .sort(function (a, b) { return (status(b).ok - status(a).ok) || (!!b.img - !!a.img); }).slice(0, 3);
     recentAdd(item.id);
     main.innerHTML = '<div class="wrap">' + crumbs([[g.title, U('/d/' + g.id)], [cat.title, U('/c/' + cat.id)], [item.line]]) +
       '<article class="pdp">' +
@@ -495,7 +512,7 @@
       (item.outside.length ? '<p class="lab" style="margin-top:10px">Flagged parts</p><div class="chips-row out">' + item.outside.map(chip).join('') + '</div>' : '') +
       '<a class="link-b" href="#materials" data-jump="materials">Full materials ↓</a></div>' +
       '<h2 class="sr">Where to buy</h2><ul class="offers">' + item.products.map(offerHtml).join('') + '</ul>' +
-      '<div class="buy-actions">' + saveBtn(item, 'btn-3') + compareBtn(item) + '</div>' +
+      '<div class="buy-actions">' + saveBtn(item, 'btn-3') + compareBtn(item) + '<button type="button" class="btn-3" data-share="' + esc(U('/p/' + item.id)) + '" data-share-title="' + esc(item.brand + ' ' + item.line) + '">' + icon('share') + '<span>Share</span></button></div>' +
       (item.quote ? '<blockquote class="ev"><p>“' + esc(item.quote) + '”</p><footer>From the store page</footer></blockquote>' : item.evidence ? '<p class="ev"><span>' + esc(item.evidence) + '</span></p>' : '') +
       (item.note ? '<p class="muted" style="font-size:14px">' + esc(item.note) + '</p>' : '') +
       '<dl class="facts">' + (stds.length ? '<div><dt>Standards named</dt><dd>' + stds.join(', ') + '</dd></div>' : '') +
@@ -509,12 +526,15 @@
       (cat.intro || cat.outro ? '<details class="acc"><summary>About ' + esc(cat.title.toLowerCase()) + icon('chev') + '</summary><div class="acc-body">' + (cat.intro ? '<p>' + esc(cat.intro) + '</p>' : '') + (cat.outro ? '<p>' + esc(cat.outro) + '</p>' : '') + '</div></details>' : '') +
       '<details class="acc"><summary>Prices and shipping' + icon('chev') + '</summary><div class="acc-body"><p>Prices and shipping statements were read from the store pages and are checked weekly; the date under each store link is the last check. Prices in pounds, euros and other currencies are converted roughly to US dollars for sorting.</p></div></details>' +
       '</div>' +
+      (similar.length ? '<section class="sec similar"><div class="sec-h"><h2>Compare with similar items</h2><a href="' + U('/compare', { ids: [item.id].concat(similar.map(function (i) { return i.id; })).join(',') }) + '">Open in Compare →</a></div>' +
+        compareTable([item].concat(similar), { current: item.id, rows: ['price', 'ship', 'filters', 'made', 'unst', 'from'] }) + '</section>' : '') +
       cardRail(more, 'More from ' + esc(item.brand), U('/b/' + item.brandId), 'All ' + item.brand) +
       cardRail(also, 'You may also like', U('/c/' + cat.id), 'All ' + cat.title.toLowerCase()) +
       (recent.length ? '<div class="recent">' + cardRail(recent, 'Recently viewed') + '</div>' : '') +
       '</div>';
     setNav('product', item.group);
     setTitle(item.brand + ' ' + item.line);
+    buyBar(item);
     if (keep) { window.scrollTo(0, y); if (focusId && document.getElementById(focusId)) document.getElementById(focusId).focus({ preventScroll: true }); }
   }
 
@@ -577,26 +597,54 @@
       (items.length ? '<div class="grid">' + items.map(function (i) { return card(i); }).join('') + '</div>' : '<p><a class="btn" href="' + U('/shop') + '">Shop all products</a></p>') + '</div></div>';
     setNav('saved'); setTitle('Saved');
   }
+  function stdLinks(i) { return i.standards.map(function (s) { var d = C.standards.filter(function (x) { return x.id === s; })[0]; return d ? termLink(d.term, d.label) : esc(s); }).join(', '); }
+  // Side-by-side table, used by the Compare page and by "Compare with similar items" on product pages.
+  var CMP_ROWS = {
+    price: ['Price', function (i) { return esc(S.priceLabel(i)); }],
+    stores: ['Stores', function (i) { return i.products.map(function (p) { return '<a href="' + esc(p.url) + '" target="_blank" rel="noopener">' + esc(p.store) + '</a>' + (p.shipping ? ' <span class="muted">(' + esc(p.shipping) + ')</span>' : ''); }).join('<br>'); }],
+    ship: ['Shipping', function (i) { var v = i.products.map(function (p) { return p.shipping || (/free (?:us )?shipping/i.test(p.price) ? 'Free shipping' : ''); }).filter(Boolean); return v.length ? esc(v[0]) : '<span class="muted">Not recorded</span>'; }],
+    filters: ['Your material filters', function (i) { var r = status(i); return r.ok ? '<span style="color:var(--moss);font-weight:600">Meets them</span>' + (r.unst.length ? '<br><span class="muted">' + plural(r.unst.length, 'detail') + ' not stated</span>' : '') : '<span style="color:var(--clay);font-weight:600">Doesn’t match:</span> ' + esc(missText(i, r)); }],
+    made: ['Made with', function (i) { return '<div class="chips-row">' + i.uses.map(chip).join('') + '</div>'; }],
+    free: ['Stated free of', function (i) { return i.free.length ? '<div class="chips-row r-free">' + i.free.map(chip).join('') + '</div>' : '<span class="muted">Nothing stated</span>'; }],
+    unst: ['Not stated', function (i) { return i.unconfirmed.length ? '<div class="chips-row r-unk">' + i.unconfirmed.map(chip).join('') + '</div>' : '<span class="muted">All covered details stated</span>'; }],
+    out: ['Flagged parts', function (i) { return i.outside.length ? '<div class="chips-row r-out">' + i.outside.map(chip).join('') + '</div>' : '<span class="muted">None</span>'; }],
+    std: ['Standards named', function (i) { return i.standards.length ? stdLinks(i) : '<span class="muted">None</span>'; }],
+    age: ['Age rating', function (i) { return i.age ? esc(i.age.text) : '<span class="muted">None recorded</span>'; }],
+    from: ['Ships from', function (i) { return esc(i.products.map(function (p) { return p.ships_from || 'not recorded'; }).filter(function (v, k, a) { return a.indexOf(v) === k; }).join(', ')); }]
+  };
+  function compareTable(items, opt) {
+    opt = opt || {};
+    var keys = opt.rows || Object.keys(CMP_ROWS);
+    return '<div class="cmp"><table><thead><tr><th scope="col"><span class="sr">Attribute</span></th>' + items.map(function (i) {
+      var here = i.id === opt.current;
+      return '<th scope="col"' + (here ? ' class="here"' : '') + '>' + (here ? '<span class="here-t">This item</span>' : '') + '<a href="' + U('/p/' + i.id) + '" style="text-decoration:none">' + photo(i) + '<span class="brand" style="display:block;margin-top:8px;font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted)">' + esc(i.brand) + '</span><span style="font-weight:600">' + esc(i.line) + '</span></a>' +
+        (opt.removable ? '<button type="button" class="rm" data-compare="' + esc(i.id) + '">Remove</button>' : '') + '</th>';
+    }).join('') + '</tr></thead><tbody>' + keys.map(function (k) {
+      return '<tr><th scope="row">' + CMP_ROWS[k][0] + '</th>' + items.map(function (i) { return '<td' + (i.id === opt.current ? ' class="here"' : '') + '>' + CMP_ROWS[k][1](i) + '</td>'; }).join('') + '</tr>';
+    }).join('') + '</tbody></table></div>';
+  }
+  // A list arrives from a shared link as ?ids=a,b,c; it is shown without touching the visitor's own list.
+  function sharedBar(ids, mine, what) {
+    return '<div class="shared-note"><p><b>A shared ' + what + '</b> of ' + plural(ids.length, 'product') + '. Your own ' + what + ' in this browser is unchanged.</p><div>' +
+      '<button type="button" class="btn" data-take="' + esc(ids.join(',')) + '" data-take-into="' + (what === 'list' ? 'saved' : 'compare') + '">' + (what === 'list' ? 'Save all to my list' : 'Use as my compare list') + '</button>' +
+      '<a class="btn-2" href="' + U(mine) + '">' + (what === 'list' ? 'My saved products' : 'My compare list') + '</a></div></div>';
+  }
+  function shareBtn(path, ids, title) {
+    return '<button type="button" class="btn-3" data-share="' + esc(U(path, { ids: ids.join(',') })) + '" data-share-title="' + esc(title) + '">' + icon('share') + '<span>Share this list</span></button>';
+  }
+  function renderSaved() {
+    var shared = idsParam(), ids = shared || listGet(SAVED_KEY);
+    var items = ids.map(byId).filter(Boolean);
+    main.innerHTML = '<div class="wrap">' + crumbs([[shared ? 'Shared list' : 'Saved']]) + '<div class="page wide"><div class="page-h"><h1>' + (shared ? 'Shared list' : 'Saved products') + '</h1>' + (!shared && items.length ? shareBtn('/saved', ids, 'Saved products') : '') + '</div>' +
+      (shared ? sharedBar(items.map(function (i) { return i.id; }), '/saved', 'list') : '<p class="lede">' + (items.length ? plural(items.length, 'product') + ' saved in this browser. “Share this list” makes a link that opens the same products on any device, for a gift list or to decide with someone.' : 'Nothing saved yet. The heart on any product keeps it here, in this browser.') + '</p>') +
+      (items.length ? '<div class="grid">' + items.map(function (i) { return card(i); }).join('') + '</div>' : '<p><a class="btn" href="' + U('/shop') + '">Shop all products</a></p>') + '</div></div>';
+    setNav('saved'); setTitle(shared ? 'Shared list' : 'Saved');
+  }
   function renderCompare() {
-    var items = listGet(CMP_KEY).map(byId).filter(Boolean);
-    var rows = [];
-    function row(label, cells) { rows.push('<tr><th scope="row">' + label + '</th>' + cells.map(function (c) { return '<td>' + c + '</td>'; }).join('') + '</tr>'); }
-    if (items.length) {
-      row('Price', items.map(function (i) { return esc(S.priceLabel(i)); }));
-      row('Stores', items.map(function (i) { return i.products.map(function (p) { return '<a href="' + esc(p.url) + '" target="_blank" rel="noopener">' + esc(p.store) + '</a>' + (p.shipping ? ' <span class="muted">(' + esc(p.shipping) + ')</span>' : ''); }).join('<br>'); }));
-      row('Your material filters', items.map(function (i) { var r = status(i); return r.ok ? '<span style="color:var(--moss);font-weight:600">Meets them</span>' + (r.unst.length ? '<br><span class="muted">' + plural(r.unst.length, 'detail') + ' not stated</span>' : '') : '<span style="color:var(--clay);font-weight:600">Doesn’t match:</span> ' + esc(missText(i, r)); }));
-      row('Made with', items.map(function (i) { return '<div class="chips-row">' + i.uses.map(chip).join('') + '</div>'; }));
-      row('Stated free of', items.map(function (i) { return i.free.length ? '<div class="chips-row r-free">' + i.free.map(chip).join('') + '</div>' : '<span class="muted">Nothing stated</span>'; }));
-      row('Not stated', items.map(function (i) { return i.unconfirmed.length ? '<div class="chips-row r-unk">' + i.unconfirmed.map(chip).join('') + '</div>' : '<span class="muted">All covered details stated</span>'; }));
-      row('Flagged parts', items.map(function (i) { return i.outside.length ? '<div class="chips-row r-out">' + i.outside.map(chip).join('') + '</div>' : '<span class="muted">None</span>'; }));
-      row('Standards named', items.map(function (i) { return i.standards.length ? i.standards.map(function (s) { var d = C.standards.filter(function (x) { return x.id === s; })[0]; return d ? termLink(d.term, d.label) : esc(s); }).join(', ') : '<span class="muted">None</span>'; }));
-      row('Age rating', items.map(function (i) { return i.age ? esc(i.age.text) : '<span class="muted">None recorded</span>'; }));
-      row('Ships from', items.map(function (i) { return i.products.map(function (p) { return p.ships_from || 'not recorded'; }).filter(function (v, k, a) { return a.indexOf(v) === k; }).join(', '); }));
-    }
-    main.innerHTML = '<div class="wrap">' + crumbs([['Compare']]) + '<div class="page wide"><h1>Compare products</h1><p class="lede">' + (items.length ? plural(items.length, 'product') + ' side by side; up to four at a time, kept in this browser.' : 'Nothing to compare yet. “Compare” on any product page or quick view adds it here, up to four at a time.') + '</p>' +
-      (items.length ? '<div class="cmp"><table><thead><tr><th scope="col"><span class="sr">Attribute</span></th>' + items.map(function (i) {
-        return '<th scope="col"><a href="' + U('/p/' + i.id) + '" style="text-decoration:none">' + photo(i) + '<span class="brand" style="display:block;margin-top:8px;font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted)">' + esc(i.brand) + '</span><span style="font-weight:600">' + esc(i.line) + '</span></a><button type="button" class="rm" data-compare="' + esc(i.id) + '">Remove</button></th>';
-      }).join('') + '</tr></thead><tbody>' + rows.join('') + '</tbody></table></div>' : '<p><a class="btn" href="' + U('/shop') + '">Shop all products</a></p>') + '</div></div>';
+    var shared = idsParam(), items = (shared || listGet(CMP_KEY)).map(byId).filter(Boolean).slice(0, 4);
+    main.innerHTML = '<div class="wrap">' + crumbs([['Compare']]) + '<div class="page wide"><div class="page-h"><h1>Compare products</h1>' + (!shared && items.length > 1 ? shareBtn('/compare', items.map(function (i) { return i.id; }), 'Compare products') : '') + '</div>' +
+      (shared ? sharedBar(items.map(function (i) { return i.id; }), '/compare', 'comparison') : '<p class="lede">' + (items.length ? plural(items.length, 'product') + ' side by side; up to four at a time, kept in this browser.' : 'Nothing to compare yet. “Compare” on any product page or quick view adds it here, up to four at a time.') + '</p>') +
+      (items.length ? compareTable(items, { removable: !shared }) : '<p><a class="btn" href="' + U('/shop') + '">Shop all products</a></p>') + '</div></div>';
     setNav('compare'); setTitle('Compare');
   }
   function renderNotFound() {
@@ -641,6 +689,23 @@
     tray.innerHTML = '<div class="tray-in"><p>Compare (' + items.length + '/4)</p><div class="tray-items">' + items.map(function (i) { return '<a href="' + U('/p/' + i.id) + '" aria-label="' + esc(i.brand + ' ' + i.line) + '">' + (i.img ? '<img src="' + esc(asset(i.img)) + '" alt="">' : '') + '</a>'; }).join('') + '</div>' +
       '<a class="btn" href="' + U('/compare') + '">Compare</a><button type="button" class="btn-3" data-compare-clear>Clear</button></div>';
     tray.hidden = false; document.body.classList.add('tray-on');
+  }
+
+  // ---------- phone buy bar: price and the first store link stay in reach once the buy box scrolls away ----------
+  var buybar = document.getElementById('buybar'), buyOffers = null;
+  function buyBarCheck() {
+    var past = !!buyOffers && buyOffers.isConnected && buyOffers.getBoundingClientRect().bottom < 0;
+    if (past === !buybar.hidden) return;
+    buybar.hidden = !past; document.body.classList.toggle('buybar-on', past);
+  }
+  window.addEventListener('scroll', buyBarCheck, { passive: true });
+  function buyBar(item) {
+    buyOffers = null; buyBarCheck();
+    var p = item && item.products[0], offers = $('.offers', main);
+    if (!p || !offers) return;
+    buybar.innerHTML = '<div class="buybar-in"><div class="bb-t"><span class="bb-name">' + esc(item.line) + '</span><span class="bb-price">' + esc(S.priceLabel(item)) + '</span></div>' +
+      '<a class="btn" href="' + esc(p.url) + '" target="_blank" rel="noopener">Buy at ' + esc(p.store.replace(/\s*\(.*\)$/, '')) + icon('ext') + '</a></div>';
+    buyOffers = offers; buyBarCheck();
   }
 
   // ---------- phone filter drawer (changes wait for Apply) ----------
@@ -723,7 +788,7 @@
 
   // ---------- router ----------
   function route() {
-    closeSugg(); closeQuickView(); closeDrawer(false); closeMenu(false); closePop(false); PEND = null;
+    closeSugg(); closeQuickView(); closeDrawer(false); closeMenu(false); closePop(false); PEND = null; buyBar(null);
     var path = currentPath(), q = parseQuery(location.search), p = path.split('/').filter(Boolean), key = p[0] || '';
     var url = location.pathname + location.search;
     if (key === '') renderHome();
@@ -879,6 +944,7 @@
       var on = listGet(SAVED_KEY).indexOf(t.getAttribute('data-save')) >= 0;
       $$('[data-save="' + t.getAttribute('data-save') + '"]').forEach(function (b) { b.setAttribute('aria-pressed', on); var s = b.querySelector('span'); if (s) s.textContent = on ? 'Saved' : 'Save'; b.setAttribute('aria-label', (on ? 'Remove from saved: ' : 'Save: ') + b.getAttribute('aria-label').replace(/^(Remove from saved|Save): /, '')); });
       announce(on ? 'Saved' : 'Removed from saved'); badgeCounts();
+      if (on && currentPath() !== '/saved') toast('Saved to your list. <a href="' + U('/saved') + '">View saved (' + listGet(SAVED_KEY).length + ')</a>');
       if (currentPath() === '/saved') renderSaved();
     } else if (t.matches('[data-compare]')) {
       var cid = t.getAttribute('data-compare');
@@ -887,6 +953,14 @@
       $$('[data-compare="' + cid + '"]').forEach(function (b) { b.setAttribute('aria-pressed', inC); var s = b.querySelector('span'); if (s) s.textContent = inC ? 'In compare' : 'Compare'; });
       announce(inC ? 'Added to compare' : 'Removed from compare'); badgeCounts();
       if (currentPath() === '/compare') renderCompare();
+    } else if (t.matches('[data-share]')) {
+      shareLink(location.origin + t.getAttribute('data-share'), t.getAttribute('data-share-title') + ' · Saved by the Thread');
+    } else if (t.matches('[data-take]')) {
+      var into = t.getAttribute('data-take-into') === 'saved' ? SAVED_KEY : CMP_KEY, ids = t.getAttribute('data-take').split(',');
+      if (into === SAVED_KEY) store(SAVED_KEY, listGet(SAVED_KEY).concat(ids.filter(function (x) { return listGet(SAVED_KEY).indexOf(x) < 0; })));
+      else store(CMP_KEY, ids.slice(0, 4));
+      badgeCounts(); go(U(into === SAVED_KEY ? '/saved' : '/compare'), true);
+      announce(into === SAVED_KEY ? 'Saved to your list' : 'Compare list replaced');
     } else if (t.matches('[data-compare-clear]')) {
       store(CMP_KEY, []); badgeCounts(); if (currentPath() === '/compare') renderCompare();
     } else if (t.matches('[data-qv]')) {
