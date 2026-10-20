@@ -27,6 +27,7 @@ All notable changes to the site are listed here. The format follows [Keep a Chan
 - A blank strip at the top of every page, and department tiles whose labels sat at different heights.
 
 ### Changed
+- Home page navigates by pictures: category tiles, age chips and a row of round product-type photo tiles under each category, in place of text lists of product types; the explanatory sections (what every listing tells you, your material filters) moved off the home page, which keeps one line of copy under the title. The featured rail no longer squeezes its first cards on phones and tablets.
 - Store buttons are the main action: a large amber "Buy at <store>" button right under the price on product pages and in quick view, a "Buy at store" button on every product card and in the Compare table, and the same button in the phone buy bar.
 - Navigation is by product type: departments became aisles in the menu (Play, Sleep, Eat and drink, Wear), each listing names its `type`, and a type can appear in more than one aisle. The home page leads with product types. `data.json` moved to schema 4 (flat `entries`, `types`, `aisles`); `/d/<department>` and `/c/pads` links redirect. "Pads, toppers, pillows and sheets" split into three types.
 - The filter rail is grouped into What it is, What it's made of, and Price and delivery, and the material filters into named sets (plastic and synthetics, treatments and finishes, tested or certified, materials to leave out).

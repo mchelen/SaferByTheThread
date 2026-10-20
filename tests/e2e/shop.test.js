@@ -32,10 +32,25 @@ test('home page renders product types, aisles, featured products and the menu', 
   const page = await open('/');
   await page.waitForSelector('.tiles a');
   assert.equal(await page.locator('.tiles a').count(), 4);
+  assert.ok((await page.locator('.ttile').count()) >= 20, 'every product type has a picture tile under its category');
+  assert.ok((await page.locator('.age-chip').count()) >= 4, 'age chips');
   assert.ok((await count(page)) >= 4, 'featured rail shows products');
   assert.ok((await page.locator('#cats .cat-item[data-dept]').count()) >= 4);
   await page.hover('#cats .cat-item[data-dept] .cat-a');
   await page.waitForSelector('#cats .cat-item.open .mega a');
+  assert.deepEqual(page.errors, []);
+  await page.close();
+});
+
+test('a type tile and an age chip on the home page open the matching listing', async () => {
+  const page = await open('/');
+  await page.click('.ttile[href$="/c/balls"]');
+  await page.waitForSelector('.card');
+  assert.match(await page.textContent('h1'), /Balls/);
+  await page.goto(base + '/', { waitUntil: 'networkidle' });
+  await page.click('.age-chip[href*="age=0-6m"]');
+  await page.waitForSelector('.card');
+  assert.match(page.url(), /age=0-6m/);
   assert.deepEqual(page.errors, []);
   await page.close();
 });
