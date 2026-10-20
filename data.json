@@ -1,6 +1,6 @@
 {
  "schema": 4,
- "updated": "2026-10-18",
+ "updated": "2026-10-20",
  "ask": [
   "Thread on any sewn item (cotton or polyester).",
   "Wheels and axles on push toys and cars.",
@@ -10051,6 +10051,1031 @@
      "src": "https://cdn.shopify.com/s/files/1/0258/8147/7195/files/A25-771-ERW_8_2000x2000_ad0f2141-e41b-4c2f-9a75-94831b916e90.jpg?v=1785426517"
     }
    ]
+  },
+  {
+   "id": "beaba-universal-warm-sleeping-bag",
+   "type": "strollers",
+   "brand": "Béaba",
+   "line": "Universal and Warm Sleeping Bag, 6 to 24 months",
+   "uses": [
+    "Fleece lining",
+    "Padding, 300 g/m²",
+    "Windproof, breathable outer fabric",
+    "Fleece-lined hood"
+   ],
+   "free": [],
+   "unconfirmed": [
+    "Fibre of the fleece lining",
+    "Fibre of the padding",
+    "Fibre of the outer fabric",
+    "Finish on the windproof outer fabric",
+    "Front zip"
+   ],
+   "outside": [
+    "Nylon lining at the feet"
+   ],
+   "facts": {
+    "main": "no",
+    "parts": "unknown",
+    "finish": "unknown"
+   },
+   "contains": [],
+   "standards": [],
+   "products": [
+    {
+     "name": "Sleeping Bag 6-24m",
+     "url": "https://beaba.us/products/sleeping-bag-6-24m",
+     "store": "Béaba USA",
+     "price": "$199.95",
+     "ships_from": null,
+     "shipping": "Free shipping on orders $140*"
+    }
+   ],
+   "unstated": {
+    "parts": [
+     "Front zip"
+    ],
+    "finish": [
+     "Finish on the windproof outer fabric"
+    ]
+   },
+   "age": {
+    "min_months": 6,
+    "max_months": 24,
+    "text": "6 to 24 months"
+   },
+   "note": "A footmuff for strollers and car seats, with openings for 3 and 5-point harnesses.",
+   "read": "2026-10-20",
+   "photos": [
+    {
+     "key": "beaba-universal-warm-sleeping-bag",
+     "src": "https://cdn.shopify.com/s/files/1/0673/7756/1739/files/948002_product_face_1.jpg?v=1755766327"
+    },
+    {
+     "key": "beaba-universal-warm-sleeping-bag_2",
+     "src": "https://cdn.shopify.com/s/files/1/0673/7756/1739/files/948013_product_3-4_1.jpg?v=1755766328"
+    },
+    {
+     "key": "beaba-universal-warm-sleeping-bag_3",
+     "src": "https://cdn.shopify.com/s/files/1/0673/7756/1739/files/948013_product_face_3.jpg?v=1755766328"
+    },
+    {
+     "key": "beaba-universal-warm-sleeping-bag_4",
+     "src": "https://cdn.shopify.com/s/files/1/0673/7756/1739/files/948013_product_face_4.jpg?v=1755766328"
+    },
+    {
+     "key": "beaba-universal-warm-sleeping-bag_5",
+     "src": "https://cdn.shopify.com/s/files/1/0673/7756/1739/files/948013_product_profil_1.jpg?v=1755766328"
+    },
+    {
+     "key": "beaba-universal-warm-sleeping-bag_6",
+     "src": "https://cdn.shopify.com/s/files/1/0673/7756/1739/files/948013_product_zoom_1.jpg?v=1755766327"
+    },
+    {
+     "key": "beaba-universal-warm-sleeping-bag_7",
+     "src": "https://cdn.shopify.com/s/files/1/0673/7756/1739/files/948002_product_3-4_1.jpg?v=1755766332"
+    },
+    {
+     "key": "beaba-universal-warm-sleeping-bag_8",
+     "src": "https://cdn.shopify.com/s/files/1/0673/7756/1739/files/948002_product_zoom_1.jpg?v=1755766333"
+    },
+    {
+     "key": "beaba-universal-warm-sleeping-bag_9",
+     "src": "https://cdn.shopify.com/s/files/1/0673/7756/1739/files/948013_product_amb_1.jpg?v=1755790704"
+    },
+    {
+     "key": "beaba-universal-warm-sleeping-bag_10",
+     "src": "https://cdn.shopify.com/s/files/1/0673/7756/1739/files/948001_product_amb_1.jpg?v=1755790704"
+    }
+   ],
+   "img": "beaba-universal-warm-sleeping-bag",
+   "img_src": "https://cdn.shopify.com/s/files/1/0673/7756/1739/files/948002_product_face_1.jpg?v=1755766327"
+  },
+  {
+   "id": "bella-luna-wooden-heart-teether",
+   "type": "teethers",
+   "brand": "Bella Luna Toys",
+   "line": "Wooden Heart Baby Teether",
+   "uses": [
+    "Unfinished maple wood"
+   ],
+   "free": [
+    "Dyes, stains or sealants"
+   ],
+   "unconfirmed": [],
+   "outside": [],
+   "facts": {
+    "main": "yes",
+    "color": "yes",
+    "wood": "yes"
+   },
+   "contains": [],
+   "standards": [],
+   "products": [
+    {
+     "name": "Wooden Heart Baby Teether (ML-72204)",
+     "url": "https://www.bellalunatoys.com/products/wooden-heart-baby-teether",
+     "store": "Bella Luna Toys",
+     "price": "$13.50",
+     "ships_from": "US",
+     "shipping": "Free shipping on orders over $99 within the contiguous 48 states"
+    }
+   ],
+   "quote": "MATERIALS : Made from unfinished maple wood.",
+   "read": "2026-10-20",
+   "photos": [
+    {
+     "key": "bella-luna-wooden-heart-teether",
+     "src": "https://cdn.shopify.com/s/files/1/1114/2810/products/natural-wooden-teether-heart-bella-luna-toys.jpg?v=1663827569"
+    }
+   ],
+   "img": "bella-luna-wooden-heart-teether",
+   "img_src": "https://cdn.shopify.com/s/files/1/1114/2810/products/natural-wooden-teether-heart-bella-luna-toys.jpg?v=1663827569"
+  },
+  {
+   "id": "camden-rose-cherry-place-setting",
+   "type": "plates",
+   "brand": "Camden Rose",
+   "line": "Child's Place Setting, Cherry Wood",
+   "uses": [
+    "Cherry hardwood plate, bowl and flatware",
+    "Beeswax polish"
+   ],
+   "free": [],
+   "unconfirmed": [],
+   "outside": [],
+   "facts": {
+    "main": "yes",
+    "color": "yes",
+    "wood": "yes",
+    "melamine": "yes"
+   },
+   "contains": [],
+   "standards": [],
+   "products": [
+    {
+     "name": "Child's Place Setting: Plate, Fork, Knife, Spoon & Thin Rim Bowl, Cherry Wood",
+     "url": "https://camdenrose.com/products/child-place-setting-plate-fork-knife-spoon-thin-rim-bowl-cherry-wood",
+     "store": "Camden Rose",
+     "price": "$62.00",
+     "ships_from": null
+    }
+   ],
+   "quote": "Each child sized wooden place setting is made with beautiful cherry wood.",
+   "read": "2026-10-20",
+   "photos": [
+    {
+     "key": "camden-rose-cherry-place-setting",
+     "src": "https://cdn.shopify.com/s/files/1/0658/7164/2856/files/1065-cherry-3186.jpg?v=1764793654"
+    },
+    {
+     "key": "camden-rose-cherry-place-setting_2",
+     "src": "https://cdn.shopify.com/s/files/1/0658/7164/2856/files/1065-cherry-3187.jpg?v=1764793654"
+    },
+    {
+     "key": "camden-rose-cherry-place-setting_3",
+     "src": "https://cdn.shopify.com/s/files/1/0658/7164/2856/files/1065-cherry-3188.jpg?v=1764793653"
+    }
+   ],
+   "img": "camden-rose-cherry-place-setting",
+   "img_src": "https://cdn.shopify.com/s/files/1/0658/7164/2856/files/1065-cherry-3186.jpg?v=1764793654"
+  },
+  {
+   "id": "camden-rose-cherry-utensil-set",
+   "type": "utensils",
+   "brand": "Camden Rose",
+   "line": "Child Size Fork, Knife and Spoon, Cherry Wood",
+   "uses": [
+    "Solid cherry wood",
+    "Beeswax polish"
+   ],
+   "free": [],
+   "unconfirmed": [],
+   "outside": [],
+   "facts": {
+    "main": "yes",
+    "color": "yes",
+    "wood": "yes",
+    "melamine": "yes"
+   },
+   "contains": [],
+   "standards": [],
+   "products": [
+    {
+     "name": "Wooden Child Size Fork, Knife & Spoon Utensil Set, Cherry Wood",
+     "url": "https://camdenrose.com/products/wooden-child-size-fork-knife-spoon-utensil-set-cherry-wood",
+     "store": "Camden Rose",
+     "price": "$24.99",
+     "ships_from": null
+    }
+   ],
+   "age": {
+    "min_months": 24,
+    "text": "Ages 2 and up"
+   },
+   "read": "2026-10-20",
+   "photos": [
+    {
+     "key": "camden-rose-cherry-utensil-set",
+     "src": "https://cdn.shopify.com/s/files/1/0658/7164/2856/files/1270-cherry-2410.jpg?v=1742999884"
+    },
+    {
+     "key": "camden-rose-cherry-utensil-set_2",
+     "src": "https://cdn.shopify.com/s/files/1/0658/7164/2856/files/1270-cherry-2411.jpg?v=1742999884"
+    }
+   ],
+   "img": "camden-rose-cherry-utensil-set",
+   "img_src": "https://cdn.shopify.com/s/files/1/0658/7164/2856/files/1270-cherry-2410.jpg?v=1742999884"
+  },
+  {
+   "id": "colored-organics-muslin-bibs",
+   "type": "bibs",
+   "brand": "Colored Organics",
+   "line": "Organic Muslin Bibs (2-pack)",
+   "uses": [
+    "100% organic cotton muslin",
+    "Water-based dyes"
+   ],
+   "free": [],
+   "unconfirmed": [
+    "What the water-based dyes are made from",
+    "Snaps",
+    "Thread"
+   ],
+   "outside": [],
+   "facts": {
+    "main": "yes",
+    "organic": "yes",
+    "parts": "unknown",
+    "color": "unknown"
+   },
+   "contains": [],
+   "standards": [],
+   "products": [
+    {
+     "name": "2-Pack Muslin Bibs, Hedge Floral + Ivory",
+     "url": "https://coloredorganics.com/products/organic-cotton-baby-aw26-woodford-collection-muslin-2-pack-bibs-504-22-hedge-ivory",
+     "store": "Colored Organics",
+     "price": "$30",
+     "ships_from": null,
+     "shipping": "Free shipping on US domestic orders over $50"
+    }
+   ],
+   "unstated": {
+    "parts": [
+     "Snaps",
+     "Thread"
+    ],
+    "color": [
+     "What the water-based dyes are made from"
+    ]
+   },
+   "read": "2026-10-20",
+   "photos": [
+    {
+     "key": "colored-organics-muslin-bibs",
+     "src": "https://cdn.shopify.com/s/files/1/1643/4857/files/504-22-muslin-bib-set.hedge-floral-ivory.flat_front_b24c789b-1b92-4340-8421-22ecd858a6d3.jpg?v=1787068602"
+    },
+    {
+     "key": "colored-organics-muslin-bibs_2",
+     "src": "https://cdn.shopify.com/s/files/1/1643/4857/files/504-22-muslin-bib-set.hedge-floral-ivory.flat_detail.jpg?v=1787068602"
+    },
+    {
+     "key": "colored-organics-muslin-bibs_3",
+     "src": "https://coloredorganics.com/cdn/shop/files/504-22-muslin-bib-set.hedge-floral-ivory.flat_back.jpg?v=1787068602&width=1024"
+    }
+   ],
+   "img": "colored-organics-muslin-bibs",
+   "img_src": "https://cdn.shopify.com/s/files/1/1643/4857/files/504-22-muslin-bib-set.hedge-floral-ivory.flat_front_b24c789b-1b92-4340-8421-22ecd858a6d3.jpg?v=1787068602"
+  },
+  {
+   "id": "frigg-silicone-pacifier-4-pack",
+   "type": "pacifiers",
+   "brand": "FRIGG",
+   "line": "Silicone Pacifier 4-Pack",
+   "uses": [
+    "Medical grade silicone nipple"
+   ],
+   "free": [
+    "BPA",
+    "BPS",
+    "PVC",
+    "Phthalates"
+   ],
+   "unconfirmed": [
+    "Pigments"
+   ],
+   "outside": [
+    "PP plastic shield"
+   ],
+   "facts": {
+    "main": "no",
+    "color": "unknown",
+    "silicone": "no",
+    "lead": "yes"
+   },
+   "contains": [],
+   "standards": [
+    "us-toy"
+   ],
+   "products": [
+    {
+     "name": "FRIGG Silicone Pacifier 4-Pack",
+     "url": "https://mushie.com/products/frigg-silicone-pacifier-4-pack",
+     "store": "Mushie",
+     "price": "$24.99",
+     "ships_from": null,
+     "shipping": "Free shipping for US orders $75+"
+    }
+   ],
+   "unstated": {
+    "color": [
+     "Pigments"
+    ]
+   },
+   "age": {
+    "min_months": 0,
+    "max_months": 18,
+    "text": "Sizes 0-6 months and 6-18 months"
+   },
+   "note": "Made in Denmark by FRIGG; sold by Mushie.",
+   "read": "2026-10-20",
+   "photos": [
+    {
+     "key": "frigg-silicone-pacifier-4-pack",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/Frigg-Nipple-LittleViking-Info.jpg?v=1777411140"
+    },
+    {
+     "key": "frigg-silicone-pacifier-4-pack_2",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/Emma_NF-161_be1af2f6-246f-44f4-8a83-ec6fccbd9982.jpg?v=1771281142"
+    },
+    {
+     "key": "frigg-silicone-pacifier-4-pack_3",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/flatlay2409-17_971a7680-8e12-4495-8364-80a18dba44d5.jpg?v=1771281142"
+    },
+    {
+     "key": "frigg-silicone-pacifier-4-pack_4",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/06_FLAT_lays_juni-76_a3492a05-cfbb-4753-97da-2bad7dfa735a.jpg?v=1771281142"
+    },
+    {
+     "key": "frigg-silicone-pacifier-4-pack_5",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/SkylineSerenity14-pak_29f704cc-f13a-4a89-a091-de149dfa962b.jpg?v=1771281142"
+    },
+    {
+     "key": "frigg-silicone-pacifier-4-pack_6",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/babiesshoot-159.jpg?v=1774899526"
+    },
+    {
+     "key": "frigg-silicone-pacifier-4-pack_7",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/CrystalSparkle14-pak_a7d3b13d-fd9d-47b4-8717-5b608c1a3bf6.jpg?v=1771281142"
+    },
+    {
+     "key": "frigg-silicone-pacifier-4-pack_8",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/shoot_zion_lily_2kids-31_1667aad1-19e6-4c21-aaac-3b3b177b6721.jpg?v=1771281142"
+    },
+    {
+     "key": "frigg-silicone-pacifier-4-pack_9",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/RosyRomance14-pak_a1380d99-8117-4a7a-8afc-6b05b4759a7e.jpg?v=1771281142"
+    },
+    {
+     "key": "frigg-silicone-pacifier-4-pack_10",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/180A6734_cc1eb4c2-a611-4d68-a5f9-0d4292eefe3c.jpg?v=1771281142"
+    }
+   ],
+   "img": "frigg-silicone-pacifier-4-pack",
+   "img_src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/Frigg-Nipple-LittleViking-Info.jpg?v=1777411140"
+  },
+  {
+   "id": "hevea-gorm-whale-teether",
+   "type": "teethers",
+   "brand": "Hevea",
+   "line": "Gorm Whale Teether",
+   "uses": [
+    "100% natural rubber",
+    "Natural colour pigments"
+   ],
+   "free": [
+    "Plastic",
+    "Silicone",
+    "BPA"
+   ],
+   "unconfirmed": [],
+   "outside": [],
+   "facts": {
+    "main": "yes",
+    "parts": "yes",
+    "color": "yes",
+    "rubber": "yes"
+   },
+   "contains": [
+    "latex"
+   ],
+   "standards": [],
+   "products": [
+    {
+     "name": "Gorm Whale Teether",
+     "url": "https://us.heveaplanet.com/products/gorm-soothing-toy",
+     "store": "Hevea Planet USA",
+     "price": "$19.95",
+     "ships_from": null
+    }
+   ],
+   "quote": "This HEVEA® Gorm Whale Teether is made from 100% natural rubber",
+   "read": "2026-10-20",
+   "photos": [
+    {
+     "key": "hevea-gorm-whale-teether",
+     "src": "https://cdn.shopify.com/s/files/1/1027/0038/4590/files/Gorm_the_whale_soothing_toy.jpg?v=1777032621"
+    },
+    {
+     "key": "hevea-gorm-whale-teether_2",
+     "src": "https://cdn.shopify.com/s/files/1/1027/0038/4590/files/Gorm_the_whale_soothing_toy_fc506685-1782-4a48-82d6-ff0ca578c7fc.jpg?v=1777032621"
+    },
+    {
+     "key": "hevea-gorm-whale-teether_3",
+     "src": "https://cdn.shopify.com/s/files/1/1027/0038/4590/files/HEVEA_Gorm_Whale_soothing-toy_Pack.jpg?v=1777032622"
+    },
+    {
+     "key": "hevea-gorm-whale-teether_4",
+     "src": "https://cdn.shopify.com/s/files/1/1027/0038/4590/files/P1203-4.jpg?v=1777032622"
+    }
+   ],
+   "img": "hevea-gorm-whale-teether",
+   "img_src": "https://cdn.shopify.com/s/files/1/1027/0038/4590/files/Gorm_the_whale_soothing_toy.jpg?v=1777032621"
+  },
+  {
+   "id": "hevea-natural-rubber-pacifier",
+   "type": "pacifiers",
+   "brand": "Hevea",
+   "line": "Orthodontic Pacifier Two-Pack, 3 to 36 months",
+   "uses": [
+    "100% natural rubber latex from the Hevea brasiliensis tree",
+    "Natural, mineral-based colour pigments"
+   ],
+   "free": [
+    "Plastic"
+   ],
+   "unconfirmed": [],
+   "outside": [],
+   "facts": {
+    "main": "yes",
+    "parts": "yes",
+    "color": "yes",
+    "rubber": "yes"
+   },
+   "contains": [
+    "latex"
+   ],
+   "standards": [],
+   "products": [
+    {
+     "name": "Pacifier 3-36 Months Two-Pack, Orthodontic",
+     "url": "https://us.heveaplanet.com/products/pacifier-3-36-months-two-pack-orthodontic",
+     "store": "Hevea Planet USA",
+     "price": "$17.95",
+     "ships_from": null
+    }
+   ],
+   "age": {
+    "min_months": 3,
+    "max_months": 36,
+    "text": "3 to 36 months"
+   },
+   "quote": "Made from 100% natural rubber latex tapped directly from the Hevea brasiliensis tree, these plastic-free pacifiers",
+   "read": "2026-10-20",
+   "photos": [
+    {
+     "key": "hevea-natural-rubber-pacifier",
+     "src": "https://cdn.shopify.com/s/files/1/1027/0038/4590/files/HEVEA_Product_Classic_Pacifier_TwoPcs_Ortho_3-36_a.jpg?v=1790246040"
+    },
+    {
+     "key": "hevea-natural-rubber-pacifier_2",
+     "src": "https://cdn.shopify.com/s/files/1/1027/0038/4590/files/Milky_White_Soft_pebble_45cec111-cc2d-486b-b3bd-dbd32119e071.png?v=1790246040"
+    },
+    {
+     "key": "hevea-natural-rubber-pacifier_3",
+     "src": "https://cdn.shopify.com/s/files/1/1027/0038/4590/files/HEVEA_Pacifier_Ortho_3-36M_TwoPack_POWDER_PINK_ROSEWOOD_250791_2285de05-658e-4b97-9237-c7a799e06bea.jpg?v=1790246040"
+    },
+    {
+     "key": "hevea-natural-rubber-pacifier_4",
+     "src": "https://cdn.shopify.com/s/files/1/1027/0038/4590/files/Aw25_CLAY_EARTH_2_251321.jpg?v=1777116955"
+    }
+   ],
+   "img": "hevea-natural-rubber-pacifier",
+   "img_src": "https://cdn.shopify.com/s/files/1/1027/0038/4590/files/HEVEA_Product_Classic_Pacifier_TwoPcs_Ortho_3-36_a.jpg?v=1790246040"
+  },
+  {
+   "id": "home-of-wool-baby-sleeping-bag",
+   "type": "sleep-sacks",
+   "brand": "Home of Wool",
+   "line": "Baby Sleeping Bag",
+   "uses": [
+    "100% virgin wool outer fabric",
+    "Silk bias binding"
+   ],
+   "free": [
+    "Synthetics",
+    "Lining"
+   ],
+   "unconfirmed": [
+    "Whether the wool is treated (superwash or not)"
+   ],
+   "outside": [],
+   "facts": {
+    "main": "yes",
+    "parts": "yes",
+    "wool": "unknown"
+   },
+   "contains": [],
+   "standards": [
+    "oeko-tex"
+   ],
+   "products": [
+    {
+     "name": "Baby sleeping bag (two sizes)",
+     "url": "https://homeofwool.com/shop/baby-sleeping-bag-sale/",
+     "store": "Home of Wool",
+     "price": "$144.00 to $152.00 on sale (was $180.00 to $190.00)",
+     "ships_from": null,
+     "shipping": "Free worldwide shipping on all orders"
+    }
+   ],
+   "unstated": {
+    "wool": [
+     "Whether the wool is treated (superwash or not)"
+    ]
+   },
+   "read": "2026-10-20",
+   "photos": [
+    {
+     "key": "home-of-wool-baby-sleeping-bag",
+     "src": "https://homeofwool.com/wp-content/uploads/2026/10/baby-sleeping-bag-sale-1.jpg"
+    }
+   ],
+   "img": "home-of-wool-baby-sleeping-bag",
+   "img_src": "https://homeofwool.com/wp-content/uploads/2026/10/baby-sleeping-bag-sale-1.jpg"
+  },
+  {
+   "id": "mushie-classic-silicone-suction-plate",
+   "type": "plates",
+   "brand": "Mushie",
+   "line": "Classic Silicone Suction Plate",
+   "uses": [
+    "100% food-grade silicone"
+   ],
+   "free": [],
+   "unconfirmed": [
+    "Pigments"
+   ],
+   "outside": [],
+   "facts": {
+    "main": "yes",
+    "melamine": "yes",
+    "color": "unknown",
+    "silicone": "unknown"
+   },
+   "contains": [],
+   "standards": [],
+   "products": [
+    {
+     "name": "Mushie Classic Silicone Suction Plate",
+     "url": "https://thebabypenguin.com/products/classic-silicone-suction-plate",
+     "store": "The Baby Penguin",
+     "price": "$16.99",
+     "ships_from": null,
+     "shipping": "Free standard shipping on orders of $50 or more within the contiguous United States"
+    }
+   ],
+   "unstated": {
+    "color": [
+     "Pigments"
+    ]
+   },
+   "age": {
+    "min_months": 6,
+    "text": "6 months and up"
+   },
+   "read": "2026-10-20"
+  },
+  {
+   "id": "mushie-first-feeding-spoons",
+   "type": "utensils",
+   "brand": "Mushie",
+   "line": "First Feeding Baby Spoons (2 pack)",
+   "uses": [
+    "Food-grade silicone"
+   ],
+   "free": [
+    "BPA",
+    "BPS",
+    "PVC",
+    "Phthalates"
+   ],
+   "unconfirmed": [
+    "Pigments"
+   ],
+   "outside": [],
+   "facts": {
+    "main": "yes",
+    "melamine": "yes",
+    "color": "unknown",
+    "silicone": "no",
+    "lead": "yes"
+   },
+   "contains": [],
+   "standards": [
+    "us-toy"
+   ],
+   "products": [
+    {
+     "name": "First Feeding Baby Spoons, 2 pack",
+     "url": "https://mushie.com/products/first-feeding-baby-spoons-2-pack",
+     "store": "Mushie",
+     "price": "$14.99",
+     "ships_from": null,
+     "shipping": "Free shipping for US orders $75+"
+    }
+   ],
+   "unstated": {
+    "color": [
+     "Pigments"
+    ]
+   },
+   "age": {
+    "min_months": 6,
+    "text": "6 months and up"
+   },
+   "read": "2026-10-20",
+   "photos": [
+    {
+     "key": "mushie-first-feeding-spoons",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/FirstFeedingBabySpoons2Pack_PowderBlue_ShiftingSand.jpg?v=1752255665"
+    },
+    {
+     "key": "mushie-first-feeding-spoons_2",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/first-feeding-spoons-info.jpg?v=1771318997"
+    },
+    {
+     "key": "mushie-first-feeding-spoons_3",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/03_flatLaysmarch3-25.jpg?v=1771318997"
+    },
+    {
+     "key": "mushie-first-feeding-spoons_4",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/Ellionore_8m_-37.jpg?v=1788900615"
+    },
+    {
+     "key": "mushie-first-feeding-spoons_5",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/04_shoot_3.01-45.jpg?v=1771318997"
+    },
+    {
+     "key": "mushie-first-feeding-spoons_6",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/04_powderblue_shiftingsand_baby_vinsent-15.jpg?v=1771318997"
+    },
+    {
+     "key": "mushie-first-feeding-spoons_7",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/PhotoApr022025_53259PM.jpg?v=1771319020"
+    },
+    {
+     "key": "mushie-first-feeding-spoons_8",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/Goldenshoot_shoot-2_3e22d185-a934-454a-ac71-72a5cca1a0cd.jpg?v=1771319020"
+    },
+    {
+     "key": "mushie-first-feeding-spoons_9",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/Ellionore_8m_-47.jpg?v=1788900616"
+    },
+    {
+     "key": "mushie-first-feeding-spoons_10",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/05_Shoot_zion_lily_2kids-98.jpg?v=1771318997"
+    }
+   ],
+   "img": "mushie-first-feeding-spoons",
+   "img_src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/FirstFeedingBabySpoons2Pack_PowderBlue_ShiftingSand.jpg?v=1752255665"
+  },
+  {
+   "id": "mushie-soft-spout-sippy-cup",
+   "type": "cups",
+   "brand": "Mushie",
+   "line": "Soft Spout Sippy Cup, 10 fl oz",
+   "uses": [
+    "Food-grade silicone spout"
+   ],
+   "free": [],
+   "unconfirmed": [
+    "Material of the translucent body",
+    "Pigments"
+   ],
+   "outside": [
+    "PP plastic",
+    "Plastic lid"
+   ],
+   "facts": {
+    "main": "no",
+    "color": "unknown",
+    "silicone": "unknown"
+   },
+   "contains": [],
+   "standards": [],
+   "products": [
+    {
+     "name": "Mushie Soft Spout Sippy Cup",
+     "url": "https://thebabypenguin.com/products/soft-spout-sippy-cup",
+     "store": "The Baby Penguin",
+     "price": "$12.99",
+     "ships_from": null,
+     "shipping": "Free standard shipping on orders of $50 or more within the contiguous United States"
+    }
+   ],
+   "unstated": {
+    "color": [
+     "Pigments"
+    ]
+   },
+   "age": {
+    "min_months": 6,
+    "text": "6 months and up"
+   },
+   "read": "2026-10-20",
+   "photos": [
+    {
+     "key": "mushie-soft-spout-sippy-cup",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Soft-Spout-Sippy-Cup-Mushie-128350123.jpg?v=1781453165"
+    },
+    {
+     "key": "mushie-soft-spout-sippy-cup_2",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Soft-Spout-Sippy-Cup-Mushie-128350452.jpg?v=1781453172"
+    },
+    {
+     "key": "mushie-soft-spout-sippy-cup_3",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Soft-Spout-Sippy-Cup-Mushie-128350554.jpg?v=1781453172"
+    },
+    {
+     "key": "mushie-soft-spout-sippy-cup_4",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Soft-Spout-Sippy-Cup-Mushie-128350638.jpg?v=1781453173"
+    },
+    {
+     "key": "mushie-soft-spout-sippy-cup_5",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Soft-Spout-Sippy-Cup-Mushie-128350751.jpg?v=1781453173"
+    },
+    {
+     "key": "mushie-soft-spout-sippy-cup_6",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Soft-Spout-Sippy-Cup-Mushie-128350893.jpg?v=1781453190"
+    },
+    {
+     "key": "mushie-soft-spout-sippy-cup_7",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Soft-Spout-Sippy-Cup-Mushie-128350988.jpg?v=1781453190"
+    },
+    {
+     "key": "mushie-soft-spout-sippy-cup_8",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Soft-Spout-Sippy-Cup-Mushie-128351021.jpg?v=1781453190"
+    },
+    {
+     "key": "mushie-soft-spout-sippy-cup_9",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Soft-Spout-Sippy-Cup-Mushie-128351183.jpg?v=1781453190"
+    },
+    {
+     "key": "mushie-soft-spout-sippy-cup_10",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Soft-Spout-Sippy-Cup-Mushie-128351265.jpg?v=1781453190"
+    }
+   ],
+   "img": "mushie-soft-spout-sippy-cup",
+   "img_src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Soft-Spout-Sippy-Cup-Mushie-128350123.jpg?v=1781453165"
+  },
+  {
+   "id": "swaddleme-compression-swaddle-pod",
+   "type": "sleep-sacks",
+   "brand": "SwaddleMe by Ingenuity",
+   "line": "Compression Swaddle Pod, 0 to 2 months",
+   "uses": [
+    "Cotton and spandex fabric (93% cotton, 7% spandex)"
+   ],
+   "free": [],
+   "unconfirmed": [
+    "Which part is the 10% plastic",
+    "Two-way zipper",
+    "Dyes in the print"
+   ],
+   "outside": [
+    "7% spandex in the fabric",
+    "10% plastic in the maker's materials list"
+   ],
+   "facts": {
+    "main": "no",
+    "parts": "unknown",
+    "color": "unknown"
+   },
+   "contains": [],
+   "standards": [],
+   "products": [
+    {
+     "name": "SwaddleMe by Ingenuity Compression Swaddle Pod, 0-2 Months, Scribble Elephant",
+     "url": "https://www.kids2.com/products/18037-091-swaddleme-by-ingenuity-compression-swaddle-pod-scribble-elephant",
+     "store": "Kids2",
+     "price": "$9.99 (maker's list price)",
+     "ships_from": null
+    }
+   ],
+   "unstated": {
+    "parts": [
+     "Two-way zipper"
+    ],
+    "color": [
+     "Dyes in the print"
+    ]
+   },
+   "age": {
+    "min_months": 0,
+    "max_months": 2,
+    "text": "0 to 2 months"
+   },
+   "note": "Kids2 lists the maker's price and sends buyers to retailers.",
+   "read": "2026-10-20",
+   "photos": [
+    {
+     "key": "swaddleme-compression-swaddle-pod",
+     "src": "https://cdn.shopify.com/s/files/1/0468/2521/0022/files/6aa98135d10ec4fde263ba29fbd2c1a3075529b6.jpg?v=1790973127"
+    },
+    {
+     "key": "swaddleme-compression-swaddle-pod_2",
+     "src": "https://cdn.shopify.com/s/files/1/0468/2521/0022/files/9d8bf634750461eb1c257c1b402b729a3a06ded6.jpg?v=1775233843"
+    },
+    {
+     "key": "swaddleme-compression-swaddle-pod_3",
+     "src": "https://cdn.shopify.com/s/files/1/0468/2521/0022/files/c36db139651c0eff861072d78520ab2861335665.jpg?v=1775233843"
+    },
+    {
+     "key": "swaddleme-compression-swaddle-pod_4",
+     "src": "https://cdn.shopify.com/s/files/1/0468/2521/0022/files/fbd242fe3be2ad476f434a4d9c7deb6a30c7bf18.jpg?v=1775233843"
+    },
+    {
+     "key": "swaddleme-compression-swaddle-pod_5",
+     "src": "https://cdn.shopify.com/s/files/1/0468/2521/0022/files/6b9517c4a4742ce35edcfe220d53fcec4459100f.jpg?v=1775233843"
+    },
+    {
+     "key": "swaddleme-compression-swaddle-pod_6",
+     "src": "https://cdn.shopify.com/s/files/1/0468/2521/0022/files/25787ccfa4c218e50579aab93e66c9066831453b.jpg?v=1780677193"
+    },
+    {
+     "key": "swaddleme-compression-swaddle-pod_7",
+     "src": "https://cdn.shopify.com/s/files/1/0468/2521/0022/files/tnvuvkhxpzplvzf1skmg.jpg?v=1775233822"
+    },
+    {
+     "key": "swaddleme-compression-swaddle-pod_8",
+     "src": "https://cdn.shopify.com/s/files/1/0468/2521/0022/files/3128f9f01769f6908c6f44993d2544645f66b621.jpg?v=1775233847"
+    },
+    {
+     "key": "swaddleme-compression-swaddle-pod_9",
+     "src": "https://www.kids2.com/cdn/shop/files/preview_images/hqdefault_e6b5c2ec-d625-41aa-a05d-52d0dcd68790.jpg?v=1752781600"
+    }
+   ],
+   "img": "swaddleme-compression-swaddle-pod",
+   "img_src": "https://cdn.shopify.com/s/files/1/0468/2521/0022/files/6aa98135d10ec4fde263ba29fbd2c1a3075529b6.jpg?v=1790973127"
+  },
+  {
+   "id": "weesprout-silicone-mini-cup",
+   "type": "cups",
+   "brand": "WeeSprout",
+   "line": "Silicone Mini Cup, 2 oz (set of 2)",
+   "uses": [
+    "Food-grade silicone"
+   ],
+   "free": [
+    "BPA",
+    "PVC",
+    "Phthalates"
+   ],
+   "unconfirmed": [
+    "Pigments",
+    "Which standards the third-party testing covers"
+   ],
+   "outside": [],
+   "facts": {
+    "main": "yes",
+    "color": "unknown",
+    "silicone": "unknown"
+   },
+   "contains": [],
+   "standards": [],
+   "products": [
+    {
+     "name": "Silicone Mini Cup for Babies, 2 oz (Set of 2)",
+     "url": "https://www.weesprout.com/products/silicone-baby-training-cups",
+     "store": "WeeSprout",
+     "price": "$9.98",
+     "ships_from": null,
+     "shipping": "Free shipping on orders $60+"
+    }
+   ],
+   "unstated": {
+    "color": [
+     "Pigments"
+    ],
+    "silicone": [
+     "Which standards the third-party testing covers"
+    ]
+   },
+   "age": {
+    "min_months": 6,
+    "text": "6 months and up"
+   },
+   "read": "2026-10-20",
+   "photos": [
+    {
+     "key": "weesprout-silicone-mini-cup",
+     "src": "https://cdn.shopify.com/s/files/1/0957/4574/files/SMC-Pastel-PPMT.jpg?v=1776107866"
+    },
+    {
+     "key": "weesprout-silicone-mini-cup_2",
+     "src": "https://cdn.shopify.com/s/files/1/0957/4574/files/SMC_a.jpg?v=1776107866"
+    },
+    {
+     "key": "weesprout-silicone-mini-cup_3",
+     "src": "https://cdn.shopify.com/s/files/1/0957/4574/files/SMC_b_450876f0-0c90-44e6-abcb-2749ffa68d32.jpg?v=1776107866"
+    },
+    {
+     "key": "weesprout-silicone-mini-cup_4",
+     "src": "https://cdn.shopify.com/s/files/1/0957/4574/files/SMC_c.jpg?v=1776107866"
+    },
+    {
+     "key": "weesprout-silicone-mini-cup_5",
+     "src": "https://cdn.shopify.com/s/files/1/0957/4574/files/SMC_d.jpg?v=1776107866"
+    }
+   ],
+   "img": "weesprout-silicone-mini-cup",
+   "img_src": "https://cdn.shopify.com/s/files/1/0957/4574/files/SMC-Pastel-PPMT.jpg?v=1776107866"
+  },
+  {
+   "id": "weesprout-silicone-teether-set",
+   "type": "teethers",
+   "brand": "WeeSprout",
+   "line": "Silicone Teether Set, Dog, Ball and Ring",
+   "uses": [
+    "Food-grade silicone"
+   ],
+   "free": [
+    "BPA",
+    "PVC",
+    "Phthalates"
+   ],
+   "unconfirmed": [
+    "Pigments",
+    "Which standards the third-party testing covers"
+   ],
+   "outside": [],
+   "facts": {
+    "main": "yes",
+    "parts": "yes",
+    "color": "unknown",
+    "silicone": "unknown"
+   },
+   "contains": [],
+   "standards": [],
+   "products": [
+    {
+     "name": "Silicone Teether Set, Dog, Ball & Ring (3 Pack)",
+     "url": "https://www.weesprout.com/products/handheld-teether-set",
+     "store": "WeeSprout",
+     "price": "$14.98",
+     "ships_from": null,
+     "shipping": "Free shipping on orders $60+"
+    }
+   ],
+   "unstated": {
+    "color": [
+     "Pigments"
+    ],
+    "silicone": [
+     "Which standards the third-party testing covers"
+    ]
+   },
+   "age": {
+    "min_months": 4,
+    "text": "4 months and up"
+   },
+   "read": "2026-10-20",
+   "photos": [
+    {
+     "key": "weesprout-silicone-teether-set",
+     "src": "https://cdn.shopify.com/s/files/1/0957/4574/files/HTS-DGBG.jpg?v=1776977866"
+    },
+    {
+     "key": "weesprout-silicone-teether-set_2",
+     "src": "https://cdn.shopify.com/s/files/1/0957/4574/files/HTS_a.jpg?v=1776977865"
+    },
+    {
+     "key": "weesprout-silicone-teether-set_3",
+     "src": "https://cdn.shopify.com/s/files/1/0957/4574/files/HTS_b.jpg?v=1776977865"
+    },
+    {
+     "key": "weesprout-silicone-teether-set_4",
+     "src": "https://cdn.shopify.com/s/files/1/0957/4574/files/HTS_c.jpg?v=1776977865"
+    },
+    {
+     "key": "weesprout-silicone-teether-set_5",
+     "src": "https://cdn.shopify.com/s/files/1/0957/4574/files/HTS_d.jpg?v=1776977865"
+    }
+   ],
+   "img": "weesprout-silicone-teether-set",
+   "img_src": "https://cdn.shopify.com/s/files/1/0957/4574/files/HTS-DGBG.jpg?v=1776977866"
   }
  ]
 }
