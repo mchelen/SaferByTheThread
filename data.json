@@ -563,7 +563,13 @@
      "store": "Home of Wool",
      "price": "from £207.50 (about $270), free US shipping",
      "ships_from": "UK",
-     "price_checked": "2026-10-18"
+     "price_checked": "2026-10-18",
+     "rating": {
+      "value": 5,
+      "count": 7,
+      "via": "json-ld",
+      "checked": "2026-10-20"
+     }
     }
    ],
    "img": "mat_homeofwool",
@@ -731,7 +737,13 @@
      "price": "$185; $140.99 on sale at Babylist",
      "ships_from": "US",
      "shipping": "Free shipping on orders over $200, $200 below",
-     "price_checked": "2026-10-18"
+     "price_checked": "2026-10-18",
+     "rating": {
+      "value": 4.9,
+      "count": 1020,
+      "via": "json-ld",
+      "checked": "2026-10-20"
+     }
     }
    ],
    "img": "mat_toki",
@@ -1001,7 +1013,13 @@
      "store": "Lovevery",
      "price": "$150",
      "ships_from": "US",
-     "price_checked": "2026-10-18"
+     "price_checked": "2026-10-18",
+     "rating": {
+      "value": 4.95,
+      "count": 2699,
+      "via": "yotpo",
+      "checked": "2026-10-20"
+     }
     }
    ],
    "img_src": "https://shop.lovevery.com/cdn/shop/files/03Newborns3Q-1445_FullFrame_Retouched_MB_V1_1_1024x1024.png?v=1707846206",
@@ -1288,7 +1306,13 @@
      "price": "$22",
      "ships_from": "US",
      "shipping": "Free shipping on orders over $100",
-     "price_checked": "2026-10-18"
+     "price_checked": "2026-10-18",
+     "rating": {
+      "value": 4.83,
+      "count": 902,
+      "via": "judge.me",
+      "checked": "2026-10-20"
+     }
     },
     {
      "name": "Pet Tails - Crinkly Fabric Book by Jellycat",
@@ -1297,7 +1321,13 @@
      "price": "$22",
      "ships_from": "US",
      "shipping": "Free shipping on orders over $100",
-     "price_checked": "2026-10-18"
+     "price_checked": "2026-10-18",
+     "rating": {
+      "value": 4.83,
+      "count": 902,
+      "via": "judge.me",
+      "checked": "2026-10-20"
+     }
     }
    ],
    "img_src": "https://cdn.shopify.com/s/files/1/0281/8056/files/BK4ST__24795.1727975850.jpg?v=1764638677",
@@ -1632,7 +1662,13 @@
      "store": "MacroBaby",
      "price": "$8.99",
      "ships_from": "US",
-     "price_checked": "2026-10-18"
+     "price_checked": "2026-10-18",
+     "rating": {
+      "value": 5,
+      "count": 40,
+      "via": "json-ld",
+      "checked": "2026-10-20"
+     }
     }
    ],
    "img_src": "https://cdn.shopify.com/s/files/1/0325/7932/1915/files/fisher-price-eco-rock-a-stack_image_1.jpg?v=1764437160",
@@ -2037,7 +2073,13 @@
      "store": "Smiling Tree Toys",
      "price": "$19",
      "ships_from": "US",
-     "price_checked": "2026-10-18"
+     "price_checked": "2026-10-18",
+     "rating": {
+      "value": 4.98,
+      "count": 355,
+      "via": "json-ld",
+      "checked": "2026-10-20"
+     }
     }
    ],
    "img": "car_truck",
@@ -2314,7 +2356,13 @@
      "price": "$18",
      "ships_from": "US",
      "shipping": "Free shipping on orders over $99",
-     "price_checked": "2026-10-18"
+     "price_checked": "2026-10-18",
+     "rating": {
+      "value": 5,
+      "count": 1,
+      "via": "json-ld",
+      "checked": "2026-10-20"
+     }
     }
    ],
    "img": "shake_sabo",
@@ -2369,7 +2417,13 @@
      "price": "$79",
      "ships_from": "US",
      "shipping": "Free shipping on orders over $99",
-     "price_checked": "2026-10-18"
+     "price_checked": "2026-10-18",
+     "rating": {
+      "value": 4.8,
+      "count": 29,
+      "via": "json-ld",
+      "checked": "2026-10-20"
+     }
     },
     {
      "name": "Bella Baby Terry Doll",
@@ -2378,7 +2432,13 @@
      "price": "$29.99",
      "ships_from": "US",
      "shipping": "Free shipping on orders over $99",
-     "price_checked": "2026-10-18"
+     "price_checked": "2026-10-18",
+     "rating": {
+      "value": 5,
+      "count": 162,
+      "via": "json-ld",
+      "checked": "2026-10-20"
+     }
     },
     {
      "name": "Little Dot Blanket Doll",
@@ -2387,7 +2447,13 @@
      "price": "$32.99",
      "ships_from": "US",
      "shipping": "Free shipping on orders over $99",
-     "price_checked": "2026-10-18"
+     "price_checked": "2026-10-18",
+     "rating": {
+      "value": 5,
+      "count": 44,
+      "via": "json-ld",
+      "checked": "2026-10-20"
+     }
     }
    ],
    "img": "doll_nanchen",
@@ -2511,7 +2577,13 @@
      "price": "$87",
      "ships_from": "US",
      "shipping": "Free shipping on orders over $99",
-     "price_checked": "2026-10-18"
+     "price_checked": "2026-10-18",
+     "rating": {
+      "value": 4.8,
+      "count": 20,
+      "via": "json-ld",
+      "checked": "2026-10-20"
+     }
     },
     {
      "name": "Organic Floppy Cat",
@@ -2520,7 +2592,13 @@
      "price": "$87",
      "ships_from": "US",
      "shipping": "Free shipping on orders over $99",
-     "price_checked": "2026-10-18"
+     "price_checked": "2026-10-18",
+     "rating": {
+      "value": 4.8,
+      "count": 34,
+      "via": "json-ld",
+      "checked": "2026-10-20"
+     }
     }
    ],
    "img": "ani_lamb",
@@ -2565,7 +2643,13 @@
      "price": "$50",
      "ships_from": "US",
      "shipping": "Free shipping on orders over $99",
-     "price_checked": "2026-10-18"
+     "price_checked": "2026-10-18",
+     "rating": {
+      "value": 5,
+      "count": 25,
+      "via": "json-ld",
+      "checked": "2026-10-20"
+     }
     }
    ],
    "img": "ani_squirrel",
@@ -2620,7 +2704,13 @@
      "price": "$17.90",
      "ships_from": "US",
      "shipping": "Free shipping on orders over $99",
-     "price_checked": "2026-10-18"
+     "price_checked": "2026-10-18",
+     "rating": {
+      "value": 4.7,
+      "count": 10,
+      "via": "json-ld",
+      "checked": "2026-10-20"
+     }
     }
    ],
    "img": "ani_puppet",
@@ -2931,7 +3021,13 @@
      "price": "$21.99",
      "ships_from": "US",
      "shipping": "Free shipping on orders over $100",
-     "price_checked": "2026-10-18"
+     "price_checked": "2026-10-18",
+     "rating": {
+      "value": 4,
+      "count": 4,
+      "via": "judge.me",
+      "checked": "2026-10-20"
+     }
     }
    ],
    "img": "ball_oli",
@@ -2988,7 +3084,13 @@
      "price": "$21",
      "ships_from": "US",
      "shipping": "Shipping calculated at checkout",
-     "price_checked": "2026-10-18"
+     "price_checked": "2026-10-18",
+     "rating": {
+      "value": 5,
+      "count": 3,
+      "via": "judge.me",
+      "checked": "2026-10-20"
+     }
     }
    ],
    "img": "ball_caaocho",
@@ -3087,7 +3189,13 @@
      "store": "Kids2",
      "price": "$4.99",
      "ships_from": "US",
-     "price_checked": "2026-10-18"
+     "price_checked": "2026-10-18",
+     "rating": {
+      "value": 4.93,
+      "count": 54,
+      "via": "yotpo",
+      "checked": "2026-10-20"
+     }
     }
    ],
    "img_src": "https://cdn.shopify.com/s/files/1/0468/2521/0022/files/27af224d36da99edd13d5ce5c98c287fd5aea97d.jpg?v=1775233825",
@@ -3270,7 +3378,13 @@
      "note": "Dyed",
      "ships_from": "US",
      "shipping": "Free shipping on orders over $99",
-     "price_checked": "2026-10-18"
+     "price_checked": "2026-10-18",
+     "rating": {
+      "value": 5,
+      "count": 223,
+      "via": "json-ld",
+      "checked": "2026-10-20"
+     }
     }
    ],
    "img": "silk_color",
@@ -3444,7 +3558,13 @@
      "price": "$84, pre-order",
      "ships_from": "US",
      "shipping": "Free shipping on orders over $150, $84 below",
-     "price_checked": "2026-10-18"
+     "price_checked": "2026-10-18",
+     "rating": {
+      "value": 5,
+      "count": 1,
+      "via": "json-ld",
+      "checked": "2026-10-20"
+     }
     }
    ],
    "img": "pretend_tara",
@@ -3512,7 +3632,13 @@
      "price": "$425",
      "ships_from": "US",
      "shipping": "Free shipping",
-     "price_checked": "2026-10-18"
+     "price_checked": "2026-10-18",
+     "rating": {
+      "value": 4.74,
+      "count": 27,
+      "via": "json-ld",
+      "checked": "2026-10-20"
+     }
     }
    ],
    "img": "bed_obasan",
@@ -3589,7 +3715,13 @@
      "price": "$499",
      "ships_from": "US",
      "shipping": "Shipping calculated at checkout",
-     "price_checked": "2026-10-18"
+     "price_checked": "2026-10-18",
+     "rating": {
+      "value": 5,
+      "count": 6,
+      "via": "json-ld",
+      "checked": "2026-10-20"
+     }
     }
    ],
    "img": "bed_gcmat",
@@ -3714,7 +3846,13 @@
      "store": "Savvy Rest",
      "price": "$599",
      "ships_from": "US",
-     "price_checked": "2026-10-18"
+     "price_checked": "2026-10-18",
+     "rating": {
+      "value": 5,
+      "count": 1,
+      "via": "json-ld",
+      "checked": "2026-10-20"
+     }
     },
     {
      "name": "Savvy Baby, Talalay",
@@ -3797,7 +3935,13 @@
      "store": "Home of Wool",
      "price": "from $653",
      "ships_from": "UK",
-     "price_checked": "2026-10-18"
+     "price_checked": "2026-10-18",
+     "rating": {
+      "value": 5,
+      "count": 57,
+      "via": "json-ld",
+      "checked": "2026-10-20"
+     }
     }
    ],
    "img": "bed_howmat",
@@ -3965,7 +4109,13 @@
      "price": "$279-$339",
      "ships_from": "US",
      "shipping": "Free shipping",
-     "price_checked": "2026-10-18"
+     "price_checked": "2026-10-18",
+     "rating": {
+      "value": 4.78,
+      "count": 570,
+      "via": "yotpo",
+      "checked": "2026-10-20"
+     }
     }
    ],
    "img_src": "https://www.naturepedic.com/cdn/shop/files/NP_PDP_Mattress_ClassicOrganicCottonCribMattress_List-1.jpg?v=1783597651&width=2048",
@@ -4051,7 +4201,13 @@
      "price": "$332.50",
      "ships_from": "US",
      "shipping": "$50 shipping",
-     "price_checked": "2026-10-18"
+     "price_checked": "2026-10-18",
+     "rating": {
+      "value": 4.9,
+      "count": 2207,
+      "via": "json-ld",
+      "checked": "2026-10-20"
+     }
     }
    ],
    "img_src": "https://www.newtonbaby.com/cdn/shop/files/Waterproof_Mattress_-_brand_tag_update_2_33581618-fd26-4330-bf72-07a7270580c0.jpg?v=1791982980",
@@ -4189,7 +4345,13 @@
      "price": "$1,695 to $2,595",
      "ships_from": "US",
      "shipping": "Shipping calculated at checkout",
-     "price_checked": "2026-10-18"
+     "price_checked": "2026-10-18",
+     "rating": {
+      "value": 5,
+      "count": 1,
+      "via": "yotpo",
+      "checked": "2026-10-20"
+     }
     },
     {
      "name": "Toddler conversion kit",
@@ -4361,7 +4523,13 @@
      "price": "$1,066",
      "ships_from": "US",
      "shipping": "$9.95 shipping",
-     "price_checked": "2026-10-18"
+     "price_checked": "2026-10-18",
+     "rating": {
+      "value": 5,
+      "count": 3,
+      "via": "json-ld",
+      "checked": "2026-10-20"
+     }
     }
    ],
    "img": "bed_snyder",
@@ -4435,7 +4603,13 @@
      "store": "IKEA US",
      "price": "$99.99",
      "ships_from": "US",
-     "price_checked": "2026-10-18"
+     "price_checked": "2026-10-18",
+     "rating": {
+      "value": 4.3,
+      "count": 230,
+      "via": "json-ld",
+      "checked": "2026-10-20"
+     }
     }
    ],
    "img_src": "https://www.ikea.com/us/en/images/products/sniglar-bed-frame-with-slatted-bed-base-beech__0637773_pe698533_s5.jpg",
@@ -4501,7 +4675,13 @@
      "store": "Simply Sori",
      "price": "$910",
      "ships_from": "US",
-     "price_checked": "2026-10-18"
+     "price_checked": "2026-10-18",
+     "rating": {
+      "value": 4.99,
+      "count": 75,
+      "via": "judge.me",
+      "checked": "2026-10-20"
+     }
     }
    ],
    "img": "bed_sori",
@@ -4593,7 +4773,13 @@
      "price": "$329",
      "ships_from": "US",
      "shipping": "Free shipping",
-     "price_checked": "2026-10-18"
+     "price_checked": "2026-10-18",
+     "rating": {
+      "value": 4,
+      "count": 2,
+      "via": "json-ld",
+      "checked": "2026-10-20"
+     }
     }
    ],
    "img": "bed_ozarks",
@@ -4787,7 +4973,13 @@
      "price": "$300",
      "ships_from": "US",
      "shipping": "Free shipping on orders over $100",
-     "price_checked": "2026-10-18"
+     "price_checked": "2026-10-18",
+     "rating": {
+      "value": 4.7,
+      "count": 166,
+      "via": "json-ld",
+      "checked": "2026-10-20"
+     }
     }
    ],
    "img": "bed_sprout",
@@ -4942,7 +5134,13 @@
      "store": "Piccalio",
      "price": "$499",
      "ships_from": "US",
-     "price_checked": "2026-10-18"
+     "price_checked": "2026-10-18",
+     "rating": {
+      "value": 5,
+      "count": 26,
+      "via": "shopify",
+      "checked": "2026-10-20"
+     }
     }
    ],
    "img_src": "https://piccalio.com/cdn/shop/files/piccalio-bedbed-full-crib-floor-domino-good-housekeeping-lifestyle-1.jpg?v=1787682927&width=2048",
@@ -5095,7 +5293,13 @@
      "price": "$79.99",
      "ships_from": "US",
      "shipping": "Free shipping",
-     "price_checked": "2026-10-18"
+     "price_checked": "2026-10-18",
+     "rating": {
+      "value": 5,
+      "count": 2,
+      "via": "json-ld",
+      "checked": "2026-10-20"
+     }
     }
    ],
    "img_src": "https://www.deltachildren.com/cdn/shop/files/BB81541GN-1730_animal-wood-toddler-bed_safari_lifestyle_03.jpg?v=1776979890",
@@ -5176,7 +5380,13 @@
      "price": "$54",
      "ships_from": "US",
      "shipping": "Shipping calculated at checkout",
-     "price_checked": "2026-10-18"
+     "price_checked": "2026-10-18",
+     "rating": {
+      "value": 5,
+      "count": 1,
+      "via": "shopify",
+      "checked": "2026-10-20"
+     }
     },
     {
      "name": "Crib pad, 28 x 52 in",
@@ -5185,7 +5395,13 @@
      "price": "$129",
      "ships_from": "US",
      "shipping": "Shipping calculated at checkout",
-     "price_checked": "2026-10-18"
+     "price_checked": "2026-10-18",
+     "rating": {
+      "value": 5,
+      "count": 1,
+      "via": "shopify",
+      "checked": "2026-10-20"
+     }
     }
    ],
    "img": "bed_wendy",
@@ -5255,7 +5471,13 @@
      "note": "Out of stock when checked",
      "ships_from": "US",
      "shipping": "Free shipping on orders over $150",
-     "price_checked": "2026-10-18"
+     "price_checked": "2026-10-18",
+     "rating": {
+      "value": 4.83,
+      "count": 24,
+      "via": "judge.me",
+      "checked": "2026-10-20"
+     }
     },
     {
      "name": "Organic Crib Mattress Topper, 1 in",
@@ -5264,7 +5486,13 @@
      "price": "$285",
      "ships_from": "US",
      "shipping": "Free shipping on orders over $150",
-     "price_checked": "2026-10-18"
+     "price_checked": "2026-10-18",
+     "rating": {
+      "value": 5,
+      "count": 2,
+      "via": "judge.me",
+      "checked": "2026-10-20"
+     }
     },
     {
      "name": "Natural Crib Mattress Topper, 1 in",
@@ -5273,7 +5501,13 @@
      "price": "$275",
      "ships_from": "US",
      "shipping": "Free shipping on orders over $150",
-     "price_checked": "2026-10-18"
+     "price_checked": "2026-10-18",
+     "rating": {
+      "value": 4.8,
+      "count": 25,
+      "via": "judge.me",
+      "checked": "2026-10-20"
+     }
     },
     {
      "name": "Child's First Pillow, 9 x 13 in",
@@ -5283,7 +5517,13 @@
      "note": "Wool fill, fleece top, moisture barrier back",
      "ships_from": "US",
      "shipping": "Free shipping on orders over $150",
-     "price_checked": "2026-10-18"
+     "price_checked": "2026-10-18",
+     "rating": {
+      "value": 4.58,
+      "count": 12,
+      "via": "judge.me",
+      "checked": "2026-10-20"
+     }
     }
    ],
    "img": "bed_hltopo",
@@ -5539,7 +5779,13 @@
      "price": "$69-$99",
      "ships_from": "US",
      "shipping": "Free shipping",
-     "price_checked": "2026-10-18"
+     "price_checked": "2026-10-18",
+     "rating": {
+      "value": 4.9,
+      "count": 230,
+      "via": "yotpo",
+      "checked": "2026-10-20"
+     }
     }
    ],
    "img_src": "https://www.naturepedic.com/cdn/shop/files/np_website_images_baby_pc62w-pc63w-pk63w_3_e0f3295b-c8ea-4bfd-a251-5f9bfaa35c19.jpg?v=1777478461&width=2048",
@@ -5602,7 +5848,13 @@
      "store": "Avocado Green Mattress",
      "price": "$76",
      "ships_from": "US",
-     "price_checked": "2026-10-18"
+     "price_checked": "2026-10-18",
+     "rating": {
+      "value": 4.8,
+      "count": 40,
+      "via": "json-ld",
+      "checked": "2026-10-20"
+     }
     }
    ],
    "img_src": "https://www.avocadogreenmattress.com/cdn/shop/files/AvocadoOrganicCribWaterproofProtector.jpg?v=1783447928",
@@ -5667,7 +5919,13 @@
      "price": "$49.99",
      "ships_from": "US",
      "shipping": "$25 shipping",
-     "price_checked": "2026-10-18"
+     "price_checked": "2026-10-18",
+     "rating": {
+      "value": 5,
+      "count": 1,
+      "via": "json-ld",
+      "checked": "2026-10-20"
+     }
     }
    ],
    "img_src": "https://www.newtonbaby.com/cdn/shop/files/2005-EssentialCribPad3000_8.jpg?v=1766503618",
@@ -5926,7 +6184,13 @@
      "price": "$34",
      "ships_from": "US",
      "shipping": "Free shipping on orders over $85",
-     "price_checked": "2026-10-18"
+     "price_checked": "2026-10-18",
+     "rating": {
+      "value": 4.96,
+      "count": 156,
+      "via": "shopify",
+      "checked": "2026-10-20"
+     }
     }
    ],
    "img": "sil_anyday",
@@ -5995,7 +6259,13 @@
      "price": "$40 for 2",
      "ships_from": "US",
      "shipping": "Free shipping on orders over $95",
-     "price_checked": "2026-10-18"
+     "price_checked": "2026-10-18",
+     "rating": {
+      "value": 4.7,
+      "count": 57,
+      "via": "json-ld",
+      "checked": "2026-10-20"
+     }
     }
    ],
    "img": "sil_souper",
@@ -6141,7 +6411,13 @@
      "price": "$19.99",
      "ships_from": "US",
      "shipping": "Free shipping on orders over $75",
-     "price_checked": "2026-10-18"
+     "price_checked": "2026-10-18",
+     "rating": {
+      "value": 5,
+      "count": 18,
+      "via": "json-ld",
+      "checked": "2026-10-20"
+     }
     }
    ],
    "img": "sil_mushie",
@@ -6235,7 +6511,13 @@
      "price": "$14.98",
      "ships_from": "US",
      "shipping": "Free shipping on orders over $60",
-     "price_checked": "2026-10-18"
+     "price_checked": "2026-10-18",
+     "rating": {
+      "value": 5,
+      "count": 103,
+      "via": "json-ld",
+      "checked": "2026-10-20"
+     }
     },
     {
      "name": "Silicone Baby Food Freezer Tray – 3 oz Sections",
@@ -6244,7 +6526,13 @@
      "price": "$14.98",
      "ships_from": "US",
      "shipping": "Free shipping on orders over $60",
-     "price_checked": "2026-10-18"
+     "price_checked": "2026-10-18",
+     "rating": {
+      "value": 4.9,
+      "count": 15,
+      "via": "json-ld",
+      "checked": "2026-10-20"
+     }
     }
    ],
    "img_src": "https://www.weesprout.com/cdn/shop/files/NLC-15-NY.jpg?v=1776574528",
@@ -6581,7 +6869,13 @@
      "price": "$9.99",
      "ships_from": "US",
      "shipping": "Free shipping on orders over $50",
-     "price_checked": "2026-10-18"
+     "price_checked": "2026-10-18",
+     "rating": {
+      "value": 4.7,
+      "count": 106,
+      "via": "shopify",
+      "checked": "2026-10-20"
+     }
     }
    ],
    "img_src": "https://tovolo.com/cdn/shop/files/22021-200_01_King-Cube-Ice-Tray-with-Lid_Charcoal.png?v=1792259085",
@@ -6685,7 +6979,13 @@
      "price": "2-pack $92.99",
      "ships_from": "US",
      "shipping": "Free shipping",
-     "price_checked": "2026-10-18"
+     "price_checked": "2026-10-18",
+     "rating": {
+      "value": 5,
+      "count": 1,
+      "via": "json-ld",
+      "checked": "2026-10-20"
+     }
     },
     {
      "name": "Classic GEL01, 12 x 3 oz",
@@ -6694,7 +6994,13 @@
      "price": "$67.49",
      "ships_from": "US",
      "shipping": "Free shipping",
-     "price_checked": "2026-10-18"
+     "price_checked": "2026-10-18",
+     "rating": {
+      "value": 5,
+      "count": 1,
+      "via": "json-ld",
+      "checked": "2026-10-20"
+     }
     }
    ],
    "img": "sil_gel01m",
@@ -6841,7 +7147,13 @@
      "price": "$9.99",
      "ships_from": "US",
      "shipping": "Free shipping on orders over $50",
-     "price_checked": "2026-10-18"
+     "price_checked": "2026-10-18",
+     "rating": {
+      "value": 4.9,
+      "count": 88,
+      "via": "shopify",
+      "checked": "2026-10-20"
+     }
     }
    ],
    "img_src": "https://tovolo.com/cdn/shop/files/22083-800_Unicorn-Pop-Mold_AMZ_LIFESTYLE-04.jpg?v=1792258413",
@@ -6924,7 +7236,13 @@
      "price": "$15.99",
      "ships_from": "US",
      "shipping": "Free shipping on orders over $75",
-     "price_checked": "2026-10-18"
+     "price_checked": "2026-10-18",
+     "rating": {
+      "value": 4.9,
+      "count": 16,
+      "via": "json-ld",
+      "checked": "2026-10-20"
+     }
     }
    ],
    "img_src": "https://mushie.com/cdn/shop/files/ToddlerIcePopTray_Blush_b32de10a-6b47-4bd5-8e07-d720c8376ddb.jpg?v=1755101124",
@@ -7127,7 +7445,13 @@
      "url": "https://www.softstarshoes.com/padraig-cottage-baby-toddler-wool-slippers.html",
      "store": "Softstar (US)",
      "price": "$50, free US shipping",
-     "ships_from": "US"
+     "ships_from": "US",
+     "rating": {
+      "value": 5,
+      "count": 5,
+      "via": "json-ld",
+      "checked": "2026-10-20"
+     }
     }
    ],
    "img": "shoe_padraig",
@@ -7390,7 +7714,13 @@
      "price": "$48.00",
      "ships_from": "US",
      "shipping": "Free shipping",
-     "price_checked": "2026-10-18"
+     "price_checked": "2026-10-18",
+     "rating": {
+      "value": 4.6,
+      "count": 334,
+      "via": "json-ld",
+      "checked": "2026-10-20"
+     }
     }
    ],
    "img_src": "https://robeez.com/cdn/shop/files/RBG21060_view_01.jpg?v=1785940150",
@@ -7456,7 +7786,13 @@
      "store": "Freshly Picked",
      "price": "$59.00",
      "ships_from": "US",
-     "price_checked": "2026-10-18"
+     "price_checked": "2026-10-18",
+     "rating": {
+      "value": 4.96,
+      "count": 89,
+      "via": "json-ld",
+      "checked": "2026-10-20"
+     }
     },
     {
      "name": "Zion Moccasin Baby Shoe, Hard Sole (sizes 3-5)",
@@ -7464,7 +7800,13 @@
      "store": "Freshly Picked",
      "price": "$65.00",
      "ships_from": "US",
-     "price_checked": "2026-10-18"
+     "price_checked": "2026-10-18",
+     "rating": {
+      "value": 4.96,
+      "count": 89,
+      "via": "json-ld",
+      "checked": "2026-10-20"
+     }
     }
    ],
    "img_src": "https://cdn.shopify.com/s/files/1/0204/2258/files/ZionClassic_1_336328d6-e506-4451-a968-3f78bcd6d86b.webp?v=1774385889",
@@ -7821,7 +8163,13 @@
      "store": "Crywolf (New Zealand)",
      "price": "about NZ$45",
      "ships_from": "New Zealand",
-     "price_checked": "2026-10-18"
+     "price_checked": "2026-10-18",
+     "rating": {
+      "value": 4.94,
+      "count": 32,
+      "via": "json-ld",
+      "checked": "2026-10-20"
+     }
     }
    ],
    "img": "boot_crywolf",
@@ -7940,7 +8288,13 @@
      "store": "Frugi (UK)",
      "price": "£30",
      "ships_from": "UK",
-     "price_checked": "2026-10-18"
+     "price_checked": "2026-10-18",
+     "rating": {
+      "value": 4.62,
+      "count": 58,
+      "via": "json-ld",
+      "checked": "2026-10-20"
+     }
     }
    ],
    "img": "boot_frugi",
@@ -8109,7 +8463,13 @@
      "price": "$17.95 (sale; regular $30.00)",
      "ships_from": "US",
      "shipping": "Free shipping on orders over $80",
-     "price_checked": "2026-10-18"
+     "price_checked": "2026-10-18",
+     "rating": {
+      "value": 4.8,
+      "count": 28,
+      "via": "json-ld",
+      "checked": "2026-10-20"
+     }
     }
    ],
    "img_src": "https://www.westernchief.com/cdn/shop/files/kids-firechief-2-rain-boot-yellow-5322569.jpg?v=1755374671",
@@ -8169,7 +8529,13 @@
      "price": "$39.99",
      "ships_from": "US",
      "shipping": "Free shipping on orders over $129.99, $25 below",
-     "price_checked": "2026-10-18"
+     "price_checked": "2026-10-18",
+     "rating": {
+      "value": 5,
+      "count": 9,
+      "via": "json-ld",
+      "checked": "2026-10-20"
+     }
     }
    ],
    "img_src": "https://www.kamik.com/cdn/shop/files/Product-Image_STOMP_Stomp-Kids-Sky-Blue-Rain-Boots_SKY_01.jpg?v=1776109696",
@@ -8301,7 +8667,13 @@
      "price": "£41.00",
      "ships_from": "UK",
      "shipping": "Shipping calculated at checkout",
-     "price_checked": "2026-10-18"
+     "price_checked": "2026-10-18",
+     "rating": {
+      "value": 4.9,
+      "count": 59,
+      "via": "shopify",
+      "checked": "2026-10-20"
+     }
     }
    ],
    "img_src": "https://cdn.shopify.com/s/files/1/0258/8147/7195/files/A25-771-ERW_2_2000x2000_19ae90cb-a538-442b-a631-f6c7f84a9d18.jpg?v=1785426517",

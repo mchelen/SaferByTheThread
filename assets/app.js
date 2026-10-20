@@ -231,6 +231,13 @@
     if (max && t.length > max) t = t.slice(0, max - 1).concat([t[max - 1] + ' (+' + (t.length - max) + ' more)']);
     return t.map(function (x) { return '<p class="fit ' + (r.ok ? 'is-unk' : 'is-miss') + '"><span class="mk" aria-hidden="true">' + (r.ok ? '?' : '✕') + '</span>' + esc(x) + '</p>'; }).join('');
   }
+  // Stars filled to the rating, the number, and the review count; the store it came from is in the label.
+  function storeName(s) { return s.replace(/\s*\(.*\)$/, ''); }
+  function stars(r, long) {
+    var v = (Math.round(r.value * 10) / 10).toFixed(1), label = v + ' out of 5 stars from ' + plural(r.count, 'review') + ' at ' + storeName(r.store);
+    return '<p class="rating" role="img" aria-label="' + esc(label) + '" title="' + esc(label) + '"><span class="stars" style="--rv:' + r.value + '" aria-hidden="true">★★★★★</span>' +
+      '<span class="r-v" aria-hidden="true">' + v + '</span><span class="r-n" aria-hidden="true">' + (long ? esc(plural(r.count, 'review')) + ' at ' + esc(storeName(r.store)) : '(' + r.count.toLocaleString('en-US') + ')') + '</span></p>';
+  }
   function card(item, i, crit, strict) {
     var r = status(item, crit, strict);
     var mats = item.materials.slice(0, 3).map(matLabel);
@@ -240,6 +247,7 @@
       '<a class="card-link" href="' + U('/p/' + item.id) + '">' + photo(item, i != null && i < 4) +
       '<div class="ph-badges">' + badges.join('') + '</div>' +
       '<div class="card-body"><p class="brand">' + esc(item.brand) + '</p><h3>' + esc(item.line) + '</h3>' +
+      (item.rating ? stars(item.rating) : '') +
       '<p class="mats">' + esc(mats.join(' · ') || 'Materials on the product page') + '</p>' +
       '<p class="price">' + esc(S.priceFrom(item)) + '</p>' +
       '<p class="ship' + (item.deliv === 'free' ? ' is-free' : '') + '">' + esc(item.shipLine) + '</p>' +
@@ -570,10 +578,11 @@
   function storeCount(item) { return item.products.map(function (p) { return p.store; }).filter(function (v, k, a) { return a.indexOf(v) === k; }).length; }
   function offersOf(item) { return storeCount(item) > 1 ? item.byCost : item.products; }
   function buyText(p) { return 'Buy at ' + esc(p.store.replace(/\s*\(.*\)$/, '')); }
-  function offerHtml(p, k) {
+  // `rated`: several stores or options, so each offer shows its own page's rating.
+  function offerHtml(p, k, rated) {
     var from = p.ships_from === 'US' ? 'Ships from the US' : p.ships_from ? 'Ships from ' + p.ships_from : 'Ships from: not recorded';
     var ship = p.shipping || (/free (?:us )?shipping/i.test(p.price) ? 'Free shipping' : '');
-    return '<li class="offer"><p class="o-name">' + esc(p.name) + '</p><p class="o-price">' + esc(p.price.replace(/,?\s*free (us )?shipping.*$/i, '')) +
+    return '<li class="offer"><p class="o-name">' + esc(p.name) + '</p>' + (rated === true && p.rating && p.rating.count > 0 ? stars({ value: p.rating.value, count: p.rating.count, store: p.store }) : '') + '<p class="o-price">' + esc(p.price.replace(/,?\s*free (us )?shipping.*$/i, '')) +
       (p.total != null && p.shipCost > 0 ? '<small>' + (p.approx ? 'about ' : '') + esc(S.money(p.total)) + ' with shipping</small>' : '') + '</p>' +
       '<p class="o-meta">' + esc(p.store) + ' · ' + esc(from) + (ship ? ' · <span class="o-ship">' + icon('truck') + esc(ship) + '</span>' : '') + '</p>' +
       (p.note ? '<p class="o-note">' + esc(p.note) + '</p>' : '') +
@@ -597,8 +606,9 @@
       gallery(item) +
       '<div class="buybox">' +
       '<p class="brand"><a href="' + U('/b/' + item.brandId) + '">' + esc(item.brand) + '</a></p><h1>' + esc(item.line) + '</h1>' +
+      (item.rating ? '<a class="rating-link" href="' + esc(item.rating.url) + '" target="_blank" rel="noopener">' + stars(item.rating, true) + '</a>' : '') +
       '<p class="price">' + esc(S.priceLabel(item)) + (item.products.length > 1 ? '<small>' + (storeCount(item) > 1 ? storeCount(item) + ' stores' : item.products.length + ' options') + '</small>' : '') + '</p>' +
-      (storeCount(item) > 1 ? '<h2 class="offers-h">Prices at ' + storeCount(item) + ' stores, lowest first</h2>' : '<h2 class="sr">Where to buy</h2>') + '<ul class="offers">' + offersOf(item).map(offerHtml).join('') + '</ul>' +
+      (storeCount(item) > 1 ? '<h2 class="offers-h">Prices at ' + storeCount(item) + ' stores, lowest first</h2>' : '<h2 class="sr">Where to buy</h2>') + '<ul class="offers">' + offersOf(item).map(function (p, k) { return offerHtml(p, k, item.products.length > 1); }).join('') + '</ul>' +
       '<div class="status">' + (r.ok ? '<p class="fit is-ok"><span class="mk" aria-hidden="true">✓</span>Meets your ' + plural(critOn(CRIT, STRICT), 'material filter') + '</p>' : fitLine(item, r)) +
       (r.unst.length ? fitLine(item, { ok: true, miss: [], unst: r.unst }) : '') + '</div>' +
       '<div class="made"><p class="lab">Made with</p><div class="chips-row">' + item.uses.map(chip).join('') + '</div>' +
@@ -619,7 +629,7 @@
       '<details class="acc"><summary>Prices and shipping' + icon('chev') + '</summary><div class="acc-body"><p>Prices and shipping statements were read from the store pages and are checked weekly; the date under each store link is the last check. Prices in pounds, euros and other currencies are converted roughly to US dollars for sorting.</p></div></details>' +
       '</div>' +
       (similar.length ? '<section class="sec similar"><div class="sec-h"><h2>Compare with similar items</h2><a href="' + U('/compare', { ids: [item.id].concat(similar.map(function (i) { return i.id; })).join(',') }) + '">Open in Compare →</a></div>' +
-        compareTable([item].concat(similar), { current: item.id, rows: ['price', 'ship', 'filters', 'made', 'unst', 'from'] }) + '</section>' : '') +
+        compareTable([item].concat(similar), { current: item.id, rows: ['price', 'ship', 'rating', 'filters', 'made', 'unst', 'from'] }) + '</section>' : '') +
       (groupOf(cat.group) && groupOf(cat.group).cats.length > 1 ? '<section class="sec row-sec"><div class="sec-h"><h2><a href="' + U('/a/' + cat.group) + '">More in ' + esc(groupOf(cat.group).title.toLowerCase()) + '</a></h2><a href="' + U('/a/' + cat.group) + '">All ' + esc(groupOf(cat.group).title.toLowerCase()) + ' →</a></div>' + typeTiles(groupOf(cat.group).cats.filter(function (id) { return typeCount(id) > 0; }), 'sm', cat.id) + '</section>' : '') +
       cardRail(more, 'More from ' + esc(item.brand), U('/b/' + item.brandId), 'All ' + item.brand) +
       cardRail(also, 'You may also like', U('/c/' + cat.id), 'All ' + cat.title.toLowerCase()) +
@@ -691,6 +701,7 @@
     price: ['Price', function (i) { return esc(S.priceLabel(i)); }],
     stores: ['Stores', function (i) { return i.products.map(function (p) { return '<a href="' + esc(p.url) + '" target="_blank" rel="noopener">' + esc(p.store) + '</a>' + (p.shipping ? ' <span class="muted">(' + esc(p.shipping) + ')</span>' : ''); }).join('<br>'); }],
     ship: ['Shipping', function (i) { return esc(i.shipLine); }],
+    rating: ['Rating', function (i) { return i.rating ? stars(i.rating, true) : '<span class="muted">None on the store page</span>'; }],
     filters: ['Your material filters', function (i) { return fitLine(i, status(i)); }],
     made: ['Made with', function (i) { return '<div class="chips-row">' + i.uses.map(chip).join('') + '</div>'; }],
     free: ['Stated free of', function (i) { return i.free.length ? '<div class="chips-row r-free">' + i.free.map(chip).join('') + '</div>' : '<span class="muted">Nothing stated</span>'; }],
@@ -747,9 +758,9 @@
     var item = byId(id); if (!item) return;
     var r = status(item);
     qv.innerHTML = '<button type="button" class="ib x" data-qv-close aria-label="Close quick view">' + icon('x') + '</button><div class="qv-in">' + gallery(item) +
-      '<div><p class="eyebrow">' + esc(item.brand) + '</p><h2 id="qv-h">' + esc(item.line) + '</h2><p class="price">' + esc(S.priceLabel(item)) + '</p>' +
+      '<div><p class="eyebrow">' + esc(item.brand) + '</p><h2 id="qv-h">' + esc(item.line) + '</h2>' + (item.rating ? stars(item.rating, true) : '') + '<p class="price">' + esc(S.priceLabel(item)) + '</p>' +
       fitLine(item, r) +
-      '<ul class="offers">' + offersOf(item).slice(0, 2).map(offerHtml).join('') + '</ul>' +
+      '<ul class="offers">' + offersOf(item).slice(0, 2).map(function (p, k) { return offerHtml(p, k, item.products.length > 1); }).join('') + '</ul>' +
       '<div class="made"><p class="lab">Made with</p><div class="chips-row">' + item.uses.map(chip).join('') + '</div>' + (item.outside.length ? '<p class="lab" style="margin-top:10px">Flagged parts</p><div class="chips-row out">' + item.outside.map(chip).join('') + '</div>' : '') + '</div>' +
       '<div class="qv-actions"><a class="btn-2" href="' + U('/p/' + item.id) + '">Full details</a>' + saveBtn(item, 'btn-3') + compareBtn(item) + '</div></div></div>';
     qv.hidden = false; scrim.hidden = false; document.body.classList.add('no-scroll');

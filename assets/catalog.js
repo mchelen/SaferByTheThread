@@ -181,6 +181,8 @@
           var ships = {};
           prods.forEach(function (p) { ships[p.ships_from === 'US' ? 'us' : p.ships_from ? 'abroad' : 'unknown'] = 1; });
           // Shipping as the store or the recorded price text states it; "free" when any store ships free with no minimum.
+          // Star rating: the store page with the most reviews, when any shows one.
+          var rated = prods.filter(function (p) { return p.rating && p.rating.count > 0; }).sort(function (a, b) { return b.rating.count - a.rating.count; })[0];
           var shipTexts = prods.map(function (p) { return p.shipping || (/free (?:us )?shipping/i.test(p.price) ? 'Free shipping' : ''); });
           var freeShip = shipTexts.some(function (t) { return /^free shipping$/i.test(t); });
           var item = {
@@ -198,6 +200,7 @@
             total: totals.length ? Math.min.apply(null, totals) : null, byCost: byCost, shipLine: byCost[0] ? byCost[0].shipLine : '',
             // Shipping facet: what the card shows, the cheapest listing's shipping.
             deliv: !byCost[0] || byCost[0].shipCost == null ? 'unknown' : byCost[0].shipCost === 0 ? 'free' : 'paid',
+            rating: rated ? { value: rated.rating.value, count: rated.rating.count, store: rated.store, url: rated.url } : null,
             unstatedCount: e.unconfirmed.length,
             q: fold([e.brand, e.line, c.title].concat(c.aisles.map(function (id) { return groups.filter(function (g) { return g.id === id; })[0].title; }), e.uses, e.products.map(function (p) { return p.name + ' ' + p.store; })).join(' '))
           };
