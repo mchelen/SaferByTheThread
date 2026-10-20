@@ -62,7 +62,7 @@ test('clean URLs: a nested path loads through 404.html and keeps its path', asyn
   await page.waitForSelector('.card');
   assert.equal(new URL(page.url()).pathname, '/c/balls');
   assert.match(await page.textContent('h1'), /Balls/);
-  assert.match(await page.textContent('.toolbar .count'), /2 products · 6 set aside/);
+  assert.match(await page.textContent('.toolbar .count'), /4 products · 4 set aside/);
   assert.deepEqual(page.errors, []);
   await page.close();
 });
@@ -71,7 +71,7 @@ test('the shop lists the products that meet the default material filters and set
   const page = await open('/shop');
   await page.waitForSelector('.card');
   assert.equal(await count(page), 24, 'first page of results');
-  assert.match(await page.textContent('.toolbar .count'), /64 products · 58 set aside/);
+  assert.match(await page.textContent('.toolbar .count'), /72 products · 50 set aside/);
   await page.click('[data-more]');
   assert.equal(await count(page), 48, '"Show more" adds a page');
   await page.click('.hidden-note button[data-toggle-all]');
@@ -87,10 +87,10 @@ test('material filters sit in the rail like any other facet and change the resul
   await page.waitForSelector('.card');
   assert.equal(await page.locator('#rail .fgroup[data-group="crit"] input[data-crit]').count(), 14);
   await page.uncheck('#f-crit-color');
-  assert.ok((await count(page)) > 2, 'turning off the dyes filter brings painted balls in');
+  assert.ok((await count(page)) > 4, 'turning off the dyes filter brings painted balls in');
   assert.match(page.url(), /m=/);
   await page.check('#f-crit-color');
-  assert.equal(await count(page), 2);
+  assert.equal(await count(page), 4);
   assert.doesNotMatch(page.url(), /m=/, 'the default set leaves the URL clean');
   await page.close();
 });
@@ -126,11 +126,11 @@ test('search suggests as you type and the results page lists matches', async () 
   await page.close();
 });
 
-test('the material line names the filter, not just the part of the product', async () => {
+test('the material line names the parts no page describes', async () => {
   const page = await open('/p/toki-kids-organic-cotton-mat-40x40');
   await page.waitForSelector('.buybox .fit');
   const lines = (await page.locator('.buybox .fit').allTextContents()).join(' | ');
-  assert.match(lines, /Not stated: any plastic or synthetics in the main materials/);
+  assert.match(lines, /Not stated: lining under the cover · side zippers/, 'names the parts no page describes');
   assert.doesNotMatch(lines, /Not stated: Main materials/);
   await page.close();
 });
@@ -194,12 +194,12 @@ test('phone width: nothing overflows, and the filter drawer applies on "Show res
   await page.click('[data-drawer-open]');
   assert.equal(await page.locator('#rail').isVisible(), true);
   await page.uncheck('#f-crit-color');
-  assert.match(await page.textContent('.drawer-foot [data-drawer-apply]'), /Show 71 results/);
-  assert.match(await page.textContent('.toolbar .count'), /64 products/, 'results wait for Apply');
+  assert.match(await page.textContent('.drawer-foot [data-drawer-apply]'), /Show 75 results/);
+  assert.match(await page.textContent('.toolbar .count'), /72 products/, 'results wait for Apply');
   await page.click('.drawer-foot [data-drawer-apply]');
   await page.waitForTimeout(300);
   assert.equal(await page.locator('#rail').isVisible(), false);
-  assert.match(await page.textContent('.toolbar .count'), /71 products/);
+  assert.match(await page.textContent('.toolbar .count'), /75 products/);
   await page.click('#menu-open');
   assert.equal(await page.locator('#menu').isVisible(), true);
   await page.keyboard.press('Escape');

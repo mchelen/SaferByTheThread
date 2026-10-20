@@ -186,7 +186,7 @@
           var item = {
             id: e.id, n: n++, brand: e.brand, brandId: slug(e.brand), line: e.line, cat: c.id, group: c.group, aisles: c.aisles,
             uses: e.uses, free: e.free, unconfirmed: e.unconfirmed, outside: e.outside || [],
-            facts: e.facts, contains: e.contains || [], standards: e.standards || [], age: e.age || null, ageMin: aMin, ageMax: aMax, ageBands: ageBands(aMin, aMax), ageStated: !!e.age,
+            facts: e.facts, unstated: e.unstated || {}, contains: e.contains || [], standards: e.standards || [], age: e.age || null, ageMin: aMin, ageMax: aMax, ageBands: ageBands(aMin, aMax), ageStated: !!e.age,
             ageLabel: e.age ? e.age.text : ageText(aMin, aMax),
             quote: e.quote || '', evidence: e.evidence || '', note: e.note || '',
             img: e.img ? 'img/' + e.img + '.jpg' : '', photos: (e.photos && e.photos.length ? e.photos.map(function (p) { return p.key; }) : e.img ? [e.img] : []).map(function (k) { return 'img/' + k + '.jpg'; }),

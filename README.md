@@ -79,6 +79,8 @@ Listing fields:
 
 - `id` (unique slug), `type` (a `types` id), `brand`, `line`
 - the checklist, as short noun phrases: `uses` (materials named), `free` (stated absent), `unconfirmed` (no page says), `outside` (flagged parts: plastic lid, synthetic foam, unnamed paint, treated wool)
+- `unstated` (optional): which `unconfirmed` parts leave each `"unknown"` fact open, as `{criterion id: [unconfirmed texts]}`, so cards and product pages can say "Not stated: thread · glue" instead of naming the filter. A fact with no entry falls back to the filter's wording.
+- Checklist text says what pages say. A guess about a part ("probably plastic", "often polyester", "looks like silicone") fails `npm run check`: list the part under `unconfirmed` with its fact `"unknown"`, and put general context about the product type in its `intro`.
 - `facts`: `{criterion id: "yes" | "no" | "unknown"}` for every criterion that applies (omit ones that don't)
 - `contains`: `["latex"]` for natural rubber or latex foam, `["leather"]` for leather, suede, sheepskin
 - `standards`: ids from the top-level `standards` list that the maker or store names
