@@ -12,7 +12,7 @@ const gloss = JSON.parse(fs.readFileSync(path.join(root, 'glossary.json'), 'utf8
 const problems = [];
 const warn = [];
 
-if (data.schema !== 3) problems.push('data.json schema must be 3');
+if (data.schema !== 4) problems.push('data.json schema must be 4');
 const critIds = new Set(data.criteria.map(c => c.id));
 const stdIds = new Set((data.standards || []).map(s => s.id));
 const termIds = new Set(gloss.sections.flatMap(s => s.terms.map(t => t.id)));
@@ -21,12 +21,28 @@ for (const c of data.criteria) {
   if (c.term && !termIds.has(c.term)) warn.push(`criterion ${c.id}: glossary term ${c.term} not found`);
 }
 for (const s of data.standards || []) if (s.term && !termIds.has(s.term)) warn.push(`standard ${s.id}: glossary term ${s.term} not found`);
+const cgIds = new Set((data.criteria_groups || []).map(g => g.id));
+for (const c of data.criteria) if (c.group && !cgIds.has(c.group)) problems.push(`criterion ${c.id}: unknown group ${c.group}`);
+const typeIds = new Set();
+for (const t of data.types) {
+  if (typeIds.has(t.id)) problems.push(`type ${t.id}: duplicate id`);
+  typeIds.add(t.id);
+  if (!t.title) problems.push(`type ${t.id}: missing title`);
+  if (!t.ages || typeof t.ages.min_months !== 'number' || typeof t.ages.max_months !== 'number' || t.ages.min_months >= t.ages.max_months) problems.push(`type ${t.id}: ages needs min_months < max_months`);
+}
+const inAisle = new Set();
+for (const a of data.aisles) {
+  if (!a.id || !a.title) problems.push('aisle without id or title');
+  for (const t of a.types) { if (!typeIds.has(t)) problems.push(`aisle ${a.id}: unknown type ${t}`); inAisle.add(t); }
+}
 
 const ids = new Set();
 let entries = 0, products = 0, missingImg = 0;
-for (const g of data.groups) for (const c of g.categories) for (const e of c.entries) {
+for (const e of data.entries) {
   entries++;
-  const where = `${c.id}/${e.id}`;
+  const where = `${e.type}/${e.id}`;
+  if (!typeIds.has(e.type)) problems.push(`${where}: unknown type`);
+  else if (!inAisle.has(e.type)) problems.push(`${where}: type ${e.type} is in no aisle`);
   if (ids.has(e.id)) problems.push(`${where}: duplicate id`);
   ids.add(e.id);
   for (const k of ['brand', 'line', 'uses', 'free', 'unconfirmed', 'facts', 'products']) if (e[k] == null) problems.push(`${where}: missing ${k}`);
@@ -37,6 +53,7 @@ for (const g of data.groups) for (const c of g.categories) for (const e of c.ent
   for (const x of e.contains || []) if (!['latex', 'leather'].includes(x)) problems.push(`${where}: unknown contains ${x}`);
   for (const x of e.standards || []) if (!stdIds.has(x)) problems.push(`${where}: unknown standard ${x}`);
   if (e.age && typeof e.age.min_months !== 'number') problems.push(`${where}: age.min_months must be a number`);
+  if (e.age && e.age.max_months != null && !(e.age.max_months > e.age.min_months)) problems.push(`${where}: age.max_months must be above min_months`);
   if (!e.products.length) problems.push(`${where}: no products`);
   for (const p of e.products) {
     products++;
@@ -50,6 +67,10 @@ for (const g of data.groups) for (const c of g.categories) for (const e of c.ent
   if (e.img) {
     if (!fs.existsSync(path.join(root, 'img', e.img + '.jpg'))) { problems.push(`${where}: img/${e.img}.jpg missing`); }
   } else missingImg++;
+  for (const ph of e.photos || []) {
+    if (!ph.key || !fs.existsSync(path.join(root, 'img', ph.key + '.jpg'))) problems.push(`${where}: photo img/${ph.key}.jpg missing`);
+  }
+  if (e.photos && e.photos.length && e.img !== e.photos[0].key) problems.push(`${where}: img must be the first of photos`);
 }
 
 // The catalog builder must run cleanly over the data.

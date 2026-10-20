@@ -28,7 +28,7 @@ async function open(url, viewport) {
 }
 const count = (page) => page.evaluate(() => document.querySelectorAll('.card').length);
 
-test('home page renders departments, featured products and the department menu', async () => {
+test('home page renders product types, aisles, featured products and the menu', async () => {
   const page = await open('/');
   await page.waitForSelector('.tiles a');
   assert.equal(await page.locator('.tiles a').count(), 4);
@@ -68,7 +68,7 @@ test('the shop lists the products that meet the default material filters and set
 test('material filters sit in the rail like any other facet and change the results and the URL', async () => {
   const page = await open('/c/balls');
   await page.waitForSelector('.card');
-  assert.equal(await page.locator('#rail .fgroup[data-group="crit"] input[data-crit]').count(), 13);
+  assert.equal(await page.locator('#rail .fgroup[data-group="crit"] input[data-crit]').count(), 14);
   await page.uncheck('#f-crit-color');
   assert.ok((await count(page)) > 2, 'turning off the dyes filter brings painted balls in');
   assert.match(page.url(), /m=/);
@@ -221,6 +221,31 @@ test('cards show shipping, and the quick filter, shipping facet and price + ship
   assert.equal(await page.locator('#f-deliv-free').isChecked(), true, 'the rail checkbox follows the chip');
   await page.selectOption('#sort', 'total');
   assert.match(new URL(page.url()).search, /sort=total/);
+  assert.deepEqual(page.errors, []);
+  await page.close();
+});
+
+test('old department and product type links land on the new aisle and type pages', async () => {
+  const page = await open('/d/toys?price=u25');
+  await page.waitForSelector('.card');
+  assert.equal(new URL(page.url()).pathname, '/a/play');
+  assert.match(page.url(), /price=u25/, 'filters survive the redirect');
+  await page.goto(base + '/c/pads', { waitUntil: 'networkidle' });
+  await page.waitForSelector('h1');
+  assert.equal(new URL(page.url()).pathname, '/c/protectors');
+  assert.deepEqual(page.errors, []);
+  await page.close();
+});
+
+test('the rail is grouped into sections and the age range filter narrows the list', async () => {
+  const page = await open('/shop');
+  await page.waitForSelector('.card');
+  assert.deepEqual(await page.locator('#rail .rail-sec-h').allTextContents(), ['What it is', 'What it’s made of', 'Price and delivery']);
+  assert.ok((await page.locator('#rail .fgroup[data-group="crit"] .opt-group').count()) >= 4, 'material filters come in named sets');
+  const before = await page.textContent('.toolbar .count');
+  await page.check('#f-age-3-5y');
+  assert.match(page.url(), /age=3-5y/);
+  assert.notEqual(await page.textContent('.toolbar .count'), before);
   assert.deepEqual(page.errors, []);
   await page.close();
 });

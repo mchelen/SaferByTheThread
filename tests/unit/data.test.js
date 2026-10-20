@@ -33,7 +33,7 @@ test('the default rules keep the same set of listings as the published site', ()
 test('every checklist chip links at least one glossary term where the term list covers it', () => {
   const known = Object.fromEntries(gloss.sections.flatMap(s => s.terms.map(t => [t.id, 1])));
   let chips = 0, linked = 0;
-  for (const g of data.groups) for (const cat of g.categories) for (const e of cat.entries)
+  for (const e of data.entries)
     for (const chip of e.uses) { chips++; if (S.termRuns(chip, known).some(r => r[1])) linked++; }
   assert.ok(linked / chips > 0.85, `${linked} of ${chips} "made with" chips link a term`);
 });
