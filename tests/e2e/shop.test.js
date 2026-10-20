@@ -273,6 +273,34 @@ test('a product with many photos keeps the page and the quick view inside a phon
   await page.close();
 });
 
+test('changing a filter keeps the page, the rail and the open facets where they were', async () => {
+  const page = await open('/shop', { width: 1280, height: 800 });
+  await page.waitForSelector('.card');
+  await page.evaluate(() => { document.querySelector('.fgroup[data-group="brand"]').open = true; });
+  const more = page.locator('.fgroup[data-group="brand"] .more-opts');
+  if (await more.count()) await more.evaluate(b => b.click());
+  await page.evaluate(() => { window.scrollTo(0, 600); document.querySelector('#rail').scrollTop = 300; });
+  await page.waitForTimeout(100);
+  const before = await page.evaluate(() => ({ y: window.scrollY, rail: document.querySelector('#rail').scrollTop }));
+  assert.equal(before.y, 600); assert.equal(before.rail, 300);
+  await page.evaluate(() => document.querySelector('#rail input[type=checkbox][value="balls"]').click());
+  await page.waitForTimeout(300);
+  const after = await page.evaluate(() => ({ y: window.scrollY, rail: document.querySelector('#rail').scrollTop, cards: document.querySelectorAll('.card').length,
+    expanded: !document.querySelector('.fgroup[data-group="brand"] .more-opts-wrap') || !document.querySelector('.fgroup[data-group="brand"] .more-opts-wrap').hidden }));
+  assert.ok(after.cards < 24, 'the list narrowed');
+  assert.equal(after.y, 600, 'the page did not move');
+  assert.equal(after.rail, 300, 'the filter rail did not move');
+  assert.ok(after.expanded, 'the expanded brand list stayed expanded');
+  await page.evaluate(() => window.scrollTo(0, document.documentElement.scrollHeight));
+  await page.waitForTimeout(100);
+  const deep = await page.evaluate(() => window.scrollY);
+  await page.evaluate(() => document.querySelector('#rail input[type=checkbox][value="balls"]').click());
+  await page.waitForTimeout(300);
+  assert.equal(await page.evaluate(() => window.scrollY), deep, 'widening the list again does not move the page either');
+  assert.deepEqual(page.errors, []);
+  await page.close();
+});
+
 test('cards show shipping, and the quick filter, shipping facet and price + shipping sort work', async () => {
   const page = await open('/shop');
   await page.waitForSelector('.card .ship');

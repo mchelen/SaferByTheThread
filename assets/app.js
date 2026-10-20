@@ -495,6 +495,12 @@
     var focusId = keepFocus && document.activeElement && document.activeElement.id;
     var brandFind = $('#brand-find') ? $('#brand-find').value : '';
     var drawer = document.body.classList.contains('drawer-on');
+    // Rebuilding the page must not move it: remember where the window and the filter rail were scrolled, which
+    // facets had "Show all" open, and hold the page's height while the markup is swapped (an empty #main would let
+    // the browser clamp the scroll position to the top).
+    var y = window.scrollY, oldRail = $('#rail'), railTop = oldRail ? oldRail.scrollTop : 0, mainH = main.offsetHeight;
+    var expanded = $$('.fgroup').filter(function (g) { var w = $('.more-opts-wrap', g); return w && w.getAttribute('data-shown'); }).map(function (g) { return g.getAttribute('data-group'); });
+    main.style.minHeight = mainH + 'px';
     var all = sortItems(base(st), st.sort);
     var ok = all.filter(function (i) { return status(i, st.crit, st.strict).ok; }), hidden = all.length - ok.length;
     var list = st.all ? all : ok;
@@ -540,7 +546,19 @@
       '</section></div></div>';
     $('#q').value = st.kind === 'search' || st.q ? st.q : '';
     if (brandFind && $('#brand-find')) { $('#brand-find').value = brandFind; filterBrandList(brandFind); }
+    expanded.forEach(function (id) {
+      var g = $('.fgroup[data-group="' + id + '"]'); if (!g) return;
+      var w = $('.more-opts-wrap', g), b = $('.more-opts', g);
+      if (w) { w.hidden = false; w.setAttribute('data-shown', '1'); } if (b) b.hidden = true;
+    });
     if (drawer) openDrawer(false);
+    // Keep the visitor where they were: a shorter list gets just enough room below it to hold the scroll position
+    // (route() clears this on the next page), and the rail keeps its own scroll so the box they ticked stays put.
+    main.style.minHeight = '';
+    var short = y + window.innerHeight - document.documentElement.scrollHeight;
+    if (short > 0) main.style.minHeight = (main.offsetHeight + short) + 'px';
+    window.scrollTo(0, y);
+    var newRail = $('#rail'); if (newRail) newRail.scrollTop = railTop;
     if (focusId && document.getElementById(focusId)) document.getElementById(focusId).focus({ preventScroll: true });
     setNav(st.kind, st.key);
     setTitle(title === 'All products' ? 'Shop' : title);
@@ -899,7 +917,7 @@
 
   // ---------- router ----------
   function route() {
-    closeSugg(); closeQuickView(); closeDrawer(false); closeMenu(false); closePop(false); PEND = null; buyBar(null);
+    closeSugg(); closeQuickView(); closeDrawer(false); closeMenu(false); closePop(false); PEND = null; buyBar(null); main.style.minHeight = '';
     var path = currentPath(), q = parseQuery(location.search), p = path.split('/').filter(Boolean), key = p[0] || '';
     var url = location.pathname + location.search;
     if (key === '') renderHome();
