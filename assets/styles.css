@@ -182,6 +182,7 @@ h3 { font-size: 15px; }
 .ttile { display: flex; flex-direction: column; align-items: center; gap: 10px; text-decoration: none; color: var(--ink); scroll-snap-align: start; }
 .ttile-img { display: block; width: 112px; height: 112px; border-radius: 50%; background: var(--plate); border: 1px solid var(--line); overflow: hidden; position: relative; transition: box-shadow .15s, border-color .15s; }
 .ttile-img img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; padding: 14%; }
+.ttile-ph { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; font-size: 2em; font-weight: 600; color: var(--muted); }
 .ttile:hover .ttile-img { border-color: var(--line-strong); box-shadow: var(--shadow); }
 .ttile-t { font-size: 14px; font-weight: 500; text-align: center; line-height: 1.25; }
 .band .link-b { display: inline-block; margin-top: 12px; }
