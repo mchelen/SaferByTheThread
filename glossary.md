@@ -1,6 +1,6 @@
 # Glossary
 
-_Updated 2026-10-17_
+_Updated 2026-10-20_
 
 What each material and term means on this site, and what standards bodies, regulators, researchers and reporters say about it. The guide does not rate safety or risk; it sets out definitions and sources so you can weigh them yourself.
 
@@ -635,3 +635,55 @@ Sources:
 - [Mattresses Business Guidance](https://www.cpsc.gov/Business--Manufacturing/Business-Education/Business-Guidance/Mattresses), US Consumer Product Safety Commission (Government agency)
 - [16 CFR Part 1632: Standard for the flammability of mattresses and mattress pads](https://www.ecfr.gov/current/title-16/chapter-II/subchapter-D/part-1632), eCFR, US Government (Law or regulation)
 - [16 CFR Part 1633: Standard for the flammability (open flame) of mattress sets](https://www.ecfr.gov/current/title-16/chapter-II/subchapter-D/part-1633), eCFR, US Government (Law or regulation)
+
+## Dishes, finishes and testing
+
+### Melamine and “bamboo” dishware
+
+Also called: melamine-formaldehyde resin, bamboo fibre tableware, bamboo composite
+
+**Definition.** Melamine tableware is moulded from melamine-formaldehyde resin. Some plates, bowls and cups sold as “bamboo” are bamboo fibre or powder used as a filler in a plastic such as melamine resin, rather than solid bamboo.
+
+**On this site.** The filter “Melamine or resin-bound bamboo” leaves out dishes, cups and utensils made of melamine resin or of bamboo fibre with a resin binder. Solid bamboo that is not bound with resin is counted as wood.
+
+**What the sources say.** The FDA says a small amount of melamine left over from making melamine-formaldehyde tableware can migrate slowly into food, that in tests migration was measured only into acidic foods held at 160 °F for two hours, and that migration can increase when highly acidic foods are heated to 160 °F or higher; it says foods and drinks should not be heated on melamine-based dinnerware in microwave ovens. In the EU, bamboo and other plant fillers are not on the list of authorised substances in the plastics regulation (EU) No 10/2011, so plastic food-contact articles containing them may not be sold; the Finnish Food Authority names bamboo flour, rice husk, maize, wheat straw and coffee bean hulls as examples. In a year-long EU coordinated action that ended in April 2022, authorities notified 748 cases of plastic food-contact articles containing bamboo powder: 644 on the EU market and 104 rejected at the EU border. The European Commission says adding bamboo can speed degradation of the plastic and lead to formaldehyde and melamine migrating into food, and the Finnish Food Authority reports that in many tested products this migration considerably exceeded the migration limits. Its guidance says products made only of bamboo, without plastic, are not covered.
+
+Sources:
+
+- [Melamine in Tableware Questions and Answers](https://www.fda.gov/food/economically-motivated-adulteration-food-fraud/melamine-tableware-questions-and-answers), US Food and Drug Administration (Government agency)
+- [Food contact materials: Thousands of illegal hazardous products intercepted and recalled in Europe](https://ec.europa.eu/newsroom/sante/newsletter-archives/42226), European Commission, Directorate-General for Health and Food Safety (Government agency)
+- [Plastic products containing bamboo or other unauthorised vegetable fibres](https://www.ruokavirasto.fi/en/foodstuffs/food-sector/packages-and-other-food-contact-materials/question-and-answers/plastic-products-containing-bamboo/), Finnish Food Authority (Ruokavirasto) (Government agency)
+
+### PFAS and water- or stain-repellent finishes
+
+Also called: per- and polyfluoroalkyl substances, DWR, durable water repellent, fluorinated finish
+
+**Definition.** Per- and polyfluoroalkyl substances (PFAS) are a large group of synthetic chemicals built on chains of carbon and fluorine atoms. They have been used in consumer products since about the 1950s, for example to make clothes and carpets resist stains and to keep food from sticking to packaging or cookware. Because the carbon-fluorine bond is very strong, they break down slowly in the environment.
+
+**On this site.** The filter “Water, stain or wrinkle resistant treatments” leaves out items whose maker names such a finish. “PFAS-free” is recorded as a stated-free-of line when the maker says it.
+
+**What the sources say.** Several US states restrict intentionally added PFAS in products. Minnesota's law (Minn. Stat. 116.943, known as Amara's Law) has, since January 1, 2025, prohibited the sale of products with intentionally added PFAS in eleven categories, including juvenile products, textile furnishings, fabric treatments, upholstered furniture, and carpets or rugs, and from January 1, 2032 it extends to all products unless the use is set by rule as currently unavoidable. New York has prohibited the sale of new apparel containing intentionally added PFAS since January 1, 2025, with outdoor apparel for severe wet conditions following on January 1, 2028. California's AB 1817 has, since January 1, 2025, prohibited new textile articles containing regulated PFAS, defined as intentionally added PFAS or total organic fluorine at or above 100 ppm, falling to 50 ppm on January 1, 2027; carpets and rugs, fabric treatments and personal protective equipment are outside that definition of textile articles.
+
+Sources:
+
+- [Perfluoroalkyl and Polyfluoroalkyl Substances (PFAS)](https://www.niehs.nih.gov/health/topics/agents/pfc), US National Institute of Environmental Health Sciences (NIEHS) (Government agency)
+- [Minnesota Statutes 116.943: Products containing PFAS (Amara's Law)](https://www.revisor.mn.gov/statutes/cite/116.943), Minnesota Office of the Revisor of Statutes (Law or regulation)
+- [New York Environmental Conservation Law 37-0121: PFAS in apparel and outdoor apparel for severe wet conditions](https://www.nysenate.gov/legislation/laws/ENV/37-0121), New York State Senate (Law or regulation)
+- [New York and California bans on PFAS in textiles and apparel begin January 1, 2025](https://www.morganlewis.com/pubs/2024/11/new-york-and-california-bans-on-pfas-in-textiles-and-apparel-begin-january-1-2025), Morgan Lewis (News or trade press)
+
+### Lead and heavy-metal testing
+
+Also called: CPSIA lead limits, soluble heavy metals, heavy elements
+
+**Definition.** Testing of a product's materials, paints and coatings for lead and other heavy elements. In the US, children's products are subject to federal lead limits, and toys also to limits on soluble heavy elements.
+
+**On this site.** The filter “Lead or heavy-metal testing stated” keeps only items whose maker says the product was tested for lead or heavy metals.
+
+**What the sources say.** Under the CPSIA, a children's product with more than 100 ppm lead in an accessible component is a banned hazardous substance, and paint and similar surface coatings on toys and children's articles may not contain more than 0.009 percent (90 ppm) lead. Manufacturers and importers certify compliance in a Children's Product Certificate. Through ASTM F963, made mandatory by the CPSIA, surface coatings and accessible substrates of toys that can be sucked, mouthed or ingested must meet solubility limits for eight heavy elements, with third-party testing required unless a material is exempted (for example, unfinished and untreated wood). CPSC has recalled stainless-steel children's cups over lead: in the 2023 Tiblue recall (about 84,000 cups), an accessible solder bead on the bottom exterior of the cup contained lead above the federal lead content limit.
+
+Sources:
+
+- [Total Lead Content Business Guidance](https://www.cpsc.gov/Business--Manufacturing/Business-Education/Lead/Total-Lead-Content), US Consumer Product Safety Commission (Government agency)
+- [16 CFR Part 1303: Ban of lead-containing paint and certain consumer products bearing lead-containing paint](https://www.ecfr.gov/current/title-16/chapter-II/subchapter-B/part-1303), eCFR, US Government (Law or regulation)
+- [16 CFR Part 1251: Toys, determinations regarding heavy elements limits for certain materials](https://www.ecfr.gov/current/title-16/chapter-II/subchapter-B/part-1251), eCFR, US Government (Law or regulation)
+- [Tiblue Stainless Steel Children's Cups Recalled Due to Violation of Federal Lead Content Ban (Recall Alert 24-724)](https://www.cpsc.gov/Recalls/2024/Tiblue-Stainless-Steel-Childrens-Cups-Recalled-Due-to-Violation-of-Federal-Lead-Content-Ban-Sold-Exclusively-on-Amazon-com-by-FENGM-Recall-Alert), US Consumer Product Safety Commission (Government agency)

@@ -1,0 +1,433 @@
+{
+ "note": "Stores tools/discover.js reads for new products. retailer: true means the store sells several brands.",
+ "stores": [
+  {
+   "brand": "Acorn Toy Shop",
+   "store": "https://www.acorntoyshop.com",
+   "platform": "shopify",
+   "retailer": true
+  },
+  {
+   "brand": "Amish (Snyder’s)",
+   "store": "https://www.snydersfurniture.com",
+   "platform": "shopify"
+  },
+  {
+   "brand": "Anyday",
+   "store": "https://cookanyday.com",
+   "platform": "shopify"
+  },
+  {
+   "brand": "Avocado",
+   "store": "https://www.avocadogreenmattress.com",
+   "platform": "shopify"
+  },
+  {
+   "brand": "Béaba",
+   "store": "https://beaba.us",
+   "platform": "shopify"
+  },
+  {
+   "brand": "Bella Luna Toys",
+   "store": "https://www.bellalunatoys.com",
+   "platform": "shopify",
+   "retailer": true
+  },
+  {
+   "brand": "Bogs",
+   "store": "https://www.bogsfootwear.com",
+   "platform": "sitemap"
+  },
+  {
+   "brand": "Camden Rose",
+   "store": "https://camdenrose.com",
+   "platform": "shopify"
+  },
+  {
+   "brand": "Colored Organics",
+   "store": "https://coloredorganics.com",
+   "platform": "shopify",
+   "retailer": true
+  },
+  {
+   "brand": "CozyPure",
+   "store": "https://cozypure.com",
+   "platform": "woocommerce"
+  },
+  {
+   "brand": "Crywolf",
+   "store": "https://crywolfchild.com",
+   "platform": "shopify"
+  },
+  {
+   "brand": "Delta Children",
+   "store": "https://www.deltachildren.com",
+   "platform": "shopify"
+  },
+  {
+   "brand": "EasyTot",
+   "store": "https://easytot.com",
+   "platform": "shopify",
+   "retailer": true
+  },
+  {
+   "brand": "Enlightened Baby",
+   "store": "https://enlightenedbaby.com",
+   "platform": "shopify",
+   "retailer": true
+  },
+  {
+   "brand": "Freshly Picked",
+   "store": "https://freshlypicked.com",
+   "platform": "shopify"
+  },
+  {
+   "brand": "Frugi",
+   "store": "https://welovefrugi.com",
+   "platform": "shopify"
+  },
+  {
+   "brand": "glerups",
+   "store": "https://www.glerups.com",
+   "platform": "shopify"
+  },
+  {
+   "brand": "Good Night Kid",
+   "store": "https://goodnightkid.com",
+   "platform": "sitemap"
+  },
+  {
+   "brand": "Green Cradle",
+   "store": "https://www.greencradle.com",
+   "platform": "shopify"
+  },
+  {
+   "brand": "Green Mountain Diapers",
+   "store": "https://www.greenmountaindiapers.com",
+   "platform": "shopify",
+   "retailer": true
+  },
+  {
+   "brand": "Hevea",
+   "store": "https://us.heveaplanet.com",
+   "platform": "shopify"
+  },
+  {
+   "brand": "Holy Lamb Organics",
+   "store": "https://holylamborganics.com",
+   "platform": "shopify",
+   "retailer": true
+  },
+  {
+   "brand": "Home of Wool",
+   "store": "https://homeofwool.com",
+   "platform": "woocommerce"
+  },
+  {
+   "brand": "Hunter",
+   "store": "https://www.hunterboots.com",
+   "platform": "shopify"
+  },
+  {
+   "brand": "Jan & Jul",
+   "store": "https://janandjul.com",
+   "platform": "woocommerce"
+  },
+  {
+   "brand": "Kalon Studios",
+   "store": "https://kalonstudios.com",
+   "platform": "woocommerce"
+  },
+  {
+   "brand": "Kamik",
+   "store": "https://www.kamik.com",
+   "platform": "shopify"
+  },
+  {
+   "brand": "KD Frames",
+   "store": "https://kdframes.com",
+   "platform": "shopify"
+  },
+  {
+   "brand": "Kiddo Feedo",
+   "store": "https://kiddofeedo.com",
+   "platform": "shopify"
+  },
+  {
+   "brand": "Kids2",
+   "store": "https://www.kids2.com",
+   "platform": "shopify",
+   "retailer": true
+  },
+  {
+   "brand": "Kodo Kids",
+   "store": "https://kodokids.com",
+   "platform": "shopify"
+  },
+  {
+   "brand": "Lékué",
+   "store": "https://www.lekue.com",
+   "platform": "sitemap"
+  },
+  {
+   "brand": "Little Green Radicals",
+   "store": "https://littlegreenradicals.com",
+   "platform": "shopify"
+  },
+  {
+   "brand": "Little Partners",
+   "store": "https://www.littlepartners.com",
+   "platform": "shopify"
+  },
+  {
+   "brand": "Lovevery",
+   "store": "https://shop.lovevery.com",
+   "platform": "shopify"
+  },
+  {
+   "brand": "Lullaby Earth",
+   "store": "https://www.lullabyearth.com",
+   "platform": "sitemap"
+  },
+  {
+   "brand": "Maple Landmark",
+   "store": "https://www.maplelandmark.com",
+   "platform": "sitemap"
+  },
+  {
+   "brand": "Maple Landmark",
+   "store": "https://maplelandmark.com",
+   "platform": "sitemap"
+  },
+  {
+   "brand": "Mushie",
+   "store": "https://mushie.com",
+   "platform": "shopify"
+  },
+  {
+   "brand": "Mushie",
+   "store": "https://www.mushie.com",
+   "platform": "shopify"
+  },
+  {
+   "brand": "My Sweet Muffin",
+   "store": "https://www.mysweetmuffin.com",
+   "platform": "shopify",
+   "retailer": true
+  },
+  {
+   "brand": "My Toy Wagon",
+   "store": "https://mytoywagon.com",
+   "platform": "shopify",
+   "retailer": true
+  },
+  {
+   "brand": "Nature Explore",
+   "store": "https://shop.natureexplore.org",
+   "platform": "sitemap"
+  },
+  {
+   "brand": "Naturepedic",
+   "store": "https://www.naturepedic.com",
+   "platform": "shopify"
+  },
+  {
+   "brand": "Newton Baby",
+   "store": "https://www.newtonbaby.com",
+   "platform": "shopify"
+  },
+  {
+   "brand": "Obasan",
+   "store": "https://www.obasan.com",
+   "platform": "shopify"
+  },
+  {
+   "brand": "Odin Parker",
+   "store": "https://odinparker.com",
+   "platform": "shopify"
+  },
+  {
+   "brand": "OXO",
+   "store": "https://www.oxo.com",
+   "platform": "sitemap"
+  },
+  {
+   "brand": "Pacifier",
+   "store": "https://pacifierkids.com",
+   "platform": "shopify",
+   "retailer": true
+  },
+  {
+   "brand": "PedTerra",
+   "store": "https://pedterra.com",
+   "platform": "shopify",
+   "retailer": true
+  },
+  {
+   "brand": "Piccalio",
+   "store": "https://www.piccalio.com",
+   "platform": "shopify"
+  },
+  {
+   "brand": "POLOLO",
+   "store": "https://www.pololo.com",
+   "platform": "woocommerce"
+  },
+  {
+   "brand": "Popolini",
+   "store": "https://popolini.com",
+   "platform": "sitemap",
+   "retailer": true
+  },
+  {
+   "brand": "Rad Children’s Furniture",
+   "store": "https://radchildrensfurniture.com",
+   "platform": "shopify",
+   "retailer": true
+  },
+  {
+   "brand": "Robeez",
+   "store": "https://robeez.com",
+   "platform": "shopify"
+  },
+  {
+   "brand": "Salt Water Sandals (Hoy Shoe Co)",
+   "store": "https://saltwater-sandals.com",
+   "platform": "shopify"
+  },
+  {
+   "brand": "Sarah’s Silks",
+   "store": "https://www.sarahssilks.com",
+   "platform": "shopify"
+  },
+  {
+   "brand": "Savvy Rest",
+   "store": "https://savvyrest.com",
+   "platform": "woocommerce"
+  },
+  {
+   "brand": "Shepherd’s Dream",
+   "store": "https://shepherdsdream.com",
+   "platform": "sitemap"
+  },
+  {
+   "brand": "Simple Ecology",
+   "store": "https://www.simpleecology.com",
+   "platform": "sitemap",
+   "retailer": true
+  },
+  {
+   "brand": "Simply Sori",
+   "store": "https://www.simplysori.com",
+   "platform": "shopify"
+  },
+  {
+   "brand": "Smallable",
+   "store": "https://www.smallable.com",
+   "platform": "sitemap",
+   "retailer": true
+  },
+  {
+   "brand": "Smiling Tree Toys",
+   "store": "https://smilingtreetoys.com",
+   "platform": "shopify"
+  },
+  {
+   "brand": "Softstar",
+   "store": "https://www.softstarshoes.com",
+   "platform": "sitemap",
+   "retailer": true
+  },
+  {
+   "brand": "Souper Cubes",
+   "store": "https://www.soupercubes.com",
+   "platform": "shopify"
+  },
+  {
+   "brand": "Sprout Kids",
+   "store": "https://sprout-kids.com",
+   "platform": "shopify"
+  },
+  {
+   "brand": "Sprout San Francisco",
+   "store": "https://www.sproutsanfrancisco.com",
+   "platform": "sitemap",
+   "retailer": true
+  },
+  {
+   "brand": "The Baby Penguin",
+   "store": "https://thebabypenguin.com",
+   "platform": "shopify",
+   "retailer": true
+  },
+  {
+   "brand": "The Natural Baby Co",
+   "store": "https://www.thenaturalbabyco.com",
+   "platform": "shopify",
+   "retailer": true
+  },
+  {
+   "brand": "Toki Kids",
+   "store": "https://tokikids.com",
+   "platform": "shopify"
+  },
+  {
+   "brand": "Tovolo",
+   "store": "https://www.tovolo.com",
+   "platform": "shopify"
+  },
+  {
+   "brand": "Vivetique",
+   "store": "https://www.vivetique.com",
+   "platform": "sitemap"
+  },
+  {
+   "brand": "WebstaurantStore",
+   "store": "https://www.webstaurantstore.com",
+   "platform": "sitemap",
+   "retailer": true
+  },
+  {
+   "brand": "WeeSprout",
+   "store": "https://www.weesprout.com",
+   "platform": "shopify"
+  },
+  {
+   "brand": "Western Chief",
+   "store": "https://www.westernchief.com",
+   "platform": "shopify"
+  },
+  {
+   "brand": "White Lotus",
+   "store": "https://www.whitelotushome.com",
+   "platform": "sitemap"
+  },
+  {
+   "brand": "White Lotus",
+   "store": "https://whitelotushome.com",
+   "platform": "sitemap"
+  },
+  {
+   "brand": "Wildling",
+   "store": "https://us.wildling.shoes",
+   "platform": "shopify"
+  },
+  {
+   "brand": "Wooden Story",
+   "store": "https://thewoodenwagon.com",
+   "platform": "sitemap",
+   "retailer": true
+  },
+  {
+   "brand": "Woodland Mod",
+   "store": "https://woodlandmod.com",
+   "platform": "shopify",
+   "retailer": true
+  },
+  {
+   "brand": "Zoku",
+   "store": "https://www.zokuhome.com",
+   "platform": "shopify"
+  }
+ ]
+}

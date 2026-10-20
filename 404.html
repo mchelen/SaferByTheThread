@@ -12,7 +12,7 @@
     var p = location.pathname.split('/').filter(Boolean);
     var base = '/';
     // Repository site: /<repo>/..., and a pull request preview: /<repo>/pr/<n>/...
-    var routes = ['shop', 'd', 'c', 'b', 'search', 'p', 'brands', 'glossary', 'about', 'saved', 'compare'];
+    var routes = ['shop', 'a', 'd', 'c', 'b', 'search', 'p', 'brands', 'glossary', 'about', 'saved', 'compare'];
     if (p.length && routes.indexOf(p[0]) < 0 && !/\./.test(p[0])) { base += p.shift() + '/'; }
     if (p[0] === 'pr' && /^\d+$/.test(p[1] || '')) { base += 'pr/' + p[1] + '/'; p.splice(0, 2); }
     var rest = '/' + p.join('/');

@@ -54,6 +54,9 @@
     ['superwash', 'superwash|shrink-proofing|machine washable|wool treatments?|treatment on the (?:merino|wool)|treatment of the wool'],
     ['gots', 'gots'], ['gols', 'gols'], ['oeko-tex', 'oeko-tex'],
     ['flammability', 'flame retardants?|fire barrier'],
+    ['melamine', 'melamine(?: resin)?|bamboo (?:fib(?:re|er)|powder|composite)'],
+    ['pfas', 'pfas|pfcs?|perfluorinated|fluorinated|stain[- ]resist\\w*|water[- ]repellent|dwr|teflon'],
+    ['heavy-metals', 'lead(?: and heavy metals?)?(?= test| content| free|-free)|heavy metals?|cpsia'],
     ['natural-rubber', 'natural (?:vulcanised )?rubber(?: latex)?|rubber additives'],
     ['latex-foam', '(?:natural |organic )?(?:dunlop |talalay )?latex(?! product)(?: core| insert)?|dunlop|talalay'],
     ['plasticisers', 'phthalates?|plastici[sz]ers?'], ['pvc', 'pvc|vinyl'],
@@ -150,9 +153,20 @@
       cats[t.id] = { id: t.id, title: t.title, short: t.short || t.title, intro: t.intro || '', outro: t.outro || '', ages: t.ages || null,
                      room: t.room || '', contact: t.contact || '', was: t.was || [], aisles: [], group: '' };
     });
+    // Types and aisles with no listings yet stay out of the menu and the filters until something is listed in them.
+    var used = {}; data.entries.forEach(function (e) { used[e.type] = 1; });
     data.aisles.forEach(function (a) {
       a.types.forEach(function (id) { if (cats[id]) { cats[id].aisles.push(a.id); if (!cats[id].group) cats[id].group = a.id; } });
-      groups.push({ id: a.id, title: a.title, blurb: a.blurb || '', source: a.source || '', was: a.was || [], cats: a.types.filter(function (id) { return cats[id]; }) });
+      var shown = a.types.filter(function (id) { return cats[id] && used[id]; });
+      // An aisle appears once a type it is the first home of has listings, not just a type borrowed from another aisle.
+      var own = shown.some(function (id) { return data.aisles.filter(function (x) { return x.types.indexOf(id) >= 0; })[0] === a; });
+      if (own) groups.push({ id: a.id, title: a.title, blurb: a.blurb || '', source: a.source || '', was: a.was || [], cats: shown });
+    });
+    // A type's home aisle is the first shown aisle that lists it.
+    Object.keys(cats).forEach(function (id) {
+      var home = groups.filter(function (g) { return g.cats.indexOf(id) >= 0; })[0];
+      cats[id].aisles = groups.filter(function (g) { return g.cats.indexOf(id) >= 0; }).map(function (g) { return g.id; });
+      cats[id].group = home ? home.id : '';
     });
     // Listings in the order of their types in the aisles, so "Featured" groups like products together.
     var order = []; groups.forEach(function (g) { g.cats.forEach(function (id) { if (order.indexOf(id) < 0) order.push(id); }); });
@@ -199,7 +213,7 @@
             // Shipping facet: what the card shows, the cheapest listing's shipping.
             deliv: !byCost[0] || byCost[0].shipCost == null ? 'unknown' : byCost[0].shipCost === 0 ? 'free' : 'paid',
             unstatedCount: e.unconfirmed.length,
-            q: fold([e.brand, e.line, c.title].concat(c.aisles.map(function (id) { return groups.filter(function (g) { return g.id === id; })[0].title; }), e.uses, e.products.map(function (p) { return p.name + ' ' + p.store; })).join(' '))
+            q: fold([e.brand, e.line, c.title].concat(c.aisles.map(function (id) { var g = groups.filter(function (x) { return x.id === id; })[0]; return g ? g.title : ''; }), e.uses, e.products.map(function (p) { return p.name + ' ' + p.store; })).join(' '))
           };
           items.push(item);
           (brands[item.brandId] = brands[item.brandId] || { id: item.brandId, name: e.brand, items: [] }).items.push(item);

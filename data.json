@@ -58,6 +58,16 @@
    "group": "plastic"
   },
   {
+   "id": "melamine",
+   "short": "Melamine",
+   "label": "Melamine or resin-bound bamboo",
+   "help": "Dishes, cups and utensils of melamine resin, or of bamboo fibre held together with a resin binder. Solid bamboo wood counts as wood.",
+   "kind": "avoid",
+   "default": true,
+   "term": "melamine",
+   "group": "plastic"
+  },
+  {
    "id": "color",
    "short": "Dyes and paints",
    "label": "Synthetic dyes, paints or coatings",
@@ -108,6 +118,16 @@
    "group": "treat"
   },
   {
+   "id": "finish",
+   "short": "Repellent finishes",
+   "label": "Water, stain or wrinkle resistant treatments",
+   "help": "Finishes on fabric such as PFAS water or stain repellents and wrinkle-free resins. A plain wool or waxed cotton layer is not a treatment.",
+   "kind": "avoid",
+   "default": true,
+   "term": "pfas",
+   "group": "treat"
+  },
+  {
    "id": "silicone",
    "short": "Silicone testing",
    "label": "Silicone tested to LFGB or the French Arrêté",
@@ -115,6 +135,16 @@
    "kind": "require",
    "default": true,
    "term": "lfgb",
+   "group": "tested"
+  },
+  {
+   "id": "lead",
+   "short": "Lead testing",
+   "label": "Lead or heavy-metal testing stated",
+   "help": "The maker says the finished product was tested for lead or heavy metals (for example to CPSIA, ASTM F963 or EN 71-3).",
+   "kind": "require",
+   "default": false,
+   "term": "heavy-metals",
    "group": "tested"
   },
   {
@@ -207,69 +237,125 @@
  ],
  "aisles": [
   {
-   "id": "play",
-   "title": "Play",
-   "blurb": "Wood, wool, cotton, silk and natural rubber, for 12 to 24 months.",
+   "id": "toys",
+   "title": "Toys",
    "was": [
+    "play",
     "toys"
    ],
    "types": [
-    "mats",
-    "books",
+    "animals",
+    "dolls",
+    "rattles",
+    "teethers",
     "stacking",
     "blocks",
     "push",
     "cars",
     "bench",
-    "rattles",
-    "dolls",
-    "animals",
     "balls",
-    "bath",
+    "pretend",
     "silks",
-    "pretend"
+    "books",
+    "puzzles",
+    "instruments",
+    "art",
+    "bath",
+    "mats",
+    "climbers"
    ]
   },
   {
-   "id": "sleep",
-   "title": "Sleep",
-   "blurb": "Cotton, wool, natural latex, coir and plain or oiled solid wood. Natural latex foam counts as natural. Superwash or \"washable\" wool without an untreated statement is outside the criteria.",
+   "id": "beds",
+   "title": "Beds & bedding",
    "was": [
     "sleep"
    ],
    "types": [
-    "mattresses",
+    "cribs",
     "toddler-beds",
     "floor-beds",
+    "mattresses",
     "protectors",
+    "sheets",
     "pillows",
-    "sheets"
+    "blankets",
+    "sleep-sacks"
    ]
   },
   {
-   "id": "eat",
-   "title": "Eat and drink",
-   "blurb": "Silicone, measured against the bar in an r/Mommit post: an entry meets the criteria only if the brand says the finished product (not just the raw silicone) is LFGB-certified or meets the French Arrêté of 25 Nov 1992. \"Platinum\" or \"LFGB silicone\" alone counts as meeting most criteria. No entry has a published accredited-lab report, so each rests on the brand's own declaration.",
+   "id": "feeding",
+   "title": "Feeding",
    "was": [
-    "feeding"
+    "eat"
    ],
    "types": [
     "freezer-trays",
+    "pop-molds",
     "ice-trays",
-    "pop-molds"
-   ],
-   "source": "https://www.reddit.com/r/Mommit/comments/1mjj0vm/not_all_silicone_is_created_equal_safety_claims/"
+    "cups",
+    "plates",
+    "utensils",
+    "bibs",
+    "food-storage",
+    "high-chairs",
+    "teethers",
+    "pacifiers",
+    "nursing-pillows"
+   ]
   },
   {
-   "id": "wear",
-   "title": "Wear",
-   "blurb": "Leather is included; the Leather switch under Material rules hides it. Sizes for 12 to 24 months are EU 20 to 23 (US 4 to 7 toddler). No maker states its thread or glue.",
+   "id": "clothing",
+   "title": "Clothing & shoes",
    "was": [
+    "wear",
     "footwear"
    ],
    "types": [
     "shoes",
-    "rain-boots"
+    "rain-boots",
+    "rainwear",
+    "pajamas",
+    "bodysuits",
+    "clothes",
+    "accessories"
+   ]
+  },
+  {
+   "id": "bath",
+   "title": "Bath & diapering",
+   "was": [],
+   "types": [
+    "towels",
+    "bath",
+    "changing-pads",
+    "diapers"
+   ]
+  },
+  {
+   "id": "furniture",
+   "title": "Furniture & decor",
+   "was": [
+    "nursery"
+   ],
+   "types": [
+    "furniture",
+    "rugs",
+    "climbers",
+    "high-chairs",
+    "mats"
+   ]
+  },
+  {
+   "id": "gear",
+   "title": "Strollers & gear",
+   "was": [
+    "go"
+   ],
+   "types": [
+    "strollers",
+    "car-seats",
+    "carriers"
    ]
   }
  ],
@@ -283,7 +369,9 @@
     "max_months": 24
    },
    "room": "nursery",
-   "contact": "skin"
+   "contact": "skin",
+   "match": "play ?mats?|playmat|activity (?:mat|gym)|play gym|crawling mat|floor mat",
+   "short": "Play mats"
   },
   {
    "id": "books",
@@ -293,7 +381,9 @@
    "ages": {
     "min_months": 0,
     "max_months": 36
-   }
+   },
+   "match": "\\b(?:cloth|soft|board|crinkle|activity|quiet|picture|felt|fabric|wooden) books?\\b|\\bbooks?\\b",
+   "short": "Soft books"
   },
   {
    "id": "stacking",
@@ -301,7 +391,9 @@
    "ages": {
     "min_months": 6,
     "max_months": 36
-   }
+   },
+   "match": "stack(?:er|ing)|sort(?:er|ing)|nesting (?:cups|bowls|toy)|shape sorter|rainbow",
+   "short": "Stacking & sorting"
   },
   {
    "id": "blocks",
@@ -309,7 +401,9 @@
    "ages": {
     "min_months": 6,
     "max_months": 60
-   }
+   },
+   "match": "\\bblocks?\\b|building (?:set|bricks)|\\bbricks\\b",
+   "short": "Blocks"
   },
   {
    "id": "push",
@@ -317,7 +411,9 @@
    "ages": {
     "min_months": 9,
     "max_months": 36
-   }
+   },
+   "match": "push (?:toy|walker|wagon|along)|pull (?:toy|along)|pull-along|push-along|\\bwagon\\b|baby walker|walker",
+   "short": "Push & pull"
   },
   {
    "id": "cars",
@@ -325,7 +421,9 @@
    "ages": {
     "min_months": 12,
     "max_months": 60
-   }
+   },
+   "match": "\\b(?:car|truck|vehicle|train|tractor|bus|plane|aeroplane|airplane|boat|digger)s?\\b",
+   "short": "Cars & trucks"
   },
   {
    "id": "bench",
@@ -334,7 +432,9 @@
    "ages": {
     "min_months": 18,
     "max_months": 48
-   }
+   },
+   "match": "pound(?:ing)? (?:bench|toy)|hammer(?:ing)? (?:bench|toy)|peg ?bench|ball pound",
+   "short": "Pounding benches"
   },
   {
    "id": "rattles",
@@ -343,7 +443,9 @@
     "min_months": 0,
     "max_months": 18
    },
-   "contact": "mouth"
+   "contact": "mouth",
+   "match": "\\brattles?\\b|\\bshakers?\\b|clutch (?:toy|ball)|grasping toy|grasper",
+   "short": "Rattles"
   },
   {
    "id": "dolls",
@@ -352,7 +454,9 @@
     "min_months": 6,
     "max_months": 60
    },
-   "contact": "skin"
+   "contact": "skin",
+   "match": "\\bdolls?\\b|\\bpuppets?\\b",
+   "short": "Dolls"
   },
   {
    "id": "animals",
@@ -361,7 +465,9 @@
     "min_months": 0,
     "max_months": 60
    },
-   "contact": "skin"
+   "contact": "skin",
+   "match": "stuffed (?:animal|toy)|\\bplush\\b|soft toy|cuddly toy|\\blovey\\b|stuffie|comforter toy|soft (?:bunny|bear|lamb|animal)",
+   "short": "Stuffed animals"
   },
   {
    "id": "balls",
@@ -372,7 +478,9 @@
     "max_months": 60
    },
    "room": "outdoors",
-   "contact": "hands"
+   "contact": "hands",
+   "match": "\\bballs?\\b",
+   "short": "Balls"
   },
   {
    "id": "bath",
@@ -383,17 +491,20 @@
     "max_months": 36
    },
    "room": "bath",
-   "contact": "mouth"
+   "contact": "mouth",
+   "match": "bath (?:toy|squirter|boat|duck|book)s?|rubber duck|squirt(?:er|y)? toy|bath squirt",
+   "short": "Bath toys"
   },
   {
    "id": "silks",
    "title": "Silks for peekaboo and pretend play",
-   "short": "Silks",
+   "short": "Play silks",
    "ages": {
     "min_months": 6,
     "max_months": 60
    },
-   "contact": "skin"
+   "contact": "skin",
+   "match": "play ?silks?|silk (?:scarf|scarves|cloth)|playsilk"
   },
   {
    "id": "pretend",
@@ -401,7 +512,9 @@
    "ages": {
     "min_months": 18,
     "max_months": 60
-   }
+   },
+   "match": "pretend|play (?:kitchen|food|house)|tea set|doctor(?:'s)? kit|tool (?:set|bench)|doll ?house|cash register",
+   "short": "Pretend play"
   },
   {
    "id": "mattresses",
@@ -412,7 +525,9 @@
     "max_months": 60
    },
    "room": "nursery",
-   "contact": "sleep"
+   "contact": "sleep",
+   "match": "\\b(?:crib|toddler|cot|twin|kids?|baby|bassinet|organic|latex|wool) mattress(?:es)?\\b(?! ?(?:pad|protector|topper|cover|encasement))|\\bmattress(?:es)?$",
+   "short": "Mattresses"
   },
   {
    "id": "toddler-beds",
@@ -424,7 +539,8 @@
     "max_months": 60
    },
    "room": "nursery",
-   "contact": "sleep"
+   "contact": "sleep",
+   "match": "toddler beds?"
   },
   {
    "id": "floor-beds",
@@ -437,12 +553,13 @@
     "max_months": 72
    },
    "room": "nursery",
-   "contact": "sleep"
+   "contact": "sleep",
+   "match": "floor beds?|montessori beds?|house beds?|platform beds?|twin beds?|bed frames?|kids? beds?"
   },
   {
    "id": "protectors",
    "title": "Mattress pads, toppers and protectors",
-   "short": "Pads and protectors",
+   "short": "Mattress protectors",
    "intro": "A felted wool pad is the natural stand-in for a plastic waterproof cover: it soaks up and slows leaks rather than blocking them. Every waterproof crib protector found has a polyurethane or TPU film. Toddler pillows are usually started around age 2.",
    "was": [
     "pads"
@@ -452,7 +569,8 @@
     "max_months": 60
    },
    "room": "nursery",
-   "contact": "sleep"
+   "contact": "sleep",
+   "match": "mattress (?:pads?|protectors?|toppers?|covers?|encasements?)|puddle pads?|moisture (?:pads?|barriers?)|waterproof (?:pads?|protectors?)|\\btoppers?\\b"
   },
   {
    "id": "pillows",
@@ -463,7 +581,8 @@
     "max_months": 72
    },
    "room": "nursery",
-   "contact": "sleep"
+   "contact": "sleep",
+   "match": "(?:toddler|kids?|child'?s?|baby|first|travel) pillows?|\\bpillows?\\b(?!case| ?cover)"
   },
   {
    "id": "sheets",
@@ -474,19 +593,21 @@
     "max_months": 60
    },
    "room": "nursery",
-   "contact": "sleep"
+   "contact": "sleep",
+   "match": "crib sheets?|fitted sheets?|sheet sets?|\\bduvets?\\b|pillowcases?|pillow covers?|\\bbedding\\b|\\bsheets?\\b"
   },
   {
    "id": "freezer-trays",
    "title": "Baby food and breast milk freezer trays",
-   "short": "Freezer trays",
+   "short": "Baby food trays",
    "intro": "Béaba is the one brand here whose claim covers the finished tray, and only in emails the brand sent to Reddit users. Béaba US can be asked for the Declaration of Conformity or migration test report for a specific tray.",
    "ages": {
     "min_months": 4,
     "max_months": 24
    },
    "room": "kitchen",
-   "contact": "food"
+   "contact": "food",
+   "match": "freezer trays?|baby food (?:trays?|storage|freezer|cubes?)|breast ?milk (?:trays?|freezer|storage)|food cubes?|freezer pods?"
   },
   {
    "id": "ice-trays",
@@ -498,7 +619,8 @@
     "max_months": 72
    },
    "room": "kitchen",
-   "contact": "food"
+   "contact": "food",
+   "match": "ice (?:cube )?trays?|ice (?:moulds?|molds?)|ice cubes?"
   },
   {
    "id": "pop-molds",
@@ -510,18 +632,20 @@
     "max_months": 72
    },
    "room": "kitchen",
-   "contact": "food"
+   "contact": "food",
+   "match": "ice ?pop|popsicle|ice lolly|lolly (?:moulds?|molds?)|pop (?:moulds?|molds?)|freezer pops?"
   },
   {
    "id": "shoes",
    "title": "Shoes and slippers",
-   "short": "Shoes",
+   "short": "Shoes & slippers",
    "intro": "No maker states its thread or glue. Well-known shoes with TPR or synthetic rubber outsoles are listed under the items that miss the default filters.",
    "ages": {
     "min_months": 9,
     "max_months": 60
    },
-   "contact": "skin"
+   "contact": "skin",
+   "match": "\\b(?:shoes?|sneakers?|trainers?|slippers?|moccasins?|mocs|booties|sandals?|first walkers?|soft soles?)\\b"
   },
   {
    "id": "rain-boots",
@@ -533,7 +657,344 @@
     "max_months": 72
    },
    "room": "outdoors",
-   "contact": "skin"
+   "contact": "skin",
+   "match": "rain ?boots?|wellies|wellingtons?|puddle boots?|gum ?boots?|snow boots?",
+   "short": "Rain boots"
+  },
+  {
+   "id": "cups",
+   "title": "Cups, sippy cups and straw cups",
+   "short": "Cups",
+   "ages": {
+    "min_months": 6,
+    "max_months": 72
+   },
+   "room": "kitchen",
+   "contact": "mouth",
+   "match": "sippy|straw cups?|training cups?|open cups?|transition cups?|(?:kids?|toddler|baby|first|weaning|snack) cups?|tumblers?|\\bcups?\\b"
+  },
+  {
+   "id": "plates",
+   "title": "Plates, bowls and suction dishes",
+   "short": "Plates & bowls",
+   "ages": {
+    "min_months": 6,
+    "max_months": 72
+   },
+   "room": "kitchen",
+   "contact": "food",
+   "match": "\\bplates?\\b|\\bbowls?\\b|suction (?:plate|bowl|dish)|divided (?:plate|dish)|dinnerware|tableware|placemats?"
+  },
+  {
+   "id": "utensils",
+   "title": "Spoons, forks and utensils",
+   "short": "Spoons & forks",
+   "ages": {
+    "min_months": 4,
+    "max_months": 72
+   },
+   "room": "kitchen",
+   "contact": "mouth",
+   "match": "\\bspoons?\\b|\\bforks?\\b|utensils?|cutlery|flatware|pre-?spoons?|dippers?"
+  },
+  {
+   "id": "bibs",
+   "title": "Bibs",
+   "ages": {
+    "min_months": 4,
+    "max_months": 36
+   },
+   "room": "kitchen",
+   "contact": "skin",
+   "match": "\\bbibs?\\b|smock|splat mat",
+   "short": "Bibs"
+  },
+  {
+   "id": "food-storage",
+   "title": "Snack and lunch containers",
+   "short": "Snack containers",
+   "ages": {
+    "min_months": 12,
+    "max_months": 72
+   },
+   "room": "kitchen",
+   "contact": "food",
+   "match": "snack (?:cups?|containers?|pouch(?:es)?)|lunch ?(?:box|boxes|bag)|bento|food (?:storage|containers?|jars?)|reusable pouch"
+  },
+  {
+   "id": "high-chairs",
+   "title": "High chairs and boosters",
+   "short": "High chairs",
+   "ages": {
+    "min_months": 6,
+    "max_months": 48
+   },
+   "room": "kitchen",
+   "match": "high ?chairs?|booster seats?|feeding chairs?"
+  },
+  {
+   "id": "teethers",
+   "title": "Teethers and teething rings",
+   "short": "Teethers",
+   "ages": {
+    "min_months": 3,
+    "max_months": 24
+   },
+   "contact": "mouth",
+   "match": "teeth(?:er|ers|ing)|teething (?:ring|toy)s?|chew (?:toy|ring)"
+  },
+  {
+   "id": "pacifiers",
+   "title": "Pacifiers and pacifier clips",
+   "short": "Pacifiers",
+   "ages": {
+    "min_months": 0,
+    "max_months": 36
+   },
+   "contact": "mouth",
+   "match": "pacifiers?|soothers?|\\bdumm(?:y|ies)\\b|binky|paci (?:clip|holder)s?|pacifier (?:clip|holder)s?"
+  },
+  {
+   "id": "cribs",
+   "title": "Cribs, bassinets and cradles",
+   "short": "Cribs & bassinets",
+   "ages": {
+    "min_months": 0,
+    "max_months": 36
+   },
+   "room": "nursery",
+   "contact": "sleep",
+   "match": "\\bcribs?\\b(?! ?(?:sheet|mattress|pad|protector|bumper|skirt))|bassinets?|cradles?|moses baskets?|\\bcots?\\b"
+  },
+  {
+   "id": "sleep-sacks",
+   "title": "Sleep sacks and swaddles",
+   "short": "Sleep sacks",
+   "ages": {
+    "min_months": 0,
+    "max_months": 36
+   },
+   "room": "nursery",
+   "contact": "sleep",
+   "match": "sleep ?(?:sacks?|bags?)|sleeping bags?|swaddles?|wearable blankets?|sleep suit"
+  },
+  {
+   "id": "blankets",
+   "title": "Blankets and quilts",
+   "short": "Blankets",
+   "ages": {
+    "min_months": 12,
+    "max_months": 72
+   },
+   "room": "nursery",
+   "contact": "sleep",
+   "match": "\\bblankets?\\b|\\bquilts?\\b|comforters?|\\bthrows?\\b|receiving blankets?"
+  },
+  {
+   "id": "pajamas",
+   "title": "Pajamas and sleepwear",
+   "short": "Pajamas",
+   "ages": {
+    "min_months": 6,
+    "max_months": 72
+   },
+   "contact": "skin",
+   "match": "pajamas?|pyjamas?|\\bpjs?\\b|sleepwear|footies?|footed|nightgowns?|night ?shirts?|sleepers?"
+  },
+  {
+   "id": "bodysuits",
+   "title": "Bodysuits and rompers",
+   "short": "Bodysuits",
+   "ages": {
+    "min_months": 0,
+    "max_months": 24
+   },
+   "contact": "skin",
+   "match": "bodysuits?|onesies?|rompers?|one-?pieces?|coveralls?|jumpsuits?"
+  },
+  {
+   "id": "clothes",
+   "title": "Tops, bottoms and dresses",
+   "short": "Tops & bottoms",
+   "ages": {
+    "min_months": 6,
+    "max_months": 72
+   },
+   "contact": "skin",
+   "match": "\\b(?:t-?shirts?|tees?|tops?|leggings|pants|trousers|shorts|dress(?:es)?|cardigans?|sweaters?|jumpers?|hoodies?|pullovers?|overalls|dungarees|skirts?)\\b"
+  },
+  {
+   "id": "accessories",
+   "title": "Socks, hats and mittens",
+   "short": "Socks & hats",
+   "ages": {
+    "min_months": 0,
+    "max_months": 72
+   },
+   "contact": "skin",
+   "match": "\\bsocks?\\b|\\btights\\b|\\bhats?\\b|beanies?|bonnets?|mittens?|\\bmitts?\\b|scarf|leg warmers?"
+  },
+  {
+   "id": "rainwear",
+   "title": "Rain jackets and splash suits",
+   "short": "Rain jackets",
+   "ages": {
+    "min_months": 12,
+    "max_months": 72
+   },
+   "room": "outdoors",
+   "contact": "skin",
+   "match": "rain ?(?:jackets?|coats?|suits?|pants|wear)|splash ?suits?|puddle (?:suits?|pants)|waterproof (?:jacket|suit|pants)|snow ?suits?"
+  },
+  {
+   "id": "towels",
+   "title": "Hooded towels and washcloths",
+   "short": "Towels",
+   "ages": {
+    "min_months": 0,
+    "max_months": 60
+   },
+   "room": "bath",
+   "contact": "skin",
+   "match": "towels?|wash ?cloths?|wash mitts?|bath ?robes?|bath wraps?"
+  },
+  {
+   "id": "changing-pads",
+   "title": "Changing pads and covers",
+   "short": "Changing pads",
+   "ages": {
+    "min_months": 0,
+    "max_months": 24
+   },
+   "room": "nursery",
+   "contact": "skin",
+   "match": "chang(?:ing|e) (?:pads?|mats?|tables?|baskets?|toppers?)|changing pad covers?"
+  },
+  {
+   "id": "diapers",
+   "title": "Cloth diapers and covers",
+   "short": "Cloth diapers",
+   "ages": {
+    "min_months": 0,
+    "max_months": 36
+   },
+   "room": "nursery",
+   "contact": "skin",
+   "match": "cloth diapers?|diaper covers?|nappy|nappies|prefolds?|soakers?|diaper inserts?|training pants|wool longies"
+  },
+  {
+   "id": "nursing-pillows",
+   "title": "Nursing pillows",
+   "ages": {
+    "min_months": 0,
+    "max_months": 12
+   },
+   "room": "nursery",
+   "contact": "skin",
+   "match": "(?:nursing|feeding|breastfeeding) pillows?|boppy",
+   "short": "Nursing pillows"
+  },
+  {
+   "id": "furniture",
+   "title": "Kids’ tables, chairs and stools",
+   "short": "Tables & chairs",
+   "ages": {
+    "min_months": 12,
+    "max_months": 72
+   },
+   "room": "nursery",
+   "match": "(?:kids?|toddler|child'?s?|children'?s|montessori|weaning) (?:tables?|chairs?|stools?|benches?|desks?|shelf|shelves|bookcases?|wardrobes?)|step ?stools?|learning towers?|kitchen helpers?|rocking chairs?|armchairs?"
+  },
+  {
+   "id": "climbers",
+   "title": "Climbers and Pikler triangles",
+   "short": "Climbers",
+   "ages": {
+    "min_months": 6,
+    "max_months": 60
+   },
+   "room": "nursery",
+   "contact": "hands",
+   "match": "pikler|climbing (?:triangles?|arch(?:es)?|frames?|ramps?|walls?|cubes?)|climbers?|rocker boards?|balance boards?|wobble boards?"
+  },
+  {
+   "id": "rugs",
+   "title": "Rugs and play rugs",
+   "short": "Rugs",
+   "ages": {
+    "min_months": 0,
+    "max_months": 72
+   },
+   "room": "nursery",
+   "contact": "skin",
+   "match": "\\brugs?\\b|carpets?"
+  },
+  {
+   "id": "car-seats",
+   "title": "Car seats",
+   "ages": {
+    "min_months": 0,
+    "max_months": 72
+   },
+   "room": "car",
+   "contact": "skin",
+   "match": "car ?seats?|booster car seats?|infant seats?",
+   "short": "Car seats"
+  },
+  {
+   "id": "carriers",
+   "title": "Baby carriers, wraps and slings",
+   "short": "Carriers",
+   "ages": {
+    "min_months": 0,
+    "max_months": 36
+   },
+   "contact": "skin",
+   "match": "baby carriers?|\\bcarriers?\\b|baby wraps?|ring slings?|\\bslings?\\b|baby wearing|babywearing"
+  },
+  {
+   "id": "strollers",
+   "title": "Strollers and stroller liners",
+   "short": "Strollers",
+   "ages": {
+    "min_months": 0,
+    "max_months": 48
+   },
+   "room": "outdoors",
+   "match": "strollers?|prams?|pushchairs?|buggy|buggies|footmuffs?|stroller (?:liners?|blankets?)"
+  },
+  {
+   "id": "art",
+   "title": "Crayons, paints and play dough",
+   "short": "Art supplies",
+   "ages": {
+    "min_months": 18,
+    "max_months": 72
+   },
+   "contact": "hands",
+   "match": "crayons?|finger ?paints?|play ?dough|playdough|modell?ing (?:beeswax|clay|wax)|chalk|watercolou?rs?|paint (?:set|sticks?)|art supplies"
+  },
+  {
+   "id": "puzzles",
+   "title": "Puzzles",
+   "ages": {
+    "min_months": 12,
+    "max_months": 72
+   },
+   "contact": "hands",
+   "match": "puzzles?|jigsaw",
+   "short": "Puzzles"
+  },
+  {
+   "id": "instruments",
+   "title": "Musical instruments",
+   "short": "Instruments",
+   "ages": {
+    "min_months": 6,
+    "max_months": 72
+   },
+   "contact": "hands",
+   "match": "xylophones?|glockenspiels?|\\bdrums?\\b|tambourines?|maracas?|egg shakers?|musical (?:set|instruments?|toys?)|rainmakers?|chimes?|\\bpianos?\\b|harmonicas?|kazoos?"
   }
  ],
  "entries": [
