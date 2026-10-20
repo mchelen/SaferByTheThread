@@ -173,7 +173,7 @@
     return list.slice().sort(by);
   }
   var SORTS = [['featured', 'Featured'], ['price-asc', 'Price: low to high'], ['total', 'Price + shipping: low to high'], ['price-desc', 'Price: high to low'],
-               ['brand', 'Brand: A to Z'], ['name', 'Name: A to Z'], ['stated', 'Fewest details not stated']];
+               ['brand', 'Brand: A to Z'], ['name', 'Name: A to Z'], ['stated', 'Fewest unstated materials']];
 
   // ---------- saved, compare, recently viewed ----------
   function listGet(key) { return store(key) || []; }
@@ -217,7 +217,7 @@
   }
   // How a listing reads against the visitor's material filters. A miss names what the listing has that a filter
   // hides, one line each. Otherwise one "Not stated" line names the parts no page describes (the filter itself when
-  // the listing doesn't say which part), else every detail is stated. Cards show the first and a count.
+  // the listing doesn't say which part), else all materials are stated. Cards show the first and a count.
   function factText(item, c) {
     var l = c.label.charAt(0).toLowerCase() + c.label.slice(1), f = item.facts[c.id];
     if (c.kind === 'contains') return 'Has ' + l;
@@ -234,7 +234,7 @@
   }
   function fitP(cls, mk, text) { return '<p class="fit ' + cls + '"><span class="mk" aria-hidden="true">' + mk + '</span>' + esc(text) + '</p>'; }
   function fitLine(item, r, max) {
-    if (r.ok && !r.unst.length) return fitP('is-ok', '✓', 'Every detail stated');
+    if (r.ok && !r.unst.length) return fitP('is-ok', '✓', 'All materials stated');
     if (r.ok) {
       var p = unstatedParts(item, r.unst);
       return fitP('is-unk', '?', 'Not stated: ' + (max && p.length > max ? p.slice(0, max).join(' · ') + ' (+' + (p.length - max) + ' more)' : p.join(' · ')));
@@ -404,7 +404,7 @@
       .filter(function (x) { return x.list.length; });
     var rows = sets.map(function (x) { return (x.title ? '<p class="opt-group">' + esc(x.title) + '</p>' : '') + x.list.map(row).join(''); }).join('');
     var nStrict = b.filter(function (it) { return status(it, st.crit, true).ok; }).length;
-    rows += '<p class="opt-group">Unstated details</p><label class="opt"><input type="checkbox" data-crit="strict" id="f-crit-strict"' + (st.strict ? ' checked' : '') + '><span class="lbl">Every detail above is stated<small>Leaves out items whose page doesn’t say, for the filters you have on.</small></span><span class="n">' + nStrict + '</span></label>';
+    rows += '<p class="opt-group">Unstated materials</p><label class="opt"><input type="checkbox" data-crit="strict" id="f-crit-strict"' + (st.strict ? ' checked' : '') + '><span class="lbl">Materials stated for every part<small>Leaves out items whose page doesn’t say, for the filters you have on.</small></span><span class="n">' + nStrict + '</span></label>';
     var hint = '<p class="hint">Ticked filters leave out products that don’t meet them' + (critIsDefault(st.crit, st.strict) ? '; these start from one family’s preferences.' : '.') + ' <a href="#" data-crit-reset>' + (critIsDefault(st.crit, st.strict) ? 'Untick all' : 'Reset to defaults') + '</a></p>';
     return group('crit', 'Materials & making', rows + hint, on);
   }
@@ -464,7 +464,7 @@
     st.ship.forEach(function (v) { var l = { us: 'Ships from the US', abroad: 'Ships from outside the US', unknown: 'Shipping not recorded' }[v]; if (l) add('ship', v, l); });
     var d = defaults();
     C.criteria.forEach(function (c) { if (st.crit[c.id] && !d[c.id]) add('crit', c.id, S.filterLabel(c)); });
-    if (st.strict) add('crit', 'strict', 'Every detail stated');
+    if (st.strict) add('crit', 'strict', 'Materials stated for every part');
     if (chips.length > 1) chips.push('<button type="button" class="chip-clear" data-clear-all>Clear all</button>');
     return chips.join('');
   }
@@ -640,8 +640,8 @@
       (storeCount(item) > 1 ? '<h2 class="offers-h">Prices at ' + storeCount(item) + ' stores, lowest first</h2>' : '<h2 class="sr">Where to buy</h2>') + '<ul class="offers">' + offersOf(item).map(function (p, k) { return offerHtml(p, k, item.products.length > 1); }).join('') + '</ul>' +
       '<div class="status">' + (r.ok ? '<p class="fit is-ok"><span class="mk" aria-hidden="true">✓</span>Meets your ' + plural(critOn(CRIT, STRICT), 'material filter') + '</p>' : fitLine(item, r)) +
       (r.unst.length ? fitLine(item, { ok: true, miss: [], unst: r.unst }) : '') + '</div>' +
-      '<div class="made"><p class="lab">Made with</p><div class="chips-row">' + item.uses.map(chip).join('') + '</div>' +
-      (item.outside.length ? '<p class="lab" style="margin-top:10px">Flagged parts</p><div class="chips-row out">' + item.outside.map(chip).join('') + '</div>' : '') +
+      '<div class="made">' + (item.uses.length ? '<p class="lab">Made with</p><div class="chips-row">' + item.uses.map(chip).join('') + '</div>' : '') +
+      (item.outside.length ? '<p class="lab"' + (item.uses.length ? ' style="margin-top:10px"' : '') + '>Flagged parts</p><div class="chips-row out">' + item.outside.map(chip).join('') + '</div>' : '') +
       '<a class="link-b" href="#materials" data-jump="materials">Full materials ↓</a></div>' +
       '<div class="buy-actions">' + saveBtn(item, 'btn-3') + compareBtn(item) + '<button type="button" class="btn-3" data-share="' + esc(U('/p/' + item.id)) + '" data-share-title="' + esc(item.brand + ' ' + item.line) + '">' + icon('share') + '<span>Share</span></button></div>' +
       (item.quote ? '<blockquote class="ev"><p>“' + esc(item.quote) + '”</p><footer>From the store page</footer></blockquote>' : item.evidence ? '<p class="ev"><span>' + esc(item.evidence) + '</span></p>' : '') +
@@ -658,7 +658,7 @@
       '<details class="acc"><summary>Prices and shipping' + icon('chev') + '</summary><div class="acc-body"><p>Prices and shipping statements were read from the store pages and are checked weekly; the date under each store link is the last check. Prices in pounds, euros and other currencies are converted roughly to US dollars for sorting.</p></div></details>' +
       '</div>' +
       (similar.length ? '<section class="sec similar"><div class="sec-h"><h2>Compare with similar items</h2><a href="' + U('/compare', { ids: [item.id].concat(similar.map(function (i) { return i.id; })).join(',') }) + '">Open in Compare →</a></div>' +
-        compareTable([item].concat(similar), { current: item.id, rows: ['price', 'ship', 'rating', 'filters', 'made', 'unst', 'from'] }) + '</section>' : '') +
+        compareTable([item].concat(similar), { current: item.id, rows: ['price', 'ship', 'rating', 'filters', 'made', 'out', 'unst', 'from'] }) + '</section>' : '') +
       (groupOf(cat.group) && groupOf(cat.group).cats.length > 1 ? '<section class="sec row-sec"><div class="sec-h"><h2><a href="' + U('/a/' + cat.group) + '">More in ' + esc(groupOf(cat.group).title.toLowerCase()) + '</a></h2><a href="' + U('/a/' + cat.group) + '">All ' + esc(groupOf(cat.group).title.toLowerCase()) + ' →</a></div>' + typeTiles(groupOf(cat.group).cats.filter(function (id) { return typeCount(id) > 0; }), 'sm', cat.id) + '</section>' : '') +
       cardRail(more, 'More from ' + esc(item.brand), U('/b/' + item.brandId), 'All ' + item.brand) +
       cardRail(also, 'You may also like', U('/c/' + cat.id), 'All ' + cat.title.toLowerCase()) +
@@ -718,7 +718,7 @@
       '<li class="r-unk"><span class="ic" aria-hidden="true">?</span><span><b>Not stated</b>: parts no page describes, such as thread, glue or dye.</span></li>' +
       '<li class="r-out"><span class="ic" aria-hidden="true">✕</span><span><b>Flagged parts</b>: parts a filter can leave out, such as plastic, synthetic fill, an unnamed colourant or treated wool.</span></li></ul>' +
       '<p>A listing covers one product, or a brand’s line of products made the same way.</p>' +
-      '<h2>Material filters</h2><p>The “Materials & making” filters work like every other filter: each one you tick leaves out the products that don’t meet it. They start from the preferences this guide was built around: no plastic or synthetics in the main materials or small parts, no synthetic dyes or paints, solid wood rather than plywood, no superwash wool, no plasticisers in rubber, and silicone only when the maker says the finished product was tested to German LFGB or the French Arrêté. Natural latex and leather have their own filters, which start unticked. A detail that no page states doesn’t count against a product unless you tick “Every detail above is stated”. Your choices are kept in this browser, and a link to a filtered page carries them.</p>' +
+      '<h2>Material filters</h2><p>The “Materials & making” filters work like every other filter: each one you tick leaves out the products that don’t meet it. They start from the preferences this guide was built around: no plastic or synthetics in the main materials or small parts, no synthetic dyes or paints, solid wood rather than plywood, no superwash wool, no plasticisers in rubber, and silicone only when the maker says the finished product was tested to German LFGB or the French Arrêté. Natural latex and leather have their own filters, which start unticked. A material that no page states doesn’t count against a product unless you tick “Materials stated for every part”. Your choices are kept in this browser, and a link to a filtered page carries them.</p>' +
       '<h2>Questions makers can answer</h2><ul>' + C.ask.map(function (a) { return '<li>' + esc(a) + '</li>'; }).join('') + '</ul>' +
       '<h2>Prices, shipping and stock</h2><p>Prices and shipping statements were read from store pages and are checked weekly by a script; the product page shows the date of the last check. Prices in pounds, euros and other currencies are converted roughly to US dollars for sorting. Catalog last updated ' + esc(C.updated) + '.</p>' +
       '<h2>Source</h2><p>The data and the site are open at <a href="https://github.com/mchelen/SaferByTheThread" target="_blank" rel="noopener">github.com/mchelen/SaferByTheThread</a>.</p></div></div>';
@@ -732,9 +732,9 @@
     ship: ['Shipping', function (i) { return esc(i.shipLine); }],
     rating: ['Rating', function (i) { return i.rating ? stars(i.rating, true) : '<span class="muted">None on the store page</span>'; }],
     filters: ['Your material filters', function (i) { return fitLine(i, status(i)); }],
-    made: ['Made with', function (i) { return '<div class="chips-row">' + i.uses.map(chip).join('') + '</div>'; }],
+    made: ['Made with', function (i) { return i.uses.length ? '<div class="chips-row">' + i.uses.map(chip).join('') + '</div>' : '<span class="muted">None</span>'; }],
     free: ['Stated free of', function (i) { return i.free.length ? '<div class="chips-row r-free">' + i.free.map(chip).join('') + '</div>' : '<span class="muted">Nothing stated</span>'; }],
-    unst: ['Not stated', function (i) { return i.unconfirmed.length ? '<div class="chips-row r-unk">' + i.unconfirmed.map(chip).join('') + '</div>' : '<span class="muted">All covered details stated</span>'; }],
+    unst: ['Not stated', function (i) { return i.unconfirmed.length ? '<div class="chips-row r-unk">' + i.unconfirmed.map(chip).join('') + '</div>' : '<span class="muted">All materials stated</span>'; }],
     out: ['Flagged parts', function (i) { return i.outside.length ? '<div class="chips-row r-out">' + i.outside.map(chip).join('') + '</div>' : '<span class="muted">None</span>'; }],
     std: ['Standards named', function (i) { return i.standards.length ? stdLinks(i) : '<span class="muted">None</span>'; }],
     age: ['Age', function (i) { return esc(i.ageLabel) + (i.ageStated ? '' : ' <span class="muted">(usual for the type)</span>'); }],
@@ -790,7 +790,7 @@
       '<div><p class="eyebrow">' + esc(item.brand) + '</p><h2 id="qv-h">' + esc(item.line) + '</h2>' + (item.rating ? stars(item.rating, true) : '') + '<p class="price">' + esc(S.priceLabel(item)) + '</p>' +
       fitLine(item, r) +
       '<ul class="offers">' + offersOf(item).slice(0, 2).map(function (p, k) { return offerHtml(p, k, item.products.length > 1); }).join('') + '</ul>' +
-      '<div class="made"><p class="lab">Made with</p><div class="chips-row">' + item.uses.map(chip).join('') + '</div>' + (item.outside.length ? '<p class="lab" style="margin-top:10px">Flagged parts</p><div class="chips-row out">' + item.outside.map(chip).join('') + '</div>' : '') + '</div>' +
+      '<div class="made">' + (item.uses.length ? '<p class="lab">Made with</p><div class="chips-row">' + item.uses.map(chip).join('') + '</div>' : '') + (item.outside.length ? '<p class="lab"' + (item.uses.length ? ' style="margin-top:10px"' : '') + '>Flagged parts</p><div class="chips-row out">' + item.outside.map(chip).join('') + '</div>' : '') + '</div>' +
       '<div class="qv-actions"><a class="btn-2" href="' + U('/p/' + item.id) + '">Full details</a>' + saveBtn(item, 'btn-3') + compareBtn(item) + '</div></div></div>';
     qv.hidden = false; scrim.hidden = false; document.body.classList.add('no-scroll');
     qvOpener = opener || null;
