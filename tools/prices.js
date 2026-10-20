@@ -798,7 +798,7 @@ async function main() {
 
 module.exports = {
   decodeEntities, parseAmount, normCurrency, attrs, jsonLdBlocks, findJsonLdPrice, findMetaPrice, findItempropPrice,
-  extractPrice, findShopifyCurrency, parseShopifyProduct, shopifyHandle, isSignificant, compare, replaceAmount, dollarAmounts, movedAway, isHomePage,
+  extractPrice, findShopifyCurrency, parseShopifyProduct, shopifyHandle, walkObjects, hasType, fetchText, errorLabel, sleep, USER_AGENT, isSignificant, compare, replaceAmount, dollarAmounts, movedAway, isHomePage,
   formatAmount, buildReport, interleaveByHost, applyRating, checkProduct, hostWaiter, jsonLdOffers, shopifyVariants, pickVariant, nameTokens, distinctAmounts, recordedAmounts, isRangeText, findShipping, visibleText
 };
 
