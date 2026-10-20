@@ -127,11 +127,13 @@ h3 { font-size: 15px; }
 .mega { position: absolute; top: 100%; left: 0; z-index: 45; min-width: 280px; background: var(--bg); border: 1px solid var(--line); border-radius: 0 0 var(--r) var(--r); box-shadow: var(--shadow-lg); padding: 14px 16px 16px; display: none; }
 .cat-item.open .mega { display: block; }
 .mega p { margin: 0 0 8px; font-size: 12px; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
-.mega ul { list-style: none; margin: 0; padding: 0; columns: 2; column-gap: 24px; }
-.mega li a { display: block; padding: 6px 0; text-decoration: none; color: var(--ink); break-inside: avoid; }
-.mega li a:hover { color: var(--accent-strong); text-decoration: underline; }
-.mega li a span { color: var(--muted); font-size: 13px; margin-left: 6px; }
-.mega .mega-all { margin-top: 10px; padding-top: 10px; border-top: 1px solid var(--line); font-weight: 600; }
+.mega { min-width: 520px; }
+.ttiles.type-tiles { margin-top: 16px; }
+.ttiles.mega-tiles { gap: 12px 8px; max-width: 520px; }
+.mega-tiles .ttile { width: 92px; gap: 6px; }
+.mega-tiles .ttile-img { width: 76px; height: 76px; }
+.mega-tiles .ttile-t { font-size: 13px; }
+.mega .mega-all { display: block; margin-top: 14px; padding-top: 10px; border-top: 1px solid var(--line); font-weight: 600; }
 
 /* ---------- home ---------- */
 .hero { display: grid; grid-template-columns: 1.1fr 1fr; gap: 32px; align-items: center; padding: 40px 0 24px; }
@@ -543,7 +545,8 @@ body.tray-on .toast { bottom: 88px; }
   .cats.open .cat-a { padding: 14px 4px; border-bottom: 1px solid var(--line) !important; width: 100%; justify-content: space-between; font-size: 17px; }
   .cats.open .mega { position: static; display: none; box-shadow: none; border: 0; padding: 4px 4px 14px; min-width: 0; }
   .cats.open .cat-item.open .mega { display: block; }
-  .cats.open .mega ul { columns: 1; }
+  .cats.open .mega { min-width: 0; }
+  .cats.open .ttiles.mega-tiles { margin: 0; padding: 4px 0 8px; }
   .cats.open .menu-x { display: flex; justify-content: flex-end; padding: 8px 0 0; }
   .hero { grid-template-columns: 1fr; padding-top: 24px; }
   .hero h1 { font-size: 32px; }

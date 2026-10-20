@@ -1,0 +1,82 @@
+name: Catalog daily
+
+# The scripted half of keeping the catalog growing (docs/automation.md):
+#   1. tools/discover.js reads the stores in research/watchlist.json and queues products the catalog doesn't list
+#      in research/candidates.json, for the daily Claude research session to read.
+#   2. tools/ingest.js adds any listing drafts left in research/drafts/ whose quotes check out against the saved pages.
+#   3. tools/photos.js saves every seller photo for listings that have none saved yet.
+# It then runs the data check and the unit tests, and when anything changed opens a pull request, merges it (the
+# checks above are the same ones CI runs; a pull request opened with the workflow token does not start other
+# workflows) and starts the Pages deployment. Needs "Allow GitHub Actions to create and approve pull requests".
+
+on:
+  schedule:
+    - cron: '0 6 * * *'   # every day 06:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+  actions: write
+
+concurrency:
+  group: catalog-daily
+  cancel-in-progress: false
+
+jobs:
+  daily:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Install
+        run: npm ci
+
+      - name: Discover new products on watched stores
+        run: node tools/discover.js --write --report discover-report.md
+
+      - name: Add checked listing drafts
+        run: node tools/ingest.js --report ingest-report.md
+
+      - name: Save seller photos for listings without them
+        run: node tools/photos.js --write --report photo-report.md
+
+      - name: Validate
+        run: |
+          node tools/check.js
+          node --test "tests/unit/*.test.js"
+
+      - name: Open, merge and publish
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          if [ -z "$(git status --porcelain -- data.json img research)" ]; then
+            echo "Nothing changed."
+            exit 0
+          fi
+          DATE=$(date -u +%Y-%m-%d)
+          BRANCH="catalog/daily-$DATE"
+          TITLE="chore(catalog): daily discovery and photos $DATE"
+          cat discover-report.md ingest-report.md photo-report.md > body.md
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -B "$BRANCH"
+          git add data.json img research
+          git commit -m "$TITLE" -m "Automated daily run; see the pull request body for the reports."
+          git push --force --set-upstream origin "$BRANCH"
+          URL=$(gh pr create --base main --head "$BRANCH" --title "$TITLE" --body-file body.md)
+          echo "Opened $URL"
+          gh pr merge "$URL" --merge --delete-branch
+          gh workflow run pages.yml --ref main
+
+      - name: Keep the reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: catalog-daily-reports
+          path: '*-report.md'
+          if-no-files-found: ignore

@@ -44,7 +44,7 @@ test('home page renders product types, aisles, featured products and the menu', 
 
 test('a type tile and an age chip on the home page open the matching listing', async () => {
   const page = await open('/');
-  await page.click('.ttile[href$="/c/balls"]');
+  await page.click('main .ttile[href$="/c/balls"]');
   await page.waitForSelector('.card');
   assert.match(await page.textContent('h1'), /Balls/);
   assert.ok((await page.locator('.sibling-types .ttile').count()) >= 10, 'a type page shows its sibling types as tiles');
@@ -102,7 +102,7 @@ test('the shop lists the products that meet the default material filters and set
 test('material filters sit in the rail like any other facet and change the results and the URL', async () => {
   const page = await open('/c/balls');
   await page.waitForSelector('.card');
-  assert.equal(await page.locator('#rail .fgroup[data-group="crit"] input[data-crit]').count(), 14);
+  assert.equal(await page.locator('#rail .fgroup[data-group="crit"] input[data-crit]').count(), 17);
   await page.uncheck('#f-crit-color');
   assert.ok((await count(page)) > 2, 'turning off the dyes filter brings painted balls in');
   assert.match(page.url(), /m=/);
@@ -273,8 +273,12 @@ test('cards show shipping, and the quick filter, shipping facet and price + ship
 test('old department and product type links land on the new aisle and type pages', async () => {
   const page = await open('/d/toys?price=u25');
   await page.waitForSelector('.card');
-  assert.equal(new URL(page.url()).pathname, '/a/play');
+  assert.equal(new URL(page.url()).pathname, '/a/toys');
   assert.match(page.url(), /price=u25/, 'filters survive the redirect');
+  await page.goto(base + '/a/sleep', { waitUntil: 'networkidle' });
+  await page.waitForSelector('.card');
+  assert.equal(new URL(page.url()).pathname, '/a/beds', 'the research-era aisles redirect to departments');
+  assert.ok(await page.locator('.type-tiles .ttile-img img').count() >= 4, 'department pages show product types as photo tiles');
   await page.goto(base + '/c/pads', { waitUntil: 'networkidle' });
   await page.waitForSelector('h1');
   assert.equal(new URL(page.url()).pathname, '/c/protectors');
