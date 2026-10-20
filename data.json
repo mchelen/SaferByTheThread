@@ -963,7 +963,8 @@
     "max_months": 48
    },
    "room": "outdoors",
-   "match": "strollers?|prams?|pushchairs?|buggy|buggies|footmuffs?|stroller (?:liners?|blankets?)"
+   "match": "strollers?|prams?|pushchairs?|buggy|buggies|footmuffs?|stroller (?:liners?|blankets?)",
+   "intro": "Footmuff pages mostly describe construction (fleece, padding, a windproof shell) rather than fibre. Fleece names a brushed knit, not a fibre: most fleece is polyester, and cotton fleece exists, so the fibre counts as stated only when the page names it."
   },
   {
    "id": "art",
@@ -2637,14 +2638,14 @@
    "line": "Pull Wagon with Blocks",
    "uses": [
     "Unfinished poplar",
-    "Wooden wheels",
-    "18 blocks"
+    "Wooden wheels"
    ],
    "free": [
     "Plastic parts"
    ],
    "unconfirmed": [
-    "Pull rope"
+    "Pull rope",
+    "Wood of the 18 blocks"
    ],
    "products": [
     {
@@ -2662,7 +2663,7 @@
    "quote": "no plastic parts",
    "outside": [],
    "facts": {
-    "main": "yes",
+    "main": "unknown",
     "parts": "unknown",
     "color": "yes",
     "wood": "yes"
@@ -2670,6 +2671,9 @@
    "unstated": {
     "parts": [
      "Pull rope"
+    ],
+    "main": [
+     "Wood of the 18 blocks"
     ]
    },
    "contains": [],
@@ -3240,13 +3244,13 @@
    "line": "Organic floppy animals",
    "uses": [
     "Organic cotton",
-    "Organic lambswool fill",
-    "Embroidered face"
+    "Organic lambswool fill"
    ],
    "free": [],
    "unconfirmed": [
     "Dyes",
-    "Eyes on the cat"
+    "Eyes on the cat",
+    "Embroidery thread of the face"
    ],
    "products": [
     {
@@ -3293,7 +3297,8 @@
    },
    "unstated": {
     "parts": [
-     "Eyes on the cat"
+     "Eyes on the cat",
+     "Embroidery thread of the face"
     ],
     "color": [
      "Dyes"
@@ -5604,15 +5609,15 @@
    "brand": "Purveyor 15",
    "line": "Unfinished poplar beds",
    "uses": [
-    "Clear poplar",
-    "Screws (pocket-hole assembly)",
-    "Slats"
+    "Clear poplar"
    ],
    "free": [
     "Finish (unfinished option)"
    ],
    "unconfirmed": [
-    "Glue"
+    "Glue",
+    "Screw metal (pocket-hole assembly)",
+    "Slat wood"
    ],
    "products": [
     {
@@ -5645,14 +5650,18 @@
    "quote": "Handcrafted in the USA from clear grade, locally sourced poplar wood... pocket hole assembly",
    "outside": [],
    "facts": {
-    "main": "yes",
+    "main": "unknown",
     "parts": "unknown",
     "color": "yes",
     "wood": "yes"
    },
    "unstated": {
     "parts": [
-     "Glue"
+     "Glue",
+     "Screw metal (pocket-hole assembly)"
+    ],
+    "main": [
+     "Slat wood"
     ]
    },
    "contains": [],
@@ -5989,14 +5998,13 @@
    "brand": "Piccalio",
    "line": "bedBED Montessori Bed",
    "uses": [
-    "Solid pine",
-    "Non-toxic 0-VOC finish"
+    "Solid pine"
    ],
    "free": [
     "VOCs (finish)"
    ],
    "unconfirmed": [
-    "Finish type",
+    "Finish type (described as non-toxic, 0-VOC)",
     "Plywood adhesive",
     "Hardware"
    ],
@@ -6033,7 +6041,7 @@
      "Hardware"
     ],
     "color": [
-     "Finish type"
+     "Finish type (described as non-toxic, 0-VOC)"
     ],
     "main": [
      "Plywood adhesive"
@@ -6893,12 +6901,10 @@
    "type": "protectors",
    "brand": "Newton Baby",
    "line": "Essential Waterproof Crib Pad",
-   "uses": [
-    "Breathe-thru eyelet spacer material"
-   ],
+   "uses": [],
    "free": [],
    "unconfirmed": [
-    "Spacer material fiber",
+    "Fibre of the breathe-thru eyelet spacer",
     "Fitted skirt fabric",
     "Elastic"
    ],
@@ -6978,17 +6984,15 @@
    "type": "protectors",
    "brand": "Delta Children",
    "line": "Beautyrest Eco-Cool Cooling Crib Mattress Protector",
-   "uses": [
-    "Waterproof backing (material not named)",
-    "Elasticized edges"
-   ],
+   "uses": [],
    "free": [
     "VOCs",
     "Chemical flame retardants"
    ],
    "unconfirmed": [
     "Waterproof backing material",
-    "Odor-control and stain-resistant treatments"
+    "Odor-control and stain-resistant treatments",
+    "Elastic in the edges"
    ],
    "outside": [
     "100% polyester construction"
@@ -7016,6 +7020,9 @@
    "unstated": {
     "color": [
      "Odor-control and stain-resistant treatments"
+    ],
+    "parts": [
+     "Elastic in the edges"
     ]
    },
    "contains": [],
@@ -7864,9 +7871,7 @@
    "brand": "OXO",
    "line": "Good Grips Covered Silicone Ice Cube Tray",
    "uses": [
-    "Silicone tray",
-    "Frame (material not stated)",
-    "Cover (material not stated)"
+    "Silicone tray"
    ],
    "free": [
     "BPA"
@@ -8418,16 +8423,14 @@
    "brand": "Zoku",
    "line": "Summer Pops",
    "uses": [
-    "BPA-free silicone molds",
-    "Spill-resistant lids (material not stated)",
-    "Base (material not stated)"
+    "BPA-free silicone molds"
    ],
    "free": [
     "BPA",
     "Phthalates"
    ],
    "unconfirmed": [
-    "Lid material",
+    "Material of the spill-resistant lids",
     "Base material",
     "Silicone testing standard",
     "Pigments"
@@ -8453,7 +8456,7 @@
    },
    "unstated": {
     "main": [
-     "Lid material",
+     "Material of the spill-resistant lids",
      "Base material"
     ],
     "color": [
@@ -8488,8 +8491,7 @@
    "line": "Kids Shoe",
    "uses": [
     "Pure natural wool upper",
-    "Chrome-free calfskin sole",
-    "Hand-stitched sole"
+    "Chrome-free calfskin sole"
    ],
    "free": [
     "Chrome tanning",
@@ -8513,7 +8515,7 @@
    "img": "shoe_glerups",
    "img_src": "http://www.glerups.com/cdn/shop/products/Shoe_kids-Shoe_with_leather_sole-AK-Charcoal.jpg?v=1670602015",
    "quote": "pure, natural wool… sole of soft and chrome-free calfskin",
-   "note": "EU 20 and 21 in stock when checked.",
+   "note": "EU 20 and 21 in stock when checked. The sole is hand-stitched.",
    "outside": [],
    "facts": {
     "main": "yes",
@@ -8785,8 +8787,7 @@
    "line": "Uni barefoot slippers",
    "uses": [
     "Vegetable-tanned IVN natural leather",
-    "Leather sole",
-    "Unlined"
+    "Leather sole"
    ],
    "free": [
     "Chrome tanning"
@@ -8846,7 +8847,8 @@
      "key": "shoe_pololo_5",
      "src": "https://www.pololo.com/wp-content/uploads/2023/08/pololo-barefoot-label-1200-1200.jpg"
     }
-   ]
+   ],
+   "note": "Unlined."
   },
   {
    "id": "robeez-first-kicks",
@@ -8855,14 +8857,12 @@
    "line": "First Kicks",
    "uses": [
     "Leather upper",
-    "Suede split rubber outsole",
-    "Padded/cushioned insole",
-    "Velcro (hook-and-loop) strap"
+    "Suede split rubber outsole"
    ],
    "free": [],
    "unconfirmed": [
     "Rubber type in outsole",
-    "Insole material",
+    "Material of the padded insole",
     "Lining",
     "Thread",
     "Glue",
@@ -8899,7 +8899,7 @@
    },
    "unstated": {
     "main": [
-     "Insole material",
+     "Material of the padded insole",
      "Lining"
     ],
     "color": [
@@ -8943,8 +8943,7 @@
    "brand": "Freshly Picked",
    "line": "Classic Moccasin (Soft Sole / Hard Sole)",
    "uses": [
-    "Genuine Italian leather",
-    "Elastic ankle opening"
+    "Genuine Italian leather"
    ],
    "free": [],
    "unconfirmed": [
@@ -8952,7 +8951,7 @@
     "Lining",
     "Thread",
     "Glue",
-    "Elastic composition",
+    "Elastic in the ankle opening",
     "Dyes/finishes"
    ],
    "outside": [],
@@ -9002,7 +9001,7 @@
     "parts": [
      "Thread",
      "Glue",
-     "Elastic composition"
+     "Elastic in the ankle opening"
     ],
     "color": [
      "Dyes/finishes"
@@ -9623,14 +9622,12 @@
    "line": "Kids First Classic Rain Boots",
    "uses": [
     "Natural rubber upper",
-    "Rubber calendered outsole",
-    "Textile lining (described as recycled)",
-    "Textile sock"
+    "Rubber calendered outsole"
    ],
    "free": [],
    "unconfirmed": [
-    "Lining fibre type",
-    "Sock/insole fibre and foam",
+    "Lining fibre (a textile described as recycled)",
+    "Fibre and foam of the textile sock and insole",
     "Rubber additives/plasticisers",
     "Finish/print inks",
     "Glue"
@@ -9658,8 +9655,8 @@
    },
    "unstated": {
     "main": [
-     "Lining fibre type",
-     "Sock/insole fibre and foam"
+     "Lining fibre (a textile described as recycled)",
+     "Fibre and foam of the textile sock and insole"
     ],
     "parts": [
      "Glue"
@@ -9791,12 +9788,10 @@
    "type": "rain-boots",
    "brand": "Kamik",
    "line": "Stomp Rain Boots (Toddlers)",
-   "uses": [
-    "Felt insole"
-   ],
+   "uses": [],
    "free": [],
    "unconfirmed": [
-    "Felt fibre type",
+    "Fibre of the felt insole",
     "Outsole compound",
     "Dyes"
    ],
@@ -9885,17 +9880,16 @@
    "brand": "Bogs",
    "line": "Skipper II Kid's Rainboots (Toddler)",
    "uses": [
-    "Rubber upper",
-    "BOGS Max-Wick moisture-wicking lining",
-    "DuraFresh odour treatment"
+    "Rubber upper"
    ],
    "free": [],
    "unconfirmed": [
     "Rubber type (natural or synthetic)",
-    "Lining fibre",
+    "Lining fibre (“Max-Wick” moisture-wicking)",
     "Outsole compound",
     "Glue",
-    "Dyes"
+    "Dyes",
+    "What the “DuraFresh” odour treatment is"
    ],
    "outside": [
     "BLOOM algae-based EVA footbed"
@@ -9925,7 +9919,8 @@
      "Glue"
     ],
     "color": [
-     "Dyes"
+     "Dyes",
+     "What the “DuraFresh” odour treatment is"
     ],
     "rubber": [
      "Rubber type (natural or synthetic)",
@@ -10034,19 +10029,15 @@
    "type": "strollers",
    "brand": "Béaba",
    "line": "Universal and Warm Sleeping Bag, 6 to 24 months",
-   "uses": [
-    "Fleece lining",
-    "Padding, 300 g/m²",
-    "Windproof, breathable outer fabric",
-    "Fleece-lined hood"
-   ],
+   "uses": [],
    "free": [],
    "unconfirmed": [
     "Fibre of the fleece lining",
-    "Fibre of the padding",
-    "Fibre of the outer fabric",
+    "Fibre of the padding (300 g/m²)",
+    "Fibre of the windproof, breathable outer fabric",
     "Finish on the windproof outer fabric",
-    "Front zip"
+    "Front zip",
+    "Fibre of the fleece hood lining"
    ],
    "outside": [
     "Nylon lining at the feet"

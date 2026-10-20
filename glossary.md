@@ -262,6 +262,21 @@ Sources:
 - [16 CFR 303.7: Generic names and definitions for manufactured fibers](https://www.ecfr.gov/current/title-16/chapter-I/subchapter-C/part-303/section-303.7), eCFR, US Government (Law or regulation)
 - [De Falco F, et al. The contribution of washing processes of synthetic clothes to microplastic pollution. Scientific Reports 9, 6633 (2019)](https://www.nature.com/articles/s41598-019-43023-x), Nature Portfolio (peer-reviewed) (Peer-reviewed research)
 
+### Fleece (fabric)
+
+Also called: polar fleece, micro-fleece
+
+**Definition.** A knitted fabric brushed on one or both sides to raise a soft pile. The word names the construction, not the fibre: polar fleece and micro-fleece are polyester; cotton fleece (sweatshirt fleece) and wool fleece also exist.
+
+**On this site.** “Fleece” on a page does not say what the fabric is made of, so the site lists the fibre of a fleece part as not stated unless the page names it. Fleece named as polyester or micro-fleece is a flagged part.
+
+**What the sources say.** US textile labels must name the generic fibre (cotton, polyester, wool); “fleece” is not a generic fibre name under the FTC's rules. Most fleece sold as outerwear and linings is polyester, which Britannica describes as the most widely used synthetic fibre.
+
+Sources:
+
+- [16 CFR 303.7: Generic names and definitions for manufactured fibers](https://www.ecfr.gov/current/title-16/chapter-I/subchapter-C/part-303/section-303.7), eCFR, US Government (Law or regulation)
+- [Polyester](https://www.britannica.com/science/polyester), Encyclopaedia Britannica (Reference or medical society)
+
 ### Acrylic (fibre and felt)
 
 **Definition.** A synthetic fibre made mainly of acrylonitrile polymer. Common in craft felt and imitation wool.

@@ -40,6 +40,8 @@ const ids = new Set();
 const SYNTH = S.MATERIALS.filter(m => m.id === 'synthetic')[0].rx;
 const COMPOSITE = /plywood|\bmdf\b|fib(?:er|re) ?board|particle ?board|veneer|layered (?:birch|wood|poplar)/i;
 const REMARK = /\bLFGB\b|certif|regulatory|\bclaim\b|not published|\btested?\b|\btesting\b|not padded|flagged/i;
+// A Made with line names a material; a part named only by its construction or job ("fleece lining", "padding", "frame") is not stated.
+const MATERIAL = /wool|merino|mohair|alpaca|cashmere|lambswool|felt|melton|cotton|terry|muslin|flannel|linen|hemp|flax|jute|ramie|silk|wood|maple|beech|birch|pine|walnut|cherry|oak|poplar|\bash\b|hardwood|bamboo|rubber|latex|leather|calfskin|suede|sheepskin|shearling|hide|nubuck|coir|kapok|buckwheat|\bdown\b|feather|silicone|stainless|steel|metal|brass|alumin|iron|zinc|glass|ceramic|stoneware|porcelain|enamel|paper|cardboard|cork|beeswax|\bwax|\boil\b|lacquer|shellac|varnish|dyes?\b|pigment|paint|ink|tencel|lyocell|modal|viscose|rayon|clay|stone|marble|sand|salt|water|seed|husk|straw|rattan|wicker|seagrass|sisal|lanolin|wheat|rice|soy|corn|sugarcane|plant/i;
 const GUESS = /\b(?:probably|likely|often|usually|typically|presumably|possibly|may be|might be|looks like|seems|appears to)\b/i;
 let entries = 0, products = 0, missingImg = 0;
 for (const e of data.entries) {
@@ -61,6 +63,7 @@ for (const e of data.entries) {
   }
   // Made with lists only what no default filter flags; synthetics and composite wood are flagged parts.
   for (const t of e.uses || []) {
+    if (!MATERIAL.test(t)) problems.push(`${where}: uses "${t}" names no material; a part whose material the page does not name goes under unconfirmed`);
     if (SYNTH.test(t) || COMPOSITE.test(t)) problems.push(`${where}: uses "${t}" is synthetic or composite wood; list it under outside`);
     if ((e.outside || []).includes(t)) problems.push(`${where}: "${t}" is under both uses and outside`);
   }

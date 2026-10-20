@@ -410,6 +410,31 @@
      ]
     },
     {
+     "id": "fleece",
+     "term": "Fleece (fabric)",
+     "aka": [
+      "polar fleece",
+      "micro-fleece"
+     ],
+     "definition": "A knitted fabric brushed on one or both sides to raise a soft pile. The word names the construction, not the fibre: polar fleece and micro-fleece are polyester; cotton fleece (sweatshirt fleece) and wool fleece also exist.",
+     "on_this_site": "“Fleece” on a page does not say what the fabric is made of, so the site lists the fibre of a fleece part as not stated unless the page names it. Fleece named as polyester or micro-fleece is a flagged part.",
+     "what_sources_say": "US textile labels must name the generic fibre (cotton, polyester, wool); “fleece” is not a generic fibre name under the FTC's rules. Most fleece sold as outerwear and linings is polyester, which Britannica describes as the most widely used synthetic fibre.",
+     "sources": [
+      {
+       "title": "16 CFR 303.7: Generic names and definitions for manufactured fibers",
+       "publisher": "eCFR, US Government",
+       "type": "regulation",
+       "url": "https://www.ecfr.gov/current/title-16/chapter-I/subchapter-C/part-303/section-303.7"
+      },
+      {
+       "title": "Polyester",
+       "publisher": "Encyclopaedia Britannica",
+       "type": "reference",
+       "url": "https://www.britannica.com/science/polyester"
+      }
+     ]
+    },
+    {
      "id": "acrylic",
      "term": "Acrylic (fibre and felt)",
      "definition": "A synthetic fibre made mainly of acrylonitrile polymer. Common in craft felt and imitation wool.",
