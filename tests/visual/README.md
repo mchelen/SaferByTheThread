@@ -30,6 +30,10 @@ Only changes to `index.html`, `404.html`, `assets/` and the photos in `img/` do.
 When a change to the page code needs new data fields to show, refresh the fixtures in the same PR:
 `npm run test:visual:update -- --refresh-fixtures`.
 
+The page's Inter font, which the site loads from Google Fonts, is served from `fixtures/fonts/`
+(Inter is under the SIL Open Font License), and every other off-site request is blocked, so the
+network never changes a picture. If the site changes its fonts, save the new ones there.
+
 ## Running
 
 ```sh

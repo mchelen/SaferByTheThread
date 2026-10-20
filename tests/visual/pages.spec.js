@@ -10,6 +10,14 @@ const { test, expect } = require('@playwright/test');
 const fixture = (f) => fs.readFileSync(path.join(__dirname, 'fixtures', f));
 
 test.beforeEach(async ({ page }) => {
+  // The site loads Inter from Google Fonts. Serve a saved copy (fixtures/fonts/, SIL Open Font License)
+  // so every run draws the same letters whatever the network does, and block anything else off-site.
+  await page.route((url) => url.hostname !== '127.0.0.1', (route) => {
+    const url = new URL(route.request().url());
+    if (url.hostname === 'fonts.googleapis.com') return route.fulfill({ contentType: 'text/css', body: fixture('fonts/inter.css') });
+    if (url.hostname === 'fonts.gstatic.com') return route.fulfill({ contentType: 'font/woff2', body: fixture('fonts/' + path.basename(url.pathname)) });
+    return route.abort();
+  });
   await page.route(/\/(data|glossary)\.json(\?.*)?$/, (route) => {
     const name = new URL(route.request().url()).pathname.split('/').pop();
     route.fulfill({ status: 200, contentType: 'application/json', body: fixture(name) });
