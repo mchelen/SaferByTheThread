@@ -358,10 +358,9 @@ h3 { font-size: 15px; }
 .acc-body .lede { margin: 0 0 14px; color: var(--muted); max-width: 80ch; }
 .pdp-below { max-width: 880px; }
 .check { display: grid; gap: 10px; }
-.check .row { display: grid; grid-template-columns: 170px 1fr; gap: 12px; align-items: start; padding: 12px 14px; border-radius: var(--r); background: var(--surface); }
+.check .row { display: grid; grid-template-columns: 150px 1fr; gap: 12px; align-items: center; padding: 12px 14px; border-radius: var(--r); background: var(--surface); }
 .check .row-h { display: flex; align-items: center; gap: 8px; font-weight: 600; }
 .check .row-h .ic { display: inline-grid; place-items: center; width: 24px; height: 24px; border-radius: 50%; font-size: 13px; font-weight: 700; flex: none; }
-.check .row-h small { display: block; font-weight: 400; color: var(--muted); font-size: 12.5px; }
 .check .chips-row { display: flex; flex-wrap: wrap; gap: 6px; }
 .chip { display: inline-block; padding: 4px 10px; border-radius: 6px; font-size: 13.5px; line-height: 1.4; background: var(--surface-2); color: var(--ink); }
 .r-uses .chip { background: var(--moss-soft); color: var(--moss); }
@@ -575,3 +574,18 @@ body.tray-on .toast { bottom: 88px; }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { transition: none !important; animation: none !important; scroll-behavior: auto !important; }
 }
+
+/* Materials at a glance: one line on how a listing reads against the visitor's material filters. */
+.fit { margin: 0; font-size: 12.5px; line-height: 1.4; display: flex; gap: 6px; align-items: baseline; }
+.fit .mk { flex: none; display: inline-grid; place-items: center; width: 16px; height: 16px; border-radius: 50%; font-size: 10px; font-weight: 700; transform: translateY(2px); }
+.fit.is-ok { color: var(--moss); } .fit.is-ok .mk { background: var(--moss-soft); }
+.fit.is-unk { color: var(--wax); } .fit.is-unk .mk { background: var(--wax-soft); }
+.fit.is-miss { color: var(--clay); } .fit.is-miss .mk { background: var(--clay-soft); }
+.card .fit { display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical; overflow: hidden; }
+.card .fit .mk { display: inline-grid; margin-right: 5px; }
+.buybox .status .fit, .qv-in .fit, .cmp .fit { font-size: 14px; }
+.buybox .status { flex-direction: column; align-items: flex-start; gap: 4px; }
+.qv-in .fit { margin-top: 6px; }
+.ftable tr.grp th { padding: 16px 8px 6px; font-size: 12px; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); border-bottom: 1px solid var(--line); }
+.ftable tr.off th, .ftable tr.off td { opacity: .6; }
+.ftable .off-t { font-size: 11px; font-weight: 600; letter-spacing: .04em; text-transform: uppercase; padding: 1px 6px; border-radius: 4px; background: var(--surface-2); color: var(--muted); }

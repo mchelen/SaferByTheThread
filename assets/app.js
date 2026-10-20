@@ -218,11 +218,18 @@
   function missText(item, r) {
     return r.miss.map(function (c) { return c.short + (c.kind !== 'contains' && item.facts[c.id] === 'unknown' ? ' (not stated)' : ''); }).join(', ');
   }
+  // One line on how a listing reads against the visitor's material filters: what it misses, else what no page
+  // states, else that every detail is stated. Cards name one filter and a count; product pages name them all.
+  function names(list, max) { var n = list.map(function (c) { return c.short; }); return max && n.length > max ? n.slice(0, max).join(', ') + ' +' + (n.length - max) : n.join(', '); }
+  function fitLine(item, r, max) {
+    if (!r.ok) return '<p class="fit is-miss"><span class="mk" aria-hidden="true">✕</span>Doesn’t match: ' + esc(max ? names(r.miss, max) : missText(item, r)) + '</p>';
+    if (r.unst.length) return '<p class="fit is-unk"><span class="mk" aria-hidden="true">?</span>Not stated: ' + esc(names(r.unst, max)) + '</p>';
+    return '<p class="fit is-ok"><span class="mk" aria-hidden="true">✓</span>Every detail stated</p>';
+  }
   function card(item, i, crit, strict) {
     var r = status(item, crit, strict);
     var mats = item.materials.slice(0, 3).map(matLabel);
     var badges = [];
-    if (!r.ok) badges.push('<span class="badge miss">Doesn’t match a filter</span>');
     if (item.products.length > 1) badges.push('<span class="badge soft">' + (storeCount(item) > 1 ? storeCount(item) + ' stores' : item.products.length + ' options') + '</span>');
     return '<article class="card' + (r.ok ? '' : ' is-miss') + '" data-id="' + esc(item.id) + '">' +
       '<a class="card-link" href="' + U('/p/' + item.id) + '">' + photo(item, i != null && i < 4) +
@@ -231,7 +238,7 @@
       '<p class="mats">' + esc(mats.join(' · ') || 'Materials on the product page') + '</p>' +
       '<p class="price">' + esc(S.priceFrom(item)) + '</p>' +
       '<p class="ship' + (item.deliv === 'free' ? ' is-free' : '') + '">' + esc(item.shipLine) + '</p>' +
-      '<p class="meta">' + (r.ok ? (r.unst.length ? plural(r.unst.length, 'detail') + ' not stated' : 'Every covered detail stated') : 'Doesn’t match: ' + esc(missText(item, r))) + '</p>' +
+      fitLine(item, r, 1) +
       '</div></a>' + (offersOf(item)[0] ? '<a class="btn-buy sm card-buy" href="' + esc(offersOf(item)[0].url) + '" target="_blank" rel="noopener" aria-label="' + buyText(offersOf(item)[0]) + ': ' + esc(item.brand + ' ' + item.line) + ' (opens the store)" title="' + buyText(offersOf(item)[0]) + '">Buy at store' + icon('ext') + '</a>' : '') + saveBtn(item) +
       '<button type="button" class="qv-btn" data-qv="' + esc(item.id) + '">Quick view</button></article>';
   }
@@ -491,7 +498,7 @@
       '<label class="sort"><span>Sort by</span><select id="sort" aria-label="Sort by">' + SORTS.map(function (s) { return '<option value="' + s[0] + '"' + (st.sort === s[0] ? ' selected' : '') + '>' + s[1] + '</option>'; }).join('') + '</select></label></div></div>' +
       quickChips(st, list) +
       '<div class="chips">' + activeChips(st) + '</div>' +
-      (hidden ? '<div class="hidden-note"><p>' + (st.all ? plural(hidden, 'product that doesn’t', 'products that don’t') + ' match your material filters ' + (hidden === 1 ? 'is' : 'are') + ' shown with a badge.' : '<b>' + plural(hidden, 'more product', 'more products') + '</b> set aside by your material filters.') + '</p><button type="button" data-toggle-all>' + (st.all ? 'Hide them' : 'Show them') + '</button></div>' : '') +
+      (hidden ? '<div class="hidden-note"><p>' + (st.all ? plural(hidden, 'product that doesn’t', 'products that don’t') + ' match your material filters ' + (hidden === 1 ? 'is' : 'are') + ' shown.' : '<b>' + plural(hidden, 'more product', 'more products') + '</b> set aside by your material filters.') + '</p><button type="button" data-toggle-all>' + (st.all ? 'Hide them' : 'Show them') + '</button></div>' : '') +
       (shown.length ? '<div class="grid" id="grid">' + shown.map(function (it, i) { return card(it, i, st.crit, st.strict); }).join('') + '</div>' : emptyState(st, hidden)) +
       (list.length > shown.length ? '<div class="more-wrap"><p>Showing ' + shown.length + ' of ' + list.length + '</p><button type="button" class="btn-2" data-more>Show more</button></div>' : (list.length > PAGE ? '<div class="more-wrap"><p>Showing all ' + list.length + '</p></div>' : '')) +
       '</section></div></div>';
@@ -513,28 +520,33 @@
   // ---------- product page ----------
   function checklist(item) {
     var rows = [
-      ['r-uses', '✓', 'Made with', 'Materials the maker or store names', item.uses],
-      ['r-free', '⊘', 'Stated free of', 'What the maker says is absent', item.free],
-      ['r-unk', '?', 'Not stated', 'Parts no page describes', item.unconfirmed],
-      ['r-out', '✕', 'Flagged parts', 'Named so you can decide', item.outside]
+      ['r-uses', '✓', 'Made with', item.uses],
+      ['r-out', '✕', 'Flagged parts', item.outside],
+      ['r-free', '⊘', 'Stated free of', item.free],
+      ['r-unk', '?', 'Not stated', item.unconfirmed]
     ];
-    return '<div class="check">' + rows.map(function (r) {
-      return '<div class="row ' + r[0] + '"><div class="row-h"><span class="ic" aria-hidden="true">' + r[1] + '</span><span>' + r[2] + '<small>' + r[3] + '</small></span></div>' +
-        '<div class="chips-row">' + (r[4].length ? r[4].map(chip).join('') : '<span class="none">' + (r[0] === 'r-free' ? 'Nothing stated absent' : r[0] === 'r-unk' ? 'Every covered detail is stated' : 'None') + '</span>') + '</div></div>';
+    return '<div class="check">' + rows.filter(function (r) { return r[3].length; }).map(function (r) {
+      return '<div class="row ' + r[0] + '"><div class="row-h"><span class="ic" aria-hidden="true">' + r[1] + '</span><span>' + r[2] + '</span></div>' +
+        '<div class="chips-row">' + r[3].map(chip).join('') + '</div></div>';
     }).join('') + '</div>';
   }
   // How this product reads against each material filter, as information only: the filters themselves
   // are set on the listing pages. Criteria that don't apply to the product are left out.
   function filterTable(item) {
-    var rows = C.criteria.map(function (c) {
+    var row = function (c) {
       var f = item.facts[c.id], has = item.contains.indexOf(c.id) >= 0, res;
       if (c.kind === 'contains') { if (!has) return ''; res = '<span class="no">Has it</span>'; }
       else if (f === undefined) return '';
       else if (c.kind === 'require') res = f === 'yes' ? '<span class="ok">Stated</span>' : f === 'no' ? '<span class="no">Stated not</span>' : '<span class="unk">Not stated</span>';
       else res = f === 'yes' ? '<span class="ok">Meets it</span>' : f === 'no' ? '<span class="no">Doesn’t meet it</span>' : '<span class="unk">Not stated</span>';
-      return '<tr><th scope="row">' + esc(S.filterLabel(c)) + (TERMS[c.term] ? ' <a class="q term-link" href="' + U('/glossary/' + c.term) + '" data-term="' + c.term + '" aria-label="What this means">?</a>' : '') + '<small>' + esc(c.help) + '</small></th><td class="res">' + res + '</td></tr>';
+      return '<tr' + (CRIT[c.id] ? '' : ' class="off"') + '><th scope="row">' + esc(S.filterLabel(c)) + (TERMS[c.term] ? ' <a class="q term-link" href="' + U('/glossary/' + c.term) + '" data-term="' + c.term + '" aria-label="What this means">?</a>' : '') + (CRIT[c.id] ? '' : ' <span class="off-t">Off</span>') + '<small>' + esc(c.help) + '</small></th><td class="res">' + res + '</td></tr>';
+    };
+    var groups = C.critGroups.length ? C.critGroups : [{ id: '', title: '' }];
+    var body = groups.map(function (g) {
+      var rows = C.criteria.filter(function (c) { return !C.critGroups.length || c.group === g.id; }).map(row).join('');
+      return rows ? '<tbody>' + (g.title ? '<tr class="grp"><th scope="rowgroup" colspan="2">' + esc(g.title) + '</th></tr>' : '') + rows + '</tbody>' : '';
     }).join('');
-    return '<table class="ftable"><caption class="sr">How this product reads against each material filter</caption><thead><tr><th scope="col">Filter</th><th scope="col">This product</th></tr></thead><tbody>' + rows + '</tbody></table>';
+    return '<table class="ftable"><caption class="sr">How this product reads against each material filter</caption><thead><tr><th scope="col">Filter</th><th scope="col">This product</th></tr></thead>' + body + '</table>';
   }
   // Several stores: cheapest first (with shipping where known), like a price comparison. One store's sizes or
   // options keep the order the research recorded them in.
@@ -570,8 +582,8 @@
       '<p class="brand"><a href="' + U('/b/' + item.brandId) + '">' + esc(item.brand) + '</a></p><h1>' + esc(item.line) + '</h1>' +
       '<p class="price">' + esc(S.priceLabel(item)) + (item.products.length > 1 ? '<small>' + (storeCount(item) > 1 ? storeCount(item) + ' stores' : item.products.length + ' options') + '</small>' : '') + '</p>' +
       (storeCount(item) > 1 ? '<h2 class="offers-h">Prices at ' + storeCount(item) + ' stores, lowest first</h2>' : '<h2 class="sr">Where to buy</h2>') + '<ul class="offers">' + offersOf(item).map(offerHtml).join('') + '</ul>' +
-      '<div class="status">' + (r.ok ? '<span class="badge free" style="background:var(--accent-soft);color:var(--accent-strong)">Meets your ' + plural(critOn(CRIT, STRICT), 'material filter') + '</span>' : '<span class="badge miss">Doesn’t match: ' + esc(missText(item, r)) + '</span>') +
-      (r.unst.length ? '<span>' + plural(r.unst.length, 'covered detail') + ' not stated</span>' : '') + '</div>' +
+      '<div class="status">' + (r.ok ? '<p class="fit is-ok"><span class="mk" aria-hidden="true">✓</span>Meets your ' + plural(critOn(CRIT, STRICT), 'material filter') + '</p>' : fitLine(item, r)) +
+      (r.unst.length ? fitLine(item, { ok: true, miss: [], unst: r.unst }) : '') + '</div>' +
       '<div class="made"><p class="lab">Made with</p><div class="chips-row">' + item.uses.map(chip).join('') + '</div>' +
       (item.outside.length ? '<p class="lab" style="margin-top:10px">Flagged parts</p><div class="chips-row out">' + item.outside.map(chip).join('') + '</div>' : '') +
       '<a class="link-b" href="#materials" data-jump="materials">Full materials ↓</a></div>' +
@@ -584,8 +596,8 @@
       '<div><dt>Browse</dt><dd>' + cat.aisles.map(function (id) { return '<a href="' + U('/a/' + id) + '">' + esc(groupOf(id).title) + '</a>'; }).join(', ') + '</dd></div></dl>' +
       '</div></article>' +
       '<div class="pdp-below">' +
-      '<details class="acc" open id="materials"><summary>Materials' + icon('chev') + '</summary><div class="acc-body"><p class="lede">What the maker or store names, what they say is absent, and what no page states. Dotted chips open a definition.</p>' + checklist(item) +
-      '<h3 class="sub">By filter</h3><p class="lede">' + (r.ok ? 'This product meets every material filter you have on' : 'This product is set aside in listings by ' + plural(r.miss.length, 'filter') + ' you have on') + (r.unst.length ? ', with ' + plural(r.unst.length, 'covered detail') + ' not stated' : '') + '. Filters are changed on any <a href="' + U('/shop') + '">listing page</a>.</p>' + filterTable(item) + '</div></details>' +
+      '<details class="acc" open id="materials"><summary>Materials' + icon('chev') + '</summary><div class="acc-body">' + checklist(item) +
+      '<h3 class="sub">By filter</h3>' + filterTable(item) + '</div></details>' +
       (cat.intro || cat.outro ? '<details class="acc"><summary>About ' + esc(cat.title.toLowerCase()) + icon('chev') + '</summary><div class="acc-body">' + (cat.intro ? '<p>' + esc(cat.intro) + '</p>' : '') + (cat.outro ? '<p>' + esc(cat.outro) + '</p>' : '') + '</div></details>' : '') +
       '<details class="acc"><summary>Prices and shipping' + icon('chev') + '</summary><div class="acc-body"><p>Prices and shipping statements were read from the store pages and are checked weekly; the date under each store link is the last check. Prices in pounds, euros and other currencies are converted roughly to US dollars for sorting.</p></div></details>' +
       '</div>' +
@@ -666,7 +678,7 @@
     price: ['Price', function (i) { return esc(S.priceLabel(i)); }],
     stores: ['Stores', function (i) { return i.products.map(function (p) { return '<a href="' + esc(p.url) + '" target="_blank" rel="noopener">' + esc(p.store) + '</a>' + (p.shipping ? ' <span class="muted">(' + esc(p.shipping) + ')</span>' : ''); }).join('<br>'); }],
     ship: ['Shipping', function (i) { return esc(i.shipLine); }],
-    filters: ['Your material filters', function (i) { var r = status(i); return r.ok ? '<span style="color:var(--moss);font-weight:600">Meets them</span>' + (r.unst.length ? '<br><span class="muted">' + plural(r.unst.length, 'detail') + ' not stated</span>' : '') : '<span style="color:var(--clay);font-weight:600">Doesn’t match:</span> ' + esc(missText(i, r)); }],
+    filters: ['Your material filters', function (i) { return fitLine(i, status(i)); }],
     made: ['Made with', function (i) { return '<div class="chips-row">' + i.uses.map(chip).join('') + '</div>'; }],
     free: ['Stated free of', function (i) { return i.free.length ? '<div class="chips-row r-free">' + i.free.map(chip).join('') + '</div>' : '<span class="muted">Nothing stated</span>'; }],
     unst: ['Not stated', function (i) { return i.unconfirmed.length ? '<div class="chips-row r-unk">' + i.unconfirmed.map(chip).join('') + '</div>' : '<span class="muted">All covered details stated</span>'; }],
@@ -723,7 +735,7 @@
     var r = status(item);
     qv.innerHTML = '<button type="button" class="ib x" data-qv-close aria-label="Close quick view">' + icon('x') + '</button><div class="qv-in">' + photo(item, true) +
       '<div><p class="eyebrow">' + esc(item.brand) + '</p><h2 id="qv-h">' + esc(item.line) + '</h2><p class="price">' + esc(S.priceLabel(item)) + '</p>' +
-      '<p class="muted" style="margin:6px 0 0;font-size:14px">' + (r.ok ? 'Meets your material filters' + (r.unst.length ? ' · ' + plural(r.unst.length, 'detail') + ' not stated' : '') : 'Doesn’t match: ' + esc(missText(item, r))) + '</p>' +
+      fitLine(item, r) +
       '<ul class="offers">' + offersOf(item).slice(0, 2).map(offerHtml).join('') + '</ul>' +
       '<div class="made"><p class="lab">Made with</p><div class="chips-row">' + item.uses.map(chip).join('') + '</div>' + (item.outside.length ? '<p class="lab" style="margin-top:10px">Flagged parts</p><div class="chips-row out">' + item.outside.map(chip).join('') + '</div>' : '') + '</div>' +
       '<div class="qv-actions"><a class="btn-2" href="' + U('/p/' + item.id) + '">Full details</a>' + saveBtn(item, 'btn-3') + compareBtn(item) + '</div></div></div>';

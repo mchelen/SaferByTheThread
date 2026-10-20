@@ -75,7 +75,7 @@ test('the shop lists the products that meet the default material filters and set
   await page.click('.hidden-note button[data-toggle-all]');
   assert.match(await page.textContent('.toolbar .count'), /122 products/);
   assert.match(page.url(), /all=1/);
-  assert.ok((await page.locator('.card .badge.miss').count()) >= 1, 'set-aside products carry a badge once shown');
+  assert.ok((await page.locator('.card .fit.is-miss').count()) >= 1, 'set-aside products say which filter they miss once shown');
   assert.deepEqual(page.errors, []);
   await page.close();
 });
