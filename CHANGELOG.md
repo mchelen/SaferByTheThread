@@ -25,6 +25,7 @@ All notable changes to the site are listed here. The format follows [Keep a Chan
 - Shop patterns borrowed from Amazon and Shopify stores (`docs/ecommerce-patterns.md`): share a Saved or Compare list by link, with "Save all to my list" on the shared page; a Share button on product pages; "Compare with similar items" on product pages; a buy bar at the bottom of phone product pages once the buy box scrolls away; a confirmation with a link when saving; recently viewed products on the home page; the Filter & sort bar stays at the top on phones.
 
 ### Fixed
+- The material line on cards and product pages names the filter in full ("Not stated: any plastic or synthetics in the main materials", "Has synthetic dyes, paints or coatings") instead of its short label, which read as if a cotton mat's materials were not stated.
 - A blank strip at the top of every page, and department tiles whose labels sat at different heights.
 
 ### Changed

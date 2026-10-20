@@ -124,6 +124,15 @@ test('search suggests as you type and the results page lists matches', async () 
   await page.close();
 });
 
+test('the material line names the filter, not just the part of the product', async () => {
+  const page = await open('/p/marnieandmister-organic-cotton-quilted-mat');
+  await page.waitForSelector('.buybox .fit');
+  const lines = (await page.locator('.buybox .fit').allTextContents()).join(' | ');
+  assert.match(lines, /Not stated: any plastic or synthetics in the main materials/);
+  assert.doesNotMatch(lines, /Not stated: Main materials/);
+  await page.close();
+});
+
 test('product page shows the buy box, checklist, filter table and a glossary popover', async () => {
   const page = await open('/p/obasan-organic-crib-mattress');
   await page.waitForSelector('.pdp');

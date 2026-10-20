@@ -215,16 +215,21 @@
       }).join('') + '</div>' : '') +
       '<p class="img-src">' + (item.photos.length > 1 ? item.photos.length + ' store photos' : 'Store photo') + src + '.</p></div>';
   }
-  function missText(item, r) {
-    return r.miss.map(function (c) { return c.short + (c.kind !== 'contains' && item.facts[c.id] === 'unknown' ? ' (not stated)' : ''); }).join(', ');
+  // One line per filter on how a listing reads against the visitor's material filters, in the filter's own words:
+  // what it has that a filter hides, else what no page states, else that every detail is stated.
+  // Cards show the first and a count; product pages show them all.
+  function factText(item, c) {
+    var l = c.label.charAt(0).toLowerCase() + c.label.slice(1), f = item.facts[c.id];
+    if (c.kind === 'contains') return 'Has ' + l;
+    if (f === 'unknown') return 'Not stated: ' + (c.kind === 'avoid' ? 'any ' : '') + l;
+    return (c.kind === 'require' ? 'Not ' : 'Has ') + l;
   }
-  // One line on how a listing reads against the visitor's material filters: what it misses, else what no page
-  // states, else that every detail is stated. Cards name one filter and a count; product pages name them all.
-  function names(list, max) { var n = list.map(function (c) { return c.short; }); return max && n.length > max ? n.slice(0, max).join(', ') + ' +' + (n.length - max) : n.join(', '); }
   function fitLine(item, r, max) {
-    if (!r.ok) return '<p class="fit is-miss"><span class="mk" aria-hidden="true">✕</span>Doesn’t match: ' + esc(max ? names(r.miss, max) : missText(item, r)) + '</p>';
-    if (r.unst.length) return '<p class="fit is-unk"><span class="mk" aria-hidden="true">?</span>Not stated: ' + esc(names(r.unst, max)) + '</p>';
-    return '<p class="fit is-ok"><span class="mk" aria-hidden="true">✓</span>Every detail stated</p>';
+    var list = r.ok ? r.unst : r.miss;
+    if (!list.length) return '<p class="fit is-ok"><span class="mk" aria-hidden="true">✓</span>Every detail stated</p>';
+    var t = list.map(function (c) { return factText(item, c); });
+    if (max && t.length > max) t = t.slice(0, max - 1).concat([t[max - 1] + ' (+' + (t.length - max) + ' more)']);
+    return t.map(function (x) { return '<p class="fit ' + (r.ok ? 'is-unk' : 'is-miss') + '"><span class="mk" aria-hidden="true">' + (r.ok ? '?' : '✕') + '</span>' + esc(x) + '</p>'; }).join('');
   }
   function card(item, i, crit, strict) {
     var r = status(item, crit, strict);
