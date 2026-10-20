@@ -128,6 +128,9 @@
           var age = e.age ? AGE_BANDS.filter(function (b) { return b.test(e.age.min_months); })[0].id : 'none';
           var ships = {};
           prods.forEach(function (p) { ships[p.ships_from === 'US' ? 'us' : p.ships_from ? 'abroad' : 'unknown'] = 1; });
+          // Shipping as the store or the recorded price text states it; "free" when any store ships free with no minimum.
+          var shipTexts = prods.map(function (p) { return p.shipping || (/free (?:us )?shipping/i.test(p.price) ? 'Free shipping' : ''); });
+          var freeShip = shipTexts.some(function (t) { return /^free shipping$/i.test(t); });
           var item = {
             id: e.id, n: n++, brand: e.brand, brandId: slug(e.brand), line: e.line, cat: c.id, group: g.id,
             uses: e.uses, free: e.free, unconfirmed: e.unconfirmed, outside: e.outside || [],
@@ -137,7 +140,7 @@
             min: prices.length ? Math.min.apply(null, prices) : null,
             max: prices.length ? Math.max.apply(null, prices) : null,
             approx: prods.some(function (p) { return p.approx; }),
-            materials: mats, ships: Object.keys(ships),
+            materials: mats, ships: Object.keys(ships), shipping: shipTexts, freeShip: freeShip,
             unstatedCount: e.unconfirmed.length,
             q: fold([e.brand, e.line, c.title, g.title].concat(e.uses, e.products.map(function (p) { return p.name + ' ' + p.store; })).join(' '))
           };
@@ -148,6 +151,22 @@
       groups.push({ id: g.id, title: g.title, blurb: g.blurb, source: g.source || '', cats: gc });
     });
     return { items: items, cats: cats, groups: groups, brands: brands, criteria: data.criteria, standards: data.standards || [], ask: data.ask, updated: data.updated };
+  }
+
+  // How a material criterion reads as a filter option: what you get when it is ticked.
+  function filterLabel(c) {
+    var l = c.label.charAt(0).toLowerCase() + c.label.slice(1);
+    if (c.kind === 'require') return c.label.charAt(0).toUpperCase() + c.label.slice(1);
+    if (c.id === 'wood') return 'Solid wood, no ' + l;
+    return 'No ' + l;
+  }
+
+  // Short "from $X" style price for cards and buy boxes.
+  function priceFrom(item) {
+    if (item.min == null) return 'See store for price';
+    var a = item.approx ? 'About ' : '';
+    if (item.min === item.max) return a + money(item.min);
+    return (item.approx ? 'From about ' : 'From ') + money(item.min);
   }
 
   function priceLabel(item) {
@@ -177,7 +196,7 @@
     return out;
   }
 
-  var api = { build: build, evaluate: evaluate, parsePrice: parsePrice, priceLabel: priceLabel, money: money, termRuns: termRuns, fold: fold, slug: slug,
+  var api = { build: build, evaluate: evaluate, parsePrice: parsePrice, priceLabel: priceLabel, priceFrom: priceFrom, filterLabel: filterLabel, money: money, termRuns: termRuns, fold: fold, slug: slug,
               PRICE_BANDS: PRICE_BANDS, AGE_BANDS: AGE_BANDS, MATERIALS: MATERIALS };
   if (typeof module === 'object' && module.exports) module.exports = api; else root.SBTT = api;
 })(this);
