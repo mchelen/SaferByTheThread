@@ -50,7 +50,8 @@ function checkDraft(d, ctx) {
     const q = ev[k] || {};
     e[k] = e[k].filter((line) => { const ok = found(q[line], text); if (!ok) dropped.push(k + ': ' + line); return ok; });
   }
-  if (!e.uses.length) problems.push('no "made with" line is backed by a quote from the page');
+  // Conventional listings may name only synthetics (under outside) or only what is absent: one backed line is enough.
+  if (!e.uses.length && !e.outside.length && !e.free.length) problems.push('no "made with", "flagged" or "stated free of" line is backed by a quote from the page');
   e.facts = e.facts || {};
   for (const [c, v] of Object.entries(e.facts)) {
     if (!ctx.crit.has(c)) { problems.push('unknown criterion ' + c); continue; }

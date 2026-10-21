@@ -1,6 +1,6 @@
 {
  "schema": 4,
- "updated": "2026-10-20",
+ "updated": "2026-10-21",
  "ask": [
   "Thread on any sewn item (cotton or polyester).",
   "Wheels and axles on push toys and cars.",
@@ -11042,6 +11042,1182 @@
    ],
    "img": "weesprout-silicone-teether-set",
    "img_src": "https://cdn.shopify.com/s/files/1/0957/4574/files/HTS-DGBG.jpg?v=1776977866"
+  },
+  {
+   "id": "bright-starts-rollin-rhythm-drum",
+   "type": "instruments",
+   "brand": "Bright Starts",
+   "line": "Rollin' Rhythm Activity Drum",
+   "uses": [
+    "Metal (4% of the toy)"
+   ],
+   "outside": [
+    "Plastic (84.7% of the toy)",
+    "Electronic parts (11% of the toy)"
+   ],
+   "unconfirmed": [
+    "Fibre of the fabric (0.3% of the toy)",
+    "Which metal",
+    "Material of the spinner and rattle beads"
+   ],
+   "facts": {
+    "main": "no",
+    "parts": "unknown"
+   },
+   "unstated": {
+    "parts": [
+     "Material of the spinner and rattle beads"
+    ]
+   },
+   "age": {
+    "min_months": 3,
+    "max_months": 36,
+    "text": "3 to 36 months"
+   },
+   "quote": "Materials: 84.7% Plastic, 4% Metal, 11% Electronic Parts, 0.3% Fabric",
+   "note": "Lights and 90+ songs and sounds; takes 2 AAA batteries. Kids2 lists the maker’s price and links to retailers.",
+   "products": [
+    {
+     "name": "Bright Starts Rollin' Rhythm Activity Drum (17934-000)",
+     "url": "https://www.kids2.com/products/17934-000-bright-starts-rollin-rhythm-activity-drum",
+     "store": "Kids2",
+     "price": "$24.99 (maker's list price)",
+     "ships_from": null
+    }
+   ],
+   "free": [],
+   "contains": [],
+   "standards": [],
+   "read": "2026-10-21",
+   "photos": [
+    {
+     "key": "bright-starts-rollin-rhythm-drum",
+     "src": "https://cdn.shopify.com/s/files/1/0468/2521/0022/files/3a66a71b4cf3196a76bee7f2cb01a88e4a0c3079.jpg?v=1790700269"
+    },
+    {
+     "key": "bright-starts-rollin-rhythm-drum_2",
+     "src": "https://cdn.shopify.com/s/files/1/0468/2521/0022/files/3f219f5d4a141908713f089f2f2db1a3b83eee41.jpg?v=1790700265"
+    },
+    {
+     "key": "bright-starts-rollin-rhythm-drum_3",
+     "src": "https://cdn.shopify.com/s/files/1/0468/2521/0022/files/42e83a385cea34a3c0acfcde279ea7d91eddf7cc.jpg?v=1790700265"
+    },
+    {
+     "key": "bright-starts-rollin-rhythm-drum_4",
+     "src": "https://cdn.shopify.com/s/files/1/0468/2521/0022/files/e89f7878bb480dfa2b398eb0ca357bcf0650b78d.jpg?v=1790700265"
+    },
+    {
+     "key": "bright-starts-rollin-rhythm-drum_5",
+     "src": "https://cdn.shopify.com/s/files/1/0468/2521/0022/files/8d9e20e60cd390b05906a8131bbaf79582fcec9a.jpg?v=1790700271"
+    },
+    {
+     "key": "bright-starts-rollin-rhythm-drum_6",
+     "src": "https://www.kids2.com/cdn/shop/files/preview_images/hqdefault_2a03cd52-b8bb-4328-b4a7-ea7b8b24b145.jpg?v=1790700263"
+    },
+    {
+     "key": "bright-starts-rollin-rhythm-drum_7",
+     "src": "https://www.kids2.com/cdn/shop/files/preview_images/hqdefault_52bcfb7d-d844-4c25-860d-c2997606d62a.jpg?v=1790700263"
+    },
+    {
+     "key": "bright-starts-rollin-rhythm-drum_8",
+     "src": "https://www.kids2.com/cdn/shop/files/preview_images/hqdefault_1a1f47d0-7aa0-4aee-bf7d-771c1ba6c8e2.jpg?v=1752847545"
+    }
+   ],
+   "img": "bright-starts-rollin-rhythm-drum",
+   "img_src": "https://cdn.shopify.com/s/files/1/0468/2521/0022/files/3a66a71b4cf3196a76bee7f2cb01a88e4a0c3079.jpg?v=1790700269"
+  },
+  {
+   "id": "camden-rose-sheepskin-rug",
+   "type": "rugs",
+   "brand": "Camden Rose",
+   "line": "Vegetable-Tanned Sheepskin Rug, Short Hair",
+   "uses": [
+    "Vegetable-tanned US sheepskin"
+   ],
+   "free": [
+    "Heavy metals from chrome tanning"
+   ],
+   "facts": {
+    "main": "yes",
+    "tanning": "yes"
+   },
+   "contains": [
+    "leather"
+   ],
+   "quote": "Our sheepskins are sourced from US sheep and are tanned in the US using tree bark extracts from Argentina.",
+   "note": "Tanned in the US with tree bark extracts. 44.5 x 35.5 in. Made in USA. Dry cleaning suggested.",
+   "products": [
+    {
+     "name": "Vegetable-Tanned Sheepskin Rug - Short Hair",
+     "url": "https://camdenrose.com/products/vegetable-tanned-sheepskin-rug-short-hair",
+     "store": "Camden Rose",
+     "price": "$175.00",
+     "ships_from": "US",
+     "shipping": "Free standard domestic shipping on orders over $150 to the contiguous US"
+    }
+   ],
+   "unconfirmed": [],
+   "outside": [],
+   "standards": [],
+   "read": "2026-10-21",
+   "photos": [
+    {
+     "key": "camden-rose-sheepskin-rug",
+     "src": "https://cdn.shopify.com/s/files/1/0658/7164/2856/files/6571-shorthair-3343.jpg?v=1769182865"
+    },
+    {
+     "key": "camden-rose-sheepskin-rug_2",
+     "src": "https://cdn.shopify.com/s/files/1/0658/7164/2856/files/6571-shorthair-3344.jpg?v=1769182865"
+    },
+    {
+     "key": "camden-rose-sheepskin-rug_3",
+     "src": "https://camdenrose.com/cdn/shop/files/preview_images/c440b0cabb8f4a1fa4aa4a350af1e8e4.thumbnail.0000000000.jpg?v=1733935226"
+    }
+   ],
+   "img": "camden-rose-sheepskin-rug",
+   "img_src": "https://cdn.shopify.com/s/files/1/0658/7164/2856/files/6571-shorthair-3343.jpg?v=1769182865"
+  },
+  {
+   "id": "colored-organics-hooded-towel",
+   "type": "towels",
+   "brand": "Colored Organics",
+   "line": "Organic Hooded Towel, 31.5 x 31.5 in",
+   "uses": [
+    "100% organic cotton toweling",
+    "Yarn-dyed organic cotton toweling"
+   ],
+   "unconfirmed": [
+    "Dyes used on the yarn",
+    "Thread"
+   ],
+   "facts": {
+    "main": "yes",
+    "parts": "unknown",
+    "color": "unknown",
+    "organic": "yes"
+   },
+   "unstated": {
+    "parts": [
+     "Thread"
+    ],
+    "color": [
+     "Dyes used on the yarn"
+    ]
+   },
+   "quote": "Our premium Hooded Towels are crafted with yarn-dyed organic cotton toweling",
+   "products": [
+    {
+     "name": "Hooded Towel",
+     "url": "https://coloredorganics.com/products/organic-cotton-floral-hooded-towel-copy",
+     "store": "Colored Organics",
+     "price": "$38",
+     "ships_from": null,
+     "shipping": "Free shipping on US domestic orders over $50"
+    }
+   ],
+   "free": [],
+   "outside": [],
+   "contains": [],
+   "standards": [],
+   "read": "2026-10-21",
+   "photos": [
+    {
+     "key": "colored-organics-hooded-towel",
+     "src": "https://cdn.shopify.com/s/files/1/1643/4857/files/infant-unisex-hooded-towel.natural.flat_front.jpg?v=1787167657"
+    },
+    {
+     "key": "colored-organics-hooded-towel_2",
+     "src": "https://cdn.shopify.com/s/files/1/1643/4857/files/infant-unisex-hooded-towel.natural.flat_detail.2.jpg?v=1787167655"
+    },
+    {
+     "key": "colored-organics-hooded-towel_3",
+     "src": "https://cdn.shopify.com/s/files/1/1643/4857/files/infant-unisex-hooded-towel.natural.flat_detail.jpg?v=1787167655"
+    }
+   ],
+   "img": "colored-organics-hooded-towel",
+   "img_src": "https://cdn.shopify.com/s/files/1/1643/4857/files/infant-unisex-hooded-towel.natural.flat_front.jpg?v=1787167657"
+  },
+  {
+   "id": "delta-children-molded-waterproof-changing-pad",
+   "type": "changing-pads",
+   "brand": "Delta Children",
+   "line": "Molded Waterproof Changing Pad with Fresh Technology",
+   "free": [
+    "BPA",
+    "PVC",
+    "PFAS",
+    "Phthalates",
+    "Added chemical fire retardants"
+   ],
+   "outside": [
+    "PU foam"
+   ],
+   "unconfirmed": [
+    "Safety strap",
+    "Easy-release buckle",
+    "Anti-skid bottom"
+   ],
+   "facts": {
+    "main": "no",
+    "parts": "unknown",
+    "flame": "yes",
+    "finish": "yes"
+   },
+   "unstated": {
+    "parts": [
+     "Safety strap",
+     "Easy-release buckle"
+    ]
+   },
+   "quote": "Made from non-toxic PU foam that is free from BPA, PVC, PFAS, and phthalates",
+   "products": [
+    {
+     "name": "Delta Children Molded Waterproof Changing Pad with Fresh Technology, Grey",
+     "url": "https://www.deltachildren.com/products/molded-waterproof-changing-pad-with-fresh-technology",
+     "store": "Delta Children",
+     "price": "$69.99",
+     "ships_from": null,
+     "shipping": "Free shipping sitewide (contiguous 48 states)"
+    }
+   ],
+   "uses": [],
+   "contains": [],
+   "standards": [],
+   "read": "2026-10-21",
+   "photos": [
+    {
+     "key": "delta-children-molded-waterproof-changing-pad",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/MC44000-MoldedContourPU_Delta_Gray_Callout_7x5_03.jpg?v=1792078734"
+    },
+    {
+     "key": "delta-children-molded-waterproof-changing-pad_2",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/MC44000-MoldedContourPU_Delta_Gray_Callout_7x5_04.jpg?v=1792078734"
+    },
+    {
+     "key": "delta-children-molded-waterproof-changing-pad_3",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/MC44000-MoldedContourPU_Delta_Gray_Callout_7x5_05.jpg?v=1792078734"
+    },
+    {
+     "key": "delta-children-molded-waterproof-changing-pad_4",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/MC44000-MoldedContourPU_Delta_Gray_Callout_7x5_06.jpg?v=1792078734"
+    },
+    {
+     "key": "delta-children-molded-waterproof-changing-pad_5",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/MC44000-MoldedContourPU_Delta_Gray_Callout_7x5_07.jpg?v=1792078734"
+    },
+    {
+     "key": "delta-children-molded-waterproof-changing-pad_6",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/MC44000-MoldedContourPU_Delta_Gray_Callout_7x5_08.jpg?v=1792078734"
+    },
+    {
+     "key": "delta-children-molded-waterproof-changing-pad_7",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/MC44000-MoldedContourPU_Delta_Gray_Callout_7x5_09.jpg?v=1792078734"
+    },
+    {
+     "key": "delta-children-molded-waterproof-changing-pad_8",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/MC44000-NO_Delta-Molded-Contour-PU_Grey-callout-101.jpg?v=1792078734"
+    },
+    {
+     "key": "delta-children-molded-waterproof-changing-pad_9",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/MC44000-NO_Delta-Molded-Contour-PU_Grey-callout-102.jpg?v=1792078734"
+    },
+    {
+     "key": "delta-children-molded-waterproof-changing-pad_10",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/MC44000-NO_Delta-Molded-Contour-PU_Grey-Lifestyle-103.jpg?v=1792078940"
+    }
+   ],
+   "img": "delta-children-molded-waterproof-changing-pad",
+   "img_src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/MC44000-MoldedContourPU_Delta_Gray_Callout_7x5_03.jpg?v=1792078734"
+  },
+  {
+   "id": "delta-children-nursing-pillow",
+   "type": "nursing-pillows",
+   "brand": "Motherhood by Delta Children",
+   "line": "Nursing Pillow with Adjustable Safety Strap",
+   "free": [
+    "Lead",
+    "Phthalates"
+   ],
+   "unconfirmed": [
+    "Material of the comfort foam",
+    "Cover fabric",
+    "Fibre of the waist strap",
+    "Fibre of the storage pocket",
+    "Material of the back support cushion"
+   ],
+   "facts": {
+    "main": "unknown",
+    "parts": "unknown",
+    "flame": "unknown"
+   },
+   "unstated": {
+    "main": [
+     "Material of the comfort foam",
+     "Cover fabric"
+    ],
+    "parts": [
+     "Fibre of the waist strap"
+    ]
+   },
+   "quote": "Thick comfort foam positions baby at an ideal height for easier latching",
+   "note": "The page names the filling only as \"thick comfort foam\" and gives no fabric content. Delta Children says all of its products are “free from added toxic fire retardants, lead, and phthalates”.",
+   "products": [
+    {
+     "name": "Motherhood by Delta Children Nursing Pillow with Adjustable Safety Strap, Grey",
+     "url": "https://www.deltachildren.com/products/nursing-pillow-with-adjustable-safety-strap",
+     "store": "Delta Children",
+     "price": "$59.99",
+     "ships_from": null,
+     "shipping": "Free shipping sitewide (contiguous 48 states)"
+    }
+   ],
+   "uses": [],
+   "outside": [],
+   "contains": [],
+   "standards": [],
+   "read": "2026-10-21",
+   "photos": [
+    {
+     "key": "delta-children-nursing-pillow",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/P20333-3333-No_Motherhood-Nursing-Pillow_Beige-Callouts_-01copy.jpg?v=1788988819"
+    },
+    {
+     "key": "delta-children-nursing-pillow_2",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/P20333-3333-NO_Motherhood-Nursing-Pillow_Beige_Callout_02.jpg?v=1788988519"
+    },
+    {
+     "key": "delta-children-nursing-pillow_3",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/P20333-3333-NO_Motherhood-Nursing-Pillow_Beige_Callout_03.jpg?v=1788988518"
+    },
+    {
+     "key": "delta-children-nursing-pillow_4",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/P20333-3333-NO_Motherhood-Nursing-Pillow_Beige_Callout_04.jpg?v=1788988518"
+    },
+    {
+     "key": "delta-children-nursing-pillow_5",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/P20333-3333-NO_Motherhood-Nursing-Pillow_Beige_Callout_05.jpg?v=1788988518"
+    },
+    {
+     "key": "delta-children-nursing-pillow_6",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/P20333-3333-NO_Motherhood-Nursing-Pillow_Beige_Callout_06.jpg?v=1788988518"
+    },
+    {
+     "key": "delta-children-nursing-pillow_7",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/P20333-3333-NO_Motherhood-Nursing-Pillow_Beige_Callout_07.jpg?v=1788988518"
+    },
+    {
+     "key": "delta-children-nursing-pillow_8",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/P20333-3333-NO_Motherhood-Nursing-Pillow_Beige_Callout_08.jpg?v=1788988518"
+    },
+    {
+     "key": "delta-children-nursing-pillow_9",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/P20333-3333-NO_Motherhood-Nursing-Pillow_Beige_Callout_09.jpg?v=1788988518"
+    },
+    {
+     "key": "delta-children-nursing-pillow_10",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/P20111-1111-No_Motherhood-Nursing-Pillow_Blue-Callout_03.jpg?v=1789577753"
+    }
+   ],
+   "img": "delta-children-nursing-pillow",
+   "img_src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/P20333-3333-No_Motherhood-Nursing-Pillow_Beige-Callouts_-01copy.jpg?v=1788988819"
+  },
+  {
+   "id": "delta-children-outer-space-rug",
+   "type": "rugs",
+   "brand": "Delta Children",
+   "line": "Outer Space Round Area Rug for Kids, 39 in",
+   "uses": [
+    "Latex backing"
+   ],
+   "unconfirmed": [
+    "Fibre of the rug face",
+    "Fibre of the reinforced border",
+    "Dyes in the print",
+    "Whether the latex is natural or synthetic"
+   ],
+   "facts": {
+    "main": "unknown",
+    "color": "unknown",
+    "rubber": "unknown",
+    "flame": "unknown"
+   },
+   "unstated": {
+    "main": [
+     "Fibre of the rug face"
+    ],
+    "color": [
+     "Dyes in the print"
+    ],
+    "rubber": [
+     "Whether the latex is natural or synthetic"
+    ]
+   },
+   "contains": [
+    "latex"
+   ],
+   "quote": "The rug’s non-slip latex backing makes it safe to use on types of flooring",
+   "note": "The page describes the face only as \"soft and durable non-shedding materials\".",
+   "products": [
+    {
+     "name": "Outer Space Round Area Rug for Kids, 39-Inch",
+     "url": "https://www.deltachildren.com/products/outer-space-round-area-rug-for-kids-39-inch",
+     "store": "Delta Children",
+     "price": "$26.99",
+     "ships_from": null,
+     "shipping": "Free shipping sitewide (contiguous 48 states)"
+    }
+   ],
+   "free": [],
+   "outside": [],
+   "standards": [],
+   "read": "2026-10-21",
+   "photos": [
+    {
+     "key": "delta-children-outer-space-rug",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/products/gzve22pm1wv1eomqmzkb.jpg?v=1650416608"
+    },
+    {
+     "key": "delta-children-outer-space-rug_2",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/products/ojztldgno66pm59w4uhf.jpg?v=1650416609"
+    },
+    {
+     "key": "delta-children-outer-space-rug_3",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/products/apcgrfrkzmv6i4dq1imz.jpg?v=1650416609"
+    },
+    {
+     "key": "delta-children-outer-space-rug_4",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/products/ctx1qcfsfgv3hmxakb9r.jpg?v=1650416609"
+    },
+    {
+     "key": "delta-children-outer-space-rug_5",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/products/N1802-3222_rug_space_lifestyle_102.jpg?v=1663104782"
+    }
+   ],
+   "img": "delta-children-outer-space-rug",
+   "img_src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/products/gzve22pm1wv1eomqmzkb.jpg?v=1650416608"
+  },
+  {
+   "id": "holy-lamb-organics-changing-table-pad",
+   "type": "changing-pads",
+   "brand": "Holy Lamb Organics",
+   "line": "Natural Child's Changing Table Pad",
+   "uses": [
+    "Eco wool filling",
+    "Organic cotton canvas casing"
+   ],
+   "unconfirmed": [
+    "Quilting thread",
+    "Whether the wool is treated (superwash or not)"
+   ],
+   "facts": {
+    "main": "yes",
+    "parts": "unknown",
+    "wool": "unknown"
+   },
+   "unstated": {
+    "parts": [
+     "Quilting thread"
+    ],
+    "wool": [
+     "Whether the wool is treated (superwash or not)"
+    ]
+   },
+   "quote": "Quilted for plushness and comfort. Made with premium eco wool encased in organic cotton canvas.",
+   "note": "17.5 x 34 in, about 2 in thick, 1.8 lbs of wool. The maker says “Spot clean only” and suggests a wool puddle pad and a cotton blanket on top.",
+   "products": [
+    {
+     "name": "Natural Child's Changing Table Pad",
+     "url": "https://holylamborganics.com/products/changing-table-pad",
+     "store": "Holy Lamb Organics",
+     "price": "$319",
+     "ships_from": "US",
+     "shipping": "Free shipping on most orders $150+"
+    }
+   ],
+   "free": [],
+   "outside": [],
+   "contains": [],
+   "standards": [],
+   "read": "2026-10-21",
+   "photos": [
+    {
+     "key": "holy-lamb-organics-changing-table-pad",
+     "src": "https://cdn.shopify.com/s/files/1/0338/2373/products/new6.jpg?v=1567888036"
+    },
+    {
+     "key": "holy-lamb-organics-changing-table-pad_2",
+     "src": "https://cdn.shopify.com/s/files/1/0338/2373/products/image2_1.jpeg?v=1567888036"
+    },
+    {
+     "key": "holy-lamb-organics-changing-table-pad_3",
+     "src": "https://cdn.shopify.com/s/files/1/0338/2373/files/2022poppi0H4A2821.jpg?v=1694712880"
+    },
+    {
+     "key": "holy-lamb-organics-changing-table-pad_4",
+     "src": "https://cdn.shopify.com/s/files/1/0338/2373/products/DSCF4139.JPG?v=1694712880"
+    },
+    {
+     "key": "holy-lamb-organics-changing-table-pad_5",
+     "src": "https://cdn.shopify.com/s/files/1/0338/2373/products/DSCF4170.JPG?v=1694712880"
+    },
+    {
+     "key": "holy-lamb-organics-changing-table-pad_6",
+     "src": "https://cdn.shopify.com/s/files/1/0338/2373/products/DSCF4181.JPG?v=1694712880"
+    },
+    {
+     "key": "holy-lamb-organics-changing-table-pad_7",
+     "src": "https://cdn.shopify.com/s/files/1/0338/2373/products/cht_twill_close.jpg?v=1694712880"
+    }
+   ],
+   "img": "holy-lamb-organics-changing-table-pad",
+   "img_src": "https://cdn.shopify.com/s/files/1/0338/2373/products/new6.jpg?v=1567888036"
+  },
+  {
+   "id": "home-of-wool-wool-nursing-pillow",
+   "type": "nursing-pillows",
+   "brand": "Home of Wool",
+   "line": "Wool Nursing Pillow",
+   "uses": [
+    "Wool filling (“pure wool”)",
+    "Cover fabric: 100% organic cotton, 59% linen / 41% cotton, or 100% virgin wool"
+   ],
+   "free": [
+    "Synthetics",
+    "VOCs"
+   ],
+   "unconfirmed": [
+    "Zipper",
+    "Seam thread",
+    "Whether the wool is treated (superwash or not)"
+   ],
+   "facts": {
+    "main": "yes",
+    "parts": "unknown",
+    "wool": "unknown"
+   },
+   "unstated": {
+    "parts": [
+     "Zipper",
+     "Seam thread"
+    ],
+    "wool": [
+     "Whether the wool is treated (superwash or not)"
+    ]
+   },
+   "quote": "Each Home of Wool breastfeeding support pillow is filled with pure wool and encased in organic fabrics.",
+   "note": "The zipper lets you add or remove wool filling. The wool insert is spot-care only; the maker suggests a removable cover or pillowcase.",
+   "products": [
+    {
+     "name": "Wool Nursing Pillow",
+     "url": "https://homeofwool.com/shop/nursing-pillow/",
+     "store": "Home of Wool",
+     "price": "from $248.00",
+     "ships_from": null,
+     "shipping": "Free worldwide shipping on all orders"
+    }
+   ],
+   "outside": [],
+   "contains": [],
+   "standards": [],
+   "read": "2026-10-21",
+   "photos": [
+    {
+     "key": "home-of-wool-wool-nursing-pillow",
+     "src": "https://homeofwool.com/wp-content/uploads/2025/09/home-of-wool-wool-nursing-pillow-wool-Copy.jpg"
+    }
+   ],
+   "img": "home-of-wool-wool-nursing-pillow",
+   "img_src": "https://homeofwool.com/wp-content/uploads/2025/09/home-of-wool-wool-nursing-pillow-wool-Copy.jpg"
+  },
+  {
+   "id": "mother-ease-rikki-diaper-cover",
+   "type": "diapers",
+   "brand": "Mother-ease",
+   "line": "Rikki Snap Diaper Cover, one size",
+   "outside": [
+    "Polyester/polyurethane laminate fabric"
+   ],
+   "unconfirmed": [
+    "Snaps",
+    "Fabric of the white edges",
+    "Elastic",
+    "Thread"
+   ],
+   "facts": {
+    "main": "no",
+    "parts": "unknown"
+   },
+   "unstated": {
+    "parts": [
+     "Snaps",
+     "Elastic"
+    ]
+   },
+   "quote": "Fabric content: 100% polyester/polyurethane laminate.",
+   "note": "A waterproof cover worn over fitted diapers, prefolds or flats. The store says the white edges are \"a different fabric\" without naming it.",
+   "products": [
+    {
+     "name": "Mother-ease Rikki Snap Diaper Cover",
+     "url": "https://www.greenmountaindiapers.com/products/mother-ease-rikki-snap-diaper-cover",
+     "store": "Green Mountain Diapers",
+     "price": "$18.50",
+     "ships_from": null,
+     "shipping": "Shipping calculated at checkout"
+    }
+   ],
+   "uses": [],
+   "free": [],
+   "contains": [],
+   "standards": [],
+   "read": "2026-10-21",
+   "photos": [
+    {
+     "key": "mother-ease-rikki-diaper-cover",
+     "src": "https://cdn.shopify.com/s/files/1/1583/5087/files/rikkiperiwinkle2048.jpg?v=1785897576"
+    },
+    {
+     "key": "mother-ease-rikki-diaper-cover_2",
+     "src": "https://cdn.shopify.com/s/files/1/1583/5087/files/rikkibearbottom2048.jpg?v=1785897888"
+    },
+    {
+     "key": "mother-ease-rikki-diaper-cover_3",
+     "src": "https://cdn.shopify.com/s/files/1/1583/5087/files/rikkibeekind2048.jpg?v=1785897576"
+    },
+    {
+     "key": "mother-ease-rikki-diaper-cover_4",
+     "src": "https://cdn.shopify.com/s/files/1/1583/5087/files/rickisage2048.jpg?v=1785897576"
+    },
+    {
+     "key": "mother-ease-rikki-diaper-cover_5",
+     "src": "https://cdn.shopify.com/s/files/1/1583/5087/files/rikkiwhite2048.jpg?v=1785897576"
+    },
+    {
+     "key": "mother-ease-rikki-diaper-cover_6",
+     "src": "https://cdn.shopify.com/s/files/1/1583/5087/files/rickiwrapcozyfox.png?v=1783185326"
+    },
+    {
+     "key": "mother-ease-rikki-diaper-cover_7",
+     "src": "https://cdn.shopify.com/s/files/1/1583/5087/files/Rikki-Snap-_small-rise_---Cozy-Fox.jpg?v=1783265867"
+    },
+    {
+     "key": "mother-ease-rikki-diaper-cover_8",
+     "src": "https://cdn.shopify.com/s/files/1/1583/5087/files/Rikki-Snapfoxonnewbornbaby.jpg?v=1783265998"
+    }
+   ],
+   "img": "mother-ease-rikki-diaper-cover",
+   "img_src": "https://cdn.shopify.com/s/files/1/1583/5087/files/rikkiperiwinkle2048.jpg?v=1785897576"
+  },
+  {
+   "id": "mushie-baby-wrap",
+   "type": "carriers",
+   "brand": "Mushie",
+   "line": "Baby Wrap",
+   "uses": [
+    "Organic cotton"
+   ],
+   "unconfirmed": [
+    "Whether the wrap is 100% organic cotton",
+    "Dyes",
+    "Thread"
+   ],
+   "facts": {
+    "main": "unknown",
+    "parts": "unknown",
+    "color": "unknown"
+   },
+   "unstated": {
+    "main": [
+     "Whether the wrap is 100% organic cotton"
+    ],
+    "parts": [
+     "Thread"
+    ],
+    "color": [
+     "Dyes"
+    ]
+   },
+   "standards": [
+    "us-toy"
+   ],
+   "quote": "Made with organic cotton, the Mushie baby wrap promotes bonding and connection while keeping your little one cool and calm.",
+   "note": "For babies 8 to 33 lbs. Has a built-in storage pocket.",
+   "products": [
+    {
+     "name": "Baby Wrap",
+     "url": "https://mushie.com/products/baby-wrap",
+     "store": "Mushie",
+     "price": "$49.99",
+     "ships_from": null,
+     "shipping": "Free shipping for US orders $75+"
+    }
+   ],
+   "free": [],
+   "outside": [],
+   "contains": [],
+   "read": "2026-10-21",
+   "photos": [
+    {
+     "key": "mushie-baby-wrap",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/BabyWrap_Ivory.jpg?v=1755198528"
+    },
+    {
+     "key": "mushie-baby-wrap_2",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/baby-wrap-info.jpg?v=1771364950"
+    },
+    {
+     "key": "mushie-baby-wrap_3",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/products/wraps-9.jpg?v=1771364950"
+    },
+    {
+     "key": "mushie-baby-wrap_4",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/products/WRAPS_day1-243.jpg?v=1771364950"
+    },
+    {
+     "key": "mushie-baby-wrap_5",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/products/oddbirdxmushie_shoot-58.jpg?v=1771364950"
+    },
+    {
+     "key": "mushie-baby-wrap_6",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/ashley_08.03-53.jpg?v=1771364950"
+    },
+    {
+     "key": "mushie-baby-wrap_7",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/products/Bunnysession-23.jpg?v=1771364950"
+    },
+    {
+     "key": "mushie-baby-wrap_8",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/products/harborshoot-2.jpg?v=1771364950"
+    },
+    {
+     "key": "mushie-baby-wrap_9",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/products/WRAPS_day1-211.jpg?v=1771364950"
+    },
+    {
+     "key": "mushie-baby-wrap_10",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/products/Ramatu-119.jpg?v=1771364950"
+    }
+   ],
+   "img": "mushie-baby-wrap",
+   "img_src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/BabyWrap_Ivory.jpg?v=1755198528"
+  },
+  {
+   "id": "mushie-wooden-puzzle",
+   "type": "puzzles",
+   "brand": "Mushie",
+   "line": "Wooden Puzzle (Farm, Dino, Space or Alphabet)",
+   "uses": [
+    "FSC-certified wood"
+   ],
+   "free": [
+    "BPA",
+    "BPS",
+    "PVC",
+    "Phthalates"
+   ],
+   "outside": [
+    "Paint, type not named"
+   ],
+   "unconfirmed": [
+    "Kind of wood",
+    "Whether the board and pieces are solid wood or plywood/MDF"
+   ],
+   "facts": {
+    "main": "yes",
+    "wood": "unknown",
+    "color": "no"
+   },
+   "unstated": {
+    "wood": [
+     "Whether the board and pieces are solid wood or plywood/MDF"
+    ]
+   },
+   "standards": [
+    "fsc",
+    "us-toy"
+   ],
+   "age": {
+    "min_months": 36,
+    "text": "3 years and up"
+   },
+   "quote": "Made from FSC certified wood and non-toxic paint, it helps build fine motor skills and early language development.",
+   "products": [
+    {
+     "name": "Wooden Puzzle",
+     "url": "https://mushie.com/products/wooden-farm-puzzle-1",
+     "store": "Mushie",
+     "price": "$22.99 (Farm, Dino, Space); $24.99 (Alphabet)",
+     "variant": "Farm",
+     "ships_from": null,
+     "shipping": "Free shipping for US orders $75+"
+    }
+   ],
+   "contains": [],
+   "read": "2026-10-21",
+   "photos": [
+    {
+     "key": "mushie-wooden-puzzle",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/WoodenFarmPuzzle_cf55bc1c-97c2-41d8-82a9-0acc68e8406f.jpg?v=1772839670"
+    },
+    {
+     "key": "mushie-wooden-puzzle_2",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/Wooden-Farm-Puzzle_Info.jpg?v=1773180221"
+    },
+    {
+     "key": "mushie-wooden-puzzle_3",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/02_flatlays_27-08-23.jpg?v=1773180221"
+    },
+    {
+     "key": "mushie-wooden-puzzle_4",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/ella-studio-15.jpg?v=1773180221"
+    },
+    {
+     "key": "mushie-wooden-puzzle_5",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/BellaandDante-35.jpg?v=1773180221"
+    },
+    {
+     "key": "mushie-wooden-puzzle_6",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/piupiuxmushie_collabshoot-139-2.jpg?v=1776813326"
+    },
+    {
+     "key": "mushie-wooden-puzzle_7",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/04_shoot_3.01-9.jpg?v=1773180221"
+    },
+    {
+     "key": "mushie-wooden-puzzle_8",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/PhotoAug272024_42733PM.jpg?v=1773180221"
+    },
+    {
+     "key": "mushie-wooden-puzzle_9",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/03_picknickshoot-84.jpg?v=1773180221"
+    },
+    {
+     "key": "mushie-wooden-puzzle_10",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/Shoot_zion_lily_2kids-77.jpg?v=1773180221"
+    }
+   ],
+   "img": "mushie-wooden-puzzle",
+   "img_src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/WoodenFarmPuzzle_cf55bc1c-97c2-41d8-82a9-0acc68e8406f.jpg?v=1772839670"
+  },
+  {
+   "id": "naturepedic-organic-changing-table-pad",
+   "type": "changing-pads",
+   "brand": "Naturepedic",
+   "line": "Organic Cotton Changing Table Pad",
+   "uses": [
+    "GOTS-certified organic cotton surface",
+    "Optional organic cotton flannel cover"
+   ],
+   "free": [
+    "Vinyl/PVC",
+    "Flame retardants",
+    "Phthalates"
+   ],
+   "outside": [
+    "PE waterproofing derived from sugarcane",
+    "Food-grade PE foam core",
+    "Polypropylene interlinings, straps and buckles",
+    "Polyester seam bindings and sewing thread"
+   ],
+   "unconfirmed": [
+    "Snap screws"
+   ],
+   "facts": {
+    "main": "no",
+    "parts": "no",
+    "organic": "yes",
+    "flame": "yes"
+   },
+   "standards": [
+    "gots"
+   ],
+   "quote": "Materials: GOTS-certified organic cotton, PE waterproofing derived from non-GMO sugarcane, food-grade PE foam, polypropylene interlinings, straps, and buckles, and polyester seam bindings and sewing thread",
+   "products": [
+    {
+     "name": "Organic Cotton Changing Table Pad, two-sided or four-sided",
+     "url": "https://www.naturepedic.com/products/organic-changing-table-pads",
+     "store": "Naturepedic",
+     "price": "$139 (fitted cover $29)",
+     "ships_from": "US",
+     "variant": "2 Sided",
+     "shipping": "Free shipping in the continental U.S."
+    }
+   ],
+   "contains": [],
+   "read": "2026-10-21",
+   "photos": [
+    {
+     "key": "naturepedic-organic-changing-table-pad",
+     "src": "https://cdn.shopify.com/s/files/1/0968/8691/5390/files/NP_PDP_Accessory_OrganicCottonChangingPad_List-1.jpg?v=1783543979"
+    },
+    {
+     "key": "naturepedic-organic-changing-table-pad_2",
+     "src": "https://cdn.shopify.com/s/files/1/0968/8691/5390/files/NP_PDP_Accessory_OrganicCottonChangingPad_List-2.jpg?v=1783543979"
+    },
+    {
+     "key": "naturepedic-organic-changing-table-pad_3",
+     "src": "https://cdn.shopify.com/s/files/1/0968/8691/5390/files/NP_PDP_Accessory_OrganicCottonChangingPad_List-3.jpg?v=1783543979"
+    },
+    {
+     "key": "naturepedic-organic-changing-table-pad_4",
+     "src": "https://cdn.shopify.com/s/files/1/0968/8691/5390/files/np_website_images_baby_ch41-ch42-ch64_4_df07575e-aa02-4f3a-9631-151d19f0481a.jpg?v=1777478456"
+    },
+    {
+     "key": "naturepedic-organic-changing-table-pad_5",
+     "src": "https://cdn.shopify.com/s/files/1/0968/8691/5390/files/np_website_images_baby_ch41-ch42-ch64_2_c32dc9c0-46dd-4399-acd8-efe571475f7e.jpg?v=1777478456"
+    },
+    {
+     "key": "naturepedic-organic-changing-table-pad_6",
+     "src": "https://cdn.shopify.com/s/files/1/0968/8691/5390/files/CH41-LABEL.jpg?v=1780507447"
+    }
+   ],
+   "img": "naturepedic-organic-changing-table-pad",
+   "img_src": "https://cdn.shopify.com/s/files/1/0968/8691/5390/files/NP_PDP_Accessory_OrganicCottonChangingPad_List-1.jpg?v=1783543979"
+  },
+  {
+   "id": "piccalio-pikler-triangle",
+   "type": "climbers",
+   "brand": "Piccalio",
+   "line": "Climber Pikler Triangle Set with Rockwall/Slide Ramp",
+   "uses": [
+    "New Zealand pine wood"
+   ],
+   "outside": [
+    "FSC birch plywood"
+   ],
+   "unconfirmed": [
+    "What the 0-VOC finish is made of",
+    "Climbing holds on the rockwall side of the ramp",
+    "Glue in the plywood"
+   ],
+   "facts": {
+    "wood": "no",
+    "parts": "unknown",
+    "color": "unknown"
+   },
+   "unstated": {
+    "parts": [
+     "Climbing holds on the rockwall side of the ramp"
+    ],
+    "color": [
+     "What the 0-VOC finish is made of"
+    ]
+   },
+   "standards": [
+    "fsc",
+    "us-toy"
+   ],
+   "age": {
+    "min_months": 6,
+    "max_months": 72,
+    "text": "6 months to 6 years"
+   },
+   "quote": "Materials: FSC® birch plywood and New Zealand pine wood Non-toxic 0-VOC finish",
+   "products": [
+    {
+     "name": "Climber Pikler Triangle Set, Birch",
+     "url": "https://www.piccalio.com/products/pikler-triangle",
+     "store": "Piccalio",
+     "price": "$349",
+     "ships_from": null
+    }
+   ],
+   "free": [],
+   "contains": [],
+   "read": "2026-10-21",
+   "photos": [
+    {
+     "key": "piccalio-pikler-triangle",
+     "src": "https://cdn.shopify.com/s/files/1/0411/8868/8026/files/piccalio-climbing-pikler-triangle-PIK_Hero_Boy.jpg?v=1769717298"
+    },
+    {
+     "key": "piccalio-pikler-triangle_2",
+     "src": "https://cdn.shopify.com/s/files/1/0411/8868/8026/products/piklertriangle.jpg?v=1771652379"
+    },
+    {
+     "key": "piccalio-pikler-triangle_3",
+     "src": "https://cdn.shopify.com/s/files/1/0411/8868/8026/products/Pikler_Triangle_Set.jpg?v=1771652379"
+    },
+    {
+     "key": "piccalio-pikler-triangle_4",
+     "src": "https://cdn.shopify.com/s/files/1/0411/8868/8026/products/Pikler_Triangle_Set_Folded.jpg?v=1771652319"
+    },
+    {
+     "key": "piccalio-pikler-triangle_5",
+     "src": "https://cdn.shopify.com/s/files/1/0411/8868/8026/products/Piccalio_PiklerTriangle-4.jpg?v=1771652319"
+    },
+    {
+     "key": "piccalio-pikler-triangle_6",
+     "src": "https://cdn.shopify.com/s/files/1/0411/8868/8026/products/Piccalio_PiklerTriangle-1.jpg?v=1771652319"
+    },
+    {
+     "key": "piccalio-pikler-triangle_7",
+     "src": "https://cdn.shopify.com/s/files/1/0411/8868/8026/products/Pikler_Triangle_Ramp.png?v=1771652319"
+    },
+    {
+     "key": "piccalio-pikler-triangle_8",
+     "src": "https://cdn.shopify.com/s/files/1/0411/8868/8026/products/Piccalio_PiklerTriangle-2.jpg?v=1758557359"
+    },
+    {
+     "key": "piccalio-pikler-triangle_9",
+     "src": "https://cdn.shopify.com/s/files/1/0411/8868/8026/products/Piccalio_PiklerTriangle-3.jpg?v=1758557359"
+    },
+    {
+     "key": "piccalio-pikler-triangle_10",
+     "src": "https://cdn.shopify.com/s/files/1/0411/8868/8026/files/PIK_Birch_Dimensions.jpg?v=1766078547"
+    }
+   ],
+   "img": "piccalio-pikler-triangle",
+   "img_src": "https://cdn.shopify.com/s/files/1/0411/8868/8026/files/piccalio-climbing-pikler-triangle-PIK_Hero_Boy.jpg?v=1769717298"
+  },
+  {
+   "id": "plantoys-wooden-sensory-drum",
+   "type": "instruments",
+   "brand": "PlanToys",
+   "line": "Wooden Sensory Drum",
+   "uses": [
+    "Rubberwood",
+    "Organic pigments and water-based dyes"
+   ],
+   "free": [
+    "Formaldehyde in the glue"
+   ],
+   "unconfirmed": [
+    "What the glue is made of",
+    "What the water-based coating over the stains is made of",
+    "Material of the drum stick"
+   ],
+   "facts": {
+    "main": "yes",
+    "wood": "unknown",
+    "color": "unknown",
+    "parts": "unknown"
+   },
+   "unstated": {
+    "wood": [
+     "What the glue is made of"
+    ],
+    "color": [
+     "What the water-based coating over the stains is made of"
+    ],
+    "parts": [
+     "Material of the drum stick"
+    ]
+   },
+   "quote": "MATERIALS : Made using chemical-free rubberwood, formaldehyde-free glue, organic pigments and water-based dyes.",
+   "note": "Made in Thailand; sold by Bella Luna Toys, which ships it from New York.",
+   "products": [
+    {
+     "name": "PlanToys Wooden Sensory Drum (PT-5915)",
+     "url": "https://www.bellalunatoys.com/products/plan-toys-wooden-sensory-drum",
+     "store": "Bella Luna Toys",
+     "price": "$29.99",
+     "ships_from": "US",
+     "shipping": "Free shipping on orders over $99 within the contiguous 48 states"
+    }
+   ],
+   "outside": [],
+   "contains": [],
+   "standards": [],
+   "read": "2026-10-21",
+   "photos": [
+    {
+     "key": "plantoys-wooden-sensory-drum",
+     "src": "https://cdn.shopify.com/s/files/1/1114/2810/files/PlanToys_Wooden_Sensory_Drum_with_wooden_mallet_Montessori-inspired_instrument_for_rhythm_and_sound_exploration..jpg?v=1756415378"
+    },
+    {
+     "key": "plantoys-wooden-sensory-drum_2",
+     "src": "https://cdn.shopify.com/s/files/1/1114/2810/files/plan-toys-montessori-collection-wooden-sensory-drum.jpg?v=1755561293"
+    }
+   ],
+   "img": "plantoys-wooden-sensory-drum",
+   "img_src": "https://cdn.shopify.com/s/files/1/1114/2810/files/PlanToys_Wooden_Sensory_Drum_with_wooden_mallet_Montessori-inspired_instrument_for_rhythm_and_sound_exploration..jpg?v=1756415378"
+  },
+  {
+   "id": "weesprout-baby-wrap-carrier",
+   "type": "carriers",
+   "brand": "WeeSprout",
+   "line": "Baby Wrap Carrier, One Size",
+   "uses": [
+    "100% TENCEL™ Modal"
+   ],
+   "unconfirmed": [
+    "Dyes",
+    "Thread"
+   ],
+   "facts": {
+    "main": "yes",
+    "parts": "unknown",
+    "color": "unknown"
+   },
+   "unstated": {
+    "parts": [
+     "Thread"
+    ],
+    "color": [
+     "Dyes"
+    ]
+   },
+   "quote": "Made from ultra-soft, breathable 100% Tencel™ Modal, this lightweight carrier supports both babies and caregivers",
+   "note": "A stretch wrap, 17 ft long; for babies 8 to 25 lbs.",
+   "products": [
+    {
+     "name": "Baby Wrap Carrier – One Size Fits All",
+     "url": "https://www.weesprout.com/products/baby-wrap-carriers",
+     "store": "WeeSprout",
+     "price": "$25.98",
+     "ships_from": null,
+     "shipping": "Free shipping on orders $60+"
+    }
+   ],
+   "free": [],
+   "outside": [],
+   "contains": [],
+   "standards": [],
+   "read": "2026-10-21",
+   "photos": [
+    {
+     "key": "weesprout-baby-wrap-carrier",
+     "src": "https://cdn.shopify.com/s/files/1/0957/4574/files/BWC-Blue-Dusk_58523071-497e-411a-bd72-1509b204dc76.jpg?v=1782247574"
+    },
+    {
+     "key": "weesprout-baby-wrap-carrier_2",
+     "src": "https://cdn.shopify.com/s/files/1/0957/4574/files/BWC_a.jpg?v=1782247573"
+    },
+    {
+     "key": "weesprout-baby-wrap-carrier_3",
+     "src": "https://cdn.shopify.com/s/files/1/0957/4574/files/BWC_b.jpg?v=1782247573"
+    },
+    {
+     "key": "weesprout-baby-wrap-carrier_4",
+     "src": "https://cdn.shopify.com/s/files/1/0957/4574/files/BWC_c.jpg?v=1782247573"
+    },
+    {
+     "key": "weesprout-baby-wrap-carrier_5",
+     "src": "https://cdn.shopify.com/s/files/1/0957/4574/files/BWC_d.jpg?v=1782247573"
+    },
+    {
+     "key": "weesprout-baby-wrap-carrier_6",
+     "src": "https://cdn.shopify.com/s/files/1/0957/4574/files/BWC_e.jpg?v=1782247573"
+    },
+    {
+     "key": "weesprout-baby-wrap-carrier_7",
+     "src": "https://cdn.shopify.com/s/files/1/0957/4574/files/BWC_f.jpg?v=1782247573"
+    },
+    {
+     "key": "weesprout-baby-wrap-carrier_8",
+     "src": "https://cdn.shopify.com/s/files/1/0957/4574/files/BWC_g.jpg?v=1782247574"
+    },
+    {
+     "key": "weesprout-baby-wrap-carrier_9",
+     "src": "https://cdn.shopify.com/s/files/1/0957/4574/files/BWC-Gingham-Sand.jpg?v=1782247573"
+    },
+    {
+     "key": "weesprout-baby-wrap-carrier_10",
+     "src": "https://cdn.shopify.com/s/files/1/0957/4574/files/BWC-Pebble-Grey.jpg?v=1782247573"
+    }
+   ],
+   "img": "weesprout-baby-wrap-carrier",
+   "img_src": "https://cdn.shopify.com/s/files/1/0957/4574/files/BWC-Blue-Dusk_58523071-497e-411a-bd72-1509b204dc76.jpg?v=1782247574"
   }
  ]
 }

@@ -66,7 +66,7 @@ A draft is `research/drafts/<listing-id>.json`:
 
 `entry` is a listing exactly as the README's Data section describes it. Every claim needs words copied from `research/snapshots/<listing-id>.txt`; the check ignores case, spacing and curly quotes, nothing else. A claim without matching words is not kept: a checklist line is dropped, a `yes` or `no` fact becomes `unknown`, a standard or age rating is left out, and the report lists each one. `unconfirmed` lines need no quote (they record what no page says).
 
-A draft is held back, with the reason in the report, when it has no snapshot, no "made with" line backed by a quote, an unknown type or criterion, a product without name, URL, store or price, or a word that takes a side ("safe", "toxic", "best", "avoid", ...) outside quotation marks. Fix it and the next run picks it up.
+A draft is held back, with the reason in the report, when it has no snapshot, no checklist line ("made with", "flagged" or "stated free of") backed by a quote, an unknown type or criterion, a product without name, URL, store or price, or a word that takes a side ("safe", "toxic", "best", "avoid", ...) outside quotation marks. Fix it and the next run picks it up.
 
 Passing drafts are added to `entries` (or replace the listing with the same id when `replace` is true) with `read` set to the date, the draft file is removed, and the candidate is marked `listed`.
 

@@ -31,7 +31,7 @@ const count = (page) => page.evaluate(() => document.querySelectorAll('.card').l
 test('home page renders product types, aisles, featured products and the menu', async () => {
   const page = await open('/');
   await page.waitForSelector('.tiles a');
-  assert.equal(await page.locator('.tiles a').count(), 5);
+  assert.equal(await page.locator('.tiles a').count(), 7);
   assert.ok((await page.locator('.ttile').count()) >= 20, 'every product type has a picture tile under its category');
   assert.ok((await page.locator('.age-chip').count()) >= 4, 'age chips');
   assert.ok((await count(page)) >= 4, 'featured rail shows products');
@@ -88,11 +88,11 @@ test('the shop lists the products that meet the default material filters and set
   const page = await open('/shop');
   await page.waitForSelector('.card');
   assert.equal(await count(page), 24, 'first page of results');
-  assert.match(await page.textContent('.toolbar .count'), /79 products · 58 set aside/);
+  assert.match(await page.textContent('.toolbar .count'), /88 products · 64 set aside/);
   await page.click('[data-more]');
   assert.equal(await count(page), 48, '"Show more" adds a page');
   await page.click('.hidden-note button[data-toggle-all]');
-  assert.match(await page.textContent('.toolbar .count'), /137 products/);
+  assert.match(await page.textContent('.toolbar .count'), /152 products/);
   assert.match(page.url(), /all=1/);
   assert.ok((await page.locator('.card .fit.is-miss').count()) >= 1, 'set-aside products say which filter they miss once shown');
   assert.deepEqual(page.errors, []);
@@ -212,12 +212,12 @@ test('phone width: nothing overflows, and the filter drawer applies on "Show res
   await page.click('[data-drawer-open]');
   assert.equal(await page.locator('#rail').isVisible(), true);
   await page.uncheck('#f-crit-color');
-  assert.match(await page.textContent('.drawer-foot [data-drawer-apply]'), /Show 82 results/);
-  assert.match(await page.textContent('.toolbar .count'), /79 products/, 'results wait for Apply');
+  assert.match(await page.textContent('.drawer-foot [data-drawer-apply]'), /Show 92 results/);
+  assert.match(await page.textContent('.toolbar .count'), /88 products/, 'results wait for Apply');
   await page.click('.drawer-foot [data-drawer-apply]');
   await page.waitForTimeout(300);
   assert.equal(await page.locator('#rail').isVisible(), false);
-  assert.match(await page.textContent('.toolbar .count'), /82 products/);
+  assert.match(await page.textContent('.toolbar .count'), /92 products/);
   await page.click('#menu-open');
   assert.equal(await page.locator('#menu').isVisible(), true);
   await page.keyboard.press('Escape');
