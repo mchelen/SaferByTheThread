@@ -102,7 +102,7 @@ test('the shop lists the products that meet the default material filters and set
 test('material filters sit in the rail like any other facet and change the results and the URL', async () => {
   const page = await open('/c/balls');
   await page.waitForSelector('.card');
-  assert.equal(await page.locator('#rail .fgroup[data-group="crit"] input[data-crit]').count(), 17);
+  assert.equal(await page.locator('#rail .fgroup[data-group="crit"] input[data-crit]').count(), 15);
   await page.uncheck('#f-crit-color');
   assert.ok((await count(page)) > 4, 'turning off the dyes filter brings painted balls in');
   assert.match(page.url(), /m=/);

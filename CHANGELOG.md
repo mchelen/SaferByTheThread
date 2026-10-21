@@ -63,6 +63,7 @@ All notable changes to the site are listed here. The format follows [Keep a Chan
 - Site renamed "Saved by the Thread" with the tagline "Reading the fine print so you don't have to." (#1)
 
 ### Removed
+- The "Leave out these materials" filters ("No natural rubber or latex", "No leather, suede or sheepskin"). They were the reverse of the Made with options for the same materials, which is where a visitor picks them.
 - The Python single-page build (`build.py`, `template.html`); the site now renders from `data.json` in the browser. (#1)
 
 ## [0.1.0] - 2026-10-17
