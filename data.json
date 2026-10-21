@@ -20,10 +20,6 @@
   {
    "id": "tested",
    "title": "Tested or certified"
-  },
-  {
-   "id": "leave",
-   "title": "Leave out these materials"
   }
  ],
  "criteria": [
@@ -166,26 +162,6 @@
    "default": false,
    "term": "chrome",
    "group": "tested"
-  },
-  {
-   "id": "latex",
-   "short": "Latex",
-   "label": "Natural rubber or latex",
-   "help": "Includes natural latex foam in mattresses and natural rubber toys and boots.",
-   "kind": "contains",
-   "default": false,
-   "term": "latex-allergy",
-   "group": "leave"
-  },
-  {
-   "id": "leather",
-   "short": "Leather",
-   "label": "Leather, suede or sheepskin",
-   "help": "Includes leather soles and sheepskin insoles.",
-   "kind": "contains",
-   "default": false,
-   "term": "leather",
-   "group": "leave"
   }
  ],
  "standards": [
