@@ -889,7 +889,8 @@
    "type": "towels",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "colored-organics-hooded-towel"
   },
   {
    "url": "https://coloredorganics.com/products/hooded-towel-copy",
@@ -4016,7 +4017,8 @@
    "type": "climbers",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "piccalio-pikler-triangle"
   },
   {
    "url": "https://www.piccalio.com/products/wobble-balance-board",
@@ -7922,7 +7924,8 @@
    "type": "changing-pads",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "naturepedic-organic-changing-table-pad"
   },
   {
    "url": "https://www.naturepedic.com/products/organic-breathable-baby-crib-mattress-buy",
@@ -20999,7 +21002,8 @@
    "type": "towels",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "skipped",
+   "reason": "Cleaning towels for play spaces, sold as a classroom supply; not a children’s product"
   },
   {
    "url": "https://kodokids.com/products/chalk-spinner-blue",
@@ -21125,7 +21129,8 @@
    "type": "puzzles",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "mushie-wooden-puzzle"
   },
   {
    "url": "https://mushie.com/products/silicone-suction-bath-builders-daisy",
@@ -22009,7 +22014,8 @@
    "type": "carriers",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "mushie-baby-wrap"
   },
   {
    "url": "https://mushie.com/products/cat-teether",
@@ -22722,7 +22728,8 @@
    "type": "carriers",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "weesprout-baby-wrap-carrier"
   },
   {
    "url": "https://www.weesprout.com/products/bamboo-toddler-cups",
@@ -23127,7 +23134,8 @@
    "type": "diapers",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "mother-ease-rikki-diaper-cover"
   },
   {
    "url": "https://www.greenmountaindiapers.com/products/try-both-kit-newborn-1",
@@ -32722,7 +32730,8 @@
    "type": "changing-pads",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "holy-lamb-organics-changing-table-pad"
   },
   {
    "url": "https://holylamborganics.com/products/wool-mattress",
@@ -39238,7 +39247,8 @@
    "type": "changing-pads",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "delta-children-molded-waterproof-changing-pad"
   },
   {
    "url": "https://www.deltachildren.com/products/serta-molded-waterproof-changing-pad-with-fresh-technology",
@@ -39454,7 +39464,8 @@
    "type": "nursing-pillows",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "delta-children-nursing-pillow"
   },
   {
    "url": "https://www.deltachildren.com/products/olivia-upholstered-twin-bed",
@@ -44440,7 +44451,8 @@
    "type": "rugs",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "delta-children-outer-space-rug"
   },
   {
    "url": "https://www.deltachildren.com/products/rainbow-dot-round-area-rug-for-kids-39-inch",
@@ -48004,7 +48016,8 @@
    "type": "instruments",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "plantoys-wooden-sensory-drum"
   },
   {
    "url": "https://www.bellalunatoys.com/products/maileg-tulle-princess-dress-melon",
@@ -63271,7 +63284,8 @@
    "type": "rugs",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "camden-rose-sheepskin-rug"
   },
   {
    "url": "https://camdenrose.com/products/vegetable-tanned-high-pile-sheepskin-rug-long-hair",
@@ -66116,7 +66130,8 @@
    "type": "instruments",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "bright-starts-rollin-rhythm-drum"
   },
   {
    "url": "https://www.kids2.com/products/17400-013-baby-einstein-sea-dreams-seahorse-plush-soother-pink",
@@ -73137,7 +73152,8 @@
    "type": "nursing-pillows",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "home-of-wool-wool-nursing-pillow"
   },
   {
    "url": "https://homeofwool.com/shop/baby-nest/",

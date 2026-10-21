@@ -5,6 +5,7 @@ All notable changes to the site are listed here. The format follows [Keep a Chan
 ## [Unreleased]
 
 ### Added
+- 15 new listings from the 2026-10-21 daily research run, the first in nursing pillows, changing pads, towels, cloth diapers, climbers, instruments, puzzles, carriers and rugs (which makes the Bath & diapering and Furniture & decor departments appear). `tools/ingest.js` now accepts a conventional listing whose only backed lines are flagged parts or stated-absent items. Section headings on product pages wrap at phone width, so a long department name ("All strollers & gear →") no longer pushes the page sideways.
 - 15 new listings from the 2026-10-20 daily research run, the first in teethers, pacifiers, cups, plates, utensils, bibs, sleep sacks and stroller footmuffs (which makes the Strollers & gear department appear).
 - `tools/photos.js --browser` reads store pages that refuse scripts in headless Chromium; the daily job uses it, which fills in photos for the White Lotus, Shepherd's Dream, Jan & Jul and Lékué listings (93 listings now have several photos; only 2 have none).
 - Store ratings: cards, quick view and product pages show the star rating and review count from the store page (the store with the most reviews when a product is at several; each option and store in the buy box shows its own), and Compare has a Rating row. The weekly price check reads them (`tools/ratings.js`: JSON-LD, Judge.me, Shopify reviews, Okendo, Loox, Yotpo, Junip) into each product's `rating`; 62 store pages carry one so far.
