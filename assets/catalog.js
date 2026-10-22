@@ -54,7 +54,7 @@
   // Chip text -> glossary term id. Checked in order; a chip can link several terms, never overlapping.
   var TERM_KEYS = [
     ['superwash', 'superwash|shrink-proofing|machine washable|wool treatments?|treatment on the (?:merino|wool)|treatment of the wool'],
-    ['gots', 'gots'], ['gols', 'gols'], ['oeko-tex', 'oeko-tex'],
+    ['gots', 'gots'], ['gols', 'gols'], ['oeko-tex', 'oeko-tex'], ['fsc', 'fsc(?:[- ]certified)?'], ['fair-rubber', 'fair rubber(?: association)?'],
     ['flammability', 'flame retardants?|fire barrier'],
     ['melamine', 'melamine(?: resin)?|bamboo (?:fib(?:re|er)|powder|composite)'],
     ['pfas', 'pfas|pfcs?|perfluorinated|fluorinated|stain[- ]resist\\w*|water[- ]repellent|dwr|teflon'],

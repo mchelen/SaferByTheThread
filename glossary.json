@@ -147,6 +147,26 @@
      ]
     },
     {
+     "id": "fsc",
+     "term": "FSC (Forest Stewardship Council)",
+     "aka": [
+      "FSC 100%",
+      "FSC Mix",
+      "FSC Recycled"
+     ],
+     "definition": "A certification for where wood and paper come from. FSC 100% means all the material comes from FSC-certified forests; FSC Mix means a mixture of material from FSC-certified forests, recycled material and/or FSC controlled wood; FSC Recycled means 100 per cent recycled material.",
+     "on_this_site": "Listed under Wood when a maker or store names FSC for the product.",
+     "what_sources_say": "FSC describes the source of the wood, not how the product is made: it does not say whether a piece is solid wood, plywood or MDF, or what glue or finish it has. Controlled wood in FSC Mix does not come from FSC-certified forests; FSC says its rules mitigate the risk of it coming from unacceptable sources.",
+     "sources": [
+      {
+       "title": "FSC labels",
+       "publisher": "Forest Stewardship Council",
+       "type": "standard",
+       "url": "https://fsc.org/en/fsc-labels"
+      }
+     ]
+    },
+    {
      "id": "food-grade",
      "term": "Food-grade / food-safe",
      "definition": "A material that complies with the food-contact rules of a jurisdiction: in the US, FDA food-contact regulations (21 CFR Parts 174 to 186); in the EU, the framework Regulation (EC) 1935/2004 and related measures.",
@@ -473,6 +493,9 @@
     {
      "id": "hidden",
      "term": "Thread, zippers, elastic, glue and hook-and-loop",
+     "aka": [
+      "small parts"
+     ],
      "definition": "Small components in sewn and assembled goods. Sewing thread is commonly polyester or polyester-cotton; zippers, hook-and-loop and elastic are usually synthetic; glues may be synthetic polymers.",
      "on_this_site": "The site checks each of these. When a seller does not state them, they are listed as unconfirmed rather than assumed.",
      "what_sources_say": "US textile labeling rules generally do not require fibre content for sewing thread or trims, so a label reading “100% cotton” can still have polyester thread.",
@@ -572,6 +595,25 @@
    "id": "rubber",
    "title": "Rubber, latex and synthetic look-alikes",
    "terms": [
+    {
+     "id": "fair-rubber",
+     "term": "Fair Rubber",
+     "aka": [
+      "Fair Rubber Association",
+      "Fair Rubber seal"
+     ],
+     "definition": "A fair-trade seal for natural rubber, awarded by the Fair Rubber Association (Germany) to products that meet its standard. The association pays a premium of €0.50 per kilogram of dry rubber to the people who tap or grow the rubber, who decide how to use it; its cultivation standard (version 3.3, effective January 2025) includes a deforestation criterion.",
+     "on_this_site": "Listed under Natural rubber or latex when a maker or store names Fair Rubber for the product.",
+     "what_sources_say": "The seal concerns how the rubber is produced and traded; it does not say what additives, colourants or synthetic rubber a finished product contains.",
+     "sources": [
+      {
+       "title": "Fair Rubber: make the world a better place",
+       "publisher": "Fair Rubber Association",
+       "type": "standard",
+       "url": "https://www.fairrubber.org/"
+      }
+     ]
+    },
     {
      "id": "natural-rubber",
      "term": "Natural rubber",
