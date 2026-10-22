@@ -11,19 +11,17 @@
  "criteria_groups": [
   {
    "id": "plastic",
-   "title": "Plastic and synthetics"
+   "title": "Plastic and synthetics",
+   "set": "leave"
   },
   {
    "id": "treat",
-   "title": "Treatments and finishes"
+   "title": "Chemical treatments",
+   "set": "leave"
   },
   {
    "id": "tested",
-   "title": "Tested or certified"
-  },
-  {
-   "id": "leave",
-   "title": "Leave out these materials"
+   "title": "Tests & certifications"
   }
  ],
  "criteria": [
@@ -35,6 +33,7 @@
    "kind": "avoid",
    "default": true,
    "term": "plastic",
+   "sub": "In the main materials",
    "group": "plastic"
   },
   {
@@ -45,6 +44,7 @@
    "kind": "avoid",
    "default": true,
    "term": "hidden",
+   "sub": "In small parts",
    "group": "plastic"
   },
   {
@@ -55,6 +55,7 @@
    "kind": "avoid",
    "default": false,
    "term": "plastic",
+   "sub": "In lids, stands or extras",
    "group": "plastic"
   },
   {
@@ -85,6 +86,8 @@
    "kind": "avoid",
    "default": true,
    "term": "hardwood",
+   "under": "wood",
+   "sub": "Only solid wood",
    "group": "treat"
   },
   {
@@ -95,6 +98,8 @@
    "kind": "avoid",
    "default": true,
    "term": "superwash",
+   "under": "wool",
+   "sub": "Only untreated wool (not superwash)",
    "group": "treat"
   },
   {
@@ -105,6 +110,8 @@
    "kind": "avoid",
    "default": true,
    "term": "plasticisers",
+   "under": "latex",
+   "sub": "Only without plasticisers or synthetic rubber",
    "group": "treat"
   },
   {
@@ -115,6 +122,7 @@
    "kind": "avoid",
    "default": true,
    "term": "flammability",
+   "sub": "Added flame retardants",
    "group": "treat"
   },
   {
@@ -125,6 +133,7 @@
    "kind": "avoid",
    "default": true,
    "term": "pfas",
+   "sub": "Water, stain or wrinkle resistant finishes",
    "group": "treat"
   },
   {
@@ -135,6 +144,8 @@
    "kind": "require",
    "default": true,
    "term": "lfgb",
+   "under": "silicone",
+   "sub": "Only tested to LFGB or the French Arrêté",
    "group": "tested"
   },
   {
@@ -165,44 +176,29 @@
    "kind": "require",
    "default": false,
    "term": "chrome",
+   "under": "leather",
+   "sub": "Only vegetable or chrome-free tanned",
    "group": "tested"
-  },
-  {
-   "id": "latex",
-   "short": "Latex",
-   "label": "Natural rubber or latex",
-   "help": "Includes natural latex foam in mattresses and natural rubber toys and boots.",
-   "kind": "contains",
-   "default": false,
-   "term": "latex-allergy",
-   "group": "leave"
-  },
-  {
-   "id": "leather",
-   "short": "Leather",
-   "label": "Leather, suede or sheepskin",
-   "help": "Includes leather soles and sheepskin insoles.",
-   "kind": "contains",
-   "default": false,
-   "term": "leather",
-   "group": "leave"
   }
  ],
  "standards": [
   {
    "id": "gots",
    "label": "GOTS organic textiles",
-   "term": "gots"
+   "term": "gots",
+   "filter": "organic"
   },
   {
    "id": "gols",
    "label": "GOLS organic latex",
-   "term": "gols"
+   "term": "gols",
+   "filter": "organic"
   },
   {
    "id": "organic-unnamed",
    "label": "Certified organic (scheme not named)",
-   "term": "organic"
+   "term": "organic",
+   "filter": "organic"
   },
   {
    "id": "oeko-tex",
@@ -212,17 +208,21 @@
   {
    "id": "fsc",
    "label": "FSC wood",
-   "term": "hardwood"
+   "term": "hardwood",
+   "under": "wood",
+   "sub": "FSC certified"
   },
   {
    "id": "lfgb",
    "label": "LFGB (German food-contact law)",
-   "term": "lfgb"
+   "term": "lfgb",
+   "filter": "silicone"
   },
   {
    "id": "arrete",
    "label": "French Arrêté of 25 Nov 1992",
-   "term": "arrete"
+   "term": "arrete",
+   "filter": "silicone"
   },
   {
    "id": "us-toy",
@@ -232,7 +232,9 @@
   {
    "id": "fair-rubber",
    "label": "Fair Rubber Association",
-   "term": "natural-rubber"
+   "term": "natural-rubber",
+   "under": "latex",
+   "sub": "Fair Rubber certified"
   }
  ],
  "aisles": [

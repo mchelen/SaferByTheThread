@@ -35,11 +35,13 @@
   }
 
   // "Made with" facet, read from the Made with and Flagged parts rows. Leather and latex come from `contains`.
+  // Materials with a `group` sit together under one parent in the Made with filter.
+  var MATERIAL_GROUPS = [{ id: 'fibres', label: 'Natural fibres' }];
   var MATERIALS = [
-    { id: 'wool', label: 'Wool or felt', rx: /wool|merino|felt|mohair|melton/i },
-    { id: 'cotton', label: 'Cotton', rx: /cotton|terry/i },
-    { id: 'linen', label: 'Linen or hemp', rx: /linen|hemp|flax(?!seed)/i },
-    { id: 'silk', label: 'Silk', rx: /silk/i },
+    { id: 'wool', label: 'Wool or felt', group: 'fibres', rx: /wool|merino|felt|mohair|melton/i },
+    { id: 'cotton', label: 'Cotton', group: 'fibres', rx: /cotton|terry/i },
+    { id: 'linen', label: 'Linen or hemp', group: 'fibres', rx: /linen|hemp|flax(?!seed)/i },
+    { id: 'silk', label: 'Silk', group: 'fibres', rx: /silk/i },
     { id: 'wood', label: 'Wood', rx: /wood|maple|beech|birch|pine|walnut|cherry|oak\b|poplar|\bash\b|hardwood|bamboo|plywood/i },
     { id: 'latex', label: 'Natural rubber or latex', contains: 'latex' },
     { id: 'leather', label: 'Leather, suede or sheepskin', contains: 'leather' },
@@ -227,11 +229,10 @@
   }
 
   // How a material criterion reads as a filter option: what you get when it is ticked.
+  // Filters sit under a heading that says what they do ("Leave out", "Tests & certifications"), so a label is just
+  // the thing itself.
   function filterLabel(c) {
-    var l = c.label.charAt(0).toLowerCase() + c.label.slice(1);
-    if (c.kind === 'require') return c.label.charAt(0).toUpperCase() + c.label.slice(1);
-    if (c.id === 'wood') return 'Solid wood, no ' + l;
-    return 'No ' + l;
+    return c.label.charAt(0).toUpperCase() + c.label.slice(1);
   }
 
   // Short "from $X" style price for cards and buy boxes.
@@ -270,6 +271,6 @@
   }
 
   var api = { build: build, evaluate: evaluate, parsePrice: parsePrice, priceLabel: priceLabel, priceFrom: priceFrom, shipCost: shipCost, filterLabel: filterLabel, money: money, termRuns: termRuns, fold: fold, slug: slug,
-              PRICE_BANDS: PRICE_BANDS, AGE_BANDS: AGE_BANDS, MATERIALS: MATERIALS, ageText: ageText };
+              PRICE_BANDS: PRICE_BANDS, AGE_BANDS: AGE_BANDS, MATERIALS: MATERIALS, MATERIAL_GROUPS: MATERIAL_GROUPS, ageText: ageText };
   if (typeof module === 'object' && module.exports) module.exports = api; else root.SBTT = api;
 })(this);

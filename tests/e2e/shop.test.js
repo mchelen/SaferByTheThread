@@ -102,7 +102,8 @@ test('the shop lists the products that meet the default material filters and set
 test('material filters sit in the rail like any other facet and change the results and the URL', async () => {
   const page = await open('/c/balls');
   await page.waitForSelector('.card');
-  assert.equal(await page.locator('#rail .fgroup[data-group="crit"] input[data-crit]').count(), 15);
+  assert.equal(await page.locator('#rail input[data-crit]').count(), 15);
+  await page.click('[data-tnode="s-treat"]');
   await page.uncheck('#f-crit-color');
   assert.ok((await count(page)) > 4, 'turning off the dyes filter brings painted balls in');
   assert.match(page.url(), /m=/);
@@ -211,6 +212,7 @@ test('phone width: nothing overflows, and the filter drawer applies on "Show res
   assert.equal(await page.locator('#rail').isVisible(), false);
   await page.click('[data-drawer-open]');
   assert.equal(await page.locator('#rail').isVisible(), true);
+  await page.click('[data-tnode="s-treat"]');
   await page.uncheck('#f-crit-color');
   assert.match(await page.textContent('.drawer-foot [data-drawer-apply]'), /Show 92 results/);
   assert.match(await page.textContent('.toolbar .count'), /88 products/, 'results wait for Apply');
@@ -339,11 +341,32 @@ test('the rail is grouped into sections and the age range filter narrows the lis
   const page = await open('/shop');
   await page.waitForSelector('.card');
   assert.deepEqual(await page.locator('#rail .rail-sec-h').allTextContents(), ['What it is', 'What it’s made of', 'Price and delivery']);
-  assert.ok((await page.locator('#rail .fgroup[data-group="crit"] .opt-group').count()) >= 4, 'material filters come in named sets');
+  assert.deepEqual(await page.locator('#rail .rail-sec:nth-of-type(2) .fgroup > summary').evaluateAll(s => s.map(x => x.firstChild.textContent)), ['Made with', 'Leave out', 'Tests & certifications']);
   const before = await page.textContent('.toolbar .count');
   await page.check('#f-age-3-5y');
   assert.match(page.url(), /age=3-5y/);
   assert.notEqual(await page.textContent('.toolbar .count'), before);
+  assert.deepEqual(page.errors, []);
+  await page.close();
+});
+
+test('material filters nest: families open into their members, and a material into the filters about it', async () => {
+  const page = await open('/shop');
+  await page.waitForSelector('.card');
+  await page.evaluate(() => { document.querySelector('.fgroup[data-group="mat"]').open = true; });
+  assert.equal(await page.locator('#f-crit-silicone').isVisible(), false, 'the silicone test sits closed under Silicone');
+  await page.click('[data-tnode="m-silicone"]');
+  assert.equal(await page.locator('#tk-m-silicone #f-crit-silicone').isVisible(), true);
+  await page.check('#f-matg-fibres');
+  assert.match(decodeURIComponent(page.url()), /mat=wool,cotton,linen,silk/);
+  assert.equal(await page.locator('.chips .chip-x[data-clear="matgroup"]').count(), 1, 'a whole family is one chip');
+  const fibres = await count(page);
+  await page.click('[data-tnode="g-fibres"]');
+  await page.uncheck('#f-mat-silk');
+  assert.equal(await page.locator('#f-matg-fibres').evaluate(x => x.indeterminate), true, 'part of a family reads as part-ticked');
+  assert.ok((await count(page)) <= fibres);
+  await page.click('.chips .chip-x[data-clear="mat"][data-val="wool"]');
+  assert.doesNotMatch(decodeURIComponent(page.url()), /wool/);
   assert.deepEqual(page.errors, []);
   await page.close();
 });
