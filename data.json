@@ -208,7 +208,7 @@
   {
    "id": "fsc",
    "label": "FSC wood",
-   "term": "hardwood",
+   "term": "fsc",
    "under": "wood",
    "sub": "FSC certified"
   },
@@ -232,7 +232,7 @@
   {
    "id": "fair-rubber",
    "label": "Fair Rubber Association",
-   "term": "natural-rubber",
+   "term": "fair-rubber",
    "under": "latex",
    "sub": "Fair Rubber certified"
   }

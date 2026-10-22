@@ -35,6 +35,7 @@ All notable changes to the site are listed here. The format follows [Keep a Chan
 
 ### Fixed
 - Phones no longer scroll sideways on filtered listing pages (the sort menu now shrinks to fit beside "Filter & sort") or on narrow phones where a long brand name sat in a product card.
+- The ? beside "FSC certified" opened the Solid hardwood glossary entry, and the one beside "Fair Rubber certified" opened Natural rubber: both standards had pointed at the nearest existing term since the site's first import. New glossary entries for FSC and Fair Rubber (53 terms), and `npm run check` now fails when a filter's glossary term doesn't name what the filter is about.
 - Each deploy stamps its build id onto the stylesheet, script and data URLs, so a fix reaches visitors on their next load instead of after GitHub Pages' ten-minute cache.
 - Changing a filter no longer makes the page jump: the window and the filter rail keep their scroll position, facets left on "Show all" stay expanded, and a shorter list keeps enough room to hold the spot (the empty moment while the list was rebuilt let the browser snap to the top).
 - Product pages and the quick view no longer grow wider than a phone screen when a listing has many store photos; the thumbnail strip scrolls inside its column instead.

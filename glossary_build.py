@@ -37,6 +37,8 @@ CR6 = S("Commission Regulation (EU) No 301/2014 (chromium VI in leather articles
 AAAAI = S("Latex Allergy", "American Academy of Allergy, Asthma & Immunology", "reference", "https://www.aaaai.org/tools-for-the-public/conditions-library/allergies/latex-allergy")
 ACAAI = S("Latex Allergy", "American College of Allergy, Asthma and Immunology", "reference", "https://acaai.org/allergies/allergic-conditions/latex-allergy/")
 LATEX_REV = S("Wu M, McIntosh J, Liu J. Current prevalence rate of latex allergy: Why it remains a problem? Journal of Occupational Health 58(2), 2016", "PubMed Central (peer-reviewed)", "paper", "https://pmc.ncbi.nlm.nih.gov/articles/PMC5356959")
+FAIR_RUBBER = S("Fair Rubber: make the world a better place", "Fair Rubber Association", "standard", "https://www.fairrubber.org/")
+FSC_LABELS = S("FSC labels", "Forest Stewardship Council", "standard", "https://fsc.org/en/fsc-labels")
 NITRO_DIR = S("Commission Directive 93/11/EEC on N-nitrosamines released from elastomer or rubber teats and soothers", "EUR-Lex, European Union", "regulation", "https://eur-lex.europa.eu/eli/dir/1993/11/oj")
 EN7112 = S("EN 71-12: Safety of toys, Part 12: N-Nitrosamines and N-nitrosatable substances", "DIN (German Institute for Standardization)", "standard", "https://www.din.de/en/wdc-beuth:din21:256229607")
 BRIT_RUB = S("Rubber (natural and synthetic)", "Encyclopaedia Britannica", "reference", "https://www.britannica.com/science/rubber-chemical-compound")
@@ -132,6 +134,11 @@ sections = [
     "Not used as a pass criterion. It appears on some fabric listings.",
     "OEKO-TEX STANDARD 100 tests for substances; it does not say what a fibre is made of, so a polyester item can carry the label.",
     [OEKO]),
+  T("fsc", "FSC (Forest Stewardship Council)",
+    "A certification for where wood and paper come from. FSC 100% means all the material comes from FSC-certified forests; FSC Mix means a mixture of material from FSC-certified forests, recycled material and/or FSC controlled wood; FSC Recycled means 100 per cent recycled material.",
+    "Listed under Wood when a maker or store names FSC for the product.",
+    "FSC describes the source of the wood, not how the product is made: it does not say whether a piece is solid wood, plywood or MDF, or what glue or finish it has. Controlled wood in FSC Mix does not come from FSC-certified forests; FSC says its rules mitigate the risk of it coming from unacceptable sources.",
+    [FSC_LABELS], aka=["FSC 100%", "FSC Mix", "FSC Recycled"]),
   T("food-grade", "Food-grade / food-safe",
     "A material that complies with the food-contact rules of a jurisdiction: in the US, FDA food-contact regulations (21 CFR Parts 174 to 186); in the EU, the framework Regulation (EC) 1935/2004 and related measures.",
     "Appears in seller wording such as “food-grade pigments” or “food-grade silicone”. The site treats the phrase as unconfirmed unless the specific regulation or test is named.",
@@ -218,7 +225,7 @@ sections = [
     "Small components in sewn and assembled goods. Sewing thread is commonly polyester or polyester-cotton; zippers, hook-and-loop and elastic are usually synthetic; glues may be synthetic polymers.",
     "The site checks each of these. When a seller does not state them, they are listed as unconfirmed rather than assumed.",
     "US textile labeling rules generally do not require fibre content for sewing thread or trims, so a label reading “100% cotton” can still have polyester thread.",
-    [FIBER]),
+    [FIBER], aka=["small parts"]),
  ]},
  {"id": "wood", "title": "Wood and finishes", "terms": [
   T("hardwood", "Solid hardwood (beech, maple, walnut and others)",
@@ -243,6 +250,11 @@ sections = [
     [BASF_WB, LEADPAINT]),
  ]},
  {"id": "rubber", "title": "Rubber, latex and synthetic look-alikes", "terms": [
+  T("fair-rubber", "Fair Rubber",
+    "A fair-trade seal for natural rubber, awarded by the Fair Rubber Association (Germany) to products that meet its standard. The association pays a premium of €0.50 per kilogram of dry rubber to the people who tap or grow the rubber, who decide how to use it; its cultivation standard (version 3.3, effective January 2025) includes a deforestation criterion.",
+    "Listed under Natural rubber or latex when a maker or store names Fair Rubber for the product.",
+    "The seal concerns how the rubber is produced and traded; it does not say what additives, colourants or synthetic rubber a finished product contains.",
+    [FAIR_RUBBER], aka=["Fair Rubber Association", "Fair Rubber seal"]),
   T("natural-rubber", "Natural rubber",
     "An elastic material made from the milky latex of the rubber tree, Hevea brasiliensis, chemically cis-polyisoprene. It is usually vulcanised (cross-linked, typically with sulphur) and compounded with additives such as accelerators, fillers and colourants.",
     "Natural. Passes when the seller states 100% natural rubber and no plasticisers; added colourants are listed as unconfirmed unless named.",
