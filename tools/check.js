@@ -21,6 +21,25 @@ for (const c of data.criteria) {
   if (c.term && !termIds.has(c.term)) warn.push(`criterion ${c.id}: glossary term ${c.term} not found`);
 }
 for (const s of data.standards || []) if (s.term && !termIds.has(s.term)) warn.push(`standard ${s.id}: glossary term ${s.term} not found`);
+
+// A filter's "?" opens its glossary term, so the term has to be about the same thing. A criterion's label must share
+// a word with the term's name or aka; a standard's own name (the first distinctive word of its label, such as FSC or
+// GOTS) must appear in the term's name or aka. This caught "FSC wood" opening the Solid hardwood entry.
+const STOP = new Set(['only', 'in', 'or', 'and', 'the', 'of', 'to', 'with', 'without', 'not', 'no', 'any', 'for', 'a', 'by', 'from',
+  'stated', 'tested', 'testing', 'certified', 'added', 'us', 'scheme', 'named', 'vs']);
+const words = (t) => (t || '').toLowerCase().split(/[^a-z0-9À-ɏ]+/).filter(w => w && !STOP.has(w)).map(w => w.replace(/s$/, ''));
+const termById = new Map(gloss.sections.flatMap(s => s.terms.map(t => [t.id, t])));
+const termWords = (id) => { const t = termById.get(id); return new Set(words([t.term].concat(t.aka || []).join(' '))); };
+for (const c of data.criteria) {
+  if (!c.term || !termById.has(c.term)) continue;
+  const tw = termWords(c.term);
+  if (!words([c.label, c.sub, c.short].join(' ')).some(w => tw.has(w))) problems.push(`criterion ${c.id}: glossary term "${termById.get(c.term).term}" doesn't name anything in "${c.sub || c.label}"`);
+}
+for (const s of data.standards || []) {
+  if (!s.term || !termById.has(s.term)) continue;
+  const name = words(s.label)[0];
+  if (!termWords(s.term).has(name)) problems.push(`standard ${s.id}: glossary term "${termById.get(s.term).term}" doesn't name "${s.label}"`);
+}
 const cgIds = new Set((data.criteria_groups || []).map(g => g.id));
 for (const c of data.criteria) if (c.group && !cgIds.has(c.group)) problems.push(`criterion ${c.id}: unknown group ${c.group}`);
 const typeIds = new Set();

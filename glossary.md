@@ -94,6 +94,20 @@ Sources:
 
 - [OEKO-TEX STANDARD 100](https://www.oeko-tex.com/en/our-standards/oeko-tex-standard-100), OEKO-TEX Association (Standard or certification)
 
+### FSC (Forest Stewardship Council)
+
+Also called: FSC 100%, FSC Mix, FSC Recycled
+
+**Definition.** A certification for where wood and paper come from. FSC 100% means all the material comes from FSC-certified forests; FSC Mix means a mixture of material from FSC-certified forests, recycled material and/or FSC controlled wood; FSC Recycled means 100 per cent recycled material.
+
+**On this site.** Listed under Wood when a maker or store names FSC for the product.
+
+**What the sources say.** FSC describes the source of the wood, not how the product is made: it does not say whether a piece is solid wood, plywood or MDF, or what glue or finish it has. Controlled wood in FSC Mix does not come from FSC-certified forests; FSC says its rules mitigate the risk of it coming from unacceptable sources.
+
+Sources:
+
+- [FSC labels](https://fsc.org/en/fsc-labels), Forest Stewardship Council (Standard or certification)
+
 ### Food-grade / food-safe
 
 **Definition.** A material that complies with the food-contact rules of a jurisdiction: in the US, FDA food-contact regulations (21 CFR Parts 174 to 186); in the EU, the framework Regulation (EC) 1935/2004 and related measures.
@@ -304,6 +318,8 @@ Sources:
 
 ### Thread, zippers, elastic, glue and hook-and-loop
 
+Also called: small parts
+
 **Definition.** Small components in sewn and assembled goods. Sewing thread is commonly polyester or polyester-cotton; zippers, hook-and-loop and elastic are usually synthetic; glues may be synthetic polymers.
 
 **On this site.** The site checks each of these. When a seller does not state them, they are listed as unconfirmed rather than assumed.
@@ -366,6 +382,20 @@ Sources:
 - [16 CFR Part 1303: Ban of lead-containing paint and certain consumer products bearing lead-containing paint](https://www.ecfr.gov/current/title-16/chapter-II/subchapter-B/part-1303), eCFR, US Government (Law or regulation)
 
 ## Rubber, latex and synthetic look-alikes
+
+### Fair Rubber
+
+Also called: Fair Rubber Association, Fair Rubber seal
+
+**Definition.** A fair-trade seal for natural rubber, awarded by the Fair Rubber Association (Germany) to products that meet its standard. The association pays a premium of €0.50 per kilogram of dry rubber to the people who tap or grow the rubber, who decide how to use it; its cultivation standard (version 3.3, effective January 2025) includes a deforestation criterion.
+
+**On this site.** Listed under Natural rubber or latex when a maker or store names Fair Rubber for the product.
+
+**What the sources say.** The seal concerns how the rubber is produced and traded; it does not say what additives, colourants or synthetic rubber a finished product contains.
+
+Sources:
+
+- [Fair Rubber: make the world a better place](https://www.fairrubber.org/), Fair Rubber Association (Standard or certification)
 
 ### Natural rubber
 
