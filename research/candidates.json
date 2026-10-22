@@ -16,7 +16,8 @@
    "type": "clothes",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "colored-organics-arin-wide-leg-pant"
   },
   {
    "url": "https://coloredorganics.com/products/organic-baby-and-kids-classic-long-sleeve-crew-classic-87002-21-ballet",
@@ -232,7 +233,8 @@
    "type": "bodysuits",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "skipped",
+   "reason": "page has no product details (read 2026-10-22)"
   },
   {
    "url": "https://coloredorganics.com/products/darie-pointelle-kimono-top-and-pant-set-fireside",
@@ -421,7 +423,8 @@
    "type": "bodysuits",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "colored-organics-alaina-pointelle-bodysuit"
   },
   {
    "url": "https://coloredorganics.com/products/organic-cotton-baby-and-kids-aw26-fireside-collection-elodie-pointelle-ls-top-95131-26-macy-floral-ivory",
@@ -502,7 +505,8 @@
    "type": "pajamas",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "colored-organics-skylar-footed-sleeper"
   },
   {
    "url": "https://coloredorganics.com/products/skylar-footed-sleeper-classic",
@@ -853,7 +857,8 @@
    "type": "art",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "skipped",
+   "reason": "page names the material only as \"Wax with non-toxic pigments\" (read 2026-10-22)"
   },
   {
    "url": "https://coloredorganics.com/products/wooden-car-glider-track-copy",
@@ -1160,7 +1165,8 @@
    "type": "accessories",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "huggalugs-garter-stitch-mittens"
   },
   {
    "url": "https://coloredorganics.com/products/baby-and-kids-buffalo-check-pom-pom-beanie",
@@ -2991,7 +2997,8 @@
    "type": "high-chairs",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "skipped",
+   "reason": "page names no materials (read 2026-10-22)"
   },
   {
    "url": "https://beaba.us/products/stainless-steel-insulated-jar-10-oz",
@@ -3054,7 +3061,8 @@
    "type": "food-storage",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "beaba-stainless-steel-lunch-box"
   },
   {
    "url": "https://beaba.us/products/training-bottle-7fl-oz",
@@ -3081,7 +3089,8 @@
    "type": "food-storage",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "beaba-formula-snack-container"
   },
   {
    "url": "https://beaba.us/products/glass-meal-set",
@@ -3513,7 +3522,8 @@
    "type": "cribs",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "newton-essential-bassinet"
   },
   {
    "url": "https://www.newtonbaby.com/products/extra-bassinet-pad-cover",
@@ -3594,7 +3604,8 @@
    "type": "cribs",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "newton-galileo-crib"
   },
   {
    "url": "https://www.newtonbaby.com/products/kids-twin-mattress",
@@ -3891,7 +3902,8 @@
    "type": "furniture",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "piccalio-toddler-table"
   },
   {
    "url": "https://www.piccalio.com/products/naturepedic-ultra-breathable-2-stage-organic-crib-mattress",
@@ -4180,7 +4192,8 @@
    "type": "blankets",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "coyuchi-pebbled-toddler-quilt"
   },
   {
    "url": "https://www.avocadogreenmattress.com/products/coyuchi-organic-crinkled-percale-crib-sheet-praline-meadow",
@@ -9050,7 +9063,8 @@
    "type": "rainwear",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "crywolf-play-jacket"
   },
   {
    "url": "https://crywolfchild.com/products/play-jacket-bows",
@@ -19841,7 +19855,8 @@
    "type": "art",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "skipped",
+   "reason": "page names no materials (read 2026-10-22)"
   },
   {
    "url": "https://kodokids.com/products/discovery-balls",
@@ -39825,7 +39840,8 @@
    "type": "high-chairs",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "delta-children-crave-high-chair"
   },
   {
    "url": "https://www.deltachildren.com/products/emmie-4-in-1-convertible-crib",
@@ -51654,7 +51670,8 @@
    "type": "art",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "eeboo-woodland-watercolors-paper-set"
   },
   {
    "url": "https://www.bellalunatoys.com/products/felt-life-cycle-tray-playmat-earth-with-bee-set",
@@ -56127,7 +56144,8 @@
    "type": "car-seats",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "skipped",
+   "reason": "page names no materials for the seat, shell or fabric (read 2026-10-22)"
   },
   {
    "url": "https://enlightenedbaby.com/products/cybex-cloud-t-comfort-extend-infant-car-seat-with-sensorsafe",
@@ -93306,7 +93324,8 @@
    "type": "high-chairs",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "plantoys-wooden-high-chair"
   },
   {
    "url": "https://thebabypenguin.com/products/my-first-dollhouse",
