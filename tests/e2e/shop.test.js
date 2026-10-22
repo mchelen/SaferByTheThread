@@ -205,6 +205,19 @@ test('brands and glossary pages render, and old hash links still land', async ()
   await page.close();
 });
 
+test('phone width: a filtered list page and a narrow phone do not scroll sideways', async () => {
+  // Active filters add a dot to "Filter & sort", which with the sort menu made the toolbar wider than a phone.
+  let page = await open('/c/mattresses?mat=cotton,wool&m=none', { width: 390, height: 800 });
+  await page.waitForSelector('.toolbar');
+  assert.equal(await page.evaluate(() => document.documentElement.scrollWidth), 390, 'toolbar fits with active filters');
+  await page.close();
+  // Long unbroken brand names in two-column cards at 320 px.
+  page = await open('/c/books', { width: 320, height: 700 });
+  await page.waitForSelector('.card');
+  assert.equal(await page.evaluate(() => document.documentElement.scrollWidth), 320, 'cards fit at 320 px');
+  await page.close();
+});
+
 test('phone width: nothing overflows, and the filter drawer applies on "Show results"', async () => {
   const page = await open('/shop', { width: 390, height: 800 });
   await page.waitForSelector('.card');
