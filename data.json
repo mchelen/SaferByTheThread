@@ -1,6 +1,6 @@
 {
  "schema": 4,
- "updated": "2026-10-21",
+ "updated": "2026-10-22",
  "ask": [
   "Thread on any sewn item (cotton or polyester).",
   "Wheels and axles on push toys and cars.",
@@ -12220,6 +12220,1205 @@
    ],
    "img": "weesprout-baby-wrap-carrier",
    "img_src": "https://cdn.shopify.com/s/files/1/0957/4574/files/BWC-Blue-Dusk_58523071-497e-411a-bd72-1509b204dc76.jpg?v=1782247574"
+  },
+  {
+   "id": "beaba-formula-snack-container",
+   "type": "food-storage",
+   "brand": "Béaba",
+   "line": "Four Compartment Formula Snack Container",
+   "uses": [],
+   "free": [
+    "BPA",
+    "BPS",
+    "Phthalates"
+   ],
+   "unconfirmed": [
+    "Type of plastic"
+   ],
+   "outside": [
+    "Plastic (the maker says 28% less than its earlier model)"
+   ],
+   "facts": {
+    "main": "no"
+   },
+   "quote": "Eco-designed product : -28% plastic",
+   "products": [
+    {
+     "name": "Four Compartment Formula Snack Container",
+     "url": "https://beaba.us/products/formula-milk-container-4-compartments",
+     "store": "Béaba USA",
+     "price": "$14.99",
+     "ships_from": null,
+     "shipping": "Free shipping on orders $140*"
+    }
+   ],
+   "standards": [],
+   "contains": [],
+   "read": "2026-10-22",
+   "photos": [
+    {
+     "key": "beaba-formula-snack-container",
+     "src": "https://cdn.shopify.com/s/files/1/0673/7756/1739/files/911711_product_face_1.jpg?v=1756435923"
+    },
+    {
+     "key": "beaba-formula-snack-container_2",
+     "src": "https://cdn.shopify.com/s/files/1/0673/7756/1739/files/911711_product_3-4_2.jpg?v=1767647897"
+    },
+    {
+     "key": "beaba-formula-snack-container_3",
+     "src": "https://cdn.shopify.com/s/files/1/0673/7756/1739/files/911711_product_amb_2.jpg?v=1767647897"
+    },
+    {
+     "key": "beaba-formula-snack-container_4",
+     "src": "https://cdn.shopify.com/s/files/1/0673/7756/1739/files/911711_product_amb_7.jpg?v=1767647897"
+    },
+    {
+     "key": "beaba-formula-snack-container_5",
+     "src": "https://cdn.shopify.com/s/files/1/0673/7756/1739/files/911711_product_amb_1a.jpg?v=1767647897"
+    },
+    {
+     "key": "beaba-formula-snack-container_6",
+     "src": "https://cdn.shopify.com/s/files/1/0673/7756/1739/files/911712_product_amb_10v.jpg?v=1767647981"
+    },
+    {
+     "key": "beaba-formula-snack-container_7",
+     "src": "https://cdn.shopify.com/s/files/1/0673/7756/1739/files/911711_product_amb_8.jpg?v=1767647981"
+    },
+    {
+     "key": "beaba-formula-snack-container_8",
+     "src": "https://cdn.shopify.com/s/files/1/0673/7756/1739/files/911712_product_amb_4.jpg?v=1767648032"
+    },
+    {
+     "key": "beaba-formula-snack-container_9",
+     "src": "https://cdn.shopify.com/s/files/1/0673/7756/1739/files/911713_product_amb_2b.jpg?v=1767647981"
+    },
+    {
+     "key": "beaba-formula-snack-container_10",
+     "src": "https://cdn.shopify.com/s/files/1/0673/7756/1739/files/911712_product_amb_5.jpg?v=1767647981"
+    }
+   ],
+   "img": "beaba-formula-snack-container",
+   "img_src": "https://cdn.shopify.com/s/files/1/0673/7756/1739/files/911711_product_face_1.jpg?v=1756435923"
+  },
+  {
+   "id": "beaba-stainless-steel-lunch-box",
+   "type": "food-storage",
+   "brand": "Béaba",
+   "line": "Stainless Steel Lunch Box, 25.7 oz",
+   "uses": [
+    "Stainless steel box",
+    "Silicone lid",
+    "Silicone dividers"
+   ],
+   "free": [
+    "BPA",
+    "BPS",
+    "Lead",
+    "Phthalates"
+   ],
+   "unconfirmed": [
+    "Finished-product test for the silicone lid and dividers",
+    "Colourant in the rose, rain and sage silicone parts"
+   ],
+   "outside": [],
+   "facts": {
+    "main": "yes",
+    "color": "unknown",
+    "silicone": "unknown"
+   },
+   "unstated": {
+    "silicone": [
+     "Finished-product test for the silicone lid and dividers"
+    ],
+    "color": [
+     "Colourant in the rose, rain and sage silicone parts"
+    ]
+   },
+   "quote": "Lid: Silicone Box: Stainless Steel Dividers: Silicone",
+   "products": [
+    {
+     "name": "Stainless steel lunch box",
+     "url": "https://beaba.us/products/stainless-steel-lunch-box-1",
+     "store": "Béaba USA",
+     "price": "$35.99",
+     "ships_from": null,
+     "shipping": "Free shipping on orders $140*"
+    }
+   ],
+   "standards": [],
+   "contains": [],
+   "read": "2026-10-22",
+   "photos": [
+    {
+     "key": "beaba-stainless-steel-lunch-box",
+     "src": "https://cdn.shopify.com/s/files/1/0673/7756/1739/files/914004_product_face_2.jpg?v=1758250230"
+    },
+    {
+     "key": "beaba-stainless-steel-lunch-box_2",
+     "src": "https://cdn.shopify.com/s/files/1/0673/7756/1739/files/914004_product_face_4.jpg?v=1758250230"
+    },
+    {
+     "key": "beaba-stainless-steel-lunch-box_3",
+     "src": "https://cdn.shopify.com/s/files/1/0673/7756/1739/files/914004_product_face_1.jpg?v=1758250230"
+    },
+    {
+     "key": "beaba-stainless-steel-lunch-box_4",
+     "src": "https://cdn.shopify.com/s/files/1/0673/7756/1739/files/914004_product_face_6.jpg?v=1758250230"
+    },
+    {
+     "key": "beaba-stainless-steel-lunch-box_5",
+     "src": "https://cdn.shopify.com/s/files/1/0673/7756/1739/files/914003_product_amb_1.jpg?v=1758249665"
+    },
+    {
+     "key": "beaba-stainless-steel-lunch-box_6",
+     "src": "https://cdn.shopify.com/s/files/1/0673/7756/1739/files/914002_product_amb_1.jpg?v=1758249687"
+    },
+    {
+     "key": "beaba-stainless-steel-lunch-box_7",
+     "src": "https://cdn.shopify.com/s/files/1/0673/7756/1739/files/914004_product_amb_1.jpg?v=1758249761"
+    },
+    {
+     "key": "beaba-stainless-steel-lunch-box_8",
+     "src": "https://cdn.shopify.com/s/files/1/0673/7756/1739/files/914003_product_amb_3_03793a2a-e8c9-4c1b-a22d-9fdc5467a166.jpg?v=1758249787"
+    },
+    {
+     "key": "beaba-stainless-steel-lunch-box_9",
+     "src": "https://cdn.shopify.com/s/files/1/0673/7756/1739/files/914003_product_amb_4.jpg?v=1758249816"
+    },
+    {
+     "key": "beaba-stainless-steel-lunch-box_10",
+     "src": "https://cdn.shopify.com/s/files/1/0673/7756/1739/files/914003_product_amb_5.jpg?v=1758249830"
+    }
+   ],
+   "img": "beaba-stainless-steel-lunch-box",
+   "img_src": "https://cdn.shopify.com/s/files/1/0673/7756/1739/files/914004_product_face_2.jpg?v=1758250230"
+  },
+  {
+   "id": "clek-liing-infant-car-seat",
+   "type": "car-seats",
+   "brand": "Clek",
+   "line": "Liing Infant Car Seat",
+   "uses": [
+    "Mammoth Ziip fabric of 70% merino wool and 30% Tencel",
+    "Metal load leg"
+   ],
+   "free": [
+    "Added flame retardants",
+    "PFAS",
+    "Fluorine",
+    "Phthalates"
+   ],
+   "unconfirmed": [
+    "Treatment of the merino wool",
+    "Energy-absorbing shell",
+    "Harness straps and buckle",
+    "Fill of the newborn body support and headrest"
+   ],
+   "outside": [
+    "100% polyester fabric (Latte Ziip)",
+    "99% polyester and 1% wool fabric (Railroad, Edge, Highlands and Vintage Ziip)",
+    "EPP foam lining in the shell"
+   ],
+   "facts": {
+    "main": "no",
+    "parts": "unknown",
+    "wool": "unknown",
+    "flame": "yes",
+    "finish": "yes"
+   },
+   "unstated": {
+    "parts": [
+     "Harness straps and buckle"
+    ],
+    "wool": [
+     "Treatment of the merino wool"
+    ]
+   },
+   "age": {
+    "min_months": 0,
+    "text": "Newborn, 4 to 30 lb, up to 32 in, rear-facing only"
+   },
+   "quote": "Mammoth Ziip: 70% Merino Wool + 30% Tencel™",
+   "products": [
+    {
+     "name": "liing Infant Car Seat",
+     "url": "https://clekinc.com/products/liing",
+     "store": "Clek",
+     "price": "$599.99",
+     "ships_from": "US",
+     "shipping": "Free shipping on orders over $99*"
+    }
+   ],
+   "standards": [],
+   "contains": [],
+   "read": "2026-10-22",
+   "photos": [
+    {
+     "key": "clek-liing-infant-car-seat",
+     "src": "https://cdn.shopify.com/s/files/1/0740/8875/files/clek-liing-railroad-ziip.jpg?v=1708873087"
+    },
+    {
+     "key": "clek-liing-infant-car-seat_2",
+     "src": "https://cdn.shopify.com/s/files/1/0740/8875/files/Clek-Liing-Feature-3-Across.jpg?v=1769017541"
+    },
+    {
+     "key": "clek-liing-infant-car-seat_3",
+     "src": "https://cdn.shopify.com/s/files/1/0740/8875/files/Clek-Liing-Feature-Energy-Absorbing-Load-Leg.jpg?v=1772476975"
+    },
+    {
+     "key": "clek-liing-infant-car-seat_4",
+     "src": "https://cdn.shopify.com/s/files/1/0740/8875/files/Clek-Liing-Feature-Rigid-LATCH_fd567ccb-241c-4ceb-9960-7d3bbd99740f.jpg?v=1772476975"
+    },
+    {
+     "key": "clek-liing-infant-car-seat_5",
+     "src": "https://cdn.shopify.com/s/files/1/0740/8875/files/Clek-Liing-Feature-Adjustable-Recline.jpg?v=1772476975"
+    },
+    {
+     "key": "clek-liing-infant-car-seat_6",
+     "src": "https://cdn.shopify.com/s/files/1/0740/8875/files/Clek-Liing-Feature-Belt-Tensioning-System.jpg?v=1772476975"
+    },
+    {
+     "key": "clek-liing-infant-car-seat_7",
+     "src": "https://cdn.shopify.com/s/files/1/0740/8875/files/Clek-Liing-Feature-Side-Impact-Protection.jpg?v=1772476975"
+    },
+    {
+     "key": "clek-liing-infant-car-seat_8",
+     "src": "https://cdn.shopify.com/s/files/1/0740/8875/files/Clek-Liing-Feature-Newborn-Support-System.jpg?v=1772476975"
+    },
+    {
+     "key": "clek-liing-infant-car-seat_9",
+     "src": "https://cdn.shopify.com/s/files/1/0740/8875/files/Clek-Liing-Feature-Stroller-Compatibility.jpg?v=1772476975"
+    },
+    {
+     "key": "clek-liing-infant-car-seat_10",
+     "src": "https://cdn.shopify.com/s/files/1/0740/8875/files/Clek-Liing-Feature-Sun-Protection-Canopy.jpg?v=1772476975"
+    }
+   ],
+   "img": "clek-liing-infant-car-seat",
+   "img_src": "https://cdn.shopify.com/s/files/1/0740/8875/files/clek-liing-railroad-ziip.jpg?v=1708873087"
+  },
+  {
+   "id": "colored-organics-alaina-pointelle-bodysuit",
+   "type": "bodysuits",
+   "brand": "Colored Organics",
+   "line": "Alaina Pointelle Long Sleeve Bodysuit",
+   "uses": [
+    "100% organic cotton pointelle"
+   ],
+   "free": [
+    "Nickel in the snaps"
+   ],
+   "unconfirmed": [
+    "Snaps (“nickel-free”, metal not named)",
+    "Dyes (“water-based”, type not named)",
+    "Thread"
+   ],
+   "outside": [],
+   "facts": {
+    "main": "yes",
+    "parts": "unknown",
+    "color": "unknown",
+    "organic": "yes"
+   },
+   "unstated": {
+    "parts": [
+     "Snaps (“nickel-free”, metal not named)",
+     "Thread"
+    ],
+    "color": [
+     "Dyes (“water-based”, type not named)"
+    ]
+   },
+   "quote": "Crafted from organic cotton pointelle",
+   "products": [
+    {
+     "name": "Alaina Pointelle Long Sleeve Bodysuit - Macy Floral",
+     "url": "https://coloredorganics.com/products/organic-cotton-baby-aw26-fireside-collection-alaina-pointelle-bodysuit-95132-26-macy-floral-ivory",
+     "store": "Colored Organics",
+     "price": "$28",
+     "ships_from": null,
+     "shipping": "Free U.S. shipping on orders over $50"
+    }
+   ],
+   "standards": [],
+   "contains": [],
+   "read": "2026-10-22",
+   "photos": [
+    {
+     "key": "colored-organics-alaina-pointelle-bodysuit",
+     "src": "https://cdn.shopify.com/s/files/1/1643/4857/files/95132-26-alaina-pointelle-ls-bodysuit.macy-floral-ivory.flat_front_d2308bfd-cf20-48fc-a76e-1c9d8074548b.jpg?v=1790614751"
+    }
+   ],
+   "img": "colored-organics-alaina-pointelle-bodysuit",
+   "img_src": "https://cdn.shopify.com/s/files/1/1643/4857/files/95132-26-alaina-pointelle-ls-bodysuit.macy-floral-ivory.flat_front_d2308bfd-cf20-48fc-a76e-1c9d8074548b.jpg?v=1790614751"
+  },
+  {
+   "id": "colored-organics-arin-wide-leg-pant",
+   "type": "clothes",
+   "brand": "Colored Organics",
+   "line": "Arin Wide Leg Pant",
+   "uses": [
+    "100% organic cotton interlock fabric"
+   ],
+   "free": [],
+   "unconfirmed": [
+    "Elastic in the waistband",
+    "Drawstring (toddler sizes)",
+    "Dyes (“water-based”, type not named)",
+    "Thread"
+   ],
+   "outside": [],
+   "facts": {
+    "main": "yes",
+    "parts": "unknown",
+    "color": "unknown",
+    "organic": "yes"
+   },
+   "unstated": {
+    "parts": [
+     "Elastic in the waistband",
+     "Drawstring (toddler sizes)",
+     "Thread"
+    ],
+    "color": [
+     "Dyes (“water-based”, type not named)"
+    ]
+   },
+   "quote": "Made of 100% Organic Cotton Interlock Fabric",
+   "products": [
+    {
+     "name": "Arin Wide Leg Pant - Harbor",
+     "url": "https://coloredorganics.com/products/organic-baby-and-kids-classic-arin-wide-leg-pant-95055-26-harbor",
+     "store": "Colored Organics",
+     "price": "$28",
+     "ships_from": null,
+     "shipping": "Free U.S. shipping on orders over $50"
+    }
+   ],
+   "standards": [],
+   "contains": [],
+   "read": "2026-10-22",
+   "photos": [
+    {
+     "key": "colored-organics-arin-wide-leg-pant",
+     "src": "https://cdn.shopify.com/s/files/1/1643/4857/files/95055-26-arin-classic-straight-legs.harbor.flat_front_007ad91a-aa86-49ff-8185-46a04747c246.jpg?v=1791401321"
+    }
+   ],
+   "img": "colored-organics-arin-wide-leg-pant",
+   "img_src": "https://cdn.shopify.com/s/files/1/1643/4857/files/95055-26-arin-classic-straight-legs.harbor.flat_front_007ad91a-aa86-49ff-8185-46a04747c246.jpg?v=1791401321"
+  },
+  {
+   "id": "colored-organics-skylar-footed-sleeper",
+   "type": "pajamas",
+   "brand": "Colored Organics",
+   "line": "Skylar Footed Sleeper",
+   "uses": [
+    "100% organic cotton fabric"
+   ],
+   "free": [
+    "Nickel in the snaps",
+    "Flame resistant treatment"
+   ],
+   "unconfirmed": [
+    "Snaps (“nickel-free”, metal not named)",
+    "Footie grips",
+    "Dyes (“water-based”, type not named)",
+    "Thread"
+   ],
+   "outside": [],
+   "facts": {
+    "main": "yes",
+    "parts": "unknown",
+    "color": "unknown",
+    "organic": "yes",
+    "flame": "yes"
+   },
+   "unstated": {
+    "parts": [
+     "Snaps (“nickel-free”, metal not named)",
+     "Footie grips",
+     "Thread"
+    ],
+    "color": [
+     "Dyes (“water-based”, type not named)"
+    ]
+   },
+   "quote": "Made of 100% organic cotton, this sleeper is a cozy and breathable layer",
+   "products": [
+    {
+     "name": "Skylar Footed Sleeper - Coconut",
+     "url": "https://coloredorganics.com/products/skylar-footed-sleeper-coconut",
+     "store": "Colored Organics",
+     "price": "$35",
+     "ships_from": null,
+     "shipping": "Free U.S. shipping on orders over $50"
+    }
+   ],
+   "standards": [],
+   "contains": [],
+   "read": "2026-10-22",
+   "photos": [
+    {
+     "key": "colored-organics-skylar-footed-sleeper",
+     "src": "https://cdn.shopify.com/s/files/1/1643/4857/files/95054-26-skylar-footed-sleeper.coconut.flat_front_40c95e20-c7fa-4460-91d3-c9afec4fdf43.jpg?v=1791298206"
+    }
+   ],
+   "img": "colored-organics-skylar-footed-sleeper",
+   "img_src": "https://cdn.shopify.com/s/files/1/1643/4857/files/95054-26-skylar-footed-sleeper.coconut.flat_front_40c95e20-c7fa-4460-91d3-c9afec4fdf43.jpg?v=1791298206"
+  },
+  {
+   "id": "coyuchi-pebbled-toddler-quilt",
+   "type": "blankets",
+   "brand": "Coyuchi",
+   "line": "Pebbled Handstitched Organic Toddler Quilt, 50 x 36 in",
+   "uses": [
+    "100% organic cotton sateen",
+    "Organic cotton batting"
+   ],
+   "free": [],
+   "unconfirmed": [
+    "Thread of the handstitched embroidery",
+    "Dyes (pale gray with cools)"
+   ],
+   "outside": [],
+   "facts": {
+    "main": "yes",
+    "parts": "unknown",
+    "color": "unknown",
+    "organic": "yes"
+   },
+   "unstated": {
+    "parts": [
+     "Thread of the handstitched embroidery"
+    ],
+    "color": [
+     "Dyes (pale gray with cools)"
+    ]
+   },
+   "standards": [
+    "gots"
+   ],
+   "quote": "crafted from smooth, 100% organic cotton sateen",
+   "products": [
+    {
+     "name": "Coyuchi Pebbled Handstitched Organic Toddler Quilt, Pale Gray w/Cools",
+     "url": "https://www.avocadogreenmattress.com/products/coyuchi-pebbled-handstitched-organic-toddler-quilt-pale-gray-with-cools",
+     "store": "Avocado",
+     "price": "$128",
+     "ships_from": null
+    }
+   ],
+   "contains": [],
+   "read": "2026-10-22",
+   "photos": [
+    {
+     "key": "coyuchi-pebbled-toddler-quilt",
+     "src": "https://cdn.shopify.com/s/files/1/0444/9488/0918/files/FA24_PebbledHandstitchedOrganic_ToddlerQuilt_PaleGraywCools_A_1033_ee405353-ebcd-44cd-88d0-e157f069a93e.jpg?v=1775599906"
+    },
+    {
+     "key": "coyuchi-pebbled-toddler-quilt_2",
+     "src": "https://cdn.shopify.com/s/files/1/0444/9488/0918/files/FA24_PebbledHandstitchedOrganic_ToddlerQuilt_PaleGraywCools_B_1040_0d13abfc-79ea-4bbe-a766-86d86dc94bcd.jpg?v=1775599906"
+    }
+   ],
+   "img": "coyuchi-pebbled-toddler-quilt",
+   "img_src": "https://cdn.shopify.com/s/files/1/0444/9488/0918/files/FA24_PebbledHandstitchedOrganic_ToddlerQuilt_PaleGraywCools_A_1033_ee405353-ebcd-44cd-88d0-e157f069a93e.jpg?v=1775599906"
+  },
+  {
+   "id": "crywolf-play-jacket",
+   "type": "rainwear",
+   "brand": "Crywolf",
+   "line": "Play Jacket",
+   "uses": [],
+   "free": [],
+   "unconfirmed": [
+    "Fibre of the hood lining",
+    "Concealed YKK Vislon zipper",
+    "Snap closures",
+    "Hook-and-loop wrist tabs",
+    "Elastic in the wrist cuffs",
+    "Finish on the waterproof outer"
+   ],
+   "outside": [
+    "Recycled polyester shell bonded with waterproof PU outer"
+   ],
+   "facts": {
+    "main": "no",
+    "parts": "unknown",
+    "finish": "unknown"
+   },
+   "unstated": {
+    "parts": [
+     "Concealed YKK Vislon zipper",
+     "Snap closures",
+     "Hook-and-loop wrist tabs",
+     "Elastic in the wrist cuffs"
+    ],
+    "finish": [
+     "Finish on the waterproof outer"
+    ]
+   },
+   "standards": [
+    "oeko-tex"
+   ],
+   "age": {
+    "min_months": 12,
+    "text": "Sizes 1 year and up"
+   },
+   "quote": "Shell: Recycled polyester bonded with waterproof PU outer",
+   "products": [
+    {
+     "name": "PLAY JACKET Rose Gingham",
+     "url": "https://crywolfchild.com/products/play-jacket-rose-gingham",
+     "store": "Crywolf",
+     "price": "NZ$62.99 (sale; was NZ$89.99)",
+     "ships_from": "New Zealand"
+    }
+   ],
+   "contains": [],
+   "read": "2026-10-22",
+   "photos": [
+    {
+     "key": "crywolf-play-jacket",
+     "src": "https://cdn.shopify.com/s/files/1/2228/8463/files/CRYWOLF-AW26-Play-Jacket-Rose-Gingham-Front-WEB-JPG.jpg?v=1773710387"
+    },
+    {
+     "key": "crywolf-play-jacket_2",
+     "src": "https://cdn.shopify.com/s/files/1/2228/8463/files/CRYWOLF-AW26-Play-Jacket-Gingham-a-WEB-JPG.jpg?v=1773938363"
+    },
+    {
+     "key": "crywolf-play-jacket_3",
+     "src": "https://cdn.shopify.com/s/files/1/2228/8463/files/CRYWOLF-AW26-Play-Jacket-Rose-Gingham-Back-WEB-JPG.jpg?v=1773938363"
+    },
+    {
+     "key": "crywolf-play-jacket_4",
+     "src": "https://cdn.shopify.com/s/files/1/2228/8463/files/CRYWOLF-AW26-Play-Jacket-Gingham-c-WEB-JPG.jpg?v=1773938363"
+    },
+    {
+     "key": "crywolf-play-jacket_5",
+     "src": "https://cdn.shopify.com/s/files/1/2228/8463/files/CRYWOLF-AW26-Play-Jacket-Gingham-b-WEB-JPG.jpg?v=1774389881"
+    },
+    {
+     "key": "crywolf-play-jacket_6",
+     "src": "https://cdn.shopify.com/s/files/1/2228/8463/files/CRYWOLF-AW26-Play-Jacket-Gingham-d-WEB-JPG.jpg?v=1774389881"
+    },
+    {
+     "key": "crywolf-play-jacket_7",
+     "src": "https://crywolfchild.com/cdn/shop/files/preview_images/09254cb0f7824e9c90add721d1a464ba.thumbnail.0000000000.jpg?v=1776989918"
+    }
+   ],
+   "img": "crywolf-play-jacket",
+   "img_src": "https://cdn.shopify.com/s/files/1/2228/8463/files/CRYWOLF-AW26-Play-Jacket-Rose-Gingham-Front-WEB-JPG.jpg?v=1773710387"
+  },
+  {
+   "id": "delta-children-crave-high-chair",
+   "type": "high-chairs",
+   "brand": "Delta Children",
+   "line": "Crave 4-in-1 Convertible High Chair",
+   "uses": [
+    "FSC-certified beech wood frame",
+    "Silicone coating on the harness straps"
+   ],
+   "free": [
+    "Added fire retardants",
+    "Lead",
+    "Phthalates"
+   ],
+   "unconfirmed": [
+    "Seat and seatback",
+    "Tray and removable tray insert",
+    "Strap webbing under the silicone coating",
+    "Magnetic buckle",
+    "Rubber feet (type of rubber not named)",
+    "Solid or layered beech in the frame",
+    "Finish on the beech frame"
+   ],
+   "outside": [],
+   "facts": {
+    "main": "unknown",
+    "parts": "unknown",
+    "wood": "unknown",
+    "color": "unknown",
+    "rubber": "unknown",
+    "flame": "yes"
+   },
+   "unstated": {
+    "main": [
+     "Seat and seatback",
+     "Tray and removable tray insert"
+    ],
+    "parts": [
+     "Strap webbing under the silicone coating",
+     "Magnetic buckle"
+    ],
+    "wood": [
+     "Solid or layered beech in the frame"
+    ],
+    "color": [
+     "Finish on the beech frame"
+    ],
+    "rubber": [
+     "Rubber feet (type of rubber not named)"
+    ]
+   },
+   "standards": [
+    "fsc"
+   ],
+   "age": {
+    "min_months": 6,
+    "text": "High chair from 6 months (35 lb); converts to toddler, child and adult chair"
+   },
+   "quote": "Crafted with an FSC-certified beech wood frame",
+   "products": [
+    {
+     "name": "Delta Children Crave 4-in-1 Convertible High Chair, Natural",
+     "url": "https://www.deltachildren.com/products/crave-4-in-1-convertible-high-chair",
+     "store": "Delta Children",
+     "price": "$179.99",
+     "ships_from": null,
+     "shipping": "Free shipping sitewide (contiguous 48 states)"
+    }
+   ],
+   "contains": [],
+   "read": "2026-10-22",
+   "photos": [
+    {
+     "key": "delta-children-crave-high-chair",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/24635-160_Delta-Crave-High-Chair_Natural_Lifestyle_11.jpg?v=1776892417"
+    },
+    {
+     "key": "delta-children-crave-high-chair_2",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/24635-160_Delta-Crave-High-Chair_Natural_Callout_09_9ef2f5df-6a6c-4c0a-9ab2-0fd378ea691c.jpg?v=1785944607"
+    },
+    {
+     "key": "delta-children-crave-high-chair_3",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/24635-160_Delta-Crave-High-Chair_Natural_Callout_01.jpg?v=1779979217"
+    },
+    {
+     "key": "delta-children-crave-high-chair_4",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/24635-160_Delta-Crave-High-Chair_Natural_Callout_04.jpg?v=1779979217"
+    },
+    {
+     "key": "delta-children-crave-high-chair_5",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/24635-160_Delta-Crave-High-Chair_Natural_Callout_07.jpg?v=1779979217"
+    },
+    {
+     "key": "delta-children-crave-high-chair_6",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/24635-160_Delta-Crave-High-Chair_Natural_Callout_03.jpg?v=1779979217"
+    },
+    {
+     "key": "delta-children-crave-high-chair_7",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/24635-160_Delta-Crave-High-Chair_Natural_Callout_02.jpg?v=1779979216"
+    },
+    {
+     "key": "delta-children-crave-high-chair_8",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/24635-160_Delta-Crave-High-Chair_Natural_Callout_05.jpg?v=1779979217"
+    },
+    {
+     "key": "delta-children-crave-high-chair_9",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/24635-160_Delta-Crave-High-Chair_Natural_Callout_08.jpg?v=1779979217"
+    },
+    {
+     "key": "delta-children-crave-high-chair_10",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/24635-160_Delta-Crave-High-Chair_Natural_Callout_06.jpg?v=1779979217"
+    }
+   ],
+   "img": "delta-children-crave-high-chair",
+   "img_src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/24635-160_Delta-Crave-High-Chair_Natural_Lifestyle_11.jpg?v=1776892417"
+  },
+  {
+   "id": "eeboo-woodland-watercolors-paper-set",
+   "type": "art",
+   "brand": "eeBoo",
+   "line": "Woodland Watercolors & Italian Paper Pad Set",
+   "uses": [
+    "Watercolor paper",
+    "Metal paint tin"
+   ],
+   "free": [
+    "Chlorine in the paper"
+   ],
+   "unconfirmed": [
+    "Watercolor paints (ingredients and pigments not named)",
+    "Glue binding the paper pad"
+   ],
+   "outside": [],
+   "facts": {
+    "main": "unknown",
+    "color": "unknown",
+    "parts": "unknown"
+   },
+   "unstated": {
+    "main": [
+     "Watercolor paints (ingredients and pigments not named)"
+    ],
+    "color": [
+     "Watercolor paints (ingredients and pigments not named)"
+    ],
+    "parts": [
+     "Glue binding the paper pad"
+    ]
+   },
+   "quote": "MATERIALS : Paper, metal",
+   "products": [
+    {
+     "name": "eeBoo Woodland Watercolors & Italian Paper Pad Set",
+     "url": "https://www.bellalunatoys.com/products/woodland-watercolors-italian-paper-pad-set",
+     "store": "Bella Luna Toys",
+     "price": "$30.00 (sale; regular $33.98)",
+     "ships_from": "US",
+     "shipping": "Free shipping on orders over $99 within the contiguous 48 states"
+    }
+   ],
+   "standards": [],
+   "contains": [],
+   "read": "2026-10-22",
+   "photos": [
+    {
+     "key": "eeboo-woodland-watercolors-paper-set",
+     "src": "https://cdn.shopify.com/s/files/1/1114/2810/files/eboo-watercolors-and-paper-pad-set.jpg?v=1707920757"
+    },
+    {
+     "key": "eeboo-woodland-watercolors-paper-set_2",
+     "src": "https://cdn.shopify.com/s/files/1/1114/2810/files/eeboo-woodland-Rainbow-watercolor-pad-bella-luna-toys-2_ff423d05-3cc3-4116-a2bd-501a6380922f.jpg?v=1707920757"
+    }
+   ],
+   "img": "eeboo-woodland-watercolors-paper-set",
+   "img_src": "https://cdn.shopify.com/s/files/1/1114/2810/files/eboo-watercolors-and-paper-pad-set.jpg?v=1707920757"
+  },
+  {
+   "id": "huggalugs-garter-stitch-mittens",
+   "type": "accessories",
+   "brand": "Huggalugs",
+   "line": "Garter Stitch Mittens",
+   "uses": [],
+   "free": [],
+   "unconfirmed": [
+    "Dyes"
+   ],
+   "outside": [
+    "60% acrylic, 40% recycled polyester yarn"
+   ],
+   "facts": {
+    "main": "no",
+    "color": "unknown"
+   },
+   "unstated": {
+    "color": [
+     "Dyes"
+    ]
+   },
+   "quote": "Each mitten is partially knit from recycled, sustainable Polyester yarn made from plastic bottles.",
+   "products": [
+    {
+     "name": "Garter Stitch Mittens - Pebble",
+     "url": "https://coloredorganics.com/products/knit-mittens-copy-1",
+     "store": "Colored Organics",
+     "price": "$24",
+     "ships_from": null,
+     "shipping": "Free U.S. shipping on orders over $50"
+    }
+   ],
+   "standards": [],
+   "contains": [],
+   "read": "2026-10-22",
+   "photos": [
+    {
+     "key": "huggalugs-garter-stitch-mittens",
+     "src": "https://cdn.shopify.com/s/files/1/1643/4857/files/infant-unisex-garter-stitch-mittens.pebble.flat_front.jpg?v=1787076857"
+    }
+   ],
+   "img": "huggalugs-garter-stitch-mittens",
+   "img_src": "https://cdn.shopify.com/s/files/1/1643/4857/files/infant-unisex-garter-stitch-mittens.pebble.flat_front.jpg?v=1787076857"
+  },
+  {
+   "id": "newton-essential-bassinet",
+   "type": "cribs",
+   "brand": "Newton",
+   "line": "Essential Bassinet with Wovenaire mattress",
+   "uses": [
+    "Metal frame"
+   ],
+   "free": [
+    "Foam in the mattress",
+    "Glue in the mattress",
+    "Latex in the mattress",
+    "Springs in the mattress"
+   ],
+   "unconfirmed": [
+    "Fibre of the machine-washable fabric",
+    "Fibre of the mesh sides",
+    "Fibre of the mattress cover",
+    "Faux-wood finish on the metal frame",
+    "Zip and hook-and-loop fasteners on the fabric cover"
+   ],
+   "outside": [
+    "Wovenaire mattress core of 90% air and 10% food-grade polymer"
+   ],
+   "facts": {
+    "main": "no",
+    "color": "unknown",
+    "parts": "unknown"
+   },
+   "unstated": {
+    "color": [
+     "Faux-wood finish on the metal frame"
+    ],
+    "parts": [
+     "Zip and hook-and-loop fasteners on the fabric cover"
+    ]
+   },
+   "age": {
+    "min_months": 0,
+    "max_months": 6,
+    "text": "Newborn to about 6 months, or until baby can push up, roll over or reaches 20 lb"
+   },
+   "quote": "its patented Wovenaire® core is 90% air and 10% food-grade polymer",
+   "products": [
+    {
+     "name": "Essential Bassinet",
+     "url": "https://www.newtonbaby.com/products/essential-bassinet",
+     "store": "Newton Baby",
+     "price": "$199.99",
+     "ships_from": "US",
+     "shipping": "Free shipping in the contiguous 48 states"
+    }
+   ],
+   "standards": [],
+   "contains": [],
+   "read": "2026-10-22",
+   "photos": [
+    {
+     "key": "newton-essential-bassinet",
+     "src": "https://cdn.shopify.com/s/files/1/0792/0323/files/Essential_Bassinet_ATC_1.jpg?v=1769682680"
+    },
+    {
+     "key": "newton-essential-bassinet_2",
+     "src": "https://cdn.shopify.com/s/files/1/0792/0323/files/8402GRY_EssentialBassinet3000_2.jpg?v=1774452652"
+    },
+    {
+     "key": "newton-essential-bassinet_3",
+     "src": "https://cdn.shopify.com/s/files/1/0792/0323/files/EssentialBassinet3000_5.jpg?v=1774452652"
+    },
+    {
+     "key": "newton-essential-bassinet_4",
+     "src": "https://cdn.shopify.com/s/files/1/0792/0323/files/Essential-Bassinet-3000-10-v2_1.jpg?v=1776795885"
+    },
+    {
+     "key": "newton-essential-bassinet_5",
+     "src": "https://cdn.shopify.com/s/files/1/0792/0323/files/EssentialBassinet3000_9.jpg?v=1774452652"
+    },
+    {
+     "key": "newton-essential-bassinet_6",
+     "src": "https://cdn.shopify.com/s/files/1/0792/0323/files/EssentialBassinet3000_3.jpg?v=1774452652"
+    },
+    {
+     "key": "newton-essential-bassinet_7",
+     "src": "https://cdn.shopify.com/s/files/1/0792/0323/files/EssentialBassinet3000_4.jpg?v=1774452652"
+    },
+    {
+     "key": "newton-essential-bassinet_8",
+     "src": "https://cdn.shopify.com/s/files/1/0792/0323/files/2026_Essential_Bassinet_GREY_Size.jpg?v=1789664074"
+    },
+    {
+     "key": "newton-essential-bassinet_9",
+     "src": "https://cdn.shopify.com/s/files/1/0792/0323/files/Essential_Bassinet_3000_7.jpg?v=1774452652"
+    },
+    {
+     "key": "newton-essential-bassinet_10",
+     "src": "https://cdn.shopify.com/s/files/1/0792/0323/files/EssentialBassinet3000_8.jpg?v=1774452652"
+    }
+   ],
+   "img": "newton-essential-bassinet",
+   "img_src": "https://cdn.shopify.com/s/files/1/0792/0323/files/Essential_Bassinet_ATC_1.jpg?v=1769682680"
+  },
+  {
+   "id": "newton-galileo-crib",
+   "type": "cribs",
+   "brand": "Newton",
+   "line": "Galileo 3-in-1 Convertible Crib",
+   "uses": [
+    "Solid beech wood from France",
+    "Steel hardware"
+   ],
+   "free": [],
+   "unconfirmed": [
+    "Paint and stain (“water-based”, type not named)",
+    "Mattress support platform",
+    "Glue"
+   ],
+   "outside": [],
+   "facts": {
+    "main": "unknown",
+    "wood": "yes",
+    "color": "unknown",
+    "parts": "unknown"
+   },
+   "unstated": {
+    "main": [
+     "Mattress support platform"
+    ],
+    "color": [
+     "Paint and stain (“water-based”, type not named)"
+    ],
+    "parts": [
+     "Glue"
+    ]
+   },
+   "age": {
+    "min_months": 0,
+    "max_months": 48,
+    "text": "Newborn to 4 years"
+   },
+   "quote": "Made from solid beech wood from France Water-based non-toxic finishes Steel hardware",
+   "products": [
+    {
+     "name": "Newton Galileo Convertible Crib",
+     "url": "https://www.newtonbaby.com/products/newton-crib",
+     "store": "Newton Baby",
+     "price": "$599.99",
+     "ships_from": "US",
+     "shipping": "Free shipping in the contiguous 48 states",
+     "note": "Comes with a free Essential crib mattress at the time of reading"
+    }
+   ],
+   "standards": [],
+   "contains": [],
+   "read": "2026-10-22",
+   "photos": [
+    {
+     "key": "newton-galileo-crib",
+     "src": "https://cdn.shopify.com/s/files/1/0792/0323/files/GalileoCribStandardNATURAL3000x3000-1.jpg?v=1759860648"
+    },
+    {
+     "key": "newton-galileo-crib_2",
+     "src": "https://cdn.shopify.com/s/files/1/0792/0323/files/Newton_PDP_Carousel_Hero_Galileo-Essential.jpg?v=1785924272"
+    },
+    {
+     "key": "newton-galileo-crib_3",
+     "src": "https://cdn.shopify.com/s/files/1/0792/0323/files/GalileoCribStandardWHITE3000_2.jpg?v=1775660161"
+    },
+    {
+     "key": "newton-galileo-crib_4",
+     "src": "https://cdn.shopify.com/s/files/1/0792/0323/files/GalileoCribStandardWHITE3000_3.jpg?v=1775660161"
+    },
+    {
+     "key": "newton-galileo-crib_5",
+     "src": "https://cdn.shopify.com/s/files/1/0792/0323/files/GalileoCribStandardWHITE3000_4.jpg?v=1775660161"
+    },
+    {
+     "key": "newton-galileo-crib_6",
+     "src": "https://cdn.shopify.com/s/files/1/0792/0323/files/GalileoCribStandardWHITE3000_6.jpg?v=1775660161"
+    },
+    {
+     "key": "newton-galileo-crib_7",
+     "src": "https://cdn.shopify.com/s/files/1/0792/0323/files/GalileoCribStandardWHITE3000_5.jpg?v=1775660161"
+    },
+    {
+     "key": "newton-galileo-crib_8",
+     "src": "https://cdn.shopify.com/s/files/1/0792/0323/files/GalileoCribStandardWHITE3000_1.jpg?v=1775660161"
+    },
+    {
+     "key": "newton-galileo-crib_9",
+     "src": "https://cdn.shopify.com/s/files/1/0792/0323/files/GalileoCribStandardWHITE3000_8.jpg?v=1775660161"
+    },
+    {
+     "key": "newton-galileo-crib_10",
+     "src": "https://cdn.shopify.com/s/files/1/0792/0323/files/2025GalileoCribStandardNATURAL3000_1.jpg?v=1775660161"
+    }
+   ],
+   "img": "newton-galileo-crib",
+   "img_src": "https://cdn.shopify.com/s/files/1/0792/0323/files/GalileoCribStandardNATURAL3000x3000-1.jpg?v=1759860648"
+  },
+  {
+   "id": "piccalio-toddler-table",
+   "type": "furniture",
+   "brand": "Piccalio",
+   "line": "Toddler Table (Play Table)",
+   "uses": [
+    "FSC European solid beech wood"
+   ],
+   "free": [
+    "Formaldehyde in the finish",
+    "Phthalates in the finish",
+    "Lead in the finish"
+   ],
+   "unconfirmed": [
+    "Finish (“0-VOC water-based”, type not named)",
+    "Plywood adhesive",
+    "Hardware"
+   ],
+   "outside": [
+    "Beech plywood"
+   ],
+   "facts": {
+    "main": "unknown",
+    "wood": "no",
+    "color": "unknown",
+    "parts": "unknown",
+    "lead": "yes"
+   },
+   "unstated": {
+    "main": [
+     "Plywood adhesive"
+    ],
+    "color": [
+     "Finish (“0-VOC water-based”, type not named)"
+    ],
+    "parts": [
+     "Hardware"
+    ]
+   },
+   "standards": [
+    "fsc",
+    "us-toy"
+   ],
+   "age": {
+    "min_months": 18,
+    "text": "18 months and up"
+   },
+   "quote": "Materials: FSC® European solid beech wood and beech plywood",
+   "products": [
+    {
+     "name": "Toddler Table",
+     "url": "https://www.piccalio.com/products/toddler-table",
+     "store": "Piccalio",
+     "price": "$159",
+     "ships_from": null,
+     "shipping": "Ships free (contiguous US)"
+    }
+   ],
+   "contains": [],
+   "read": "2026-10-22",
+   "photos": [
+    {
+     "key": "piccalio-toddler-table",
+     "src": "https://cdn.shopify.com/s/files/1/0411/8868/8026/files/Ecom_PlayTable_1.png?v=1765580155"
+    },
+    {
+     "key": "piccalio-toddler-table_2",
+     "src": "https://cdn.shopify.com/s/files/1/0411/8868/8026/files/piccalio-montessori-weaning-table-chair-set.jpg?v=1768866330"
+    },
+    {
+     "key": "piccalio-toddler-table_3",
+     "src": "https://cdn.shopify.com/s/files/1/0411/8868/8026/files/piccalio-kids-table-chairs-natural-bedroom.jpg?v=1768866288"
+    },
+    {
+     "key": "piccalio-toddler-table_4",
+     "src": "https://cdn.shopify.com/s/files/1/0411/8868/8026/files/piccalio-wood-toddler-play-table-chairs-playroom.jpg?v=1768866357"
+    },
+    {
+     "key": "piccalio-toddler-table_5",
+     "src": "https://cdn.shopify.com/s/files/1/0411/8868/8026/files/030325_Table_Natural_Nighstand.jpg?v=1743718801"
+    },
+    {
+     "key": "piccalio-toddler-table_6",
+     "src": "https://cdn.shopify.com/s/files/1/0411/8868/8026/files/030325_Table_Natural_SideTable.jpg?v=1743718801"
+    },
+    {
+     "key": "piccalio-toddler-table_7",
+     "src": "https://cdn.shopify.com/s/files/1/0411/8868/8026/files/piccalio-montessori-toddler-table-and-chairs-living-room.jpg?v=1768866392"
+    },
+    {
+     "key": "piccalio-toddler-table_8",
+     "src": "https://cdn.shopify.com/s/files/1/0411/8868/8026/files/piccalio-large-play-table-chair-set-playroom-natural-wood.jpg?v=1770158709"
+    },
+    {
+     "key": "piccalio-toddler-table_9",
+     "src": "https://cdn.shopify.com/s/files/1/0411/8868/8026/files/piccalio-montessori-table-chairs-nested-beech.jpg?v=1770158709"
+    },
+    {
+     "key": "piccalio-toddler-table_10",
+     "src": "https://cdn.shopify.com/s/files/1/0411/8868/8026/files/piccalio-montessori-large-table-measurements-studio.jpg?v=1770158709"
+    }
+   ],
+   "img": "piccalio-toddler-table",
+   "img_src": "https://cdn.shopify.com/s/files/1/0411/8868/8026/files/Ecom_PlayTable_1.png?v=1765580155"
+  },
+  {
+   "id": "plantoys-wooden-high-chair",
+   "type": "high-chairs",
+   "brand": "PlanToys",
+   "line": "Wooden High Chair with Adjustable Footrest",
+   "uses": [
+    "Rubberwood"
+   ],
+   "free": [],
+   "unconfirmed": [
+    "Solid or layered rubberwood in the bentwood seat",
+    "Orange finish",
+    "Seat belt",
+    "Hardware"
+   ],
+   "outside": [],
+   "facts": {
+    "main": "yes",
+    "wood": "unknown",
+    "color": "unknown",
+    "parts": "unknown"
+   },
+   "unstated": {
+    "wood": [
+     "Solid or layered rubberwood in the bentwood seat"
+    ],
+    "color": [
+     "Orange finish"
+    ],
+    "parts": [
+     "Seat belt",
+     "Hardware"
+    ]
+   },
+   "age": {
+    "min_months": 6,
+    "max_months": 36,
+    "text": "6 months to 3 years"
+   },
+   "quote": "Materials: Rubberwood",
+   "products": [
+    {
+     "name": "PlanToys Wooden High Chair with Adjustable Footrest – Orange",
+     "url": "https://thebabypenguin.com/products/high-chair-orange",
+     "store": "The Baby Penguin",
+     "price": "$149.99",
+     "ships_from": null,
+     "shipping": "Free standard shipping on orders of $50 or more within the contiguous United States"
+    }
+   ],
+   "standards": [],
+   "contains": [],
+   "read": "2026-10-22",
+   "photos": [
+    {
+     "key": "plantoys-wooden-high-chair",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/High-Chair-Orange-PlanToys-USA-124161385.jpg?v=1781462449"
+    },
+    {
+     "key": "plantoys-wooden-high-chair_2",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/High-Chair-Orange-PlanToys-USA-124161452.jpg?v=1781462449"
+    },
+    {
+     "key": "plantoys-wooden-high-chair_3",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/High-Chair-Orange-PlanToys-USA-124161544.jpg?v=1781462452"
+    },
+    {
+     "key": "plantoys-wooden-high-chair_4",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/High-Chair-Orange-PlanToys-USA-124161632.jpg?v=1781462452"
+    },
+    {
+     "key": "plantoys-wooden-high-chair_5",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/High-Chair-Orange-PlanToys-USA-124161775.jpg?v=1781462452"
+    },
+    {
+     "key": "plantoys-wooden-high-chair_6",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/High-Chair-Orange-PlanToys-USA-124161812.jpg?v=1781462456"
+    },
+    {
+     "key": "plantoys-wooden-high-chair_7",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/High-Chair-Orange-PlanToys-USA-124161943.jpg?v=1781462456"
+    }
+   ],
+   "img": "plantoys-wooden-high-chair",
+   "img_src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/High-Chair-Orange-PlanToys-USA-124161385.jpg?v=1781462449"
   }
  ]
 }
