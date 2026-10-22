@@ -34,6 +34,7 @@ All notable changes to the site are listed here. The format follows [Keep a Chan
 - Shop patterns borrowed from Amazon and Shopify stores (`docs/ecommerce-patterns.md`): share a Saved or Compare list by link, with "Save all to my list" on the shared page; a Share button on product pages; "Compare with similar items" on product pages; a buy bar at the bottom of phone product pages once the buy box scrolls away; a confirmation with a link when saving; recently viewed products on the home page; the Filter & sort bar stays at the top on phones.
 
 ### Fixed
+- Phones no longer scroll sideways on filtered listing pages (the sort menu now shrinks to fit beside "Filter & sort") or on narrow phones where a long brand name sat in a product card.
 - Each deploy stamps its build id onto the stylesheet, script and data URLs, so a fix reaches visitors on their next load instead of after GitHub Pages' ten-minute cache.
 - Changing a filter no longer makes the page jump: the window and the filter rail keep their scroll position, facets left on "Show all" stay expanded, and a shorter list keeps enough room to hold the spot (the empty moment while the list was rebuilt let the browser snap to the top).
 - Product pages and the quick view no longer grow wider than a phone screen when a listing has many store photos; the thumbnail strip scrolls inside its column instead.
