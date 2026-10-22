@@ -62,11 +62,11 @@ Product type is the main axis. Every listing names one `type`; `types` lists the
 
 - `types`: `{id, title, short, intro?, outro?, ages: {min_months, max_months}, room?, contact?, was?}`. `ages` is the usual age range for the type; the Age range filter uses it for listings without a maker's age rating. `room` (nursery, kitchen, bath, outdoors) and `contact` (mouth, food, skin, sleep, hands) describe the type for later facets. `was` lists old type ids that should redirect here. `short` is the name on photo tiles and in the Product type filter; `match` is the pattern discovery uses to sort new products into the type.
 - `aisles`: `{id, title, types: [type ids], was?}`, the departments in menu order (see `docs/taxonomy.md`). `was` lists old department and aisle ids (`/d/<id>` and `/a/<id>` redirect). A department shows once a type it is the first home of has listings.
-- `criteria_groups`: `{id, title}`, the named sets the material filters are shown in.
+- `criteria_groups`: `{id, title, set?}`, families of material filters. `set: "leave"` puts the family under **Leave out** as one checkbox that opens into its filters; the others sit under **Tests & certifications**.
 
-`criteria` are the material filters, each `{id, short, label, help, kind, default, term, group}`:
+`criteria` are the material filters, each `{id, short, label, help, kind, default, term, group, under?, sub?}`. `under` names a Made with material (`wood`, `wool`, `latex`, `leather`, `silicone`) whose row the filter nests under, and `sub` is its shorter label there or inside its family ("Only solid wood", "In small parts"). `standards` take the same `under`/`sub` to nest under a material, and `filter` (a criterion id) when a test filter already covers them, which keeps them out of the filter rail. Made with families (Natural fibres) are `MATERIAL_GROUPS` in `assets/catalog.js`.
 
-- `kind: "avoid"`: when on, a listing misses if its fact is `"no"`. `"unknown"` only counts when the visitor turns on "Materials stated for every part".
+- `kind: "avoid"`: when on, a listing misses if its fact is `"no"`. `"unknown"` only counts when the visitor turns on "Parts whose material isn’t stated" under Leave out.
 - `kind: "require"`: when on, a listing misses unless its fact is `"yes"` (silicone testing, organic, tanning).
 - `kind: "contains"`: when on, listings whose `contains` lists that id miss (latex, leather; both off by default).
 

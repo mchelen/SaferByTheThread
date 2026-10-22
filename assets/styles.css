@@ -282,6 +282,16 @@ h3 { font-size: 15px; }
 .opt { display: grid; grid-template-columns: 18px 1fr auto; align-items: start; gap: 10px; padding: 6px 0; cursor: pointer; line-height: 1.35; }
 .opt input { width: 18px; height: 18px; margin: 1px 0 0; accent-color: var(--accent); cursor: pointer; }
 .opt .n { color: var(--muted); font-size: 13px; padding-top: 1px; white-space: nowrap; }
+/* Nested filters: a row with a button that opens its children, which sit indented under a guide line. */
+.trow { display: grid; grid-template-columns: minmax(0, 1fr) 28px; align-items: start; gap: 4px; }
+.tnode:not(.has-kids) > .opt { margin-right: 32px; }
+.tx { all: unset; box-sizing: border-box; width: 28px; height: 28px; display: grid; place-items: center; border-radius: 6px; cursor: pointer; color: var(--muted); }
+.tx:hover { background: var(--line); }
+.tx:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
+.tx svg { width: 16px; height: 16px; transition: transform .2s; }
+.tx[aria-expanded="true"] svg { transform: rotate(180deg); }
+.tkids { margin: 0 0 4px 8px; padding-left: 14px; border-left: 1px solid var(--line); }
+.tkids .tnode:not(.has-kids) > .opt { margin-right: 0; }
 .opt.dim .lbl, .opt.dim .n { color: var(--line-strong); }
 .opt .lbl small { display: block; color: var(--muted); font-size: 12.5px; line-height: 1.35; margin-top: 1px; }
 .opt .lbl .q { display: inline-grid; place-items: center; width: 20px; height: 20px; margin-left: 4px; border: 1px solid var(--line-strong); border-radius: 50%; font-size: 11px; font-weight: 700; color: var(--muted); text-decoration: none; vertical-align: text-bottom; }

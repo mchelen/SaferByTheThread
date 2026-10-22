@@ -89,6 +89,7 @@ test('phone filter drawer', async ({ page }, testInfo) => {
   await open(page, '/shop', '.card');
   await page.click('[data-drawer-open]');
   await expect(page.locator('#rail')).toBeVisible();
+  await page.click('[data-tnode="s-treat"]');
   await page.uncheck('#f-crit-color');
   await expect(page).toHaveScreenshot('filter-drawer.png');
 });
