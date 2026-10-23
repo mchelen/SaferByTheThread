@@ -1,6 +1,6 @@
 {
  "schema": 4,
- "updated": "2026-10-22",
+ "updated": "2026-10-23",
  "ask": [
   "Thread on any sewn item (cotton or polyester).",
   "Wheels and axles on push toys and cars.",
@@ -13419,6 +13419,1134 @@
    ],
    "img": "plantoys-wooden-high-chair",
    "img_src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/High-Chair-Orange-PlanToys-USA-124161385.jpg?v=1781462449"
+  },
+  {
+   "id": "beaba-silicone-baby-bib",
+   "type": "bibs",
+   "brand": "Béaba",
+   "line": "Silicone Baby Bib 2 Pack",
+   "uses": [
+    "100% food grade silicone"
+   ],
+   "free": [
+    "BPA, BPF and BPS",
+    "PVC",
+    "Phthalates"
+   ],
+   "unconfirmed": [
+    "LFGB or French Arrêté testing of the silicone",
+    "Colourant in the silicone",
+    "Adjustable neck fasteners"
+   ],
+   "outside": [],
+   "facts": {
+    "main": "yes",
+    "parts": "unknown",
+    "color": "unknown",
+    "silicone": "unknown"
+   },
+   "unstated": {
+    "silicone": [
+     "LFGB or French Arrêté testing of the silicone"
+    ],
+    "color": [
+     "Colourant in the silicone"
+    ],
+    "parts": [
+     "Adjustable neck fasteners"
+    ]
+   },
+   "standards": [],
+   "contains": [],
+   "age": {
+    "min_months": 4,
+    "text": "From 4 months"
+   },
+   "quote": "Materials & Safety Standards 100% food grade silicone. BPA-free, BPF-free, BPS-free, PVC-free, phthalate-free.",
+   "products": [
+    {
+     "ships_from": "US",
+     "name": "Silicone Baby Bib 2 Pack",
+     "url": "https://beaba.us/products/silicone-baby-bib-1",
+     "store": "Béaba USA",
+     "price": "$25.99",
+     "shipping": "Free shipping on orders $140*"
+    }
+   ],
+   "read": "2026-10-23",
+   "photos": [
+    {
+     "key": "beaba-silicone-baby-bib",
+     "src": "https://cdn.shopify.com/s/files/1/0673/7756/1739/files/913542_product_face_1p.jpg?v=1755765960"
+    },
+    {
+     "key": "beaba-silicone-baby-bib_2",
+     "src": "https://cdn.shopify.com/s/files/1/0673/7756/1739/files/913542_product_amb_1c.jpg?v=1756245317"
+    },
+    {
+     "key": "beaba-silicone-baby-bib_3",
+     "src": "https://cdn.shopify.com/s/files/1/0673/7756/1739/files/913542_product_amb_2.jpg?v=1756245459"
+    },
+    {
+     "key": "beaba-silicone-baby-bib_4",
+     "src": "https://cdn.shopify.com/s/files/1/0673/7756/1739/files/913542_product_amb_4.jpg?v=1756245459"
+    },
+    {
+     "key": "beaba-silicone-baby-bib_5",
+     "src": "https://cdn.shopify.com/s/files/1/0673/7756/1739/files/913509_product_amb_1.jpg?v=1756245459"
+    },
+    {
+     "key": "beaba-silicone-baby-bib_6",
+     "src": "https://cdn.shopify.com/s/files/1/0673/7756/1739/files/913509_product_amb_2.jpg?v=1756245459"
+    }
+   ],
+   "img": "beaba-silicone-baby-bib",
+   "img_src": "https://cdn.shopify.com/s/files/1/0673/7756/1739/files/913542_product_face_1p.jpg?v=1755765960"
+  },
+  {
+   "id": "bright-starts-safari-splashers",
+   "type": "bath",
+   "brand": "Bright Starts",
+   "line": "Safari Splashers 6-Piece Bath Toys",
+   "uses": [],
+   "free": [],
+   "unconfirmed": [
+    "Plastic type",
+    "Colorants"
+   ],
+   "outside": [
+    "Plastic squirt toys"
+   ],
+   "facts": {
+    "main": "no",
+    "color": "unknown"
+   },
+   "unstated": {
+    "color": [
+     "Colorants"
+    ]
+   },
+   "standards": [],
+   "contains": [],
+   "age": {
+    "min_months": 9,
+    "text": "9 months and up"
+   },
+   "quote": "Materials: 100% Plastic",
+   "products": [
+    {
+     "ships_from": null,
+     "name": "Bright Starts Safari Splashers 6-Piece Baby Bath Toys",
+     "url": "https://www.kids2.com/products/17996-000-bright-starts-safari-splashers-baby-bath-toy-set",
+     "store": "Kids2",
+     "price": "$7.99"
+    }
+   ],
+   "read": "2026-10-23",
+   "photos": [
+    {
+     "key": "bright-starts-safari-splashers",
+     "src": "https://cdn.shopify.com/s/files/1/0468/2521/0022/files/058a14ee4c6604e86d6a3d3e1f38f1b2e03d9f05.jpg?v=1790610670"
+    },
+    {
+     "key": "bright-starts-safari-splashers_2",
+     "src": "https://cdn.shopify.com/s/files/1/0468/2521/0022/files/6961cca6faf7ec3c59fb52d8d614db9684f2ac69.jpg?v=1790610670"
+    },
+    {
+     "key": "bright-starts-safari-splashers_3",
+     "src": "https://cdn.shopify.com/s/files/1/0468/2521/0022/files/a9afac14f291d803c3f11e37e2838bce4c4fca0b.jpg?v=1790610670"
+    },
+    {
+     "key": "bright-starts-safari-splashers_4",
+     "src": "https://cdn.shopify.com/s/files/1/0468/2521/0022/files/2afb02368af2938d459649671ecb8c40e4bff45c.jpg?v=1790610670"
+    },
+    {
+     "key": "bright-starts-safari-splashers_5",
+     "src": "https://cdn.shopify.com/s/files/1/0468/2521/0022/files/a769bb1643ca5626cef4f9d0a72b70a7a8b8dca2.jpg?v=1790610670"
+    },
+    {
+     "key": "bright-starts-safari-splashers_6",
+     "src": "https://cdn.shopify.com/s/files/1/0468/2521/0022/files/955e6bec8726d51fba4480f2b977577021a90be4.jpg?v=1790610670"
+    },
+    {
+     "key": "bright-starts-safari-splashers_7",
+     "src": "https://cdn.shopify.com/s/files/1/0468/2521/0022/files/05724845c05afca146061b8e71f79b8d42a31023.jpg?v=1790610670"
+    },
+    {
+     "key": "bright-starts-safari-splashers_8",
+     "src": "https://cdn.shopify.com/s/files/1/0468/2521/0022/files/0fa7c1f75e5a17dfa68ddc45d0ee8980dc7b28c2.jpg?v=1790610670"
+    },
+    {
+     "key": "bright-starts-safari-splashers_9",
+     "src": "https://www.kids2.com/cdn/shop/files/preview_images/hqdefault_1a1f47d0-7aa0-4aee-bf7d-771c1ba6c8e2.jpg?v=1752847545"
+    }
+   ],
+   "img": "bright-starts-safari-splashers",
+   "img_src": "https://cdn.shopify.com/s/files/1/0468/2521/0022/files/058a14ee4c6604e86d6a3d3e1f38f1b2e03d9f05.jpg?v=1790610670"
+  },
+  {
+   "id": "coyuchi-crinkled-percale-crib-sheet",
+   "type": "sheets",
+   "brand": "Coyuchi",
+   "line": "Organic Crinkled Percale Crib Sheet",
+   "uses": [
+    "100% organic cotton percale",
+    "Plant-based softener"
+   ],
+   "free": [
+    "Synthetic fibres"
+   ],
+   "unconfirmed": [
+    "Dyes for the Steel Blue colour (“low-impact”, type not named)",
+    "Thread"
+   ],
+   "outside": [],
+   "facts": {
+    "main": "yes",
+    "parts": "unknown",
+    "color": "unknown",
+    "organic": "yes"
+   },
+   "unstated": {
+    "color": [
+     "Dyes for the Steel Blue colour (“low-impact”, type not named)"
+    ],
+    "parts": [
+     "Thread"
+    ]
+   },
+   "standards": [
+    "gots"
+   ],
+   "contains": [],
+   "quote": "Crafted from 100% organic cotton, grown and woven in India. GOTS-certified (CU827969)",
+   "note": "Fits standard crib mattresses (28 x 52 in). Sold by Avocado Green Mattress.",
+   "products": [
+    {
+     "ships_from": null,
+     "name": "Coyuchi Organic Crinkled Percale Crib Sheet, Steel Blue",
+     "url": "https://www.avocadogreenmattress.com/products/coyuchi-organic-crinkled-percale-crib-sheet-steel-blue",
+     "store": "Avocado Green Mattress",
+     "price": "$48.00"
+    }
+   ],
+   "read": "2026-10-23",
+   "photos": [
+    {
+     "key": "coyuchi-crinkled-percale-crib-sheet",
+     "src": "https://cdn.shopify.com/s/files/1/0444/9488/0918/files/pdp_crinkledpercale_fittedsheet_steelblue_b_fall21_12_22a3cc7d-5078-46a7-abe4-f40745e14aa1.jpg?v=1775599623"
+    }
+   ],
+   "img": "coyuchi-crinkled-percale-crib-sheet",
+   "img_src": "https://cdn.shopify.com/s/files/1/0444/9488/0918/files/pdp_crinkledpercale_fittedsheet_steelblue_b_fall21_12_22a3cc7d-5078-46a7-abe4-f40745e14aa1.jpg?v=1775599623"
+  },
+  {
+   "id": "coyuchi-organic-print-matelasse-baby-blanket",
+   "type": "blankets",
+   "brand": "Coyuchi",
+   "line": "Organic Print Matelassé Baby Blanket",
+   "uses": [
+    "100% organic cotton matelassé"
+   ],
+   "free": [
+    "Synthetic materials"
+   ],
+   "unconfirmed": [
+    "Dyes and print inks (type not named)",
+    "Thread"
+   ],
+   "outside": [],
+   "facts": {
+    "main": "yes",
+    "parts": "unknown",
+    "color": "unknown",
+    "organic": "yes"
+   },
+   "unstated": {
+    "color": [
+     "Dyes and print inks (type not named)"
+    ],
+    "parts": [
+     "Thread"
+    ]
+   },
+   "standards": [
+    "gots"
+   ],
+   "contains": [],
+   "quote": "Crafted from 100% organic cotton grown in Turkey and woven in Portugal. GOTS Certified",
+   "note": "Baby blanket, 30 x 40 in. Sold by Holy Lamb Organics.",
+   "products": [
+    {
+     "ships_from": null,
+     "name": "Organic Print Matelasse Baby Blanket",
+     "url": "https://holylamborganics.com/products/organic-print-matelasse-baby-blanket",
+     "store": "Holy Lamb Organics",
+     "price": "$58.00",
+     "shipping": "$30 shipping charge on all Coyuchi items"
+    }
+   ],
+   "read": "2026-10-23",
+   "photos": [
+    {
+     "key": "coyuchi-organic-print-matelasse-baby-blanket",
+     "src": "https://cdn.shopify.com/s/files/1/0338/2373/files/SP26_OrganicPrintMatelasse_BabyBlanket_AgavePoppy_0491.webp?v=1778111645"
+    }
+   ],
+   "img": "coyuchi-organic-print-matelasse-baby-blanket",
+   "img_src": "https://cdn.shopify.com/s/files/1/0338/2373/files/SP26_OrganicPrintMatelasse_BabyBlanket_AgavePoppy_0491.webp?v=1778111645"
+  },
+  {
+   "id": "delta-children-jeep-turboglyde-stroller",
+   "type": "strollers",
+   "brand": "Delta Children",
+   "line": "Jeep TurboGlyde Lightweight Stroller",
+   "uses": [
+    "Steel frame"
+   ],
+   "free": [
+    "Added fire retardants",
+    "Lead",
+    "Phthalates"
+   ],
+   "unconfirmed": [
+    "Seat and canopy fabric",
+    "Tires (“puncture-proof”, material not named)",
+    "Harness straps and buckle",
+    "Storage basket"
+   ],
+   "outside": [],
+   "facts": {
+    "main": "unknown",
+    "parts": "unknown",
+    "flame": "yes"
+   },
+   "unstated": {
+    "main": [
+     "Seat and canopy fabric"
+    ],
+    "parts": [
+     "Tires (“puncture-proof”, material not named)",
+     "Harness straps and buckle"
+    ]
+   },
+   "standards": [],
+   "contains": [],
+   "age": {
+    "min_months": 9,
+    "text": "From 9 months, up to 50 lb"
+   },
+   "quote": "this lightweight stroller with a durable steel frame weighs under 14 pounds",
+   "note": "The fire retardant, lead and phthalate statement is the maker’s statement for all its products.",
+   "products": [
+    {
+     "ships_from": null,
+     "name": "Jeep TurboGlyde Lightweight Stroller, Grey",
+     "url": "https://www.deltachildren.com/products/turboglyde-lightweight-stroller",
+     "store": "Delta Children",
+     "price": "$76.99",
+     "shipping": "Ships only to the contiguous 48 US states"
+    }
+   ],
+   "read": "2026-10-23",
+   "photos": [
+    {
+     "key": "delta-children-jeep-turboglyde-stroller",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/11564-2148_Jeep-Stroller_Grey_Lifestyle_02.jpg?v=1786800700"
+    },
+    {
+     "key": "delta-children-jeep-turboglyde-stroller_2",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/11564-2148_Jeep-Stroller_Grey_Grey_Silo_01.jpg?v=1786800699"
+    },
+    {
+     "key": "delta-children-jeep-turboglyde-stroller_3",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/11564-2148_Jeep-Stroller_Grey_Grey_Silo_03.jpg?v=1786800699"
+    },
+    {
+     "key": "delta-children-jeep-turboglyde-stroller_4",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/11564-2148_Jeep-Stroller_Grey_Grey_Silo_08.jpg?v=1786800699"
+    },
+    {
+     "key": "delta-children-jeep-turboglyde-stroller_5",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/11564-2148_Jeep-Stroller_Grey_Grey_Silo_21.jpg?v=1786800699"
+    },
+    {
+     "key": "delta-children-jeep-turboglyde-stroller_6",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/11564-2148_Jeep-Stroller_Grey_Grey_Silo_42.jpg?v=1786800699"
+    },
+    {
+     "key": "delta-children-jeep-turboglyde-stroller_7",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/11564-2148_Jeep-Stroller_Grey_Lifestyle_101.jpg?v=1786800699"
+    },
+    {
+     "key": "delta-children-jeep-turboglyde-stroller_8",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/11564-2365_Jeep_Stroller_Green-Tech_Lifestyle_10.jpg?v=1786800719"
+    },
+    {
+     "key": "delta-children-jeep-turboglyde-stroller_9",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/11564-2365_Jeep_Stroller_Green-Tech_Silo_01.jpg?v=1786800719"
+    },
+    {
+     "key": "delta-children-jeep-turboglyde-stroller_10",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/11564-2365_Jeep_Stroller_Green-Tech_Silo_10.jpg?v=1786800719"
+    }
+   ],
+   "img": "delta-children-jeep-turboglyde-stroller",
+   "img_src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/11564-2148_Jeep-Stroller_Grey_Lifestyle_02.jpg?v=1786800700"
+  },
+  {
+   "id": "hevea-squeeze-n-splash-whale",
+   "type": "bath",
+   "brand": "Hevea",
+   "line": "Squeeze’n’Splash Whale Bath Toy",
+   "uses": [
+    "100% upcycled natural rubber",
+    "Natural mineral-based colour pigments"
+   ],
+   "free": [
+    "BPA",
+    "PVC",
+    "Phthalates"
+   ],
+   "unconfirmed": [
+    "Other additives in the rubber compound"
+   ],
+   "outside": [],
+   "facts": {
+    "main": "yes",
+    "parts": "yes",
+    "color": "yes",
+    "rubber": "unknown"
+   },
+   "unstated": {
+    "rubber": [
+     "Other additives in the rubber compound"
+    ]
+   },
+   "standards": [],
+   "contains": [
+    "latex"
+   ],
+   "quote": "Made from 100% natural rubber, our Squeeze & Splash Toys are free of BPA, PVC, Phthalates & other nasties.",
+   "note": "The bottom comes off, so the inside can be cleaned and dried.",
+   "products": [
+    {
+     "ships_from": null,
+     "name": "Squeeze'n'Splash Whale Bath Toy",
+     "url": "https://us.heveaplanet.com/products/squeezensplash-whale-bath-toy",
+     "store": "Hevea Planet USA",
+     "price": "$19.95"
+    }
+   ],
+   "read": "2026-10-23",
+   "photos": [
+    {
+     "key": "hevea-squeeze-n-splash-whale",
+     "src": "https://cdn.shopify.com/s/files/1/1027/0038/4590/files/HEVEA_Product_Upcycled_Whale_5710087428912_1_a6dc06ec-21d9-43c5-9461-a9e1449c49e5.jpg?v=1777032667"
+    },
+    {
+     "key": "hevea-squeeze-n-splash-whale_2",
+     "src": "https://cdn.shopify.com/s/files/1/1027/0038/4590/files/HEVEA_Product_Upcycled-Whale-Turtle_5710087430212_2_af8e0331-d512-421d-8afa-97b3420b2c8b.jpg?v=1777032666"
+    },
+    {
+     "key": "hevea-squeeze-n-splash-whale_3",
+     "src": "https://cdn.shopify.com/s/files/1/1027/0038/4590/files/P1403_Blizzard_Blue-3_4b7e3491-0e07-4b43-b9fb-b45866eceb3d.jpg?v=1777032667"
+    },
+    {
+     "key": "hevea-squeeze-n-splash-whale_4",
+     "src": "https://cdn.shopify.com/s/files/1/1027/0038/4590/files/HEVEA_Pack_Upcycled_Whale_5710087428813_1_bbee3eb0-07b1-451b-a239-35e35a7a34e8.jpg?v=1777032666"
+    }
+   ],
+   "img": "hevea-squeeze-n-splash-whale",
+   "img_src": "https://cdn.shopify.com/s/files/1/1027/0038/4590/files/HEVEA_Product_Upcycled_Whale_5710087428912_1_a6dc06ec-21d9-43c5-9461-a9e1449c49e5.jpg?v=1777032667"
+  },
+  {
+   "id": "honeysticks-finger-paints",
+   "type": "art",
+   "brand": "Honeysticks",
+   "line": "Finger Paints 6 Pack",
+   "uses": [],
+   "free": [
+    "Heavy metals",
+    "Synthetic fragrances"
+   ],
+   "unconfirmed": [
+    "Paint ingredients and pigments (“water-based formula”, ingredients not named)"
+   ],
+   "outside": [
+    "Recycled plastic bottles"
+   ],
+   "facts": {
+    "main": "unknown",
+    "color": "unknown",
+    "accessory": "no"
+   },
+   "unstated": {
+    "main": [
+     "Paint ingredients and pigments (“water-based formula”, ingredients not named)"
+    ],
+    "color": [
+     "Paint ingredients and pigments (“water-based formula”, ingredients not named)"
+    ]
+   },
+   "standards": [],
+   "contains": [],
+   "quote": "Made with a 100% non-toxic, water-based formula free from harsh chemicals, heavy metals, and synthetic fragrances.",
+   "note": "Six colours. Made in New Zealand; sold by Bella Luna Toys, which ships it from New York.",
+   "products": [
+    {
+     "ships_from": "US",
+     "name": "Honeysticks Non-Toxic Finger Paints - 6 Pack",
+     "url": "https://www.bellalunatoys.com/products/honeysticks-finger-paints-6pk-55ml",
+     "store": "Bella Luna Toys",
+     "price": "$32.99",
+     "shipping": "Free shipping on orders over $99 (contiguous 48 states)"
+    }
+   ],
+   "read": "2026-10-23",
+   "photos": [
+    {
+     "key": "honeysticks-finger-paints",
+     "src": "https://cdn.shopify.com/s/files/1/1114/2810/files/honeysticks-finger-paints.jpg?v=1762397825"
+    }
+   ],
+   "img": "honeysticks-finger-paints",
+   "img_src": "https://cdn.shopify.com/s/files/1/1114/2810/files/honeysticks-finger-paints.jpg?v=1762397825"
+  },
+  {
+   "id": "kodo-kids-knob-puzzle",
+   "type": "puzzles",
+   "brand": "Kodo Kids",
+   "line": "Knob Puzzle",
+   "uses": [
+    "Wooden puzzle"
+   ],
+   "free": [],
+   "unconfirmed": [
+    "Knobs",
+    "Kind of wood, solid or layered",
+    "Paint or print on the pieces"
+   ],
+   "outside": [],
+   "facts": {
+    "main": "yes",
+    "wood": "unknown",
+    "color": "unknown",
+    "parts": "unknown"
+   },
+   "unstated": {
+    "parts": [
+     "Knobs"
+    ],
+    "wood": [
+     "Kind of wood, solid or layered"
+    ],
+    "color": [
+     "Paint or print on the pieces"
+    ]
+   },
+   "standards": [
+    "us-toy"
+   ],
+   "contains": [],
+   "age": {
+    "min_months": 36,
+    "text": "3 years and up"
+   },
+   "quote": "These durable wooden puzzles support fine motor dexterity and visual recognition",
+   "products": [
+    {
+     "ships_from": null,
+     "name": "Knob Puzzle, Frog",
+     "url": "https://kodokids.com/products/knob-puzzles",
+     "store": "Kodo Kids",
+     "price": "$29.00"
+    }
+   ],
+   "read": "2026-10-23",
+   "photos": [
+    {
+     "key": "kodo-kids-knob-puzzle",
+     "src": "https://cdn.shopify.com/s/files/1/0629/8969/7163/files/DSC_1863.jpg?v=1778334806"
+    },
+    {
+     "key": "kodo-kids-knob-puzzle_2",
+     "src": "https://cdn.shopify.com/s/files/1/0629/8969/7163/files/DSC_1864.jpg?v=1778334774"
+    },
+    {
+     "key": "kodo-kids-knob-puzzle_3",
+     "src": "https://cdn.shopify.com/s/files/1/0629/8969/7163/files/171501-Frog-Knob-Puzzle-1.jpg?v=1778334954"
+    },
+    {
+     "key": "kodo-kids-knob-puzzle_4",
+     "src": "https://cdn.shopify.com/s/files/1/0629/8969/7163/files/171501-Frog-Knob-Puzzle-2.jpg?v=1778334934"
+    }
+   ],
+   "img": "kodo-kids-knob-puzzle",
+   "img_src": "https://cdn.shopify.com/s/files/1/0629/8969/7163/files/DSC_1863.jpg?v=1778334806"
+  },
+  {
+   "id": "little-green-radicals-easy-feeding-bodysuit",
+   "type": "bodysuits",
+   "brand": "Little Green Radicals",
+   "line": "Organic Adaptive Easy Feeding Bodysuit",
+   "uses": [
+    "100% organic and Fairtrade interlock cotton"
+   ],
+   "free": [
+    "Nickel in the popper fastenings"
+   ],
+   "unconfirmed": [
+    "Popper fastenings (“nickel-free”, metal not named)",
+    "Dyes and print inks",
+    "Thread"
+   ],
+   "outside": [],
+   "facts": {
+    "main": "yes",
+    "parts": "unknown",
+    "color": "unknown",
+    "organic": "yes"
+   },
+   "unstated": {
+    "parts": [
+     "Popper fastenings (“nickel-free”, metal not named)",
+     "Thread"
+    ],
+    "color": [
+     "Dyes and print inks"
+    ]
+   },
+   "standards": [
+    "gots"
+   ],
+   "contains": [],
+   "age": {
+    "min_months": 18,
+    "text": "Sizes 18-24 months to 7-8 years"
+   },
+   "quote": "Material: 100% Organic & Fairtrade Interlock Cotton",
+   "note": "Diagonal front opening for feeding-tube access.",
+   "products": [
+    {
+     "ships_from": null,
+     "name": "Petals Organic Adaptive Easy Feeding Bodysuit",
+     "url": "https://littlegreenradicals.com/products/petals-easy-feeding-adaptive-bodysuit",
+     "store": "Little Green Radicals",
+     "price": "$28.80",
+     "shipping": "USA standard delivery $15, free on orders over $100; no duty or sales tax"
+    }
+   ],
+   "read": "2026-10-23",
+   "photos": [
+    {
+     "key": "little-green-radicals-easy-feeding-bodysuit",
+     "src": "https://cdn.shopify.com/s/files/1/0258/8147/7195/files/A26-396-PEL__2000x2000_72OW.jpg?v=1786019576"
+    },
+    {
+     "key": "little-green-radicals-easy-feeding-bodysuit_2",
+     "src": "https://cdn.shopify.com/s/files/1/0258/8147/7195/files/A26-396-PEL_4_2000x2000_72OW.jpg?v=1786019577"
+    },
+    {
+     "key": "little-green-radicals-easy-feeding-bodysuit_3",
+     "src": "https://cdn.shopify.com/s/files/1/0258/8147/7195/files/A26-396-PEL_5_2000x2000_72OW.jpg?v=1786019577"
+    }
+   ],
+   "img": "little-green-radicals-easy-feeding-bodysuit",
+   "img_src": "https://cdn.shopify.com/s/files/1/0258/8147/7195/files/A26-396-PEL__2000x2000_72OW.jpg?v=1786019576"
+  },
+  {
+   "id": "maxi-cosi-sela-convertible-car-seat",
+   "type": "car-seats",
+   "brand": "Maxi-Cosi",
+   "line": "Sela All-in-One Convertible Car Seat",
+   "uses": [],
+   "free": [
+    "Added fire-retardant treatments in the PureCosi fabrics"
+   ],
+   "unconfirmed": [
+    "Seat shell",
+    "Padding in the infant head and lumbar inserts",
+    "Harness straps and buckle",
+    "ClipQuik magnetic chest clip",
+    "Cup holders"
+   ],
+   "outside": [
+    "EcoCare fabric, 100% recycled from plastic bottles"
+   ],
+   "facts": {
+    "main": "no",
+    "parts": "unknown",
+    "flame": "unknown"
+   },
+   "unstated": {
+    "parts": [
+     "Harness straps and buckle",
+     "ClipQuik magnetic chest clip"
+    ],
+    "flame": [
+     "Seat shell",
+     "Padding in the infant head and lumbar inserts"
+    ]
+   },
+   "standards": [],
+   "contains": [],
+   "age": {
+    "min_months": 0,
+    "max_months": 120,
+    "text": "Birth to 10 years (5 to 100 lb): rear-facing, forward-facing, then booster"
+   },
+   "quote": "The Sela all in one car seat is designed with EcoCare, our future-friendly, 100%-recycled fabric made from plastic bottles.",
+   "note": "Sold by Enlightened Baby.",
+   "products": [
+    {
+     "ships_from": null,
+     "name": "Maxi-Cosi Sela All-in-One Convertible Car Seat",
+     "url": "https://enlightenedbaby.com/products/maxi-cosi-sela-all-in-one-convertible-car-seat",
+     "store": "Enlightened Baby",
+     "price": "$449.99"
+    }
+   ],
+   "read": "2026-10-23",
+   "photos": [
+    {
+     "key": "maxi-cosi-sela-convertible-car-seat",
+     "src": "https://cdn.shopify.com/s/files/1/0707/4850/4296/files/CC392HHK_Image_01.jpg?v=1788402218"
+    },
+    {
+     "key": "maxi-cosi-sela-convertible-car-seat_2",
+     "src": "https://cdn.shopify.com/s/files/1/0707/4850/4296/files/CC392HHK_Image_02.jpg?v=1788402218"
+    },
+    {
+     "key": "maxi-cosi-sela-convertible-car-seat_3",
+     "src": "https://cdn.shopify.com/s/files/1/0707/4850/4296/files/CC392HHK_Image_03.jpg?v=1788402218"
+    },
+    {
+     "key": "maxi-cosi-sela-convertible-car-seat_4",
+     "src": "https://cdn.shopify.com/s/files/1/0707/4850/4296/files/CC392HHK_Image_04.jpg?v=1788402217"
+    },
+    {
+     "key": "maxi-cosi-sela-convertible-car-seat_5",
+     "src": "https://cdn.shopify.com/s/files/1/0707/4850/4296/files/CC392HHK_Image_05.jpg?v=1788402218"
+    },
+    {
+     "key": "maxi-cosi-sela-convertible-car-seat_6",
+     "src": "https://cdn.shopify.com/s/files/1/0707/4850/4296/files/CC392HHK_Image_06.jpg?v=1788402217"
+    },
+    {
+     "key": "maxi-cosi-sela-convertible-car-seat_7",
+     "src": "https://cdn.shopify.com/s/files/1/0707/4850/4296/files/CC392HHK_Image_07.jpg?v=1788402218"
+    },
+    {
+     "key": "maxi-cosi-sela-convertible-car-seat_8",
+     "src": "https://cdn.shopify.com/s/files/1/0707/4850/4296/files/CC392HHK_Image_08.jpg?v=1788402218"
+    },
+    {
+     "key": "maxi-cosi-sela-convertible-car-seat_9",
+     "src": "https://cdn.shopify.com/s/files/1/0707/4850/4296/files/CC392HHK_Image_09.jpg?v=1788402217"
+    },
+    {
+     "key": "maxi-cosi-sela-convertible-car-seat_10",
+     "src": "https://cdn.shopify.com/s/files/1/0707/4850/4296/files/CC392HHO_Image_01.jpg?v=1788402217"
+    }
+   ],
+   "img": "maxi-cosi-sela-convertible-car-seat",
+   "img_src": "https://cdn.shopify.com/s/files/1/0707/4850/4296/files/CC392HHK_Image_01.jpg?v=1788402218"
+  },
+  {
+   "id": "rad-childrens-furniture-climbing-arch",
+   "type": "climbers",
+   "brand": "RAD Children’s Furniture",
+   "line": "Climbing Arch",
+   "uses": [
+    "Solid hardwood rungs"
+   ],
+   "free": [
+    "Urea-formaldehyde adhesives in the plywood"
+   ],
+   "unconfirmed": [
+    "What the UV-cured and water-based finishes are made of",
+    "Assembly hardware"
+   ],
+   "outside": [
+    "13-ply European birch plywood"
+   ],
+   "facts": {
+    "wood": "no",
+    "color": "unknown",
+    "parts": "unknown"
+   },
+   "unstated": {
+    "color": [
+     "What the UV-cured and water-based finishes are made of"
+    ],
+    "parts": [
+     "Assembly hardware"
+    ]
+   },
+   "standards": [
+    "fsc"
+   ],
+   "contains": [],
+   "age": {
+    "min_months": 24,
+    "text": "24 months and older"
+   },
+   "quote": "Crafted from premium 13-ply European birch plywood made without urea-formaldehyde adhesives",
+   "note": "Finished with zero-VOC UV-cured and low-VOC water-based finishes, the page says. Made in the maker’s Los Angeles woodshop.",
+   "products": [
+    {
+     "ships_from": "US",
+     "name": "Climbing Arch",
+     "url": "https://radchildrensfurniture.com/products/pikler-arch",
+     "store": "RAD Children’s Furniture",
+     "price": "$249.00",
+     "shipping": "Free shipping on domestic orders"
+    }
+   ],
+   "read": "2026-10-23",
+   "photos": [
+    {
+     "key": "rad-childrens-furniture-climbing-arch",
+     "src": "https://cdn.shopify.com/s/files/1/0087/4230/5892/files/pikler_climbing_arch_f6fe68f7-b59b-402d-8caf-e65b3bed8ea0.jpg?v=1762457059"
+    },
+    {
+     "key": "rad-childrens-furniture-climbing-arch_2",
+     "src": "https://cdn.shopify.com/s/files/1/0087/4230/5892/files/girlclimbingonarchinlivingroom_1.jpg?v=1781894587"
+    },
+    {
+     "key": "rad-childrens-furniture-climbing-arch_3",
+     "src": "https://cdn.shopify.com/s/files/1/0087/4230/5892/files/pikler_climbing_arch_with_children.jpg?v=1747945962"
+    },
+    {
+     "key": "rad-childrens-furniture-climbing-arch_4",
+     "src": "https://cdn.shopify.com/s/files/1/0087/4230/5892/files/pikler_climbing_arch_with_slide_853c9fcb-b892-4964-bc94-a0c87fa3bbfa.jpg?v=1747945962"
+    },
+    {
+     "key": "rad-childrens-furniture-climbing-arch_5",
+     "src": "https://cdn.shopify.com/s/files/1/0087/4230/5892/files/pikler_climbing_arch_with_boy.jpg?v=1747945962"
+    },
+    {
+     "key": "rad-childrens-furniture-climbing-arch_6",
+     "src": "https://cdn.shopify.com/s/files/1/0087/4230/5892/files/pikler_climbing_arch_with_child.jpg?v=1747945962"
+    },
+    {
+     "key": "rad-childrens-furniture-climbing-arch_7",
+     "src": "https://review-images.judgeme.com/rad-children-s-furniture/1720449607__img_1481__original.jpg?quality=80&width=1024"
+    }
+   ],
+   "img": "rad-childrens-furniture-climbing-arch",
+   "img_src": "https://cdn.shopify.com/s/files/1/0087/4230/5892/files/pikler_climbing_arch_f6fe68f7-b59b-402d-8caf-e65b3bed8ea0.jpg?v=1762457059"
+  },
+  {
+   "id": "smart-bottoms-smart-one-diaper",
+   "type": "diapers",
+   "brand": "Smart Bottoms",
+   "line": "Smart One 4.0 All-in-One Cloth Diaper",
+   "uses": [
+    "100% certified organic cotton inner"
+   ],
+   "free": [],
+   "unconfirmed": [
+    "Rolled leg elastic",
+    "Dyes and prints on the outer",
+    "Thread"
+   ],
+   "outside": [
+    "Polyester outer with 100% TPU"
+   ],
+   "facts": {
+    "main": "no",
+    "parts": "unknown",
+    "color": "unknown",
+    "organic": "yes"
+   },
+   "unstated": {
+    "parts": [
+     "Rolled leg elastic",
+     "Thread"
+    ],
+    "color": [
+     "Dyes and prints on the outer"
+    ]
+   },
+   "standards": [
+    "organic-unnamed"
+   ],
+   "contains": [],
+   "quote": "Material Contents Inner absorbency: 100% Organic Cotton Outer: Polyester with 100% TPU",
+   "note": "One size, 10 to 35 lb. Made in USA. Sold by Green Mountain Diapers.",
+   "products": [
+    {
+     "ships_from": null,
+     "name": "Smart Bottoms Smart One 4.0 All-in-One Diaper",
+     "url": "https://www.greenmountaindiapers.com/products/smart-bottoms-smart-one-4-0-organic-cotton-all-in-one-diaper",
+     "store": "Green Mountain Diapers",
+     "price": "$28.00"
+    }
+   ],
+   "read": "2026-10-23",
+   "photos": [
+    {
+     "key": "smart-bottoms-smart-one-diaper",
+     "src": "https://cdn.shopify.com/s/files/1/1583/5087/files/sb-blackfront1300.jpg?v=1773754615"
+    },
+    {
+     "key": "smart-bottoms-smart-one-diaper_2",
+     "src": "https://cdn.shopify.com/s/files/1/1583/5087/files/sb-black1300.jpg?v=1769813616"
+    },
+    {
+     "key": "smart-bottoms-smart-one-diaper_3",
+     "src": "https://cdn.shopify.com/s/files/1/1583/5087/files/sb-brambleberryfront1200.jpg?v=1769813616"
+    },
+    {
+     "key": "smart-bottoms-smart-one-diaper_4",
+     "src": "https://cdn.shopify.com/s/files/1/1583/5087/files/sb-brambleberryback1200.jpg?v=1769382259"
+    },
+    {
+     "key": "smart-bottoms-smart-one-diaper_5",
+     "src": "https://cdn.shopify.com/s/files/1/1583/5087/files/sb-flightfront1200.jpg?v=1773754615"
+    },
+    {
+     "key": "smart-bottoms-smart-one-diaper_6",
+     "src": "https://cdn.shopify.com/s/files/1/1583/5087/files/sb-flightback1200.jpg?v=1769813616"
+    },
+    {
+     "key": "smart-bottoms-smart-one-diaper_7",
+     "src": "https://cdn.shopify.com/s/files/1/1583/5087/files/sb-white1200.jpg?v=1769813616"
+    },
+    {
+     "key": "smart-bottoms-smart-one-diaper_8",
+     "src": "https://cdn.shopify.com/s/files/1/1583/5087/files/sb-graceopen1200.jpg?v=1769813616"
+    },
+    {
+     "key": "smart-bottoms-smart-one-diaper_9",
+     "src": "https://cdn.shopify.com/s/files/1/1583/5087/files/sb-flightbaby1200.jpg?v=1769813616"
+    },
+    {
+     "key": "smart-bottoms-smart-one-diaper_10",
+     "src": "https://cdn.shopify.com/s/files/1/1583/5087/files/sb-dirtlifeopen1200.jpg?v=1769813616"
+    }
+   ],
+   "img": "smart-bottoms-smart-one-diaper",
+   "img_src": "https://cdn.shopify.com/s/files/1/1583/5087/files/sb-blackfront1300.jpg?v=1773754615"
+  },
+  {
+   "id": "snuggle-me-organic-hooded-towel",
+   "type": "towels",
+   "brand": "Snuggle Me Organic",
+   "line": "Hooded Towel",
+   "uses": [
+    "Yarn-dyed organic cotton toweling"
+   ],
+   "free": [],
+   "unconfirmed": [
+    "Dyes in the yarn (type not named)",
+    "Organic certification of the cotton",
+    "Thread"
+   ],
+   "outside": [],
+   "facts": {
+    "main": "yes",
+    "parts": "unknown",
+    "color": "unknown",
+    "organic": "unknown"
+   },
+   "unstated": {
+    "color": [
+     "Dyes in the yarn (type not named)"
+    ],
+    "organic": [
+     "Organic certification of the cotton"
+    ],
+    "parts": [
+     "Thread"
+    ]
+   },
+   "standards": [],
+   "contains": [],
+   "quote": "Our premium Hooded Towels are crafted with yarn-dyed organic cotton toweling",
+   "note": "Sold by Enlightened Baby.",
+   "products": [
+    {
+     "ships_from": null,
+     "name": "Hooded Towel | Slate",
+     "url": "https://enlightenedbaby.com/products/hooded-towel-slate",
+     "store": "Enlightened Baby",
+     "price": "$29.99"
+    }
+   ],
+   "read": "2026-10-23",
+   "photos": [
+    {
+     "key": "snuggle-me-organic-hooded-towel",
+     "src": "https://cdn.shopify.com/s/files/1/0707/4850/4296/files/6dc55e012a07cdee6c2ace656a670a3bc5361877756ab36d33374c2d0c5ad9e3.jpg?v=1781041641"
+    },
+    {
+     "key": "snuggle-me-organic-hooded-towel_2",
+     "src": "https://cdn.shopify.com/s/files/1/0707/4850/4296/files/268a3013ef84ddef00abae12693d6d42f81df262f0b44f07742c98921e022235.png?v=1781041645"
+    },
+    {
+     "key": "snuggle-me-organic-hooded-towel_3",
+     "src": "https://cdn.shopify.com/s/files/1/0707/4850/4296/files/b3c11960083e9d1c07c9756a28b8b31bd20cf9fffe2ce5cd167727b098fc79ff.png?v=1781041646"
+    },
+    {
+     "key": "snuggle-me-organic-hooded-towel_4",
+     "src": "https://cdn.shopify.com/s/files/1/0707/4850/4296/files/f936dafb8b01477f0f76b490a4cacb0d396d4b6876e24b91fafd9f5d5dad41a6.png?v=1781041646"
+    },
+    {
+     "key": "snuggle-me-organic-hooded-towel_5",
+     "src": "https://cdn.shopify.com/s/files/1/0707/4850/4296/files/75d219ca126235f47fb16a1852f77ba4217ad9bcdbc9130b43d089da29f118fd.png?v=1781041645"
+    },
+    {
+     "key": "snuggle-me-organic-hooded-towel_6",
+     "src": "https://cdn.shopify.com/s/files/1/0707/4850/4296/files/f0408d4b0b61e2091da230a1416f435f3d7efb5aca203b2cbc78868b8166315d.jpg?v=1781041643"
+    },
+    {
+     "key": "snuggle-me-organic-hooded-towel_7",
+     "src": "https://cdn.shopify.com/s/files/1/0707/4850/4296/files/cd5eacb7cf764aa712db1e47e419221ccb93f5c80d6682af723a59931913c940_73e5fd12-f368-4487-8556-856ced6beccc.png?v=1781041644"
+    },
+    {
+     "key": "snuggle-me-organic-hooded-towel_8",
+     "src": "https://cdn.shopify.com/s/files/1/0707/4850/4296/files/c026286d0e6ae568839c84efa693681f5f3338cd6df2dbb6745ac7cd4e2d5fce.jpg?v=1781041643"
+    },
+    {
+     "key": "snuggle-me-organic-hooded-towel_9",
+     "src": "https://cdn.shopify.com/s/files/1/0707/4850/4296/files/18274323d5d513d7a6eb04909a348de4fa9da11675ce158ee97bcf59a8449d5d.png?v=1781041644"
+    }
+   ],
+   "img": "snuggle-me-organic-hooded-towel",
+   "img_src": "https://cdn.shopify.com/s/files/1/0707/4850/4296/files/6dc55e012a07cdee6c2ace656a670a3bc5361877756ab36d33374c2d0c5ad9e3.jpg?v=1781041641"
+  },
+  {
+   "id": "speedy-monkey-hammer-bench-xylophone",
+   "type": "bench",
+   "brand": "Speedy Monkey",
+   "line": "Wooden Hammer Bench & Xylophone",
+   "uses": [
+    "FSC-certified wood"
+   ],
+   "free": [],
+   "unconfirmed": [
+    "Kind of wood, solid or layered",
+    "Xylophone bars"
+   ],
+   "outside": [
+    "Paint (“child safe non-toxic”, ingredients not named)"
+   ],
+   "facts": {
+    "main": "yes",
+    "color": "no",
+    "wood": "unknown",
+    "parts": "unknown"
+   },
+   "unstated": {
+    "wood": [
+     "Kind of wood, solid or layered"
+    ],
+    "parts": [
+     "Xylophone bars"
+    ]
+   },
+   "standards": [
+    "fsc"
+   ],
+   "contains": [],
+   "quote": "MATERIALS : FSC Certified Wood, Child Safe Non-toxic Paint",
+   "note": "Made in China; sold by Bella Luna Toys, which ships it from New York.",
+   "products": [
+    {
+     "ships_from": "US",
+     "name": "Wooden Hammer Bench & Xylophone",
+     "url": "https://www.bellalunatoys.com/products/wooden-hammer-bench-xylophone",
+     "store": "Bella Luna Toys",
+     "price": "$34.99",
+     "shipping": "Free shipping on orders over $99 (contiguous 48 states)"
+    }
+   ],
+   "read": "2026-10-23",
+   "photos": [
+    {
+     "key": "speedy-monkey-hammer-bench-xylophone",
+     "src": "https://cdn.shopify.com/s/files/1/1114/2810/files/speedy-monkey-hammer-ball-xylophone.jpg?v=1783963270"
+    },
+    {
+     "key": "speedy-monkey-hammer-bench-xylophone_2",
+     "src": "https://cdn.shopify.com/s/files/1/1114/2810/files/speedy-monkey-hammer-ball-xylophone-2.jpg?v=1783963270"
+    }
+   ],
+   "img": "speedy-monkey-hammer-bench-xylophone",
+   "img_src": "https://cdn.shopify.com/s/files/1/1114/2810/files/speedy-monkey-hammer-ball-xylophone.jpg?v=1783963270"
+  },
+  {
+   "id": "sprout-kids-weaning-table",
+   "type": "furniture",
+   "brand": "Sprout Kids",
+   "line": "Weaning Kids Table",
+   "uses": [],
+   "free": [],
+   "unconfirmed": [
+    "Finish on the birch (“smooth finish”, type not named)",
+    "Glue in the plywood",
+    "Tension lock leg hardware"
+   ],
+   "outside": [
+    "Baltic birch plywood",
+    "White melamine coating (White & Birch Two-Tone option)"
+   ],
+   "facts": {
+    "wood": "no",
+    "melamine": "no",
+    "color": "unknown",
+    "parts": "unknown"
+   },
+   "unstated": {
+    "color": [
+     "Finish on the birch (“smooth finish”, type not named)"
+    ],
+    "parts": [
+     "Tension lock leg hardware"
+    ]
+   },
+   "standards": [],
+   "contains": [],
+   "age": {
+    "min_months": 6,
+    "text": "Leg heights from 6 to 18 months (12 in) up to 6 to 9 years (22 in)"
+   },
+   "quote": "The table can either be made of Baltic Birch or a white Melamine coating",
+   "note": "The page names GREENGUARD Gold certification for its furniture. Ships from the maker’s Utah workshop.",
+   "products": [
+    {
+     "ships_from": "US",
+     "name": "Weaning Kids Table, Finished Birch, 12\" legs",
+     "url": "https://sprout-kids.com/products/wooden-kids-tables-weaning",
+     "store": "Sprout Kids",
+     "price": "$130.00",
+     "variant": "Finished Birch / 20x30 / 12\""
+    }
+   ],
+   "read": "2026-10-23",
+   "photos": [
+    {
+     "key": "sprout-kids-weaning-table",
+     "src": "https://cdn.shopify.com/s/files/1/0067/2522/products/weaning-kids-table-tables-tables-seating-finished-birch-20x30-20-a-joint-807423.jpg?v=1776878870"
+    },
+    {
+     "key": "sprout-kids-weaning-table_2",
+     "src": "https://cdn.shopify.com/s/files/1/0067/2522/products/weaning-kids-table-tables-tables-seating-409378.jpg?v=1776878849"
+    },
+    {
+     "key": "sprout-kids-weaning-table_3",
+     "src": "https://cdn.shopify.com/s/files/1/0067/2522/products/weaning-kids-table-tables-tables-seating-white-birch-two-tone-20x30-12-a-joint-149885.jpg?v=1776878832"
+    },
+    {
+     "key": "sprout-kids-weaning-table_4",
+     "src": "https://cdn.shopify.com/s/files/1/0067/2522/files/weaning-kids-table-tables-tables-seating-173262.png?v=1776878809"
+    }
+   ],
+   "img": "sprout-kids-weaning-table",
+   "img_src": "https://cdn.shopify.com/s/files/1/0067/2522/products/weaning-kids-table-tables-tables-seating-finished-birch-20x30-20-a-joint-807423.jpg?v=1776878870"
   }
  ]
 }
