@@ -1672,7 +1672,8 @@
    "type": "bath",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "hevea-squeeze-n-splash-whale"
   },
   {
    "url": "https://us.heveaplanet.com/products/natural-rubber-pacifier-single-pack-orthodontic-teat-3-36-months",
@@ -3108,7 +3109,8 @@
    "type": "bibs",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "beaba-silicone-baby-bib"
   },
   {
    "url": "https://beaba.us/products/silicone-baby-bib",
@@ -4165,7 +4167,8 @@
    "type": "sheets",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "coyuchi-crinkled-percale-crib-sheet"
   },
   {
    "url": "https://www.avocadogreenmattress.com/products/coyuchi-organic-crinkled-percale-crib-sheet-ginger",
@@ -5669,7 +5672,8 @@
    "type": "bodysuits",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "little-green-radicals-easy-feeding-bodysuit"
   },
   {
    "url": "https://littlegreenradicals.com/products/blue-penguins-adaptive-popperthrough-onesie",
@@ -5840,7 +5844,8 @@
    "type": "pajamas",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "unavailable",
+   "reason": "Product page redirects to the store home page (2026-10-23)"
   },
   {
    "url": "https://littlegreenradicals.com/products/burnt-ochre-check-classic-pyjamas",
@@ -5849,7 +5854,8 @@
    "type": "pajamas",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "unavailable",
+   "reason": "Product page redirects to the store home page (2026-10-23)"
   },
   {
    "url": "https://littlegreenradicals.com/products/berry-check-check-classic-pyjamas",
@@ -11350,7 +11356,8 @@
    "type": "climbers",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "rad-childrens-furniture-climbing-arch"
   },
   {
    "url": "https://radchildrensfurniture.com/products/ladder",
@@ -19828,7 +19835,8 @@
    "type": "puzzles",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "kodo-kids-knob-puzzle"
   },
   {
    "url": "https://kodokids.com/products/empathy-dolls",
@@ -23204,7 +23212,8 @@
    "type": "diapers",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "smart-bottoms-smart-one-diaper"
   },
   {
    "url": "https://www.greenmountaindiapers.com/products/ruskovilla-baby-balaclava-silk",
@@ -27434,7 +27443,8 @@
    "type": "furniture",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "sprout-kids-weaning-table"
   },
   {
    "url": "https://sprout-kids.com/products/tower-full-plate",
@@ -31484,7 +31494,8 @@
    "type": "blankets",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "coyuchi-organic-print-matelasse-baby-blanket"
   },
   {
    "url": "https://holylamborganics.com/products/organic-print-percale-duvet-cover",
@@ -39425,7 +39436,8 @@
    "type": "strollers",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "delta-children-jeep-turboglyde-stroller"
   },
   {
    "url": "https://www.deltachildren.com/products/minnie-mouse-foam-frame-toddler-bed",
@@ -45710,7 +45722,8 @@
    "type": "bench",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "speedy-monkey-hammer-bench-xylophone"
   },
   {
    "url": "https://www.bellalunatoys.com/products/wooden-fox-roller-rattle",
@@ -47591,7 +47604,8 @@
    "type": "art",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "honeysticks-finger-paints"
   },
   {
    "url": "https://www.bellalunatoys.com/products/honeysticks-watercolor-paint-set-7pk",
@@ -54110,7 +54124,8 @@
    "type": "car-seats",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "maxi-cosi-sela-convertible-car-seat"
   },
   {
    "url": "https://enlightenedbaby.com/products/stokke-nomi-baby-set",
@@ -57765,7 +57780,8 @@
    "type": "towels",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "snuggle-me-organic-hooded-towel"
   },
   {
    "url": "https://enlightenedbaby.com/products/hooded-towel-birch",
@@ -66212,7 +66228,8 @@
    "type": "bath",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "bright-starts-safari-splashers"
   },
   {
    "url": "https://www.kids2.com/products/17980-060-bright-starts-full-comfort-baby-potty-easy-clean-purple",
