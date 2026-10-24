@@ -53,7 +53,8 @@
    "type": "clothes",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "colored-organics-classic-long-sleeve-crew"
   },
   {
    "url": "https://coloredorganics.com/products/organic-baby-and-kids-classic-long-sleeve-crew-classic-87002-21-harbor",
@@ -387,7 +388,8 @@
    "type": "pajamas",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "colored-organics-ciel-pointelle-snap-sleeper"
   },
   {
    "url": "https://coloredorganics.com/products/organic-cotton-baby-aw26-fireside-collection-valerie-pointelle-bodysuit-dress-95134-26-macy-floral-ivory",
@@ -885,7 +887,8 @@
    "type": "rattles",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "d-c-toys-wooden-moon-rattle"
   },
   {
    "url": "https://coloredorganics.com/products/organic-cotton-floral-hooded-towel-copy",
@@ -1129,7 +1132,8 @@
    "type": "accessories",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "little-stocking-co-lace-top-knee-high-socks"
   },
   {
    "url": "https://coloredorganics.com/products/fairisle-knit-beanie-hat-copy",
@@ -1156,7 +1160,8 @@
    "type": "accessories",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "huggalugs-cable-knit-beanie"
   },
   {
    "url": "https://coloredorganics.com/products/knit-mittens-copy-1",
@@ -2781,7 +2786,8 @@
    "type": "plates",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "beaba-porcelain-bowl-set-silicone-sleeve"
   },
   {
    "url": "https://beaba.us/products/beaba-mix-match-porcelain-divided-plate-set-with-silicone-suction-sleeve",
@@ -2835,7 +2841,8 @@
    "type": "cups",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "beaba-click-drink-stainless-learning-cup"
   },
   {
    "url": "https://beaba.us/products/set-of-6-8oz-glass-baby-food-jars",
@@ -3044,7 +3051,8 @@
    "type": "utensils",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "beaba-stainless-steel-toddler-cutlery"
   },
   {
    "url": "https://beaba.us/products/on-the-go-mealtime",
@@ -3859,7 +3867,8 @@
    "type": "sheets",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "newton-organic-cotton-crib-sheets"
   },
   {
    "url": "https://www.newtonbaby.com/products/twin-crib-mattress-pad",
@@ -4140,7 +4149,8 @@
    "type": "pillows",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "avocado-organic-kids-pillow"
   },
   {
    "url": "https://www.avocadogreenmattress.com/products/wood-bed-frame-marin",
@@ -5882,7 +5892,8 @@
    "type": "rainwear",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "little-green-radicals-sherpa-lined-snowsuit"
   },
   {
    "url": "https://littlegreenradicals.com/products/blue-bears-organic-cotton-sherpa-lined-snowsuit",
@@ -6260,7 +6271,8 @@
    "type": "rainwear",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "little-green-radicals-recycled-waterproof-winter-suit"
   },
   {
    "url": "https://littlegreenradicals.com/products/gold-stars-recycled-waterproof-winter-suit",
@@ -19845,7 +19857,8 @@
    "type": "dolls",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "skipped",
+   "reason": "Product page names no materials (read 2026-10-24)"
   },
   {
    "url": "https://kodokids.com/products/outdoor-ramps",
@@ -19945,7 +19958,8 @@
    "type": "silks",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "kodo-kids-playsilks"
   },
   {
    "url": "https://kodokids.com/products/sandbags",
@@ -21388,7 +21402,8 @@
    "type": "pacifiers",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "frigg-natural-rubber-pacifier-4-pack"
   },
   {
    "url": "https://mushie.com/products/frigg-silicone-pacifier-6-pack",
@@ -40033,7 +40048,8 @@
    "type": "high-chairs",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "delta-children-versa-high-chair"
   },
   {
    "url": "https://www.deltachildren.com/products/turtle-soft-ball-pit-with-50-play-balls",
