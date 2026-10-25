@@ -325,7 +325,8 @@
    "type": "sleep-sacks",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "colored-organics-pointelle-swaddle-blanket"
   },
   {
    "url": "https://coloredorganics.com/products/organic-cotton-baby-aw26-fireside-collection-pointelle-swaddle-blanket-95107-23-bluen",
@@ -1306,7 +1307,8 @@
    "type": "art",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "skipped",
+   "reason": "page (OOLY Chunkies Paint Sticks) names no materials (read 2026-10-25)"
   },
   {
    "url": "https://coloredorganics.com/products/lil-watercolor-paint-pad-copy",
@@ -1360,7 +1362,8 @@
    "type": "towels",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "natemia-organic-cotton-washcloths"
   },
   {
    "url": "https://coloredorganics.com/products/organic-crinkle-butterly",
@@ -2851,7 +2854,8 @@
    "type": "food-storage",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "beaba-glass-baby-food-jars"
   },
   {
    "url": "https://beaba.us/products/set-of-10-8oz-glass-baby-food-jars",
@@ -3469,7 +3473,8 @@
    "type": "cribs",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "newton-compact-travel-crib"
   },
   {
    "url": "https://www.newtonbaby.com/products/nest-bassinet-extra-sheets",
@@ -3995,7 +4000,8 @@
    "type": "furniture",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "piccalio-reversible-toddler-chair"
   },
   {
    "url": "https://www.piccalio.com/products/kids-table-and-chairs",
@@ -9009,7 +9015,8 @@
    "type": "diapers",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "crywolf-reusable-swim-nappy"
   },
   {
    "url": "https://crywolfchild.com/products/reusable-swim-nappy-on-holiday",
@@ -11107,7 +11114,8 @@
    "type": "furniture",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "rad-childrens-furniture-two-step-stool"
   },
   {
    "url": "https://radchildrensfurniture.com/products/rad-hat-classic",
@@ -11197,7 +11205,8 @@
    "type": "puzzles",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "tag-toys-wooden-alphabet-puzzle"
   },
   {
    "url": "https://radchildrensfurniture.com/products/the-sequoia",
@@ -11396,7 +11405,8 @@
    "type": "climbers",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "rad-childrens-furniture-pikler-triangle"
   },
   {
    "url": "https://www.hunterboots.com/products/womens-darisa-round-toe-slip-on-casual-shoes-in-black-w-darisa-blk01",
@@ -21809,7 +21819,8 @@
    "type": "bibs",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "mushie-muslin-bib-2-pack"
   },
   {
    "url": "https://mushie.com/products/trainer-sippy-cup",
@@ -31969,7 +31980,8 @@
    "type": "rugs",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "coyuchi-shag-organic-bath-rug"
   },
   {
    "url": "https://holylamborganics.com/products/organic-relaxed-linen-fitted-sheet",
@@ -38064,7 +38076,8 @@
    "type": "dolls",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "skipped",
+   "reason": "page could not be read: no product text in the HTML (read 2026-10-25)"
   },
   {
    "url": "https://shop.lovevery.com/products/observer-happy-either-way-book",
@@ -41696,7 +41709,8 @@
    "type": "carriers",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "skipped",
+   "reason": "page names no materials (read 2026-10-25)"
   },
   {
    "url": "https://www.deltachildren.com/products/gabbys-dollhouse-cozee-buddy-chair",
@@ -50611,7 +50625,8 @@
    "type": "instruments",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "djeco-animambo-wooden-maraca"
   },
   {
    "url": "https://www.bellalunatoys.com/products/find-the-fairies-memory-game",
@@ -51980,7 +51995,8 @@
    "type": "instruments",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "plantoys-wooden-drum-set-with-cymbals"
   },
   {
    "url": "https://www.bellalunatoys.com/products/plantoys-musical-band",
@@ -56013,7 +56029,8 @@
    "type": "car-seats",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "cybex-callisto-t-360-car-seat"
   },
   {
    "url": "https://enlightenedbaby.com/products/cybex-coya-stroller-style-collection",
@@ -93096,7 +93113,8 @@
    "type": "bench",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "plantoys-pounding-bench"
   },
   {
    "url": "https://thebabypenguin.com/products/baby-walker",

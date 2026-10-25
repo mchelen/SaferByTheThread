@@ -1,6 +1,6 @@
 {
  "schema": 4,
- "updated": "2026-10-24",
+ "updated": "2026-10-25",
  "ask": [
   "Thread on any sewn item (cotton or polyester).",
   "Wheels and axles on push toys and cars.",
@@ -15753,6 +15753,1128 @@
    ],
    "img": "newton-organic-cotton-crib-sheets",
    "img_src": "https://cdn.shopify.com/s/files/1/0792/0323/products/480x480-_2x---Sheets_582a79d1-3a17-476a-961f-85da42c1d4cd.jpg?v=1635793916"
+  },
+  {
+   "id": "beaba-glass-baby-food-jars",
+   "type": "food-storage",
+   "brand": "Béaba",
+   "line": "Glass Baby Food Jars, 8 oz (set of 6)",
+   "uses": [
+    "Glass jars"
+   ],
+   "unconfirmed": [
+    "What the airtight lids are made of"
+   ],
+   "facts": {
+    "main": "yes",
+    "accessory": "unknown"
+   },
+   "unstated": {
+    "accessory": [
+     "What the airtight lids are made of"
+    ]
+   },
+   "quote": "Made from premium, extra-resistant glass",
+   "note": "Also sold as a set of 10.",
+   "products": [
+    {
+     "name": "Set of 6 8oz Glass Baby Food Jars",
+     "url": "https://beaba.us/products/set-of-6-8oz-glass-baby-food-jars",
+     "store": "Béaba USA",
+     "price": "$39.99",
+     "ships_from": null,
+     "shipping": "Free shipping on orders $140*"
+    }
+   ],
+   "free": [],
+   "outside": [],
+   "contains": [],
+   "standards": [],
+   "read": "2026-10-25",
+   "photos": [
+    {
+     "key": "beaba-glass-baby-food-jars",
+     "src": "https://cdn.shopify.com/s/files/1/0673/7756/1739/files/37.png?v=1782163005"
+    },
+    {
+     "key": "beaba-glass-baby-food-jars_2",
+     "src": "https://cdn.shopify.com/s/files/1/0673/7756/1739/files/36.png?v=1782163005"
+    },
+    {
+     "key": "beaba-glass-baby-food-jars_3",
+     "src": "https://cdn.shopify.com/s/files/1/0673/7756/1739/files/32.png?v=1782163005"
+    },
+    {
+     "key": "beaba-glass-baby-food-jars_4",
+     "src": "https://cdn.shopify.com/s/files/1/0673/7756/1739/files/33.png?v=1782163005"
+    },
+    {
+     "key": "beaba-glass-baby-food-jars_5",
+     "src": "https://cdn.shopify.com/s/files/1/0673/7756/1739/files/34.png?v=1782163005"
+    },
+    {
+     "key": "beaba-glass-baby-food-jars_6",
+     "src": "https://cdn.shopify.com/s/files/1/0673/7756/1739/files/35.png?v=1782163005"
+    },
+    {
+     "key": "beaba-glass-baby-food-jars_7",
+     "src": "https://cdn.shopify.com/s/files/1/0673/7756/1739/files/Ecofriendlymaterialsgraphic_9b90c415-7bd3-4c33-9986-7f2d3bf5ce29.png?v=1791388946"
+    }
+   ],
+   "img": "beaba-glass-baby-food-jars",
+   "img_src": "https://cdn.shopify.com/s/files/1/0673/7756/1739/files/37.png?v=1782163005"
+  },
+  {
+   "id": "colored-organics-pointelle-swaddle-blanket",
+   "type": "sleep-sacks",
+   "brand": "Colored Organics",
+   "line": "Pointelle Swaddle Blanket",
+   "uses": [
+    "100% organic cotton pointelle fabric",
+    "Water-based dyes"
+   ],
+   "unconfirmed": [
+    "What the water-based dyes are made of",
+    "Thread"
+   ],
+   "facts": {
+    "main": "yes",
+    "color": "unknown",
+    "organic": "unknown"
+   },
+   "unstated": {
+    "color": [
+     "What the water-based dyes are made of"
+    ]
+   },
+   "quote": "Made of 100% organic cotton pointelle fabric Water-based dyes ensuring long-lasting color vibrancy and durability",
+   "note": "The page names no organic certificate.",
+   "products": [
+    {
+     "name": "Pointelle Swaddle Blanket",
+     "url": "https://coloredorganics.com/products/organic-cotton-baby-aw26-fireside-collection-pointelle-swaddle-blanket-95107-23-ivory",
+     "store": "Colored Organics",
+     "price": "$44",
+     "ships_from": null,
+     "shipping": "Free U.S. shipping on orders over $50"
+    }
+   ],
+   "free": [],
+   "outside": [],
+   "contains": [],
+   "standards": [],
+   "read": "2026-10-25",
+   "photos": [
+    {
+     "key": "colored-organics-pointelle-swaddle-blanket",
+     "src": "https://cdn.shopify.com/s/files/1/1643/4857/files/95107-23-pointelle-swaddlle-blanket.ivory.flat_front.jpg?v=1790615206"
+    },
+    {
+     "key": "colored-organics-pointelle-swaddle-blanket_2",
+     "src": "https://cdn.shopify.com/s/files/1/1643/4857/files/95107-23-pointelle-swaddlle-blanket.ivory.flat_detail.jpg?v=1790615312"
+    }
+   ],
+   "img": "colored-organics-pointelle-swaddle-blanket",
+   "img_src": "https://cdn.shopify.com/s/files/1/1643/4857/files/95107-23-pointelle-swaddlle-blanket.ivory.flat_front.jpg?v=1790615206"
+  },
+  {
+   "id": "coyuchi-shag-organic-bath-rug",
+   "type": "rugs",
+   "brand": "Coyuchi",
+   "line": "Shag Organic Bath Rug",
+   "uses": [
+    "100% organic cotton"
+   ],
+   "unconfirmed": [
+    "Dyes on the Alpine White and Fossil colours",
+    "Thread"
+   ],
+   "facts": {
+    "main": "yes",
+    "color": "unknown",
+    "organic": "yes"
+   },
+   "unstated": {
+    "color": [
+     "Dyes on the Alpine White and Fossil colours"
+    ]
+   },
+   "standards": [
+    "gots"
+   ],
+   "quote": "100% organic cotton is grown + woven in Turkey GOTS Certified",
+   "note": "A shag bath mat with a flat-woven bottom, in 24 x 36 in or 30 x 50 in; also sold undyed. Sold by Holy Lamb Organics.",
+   "products": [
+    {
+     "name": "Shag Organic Bath Rug",
+     "url": "https://holylamborganics.com/products/shag-organic-bath-rug",
+     "store": "Holy Lamb Organics",
+     "price": "$98.00 - $128.00",
+     "variant": "24\"x36\"",
+     "ships_from": null,
+     "shipping": "$30 shipping charge on Coyuchi items"
+    }
+   ],
+   "free": [],
+   "outside": [],
+   "contains": [],
+   "read": "2026-10-25",
+   "photos": [
+    {
+     "key": "coyuchi-shag-organic-bath-rug",
+     "src": "https://cdn.shopify.com/s/files/1/0338/2373/files/ShagOrganic_8b17c86e-24a5-4afe-9128-7027fea9c8a1.webp?v=1762464706"
+    },
+    {
+     "key": "coyuchi-shag-organic-bath-rug_2",
+     "src": "https://cdn.shopify.com/s/files/1/0338/2373/files/ShagBathRugAlpineWhite_59f1c70c-7d42-46dd-9758-a302db97d04a.webp?v=1762464706"
+    },
+    {
+     "key": "coyuchi-shag-organic-bath-rug_3",
+     "src": "https://cdn.shopify.com/s/files/1/0338/2373/files/ShagOrganicUndyed_238e4dad-f261-4379-94bd-42cb2a4ae5df.webp?v=1762464706"
+    },
+    {
+     "key": "coyuchi-shag-organic-bath-rug_4",
+     "src": "https://cdn.shopify.com/s/files/1/0338/2373/files/ShagOrganicSlate_30d08f87-034f-4fcc-a4b7-e0584561f366.jpg?v=1762464706"
+    },
+    {
+     "key": "coyuchi-shag-organic-bath-rug_5",
+     "src": "https://cdn.shopify.com/s/files/1/0338/2373/files/FA25_ShagOrganic_BathRug_30x50_Fossil_4060.jpg?v=1762464707"
+    }
+   ],
+   "img": "coyuchi-shag-organic-bath-rug",
+   "img_src": "https://cdn.shopify.com/s/files/1/0338/2373/files/ShagOrganic_8b17c86e-24a5-4afe-9128-7027fea9c8a1.webp?v=1762464706"
+  },
+  {
+   "id": "crywolf-reusable-swim-nappy",
+   "type": "diapers",
+   "brand": "Crywolf",
+   "line": "Reusable Swim Nappy",
+   "outside": [
+    "80% recycled nylon and 20% spandex"
+   ],
+   "unconfirmed": [
+    "Fibre of the lining",
+    "Press domes",
+    "Elastic on the legs",
+    "Dyes on the prints"
+   ],
+   "facts": {
+    "main": "no",
+    "parts": "unknown",
+    "color": "unknown"
+   },
+   "unstated": {
+    "parts": [
+     "Press domes",
+     "Elastic on the legs"
+    ],
+    "color": [
+     "Dyes on the prints"
+    ]
+   },
+   "age": {
+    "min_months": 0,
+    "max_months": 36,
+    "text": "0 to 3 years (three sizes)"
+   },
+   "quote": "Materials 80% Recycled Nylon and 20% Spandex",
+   "note": "A lined swim nappy with press domes at the waist; the page gives a UPF 50+ rating. Designed in New Zealand; prices in New Zealand dollars.",
+   "products": [
+    {
+     "name": "Reusable Swim Nappy (Deck Stripe and other prints)",
+     "url": "https://crywolfchild.com/products/reusable-swim-nappy-deck-stripe",
+     "store": "Crywolf",
+     "price": "$39.99 NZD",
+     "ships_from": "New Zealand",
+     "shipping": null
+    }
+   ],
+   "uses": [],
+   "free": [],
+   "contains": [],
+   "standards": [],
+   "read": "2026-10-25",
+   "photos": [
+    {
+     "key": "crywolf-reusable-swim-nappy",
+     "src": "https://cdn.shopify.com/s/files/1/2228/8463/files/CRYWOL_1_f9918c72-2994-41a8-9931-0b2db89cdea9.jpg?v=1787277714"
+    },
+    {
+     "key": "crywolf-reusable-swim-nappy_2",
+     "src": "https://cdn.shopify.com/s/files/1/2228/8463/files/CRYWOLF-SS2627-ReusableSwimNappy-DeckStripe-2-Campaign-WEB.jpg?v=1787277759"
+    }
+   ],
+   "img": "crywolf-reusable-swim-nappy",
+   "img_src": "https://cdn.shopify.com/s/files/1/2228/8463/files/CRYWOL_1_f9918c72-2994-41a8-9931-0b2db89cdea9.jpg?v=1787277714"
+  },
+  {
+   "id": "cybex-callisto-t-360-car-seat",
+   "type": "car-seats",
+   "brand": "Cybex",
+   "line": "Callisto T 360 Rotating All-in-One Convertible Car Seat",
+   "uses": [
+    "Steel frame"
+   ],
+   "free": [
+    "Added flame retardant chemicals in the fabrics"
+   ],
+   "unconfirmed": [
+    "Fibre of the seat fabrics",
+    "Fibre of the mesh fabrics",
+    "Perforated shell",
+    "Harness straps and buckle",
+    "Fill of the newborn insert"
+   ],
+   "facts": {
+    "main": "unknown",
+    "parts": "unknown",
+    "flame": "yes"
+   },
+   "unstated": {
+    "main": [
+     "Fibre of the seat fabrics",
+     "Perforated shell"
+    ],
+    "parts": [
+     "Harness straps and buckle"
+    ]
+   },
+   "age": {
+    "min_months": 0,
+    "max_months": 120,
+    "text": "Birth to 10 years (4 to 120 lb): rear-facing, forward-facing, then booster"
+   },
+   "quote": "The FR-free materials used in CYBEX car seats are naturally flame resistant while containing no added chemicals",
+   "note": "The store lists GREENGUARD Gold certification for emissions.",
+   "products": [
+    {
+     "name": "Cybex Callisto T 360 Rotating All-in-One Convertible Car Seat",
+     "url": "https://enlightenedbaby.com/products/cybex-callisto-t-360-rotating-all-in-one-convertible-car-seat",
+     "store": "Enlightened Baby",
+     "price": "$799.95",
+     "ships_from": null,
+     "shipping": null
+    }
+   ],
+   "outside": [],
+   "contains": [],
+   "standards": [],
+   "read": "2026-10-25",
+   "photos": [
+    {
+     "key": "cybex-callisto-t-360-car-seat",
+     "src": "https://cdn.shopify.com/s/files/1/0707/4850/4296/files/CYB_26_US_y000_CallistoT360_beige.jpg?v=1784644034"
+    },
+    {
+     "key": "cybex-callisto-t-360-car-seat_2",
+     "src": "https://cdn.shopify.com/s/files/1/0707/4850/4296/files/Callisto-T_Comfort_Features_COBI.jpg?v=1784644034"
+    },
+    {
+     "key": "cybex-callisto-t-360-car-seat_3",
+     "src": "https://cdn.shopify.com/s/files/1/0707/4850/4296/files/Callisto-T_Functionality_Features_COBI.jpg?v=1784644034"
+    },
+    {
+     "key": "cybex-callisto-t-360-car-seat_4",
+     "src": "https://cdn.shopify.com/s/files/1/0707/4850/4296/files/Callisto-T-features_COBI.jpg?v=1784644034"
+    },
+    {
+     "key": "cybex-callisto-t-360-car-seat_5",
+     "src": "https://cdn.shopify.com/s/files/1/0707/4850/4296/files/Callisto-T-hero_COBI.jpg?v=1784644034"
+    },
+    {
+     "key": "cybex-callisto-t-360-car-seat_6",
+     "src": "https://cdn.shopify.com/s/files/1/0707/4850/4296/files/Callisto-T-install-in-sec_COBI.jpg?v=1784644034"
+    },
+    {
+     "key": "cybex-callisto-t-360-car-seat_7",
+     "src": "https://cdn.shopify.com/s/files/1/0707/4850/4296/files/Callisto-T-Modes_of_Use_COBI.jpg?v=1784644034"
+    },
+    {
+     "key": "cybex-callisto-t-360-car-seat_8",
+     "src": "https://cdn.shopify.com/s/files/1/0707/4850/4296/files/Callisto-T-rotate_recline_COBI.jpg?v=1784644034"
+    },
+    {
+     "key": "cybex-callisto-t-360-car-seat_9",
+     "src": "https://cdn.shopify.com/s/files/1/0707/4850/4296/files/CallistoT-purchase-include_COBI.jpg?v=1784644034"
+    },
+    {
+     "key": "cybex-callisto-t-360-car-seat_10",
+     "src": "https://cdn.shopify.com/s/files/1/0707/4850/4296/files/CYB_26_US_y000_CallistoT360_black.jpg?v=1784644034"
+    }
+   ],
+   "img": "cybex-callisto-t-360-car-seat",
+   "img_src": "https://cdn.shopify.com/s/files/1/0707/4850/4296/files/CYB_26_US_y000_CallistoT360_beige.jpg?v=1784644034"
+  },
+  {
+   "id": "djeco-animambo-wooden-maraca",
+   "type": "instruments",
+   "brand": "Djeco",
+   "line": "Animambo Wooden Maraca",
+   "uses": [
+    "Wood"
+   ],
+   "unconfirmed": [
+    "Kind of wood",
+    "What the colourful stains are made of",
+    "What the water-based coatings are made of",
+    "What makes the rattle sound inside"
+   ],
+   "facts": {
+    "main": "yes",
+    "wood": "unknown",
+    "color": "unknown",
+    "parts": "unknown"
+   },
+   "unstated": {
+    "color": [
+     "What the colourful stains are made of",
+     "What the water-based coatings are made of"
+    ],
+    "parts": [
+     "What makes the rattle sound inside"
+    ]
+   },
+   "age": {
+    "min_months": 18,
+    "text": "18 months and up"
+   },
+   "quote": "MATERIALS : Wood INCLUDES : 1 wooden maraca",
+   "note": "Egg-shaped, 1 x 3 x 3.5 in. Designed in France, made in China; sold by Bella Luna Toys.",
+   "products": [
+    {
+     "name": "Animambo Wooden Maraca Musical Instrument",
+     "url": "https://www.bellalunatoys.com/products/animambo-wooden-maraca-musical-instrument",
+     "store": "Bella Luna Toys",
+     "price": "$9.99",
+     "ships_from": "US",
+     "shipping": "Free shipping on orders over $99 within the contiguous 48 states"
+    }
+   ],
+   "free": [],
+   "outside": [],
+   "contains": [],
+   "standards": [],
+   "read": "2026-10-25",
+   "photos": [
+    {
+     "key": "djeco-animambo-wooden-maraca",
+     "src": "https://cdn.shopify.com/s/files/1/1114/2810/files/animambo-egg-shaped-maraca-musical-instrument.jpg?v=1720446924"
+    }
+   ],
+   "img": "djeco-animambo-wooden-maraca",
+   "img_src": "https://cdn.shopify.com/s/files/1/1114/2810/files/animambo-egg-shaped-maraca-musical-instrument.jpg?v=1720446924"
+  },
+  {
+   "id": "mushie-muslin-bib-2-pack",
+   "type": "bibs",
+   "brand": "Mushie",
+   "line": "Muslin Bib, 2-pack",
+   "uses": [
+    "100% organic cotton muslin"
+   ],
+   "unconfirmed": [
+    "Snap closures",
+    "Dyes on the coloured and patterned bibs",
+    "Thread"
+   ],
+   "facts": {
+    "main": "yes",
+    "parts": "unknown",
+    "color": "unknown",
+    "organic": "unknown"
+   },
+   "unstated": {
+    "parts": [
+     "Snap closures"
+    ],
+    "color": [
+     "Dyes on the coloured and patterned bibs"
+    ]
+   },
+   "standards": [
+    "us-toy"
+   ],
+   "age": {
+    "min_months": 0,
+    "max_months": 24,
+    "text": "0 to 24 months"
+   },
+   "quote": "Made from 100% organic cotton muslin, they're machine washable for easy care.",
+   "note": "The page names no organic certificate.",
+   "products": [
+    {
+     "name": "Muslin Bib",
+     "url": "https://mushie.com/products/muslin-bib-2-pack",
+     "store": "Mushie",
+     "price": "$14.99",
+     "ships_from": null,
+     "shipping": "Free Shipping for US orders $75+"
+    }
+   ],
+   "free": [],
+   "outside": [],
+   "contains": [],
+   "read": "2026-10-25",
+   "photos": [
+    {
+     "key": "mushie-muslin-bib-2-pack",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/products/GreenPaisley_Fog_MuslinBib2pack.jpg?v=1752248678"
+    },
+    {
+     "key": "mushie-muslin-bib-2-pack_2",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/products/PinkFlowers_Blush_MuslinBib2pack.jpg?v=1755280188"
+    },
+    {
+     "key": "mushie-muslin-bib-2-pack_3",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/Muslin-Bib-Info_f2551b0e-600e-4872-a4f4-5cbb642c98c6.jpg?v=1768508448"
+    },
+    {
+     "key": "mushie-muslin-bib-2-pack_4",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/products/valt-1-9.jpg?v=1768508448"
+    },
+    {
+     "key": "mushie-muslin-bib-2-pack_5",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/products/SHOOT_BIG_FLATLAYS-41.jpg?v=1768508448"
+    },
+    {
+     "key": "mushie-muslin-bib-2-pack_6",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/photo_feb_13_2024_10_00_43_pm.jpg?v=1768508448"
+    },
+    {
+     "key": "mushie-muslin-bib-2-pack_7",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/PARK-shoot-5.jpg?v=1771361996"
+    },
+    {
+     "key": "mushie-muslin-bib-2-pack_8",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/mathilda_1juni-27.jpg?v=1771361996"
+    },
+    {
+     "key": "mushie-muslin-bib-2-pack_9",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/products/Ebba-shoot-71.jpg?v=1771361996"
+    },
+    {
+     "key": "mushie-muslin-bib-2-pack_10",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/shoot_zion_lily_2kids-70.jpg?v=1771361996"
+    }
+   ],
+   "img": "mushie-muslin-bib-2-pack",
+   "img_src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/products/GreenPaisley_Fog_MuslinBib2pack.jpg?v=1752248678"
+  },
+  {
+   "id": "natemia-organic-cotton-washcloths",
+   "type": "towels",
+   "brand": "Natemia",
+   "line": "Organic Cotton Washcloths, set of 5",
+   "uses": [
+    "GOTS certified 100% organic cotton"
+   ],
+   "unconfirmed": [
+    "Dyes on the coloured washcloths",
+    "Thread"
+   ],
+   "facts": {
+    "main": "yes",
+    "color": "unknown",
+    "organic": "yes"
+   },
+   "unstated": {
+    "color": [
+     "Dyes on the coloured washcloths"
+    ]
+   },
+   "standards": [
+    "gots"
+   ],
+   "quote": "GOTS certified 100% organic cotton Set of 5 Measures 12 x 12 inches Made in Turkey",
+   "note": "Made in Turkey; sold by Colored Organics.",
+   "products": [
+    {
+     "name": "Organic Cotton Washcloths",
+     "url": "https://coloredorganics.com/products/organic-cotton-washcloths",
+     "store": "Colored Organics",
+     "price": "$34.50",
+     "ships_from": null,
+     "shipping": "Free U.S. shipping on orders over $50"
+    }
+   ],
+   "free": [],
+   "outside": [],
+   "contains": [],
+   "read": "2026-10-25",
+   "photos": [
+    {
+     "key": "natemia-organic-cotton-washcloths",
+     "src": "https://cdn.shopify.com/s/files/1/1643/4857/products/infant-organic-washcloths.grey.flat_front.jpg?v=1749151697"
+    },
+    {
+     "key": "natemia-organic-cotton-washcloths_2",
+     "src": "https://cdn.shopify.com/s/files/1/1643/4857/products/infant-organic-washcloths.grey.flat_front.1.jpg?v=1749151697"
+    },
+    {
+     "key": "natemia-organic-cotton-washcloths_3",
+     "src": "https://cdn.shopify.com/s/files/1/1643/4857/products/infant-organic-washcloths.white.flat_front.jpg?v=1749151697"
+    },
+    {
+     "key": "natemia-organic-cotton-washcloths_4",
+     "src": "https://cdn.shopify.com/s/files/1/1643/4857/products/infant-organic-washcloths.white.flat_front.1.jpg?v=1749151697"
+    }
+   ],
+   "img": "natemia-organic-cotton-washcloths",
+   "img_src": "https://cdn.shopify.com/s/files/1/1643/4857/products/infant-organic-washcloths.grey.flat_front.jpg?v=1749151697"
+  },
+  {
+   "id": "newton-compact-travel-crib",
+   "type": "cribs",
+   "brand": "Newton",
+   "line": "Compact Travel Crib & Play Yard",
+   "uses": [
+    "Steel frame",
+    "Muslin cotton sheet"
+   ],
+   "outside": [
+    "Wovenaire mattress of 90% air and 10% recyclable food-grade polymer"
+   ],
+   "unconfirmed": [
+    "Fibre of the mesh sides",
+    "Fibre of the outer fabric shell",
+    "Fibre of the mattress cover",
+    "Zips"
+   ],
+   "facts": {
+    "main": "no",
+    "parts": "unknown"
+   },
+   "unstated": {
+    "parts": [
+     "Zips"
+    ]
+   },
+   "quote": "The mattress is made of 90% air and 10% recyclable food-grade polymer and is GREENGUARD Gold Certified.",
+   "note": "Folds into a backpack; weighs 13 lb. The page lists GREENGUARD Gold certification for emissions.",
+   "products": [
+    {
+     "name": "Compact Travel Crib & Play Yard",
+     "url": "https://www.newtonbaby.com/products/compact-travel-crib",
+     "store": "Newton Baby",
+     "price": "$199.99",
+     "ships_from": "US",
+     "shipping": "Free shipping in the contiguous 48 states; HI and AK fee at checkout"
+    }
+   ],
+   "free": [],
+   "contains": [],
+   "standards": [],
+   "read": "2026-10-25",
+   "photos": [
+    {
+     "key": "newton-compact-travel-crib",
+     "src": "https://cdn.shopify.com/s/files/1/0792/0323/files/CompactTravelCrib3000_1.jpg?v=1759239686"
+    },
+    {
+     "key": "newton-compact-travel-crib_2",
+     "src": "https://cdn.shopify.com/s/files/1/0792/0323/files/Newton_PDP_Carousel_Hero_Compact_Play_Yard_875e5b10-2d42-49a2-9833-cbf48a8cefc8.jpg?v=1790867254"
+    },
+    {
+     "key": "newton-compact-travel-crib_3",
+     "src": "https://cdn.shopify.com/s/files/1/0792/0323/files/CompactTravelCrib3000_6.jpg?v=1776798642"
+    },
+    {
+     "key": "newton-compact-travel-crib_4",
+     "src": "https://cdn.shopify.com/s/files/1/0792/0323/files/Travel_Crib_comparison_chart_Compact_vs_Deluxe.jpg?v=1776798642"
+    },
+    {
+     "key": "newton-compact-travel-crib_5",
+     "src": "https://cdn.shopify.com/s/files/1/0792/0323/files/CompactTravelCrib3000_7-EDIT.jpg?v=1776798642"
+    },
+    {
+     "key": "newton-compact-travel-crib_6",
+     "src": "https://cdn.shopify.com/s/files/1/0792/0323/files/CompactTravelCrib3000_8.jpg?v=1776798642"
+    },
+    {
+     "key": "newton-compact-travel-crib_7",
+     "src": "https://cdn.shopify.com/s/files/1/0792/0323/files/CompactTravelCrib3000_9.jpg?v=1776798642"
+    },
+    {
+     "key": "newton-compact-travel-crib_8",
+     "src": "https://cdn.shopify.com/s/files/1/0792/0323/files/CompactTravelCrib3000_10-EDIT.jpg?v=1776798642"
+    },
+    {
+     "key": "newton-compact-travel-crib_9",
+     "src": "https://cdn.shopify.com/s/files/1/0792/0323/files/CompactTravelCrib3000_2-EDIT.jpg?v=1776798642"
+    },
+    {
+     "key": "newton-compact-travel-crib_10",
+     "src": "https://cdn.shopify.com/s/files/1/0792/0323/files/Compact_Travel_Crib_3000_11_Dims_Grey.jpg?v=1780502400"
+    }
+   ],
+   "img": "newton-compact-travel-crib",
+   "img_src": "https://cdn.shopify.com/s/files/1/0792/0323/files/CompactTravelCrib3000_1.jpg?v=1759239686"
+  },
+  {
+   "id": "piccalio-reversible-toddler-chair",
+   "type": "furniture",
+   "brand": "Piccalio",
+   "line": "Reversible Toddler Chair",
+   "uses": [
+    "FSC European solid beech wood"
+   ],
+   "free": [
+    "Formaldehyde in the finish",
+    "Phthalates in the finish",
+    "Lead in the finish"
+   ],
+   "unconfirmed": [
+    "Finish (“0-VOC water-based” lacquer, type not named)",
+    "Paint on the Sage, Ochre, Desert Pink and Slate Blue colours"
+   ],
+   "facts": {
+    "main": "yes",
+    "wood": "yes",
+    "color": "unknown",
+    "lead": "yes"
+   },
+   "unstated": {
+    "color": [
+     "Finish (“0-VOC water-based” lacquer, type not named)",
+     "Paint on the Sage, Ochre, Desert Pink and Slate Blue colours"
+    ]
+   },
+   "standards": [
+    "fsc",
+    "us-toy"
+   ],
+   "age": {
+    "min_months": 18,
+    "text": "18 months and up"
+   },
+   "quote": "Materials: FSC® European solid beech wood Non-toxic, 0-VOC finish",
+   "note": "Flips to three seat heights (6.3, 7.6 and 14.5 in). No assembly required.",
+   "products": [
+    {
+     "name": "Reversible Toddler Chair",
+     "url": "https://www.piccalio.com/products/reversible-toddler-chair",
+     "store": "Piccalio",
+     "price": "$179",
+     "ships_from": null,
+     "shipping": "Ships free (contiguous US)"
+    }
+   ],
+   "outside": [],
+   "contains": [],
+   "read": "2026-10-25",
+   "photos": [
+    {
+     "key": "piccalio-reversible-toddler-chair",
+     "src": "https://cdn.shopify.com/s/files/1/0411/8868/8026/files/110724_Piccalio-Chair-Natural.png?v=1760030071"
+    },
+    {
+     "key": "piccalio-reversible-toddler-chair_2",
+     "src": "https://cdn.shopify.com/s/files/1/0411/8868/8026/files/030325_Chair_Natural_Bedroom.jpg?v=1741117335"
+    },
+    {
+     "key": "piccalio-reversible-toddler-chair_3",
+     "src": "https://cdn.shopify.com/s/files/1/0411/8868/8026/files/piccalio-wood-toddler-play-table-chairs-playroom.jpg?v=1768866357"
+    },
+    {
+     "key": "piccalio-reversible-toddler-chair_4",
+     "src": "https://cdn.shopify.com/s/files/1/0411/8868/8026/files/030325_Chair_NewColors_LivingRoom_Model.jpg?v=1741117335"
+    },
+    {
+     "key": "piccalio-reversible-toddler-chair_5",
+     "src": "https://cdn.shopify.com/s/files/1/0411/8868/8026/files/030325_Chair_Natural_Bedroom_Nightstand.jpg?v=1741117335"
+    },
+    {
+     "key": "piccalio-reversible-toddler-chair_6",
+     "src": "https://cdn.shopify.com/s/files/1/0411/8868/8026/files/030325_Chair_Natural_Bedroom_Model.jpg?v=1741117335"
+    },
+    {
+     "key": "piccalio-reversible-toddler-chair_7",
+     "src": "https://cdn.shopify.com/s/files/1/0411/8868/8026/files/piccalio-montessori-toddler-table-and-chairs-living-room.jpg?v=1768866392"
+    }
+   ],
+   "img": "piccalio-reversible-toddler-chair",
+   "img_src": "https://cdn.shopify.com/s/files/1/0411/8868/8026/files/110724_Piccalio-Chair-Natural.png?v=1760030071"
+  },
+  {
+   "id": "plantoys-pounding-bench",
+   "type": "bench",
+   "brand": "PlanToys",
+   "line": "Wooden Pounding Bench with 3 Pegs",
+   "uses": [
+    "Rubberwood"
+   ],
+   "unconfirmed": [
+    "Whether the rubberwood is solid wood or plywood",
+    "Finish or colour on the pegs",
+    "What the mallet is made of"
+   ],
+   "facts": {
+    "main": "yes",
+    "wood": "unknown",
+    "color": "unknown",
+    "parts": "unknown"
+   },
+   "unstated": {
+    "wood": [
+     "Whether the rubberwood is solid wood or plywood"
+    ],
+    "color": [
+     "Finish or colour on the pegs"
+    ],
+    "parts": [
+     "What the mallet is made of"
+    ]
+   },
+   "age": {
+    "min_months": 12,
+    "text": "12 months and up"
+   },
+   "quote": "Materials: Rubberwood",
+   "note": "Includes the bench, three pegs and a mallet the store calls wooden. Made in Thailand.",
+   "products": [
+    {
+     "name": "PlanToys Wooden Pounding Bench with 3 Pegs",
+     "url": "https://thebabypenguin.com/products/pounding-bench",
+     "store": "The Baby Penguin",
+     "price": "$59.99",
+     "ships_from": null,
+     "shipping": "Free standard shipping on orders of $50 or more within the contiguous United States"
+    }
+   ],
+   "free": [],
+   "outside": [],
+   "contains": [],
+   "standards": [],
+   "read": "2026-10-25",
+   "photos": [
+    {
+     "key": "plantoys-pounding-bench",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Pounding-Bench-PlanToys-USA-124132026.jpg?v=1781462128"
+    },
+    {
+     "key": "plantoys-pounding-bench_2",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Pounding-Bench-PlanToys-USA-124132111.jpg?v=1781462131"
+    },
+    {
+     "key": "plantoys-pounding-bench_3",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Pounding-Bench-PlanToys-USA-124132288.jpg?v=1781462131"
+    },
+    {
+     "key": "plantoys-pounding-bench_4",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Pounding-Bench-PlanToys-USA-124132352.jpg?v=1781462131"
+    }
+   ],
+   "img": "plantoys-pounding-bench",
+   "img_src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Pounding-Bench-PlanToys-USA-124132026.jpg?v=1781462128"
+  },
+  {
+   "id": "plantoys-wooden-drum-set-with-cymbals",
+   "type": "instruments",
+   "brand": "PlanToys",
+   "line": "Wooden Drum Set with Cymbals",
+   "uses": [
+    "Rubberwood",
+    "Organic pigments and water-based dyes"
+   ],
+   "free": [
+    "Formaldehyde in the glue"
+   ],
+   "unconfirmed": [
+    "What the glue is made of",
+    "Kind of rubber in the drum sticks",
+    "Material of the cymbal",
+    "Drum heads"
+   ],
+   "facts": {
+    "main": "yes",
+    "wood": "unknown",
+    "color": "unknown",
+    "parts": "unknown",
+    "rubber": "unknown"
+   },
+   "unstated": {
+    "wood": [
+     "What the glue is made of"
+    ],
+    "parts": [
+     "Material of the cymbal"
+    ],
+    "rubber": [
+     "Kind of rubber in the drum sticks"
+    ]
+   },
+   "quote": "MATERIALS : Made of chemical-free rubberwood, formaldehyde-free glue, organic pigments and water-based dyes.",
+   "note": "Snare, tom and bass drum with a kick pedal, a cymbal and a pair of rubber drum sticks. Made in Thailand; ships from the manufacturer, 48 contiguous states only.",
+   "products": [
+    {
+     "name": "PlanToys Wooden Toy Drum Set with Cymbals",
+     "url": "https://www.bellalunatoys.com/products/plan-toys-wooden-drum-set-with-cymbals",
+     "store": "Bella Luna Toys",
+     "price": "$299.99",
+     "ships_from": null,
+     "shipping": "Ships separately, directly from the manufacturer, within the 48 contiguous states; free shipping on orders over $99"
+    }
+   ],
+   "outside": [],
+   "contains": [],
+   "standards": [],
+   "read": "2026-10-25",
+   "photos": [
+    {
+     "key": "plantoys-wooden-drum-set-with-cymbals",
+     "src": "https://cdn.shopify.com/s/files/1/1114/2810/files/plan-toys-wooden-toy-drum-set-with-cymbals-bella-luna-toys.jpg?v=1684514882"
+    },
+    {
+     "key": "plantoys-wooden-drum-set-with-cymbals_2",
+     "src": "https://cdn.shopify.com/s/files/1/1114/2810/files/plan-toys-wooden-toy-drum-set-with-cymbals-bella-luna-toys_4.jpg?v=1684514882"
+    },
+    {
+     "key": "plantoys-wooden-drum-set-with-cymbals_3",
+     "src": "https://cdn.shopify.com/s/files/1/1114/2810/files/plan-toys-wooden-toy-drum-set-with-cymbals-bella-luna-toys_6.jpg?v=1684514882"
+    },
+    {
+     "key": "plantoys-wooden-drum-set-with-cymbals_4",
+     "src": "https://cdn.shopify.com/s/files/1/1114/2810/files/plan-toys-wooden-toy-drum-set-with-cymbals-bella-luna-toys_5.jpg?v=1684514894"
+    },
+    {
+     "key": "plantoys-wooden-drum-set-with-cymbals_5",
+     "src": "https://cdn.shopify.com/s/files/1/1114/2810/files/plan-toys-wooden-toy-drum-set-with-cymbals-bella-luna-toys_2.jpg?v=1684514882"
+    },
+    {
+     "key": "plantoys-wooden-drum-set-with-cymbals_6",
+     "src": "https://cdn.shopify.com/s/files/1/1114/2810/files/plan-toys-wooden-toy-drum-set-with-cymbals-bella-luna-toys_3.jpg?v=1684514882"
+    }
+   ],
+   "img": "plantoys-wooden-drum-set-with-cymbals",
+   "img_src": "https://cdn.shopify.com/s/files/1/1114/2810/files/plan-toys-wooden-toy-drum-set-with-cymbals-bella-luna-toys.jpg?v=1684514882"
+  },
+  {
+   "id": "rad-childrens-furniture-pikler-triangle",
+   "type": "climbers",
+   "brand": "RAD Children’s Furniture",
+   "line": "Pikler® Triangle",
+   "free": [
+    "Urea-formaldehyde adhesives in the plywood"
+   ],
+   "outside": [
+    "13-ply European birch plywood"
+   ],
+   "unconfirmed": [
+    "Finish on the plywood",
+    "Hinges and hardware"
+   ],
+   "facts": {
+    "wood": "no",
+    "color": "unknown",
+    "parts": "unknown"
+   },
+   "unstated": {
+    "color": [
+     "Finish on the plywood"
+    ],
+    "parts": [
+     "Hinges and hardware"
+    ]
+   },
+   "standards": [
+    "fsc"
+   ],
+   "age": {
+    "min_months": 9,
+    "max_months": 72,
+    "text": "9 months to about 6 years"
+   },
+   "quote": "Crafted from premium 13-ply European birch plywood made without urea-formaldehyde adhesives",
+   "note": "Folding climbing triangle the maker says is certified by the Pikler Organization. Made in the maker’s Los Angeles woodshop; the FSC line is on every RAD product page.",
+   "products": [
+    {
+     "name": "Pikler® Triangle",
+     "url": "https://radchildrensfurniture.com/products/pikler-triangle",
+     "store": "RAD Children’s Furniture",
+     "price": "$319.00",
+     "ships_from": "US",
+     "shipping": "Free shipping on all domestic orders"
+    }
+   ],
+   "uses": [],
+   "contains": [],
+   "read": "2026-10-25",
+   "photos": [
+    {
+     "key": "rad-childrens-furniture-pikler-triangle",
+     "src": "https://cdn.shopify.com/s/files/1/0087/4230/5892/files/pikler_triangle_set_dfb758f6-7efd-4232-af8c-48539ec9ec4d.jpg?v=1762457049"
+    },
+    {
+     "key": "rad-childrens-furniture-pikler-triangle_2",
+     "src": "https://cdn.shopify.com/s/files/1/0087/4230/5892/files/pikler_triangle_set_for_babies.jpg?v=1747857450"
+    },
+    {
+     "key": "rad-childrens-furniture-pikler-triangle_3",
+     "src": "https://cdn.shopify.com/s/files/1/0087/4230/5892/files/pikler_triangle_set_ramp_flipped_8352bc15-34a4-4d36-bc8d-61803379eeb5.jpg?v=1747857450"
+    },
+    {
+     "key": "rad-childrens-furniture-pikler-triangle_4",
+     "src": "https://cdn.shopify.com/s/files/1/0087/4230/5892/files/pikler_triangle_folded_flat.jpg?v=1747857450"
+    },
+    {
+     "key": "rad-childrens-furniture-pikler-triangle_5",
+     "src": "https://cdn.shopify.com/s/files/1/0087/4230/5892/products/baby_climbing_pikler_triangle_1.jpg?v=1747857450"
+    },
+    {
+     "key": "rad-childrens-furniture-pikler-triangle_6",
+     "src": "https://cdn.shopify.com/s/files/1/0087/4230/5892/products/baby_on_pikler_triangle_1.jpg?v=1747857450"
+    },
+    {
+     "key": "rad-childrens-furniture-pikler-triangle_7",
+     "src": "https://cdn.shopify.com/s/files/1/0087/4230/5892/products/baby_climbing_best_pikler_triangle.jpg?v=1747857450"
+    },
+    {
+     "key": "rad-childrens-furniture-pikler-triangle_8",
+     "src": "https://cdn.shopify.com/s/files/1/0087/4230/5892/files/0002-7690345347168721345.jpg?v=1747857450"
+    },
+    {
+     "key": "rad-childrens-furniture-pikler-triangle_9",
+     "src": "https://cdn.shopify.com/s/files/1/0087/4230/5892/files/pikler_triangle_d560ee79-9df7-4470-82cb-dd68183dde40.jpg?v=1747857450"
+    },
+    {
+     "key": "rad-childrens-furniture-pikler-triangle_10",
+     "src": "https://review-images.judgeme.com/rad-children-s-furniture/1786342612__zuauoa-9544c0__original.png?quality=80&width=1024"
+    }
+   ],
+   "img": "rad-childrens-furniture-pikler-triangle",
+   "img_src": "https://cdn.shopify.com/s/files/1/0087/4230/5892/files/pikler_triangle_set_dfb758f6-7efd-4232-af8c-48539ec9ec4d.jpg?v=1762457049"
+  },
+  {
+   "id": "rad-childrens-furniture-two-step-stool",
+   "type": "furniture",
+   "brand": "RAD Children’s Furniture",
+   "line": "Two Step Stool",
+   "free": [
+    "Urea-formaldehyde adhesives in the plywood"
+   ],
+   "outside": [
+    "13-ply European birch plywood"
+   ],
+   "unconfirmed": [
+    "Finish on the plywood",
+    "Hardware"
+   ],
+   "facts": {
+    "wood": "no",
+    "color": "unknown",
+    "parts": "unknown"
+   },
+   "unstated": {
+    "color": [
+     "Finish on the plywood"
+    ],
+    "parts": [
+     "Hardware"
+    ]
+   },
+   "standards": [
+    "fsc"
+   ],
+   "age": {
+    "min_months": 30,
+    "text": "About 2.5 years and older"
+   },
+   "quote": "Crafted from premium 13-ply European birch plywood made without urea-formaldehyde adhesives",
+   "note": "The page also calls it \"premium Baltic birch wood\". Made in the maker’s Los Angeles woodshop; the FSC line is on every RAD product page.",
+   "products": [
+    {
+     "name": "Two Step Stool",
+     "url": "https://radchildrensfurniture.com/products/two-step-stool",
+     "store": "RAD Children’s Furniture",
+     "price": "$119.00",
+     "ships_from": "US",
+     "shipping": "Free shipping on all domestic orders"
+    }
+   ],
+   "uses": [],
+   "contains": [],
+   "read": "2026-10-25",
+   "photos": [
+    {
+     "key": "rad-childrens-furniture-two-step-stool",
+     "src": "https://cdn.shopify.com/s/files/1/0087/4230/5892/files/2stepstool_2_1.jpg?v=1771458550"
+    },
+    {
+     "key": "rad-childrens-furniture-two-step-stool_2",
+     "src": "https://cdn.shopify.com/s/files/1/0087/4230/5892/files/childonstepstoolinbathroom_2.jpg?v=1771875859"
+    },
+    {
+     "key": "rad-childrens-furniture-two-step-stool_3",
+     "src": "https://cdn.shopify.com/s/files/1/0087/4230/5892/files/woodenstepstoolforchildren.jpg?v=1771875859"
+    }
+   ],
+   "img": "rad-childrens-furniture-two-step-stool",
+   "img_src": "https://cdn.shopify.com/s/files/1/0087/4230/5892/files/2stepstool_2_1.jpg?v=1771458550"
+  },
+  {
+   "id": "tag-toys-wooden-alphabet-puzzle",
+   "type": "puzzles",
+   "brand": "TAG Toys",
+   "line": "Wooden Alphabet Puzzle",
+   "uses": [
+    "Wood"
+   ],
+   "unconfirmed": [
+    "Kind of wood",
+    "Whether the board is solid wood or plywood/MDF",
+    "Material of the high impact laminate surface",
+    "Colours on the letters"
+   ],
+   "facts": {
+    "main": "unknown",
+    "wood": "unknown",
+    "color": "unknown"
+   },
+   "unstated": {
+    "main": [
+     "Material of the high impact laminate surface"
+    ],
+    "wood": [
+     "Whether the board is solid wood or plywood/MDF"
+    ],
+    "color": [
+     "Colours on the letters"
+    ]
+   },
+   "age": {
+    "min_months": 36,
+    "max_months": 48,
+    "text": "3 to 4 years"
+   },
+   "quote": "Made with a durable, high impact laminate surface, the puzzle is built for long lasting use in both home and classroom settings.",
+   "note": "Letter puzzle with a word tray, made by TAG Toys in Los Angeles and sold by RAD Children’s Furniture.",
+   "products": [
+    {
+     "name": "Wooden Alphabet Puzzle Toy",
+     "url": "https://radchildrensfurniture.com/products/wooden-alphabet-toy",
+     "store": "RAD Children’s Furniture",
+     "price": "$89.00",
+     "ships_from": "US",
+     "shipping": "Free shipping on all domestic orders"
+    }
+   ],
+   "free": [],
+   "outside": [],
+   "contains": [],
+   "standards": [],
+   "read": "2026-10-25",
+   "photos": [
+    {
+     "key": "tag-toys-wooden-alphabet-puzzle",
+     "src": "https://cdn.shopify.com/s/files/1/0087/4230/5892/files/WoodenAlphabetPuzzleToy.jpg?v=1762459816"
+    },
+    {
+     "key": "tag-toys-wooden-alphabet-puzzle_2",
+     "src": "https://cdn.shopify.com/s/files/1/0087/4230/5892/files/spelling-board-child2-600x800.jpg?v=1746642725"
+    }
+   ],
+   "img": "tag-toys-wooden-alphabet-puzzle",
+   "img_src": "https://cdn.shopify.com/s/files/1/0087/4230/5892/files/WoodenAlphabetPuzzleToy.jpg?v=1762459816"
   }
  ]
 }
