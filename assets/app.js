@@ -16,7 +16,7 @@
   var FACETS = ['cat', 'brand', 'price', 'deliv', 'mat', 'std', 'age', 'ship'];
   var DELIV = [{ id: 'free', label: 'Free shipping' }, { id: 'paid', label: 'Shipping cost stated' }, { id: 'unknown', label: 'Free over a minimum, at checkout or not recorded' }];
   var PAGE = 24;
-  var openGroups = { crit: true, tested: false, cat: true, age: true, price: true, brand: false, mat: false, std: false, ship: false, deliv: false };
+  var openGroups = { mat: true, tested: false, cat: true, age: true, price: true, brand: false, ship: false, deliv: false };
   var scrollMem = {}, lastUrl = null, pageShown = PAGE, PEND = null;
 
   // ---------- base path and URLs ----------
@@ -61,6 +61,7 @@
   function groupOf(id) { return C.groups.filter(function (g) { return g.id === id; })[0]; }
   // Materials a visitor can pick under Made with; plastic is left to the Leave out filters.
   function pickMaterials() { return S.MATERIALS.filter(function (m) { return m.id !== 'synthetic'; }); }
+  function pickIds() { return pickMaterials().map(function (m) { return m.id; }); }
   function matLabel(id) { var m = S.MATERIALS.filter(function (x) { return x.id === id; })[0]; return m ? m.label : id; }
   function brandList() { return Object.keys(C.brands).map(function (k) { return C.brands[k]; }).sort(function (a, b) { return S.fold(a.name).localeCompare(S.fold(b.name)); }); }
   function termsIn(text) {
@@ -96,6 +97,8 @@
   function readState(kind, key, q) {
     var st = { kind: kind, key: key || '', q: q.q || '', sort: q.sort || 'featured', all: q.all === '1' };
     FACETS.forEach(function (f) { st[f] = q[f] ? q[f].split(',').filter(Boolean) : []; });
+    // mat= in a link lists the materials included ("/shop?mat=wood" is wood only); the state keeps the ones left out.
+    st.mat = q.mat ? pickIds().filter(function (id) { return st.mat.indexOf(id) < 0; }) : [];
     if (kind === 'cat') st.cat = [key]; else if (kind === 'brand') st.brand = [key];
     if (q.m !== undefined) {
       var on = q.m.split(',').filter(Boolean), crit = {};
@@ -109,6 +112,7 @@
     if (st.q) q.q = st.q;
     FACETS.forEach(function (f) {
       if ((f === 'cat' && st.kind === 'cat') || (f === 'brand' && st.kind === 'brand')) return;
+      if (f === 'mat') { if (st.mat.length) q.mat = pickIds().filter(function (id) { return st.mat.indexOf(id) < 0; }).join(',') || 'none'; return; }
       if (st[f].length) q[f] = st[f].join(',');
     });
     if (st.sort && st.sort !== 'featured') q.sort = st.sort;
@@ -148,6 +152,12 @@
   function matchesFacet(item, f, st) {
     if (!st[f].length) return true;
     var v = facetValues(item, f);
+    // Materials: nothing the visitor left out, and at least one they kept (a listing with none recorded can't be judged).
+    if (f === 'mat') {
+      if (v.some(function (x) { return st.mat.indexOf(x) >= 0; })) return false;
+      var inc = pickIds().filter(function (id) { return st.mat.indexOf(id) < 0; });
+      return !v.length || v.some(function (x) { return inc.indexOf(x) >= 0; });
+    }
     if (f === 'std') return st[f].every(function (x) { return v.indexOf(x) >= 0; });
     return st[f].some(function (x) { return v.indexOf(x) >= 0; });
   }
@@ -394,49 +404,63 @@
   function group(id, title, body, n) {
     return '<details class="fgroup" data-group="' + id + '"' + (openGroups[id] ? ' open' : '') + '><summary>' + esc(title) + (n ? '<span class="cnt">' + n + '</span>' : '') + icon('chev') + '</summary><div class="fbody">' + body + '</div></details>';
   }
-  // What a visitor can say about materials, as three filter groups of ordinary checkboxes, nested where an option only
-  // matters for one material or one family of things:
-  //   Made with: materials to pick (any of them), families such as Natural fibres opening into their members, and
-  //     under a material the filters about that material (Silicone > Only tested to LFGB, Wood > Only solid wood).
-  //   Leave out: families of things to avoid (Plastic and synthetics, Chemical treatments) opening into their parts.
-  //   Tests & certifications: what a maker states about the whole product.
-  function groupSet(g) { return g.set || (C.criteria.some(function (c) { return c.group === g.id && c.kind === 'require'; }) ? 'tested' : 'leave'); }
-  function critSet(c) {
-    if (c.under) return 'made';
-    var g = C.critGroups.filter(function (x) { return x.id === c.group; })[0];
-    if (g) return groupSet(g);
-    return c.kind === 'require' ? 'tested' : 'leave';
+  // One Materials tree: a checked row means products with that material or kind are included, an unchecked one leaves
+  // them out. Families (Natural fibres, Plastic and synthetics, Added treatments) open into their members, and a
+  // material opens into the kinds of it a visitor can leave out (Wood > Plywood, MDF or veneer). A parent reads as
+  // checked when it and every child are, part-checked when only some are, and unchecked when it is left out, which
+  // also shows its children unchecked. In the state, st.mat lists the materials left out and a criterion that is on
+  // leaves out its kind, so a checked kind row is a criterion that is off. Tests & certifications sit beside the tree.
+  function treeCrit(c) { return !!c.under || c.kind !== 'require'; }
+  function kindsUnder(id) { return C.criteria.filter(function (c) { return c.under === id; }); }
+  function critSetOf(gid) { return C.criteria.filter(function (c) { return c.group === gid && !c.under && treeCrit(c); }); }
+  function hasKind(item, c) { var f = item.facts[c.id]; return c.kind === 'require' ? f !== undefined && f !== 'yes' : f === 'no'; }
+  function kindName(c) { return c.sub || c.label; }
+  // A kind's name on its own, for chips: "No plywood, MDF or veneer", "No plastic in small parts", or the test required.
+  function critChip(c) {
+    if (c.kind === 'require') return S.filterLabel(c);
+    if (c.group === 'plastic' && c.sub) return 'No plastic ' + lc(c.sub);
+    return 'No ' + lc(kindName(c));
   }
-  function critName(c) { return c.sub || S.filterLabel(c); }
-  // A filter's name on its own, for chips and the product page: nested ones carry their parent.
-  function critFull(c) { return c.under ? matLabel(c.under) + ': ' + lc(critName(c)) : critSet(c) === 'leave' ? 'Leave out: ' + lc(S.filterLabel(c)) : S.filterLabel(c); }
+  // The same name with its parent, for the product page: "Wood: plywood, MDF or veneer".
+  function critFull(c) {
+    if (c.under) return matLabel(c.under) + ': ' + lc(kindName(c));
+    if (c.group === 'plastic' && c.sub) return 'Plastic ' + lc(c.sub);
+    return S.filterLabel(c);
+  }
   function qLink(term, what) { return TERMS[term] ? ' <a class="q" href="' + U('/glossary/' + term) + '" data-term="' + term + '" aria-label="What this means: ' + esc(what) + '">?</a>' : ''; }
-  function critRow(st, b, c) {
-    var crit = Object.assign({}, st.crit); crit[c.id] = true;
-    var n = b.filter(function (it) { return status(it, crit, st.strict).ok; }).length;
-    return '<label class="opt' + (n ? '' : ' dim') + '"><input type="checkbox" data-crit="' + c.id + '" id="f-crit-' + c.id + '"' + (st.crit[c.id] ? ' checked' : '') + '>' +
-      '<span class="lbl">' + esc(critName(c)) + qLink(c.term, c.short) + '</span><span class="n">' + n + '</span></label>';
+  function matIn(st, id) { return st.mat.indexOf(id) < 0; }
+  function matState(st, m) {
+    if (!matIn(st, m.id)) return 'off';
+    return kindsUnder(m.id).every(function (c) { return !st.crit[c.id]; }) ? 'on' : 'mixed';
   }
-  function stdRow(st, s, counts) { return optRow('std', { id: s.id, label: s.sub || s.label }, counts[s.id] || { n: 0, h: 0 }, st.std.indexOf(s.id) >= 0, qLink(s.term, s.label)); }
-  // A tree node: its own checkbox row and, when it has children, a button that opens them.
+  function setState3(states) { return states.every(function (x) { return x === 'on'; }) ? 'on' : states.every(function (x) { return x === 'off'; }) ? 'off' : 'mixed'; }
+  function treeRow(attrs, id, state, label, n, h, extra, dim) {
+    return '<label class="opt' + (dim ? ' dim' : '') + '"><input type="checkbox" ' + attrs + ' id="' + id + '"' + (state === 'on' ? ' checked' : '') + (state === 'mixed' ? ' data-indet' : '') + '>' +
+      '<span class="lbl">' + esc(label) + (extra || '') + '</span><span class="n">' + n + (h ? '<span class="sr">, </span><i title="' + plural(h, 'more item', 'more items') + ' set aside by your material filters"> +' + h + '</i>' : '') + '</span></label>';
+  }
+  // A tree node: its row, an "Only" shortcut for materials and families, and a button that opens its children.
   var openNodes = {};
-  function tnode(id, label, row, kids, open) {
-    if (!kids) return '<div class="tnode">' + row + '</div>';
+  function tnode(id, label, row, kids, open, only) {
+    var onlyBtn = only ? '<button type="button" class="only" data-only="' + esc(only) + '" aria-label="Only ' + esc(label) + '">Only</button>' : '<span></span>';
+    if (!kids) return '<div class="tnode"><div class="trow">' + row + onlyBtn + '<span></span></div></div>';
     open = openNodes[id] != null ? openNodes[id] : open;
-    return '<div class="tnode has-kids"><div class="trow">' + row + '<button type="button" class="tx" data-tnode="' + id + '" aria-expanded="' + !!open + '" aria-controls="tk-' + id + '" aria-label="' + esc(label) + ' options">' + icon('chev') + '</button></div>' +
+    return '<div class="tnode has-kids"><div class="trow">' + row + onlyBtn + '<button type="button" class="tx" data-tnode="' + id + '" aria-expanded="' + !!open + '" aria-controls="tk-' + id + '" aria-label="' + esc(label) + ' options">' + icon('chev') + '</button></div>' +
       '<div class="tkids" id="tk-' + id + '"' + (open ? '' : ' hidden') + '>' + kids + '</div></div>';
   }
-  function madeGroup(st) {
-    var b = base(st), counts = countsFor('mat', st), sc = countsFor('std', st), mats = pickMaterials(), done = {};
+  function kindRow(st, b, c, parentOff) {
+    var crit = Object.assign({}, st.crit); crit[c.id] = false;
+    var n = b.filter(function (it) { return hasKind(it, c) && status(it, crit, st.strict).ok; }).length;
+    var state = parentOff || st.crit[c.id] ? 'off' : 'on';
+    return '<div class="tnode"><div class="trow">' + treeRow('data-crit="' + c.id + '" data-inv', 'f-crit-' + c.id, state, kindName(c), n, 0, qLink(c.term, c.short), !n) + '<span></span><span></span></div></div>';
+  }
+  function materialsGroup(st) {
+    var b = base(st), counts = countsFor('mat', st), mats = pickMaterials(), done = {}, nOn = 0;
     var anyOk = base(st, 'mat').filter(function (it) { return st.all || status(it, st.crit, st.strict).ok; });
-    function kidsOf(m) {
-      var cs = C.criteria.filter(function (c) { return c.under === m.id; }), ss = C.standards.filter(function (s) { return s.under === m.id; });
-      return cs.map(function (c) { return critRow(st, b, c); }).join('') + ss.map(function (s) { return stdRow(st, s, sc); }).join('');
-    }
     function matNode(m) {
-      var on = st.mat.indexOf(m.id) >= 0, kids = kidsOf(m);
-      var changed = C.criteria.some(function (c) { return c.under === m.id && !!st.crit[c.id] !== !!c['default']; }) || C.standards.some(function (s) { return s.under === m.id && st.std.indexOf(s.id) >= 0; });
-      return tnode('m-' + m.id, m.label, optRow('mat', m, counts[m.id] || { n: 0, h: 0 }, on), kids, on || changed);
+      var state = matState(st, m), kinds = kindsUnder(m.id), c = counts[m.id] || { n: 0, h: 0 };
+      var kids = kinds.map(function (k) { return kindRow(st, b, k, state === 'off'); }).join('');
+      var changed = state === 'off' || kinds.some(function (k) { return !!st.crit[k.id] !== !!k['default']; });
+      return tnode('m-' + m.id, m.label, treeRow('data-mat="' + m.id + '"', 'f-mat-' + m.id, state, m.label, c.n, c.h, '', !c.n && !c.h), kids, changed, m.id);
     }
     var rows = mats.map(function (m) {
       if (!m.group) return matNode(m);
@@ -444,37 +468,35 @@
       done[m.group] = 1;
       var g = S.MATERIAL_GROUPS.filter(function (x) { return x.id === m.group; })[0] || { id: m.group, label: m.group };
       var members = mats.filter(function (x) { return x.group === m.group; }), ids = members.map(function (x) { return x.id; });
-      var nOn = ids.filter(function (id) { return st.mat.indexOf(id) >= 0; }).length;
+      var state = setState3(members.map(function (x) { return matState(st, x); }));
       var n = anyOk.filter(function (it) { return it.materials.some(function (x) { return ids.indexOf(x) >= 0; }); }).length;
-      var row = '<label class="opt' + (n || nOn ? '' : ' dim') + '"><input type="checkbox" data-matgroup="' + g.id + '" id="f-matg-' + g.id + '"' + (nOn === ids.length ? ' checked' : '') + (nOn && nOn < ids.length ? ' data-indet' : '') + '>' +
-        '<span class="lbl">' + esc(g.label) + '</span><span class="n">' + n + '</span></label>';
-      return tnode('g-' + g.id, g.label, row, members.map(matNode).join(''), nOn > 0 && nOn < ids.length);
+      return tnode('g-' + g.id, g.label, treeRow('data-matgroup="' + g.id + '"', 'f-matg-' + g.id, state, g.label, n, 0, '', !n), members.map(matNode).join(''), state === 'mixed', 'g:' + g.id);
     }).join('');
-    return group('mat', 'Made with', rows, st.mat.length + C.criteria.filter(function (c) { return c.under && st.crit[c.id] && !c['default']; }).length);
-  }
-  function leaveGroup(st) {
-    var b = base(st), on = 0;
-    var sets = C.critGroups.filter(function (g) { return groupSet(g) === 'leave'; });
-    var rows = sets.map(function (g) {
-      var list = C.criteria.filter(function (c) { return c.group === g.id && critSet(c) === 'leave'; });
-      if (!list.length) return '';
-      var nOn = list.filter(function (c) { return st.crit[c.id]; }).length; on += nOn;
-      var all = Object.assign({}, st.crit); list.forEach(function (c) { all[c.id] = true; });
-      var n = b.filter(function (it) { return status(it, all, st.strict).ok; }).length;
-      var row = '<label class="opt' + (n ? '' : ' dim') + '"><input type="checkbox" data-critset="' + g.id + '" id="f-crits-' + g.id + '"' + (nOn === list.length ? ' checked' : '') + (nOn && nOn < list.length ? ' data-indet' : '') + '>' +
-        '<span class="lbl">' + esc(g.title) + '</span><span class="n">' + n + '</span></label>';
-      return tnode('s-' + g.id, g.title, row, list.map(function (c) { return critRow(st, b, c); }).join(''), false);
-    }).join('');
+    // Families of things that are not a material a visitor picks: plastic by where it sits, and added treatments.
+    C.critGroups.filter(function (g) { return critSetOf(g.id).length; }).forEach(function (g) {
+      var list = critSetOf(g.id);
+      var state = setState3(list.map(function (c) { return st.crit[c.id] ? 'off' : 'on'; }));
+      var all = Object.assign({}, st.crit); list.forEach(function (c) { all[c.id] = false; });
+      var n = b.filter(function (it) { return list.some(function (c) { return hasKind(it, c); }) && status(it, all, st.strict).ok; }).length;
+      rows += tnode('s-' + g.id, g.title, treeRow('data-critset="' + g.id + '"', 'f-crits-' + g.id, state, g.title, n, 0, '', !n), list.map(function (c) { return kindRow(st, b, c, false); }).join(''), false);
+    });
     var nStrict = b.filter(function (it) { return status(it, st.crit, true).ok; }).length;
-    rows += '<div class="tnode"><label class="opt"><input type="checkbox" data-crit="strict" id="f-crit-strict"' + (st.strict ? ' checked' : '') + '><span class="lbl">Parts whose material isn’t stated</span><span class="n">' + nStrict + '</span></label></div>' +
-      '<p class="hint"><a href="#" data-crit-reset>' + (critIsDefault(st.crit, st.strict) ? 'Untick all' : 'Reset to defaults') + '</a></p>';
-    return group('crit', 'Leave out', rows, on + (st.strict ? 1 : 0));
+    rows += '<div class="tnode"><div class="trow">' + treeRow('data-crit="strict" data-inv', 'f-crit-strict', st.strict ? 'off' : 'on', 'Parts whose material isn’t stated', nStrict, 0) + '<span></span><span></span></div></div>' +
+      '<p class="hint"><a href="#" data-crit-reset>' + (critIsDefault(st.crit, st.strict) && !st.mat.length ? 'Allow everything' : 'Reset to defaults') + '</a></p>';
+    nOn = st.mat.length + C.criteria.filter(function (c) { return treeCrit(c) && st.crit[c.id]; }).length + (st.strict ? 1 : 0);
+    return group('mat', 'Materials', rows, nOn);
   }
   function testedGroup(st) {
-    var b = base(st), sc = countsFor('std', st), list = C.criteria.filter(function (c) { return critSet(c) === 'tested'; });
-    var stds = C.standards.filter(function (s) { return !s.filter && !s.under; });
-    var rows = list.map(function (c) { return critRow(st, b, c); }).join('') + stds.map(function (s) { return stdRow(st, s, sc); }).join('');
-    return group('tested', 'Tests & certifications', rows, list.filter(function (c) { return st.crit[c.id]; }).length + st.std.filter(function (id) { return stds.some(function (s) { return s.id === id; }); }).length);
+    var b = base(st), sc = countsFor('std', st), list = C.criteria.filter(function (c) { return !treeCrit(c); });
+    function row(c) {
+      var crit = Object.assign({}, st.crit); crit[c.id] = true;
+      var n = b.filter(function (it) { return status(it, crit, st.strict).ok; }).length;
+      return '<label class="opt' + (n ? '' : ' dim') + '"><input type="checkbox" data-crit="' + c.id + '" id="f-crit-' + c.id + '"' + (st.crit[c.id] ? ' checked' : '') + '>' +
+        '<span class="lbl">' + esc(S.filterLabel(c)) + qLink(c.term, c.short) + '</span><span class="n">' + n + '</span></label>';
+    }
+    var stds = C.standards.filter(function (s) { return !s.filter; });
+    var rows = list.map(row).join('') + stds.map(function (s) { return optRow('std', { id: s.id, label: s.label }, sc[s.id] || { n: 0, h: 0 }, st.std.indexOf(s.id) >= 0, qLink(s.term, s.label)); }).join('');
+    return group('tested', 'Tests & certifications', rows, list.filter(function (c) { return st.crit[c.id]; }).length + st.std.length);
   }
   // The rail in three headed sections: what the product is, what it is made of, and price and delivery.
   function railSec(title, body) { return body ? '<section class="rail-sec"><h3 class="rail-sec-h">' + esc(title) + '</h3>' + body + '</section>' : ''; }
@@ -496,7 +518,7 @@
       what += group('brand', 'Brand', '<input type="search" class="find" id="brand-find" placeholder="Find a brand" aria-label="Find a brand">' +
         '<div id="brand-opts">' + optionList('brand', brandList().map(function (b) { return { id: b.id, label: b.name }; }), countsFor('brand', st), st, 8) + '</div>', st.brand.length);
     }
-    var made = madeGroup(st) + leaveGroup(st) + testedGroup(st);
+    var made = materialsGroup(st) + testedGroup(st);
     var buy = group('price', 'Price', optionList('price', S.PRICE_BANDS.concat([{ id: 'none', label: 'Price not listed', hideEmpty: true }]), countsFor('price', st), st) +
         '<p class="hint">Other currencies converted roughly to US dollars.</p>', st.price.length) +
       group('deliv', 'Shipping to the US', optionList('deliv', DELIV, countsFor('deliv', st), st) + '<p class="hint">As the store page states it. Free-over-a-minimum counts as free when the price is over it.</p>', st.deliv.length) +
@@ -509,10 +531,11 @@
     S.PRICE_BANDS.slice(0, 3).forEach(function (b) { q.push(['price', b.id, b.label]); });
     var mc = {}; list.forEach(function (i) { i.materials.forEach(function (m) { mc[m] = (mc[m] || 0) + 1; }); });
     delete mc.synthetic;
-    Object.keys(mc).sort(function (a, b) { return mc[b] - mc[a]; }).slice(0, 3).forEach(function (m) { q.push(['mat', m, matLabel(m)]); });
-    var counts = {};
+    Object.keys(mc).sort(function (a, b) { return mc[b] - mc[a]; }).slice(0, 3).forEach(function (m) { q.push(['only', m, 'Only ' + lc(matLabel(m))]); });
+    var counts = {}, inc = pickIds().filter(function (id) { return st.mat.indexOf(id) < 0; });
     return '<div class="quick" role="group" aria-label="Quick filters">' + q.map(function (x) {
-      var on = st[x[0]].indexOf(x[1]) >= 0, c = (counts[x[0]] || (counts[x[0]] = countsFor(x[0], st)))[x[1]];
+      var on = x[0] === 'only' ? inc.length === 1 && inc[0] === x[1] : st[x[0]].indexOf(x[1]) >= 0;
+      var c = (counts[x[0]] || (counts[x[0]] = countsFor(x[0] === 'only' ? 'mat' : x[0], st)))[x[1]];
       if (!on && !(c && c.n)) return '';
       return '<button type="button" class="qchip" data-quick="' + x[0] + '" data-val="' + esc(x[1]) + '" aria-pressed="' + on + '">' + (on ? icon('check') : '') + esc(x[2]) + '</button>';
     }).join('') + '</div>';
@@ -525,17 +548,23 @@
     if (st.kind !== 'brand') st.brand.forEach(function (v) { add('brand', v, C.brands[v] ? C.brands[v].name : v); });
     st.price.forEach(function (v) { var b = S.PRICE_BANDS.filter(function (x) { return x.id === v; })[0]; if (b || v === 'none') add('price', v, b ? b.label : 'Price not listed'); });
     st.deliv.forEach(function (v) { var d = DELIV.filter(function (x) { return x.id === v; })[0]; if (d) add('deliv', v, d.label); });
-    // A whole family ticked (all of Natural fibres) shows as one chip.
-    var whole = S.MATERIAL_GROUPS.filter(function (g) { var ids = S.MATERIALS.filter(function (m) { return m.group === g.id; }).map(function (m) { return m.id; }); return ids.every(function (id) { return st.mat.indexOf(id) >= 0; }); });
-    whole.forEach(function (g) { add('matgroup', g.id, 'Made with: ' + lc(g.label)); });
-    st.mat.forEach(function (v) { var m = S.MATERIALS.filter(function (x) { return x.id === v; })[0]; if (!(m && whole.some(function (g) { return g.id === m.group; }))) add('mat', v, 'Made with: ' + lc(matLabel(v))); });
-    st.std.forEach(function (v) { var s = C.standards.filter(function (x) { return x.id === v; })[0]; add('std', v, s ? (s.under ? matLabel(s.under) + ': ' + lc(s.sub || s.label) : s.label) : v); });
+    // Materials left out: a few kept reads "Only wood or wool"; otherwise one chip per material (or whole family) left out.
+    if (st.mat.length) {
+      var inc = pickMaterials().filter(function (m) { return matIn(st, m.id); });
+      if (inc.length <= 3) add('mat-all', '', inc.length ? 'Only ' + inc.map(function (m) { return lc(m.label); }).join(' or ') : 'No materials included');
+      else {
+        var whole = S.MATERIAL_GROUPS.filter(function (g) { return S.MATERIALS.filter(function (m) { return m.group === g.id; }).every(function (m) { return !matIn(st, m.id); }); });
+        whole.forEach(function (g) { add('matgroup', g.id, 'No ' + lc(g.label)); });
+        st.mat.forEach(function (v) { var m = S.MATERIALS.filter(function (x) { return x.id === v; })[0]; if (!(m && whole.some(function (g) { return g.id === m.group; }))) add('mat', v, 'No ' + lc(matLabel(v))); });
+      }
+    }
+    st.std.forEach(function (v) { var s = C.standards.filter(function (x) { return x.id === v; })[0]; add('std', v, s ? s.label : v); });
     st.age.forEach(function (v) { var a = S.AGE_BANDS.filter(function (x) { return x.id === v; })[0]; if (a) add('age', v, 'Age: ' + a.label); });
     st.ship.forEach(function (v) { var l = { us: 'Ships from the US', abroad: 'Ships from outside the US', unknown: 'Shipping not recorded' }[v]; if (l) add('ship', v, l); });
     var d = defaults();
     var nd = chips.length;
-    C.criteria.forEach(function (c) { if (st.crit[c.id] && (withDefaults || !d[c.id])) { add('crit', c.id, critFull(c)); if (!d[c.id]) nd++; } });
-    if (st.strict) { add('crit', 'strict', 'Leave out: parts whose material isn’t stated'); nd++; }
+    C.criteria.forEach(function (c) { if (st.crit[c.id] && (withDefaults || !d[c.id])) { add('crit', c.id, critChip(c)); if (!d[c.id]) nd++; } });
+    if (st.strict) { add('crit', 'strict', 'Every part’s material stated'); nd++; }
     if (nd > 1) chips.push('<button type="button" class="chip-clear" data-clear-all>Clear all</button>');
     return chips.join('');
   }
@@ -660,19 +689,15 @@
   // are set on the listing pages. Criteria that don't apply to the product are left out.
   function filterTable(item) {
     var row = function (c) {
-      var f = item.facts[c.id], has = item.contains.indexOf(c.id) >= 0, res, set = critSet(c);
-      if (!CRIT[c.id]) return '';
-      if (c.kind === 'contains') { if (!has) return ''; res = '<span class="no">Has it</span>'; }
-      else if (f === undefined) return '';
-      else if (c.kind === 'require') res = f === 'yes' ? '<span class="ok">Stated</span>' : f === 'no' ? '<span class="no">Stated not</span>' : '<span class="unk">Not stated</span>';
-      else if (set === 'leave') res = f === 'yes' ? '<span class="ok">None</span>' : f === 'no' ? '<span class="no">Has it</span>' : '<span class="unk">Not stated</span>';
-      else res = f === 'yes' ? '<span class="ok">Yes</span>' : f === 'no' ? '<span class="no">No</span>' : '<span class="unk">Not stated</span>';
-      var name = set === 'made' ? critFull(c) : S.filterLabel(c);
-      return '<tr><th scope="row">' + esc(name) + (TERMS[c.term] ? ' <a class="q term-link" href="' + U('/glossary/' + c.term) + '" data-term="' + c.term + '" aria-label="What this means">?</a>' : '') + '</th><td class="res">' + res + '</td></tr>';
+      var f = item.facts[c.id], res;
+      if (!CRIT[c.id] || f === undefined) return '';
+      if (c.kind === 'require') res = f === 'yes' ? '<span class="ok">Stated</span>' : f === 'no' ? '<span class="no">Stated not</span>' : '<span class="unk">Not stated</span>';
+      else res = f === 'yes' ? '<span class="ok">None</span>' : f === 'no' ? '<span class="no">Has it</span>' : '<span class="unk">Not stated</span>';
+      return '<tr><th scope="row">' + esc(critFull(c)) + (TERMS[c.term] ? ' <a class="q term-link" href="' + U('/glossary/' + c.term) + '" data-term="' + c.term + '" aria-label="What this means">?</a>' : '') + '</th><td class="res">' + res + '</td></tr>';
     };
-    // The same three groups as the filter rail.
-    var body = [['made', 'Made with'], ['leave', 'Leave out'], ['tested', 'Tests & certifications']].map(function (g) {
-      var rows = C.criteria.filter(function (c) { return critSet(c) === g[0]; }).map(row).join('');
+    // The same two groups as the filter rail.
+    var body = [[true, 'Materials'], [false, 'Tests & certifications']].map(function (g) {
+      var rows = C.criteria.filter(function (c) { return treeCrit(c) === g[0]; }).map(row).join('');
       return rows ? '<tbody><tr class="grp"><th scope="rowgroup" colspan="2">' + esc(g[1]) + '</th></tr>' + rows + '</tbody>' : '';
     }).join('');
     if (!body) return '<p class="muted">No material filters are on.</p>';
@@ -794,7 +819,7 @@
       '<li class="r-unk"><span class="ic" aria-hidden="true">?</span><span><b>Not stated</b>: parts no page describes, such as thread, glue or dye.</span></li>' +
       '<li class="r-out"><span class="ic" aria-hidden="true">✕</span><span><b>Flagged parts</b>: parts a filter can leave out, such as plastic, synthetic fill, an unnamed colourant or treated wool.</span></li></ul>' +
       '<p>A listing covers one product, or a brand’s line of products made the same way.</p>' +
-      '<h2>Material filters</h2><p>The material filters come in three groups. <b>Made with</b> picks materials (ticking several shows products made with any of them); a family such as Natural fibres opens into its members, and a material opens into the filters about it, such as solid wood only, untreated wool only, or silicone tested to German LFGB or the French Arrêté. <b>Leave out</b> hides products with plastic and synthetics or chemical treatments, each family opening into its parts. <b>Tests & certifications</b> keeps products whose maker states a test or certificate. The filters start from the preferences this guide was built around: no plastic or synthetics in the main materials or small parts, no synthetic dyes, paints, flame retardants or repellent finishes, solid wood rather than plywood, untreated wool, rubber without plasticisers, and silicone only when the maker says the finished product was tested. A part whose material no page states doesn’t count against a product unless you tick “Parts whose material isn’t stated”. Your choices are kept in this browser, and a link to a filtered page carries them.</p>' +
+      '<h2>Material filters</h2><p>The <b>Materials</b> filter is one tree: a checked material or kind is included, an unchecked one is left out, and a product shows when it has none of what you left out and at least one of what you kept. A family such as Natural fibres or Plastic and synthetics opens into its members, and a material opens into the kinds of it you can leave out, such as plywood under Wood, superwash under Wool, or silicone whose testing to German LFGB or the French Arrêté isn’t stated. “Only” beside a material keeps just that one. <b>Tests & certifications</b> keeps products whose maker states a test or certificate. The tree starts from the preferences this guide was built around: no plastic or synthetics in the main materials or small parts, no melamine, no synthetic dyes, paints, flame retardants or repellent finishes, no plywood, superwash wool or rubber plasticisers, and silicone only when the maker says the finished product was tested. A part whose material no page states doesn’t count against a product while “Parts whose material isn’t stated” is checked. Your choices are kept in this browser, and a link to a filtered page carries them.</p>' +
       '<h2>Questions makers can answer</h2><ul>' + C.ask.map(function (a) { return '<li>' + esc(a) + '</li>'; }).join('') + '</ul>' +
       '<h2>Prices, shipping and stock</h2><p>Prices and shipping statements were read from store pages and are checked weekly by a script; the product page shows the date of the last check. Prices in pounds, euros and other currencies are converted roughly to US dollars for sorting. Catalog last updated ' + esc(C.updated) + '.</p>' +
       '<h2>Source</h2><p>The data and the site are open at <a href="https://github.com/mchelen/SaferByTheThread" target="_blank" rel="noopener">github.com/mchelen/SaferByTheThread</a>.</p></div></div>';
@@ -983,7 +1008,7 @@
     });
     brandList().filter(function (b) { return S.fold(b.name).indexOf(f) >= 0; }).slice(0, 3).forEach(function (b) { out.push('<a href="' + U('/b/' + b.id) + '" role="option"><span class="sg-k">Brand</span>' + esc(b.name) + '</a>'); });
     Object.keys(C.cats).map(function (k) { return C.cats[k]; }).filter(function (c) { return S.fold(c.title).indexOf(f) >= 0; }).slice(0, 3).forEach(function (c) { var pic = typePic(c.id); out.push('<a href="' + U('/c/' + c.id) + '" role="option">' + (pic ? '<img class="sg-img" src="' + esc(asset(pic.img)) + '" alt="">' : '<span class="sg-img"></span>') + '<span>' + esc(c.title) + '</span><span class="sg-p">' + plural(typeCount(c.id), 'product') + '</span></a>'); });
-    pickMaterials().filter(function (m) { return S.fold(m.label).indexOf(f) >= 0; }).slice(0, 2).forEach(function (m) { out.push('<a href="' + U('/shop', { mat: m.id }) + '" role="option"><span class="sg-k">Made with</span>' + esc(m.label) + '</a>'); });
+    pickMaterials().filter(function (m) { return S.fold(m.label).indexOf(f) >= 0; }).slice(0, 2).forEach(function (m) { out.push('<a href="' + U('/shop', { mat: m.id }) + '" role="option"><span class="sg-k">Only</span>' + esc(m.label) + '</a>'); });
     if (GLOSS) Object.keys(TERMS).filter(function (k) { return S.fold(TERMS[k].term).indexOf(f) >= 0; }).slice(0, 2).forEach(function (k) { out.push('<a href="' + U('/glossary/' + k) + '" role="option"><span class="sg-k">Glossary</span>' + esc(TERMS[k].term) + '</a>'); });
     out.push('<a href="' + U('/search', { q: q.trim() }) + '" role="option"><span class="sg-k">Search</span>See all results for “' + esc(q.trim()) + '”</a>');
     sugg.innerHTML = out.join('');
@@ -1066,22 +1091,33 @@
       st[f] = toggleIn(st[f], t.value);
       commit(st);
     } else if (t.matches('[data-matgroup]')) {
-      var sg = editing(), gid = t.getAttribute('data-matgroup');
+      // A family: checked includes every member (and, from part-checked, allows their kinds); unchecked leaves them all out.
+      var sg = editing(), gid = t.getAttribute('data-matgroup'), was = t.hasAttribute('data-indet');
       var ids = S.MATERIALS.filter(function (m) { return m.group === gid; }).map(function (m) { return m.id; });
-      sg.mat = sg.mat.filter(function (x) { return ids.indexOf(x) < 0; }).concat(t.checked ? ids : []);
+      sg.mat = sg.mat.filter(function (x) { return ids.indexOf(x) < 0; }).concat(t.checked ? [] : ids);
+      if (t.checked && was) ids.forEach(function (id) { kindsUnder(id).forEach(function (c) { sg.crit[c.id] = false; }); });
       commit(sg);
+    } else if (t.matches('[data-mat]')) {
+      // A material: unchecked leaves it out; checked includes it, and from part-checked also allows all its kinds.
+      var sm = editing(), mid = t.getAttribute('data-mat'), wasMixed = t.hasAttribute('data-indet');
+      sm.mat = sm.mat.filter(function (x) { return x !== mid; }).concat(t.checked ? [] : [mid]);
+      if (t.checked && wasMixed) kindsUnder(mid).forEach(function (c) { sm.crit[c.id] = false; });
+      commit(sm);
     } else if (t.matches('[data-critset]')) {
       var ss = editing(), sid = t.getAttribute('data-critset');
-      C.criteria.forEach(function (c) { if (c.group === sid && critSet(c) === 'leave') ss.crit[c.id] = t.checked; });
+      critSetOf(sid).forEach(function (c) { ss.crit[c.id] = !t.checked; });
       commit(ss);
     } else if (t.matches('[data-crit]')) {
-      var id = t.getAttribute('data-crit');
+      // In the Materials tree a checked kind is a criterion that is off; checking a kind also includes its material.
+      var id = t.getAttribute('data-crit'), val = t.hasAttribute('data-inv') ? !t.checked : t.checked;
+      var cu = C.criteria.filter(function (c) { return c.id === id; })[0];
       if (STATE && $('#rail')) {
         var s2 = editing();
-        if (id === 'strict') s2.strict = t.checked; else s2.crit[id] = t.checked;
+        if (id === 'strict') s2.strict = val; else s2.crit[id] = val;
+        if (cu && cu.under && t.checked) s2.mat = s2.mat.filter(function (x) { return x !== cu.under; });
         commit(s2);
       } else {
-        if (id === 'strict') STRICT = t.checked; else CRIT[id] = t.checked;
+        if (id === 'strict') STRICT = val; else CRIT[id] = val;
         savePref(); rerender();
       }
     } else if (t.id === 'sort') {
@@ -1140,19 +1176,31 @@
     if (!t) { if (!ev.target.closest('#cats')) closeMegas(); return; }
     if (t.matches('[data-clear]')) {
       var st = copyState(), f = t.getAttribute('data-clear'), v = t.getAttribute('data-val');
-      if (f === 'q') st.q = ''; else if (f === 'crit') { if (v === 'strict') st.strict = false; else st.crit[v] = false; } else if (f === 'matgroup') st.mat = st.mat.filter(function (x) { return !S.MATERIALS.some(function (m) { return m.id === x && m.group === v; }); }); else st[f] = st[f].filter(function (x) { return x !== v; });
+      if (f === 'q') st.q = '';
+      else if (f === 'crit') { if (v === 'strict') st.strict = false; else st.crit[v] = false; }
+      else if (f === 'mat-all') st.mat = [];
+      else if (f === 'matgroup') st.mat = st.mat.filter(function (x) { return !S.MATERIALS.some(function (m) { return m.id === x && m.group === v; }); });
+      else st[f] = st[f].filter(function (x) { return x !== v; });
       PEND = null; setState(st, true);
     } else if (t.matches('[data-quick]')) {
-      var sq = copyState(), qf = t.getAttribute('data-quick'); sq[qf] = toggleIn(sq[qf], t.getAttribute('data-val'));
+      var sq = copyState(), qf = t.getAttribute('data-quick'), qv = t.getAttribute('data-val');
+      if (qf === 'only') sq.mat = t.getAttribute('aria-pressed') === 'true' ? [] : pickIds().filter(function (id) { return id !== qv; });
+      else sq[qf] = toggleIn(sq[qf], qv);
       PEND = null; setState(sq, true);
     } else if (t.matches('[data-clear-all]')) {
       var s0 = readState(STATE.kind, STATE.key, STATE.kind === 'search' ? { q: STATE.q } : {}); s0.sort = STATE.sort; s0.all = STATE.all; s0.crit = defaults(); s0.strict = false;
       PEND = null; setState(s0, true);
     } else if (t.matches('[data-crit-reset]')) {
       ev.preventDefault();
-      var s4 = editing(), d = critIsDefault(s4.crit, s4.strict);
-      C.criteria.forEach(function (c) { s4.crit[c.id] = d ? false : !!c['default']; }); s4.strict = false;
+      var s4 = editing(), d = critIsDefault(s4.crit, s4.strict) && !s4.mat.length;
+      C.criteria.forEach(function (c) { s4.crit[c.id] = d ? false : !!c['default']; }); s4.strict = false; s4.mat = [];
       commit(s4);
+    } else if (t.matches('[data-only]')) {
+      // "Only" keeps one material (or one family) and leaves every other out.
+      var so = editing(), ov = t.getAttribute('data-only');
+      var keep = ov.indexOf('g:') === 0 ? S.MATERIALS.filter(function (m) { return m.group === ov.slice(2); }).map(function (m) { return m.id; }) : [ov];
+      so.mat = pickIds().filter(function (id) { return keep.indexOf(id) < 0; });
+      commit(so);
     } else if (t.matches('[data-tnode]')) {
       var nid = t.getAttribute('data-tnode'), kids = document.getElementById('tk-' + nid), open = t.getAttribute('aria-expanded') !== 'true';
       openNodes[nid] = open; t.setAttribute('aria-expanded', String(open)); if (kids) kids.hidden = !open;

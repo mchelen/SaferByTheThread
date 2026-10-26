@@ -11,13 +11,11 @@
  "criteria_groups": [
   {
    "id": "plastic",
-   "title": "Plastic and synthetics",
-   "set": "leave"
+   "title": "Plastic and synthetics"
   },
   {
    "id": "treat",
-   "title": "Chemical treatments",
-   "set": "leave"
+   "title": "Added treatments"
   },
   {
    "id": "tested",
@@ -87,7 +85,7 @@
    "default": true,
    "term": "hardwood",
    "under": "wood",
-   "sub": "Only solid wood",
+   "sub": "Plywood, MDF or veneer",
    "group": "treat"
   },
   {
@@ -99,7 +97,7 @@
    "default": true,
    "term": "superwash",
    "under": "wool",
-   "sub": "Only untreated wool (not superwash)",
+   "sub": "Superwash or shrink-proofed wool",
    "group": "treat"
   },
   {
@@ -111,7 +109,7 @@
    "default": true,
    "term": "plasticisers",
    "under": "latex",
-   "sub": "Only without plasticisers or synthetic rubber",
+   "sub": "Plasticisers or synthetic rubber",
    "group": "treat"
   },
   {
@@ -122,7 +120,7 @@
    "kind": "avoid",
    "default": true,
    "term": "flammability",
-   "sub": "Added flame retardants",
+   "sub": "Flame retardants",
    "group": "treat"
   },
   {
@@ -145,7 +143,7 @@
    "default": true,
    "term": "lfgb",
    "under": "silicone",
-   "sub": "Only tested to LFGB or the French Arrêté",
+   "sub": "Not stated as tested to LFGB or the French Arrêté",
    "group": "tested"
   },
   {
@@ -177,7 +175,7 @@
    "default": false,
    "term": "chrome",
    "under": "leather",
-   "sub": "Only vegetable or chrome-free tanned",
+   "sub": "Tanning not stated as vegetable or chrome-free",
    "group": "tested"
   }
  ],

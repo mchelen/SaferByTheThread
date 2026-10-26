@@ -1,41 +1,26 @@
 # Material filter grouping
 
-Chosen 2026-10-22 (option B from the options doc, with nesting added at M's request).
+Chosen 2026-10-26 (M: "consolidate filter in and filter out"), replacing the Made with / Leave out / Tests layout of 2026-10-22.
 
-## Problems with the old layout
+## The model
 
-- "No natural rubber or latex" and "No leather, suede or sheepskin" reversed the Made with options for the same materials (removed in #39).
-- "Tested or certified" and "Standards named" covered the same ground with different behaviour.
-- "Plastic or synthetics" was a Made with choice right under filters that leave plastic out.
-- Ten labels started with "No", and every filter carried a help line.
-- A test such as silicone LFGB only matters for silicone, but sat apart from it.
+One **Materials** tree in the filter rail. **A checked row is included, an unchecked row is left out.** A product shows when it has none of the materials or kinds left out and at least one of the materials kept (a listing with no material recorded can't be judged and shows).
 
-## Layout
+- Families open into their members: Natural fibres (wool, cotton, linen, silk), Plastic and synthetics (in the main materials, in small parts, in lids, stands or extras, melamine or resin-bound bamboo), Added treatments (synthetic dyes, paints or coatings; flame retardants; water, stain or wrinkle resistant finishes).
+- A material opens into the kinds of it a visitor can leave out: Wood > Plywood, MDF or veneer; Wool > Superwash or shrink-proofed wool; Natural rubber > Plasticisers or synthetic rubber; Silicone > Not stated as tested to LFGB or the French Arrêté; Leather > Tanning not stated as vegetable or chrome-free.
+- Parent state follows its children: checked when it and every child are, part-checked (dash) when only some are, unchecked when left out, which also shows its children unchecked. Unchecking a parent leaves out everything under it; checking a part-checked parent allows all its kinds; checking a child includes its material again.
+- **Only** beside a material or family keeps just that one and leaves every other material out.
+- "Parts whose material isn't stated" is the last row: checked (the default) means a part no page describes doesn't count against a product.
+- **Tests & certifications** stays a small second group: lead testing, certified organic, OEKO-TEX, FSC, Fair Rubber, US toy rules.
 
-The "What it's made of" section of the rail has three filter groups, each made of ordinary checkboxes. A row with children has a small button that opens them.
+M's defaults are the default tick state, so the default results don't change.
 
-**Made with** (any of the ticked materials)
+## URL and state
 
-- Natural fibres: Wool or felt (Only untreated wool), Cotton, Linen or hemp, Silk
-- Wood: Only solid wood, FSC certified
-- Natural rubber or latex: Only without plasticisers or synthetic rubber, Fair Rubber certified
-- Leather, suede or sheepskin: Only vegetable or chrome-free tanned
-- Coir, kapok or buckwheat
-- Silicone: Only tested to LFGB or the French Arrêté
-- Metal
+`mat=` in a link lists the materials included (`/shop?mat=wood` is wood only; no parameter means all). In `assets/app.js` the state keeps the materials left out (`st.mat`); `m=` lists the criteria that are on (a criterion that is on leaves out its kind), and `strict=1` is "Parts whose material isn't stated" unchecked.
 
-Ticking a family ticks all its members; part of a family shows as part-ticked. The filters under a material keep M's defaults and apply to every product made with that material, whether or not the material itself is ticked.
-
-**Leave out**
-
-- Plastic and synthetics: In the main materials, In small parts, In lids, stands or extras, Melamine or resin-bound bamboo
-- Chemical treatments: Synthetic dyes, paints or coatings; Added flame retardants; Water, stain or wrinkle resistant finishes
-- Parts whose material isn't stated
-
-**Tests & certifications**: Lead or heavy-metal testing stated, Certified organic fibres or latex, OEKO-TEX, US toy and child-product rules. Standards that a test filter already covers (GOTS, GOLS and unnamed organic under Certified organic; LFGB and the Arrêté under the silicone test) are not offered separately.
-
-Chips read "Made with: wool or felt" (one "Made with: natural fibres" chip for a whole family), "Leave out: plastic in small parts", "Silicone: only tested to LFGB or the French Arrêté". The product page By-filter table uses the same three headings.
+Chips read "No plywood, MDF or veneer", "No plastic in small parts", "No natural fibres", "Only wood or wool", "Silicone tested to LFGB or the French Arrêté", "Every part's material stated". The product page By-filter table has the same two groups, Materials and Tests & certifications.
 
 ## Data
 
-`criteria_groups[].set: "leave"`, `criteria[].under` and `sub`, `standards[].under`, `sub` and `filter`; see the README Data section.
+`criteria_groups[]` are the families of kinds; `criteria[].under` nests a kind under a material and `sub` names the kind; `standards[].filter` marks a standard a test filter already covers. See the README Data section.
