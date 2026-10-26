@@ -2,6 +2,7 @@
    under the site's base (GitHub Pages serves 404.html for them, which hands the path back to this script):
      /                home                 /shop            every product, with filters in the query string
      /a/<aisle>       an aisle (menu)      /c/<type>        a product type        /b/<brand>   a brand
+     /m               every material       /m/<material>    one material, or a family such as Natural fibres
      /search?q=       search results       /p/<id>          a product page
      /brands  /glossary[/<term>]  /about  /saved  /compare
    Filters in the query string: q, cat, brand, price, deliv (shipping), mat, std, age, ship, sort, all (show items the material
@@ -114,7 +115,7 @@
     if (st.sort && st.sort !== 'featured') q.sort = st.sort;
     if (st.all) q.all = '1';
     if (!critIsDefault(st.crit, st.strict)) { q.m = C.criteria.filter(function (c) { return st.crit[c.id]; }).map(function (c) { return c.id; }).join(',') || 'none'; if (st.strict) q.strict = '1'; }
-    var path = st.kind === 'cat' ? '/c/' + st.key : st.kind === 'dept' ? '/a/' + st.key : st.kind === 'brand' ? '/b/' + st.key : st.kind === 'search' ? '/search' : '/shop';
+    var path = st.kind === 'cat' ? '/c/' + st.key : st.kind === 'dept' ? '/a/' + st.key : st.kind === 'mat' ? '/m/' + st.key : st.kind === 'brand' ? '/b/' + st.key : st.kind === 'search' ? '/search' : '/shop';
     return U(path, q);
   }
   var STATE = null;
@@ -155,7 +156,10 @@
     if (!q) return true;
     return S.fold(q).split(/\s+/).filter(Boolean).every(function (w) { return item.q.indexOf(w) >= 0; });
   }
-  function inScope(item, st) { return st.kind !== 'dept' || item.aisles.indexOf(st.key) >= 0; }
+  function inScope(item, st) {
+    if (st.kind === 'mat') { var sc = matScope(st.key); return !!sc && hasMat(item, sc.ids); }
+    return st.kind !== 'dept' || item.aisles.indexOf(st.key) >= 0;
+  }
   // Items matching the search, scope and facets, before the material criteria.
   function base(st, except) {
     return C.items.filter(function (it) {
@@ -189,7 +193,16 @@
     var s = listGet(SAVED_KEY).length, c = listGet(CMP_KEY).length;
     $('#saved-n').textContent = s; $('#saved-n').hidden = !s;
     $('#compare-n').textContent = c; $('#compare-n').hidden = !c;
+    filterBadge();
     renderTray();
+  }
+  // The header's Filters button counts what differs from the default filters, plus this page's ticked facets.
+  function onListing() { return ['shop', 'a', 'c', 'b', 'm', 'search'].indexOf(currentPath().split('/').filter(Boolean)[0] || '') >= 0 && !!STATE && currentPath() !== '/m'; }
+  function filterBadge() {
+    var st = onListing() ? (PEND || STATE) : null, d = defaults(), crit = st ? st.crit : CRIT, n = (st ? st.strict : STRICT) ? 1 : 0;
+    C.criteria.forEach(function (c) { if (!!crit[c.id] !== d[c.id]) n++; });
+    if (st) FACETS.forEach(function (f) { if (!((f === 'cat' && st.kind === 'cat') || (f === 'brand' && st.kind === 'brand'))) n += st[f].length; });
+    $('#filters-n').textContent = n; $('#filters-n').hidden = !n;
   }
   function saveBtn(item, cls) {
     var on = listGet(SAVED_KEY).indexOf(item.id) >= 0;
@@ -296,7 +309,7 @@
   function setNav(kind, key) {
     $$('#cats .cat-a').forEach(function (a) {
       var d = a.getAttribute('data-nav');
-      var on = d === kind || (kind === 'dept' && d === 'd:' + key) || (kind === 'cat' && C.cats[key] && d === 'd:' + C.cats[key].group) || (kind === 'product' && d === 'd:' + key);
+      var on = d === kind || (kind === 'dept' && d === 'd:' + key) || (kind === 'cat' && C.cats[key] && d === 'd:' + C.cats[key].group) || (kind === 'product' && d === 'd:' + key) || ((kind === 'mat' || kind === 'materials') && d === 'materials');
       a.classList.toggle('on', !!on);
       if (on) a.setAttribute('aria-current', 'page'); else a.removeAttribute('aria-current');
     });
@@ -314,11 +327,13 @@
     var items = C.items.filter(function (i) { return i.aisles.indexOf(g.id) >= 0 && i.img; });
     return items.filter(function (i) { return status(i).ok; })[0] || items[0] || null;
   }
-  function typeTiles(ids, cls, current) {
+  // `pool` limits the photos to those items, and `within` sends each tile to that page filtered to the type instead of
+  // to the type's own page (a material page's types stay on the material page and show that material).
+  function typeTiles(ids, cls, current, query, pool, within) {
     var sorted = ids.slice().sort(function (x, y) { return typeCount(y) - typeCount(x); });
     return '<div class="ttiles' + (cls ? ' ' + cls : '') + '">' + sorted.map(function (id) {
-      var c = C.cats[id], pic = typePic(id);
-      return '<a class="ttile' + (id === current ? ' on' : '') + '" href="' + U('/c/' + id) + '"' + (id === current ? ' aria-current="page"' : '') + '><span class="ttile-img">' + (pic ? '<img src="' + esc(asset(pic.img)) + '" alt="" decoding="async">' : '<span class="ttile-ph" aria-hidden="true">' + esc((c.short || c.title).charAt(0)) + '</span>') + '</span>' +
+      var c = C.cats[id], pic = pool && pool.filter(function (i) { return i.cat === id && i.img; })[0] || typePic(id);
+      return '<a class="ttile' + (id === current ? ' on' : '') + '" href="' + (within ? U(within, id === current ? null : { cat: id }) : U('/c/' + id, query)) + '"' + (id === current ? ' aria-current="page"' : '') + '><span class="ttile-img">' + (pic ? '<img src="' + esc(asset(pic.img)) + '" alt="" decoding="async">' : '<span class="ttile-ph" aria-hidden="true">' + esc((c.short || c.title).charAt(0)) + '</span>') + '</span>' +
         '<span class="ttile-t">' + esc(c.short || c.title) + '</span></a>';
     }).join('') + '</div>';
   }
@@ -331,6 +346,80 @@
       return '<a class="tile" href="' + U('/a/' + g.id) + '"><span class="tile-img">' + (pic ? '<img src="' + esc(asset(pic.img)) + '" alt="" decoding="async">' : '') + '</span>' +
         '<span class="tile-t">' + esc(g.title) + '</span></a>';
     }).join('') + '</div>';
+  }
+  // Materials are a way in, like categories: Natural fibres and each material a visitor can pick, with a page each
+  // (/m/<id>) that opens into kinds of that material (Wood > Solid wood, FSC wood) and the product types made with it.
+  function matScope(key) {
+    var g = S.MATERIAL_GROUPS.filter(function (x) { return x.id === key; })[0];
+    if (g) return { id: g.id, label: g.label, group: true, ids: pickMaterials().filter(function (m) { return m.group === g.id; }).map(function (m) { return m.id; }) };
+    var m = pickMaterials().filter(function (x) { return x.id === key; })[0];
+    return m ? { id: m.id, label: m.label, ids: [m.id] } : null;
+  }
+  function hasMat(item, ids) { return item.materials.some(function (x) { return ids.indexOf(x) >= 0; }); }
+  function matItems(sc) { return C.items.filter(function (i) { return hasMat(i, sc.ids); }); }
+  // A photo for a material: a listing that meets the filters and is made of the fewest materials, so the picture is
+  // mostly that material; `used` keeps a row of tiles from showing the same photo twice.
+  function matPic(sc, test, used) {
+    var items = matItems(sc).filter(function (i) { return i.img && (!test || test(i)); })
+      .sort(function (a, b) { return (status(b).ok - status(a).ok) || (a.materials.length - b.materials.length) || a.n - b.n; });
+    var pic = items.filter(function (i) { return !used || used.indexOf(i.img) < 0; })[0] || items[0] || null;
+    if (pic && used) used.push(pic.img);
+    return pic;
+  }
+  // Natural fibres first, then the materials with the most listings.
+  function liveMats() {
+    var mats = pickMaterials().map(function (m) { return matScope(m.id); }).filter(function (sc) { return matItems(sc).length; })
+      .sort(function (a, b) { return matItems(b).length - matItems(a).length; });
+    return S.MATERIAL_GROUPS.map(function (g) { return matScope(g.id); }).filter(function (sc) { return matItems(sc).length; }).concat(mats);
+  }
+  function picSpan(pic, cls, label) {
+    return pic ? '<img src="' + esc(asset(pic.img)) + '" alt="" decoding="async">' : '<span class="' + cls + '" aria-hidden="true">' + esc(label.charAt(0)) + '</span>';
+  }
+  function matTiles(list, cls) {
+    var used = [];
+    return '<div class="ttiles' + (cls ? ' ' + cls : '') + '">' + list.map(function (sc) {
+      return '<a class="ttile" href="' + U('/m/' + sc.id) + '"><span class="ttile-img">' + picSpan(matPic(sc, null, used), 'ttile-ph', sc.label) + '</span><span class="ttile-t">' + esc(sc.label) + '</span></a>';
+    }).join('') + '</div>';
+  }
+  // The kinds a material page opens into: the filters nested under that material in the rail (named by `keeps`, the
+  // kind they keep), and for a family its members. "All" first; a kind ticked shows pressed, as its filter is in the rail.
+  function kindsOf(sc) {
+    if (sc.group) return [];
+    var cs = C.criteria.filter(function (c) { return c.under === sc.id; }).map(function (c) {
+      return { kind: 'crit', id: c.id, label: c.keeps || c.short, test: function (i) { return i.facts[c.id] === 'yes'; } };
+    });
+    var ss = C.standards.filter(function (s) { return s.under === sc.id && !s.filter; }).map(function (s) {
+      return { kind: 'std', id: s.id, label: s.sub || s.label, test: function (i) { return i.standards.indexOf(s.id) >= 0; } };
+    });
+    return cs.concat(ss);
+  }
+  function kindOn(st, k) { return k.kind === 'crit' ? !!st.crit[k.id] : st.std.indexOf(k.id) >= 0; }
+  // A kind is a link (a family's members, each with its own page) or a button that ticks its filter.
+  function pill(o) {
+    var inner = '<span class="kind-img">' + picSpan(o.pic, 'kind-ph', o.label) + '</span>' + esc(o.label);
+    if (o.href) return '<a class="kind' + (o.on ? ' on' : '') + '" href="' + o.href + '"' + (o.on ? ' aria-current="page"' : '') + '>' + inner + '</a>';
+    return '<button type="button" class="kind' + (o.on ? ' on' : '') + '" data-kind="' + o.kind + '" aria-pressed="' + !!o.on + '">' + inner + '</button>';
+  }
+  function kindRow(st, sc) {
+    if (sc.group) {
+      var u = [];
+      return '<nav class="kinds" aria-label="' + esc(sc.label) + '">' + pill({ href: U('/m/' + sc.id), on: true, pic: matPic(sc, null, u), label: 'All ' + lc(sc.label) }) +
+        sc.ids.map(function (id) { var m = matScope(id); return matItems(m).length ? pill({ href: U('/m/' + id), pic: matPic(m, null, u), label: m.label }) : ''; }).join('') + '</nav>';
+    }
+    var kinds = kindsOf(sc), used = []; if (!kinds.length) return '';
+    var any = kinds.some(function (k) { return kindOn(st, k); });
+    return '<div class="kinds" role="group" aria-label="Kinds of ' + esc(lc(sc.label)) + '">' + pill({ kind: '*', on: !any, pic: matPic(sc, null, used), label: 'All ' + lc(sc.label) }) +
+      kinds.map(function (k) { return pill({ kind: k.kind + ':' + k.id, on: kindOn(st, k), pic: matPic(sc, k.test, used), label: k.label }); }).join('') + '</div>';
+  }
+  function renderMaterials() {
+    var used = [];
+    main.innerHTML = '<div class="wrap">' + crumbs([['Materials']]) + '<div class="page wide"><h1>Materials</h1>' +
+      '<div class="tiles mat-tiles">' + liveMats().map(function (sc) {
+        var pic = matPic(sc, null, used);
+        return '<a class="tile" href="' + U('/m/' + sc.id) + '"><span class="tile-img">' + (pic ? '<img src="' + esc(asset(pic.img)) + '" alt="" decoding="async">' : '') + '</span>' +
+          '<span class="tile-t">' + esc(sc.label) + '</span><span class="tile-n">' + plural(matItems(sc).length, 'product') + '</span></a>';
+      }).join('') + '</div></div></div>';
+    setNav('materials'); setTitle('Materials');
   }
   function renderHome() {
     var okItems = C.items.filter(function (i) { return status(i).ok; });
@@ -353,6 +442,7 @@
       '<div class="hero-cta"><a class="btn" href="' + U('/shop') + '">Shop all products</a></div></div>' +
       '<div class="hero-art" aria-hidden="true">' + art.map(function (i) { return '<a href="' + U('/p/' + i.id) + '" tabindex="-1"><img src="' + esc(asset(i.img)) + '" alt="" decoding="async"></a>'; }).join('') + '</div></section>' +
       '<section class="sec"><div class="sec-h"><h2>Shop by category</h2><a href="' + U('/shop') + '">All products →</a></div>' + tiles + '</section>' +
+      '<section class="sec"><div class="sec-h"><h2>Shop by material</h2><a href="' + U('/m') + '">All materials →</a></div>' + matTiles(liveMats(), 'mat-row') + '</section>' +
       '<section class="sec"><div class="sec-h"><h2>Shop by age</h2></div><div class="ages">' + ages + '</div></section>' +
       rows +
       cardRail(listGet(RECENT_KEY).map(byId).filter(Boolean).slice(0, 8), 'Pick up where you left off', U('/saved'), 'Your saved products') +
@@ -557,6 +647,7 @@
   function listTitle(st) {
     if (st.kind === 'cat') return catOf(st.key) ? catOf(st.key).title : st.key;
     if (st.kind === 'dept') return groupOf(st.key) ? groupOf(st.key).title : st.key;
+    if (st.kind === 'mat') return matScope(st.key).label;
     if (st.kind === 'brand') return C.brands[st.key] ? C.brands[st.key].name : st.key;
     if (st.kind === 'search') return st.q ? 'Results for “' + st.q + '”' : 'Search';
     return 'All products';
@@ -586,6 +677,10 @@
       var gg = groupOf(st.key);
       trail = [[gg.title]];
       sub = typeTiles(gg.cats, 'type-tiles');
+    } else if (st.kind === 'mat') {
+      var sc = matScope(st.key), types = liveTypes().filter(function (id) { return all.some(function (i) { return i.cat === id; }); });
+      trail = [['Materials', U('/m')], [sc.label]];
+      sub = kindRow(st, sc) + (types.length > 1 ? '<nav class="sibling-types" aria-label="Product types made with ' + esc(lc(sc.label)) + '">' + typeTiles(types, 'sm', st.cat.length === 1 ? st.cat[0] : null, null, ok.concat(all), '/m/' + sc.id) + '</nav>' : '');
     } else if (st.kind === 'brand' && C.brands[st.key]) {
       var b = C.brands[st.key], bc = {}; b.items.forEach(function (i) { bc[i.cat] = 1; });
       trail = [['Brands', U('/brands')], [b.name]];
@@ -633,6 +728,7 @@
     var newRail = $('#rail'); if (newRail) newRail.scrollTop = railTop;
     if (focusId && document.getElementById(focusId)) document.getElementById(focusId).focus({ preventScroll: true });
     setNav(st.kind, st.key);
+    filterBadge();
     setTitle(title === 'All products' ? 'Shop' : title);
     announce(plural(list.length, 'product') + (hidden && !st.all ? ', ' + hidden + ' set aside by your material filters' : '') + '. List updated.');
   }
@@ -918,6 +1014,7 @@
   function openDrawer(focus) {
     var rail = $('#rail'); if (!rail) return;
     document.body.classList.add('drawer-on', 'no-scroll');
+    if (!isPhone()) scrim.hidden = false;
     rail.setAttribute('role', 'dialog'); rail.setAttribute('aria-modal', 'true');
     var b = $('[data-drawer-open]'); if (b) b.setAttribute('aria-expanded', 'true');
     if (focus) { var c = $('[data-drawer-close]', rail); if (c) c.focus(); }
@@ -925,6 +1022,7 @@
   function closeDrawer(focus) {
     if (!document.body.classList.contains('drawer-on')) return;
     document.body.classList.remove('drawer-on', 'no-scroll');
+    if (qv.hidden) scrim.hidden = true;
     var rail = $('#rail'); if (rail) { rail.removeAttribute('role'); rail.removeAttribute('aria-modal'); }
     var b = $('[data-drawer-open]'); if (b) { b.setAttribute('aria-expanded', 'false'); if (focus) b.focus(); }
   }
@@ -949,12 +1047,14 @@
         '<div class="mega"><p>' + esc(g.title) + ' · ' + plural(n, 'product') + '</p>' + typeTiles(g.cats, 'mega-tiles') +
         '<a class="mega-all" href="' + U('/a/' + g.id) + '">Shop all ' + esc(g.title.toLowerCase()) + ' →</a></div></div>';
     });
+    h += '<div class="cat-item" data-dept="materials"><button type="button" class="cat-a" data-nav="materials" aria-expanded="false" aria-haspopup="true">Materials' + icon('chev') + '</button>' +
+      '<div class="mega"><p>Materials</p>' + matTiles(liveMats(), 'mega-tiles') + '<a class="mega-all" href="' + U('/m') + '">All materials →</a></div></div>';
     h += '<span class="spacer"></span>';
     h += '<div class="cat-item"><a class="cat-a quiet" href="' + U('/brands') + '" data-nav="brands">Brands</a></div>' +
       '<div class="cat-item"><a class="cat-a quiet" href="' + U('/glossary') + '" data-nav="glossary">Glossary</a></div>' +
       '<div class="cat-item"><a class="cat-a quiet" href="' + U('/about') + '" data-nav="about">About</a></div>';
     $('#cats').innerHTML = h;
-    $('#foot-shop').innerHTML = '<li><a href="' + U('/shop') + '">All products</a></li>' + C.groups.map(function (g) { return '<li><a href="' + U('/a/' + g.id) + '">' + esc(g.title) + '</a></li>'; }).join('');
+    $('#foot-shop').innerHTML = '<li><a href="' + U('/shop') + '">All products</a></li>' + C.groups.map(function (g) { return '<li><a href="' + U('/a/' + g.id) + '">' + esc(g.title) + '</a></li>'; }).join('') + '<li><a href="' + U('/m') + '">Materials</a></li>';
     $('#foot-brands').innerHTML = brandList().sort(function (a, b) { return b.items.length - a.items.length; }).slice(0, 6).map(function (b) { return '<li><a href="' + U('/b/' + b.id) + '">' + esc(b.name) + '</a></li>'; }).join('') + '<li><a href="' + U('/brands') + '">All brands →</a></li>';
     $$('a[data-link]').forEach(function (a) { a.href = U(a.getAttribute('href')); });
   }
@@ -983,7 +1083,7 @@
     });
     brandList().filter(function (b) { return S.fold(b.name).indexOf(f) >= 0; }).slice(0, 3).forEach(function (b) { out.push('<a href="' + U('/b/' + b.id) + '" role="option"><span class="sg-k">Brand</span>' + esc(b.name) + '</a>'); });
     Object.keys(C.cats).map(function (k) { return C.cats[k]; }).filter(function (c) { return S.fold(c.title).indexOf(f) >= 0; }).slice(0, 3).forEach(function (c) { var pic = typePic(c.id); out.push('<a href="' + U('/c/' + c.id) + '" role="option">' + (pic ? '<img class="sg-img" src="' + esc(asset(pic.img)) + '" alt="">' : '<span class="sg-img"></span>') + '<span>' + esc(c.title) + '</span><span class="sg-p">' + plural(typeCount(c.id), 'product') + '</span></a>'); });
-    pickMaterials().filter(function (m) { return S.fold(m.label).indexOf(f) >= 0; }).slice(0, 2).forEach(function (m) { out.push('<a href="' + U('/shop', { mat: m.id }) + '" role="option"><span class="sg-k">Made with</span>' + esc(m.label) + '</a>'); });
+    pickMaterials().filter(function (m) { return S.fold(m.label).indexOf(f) >= 0; }).slice(0, 2).forEach(function (m) { out.push('<a href="' + U('/m/' + m.id) + '" role="option"><span class="sg-k">Made with</span>' + esc(m.label) + '</a>'); });
     if (GLOSS) Object.keys(TERMS).filter(function (k) { return S.fold(TERMS[k].term).indexOf(f) >= 0; }).slice(0, 2).forEach(function (k) { out.push('<a href="' + U('/glossary/' + k) + '" role="option"><span class="sg-k">Glossary</span>' + esc(TERMS[k].term) + '</a>'); });
     out.push('<a href="' + U('/search', { q: q.trim() }) + '" role="option"><span class="sg-k">Search</span>See all results for “' + esc(q.trim()) + '”</a>');
     sugg.innerHTML = out.join('');
@@ -1002,6 +1102,8 @@
     else if ((key === 'd' || key === 'a') && renamed('groups', p[1])) { go(U('/a/' + renamed('groups', p[1]), q), true); return; }
     else if (key === 'c' && catOf(p[1])) { STATE = readState('cat', p[1], q); pageShown = PAGE; renderList(); }
     else if (key === 'c' && renamed('cats', p[1])) { go(U('/c/' + renamed('cats', p[1]), q), true); return; }
+    else if (key === 'm' && !p[1]) renderMaterials();
+    else if (key === 'm' && matScope(p[1])) { STATE = readState('mat', p[1], q); pageShown = PAGE; renderList(); }
     else if (key === 'b' && C.brands[p[1]]) { STATE = readState('brand', p[1], q); pageShown = PAGE; renderList(); }
     else if (key === 'search') { STATE = readState('search', '', q); pageShown = PAGE; renderList(); }
     else if (key === 'p' && p[1]) renderProduct(decodeURIComponent(p[1]));
@@ -1025,7 +1127,7 @@
       renderProduct(decodeURIComponent(currentPath().split('/')[2]), true);
       $$('.acc').forEach(function (d, i) { d.open = open[i] >= 0; });
     }
-    else if (STATE && ['shop', 'a', 'c', 'b', 'search'].indexOf(key) >= 0) { STATE.crit = Object.assign({}, CRIT); STATE.strict = STRICT; setState(STATE); }
+    else if (STATE && ['shop', 'a', 'c', 'b', 'm', 'search'].indexOf(key) >= 0 && onListing()) { STATE.crit = Object.assign({}, CRIT); STATE.strict = STRICT; setState(STATE); }
     else if (key === 'compare') renderCompare();
     else if (key === 'saved') renderSaved();
     else if (key === '') renderHome();
@@ -1122,6 +1224,7 @@
 
   document.addEventListener('click', function (ev) {
     var a = ev.target.closest('a[href]');
+    if (a && a.id === 'nav-filters' && !ev.metaKey && !ev.ctrlKey && !ev.shiftKey && ev.button === 0) { ev.preventDefault(); openFilters(); return; }
     // Internal links render in place; everything else is left to the browser.
     if (a && !a.hasAttribute('data-term') && !a.closest('.glossary') && a.origin === location.origin && a.pathname.indexOf(BASE_PATH) === 0 && !a.target && !a.hasAttribute('download') && !ev.metaKey && !ev.ctrlKey && !ev.shiftKey && !ev.altKey && ev.button === 0) {
       if (a.hasAttribute('data-jump')) {
@@ -1156,6 +1259,14 @@
     } else if (t.matches('[data-tnode]')) {
       var nid = t.getAttribute('data-tnode'), kids = document.getElementById('tk-' + nid), open = t.getAttribute('aria-expanded') !== 'true';
       openNodes[nid] = open; t.setAttribute('aria-expanded', String(open)); if (kids) kids.hidden = !open;
+    } else if (t.matches('[data-kind]')) {
+      var sk = copyState(), kv = t.getAttribute('data-kind'), ks = kindsOf(matScope(sk.key));
+      ks.forEach(function (k) {
+        if (kv !== '*' && kv !== k.kind + ':' + k.id) return;
+        var on = kv === '*' ? false : !kindOn(sk, k);
+        if (k.kind === 'crit') sk.crit[k.id] = on; else sk.std = sk.std.filter(function (x) { return x !== k.id; }).concat(on ? [k.id] : []);
+      });
+      PEND = null; setState(sk, true);
     } else if (t.matches('[data-toggle-all]')) {
       var s1 = copyState(); s1.all = !s1.all; PEND = null; setState(s1, true);
     } else if (t.matches('[data-more]')) {
@@ -1214,7 +1325,16 @@
       window.scrollTo({ top: 0, behavior: 'smooth' }); main.focus({ preventScroll: true });
     }
   });
-  scrim.addEventListener('click', closeQuickView);
+  scrim.addEventListener('click', function () {
+    if (document.body.classList.contains('drawer-on')) { PEND = null; closeDrawer(true); renderList(false); } else closeQuickView();
+  });
+  // The header's Filters button: every filter, from any page. A listing page opens its own filters; elsewhere the
+  // shop opens with them.
+  function openFilters() {
+    if (!onListing()) go(U('/shop'));
+    else closeMenu(false);
+    PEND = copyState(); openDrawer(true);
+  }
   document.addEventListener('keydown', function (ev) {
     if (ev.key === 'Escape') {
       if (!sugg.hidden) closeSugg();

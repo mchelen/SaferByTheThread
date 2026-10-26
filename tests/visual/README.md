@@ -19,6 +19,8 @@ CI runs them on every pull request as the **Visual regression** check; a mismatc
 | Search suggestions while typing, and the search results page | ✓ | ✓ |
 | Compare page with two products | ✓ | ✓ |
 | Glossary page with a highlighted term | ✓ | ✓ |
+| Material page, `/m/wood`, with its kinds | ✓ | ✓ |
+| Filters opened from the header button | ✓ | ✓ |
 
 Each test also fails on any script error on the page.
 

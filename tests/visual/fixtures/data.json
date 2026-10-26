@@ -88,7 +88,8 @@
    "term": "hardwood",
    "under": "wood",
    "sub": "Only solid wood",
-   "group": "treat"
+   "group": "treat",
+   "keeps": "Solid wood"
   },
   {
    "id": "wool",
@@ -100,7 +101,8 @@
    "term": "superwash",
    "under": "wool",
    "sub": "Only untreated wool (not superwash)",
-   "group": "treat"
+   "group": "treat",
+   "keeps": "Untreated wool"
   },
   {
    "id": "rubber",
@@ -112,7 +114,8 @@
    "term": "plasticisers",
    "under": "latex",
    "sub": "Only without plasticisers or synthetic rubber",
-   "group": "treat"
+   "group": "treat",
+   "keeps": "Without plasticisers"
   },
   {
    "id": "flame",
@@ -146,7 +149,8 @@
    "term": "lfgb",
    "under": "silicone",
    "sub": "Only tested to LFGB or the French Arrêté",
-   "group": "tested"
+   "group": "tested",
+   "keeps": "Tested to LFGB or Arrêté"
   },
   {
    "id": "lead",
@@ -178,7 +182,8 @@
    "term": "chrome",
    "under": "leather",
    "sub": "Only vegetable or chrome-free tanned",
-   "group": "tested"
+   "group": "tested",
+   "keeps": "Vegetable or chrome-free tanned"
   }
  ],
  "standards": [
