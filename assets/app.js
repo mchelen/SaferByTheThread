@@ -275,9 +275,69 @@
     return '<p class="rating" role="img" aria-label="' + esc(label) + '" title="' + esc(label) + '"><span class="stars" style="--rv:' + r.value + '" aria-hidden="true">★★★★★</span>' +
       '<span class="r-v" aria-hidden="true">' + v + '</span><span class="r-n" aria-hidden="true">' + (long ? esc(plural(r.count, 'review')) + ' at ' + esc(storeName(r.store)) : '(' + r.count.toLocaleString('en-US') + ')') + '</span></p>';
   }
+  // ---------- material chips ----------
+  // One chip per material, from the same matching as the Materials filter: a chip for each material the maker names,
+  // one for plastic and synthetics whenever a part is flagged as such, one for other flagged parts, and one counting
+  // the parts no page states. A chip's details (the parts, and what a filter has against it) show on hover or tap.
+  var MAT_SHORT = { wool: 'Wool', cotton: 'Cotton', linen: 'Linen', silk: 'Silk', wood: 'Wood', latex: 'Natural rubber', leather: 'Leather',
+    'plant-fill': 'Plant fill', silicone: 'Silicone', metal: 'Metal', synthetic: 'Synthetic' };
+  // Parts by material. A part naming several materials counts under each; a flagged part goes under synthetics when
+  // it is one, else under the first material it names, else stays a flagged part of its own.
+  function partsByMat(item) {
+    var named = {}, other = [], flagged = {}, flagOther = [];
+    var push = function (o, k, t) { (o[k] = o[k] || []).push(t); };
+    item.uses.forEach(function (t, k) {
+      var ms = item.usesMats[k] || [];
+      if (ms.indexOf('synthetic') >= 0) push(flagged, 'synthetic', t);
+      else if (ms.length) ms.forEach(function (m) { push(named, m, t); });
+      else other.push(t);
+    });
+    item.outside.forEach(function (t, k) {
+      var ms = item.outMats[k] || [];
+      if (ms.indexOf('synthetic') >= 0) push(flagged, 'synthetic', t); else if (ms.length) push(flagged, ms[0], t); else flagOther.push(t);
+    });
+    return { named: named, other: other, flagged: flagged, flagOther: flagOther };
+  }
+  function matChips(item, r) {
+    var p = partsByMat(item), chips = [], by = {};
+    var add = function (id, label, ic) { var ch = { id: id, label: label, icon: ic, named: [], flagged: [], miss: [] }; chips.push(ch); by[id] = ch; return ch; };
+    S.MATERIALS.forEach(function (m) { if (m.id !== 'synthetic' && p.named[m.id]) add(m.id, MAT_SHORT[m.id], m.id).named = p.named[m.id]; });
+    Object.keys(p.flagged).forEach(function (id) {
+      if (id === 'synthetic') return;
+      if (by[id]) by[id].flagged = by[id].flagged.concat(p.flagged[id]); else p.flagOther = p.flagOther.concat(p.flagged[id]);
+    });
+    if (p.flagged.synthetic) add('synthetic', MAT_SHORT.synthetic, 'synthetic').flagged = p.flagged.synthetic;
+    if (p.flagOther.length) add('other', 'Flagged', 'flag').flagged = p.flagOther;
+    r.miss.forEach(function (c) {
+      var ch = c.under && by[c.under] ? by[c.under] : c.group === 'plastic' ? by.synthetic || add('synthetic', MAT_SHORT.synthetic, 'synthetic') : by.other || by.synthetic || add('other', c.short, 'flag');
+      ch.miss.push(factText(item, c));
+    });
+    if (by.other && !by.other.flagged.length && by.other.miss.length > 1) by.other.label = plural(by.other.miss.length, 'filter');
+    // Synthetics and other flagged parts after the named materials, the parts not stated last.
+    chips.sort(function (a, b) { return (a.id === 'synthetic' || a.id === 'other') - (b.id === 'synthetic' || b.id === 'other'); });
+    if (item.unconfirmed.length) chips.push({ id: 'unk', label: item.unconfirmed.length + ' not stated', icon: 'unk', named: [], flagged: [], miss: [], unk: item.unconfirmed });
+    return chips;
+  }
+  function chipLines(ch) {
+    var out = ch.miss.map(function (t) { return ['miss', t]; });
+    if (ch.flagged.length) out.push(['flag', (ch.id === 'other' || ch.id === 'synthetic' ? '' : 'Flagged: ') + ch.flagged.join(' · ')]);
+    if (ch.named.length) out.push(['', ch.named.join(' · ')]);
+    if (ch.unk) out.push(['', 'Not stated: ' + ch.unk.map(lc).join(' · ')]);
+    return out;
+  }
+  function matChipsHtml(item, r) {
+    var chips = matChips(item, r);
+    if (!chips.length) return '';
+    return '<div class="mchips">' + chips.map(function (ch) {
+      var st = ch.id === 'unk' ? 'unk' : ch.flagged.length || ch.miss.length || ch.id === 'synthetic' || ch.id === 'other' ? 'flag' : 'ok';
+      var lines = chipLines(ch);
+      return '<button type="button" class="mchip is-' + st + '" aria-expanded="false" aria-label="' + esc(ch.label + ': ' + lines.map(function (l) { return l[1]; }).join('. ')) + '">' +
+        icon('m-' + ch.icon) + '<span>' + esc(ch.label) + '</span>' +
+        '<span class="mtip" aria-hidden="true">' + lines.map(function (l) { return '<span class="tl' + (l[0] ? ' ' + l[0] : '') + '">' + (l[0] === 'miss' ? '<b aria-hidden="true">✕</b>' : '') + esc(l[1]) + '</span>'; }).join('') + '</span></button>';
+    }).join('') + '</div>';
+  }
   function card(item, i, crit, strict) {
     var r = status(item, crit, strict);
-    var mats = item.materials.slice(0, 3).map(matLabel);
     var badges = [];
     if (item.products.length > 1) badges.push('<span class="badge soft">' + (storeCount(item) > 1 ? storeCount(item) + ' stores' : item.products.length + ' options') + '</span>');
     return '<article class="card' + (r.ok ? '' : ' is-miss') + '" data-id="' + esc(item.id) + '">' +
@@ -285,11 +345,9 @@
       '<div class="ph-badges">' + badges.join('') + '</div>' +
       '<div class="card-body"><p class="brand">' + esc(item.brand) + '</p><h3>' + esc(item.line) + '</h3>' +
       (item.rating ? stars(item.rating) : '') +
-      '<p class="mats">' + esc(mats.join(' · ') || 'Materials on the product page') + '</p>' +
       '<p class="price">' + esc(S.priceFrom(item)) + '</p>' +
       '<p class="ship' + (item.deliv === 'free' ? ' is-free' : '') + '">' + esc(item.shipLine) + '</p>' +
-      fitLine(item, r, 1) +
-      '</div></a>' + (offersOf(item)[0] ? '<a class="btn-buy sm card-buy" href="' + esc(offersOf(item)[0].url) + '" target="_blank" rel="noopener" aria-label="' + buyText(offersOf(item)[0]) + ': ' + esc(item.brand + ' ' + item.line) + ' (opens the store)" title="' + buyText(offersOf(item)[0]) + '">Buy at store' + icon('ext') + '</a>' : '') + saveBtn(item) +
+      '</div></a>' + matChipsHtml(item, r) + (offersOf(item)[0] ? '<a class="btn-buy sm card-buy" href="' + esc(offersOf(item)[0].url) + '" target="_blank" rel="noopener" aria-label="' + buyText(offersOf(item)[0]) + ': ' + esc(item.brand + ' ' + item.line) + ' (opens the store)" title="' + buyText(offersOf(item)[0]) + '">Buy at store' + icon('ext') + '</a>' : '') + saveBtn(item) +
       '<button type="button" class="qv-btn" data-qv="' + esc(item.id) + '">Quick view</button></article>';
   }
   function cardRail(items, title, moreHref, moreText) {
@@ -769,13 +827,20 @@
   }
 
   // ---------- product page ----------
+  // The checklist grouped by material: a row per material the maker names, with its parts (a part naming several
+  // materials sits under each) and a link to that material's page, then the flagged parts, what the maker states the
+  // product is free of, and the parts no page states.
   function checklist(item) {
-    var rows = [
-      ['r-uses', '✓', 'Made with', item.uses],
-      ['r-out', '✕', 'Flagged parts', item.outside],
-      ['r-free', '⊘', 'Stated free of', item.free],
-      ['r-unk', '?', 'Not stated', item.unconfirmed]
-    ];
+    var p = partsByMat(item), pages = pickIds(), flagOther = p.flagOther.slice();
+    Object.keys(p.flagged).forEach(function (id) { if (id !== 'synthetic') flagOther = flagOther.concat(p.flagged[id]); });
+    var rows = S.MATERIALS.filter(function (m) { return p.named[m.id]; }).map(function (m) {
+      return ['r-uses', icon('m-' + m.id), pages.indexOf(m.id) >= 0 ? '<a href="' + U('/m/' + m.id) + '">' + esc(m.label) + '</a>' : esc(m.label), p.named[m.id]];
+    });
+    rows.push(['r-uses', '✓', p.named && Object.keys(p.named).length ? 'Also named' : 'Made with', p.other]);
+    rows.push(['r-out', icon('m-synthetic'), 'Plastic or synthetics', p.flagged.synthetic || []]);
+    rows.push(['r-out', '✕', 'Flagged parts', flagOther]);
+    rows.push(['r-free', '⊘', 'Stated free of', item.free]);
+    rows.push(['r-unk', '?', 'Not stated', item.unconfirmed]);
     return '<div class="check">' + rows.filter(function (r) { return r[3].length; }).map(function (r) {
       return '<div class="row ' + r[0] + '"><div class="row-h"><span class="ic" aria-hidden="true">' + r[1] + '</span><span>' + r[2] + '</span></div>' +
         '<div class="chips-row">' + r[3].map(chip).join('') + '</div></div>';
@@ -837,8 +902,7 @@
       (storeCount(item) > 1 ? '<h2 class="offers-h">Prices at ' + storeCount(item) + ' stores, lowest first</h2>' : '<h2 class="sr">Where to buy</h2>') + '<ul class="offers">' + offersOf(item).map(function (p, k) { return offerHtml(p, k, item.products.length > 1); }).join('') + '</ul>' +
       '<div class="status">' + (r.ok ? '<p class="fit is-ok"><span class="mk" aria-hidden="true">✓</span>Meets your ' + plural(critOn(CRIT, STRICT), 'material filter') + '</p>' : fitLine(item, r)) +
       (r.unst.length ? fitLine(item, { ok: true, miss: [], unst: r.unst }) : '') + '</div>' +
-      '<div class="made">' + (item.uses.length ? '<p class="lab">Made with</p><div class="chips-row">' + item.uses.map(chip).join('') + '</div>' : '') +
-      (item.outside.length ? '<p class="lab"' + (item.uses.length ? ' style="margin-top:10px"' : '') + '>Flagged parts</p><div class="chips-row out">' + item.outside.map(chip).join('') + '</div>' : '') +
+      '<div class="made">' + matChipsHtml(item, r) +
       '<a class="link-b" href="#materials" data-jump="materials">Full materials ↓</a></div>' +
       '<div class="buy-actions">' + saveBtn(item, 'btn-3') + compareBtn(item) + '<button type="button" class="btn-3" data-share="' + esc(U('/p/' + item.id)) + '" data-share-title="' + esc(item.brand + ' ' + item.line) + '">' + icon('share') + '<span>Share</span></button></div>' +
       (item.quote ? '<blockquote class="ev"><p>“' + esc(item.quote) + '”</p><footer>From the store page</footer></blockquote>' : item.evidence ? '<p class="ev"><span>' + esc(item.evidence) + '</span></p>' : '') +
@@ -1257,6 +1321,17 @@
       opts.forEach(function (a, k) { a.classList.toggle('on', k === i); });
     } else if (ev.key === 'Enter' && i >= 0) { ev.preventDefault(); go(opts[i].getAttribute('href')); }
   });
+
+  // Material chips: a tap opens a chip's details and closes any other; a tap elsewhere or Escape closes them.
+  function closeChips(except) {
+    document.querySelectorAll('.mchip.open').forEach(function (b) { if (b !== except) { b.classList.remove('open'); b.setAttribute('aria-expanded', 'false'); } });
+  }
+  document.addEventListener('click', function (ev) {
+    var b = ev.target.closest && ev.target.closest('.mchip');
+    closeChips(b);
+    if (b) { var on = !b.classList.contains('open'); b.classList.toggle('open', on); b.setAttribute('aria-expanded', String(on)); }
+  });
+  document.addEventListener('keydown', function (ev) { if (ev.key === 'Escape') closeChips(); });
 
   document.addEventListener('click', function (ev) {
     var a = ev.target.closest('a[href]');

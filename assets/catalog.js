@@ -43,8 +43,8 @@
     { id: 'linen', label: 'Linen or hemp', group: 'fibres', rx: /linen|hemp|flax(?!seed)/i },
     { id: 'silk', label: 'Silk', group: 'fibres', rx: /silk/i },
     { id: 'wood', label: 'Wood', rx: /wood|maple|beech|birch|pine|walnut|cherry|oak\b|poplar|\bash\b|hardwood|bamboo|plywood/i },
-    { id: 'latex', label: 'Natural rubber or latex', contains: 'latex' },
-    { id: 'leather', label: 'Leather, suede or sheepskin', contains: 'leather' },
+    { id: 'latex', label: 'Natural rubber or latex', contains: 'latex', nrx: /latex|(?<!synthetic )rubber/i },
+    { id: 'leather', label: 'Leather, suede or sheepskin', contains: 'leather', nrx: /leather|suede|sheepskin|calfskin|nappa/i },
     { id: 'plant-fill', label: 'Coir, kapok or buckwheat', rx: /coir|kapok|buckwheat/i },
     { id: 'silicone', label: 'Silicone', rx: /silicone/i },
     { id: 'metal', label: 'Metal', rx: /stainless|steel|metal|\bbell\b|brass|alumin/i },
@@ -192,6 +192,9 @@
           var mats = MATERIALS.filter(function (m) {
             return m.contains ? (e.contains || []).indexOf(m.contains) >= 0 : m.rx.test(chips);
           }).map(function (m) { return m.id; });
+          // The materials of each part: the same matching as the facet, read part by part. A `contains` material
+          // counts in a part that names it.
+          var partMats = function (t) { return MATERIALS.filter(function (m) { return mats.indexOf(m.id) >= 0 && (m.rx || m.nrx).test(t); }).map(function (m) { return m.id; }); };
           var tAges = c.ages || { min_months: 0, max_months: 72 };
           var aMin = e.age ? e.age.min_months : tAges.min_months;
           var aMax = e.age ? (e.age.max_months != null ? e.age.max_months : Math.max(tAges.max_months, aMin + 12)) : tAges.max_months;
@@ -213,7 +216,7 @@
             min: prices.length ? Math.min.apply(null, prices) : null,
             max: prices.length ? Math.max.apply(null, prices) : null,
             approx: prods.some(function (p) { return p.approx; }),
-            materials: mats, ships: Object.keys(ships), shipping: shipTexts, freeShip: freeShip,
+            materials: mats, usesMats: e.uses.map(partMats), outMats: (e.outside || []).map(partMats), ships: Object.keys(ships), shipping: shipTexts, freeShip: freeShip,
             total: totals.length ? Math.min.apply(null, totals) : null, byCost: byCost, shipLine: byCost[0] ? byCost[0].shipLine : '',
             // Shipping facet: what the card shows, the cheapest listing's shipping.
             deliv: !byCost[0] || byCost[0].shipCost == null ? 'unknown' : byCost[0].shipCost === 0 ? 'free' : 'paid',

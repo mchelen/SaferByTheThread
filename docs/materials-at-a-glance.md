@@ -26,3 +26,12 @@ Unchanged: every chip and every "?" on the product page still opens the in-place
 ## Recommendation
 
 Cards option 1 and product page option 1, built in the same pull request. Quick view and the "Your material filters" row of the comparison table use the same line as the cards, so the three places read alike.
+
+## Material icons (2026-10-26)
+
+M asked for visual ways to show materials with icons. The options page (https://claude.ai/artifact/AD8T5RKjjv5CzQURbkpjWr) compared labelled material chips (A), one mark per part (B) and icon badges on the photo (C); M chose A, kept compact like C, with filter details on cards shown only on hover or tap of the related chip.
+
+- **Chips.** One per material the maker names (the eleven materials of the Materials filter, matched part by part with the same patterns; `usesMats` and `outMats` in `assets/catalog.js`), then **Synthetic** when a part is plastic or synthetic, **Flagged** for other flagged parts (paint, plywood, hook-and-loop), and **N not stated** for the parts no page states. A material named only inside a flagged part (the natural rubber in a synthetic rubber sole) gets no green chip of its own. A material chip turns to the flagged colour when it has a flagged part (plywood under Wood) or a filter miss nested under it (superwash under Wool).
+- **Details.** A chip's details list the filter misses first (`✕ Has plastic or synthetics in the main materials`), then the flagged parts, the named parts or the parts not stated. Plastic filters' misses go on the Synthetic chip, nested filters' on their material's chip, the rest (dyes, flame retardants, finishes) on the Flagged chip. Cards no longer carry a filter line; the product page buy box keeps its filter lines above the chips.
+- **Product page.** The Materials checklist has a row per named material (icon, name linking to `/m/<material>`, the parts made of it; a part naming several materials sits under each), then Also named (parts with no material word, such as beeswax polish), Plastic or synthetics, Flagged parts, Stated free of and Not stated.
+- **Not done.** B's proportion bar and C's photo badges; the Quick view and Compare rows still use the text line.

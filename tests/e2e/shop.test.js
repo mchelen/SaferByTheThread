@@ -94,7 +94,15 @@ test('the shop lists the products that meet the default material filters and set
   await page.click('.hidden-note button[data-toggle-all]');
   assert.match(await page.textContent('.toolbar .count'), /212 products/);
   assert.match(page.url(), /all=1/);
-  assert.ok((await page.locator('.card .fit.is-miss').count()) >= 1, 'set-aside products say which filter they miss once shown');
+  assert.ok((await page.locator('.card .mchip.is-flag').count()) >= 1, 'set-aside products show a flagged material chip once shown');
+  assert.equal(await page.locator('.card .fit').count(), 0, 'filter details stay in the chips, not as lines on cards');
+  // A tap on a chip opens what a filter has against it; a tap elsewhere closes it.
+  const flagged = page.locator('.card .mchip.is-flag').first();
+  await flagged.click();
+  assert.equal(await flagged.getAttribute('aria-expanded'), 'true');
+  assert.ok(await flagged.locator('.mtip').isVisible(), 'the chip shows its details');
+  await page.click('h1, .toolbar .count');
+  assert.equal(await flagged.getAttribute('aria-expanded'), 'false');
   assert.deepEqual(page.errors, []);
   await page.close();
 });
