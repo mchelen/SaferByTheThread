@@ -36,7 +36,7 @@ Most of the shop furniture from the big sites is already here after #8, so this 
 
 - **Ratings and reviews, Q&A, "bestseller" and "Amazon's choice" badges, "frequently bought together".** These need real customers and a server, and a ranking badge would be a recommendation, which this guide doesn't make.
 - **Cart, checkout, accounts, price alerts by email.** Nothing is sold here, and alerts would need accounts and a mail service. The weekly price check already keeps prices current.
-- **Several photos per product with thumbnails and zoom on hover.** The catalog stores one photo per listing; the photo already opens enlarged. Worth revisiting if research starts saving more photos.
+- **Several photos per product with thumbnails and zoom on hover.** Done since: #27 saved every store photo, and the 2026-10-26 pass made the gallery swipe (snap scrolling, arrows, counter, thumbnails on every width, a swipeable enlarged view). Hover zoom is still left out: most store photos are around 800 px, so the enlarged view already shows all there is.
 - **Variant swatches (size, colour) on cards.** Listings with several sizes link to the store's own options; the price check reads the named one. Swatches would need per-variant data that isn't collected.
 - **Urgency cues** ("only 3 left", countdowns). Not true for a guide, and against its factual tone.
 - **Infinite scroll.** The grid uses "Show more", which keeps the footer reachable and Back working, and with 122 listings there is little to load.
