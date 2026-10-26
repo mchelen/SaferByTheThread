@@ -80,6 +80,7 @@
     ['linseed', 'linseed(?: oil)?|flaxseed(?: oil)?'], ['beeswax', 'beeswax'],
     ['water-based', 'water-based paint|paint'],
     ['hardwood', '(?:solid )?hardwood|plywood|particle board|fiberboard|veneer|layered wood|engineered wood|wood frame|wood type|maple|pine|beech|walnut|cherry|oak|birch|poplar|ash|solid wood'],
+    ['wood', 'wood(?:en)?'],
     ['plastic', 'plastics?|polypropylene|polycarbonate|polyethylene|pe beans|pla|nylon|viscose|petrochemicals?|synthetics'],
     ['hidden', '(?:seam |hem |tufting )?thread(?: fibre)?|zippers?|glues?|adhesive(?: resin)?|elastic(?:ized)?|closures?|hook-and-loop|velcro'],
     ['toy-safety', 'age rating']

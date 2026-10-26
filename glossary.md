@@ -332,6 +332,22 @@ Sources:
 
 ## Wood and finishes
 
+### Wood
+
+Also called: wooden
+
+**Definition.** The hard fibrous tissue of tree trunks and branches, mostly cellulose, hemicellulose and lignin. Sold as solid wood (sawn from one piece or glued-up solid strips) or as composite panels such as plywood, particleboard and MDF, which bond veneers, particles or fibres with adhesives.
+
+**On this site.** Natural. Listed under Wood whenever a page names wood or a wooden part. Where a page says only “wood”, the kind of wood and whether it is solid wood or plywood/MDF are listed as not stated.
+
+**What the sources say.** The Forest Products Laboratory’s Wood Handbook describes plywood, particleboard and fiberboard as wood elements bonded with adhesives, most often formaldehyde-based resins. In the US, composite wood panels sold in finished goods must meet formaldehyde emission limits under TSCA Title VI; solid wood is not covered by that rule.
+
+Sources:
+
+- [Wood handbook: wood as an engineering material (General Technical Report FPL-GTR-282, 2021)](https://research.fs.usda.gov/treesearch/62200), USDA Forest Service, Forest Products Laboratory (Government agency)
+- [Wood (plant tissue)](https://www.britannica.com/science/wood-plant-tissue), Encyclopaedia Britannica (Reference or medical society)
+- [Formaldehyde emission standards for composite wood products (TSCA Title VI)](https://www.epa.gov/formaldehyde/formaldehyde-emission-standards-composite-wood-products), US Environmental Protection Agency (Government agency)
+
 ### Solid hardwood (beech, maple, walnut and others)
 
 **Definition.** Wood from broad-leaved trees, cut from solid stock rather than plywood or MDF.
