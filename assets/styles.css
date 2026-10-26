@@ -230,7 +230,6 @@ h3 { font-size: 15px; }
 .card-body { padding: 10px 2px 0; display: flex; flex-direction: column; gap: 3px; min-width: 0; overflow-wrap: anywhere; }
 .card .brand { margin: 0; font-size: 11px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
 .card h3 { font-size: 15px; font-weight: 500; line-height: 1.35; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
-.card .mats { margin: 0; color: var(--muted); font-size: 13px; display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical; overflow: hidden; }
 /* Store ratings: stars filled to the value in ink, never in the store-link amber. */
 .rating { margin: 0; display: flex; align-items: center; gap: 5px; font-size: 13px; line-height: 1.2; color: var(--muted); }
 .rating .stars { --pct: calc(var(--rv) / 5 * 100%); font-size: 13px; letter-spacing: 1px; color: transparent;
@@ -255,6 +254,24 @@ h3 { font-size: 15px; }
 .offer .o-price small { display: block; font-size: 12px; font-weight: 400; color: var(--muted); }
 .card .meta { margin: 0; font-size: 12px; color: var(--muted); }
 .card.is-miss .ph { border-color: var(--clay-soft); }
+/* Material chips: an icon and a short name per material, in the checklist colours. Details show on hover or tap. */
+.mchips { position: relative; display: flex; flex-wrap: wrap; gap: 4px; }
+.card .mchips { padding: 6px 2px 0; }
+.mchip { display: inline-flex; align-items: center; gap: 4px; padding: 4px 8px 4px 6px; border-radius: 999px; font: inherit; font-size: 12px; line-height: 1.1; white-space: nowrap; cursor: pointer; background: var(--moss-soft); color: var(--moss); border: 0; }
+.mchip svg { width: 14px; height: 14px; stroke-width: 1.6; flex: none; }
+.mchip.is-flag { background: var(--clay-soft); color: var(--clay); }
+.mchip.is-unk { background: var(--wax-soft); color: var(--wax); }
+.mchip:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.mtip { display: none; position: absolute; left: 0; right: 0; bottom: calc(100% + 6px); z-index: 6; flex-direction: column; gap: 4px; padding: 8px 10px; border-radius: 6px;
+  background: var(--ink); color: var(--bg); font-size: 12.5px; line-height: 1.4; white-space: normal; text-align: left; box-shadow: var(--shadow); overflow-wrap: anywhere; cursor: auto; }
+.mtip .tl b { margin-right: 5px; }
+.mchip.open .mtip, .mchip:focus-visible .mtip { display: flex; }
+@media (hover: hover) { .mchip:hover .mtip { display: flex; } }
+.buybox .mchips { max-width: 420px; }
+.buybox .mchip { font-size: 13px; padding: 5px 10px 5px 7px; }
+.buybox .mchip svg { width: 16px; height: 16px; }
+.check .row-h .ic svg { width: 15px; height: 15px; stroke-width: 1.7; }
+.check .row-h a { color: inherit; }
 .rail-grid { display: grid; grid-template-columns: none; grid-auto-flow: column; grid-auto-columns: calc((100% - 3 * 16px) / 4); gap: 16px; overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: 6px; scrollbar-width: thin; }
 .rail-grid .card { scroll-snap-align: start; }
 
@@ -622,7 +639,6 @@ body.tray-on .toast { bottom: 88px; }
   .grid, .grid.cols-3 { grid-template-columns: repeat(2, 1fr); gap: 20px 12px; }
   .rail-grid { grid-template-columns: none; grid-auto-columns: calc((100% - 12px) / 2); gap: 12px; }
   .card h3 { font-size: 14px; }
-  .card .mats { display: none; }
   .qv-btn { display: none; }
   .tiles, .explain { grid-template-columns: 1fr 1fr; gap: 10px; }
   .ttiles.sm .ttile { width: 76px; }

@@ -143,3 +143,12 @@ test('shipping cost reads free, flat, free-over-a-minimum and checkout statement
   assert.equal(S.shipCost({ price: '$39.50, free US shipping', usd: 39.5 }), 0);
   assert.equal(S.shipCost({ price: '$30 plus $8 shipping', usd: 30 }), 8);
 });
+
+test('each part carries the materials it names, for the material chips', () => {
+  const C = S.build(require('../../data.json'));
+  const tejo = C.items.find(i => i.id === 'wildling-tejo-toddler');
+  assert.deepEqual(tejo.usesMats, [['cotton'], ['wool']]);
+  assert.ok(tejo.outMats.every(ms => ms.includes('synthetic')), 'the membrane and the synthetic rubber sole are synthetic parts');
+  const mat = C.items.find(i => i.id === 'home-of-wool-organic-baby-play-mat');
+  assert.deepEqual(mat.usesMats[3].slice().sort(), ['cotton', 'linen', 'wool'], 'a part naming three materials counts under each');
+});
