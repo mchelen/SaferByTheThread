@@ -295,7 +295,7 @@ test('scrolling the similar items sideways keeps the label column on top of phot
 test('a product with many photos keeps the page and the quick view inside a phone screen', async () => {
   const page = await open('/p/beaba-universal-warm-sleeping-bag', { width: 390, height: 800 });
   await page.waitForSelector('.gallery .thumbs');
-  assert.ok((await page.locator('.gallery .thumb').count()) >= 8, 'many thumbnails');
+  assert.ok((await page.locator('.gallery .g-slide').count()) >= 8, 'many photos');
   assert.equal(await page.evaluate(() => document.documentElement.scrollWidth), 390, 'no sideways scroll on the product page');
   await page.setViewportSize({ width: 1280, height: 900 });
   await page.goto(base + '/search?q=beaba', { waitUntil: 'networkidle' });
@@ -308,6 +308,59 @@ test('a product with many photos keeps the page and the quick view inside a phon
   });
   assert.ok(qv.scroll <= qv.client + 1, 'quick view does not scroll sideways');
   assert.ok(qv.text >= 380, 'the thumbnail strip does not squeeze the text column: ' + qv.text);
+  assert.deepEqual(page.errors, []);
+  await page.close();
+});
+
+test('product photos swipe: arrows, thumbnails and the enlarged view all move through them', async () => {
+  const page = await open('/p/beaba-universal-warm-sleeping-bag', { width: 1280, height: 900 });
+  await page.waitForSelector('.gallery .g-track');
+  const n = await page.locator('.gallery .g-slide').count();
+  assert.match(await page.textContent('.gallery .g-count'), new RegExp('^1 / ' + n + '$'));
+  assert.ok(await page.locator('.gallery .g-arrow.prev').isDisabled(), 'no previous photo on the first');
+  await page.hover('.gallery .g-frame');
+  await page.click('.gallery .g-arrow.next');
+  await page.waitForFunction(() => document.querySelector('.gallery .g-count').textContent.startsWith('2 /'));
+  assert.equal(await page.getAttribute('.gallery .thumb:nth-child(2)', 'aria-pressed'), 'true');
+  await page.click('.gallery .thumb:nth-child(4)');
+  await page.waitForFunction(() => document.querySelector('.gallery .g-count').textContent.startsWith('4 /'));
+  await page.click('.gallery .g-slide:nth-child(4)');
+  await page.waitForSelector('.lightbox .g-track');
+  assert.match(await page.textContent('.lightbox .g-count'), /^4 \//, 'the enlarged view opens on the same photo');
+  await page.keyboard.press('ArrowRight');
+  await page.waitForFunction(() => document.querySelector('.lightbox .g-count').textContent.startsWith('5 /'));
+  await page.keyboard.press('Escape');
+  assert.equal(await page.locator('.lightbox').count(), 0);
+  // A swipe on a phone moves one photo and the counter and thumbnails follow.
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.reload({ waitUntil: 'networkidle' });
+  await page.waitForSelector('.gallery .thumbs');
+  await page.evaluate(() => { const t = document.querySelector('.gallery .g-track'); t.scrollTo({ left: t.clientWidth }); });
+  await page.waitForFunction(() => document.querySelector('.gallery .g-count').textContent.startsWith('2 /'));
+  assert.equal(await page.getAttribute('.gallery .thumb:nth-child(2)', 'aria-pressed'), 'true');
+  assert.deepEqual(page.errors, []);
+  await page.close();
+});
+
+test('every Buy button has Save and Share beside it, and Share copies this site\'s product page link', async () => {
+  const page = await open('/shop', { width: 1280, height: 900 });
+  await page.context().grantPermissions(['clipboard-read', 'clipboard-write'], { origin: base });
+  await page.waitForSelector('.card');
+  const card = page.locator('.card').first(), id = await card.getAttribute('data-id');
+  assert.equal(await card.locator('[data-save]').count(), 1);
+  await card.locator('.share-btn').click();
+  assert.equal(await page.evaluate(() => navigator.clipboard.readText()), base + '/p/' + id);
+  await page.goto(base + '/p/' + id, { waitUntil: 'networkidle' });
+  await page.waitForSelector('.buybox');
+  assert.equal(await page.locator('.buy-actions [data-share]').count(), 1);
+  assert.ok((await page.locator('.similar .cmp-acts [data-save]').count()) >= 2, 'similar items table');
+  assert.ok((await page.locator('.similar .cmp-acts [data-share]').count()) >= 2);
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.evaluate(() => window.scrollTo(0, document.querySelector('#materials').offsetTop));
+  await page.waitForSelector('#buybar:not([hidden])');
+  assert.equal(await page.locator('#buybar [data-save]').count(), 1);
+  assert.equal(await page.locator('#buybar [data-share]').count(), 1);
+  assert.equal(await page.evaluate(() => document.documentElement.scrollWidth), 390, 'the buy bar fits a phone');
   assert.deepEqual(page.errors, []);
   await page.close();
 });
