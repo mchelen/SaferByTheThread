@@ -1440,6 +1440,8 @@
   });
   var toTop = document.getElementById('totop');
   window.addEventListener('scroll', function () { toTop.hidden = window.scrollY < 800; }, { passive: true });
+  // A compare table scrolled sideways shows an edge on its fixed label column (scroll does not bubble, so listen while capturing).
+  document.addEventListener('scroll', function (ev) { var t = ev.target; if (t.classList && t.classList.contains('cmp')) t.classList.toggle('scrolled', t.scrollLeft > 0); }, { capture: true, passive: true });
   window.addEventListener('popstate', function () { if (lastUrl !== null) scrollMem[lastUrl] = window.scrollY; route(); });
 
   // ---------- glossary popover ----------
