@@ -398,3 +398,56 @@ test('the Materials tree: checked is included, unchecked is left out, parents fo
   assert.deepEqual(page.errors, []);
   await page.close();
 });
+
+test('materials are a way in: home tiles, a material page with its kinds, the menu and the index', async () => {
+  const page = await open('/');
+  await page.waitForSelector('.mat-row .ttile');
+  assert.ok((await page.locator('.mat-row .ttile').count()) >= 8, 'a picture tile per material');
+  const pics = await page.locator('.mat-row .ttile img').evaluateAll(l => l.map(i => i.getAttribute('src')));
+  assert.equal(new Set(pics).size, pics.length, 'no photo shown twice in the row');
+  await page.click('.mat-row .ttile[href$="/m/wood"]');
+  await page.waitForSelector('.card');
+  assert.equal(await page.textContent('h1'), 'Wood');
+  assert.equal(await page.getAttribute('.kind[data-kind="crit:wood"]', 'aria-pressed'), 'true', 'solid wood starts ticked, as its filter does');
+  const solid = await count(page);
+  await page.click('.kind[data-kind="*"]');
+  assert.equal(await page.getAttribute('.kind[data-kind="*"]', 'aria-pressed'), 'true');
+  assert.match(page.url(), /\/m\/wood\?m=/);
+  assert.ok((await count(page)) >= solid, 'all wood shows at least as many');
+  await page.click('.kind[data-kind="std:fsc"]');
+  assert.match(page.url(), /std=fsc/);
+  const types = await page.locator('.sibling-types .ttile').evaluateAll(l => l.map(a => a.getAttribute('href')));
+  assert.ok(types.length > 1 && types.every(h => /^\/m\/wood\?cat=/.test(h)), 'type tiles stay on the material page');
+  await page.goto(base + '/m/fibres', { waitUntil: 'networkidle' });
+  await page.waitForSelector('.card');
+  assert.ok((await page.locator('.kinds a.kind').count()) >= 4, 'a family opens into its members');
+  await page.goto(base + '/m', { waitUntil: 'networkidle' });
+  await page.waitForSelector('.mat-tiles .tile');
+  assert.ok((await page.locator('.mat-tiles .tile').count()) >= 8);
+  await page.hover('#cats .cat-item[data-dept="materials"] .cat-a');
+  await page.waitForSelector('#cats .cat-item.open .mega a[href$="/m/wood"]');
+  assert.deepEqual(page.errors, []);
+  await page.close();
+});
+
+test('the header Filters button opens every filter from any page, at desktop and phone width', async () => {
+  for (const viewport of [{ width: 1280, height: 900 }, { width: 390, height: 844 }]) {
+    const page = await open('/about', viewport);
+    await page.waitForSelector('.prose');
+    await page.click('#nav-filters');
+    await page.waitForSelector('body.drawer-on #rail');
+    assert.equal(new URL(page.url()).pathname, '/shop');
+    assert.equal(await page.locator('#rail .fgroup[data-group="mat"]').isVisible(), true, 'material filters are in it');
+    await page.check('#f-age-3-5y');
+    assert.doesNotMatch(page.url(), /age=/, 'changes wait for Show results');
+    await page.click('[data-drawer-apply]');
+    assert.match(page.url(), /age=3-5y/);
+    assert.equal(await page.textContent('#filters-n'), '1');
+    await page.click('#nav-filters');
+    await page.waitForSelector('body.drawer-on #rail');
+    await page.keyboard.press('Escape');
+    assert.equal(await page.evaluate(() => document.body.classList.contains('drawer-on')), false);
+    assert.deepEqual(page.errors, []);
+    await page.close();
+  }
+});

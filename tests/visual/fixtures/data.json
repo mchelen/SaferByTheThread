@@ -85,6 +85,7 @@
    "default": true,
    "term": "hardwood",
    "under": "wood",
+   "keeps": "Solid wood",
    "sub": "Plywood, MDF or veneer",
    "group": "treat"
   },
@@ -97,6 +98,7 @@
    "default": true,
    "term": "superwash",
    "under": "wool",
+   "keeps": "Untreated wool",
    "sub": "Superwash or shrink-proofed wool",
    "group": "treat"
   },
@@ -109,6 +111,7 @@
    "default": true,
    "term": "plasticisers",
    "under": "latex",
+   "keeps": "Without plasticisers",
    "sub": "Plasticisers or synthetic rubber",
    "group": "treat"
   },
@@ -143,6 +146,7 @@
    "default": true,
    "term": "lfgb",
    "under": "silicone",
+   "keeps": "Tested to LFGB or Arrêté",
    "sub": "Not stated as tested to LFGB or the French Arrêté",
    "group": "tested"
   },
@@ -175,6 +179,7 @@
    "default": false,
    "term": "chrome",
    "under": "leather",
+   "keeps": "Vegetable or chrome-free tanned",
    "sub": "Tanning not stated as vegetable or chrome-free",
    "group": "tested"
   }

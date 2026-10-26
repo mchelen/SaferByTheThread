@@ -149,3 +149,16 @@ test('glossary page', async ({ page }) => {
   await open(page, '/glossary/superwash', '#t-superwash.hl');
   await expect(page).toHaveScreenshot('glossary.png');
 });
+
+test('material page with its kinds', async ({ page }) => {
+  await open(page, '/m/wood', '.card');
+  await expect(page).toHaveScreenshot('material-wood.png');
+});
+
+test('header Filters button opens the filters from any page', async ({ page }) => {
+  await open(page, '/about', '.prose');
+  await page.click('#nav-filters');
+  await page.waitForSelector('body.drawer-on #rail');
+  await settle(page);
+  await expect(page).toHaveScreenshot('filters-from-header.png');
+});
