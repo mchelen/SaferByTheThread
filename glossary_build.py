@@ -38,6 +38,9 @@ AAAAI = S("Latex Allergy", "American Academy of Allergy, Asthma & Immunology", "
 ACAAI = S("Latex Allergy", "American College of Allergy, Asthma and Immunology", "reference", "https://acaai.org/allergies/allergic-conditions/latex-allergy/")
 LATEX_REV = S("Wu M, McIntosh J, Liu J. Current prevalence rate of latex allergy: Why it remains a problem? Journal of Occupational Health 58(2), 2016", "PubMed Central (peer-reviewed)", "paper", "https://pmc.ncbi.nlm.nih.gov/articles/PMC5356959")
 FAIR_RUBBER = S("Fair Rubber: make the world a better place", "Fair Rubber Association", "standard", "https://www.fairrubber.org/")
+WOOD_HANDBOOK = S("Wood handbook: wood as an engineering material (General Technical Report FPL-GTR-282, 2021)", "USDA Forest Service, Forest Products Laboratory", "regulator", "https://research.fs.usda.gov/treesearch/62200")
+BRIT_WOOD = S("Wood (plant tissue)", "Encyclopaedia Britannica", "reference", "https://www.britannica.com/science/wood-plant-tissue")
+EPA_TSCA6 = S("Formaldehyde emission standards for composite wood products (TSCA Title VI)", "US Environmental Protection Agency", "regulator", "https://www.epa.gov/formaldehyde/formaldehyde-emission-standards-composite-wood-products")
 FSC_LABELS = S("FSC labels", "Forest Stewardship Council", "standard", "https://fsc.org/en/fsc-labels")
 NITRO_DIR = S("Commission Directive 93/11/EEC on N-nitrosamines released from elastomer or rubber teats and soothers", "EUR-Lex, European Union", "regulation", "https://eur-lex.europa.eu/eli/dir/1993/11/oj")
 EN7112 = S("EN 71-12: Safety of toys, Part 12: N-Nitrosamines and N-nitrosatable substances", "DIN (German Institute for Standardization)", "standard", "https://www.din.de/en/wdc-beuth:din21:256229607")
@@ -228,6 +231,11 @@ sections = [
     [FIBER], aka=["small parts"]),
  ]},
  {"id": "wood", "title": "Wood and finishes", "terms": [
+  T("wood", "Wood",
+    "The hard fibrous tissue of tree trunks and branches, mostly cellulose, hemicellulose and lignin. Sold as solid wood (sawn from one piece or glued-up solid strips) or as composite panels such as plywood, particleboard and MDF, which bond veneers, particles or fibres with adhesives.",
+    "Natural. Listed under Wood whenever a page names wood or a wooden part. Where a page says only “wood”, the kind of wood and whether it is solid wood or plywood/MDF are listed as not stated.",
+    "The Forest Products Laboratory’s Wood Handbook describes plywood, particleboard and fiberboard as wood elements bonded with adhesives, most often formaldehyde-based resins. In the US, composite wood panels sold in finished goods must meet formaldehyde emission limits under TSCA Title VI; solid wood is not covered by that rule.",
+    [WOOD_HANDBOOK, BRIT_WOOD, EPA_TSCA6], aka=["wooden"]),
   T("hardwood", "Solid hardwood (beech, maple, walnut and others)",
     "Wood from broad-leaved trees, cut from solid stock rather than plywood or MDF.",
     "Natural. Most wooden toys here are maple or beech.",
