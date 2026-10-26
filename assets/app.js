@@ -319,7 +319,7 @@
   function setNav(kind, key) {
     $$('#cats .cat-a').forEach(function (a) {
       var d = a.getAttribute('data-nav');
-      var on = d === kind || (kind === 'dept' && d === 'd:' + key) || (kind === 'cat' && C.cats[key] && d === 'd:' + C.cats[key].group) || (kind === 'product' && d === 'd:' + key) || ((kind === 'mat' || kind === 'materials') && d === 'materials');
+      var on = d === kind || (kind === 'dept' && d === 'd:' + key) || (kind === 'cat' && C.cats[key] && d === 'd:' + C.cats[key].group) || (kind === 'product' && d === 'd:' + key) || ((kind === 'mat' || kind === 'materials') && d === 'materials') || (['brands', 'glossary', 'about'].indexOf(kind) >= 0 && d === 'more');
       a.classList.toggle('on', !!on);
       if (on) a.setAttribute('aria-current', 'page'); else a.removeAttribute('aria-current');
     });
@@ -1036,6 +1036,8 @@
 
   // ---------- phone filter drawer (changes wait for Apply) ----------
   function isPhone() { return window.matchMedia('(max-width: 900px)').matches; }
+  // Below 1280 px the department bar doesn't fit on one line, so it moves into the menu button, as on phones.
+  function menuMode() { return window.matchMedia('(max-width: 1279px)').matches; }
   function openDrawer(focus) {
     var rail = $('#rail'); if (!rail) return;
     document.body.classList.add('drawer-on', 'no-scroll');
@@ -1075,9 +1077,9 @@
     h += '<div class="cat-item" data-dept="materials"><button type="button" class="cat-a" data-nav="materials" aria-expanded="false" aria-haspopup="true">Materials' + icon('chev') + '</button>' +
       '<div class="mega"><p>Materials</p>' + matTiles(liveMats(), 'mega-tiles') + '<a class="mega-all" href="' + U('/m') + '">All materials →</a></div></div>';
     h += '<span class="spacer"></span>';
-    h += '<div class="cat-item"><a class="cat-a quiet" href="' + U('/brands') + '" data-nav="brands">Brands</a></div>' +
-      '<div class="cat-item"><a class="cat-a quiet" href="' + U('/glossary') + '" data-nav="glossary">Glossary</a></div>' +
-      '<div class="cat-item"><a class="cat-a quiet" href="' + U('/about') + '" data-nav="about">About</a></div>';
+    // Brands, Glossary and About share one "More" menu so the bar stays on one line.
+    h += '<div class="cat-item" data-dept="more"><button type="button" class="cat-a quiet" data-nav="more" aria-expanded="false" aria-haspopup="true">More' + icon('chev') + '</button>' +
+      '<div class="mega mega-links"><a href="' + U('/brands') + '">Brands</a><a href="' + U('/glossary') + '">Materials glossary</a><a href="' + U('/about') + '">How this guide works</a></div></div>';
     $('#cats').innerHTML = h;
     $('#foot-shop').innerHTML = '<li><a href="' + U('/shop') + '">All products</a></li>' + C.groups.map(function (g) { return '<li><a href="' + U('/a/' + g.id) + '">' + esc(g.title) + '</a></li>'; }).join('') + '<li><a href="' + U('/m') + '">Materials</a></li>';
     $('#foot-brands').innerHTML = brandList().sort(function (a, b) { return b.items.length - a.items.length; }).slice(0, 6).map(function (b) { return '<li><a href="' + U('/b/' + b.id) + '">' + esc(b.name) + '</a></li>'; }).join('') + '<li><a href="' + U('/brands') + '">All brands →</a></li>';
@@ -1090,13 +1092,13 @@
   function closeMenu(focus) { var m = $('#menu'); if (!m.classList.contains('open')) return; m.classList.remove('open'); $('#menu-open').setAttribute('aria-expanded', 'false'); $('.menu-x').hidden = true; document.body.classList.remove('no-scroll'); closeMegas(); if (focus) $('#menu-open').focus(); }
   var hoverT = null;
   document.addEventListener('mouseover', function (ev) {
-    if (isPhone()) return;
+    if (menuMode()) return;
     var item = ev.target.closest && ev.target.closest('#cats .cat-item[data-dept]');
     clearTimeout(hoverT);
     if (item) { closeMegas(item); item.classList.add('open'); $('.cat-a', item).setAttribute('aria-expanded', 'true'); }
     else if (!ev.target.closest('#cats')) hoverT = setTimeout(closeMegas, 200);
   });
-  document.addEventListener('mouseleave', function () { if (!isPhone()) hoverT = setTimeout(closeMegas, 200); }, true);
+  document.addEventListener('mouseleave', function () { if (!menuMode()) hoverT = setTimeout(closeMegas, 200); }, true);
 
   var sugg = document.getElementById('sugg'), qInput = document.getElementById('q'), suggT = null;
   function suggestions(q) {

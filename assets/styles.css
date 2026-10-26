@@ -124,6 +124,26 @@ h3 { font-size: 15px; }
 .cats-in .cat-a svg { width: 16px; height: 16px; }
 .cats-in .spacer { flex: 1; }
 .cats-in .cat-a.quiet { color: var(--muted); font-weight: 500; }
+.cats-in a.cat-a, .cats-in button.cat-a { white-space: nowrap; padding: 0 7px; }
+.cats-in { gap: 2px; }
+.cat-item[data-dept="more"] .mega { left: auto; right: 0; min-width: 220px; padding: 8px 16px; }
+.mega-links a { display: block; padding: 9px 0; color: var(--ink); text-decoration: none; }
+.mega-links a:hover { text-decoration: underline; }
+/* Below 1280 px the department bar would wrap, so it opens from the menu button as on phones. */
+@media (max-width: 1279px) {
+  .hdr-in { grid-template-columns: auto auto minmax(0, 1fr) auto; gap: 16px; }
+  .hdr-menu { display: inline-grid; }
+  .cats { display: none; }
+  .cats.open { display: block; position: fixed; z-index: 70; inset: 0; overflow: auto; border: 0; padding-bottom: 24px; }
+  .cats.open .cats-in { flex-direction: column; height: auto; gap: 0; padding-top: 8px; max-width: 720px; }
+  .cats.open .cat-item { flex-direction: column; }
+  .cats.open .cat-a { padding: 14px 4px; border-bottom: 1px solid var(--line) !important; width: 100%; justify-content: space-between; font-size: 17px; }
+  .cats.open .mega { position: static; display: none; box-shadow: none; border: 0; padding: 4px 4px 14px; min-width: 0; }
+  .cats.open .cat-item.open .mega { display: block; }
+  .cats.open .ttiles.mega-tiles { margin: 0; padding: 4px 0 8px; }
+  .cats.open .menu-x { display: flex; justify-content: flex-end; padding: 8px 0 0; }
+  .cats.open .spacer { display: none; }
+}
 .mega { position: absolute; top: 100%; left: 0; z-index: 45; min-width: 280px; background: var(--bg); border: 1px solid var(--line); border-radius: 0 0 var(--r) var(--r); box-shadow: var(--shadow-lg); padding: 14px 16px 16px; display: none; }
 .cat-item.open .mega { display: block; }
 .mega p { margin: 0 0 8px; font-size: 12px; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
