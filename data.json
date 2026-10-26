@@ -1032,12 +1032,12 @@
      "store": "Home of Wool",
      "price": "from £207.50 (about $270), free US shipping",
      "ships_from": "UK",
-     "price_checked": "2026-10-18",
+     "price_checked": "2026-10-26",
      "rating": {
       "value": 5,
       "count": 7,
       "via": "json-ld",
-      "checked": "2026-10-20"
+      "checked": "2026-10-26"
      }
     }
    ],
@@ -1243,12 +1243,12 @@
      "price": "$185; $140.99 on sale at Babylist",
      "ships_from": "US",
      "shipping": "Free shipping on orders over $200, $200 below",
-     "price_checked": "2026-10-18",
+     "price_checked": "2026-10-26",
      "rating": {
       "value": 4.9,
       "count": 1020,
       "via": "json-ld",
-      "checked": "2026-10-20"
+      "checked": "2026-10-26"
      }
     }
    ],
@@ -1339,7 +1339,7 @@
      "store": "Kodo Kids",
      "price": "$105",
      "ships_from": "US",
-     "price_checked": "2026-10-18"
+     "price_checked": "2026-10-26"
     }
    ],
    "img": "mat_kodo",
@@ -1547,12 +1547,12 @@
      "store": "Lovevery",
      "price": "$150",
      "ships_from": "US",
-     "price_checked": "2026-10-18",
+     "price_checked": "2026-10-26",
      "rating": {
       "value": 4.95,
       "count": 2699,
       "via": "yotpo",
-      "checked": "2026-10-20"
+      "checked": "2026-10-26"
      }
     }
    ],
@@ -1802,7 +1802,7 @@
      "store": "Acorn Toy Shop",
      "price": "$34",
      "ships_from": "US",
-     "price_checked": "2026-10-18"
+     "price_checked": "2026-10-26"
     },
     {
      "name": "Wooden Picture Book",
@@ -1811,7 +1811,7 @@
      "price": "$24 to $27.50",
      "ships_from": "US",
      "shipping": "Free shipping on orders over $125",
-     "price_checked": "2026-10-18"
+     "price_checked": "2026-10-26"
     }
    ],
    "img": "book_fischer",
@@ -1879,13 +1879,13 @@
      "store": "Pacifier",
      "price": "$22",
      "ships_from": "US",
-     "shipping": "Free shipping on orders over $100",
-     "price_checked": "2026-10-18",
+     "shipping": "$5.95 shipping",
+     "price_checked": "2026-10-26",
      "rating": {
       "value": 4.83,
-      "count": 902,
+      "count": 905,
       "via": "judge.me",
-      "checked": "2026-10-20"
+      "checked": "2026-10-26"
      }
     },
     {
@@ -1894,13 +1894,13 @@
      "store": "Pacifier",
      "price": "$22",
      "ships_from": "US",
-     "shipping": "Free shipping on orders over $100",
-     "price_checked": "2026-10-18",
+     "shipping": "$5.95 shipping",
+     "price_checked": "2026-10-26",
      "rating": {
       "value": 4.83,
-      "count": 902,
+      "count": 905,
       "via": "judge.me",
-      "checked": "2026-10-20"
+      "checked": "2026-10-26"
      }
     }
    ],
@@ -2013,7 +2013,7 @@
      "price": "$29.95",
      "ships_from": "US",
      "shipping": "Free shipping on orders over $50",
-     "price_checked": "2026-10-18"
+     "price_checked": "2026-10-26"
     },
     {
      "name": "Shape Sorter Bench",
@@ -2074,7 +2074,7 @@
      "price": "$34.99",
      "ships_from": "US",
      "shipping": "Free shipping on orders over $50",
-     "price_checked": "2026-10-18"
+     "price_checked": "2026-10-26"
     }
    ],
    "img": "stack_bannor",
@@ -2140,7 +2140,7 @@
      "price": "$39.99",
      "ships_from": "US",
      "shipping": "Free shipping",
-     "price_checked": "2026-10-18"
+     "price_checked": "2026-10-26"
     }
    ],
    "img": "stack_camden",
@@ -2197,7 +2197,7 @@
      "price": "$46",
      "ships_from": "US",
      "shipping": "Free shipping on orders over $125",
-     "price_checked": "2026-10-18"
+     "price_checked": "2026-10-26"
     },
     {
      "name": "Natural Pyramid Stacker",
@@ -2206,7 +2206,7 @@
      "price": "$52",
      "ships_from": "US",
      "shipping": "Free shipping on orders over $75",
-     "price_checked": "2026-10-18"
+     "price_checked": "2026-10-26"
     },
     {
      "name": "Natural Shape Sorter Box",
@@ -2264,12 +2264,12 @@
      "store": "MacroBaby",
      "price": "$8.99",
      "ships_from": "US",
-     "price_checked": "2026-10-18",
+     "price_checked": "2026-10-26",
      "rating": {
       "value": 5,
       "count": 40,
       "via": "json-ld",
-      "checked": "2026-10-20"
+      "checked": "2026-10-26"
      }
     }
    ],
@@ -2387,7 +2387,7 @@
      "price": "$41.95",
      "ships_from": "US",
      "shipping": "Free shipping on orders over $50",
-     "price_checked": "2026-10-18"
+     "price_checked": "2026-10-26"
     },
     {
      "name": "Apprentice Blocks (41 pcs)",
@@ -2471,7 +2471,7 @@
      "price": "$56",
      "ships_from": "US",
      "shipping": "Free shipping",
-     "price_checked": "2026-10-18"
+     "price_checked": "2026-10-26"
     }
    ],
    "img": "blocks_camden",
@@ -2527,7 +2527,7 @@
      "price": "$34.99",
      "ships_from": "US",
      "shipping": "Free shipping on orders over $50",
-     "price_checked": "2026-10-18"
+     "price_checked": "2026-10-26"
     },
     {
      "name": "Bunny Push Toy (cherry)",
@@ -2536,7 +2536,7 @@
      "price": "$34.99",
      "ships_from": "US",
      "shipping": "Free shipping on orders over $50",
-     "price_checked": "2026-10-18"
+     "price_checked": "2026-10-26"
     }
    ],
    "img": "push_giraffe",
@@ -2660,7 +2660,7 @@
      "price": "$84.99",
      "ships_from": "US",
      "shipping": "Shipping calculated at checkout",
-     "price_checked": "2026-10-18"
+     "price_checked": "2026-10-26"
     }
    ],
    "img": "pull_wagon",
@@ -2714,13 +2714,14 @@
      "store": "Smiling Tree Toys",
      "price": "$19",
      "ships_from": "US",
-     "price_checked": "2026-10-18",
+     "price_checked": "2026-10-26",
      "rating": {
       "value": 4.98,
       "count": 355,
       "via": "json-ld",
-      "checked": "2026-10-20"
-     }
+      "checked": "2026-10-26"
+     },
+     "shipping": "Free shipping"
     }
    ],
    "img": "car_truck",
@@ -2849,7 +2850,7 @@
      "price": "$28",
      "ships_from": "US",
      "shipping": "Free shipping on orders over $50",
-     "price_checked": "2026-10-18"
+     "price_checked": "2026-10-26"
     }
    ],
    "img": "car_green",
@@ -2968,7 +2969,7 @@
      "price": "$14.95",
      "ships_from": "US",
      "shipping": "Free shipping on orders over $50",
-     "price_checked": "2026-10-18"
+     "price_checked": "2026-10-26"
     },
     {
      "name": "Unfinished Bell Rattle",
@@ -2978,7 +2979,7 @@
      "note": "Bell is metal",
      "ships_from": "US",
      "shipping": "Free shipping on orders over $50",
-     "price_checked": "2026-10-18"
+     "price_checked": "2026-10-26"
     }
    ],
    "img": "shake_bead",
@@ -3025,12 +3026,12 @@
      "price": "$18",
      "ships_from": "US",
      "shipping": "Free shipping on orders over $99",
-     "price_checked": "2026-10-18",
+     "price_checked": "2026-10-26",
      "rating": {
       "value": 5,
       "count": 1,
       "via": "json-ld",
-      "checked": "2026-10-20"
+      "checked": "2026-10-26"
      }
     }
    ],
@@ -3091,12 +3092,12 @@
      "price": "$79",
      "ships_from": "US",
      "shipping": "Free shipping on orders over $99",
-     "price_checked": "2026-10-18",
+     "price_checked": "2026-10-26",
      "rating": {
       "value": 4.8,
       "count": 29,
       "via": "json-ld",
-      "checked": "2026-10-20"
+      "checked": "2026-10-26"
      }
     },
     {
@@ -3106,12 +3107,12 @@
      "price": "$29.99",
      "ships_from": "US",
      "shipping": "Free shipping on orders over $99",
-     "price_checked": "2026-10-18",
+     "price_checked": "2026-10-26",
      "rating": {
       "value": 5,
       "count": 162,
       "via": "json-ld",
-      "checked": "2026-10-20"
+      "checked": "2026-10-26"
      }
     },
     {
@@ -3121,12 +3122,12 @@
      "price": "$32.99",
      "ships_from": "US",
      "shipping": "Free shipping on orders over $99",
-     "price_checked": "2026-10-18",
+     "price_checked": "2026-10-26",
      "rating": {
       "value": 5,
       "count": 44,
       "via": "json-ld",
-      "checked": "2026-10-20"
+      "checked": "2026-10-26"
      }
     }
    ],
@@ -3205,7 +3206,7 @@
      "store": "Sarah’s Silks",
      "price": "$58",
      "ships_from": "US",
-     "price_checked": "2026-10-18"
+     "price_checked": "2026-10-26"
     }
    ],
    "img": "doll_sarah",
@@ -3265,12 +3266,12 @@
      "price": "$87",
      "ships_from": "US",
      "shipping": "Free shipping on orders over $99",
-     "price_checked": "2026-10-18",
+     "price_checked": "2026-10-26",
      "rating": {
       "value": 4.8,
       "count": 20,
       "via": "json-ld",
-      "checked": "2026-10-20"
+      "checked": "2026-10-26"
      }
     },
     {
@@ -3280,12 +3281,12 @@
      "price": "$87",
      "ships_from": "US",
      "shipping": "Free shipping on orders over $99",
-     "price_checked": "2026-10-18",
+     "price_checked": "2026-10-26",
      "rating": {
       "value": 4.8,
       "count": 34,
       "via": "json-ld",
-      "checked": "2026-10-20"
+      "checked": "2026-10-26"
      }
     }
    ],
@@ -3340,12 +3341,12 @@
      "price": "$50",
      "ships_from": "US",
      "shipping": "Free shipping on orders over $99",
-     "price_checked": "2026-10-18",
+     "price_checked": "2026-10-26",
      "rating": {
       "value": 5,
       "count": 25,
       "via": "json-ld",
-      "checked": "2026-10-20"
+      "checked": "2026-10-26"
      }
     }
    ],
@@ -3406,12 +3407,12 @@
      "price": "$17.90",
      "ships_from": "US",
      "shipping": "Free shipping on orders over $99",
-     "price_checked": "2026-10-18",
+     "price_checked": "2026-10-26",
      "rating": {
       "value": 4.7,
       "count": 10,
       "via": "json-ld",
-      "checked": "2026-10-20"
+      "checked": "2026-10-26"
      }
     }
    ],
@@ -3465,7 +3466,7 @@
      "price": "$37",
      "ships_from": null,
      "shipping": "Shipping calculated at checkout",
-     "price_checked": "2026-10-18"
+     "price_checked": "2026-10-26"
     }
    ],
    "img_src": "https://cdn.shopify.com/s/files/1/0618/4035/9481/files/u0tibaf57llv7kg1doqh.png?v=1778109800",
@@ -3519,7 +3520,7 @@
      "price": "$36",
      "ships_from": "US",
      "shipping": "Free shipping on orders over $50",
-     "price_checked": "2026-10-18"
+     "price_checked": "2026-10-26"
     }
    ],
    "img_src": "https://cdn.shopify.com/s/files/1/1643/4857/files/infant-unisex-organic-cotton-large-crododile-plush-toy.natural.flat_front.2.jpg?v=1750284581",
@@ -3571,7 +3572,7 @@
      "store": "Kodo Kids",
      "price": "$40",
      "ships_from": "US",
-     "price_checked": "2026-10-18"
+     "price_checked": "2026-10-26"
     }
    ],
    "img": "ball_kodo",
@@ -3631,7 +3632,7 @@
      "store": "Enlightened Baby",
      "price": "$24.99",
      "ships_from": "US",
-     "price_checked": "2026-10-18"
+     "price_checked": "2026-10-26"
     }
    ],
    "img": "ball_hevea",
@@ -3682,7 +3683,7 @@
      "price": "$65.99",
      "ships_from": "US",
      "shipping": "Free shipping on orders over $99",
-     "price_checked": "2026-10-18"
+     "price_checked": "2026-10-26"
     }
    ],
    "img": "ball_miniland",
@@ -3736,13 +3737,13 @@
      "store": "Pacifier",
      "price": "$21.99",
      "ships_from": "US",
-     "shipping": "Free shipping on orders over $100",
-     "price_checked": "2026-10-18",
+     "shipping": "$5.95 shipping",
+     "price_checked": "2026-10-26",
      "rating": {
       "value": 4,
       "count": 4,
       "via": "judge.me",
-      "checked": "2026-10-20"
+      "checked": "2026-10-26"
      }
     }
    ],
@@ -3806,12 +3807,12 @@
      "price": "$21",
      "ships_from": "US",
      "shipping": "Shipping calculated at checkout",
-     "price_checked": "2026-10-18",
+     "price_checked": "2026-10-26",
      "rating": {
       "value": 5,
       "count": 3,
       "via": "judge.me",
-      "checked": "2026-10-20"
+      "checked": "2026-10-26"
      }
     }
    ],
@@ -3914,12 +3915,12 @@
      "store": "Kids2",
      "price": "$4.99",
      "ships_from": "US",
-     "price_checked": "2026-10-18",
+     "price_checked": "2026-10-26",
      "rating": {
       "value": 4.93,
       "count": 54,
       "via": "yotpo",
-      "checked": "2026-10-20"
+      "checked": "2026-10-26"
      }
     }
    ],
@@ -4047,7 +4048,7 @@
      "store": "Hevea US",
      "price": "$29.95",
      "ships_from": "US",
-     "price_checked": "2026-10-18"
+     "price_checked": "2026-10-26"
     },
     {
      "name": "Duck and Frog Squeeze Set",
@@ -4122,12 +4123,12 @@
      "note": "Dyed",
      "ships_from": "US",
      "shipping": "Free shipping on orders over $99",
-     "price_checked": "2026-10-18",
+     "price_checked": "2026-10-26",
      "rating": {
       "value": 5,
       "count": 223,
       "via": "json-ld",
-      "checked": "2026-10-20"
+      "checked": "2026-10-26"
      }
     }
    ],
@@ -4213,7 +4214,7 @@
      "store": "Grove",
      "price": "$15.19",
      "ships_from": "US",
-     "price_checked": "2026-10-18"
+     "price_checked": "2026-10-26"
     }
    ],
    "img": "silk_map",
@@ -4315,13 +4316,13 @@
      "store": "My Toy Wagon",
      "price": "$84, pre-order",
      "ships_from": "US",
-     "shipping": "Free shipping on orders over $150, $84 below",
-     "price_checked": "2026-10-18",
+     "shipping": "Free shipping on orders over $150, $85 below",
+     "price_checked": "2026-10-26",
      "rating": {
       "value": 5,
       "count": 1,
       "via": "json-ld",
-      "checked": "2026-10-20"
+      "checked": "2026-10-26"
      }
     }
    ],
@@ -4396,12 +4397,12 @@
      "price": "$425",
      "ships_from": "US",
      "shipping": "Free shipping",
-     "price_checked": "2026-10-18",
+     "price_checked": "2026-10-26",
      "rating": {
       "value": 4.74,
       "count": 27,
       "via": "json-ld",
-      "checked": "2026-10-20"
+      "checked": "2026-10-26"
      }
     }
    ],
@@ -4488,12 +4489,12 @@
      "price": "$499",
      "ships_from": "US",
      "shipping": "Shipping calculated at checkout",
-     "price_checked": "2026-10-18",
+     "price_checked": "2026-10-26",
      "rating": {
       "value": 5,
       "count": 6,
       "via": "json-ld",
-      "checked": "2026-10-20"
+      "checked": "2026-10-26"
      }
     }
    ],
@@ -4565,7 +4566,7 @@
      "store": "CozyPure",
      "price": "$528",
      "ships_from": "US",
-     "price_checked": "2026-10-18"
+     "price_checked": "2026-10-26"
     }
    ],
    "img": "bed_cozypure",
@@ -4637,12 +4638,12 @@
      "store": "Savvy Rest",
      "price": "$599",
      "ships_from": "US",
-     "price_checked": "2026-10-18",
+     "price_checked": "2026-10-26",
      "rating": {
       "value": 5,
       "count": 1,
       "via": "json-ld",
-      "checked": "2026-10-20"
+      "checked": "2026-10-26"
      }
     },
     {
@@ -4651,7 +4652,7 @@
      "store": "Savvy Rest",
      "price": "$749",
      "ships_from": "US",
-     "price_checked": "2026-10-18"
+     "price_checked": "2026-10-26"
     }
    ],
    "img": "bed_savvyd",
@@ -4735,12 +4736,12 @@
      "store": "Home of Wool",
      "price": "from $653",
      "ships_from": "UK",
-     "price_checked": "2026-10-18",
+     "price_checked": "2026-10-26",
      "rating": {
       "value": 5,
       "count": 57,
       "via": "json-ld",
-      "checked": "2026-10-20"
+      "checked": "2026-10-26"
      }
     }
    ],
@@ -4794,7 +4795,7 @@
      "store": "Vivetique",
      "price": "$755",
      "ships_from": "US",
-     "price_checked": "2026-10-18"
+     "price_checked": "2026-10-26"
     }
    ],
    "img": "bed_vivetique",
@@ -4942,12 +4943,12 @@
      "price": "$279-$339",
      "ships_from": "US",
      "shipping": "Free shipping",
-     "price_checked": "2026-10-18",
+     "price_checked": "2026-10-26",
      "rating": {
       "value": 4.78,
       "count": 570,
       "via": "yotpo",
-      "checked": "2026-10-20"
+      "checked": "2026-10-26"
      }
     }
    ],
@@ -5039,12 +5040,12 @@
      "price": "$332.50",
      "ships_from": "US",
      "shipping": "$50 shipping",
-     "price_checked": "2026-10-18",
+     "price_checked": "2026-10-26",
      "rating": {
       "value": 4.9,
       "count": 2207,
       "via": "json-ld",
-      "checked": "2026-10-20"
+      "checked": "2026-10-26"
      }
     }
    ],
@@ -5140,7 +5141,7 @@
      "price": "$179",
      "ships_from": "US",
      "shipping": "Free shipping",
-     "price_checked": "2026-10-18"
+     "price_checked": "2026-10-26"
     }
    ],
    "img_src": "https://www.lullabyearth.com/media/catalog/product/h/s/hswcm.jpeg",
@@ -5191,12 +5192,12 @@
      "price": "$1,695 to $2,595",
      "ships_from": "US",
      "shipping": "Shipping calculated at checkout",
-     "price_checked": "2026-10-18",
+     "price_checked": "2026-10-26",
      "rating": {
       "value": 5,
       "count": 1,
       "via": "yotpo",
-      "checked": "2026-10-20"
+      "checked": "2026-10-26"
      }
     },
     {
@@ -5206,7 +5207,7 @@
      "price": "$450",
      "ships_from": "US",
      "shipping": "Shipping calculated at checkout",
-     "price_checked": "2026-10-18"
+     "price_checked": "2026-10-26"
     }
    ],
    "img": "bed_gccrib",
@@ -5284,7 +5285,7 @@
      "store": "Kalon Studios",
      "price": "$1,295 to $1,995",
      "ships_from": "US",
-     "price_checked": "2026-10-18"
+     "price_checked": "2026-10-26"
     },
     {
      "name": "Caravan Crib",
@@ -5292,7 +5293,7 @@
      "store": "Kalon Studios",
      "price": "$1,295 to $1,495",
      "ships_from": "US",
-     "price_checked": "2026-10-18"
+     "price_checked": "2026-10-26"
     }
    ],
    "img": "bed_kalondivan",
@@ -5383,12 +5384,12 @@
      "price": "$1,066",
      "ships_from": "US",
      "shipping": "$9.95 shipping",
-     "price_checked": "2026-10-18",
+     "price_checked": "2026-10-26",
      "rating": {
       "value": 5,
       "count": 3,
       "via": "json-ld",
-      "checked": "2026-10-20"
+      "checked": "2026-10-26"
      }
     }
    ],
@@ -5466,12 +5467,12 @@
      "store": "IKEA US",
      "price": "$99.99",
      "ships_from": "US",
-     "price_checked": "2026-10-18",
+     "price_checked": "2026-10-26",
      "rating": {
       "value": 4.3,
       "count": 230,
       "via": "json-ld",
-      "checked": "2026-10-20"
+      "checked": "2026-10-26"
      }
     }
    ],
@@ -5543,12 +5544,12 @@
      "store": "Simply Sori",
      "price": "$910",
      "ships_from": "US",
-     "price_checked": "2026-10-18",
+     "price_checked": "2026-10-26",
      "rating": {
       "value": 4.99,
       "count": 75,
       "via": "judge.me",
-      "checked": "2026-10-20"
+      "checked": "2026-10-26"
      }
     }
    ],
@@ -5632,7 +5633,7 @@
      "price": "$709",
      "ships_from": "US",
      "shipping": "Free shipping",
-     "price_checked": "2026-10-18"
+     "price_checked": "2026-10-26"
     },
     {
      "name": "Atlas Platform Bed (6 in high)",
@@ -5641,12 +5642,12 @@
      "price": "$329",
      "ships_from": "US",
      "shipping": "Free shipping",
-     "price_checked": "2026-10-18",
+     "price_checked": "2026-10-26",
      "rating": {
       "value": 4,
       "count": 2,
       "via": "json-ld",
-      "checked": "2026-10-20"
+      "checked": "2026-10-26"
      }
     }
    ],
@@ -5736,7 +5737,7 @@
      "price": "$219",
      "ships_from": "US",
      "shipping": "Free shipping",
-     "price_checked": "2026-10-18"
+     "price_checked": "2026-10-26"
     }
    ],
    "img": "bed_kd",
@@ -5800,7 +5801,7 @@
      "price": "from $1,799",
      "ships_from": "US",
      "shipping": "Shipping calculated at checkout",
-     "price_checked": "2026-10-18"
+     "price_checked": "2026-10-26"
     }
    ],
    "img": "bed_gcbed",
@@ -5860,12 +5861,12 @@
      "price": "$300",
      "ships_from": "US",
      "shipping": "Free shipping on orders over $100",
-     "price_checked": "2026-10-18",
+     "price_checked": "2026-10-26",
      "rating": {
       "value": 4.7,
       "count": 166,
       "via": "json-ld",
-      "checked": "2026-10-20"
+      "checked": "2026-10-26"
      }
     }
    ],
@@ -5949,7 +5950,7 @@
      "store": "Good Night Kid",
      "price": "$2,650 to $3,100",
      "ships_from": null,
-     "price_checked": "2026-10-18"
+     "price_checked": "2026-10-26"
     }
    ],
    "img": "bed_gnk",
@@ -6024,12 +6025,12 @@
      "store": "Piccalio",
      "price": "$499",
      "ships_from": "US",
-     "price_checked": "2026-10-18",
+     "price_checked": "2026-10-26",
      "rating": {
       "value": 5,
-      "count": 26,
+      "count": 27,
       "via": "shopify",
-      "checked": "2026-10-20"
+      "checked": "2026-10-26"
      }
     }
    ],
@@ -6121,7 +6122,7 @@
      "price": "$199.99",
      "ships_from": "US",
      "shipping": "Free shipping on orders over $50",
-     "price_checked": "2026-10-18"
+     "price_checked": "2026-10-26"
     }
    ],
    "img_src": "https://littlepartners.com/cdn/shop/files/LP71146-Lil_HouseToddlerBed-1_c5dc49e3-a350-48a8-8928-241b4a77e90a.jpg?v=1763735023",
@@ -6198,12 +6199,12 @@
      "price": "$79.99",
      "ships_from": "US",
      "shipping": "Free shipping",
-     "price_checked": "2026-10-18",
+     "price_checked": "2026-10-26",
      "rating": {
       "value": 5,
       "count": 2,
       "via": "json-ld",
-      "checked": "2026-10-20"
+      "checked": "2026-10-26"
      }
     }
    ],
@@ -6299,12 +6300,12 @@
      "price": "$54",
      "ships_from": "US",
      "shipping": "Shipping calculated at checkout",
-     "price_checked": "2026-10-18",
+     "price_checked": "2026-10-26",
      "rating": {
       "value": 5,
       "count": 1,
       "via": "shopify",
-      "checked": "2026-10-20"
+      "checked": "2026-10-26"
      }
     },
     {
@@ -6314,12 +6315,12 @@
      "price": "$129",
      "ships_from": "US",
      "shipping": "Shipping calculated at checkout",
-     "price_checked": "2026-10-18",
+     "price_checked": "2026-10-26",
      "rating": {
       "value": 5,
       "count": 1,
       "via": "shopify",
-      "checked": "2026-10-20"
+      "checked": "2026-10-26"
      }
     }
    ],
@@ -6395,12 +6396,12 @@
      "note": "Out of stock when checked",
      "ships_from": "US",
      "shipping": "Free shipping on orders over $150",
-     "price_checked": "2026-10-18",
+     "price_checked": "2026-10-26",
      "rating": {
       "value": 4.83,
       "count": 24,
       "via": "judge.me",
-      "checked": "2026-10-20"
+      "checked": "2026-10-26"
      }
     },
     {
@@ -6410,12 +6411,12 @@
      "price": "$285",
      "ships_from": "US",
      "shipping": "Free shipping on orders over $150",
-     "price_checked": "2026-10-18",
+     "price_checked": "2026-10-26",
      "rating": {
       "value": 5,
       "count": 2,
       "via": "judge.me",
-      "checked": "2026-10-20"
+      "checked": "2026-10-26"
      }
     },
     {
@@ -6425,12 +6426,12 @@
      "price": "$275",
      "ships_from": "US",
      "shipping": "Free shipping on orders over $150",
-     "price_checked": "2026-10-18",
+     "price_checked": "2026-10-26",
      "rating": {
       "value": 4.8,
       "count": 25,
       "via": "judge.me",
-      "checked": "2026-10-20"
+      "checked": "2026-10-26"
      }
     },
     {
@@ -6441,12 +6442,12 @@
      "note": "Wool fill, fleece top, moisture barrier back",
      "ships_from": "US",
      "shipping": "Free shipping on orders over $150",
-     "price_checked": "2026-10-18",
+     "price_checked": "2026-10-26",
      "rating": {
       "value": 4.58,
       "count": 12,
       "via": "judge.me",
-      "checked": "2026-10-20"
+      "checked": "2026-10-26"
      }
     }
    ],
@@ -6706,7 +6707,7 @@
      "price": "$48 to $58",
      "ships_from": "US",
      "shipping": "Free shipping on orders over $150, $30 below",
-     "price_checked": "2026-10-18"
+     "price_checked": "2026-10-26"
     }
    ],
    "img": "bed_coyuchi",
@@ -6777,12 +6778,12 @@
      "price": "$69-$99",
      "ships_from": "US",
      "shipping": "Free shipping",
-     "price_checked": "2026-10-18",
+     "price_checked": "2026-10-26",
      "rating": {
       "value": 4.9,
       "count": 230,
       "via": "yotpo",
-      "checked": "2026-10-20"
+      "checked": "2026-10-26"
      }
     }
    ],
@@ -6851,12 +6852,12 @@
      "store": "Avocado Green Mattress",
      "price": "$76",
      "ships_from": "US",
-     "price_checked": "2026-10-18",
+     "price_checked": "2026-10-26",
      "rating": {
-      "value": 4.8,
-      "count": 40,
+      "value": 4.9,
+      "count": 41,
       "via": "json-ld",
-      "checked": "2026-10-20"
+      "checked": "2026-10-26"
      }
     }
    ],
@@ -6925,12 +6926,12 @@
      "price": "$49.99",
      "ships_from": "US",
      "shipping": "$25 shipping",
-     "price_checked": "2026-10-18",
+     "price_checked": "2026-10-26",
      "rating": {
       "value": 5,
       "count": 1,
       "via": "json-ld",
-      "checked": "2026-10-20"
+      "checked": "2026-10-26"
      }
     }
    ],
@@ -7011,7 +7012,7 @@
      "price": "$19.99",
      "ships_from": "US",
      "shipping": "Free shipping",
-     "price_checked": "2026-10-18"
+     "price_checked": "2026-10-26"
     }
    ],
    "img_src": "https://www.deltachildren.com/cdn/shop/files/B43300-0001-NO_EcoCoolBR_White_Lifestyle_01.jpg?v=1786824357",
@@ -7096,7 +7097,7 @@
      "price": "$23.99",
      "ships_from": "US",
      "shipping": "Free shipping on orders over $140",
-     "price_checked": "2026-10-18"
+     "price_checked": "2026-10-26"
     },
     {
      "name": "Multiportions 6 x 5 oz",
@@ -7105,7 +7106,7 @@
      "price": "$26.99",
      "ships_from": "US",
      "shipping": "Free shipping on orders over $140",
-     "price_checked": "2026-10-18"
+     "price_checked": "2026-10-26"
     },
     {
      "name": "Mini Multiportion, 20 x 1.2 oz",
@@ -7114,7 +7115,7 @@
      "price": "$19.99",
      "ships_from": "US",
      "shipping": "Free shipping on orders over $140",
-     "price_checked": "2026-10-18"
+     "price_checked": "2026-10-26"
     }
    ],
    "img": "sil_beaba6",
@@ -7200,12 +7201,12 @@
      "price": "$34",
      "ships_from": "US",
      "shipping": "Free shipping on orders over $85",
-     "price_checked": "2026-10-18",
+     "price_checked": "2026-10-26",
      "rating": {
       "value": 4.96,
       "count": 156,
       "via": "shopify",
-      "checked": "2026-10-20"
+      "checked": "2026-10-26"
      }
     }
    ],
@@ -7279,12 +7280,12 @@
      "price": "$40 for 2",
      "ships_from": "US",
      "shipping": "Free shipping on orders over $95",
-     "price_checked": "2026-10-18",
+     "price_checked": "2026-10-26",
      "rating": {
       "value": 4.7,
-      "count": 57,
+      "count": 58,
       "via": "json-ld",
-      "checked": "2026-10-20"
+      "checked": "2026-10-26"
      }
     }
    ],
@@ -7372,7 +7373,7 @@
      "store": "Kiddo Feedo",
      "price": "$14.95",
      "ships_from": "US",
-     "price_checked": "2026-10-18"
+     "price_checked": "2026-10-26"
     }
    ],
    "img": "sil_kiddo",
@@ -7440,12 +7441,12 @@
      "price": "$19.99",
      "ships_from": "US",
      "shipping": "Free shipping on orders over $75",
-     "price_checked": "2026-10-18",
+     "price_checked": "2026-10-26",
      "rating": {
       "value": 5,
       "count": 18,
       "via": "json-ld",
-      "checked": "2026-10-20"
+      "checked": "2026-10-26"
      }
     }
    ],
@@ -7543,12 +7544,12 @@
      "price": "$14.98",
      "ships_from": "US",
      "shipping": "Free shipping on orders over $60",
-     "price_checked": "2026-10-18",
+     "price_checked": "2026-10-26",
      "rating": {
       "value": 5,
       "count": 103,
       "via": "json-ld",
-      "checked": "2026-10-20"
+      "checked": "2026-10-26"
      }
     },
     {
@@ -7558,12 +7559,12 @@
      "price": "$14.98",
      "ships_from": "US",
      "shipping": "Free shipping on orders over $60",
-     "price_checked": "2026-10-18",
+     "price_checked": "2026-10-26",
      "rating": {
       "value": 4.9,
       "count": 15,
       "via": "json-ld",
-      "checked": "2026-10-20"
+      "checked": "2026-10-26"
      }
     }
    ],
@@ -7631,7 +7632,7 @@
      "store": "Simple Ecology",
      "price": "$29.95",
      "ships_from": "US",
-     "price_checked": "2026-10-18"
+     "price_checked": "2026-10-26"
     },
     {
      "name": "SF105 Cube mould, 15 cubes, no lid",
@@ -7947,12 +7948,12 @@
      "price": "$9.99",
      "ships_from": "US",
      "shipping": "Free shipping on orders over $50",
-     "price_checked": "2026-10-18",
+     "price_checked": "2026-10-26",
      "rating": {
       "value": 4.7,
       "count": 106,
       "via": "shopify",
-      "checked": "2026-10-20"
+      "checked": "2026-10-26"
      }
     }
    ],
@@ -8064,12 +8065,12 @@
      "price": "2-pack $92.99",
      "ships_from": "US",
      "shipping": "Free shipping",
-     "price_checked": "2026-10-18",
+     "price_checked": "2026-10-26",
      "rating": {
       "value": 5,
       "count": 1,
       "via": "json-ld",
-      "checked": "2026-10-20"
+      "checked": "2026-10-26"
      }
     },
     {
@@ -8079,12 +8080,12 @@
      "price": "$67.49",
      "ships_from": "US",
      "shipping": "Free shipping",
-     "price_checked": "2026-10-18",
+     "price_checked": "2026-10-26",
      "rating": {
       "value": 5,
       "count": 1,
       "via": "json-ld",
-      "checked": "2026-10-20"
+      "checked": "2026-10-26"
      }
     }
    ],
@@ -8187,8 +8188,8 @@
      "store": "Pacifier",
      "price": "$24.95",
      "ships_from": "US",
-     "shipping": "Free shipping on orders over $100",
-     "price_checked": "2026-10-18"
+     "shipping": "$5.95 shipping",
+     "price_checked": "2026-10-26"
     }
    ],
    "img": "sil_wmbt",
@@ -8257,12 +8258,12 @@
      "price": "$9.99",
      "ships_from": "US",
      "shipping": "Free shipping on orders over $50",
-     "price_checked": "2026-10-18",
+     "price_checked": "2026-10-26",
      "rating": {
       "value": 4.9,
-      "count": 88,
+      "count": 90,
       "via": "shopify",
-      "checked": "2026-10-20"
+      "checked": "2026-10-26"
      }
     }
    ],
@@ -8354,12 +8355,12 @@
      "price": "$15.99",
      "ships_from": "US",
      "shipping": "Free shipping on orders over $75",
-     "price_checked": "2026-10-18",
+     "price_checked": "2026-10-26",
      "rating": {
       "value": 4.9,
       "count": 16,
       "via": "json-ld",
-      "checked": "2026-10-20"
+      "checked": "2026-10-26"
      }
     }
    ],
@@ -8450,7 +8451,7 @@
      "price": "$19.99",
      "ships_from": "US",
      "shipping": "Free shipping on orders over $50",
-     "price_checked": "2026-10-18"
+     "price_checked": "2026-10-26"
     }
    ],
    "img_src": "https://www.zokuhome.com/cdn/shop/products/ZK145_SummerPop_A.jpg?v=1618498048",
@@ -8514,7 +8515,7 @@
      "price": "$60, free US shipping",
      "ships_from": null,
      "shipping": "Free shipping",
-     "price_checked": "2026-10-18"
+     "price_checked": "2026-10-26"
     }
    ],
    "img": "shoe_glerups",
@@ -8648,7 +8649,7 @@
      "store": "Woodland Mod (US)",
      "price": "$45",
      "ships_from": "US",
-     "price_checked": "2026-10-18"
+     "price_checked": "2026-10-26"
     }
    ],
    "img": "shoe_muskhane",
@@ -8809,7 +8810,7 @@
      "price": "€35",
      "note": "US only through Nature Child",
      "ships_from": "Germany",
-     "price_checked": "2026-10-18"
+     "price_checked": "2026-10-26"
     }
    ],
    "img": "shoe_pololo",
@@ -8885,12 +8886,12 @@
      "price": "$48.00",
      "ships_from": "US",
      "shipping": "Free shipping",
-     "price_checked": "2026-10-18",
+     "price_checked": "2026-10-26",
      "rating": {
       "value": 4.6,
       "count": 334,
       "via": "json-ld",
-      "checked": "2026-10-20"
+      "checked": "2026-10-26"
      }
     }
    ],
@@ -8968,12 +8969,12 @@
      "store": "Freshly Picked",
      "price": "$59.00",
      "ships_from": "US",
-     "price_checked": "2026-10-18",
+     "price_checked": "2026-10-26",
      "rating": {
       "value": 4.96,
       "count": 89,
       "via": "json-ld",
-      "checked": "2026-10-20"
+      "checked": "2026-10-26"
      }
     },
     {
@@ -8982,12 +8983,12 @@
      "store": "Freshly Picked",
      "price": "$65.00",
      "ships_from": "US",
-     "price_checked": "2026-10-18",
+     "price_checked": "2026-10-26",
      "rating": {
       "value": 4.96,
       "count": 89,
       "via": "json-ld",
-      "checked": "2026-10-20"
+      "checked": "2026-10-26"
      }
     }
    ],
@@ -9090,7 +9091,7 @@
      "price": "$49.00",
      "ships_from": "US",
      "shipping": "Free shipping on orders over $85",
-     "price_checked": "2026-10-18"
+     "price_checked": "2026-10-26"
     }
    ],
    "img_src": "https://saltwater-sandals.com/cdn/shop/files/800v-tan-baby-1.png?v=1756459742",
@@ -9178,7 +9179,7 @@
      "store": "Wildling (USA & Canada shop)",
      "price": "$69.00",
      "ships_from": "US",
-     "price_checked": "2026-10-18"
+     "price_checked": "2026-10-26"
     }
    ],
    "img_src": "https://us.wildling.shoes/cdn/shop/files/wildling-shoes-TEJO-CHOCOLATE-T-01_5f852a28-62cd-4f3d-b974-7ab430e7d11a.webp?v=1787840972",
@@ -9271,7 +9272,7 @@
      "price": "$75, free US shipping",
      "ships_from": "US",
      "shipping": "Free shipping",
-     "price_checked": "2026-10-18"
+     "price_checked": "2026-10-26"
     },
     {
      "name": "Baby Basic Rubber Boots",
@@ -9281,7 +9282,7 @@
      "note": "Low shaft, runs narrow",
      "ships_from": "US",
      "shipping": "Free shipping",
-     "price_checked": "2026-10-18"
+     "price_checked": "2026-10-26"
     },
     {
      "name": "Thermo Baby (winter)",
@@ -9290,7 +9291,7 @@
      "price": "$78",
      "ships_from": "US",
      "shipping": "Free shipping",
-     "price_checked": "2026-10-18"
+     "price_checked": "2026-10-26"
     }
    ],
    "img": "boot_bis2",
@@ -9377,12 +9378,12 @@
      "store": "Crywolf (New Zealand)",
      "price": "about NZ$45",
      "ships_from": "New Zealand",
-     "price_checked": "2026-10-18",
+     "price_checked": "2026-10-26",
      "rating": {
       "value": 4.94,
       "count": 32,
       "via": "json-ld",
-      "checked": "2026-10-20"
+      "checked": "2026-10-26"
      }
     }
    ],
@@ -9549,12 +9550,12 @@
      "store": "Frugi (UK)",
      "price": "£30",
      "ships_from": "UK",
-     "price_checked": "2026-10-18",
+     "price_checked": "2026-10-26",
      "rating": {
       "value": 4.62,
       "count": 58,
       "via": "json-ld",
-      "checked": "2026-10-20"
+      "checked": "2026-10-26"
      }
     }
    ],
@@ -9647,7 +9648,7 @@
      "price": "$75.00",
      "ships_from": "US",
      "shipping": "Free shipping on orders over $100",
-     "price_checked": "2026-10-18"
+     "price_checked": "2026-10-26"
     }
    ],
    "img_src": "https://hunterboots.com/cdn/shop/files/4a35ef57a39dfd7cffb9b02852bba3b4a9e32563.jpg?v=1781534090",
@@ -9738,12 +9739,12 @@
      "price": "$17.95 (sale; regular $30.00)",
      "ships_from": "US",
      "shipping": "Free shipping on orders over $80",
-     "price_checked": "2026-10-18",
+     "price_checked": "2026-10-26",
      "rating": {
       "value": 4.8,
       "count": 28,
       "via": "json-ld",
-      "checked": "2026-10-20"
+      "checked": "2026-10-26"
      }
     }
    ],
@@ -9812,12 +9813,12 @@
      "price": "$39.99",
      "ships_from": "US",
      "shipping": "Free shipping on orders over $129.99, $25 below",
-     "price_checked": "2026-10-18",
+     "price_checked": "2026-10-26",
      "rating": {
       "value": 5,
       "count": 9,
       "via": "json-ld",
-      "checked": "2026-10-20"
+      "checked": "2026-10-26"
      }
     }
    ],
@@ -9908,7 +9909,7 @@
      "price": "$29.90 (sale; original $50)",
      "ships_from": "US",
      "shipping": "Free shipping on orders over $99",
-     "price_checked": "2026-10-18"
+     "price_checked": "2026-10-26"
     }
    ],
    "img_src": "https://www.bogsfootwear.com/shop/images/73012I-001.jpg",
@@ -9978,12 +9979,12 @@
      "price": "£41.00",
      "ships_from": "UK",
      "shipping": "Shipping calculated at checkout",
-     "price_checked": "2026-10-18",
+     "price_checked": "2026-10-26",
      "rating": {
       "value": 4.9,
-      "count": 59,
+      "count": 60,
       "via": "shopify",
-      "checked": "2026-10-20"
+      "checked": "2026-10-26"
      }
     }
    ],
@@ -10061,7 +10062,8 @@
      "store": "Béaba USA",
      "price": "$199.95",
      "ships_from": null,
-     "shipping": "Free shipping on orders $140*"
+     "shipping": "Free shipping on orders over $140",
+     "price_checked": "2026-10-26"
     }
    ],
    "unstated": {
@@ -10151,7 +10153,14 @@
      "store": "Bella Luna Toys",
      "price": "$13.50",
      "ships_from": "US",
-     "shipping": "Free shipping on orders over $99 within the contiguous 48 states"
+     "shipping": "Free shipping on orders over $99",
+     "rating": {
+      "value": 4.7,
+      "count": 9,
+      "via": "json-ld",
+      "checked": "2026-10-26"
+     },
+     "price_checked": "2026-10-26"
     }
    ],
    "quote": "MATERIALS : Made from unfinished maple wood.",
@@ -10191,7 +10200,15 @@
      "url": "https://camdenrose.com/products/child-place-setting-plate-fork-knife-spoon-thin-rim-bowl-cherry-wood",
      "store": "Camden Rose",
      "price": "$62.00",
-     "ships_from": null
+     "ships_from": null,
+     "rating": {
+      "value": 5,
+      "count": 2,
+      "via": "judge.me",
+      "checked": "2026-10-26"
+     },
+     "shipping": "Free shipping",
+     "price_checked": "2026-10-26"
     }
    ],
    "quote": "Each child sized wooden place setting is made with beautiful cherry wood.",
@@ -10239,7 +10256,9 @@
      "url": "https://camdenrose.com/products/wooden-child-size-fork-knife-spoon-utensil-set-cherry-wood",
      "store": "Camden Rose",
      "price": "$24.99",
-     "ships_from": null
+     "ships_from": null,
+     "shipping": "Free shipping",
+     "price_checked": "2026-10-26"
     }
    ],
    "age": {
@@ -10291,7 +10310,8 @@
      "store": "Colored Organics",
      "price": "$30",
      "ships_from": null,
-     "shipping": "Free shipping on US domestic orders over $50"
+     "shipping": "Free shipping on orders over $50",
+     "price_checked": "2026-10-26"
     }
    ],
    "unstated": {
@@ -10358,7 +10378,8 @@
      "store": "Mushie",
      "price": "$24.99",
      "ships_from": null,
-     "shipping": "Free shipping for US orders $75+"
+     "shipping": "Free shipping on orders over $75",
+     "price_checked": "2026-10-26"
     }
    ],
    "unstated": {
@@ -10450,7 +10471,8 @@
      "url": "https://us.heveaplanet.com/products/gorm-soothing-toy",
      "store": "Hevea Planet USA",
      "price": "$19.95",
-     "ships_from": null
+     "ships_from": null,
+     "price_checked": "2026-10-26"
     }
    ],
    "quote": "This HEVEA® Gorm Whale Teether is made from 100% natural rubber",
@@ -10506,7 +10528,8 @@
      "url": "https://us.heveaplanet.com/products/pacifier-3-36-months-two-pack-orthodontic",
      "store": "Hevea Planet USA",
      "price": "$17.95",
-     "ships_from": null
+     "ships_from": null,
+     "price_checked": "2026-10-26"
     }
    ],
    "age": {
@@ -10616,7 +10639,8 @@
      "store": "The Baby Penguin",
      "price": "$16.99",
      "ships_from": null,
-     "shipping": "Free standard shipping on orders of $50 or more within the contiguous United States"
+     "shipping": "Free shipping on orders over $50",
+     "price_checked": "2026-10-26"
     }
    ],
    "unstated": {
@@ -10666,7 +10690,14 @@
      "store": "Mushie",
      "price": "$14.99",
      "ships_from": null,
-     "shipping": "Free shipping for US orders $75+"
+     "shipping": "Free shipping on orders over $75",
+     "rating": {
+      "value": 5,
+      "count": 29,
+      "via": "json-ld",
+      "checked": "2026-10-26"
+     },
+     "price_checked": "2026-10-26"
     }
    ],
    "unstated": {
@@ -10755,7 +10786,8 @@
      "store": "The Baby Penguin",
      "price": "$12.99",
      "ships_from": null,
-     "shipping": "Free standard shipping on orders of $50 or more within the contiguous United States"
+     "shipping": "Free shipping on orders over $50",
+     "price_checked": "2026-10-26"
     }
    ],
    "unstated": {
@@ -10842,7 +10874,8 @@
      "url": "https://www.kids2.com/products/18037-091-swaddleme-by-ingenuity-compression-swaddle-pod-scribble-elephant",
      "store": "Kids2",
      "price": "$9.99 (maker's list price)",
-     "ships_from": null
+     "ships_from": null,
+     "price_checked": "2026-10-26"
     }
    ],
    "unstated": {
@@ -10933,7 +10966,14 @@
      "store": "WeeSprout",
      "price": "$9.98",
      "ships_from": null,
-     "shipping": "Free shipping on orders $60+"
+     "shipping": "Free shipping on orders over $60",
+     "rating": {
+      "value": 5,
+      "count": 4,
+      "via": "json-ld",
+      "checked": "2026-10-26"
+     },
+     "price_checked": "2026-10-26"
     }
    ],
    "unstated": {
@@ -11007,7 +11047,14 @@
      "store": "WeeSprout",
      "price": "$14.98",
      "ships_from": null,
-     "shipping": "Free shipping on orders $60+"
+     "shipping": "Free shipping on orders over $60",
+     "rating": {
+      "value": 5,
+      "count": 2,
+      "via": "json-ld",
+      "checked": "2026-10-26"
+     },
+     "price_checked": "2026-10-26"
     }
    ],
    "unstated": {
@@ -11087,7 +11134,8 @@
      "url": "https://www.kids2.com/products/17934-000-bright-starts-rollin-rhythm-activity-drum",
      "store": "Kids2",
      "price": "$24.99 (maker's list price)",
-     "ships_from": null
+     "ships_from": null,
+     "price_checked": "2026-10-26"
     }
    ],
    "free": [],
@@ -11158,7 +11206,14 @@
      "store": "Camden Rose",
      "price": "$175.00",
      "ships_from": "US",
-     "shipping": "Free standard domestic shipping on orders over $150 to the contiguous US"
+     "shipping": "Free shipping",
+     "rating": {
+      "value": 5,
+      "count": 1,
+      "via": "judge.me",
+      "checked": "2026-10-26"
+     },
+     "price_checked": "2026-10-26"
     }
    ],
    "unconfirmed": [],
@@ -11217,7 +11272,8 @@
      "store": "Colored Organics",
      "price": "$38",
      "ships_from": null,
-     "shipping": "Free shipping on US domestic orders over $50"
+     "shipping": "Free shipping on orders over $50",
+     "price_checked": "2026-10-26"
     }
    ],
    "free": [],
@@ -11282,7 +11338,8 @@
      "store": "Delta Children",
      "price": "$69.99",
      "ships_from": null,
-     "shipping": "Free shipping sitewide (contiguous 48 states)"
+     "shipping": "Free shipping",
+     "price_checked": "2026-10-26"
     }
    ],
    "uses": [],
@@ -11373,7 +11430,8 @@
      "store": "Delta Children",
      "price": "$59.99",
      "ships_from": null,
-     "shipping": "Free shipping sitewide (contiguous 48 states)"
+     "shipping": "Free shipping",
+     "price_checked": "2026-10-26"
     }
    ],
    "uses": [],
@@ -11469,7 +11527,8 @@
      "store": "Delta Children",
      "price": "$26.99",
      "ships_from": null,
-     "shipping": "Free shipping sitewide (contiguous 48 states)"
+     "shipping": "Free shipping",
+     "price_checked": "2026-10-26"
     }
    ],
    "free": [],
@@ -11536,7 +11595,14 @@
      "store": "Holy Lamb Organics",
      "price": "$319",
      "ships_from": "US",
-     "shipping": "Free shipping on most orders $150+"
+     "shipping": "Free shipping on orders over $150",
+     "rating": {
+      "value": 5,
+      "count": 2,
+      "via": "judge.me",
+      "checked": "2026-10-26"
+     },
+     "price_checked": "2026-10-26"
     }
    ],
    "free": [],
@@ -11618,7 +11684,14 @@
      "store": "Home of Wool",
      "price": "from $248.00",
      "ships_from": null,
-     "shipping": "Free worldwide shipping on all orders"
+     "shipping": "Free worldwide shipping on all orders",
+     "rating": {
+      "value": 5,
+      "count": 9,
+      "via": "json-ld",
+      "checked": "2026-10-26"
+     },
+     "price_checked": "2026-10-26"
     }
    ],
    "outside": [],
@@ -11667,7 +11740,14 @@
      "store": "Green Mountain Diapers",
      "price": "$18.50",
      "ships_from": null,
-     "shipping": "Shipping calculated at checkout"
+     "shipping": "Shipping calculated at checkout",
+     "rating": {
+      "value": 5,
+      "count": 1,
+      "via": "shopify",
+      "checked": "2026-10-26"
+     },
+     "price_checked": "2026-10-26"
     }
    ],
    "uses": [],
@@ -11753,7 +11833,14 @@
      "store": "Mushie",
      "price": "$49.99",
      "ships_from": null,
-     "shipping": "Free shipping for US orders $75+"
+     "shipping": "Free shipping on orders over $75",
+     "rating": {
+      "value": 4.8,
+      "count": 20,
+      "via": "json-ld",
+      "checked": "2026-10-26"
+     },
+     "price_checked": "2026-10-26"
     }
    ],
    "free": [],
@@ -11853,7 +11940,14 @@
      "price": "$22.99 (Farm, Dino, Space); $24.99 (Alphabet)",
      "variant": "Farm",
      "ships_from": null,
-     "shipping": "Free shipping for US orders $75+"
+     "shipping": "Free shipping on orders over $75",
+     "rating": {
+      "value": 4.9,
+      "count": 30,
+      "via": "json-ld",
+      "checked": "2026-10-26"
+     },
+     "price_checked": "2026-10-26"
     }
    ],
    "contains": [],
@@ -11944,7 +12038,14 @@
      "price": "$139 (fitted cover $29)",
      "ships_from": "US",
      "variant": "2 Sided",
-     "shipping": "Free shipping in the continental U.S."
+     "shipping": "Free shipping",
+     "rating": {
+      "value": 4.89,
+      "count": 209,
+      "via": "yotpo",
+      "checked": "2026-10-26"
+     },
+     "price_checked": "2026-10-26"
     }
    ],
    "contains": [],
@@ -12023,7 +12124,14 @@
      "url": "https://www.piccalio.com/products/pikler-triangle",
      "store": "Piccalio",
      "price": "$349",
-     "ships_from": null
+     "ships_from": null,
+     "rating": {
+      "value": 4.9,
+      "count": 235,
+      "via": "shopify",
+      "checked": "2026-10-26"
+     },
+     "price_checked": "2026-10-26"
     }
    ],
    "free": [],
@@ -12117,7 +12225,14 @@
      "store": "Bella Luna Toys",
      "price": "$29.99",
      "ships_from": "US",
-     "shipping": "Free shipping on orders over $99 within the contiguous 48 states"
+     "shipping": "Free shipping on orders over $99",
+     "rating": {
+      "value": 5,
+      "count": 1,
+      "via": "json-ld",
+      "checked": "2026-10-26"
+     },
+     "price_checked": "2026-10-26"
     }
    ],
    "outside": [],
@@ -12171,7 +12286,14 @@
      "store": "WeeSprout",
      "price": "$25.98",
      "ships_from": null,
-     "shipping": "Free shipping on orders $60+"
+     "shipping": "Free shipping on orders over $60",
+     "rating": {
+      "value": 5,
+      "count": 10,
+      "via": "json-ld",
+      "checked": "2026-10-26"
+     },
+     "price_checked": "2026-10-26"
     }
    ],
    "free": [],
@@ -12252,7 +12374,8 @@
      "store": "Béaba USA",
      "price": "$14.99",
      "ships_from": null,
-     "shipping": "Free shipping on orders $140*"
+     "shipping": "Free shipping on orders over $140",
+     "price_checked": "2026-10-26"
     }
    ],
    "standards": [],
@@ -12345,7 +12468,8 @@
      "store": "Béaba USA",
      "price": "$35.99",
      "ships_from": null,
-     "shipping": "Free shipping on orders $140*"
+     "shipping": "Free shipping on orders over $140",
+     "price_checked": "2026-10-26"
     }
    ],
    "standards": [],
@@ -12449,7 +12573,14 @@
      "store": "Clek",
      "price": "$599.99",
      "ships_from": "US",
-     "shipping": "Free shipping on orders over $99*"
+     "shipping": "Free shipping on orders over $99",
+     "rating": {
+      "value": 4.78,
+      "count": 154,
+      "via": "json-ld",
+      "checked": "2026-10-26"
+     },
+     "price_checked": "2026-10-26"
     }
    ],
    "standards": [],
@@ -12540,7 +12671,8 @@
      "store": "Colored Organics",
      "price": "$28",
      "ships_from": null,
-     "shipping": "Free U.S. shipping on orders over $50"
+     "shipping": "Free shipping on orders over $50",
+     "price_checked": "2026-10-26"
     }
    ],
    "standards": [],
@@ -12595,7 +12727,8 @@
      "store": "Colored Organics",
      "price": "$28",
      "ships_from": null,
-     "shipping": "Free U.S. shipping on orders over $50"
+     "shipping": "Free shipping on orders over $50",
+     "price_checked": "2026-10-26"
     }
    ],
    "standards": [],
@@ -12654,7 +12787,8 @@
      "store": "Colored Organics",
      "price": "$35",
      "ships_from": null,
-     "shipping": "Free U.S. shipping on orders over $50"
+     "shipping": "Free shipping on orders over $50",
+     "price_checked": "2026-10-26"
     }
    ],
    "standards": [],
@@ -12708,7 +12842,8 @@
      "url": "https://www.avocadogreenmattress.com/products/coyuchi-pebbled-handstitched-organic-toddler-quilt-pale-gray-with-cools",
      "store": "Avocado",
      "price": "$128",
-     "ships_from": null
+     "ships_from": null,
+     "price_checked": "2026-10-26"
     }
    ],
    "contains": [],
@@ -12774,7 +12909,14 @@
      "url": "https://crywolfchild.com/products/play-jacket-rose-gingham",
      "store": "Crywolf",
      "price": "NZ$62.99 (sale; was NZ$89.99)",
-     "ships_from": "New Zealand"
+     "ships_from": "New Zealand",
+     "rating": {
+      "value": 5,
+      "count": 17,
+      "via": "json-ld",
+      "checked": "2026-10-26"
+     },
+     "price_checked": "2026-10-26"
     }
    ],
    "contains": [],
@@ -12878,7 +13020,8 @@
      "store": "Delta Children",
      "price": "$179.99",
      "ships_from": null,
-     "shipping": "Free shipping sitewide (contiguous 48 states)"
+     "shipping": "Free shipping",
+     "price_checked": "2026-10-26"
     }
    ],
    "contains": [],
@@ -12969,7 +13112,14 @@
      "store": "Bella Luna Toys",
      "price": "$30.00 (sale; regular $33.98)",
      "ships_from": "US",
-     "shipping": "Free shipping on orders over $99 within the contiguous 48 states"
+     "shipping": "Free shipping on orders over $99",
+     "rating": {
+      "value": 4.8,
+      "count": 13,
+      "via": "json-ld",
+      "checked": "2026-10-26"
+     },
+     "price_checked": "2026-10-26"
     }
    ],
    "standards": [],
@@ -13018,7 +13168,8 @@
      "store": "Colored Organics",
      "price": "$24",
      "ships_from": null,
-     "shipping": "Free U.S. shipping on orders over $50"
+     "shipping": "Free shipping on orders over $50",
+     "price_checked": "2026-10-26"
     }
    ],
    "standards": [],
@@ -13083,7 +13234,14 @@
      "store": "Newton Baby",
      "price": "$199.99",
      "ships_from": "US",
-     "shipping": "Free shipping in the contiguous 48 states"
+     "shipping": "Free shipping",
+     "rating": {
+      "value": 4.5,
+      "count": 20,
+      "via": "json-ld",
+      "checked": "2026-10-26"
+     },
+     "price_checked": "2026-10-26"
     }
    ],
    "standards": [],
@@ -13180,8 +13338,15 @@
      "store": "Newton Baby",
      "price": "$599.99",
      "ships_from": "US",
-     "shipping": "Free shipping in the contiguous 48 states",
-     "note": "Comes with a free Essential crib mattress at the time of reading"
+     "shipping": "Free shipping",
+     "note": "Comes with a free Essential crib mattress at the time of reading",
+     "rating": {
+      "value": 3.8,
+      "count": 36,
+      "via": "json-ld",
+      "checked": "2026-10-26"
+     },
+     "price_checked": "2026-10-26"
     }
    ],
    "standards": [],
@@ -13287,7 +13452,14 @@
      "store": "Piccalio",
      "price": "$159",
      "ships_from": null,
-     "shipping": "Ships free (contiguous US)"
+     "shipping": "Ships free (contiguous US)",
+     "rating": {
+      "value": 5,
+      "count": 98,
+      "via": "shopify",
+      "checked": "2026-10-26"
+     },
+     "price_checked": "2026-10-26"
     }
    ],
    "contains": [],
@@ -13384,7 +13556,8 @@
      "store": "The Baby Penguin",
      "price": "$149.99",
      "ships_from": null,
-     "shipping": "Free standard shipping on orders of $50 or more within the contiguous United States"
+     "shipping": "Free shipping on orders over $50",
+     "price_checked": "2026-10-26"
     }
    ],
    "standards": [],
@@ -13473,7 +13646,8 @@
      "url": "https://beaba.us/products/silicone-baby-bib-1",
      "store": "Béaba USA",
      "price": "$25.99",
-     "shipping": "Free shipping on orders $140*"
+     "shipping": "Free shipping on orders over $140",
+     "price_checked": "2026-10-26"
     }
    ],
    "read": "2026-10-23",
@@ -13542,7 +13716,8 @@
      "name": "Bright Starts Safari Splashers 6-Piece Baby Bath Toys",
      "url": "https://www.kids2.com/products/17996-000-bright-starts-safari-splashers-baby-bath-toy-set",
      "store": "Kids2",
-     "price": "$7.99"
+     "price": "$7.99",
+     "price_checked": "2026-10-26"
     }
    ],
    "read": "2026-10-23",
@@ -13630,7 +13805,8 @@
      "name": "Coyuchi Organic Crinkled Percale Crib Sheet, Steel Blue",
      "url": "https://www.avocadogreenmattress.com/products/coyuchi-organic-crinkled-percale-crib-sheet-steel-blue",
      "store": "Avocado Green Mattress",
-     "price": "$48.00"
+     "price": "$48.00",
+     "price_checked": "2026-10-26"
     }
    ],
    "read": "2026-10-23",
@@ -13686,7 +13862,8 @@
      "url": "https://holylamborganics.com/products/organic-print-matelasse-baby-blanket",
      "store": "Holy Lamb Organics",
      "price": "$58.00",
-     "shipping": "$30 shipping charge on all Coyuchi items"
+     "shipping": "Free shipping on orders over $150, $30 below",
+     "price_checked": "2026-10-26"
     }
    ],
    "read": "2026-10-23",
@@ -13748,7 +13925,14 @@
      "url": "https://www.deltachildren.com/products/turboglyde-lightweight-stroller",
      "store": "Delta Children",
      "price": "$76.99",
-     "shipping": "Ships only to the contiguous 48 US states"
+     "shipping": "Free shipping",
+     "rating": {
+      "value": 5,
+      "count": 2,
+      "via": "json-ld",
+      "checked": "2026-10-26"
+     },
+     "price_checked": "2026-10-26"
     }
    ],
    "read": "2026-10-23",
@@ -13838,7 +14022,8 @@
      "name": "Squeeze'n'Splash Whale Bath Toy",
      "url": "https://us.heveaplanet.com/products/squeezensplash-whale-bath-toy",
      "store": "Hevea Planet USA",
-     "price": "$19.95"
+     "price": "$19.95",
+     "price_checked": "2026-10-26"
     }
    ],
    "read": "2026-10-23",
@@ -13903,7 +14088,14 @@
      "url": "https://www.bellalunatoys.com/products/honeysticks-finger-paints-6pk-55ml",
      "store": "Bella Luna Toys",
      "price": "$32.99",
-     "shipping": "Free shipping on orders over $99 (contiguous 48 states)"
+     "shipping": "Free shipping on orders over $99",
+     "rating": {
+      "value": 4.8,
+      "count": 5,
+      "via": "json-ld",
+      "checked": "2026-10-26"
+     },
+     "price_checked": "2026-10-26"
     }
    ],
    "read": "2026-10-23",
@@ -13963,7 +14155,8 @@
      "name": "Knob Puzzle, Frog",
      "url": "https://kodokids.com/products/knob-puzzles",
      "store": "Kodo Kids",
-     "price": "$29.00"
+     "price": "$29.00",
+     "price_checked": "2026-10-26"
     }
    ],
    "read": "2026-10-23",
@@ -14037,7 +14230,14 @@
      "url": "https://littlegreenradicals.com/products/petals-easy-feeding-adaptive-bodysuit",
      "store": "Little Green Radicals",
      "price": "$28.80",
-     "shipping": "USA standard delivery $15, free on orders over $100; no duty or sales tax"
+     "shipping": "Shipping calculated at checkout",
+     "rating": {
+      "value": 4.9,
+      "count": 17,
+      "via": "shopify",
+      "checked": "2026-10-26"
+     },
+     "price_checked": "2026-10-26"
     }
    ],
    "read": "2026-10-23",
@@ -14107,7 +14307,8 @@
      "name": "Maxi-Cosi Sela All-in-One Convertible Car Seat",
      "url": "https://enlightenedbaby.com/products/maxi-cosi-sela-all-in-one-convertible-car-seat",
      "store": "Enlightened Baby",
-     "price": "$449.99"
+     "price": "$449.99",
+     "price_checked": "2026-10-26"
     }
    ],
    "read": "2026-10-23",
@@ -14204,7 +14405,14 @@
      "url": "https://radchildrensfurniture.com/products/pikler-arch",
      "store": "RAD Children’s Furniture",
      "price": "$249.00",
-     "shipping": "Free shipping on domestic orders"
+     "shipping": "Free shipping",
+     "rating": {
+      "value": 4.92,
+      "count": 13,
+      "via": "json-ld",
+      "checked": "2026-10-26"
+     },
+     "price_checked": "2026-10-26"
     }
    ],
    "read": "2026-10-23",
@@ -14285,7 +14493,15 @@
      "name": "Smart Bottoms Smart One 4.0 All-in-One Diaper",
      "url": "https://www.greenmountaindiapers.com/products/smart-bottoms-smart-one-4-0-organic-cotton-all-in-one-diaper",
      "store": "Green Mountain Diapers",
-     "price": "$28.00"
+     "price": "$28.00",
+     "rating": {
+      "value": 4,
+      "count": 1,
+      "via": "shopify",
+      "checked": "2026-10-26"
+     },
+     "shipping": "Shipping calculated at checkout",
+     "price_checked": "2026-10-26"
     }
    ],
    "read": "2026-10-23",
@@ -14376,7 +14592,8 @@
      "name": "Hooded Towel | Slate",
      "url": "https://enlightenedbaby.com/products/hooded-towel-slate",
      "store": "Enlightened Baby",
-     "price": "$29.99"
+     "price": "$29.99",
+     "price_checked": "2026-10-26"
     }
    ],
    "read": "2026-10-23",
@@ -14464,7 +14681,14 @@
      "url": "https://www.bellalunatoys.com/products/wooden-hammer-bench-xylophone",
      "store": "Bella Luna Toys",
      "price": "$34.99",
-     "shipping": "Free shipping on orders over $99 (contiguous 48 states)"
+     "shipping": "Free shipping on orders over $99",
+     "rating": {
+      "value": 1,
+      "count": 1,
+      "via": "json-ld",
+      "checked": "2026-10-26"
+     },
+     "price_checked": "2026-10-26"
     }
    ],
    "read": "2026-10-23",
@@ -14526,7 +14750,15 @@
      "url": "https://sprout-kids.com/products/wooden-kids-tables-weaning",
      "store": "Sprout Kids",
      "price": "$130.00",
-     "variant": "Finished Birch / 20x30 / 12\""
+     "variant": "Finished Birch / 20x30 / 12\"",
+     "rating": {
+      "value": 5,
+      "count": 6,
+      "via": "json-ld",
+      "checked": "2026-10-26"
+     },
+     "shipping": "Free shipping on orders over $100",
+     "price_checked": "2026-10-26"
     }
    ],
    "read": "2026-10-23",
@@ -14601,7 +14833,13 @@
      "url": "https://www.avocadogreenmattress.com/products/organic-kids-pillow",
      "price": "$76 (single; two-pack $136)",
      "store": "Avocado",
-     "ships_from": null
+     "ships_from": null,
+     "rating": {
+      "value": 4,
+      "count": 3,
+      "via": "json-ld",
+      "checked": "2026-10-26"
+     }
     }
    ],
    "outside": [],
@@ -14681,7 +14919,8 @@
      "price": "$16.99",
      "store": "Béaba USA",
      "ships_from": "US",
-     "shipping": "Free shipping on orders $140*"
+     "shipping": "Free shipping on orders over $140",
+     "price_checked": "2026-10-26"
     }
    ],
    "free": [],
@@ -14772,7 +15011,8 @@
      "price": "$19.99",
      "store": "Béaba USA",
      "ships_from": "US",
-     "shipping": "Free shipping on orders $140*"
+     "shipping": "Free shipping on orders over $140",
+     "price_checked": "2026-10-26"
     }
    ],
    "outside": [],
@@ -14855,7 +15095,8 @@
      "price": "$14.99",
      "store": "Béaba USA",
      "ships_from": "US",
-     "shipping": "Free shipping on orders $140*"
+     "shipping": "Free shipping on orders over $140",
+     "price_checked": "2026-10-26"
     }
    ],
    "free": [],
@@ -14951,7 +15192,8 @@
      "price": "$36",
      "store": "Colored Organics",
      "ships_from": null,
-     "shipping": "Free U.S. shipping on orders over $50"
+     "shipping": "Free shipping on orders over $50",
+     "price_checked": "2026-10-26"
     }
    ],
    "outside": [],
@@ -15010,7 +15252,8 @@
      "price": "$26",
      "store": "Colored Organics",
      "ships_from": null,
-     "shipping": "Free U.S. shipping on orders over $50"
+     "shipping": "Free shipping on orders over $50",
+     "price_checked": "2026-10-26"
     }
    ],
    "free": [],
@@ -15067,7 +15310,8 @@
      "price": "$9 (final sale)",
      "store": "Colored Organics",
      "ships_from": null,
-     "shipping": "Free U.S. shipping on orders over $50"
+     "shipping": "Free shipping on orders over $50",
+     "price_checked": "2026-10-26"
     }
    ],
    "free": [],
@@ -15147,7 +15391,14 @@
      "price": "$159.99",
      "store": "Delta Children",
      "ships_from": null,
-     "shipping": "Free shipping sitewide; oversized items may carry a charge to out-of-network zip codes"
+     "shipping": "Free shipping",
+     "rating": {
+      "value": 5,
+      "count": 41,
+      "via": "json-ld",
+      "checked": "2026-10-26"
+     },
+     "price_checked": "2026-10-26"
     }
    ],
    "contains": [],
@@ -15248,7 +15499,8 @@
      "price": "$24.99",
      "store": "Mushie",
      "ships_from": null,
-     "shipping": "Free Shipping for US orders $75+"
+     "shipping": "Free shipping on orders over $75",
+     "price_checked": "2026-10-26"
     }
    ],
    "read": "2026-10-24",
@@ -15331,7 +15583,8 @@
      "price": "$28",
      "store": "Colored Organics",
      "ships_from": null,
-     "shipping": "Free U.S. shipping on orders over $50"
+     "shipping": "Free shipping on orders over $50",
+     "price_checked": "2026-10-26"
     }
    ],
    "uses": [],
@@ -15403,7 +15656,8 @@
      "url": "https://kodokids.com/products/playsilks",
      "price": "$13.00 each",
      "store": "Kodo Kids",
-     "ships_from": null
+     "ships_from": null,
+     "price_checked": "2026-10-26"
     }
    ],
    "free": [],
@@ -15505,7 +15759,14 @@
      "price": "$158.40",
      "store": "Little Green Radicals",
      "ships_from": null,
-     "shipping": "USA standard delivery (8-12 working days) $15, free on orders over $100; no duty or sales tax"
+     "shipping": "Shipping calculated at checkout",
+     "rating": {
+      "value": 4.9,
+      "count": 59,
+      "via": "shopify",
+      "checked": "2026-10-26"
+     },
+     "price_checked": "2026-10-26"
     }
    ],
    "uses": [],
@@ -15577,7 +15838,14 @@
      "price": "$97.20",
      "store": "Little Green Radicals",
      "ships_from": null,
-     "shipping": "USA standard delivery (8-12 working days) $15, free on orders over $100; no duty or sales tax"
+     "shipping": "Shipping calculated at checkout",
+     "rating": {
+      "value": 4.9,
+      "count": 462,
+      "via": "shopify",
+      "checked": "2026-10-26"
+     },
+     "price_checked": "2026-10-26"
     }
    ],
    "outside": [],
@@ -15645,7 +15913,8 @@
      "price": "$12 (final sale)",
      "store": "Colored Organics",
      "ships_from": null,
-     "shipping": "Free U.S. shipping on orders over $50"
+     "shipping": "Free shipping on orders over $50",
+     "price_checked": "2026-10-26"
     }
    ],
    "free": [],
@@ -15705,7 +15974,14 @@
      "price": "$39.99",
      "store": "Newton Baby",
      "ships_from": null,
-     "shipping": "Ships free in the contiguous 48 states; HI and AK fee at checkout"
+     "shipping": "$25 shipping",
+     "rating": {
+      "value": 4.3,
+      "count": 480,
+      "via": "json-ld",
+      "checked": "2026-10-26"
+     },
+     "price_checked": "2026-10-26"
     }
    ],
    "free": [],
@@ -15786,7 +16062,8 @@
      "store": "Béaba USA",
      "price": "$39.99",
      "ships_from": null,
-     "shipping": "Free shipping on orders $140*"
+     "shipping": "Free shipping on orders over $140",
+     "price_checked": "2026-10-26"
     }
    ],
    "free": [],
@@ -15859,7 +16136,8 @@
      "store": "Colored Organics",
      "price": "$44",
      "ships_from": null,
-     "shipping": "Free U.S. shipping on orders over $50"
+     "shipping": "Free shipping on orders over $50",
+     "price_checked": "2026-10-26"
     }
    ],
    "free": [],
@@ -15915,7 +16193,14 @@
      "price": "$98.00 - $128.00",
      "variant": "24\"x36\"",
      "ships_from": null,
-     "shipping": "$30 shipping charge on Coyuchi items"
+     "shipping": "Free shipping on orders over $150, $30 below",
+     "rating": {
+      "value": 5,
+      "count": 1,
+      "via": "judge.me",
+      "checked": "2026-10-26"
+     },
+     "price_checked": "2026-10-26"
     }
    ],
    "free": [],
@@ -15989,7 +16274,8 @@
      "store": "Crywolf",
      "price": "$39.99 NZD",
      "ships_from": "New Zealand",
-     "shipping": null
+     "shipping": null,
+     "price_checked": "2026-10-26"
     }
    ],
    "uses": [],
@@ -16056,7 +16342,8 @@
      "store": "Enlightened Baby",
      "price": "$799.95",
      "ships_from": null,
-     "shipping": null
+     "shipping": null,
+     "price_checked": "2026-10-26"
     }
    ],
    "outside": [],
@@ -16150,7 +16437,14 @@
      "store": "Bella Luna Toys",
      "price": "$9.99",
      "ships_from": "US",
-     "shipping": "Free shipping on orders over $99 within the contiguous 48 states"
+     "shipping": "Free shipping on orders over $99",
+     "rating": {
+      "value": 5,
+      "count": 13,
+      "via": "json-ld",
+      "checked": "2026-10-26"
+     },
+     "price_checked": "2026-10-26"
     }
    ],
    "free": [],
@@ -16211,7 +16505,14 @@
      "store": "Mushie",
      "price": "$14.99",
      "ships_from": null,
-     "shipping": "Free Shipping for US orders $75+"
+     "shipping": "Free shipping on orders over $75",
+     "rating": {
+      "value": 4.9,
+      "count": 15,
+      "via": "json-ld",
+      "checked": "2026-10-26"
+     },
+     "price_checked": "2026-10-26"
     }
    ],
    "free": [],
@@ -16297,7 +16598,8 @@
      "store": "Colored Organics",
      "price": "$34.50",
      "ships_from": null,
-     "shipping": "Free U.S. shipping on orders over $50"
+     "shipping": "Free shipping on orders over $50",
+     "price_checked": "2026-10-26"
     }
    ],
    "free": [],
@@ -16361,7 +16663,14 @@
      "store": "Newton Baby",
      "price": "$199.99",
      "ships_from": "US",
-     "shipping": "Free shipping in the contiguous 48 states; HI and AK fee at checkout"
+     "shipping": "Free shipping",
+     "rating": {
+      "value": 4.7,
+      "count": 38,
+      "via": "json-ld",
+      "checked": "2026-10-26"
+     },
+     "price_checked": "2026-10-26"
     }
    ],
    "free": [],
@@ -16459,7 +16768,14 @@
      "store": "Piccalio",
      "price": "$179",
      "ships_from": null,
-     "shipping": "Ships free (contiguous US)"
+     "shipping": "Ships free (contiguous US)",
+     "rating": {
+      "value": 5,
+      "count": 98,
+      "via": "shopify",
+      "checked": "2026-10-26"
+     },
+     "price_checked": "2026-10-26"
     }
    ],
    "outside": [],
@@ -16541,7 +16857,8 @@
      "store": "The Baby Penguin",
      "price": "$59.99",
      "ships_from": null,
-     "shipping": "Free standard shipping on orders of $50 or more within the contiguous United States"
+     "shipping": "Free shipping on orders over $50",
+     "price_checked": "2026-10-26"
     }
    ],
    "free": [],
@@ -16615,7 +16932,8 @@
      "store": "Bella Luna Toys",
      "price": "$299.99",
      "ships_from": null,
-     "shipping": "Ships separately, directly from the manufacturer, within the 48 contiguous states; free shipping on orders over $99"
+     "shipping": "Free shipping on orders over $99",
+     "price_checked": "2026-10-26"
     }
    ],
    "outside": [],
@@ -16696,7 +17014,14 @@
      "store": "RAD Children’s Furniture",
      "price": "$319.00",
      "ships_from": "US",
-     "shipping": "Free shipping on all domestic orders"
+     "shipping": "Free shipping",
+     "rating": {
+      "value": 4.97,
+      "count": 213,
+      "via": "json-ld",
+      "checked": "2026-10-26"
+     },
+     "price_checked": "2026-10-26"
     }
    ],
    "uses": [],
@@ -16791,7 +17116,14 @@
      "store": "RAD Children’s Furniture",
      "price": "$119.00",
      "ships_from": "US",
-     "shipping": "Free shipping on all domestic orders"
+     "shipping": "Free shipping",
+     "rating": {
+      "value": 5,
+      "count": 2,
+      "via": "json-ld",
+      "checked": "2026-10-26"
+     },
+     "price_checked": "2026-10-26"
     }
    ],
    "uses": [],
@@ -16858,7 +17190,14 @@
      "store": "RAD Children’s Furniture",
      "price": "$89.00",
      "ships_from": "US",
-     "shipping": "Free shipping on all domestic orders"
+     "shipping": "Free shipping",
+     "rating": {
+      "value": 5,
+      "count": 1,
+      "via": "json-ld",
+      "checked": "2026-10-26"
+     },
+     "price_checked": "2026-10-26"
     }
    ],
    "free": [],
@@ -16920,7 +17259,14 @@
      "store": "Boppy",
      "price": "$50.00",
      "ships_from": null,
-     "shipping": "Free shipping on orders of $75 or more"
+     "shipping": "Free shipping",
+     "rating": {
+      "value": 4.5,
+      "count": 321,
+      "via": "json-ld",
+      "checked": "2026-10-26"
+     },
+     "price_checked": "2026-10-26"
     }
    ],
    "read": "2026-10-26",
@@ -17021,7 +17367,8 @@
      "store": "Camden Rose",
      "price": "$156.00",
      "ships_from": null,
-     "shipping": "Free standard domestic shipping on orders over $150 to the contiguous US"
+     "shipping": "Free shipping",
+     "price_checked": "2026-10-26"
     }
    ],
    "read": "2026-10-26",
@@ -17113,7 +17460,8 @@
      "store": "Delta Children",
      "price": "$169.99",
      "ships_from": null,
-     "shipping": "Free shipping sitewide"
+     "shipping": "Free shipping",
+     "price_checked": "2026-10-26"
     }
    ],
    "read": "2026-10-26",
@@ -17191,7 +17539,14 @@
      "store": "Bella Luna Toys",
      "price": "$14.99",
      "ships_from": "US",
-     "shipping": "Free shipping on orders over $99 within the contiguous 48 US states"
+     "shipping": "Free shipping on orders over $99",
+     "rating": {
+      "value": 5,
+      "count": 2,
+      "via": "json-ld",
+      "checked": "2026-10-26"
+     },
+     "price_checked": "2026-10-26"
     }
    ],
    "read": "2026-10-26",
@@ -17254,7 +17609,14 @@
      "store": "Bella Luna Toys",
      "price": "$16.99",
      "ships_from": "US",
-     "shipping": "Free shipping on orders over $99 within the contiguous 48 US states"
+     "shipping": "Free shipping on orders over $99",
+     "rating": {
+      "value": 5,
+      "count": 3,
+      "via": "json-ld",
+      "checked": "2026-10-26"
+     },
+     "price_checked": "2026-10-26"
     }
    ],
    "read": "2026-10-26",
@@ -17311,7 +17673,14 @@
      "url": "https://shop.lovevery.com/products/the-buddy-stroller",
      "store": "Lovevery",
      "price": "$55.00",
-     "ships_from": null
+     "ships_from": null,
+     "rating": {
+      "value": 4.87,
+      "count": 285,
+      "via": "yotpo",
+      "checked": "2026-10-26"
+     },
+     "price_checked": "2026-10-26"
     }
    ],
    "read": "2026-10-26",
@@ -17372,7 +17741,14 @@
      "store": "Bella Luna Toys",
      "price": "$26.99",
      "ships_from": "US",
-     "shipping": "Free shipping on orders over $99 within the contiguous 48 US states"
+     "shipping": "Free shipping on orders over $99",
+     "rating": {
+      "value": 4.9,
+      "count": 9,
+      "via": "json-ld",
+      "checked": "2026-10-26"
+     },
+     "price_checked": "2026-10-26"
     }
    ],
    "read": "2026-10-26",
@@ -17453,7 +17829,14 @@
      "store": "Mushie",
      "price": "$42.00",
      "ships_from": null,
-     "shipping": "Free Shipping for US orders $75+"
+     "shipping": "Free shipping on orders over $75",
+     "rating": {
+      "value": 5,
+      "count": 10,
+      "via": "json-ld",
+      "checked": "2026-10-26"
+     },
+     "price_checked": "2026-10-26"
     }
    ],
    "read": "2026-10-26",
@@ -17549,7 +17932,14 @@
      "store": "Mushie",
      "price": "$21.99",
      "ships_from": null,
-     "shipping": "Free Shipping for US orders $75+"
+     "shipping": "Free shipping on orders over $75",
+     "rating": {
+      "value": 5,
+      "count": 7,
+      "via": "json-ld",
+      "checked": "2026-10-26"
+     },
+     "price_checked": "2026-10-26"
     }
    ],
    "read": "2026-10-26",
@@ -17638,7 +18028,14 @@
      "store": "Mushie",
      "price": "$26.00",
      "ships_from": null,
-     "shipping": "Free Shipping for US orders $75+"
+     "shipping": "Free shipping on orders over $75",
+     "rating": {
+      "value": 5,
+      "count": 3,
+      "via": "json-ld",
+      "checked": "2026-10-26"
+     },
+     "price_checked": "2026-10-26"
     }
    ],
    "read": "2026-10-26",
@@ -17730,7 +18127,14 @@
      "store": "Naturepedic",
      "price": "$39.00",
      "ships_from": "US",
-     "shipping": "Free shipping in 3-5 business days (Continental U.S.)"
+     "shipping": "Free shipping",
+     "rating": {
+      "value": 4.7,
+      "count": 10,
+      "via": "yotpo",
+      "checked": "2026-10-26"
+     },
+     "price_checked": "2026-10-26"
     }
    ],
    "read": "2026-10-26",
@@ -17803,7 +18207,14 @@
      "store": "Smiling Tree Toys",
      "price": "$69.00",
      "ships_from": null,
-     "shipping": "Free shipping $50+"
+     "shipping": "Free shipping",
+     "rating": {
+      "value": 5,
+      "count": 1,
+      "via": "json-ld",
+      "checked": "2026-10-26"
+     },
+     "price_checked": "2026-10-26"
     }
    ],
    "read": "2026-10-26",
@@ -17895,7 +18306,9 @@
      "url": "https://www.thenaturalbabyco.com/products/almondine-chequer-soft-buckle-carrier",
      "store": "The Natural Baby Company",
      "price": "$184.00",
-     "ships_from": null
+     "ships_from": null,
+     "shipping": "Shipping calculated at checkout",
+     "price_checked": "2026-10-26"
     }
    ],
    "read": "2026-10-26",
@@ -17985,7 +18398,14 @@
      "store": "Bella Luna Toys",
      "price": "$299.99",
      "ships_from": "US",
-     "shipping": "Free shipping on orders over $99 within the contiguous 48 US states"
+     "shipping": "Free shipping on orders over $99",
+     "rating": {
+      "value": 5,
+      "count": 3,
+      "via": "json-ld",
+      "checked": "2026-10-26"
+     },
+     "price_checked": "2026-10-26"
     }
    ],
    "read": "2026-10-26",
@@ -18085,7 +18505,14 @@
      "store": "Green Mountain Diapers",
      "price": "$16.00",
      "ships_from": null,
-     "shipping": "Shipping calculated at checkout"
+     "shipping": "Shipping calculated at checkout",
+     "rating": {
+      "value": 4.8,
+      "count": 10,
+      "via": "shopify",
+      "checked": "2026-10-26"
+     },
+     "price_checked": "2026-10-26"
     }
    ],
    "read": "2026-10-26",
