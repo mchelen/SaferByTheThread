@@ -216,7 +216,12 @@
   }
   function saveBtn(item, cls) {
     var on = listGet(SAVED_KEY).indexOf(item.id) >= 0;
-    return '<button type="button" class="' + (cls || 'save-btn') + '" data-save="' + esc(item.id) + '" aria-pressed="' + on + '" aria-label="' + (on ? 'Remove from saved' : 'Save') + ': ' + esc(item.brand + ' ' + item.line) + '">' + icon('heart') + (cls ? '<span>' + (on ? 'Saved' : 'Save') + '</span>' : '') + '</button>';
+    return '<button type="button" class="' + (cls || 'save-btn') + '" data-save="' + esc(item.id) + '" aria-pressed="' + on + '" aria-label="' + (on ? 'Remove from saved' : 'Save') + ': ' + esc(item.brand + ' ' + item.line) + '">' + icon('heart') + (cls && !/-ib\b/.test(cls) ? '<span>' + (on ? 'Saved' : 'Save') + '</span>' : '') + '</button>';
+  }
+  // Share copies (or, on phones, shares) the link to this site's page for the item, never the store's.
+  function shareItemBtn(item, cls) {
+    var label = !cls || /-ib\b/.test(cls) ? '' : '<span>Share</span>';
+    return '<button type="button" class="' + (cls || 'share-btn') + '" data-share="' + esc(U('/p/' + item.id)) + '" data-share-title="' + esc(item.brand + ' ' + item.line) + '"' + (label ? '' : ' aria-label="Share: ' + esc(item.brand + ' ' + item.line) + '"') + '>' + icon('share') + label + '</button>';
   }
   function compareBtn(item) {
     var on = listGet(CMP_KEY).indexOf(item.id) >= 0;
@@ -229,16 +234,46 @@
     return '<div class="ph"><img src="' + esc(asset(item.img)) + '" alt="' + esc(item.brand + ' ' + item.line) + '" width="640" height="800" decoding="async"' +
       (eager ? ' fetchpriority="high"' : ' loading="lazy"') + ' onerror="this.parentNode.classList.add(\'empty\');this.outerHTML=\'<span>No store photo saved</span>\'"></div>';
   }
-  // Product page photos: the first large, the rest as thumbnails that swap into the main frame.
+  // Product page photos: a strip that swipes (snap scrolling) with arrows, a counter and thumbnails (kept on phones
+  // too: Baymard found dots alone make people miss photos). Each photo opens the lightbox, which swipes through the same photos.
+  function photoTrack(photos, alt, zoom) {
+    var n = photos.length;
+    return '<div class="g-frame"><div class="g-track" tabindex="0" aria-label="Photos">' + photos.map(function (p, k) {
+      var img = '<img src="' + esc(asset(p)) + '" alt="' + esc(alt) + (n > 1 ? ', photo ' + (k + 1) + ' of ' + n : '') + '" width="640" height="800" decoding="async"' + (k ? ' loading="lazy"' : ' fetchpriority="high"') + '>';
+      return zoom ? '<button type="button" class="g-slide" data-zoom="' + k + '" aria-label="Enlarge photo ' + (k + 1) + ' of ' + n + '"><div class="ph">' + img + '</div></button>'
+        : '<div class="g-slide">' + img + '</div>';
+    }).join('') + '</div>' +
+      (n > 1 ? '<button type="button" class="g-arrow prev" data-gstep="-1" aria-label="Previous photo" disabled>' + icon('chev') + '</button>' +
+        '<button type="button" class="g-arrow next" data-gstep="1" aria-label="Next photo">' + icon('chev') + '</button>' +
+        '<span class="g-count" aria-hidden="true">1 / ' + n + '</span>' : '') +
+      (zoom ? '<span class="zoom-hint" aria-hidden="true">' + icon('zoom') + 'Enlarge</span>' : '') + '</div>';
+  }
   function gallery(item) {
     if (!item.photos.length) return '<div class="gallery">' + photo(item, true) + '</div>';
-    var alt = item.brand + ' ' + item.line, src = item.products[0] ? ' from ' + esc(item.products[0].store) : '';
-    return '<div class="gallery"><button type="button" class="ph-zoom" data-zoom="' + esc(asset(item.photos[0])) + '" aria-label="Enlarge photo" style="all:unset;display:block;position:relative;cursor:zoom-in">' +
-      '<div class="ph"><img id="g-main" src="' + esc(asset(item.photos[0])) + '" alt="' + esc(alt) + '" width="640" height="800" decoding="async" fetchpriority="high"></div><span class="zoom-hint">' + icon('zoom') + 'Enlarge</span></button>' +
-      (item.photos.length > 1 ? '<div class="thumbs" role="group" aria-label="Photos">' + item.photos.map(function (p, k) {
-        return '<button type="button" class="thumb" data-photo="' + esc(asset(p)) + '" aria-pressed="' + (k === 0) + '" aria-label="Photo ' + (k + 1) + ' of ' + item.photos.length + '"><img src="' + esc(asset(p)) + '" alt="" loading="lazy" decoding="async"></button>';
-      }).join('') + '</div>' : '') +
-      '<p class="img-src">' + (item.photos.length > 1 ? item.photos.length + ' store photos' : 'Store photo') + src + '.</p></div>';
+    var n = item.photos.length, src = item.products[0] ? ' from ' + esc(item.products[0].store) : '';
+    return '<div class="gallery" data-photos="' + esc(JSON.stringify(item.photos)) + '" data-alt="' + esc(item.brand + ' ' + item.line) + '">' +
+      photoTrack(item.photos, item.brand + ' ' + item.line, true) +
+      (n > 1 ? '<div class="thumbs" role="group" aria-label="Photos">' + item.photos.map(function (p, k) {
+          return '<button type="button" class="thumb" data-gto="' + k + '" aria-pressed="' + (k === 0) + '" aria-label="Photo ' + (k + 1) + ' of ' + n + '"><img src="' + esc(asset(p)) + '" alt="" loading="lazy" decoding="async"></button>';
+        }).join('') + '</div>' : '') +
+      '<p class="img-src">' + (n > 1 ? n + ' store photos' : 'Store photo') + src + '.</p></div>';
+  }
+  // Which photo a strip shows; the counter, thumbnails and arrows follow it.
+  function REDUCED() { return window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches; }
+  function trackAt(tr) { return tr.clientWidth ? Math.round(tr.scrollLeft / tr.clientWidth) : 0; }
+  function trackGo(tr, k, smooth) {
+    k = Math.max(0, Math.min(tr.children.length - 1, k));
+    tr.scrollTo({ left: k * tr.clientWidth, behavior: smooth === false || REDUCED() ? 'auto' : 'smooth' });
+  }
+  function trackSync(tr) {
+    var k = trackAt(tr), n = tr.children.length, fr = tr.parentNode, g = fr.parentNode;
+    var c = $('.g-count', fr); if (c) c.textContent = (k + 1) + ' / ' + n;
+    $$('.g-arrow', fr).forEach(function (b) { b.disabled = b.classList.contains('prev') ? k === 0 : k === n - 1; });
+    $$('.thumb', g).forEach(function (b, j) {
+      var on = j === k; if (b.getAttribute('aria-pressed') === String(on)) return;
+      b.setAttribute('aria-pressed', on);
+      if (on) { var th = b.parentNode; th.scrollLeft = Math.max(0, b.offsetLeft - th.offsetLeft - (th.clientWidth - b.offsetWidth) / 2); }
+    });
   }
   // How a listing reads against the visitor's material filters. A miss names what the listing has that a filter
   // hides, one line each. Otherwise one "Not stated" line names the parts no page describes (the filter itself when
@@ -289,7 +324,7 @@
       '<p class="price">' + esc(S.priceFrom(item)) + '</p>' +
       '<p class="ship' + (item.deliv === 'free' ? ' is-free' : '') + '">' + esc(item.shipLine) + '</p>' +
       fitLine(item, r, 1) +
-      '</div></a>' + (offersOf(item)[0] ? '<a class="btn-buy sm card-buy" href="' + esc(offersOf(item)[0].url) + '" target="_blank" rel="noopener" aria-label="' + buyText(offersOf(item)[0]) + ': ' + esc(item.brand + ' ' + item.line) + ' (opens the store)" title="' + buyText(offersOf(item)[0]) + '">Buy at store' + icon('ext') + '</a>' : '') + saveBtn(item) +
+      '</div></a>' + (offersOf(item)[0] ? '<a class="btn-buy sm card-buy" href="' + esc(offersOf(item)[0].url) + '" target="_blank" rel="noopener" aria-label="' + buyText(offersOf(item)[0]) + ': ' + esc(item.brand + ' ' + item.line) + ' (opens the store)" title="' + buyText(offersOf(item)[0]) + '">Buy at store' + icon('ext') + '</a>' : '') + saveBtn(item) + shareItemBtn(item) +
       '<button type="button" class="qv-btn" data-qv="' + esc(item.id) + '">Quick view</button></article>';
   }
   function cardRail(items, title, moreHref, moreText) {
@@ -840,7 +875,7 @@
       '<div class="made">' + (item.uses.length ? '<p class="lab">Made with</p><div class="chips-row">' + item.uses.map(chip).join('') + '</div>' : '') +
       (item.outside.length ? '<p class="lab"' + (item.uses.length ? ' style="margin-top:10px"' : '') + '>Flagged parts</p><div class="chips-row out">' + item.outside.map(chip).join('') + '</div>' : '') +
       '<a class="link-b" href="#materials" data-jump="materials">Full materials ↓</a></div>' +
-      '<div class="buy-actions">' + saveBtn(item, 'btn-3') + compareBtn(item) + '<button type="button" class="btn-3" data-share="' + esc(U('/p/' + item.id)) + '" data-share-title="' + esc(item.brand + ' ' + item.line) + '">' + icon('share') + '<span>Share</span></button></div>' +
+      '<div class="buy-actions">' + saveBtn(item, 'btn-3') + compareBtn(item) + shareItemBtn(item, 'btn-3') + '</div>' +
       (item.quote ? '<blockquote class="ev"><p>“' + esc(item.quote) + '”</p><footer>From the store page</footer></blockquote>' : item.evidence ? '<p class="ev"><span>' + esc(item.evidence) + '</span></p>' : '') +
       (item.note ? '<p class="muted" style="font-size:14px">' + esc(item.note) + '</p>' : '') +
       '<dl class="facts">' + (stds.length ? '<div><dt>Standards named</dt><dd>' + stds.join(', ') + '</dd></div>' : '') +
@@ -944,6 +979,7 @@
       var here = i.id === opt.current;
       return '<th scope="col"' + (here ? ' class="here"' : '') + '>' + (here ? '<span class="here-t">This item</span>' : '') + '<a href="' + U('/p/' + i.id) + '" style="text-decoration:none">' + photo(i) + '<span class="brand" style="display:block;margin-top:8px;font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted)">' + esc(i.brand) + '</span><span style="font-weight:600">' + esc(i.line) + '</span></a>' +
         (offersOf(i)[0] ? '<a class="btn-buy sm cmp-buy" href="' + esc(offersOf(i)[0].url) + '" target="_blank" rel="noopener">' + buyText(offersOf(i)[0]) + icon('ext') + '</a>' : '') +
+        '<div class="cmp-acts">' + saveBtn(i, 'act-ib') + shareItemBtn(i, 'act-ib') + '</div>' +
         (opt.removable ? '<button type="button" class="rm" data-compare="' + esc(i.id) + '">Remove</button>' : '') + '</th>';
     }).join('') + '</tr></thead><tbody>' + keys.map(function (k) {
       return '<tr><th scope="row">' + CMP_ROWS[k][0] + '</th>' + items.map(function (i) { return '<td' + (i.id === opt.current ? ' class="here"' : '') + '>' + CMP_ROWS[k][1](i) + '</td>'; }).join('') + '</tr>';
@@ -988,7 +1024,7 @@
       fitLine(item, r) +
       '<ul class="offers">' + offersOf(item).slice(0, 2).map(function (p, k) { return offerHtml(p, k, item.products.length > 1); }).join('') + '</ul>' +
       '<div class="made">' + (item.uses.length ? '<p class="lab">Made with</p><div class="chips-row">' + item.uses.map(chip).join('') + '</div>' : '') + (item.outside.length ? '<p class="lab"' + (item.uses.length ? ' style="margin-top:10px"' : '') + '>Flagged parts</p><div class="chips-row out">' + item.outside.map(chip).join('') + '</div>' : '') + '</div>' +
-      '<div class="qv-actions"><a class="btn-2" href="' + U('/p/' + item.id) + '">Full details</a>' + saveBtn(item, 'btn-3') + compareBtn(item) + '</div></div></div>';
+      '<div class="qv-actions"><a class="btn-2" href="' + U('/p/' + item.id) + '">Full details</a>' + saveBtn(item, 'btn-3') + compareBtn(item) + shareItemBtn(item, 'btn-3') + '</div></div></div>';
     qv.hidden = false; scrim.hidden = false; document.body.classList.add('no-scroll');
     qvOpener = opener || null;
     $('[data-qv-close]', qv).focus();
@@ -999,14 +1035,20 @@
     if (qvOpener && document.body.contains(qvOpener)) qvOpener.focus();
     qvOpener = null;
   }
-  function openLightbox(src, alt) {
-    var lb = document.createElement('div');
+  function openLightbox(g, k) {
+    var lb = document.createElement('div'), photos = JSON.parse(g.getAttribute('data-photos'));
     lb.className = 'lightbox'; lb.setAttribute('role', 'dialog'); lb.setAttribute('aria-label', 'Enlarged photo');
-    lb.innerHTML = '<button type="button" class="ib x" aria-label="Close">' + icon('x') + '</button><img src="' + esc(src) + '" alt="' + esc(alt || '') + '">';
+    lb.innerHTML = '<button type="button" class="ib x" aria-label="Close">' + icon('x') + '</button>' + photoTrack(photos, g.getAttribute('data-alt'), false);
     document.body.appendChild(lb); document.body.classList.add('no-scroll');
+    var tr = $('.g-track', lb); trackGo(tr, k, false); trackSync(tr);
     lb.querySelector('button').focus();
-    lb.addEventListener('click', function () { lb.remove(); document.body.classList.remove('no-scroll'); });
+    lb.addEventListener('click', function (ev) {
+      if (ev.target.closest('.g-arrow')) return;
+      lb.remove(); document.body.classList.remove('no-scroll');
+    });
   }
+  // Scroll events don't bubble, so one capturing listener keeps every photo strip's counter and thumbnails current.
+  document.addEventListener('scroll', function (ev) { var tr = ev.target; if (tr.classList && tr.classList.contains('g-track')) trackSync(tr); }, true);
   var tray = document.getElementById('tray');
   function renderTray() {
     var items = listGet(CMP_KEY).map(byId).filter(Boolean);
@@ -1030,7 +1072,7 @@
     var p = item && offersOf(item)[0], offers = $('.offers', main);
     if (!p || !offers) return;
     buybar.innerHTML = '<div class="buybar-in"><div class="bb-t"><span class="bb-name">' + esc(item.line) + '</span><span class="bb-price">' + esc(S.priceLabel(item)) + '</span></div>' +
-      '<a class="btn-buy" href="' + esc(p.url) + '" target="_blank" rel="noopener">' + buyText(p) + icon('ext') + '</a></div>';
+      saveBtn(item, 'act-ib') + shareItemBtn(item, 'act-ib') + '<a class="btn-buy" href="' + esc(p.url) + '" target="_blank" rel="noopener">' + buyText(p) + icon('ext') + '</a></div>';
     buyOffers = offers; buyBarCheck();
   }
 
@@ -1356,12 +1398,12 @@
       openQuickView(t.getAttribute('data-qv'), t);
     } else if (t.matches('[data-qv-close]')) {
       closeQuickView();
-    } else if (t.matches('[data-photo]')) {
-      var gm = $('#g-main'), z = $('.ph-zoom'), ph = t.getAttribute('data-photo');
-      if (gm) gm.src = ph; if (z) z.setAttribute('data-zoom', ph);
-      $$('.thumb').forEach(function (b) { b.setAttribute('aria-pressed', b === t); });
+    } else if (t.matches('[data-gto]')) {
+      trackGo($('.g-track', t.closest('.gallery')), +t.getAttribute('data-gto'));
+    } else if (t.matches('[data-gstep]')) {
+      var gt = $('.g-track', t.parentNode); trackGo(gt, trackAt(gt) + +t.getAttribute('data-gstep'));
     } else if (t.matches('[data-zoom]')) {
-      openLightbox(t.getAttribute('data-zoom'), $('img', t) && $('img', t).alt);
+      openLightbox(t.closest('.gallery'), +t.getAttribute('data-zoom'));
     } else if (t.id === 'menu-open') {
       openMenu();
     } else if (t.id === 'menu-close') {
@@ -1384,6 +1426,8 @@
     PEND = copyState(); openDrawer(true);
   }
   document.addEventListener('keydown', function (ev) {
+    var lbt = (ev.key === 'ArrowLeft' || ev.key === 'ArrowRight') && $('.lightbox .g-track');
+    if (lbt) { ev.preventDefault(); trackGo(lbt, trackAt(lbt) + (ev.key === 'ArrowLeft' ? -1 : 1)); }
     if (ev.key === 'Escape') {
       if (!sugg.hidden) closeSugg();
       else if ($('.lightbox')) { $('.lightbox').remove(); document.body.classList.remove('no-scroll'); }
