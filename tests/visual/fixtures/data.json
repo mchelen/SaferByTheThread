@@ -11,13 +11,11 @@
  "criteria_groups": [
   {
    "id": "plastic",
-   "title": "Plastic and synthetics",
-   "set": "leave"
+   "title": "Plastic and synthetics"
   },
   {
    "id": "treat",
-   "title": "Chemical treatments",
-   "set": "leave"
+   "title": "Added treatments"
   },
   {
    "id": "tested",
@@ -87,9 +85,9 @@
    "default": true,
    "term": "hardwood",
    "under": "wood",
-   "sub": "Only solid wood",
-   "group": "treat",
-   "keeps": "Solid wood"
+   "keeps": "Solid wood",
+   "sub": "Plywood, MDF or veneer",
+   "group": "treat"
   },
   {
    "id": "wool",
@@ -100,9 +98,9 @@
    "default": true,
    "term": "superwash",
    "under": "wool",
-   "sub": "Only untreated wool (not superwash)",
-   "group": "treat",
-   "keeps": "Untreated wool"
+   "keeps": "Untreated wool",
+   "sub": "Superwash or shrink-proofed wool",
+   "group": "treat"
   },
   {
    "id": "rubber",
@@ -113,9 +111,9 @@
    "default": true,
    "term": "plasticisers",
    "under": "latex",
-   "sub": "Only without plasticisers or synthetic rubber",
-   "group": "treat",
-   "keeps": "Without plasticisers"
+   "keeps": "Without plasticisers",
+   "sub": "Plasticisers or synthetic rubber",
+   "group": "treat"
   },
   {
    "id": "flame",
@@ -125,7 +123,7 @@
    "kind": "avoid",
    "default": true,
    "term": "flammability",
-   "sub": "Added flame retardants",
+   "sub": "Flame retardants",
    "group": "treat"
   },
   {
@@ -148,9 +146,9 @@
    "default": true,
    "term": "lfgb",
    "under": "silicone",
-   "sub": "Only tested to LFGB or the French Arrêté",
-   "group": "tested",
-   "keeps": "Tested to LFGB or Arrêté"
+   "keeps": "Tested to LFGB or Arrêté",
+   "sub": "Not stated as tested to LFGB or the French Arrêté",
+   "group": "tested"
   },
   {
    "id": "lead",
@@ -181,9 +179,9 @@
    "default": false,
    "term": "chrome",
    "under": "leather",
-   "sub": "Only vegetable or chrome-free tanned",
-   "group": "tested",
-   "keeps": "Vegetable or chrome-free tanned"
+   "keeps": "Vegetable or chrome-free tanned",
+   "sub": "Tanning not stated as vegetable or chrome-free",
+   "group": "tested"
   }
  ],
  "standards": [
@@ -213,7 +211,7 @@
   {
    "id": "fsc",
    "label": "FSC wood",
-   "term": "hardwood",
+   "term": "fsc",
    "under": "wood",
    "sub": "FSC certified"
   },
@@ -237,7 +235,7 @@
   {
    "id": "fair-rubber",
    "label": "Fair Rubber Association",
-   "term": "natural-rubber",
+   "term": "fair-rubber",
    "under": "latex",
    "sub": "Fair Rubber certified"
   }
