@@ -4,7 +4,7 @@ Chosen 2026-10-26 (M: "consolidate filter in and filter out"), replacing the Mad
 
 ## The model
 
-One **Materials** tree in the filter rail. **A checked row is included, an unchecked row is left out.** A product shows when it has none of the materials or kinds left out and at least one of the materials kept (a listing with no material recorded can't be judged and shows).
+One **Materials** tree, opened from the Materials chip in the row above the results (and in the full Filters panel). **A checked row is included, an unchecked row is left out.** A product shows when it has none of the materials or kinds left out and at least one of the materials kept (a listing with no material recorded can't be judged and shows).
 
 - Families open into their members: Natural fibres (wool, cotton, linen, silk), Plastic and synthetics (in the main materials, in small parts, in lids, stands or extras, melamine or resin-bound bamboo), Added treatments (synthetic dyes, paints or coatings; flame retardants; water, stain or wrinkle resistant finishes).
 - A material opens into the kinds of it a visitor can leave out: Wood > Plywood, MDF or veneer; Wool > Superwash or shrink-proofed wool; Natural rubber > Plasticisers or synthetic rubber; Silicone > Not stated as tested to LFGB or the French Arrêté; Leather > Tanning not stated as vegetable or chrome-free.

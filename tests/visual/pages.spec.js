@@ -94,6 +94,15 @@ test('phone filter drawer', async ({ page }, testInfo) => {
   await expect(page).toHaveScreenshot('filter-drawer.png');
 });
 
+test('filter chip row with the Materials dropdown open', async ({ page }) => {
+  await open(page, '/a/toys', '.card');
+  await page.evaluate(() => window.scrollTo(0, document.querySelector('.toolbar').getBoundingClientRect().top + window.scrollY - 80));
+  await page.click('.fbar [data-fchip="mat"]');
+  await expect(page.locator('#fpop')).toBeVisible();
+  await settle(page);
+  await expect(page).toHaveScreenshot('filter-chip-dropdown.png');
+});
+
 test('product page with buy box', async ({ page }) => {
   await open(page, '/p/obasan-organic-crib-mattress', '.pdp');
   await expect(page).toHaveScreenshot('product-top.png');

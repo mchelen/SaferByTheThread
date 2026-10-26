@@ -27,6 +27,11 @@ async function open(url, viewport) {
   return page;
 }
 const count = (page) => page.evaluate(() => document.querySelectorAll('.card').length);
+// Opens one facet's dropdown from the chip row above the results.
+async function chip(page, id) {
+  await page.click(`.fbar [data-fchip="${id}"]`);
+  await page.waitForSelector(`#fpop[data-group="${id}"]`);
+}
 
 test('home page renders product types, aisles, featured products and the menu', async () => {
   const page = await open('/');
@@ -107,10 +112,13 @@ test('the shop lists the products that meet the default material filters and set
   await page.close();
 });
 
-test('material filters sit in the rail like any other facet and change the results and the URL', async () => {
+test('material filters sit in the chip row like any other facet and change the results and the URL', async () => {
   const page = await open('/c/balls');
   await page.waitForSelector('.card');
-  assert.equal(await page.locator('#rail input[data-crit]').count(), 15);
+  await chip(page, 'tested');
+  const tested = await page.locator('#fpop input[data-crit]').count();
+  await chip(page, 'mat');
+  assert.equal(tested + await page.locator('#fpop input[data-crit]').count(), 15);
   await page.click('[data-tnode="s-treat"]');
   await page.check('#f-crit-color');
   assert.ok((await count(page)) > 4, 'allowing synthetic dyes brings painted balls in');
@@ -124,15 +132,18 @@ test('material filters sit in the rail like any other facet and change the resul
 test('facets, chips and sort work together', async () => {
   const page = await open('/shop');
   await page.waitForSelector('.card');
-  await page.check('#rail input[data-facet="cat"][value="mats"]');
+  await chip(page, 'cat');
+  await page.check('#fpop input[data-facet="cat"][value="mats"]');
   assert.match(page.url(), /cat=mats/);
-  assert.equal(await page.locator('.chips .chip-x[data-clear="cat"]').count(), 1);
-  assert.ok((await page.locator('.chips .chip-x[data-clear="crit"]').count()) >= 3, 'the chips row lists the material filters that are on');
+  assert.equal(await page.locator('#fc-cat.is-on').textContent(), 'Product type: Play mats', 'an active facet shows filled, with its choice');
+  assert.equal(await page.locator('#fpop').count(), 1, 'the dropdown stays open while choosing');
   await page.selectOption('#sort', 'price-asc');
   const prices = (await page.locator('.card .price').allTextContents()).map(t => parseFloat(t.replace(/[^\d.]/g, '')));
   assert.ok(prices.length >= 2);
   assert.deepEqual(prices, prices.slice().sort((a, b) => a - b));
-  await page.click('.chips .chip-x[data-clear="cat"]');
+  await page.keyboard.press('Escape');
+  await chip(page, 'cat');
+  await page.uncheck('#fpop input[data-facet="cat"][value="mats"]');
   assert.doesNotMatch(page.url(), /cat=/);
   await page.goBack();
   await page.waitForTimeout(200);
@@ -373,30 +384,81 @@ test('every Buy button has Save and Share beside it, and Share copies this site\
   await page.close();
 });
 
-test('changing a filter keeps the page, the rail and the open facets where they were', async () => {
+test('result pages put every filter in one row of chips, each opening its own dropdown', async () => {
+  for (const url of ['/a/toys', '/c/balls', '/shop', '/search?q=wool', '/m/wood', '/b/senger-naturwelt']) {
+    const page = await open(url);
+    await page.waitForSelector('.card, .empty-state');
+    assert.equal(await page.locator('.fbar').count(), 1, url + ': one filter row');
+    const tops = await page.locator('.fbar-row > *').evaluateAll(l => l.map(e => Math.round(e.getBoundingClientRect().top)));
+    assert.ok(tops.length >= 6 && new Set(tops).size === 1, url + ': the chips sit on one line');
+    assert.equal(await page.locator('#rail .fgroup, .quick, .chips').count(), 0, url + ': no filter rail or extra chip rows beside it');
+    assert.deepEqual(page.errors, []);
+    await page.close();
+  }
+  const page = await open('/a/toys');
+  await page.waitForSelector('.card');
+  assert.equal(await page.locator('#fc-mat.is-on .cnt').count(), 1, 'the default material filters show on the Materials chip');
+  await chip(page, 'price');
+  assert.equal(await page.getAttribute('#fc-price', 'aria-expanded'), 'true');
+  const box = await page.locator('#fpop').boundingBox(), c = await page.locator('#fc-price').boundingBox();
+  assert.ok(Math.abs(box.x - c.x) < 2 && box.y > c.y + c.height - 1, 'the dropdown opens under its chip');
+  await chip(page, 'age');
+  assert.equal(await page.locator('#fpop').count(), 1, 'one dropdown at a time');
+  await page.keyboard.press('Escape');
+  assert.equal(await page.locator('#fpop').count(), 0, 'Escape closes it');
+  await chip(page, 'price');
+  await page.click('h1');
+  assert.equal(await page.locator('#fpop').count(), 0, 'a click elsewhere closes it');
+  assert.equal(await page.locator('.fbar [data-clear-all]').count(), 0);
+  await chip(page, 'price');
+  await page.check('#fpop input[data-facet="price"]:not([disabled])');
+  assert.equal(await page.locator('#fc-price.is-on').count(), 1);
+  assert.equal(await page.textContent('#fc-all .cnt'), '1', 'the Filters chip counts what is on');
+  await page.click('.fbar [data-clear-all]');
+  assert.doesNotMatch(page.url(), /price=/, 'Clear all clears it');
+  await page.close();
+});
+
+test('phone width: the chip row scrolls sideways and a chip opens a sheet from the bottom', async () => {
+  const page = await open('/a/toys', { width: 390, height: 800 });
+  await page.waitForSelector('.card');
+  assert.equal(await page.evaluate(() => document.documentElement.scrollWidth), 390, 'no sideways scroll on the page');
+  const row = await page.locator('.fbar-row').evaluate(r => ({ sw: r.scrollWidth, cw: r.clientWidth, x: getComputedStyle(r).overflowX }));
+  assert.ok(row.sw > row.cw && row.x === 'auto', 'the chip row scrolls on its own');
+  const tops = await page.locator('.fbar-row > *').evaluateAll(l => l.map(e => Math.round(e.getBoundingClientRect().top)));
+  assert.equal(new Set(tops).size, 1, 'one line');
+  await chip(page, 'mat');
+  const sheet = await page.locator('#fpop').boundingBox();
+  assert.ok(sheet.x === 0 && sheet.width === 390 && Math.round(sheet.y + sheet.height) === 800, 'a full-width sheet at the bottom');
+  const before = await page.textContent('#res-count b');
+  await page.click('#fpop [data-only="wood"]');
+  assert.notEqual(await page.textContent('#res-count b'), before, 'changes apply straight away');
+  assert.match(await page.textContent('#fpop .fpop-foot .btn'), /Show \d+ products?/);
+  await page.click('#fpop .fpop-foot .btn');
+  assert.equal(await page.locator('#fpop').count(), 0);
+  assert.deepEqual(page.errors, []);
+  await page.close();
+});
+
+test('changing a filter keeps the page, the open dropdown and its expanded list where they were', async () => {
   const page = await open('/shop', { width: 1280, height: 800 });
   await page.waitForSelector('.card');
-  await page.evaluate(() => { document.querySelector('.fgroup[data-group="brand"]').open = true; });
-  const more = page.locator('.fgroup[data-group="brand"] .more-opts');
-  if (await more.count()) await more.evaluate(b => b.click());
-  await page.evaluate(() => { window.scrollTo(0, 600); document.querySelector('#rail').scrollTop = 300; });
+  await page.evaluate(() => window.scrollTo(0, 600));
+  await chip(page, 'brand');
+  await page.click('#fpop .more-opts');
+  await page.evaluate(() => { document.querySelector('#fpop .fpop-b').scrollTop = 200; });
   await page.waitForTimeout(100);
-  const before = await page.evaluate(() => ({ y: window.scrollY, rail: document.querySelector('#rail').scrollTop }));
-  assert.equal(before.y, 600); assert.equal(before.rail, 300);
-  await page.evaluate(() => document.querySelector('#rail input[type=checkbox][value="balls"]').click());
+  const before = await page.evaluate(() => ({ y: window.scrollY, pop: document.querySelector('#fpop .fpop-b').scrollTop }));
+  assert.equal(before.pop, 200);
+  const first = await page.locator('.card').count();
+  await page.evaluate(() => document.querySelector('#fpop .more-opts-wrap input[type=checkbox]').click());
   await page.waitForTimeout(300);
-  const after = await page.evaluate(() => ({ y: window.scrollY, rail: document.querySelector('#rail').scrollTop, cards: document.querySelectorAll('.card').length,
-    expanded: !document.querySelector('.fgroup[data-group="brand"] .more-opts-wrap') || !document.querySelector('.fgroup[data-group="brand"] .more-opts-wrap').hidden }));
-  assert.ok(after.cards < 24, 'the list narrowed');
-  assert.equal(after.y, 600, 'the page did not move');
-  assert.equal(after.rail, 300, 'the filter rail did not move');
+  const after = await page.evaluate(() => ({ y: window.scrollY, pop: document.querySelector('#fpop .fpop-b').scrollTop, cards: document.querySelectorAll('.card').length,
+    expanded: !document.querySelector('#fpop .more-opts-wrap').hidden }));
+  assert.ok(after.cards < first, 'the list narrowed');
+  assert.equal(after.y, before.y, 'the page did not move');
+  assert.equal(after.pop, 200, 'the dropdown did not move');
   assert.ok(after.expanded, 'the expanded brand list stayed expanded');
-  await page.evaluate(() => window.scrollTo(0, document.documentElement.scrollHeight));
-  await page.waitForTimeout(100);
-  const deep = await page.evaluate(() => window.scrollY);
-  await page.evaluate(() => document.querySelector('#rail input[type=checkbox][value="balls"]').click());
-  await page.waitForTimeout(300);
-  assert.equal(await page.evaluate(() => window.scrollY), deep, 'widening the list again does not move the page either');
   assert.deepEqual(page.errors, []);
   await page.close();
 });
@@ -406,12 +468,13 @@ test('cards show shipping, and the quick filter, shipping facet and price + ship
   await page.waitForSelector('.card .ship');
   assert.equal(await page.locator('.card').count(), await page.locator('.card .ship').count());
   assert.equal(await page.locator('.card').count(), await page.locator('.card a.card-buy[target="_blank"]').count(), 'every card links to its store');
-  await page.click('.quick [data-quick="deliv"][data-val="free"]');
-  await page.waitForSelector('.quick [data-quick="deliv"][aria-pressed="true"]');
+  await page.click('.fbar [data-quick="deliv"][data-val="free"]');
+  await page.waitForSelector('.fbar [data-quick="deliv"][aria-pressed="true"]');
   assert.match(new URL(page.url()).search, /deliv=free/);
   const lines = await page.locator('.card .ship').allTextContents();
   assert.ok(lines.length > 0 && lines.every(t => t === 'Free shipping'), 'only free-shipping products: ' + lines.join(', '));
-  assert.equal(await page.locator('#f-deliv-free').isChecked(), true, 'the rail checkbox follows the chip');
+  await chip(page, 'deliv');
+  assert.equal(await page.locator('#f-deliv-free').isChecked(), true, 'the shipping checkbox follows the toggle');
   await page.selectOption('#sort', 'total');
   assert.match(new URL(page.url()).search, /sort=total/);
   assert.deepEqual(page.errors, []);
@@ -434,12 +497,15 @@ test('old department and product type links land on the new aisle and type pages
   await page.close();
 });
 
-test('the rail is grouped into sections and the age range filter narrows the list', async () => {
+test('the filter panel is grouped into sections and the age range filter narrows the list', async () => {
   const page = await open('/shop');
   await page.waitForSelector('.card');
+  await page.click('.fbar [data-drawer-open]');
   assert.deepEqual(await page.locator('#rail .rail-sec-h').allTextContents(), ['What it is', 'What it’s made of', 'Price and delivery']);
   assert.deepEqual(await page.locator('#rail .rail-sec:nth-of-type(2) .fgroup > summary').evaluateAll(s => s.map(x => x.firstChild.textContent)), ['Materials', 'Tests & certifications']);
+  await page.keyboard.press('Escape');
   const before = await page.textContent('.toolbar .count');
+  await chip(page, 'age');
   await page.check('#f-age-3-5y');
   assert.match(page.url(), /age=3-5y/);
   assert.notEqual(await page.textContent('.toolbar .count'), before);
@@ -450,6 +516,7 @@ test('the rail is grouped into sections and the age range filter narrows the lis
 test('the Materials tree: checked is included, unchecked is left out, parents follow their children', async () => {
   const page = await open('/shop');
   await page.waitForSelector('.card');
+  await chip(page, 'mat');
   assert.equal(await page.locator('#f-crit-silicone').isVisible(), false, 'the silicone kind sits closed under Silicone');
   await page.click('[data-tnode="m-silicone"]');
   assert.equal(await page.locator('#tk-m-silicone #f-crit-silicone').isVisible(), true);
@@ -461,17 +528,15 @@ test('the Materials tree: checked is included, unchecked is left out, parents fo
   const allowed = await total();
   await page.click('#f-matg-fibres');
   assert.match(decodeURIComponent(page.url()), /mat=wood,latex,leather,plant-fill,silicone,metal/, 'the link lists what is included');
-  assert.equal(await page.locator('.chips .chip-x[data-clear="matgroup"]').count(), 1, 'a whole family left out is one chip');
   assert.ok((await total()) < allowed, 'leaving out natural fibres hides products with any of them');
   await page.click('[data-tnode="g-fibres"]');
   await page.check('#f-mat-silk');
   assert.equal(await page.locator('#f-matg-fibres').evaluate(x => x.indeterminate), true, 'part of a family reads as part-checked');
-  await page.click('.chips .chip-x[data-clear="mat"][data-val="wool"]');
-  assert.match(decodeURIComponent(page.url()), /mat=wool/, 'removing the "No wool" chip includes wool again');
-  assert.equal(await page.locator('.chips .chip-x[data-clear="mat"][data-val="wool"]').count(), 0);
+  await page.check('#f-mat-wool');
+  assert.match(decodeURIComponent(page.url()), /mat=wool/, 'checking wool includes it again');
   await page.click('[data-only="wood"]');
   assert.match(decodeURIComponent(page.url()), /mat=wood(&|$)/);
-  assert.match(await page.locator('.chips .chip-x[data-clear="mat-all"]').textContent(), /Only wood/);
+  assert.deepEqual(await page.locator('#fpop input[data-mat]').evaluateAll(l => l.filter(x => x.checked || x.indeterminate).map(x => x.dataset.mat)), ['wood'], 'only wood stays checked');
   await page.click('[data-tnode="m-wood"]');
   await page.click('#f-mat-wood');
   assert.equal(await page.locator('#tk-m-wood #f-crit-wood').isChecked(), true, 'checking part-checked wood allows plywood');
