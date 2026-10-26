@@ -8394,7 +8394,8 @@
    "type": "blankets",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "naturepedic-organic-waffle-baby-blanket"
   },
   {
    "url": "https://www.naturepedic.com/products/organic-crib-sheets",
@@ -21348,7 +21349,8 @@
    "type": "pajamas",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "mushie-zipper-pajama"
   },
   {
    "url": "https://mushie.com/products/wooden-balance-blocks",
@@ -21357,7 +21359,8 @@
    "type": "blocks",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "mushie-wooden-balance-blocks"
   },
   {
    "url": "https://mushie.com/products/letters-numbers-bath-play-set",
@@ -21675,7 +21678,8 @@
    "type": "clothes",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "mushie-chunky-knit-sweater"
   },
   {
    "url": "https://mushie.com/products/chunky-knit-pants",
@@ -23464,7 +23468,8 @@
    "type": "bodysuits",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "under-the-nile-onesie-bodysuit"
   },
   {
    "url": "https://www.greenmountaindiapers.com/products/under-the-nile-flat-cat-stuffed-toy",
@@ -24481,7 +24486,8 @@
    "type": "blocks",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "smiling-tree-toys-wooden-building-blocks"
   },
   {
    "url": "https://smilingtreetoys.com/products/imperfect-bunny-wooden-push-toy",
@@ -36294,7 +36300,8 @@
    "type": "art",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "skipped",
+   "reason": "page names no materials (read 2026-10-26)"
   },
   {
    "url": "https://shop.lovevery.com/products/grabbable-rattle-ball",
@@ -36357,7 +36364,8 @@
    "type": "blocks",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "skipped",
+   "reason": "page names no materials (read 2026-10-26)"
   },
   {
    "url": "https://shop.lovevery.com/products/when-you-love-a-living-thing-board-book",
@@ -38527,7 +38535,8 @@
    "type": "dolls",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "skipped",
+   "reason": "page names no materials (read 2026-10-26)"
   },
   {
    "url": "https://shop.lovevery.com/products/organic-cotton-big-kid-ball",
@@ -38599,7 +38608,8 @@
    "type": "strollers",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "lovevery-buddy-stroller"
   },
   {
    "url": "https://shop.lovevery.com/products/organic-cotton-baby-doll-accessories",
@@ -41484,7 +41494,8 @@
    "type": "pretend",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "skipped",
+   "reason": "page names no materials (only \"natural wood elements\" and \"premium and sustainable materials\") (read 2026-10-26)"
   },
   {
    "url": "https://www.deltachildren.com/products/personalized-mix-and-match-cozee-kids-chair-with-interchangeable-patches",
@@ -42610,7 +42621,8 @@
    "type": "strollers",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "delta-children-icon-ultra-compact-stroller"
   },
   {
    "url": "https://www.deltachildren.com/products/ruby-6-in-1-convertible-crib-changing-table-2-piece-set-greenguard-gold-certified",
@@ -45978,7 +45990,8 @@
    "type": "dolls",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "skipped",
+   "reason": "Doll accessory set (glasses and cane), not a doll; a Miniland doll was listed instead (read 2026-10-26)"
   },
   {
    "url": "https://www.bellalunatoys.com/products/miniland-wooden-castle-building-blocks-set",
@@ -46014,7 +46027,8 @@
    "type": "pretend",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "haba-fried-egg-play-food-set"
   },
   {
    "url": "https://www.bellalunatoys.com/products/ouroboros-marble-maze-three-sizes",
@@ -46563,7 +46577,8 @@
    "type": "pretend",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "tender-leaf-toys-mini-chef-kitchen-range"
   },
   {
    "url": "https://www.bellalunatoys.com/products/tender-leaf-toys-wild-pines-wooden-train-set-wh",
@@ -47644,7 +47659,8 @@
    "type": "art",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "honeysticks-watercolor-paint-set"
   },
   {
    "url": "https://www.bellalunatoys.com/products/honeysticks-bath-crayons-super-jumbo-6pk",
@@ -49410,7 +49426,8 @@
    "type": "dolls",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "miniland-realistic-montessori-baby-doll"
   },
   {
    "url": "https://www.bellalunatoys.com/products/12-625-miniland-newborn-baby-doll-boy-multiple-styles",
@@ -59607,7 +59624,8 @@
    "type": "dolls",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "camden-rose-14-inch-waldorf-boy-doll"
   },
   {
    "url": "https://camdenrose.com/products/silk-canopies-45-x-108-x-8mm",
@@ -106336,7 +106354,8 @@
    "type": "carriers",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "solly-baby-soft-buckle-carrier"
   },
   {
    "url": "https://www.thenaturalbabyco.com/products/charcoal-toile-soft-buckle-carrier",

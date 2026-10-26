@@ -25,9 +25,9 @@ test('the default rules keep the same set of listings as the published site', ()
   const c = S.build(data);
   const on = Object.fromEntries(c.criteria.map(x => [x.id, !!x.default]));
   const ok = c.items.filter(i => S.evaluate(i, c.criteria, on, false).ok);
-  // 64 of 122 met the defaults on 2026-10-18; 72 since 2026-10-20, when guessed materials ("probably plastic") became "not stated"; 79 of 137 after the 2026-10-20 daily research run; 88 of 152 after the 2026-10-21 run; 96 of 167 after the 2026-10-22 run; 104 of 182 after the 2026-10-23 run; 112 of 197 after the 2026-10-24 run; 123 of 212 after the 2026-10-25 run. Update both numbers when listings change.
-  assert.equal(c.items.length, 212);
-  assert.equal(ok.length, 123);
+  // 64 of 122 met the defaults on 2026-10-18; 72 since 2026-10-20, when guessed materials ("probably plastic") became "not stated"; 79 of 137 after the 2026-10-20 daily research run; 88 of 152 after the 2026-10-21 run; 96 of 167 after the 2026-10-22 run; 104 of 182 after the 2026-10-23 run; 112 of 197 after the 2026-10-24 run; 123 of 212 after the 2026-10-25 run; 131 of 227 after the 2026-10-26 run. Update both numbers when listings change.
+  assert.equal(c.items.length, 227);
+  assert.equal(ok.length, 131);
 });
 
 test('every checklist chip links at least one glossary term where the term list covers it', () => {
