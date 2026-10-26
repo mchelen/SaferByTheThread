@@ -269,6 +269,29 @@ test('product page compares the item with similar ones and keeps a buy bar in re
   await page.close();
 });
 
+test('scrolling the similar items sideways keeps the label column on top of photos, buttons and icons', async () => {
+  const page = await open('/p/hevea-star-activity-ball-natural-rubber-colour', { width: 390, height: 800 });
+  await page.waitForSelector('.similar .cmp');
+  const hits = await page.evaluate(async () => {
+    const box = document.querySelector('.similar .cmp');
+    box.scrollIntoView();
+    box.scrollLeft = 300;
+    await new Promise(r => requestAnimationFrame(() => requestAnimationFrame(r)));
+    // In every row, the middle of the label cell must show that cell, not an item scrolled under it.
+    return { scrolled: box.classList.contains('scrolled'), cells: [...box.querySelectorAll('tr > :first-child')].map(c => {
+      const r = c.getBoundingClientRect();
+      window.scrollTo(0, window.scrollY + r.top - 200);
+      const r2 = c.getBoundingClientRect();
+      const at = document.elementFromPoint(r2.left + r2.width / 2, r2.top + Math.min(r2.height / 2, 30));
+      return c.contains(at) || at === c ? 'ok' : (c.textContent.trim() || 'photo row') + ' covered by ' + at.className;
+    }) };
+  });
+  assert.deepEqual(hits.cells.filter(h => h !== 'ok'), []);
+  assert.ok(hits.scrolled, 'the table marks itself scrolled so the label column shows its edge');
+  assert.deepEqual(page.errors, []);
+  await page.close();
+});
+
 test('a product with many photos keeps the page and the quick view inside a phone screen', async () => {
   const page = await open('/p/beaba-universal-warm-sleeping-bag', { width: 390, height: 800 });
   await page.waitForSelector('.gallery .thumbs');
