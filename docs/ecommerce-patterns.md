@@ -12,7 +12,7 @@ Most of the shop furniture from the big sites is already here after #8, so this 
 | --- | --- | --- |
 | Department menu with drop-downs, breadcrumbs | Amazon, every Shopify theme | Yes |
 | Search with suggestions as you type (products, brands, types) | Amazon, Shopify predictive search | Yes, plus materials and glossary terms |
-| Left filter rail with counts and removable chips; full-screen filter drawer on phones that applies on "Show N results" | Amazon, Shopify filters | Yes |
+| One row of filter chips above the results, each opening a dropdown with counts (a bottom sheet on phones), plus a full filter panel that applies on "Show N results" (replaced the left rail in 2026-10) | Amazon, Shopify filters | Yes |
 | Quick view from the grid | Shopify themes | Yes |
 | Sticky buy box beside the photo | Amazon, Shopify | Yes, on desktop |
 | Badges on cards (free shipping, more than one store) | Amazon, Shopify | Yes |
@@ -29,7 +29,7 @@ Most of the shop furniture from the big sites is already here after #8, so this 
 4. **Buy bar on phones.** On Amazon's and most Shopify themes' phone product pages the price and buy button stay in reach once the buy box has scrolled away. On a phone, once the store link is above the screen, a bar at the bottom shows the product name, price and "Buy at <store>". It disappears when the buy box is back on screen, and sits above the compare tray when both are showing.
 5. **Confirmation when saving.** Amazon and Shopify confirm an "add" in place with a link to the list. Saving now shows a short note, "Saved to your list. View saved (N)", instead of only filling the heart.
 6. **"Pick up where you left off" on the home page.** Amazon's home page starts returning visitors with what they last looked at. The home page now shows recently viewed products under the departments, with a link to the Saved list.
-7. **Filter & sort bar stays at the top on phones.** Shopify themes keep the filter and sort bar pinned under the header on phone listing pages, so filters are one tap away mid-scroll. The results toolbar is now sticky on phones.
+7. **Filter & sort bar stays at the top on phones.** Shopify themes keep the filter and sort bar pinned under the header on phone listing pages, so filters are one tap away mid-scroll. The filter chip row is now sticky on phones.
 8. **Two fixes found on the way:** a blank 20 px strip at the very top of every page (the icon sprite was taking space), and department tiles on the home page whose labels sat at different heights depending on the photo's shape.
 
 ## Not taken, and why

@@ -208,10 +208,14 @@
   }
   // The header's Filters button counts what differs from the default filters, plus this page's ticked facets.
   function onListing() { return ['shop', 'a', 'c', 'b', 'm', 'search'].indexOf(currentPath().split('/').filter(Boolean)[0] || '') >= 0 && !!STATE && currentPath() !== '/m'; }
-  function filterBadge() {
-    var st = onListing() ? (PEND || STATE) : null, d = defaults(), crit = st ? st.crit : CRIT, n = (st ? st.strict : STRICT) ? 1 : 0;
+  function filterCount(st) {
+    var d = defaults(), crit = st ? st.crit : CRIT, n = (st ? st.strict : STRICT) ? 1 : 0;
     C.criteria.forEach(function (c) { if (!!crit[c.id] !== d[c.id]) n++; });
     if (st) FACETS.forEach(function (f) { if (!((f === 'cat' && st.kind === 'cat') || (f === 'brand' && st.kind === 'brand'))) n += st[f].length; });
+    return n;
+  }
+  function filterBadge() {
+    var n = filterCount(onListing() ? (PEND || STATE) : null);
     $('#filters-n').textContent = n; $('#filters-n').hidden = !n;
   }
   function saveBtn(item, cls) {
@@ -598,12 +602,6 @@
   function critSetOf(gid) { return C.criteria.filter(function (c) { return c.group === gid && !c.under && treeCrit(c); }); }
   function hasKind(item, c) { var f = item.facts[c.id]; return c.kind === 'require' ? f !== undefined && f !== 'yes' : f === 'no'; }
   function kindName(c) { return c.sub || c.label; }
-  // A kind's name on its own, for chips: "No plywood, MDF or veneer", "No plastic in small parts", or the test required.
-  function critChip(c) {
-    if (c.kind === 'require') return S.filterLabel(c);
-    if (c.group === 'plastic' && c.sub) return 'No plastic ' + lc(c.sub);
-    return 'No ' + lc(kindName(c));
-  }
   // The same name with its parent, for the product page: "Wood: plywood, MDF or veneer".
   function critFull(c) {
     if (c.under) return matLabel(c.under) + ': ' + lc(kindName(c));
@@ -667,7 +665,7 @@
     rows += '<div class="tnode"><div class="trow">' + treeRow('data-crit="strict" data-inv', 'f-crit-strict', st.strict ? 'off' : 'on', 'Parts whose material isn’t stated', nStrict, 0) + '<span></span><span></span></div></div>' +
       '<p class="hint"><a href="#" data-crit-reset>' + (critIsDefault(st.crit, st.strict) && !st.mat.length ? 'Allow everything' : 'Reset to defaults') + '</a></p>';
     nOn = st.mat.length + C.criteria.filter(function (c) { return treeCrit(c) && st.crit[c.id]; }).length + (st.strict ? 1 : 0);
-    return group('mat', 'Materials', rows, nOn);
+    return { id: 'mat', title: 'Materials', body: rows, n: nOn };
   }
   function testedGroup(st) {
     var b = base(st), sc = countsFor('std', st), list = C.criteria.filter(function (c) { return !treeCrit(c); });
@@ -679,77 +677,102 @@
     }
     var stds = C.standards.filter(function (s) { return !s.filter; });
     var rows = list.map(row).join('') + stds.map(function (s) { return optRow('std', { id: s.id, label: s.label }, sc[s.id] || { n: 0, h: 0 }, st.std.indexOf(s.id) >= 0, qLink(s.term, s.label)); }).join('');
-    return group('tested', 'Tests & certifications', rows, list.filter(function (c) { return st.crit[c.id]; }).length + st.std.length);
+    return { id: 'tested', title: 'Tests & certifications', body: rows, n: list.filter(function (c) { return st.crit[c.id]; }).length + st.std.length };
   }
-  // The rail in three headed sections: what the product is, what it is made of, and price and delivery.
+  // Every facet of a listing, in order, each with its section, its options and how many of them are on. The rail in
+  // the filter panel shows them in three headed sections; the chip row above the results opens one at a time.
+  function facetList(st) {
+    var out = [];
+    function add(sec, id, title, body, n) { out.push({ sec: sec, id: id, title: title, body: body, n: n }); }
+    if (st.kind !== 'cat') {
+      add('what', 'cat', 'Product type', function () {
+        var cc = countsFor('cat', st), seen = {};
+        var groups = C.groups.filter(function (g) { return st.kind !== 'dept' || g.id === st.key; });
+        return groups.map(function (g) {
+          // A type in several aisles is listed once, under the first aisle shown.
+          var ids = g.cats.filter(function (id) { if (seen[id]) return false; seen[id] = 1; return true; });
+          if (!ids.length) return '';
+          return (groups.length > 1 ? '<p class="opt-group">' + esc(g.title) + '</p>' : '') + optionList('cat', ids.map(function (id) { return { id: id, label: C.cats[id].short }; }), cc, st);
+        }).join('');
+      }, st.cat.length);
+    }
+    add('what', 'age', 'Age range', function () {
+      return optionList('age', S.AGE_BANDS, countsFor('age', st), st) +
+        '<p class="hint">The maker’s age rating where one is recorded, otherwise the usual ages for the product type. Several ticked: products for any of them.</p>';
+    }, st.age.length);
+    if (st.kind !== 'brand') {
+      add('what', 'brand', 'Brand', function () {
+        return '<input type="search" class="find" id="brand-find" placeholder="Find a brand" aria-label="Find a brand">' +
+          '<div id="brand-opts">' + optionList('brand', brandList().map(function (b) { return { id: b.id, label: b.name }; }), countsFor('brand', st), st, 8) + '</div>';
+      }, st.brand.length);
+    }
+    [materialsGroup(st), testedGroup(st)].forEach(function (g) { add('made', g.id, g.title, g.body, g.n); });
+    add('buy', 'price', 'Price', function () {
+      return optionList('price', S.PRICE_BANDS.concat([{ id: 'none', label: 'Price not listed', hideEmpty: true }]), countsFor('price', st), st) +
+        '<p class="hint">Other currencies converted roughly to US dollars.</p>';
+    }, st.price.length);
+    add('buy', 'deliv', 'Shipping to the US', function () {
+      return optionList('deliv', DELIV, countsFor('deliv', st), st) + '<p class="hint">As the store page states it. Free-over-a-minimum counts as free when the price is over it.</p>';
+    }, st.deliv.length);
+    add('buy', 'ship', 'Ships from', function () {
+      return optionList('ship', [{ id: 'us', label: 'The US' }, { id: 'abroad', label: 'Outside the US' }, { id: 'unknown', label: 'Not recorded' }], countsFor('ship', st), st);
+    }, st.ship.length);
+    return out;
+  }
+  function facetBody(f) { return typeof f.body === 'function' ? f.body() : f.body; }
   function railSec(title, body) { return body ? '<section class="rail-sec"><h3 class="rail-sec-h">' + esc(title) + '</h3>' + body + '</section>' : ''; }
   function filterRail(st) {
-    var what = '';
-    if (st.kind !== 'cat') {
-      var cc = countsFor('cat', st), seen = {};
-      var groups = C.groups.filter(function (g) { return st.kind !== 'dept' || g.id === st.key; });
-      what += group('cat', 'Product type', groups.map(function (g) {
-        // A type in several aisles is listed once, under the first aisle shown.
-        var ids = g.cats.filter(function (id) { if (seen[id]) return false; seen[id] = 1; return true; });
-        if (!ids.length) return '';
-        return (groups.length > 1 ? '<p class="opt-group">' + esc(g.title) + '</p>' : '') + optionList('cat', ids.map(function (id) { return { id: id, label: C.cats[id].short }; }), cc, st);
-      }).join(''), st.cat.length);
-    }
-    what += group('age', 'Age range', optionList('age', S.AGE_BANDS, countsFor('age', st), st) +
-      '<p class="hint">The maker’s age rating where one is recorded, otherwise the usual ages for the product type. Several ticked: products for any of them.</p>', st.age.length);
-    if (st.kind !== 'brand') {
-      what += group('brand', 'Brand', '<input type="search" class="find" id="brand-find" placeholder="Find a brand" aria-label="Find a brand">' +
-        '<div id="brand-opts">' + optionList('brand', brandList().map(function (b) { return { id: b.id, label: b.name }; }), countsFor('brand', st), st, 8) + '</div>', st.brand.length);
-    }
-    var made = materialsGroup(st) + testedGroup(st);
-    var buy = group('price', 'Price', optionList('price', S.PRICE_BANDS.concat([{ id: 'none', label: 'Price not listed', hideEmpty: true }]), countsFor('price', st), st) +
-        '<p class="hint">Other currencies converted roughly to US dollars.</p>', st.price.length) +
-      group('deliv', 'Shipping to the US', optionList('deliv', DELIV, countsFor('deliv', st), st) + '<p class="hint">As the store page states it. Free-over-a-minimum counts as free when the price is over it.</p>', st.deliv.length) +
-      group('ship', 'Ships from', optionList('ship', [{ id: 'us', label: 'The US' }, { id: 'abroad', label: 'Outside the US' }, { id: 'unknown', label: 'Not recorded' }], countsFor('ship', st), st), st.ship.length);
-    return railSec('What it is', what) + railSec('What it’s made of', made) + railSec('Price and delivery', buy);
+    var fs = facetList(st);
+    function sec(id) { return fs.filter(function (f) { return f.sec === id; }).map(function (f) { return group(f.id, f.title, facetBody(f), f.n); }).join(''); }
+    return railSec('What it is', sec('what')) + railSec('What it’s made of', sec('made')) + railSec('Price and delivery', sec('buy'));
   }
-  // One-tap refinements above the grid, as on Google Shopping: the same facets as the rail, shown as toggles.
-  function quickChips(st, list) {
-    var q = [['deliv', 'free', 'Free shipping'], ['ship', 'us', 'Ships from the US']];
-    S.PRICE_BANDS.slice(0, 3).forEach(function (b) { q.push(['price', b.id, b.label]); });
-    var mc = {}; list.forEach(function (i) { i.materials.forEach(function (m) { mc[m] = (mc[m] || 0) + 1; }); });
-    delete mc.synthetic;
-    Object.keys(mc).sort(function (a, b) { return mc[b] - mc[a]; }).slice(0, 3).forEach(function (m) { q.push(['only', m, 'Only ' + lc(matLabel(m))]); });
-    var counts = {}, inc = pickIds().filter(function (id) { return st.mat.indexOf(id) < 0; });
-    return '<div class="quick" role="group" aria-label="Quick filters">' + q.map(function (x) {
-      var on = x[0] === 'only' ? inc.length === 1 && inc[0] === x[1] : st[x[0]].indexOf(x[1]) >= 0;
-      var c = (counts[x[0]] || (counts[x[0]] = countsFor(x[0] === 'only' ? 'mat' : x[0], st)))[x[1]];
-      if (!on && !(c && c.n)) return '';
-      return '<button type="button" class="qchip" data-quick="' + x[0] + '" data-val="' + esc(x[1]) + '" aria-pressed="' + on + '">' + (on ? icon('check') : '') + esc(x[2]) + '</button>';
-    }).join('') + '</div>';
-  }
-  function activeChips(st, withDefaults) {
-    var chips = [];
-    function add(f, v, label) { chips.push('<button type="button" class="chip-x" data-clear="' + f + '" data-val="' + esc(v) + '">' + esc(label) + icon('x') + '<span class="sr"> remove</span></button>'); }
-    if (st.q && st.kind !== 'search') add('q', '', '“' + st.q + '”');
-    if (st.kind !== 'cat') st.cat.forEach(function (v) { add('cat', v, catOf(v) ? catOf(v).title : v); });
-    if (st.kind !== 'brand') st.brand.forEach(function (v) { add('brand', v, C.brands[v] ? C.brands[v].name : v); });
-    st.price.forEach(function (v) { var b = S.PRICE_BANDS.filter(function (x) { return x.id === v; })[0]; if (b || v === 'none') add('price', v, b ? b.label : 'Price not listed'); });
-    st.deliv.forEach(function (v) { var d = DELIV.filter(function (x) { return x.id === v; })[0]; if (d) add('deliv', v, d.label); });
-    // Materials left out: a few kept reads "Only wood or wool"; otherwise one chip per material (or whole family) left out.
-    if (st.mat.length) {
-      var inc = pickMaterials().filter(function (m) { return matIn(st, m.id); });
-      if (inc.length <= 3) add('mat-all', '', inc.length ? 'Only ' + inc.map(function (m) { return lc(m.label); }).join(' or ') : 'No materials included');
-      else {
-        var whole = S.MATERIAL_GROUPS.filter(function (g) { return S.MATERIALS.filter(function (m) { return m.group === g.id; }).every(function (m) { return !matIn(st, m.id); }); });
-        whole.forEach(function (g) { add('matgroup', g.id, 'No ' + lc(g.label)); });
-        st.mat.forEach(function (v) { var m = S.MATERIALS.filter(function (x) { return x.id === v; })[0]; if (!(m && whole.some(function (g) { return g.id === m.group; }))) add('mat', v, 'No ' + lc(matLabel(v))); });
-      }
+  // One row of chips above the results, as on Amazon: the filter panel first, then a chip per facet that opens its
+  // options in a dropdown (a sheet from the bottom on phones), then a one-tap free-shipping toggle. A facet with
+  // something on shows filled, with how many.
+  var fbarOpen = null;
+  function chipLabel(st, f) {
+    var one = null;
+    if (f.n === 1) {
+      if (f.id === 'cat' && st.cat.length) one = catOf(st.cat[0]) ? catOf(st.cat[0]).short : null;
+      else if (f.id === 'brand' && st.brand.length) one = C.brands[st.brand[0]] ? C.brands[st.brand[0]].name : null;
+      else if (f.id === 'age' && st.age.length) one = (S.AGE_BANDS.filter(function (a) { return a.id === st.age[0]; })[0] || {}).label;
+      else if (f.id === 'price' && st.price.length) one = st.price[0] === 'none' ? 'Price not listed' : (S.PRICE_BANDS.filter(function (b) { return b.id === st.price[0]; })[0] || {}).label;
     }
-    st.std.forEach(function (v) { var s = C.standards.filter(function (x) { return x.id === v; })[0]; add('std', v, s ? s.label : v); });
-    st.age.forEach(function (v) { var a = S.AGE_BANDS.filter(function (x) { return x.id === v; })[0]; if (a) add('age', v, 'Age: ' + a.label); });
-    st.ship.forEach(function (v) { var l = { us: 'Ships from the US', abroad: 'Ships from outside the US', unknown: 'Shipping not recorded' }[v]; if (l) add('ship', v, l); });
-    var d = defaults();
-    var nd = chips.length;
-    C.criteria.forEach(function (c) { if (st.crit[c.id] && (withDefaults || !d[c.id])) { add('crit', c.id, critChip(c)); if (!d[c.id]) nd++; } });
-    if (st.strict) { add('crit', 'strict', 'Every part’s material stated'); nd++; }
-    if (nd > 1) chips.push('<button type="button" class="chip-clear" data-clear-all>Clear all</button>');
-    return chips.join('');
+    var short = { deliv: 'Shipping', tested: 'Tests' }[f.id] || f.title;
+    return one ? (f.id === 'age' ? 'Age' : short) + ': ' + one : short;
+  }
+  function filterBar(st, list, count) {
+    var fs = facetList(st), open = fs.filter(function (f) { return f.id === fbarOpen; })[0];
+    var nAll = filterCount(st);
+    var free = st.deliv.indexOf('free') >= 0, fc = countsFor('deliv', st).free;
+    var chips = '<button type="button" class="fchip fchip-all" id="fc-all" data-drawer-open aria-expanded="false" aria-controls="rail">' + icon('sliders') + 'Filters' + (nAll ? '<span class="cnt">' + nAll + '</span>' : '') + '</button>' +
+      fs.map(function (f) {
+        var on = f.id === fbarOpen, label = chipLabel(st, f), one = label !== ({ deliv: 'Shipping', tested: 'Tests' }[f.id] || f.title);
+        return '<button type="button" class="fchip' + (f.n ? ' is-on' : '') + '" id="fc-' + f.id + '" data-fchip="' + f.id + '" aria-expanded="' + on + '"' + (on ? ' aria-controls="fpop"' : '') + '>' +
+          '<span class="fchip-t">' + esc(label) + '</span>' + (f.n && !one ? '<span class="cnt">' + f.n + '</span>' : '') + icon('chev') + '</button>';
+      }).join('') +
+      (free || (fc && fc.n) ? '<button type="button" class="fchip" data-quick="deliv" data-val="free" aria-pressed="' + free + '">' + (free ? icon('check') : '') + 'Free shipping</button>' : '') +
+      (nAll ? '<button type="button" class="fchip-clear" data-clear-all>Clear all</button>' : '');
+    var pop = open ? '<div class="fpop-scrim"></div><div class="fpop" id="fpop" role="dialog" aria-labelledby="fpop-h" data-group="' + open.id + '">' +
+      '<div class="fpop-h"><h2 id="fpop-h">' + esc(open.title) + '</h2><button type="button" class="ib" data-fpop-close aria-label="Close">' + icon('x') + '</button></div>' +
+      '<div class="fpop-b fbody">' + facetBody(open) + '</div>' +
+      '<div class="fpop-foot"><button type="button" class="btn" data-fpop-close>Show ' + plural(count, 'product') + '</button></div></div>' : '';
+    return '<div class="fbar"><div class="fbar-row" role="group" aria-label="Filters">' + chips + '</div>' + pop + '</div>';
+  }
+  // A dropdown sits under its chip, kept inside the results column; on phones it is a sheet and needs no placing.
+  function placePop() {
+    var pop = $('#fpop'), chip = fbarOpen && $('#fc-' + fbarOpen), bar = $('.fbar');
+    if (!pop || !chip || !bar) return;
+    if (window.matchMedia('(max-width: 600px)').matches) { pop.style.left = ''; return; }
+    var row = $('.fbar-row', bar), left = chip.offsetLeft - row.scrollLeft;
+    pop.style.left = Math.max(0, Math.min(left, bar.clientWidth - pop.offsetWidth)) + 'px';
+  }
+  function closeFbar(focus) {
+    if (!fbarOpen) return;
+    var id = fbarOpen, chip = $('#fc-' + id); fbarOpen = null;
+    if ($('#fpop')) $('#fpop').remove();
+    if ($('.fpop-scrim')) $('.fpop-scrim').remove();
+    if (chip) { chip.setAttribute('aria-expanded', 'false'); chip.removeAttribute('aria-controls'); if (focus) chip.focus({ preventScroll: true }); }
   }
   function emptyState(st, hidden) {
     var sug = [];
@@ -783,7 +806,8 @@
     // facets had "Show all" open, and hold the page's height while the markup is swapped (an empty #main would let
     // the browser clamp the scroll position to the top).
     var y = window.scrollY, oldRail = $('#rail'), railTop = oldRail ? oldRail.scrollTop : 0, mainH = main.offsetHeight;
-    var expanded = $$('.fgroup').filter(function (g) { var w = $('.more-opts-wrap', g); return w && w.getAttribute('data-shown'); }).map(function (g) { return g.getAttribute('data-group'); });
+    var oldPop = $('#fpop .fpop-b'), popTop = oldPop ? oldPop.scrollTop : 0, oldRow = $('.fbar-row'), rowLeft = oldRow ? oldRow.scrollLeft : 0;
+    var expanded = $$('[data-group]').filter(function (g) { var w = $('.more-opts-wrap', g); return w && w.getAttribute('data-shown'); }).map(function (g) { return g.getAttribute('data-group'); });
     main.style.minHeight = mainH + 'px';
     var all = sortItems(base(st), st.sort);
     var ok = all.filter(function (i) { return status(i, st.crit, st.strict).ok; }), hidden = all.length - ok.length;
@@ -819,15 +843,14 @@
     main.innerHTML = '<div class="wrap">' + crumbs(trail) +
       '<header class="plp-head"><h1>' + esc(title) + '</h1>' + (intro ? '<p class="intro">' + (st.kind === 'dept' ? intro : esc(intro)) + '</p>' : '') + sub + '</header>' +
       '<div class="plp">' +
-      '<aside class="rail-f" id="rail" aria-label="Filters"><div class="rail-h"><h2>Filters</h2><div>' + (activeChips(show) ? '<button type="button" class="link-b" data-clear-all>Clear all</button> ' : '') + '<button type="button" class="ib rail-close" data-drawer-close aria-label="Close filters">' + icon('x') + '</button></div></div>' +
-      filterRail(show) +
+      '<aside class="rail-f" id="rail" aria-label="Filters"><div class="rail-h"><h2>Filters</h2><div>' + (filterCount(show) ? '<button type="button" class="link-b" data-clear-all>Clear all</button> ' : '') + '<button type="button" class="ib rail-close" data-drawer-close aria-label="Close filters">' + icon('x') + '</button></div></div>' +
+      (drawer ? filterRail(show) : '') +
       '<div class="drawer-foot"><button type="button" class="btn-2" data-clear-all>Clear</button><button type="button" class="btn" data-drawer-apply>Show ' + plural(pend, 'result') + '</button></div></aside>' +
       '<section class="results" aria-labelledby="res-count">' +
       '<div class="toolbar"><p class="count" id="res-count"><b>' + plural(list.length, 'product') + '</b>' + (hidden && !st.all ? ' · ' + hidden + ' set aside' : '') + '</p>' +
-      '<div class="tools"><button type="button" class="btn-3 filt-btn" data-drawer-open aria-expanded="' + drawer + '" aria-controls="rail">' + icon('sliders') + 'Filter & sort' + (activeChips(st) ? ' <span class="cnt">•</span>' : '') + '</button>' +
+      '<div class="tools">' +
       '<label class="sort"><span>Sort by</span><select id="sort" aria-label="Sort by">' + SORTS.map(function (s) { return '<option value="' + s[0] + '"' + (st.sort === s[0] ? ' selected' : '') + '>' + s[1] + '</option>'; }).join('') + '</select></label></div></div>' +
-      quickChips(st, list) +
-      '<div class="chips">' + activeChips(st, true) + '</div>' +
+      filterBar(st, list, list.length) +
       (hidden ? '<div class="hidden-note"><p>' + (st.all ? plural(hidden, 'product that doesn’t', 'products that don’t') + ' match your material filters ' + (hidden === 1 ? 'is' : 'are') + ' shown.' : '<b>' + plural(hidden, 'more product', 'more products') + '</b> set aside by your material filters.') + '</p><button type="button" data-toggle-all>' + (st.all ? 'Hide them' : 'Show them') + '</button></div>' : '') +
       (shown.length ? '<div class="grid" id="grid">' + shown.map(function (it, i) { return card(it, i, st.crit, st.strict); }).join('') + '</div>' : emptyState(st, hidden)) +
       (list.length > shown.length ? '<div class="more-wrap"><p>Showing ' + shown.length + ' of ' + list.length + '</p><button type="button" class="btn-2" data-more>Show more</button></div>' : (list.length > PAGE ? '<div class="more-wrap"><p>Showing all ' + list.length + '</p></div>' : '')) +
@@ -835,11 +858,11 @@
     $('#q').value = st.kind === 'search' || st.q ? st.q : '';
     if (brandFind && $('#brand-find')) { $('#brand-find').value = brandFind; filterBrandList(brandFind); }
     expanded.forEach(function (id) {
-      var g = $('.fgroup[data-group="' + id + '"]'); if (!g) return;
+      var g = $('[data-group="' + id + '"]'); if (!g) return;
       var w = $('.more-opts-wrap', g), b = $('.more-opts', g);
       if (w) { w.hidden = false; w.setAttribute('data-shown', '1'); } if (b) b.hidden = true;
     });
-    $$('#rail [data-indet]').forEach(function (x) { x.indeterminate = true; });
+    $$('#rail [data-indet], #fpop [data-indet]').forEach(function (x) { x.indeterminate = true; });
     if (drawer) openDrawer(false);
     // Keep the visitor where they were: a shorter list gets just enough room below it to hold the scroll position
     // (route() clears this on the next page), and the rail keeps its own scroll so the box they ticked stays put.
@@ -848,6 +871,8 @@
     if (short > 0) main.style.minHeight = (main.offsetHeight + short) + 'px';
     window.scrollTo(0, y);
     var newRail = $('#rail'); if (newRail) newRail.scrollTop = railTop;
+    if ($('.fbar-row')) $('.fbar-row').scrollLeft = rowLeft;
+    if ($('#fpop')) { placePop(); $('#fpop .fpop-b').scrollTop = popTop; }
     if (focusId && document.getElementById(focusId)) document.getElementById(focusId).focus({ preventScroll: true });
     setNav(st.kind, st.key);
     filterBadge();
@@ -1145,6 +1170,8 @@
   function openDrawer(focus) {
     var rail = $('#rail'); if (!rail) return;
     document.body.classList.add('drawer-on', 'no-scroll');
+    // The panel's filters are built when it opens, so no facet is in the page twice while a chip's dropdown is open.
+    if (!$('.fgroup', rail)) { fbarOpen = null; renderList(false); rail = $('#rail'); }
     if (!isPhone()) scrim.hidden = false;
     rail.setAttribute('role', 'dialog'); rail.setAttribute('aria-modal', 'true');
     var b = $('[data-drawer-open]'); if (b) b.setAttribute('aria-expanded', 'true');
@@ -1224,7 +1251,7 @@
 
   // ---------- router ----------
   function route() {
-    closeSugg(); closeQuickView(); closeDrawer(false); closeMenu(false); closePop(false); PEND = null; buyBar(null); main.style.minHeight = '';
+    closeSugg(); closeQuickView(); closeDrawer(false); closeMenu(false); closePop(false); PEND = null; fbarOpen = null; buyBar(null); main.style.minHeight = '';
     var path = currentPath(), q = parseQuery(location.search), p = path.split('/').filter(Boolean), key = p[0] || '';
     var url = location.pathname + location.search;
     if (key === '') renderHome();
@@ -1319,7 +1346,7 @@
       // In the Materials tree a checked kind is a criterion that is off; checking a kind also includes its material.
       var id = t.getAttribute('data-crit'), val = t.hasAttribute('data-inv') ? !t.checked : t.checked;
       var cu = C.criteria.filter(function (c) { return c.id === id; })[0];
-      if (STATE && $('#rail')) {
+      if (STATE && $('#rail') && t.closest('#rail, #fpop')) {
         var s2 = editing();
         if (id === 'strict') s2.strict = val; else s2.crit[id] = val;
         if (cu && cu.under && t.checked) s2.mat = s2.mat.filter(function (x) { return x !== cu.under; });
@@ -1393,19 +1420,12 @@
     }
     if (!ev.target.closest('.search')) closeSugg();
     var t = ev.target.closest('button, a');
+    // A click outside an open filter dropdown (and outside the glossary note it may have opened) closes it.
+    if (fbarOpen && !ev.target.closest('#fpop, [data-fchip], #gpop')) { closeFbar(false); }
     if (!t) { if (!ev.target.closest('#cats')) closeMegas(); return; }
-    if (t.matches('[data-clear]')) {
-      var st = copyState(), f = t.getAttribute('data-clear'), v = t.getAttribute('data-val');
-      if (f === 'q') st.q = '';
-      else if (f === 'crit') { if (v === 'strict') st.strict = false; else st.crit[v] = false; }
-      else if (f === 'mat-all') st.mat = [];
-      else if (f === 'matgroup') st.mat = st.mat.filter(function (x) { return !S.MATERIALS.some(function (m) { return m.id === x && m.group === v; }); });
-      else st[f] = st[f].filter(function (x) { return x !== v; });
-      PEND = null; setState(st, true);
-    } else if (t.matches('[data-quick]')) {
+    if (t.matches('[data-quick]')) {
       var sq = copyState(), qf = t.getAttribute('data-quick'), qv = t.getAttribute('data-val');
-      if (qf === 'only') sq.mat = t.getAttribute('aria-pressed') === 'true' ? [] : pickIds().filter(function (id) { return id !== qv; });
-      else sq[qf] = toggleIn(sq[qf], qv);
+      sq[qf] = toggleIn(sq[qf], qv);
       PEND = null; setState(sq, true);
     } else if (t.matches('[data-clear-all]')) {
       var s0 = readState(STATE.kind, STATE.key, STATE.kind === 'search' ? { q: STATE.q } : {}); s0.sort = STATE.sort; s0.all = STATE.all; s0.crit = defaults(); s0.strict = false;
@@ -1439,6 +1459,13 @@
       var cards = $$('#grid .card'); if (cards[n]) { var l = $('.card-link', cards[n]); if (l) l.focus({ preventScroll: true }); }
     } else if (t.matches('[data-more-opts]')) {
       var w = t.previousElementSibling; if (w) { w.hidden = false; w.setAttribute('data-shown', '1'); } t.hidden = true;
+    } else if (t.matches('[data-fchip]')) {
+      var fid = t.getAttribute('data-fchip');
+      fbarOpen = fbarOpen === fid ? null : fid; renderList(false);
+      var first = fbarOpen && $('#fpop .fpop-b input, #fpop .fpop-b button');
+      if (first) first.focus({ preventScroll: true }); else if ($('#fc-' + fid)) $('#fc-' + fid).focus({ preventScroll: true });
+    } else if (t.matches('[data-fpop-close]')) {
+      closeFbar(true);
     } else if (t.matches('[data-drawer-open]')) {
       PEND = copyState(); openDrawer(true);
     } else if (t.matches('[data-drawer-close]')) {
@@ -1507,6 +1534,7 @@
       if (!sugg.hidden) closeSugg();
       else if ($('.lightbox')) { $('.lightbox').remove(); document.body.classList.remove('no-scroll'); }
       else if (!qv.hidden) closeQuickView();
+      else if (fbarOpen && pop.hidden) closeFbar(true);
       else if (document.body.classList.contains('drawer-on')) { PEND = null; closeDrawer(true); renderList(false); }
       else if ($('#menu').classList.contains('open')) closeMenu(true);
       else if ($$('#cats .cat-item.open').length) closeMegas();
