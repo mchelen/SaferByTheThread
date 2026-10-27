@@ -23297,7 +23297,8 @@
    "type": "accessories",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "disana-merino-wool-beanie"
   },
   {
    "url": "https://www.greenmountaindiapers.com/products/disana-wool-jacket",
@@ -23730,7 +23731,8 @@
    "type": "diapers",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "babee-greens-wool-pull-up"
   },
   {
    "url": "https://www.greenmountaindiapers.com/products/hello-newborn-baby-kit-with-organic",
@@ -27187,7 +27189,8 @@
    "type": "cribs",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "green-cradle-gratitude-slat-crib"
   },
   {
    "url": "https://www.greencradle.com/products/crib-full-bed-conersion",
@@ -36310,7 +36313,8 @@
    "type": "rattles",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "skipped",
+   "reason": "Product details not in the page text the server sends (read 2026-10-27)"
   },
   {
    "url": "https://shop.lovevery.com/products/chunky-wooden-jigsaw-puzzle",
@@ -38283,7 +38287,8 @@
    "type": "cars",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "skipped",
+   "reason": "Product details not in the page text the server sends (read 2026-10-27)"
   },
   {
    "url": "https://shop.lovevery.com/products/wooden-stacking-pegs-set-of-12",
@@ -39330,7 +39335,8 @@
    "type": "pillows",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "delta-children-plush-comfort-toddler-pillow"
   },
   {
    "url": "https://www.deltachildren.com/products/serta-plush-comfort-toddler-pillow",
@@ -40711,7 +40717,8 @@
    "type": "sheets",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "delta-children-fitted-crib-sheets-3-pack"
   },
   {
    "url": "https://www.deltachildren.com/products/emma-crib-n-more-copy",
@@ -42973,7 +42980,8 @@
    "type": "towels",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "delta-children-kids-hooded-bath-towel"
   },
   {
    "url": "https://www.deltachildren.com/products/milestone-baby-blanket-monthly-blanket-for-pictures-photo-blanket-for-newborns",
@@ -42991,7 +42999,8 @@
    "type": "blankets",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "skipped",
+   "reason": "Page names no fibre (\"sherpa construction\" only) (read 2026-10-27)"
   },
   {
    "url": "https://www.deltachildren.com/products/sherpa-throw-blanket-with-storage-pocket-for-kids",
@@ -49228,7 +49237,8 @@
    "type": "blankets",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "maileg-knit-ribbed-baby-blanket"
   },
   {
    "url": "https://www.bellalunatoys.com/products/maileg-rabbit-rattle-baby-gift-set-mint",
@@ -52625,7 +52635,8 @@
    "type": "bodysuits",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "magnetic-me-modal-convertible-coverall"
   },
   {
    "url": "https://enlightenedbaby.com/products/magnetic-me-elmo-modal-footie-mf600783",
@@ -53525,7 +53536,8 @@
    "type": "cars",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "speedy-monkey-car-transporter"
   },
   {
    "url": "https://enlightenedbaby.com/products/uppababy-seat-liner",
@@ -53975,7 +53987,8 @@
    "type": "rattles",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "bella-tunno-bear-rattle-buddy"
   },
   {
    "url": "https://enlightenedbaby.com/products/blame-it-on-my-roots-happy-teether",
@@ -54282,7 +54295,8 @@
    "type": "teethers",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "fat-brain-toys-pipsquigz-loops"
   },
   {
    "url": "https://enlightenedbaby.com/products/rock-n-roller-piano",
@@ -59003,7 +59017,8 @@
    "type": "art",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "skipped",
+   "reason": "Page names no materials (read 2026-10-27)"
   },
   {
    "url": "https://camdenrose.com/products/elsa-beskow-large-tomten-jigsaw-puzzle",
@@ -61038,7 +61053,8 @@
    "type": "silks",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "camden-rose-white-silk-habotai-squares"
   },
   {
    "url": "https://camdenrose.com/products/the-eagle-flew-hardcover",
@@ -61443,7 +61459,8 @@
    "type": "art",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "skipped",
+   "reason": "Page names no materials (read 2026-10-27)"
   },
   {
    "url": "https://camdenrose.com/products/14-inch-waldorf-boy-doll-alpaca-knitted-outfits",
@@ -68611,7 +68628,8 @@
    "type": "plates",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "ingenuity-twist-and-dine-plates"
   },
   {
    "url": "https://www.kids2.com/products/16888-000-baby-einstein-roxys-bright-flight-musical-toy",
@@ -68674,7 +68692,8 @@
    "type": "bibs",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "ingenuity-easy-eater-bib-set"
   },
   {
    "url": "https://www.kids2.com/products/17335-000-bright-starts-stay-cool-teethers",
@@ -72770,7 +72789,8 @@
    "type": "rugs",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "home-of-wool-handwoven-wool-rug"
   },
   {
    "url": "https://homeofwool.com/shop/covers-for-bed-sharing-cushion-custom-for-sarah/",
@@ -109577,7 +109597,8 @@
    "type": "art",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "skipped",
+   "reason": "Page names no materials (read 2026-10-27)"
   },
   {
    "url": "https://www.thenaturalbabyco.com/products/ooly-rainbow-sparkle-glitter-markers-set-of-15",
