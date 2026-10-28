@@ -1,6 +1,6 @@
 {
  "schema": 4,
- "updated": "2026-10-27",
+ "updated": "2026-10-28",
  "ask": [
   "Thread on any sewn item (cotton or polyester).",
   "Wheels and axles on push toys and cars.",
@@ -19253,6 +19253,1169 @@
    ],
    "img": "speedy-monkey-car-transporter",
    "img_src": "https://cdn.shopify.com/s/files/1/0707/4850/4296/files/a7f95ebe5f05fe90f3c86145b9303f07f94efe5ded572c3e262ca28e8243566a.jpg?v=1789836285"
+  },
+  {
+   "id": "beaba-second-stage-silicone-spoons",
+   "type": "utensils",
+   "brand": "Béaba",
+   "line": "2nd Stage Silicone Spoons, set of 4",
+   "uses": [
+    "Food-grade silicone"
+   ],
+   "free": [
+    "BPA",
+    "PVC",
+    "Phthalates"
+   ],
+   "unconfirmed": [
+    "Pigments in the cotton candy and natural colours",
+    "Finished-product test for the silicone"
+   ],
+   "facts": {
+    "main": "yes",
+    "color": "unknown",
+    "silicone": "unknown"
+   },
+   "unstated": {
+    "color": [
+     "Pigments in the cotton candy and natural colours"
+    ],
+    "silicone": [
+     "Finished-product test for the silicone"
+    ]
+   },
+   "age": {
+    "min_months": 8,
+    "text": "8 months and up"
+   },
+   "quote": "Made from high-quality food-grade silicone, this spoon is free from BPA*, PVC, and phthalates",
+   "note": "The page marks “BPA” with “in accordance with current regulations”.",
+   "products": [
+    {
+     "name": "Set of 4 2nd Stage Silicone Spoons",
+     "url": "https://beaba.us/products/set-of-4-2nd-age-silicone-spoon",
+     "store": "Béaba",
+     "price": "$24.99",
+     "ships_from": null,
+     "shipping": "Free shipping on orders $140*"
+    }
+   ],
+   "outside": [],
+   "contains": [],
+   "standards": [],
+   "read": "2026-10-28",
+   "photos": [
+    {
+     "key": "beaba-second-stage-silicone-spoons",
+     "src": "https://cdn.shopify.com/s/files/1/0673/7756/1739/files/913555_product_face_1p.jpg?v=1755766128"
+    },
+    {
+     "key": "beaba-second-stage-silicone-spoons_2",
+     "src": "https://cdn.shopify.com/s/files/1/0673/7756/1739/files/913555_product_amb_1.jpg?v=1756246557"
+    },
+    {
+     "key": "beaba-second-stage-silicone-spoons_3",
+     "src": "https://cdn.shopify.com/s/files/1/0673/7756/1739/files/913555_product_amb_2.jpg?v=1756246557"
+    },
+    {
+     "key": "beaba-second-stage-silicone-spoons_4",
+     "src": "https://cdn.shopify.com/s/files/1/0673/7756/1739/files/913467_product_amb_2.jpg?v=1756246557"
+    },
+    {
+     "key": "beaba-second-stage-silicone-spoons_5",
+     "src": "https://cdn.shopify.com/s/files/1/0673/7756/1739/files/913629_amb_2.png?v=1771952602"
+    },
+    {
+     "key": "beaba-second-stage-silicone-spoons_6",
+     "src": "https://cdn.shopify.com/s/files/1/0673/7756/1739/files/913630.png?v=1771952622"
+    }
+   ],
+   "img": "beaba-second-stage-silicone-spoons",
+   "img_src": "https://cdn.shopify.com/s/files/1/0673/7756/1739/files/913555_product_face_1p.jpg?v=1755766128"
+  },
+  {
+   "id": "beaba-stainless-steel-insulated-food-jar",
+   "type": "food-storage",
+   "brand": "Béaba",
+   "line": "Stainless Steel Insulated Food Jar, 10 oz",
+   "uses": [
+    "Double-walled stainless steel jar"
+   ],
+   "free": [
+    "BPA",
+    "BPF",
+    "BPS",
+    "PVC",
+    "Phthalates"
+   ],
+   "unconfirmed": [
+    "Lid material",
+    "Lid seal",
+    "Colour coating on the outside"
+   ],
+   "facts": {
+    "main": "unknown",
+    "accessory": "unknown",
+    "color": "unknown"
+   },
+   "unstated": {
+    "accessory": [
+     "Lid material",
+     "Lid seal"
+    ],
+    "color": [
+     "Colour coating on the outside"
+    ]
+   },
+   "quote": "Isothermal, double-walled stainless steel",
+   "products": [
+    {
+     "name": "Stainless Steel Insulated Food Jar 10 oz",
+     "url": "https://beaba.us/products/stainless-steel-insulated-jar-10-oz",
+     "store": "Béaba",
+     "price": "$24.99",
+     "ships_from": null,
+     "shipping": "Free shipping on orders $140*"
+    }
+   ],
+   "outside": [],
+   "contains": [],
+   "standards": [],
+   "read": "2026-10-28",
+   "photos": [
+    {
+     "key": "beaba-stainless-steel-insulated-food-jar",
+     "src": "https://cdn.shopify.com/s/files/1/0673/7756/1739/files/914007_product_face.jpg?v=1755759492"
+    },
+    {
+     "key": "beaba-stainless-steel-insulated-food-jar_2",
+     "src": "https://cdn.shopify.com/s/files/1/0673/7756/1739/files/914007_product_3-4.jpg?v=1756243599"
+    },
+    {
+     "key": "beaba-stainless-steel-insulated-food-jar_3",
+     "src": "https://cdn.shopify.com/s/files/1/0673/7756/1739/files/914007_product_face_2.jpg?v=1756243599"
+    },
+    {
+     "key": "beaba-stainless-steel-insulated-food-jar_4",
+     "src": "https://cdn.shopify.com/s/files/1/0673/7756/1739/files/914007_product_face_3.jpg?v=1756243599"
+    },
+    {
+     "key": "beaba-stainless-steel-insulated-food-jar_5",
+     "src": "https://cdn.shopify.com/s/files/1/0673/7756/1739/files/912907_product_face_1.jpg?v=1758248903"
+    },
+    {
+     "key": "beaba-stainless-steel-insulated-food-jar_6",
+     "src": "https://cdn.shopify.com/s/files/1/0673/7756/1739/files/912907_product_face_3.jpg?v=1758248903"
+    },
+    {
+     "key": "beaba-stainless-steel-insulated-food-jar_7",
+     "src": "https://cdn.shopify.com/s/files/1/0673/7756/1739/files/912907_product_amb_2.jpg?v=1758248903"
+    },
+    {
+     "key": "beaba-stainless-steel-insulated-food-jar_8",
+     "src": "https://cdn.shopify.com/s/files/1/0673/7756/1739/files/912907_product_amb_3.jpg?v=1758248903"
+    },
+    {
+     "key": "beaba-stainless-steel-insulated-food-jar_9",
+     "src": "https://cdn.shopify.com/s/files/1/0673/7756/1739/files/912908_product_amb_2.jpg?v=1758248903"
+    },
+    {
+     "key": "beaba-stainless-steel-insulated-food-jar_10",
+     "src": "https://cdn.shopify.com/s/files/1/0673/7756/1739/files/912908_product_amb_3.jpg?v=1758248903"
+    }
+   ],
+   "img": "beaba-stainless-steel-insulated-food-jar",
+   "img_src": "https://cdn.shopify.com/s/files/1/0673/7756/1739/files/914007_product_face.jpg?v=1755759492"
+  },
+  {
+   "id": "colored-organics-lightweight-french-terry-pullover",
+   "type": "clothes",
+   "brand": "Colored Organics",
+   "line": "Lightweight French Terry Pullover",
+   "uses": [
+    "100% organic cotton French terry"
+   ],
+   "outside": [
+    "Elastane added to the ribbed cuffs and hem"
+   ],
+   "unconfirmed": [
+    "Dyes (“water-based”, type not named)",
+    "Print inks",
+    "Thread"
+   ],
+   "facts": {
+    "main": "yes",
+    "parts": "no",
+    "color": "unknown",
+    "organic": "yes"
+   },
+   "unstated": {
+    "color": [
+     "Dyes (“water-based”, type not named)",
+     "Print inks"
+    ]
+   },
+   "age": {
+    "min_months": 3,
+    "max_months": 72,
+    "text": "Sizes 3-6 months to 5T/6"
+   },
+   "quote": "Made of 100% Organic Cotton French Terry Fabric",
+   "products": [
+    {
+     "name": "BOO Lightweight French Terry Pullover",
+     "url": "https://coloredorganics.com/products/organic-baby-and-kids-boo-brooklyn-pullover",
+     "store": "Colored Organics",
+     "price": "$26.95 on sale (was $36)",
+     "ships_from": null,
+     "shipping": "Free U.S. shipping on orders over $50"
+    }
+   ],
+   "free": [],
+   "contains": [],
+   "standards": [],
+   "read": "2026-10-28",
+   "photos": [
+    {
+     "key": "colored-organics-lightweight-french-terry-pullover",
+     "src": "https://cdn.shopify.com/s/files/1/1643/4857/files/303-16c-brooklyn-pullover.boo.fit_detail.jpg?v=1790974907"
+    },
+    {
+     "key": "colored-organics-lightweight-french-terry-pullover_2",
+     "src": "https://cdn.shopify.com/s/files/1/1643/4857/files/303-16c-brooklyn-pullover.boo.flat_front.jpg?v=1790974907"
+    }
+   ],
+   "img": "colored-organics-lightweight-french-terry-pullover",
+   "img_src": "https://cdn.shopify.com/s/files/1/1643/4857/files/303-16c-brooklyn-pullover.boo.fit_detail.jpg?v=1790974907"
+  },
+  {
+   "id": "colored-organics-lucille-pointelle-ruffle-footed-romper",
+   "type": "pajamas",
+   "brand": "Colored Organics",
+   "line": "Lucille Pointelle Ruffle Footed Romper",
+   "uses": [
+    "100% organic cotton pointelle"
+   ],
+   "free": [
+    "Nickel in the snaps"
+   ],
+   "unconfirmed": [
+    "Snaps (“nickel-free”, metal not named)",
+    "Satin bow at the neckline",
+    "Foot grips (sizes 6-12M and up)",
+    "Dyes (“water-based”, type not named)",
+    "Thread",
+    "Flame retardant treatment"
+   ],
+   "facts": {
+    "main": "yes",
+    "parts": "unknown",
+    "color": "unknown",
+    "organic": "yes",
+    "flame": "unknown"
+   },
+   "unstated": {
+    "parts": [
+     "Snaps (“nickel-free”, metal not named)",
+     "Satin bow at the neckline",
+     "Foot grips (sizes 6-12M and up)",
+     "Thread"
+    ],
+    "color": [
+     "Dyes (“water-based”, type not named)"
+    ],
+    "flame": [
+     "Flame retardant treatment"
+    ]
+   },
+   "age": {
+    "min_months": 0,
+    "max_months": 24,
+    "text": "Sizes 0-3 months to 18-24 months"
+   },
+   "quote": "Made of 100% Organic Cotton Pointelle",
+   "products": [
+    {
+     "name": "Lucille Pointelle Ruffle Footed Romper - Macy Bluen",
+     "url": "https://coloredorganics.com/products/organic-cotton-baby-aw26-fireside-collection-lucille-pointelle-ruffle-romper-95133-26-macy-bluen",
+     "store": "Colored Organics",
+     "price": "$38",
+     "ships_from": null,
+     "shipping": "Free U.S. shipping on orders over $50"
+    }
+   ],
+   "outside": [],
+   "contains": [],
+   "standards": [],
+   "read": "2026-10-28",
+   "photos": [
+    {
+     "key": "colored-organics-lucille-pointelle-ruffle-footed-romper",
+     "src": "https://cdn.shopify.com/s/files/1/1643/4857/files/95133-26-lucille-pointelle-ls-ruffle-foot-romper.macy-bluen.flat_front_b16d2b50-23eb-488f-98fd-0bc5061eb333.jpg?v=1790614689"
+    },
+    {
+     "key": "colored-organics-lucille-pointelle-ruffle-footed-romper_2",
+     "src": "https://cdn.shopify.com/s/files/1/1643/4857/files/95133-26-lucille-pointelle-ls-ruffle-foot-romper.macy-bluen.fit_front_a1bfeda5-6267-48ab-9c92-a6eccd97a5d5.jpg?v=1792684403"
+    },
+    {
+     "key": "colored-organics-lucille-pointelle-ruffle-footed-romper_3",
+     "src": "https://cdn.shopify.com/s/files/1/1643/4857/files/macy-floral-bluen.flat_detail.jpg?v=1792771596"
+    }
+   ],
+   "img": "colored-organics-lucille-pointelle-ruffle-footed-romper",
+   "img_src": "https://cdn.shopify.com/s/files/1/1643/4857/files/95133-26-lucille-pointelle-ls-ruffle-foot-romper.macy-bluen.flat_front_b16d2b50-23eb-488f-98fd-0bc5061eb333.jpg?v=1790614689"
+  },
+  {
+   "id": "cybex-cloud-t-infant-car-seat",
+   "type": "car-seats",
+   "brand": "Cybex",
+   "line": "Cloud T Comfort Extend Infant Car Seat with SensorSafe",
+   "free": [
+    "Added fire retardant chemicals in the fabric"
+   ],
+   "unconfirmed": [
+    "Fibre of the seat fabrics",
+    "Energy-absorbing shell",
+    "Harness straps and buckle",
+    "Fill of the removable infant insert",
+    "Sun canopy and mesh"
+   ],
+   "facts": {
+    "main": "unknown",
+    "parts": "unknown",
+    "flame": "yes"
+   },
+   "unstated": {
+    "main": [
+     "Fibre of the seat fabrics",
+     "Energy-absorbing shell"
+    ],
+    "parts": [
+     "Harness straps and buckle"
+    ]
+   },
+   "age": {
+    "min_months": 0,
+    "max_months": 18,
+    "text": "0 to 18 months, 4 to 30 lb"
+   },
+   "quote": "FIRE RETARDANT CHEMICAL FREE FABRIC: Passes federal safety standards without the use of added fire retardant chemicals",
+   "note": "Rear-facing infant seat with a load-leg base and a Bluetooth chest clip.",
+   "products": [
+    {
+     "name": "Cybex Cloud T Comfort Extend Infant Car Seat with SensorSafe",
+     "url": "https://enlightenedbaby.com/products/cybex-cloud-t-comfort-extend-infant-car-seat-with-sensorsafe",
+     "store": "Enlightened Baby",
+     "price": "$649.95",
+     "ships_from": null,
+     "shipping": null
+    }
+   ],
+   "uses": [],
+   "outside": [],
+   "contains": [],
+   "standards": [],
+   "read": "2026-10-28",
+   "photos": [
+    {
+     "key": "cybex-cloud-t-infant-car-seat",
+     "src": "https://cdn.shopify.com/s/files/1/0707/4850/4296/files/CYB_24_US_y045_CloudT_BaseT_SEBL_Plus_print_medium_3ba807de-24b1-42d9-a01c-eca5d1a16467.jpg?v=1784584416"
+    },
+    {
+     "key": "cybex-cloud-t-infant-car-seat_2",
+     "src": "https://cdn.shopify.com/s/files/1/0707/4850/4296/files/COMFORT_EXTEND_CLOUD_T-01_2_c0077644-012f-409b-9bec-1b1fbdb32703.jpg?v=1784584416"
+    },
+    {
+     "key": "cybex-cloud-t-infant-car-seat_3",
+     "src": "https://cdn.shopify.com/s/files/1/0707/4850/4296/files/CYB_24_US_y000_CloudT_SEBL_Plus_Sensorsafe_Inlay_print_medium_7b7f4b1c-478a-413b-a2e5-104e5458a49e.jpg?v=1784584417"
+    },
+    {
+     "key": "cybex-cloud-t-infant-car-seat_4",
+     "src": "https://cdn.shopify.com/s/files/1/0707/4850/4296/files/CYB_24_US_y090_CloudT_SEBL_Plus_Canopy_print_medium_38faee07-74ed-4e66-bb1f-1daa370c8c93.jpg?v=1784584416"
+    },
+    {
+     "key": "cybex-cloud-t-infant-car-seat_5",
+     "src": "https://cdn.shopify.com/s/files/1/0707/4850/4296/files/CYB_24_US_y090_CloudT_SEBL_Plus_Recline_Canopy_print_medium_1d6b0832-966f-479c-8063-22bb8c954e23.jpg?v=1784584416"
+    },
+    {
+     "key": "cybex-cloud-t-infant-car-seat_6",
+     "src": "https://cdn.shopify.com/s/files/1/0707/4850/4296/files/CYB_24_US_y090_CloudT_SEBL_Plus_Recline_print_medium_1452a8ab-f51b-4a82-9ab5-9c80fc4fc1d9.jpg?v=1784584416"
+    },
+    {
+     "key": "cybex-cloud-t-infant-car-seat_7",
+     "src": "https://cdn.shopify.com/s/files/1/0707/4850/4296/files/CYB_24_US_y180_CloudT_SEBL_Plus_LSP_Impact_print_medium_5063bd10-c20b-4902-92bb-8c387bcefa3c.jpg?v=1784584417"
+    },
+    {
+     "key": "cybex-cloud-t-infant-car-seat_8",
+     "src": "https://cdn.shopify.com/s/files/1/0707/4850/4296/files/Safety_Features_Black_ef675b60-4fad-49c4-a582-d9e1acff075a.jpg?v=1784584416"
+    },
+    {
+     "key": "cybex-cloud-t-infant-car-seat_9",
+     "src": "https://cdn.shopify.com/s/files/1/0707/4850/4296/files/Stroller-Compatibility-black_2004c498-8880-4b72-ba89-91a4b2131024.jpg?v=1784584416"
+    },
+    {
+     "key": "cybex-cloud-t-infant-car-seat_10",
+     "src": "https://cdn.shopify.com/s/files/1/0707/4850/4296/files/CYB_24_US_y090_CloudT_BaseT_MIGR_Plus_Campaign_screen_HD_dbbb0624-6f30-4405-ba46-da14ea40be51.jpg?v=1784584416"
+    }
+   ],
+   "img": "cybex-cloud-t-infant-car-seat",
+   "img_src": "https://cdn.shopify.com/s/files/1/0707/4850/4296/files/CYB_24_US_y045_CloudT_BaseT_SEBL_Plus_print_medium_3ba807de-24b1-42d9-a01c-eca5d1a16467.jpg?v=1784584416"
+  },
+  {
+   "id": "delta-children-jeep-dune-compact-travel-high-chair",
+   "type": "high-chairs",
+   "brand": "Delta Children",
+   "line": "Jeep Dune Compact Travel High Chair",
+   "uses": [
+    "Steel frame"
+   ],
+   "unconfirmed": [
+    "Material of the faux beechwood trim",
+    "Tray and tray top",
+    "Seat pad",
+    "Five-point harness straps and buckle",
+    "Footrest"
+   ],
+   "facts": {
+    "main": "unknown",
+    "parts": "unknown",
+    "color": "unknown"
+   },
+   "unstated": {
+    "main": [
+     "Tray and tray top",
+     "Seat pad",
+     "Material of the faux beechwood trim"
+    ],
+    "parts": [
+     "Five-point harness straps and buckle"
+    ]
+   },
+   "age": {
+    "min_months": 6,
+    "text": "6 months and up, to 33 lb"
+   },
+   "quote": "Crafted with a durable steel frame and faux beechwood trim",
+   "note": "Folds flat and stands on its own; the page lists Baby Safety Alliance verification.",
+   "products": [
+    {
+     "name": "Jeep Dune Compact Travel High Chair",
+     "url": "https://www.deltachildren.com/products/dune-compact-travel-high-chair",
+     "store": "Delta Children",
+     "price": "$119.99",
+     "ships_from": null,
+     "shipping": "Free shipping sitewide; oversized items may carry a charge to out-of-network zip codes"
+    }
+   ],
+   "free": [],
+   "outside": [],
+   "contains": [],
+   "standards": [],
+   "read": "2026-10-28",
+   "photos": [
+    {
+     "key": "delta-children-jeep-dune-compact-travel-high-chair",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/23415-2454_Jeep_DuneHighChair_Black_Lifestyle_02.jpg?v=1769351833"
+    },
+    {
+     "key": "delta-children-jeep-dune-compact-travel-high-chair_2",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/23415-2454_Jeep-Dune-High-Chair_Black_Callout_06_b303e896-5ed9-4512-adaa-ad58aa8f49e4.jpg?v=1785944699"
+    },
+    {
+     "key": "delta-children-jeep-dune-compact-travel-high-chair_3",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/23415-2454_Jeep-Dune-High-Chair_Black_Callout_01.jpg?v=1776265696"
+    },
+    {
+     "key": "delta-children-jeep-dune-compact-travel-high-chair_4",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/23415-2454_Jeep-Dune-High-Chair_Black_Callout_02.jpg?v=1776265696"
+    },
+    {
+     "key": "delta-children-jeep-dune-compact-travel-high-chair_5",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/23415-2454_Jeep-Dune-High-Chair_Black_Callout_03.jpg?v=1776265696"
+    },
+    {
+     "key": "delta-children-jeep-dune-compact-travel-high-chair_6",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/23415-2454_Jeep-Dune-High-Chair_Black_Callout_05.jpg?v=1776265696"
+    },
+    {
+     "key": "delta-children-jeep-dune-compact-travel-high-chair_7",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/23415-2454_Jeep-Dune-High-Chair_Black_Callout_04.jpg?v=1776265696"
+    },
+    {
+     "key": "delta-children-jeep-dune-compact-travel-high-chair_8",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/23415-2454_Jeep-Dune-High-Chair_Black_Silo_07.jpg?v=1776265696"
+    },
+    {
+     "key": "delta-children-jeep-dune-compact-travel-high-chair_9",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/23415-2454_Jeep-Dune-High-Chair_Black_Silo_02.jpg?v=1776265696"
+    },
+    {
+     "key": "delta-children-jeep-dune-compact-travel-high-chair_10",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/23415-2454_Jeep-Dune-High-Chair_Black_Silo_19.jpg?v=1776265696"
+    }
+   ],
+   "img": "delta-children-jeep-dune-compact-travel-high-chair",
+   "img_src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/23415-2454_Jeep_DuneHighChair_Black_Lifestyle_02.jpg?v=1769351833"
+  },
+  {
+   "id": "freshly-picked-swaddle-ii",
+   "type": "sleep-sacks",
+   "brand": "Freshly Picked",
+   "line": "Swaddle II (swaddle blanket and Snuggle Band)",
+   "uses": [
+    "93% rayon swaddle blanket",
+    "12% rayon in the Snuggle Band"
+   ],
+   "outside": [
+    "7% spandex in the swaddle blanket",
+    "81% polyester and 7% spandex in the Snuggle Band"
+   ],
+   "unconfirmed": [
+    "Closure (“quiet closure”, material not named)",
+    "Dyes",
+    "Thread",
+    "What the rayon is made from"
+   ],
+   "facts": {
+    "main": "no",
+    "parts": "unknown",
+    "color": "unknown"
+   },
+   "unstated": {
+    "color": [
+     "Dyes"
+    ],
+    "parts": [
+     "Closure (“quiet closure”, material not named)",
+     "Thread"
+    ]
+   },
+   "quote": "Swaddle Blanket: 93% Rayon, 7% Spandex Snuggle Band: 81% Polyester, 12% Rayon, 7% Spandex",
+   "note": "One size; includes a mesh laundry bag.",
+   "products": [
+    {
+     "name": "Charcoal Stripes Swaddle II",
+     "url": "https://freshlypicked.com/products/charcoal-stripes-swaddle-ii",
+     "store": "Freshly Picked",
+     "price": "$22.00 on sale (was $29.00)",
+     "ships_from": null
+    }
+   ],
+   "free": [],
+   "contains": [],
+   "standards": [],
+   "read": "2026-10-28",
+   "photos": [
+    {
+     "key": "freshly-picked-swaddle-ii",
+     "src": "https://cdn.shopify.com/s/files/1/0204/2258/products/CharcoalStripes.jpg?v=1763055441"
+    },
+    {
+     "key": "freshly-picked-swaddle-ii_2",
+     "src": "https://cdn.shopify.com/s/files/1/0204/2258/products/CharcoalStripes_7_606b755a-19c9-440f-933f-e2518f15b146.jpg?v=1785349628"
+    },
+    {
+     "key": "freshly-picked-swaddle-ii_3",
+     "src": "https://cdn.shopify.com/s/files/1/0204/2258/products/CharcoalStripesSwaddle_4.jpg?v=1763055441"
+    },
+    {
+     "key": "freshly-picked-swaddle-ii_4",
+     "src": "https://cdn.shopify.com/s/files/1/0204/2258/products/CharcoalStripesSwaddle_2.jpg?v=1763055441"
+    },
+    {
+     "key": "freshly-picked-swaddle-ii_5",
+     "src": "https://cdn.shopify.com/s/files/1/0204/2258/products/CharcoalStripesSwaddle_3.jpg?v=1763055441"
+    },
+    {
+     "key": "freshly-picked-swaddle-ii_6",
+     "src": "https://cdn.shopify.com/s/files/1/0204/2258/products/CharcoalStripesSwaddle_5.jpg?v=1763055441"
+    },
+    {
+     "key": "freshly-picked-swaddle-ii_7",
+     "src": "https://cdn.shopify.com/s/files/1/0204/2258/products/CharcoalStripesSwaddle_6.jpg?v=1763055441"
+    },
+    {
+     "key": "freshly-picked-swaddle-ii_8",
+     "src": "https://cdn.shopify.com/s/files/1/0204/2258/products/CharcoalStripes_6_151157e6-36e9-45dc-9fab-dd12782764aa.jpg?v=1763055441"
+    },
+    {
+     "key": "freshly-picked-swaddle-ii_9",
+     "src": "https://review-images.judgeme.com/freshly-picked/1758212534__0__0riTr_0G__pZAOMgMAfe__original.jpg?quality=80&width=1024"
+    },
+    {
+     "key": "freshly-picked-swaddle-ii_10",
+     "src": "https://review-images.judgeme.com/freshly-picked/1758212534__0__CzFffD5I__kJt3Y2CBPZ__original.jpg?quality=80&width=1024"
+    }
+   ],
+   "img": "freshly-picked-swaddle-ii",
+   "img_src": "https://cdn.shopify.com/s/files/1/0204/2258/products/CharcoalStripes.jpg?v=1763055441"
+  },
+  {
+   "id": "hevea-round-pacifier-two-pack",
+   "type": "pacifiers",
+   "brand": "Hevea",
+   "line": "Natural Rubber Pacifier Two-Pack, Round Teat, 3 to 36 months",
+   "uses": [
+    "100% natural rubber, one piece",
+    "Natural colour pigments"
+   ],
+   "free": [
+    "Plastic",
+    "Silicone",
+    "BPA"
+   ],
+   "unconfirmed": [
+    "What the natural pigments are",
+    "Plasticisers or other additives in the rubber"
+   ],
+   "facts": {
+    "main": "yes",
+    "parts": "yes",
+    "rubber": "unknown",
+    "color": "unknown"
+   },
+   "unstated": {
+    "rubber": [
+     "Plasticisers or other additives in the rubber"
+    ],
+    "color": [
+     "What the natural pigments are"
+    ]
+   },
+   "contains": [
+    "latex"
+   ],
+   "age": {
+    "min_months": 3,
+    "max_months": 36,
+    "text": "3 to 36 months"
+   },
+   "quote": "Our 100% natural rubber pacifier is vegan certified and completely free from plastic, silicone, and BPA.",
+   "note": "Round, cherry-shaped teat; the face and teat are one piece. Packaging is an FSC-certified box, as stated by the maker.",
+   "products": [
+    {
+     "name": "Pacifier 3-36 Months Two-Pack - Round",
+     "url": "https://us.heveaplanet.com/products/pacifier-2-pack-3-36-months-pop-of-green",
+     "store": "Hevea",
+     "price": "$24.95",
+     "ships_from": null
+    }
+   ],
+   "outside": [],
+   "standards": [],
+   "read": "2026-10-28",
+   "photos": [
+    {
+     "key": "hevea-round-pacifier-two-pack",
+     "src": "https://cdn.shopify.com/s/files/1/1027/0038/4590/files/P1012_Natural-1.jpg?v=1777032636"
+    },
+    {
+     "key": "hevea-round-pacifier-two-pack_2",
+     "src": "https://cdn.shopify.com/s/files/1/1027/0038/4590/files/HEVEA_Pacifier_Milky_White_Gorgeous_Grey_round_two-pack_5710087433411.jpg?v=1777032635"
+    },
+    {
+     "key": "hevea-round-pacifier-two-pack_3",
+     "src": "https://cdn.shopify.com/s/files/1/1027/0038/4590/files/Natural_Rubber_Pacifier_ROUND_Newborn_3-36_Months_Two-Pack_-_Milky_White_Gorgeo.jpg?v=1777032636"
+    },
+    {
+     "key": "hevea-round-pacifier-two-pack_4",
+     "src": "https://cdn.shopify.com/s/files/1/1027/0038/4590/files/Natural_Rubber_Pacifier_ORTHODONTIC_Newborn_3-36_Months_Two-Pack_-_Natural_1.jpg?v=1777032636"
+    },
+    {
+     "key": "hevea-round-pacifier-two-pack_5",
+     "src": "https://cdn.shopify.com/s/files/1/1027/0038/4590/files/Icy_fjord_74462a23-c862-4ad1-aba2-fd2bd02c6f6d.jpg?v=1777032635"
+    },
+    {
+     "key": "hevea-round-pacifier-two-pack_6",
+     "src": "https://cdn.shopify.com/s/files/1/1027/0038/4590/files/HEVEA_Pacifier__Milky_White_Soft_Pebble_Round_two-pack_251381.png?v=1777032635"
+    }
+   ],
+   "img": "hevea-round-pacifier-two-pack",
+   "img_src": "https://cdn.shopify.com/s/files/1/1027/0038/4590/files/P1012_Natural-1.jpg?v=1777032636"
+  },
+  {
+   "id": "home-of-wool-nursing-pillow-with-ties",
+   "type": "nursing-pillows",
+   "brand": "Home of Wool",
+   "line": "Wool Nursing Pillow with Ties",
+   "uses": [
+    "Wool filling",
+    "Pillow fabric: 100% organic cotton, 59% linen / 41% cotton, or 100% virgin wool jersey",
+    "Optional removable cover: silk, linen or merino wool jersey"
+   ],
+   "free": [
+    "Synthetics",
+    "VOCs"
+   ],
+   "unconfirmed": [
+    "Zipper",
+    "Ties",
+    "Seam thread",
+    "Whether the wool is treated (superwash or not)"
+   ],
+   "facts": {
+    "main": "yes",
+    "parts": "unknown",
+    "wool": "unknown"
+   },
+   "unstated": {
+    "parts": [
+     "Zipper",
+     "Ties",
+     "Seam thread"
+    ],
+    "wool": [
+     "Whether the wool is treated (superwash or not)"
+    ]
+   },
+   "quote": "Filled with breathable wool , this pillow offers gentle comfort and optimal support.",
+   "note": "Ties fasten the pillow around the waist; a zipper lets you add or remove wool filling. Handmade to order.",
+   "products": [
+    {
+     "name": "Nursing Pillow with Ties",
+     "url": "https://homeofwool.com/shop/nursing-pillow-ties/",
+     "store": "Home of Wool",
+     "price": "from $259.00",
+     "ships_from": null,
+     "shipping": "Free worldwide shipping on all orders"
+    }
+   ],
+   "outside": [],
+   "contains": [],
+   "standards": [],
+   "read": "2026-10-28",
+   "photos": [
+    {
+     "key": "home-of-wool-nursing-pillow-with-ties",
+     "src": "https://homeofwool.com/wp-content/uploads/2025/09/home-of-wool-nursing-pillow-with-ties.jpg"
+    },
+    {
+     "key": "home-of-wool-nursing-pillow-with-ties_2",
+     "src": "https://homeofwool.com/wp-content/uploads/2025/09/home-of-wool-nursing-pillow-with-ties-5-scaled.jpg.jpg"
+    },
+    {
+     "key": "home-of-wool-nursing-pillow-with-ties_3",
+     "src": "https://homeofwool.com/wp-content/uploads/2025/09/home-of-wool-nursing-pillow-with-ties-10-scaled.jpg.jpg"
+    },
+    {
+     "key": "home-of-wool-nursing-pillow-with-ties_4",
+     "src": "https://homeofwool.com/wp-content/uploads/2025/09/home-of-wool-nursing-pillow-with-ties-9-scaled.jpg.jpg"
+    }
+   ],
+   "img": "home-of-wool-nursing-pillow-with-ties",
+   "img_src": "https://homeofwool.com/wp-content/uploads/2025/09/home-of-wool-nursing-pillow-with-ties.jpg"
+  },
+  {
+   "id": "little-green-radicals-recycled-waterproof-winter-coat",
+   "type": "rainwear",
+   "brand": "Little Green Radicals",
+   "line": "Recycled Waterproof Winter Coat",
+   "outside": [
+    "100% recycled polyester",
+    "Recycled polyester zip"
+   ],
+   "free": [
+    "PFAS and fluorocarbons in the fabric"
+   ],
+   "unconfirmed": [
+    "Fibre of the inner layer",
+    "Hook and loop fasteners",
+    "Elastic in the wrist cuffs",
+    "Poppers (“nickel-free”, metal not named)",
+    "Waterproof layer or treatment (not named)",
+    "Seam tape",
+    "Dyes"
+   ],
+   "facts": {
+    "main": "no",
+    "parts": "no",
+    "finish": "unknown",
+    "color": "unknown"
+   },
+   "unstated": {
+    "finish": [
+     "Waterproof layer or treatment (not named)"
+    ],
+    "color": [
+     "Dyes"
+    ]
+   },
+   "standards": [
+    "oeko-tex"
+   ],
+   "age": {
+    "min_months": 12,
+    "max_months": 120,
+    "text": "Sizes 1-2 years to 9-10 years"
+   },
+   "quote": "Material: 100% recycled polyester",
+   "note": "Waterproof rating of 5,000 mm with taped seams, as stated by the maker.",
+   "products": [
+    {
+     "name": "Moonlight Blue Recycled Waterproof Winter Coat",
+     "url": "https://littlegreenradicals.com/products/moonlight-blue-recycled-waterproof-winter-coat",
+     "store": "Little Green Radicals",
+     "price": "$133.20",
+     "ships_from": null,
+     "shipping": "USA standard delivery (8-12 working days) $15, free on orders over $100; no duty or sales tax"
+    }
+   ],
+   "uses": [],
+   "contains": [],
+   "read": "2026-10-28",
+   "photos": [
+    {
+     "key": "little-green-radicals-recycled-waterproof-winter-coat",
+     "src": "https://cdn.shopify.com/s/files/1/0258/8147/7195/files/A25-869-DEN_6.jpg?v=1763554838"
+    },
+    {
+     "key": "little-green-radicals-recycled-waterproof-winter-coat_2",
+     "src": "https://cdn.shopify.com/s/files/1/0258/8147/7195/files/A25-869-DEN-2000200072OW.jpg?v=1754384760"
+    },
+    {
+     "key": "little-green-radicals-recycled-waterproof-winter-coat_3",
+     "src": "https://cdn.shopify.com/s/files/1/0258/8147/7195/files/A25-869-DEN-2-2000200072OW.jpg?v=1763554838"
+    },
+    {
+     "key": "little-green-radicals-recycled-waterproof-winter-coat_4",
+     "src": "https://cdn.shopify.com/s/files/1/0258/8147/7195/files/A25-869-DEN-2-closeup1_2000200072OW.jpg?v=1754384760"
+    },
+    {
+     "key": "little-green-radicals-recycled-waterproof-winter-coat_5",
+     "src": "https://cdn.shopify.com/s/files/1/0258/8147/7195/files/A25-869-DEN_4.jpg?v=1754384760"
+    },
+    {
+     "key": "little-green-radicals-recycled-waterproof-winter-coat_6",
+     "src": "https://cdn.shopify.com/s/files/1/0258/8147/7195/files/A25-869-DEN-2-closeup2_2000200072OW.jpg?v=1754384760"
+    },
+    {
+     "key": "little-green-radicals-recycled-waterproof-winter-coat_7",
+     "src": "https://cdn.shopify.com/s/files/1/0258/8147/7195/files/A25-869-DEN_3.jpg?v=1754384760"
+    },
+    {
+     "key": "little-green-radicals-recycled-waterproof-winter-coat_8",
+     "src": "https://cdn.shopify.com/s/files/1/0258/8147/7195/files/A25-869-DEN_2.jpg?v=1754384760"
+    },
+    {
+     "key": "little-green-radicals-recycled-waterproof-winter-coat_9",
+     "src": "https://cdn.shopify.com/s/files/1/0258/8147/7195/files/A25-869-DEN_5.jpg?v=1754384760"
+    },
+    {
+     "key": "little-green-radicals-recycled-waterproof-winter-coat_10",
+     "src": "https://cdn.shopify.com/s/files/1/0258/8147/7195/files/A25-869-DEN_7.jpg?v=1754384760"
+    }
+   ],
+   "img": "little-green-radicals-recycled-waterproof-winter-coat",
+   "img_src": "https://cdn.shopify.com/s/files/1/0258/8147/7195/files/A25-869-DEN_6.jpg?v=1763554838"
+  },
+  {
+   "id": "micasso-2-in-1-stainless-steel-baby-cup",
+   "type": "cups",
+   "brand": "Micasso & Co",
+   "line": "2-in-1 Stainless Steel Baby Cup (spout + straw)",
+   "uses": [
+    "Stainless steel container",
+    "Silicone spout lid",
+    "Silicone straw lid"
+   ],
+   "unconfirmed": [
+    "Colourant in the coloured parts",
+    "Finished-product test for the silicone lids",
+    "Material of the straw"
+   ],
+   "facts": {
+    "main": "yes",
+    "color": "unknown",
+    "silicone": "unknown"
+   },
+   "unstated": {
+    "color": [
+     "Colourant in the coloured parts"
+    ],
+    "silicone": [
+     "Finished-product test for the silicone lids"
+    ]
+   },
+   "quote": "our 2-in-1 baby cup combines a stainless steel container with two silicone lids: one with a spout and one with a straw.",
+   "products": [
+    {
+     "name": "2-in-1 Stainless Steel Baby Cup",
+     "url": "https://coloredorganics.com/products/stainless-steel-childrens-plate-copy",
+     "store": "Colored Organics",
+     "price": "$22",
+     "ships_from": null,
+     "shipping": "Free U.S. shipping on orders over $50"
+    }
+   ],
+   "free": [],
+   "outside": [],
+   "contains": [],
+   "standards": [],
+   "read": "2026-10-28",
+   "photos": [
+    {
+     "key": "micasso-2-in-1-stainless-steel-baby-cup",
+     "src": "https://cdn.shopify.com/s/files/1/1643/4857/files/infant-unisex-2-in-1-stainless-steel-baby-cup.old-rose.flat_front.jpg?v=1787166428"
+    },
+    {
+     "key": "micasso-2-in-1-stainless-steel-baby-cup_2",
+     "src": "https://cdn.shopify.com/s/files/1/1643/4857/files/infant-unisex-2-in-1-stainless-steel-baby-cup.majestic-blue.flat_detail.jpg?v=1787166428"
+    },
+    {
+     "key": "micasso-2-in-1-stainless-steel-baby-cup_3",
+     "src": "https://cdn.shopify.com/s/files/1/1643/4857/files/infant-unisex-2-in-1-stainless-steel-baby-cup.majestic-blue.flat_front.jpg?v=1787166428"
+    },
+    {
+     "key": "micasso-2-in-1-stainless-steel-baby-cup_4",
+     "src": "https://cdn.shopify.com/s/files/1/1643/4857/files/infant-unisex-2-in-1-stainless-steel-baby-cup.creamy-white.flat_front.jpg?v=1787166428"
+    }
+   ],
+   "img": "micasso-2-in-1-stainless-steel-baby-cup",
+   "img_src": "https://cdn.shopify.com/s/files/1/1643/4857/files/infant-unisex-2-in-1-stainless-steel-baby-cup.old-rose.flat_front.jpg?v=1787166428"
+  },
+  {
+   "id": "mushie-bath-boats",
+   "type": "bath",
+   "brand": "Mushie",
+   "line": "Bath Boats (set of 5)",
+   "outside": [
+    "100% food grade PP plastic"
+   ],
+   "free": [
+    "BPA",
+    "BPS",
+    "PVC",
+    "Phthalates"
+   ],
+   "unconfirmed": [
+    "Pigments"
+   ],
+   "facts": {
+    "main": "no",
+    "color": "unknown",
+    "lead": "yes"
+   },
+   "unstated": {
+    "color": [
+     "Pigments"
+    ]
+   },
+   "standards": [
+    "us-toy"
+   ],
+   "age": {
+    "min_months": 10,
+    "text": "10 months and up"
+   },
+   "quote": "100% high-quality food grade PP plastic",
+   "note": "Made in Denmark, as stated by the maker.",
+   "products": [
+    {
+     "name": "Mushie Bath Boats",
+     "url": "https://mushie.com/products/bath-boats-original",
+     "store": "Mushie",
+     "price": "$12.99",
+     "ships_from": null,
+     "shipping": "Free Shipping for US orders $75+"
+    }
+   ],
+   "uses": [],
+   "contains": [],
+   "read": "2026-10-28",
+   "photos": [
+    {
+     "key": "mushie-bath-boats",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/products/BathBoats_Stack_92a8e8c5-87ac-4722-bdd5-4af7d7ab58ab.jpg?v=1752248666"
+    },
+    {
+     "key": "mushie-bath-boats_2",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/bath-boats-info.jpg?v=1771318617"
+    },
+    {
+     "key": "mushie-bath-boats_3",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/flat_lays_24.06-33.jpg?v=1771354518"
+    },
+    {
+     "key": "mushie-bath-boats_4",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/SHOOT_BIG_FLATLAYS-13.jpg?v=1778701115"
+    },
+    {
+     "key": "mushie-bath-boats_5",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/bath-11_fixed_b853cd5b-37e9-433a-95c3-f2bb8741c22b.jpg?v=1771354518"
+    },
+    {
+     "key": "mushie-bath-boats_6",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/backpacks_boats-9.jpg?v=1778701114"
+    },
+    {
+     "key": "mushie-bath-boats_7",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/Curly_gang_val-23-2.jpg?v=1771354518"
+    },
+    {
+     "key": "mushie-bath-boats_8",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/04_ebbe_shoot_malmo-16_1.jpg?v=1771354518"
+    },
+    {
+     "key": "mushie-bath-boats_9",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/flatlays_may4--96.jpg?v=1778701114"
+    },
+    {
+     "key": "mushie-bath-boats_10",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/shoot_01.07-14-2.jpg?v=1771354518"
+    }
+   ],
+   "img": "mushie-bath-boats",
+   "img_src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/products/BathBoats_Stack_92a8e8c5-87ac-4722-bdd5-4af7d7ab58ab.jpg?v=1752248666"
+  },
+  {
+   "id": "plantoys-hammer-balls",
+   "type": "bench",
+   "brand": "PlanToys",
+   "line": "Wooden Hammer Balls Pounding Toy",
+   "uses": [
+    "Rubberwood"
+   ],
+   "unconfirmed": [
+    "Whether the rubberwood is solid wood or plywood",
+    "Colour on the balls",
+    "What the hammer is made of"
+   ],
+   "facts": {
+    "main": "yes",
+    "wood": "unknown",
+    "color": "unknown",
+    "parts": "unknown"
+   },
+   "unstated": {
+    "wood": [
+     "Whether the rubberwood is solid wood or plywood"
+    ],
+    "color": [
+     "Colour on the balls"
+    ],
+    "parts": [
+     "What the hammer is made of"
+    ]
+   },
+   "age": {
+    "min_months": 12,
+    "text": "12 months and up"
+   },
+   "quote": "Materials: Rubberwood",
+   "note": "A wooden platform, coloured balls and a toy hammer. Made in Thailand.",
+   "products": [
+    {
+     "name": "PlanToys Wooden Hammer Balls Pounding Toy",
+     "url": "https://thebabypenguin.com/products/hammer-balls",
+     "store": "The Baby Penguin",
+     "price": "$59.99",
+     "ships_from": null,
+     "shipping": "Free standard shipping on orders of $50 or more within the contiguous United States"
+    }
+   ],
+   "free": [],
+   "outside": [],
+   "contains": [],
+   "standards": [],
+   "read": "2026-10-28",
+   "photos": [
+    {
+     "key": "plantoys-hammer-balls",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Hammer-Balls-PlanToys-USA-124134769.jpg?v=1781462158"
+    },
+    {
+     "key": "plantoys-hammer-balls_2",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Hammer-Balls-PlanToys-USA-124134882.jpg?v=1781462159"
+    },
+    {
+     "key": "plantoys-hammer-balls_3",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Hammer-Balls-PlanToys-USA-124134932.jpg?v=1781462159"
+    }
+   ],
+   "img": "plantoys-hammer-balls",
+   "img_src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Hammer-Balls-PlanToys-USA-124134769.jpg?v=1781462158"
+  },
+  {
+   "id": "rad-childrens-furniture-reversible-climbing-ramp",
+   "type": "climbers",
+   "brand": "RAD Children’s Furniture",
+   "line": "Reversible Climbing Ramp",
+   "uses": [
+    "Solid hardwood in parts such as rungs"
+   ],
+   "outside": [
+    "13-ply European birch plywood"
+   ],
+   "free": [
+    "Urea-formaldehyde adhesives in the plywood"
+   ],
+   "unconfirmed": [
+    "What the UV-cured and water-based finishes are made of"
+   ],
+   "facts": {
+    "wood": "no",
+    "color": "unknown"
+   },
+   "unstated": {
+    "color": [
+     "What the UV-cured and water-based finishes are made of"
+    ]
+   },
+   "quote": "Crafted from premium 13-ply European birch plywood made without urea-formaldehyde adhesives",
+   "note": "The maker says it suits children up to about 6 years and 100 lb. One smooth side and one side with rungs; hooks onto a Pikler triangle, arch or cube. Made in the maker’s Los Angeles woodshop.",
+   "products": [
+    {
+     "name": "Reversible Climbing Ramp",
+     "url": "https://radchildrensfurniture.com/products/reversible-climbing-ramp",
+     "store": "RAD Children’s Furniture",
+     "price": "$149.00",
+     "ships_from": "US",
+     "shipping": "Free shipping on all domestic orders"
+    }
+   ],
+   "contains": [],
+   "standards": [],
+   "read": "2026-10-28",
+   "photos": [
+    {
+     "key": "rad-childrens-furniture-reversible-climbing-ramp",
+     "src": "https://cdn.shopify.com/s/files/1/0087/4230/5892/files/pikler_climbing_ramp_2073bcc8-c2bd-472f-9cd1-9bfd45267fea.jpg?v=1762457056"
+    },
+    {
+     "key": "rad-childrens-furniture-reversible-climbing-ramp_2",
+     "src": "https://cdn.shopify.com/s/files/1/0087/4230/5892/products/reversible-climbing-ramp-375769.jpg?v=1747946228"
+    },
+    {
+     "key": "rad-childrens-furniture-reversible-climbing-ramp_3",
+     "src": "https://cdn.shopify.com/s/files/1/0087/4230/5892/products/reversible-climbing-ramp-314118.png?v=1747946228"
+    },
+    {
+     "key": "rad-childrens-furniture-reversible-climbing-ramp_4",
+     "src": "https://cdn.shopify.com/s/files/1/0087/4230/5892/products/reversible-climbing-ramp-736062.jpg?v=1747946228"
+    },
+    {
+     "key": "rad-childrens-furniture-reversible-climbing-ramp_5",
+     "src": "https://cdn.shopify.com/s/files/1/0087/4230/5892/products/reversible-climbing-ramp-904836.jpg?v=1747946228"
+    },
+    {
+     "key": "rad-childrens-furniture-reversible-climbing-ramp_6",
+     "src": "https://cdn.shopify.com/s/files/1/0087/4230/5892/files/0025-6836930653919124411.jpg?v=1747946253"
+    },
+    {
+     "key": "rad-childrens-furniture-reversible-climbing-ramp_7",
+     "src": "https://review-images.judgeme.com/rad-children-s-furniture/1668098740__9735d427-83ae-4e94-9e90-eb13a16c88ee__original.jpeg?quality=80&width=1024"
+    },
+    {
+     "key": "rad-childrens-furniture-reversible-climbing-ramp_8",
+     "src": "https://review-images.judgeme.com/rad-children-s-furniture/1602880855__Tatiana-Londono-Rosenberg---ramp__original.jpg?quality=80&width=1024"
+    },
+    {
+     "key": "rad-childrens-furniture-reversible-climbing-ramp_9",
+     "src": "https://review-images.judgeme.com/rad-children-s-furniture/1591332397__Screen-Shot-2020-06-04-at-9.46.16-PM__original.png?quality=80&width=1024"
+    }
+   ],
+   "img": "rad-childrens-furniture-reversible-climbing-ramp",
+   "img_src": "https://cdn.shopify.com/s/files/1/0087/4230/5892/files/pikler_climbing_ramp_2073bcc8-c2bd-472f-9cd1-9bfd45267fea.jpg?v=1762457056"
   }
  ]
 }

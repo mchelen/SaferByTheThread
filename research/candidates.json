@@ -99,7 +99,8 @@
    "type": "clothes",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "colored-organics-lightweight-french-terry-pullover"
   },
   {
    "url": "https://coloredorganics.com/products/organic-baby-and-kids-pumpkin-portland-pullover",
@@ -189,7 +190,8 @@
    "type": "cups",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "micasso-2-in-1-stainless-steel-baby-cup"
   },
   {
    "url": "https://coloredorganics.com/products/childrens-stainless-steel-cutlery-set-copy",
@@ -262,7 +264,8 @@
    "type": "pajamas",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "colored-organics-lucille-pointelle-ruffle-footed-romper"
   },
   {
    "url": "https://coloredorganics.com/products/ciel-pointelle-snap-sleeper-fireside",
@@ -371,7 +374,8 @@
    "type": "pajamas",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "colored-organics-lucille-pointelle-ruffle-footed-romper"
   },
   {
    "url": "https://coloredorganics.com/products/organic-cotton-baby-aw26-fireside-collection-ciel-pointelle-snap-sleeper-95127-26-bluen",
@@ -1317,7 +1321,8 @@
    "type": "art",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "skipped",
+   "reason": "Page names no materials (read 2026-10-28)"
   },
   {
    "url": "https://coloredorganics.com/products/drift-neoprene-lite-diaper-backpack-copy",
@@ -1699,7 +1704,8 @@
    "type": "pacifiers",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "hevea-round-pacifier-two-pack"
   },
   {
    "url": "https://us.heveaplanet.com/products/gorm-soothing-toy",
@@ -2882,7 +2888,8 @@
    "type": "utensils",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "beaba-second-stage-silicone-spoons"
   },
   {
    "url": "https://beaba.us/products/silicone-suction-plate",
@@ -3019,7 +3026,8 @@
    "type": "food-storage",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "beaba-stainless-steel-insulated-food-jar"
   },
   {
    "url": "https://beaba.us/products/evolu-basket-sandwich-mesh",
@@ -6314,7 +6322,8 @@
    "type": "rainwear",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "little-green-radicals-recycled-waterproof-winter-coat"
   },
   {
    "url": "https://littlegreenradicals.com/products/soft-blue-natural-rubber-ankle-rain-boots",
@@ -11179,7 +11188,8 @@
    "type": "puzzles",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "skipped",
+   "reason": "Page names no materials (read 2026-10-28)"
   },
   {
    "url": "https://radchildrensfurniture.com/products/magnetic-color-sorter",
@@ -11397,7 +11407,8 @@
    "type": "climbers",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "rad-childrens-furniture-reversible-climbing-ramp"
   },
   {
    "url": "https://radchildrensfurniture.com/products/pikler-triangle",
@@ -16969,7 +16980,8 @@
    "type": "changing-pads",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "skipped",
+   "reason": "Page names no materials (read 2026-10-28)"
   },
   {
    "url": "https://freshlypicked.com/products/dusty-blue-dapple-dot-changing-mat",
@@ -18931,7 +18943,8 @@
    "type": "sleep-sacks",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "freshly-picked-swaddle-ii"
   },
   {
    "url": "https://freshlypicked.com/products/indigo-swaddle-ii",
@@ -19849,7 +19862,8 @@
    "type": "puzzles",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "skipped",
+   "reason": "Page names no materials (read 2026-10-28)"
   },
   {
    "url": "https://kodokids.com/products/knob-puzzles",
@@ -21842,7 +21856,8 @@
    "type": "bath",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "mushie-bath-boats"
   },
   {
    "url": "https://mushie.com/products/lunchbox",
@@ -40159,7 +40174,8 @@
    "type": "high-chairs",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "delta-children-jeep-dune-compact-travel-high-chair"
   },
   {
    "url": "https://www.deltachildren.com/products/lola-6-in-1-convertible-crib",
@@ -56233,7 +56249,8 @@
    "type": "car-seats",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "cybex-cloud-t-infant-car-seat"
   },
   {
    "url": "https://enlightenedbaby.com/products/cybex-platinum-stroller-snack-tray",
@@ -73249,7 +73266,8 @@
    "type": "nursing-pillows",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "home-of-wool-nursing-pillow-with-ties"
   },
   {
    "url": "https://homeofwool.com/shop/nursing-pillow/",
@@ -93278,7 +93296,8 @@
    "type": "bench",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "plantoys-hammer-balls"
   },
   {
    "url": "https://thebabypenguin.com/products/bbq-playset",
