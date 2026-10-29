@@ -1,6 +1,6 @@
 {
  "schema": 4,
- "updated": "2026-10-28",
+ "updated": "2026-10-29",
  "ask": [
   "Thread on any sewn item (cotton or polyester).",
   "Wheels and axles on push toys and cars.",
@@ -20416,6 +20416,1076 @@
    ],
    "img": "rad-childrens-furniture-reversible-climbing-ramp",
    "img_src": "https://cdn.shopify.com/s/files/1/0087/4230/5892/files/pikler_climbing_ramp_2073bcc8-c2bd-472f-9cd1-9bfd45267fea.jpg?v=1762457056"
+  },
+  {
+   "id": "coyuchi-wildflower-organic-bath-rug",
+   "type": "rugs",
+   "brand": "Coyuchi",
+   "line": "Wildflower Organic Bath Rug",
+   "uses": [
+    "100% organic cotton terry"
+   ],
+   "free": [
+    "Synthetics"
+   ],
+   "outside": [],
+   "unconfirmed": [
+    "Dyes in the Petal and Pacific Blue colours"
+   ],
+   "facts": {
+    "main": "yes",
+    "organic": "yes",
+    "color": "unknown"
+   },
+   "unstated": {
+    "color": [
+     "Dyes in the Petal and Pacific Blue colours"
+    ]
+   },
+   "contains": [],
+   "standards": [
+    "gots"
+   ],
+   "quote": "Crafted from 100% organic cotton grown in India and woven in Portugal.",
+   "note": "Bath rug (2 x 3 ft) or runner (30 x 72 in), in Petal, Pacific Blue or Undyed; sold by Holy Lamb Organics.",
+   "products": [
+    {
+     "name": "Wildflower Organic Bath Rug",
+     "url": "https://holylamborganics.com/products/wildflower-organic-bath-rug",
+     "store": "Holy Lamb Organics",
+     "price": "$98.00 – $228.00",
+     "ships_from": null,
+     "shipping": "$30 shipping charge on all Coyuchi items"
+    }
+   ],
+   "read": "2026-10-29",
+   "photos": [
+    {
+     "key": "coyuchi-wildflower-organic-bath-rug",
+     "src": "https://cdn.shopify.com/s/files/1/0338/2373/files/SP26_WildflowerOrganic_BathRug_AntiqueRose_0986.jpg?v=1777940094"
+    },
+    {
+     "key": "coyuchi-wildflower-organic-bath-rug_2",
+     "src": "https://cdn.shopify.com/s/files/1/0338/2373/files/SP26_WildflowerOrganic_BathRug_Undyed_0975.webp?v=1777940094"
+    },
+    {
+     "key": "coyuchi-wildflower-organic-bath-rug_3",
+     "src": "https://cdn.shopify.com/s/files/1/0338/2373/files/SP26_WildflowerOrganic_BathRug_AntiqueRose_0997.jpg?v=1777940094"
+    },
+    {
+     "key": "coyuchi-wildflower-organic-bath-rug_4",
+     "src": "https://cdn.shopify.com/s/files/1/0338/2373/files/SP26_WildflowerOrganic_BathRug_PacificBlue_1012.webp?v=1777940094"
+    },
+    {
+     "key": "coyuchi-wildflower-organic-bath-rug_5",
+     "src": "https://cdn.shopify.com/s/files/1/0338/2373/files/SP26_WildflowerOrganic_BathRug_Undyed_0978.webp?v=1777940094"
+    }
+   ],
+   "img": "coyuchi-wildflower-organic-bath-rug",
+   "img_src": "https://cdn.shopify.com/s/files/1/0338/2373/files/SP26_WildflowerOrganic_BathRug_AntiqueRose_0986.jpg?v=1777940094"
+  },
+  {
+   "id": "crywolf-baby-hooded-towel",
+   "type": "towels",
+   "brand": "Crywolf",
+   "line": "Baby Hooded Towel",
+   "uses": [
+    "100% cotton towelling (350 gsm)"
+   ],
+   "free": [],
+   "outside": [],
+   "unconfirmed": [
+    "Snap closures",
+    "Jersey rib binding",
+    "Dyes and print",
+    "Thread"
+   ],
+   "facts": {
+    "main": "yes",
+    "parts": "unknown",
+    "color": "unknown"
+   },
+   "unstated": {
+    "parts": [
+     "Snap closures"
+    ],
+    "color": [
+     "Dyes and print"
+    ]
+   },
+   "contains": [],
+   "standards": [],
+   "age": {
+    "min_months": 0,
+    "max_months": 24,
+    "text": "About 0 to 2 years"
+   },
+   "quote": "Materials 100% cotton towelling fabric 350gsm weight",
+   "note": "Hooded towel with snap closure at the sides, 47 x 43 cm; designed in New Zealand. Price in New Zealand dollars.",
+   "products": [
+    {
+     "name": "Baby Hooded Towel – Fish School",
+     "url": "https://crywolfchild.com/products/baby-hooded-towel-fish-school",
+     "store": "Crywolf",
+     "price": "$64.99 NZD",
+     "ships_from": "New Zealand",
+     "shipping": null
+    }
+   ],
+   "read": "2026-10-29",
+   "photos": [
+    {
+     "key": "crywolf-baby-hooded-towel",
+     "src": "https://cdn.shopify.com/s/files/1/2228/8463/files/CR27AB_1.jpg?v=1787283376"
+    },
+    {
+     "key": "crywolf-baby-hooded-towel_2",
+     "src": "https://cdn.shopify.com/s/files/1/2228/8463/files/CRYWOLF-SS2627-Baby-HoodedTowel-Littlefish-Campaign-1-WEB.jpg?v=1790969621"
+    },
+    {
+     "key": "crywolf-baby-hooded-towel_3",
+     "src": "https://cdn.shopify.com/s/files/1/2228/8463/files/Red_Fire_Warning_label_for_Website_7dda5c56-d1ce-4f89-911a-267e639b36e4.jpg?v=1788917741"
+    }
+   ],
+   "img": "crywolf-baby-hooded-towel",
+   "img_src": "https://cdn.shopify.com/s/files/1/2228/8463/files/CR27AB_1.jpg?v=1787283376"
+  },
+  {
+   "id": "delta-children-jeep-evolve-jxp-stroller-wagon",
+   "type": "strollers",
+   "brand": "Delta Children",
+   "line": "Jeep Evolve JXP All-Terrain 2-Seater Stroller Wagon",
+   "uses": [],
+   "free": [],
+   "outside": [
+    "Plastic snack tray with 2 cup holders",
+    "Leatherette handlebar cover"
+   ],
+   "unconfirmed": [
+    "Seat and canopy fabric",
+    "Frame",
+    "Wheels",
+    "5-point harnesses"
+   ],
+   "facts": {
+    "main": "unknown",
+    "parts": "no"
+   },
+   "unstated": {
+    "main": [
+     "Seat and canopy fabric",
+     "Frame"
+    ]
+   },
+   "contains": [],
+   "standards": [],
+   "quote": "Plastic snack tray with 2 cup holders",
+   "note": "Two-seat stroller wagon with an 8-inch footwell, UPF 50+ canopy and machine-washable soft goods; the maker says it is GREENGUARD Gold certified for chemical emissions. Weight limit 110 lbs.",
+   "products": [
+    {
+     "name": "Jeep Evolve JXP All-Terrain 2-Seater Stroller Wagon",
+     "url": "https://www.deltachildren.com/products/evolve-jxp-all-terrain-2-seater-stroller-wagon",
+     "store": "Delta Children",
+     "price": "$269.99",
+     "ships_from": null,
+     "shipping": "Free shipping sitewide"
+    }
+   ],
+   "read": "2026-10-29",
+   "photos": [
+    {
+     "key": "delta-children-jeep-evolve-jxp-stroller-wagon",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/60026-2378_JeepEvolveJXPStrollerWagon_Black_Green_Lifestyle_08.jpg?v=1772408498"
+    },
+    {
+     "key": "delta-children-jeep-evolve-jxp-stroller-wagon_2",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/60026-2378_JeepEvolveJXPStrollerWagon_Black_Green_Callout_01.jpg?v=1772408504"
+    },
+    {
+     "key": "delta-children-jeep-evolve-jxp-stroller-wagon_3",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/60026-2378_JeepEvolveJXPStrollerWagon_Black_Green_Callout_02.jpg?v=1772408504"
+    },
+    {
+     "key": "delta-children-jeep-evolve-jxp-stroller-wagon_4",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/60026-2378_JeepEvolveJXPStrollerWagon_Black_Green_Callout_03_402f419f-290b-486f-a432-014afb5ef7a6.jpg?v=1789478598"
+    },
+    {
+     "key": "delta-children-jeep-evolve-jxp-stroller-wagon_5",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/60026-2378_JeepEvolveJXPStrollerWagon_Black_Green_Callout_04.jpg?v=1772408504"
+    },
+    {
+     "key": "delta-children-jeep-evolve-jxp-stroller-wagon_6",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/60026-2378_JeepEvolveJXPStrollerWagon_Black_Green_Callout_05.jpg?v=1772408505"
+    },
+    {
+     "key": "delta-children-jeep-evolve-jxp-stroller-wagon_7",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/60026-2378_JeepEvolveJXPStrollerWagon_Black_Green_Callout_06.jpg?v=1772408504"
+    },
+    {
+     "key": "delta-children-jeep-evolve-jxp-stroller-wagon_8",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/60026-2378_JeepEvolveJXPStrollerWagon_Black_Green_Callout_08.jpg?v=1772408504"
+    },
+    {
+     "key": "delta-children-jeep-evolve-jxp-stroller-wagon_9",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/60026-2378_JeepEvolveJXPStrollerWagon_Black_Green_Callout_07.jpg?v=1772408504"
+    },
+    {
+     "key": "delta-children-jeep-evolve-jxp-stroller-wagon_10",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/60026-2378_JeepEvolveJXPStrollerWagon_Black_Green_Callout_09.jpg?v=1772408504"
+    }
+   ],
+   "img": "delta-children-jeep-evolve-jxp-stroller-wagon",
+   "img_src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/60026-2378_JeepEvolveJXPStrollerWagon_Black_Green_Lifestyle_08.jpg?v=1772408498"
+  },
+  {
+   "id": "djeco-puzz-and-roll-color-wooden-puzzle",
+   "type": "puzzles",
+   "brand": "Djeco",
+   "line": "Puzz & Roll Color Wooden Puzzle",
+   "uses": [
+    "Wooden puzzle pieces and base"
+   ],
+   "free": [],
+   "outside": [],
+   "unconfirmed": [
+    "Kind of wood (solid or plywood)",
+    "Paint or print on the pieces",
+    "Wheels"
+   ],
+   "facts": {
+    "main": "unknown",
+    "wood": "unknown",
+    "color": "unknown",
+    "parts": "unknown"
+   },
+   "unstated": {
+    "main": [
+     "Wheels"
+    ],
+    "wood": [
+     "Kind of wood (solid or plywood)"
+    ],
+    "color": [
+     "Paint or print on the pieces"
+    ],
+    "parts": [
+     "Wheels"
+    ]
+   },
+   "contains": [],
+   "standards": [],
+   "quote": "Contents: 9-piece wooden puzzle on base.",
+   "note": "A puzzle and a rolling toy in one: the child fits the wheels to the animal of the same colour and rolls it. Designed by Isa Pirracas, Spain.",
+   "products": [
+    {
+     "name": "Djeco Puzz & Roll Color Wooden Puzzle",
+     "url": "https://www.thenaturalbabyco.com/products/djeco-puzz-roll-color-wooden-puzzle",
+     "store": "The Natural Baby Company",
+     "price": "$24.99",
+     "ships_from": null
+    }
+   ],
+   "read": "2026-10-29",
+   "photos": [
+    {
+     "key": "djeco-puzz-and-roll-color-wooden-puzzle",
+     "src": "https://cdn.shopify.com/s/files/1/2386/1081/files/Roll_color.jpg?v=1789001868"
+    },
+    {
+     "key": "djeco-puzz-and-roll-color-wooden-puzzle_2",
+     "src": "https://cdn.shopify.com/s/files/1/2386/1081/files/roll_color2.jpg?v=1789001867"
+    },
+    {
+     "key": "djeco-puzz-and-roll-color-wooden-puzzle_3",
+     "src": "https://cdn.shopify.com/s/files/1/2386/1081/files/rollColor.jpg?v=1789001867"
+    }
+   ],
+   "img": "djeco-puzz-and-roll-color-wooden-puzzle",
+   "img_src": "https://cdn.shopify.com/s/files/1/2386/1081/files/Roll_color.jpg?v=1789001868"
+  },
+  {
+   "id": "haba-musical-sounds-musical-joy-play-set",
+   "type": "instruments",
+   "brand": "HABA",
+   "line": "Musical Sounds, Musical Joy Play Set",
+   "uses": [
+    "Beech wood",
+    "Brass",
+    "Steel"
+   ],
+   "free": [],
+   "outside": [
+    "Polyester string"
+   ],
+   "unconfirmed": [
+    "Stain or paint on the wood"
+   ],
+   "facts": {
+    "main": "yes",
+    "parts": "no",
+    "wood": "unknown",
+    "color": "unknown"
+   },
+   "unstated": {
+    "color": [
+     "Stain or paint on the wood"
+    ]
+   },
+   "contains": [],
+   "standards": [],
+   "quote": "MATERIALS : Made from sustainably sourced beech wood, brass, polyester string, and steel.",
+   "note": "Triangle, jingle block, mini metallophone, guiro and mallet. Made in Germany; Bella Luna Toys ships it from its New York warehouse.",
+   "products": [
+    {
+     "name": "HABA Musical Sounds, Musical Joy Play Set",
+     "url": "https://www.bellalunatoys.com/products/haba-wooden-instruments-musical-sounds-musical-joy",
+     "store": "Bella Luna Toys",
+     "price": "$39.99",
+     "ships_from": "US",
+     "shipping": "Free shipping on orders over $99 within the contiguous 48 states"
+    }
+   ],
+   "read": "2026-10-29",
+   "photos": [
+    {
+     "key": "haba-musical-sounds-musical-joy-play-set",
+     "src": "https://cdn.shopify.com/s/files/1/1114/2810/files/musical-sounds-musical-joy-305922-1.jpg?v=1719263520"
+    },
+    {
+     "key": "haba-musical-sounds-musical-joy-play-set_2",
+     "src": "https://cdn.shopify.com/s/files/1/1114/2810/files/haba-musical-joy-instrument-set-ls-2.jpg?v=1727240219"
+    },
+    {
+     "key": "haba-musical-sounds-musical-joy-play-set_3",
+     "src": "https://cdn.shopify.com/s/files/1/1114/2810/files/haba-musical-joy-instrument-set-ls.jpg?v=1727240218"
+    },
+    {
+     "key": "haba-musical-sounds-musical-joy-play-set_4",
+     "src": "https://cdn.shopify.com/s/files/1/1114/2810/files/musical-sounds-musical-joy-305922-ls1.jpg?v=1719263520"
+    },
+    {
+     "key": "haba-musical-sounds-musical-joy-play-set_5",
+     "src": "https://cdn.shopify.com/s/files/1/1114/2810/files/musical-sounds-musical-joy-305922-2.jpg?v=1719263520"
+    },
+    {
+     "key": "haba-musical-sounds-musical-joy-play-set_6",
+     "src": "https://cdn.shopify.com/s/files/1/1114/2810/files/musical-sounds-musical-joy-305922-ls2.jpg?v=1719263520"
+    },
+    {
+     "key": "haba-musical-sounds-musical-joy-play-set_7",
+     "src": "https://cdn.shopify.com/s/files/1/1114/2810/files/musical-sounds-musical-joy-305922-ls3.jpg?v=1719263520"
+    },
+    {
+     "key": "haba-musical-sounds-musical-joy-play-set_8",
+     "src": "https://cdn.shopify.com/s/files/1/1114/2810/files/musical-sounds-musical-joy-305922-pkg1.jpg?v=1719263520"
+    },
+    {
+     "key": "haba-musical-sounds-musical-joy-play-set_9",
+     "src": "https://cdn.shopify.com/s/files/1/1114/2810/files/musical-sounds-musical-joy-305922-pkg2.jpg?v=1719263520"
+    },
+    {
+     "key": "haba-musical-sounds-musical-joy-play-set_10",
+     "src": "https://www.bellalunatoys.com/cdn/shop/files/musical-sounds-musical-joy-305922-ls3.jpg?v=1719263520&width=1800"
+    }
+   ],
+   "img": "haba-musical-sounds-musical-joy-play-set",
+   "img_src": "https://cdn.shopify.com/s/files/1/1114/2810/files/musical-sounds-musical-joy-305922-1.jpg?v=1719263520"
+  },
+  {
+   "id": "home-of-wool-wool-baby-changing-pad",
+   "type": "changing-pads",
+   "brand": "Home of Wool",
+   "line": "Wool Baby Changing Pad",
+   "uses": [
+    "Certified organic wool filling",
+    "Cover fabric: 100% organic cotton, 59% linen / 41% cotton, or 100% wool"
+   ],
+   "free": [
+    "Glues",
+    "Synthetics",
+    "VOCs"
+   ],
+   "unconfirmed": [
+    "Seam thread",
+    "Whether the wool is treated (superwash or not)"
+   ],
+   "outside": [],
+   "facts": {
+    "main": "yes",
+    "parts": "unknown",
+    "wool": "unknown",
+    "organic": "yes"
+   },
+   "unstated": {
+    "parts": [
+     "Seam thread"
+    ],
+    "wool": [
+     "Whether the wool is treated (superwash or not)"
+    ]
+   },
+   "contains": [],
+   "standards": [],
+   "quote": "This baby changing pad is filled with certified organic wool and covered in natural fabric.",
+   "note": "16 x 31 x 4 in; made to order and can be cut to a custom size. The cover slips off for washing.",
+   "products": [
+    {
+     "name": "Wool Baby Changing Pad",
+     "url": "https://homeofwool.com/shop/baby-changing-pad/",
+     "store": "Home of Wool",
+     "price": "$204.00 – $357.00",
+     "ships_from": null,
+     "shipping": "Free worldwide shipping on all orders"
+    }
+   ],
+   "read": "2026-10-29",
+   "photos": [
+    {
+     "key": "home-of-wool-wool-baby-changing-pad",
+     "src": "https://homeofwool.com/wp-content/uploads/2025/09/home-of-wool-baby-changing-pad-main-2.jpg"
+    }
+   ],
+   "img": "home-of-wool-wool-baby-changing-pad",
+   "img_src": "https://homeofwool.com/wp-content/uploads/2025/09/home-of-wool-baby-changing-pad-main-2.jpg"
+  },
+  {
+   "id": "honeysticks-beeswax-crayons-jumbos",
+   "type": "art",
+   "brand": "Honeysticks",
+   "line": "Beeswax Crayons Jumbos (12 pack)",
+   "uses": [
+    "100% New Zealand beeswax"
+   ],
+   "free": [
+    "Fillers"
+   ],
+   "outside": [],
+   "unconfirmed": [
+    "What the food-grade colorants are made of"
+   ],
+   "facts": {
+    "main": "yes",
+    "color": "unknown"
+   },
+   "unstated": {
+    "color": [
+     "What the food-grade colorants are made of"
+    ]
+   },
+   "contains": [],
+   "standards": [],
+   "age": {
+    "min_months": 36,
+    "text": "3 years and up"
+   },
+   "quote": "Made with 100% pure New Zealand beeswax and food-grade colorants – no nasties, no fillers.",
+   "note": "Jumbo crayons for a pencil-style grip; handmade in New Zealand, the page says.",
+   "products": [
+    {
+     "name": "Honeysticks Beeswax Crayons Jumbos 12pk",
+     "url": "https://thebabypenguin.com/products/honeysticks-beeswax-crayons-jumbos-12pk",
+     "store": "The Baby Penguin",
+     "price": "$17.95",
+     "ships_from": null
+    }
+   ],
+   "read": "2026-10-29",
+   "photos": [
+    {
+     "key": "honeysticks-beeswax-crayons-jumbos",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Honeysticks-Beeswax-Crayons-Jumbos-12pk-Honeysticks-USA-128331832.png?v=1781467526"
+    },
+    {
+     "key": "honeysticks-beeswax-crayons-jumbos_2",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Honeysticks-Beeswax-Crayons-Jumbos-12pk-Honeysticks-USA-128331961.webp?v=1781468741"
+    },
+    {
+     "key": "honeysticks-beeswax-crayons-jumbos_3",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Honeysticks-Beeswax-Crayons-Jumbos-12pk-Honeysticks-USA-128332014.webp?v=1781468743"
+    },
+    {
+     "key": "honeysticks-beeswax-crayons-jumbos_4",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Honeysticks-Beeswax-Crayons-Jumbos-12pk-Honeysticks-USA-128332140.jpg?v=1781452949"
+    },
+    {
+     "key": "honeysticks-beeswax-crayons-jumbos_5",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Honeysticks-Beeswax-Crayons-Jumbos-12pk-Honeysticks-USA-128332272.jpg?v=1781452949"
+    },
+    {
+     "key": "honeysticks-beeswax-crayons-jumbos_6",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Honeysticks-Beeswax-Crayons-Jumbos-12pk-Honeysticks-USA-128332352.jpg?v=1781452953"
+    },
+    {
+     "key": "honeysticks-beeswax-crayons-jumbos_7",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Honeysticks-Beeswax-Crayons-Jumbos-12pk-Honeysticks-USA-128332417.webp?v=1781468744"
+    },
+    {
+     "key": "honeysticks-beeswax-crayons-jumbos_8",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Honeysticks-Beeswax-Crayons-Jumbos-12pk-Honeysticks-USA-128332583.webp?v=1781468745"
+    },
+    {
+     "key": "honeysticks-beeswax-crayons-jumbos_9",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Honeysticks-Beeswax-Crayons-Jumbos-12pk-Honeysticks-USA-128332692.webp?v=1781468747"
+    },
+    {
+     "key": "honeysticks-beeswax-crayons-jumbos_10",
+     "src": "https://thebabypenguin.com/cdn/shop/files/Honeysticks-Beeswax-Crayons-Jumbos-12pk-Honeysticks-USA-128331832.png?v=1781467526&width=1920"
+    }
+   ],
+   "img": "honeysticks-beeswax-crayons-jumbos",
+   "img_src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Honeysticks-Beeswax-Crayons-Jumbos-12pk-Honeysticks-USA-128331832.png?v=1781467526"
+  },
+  {
+   "id": "ingenuity-cozyclean-changing-pad",
+   "type": "changing-pads",
+   "brand": "Ingenuity",
+   "line": "CozyClean Changing Pad",
+   "uses": [],
+   "free": [],
+   "outside": [
+    "Quilted vinyl surface",
+    "Polyester cover (53.3% polyester blend, 46.7% polyester)"
+   ],
+   "unconfirmed": [
+    "Material of the pad inside",
+    "Safety belt and quick-release buckle"
+   ],
+   "facts": {
+    "main": "no",
+    "parts": "unknown"
+   },
+   "unstated": {
+    "parts": [
+     "Safety belt and quick-release buckle"
+    ]
+   },
+   "contains": [],
+   "standards": [],
+   "age": {
+    "min_months": 0,
+    "max_months": 24,
+    "text": "0 to 24 months"
+   },
+   "quote": "Materials: 53.3% Polyester Blend, 46.7% Polyester",
+   "note": "Contoured pad with raised sides, a wipeable quilted vinyl surface and a removable machine-washable cover; ships vacuum-packed.",
+   "products": [
+    {
+     "name": "Ingenuity CozyClean Changing Pad – Taupe",
+     "url": "https://www.kids2.com/products/17757-008-ingenuity-cozy-clean-changing-pad-and-cover-taupe",
+     "store": "Kids2",
+     "price": "$29.99",
+     "ships_from": null
+    }
+   ],
+   "read": "2026-10-29",
+   "photos": [
+    {
+     "key": "ingenuity-cozyclean-changing-pad",
+     "src": "https://cdn.shopify.com/s/files/1/0468/2521/0022/files/9631bb774515faabdf88de565e9d6bd2da92079d.jpg?v=1778616770"
+    },
+    {
+     "key": "ingenuity-cozyclean-changing-pad_2",
+     "src": "https://cdn.shopify.com/s/files/1/0468/2521/0022/files/4e1b74fba06b5ea247c5570471a39f001071a2d5.jpg?v=1778616770"
+    },
+    {
+     "key": "ingenuity-cozyclean-changing-pad_3",
+     "src": "https://cdn.shopify.com/s/files/1/0468/2521/0022/files/5821e22d108d0e983cf0dfe10e81a4a7adbf2d8c.jpg?v=1778616770"
+    },
+    {
+     "key": "ingenuity-cozyclean-changing-pad_4",
+     "src": "https://cdn.shopify.com/s/files/1/0468/2521/0022/files/591b67193cf2629c0a72da220673391e99f60bd7.jpg?v=1778616770"
+    },
+    {
+     "key": "ingenuity-cozyclean-changing-pad_5",
+     "src": "https://cdn.shopify.com/s/files/1/0468/2521/0022/files/4ef07b00e0cbe2fafc7a50c6b22b6483d61818ca.jpg?v=1778616770"
+    },
+    {
+     "key": "ingenuity-cozyclean-changing-pad_6",
+     "src": "https://cdn.shopify.com/s/files/1/0468/2521/0022/files/2de00ddf50dcdc81ecb811871c7ee4c5d3f5bdac.jpg?v=1778616770"
+    },
+    {
+     "key": "ingenuity-cozyclean-changing-pad_7",
+     "src": "https://cdn.shopify.com/s/files/1/0468/2521/0022/files/e25d2feb9101a46852500581e3ffeb1a46058e1b.jpg?v=1778616770"
+    },
+    {
+     "key": "ingenuity-cozyclean-changing-pad_8",
+     "src": "https://cdn.shopify.com/s/files/1/0468/2521/0022/files/192a79b3a826682c463112f735479821bd8d78c9.jpg?v=1778616770"
+    },
+    {
+     "key": "ingenuity-cozyclean-changing-pad_9",
+     "src": "https://www.kids2.com/cdn/shop/files/preview_images/hqdefault_d849601f-e531-4779-9a7d-a1243554e590.jpg?v=1778616768"
+    },
+    {
+     "key": "ingenuity-cozyclean-changing-pad_10",
+     "src": "https://www.kids2.com/cdn/shop/files/preview_images/hqdefault_e6b5c2ec-d625-41aa-a05d-52d0dcd68790.jpg?v=1752781600"
+    }
+   ],
+   "img": "ingenuity-cozyclean-changing-pad",
+   "img_src": "https://cdn.shopify.com/s/files/1/0468/2521/0022/files/9631bb774515faabdf88de565e9d6bd2da92079d.jpg?v=1778616770"
+  },
+  {
+   "id": "little-green-radicals-adaptive-dribble-bibs",
+   "type": "bibs",
+   "brand": "Little Green Radicals",
+   "line": "Organic Adaptive Adjustable Large Dribble Bibs (3 pack)",
+   "uses": [
+    "100% organic and Fairtrade interlock cotton",
+    "Brushed cotton backing"
+   ],
+   "free": [
+    "Nickel in the poppers"
+   ],
+   "outside": [],
+   "unconfirmed": [
+    "Material of the poppers",
+    "Dyes and print",
+    "Thread"
+   ],
+   "facts": {
+    "main": "yes",
+    "organic": "yes",
+    "parts": "unknown",
+    "color": "unknown"
+   },
+   "unstated": {
+    "parts": [
+     "Material of the poppers"
+    ],
+    "color": [
+     "Dyes and print"
+    ]
+   },
+   "contains": [],
+   "standards": [
+    "gots"
+   ],
+   "quote": "Material: 100% organic and Fairtrade interlock cotton",
+   "note": "Large bibs with an extra-wide neck, two adjustable poppers, flat seams and no labels, made for older children and children with disabilities; colours may vary.",
+   "products": [
+    {
+     "name": "Petals Organic Adaptive Adjustable Large Dribble Bibs 3 Pack",
+     "url": "https://littlegreenradicals.com/products/petals-multi-pack-adjustable-large-adaptive-dribble-bibs",
+     "store": "Little Green Radicals",
+     "price": "$23.04 (sale; regular $28.80)",
+     "ships_from": null,
+     "shipping": "$15, or free on orders over $100; no US duty or sales tax"
+    }
+   ],
+   "read": "2026-10-29",
+   "photos": [
+    {
+     "key": "little-green-radicals-adaptive-dribble-bibs",
+     "src": "https://cdn.shopify.com/s/files/1/0258/8147/7195/files/A26-893-UNI_2000x2000_72OW.jpg?v=1786019858"
+    },
+    {
+     "key": "little-green-radicals-adaptive-dribble-bibs_2",
+     "src": "https://cdn.shopify.com/s/files/1/0258/8147/7195/files/A26-893-UNI_4_2000x2000_72OW.jpg?v=1786019858"
+    },
+    {
+     "key": "little-green-radicals-adaptive-dribble-bibs_3",
+     "src": "https://cdn.shopify.com/s/files/1/0258/8147/7195/files/A26-893-UNI_5_2000x2000_72OW.jpg?v=1786019858"
+    },
+    {
+     "key": "little-green-radicals-adaptive-dribble-bibs_4",
+     "src": "https://cdn.shopify.com/s/files/1/0258/8147/7195/files/A26-893-UNI_2_2000x2000_72OW.jpg?v=1786019857"
+    }
+   ],
+   "img": "little-green-radicals-adaptive-dribble-bibs",
+   "img_src": "https://cdn.shopify.com/s/files/1/0258/8147/7195/files/A26-893-UNI_2000x2000_72OW.jpg?v=1786019858"
+  },
+  {
+   "id": "mushie-organic-cotton-sleep-bag",
+   "type": "sleep-sacks",
+   "brand": "Mushie",
+   "line": "Organic Cotton Sleep Bag",
+   "uses": [
+    "100% organic cotton muslin"
+   ],
+   "free": [],
+   "outside": [],
+   "unconfirmed": [
+    "Two-way zipper",
+    "Dyes",
+    "Thread"
+   ],
+   "facts": {
+    "main": "yes",
+    "parts": "unknown",
+    "color": "unknown"
+   },
+   "unstated": {
+    "parts": [
+     "Two-way zipper"
+    ],
+    "color": [
+     "Dyes"
+    ]
+   },
+   "contains": [],
+   "standards": [
+    "us-toy"
+   ],
+   "age": {
+    "min_months": 0,
+    "max_months": 6,
+    "text": "0 to 6 months"
+   },
+   "quote": "Made with 100% organic cotton muslin, our lightweight and breathable sleep bag keeps your baby comfortable and covered from nap to night.",
+   "note": "Sleeveless sleep bag in one size; the maker says it is third-party tested to CPSIA, ASTM and Prop 65.",
+   "products": [
+    {
+     "name": "Organic Cotton Sleep Bag",
+     "url": "https://mushie.com/products/sleep-bag",
+     "store": "Mushie",
+     "price": "$29.99",
+     "ships_from": null
+    }
+   ],
+   "read": "2026-10-29",
+   "photos": [
+    {
+     "key": "mushie-organic-cotton-sleep-bag",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/Sage_SleepBag.jpg?v=1754887920"
+    },
+    {
+     "key": "mushie-organic-cotton-sleep-bag_2",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/sleep-bag-infographic.jpg?v=1755291446"
+    },
+    {
+     "key": "mushie-organic-cotton-sleep-bag_3",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/products/2022_07_15_7515_1eb77519-547a-4a38-9f33-50bf7c66a0e5.jpg?v=1755291446"
+    },
+    {
+     "key": "mushie-organic-cotton-sleep-bag_4",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/Samuel_shoot-41.jpg?v=1755291446"
+    },
+    {
+     "key": "mushie-organic-cotton-sleep-bag_5",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/products/Malmo_shoot_12of116.jpg?v=1755291446"
+    },
+    {
+     "key": "mushie-organic-cotton-sleep-bag_6",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/products/babies_shoot-71.jpg?v=1755291446"
+    },
+    {
+     "key": "mushie-organic-cotton-sleep-bag_7",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/products/babies_shoot-160.jpg?v=1755291446"
+    },
+    {
+     "key": "mushie-organic-cotton-sleep-bag_8",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/Samuel_shoot-2.jpg?v=1776106666"
+    },
+    {
+     "key": "mushie-organic-cotton-sleep-bag_9",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/products/Mathilda_mushie-70_0c35bdc7-d6fd-4092-8064-a1666759840f.jpg?v=1755291446"
+    },
+    {
+     "key": "mushie-organic-cotton-sleep-bag_10",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/products/babies_shoot-74.jpg?v=1755291446"
+    }
+   ],
+   "img": "mushie-organic-cotton-sleep-bag",
+   "img_src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/Sage_SleepBag.jpg?v=1754887920"
+  },
+  {
+   "id": "smiling-tree-toys-guitar-wood-teether",
+   "type": "teethers",
+   "brand": "Smiling Tree Toys",
+   "line": "Guitar Wood Teether",
+   "uses": [
+    "Sustainably harvested hardwood"
+   ],
+   "free": [
+    "Oils or other finishes"
+   ],
+   "outside": [],
+   "unconfirmed": [
+    "Whether the hardwood is solid wood"
+   ],
+   "facts": {
+    "main": "yes",
+    "color": "yes",
+    "wood": "unknown"
+   },
+   "unstated": {
+    "wood": [
+     "Whether the hardwood is solid wood"
+    ]
+   },
+   "contains": [],
+   "standards": [],
+   "quote": "We use sustainably harvested hardwood in its natural form: without any oils or other finishes applied.",
+   "note": "Designs and text are engraved into the wood. 2.5 x 6 in; handcrafted in Minnesota, the page says.",
+   "products": [
+    {
+     "name": "Guitar Wood Teether",
+     "url": "https://smilingtreetoys.com/products/guitar-wood-teether",
+     "store": "Smiling Tree Toys",
+     "price": "$15.00",
+     "ships_from": "US"
+    }
+   ],
+   "read": "2026-10-29",
+   "photos": [
+    {
+     "key": "smiling-tree-toys-guitar-wood-teether",
+     "src": "https://cdn.shopify.com/s/files/1/0455/9189/products/Guitar-Wooden-teether-for-baby-personalized-baby-gifts-Smiling-Tree-Toys.jpg?v=1664646679"
+    },
+    {
+     "key": "smiling-tree-toys-guitar-wood-teether_2",
+     "src": "https://cdn.shopify.com/s/files/1/0455/9189/products/Guitar-Wooden-teether-for-baby-baby-gifts-Smiling-Tree-Toys.jpg?v=1664646679"
+    },
+    {
+     "key": "smiling-tree-toys-guitar-wood-teether_3",
+     "src": "https://cdn.shopify.com/s/files/1/0455/9189/products/AlphabetTeetherwoodenbabytoy_myrosiedarlingSmilingTreeToys-5.jpg?v=1664646679"
+    }
+   ],
+   "img": "smiling-tree-toys-guitar-wood-teether",
+   "img_src": "https://cdn.shopify.com/s/files/1/0455/9189/products/Guitar-Wooden-teether-for-baby-personalized-baby-gifts-Smiling-Tree-Toys.jpg?v=1664646679"
+  },
+  {
+   "id": "solly-baby-wrap",
+   "type": "carriers",
+   "brand": "Solly Baby",
+   "line": "Baby Wrap",
+   "uses": [
+    "100% TENCEL™ Modal"
+   ],
+   "free": [],
+   "outside": [],
+   "unconfirmed": [
+    "Dyes",
+    "Thread"
+   ],
+   "facts": {
+    "main": "yes",
+    "parts": "unknown",
+    "color": "unknown"
+   },
+   "unstated": {
+    "parts": [
+     "Thread"
+    ],
+    "color": [
+     "Dyes"
+    ]
+   },
+   "contains": [],
+   "standards": [
+    "us-toy"
+   ],
+   "quote": "Made from sustainably sourced and biodegradable 100% certified TENCEL™ Modal. Sewn in Los Angeles.",
+   "note": "A stretch wrap for babies 8 to 25 pounds, one size; sold by The Natural Baby Company in Orion.",
+   "products": [
+    {
+     "name": "Solly Baby Wrap – Orion",
+     "url": "https://www.thenaturalbabyco.com/products/solly-baby-wrap-orion",
+     "store": "The Natural Baby Company",
+     "price": "$74.00",
+     "ships_from": null
+    }
+   ],
+   "read": "2026-10-29",
+   "photos": [
+    {
+     "key": "solly-baby-wrap",
+     "src": "https://cdn.shopify.com/s/files/1/2386/1081/files/Screenshot2024-11-05at10.54.35AM.png?v=1731104685"
+    },
+    {
+     "key": "solly-baby-wrap_2",
+     "src": "https://cdn.shopify.com/s/files/1/2386/1081/files/Screenshot_2024-11-05_at_10.54.44_AM.png?v=1731104679"
+    },
+    {
+     "key": "solly-baby-wrap_3",
+     "src": "https://www.thenaturalbabyco.com/cdn/shop/files/preview_images/hqdefault_d18e6565-896b-49b3-ba39-64196a9033e4.jpg?v=1730828733&width=1800"
+    }
+   ],
+   "img": "solly-baby-wrap",
+   "img_src": "https://cdn.shopify.com/s/files/1/2386/1081/files/Screenshot2024-11-05at10.54.35AM.png?v=1731104685"
+  },
+  {
+   "id": "sprout-kids-wooden-climbing-triangle",
+   "type": "climbers",
+   "brand": "Sprout",
+   "line": "Wooden Climbing Triangle",
+   "uses": [
+    "Maple rungs"
+   ],
+   "free": [],
+   "outside": [
+    "Baltic birch plywood frame"
+   ],
+   "unconfirmed": [
+    "Finish on the wood",
+    "Hinges and hardware"
+   ],
+   "facts": {
+    "wood": "no",
+    "color": "unknown",
+    "parts": "unknown"
+   },
+   "unstated": {
+    "color": [
+     "Finish on the wood"
+    ],
+    "parts": [
+     "Hinges and hardware"
+    ]
+   },
+   "contains": [],
+   "standards": [],
+   "quote": "Baltic Birch Plywood (frame) and Maple (rungs) construction",
+   "note": "Folding climbing triangle, sold with no ramp, one ramp or two; holds 150 lbs. Ships from the maker’s Utah workshop; the page names GREENGUARD Gold certification.",
+   "products": [
+    {
+     "name": "Wooden Climbing Triangle",
+     "url": "https://sprout-kids.com/products/wooden-foldable-climbing-triangle",
+     "store": "Sprout",
+     "price": "$285.00",
+     "ships_from": "US",
+     "shipping": "Free shipping on orders $100+ in the contiguous U.S.",
+     "variant": "No Ramp"
+    }
+   ],
+   "read": "2026-10-29",
+   "photos": [
+    {
+     "key": "sprout-kids-wooden-climbing-triangle",
+     "src": "https://cdn.shopify.com/s/files/1/0067/2522/files/wooden-climbing-triangle-climbing-triangle-gross-motor-597681.jpg?v=1776890736"
+    },
+    {
+     "key": "sprout-kids-wooden-climbing-triangle_2",
+     "src": "https://cdn.shopify.com/s/files/1/0067/2522/files/wooden-climbing-triangle-climbing-triangle-gross-motor-363641.jpg?v=1776890711"
+    },
+    {
+     "key": "sprout-kids-wooden-climbing-triangle_3",
+     "src": "https://cdn.shopify.com/s/files/1/0067/2522/files/wooden-climbing-triangle-climbing-triangle-gross-motor-703561.jpg?v=1776890689"
+    },
+    {
+     "key": "sprout-kids-wooden-climbing-triangle_4",
+     "src": "https://cdn.shopify.com/s/files/1/0067/2522/files/wooden-climbing-triangle-climbing-triangle-gross-motor-341947.jpg?v=1776890671"
+    },
+    {
+     "key": "sprout-kids-wooden-climbing-triangle_5",
+     "src": "https://cdn.shopify.com/s/files/1/0067/2522/files/wooden-climbing-triangle-climbing-triangle-gross-motor-645165.jpg?v=1776890651"
+    },
+    {
+     "key": "sprout-kids-wooden-climbing-triangle_6",
+     "src": "https://cdn.shopify.com/s/files/1/0067/2522/files/wooden-climbing-triangle-climbing-triangle-gross-motor-906486.jpg?v=1776890629"
+    },
+    {
+     "key": "sprout-kids-wooden-climbing-triangle_7",
+     "src": "https://cdn.shopify.com/s/files/1/0067/2522/files/wooden-climbing-triangle-climbing-triangle-gross-motor-979305.jpg?v=1776890610"
+    },
+    {
+     "key": "sprout-kids-wooden-climbing-triangle_8",
+     "src": "https://cdn.shopify.com/s/files/1/0067/2522/files/wooden-climbing-triangle-climbing-triangle-gross-motor-149382.jpg?v=1776890590"
+    },
+    {
+     "key": "sprout-kids-wooden-climbing-triangle_9",
+     "src": "https://cdn.shopify.com/s/files/1/0067/2522/files/wooden-climbing-triangle-climbing-triangle-gross-motor-431930.jpg?v=1776890568"
+    },
+    {
+     "key": "sprout-kids-wooden-climbing-triangle_10",
+     "src": "https://cdn.shopify.com/s/files/1/0067/2522/files/wooden-climbing-triangle-climbing-triangle-gross-motor-205750.jpg?v=1776890551"
+    }
+   ],
+   "img": "sprout-kids-wooden-climbing-triangle",
+   "img_src": "https://cdn.shopify.com/s/files/1/0067/2522/files/wooden-climbing-triangle-climbing-triangle-gross-motor-597681.jpg?v=1776890736"
+  },
+  {
+   "id": "weesprout-stainless-steel-cups",
+   "type": "cups",
+   "brand": "WeeSprout",
+   "line": "3-in-1 Stainless Steel Cups for Kids (set of 4)",
+   "uses": [
+    "304 stainless steel cups",
+    "Food-grade silicone straws"
+   ],
+   "free": [
+    "BPA",
+    "PVC",
+    "Phthalates"
+   ],
+   "outside": [
+    "Hard plastic lids"
+   ],
+   "unconfirmed": [
+    "LFGB or French Arrêté testing of the silicone"
+   ],
+   "facts": {
+    "main": "yes",
+    "accessory": "no",
+    "silicone": "unknown"
+   },
+   "unstated": {
+    "silicone": [
+     "LFGB or French Arrêté testing of the silicone"
+    ]
+   },
+   "contains": [],
+   "standards": [],
+   "age": {
+    "min_months": 36,
+    "text": "3 years and up"
+   },
+   "quote": "Made from durable 304 stainless steel with premium hard plastic lids and food-grade silicone straws",
+   "note": "Open cup, straw cup or lidded cup; 8 oz or 12 oz.",
+   "products": [
+    {
+     "name": "3-in-1 Stainless Steel Cups for Kids – 8 oz or 12 oz (Set of 4)",
+     "url": "https://www.weesprout.com/products/3-in-1-stainless-steel-cups",
+     "store": "WeeSprout",
+     "price": "$31.98",
+     "ships_from": null,
+     "shipping": "Free shipping on orders $60+"
+    }
+   ],
+   "read": "2026-10-29",
+   "photos": [
+    {
+     "key": "weesprout-stainless-steel-cups",
+     "src": "https://cdn.shopify.com/s/files/1/0957/4574/files/SSDJ-PBLMTPPPK-12oz.jpg?v=1776586153"
+    },
+    {
+     "key": "weesprout-stainless-steel-cups_2",
+     "src": "https://cdn.shopify.com/s/files/1/0957/4574/files/SSDJ_a.jpg?v=1776586153"
+    },
+    {
+     "key": "weesprout-stainless-steel-cups_3",
+     "src": "https://cdn.shopify.com/s/files/1/0957/4574/files/SSDJ_b.jpg?v=1776586153"
+    },
+    {
+     "key": "weesprout-stainless-steel-cups_4",
+     "src": "https://cdn.shopify.com/s/files/1/0957/4574/files/SSDJ_c.jpg?v=1776586153"
+    },
+    {
+     "key": "weesprout-stainless-steel-cups_5",
+     "src": "https://cdn.shopify.com/s/files/1/0957/4574/files/SSDJ_d.jpg?v=1776586153"
+    },
+    {
+     "key": "weesprout-stainless-steel-cups_6",
+     "src": "https://cdn.shopify.com/s/files/1/0957/4574/files/SSDJ_e.jpg?v=1776586153"
+    },
+    {
+     "key": "weesprout-stainless-steel-cups_7",
+     "src": "https://cdn.shopify.com/s/files/1/0957/4574/files/SSDJ-12oz_b_b7a4229b-0294-49d0-9e72-29fbf0197d5a.jpg?v=1773105602"
+    },
+    {
+     "key": "weesprout-stainless-steel-cups_8",
+     "src": "https://cdn.shopify.com/s/files/1/0957/4574/files/SSDJ-12oz_c_9626b2bc-36d2-4cb7-ac58-5de6153e4fb8.jpg?v=1773105602"
+    },
+    {
+     "key": "weesprout-stainless-steel-cups_9",
+     "src": "https://cdn.shopify.com/s/files/1/0957/4574/files/SSDJ-Bright-BLGNPPGY-8oz.jpg?v=1776586153"
+    },
+    {
+     "key": "weesprout-stainless-steel-cups_10",
+     "src": "https://cdn.shopify.com/s/files/1/0957/4574/files/SSDJ-Matte-GNOWBLGY-12oz.jpg?v=1776586153"
+    }
+   ],
+   "img": "weesprout-stainless-steel-cups",
+   "img_src": "https://cdn.shopify.com/s/files/1/0957/4574/files/SSDJ-PBLMTPPPK-12oz.jpg?v=1776586153"
   }
  ]
 }
