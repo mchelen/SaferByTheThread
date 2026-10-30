@@ -145,7 +145,8 @@
    "type": "pajamas",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "colored-organics-winter-sleeper-bow-set"
   },
   {
    "url": "https://coloredorganics.com/products/organic-girls-winter-jumper-set",
@@ -181,7 +182,8 @@
    "type": "plates",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "micasso-stainless-steel-childrens-plate"
   },
   {
    "url": "https://coloredorganics.com/products/stainless-steel-childrens-plate-copy",
@@ -218,7 +220,8 @@
    "type": "utensils",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "micasso-stainless-steel-cutlery-set"
   },
   {
    "url": "https://coloredorganics.com/products/pointelle-swaddle-blanket-fireside",
@@ -292,7 +295,8 @@
    "type": "bodysuits",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "skipped",
+   "reason": "colour page sends no product description, so no materials to read (read 2026-10-30); the Bluen colour of the same bodysuit family was read instead"
   },
   {
    "url": "https://coloredorganics.com/products/mignon-kimono-pointelle-top-and-pant-set-fireside",
@@ -347,7 +351,8 @@
    "type": "bodysuits",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "colored-organics-beal-pointelle-kimono-bodysuit"
   },
   {
    "url": "https://coloredorganics.com/products/organic-cotton-baby-aw26-fireside-collection-darie-pointelle-top-and-pant-set-95136-26-bluen",
@@ -666,7 +671,8 @@
    "type": "cars",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "goki-construction-truck"
   },
   {
    "url": "https://coloredorganics.com/products/construction-truck-copy",
@@ -738,7 +744,8 @@
    "type": "accessories",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "blueberry-hill-diamond-fair-isle-hat"
   },
   {
    "url": "https://coloredorganics.com/products/organic-cotton-baby-aw25-theo-poplin-collar-bodysuit-96504-25",
@@ -1814,7 +1821,8 @@
    "type": "bath",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "skipped",
+   "reason": "duplicate: Smaller size of the Hevea Kawan rubber duck already listed (hevea-natural-rubber-bath-toys) (read 2026-10-30)"
   },
   {
    "url": "https://us.heveaplanet.com/products/dog-bowl-on-the-go",
@@ -3573,7 +3581,8 @@
    "type": "sheets",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "skipped",
+   "reason": "duplicate: Mini crib size of the Newton Breathable Organic Cotton Crib Sheets already listed (newton-organic-cotton-crib-sheets) (read 2026-10-30)"
   },
   {
    "url": "https://www.newtonbaby.com/products/bassinet-sheets",
@@ -3591,7 +3600,8 @@
    "type": "cribs",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "babyletto-liberty-convertible-crib"
   },
   {
    "url": "https://www.newtonbaby.com/products/marin-with-cane-3-in-1-convertible-crib",
@@ -11155,7 +11165,8 @@
    "type": "puzzles",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "tag-toys-math-skills-number-puzzle"
   },
   {
    "url": "https://radchildrensfurniture.com/products/montessori-spatial-puzzle-part-to-whole-thinking-toy",
@@ -11310,7 +11321,8 @@
    "type": "furniture",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "rad-childrens-furniture-montessori-shelf-3-tier"
   },
   {
    "url": "https://radchildrensfurniture.com/products/rad-hat",
@@ -19838,7 +19850,8 @@
    "type": "dolls",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "kodo-kids-finger-puppets"
   },
   {
    "url": "https://kodokids.com/products/gem-dominoes",
@@ -20698,7 +20711,8 @@
    "type": "silks",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "kodo-kids-giant-play-silk-scapes"
   },
   {
    "url": "https://kodokids.com/products/black-white-balls",
@@ -21294,7 +21308,8 @@
    "type": "art",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "mushie-reusable-water-color-pad"
   },
   {
    "url": "https://mushie.com/products/bear-robe",
@@ -21348,7 +21363,8 @@
    "type": "bath",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "mushie-pour-and-play-bath-set"
   },
   {
    "url": "https://mushie.com/products/silicone-baby-food-containers-3-pack",
@@ -21532,7 +21548,8 @@
    "type": "pacifiers",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "frigg-little-viking-natural-rubber-pacifier"
   },
   {
    "url": "https://mushie.com/products/frigg-little-viking-silicone-2-pack",
@@ -21822,7 +21839,8 @@
    "type": "rattles",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "mushie-silicone-baby-rattle"
   },
   {
    "url": "https://mushie.com/products/bath-rinse-cup",
@@ -39874,7 +39892,8 @@
    "type": "high-chairs",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "skipped",
+   "reason": "page names no materials, only a brand-wide line that products are free from added fire retardants, lead and phthalates (read 2026-10-30)"
   },
   {
    "url": "https://www.deltachildren.com/products/puppy-wood-floor-toddler-bed-with-reusable-stickers",
