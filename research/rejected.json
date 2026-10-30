@@ -14,6 +14,16 @@
    "url": "https://www.naturepedic.com/products/organic-cotton-terry-bath-towel",
    "reason": "Household bath towel set (bath towels, hand towels, washcloths); not a children’s product",
    "date": "2026-10-29"
+  },
+  {
+   "url": "https://www.newtonbaby.com/products/newton-mini-sheets",
+   "reason": "Mini crib size of the Newton Breathable Organic Cotton Crib Sheets already listed (newton-organic-cotton-crib-sheets); duplicate",
+   "date": "2026-10-30"
+  },
+  {
+   "url": "https://us.heveaplanet.com/products/kawan-rubber-duck-mini",
+   "reason": "Smaller size of the Hevea Kawan rubber duck already listed (hevea-natural-rubber-bath-toys); duplicate",
+   "date": "2026-10-30"
   }
  ]
 }
