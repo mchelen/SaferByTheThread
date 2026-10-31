@@ -3973,7 +3973,8 @@
    "type": "blocks",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "piccalio-block-set"
   },
   {
    "url": "https://www.piccalio.com/products/bed-book-hook",
@@ -5990,7 +5991,8 @@
    "type": "blankets",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "little-green-radicals-sherpa-hooded-baby-blanket"
   },
   {
    "url": "https://littlegreenradicals.com/products/sun-folk-sherpa-hooded-organic-baby-blanket",
@@ -7351,7 +7353,8 @@
    "type": "pillows",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "obasan-organic-latex-toddler-pillow"
   },
   {
    "url": "https://www.obasan.com/products/organic-shredded-rubber-and-wool-pillow",
@@ -8018,7 +8021,8 @@
    "type": "sheets",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "naturepedic-breathable-muslin-crib-sheets"
   },
   {
    "url": "https://www.naturepedic.com/products/engauge-bed-frame",
@@ -8533,7 +8537,8 @@
    "type": "rainwear",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "crywolf-explorer-jacket"
   },
   {
    "url": "https://crywolfchild.com/products/chill-hoodie-dusty-mauve",
@@ -22483,7 +22488,8 @@
    "type": "food-storage",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "weesprout-stainless-steel-bento-box-set"
   },
   {
    "url": "https://www.weesprout.com/products/bamboo-bowls-with-lids-set-of-4-15oz",
@@ -23498,7 +23504,8 @@
    "type": "diapers",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "thirsties-duo-fitted-diaper"
   },
   {
    "url": "https://www.greenmountaindiapers.com/products/under-the-nile-onesie-bodysuit",
@@ -23806,7 +23813,8 @@
    "type": "clothes",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "disana-merino-wool-leggings"
   },
   {
    "url": "https://www.greenmountaindiapers.com/products/flappies-nappy-snap-in-pads",
@@ -34463,7 +34471,8 @@
    "type": "food-storage",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "skipped",
+   "reason": "page names no material for the box, tray or containers (read 2026-10-31)"
   },
   {
    "url": "https://www.zokuhome.com/products/neat-bento-blue",
@@ -39540,7 +39549,8 @@
    "type": "toddler-beds",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "skipped",
+   "reason": "page names no materials (foam frame and fabric base only) (read 2026-10-31)"
   },
   {
    "url": "https://www.deltachildren.com/products/spidey-and-his-amazing-friends-foam-frame-race-car-toddler-bed",
@@ -41536,7 +41546,8 @@
    "type": "pretend",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "skipped",
+   "reason": "page names no materials (only the brand-wide fire retardant, lead and phthalate statement) (read 2026-10-31)"
   },
   {
    "url": "https://www.deltachildren.com/products/tiny-chef-play-kitchen",
@@ -44331,7 +44342,8 @@
    "type": "strollers",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "babygap-classic-stroller"
   },
   {
    "url": "https://www.deltachildren.com/products/baby-gap-classic-side-by-side-double-stroller",
@@ -46225,7 +46237,8 @@
    "type": "pretend",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "tender-leaf-toys-wooden-play-market-scale"
   },
   {
    "url": "https://www.bellalunatoys.com/products/tender-leaf-toys-alouette-wooden-dollhouse",
@@ -46667,7 +46680,8 @@
    "type": "push",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "tender-leaf-toys-sunshine-baby-activity-walker"
   },
   {
    "url": "https://www.bellalunatoys.com/products/tender-leaf-toys-baby-care-essentials-playset",
@@ -54494,7 +54508,8 @@
    "type": "high-chairs",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "uppababy-ciro-v2-high-chair"
   },
   {
    "url": "https://enlightenedbaby.com/products/magnetic-me-dip-ship-modal-magnetic-ss-pocket-short-romper-ms600382",
@@ -56324,7 +56339,8 @@
    "type": "car-seats",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "skipped",
+   "reason": "page names no materials (read 2026-10-31)"
   },
   {
    "url": "https://enlightenedbaby.com/products/cybex-mios-3-seat-pack",
@@ -66596,7 +66612,8 @@
    "type": "car-seats",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "skipped",
+   "reason": "page names no materials (read 2026-10-31)"
   },
   {
    "url": "https://www.kids2.com/products/18132-000-baby-einstein-kickin-tunes-music-and-language-discovery-gym",
@@ -138462,7 +138479,8 @@
    "type": "nursing-pillows",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "skipped",
+   "reason": "cover only; the nursing pillow insert is sold separately (read 2026-10-31)"
   },
   {
    "url": "https://easytot.com/products/green-stripe-bamboo-head-wrap",
