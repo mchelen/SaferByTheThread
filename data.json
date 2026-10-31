@@ -1,6 +1,6 @@
 {
  "schema": 4,
- "updated": "2026-10-30",
+ "updated": "2026-10-31",
  "ask": [
   "Thread on any sewn item (cotton or polyester).",
   "Wheels and axles on push toys and cars.",
@@ -22675,6 +22675,1036 @@
    ],
    "img": "tag-toys-math-skills-number-puzzle",
    "img_src": "https://cdn.shopify.com/s/files/1/0087/4230/5892/files/MathSkillsNumberPuzzle.jpg?v=1762459823"
+  },
+  {
+   "id": "babygap-classic-stroller",
+   "type": "strollers",
+   "brand": "babyGap by Delta Children",
+   "line": "babyGap Classic Stroller (umbrella fold)",
+   "uses": [],
+   "free": [
+    "Added fire retardants",
+    "Lead",
+    "Phthalates"
+   ],
+   "unconfirmed": [
+    "Frame",
+    "Swivel front wheels and puncture-proof tires",
+    "Material of the leatherette handlebars",
+    "Canopy",
+    "Harness",
+    "Storage basket and parent organizer"
+   ],
+   "outside": [
+    "Seat fabric and all soft surfaces made from recycled plastic drinking bottles"
+   ],
+   "facts": {
+    "main": "no",
+    "parts": "unknown",
+    "flame": "yes"
+   },
+   "unstated": {
+    "parts": [
+     "Harness",
+     "Swivel front wheels and puncture-proof tires"
+    ]
+   },
+   "standards": [],
+   "contains": [],
+   "quote": "All soft surfaces/fabrics on the stroller are made from recycled water bottles. Plastic drinking bottles are sorted, cleaned and shredded into flakes that become the yarn the seat fabric is made from",
+   "note": "The page says the stroller “only weighs 14.5 lbs.”",
+   "products": [
+    {
+     "name": "babyGap Classic Stroller",
+     "url": "https://www.deltachildren.com/products/baby-gap-classic-stroller",
+     "store": "Delta Children",
+     "price": "$109.99",
+     "ships_from": null,
+     "shipping": "Free shipping sitewide"
+    }
+   ],
+   "read": "2026-10-31",
+   "photos": [
+    {
+     "key": "babygap-classic-stroller",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/11470-2356_Gap-Classic-Stroller_Lifestyle_02.jpg?v=1712695768"
+    },
+    {
+     "key": "babygap-classic-stroller_2",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/products/11470-2356_1.jpg?v=1712695768"
+    },
+    {
+     "key": "babygap-classic-stroller_3",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/products/11470-2356_2.jpg?v=1712695768"
+    },
+    {
+     "key": "babygap-classic-stroller_4",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/products/11470-2356_4.jpg?v=1712695768"
+    },
+    {
+     "key": "babygap-classic-stroller_5",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/products/11470-2356_5.jpg?v=1712695768"
+    },
+    {
+     "key": "babygap-classic-stroller_6",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/products/11470-2356_7.jpg?v=1712695768"
+    },
+    {
+     "key": "babygap-classic-stroller_7",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/products/11470-2359_4.jpg?v=1712695768"
+    },
+    {
+     "key": "babygap-classic-stroller_8",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/products/11470-2356_Gap-Classic-Stroller_Lifestyle_102.jpg?v=1712695768"
+    }
+   ],
+   "img": "babygap-classic-stroller",
+   "img_src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/11470-2356_Gap-Classic-Stroller_Lifestyle_02.jpg?v=1712695768"
+  },
+  {
+   "id": "crywolf-explorer-jacket",
+   "type": "rainwear",
+   "brand": "Crywolf",
+   "line": "Explorer Jacket (fleece-lined waterproof jacket)",
+   "uses": [],
+   "free": [],
+   "unconfirmed": [
+    "Concealed YKK Vislon zipper",
+    "Snap closures",
+    "Velcro wrist tabs",
+    "Elastic in the wrist cuffs",
+    "Finish on the waterproof outer"
+   ],
+   "outside": [
+    "Recycled polyester shell bonded with waterproof PU outer",
+    "Polyester fleece lining"
+   ],
+   "facts": {
+    "main": "no",
+    "parts": "unknown",
+    "finish": "unknown"
+   },
+   "unstated": {
+    "parts": [
+     "Concealed YKK Vislon zipper",
+     "Snap closures",
+     "Velcro wrist tabs",
+     "Elastic in the wrist cuffs"
+    ],
+    "finish": [
+     "Finish on the waterproof outer"
+    ]
+   },
+   "standards": [
+    "oeko-tex"
+   ],
+   "contains": [],
+   "age": {
+    "min_months": 12,
+    "text": "Sizes 1YR and up"
+   },
+   "quote": "Shell: Recycled polyester bonded with waterproof PU outer Lining: Polyester fleece",
+   "note": "The page says: “Waterproof to 8,000mm” and “Designed in New Zealand”. It showed this colour as backordered when read.",
+   "products": [
+    {
+     "name": "EXPLORER JACKET Ash Colourblock",
+     "url": "https://crywolfchild.com/products/explorer-jacket-ash-colourblock",
+     "store": "Crywolf",
+     "price": "NZ$69.99 (sale; was NZ$99.99)",
+     "ships_from": "New Zealand"
+    }
+   ],
+   "read": "2026-10-31",
+   "photos": [
+    {
+     "key": "crywolf-explorer-jacket",
+     "src": "https://cdn.shopify.com/s/files/1/2228/8463/files/CR6D24_1.jpg?v=1773697700"
+    },
+    {
+     "key": "crywolf-explorer-jacket_2",
+     "src": "https://cdn.shopify.com/s/files/1/2228/8463/files/CRYWOLF-AW26-Explorer-Jacket-Ash-Colourblock-a-WEB-JPG.jpg?v=1773937866"
+    },
+    {
+     "key": "crywolf-explorer-jacket_3",
+     "src": "https://cdn.shopify.com/s/files/1/2228/8463/files/CRYWOLF-AW26-Explorer-Jacket-Ash-Colourblock-b-WEB-JPG.jpg?v=1774388087"
+    },
+    {
+     "key": "crywolf-explorer-jacket_4",
+     "src": "https://cdn.shopify.com/s/files/1/2228/8463/files/CRYWOLF-AW26-Explorer-Jacket-Ash-Colourblock-c-WEB-JPG.jpg?v=1774388087"
+    },
+    {
+     "key": "crywolf-explorer-jacket_5",
+     "src": "https://crywolfchild.com/cdn/shop/files/preview_images/ab0fe45e7fa14552b074b454f265f6d2.thumbnail.0000000000.jpg?v=1776986175"
+    }
+   ],
+   "img": "crywolf-explorer-jacket",
+   "img_src": "https://cdn.shopify.com/s/files/1/2228/8463/files/CR6D24_1.jpg?v=1773697700"
+  },
+  {
+   "id": "disana-merino-wool-leggings",
+   "type": "clothes",
+   "brand": "Disana",
+   "line": "Merino Wool Leggings",
+   "uses": [
+    "GOTS certified 100% virgin merino wool knit"
+   ],
+   "free": [],
+   "unconfirmed": [
+    "Waistband",
+    "Dyes",
+    "Wool treatment",
+    "Thread"
+   ],
+   "outside": [],
+   "facts": {
+    "main": "yes",
+    "parts": "unknown",
+    "color": "unknown",
+    "wool": "unknown",
+    "organic": "yes"
+   },
+   "unstated": {
+    "parts": [
+     "Waistband",
+     "Thread"
+    ],
+    "color": [
+     "Dyes"
+    ],
+    "wool": [
+     "Wool treatment"
+    ]
+   },
+   "standards": [
+    "gots"
+   ],
+   "contains": [],
+   "age": {
+    "min_months": 3,
+    "max_months": 72,
+    "text": "Sizes 62/68 (3-6 months) to 110/116 (5-6 years)"
+   },
+   "quote": "GOTS certified 100% virgin merino wool.",
+   "note": "Sold by Green Mountain Diapers. The page says: “Made in Germany.” and “Our disana wool is 100% organic and mulesing-free.”",
+   "products": [
+    {
+     "name": "Disana Merino Wool Leggings",
+     "url": "https://www.greenmountaindiapers.com/products/disana-merino-wool-leggings",
+     "store": "Green Mountain Diapers",
+     "price": "$45.95",
+     "ships_from": "US",
+     "shipping": "Shipping calculated at checkout"
+    }
+   ],
+   "read": "2026-10-31",
+   "photos": [
+    {
+     "key": "disana-merino-wool-leggings",
+     "src": "https://cdn.shopify.com/s/files/1/1583/5087/products/DisanaMerinoWoolLeggings-grey.jpg?v=1760799285"
+    },
+    {
+     "key": "disana-merino-wool-leggings_2",
+     "src": "https://cdn.shopify.com/s/files/1/1583/5087/files/disanaleggings-caramel1500_e3f70b55-8945-4fe4-a0dc-283fe9c6ee07.jpg?v=1760799285"
+    },
+    {
+     "key": "disana-merino-wool-leggings_3",
+     "src": "https://cdn.shopify.com/s/files/1/1583/5087/files/disanaleggingstack.jpg?v=1760799285"
+    },
+    {
+     "key": "disana-merino-wool-leggings_4",
+     "src": "https://cdn.shopify.com/s/files/1/1583/5087/files/3312399-cassislegging1800.jpg?v=1760799285"
+    },
+    {
+     "key": "disana-merino-wool-leggings_5",
+     "src": "https://cdn.shopify.com/s/files/1/1583/5087/files/leggings-greybabystanding1200.jpg?v=1753987689"
+    },
+    {
+     "key": "disana-merino-wool-leggings_6",
+     "src": "https://cdn.shopify.com/s/files/1/1583/5087/files/leggins-anthracitegirlsaddle1900.jpg?v=1753987689"
+    },
+    {
+     "key": "disana-merino-wool-leggings_7",
+     "src": "https://cdn.shopify.com/s/files/1/1583/5087/files/leggingsyardstick2048_6095e759-3d8a-4cdd-b929-291ded6150c2.jpg?v=1753987689"
+    },
+    {
+     "key": "disana-merino-wool-leggings_8",
+     "src": "https://cdn.shopify.com/s/files/1/1583/5087/files/leggingsmeasurementsdifferent.jpg?v=1753987689"
+    },
+    {
+     "key": "disana-merino-wool-leggings_9",
+     "src": "https://cdn.shopify.com/s/files/1/1583/5087/files/legginscassissplit.jpg?v=1755657513"
+    },
+    {
+     "key": "disana-merino-wool-leggings_10",
+     "src": "https://cdn.shopify.com/s/files/1/1583/5087/files/leggingseucalyptus.jpg?v=1755660613"
+    }
+   ],
+   "img": "disana-merino-wool-leggings",
+   "img_src": "https://cdn.shopify.com/s/files/1/1583/5087/products/DisanaMerinoWoolLeggings-grey.jpg?v=1760799285"
+  },
+  {
+   "id": "heritage-baby-linen-ring-sling",
+   "type": "carriers",
+   "brand": "Heritage Baby Designs",
+   "line": "Linen Ring Sling (Yellowstone), 90 inches",
+   "uses": [
+    "100% European linen",
+    "Aluminum rings"
+   ],
+   "free": [],
+   "unconfirmed": [
+    "Thread",
+    "Dye on the yellow linen"
+   ],
+   "outside": [],
+   "facts": {
+    "main": "yes",
+    "parts": "unknown",
+    "color": "unknown"
+   },
+   "unstated": {
+    "parts": [
+     "Thread"
+    ],
+    "color": [
+     "Dye on the yellow linen"
+    ]
+   },
+   "standards": [],
+   "contains": [],
+   "age": {
+    "min_months": 0,
+    "text": "Carries babies newborn to toddler (8-35lbs)"
+   },
+   "quote": "Material: 100% European Linen | Aluminum Rings Country of Manufacture: Hand Sewn in Ontario, Canada",
+   "note": "Sold by Little Zen One, which says “US warehouse orders ship from Atlanta, Georgia.” It showed this colour as sold out when read.",
+   "products": [
+    {
+     "name": "Yellowstone Ring Sling by Heritage Baby",
+     "url": "https://www.littlezenone.com/products/yellowstone-ring-sling-by-heritage-baby",
+     "store": "Little Zen One",
+     "price": "$108.00 (sale; regular $130.00; sold out when read)",
+     "ships_from": "US",
+     "shipping": "Free shipping in the continental US over $175; duties included"
+    }
+   ],
+   "read": "2026-10-31",
+   "photos": [
+    {
+     "key": "heritage-baby-linen-ring-sling",
+     "src": "https://cdn.shopify.com/s/files/1/2171/4661/files/yellowstone-ring-sling-by-heritage-baby-ring-sling-2.jpg?v=1778018950"
+    },
+    {
+     "key": "heritage-baby-linen-ring-sling_2",
+     "src": "https://cdn.shopify.com/s/files/1/2171/4661/files/yellowstone-ring-sling-by-heritage-baby-ring-sling.jpg?v=1778018950"
+    }
+   ],
+   "img": "heritage-baby-linen-ring-sling",
+   "img_src": "https://cdn.shopify.com/s/files/1/2171/4661/files/yellowstone-ring-sling-by-heritage-baby-ring-sling-2.jpg?v=1778018950"
+  },
+  {
+   "id": "little-green-radicals-sherpa-hooded-baby-blanket",
+   "type": "blankets",
+   "brand": "Little Green Radicals",
+   "line": "Sherpa Hooded Organic Baby Blanket, 75 x 100 cm",
+   "uses": [
+    "100% organic Fairtrade cotton poplin and sherpa",
+    "Unbleached organic cotton sherpa"
+   ],
+   "free": [],
+   "unconfirmed": [
+    "Print inks",
+    "Thread"
+   ],
+   "outside": [],
+   "facts": {
+    "main": "yes",
+    "parts": "unknown",
+    "color": "unknown",
+    "organic": "yes"
+   },
+   "unstated": {
+    "parts": [
+     "Thread"
+    ],
+    "color": [
+     "Print inks"
+    ]
+   },
+   "standards": [
+    "gots"
+   ],
+   "contains": [],
+   "quote": "Material: 100% Organic & Fairtrade Poplin & Sherpa Cotton",
+   "note": "Hooded blanket with a printed woven side and a cotton sherpa side.",
+   "products": [
+    {
+     "name": "Little Green Radicals Sleeping Swans Sherpa Hooded Organic Baby Blanket",
+     "url": "https://littlegreenradicals.com/products/sleeping-swans-sherpa-hooded-organic-baby-blanket",
+     "store": "Little Green Radicals",
+     "price": "$57.60 (sale; regular $72.00)",
+     "ships_from": null,
+     "shipping": "USA standard delivery (8-12 working days) $15, free on orders over $100; no duty or sales tax"
+    }
+   ],
+   "read": "2026-10-31",
+   "photos": [
+    {
+     "key": "little-green-radicals-sherpa-hooded-baby-blanket",
+     "src": "https://cdn.shopify.com/s/files/1/0258/8147/7195/files/A26-803-SWA.jpg?v=1788272119"
+    },
+    {
+     "key": "little-green-radicals-sherpa-hooded-baby-blanket_2",
+     "src": "https://cdn.shopify.com/s/files/1/0258/8147/7195/files/A26-803-SWA_5056890005750_6_2000x2000_582eca81-44c8-400d-8b0b-029c3b8745ef.jpg?v=1785745717"
+    },
+    {
+     "key": "little-green-radicals-sherpa-hooded-baby-blanket_3",
+     "src": "https://cdn.shopify.com/s/files/1/0258/8147/7195/files/A26-803-SWA1.jpg?v=1788272119"
+    },
+    {
+     "key": "little-green-radicals-sherpa-hooded-baby-blanket_4",
+     "src": "https://cdn.shopify.com/s/files/1/0258/8147/7195/files/A26-803-SWA_5056890005750_3_2000x2000_a8434d6e-4993-493f-9997-f2be9156ee14.jpg?v=1785745717"
+    },
+    {
+     "key": "little-green-radicals-sherpa-hooded-baby-blanket_5",
+     "src": "https://cdn.shopify.com/s/files/1/0258/8147/7195/files/A26-803-SWA2.jpg?v=1788272119"
+    }
+   ],
+   "img": "little-green-radicals-sherpa-hooded-baby-blanket",
+   "img_src": "https://cdn.shopify.com/s/files/1/0258/8147/7195/files/A26-803-SWA.jpg?v=1788272119"
+  },
+  {
+   "id": "naturepedic-breathable-muslin-crib-sheets",
+   "type": "sheets",
+   "brand": "Naturepedic",
+   "line": "Breathable Organic Cotton Muslin Crib Sheet, 28 x 52 x 6 inches",
+   "uses": [
+    "100% GOTS-certified organic cotton muslin"
+   ],
+   "free": [
+    "Synthetic dyes",
+    "GOTS-prohibited chemical treatments",
+    "Fabric treatments"
+   ],
+   "unconfirmed": [
+    "Elastic in the deep pockets",
+    "Thread"
+   ],
+   "outside": [],
+   "facts": {
+    "main": "yes",
+    "parts": "unknown",
+    "color": "yes",
+    "finish": "yes",
+    "organic": "yes"
+   },
+   "unstated": {
+    "parts": [
+     "Elastic in the deep pockets",
+     "Thread"
+    ]
+   },
+   "standards": [
+    "gots"
+   ],
+   "contains": [],
+   "quote": "Materials: 100% GOTS-certified organic cotton for cleaner, healthier sleep.",
+   "note": "The page says: “Origin : Made in India in a GOTS-certified organic facility.” and lists the certifications “GOTS, MADE SAFE®, and PETA-Approved Vegan”.",
+   "products": [
+    {
+     "name": "Naturepedic Breathable Organic Cotton Muslin Crib Sheet",
+     "url": "https://www.naturepedic.com/products/organic-breathable-crib-sheets",
+     "store": "Naturepedic",
+     "price": "$39.00",
+     "ships_from": null,
+     "shipping": "Free shipping in 3-5 business days (Continental U.S.)"
+    }
+   ],
+   "read": "2026-10-31",
+   "photos": [
+    {
+     "key": "naturepedic-breathable-muslin-crib-sheets",
+     "src": "https://cdn.shopify.com/s/files/1/0968/8691/5390/files/NP_PDP_Bedding_OrganicBreathableMuslinCribSheets_List-1.jpg?v=1783537941"
+    },
+    {
+     "key": "naturepedic-breathable-muslin-crib-sheets_2",
+     "src": "https://cdn.shopify.com/s/files/1/0968/8691/5390/files/NP_PDP_Bedding_OrganicBreathableMuslinCribSheets_List-4.jpg?v=1783537948"
+    },
+    {
+     "key": "naturepedic-breathable-muslin-crib-sheets_3",
+     "src": "https://cdn.shopify.com/s/files/1/0968/8691/5390/files/NP_PDP_Bedding_OrganicBreathableMuslinCribSheets_List-3.jpg?v=1783537944"
+    },
+    {
+     "key": "naturepedic-breathable-muslin-crib-sheets_4",
+     "src": "https://cdn.shopify.com/s/files/1/0968/8691/5390/files/web-baby-cribsheet-muslin-arcticsnow-corner_5649af23-ac0d-4129-9274-1cc123e1d294.jpg?v=1777478478"
+    },
+    {
+     "key": "naturepedic-breathable-muslin-crib-sheets_5",
+     "src": "https://cdn.shopify.com/s/files/1/0968/8691/5390/files/Web-Baby-CribSheet-Muslin-ArcticSnow_fad39bab-9aab-4b26-81f0-0036e7b613e0.jpg?v=1784044589"
+    }
+   ],
+   "img": "naturepedic-breathable-muslin-crib-sheets",
+   "img_src": "https://cdn.shopify.com/s/files/1/0968/8691/5390/files/NP_PDP_Bedding_OrganicBreathableMuslinCribSheets_List-1.jpg?v=1783537941"
+  },
+  {
+   "id": "obasan-organic-latex-toddler-pillow",
+   "type": "pillows",
+   "brand": "Obasan",
+   "line": "Classic Organic Latex Toddler Pillow, 14 x 19 inches",
+   "uses": [
+    "GOLS-certified organic shredded latex fill",
+    "GOTS-certified organic cotton casing"
+   ],
+   "free": [
+    "Synthetic foams",
+    "Petroleum-based foams",
+    "Chemical flame retardants"
+   ],
+   "unconfirmed": [
+    "Thread",
+    "Dye or bleach on the cotton",
+    "Fibre of the pillow protector that comes with the pillow"
+   ],
+   "outside": [],
+   "facts": {
+    "main": "yes",
+    "parts": "unknown",
+    "color": "unknown",
+    "flame": "yes",
+    "organic": "yes"
+   },
+   "unstated": {
+    "parts": [
+     "Thread"
+    ],
+    "color": [
+     "Dye or bleach on the cotton"
+    ]
+   },
+   "standards": [
+    "gols",
+    "gots"
+   ],
+   "contains": [
+    "latex"
+   ],
+   "age": {
+    "min_months": 24,
+    "text": "Children 2 years and older"
+   },
+   "quote": "Filled with 100% GOLS-certified organic shredded latex",
+   "note": "The page says: “Handmade in Ottawa, Canada”. It showed the pillow as sold out when read.",
+   "products": [
+    {
+     "name": "Obasan Classic Organic Latex Toddler Pillow",
+     "url": "https://www.obasan.com/products/organic-rubber-toddler-pillow",
+     "store": "Obasan",
+     "price": "$99 (sold out when read)",
+     "ships_from": "Canada",
+     "shipping": "Shipping calculated at checkout"
+    }
+   ],
+   "read": "2026-10-31",
+   "photos": [
+    {
+     "key": "obasan-organic-latex-toddler-pillow",
+     "src": "https://cdn.shopify.com/s/files/1/0626/1810/8138/files/ClassicOrganicLatexToddlerPillow1.jpg?v=1775081177"
+    },
+    {
+     "key": "obasan-organic-latex-toddler-pillow_2",
+     "src": "https://cdn.shopify.com/s/files/1/0626/1810/8138/files/ClassicOrganicLatexToddlerPillow2.jpg?v=1775081180"
+    },
+    {
+     "key": "obasan-organic-latex-toddler-pillow_3",
+     "src": "https://cdn.shopify.com/s/files/1/0626/1810/8138/files/ClassicOrganicLatexToddlerPillow3.jpg?v=1775081184"
+    }
+   ],
+   "img": "obasan-organic-latex-toddler-pillow",
+   "img_src": "https://cdn.shopify.com/s/files/1/0626/1810/8138/files/ClassicOrganicLatexToddlerPillow1.jpg?v=1775081177"
+  },
+  {
+   "id": "piccalio-block-set",
+   "type": "blocks",
+   "brand": "Lovevery",
+   "line": "The Block Set (70 pieces)",
+   "uses": [
+    "Solid wood blocks"
+   ],
+   "free": [],
+   "unconfirmed": [
+    "Kind of wood",
+    "Paint or finish on the blocks",
+    "Material of any non-block pieces in the 70"
+   ],
+   "outside": [],
+   "facts": {
+    "main": "yes",
+    "wood": "yes",
+    "color": "unknown",
+    "parts": "unknown"
+   },
+   "unstated": {
+    "color": [
+     "Paint or finish on the blocks"
+    ],
+    "parts": [
+     "Material of any non-block pieces in the 70"
+    ]
+   },
+   "standards": [],
+   "contains": [],
+   "quote": "A brilliant, practical system of solid wood blocks for building spatial, language, and problem-solving skills. 70 heirloom quality pieces work with each other in more than 20 stage-based activities.",
+   "note": "Made by Lovevery and sold by Piccalio. The page showed “Notify me when available” when read.",
+   "products": [
+    {
+     "name": "Lovevery The Block Set",
+     "url": "https://www.piccalio.com/products/the-block-set",
+     "store": "Piccalio",
+     "price": "$95",
+     "ships_from": null,
+     "shipping": "Free delivery on all US Contiguous orders"
+    }
+   ],
+   "read": "2026-10-31",
+   "photos": [
+    {
+     "key": "piccalio-block-set",
+     "src": "https://cdn.shopify.com/s/files/1/0411/8868/8026/files/Lovevery-VKS-EU-BlockSet-GIF-Frame-11_v3.png?v=1765171519"
+    },
+    {
+     "key": "piccalio-block-set_2",
+     "src": "https://cdn.shopify.com/s/files/1/0411/8868/8026/files/Lovevery-VKS-EUBlockSet-ISO-0659_v2.png?v=1765171519"
+    },
+    {
+     "key": "piccalio-block-set_3",
+     "src": "https://cdn.shopify.com/s/files/1/0411/8868/8026/files/Box.v2.png?v=1765171519"
+    },
+    {
+     "key": "piccalio-block-set_4",
+     "src": "https://cdn.shopify.com/s/files/1/0411/8868/8026/files/Jackson_Block_Set_3-21-20240262_v2.jpg?v=1765171519"
+    },
+    {
+     "key": "piccalio-block-set_5",
+     "src": "https://cdn.shopify.com/s/files/1/0411/8868/8026/files/Qui1nton_0825_v2.jpg?v=1765171520"
+    },
+    {
+     "key": "piccalio-block-set_6",
+     "src": "https://cdn.shopify.com/s/files/1/0411/8868/8026/files/Qui1nton_0864_v2.jpg?v=1765171519"
+    },
+    {
+     "key": "piccalio-block-set_7",
+     "src": "https://piccalio.com/cdn/shop/files/Lovevery-VKS-EU-BlockSet-GIF-Frame-11_v3.png?v=1765171519&width=1000"
+    }
+   ],
+   "img": "piccalio-block-set",
+   "img_src": "https://cdn.shopify.com/s/files/1/0411/8868/8026/files/Lovevery-VKS-EU-BlockSet-GIF-Frame-11_v3.png?v=1765171519"
+  },
+  {
+   "id": "tender-leaf-toys-sunshine-baby-activity-walker",
+   "type": "push",
+   "brand": "Tender Leaf Toys",
+   "line": "Wooden Sunshine Baby Activity Walker (with 4 wooden shapes)",
+   "uses": [
+    "Wooden shapes for the shape sorter"
+   ],
+   "free": [],
+   "unconfirmed": [
+    "Binder in the fiberboard",
+    "Wheels",
+    "Mirror",
+    "Rainbow wire and beads",
+    "Fibre of the soft fabric shelf",
+    "Hardware"
+   ],
+   "outside": [
+    "Rubberwood fiberboard",
+    "Water-based paints, type not named"
+   ],
+   "facts": {
+    "main": "unknown",
+    "parts": "unknown",
+    "color": "no",
+    "wood": "no"
+   },
+   "unstated": {
+    "main": [
+     "Binder in the fiberboard"
+    ],
+    "parts": [
+     "Wheels",
+     "Rainbow wire and beads"
+    ]
+   },
+   "standards": [],
+   "contains": [],
+   "age": {
+    "min_months": 18,
+    "text": "Designed for ages 18 months+ up"
+   },
+   "quote": "MATERIALS : Made from sustainably manufactured rubberwood fiberboard with nontoxic water-based paints.",
+   "note": "Sold by Bella Luna Toys. The page says: “ORIGIN : Made in Indonesia.”",
+   "products": [
+    {
+     "name": "Tender Leaf Toys Wooden Sunshine Baby Activity Walker",
+     "url": "https://www.bellalunatoys.com/products/tender-leaf-toys-wooden-sunshine-baby-activity-walker-wh",
+     "store": "Bella Luna Toys",
+     "price": "$146.99",
+     "ships_from": "US",
+     "shipping": "Free shipping on orders $99+"
+    }
+   ],
+   "read": "2026-10-31",
+   "photos": [
+    {
+     "key": "tender-leaf-toys-sunshine-baby-activity-walker",
+     "src": "https://cdn.shopify.com/s/files/1/1114/2810/files/TL8461-sunshine-baby-activity-walker-1.jpg?v=1707836881"
+    },
+    {
+     "key": "tender-leaf-toys-sunshine-baby-activity-walker_2",
+     "src": "https://cdn.shopify.com/s/files/1/1114/2810/files/TL8461-sunshine-baby-activity-walker-2.jpg?v=1707836880"
+    },
+    {
+     "key": "tender-leaf-toys-sunshine-baby-activity-walker_3",
+     "src": "https://cdn.shopify.com/s/files/1/1114/2810/files/TL8461-sunshine-baby-activity-walker-6.jpg?v=1707836881"
+    },
+    {
+     "key": "tender-leaf-toys-sunshine-baby-activity-walker_4",
+     "src": "https://cdn.shopify.com/s/files/1/1114/2810/files/TL8461-sunshine-baby-activity-walker-8.jpg?v=1707836881"
+    },
+    {
+     "key": "tender-leaf-toys-sunshine-baby-activity-walker_5",
+     "src": "https://cdn.shopify.com/s/files/1/1114/2810/files/TL8461-sunshine-baby-activity-walker-11.jpg?v=1707836880"
+    },
+    {
+     "key": "tender-leaf-toys-sunshine-baby-activity-walker_6",
+     "src": "https://cdn.shopify.com/s/files/1/1114/2810/files/TL8461-sunshine-baby-activity-walker-12.jpg?v=1707836881"
+    }
+   ],
+   "img": "tender-leaf-toys-sunshine-baby-activity-walker",
+   "img_src": "https://cdn.shopify.com/s/files/1/1114/2810/files/TL8461-sunshine-baby-activity-walker-1.jpg?v=1707836881"
+  },
+  {
+   "id": "tender-leaf-toys-wooden-play-market-scale",
+   "type": "pretend",
+   "brand": "Tender Leaf Toys",
+   "line": "Wooden Play Market Scale",
+   "uses": [],
+   "free": [],
+   "unconfirmed": [
+    "Binder in the fiberboard",
+    "Hardware"
+   ],
+   "outside": [
+    "Rubberwood fiberboard",
+    "Water-based paints, type not named"
+   ],
+   "facts": {
+    "main": "unknown",
+    "color": "no",
+    "wood": "no"
+   },
+   "unstated": {
+    "main": [
+     "Binder in the fiberboard"
+    ]
+   },
+   "standards": [],
+   "contains": [],
+   "quote": "MATERIALS : Made from sustainably manufactured rubberwood fiberboard with nontoxic water-based paints",
+   "note": "Sold by Bella Luna Toys, which says it “Ships from our warehouse in New York.” The page says: “ORIGIN : Made in Indonesia.”",
+   "products": [
+    {
+     "name": "Tender Leaf Toys Wooden Play Market Scale",
+     "url": "https://www.bellalunatoys.com/products/tender-leaf-toys-wooden-play-market-scale",
+     "store": "Bella Luna Toys",
+     "price": "$29.99",
+     "ships_from": "US",
+     "shipping": "Free shipping on orders over $99 within the contiguous 48 states"
+    }
+   ],
+   "read": "2026-10-31",
+   "photos": [
+    {
+     "key": "tender-leaf-toys-wooden-play-market-scale",
+     "src": "https://cdn.shopify.com/s/files/1/1114/2810/products/TenderLeafToysWoodenChildren_sPlayMarketScale.webp?v=1679003732"
+    },
+    {
+     "key": "tender-leaf-toys-wooden-play-market-scale_2",
+     "src": "https://cdn.shopify.com/s/files/1/1114/2810/products/Childplayingwithmarketscale.webp?v=1679003732"
+    },
+    {
+     "key": "tender-leaf-toys-wooden-play-market-scale_3",
+     "src": "https://cdn.shopify.com/s/files/1/1114/2810/products/Appleonmarketscale.webp?v=1679003732"
+    },
+    {
+     "key": "tender-leaf-toys-wooden-play-market-scale_4",
+     "src": "https://cdn.shopify.com/s/files/1/1114/2810/products/Marketscaleinplaymarketscene.webp?v=1679003732"
+    }
+   ],
+   "img": "tender-leaf-toys-wooden-play-market-scale",
+   "img_src": "https://cdn.shopify.com/s/files/1/1114/2810/products/TenderLeafToysWoodenChildren_sPlayMarketScale.webp?v=1679003732"
+  },
+  {
+   "id": "thirsties-duo-fitted-diaper",
+   "type": "diapers",
+   "brand": "Thirsties",
+   "line": "Duo Fitted Diaper, sizes One (6-18 lb) and Two (18-40 lb)",
+   "uses": [
+    "100% organic cotton interlock"
+   ],
+   "free": [],
+   "unconfirmed": [
+    "Snaps",
+    "Trim",
+    "Thread",
+    "Dye or bleach on the cotton"
+   ],
+   "outside": [],
+   "facts": {
+    "main": "yes",
+    "parts": "unknown",
+    "color": "unknown",
+    "organic": "yes"
+   },
+   "unstated": {
+    "parts": [
+     "Snaps",
+     "Trim",
+     "Thread"
+    ],
+    "color": [
+     "Dye or bleach on the cotton"
+    ]
+   },
+   "standards": [
+    "organic-unnamed"
+   ],
+   "contains": [],
+   "quote": "Contents: 100% organic cotton exclusive of snaps and trim.",
+   "note": "The fitted diaper is the absorbent inner part, used under a separate cover such as the Thirsties Duo Wrap. Sold by Green Mountain Diapers; the page says: “All Thirsties products are proudly manufactured in Colorado, USA.”",
+   "products": [
+    {
+     "name": "Thirsties Duo Fitted Diaper",
+     "url": "https://www.greenmountaindiapers.com/products/thirsties-duo-fitted-diaper",
+     "store": "Green Mountain Diapers",
+     "price": "$23.50",
+     "ships_from": "US",
+     "shipping": "Shipping calculated at checkout"
+    }
+   ],
+   "read": "2026-10-31",
+   "photos": [
+    {
+     "key": "thirsties-duo-fitted-diaper",
+     "src": "https://cdn.shopify.com/s/files/1/1583/5087/files/Duo-Fitted-Square2048.jpg?v=1739157547"
+    },
+    {
+     "key": "thirsties-duo-fitted-diaper_2",
+     "src": "https://cdn.shopify.com/s/files/1/1583/5087/files/Duo-Fitted-Details2000.jpg?v=1739158261"
+    },
+    {
+     "key": "thirsties-duo-fitted-diaper_3",
+     "src": "https://cdn.shopify.com/s/files/1/1583/5087/files/Duo-Fitted-Size-One-Stage-One2000.jpg?v=1739158261"
+    },
+    {
+     "key": "thirsties-duo-fitted-diaper_4",
+     "src": "https://cdn.shopify.com/s/files/1/1583/5087/files/Duo-Fitted-both200.jpg?v=1739158261"
+    },
+    {
+     "key": "thirsties-duo-fitted-diaper_5",
+     "src": "https://cdn.shopify.com/s/files/1/1583/5087/files/duofittedtable2000.jpg?v=1739158261"
+    }
+   ],
+   "img": "thirsties-duo-fitted-diaper",
+   "img_src": "https://cdn.shopify.com/s/files/1/1583/5087/files/Duo-Fitted-Square2048.jpg?v=1739157547"
+  },
+  {
+   "id": "uppababy-ciro-v2-high-chair",
+   "type": "high-chairs",
+   "brand": "UPPAbaby",
+   "line": "Ciro V2 High Chair",
+   "uses": [
+    "Wood construction with FSC-certified materials",
+    "Silicone harness straps"
+   ],
+   "free": [],
+   "unconfirmed": [
+    "Seat bucket",
+    "Tray and tray liner",
+    "Footrest",
+    "Magnetic buckle",
+    "Kind of wood, and whether solid or layered",
+    "Finish on the wood",
+    "LFGB or Arrêté test for the silicone straps"
+   ],
+   "outside": [],
+   "facts": {
+    "main": "unknown",
+    "parts": "unknown",
+    "wood": "unknown",
+    "color": "unknown",
+    "silicone": "unknown"
+   },
+   "unstated": {
+    "main": [
+     "Seat bucket",
+     "Tray and tray liner"
+    ],
+    "parts": [
+     "Magnetic buckle"
+    ],
+    "wood": [
+     "Kind of wood, and whether solid or layered"
+    ],
+    "color": [
+     "Finish on the wood"
+    ],
+    "silicone": [
+     "LFGB or Arrêté test for the silicone straps"
+    ]
+   },
+   "standards": [
+    "fsc"
+   ],
+   "contains": [],
+   "quote": "Durable wood construction made with FSC-certified, sustainably sourced materials",
+   "note": "Sold by Enlightened Baby. The page also says “GREENGUARD® Gold Certified for healthier air quality and low chemical emissions” and “Baby Safe Alliance Verified”.",
+   "products": [
+    {
+     "name": "UPPAbaby Ciro V2 High Chair",
+     "url": "https://enlightenedbaby.com/products/uppababy-ciro-v2-high-chair",
+     "store": "Enlightened Baby",
+     "price": "$199.99",
+     "ships_from": null
+    }
+   ],
+   "read": "2026-10-31",
+   "photos": [
+    {
+     "key": "uppababy-ciro-v2-high-chair",
+     "src": "https://cdn.shopify.com/s/files/1/0707/4850/4296/files/1702-CIR-BTY_3QRight_FootrestHeights-2000x2000-1478e37.jpg?v=1783808522"
+    },
+    {
+     "key": "uppababy-ciro-v2-high-chair_2",
+     "src": "https://cdn.shopify.com/s/files/1/0707/4850/4296/files/1702-CIR-BTY_3QLeft-2000x2000-1478e37.jpg?v=1783808522"
+    },
+    {
+     "key": "uppababy-ciro-v2-high-chair_3",
+     "src": "https://cdn.shopify.com/s/files/1/0707/4850/4296/files/1702-CIR-BTY_103-2000x1334-1478e37.jpg?v=1783808522"
+    },
+    {
+     "key": "uppababy-ciro-v2-high-chair_4",
+     "src": "https://cdn.shopify.com/s/files/1/0707/4850/4296/files/1702-CIR-BTY_108-1334x2000-1478e37.jpg?v=1783808522"
+    },
+    {
+     "key": "uppababy-ciro-v2-high-chair_5",
+     "src": "https://cdn.shopify.com/s/files/1/0707/4850/4296/files/1702-CIR-BTY_Above_3Point-2000x2000-1478e37.jpg?v=1783808522"
+    },
+    {
+     "key": "uppababy-ciro-v2-high-chair_6",
+     "src": "https://cdn.shopify.com/s/files/1/0707/4850/4296/files/1702-CIR-BTY_Above_TrayExtended-2000x2000-1478e37.jpg?v=1783808522"
+    },
+    {
+     "key": "uppababy-ciro-v2-high-chair_7",
+     "src": "https://cdn.shopify.com/s/files/1/0707/4850/4296/files/1702-CIR-BTY_Back-2000x2000-1478e37.jpg?v=1783808522"
+    },
+    {
+     "key": "uppababy-ciro-v2-high-chair_8",
+     "src": "https://cdn.shopify.com/s/files/1/0707/4850/4296/files/1702-CIR-BTY_Side_NoTray_FootrestLow-2000x2000-1478e37.jpg?v=1783808522"
+    },
+    {
+     "key": "uppababy-ciro-v2-high-chair_9",
+     "src": "https://cdn.shopify.com/s/files/1/0707/4850/4296/files/1702-CIR-ANY_101-2000x1334-1478e37.jpg?v=1783808522"
+    },
+    {
+     "key": "uppababy-ciro-v2-high-chair_10",
+     "src": "https://cdn.shopify.com/s/files/1/0707/4850/4296/files/1702-CIR-MAS_102-2000x1334-1478e37.jpg?v=1783808522"
+    }
+   ],
+   "img": "uppababy-ciro-v2-high-chair",
+   "img_src": "https://cdn.shopify.com/s/files/1/0707/4850/4296/files/1702-CIR-BTY_3QRight_FootrestHeights-2000x2000-1478e37.jpg?v=1783808522"
+  },
+  {
+   "id": "weesprout-stainless-steel-bento-box-set",
+   "type": "food-storage",
+   "brand": "WeeSprout",
+   "line": "Stainless Steel Bento Box Set with Silicone Lids (one 3-cup and two 1-cup nesting containers)",
+   "uses": [
+    "18/8 stainless steel containers",
+    "Food-grade silicone lids"
+   ],
+   "free": [
+    "BPA",
+    "PVC",
+    "Phthalates"
+   ],
+   "unconfirmed": [
+    "LFGB or French Arrêté testing of the silicone"
+   ],
+   "outside": [],
+   "facts": {
+    "main": "yes",
+    "silicone": "unknown"
+   },
+   "unstated": {
+    "silicone": [
+     "LFGB or French Arrêté testing of the silicone"
+    ]
+   },
+   "standards": [],
+   "contains": [],
+   "age": {
+    "min_months": 36,
+    "text": "Recommended Age: 3 years and up"
+   },
+   "quote": "Made with durable 18/8 stainless steel and premium silicone",
+   "note": "The page says the set is “Third-party tested to meet rigorous safety standards” without naming the tests. All four colours showed as sold out or unavailable when read.",
+   "products": [
+    {
+     "name": "WeeSprout Stainless Steel Bento Box Set with Silicone Lids",
+     "url": "https://www.weesprout.com/products/stainless-steel-lunch-box-set",
+     "store": "WeeSprout",
+     "price": "$21.98",
+     "ships_from": null
+    }
+   ],
+   "read": "2026-10-31",
+   "photos": [
+    {
+     "key": "weesprout-stainless-steel-bento-box-set",
+     "src": "https://cdn.shopify.com/s/files/1/0957/4574/files/SLBB-Pastel-MT.jpg?v=1773105591"
+    },
+    {
+     "key": "weesprout-stainless-steel-bento-box-set_2",
+     "src": "https://cdn.shopify.com/s/files/1/0957/4574/files/SLBB_a.jpg?v=1773105591"
+    },
+    {
+     "key": "weesprout-stainless-steel-bento-box-set_3",
+     "src": "https://cdn.shopify.com/s/files/1/0957/4574/files/SLBB_b.jpg?v=1773105591"
+    },
+    {
+     "key": "weesprout-stainless-steel-bento-box-set_4",
+     "src": "https://cdn.shopify.com/s/files/1/0957/4574/files/SLBB_c.jpg?v=1773105591"
+    },
+    {
+     "key": "weesprout-stainless-steel-bento-box-set_5",
+     "src": "https://cdn.shopify.com/s/files/1/0957/4574/files/SLBB_d.jpg?v=1773105591"
+    },
+    {
+     "key": "weesprout-stainless-steel-bento-box-set_6",
+     "src": "https://cdn.shopify.com/s/files/1/0957/4574/files/SLBB_e.jpg?v=1773105591"
+    },
+    {
+     "key": "weesprout-stainless-steel-bento-box-set_7",
+     "src": "https://cdn.shopify.com/s/files/1/0957/4574/files/SLBB_f.jpg?v=1773105591"
+    },
+    {
+     "key": "weesprout-stainless-steel-bento-box-set_8",
+     "src": "https://cdn.shopify.com/s/files/1/0957/4574/files/SLBB-Pastel-PP.jpg?v=1773105591"
+    }
+   ],
+   "img": "weesprout-stainless-steel-bento-box-set",
+   "img_src": "https://cdn.shopify.com/s/files/1/0957/4574/files/SLBB-Pastel-MT.jpg?v=1773105591"
   }
  ]
 }
