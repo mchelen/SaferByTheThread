@@ -572,7 +572,8 @@
    "type": "books",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "skipped",
+   "reason": "page names no material for the book"
   },
   {
    "url": "https://coloredorganics.com/products/denver-twill-chore-jacket-woodford",
@@ -6525,7 +6526,8 @@
    "type": "pajamas",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "little-green-radicals-blue-bears-pyjamas"
   },
   {
    "url": "https://littlegreenradicals.com/products/toy-box-organic-pyjamas",
@@ -8557,7 +8559,8 @@
    "type": "food-storage",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "crywolf-everyday-lunch-bag"
   },
   {
    "url": "https://crywolfchild.com/products/everyday-lunch-bag-elm-stripe",
@@ -20096,7 +20099,8 @@
    "type": "utensils",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "skipped",
+   "reason": "coconut-shell scoops for sensory play, not a feeding utensil; no matching product type"
   },
   {
    "url": "https://kodokids.com/products/magnet-wall-metal-cups-pack",
@@ -22201,7 +22205,8 @@
    "type": "sheets",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "mushie-extra-soft-muslin-crib-sheet"
   },
   {
    "url": "https://mushie.com/products/silicone-pacifier-holder-case",
@@ -22545,7 +22550,8 @@
    "type": "utensils",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "weesprout-stainless-steel-kids-utensils"
   },
   {
    "url": "https://www.weesprout.com/products/handheld-teether-set",
@@ -22619,7 +22625,8 @@
    "type": "plates",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "weesprout-bamboo-plates-with-lids"
   },
   {
    "url": "https://www.weesprout.com/products/silicone-snack-bags",
@@ -39961,7 +39968,8 @@
    "type": "cribs",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "delta-children-emmie-crib"
   },
   {
    "url": "https://www.deltachildren.com/products/ari-3-drawer-dresser-with-changing-top",
@@ -58077,7 +58085,8 @@
    "type": "high-chairs",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "stokke-steps-high-chair"
   },
   {
    "url": "https://enlightenedbaby.com/products/silver-cross-nia-compact-stroller-plus-folding-bassinet-bundle",
@@ -66468,7 +66477,8 @@
    "type": "sleep-sacks",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "swaddleme-muslin-night-sack-sleeper"
   },
   {
    "url": "https://www.kids2.com/products/18081-000-bright-starts-oball-jingle-and-shake-pal-baby-rattle-frog",
@@ -92907,7 +92917,8 @@
    "type": "cars",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "plantoys-timber-trail-cruiser"
   },
   {
    "url": "https://thebabypenguin.com/products/timber-trail-bus",
@@ -104871,7 +104882,8 @@
    "type": "bodysuits",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "skipped",
+   "reason": "page shows no product description or materials"
   },
   {
    "url": "https://www.thenaturalbabyco.com/products/chenille-blanky",
@@ -106592,7 +106604,8 @@
    "type": "bodysuits",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "kyte-baby-zippered-romper"
   },
   {
    "url": "https://www.thenaturalbabyco.com/products/kyte-baby-zippered-romper-newborn",
@@ -107520,7 +107533,8 @@
    "type": "bench",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "skipped",
+   "reason": "duplicate of plantoys-pounding-bench (same 3-peg bench at another store)"
   },
   {
    "url": "https://www.thenaturalbabyco.com/products/plan-toys-hammer-balls",
@@ -110500,7 +110514,8 @@
    "type": "silks",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "sarahs-silks-seek-find-mushroom-playsilk"
   },
   {
    "url": "https://www.thenaturalbabyco.com/products/safari-playmap",
@@ -137250,7 +137265,8 @@
    "type": "bibs",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "forever-french-baby-bamboo-bandana-bib"
   },
   {
    "url": "https://easytot.com/products/youth-flare-bamboo-pajamas-holiday-stripe",
