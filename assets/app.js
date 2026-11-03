@@ -222,10 +222,10 @@
     var on = listGet(SAVED_KEY).indexOf(item.id) >= 0;
     return '<button type="button" class="' + (cls || 'save-btn') + '" data-save="' + esc(item.id) + '" aria-pressed="' + on + '" aria-label="' + (on ? 'Remove from saved' : 'Save') + ': ' + esc(item.brand + ' ' + item.line) + '">' + icon('heart') + (cls && !/-ib\b/.test(cls) ? '<span>' + (on ? 'Saved' : 'Save') + '</span>' : '') + '</button>';
   }
-  // Share copies (or, on phones, shares) the link to this site's page for the item, never the store's.
+  // Share opens a menu of ways to pass on the link to this site's page for the item, never the store's.
   function shareItemBtn(item, cls) {
     var label = !cls || /-ib\b/.test(cls) ? '' : '<span>Share</span>';
-    return '<button type="button" class="' + (cls || 'share-btn') + '" data-share="' + esc(U('/p/' + item.id)) + '" data-share-title="' + esc(item.brand + ' ' + item.line) + '"' + (label ? '' : ' aria-label="Share: ' + esc(item.brand + ' ' + item.line) + '"') + '>' + icon('share') + label + '</button>';
+    return '<button type="button" class="' + (cls || 'share-btn') + '" data-share="' + esc(U('/p/' + item.id)) + '" data-share-title="' + esc(item.brand + ' ' + item.line) + '"' + (item.img ? ' data-share-img="' + esc(asset(item.img)) + '"' : '') + ' aria-haspopup="dialog" aria-expanded="false"' + (label ? '' : ' aria-label="Share: ' + esc(item.brand + ' ' + item.line) + '"') + '>' + icon('share') + label + '</button>';
   }
   function compareBtn(item) {
     var on = listGet(CMP_KEY).indexOf(item.id) >= 0;
@@ -403,13 +403,81 @@
     toastEl.innerHTML = html; toastEl.hidden = false;
     toastT = setTimeout(function () { toastEl.hidden = true; }, 4000);
   }
-  // The phone share sheet where there is one, otherwise the link goes to the clipboard.
-  function shareLink(url, title) {
-    if (navigator.share && isPhone()) { navigator.share({ title: title, url: url }).catch(function () {}); return; }
-    var done = function () { toast('Link copied. Paste it anywhere to share.'); };
+  function copyLink(url, msg) {
+    var done = function () { toast(msg || 'Link copied'); };
     if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(url).then(done, function () { window.prompt('Copy this link', url); });
     else window.prompt('Copy this link', url);
   }
+  // ---------- share menu ----------
+  // Copy link, email, text, the usual networks, and the device's own share sheet where the browser has one.
+  // Instagram has no web address for sharing a link, so its tile opens the share sheet (where the Instagram
+  // app appears) or, without one, copies the link and opens Instagram's messages.
+  var sharePop = document.getElementById('sharepop'), shareFrom = null, shareData = null;
+  function shareTargets(url, title, img) {
+    var u = encodeURIComponent(url), t = encodeURIComponent(title), both = encodeURIComponent(title + '\n' + url);
+    var touch = window.matchMedia('(hover: none) and (pointer: coarse)').matches;
+    return [
+      { k: 'copy', label: 'Copy link', icon: 'link' },
+      { k: 'email', label: 'Email', icon: 'mail', href: 'mailto:?subject=' + t + '&body=' + both },
+      touch ? { k: 'sms', label: 'Messages', icon: 'sms', href: 'sms:?&body=' + both } : null,
+      { k: 'whatsapp', label: 'WhatsApp', icon: 'whatsapp', href: 'https://wa.me/?text=' + both },
+      { k: 'facebook', label: 'Facebook', icon: 'facebook', href: 'https://www.facebook.com/sharer/sharer.php?u=' + u },
+      { k: 'x', label: 'X', icon: 'xlogo', href: 'https://x.com/intent/post?text=' + t + '&url=' + u },
+      { k: 'pinterest', label: 'Pinterest', icon: 'pinterest', href: 'https://www.pinterest.com/pin/create/button/?url=' + u + '&description=' + t + (img ? '&media=' + encodeURIComponent(img) : '') },
+      { k: 'instagram', label: 'Instagram', icon: 'instagram' },
+      navigator.share ? { k: 'more', label: 'More', icon: 'more' } : null
+    ].filter(Boolean);
+  }
+  function placeShare(b) {
+    if (window.matchMedia('(max-width: 600px)').matches) { sharePop.style.left = sharePop.style.top = ''; return; }
+    var r = b.getBoundingClientRect(), w = sharePop.offsetWidth, h = sharePop.offsetHeight, vw = document.documentElement.clientWidth;
+    var left = Math.min(Math.max(16, r.right - w), vw - w - 16);
+    var top = r.bottom + 8 + h < window.innerHeight || r.top < h + 16 ? r.bottom + 8 : r.top - h - 8;
+    sharePop.style.left = left + 'px'; sharePop.style.top = Math.max(8, top) + 'px';
+  }
+  function openShare(b) {
+    var url = location.origin + b.getAttribute('data-share'), title = b.getAttribute('data-share-title') + ' · Saved by the Thread';
+    var img = b.getAttribute('data-share-img'); if (img) img = new URL(img, location.href).href;
+    if (shareFrom) shareFrom.setAttribute('aria-expanded', 'false');
+    shareData = { url: url, title: title }; shareFrom = b;
+    sharePop.innerHTML = '<div class="sharepop-h"><h2 id="sharepop-h">Share</h2><button type="button" class="ib" data-share-close aria-label="Close">' + icon('x') + '</button></div>' +
+      '<ul class="share-grid">' + shareTargets(url, title, img).map(function (o) {
+        var inner = '<span class="sh-ic sh-' + o.k + '">' + icon(o.icon) + '</span><span class="sh-l">' + o.label + '</span>';
+        return '<li>' + (o.href ? '<a class="share-opt" data-share-opt="' + o.k + '" href="' + esc(o.href) + '"' + (/^https:/.test(o.href) ? ' target="_blank" rel="noopener"' : '') + '>' + inner + '</a>'
+          : '<button type="button" class="share-opt" data-share-opt="' + o.k + '">' + inner + '</button>') + '</li>';
+      }).join('') + '</ul>';
+    sharePop.hidden = false; document.getElementById('sharescrim').hidden = false;
+    b.setAttribute('aria-expanded', 'true'); b.setAttribute('aria-controls', 'sharepop');
+    placeShare(b);
+    var first = sharePop.querySelector('.share-opt'); if (first) first.focus({ preventScroll: true });
+  }
+  function closeShare(refocus) {
+    if (sharePop.hidden) return;
+    sharePop.hidden = true; document.getElementById('sharescrim').hidden = true;
+    if (shareFrom) { shareFrom.setAttribute('aria-expanded', 'false'); if (refocus) shareFrom.focus({ preventScroll: true }); }
+    shareFrom = null;
+  }
+  function shareOpt(k) {
+    var d = shareData; if (!d) return;
+    if (k === 'copy') { closeShare(true); copyLink(d.url); }
+    else if (k === 'more' || (k === 'instagram' && navigator.share)) { closeShare(true); navigator.share({ title: d.title, url: d.url }).catch(function () {}); }
+    else if (k === 'instagram') { closeShare(true); copyLink(d.url, 'Link copied'); window.open('https://www.instagram.com/direct/inbox/', '_blank', 'noopener'); }
+    else closeShare(false);
+  }
+  document.addEventListener('click', function (ev) {
+    if (sharePop.hidden) return;
+    var o = ev.target.closest('#sharepop [data-share-opt]');
+    if (o) { if (!o.href) ev.preventDefault(); ev.stopPropagation(); shareOpt(o.getAttribute('data-share-opt')); return; }
+    if (ev.target.closest('#sharepop [data-share-close]') || ev.target.id === 'sharescrim') { ev.stopPropagation(); closeShare(true); return; }
+    var b = ev.target.closest('[data-share]');
+    if (b === shareFrom) { ev.stopPropagation(); closeShare(false); return; }
+    if (!ev.target.closest('#sharepop')) closeShare(false);
+  }, true);
+  document.addEventListener('keydown', function (ev) {
+    if (ev.key === 'Escape' && !sharePop.hidden) { ev.stopImmediatePropagation(); closeShare(true); }
+  }, true);
+  window.addEventListener('resize', function () { if (shareFrom && !sharePop.hidden) placeShare(shareFrom); });
+  window.addEventListener('scroll', function () { if (shareFrom && !sharePop.hidden) placeShare(shareFrom); }, { passive: true });
   function idsParam() { var q = parseQuery(location.search); return q.ids ? q.ids.split(',').filter(Boolean) : null; }
   function announce(text) { if (live) { live.textContent = ''; setTimeout(function () { live.textContent = text; }, 50); } }
   function setTitle(t) { document.title = (t ? t + ' · ' : '') + 'Saved by the Thread'; }
@@ -1081,7 +1149,7 @@
       '<a class="btn-2" href="' + U(mine) + '">' + (what === 'list' ? 'My saved products' : 'My compare list') + '</a></div></div>';
   }
   function shareBtn(path, ids, title) {
-    return '<button type="button" class="btn-3" data-share="' + esc(U(path, { ids: ids.join(',') })) + '" data-share-title="' + esc(title) + '">' + icon('share') + '<span>Share this list</span></button>';
+    return '<button type="button" class="btn-3" data-share="' + esc(U(path, { ids: ids.join(',') })) + '" data-share-title="' + esc(title) + '" aria-haspopup="dialog" aria-expanded="false">' + icon('share') + '<span>Share this list</span></button>';
   }
   function renderSaved() {
     var shared = idsParam(), ids = shared || listGet(SAVED_KEY);
@@ -1487,7 +1555,7 @@
       announce(inC ? 'Added to compare' : 'Removed from compare'); badgeCounts();
       if (currentPath() === '/compare') renderCompare();
     } else if (t.matches('[data-share]')) {
-      shareLink(location.origin + t.getAttribute('data-share'), t.getAttribute('data-share-title') + ' · Saved by the Thread');
+      openShare(t);
     } else if (t.matches('[data-take]')) {
       var into = t.getAttribute('data-take-into') === 'saved' ? SAVED_KEY : CMP_KEY, ids = t.getAttribute('data-take').split(',');
       if (into === SAVED_KEY) store(SAVED_KEY, listGet(SAVED_KEY).concat(ids.filter(function (x) { return listGet(SAVED_KEY).indexOf(x) < 0; })));
