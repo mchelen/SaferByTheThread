@@ -1,6 +1,6 @@
 {
  "schema": 4,
- "updated": "2026-11-02",
+ "updated": "2026-11-03",
  "ask": [
   "Thread on any sewn item (cotton or polyester).",
   "Wheels and axles on push toys and cars.",
@@ -25949,6 +25949,1218 @@
    ],
    "img": "weesprout-stainless-steel-kids-utensils",
    "img_src": "https://cdn.shopify.com/s/files/1/0957/4574/files/SSKU-MATTE-BG.jpg?v=1773105819"
+  },
+  {
+   "id": "bibs-liberty-boheme-pacifier",
+   "type": "pacifiers",
+   "brand": "BIBS",
+   "line": "BIBS x Liberty Boheme Pacifier, 2 pack",
+   "uses": [
+    "Natural rubber latex nipple"
+   ],
+   "free": [
+    "BPA"
+   ],
+   "unconfirmed": [
+    "Inks for the Liberty prints",
+    "Plasticisers or other additives in the rubber"
+   ],
+   "outside": [
+    "Food-grade PP plastic shield"
+   ],
+   "facts": {
+    "main": "no",
+    "rubber": "unknown",
+    "color": "unknown"
+   },
+   "unstated": {
+    "rubber": [
+     "Plasticisers or other additives in the rubber"
+    ],
+    "color": [
+     "Inks for the Liberty prints"
+    ]
+   },
+   "standards": [],
+   "contains": [
+    "latex"
+   ],
+   "quote": "Features a natural rubber latex nipple",
+   "products": [
+    {
+     "name": "BIBS x Liberty Pacifier Boheme 2 Pack - Chloe Meadow Ivory Mix",
+     "url": "https://pacifierkids.com/products/bibs-x-liberty-pacifier-boheme-2-pack-chloe-meadow-ivory-mix-by-bibs",
+     "store": "Pacifier",
+     "price": "$19.00",
+     "ships_from": null,
+     "shipping": "$5.95 Flat Rate Shipping"
+    }
+   ],
+   "age": {
+    "min_months": 0,
+    "max_months": 18,
+    "text": "Size 1 (0-6M), Size 2 (6-18M)"
+   },
+   "note": "Designed and made in Denmark (store page).",
+   "read": "2026-11-03",
+   "photos": [
+    {
+     "key": "bibs-liberty-boheme-pacifier",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/product_photo_-_white_background_-_2026-09-16T005240.408.jpg?v=1789491181"
+    },
+    {
+     "key": "bibs-liberty-boheme-pacifier_2",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/liberty-boheme-hush-chloe-meadow-model.jpg?v=1789491186"
+    },
+    {
+     "key": "bibs-liberty-boheme-pacifier_3",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/220322_5713795275281_BIBS_Boheme_rnd_LTX_S2_Hush_2_1000x1000_a302f1e2-d679-4ec9-a448-41dad613c1ea.png?v=1789491181"
+    },
+    {
+     "key": "bibs-liberty-boheme-pacifier_4",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/bibs-boheme-usp_36984a7e-bf53-4055-afcd-3f085c7099b1.jpg?v=1789491191"
+    }
+   ],
+   "img": "bibs-liberty-boheme-pacifier",
+   "img_src": "https://cdn.shopify.com/s/files/1/0281/8056/files/product_photo_-_white_background_-_2026-09-16T005240.408.jpg?v=1789491181"
+  },
+  {
+   "id": "bush-acres-roman-toddler-chair",
+   "type": "furniture",
+   "brand": "Bush Acres",
+   "line": "Roman Toddler Chair",
+   "uses": [],
+   "free": [],
+   "unconfirmed": [
+    "Glue in the plywood",
+    "Glue and hardware for assembly"
+   ],
+   "outside": [
+    "Baltic birch plywood with veneer core"
+   ],
+   "facts": {
+    "wood": "no",
+    "color": "yes",
+    "parts": "unknown"
+   },
+   "unstated": {
+    "parts": [
+     "Glue and hardware for assembly"
+    ]
+   },
+   "standards": [],
+   "contains": [],
+   "quote": "Wood arrives untreated and can be stained, painted, or sealed",
+   "products": [
+    {
+     "name": "Roman- Toddler Chair",
+     "url": "https://easytot.com/products/roman-toddler-chair",
+     "store": "EasyTot",
+     "price": "$165.00",
+     "ships_from": null,
+     "shipping": "Free shipping $75+"
+    }
+   ],
+   "note": "TSCA VI and CARB II compliant materials; manufactured in Las Vegas, NV (store page).",
+   "read": "2026-11-03",
+   "photos": [
+    {
+     "key": "bush-acres-roman-toddler-chair",
+     "src": "https://cdn.shopify.com/s/files/1/0556/0519/8922/files/Roman4.jpg?v=1792003774"
+    },
+    {
+     "key": "bush-acres-roman-toddler-chair_2",
+     "src": "https://cdn.shopify.com/s/files/1/0556/0519/8922/files/Roman2.jpg?v=1792003774"
+    },
+    {
+     "key": "bush-acres-roman-toddler-chair_3",
+     "src": "https://cdn.shopify.com/s/files/1/0556/0519/8922/files/BushAcresNotetobuyer_8b7f0923-c577-43b4-b29c-631a26d4d0ac.png?v=1792003774"
+    },
+    {
+     "key": "bush-acres-roman-toddler-chair_4",
+     "src": "https://cdn.shopify.com/s/files/1/0556/0519/8922/files/Roman3.jpg?v=1792003774"
+    },
+    {
+     "key": "bush-acres-roman-toddler-chair_5",
+     "src": "https://cdn.shopify.com/s/files/1/0556/0519/8922/files/Roman5.jpg?v=1792003774"
+    },
+    {
+     "key": "bush-acres-roman-toddler-chair_6",
+     "src": "https://cdn.shopify.com/s/files/1/0556/0519/8922/files/Roman1.jpg?v=1792003774"
+    },
+    {
+     "key": "bush-acres-roman-toddler-chair_7",
+     "src": "https://cdn.shopify.com/s/files/1/0556/0519/8922/files/RomanDims.jpg?v=1792003774"
+    }
+   ],
+   "img": "bush-acres-roman-toddler-chair",
+   "img_src": "https://cdn.shopify.com/s/files/1/0556/0519/8922/files/Roman4.jpg?v=1792003774"
+  },
+  {
+   "id": "camden-rose-hearth-play-kitchen-cherry",
+   "type": "pretend",
+   "brand": "Camden Rose",
+   "line": "Simple Hearth Play Kitchen, Cherry Wood",
+   "uses": [
+    "Cherry and maple hardwood with walnut and birch accents",
+    "Stainless steel sink bowl",
+    "Finish of organic jojoba oil and local beeswax"
+   ],
+   "free": [],
+   "unconfirmed": [
+    "Material of the knobs and faucet",
+    "Material of the wire oven rack",
+    "Screws and handles"
+   ],
+   "outside": [],
+   "facts": {
+    "main": "yes",
+    "wood": "yes",
+    "color": "yes",
+    "parts": "unknown"
+   },
+   "unstated": {
+    "parts": [
+     "Material of the knobs and faucet",
+     "Screws and handles"
+    ]
+   },
+   "standards": [],
+   "contains": [],
+   "quote": "Materials: Cherry and Maple Hardwood with Walnut and Birch accent",
+   "products": [
+    {
+     "name": "Simple Hearth Play Kitchen - Cherry Wood",
+     "url": "https://camdenrose.com/products/simple-wooden-hearth-play-kitchen-cherry-wood",
+     "store": "Camden Rose",
+     "price": "$529.00",
+     "ships_from": null,
+     "shipping": "Free Standard Domestic Shipping on orders over $150 to contiguous US"
+    }
+   ],
+   "age": {
+    "min_months": 36,
+    "text": "3 and up"
+   },
+   "note": "Made in the USA (store page).",
+   "read": "2026-11-03",
+   "photos": [
+    {
+     "key": "camden-rose-hearth-play-kitchen-cherry",
+     "src": "https://cdn.shopify.com/s/files/1/0658/7164/2856/files/1033-1.jpg?v=1740079684"
+    },
+    {
+     "key": "camden-rose-hearth-play-kitchen-cherry_2",
+     "src": "https://cdn.shopify.com/s/files/1/0658/7164/2856/files/1033-4.jpg?v=1740079689"
+    },
+    {
+     "key": "camden-rose-hearth-play-kitchen-cherry_3",
+     "src": "https://cdn.shopify.com/s/files/1/0658/7164/2856/files/1033-2.jpg?v=1740079689"
+    },
+    {
+     "key": "camden-rose-hearth-play-kitchen-cherry_4",
+     "src": "https://cdn.shopify.com/s/files/1/0658/7164/2856/files/1033-3.jpg?v=1740079689"
+    },
+    {
+     "key": "camden-rose-hearth-play-kitchen-cherry_5",
+     "src": "https://cdn.shopify.com/s/files/1/0658/7164/2856/files/1033-5.jpg?v=1740079689"
+    },
+    {
+     "key": "camden-rose-hearth-play-kitchen-cherry_6",
+     "src": "https://cdn.shopify.com/s/files/1/0658/7164/2856/files/1033-6.jpg?v=1740079689"
+    },
+    {
+     "key": "camden-rose-hearth-play-kitchen-cherry_7",
+     "src": "https://cdn.shopify.com/s/files/1/0658/7164/2856/files/1033-7.jpg?v=1740079689"
+    },
+    {
+     "key": "camden-rose-hearth-play-kitchen-cherry_8",
+     "src": "https://cdn.shopify.com/s/files/1/0658/7164/2856/files/1033-8.jpg?v=1740079689"
+    },
+    {
+     "key": "camden-rose-hearth-play-kitchen-cherry_9",
+     "src": "https://cdn.shopify.com/s/files/1/0658/7164/2856/files/1033-allnatural-2214_03e40b89-2a8a-4e49-bbac-c1c6fa265093.jpg?v=1740171290"
+    },
+    {
+     "key": "camden-rose-hearth-play-kitchen-cherry_10",
+     "src": "https://cdn.shopify.com/s/files/1/0658/7164/2856/files/simple_hearth__cherry_maple_new_april2023_web_1_1_5578d70d-f5bf-410e-8a25-726ba3d6438f.jpg?v=1741028834"
+    }
+   ],
+   "img": "camden-rose-hearth-play-kitchen-cherry",
+   "img_src": "https://cdn.shopify.com/s/files/1/0658/7164/2856/files/1033-1.jpg?v=1740079684"
+  },
+  {
+   "id": "cloth-eez-muslin-organic-baby-blanket",
+   "type": "blankets",
+   "brand": "Cloth-eez",
+   "line": "Muslin Organic Baby Blanket, 34 x 44 in",
+   "uses": [
+    "100% organic cotton muslin, 180 gsm, six layers"
+   ],
+   "free": [
+    "Optical brighteners",
+    "Synthetic edge trim"
+   ],
+   "unconfirmed": [
+    "Dyes in the coloured versions"
+   ],
+   "outside": [
+    "Polyester sewing thread"
+   ],
+   "facts": {
+    "main": "yes",
+    "parts": "no",
+    "color": "unknown"
+   },
+   "unstated": {
+    "color": [
+     "Dyes in the coloured versions"
+    ]
+   },
+   "standards": [
+    "oeko-tex"
+   ],
+   "contains": [],
+   "quote": "A simple, soft and breathable natural fiber organic cotton blanket for baby.",
+   "products": [
+    {
+     "name": "Cloth-eez Muslin Organic Baby Blanket",
+     "url": "https://www.greenmountaindiapers.com/products/crinkle-muslin-baby-blanket",
+     "store": "Green Mountain Diapers",
+     "price": "$34.99",
+     "ships_from": null,
+     "shipping": "Shipping calculated at checkout"
+    }
+   ],
+   "note": "Made for Green Mountain Diapers in Pakistan (store page). Natural colour $36.50, Salmon $34.50.",
+   "read": "2026-11-03",
+   "photos": [
+    {
+     "key": "cloth-eez-muslin-organic-baby-blanket",
+     "src": "https://cdn.shopify.com/s/files/1/1583/5087/files/crinkle-crib-cutout1600.jpg?v=1761155213"
+    },
+    {
+     "key": "cloth-eez-muslin-organic-baby-blanket_2",
+     "src": "https://cdn.shopify.com/s/files/1/1583/5087/files/crinklebabyblue2048.jpg?v=1761155213"
+    },
+    {
+     "key": "cloth-eez-muslin-organic-baby-blanket_3",
+     "src": "https://cdn.shopify.com/s/files/1/1583/5087/files/crinkle4colors2048.jpg?v=1756500606"
+    },
+    {
+     "key": "cloth-eez-muslin-organic-baby-blanket_4",
+     "src": "https://cdn.shopify.com/s/files/1/1583/5087/files/salmon.jpg?v=1756500587"
+    },
+    {
+     "key": "cloth-eez-muslin-organic-baby-blanket_5",
+     "src": "https://cdn.shopify.com/s/files/1/1583/5087/files/unbleached_946718ad-149d-48ad-bb63-121707972716.jpg?v=1756500587"
+    },
+    {
+     "key": "cloth-eez-muslin-organic-baby-blanket_6",
+     "src": "https://cdn.shopify.com/s/files/1/1583/5087/files/baby-mondo2048.jpg?v=1756500587"
+    },
+    {
+     "key": "cloth-eez-muslin-organic-baby-blanket_7",
+     "src": "https://cdn.shopify.com/s/files/1/1583/5087/files/baby-clothepins-mondo1800.jpg?v=1756500587"
+    }
+   ],
+   "img": "cloth-eez-muslin-organic-baby-blanket",
+   "img_src": "https://cdn.shopify.com/s/files/1/1583/5087/files/crinkle-crib-cutout1600.jpg?v=1761155213"
+  },
+  {
+   "id": "elhee-coconut-weighted-straw-cup",
+   "type": "cups",
+   "brand": "Élhée",
+   "line": "Coconut weighted straw cup, 240 ml",
+   "uses": [
+    "Medical-grade silicone cup",
+    "Weighted silicone straw"
+   ],
+   "free": [],
+   "unconfirmed": [
+    "Material of the flip-top lid",
+    "Material of the straw weight",
+    "Pigments in the silicone",
+    "Which tests the silicone meets"
+   ],
+   "outside": [],
+   "facts": {
+    "main": "yes",
+    "parts": "unknown",
+    "color": "unknown",
+    "silicone": "unknown"
+   },
+   "unstated": {
+    "parts": [
+     "Material of the flip-top lid",
+     "Material of the straw weight"
+    ],
+    "color": [
+     "Pigments in the silicone"
+    ],
+    "silicone": [
+     "Which tests the silicone meets"
+    ]
+   },
+   "standards": [],
+   "contains": [],
+   "quote": "Made of soft silicone, it offers a gentle, reassuring sensory experience for baby.",
+   "products": [
+    {
+     "name": "Élhée Weighted straw cup 240 ml | 9m+",
+     "url": "https://enlightenedbaby.com/products/weighted-straw-cup-240-ml-9m",
+     "store": "Enlightened Baby",
+     "price": "$42.99",
+     "ships_from": null
+    }
+   ],
+   "age": {
+    "min_months": 9,
+    "text": "from 9 months"
+   },
+   "note": "Made in France (store page).",
+   "read": "2026-11-03",
+   "photos": [
+    {
+     "key": "elhee-coconut-weighted-straw-cup",
+     "src": "https://cdn.shopify.com/s/files/1/0707/4850/4296/files/fd52e740fbff192c41ad80c23da6d81890811f849eb54daac84e47665a466ed6.png?v=1791499100"
+    },
+    {
+     "key": "elhee-coconut-weighted-straw-cup_2",
+     "src": "https://cdn.shopify.com/s/files/1/0707/4850/4296/files/d037c9fbd58bced790ba435156052525c31c6fb4273dfcdfa08ac2c611e45290.jpg?v=1791499104"
+    },
+    {
+     "key": "elhee-coconut-weighted-straw-cup_3",
+     "src": "https://cdn.shopify.com/s/files/1/0707/4850/4296/files/a1197eb9bd8b8dd79d6120cd9ee21b36e38f682e4a0b1d3d3bf2a2cacbea3409.png?v=1791499104"
+    },
+    {
+     "key": "elhee-coconut-weighted-straw-cup_4",
+     "src": "https://cdn.shopify.com/s/files/1/0707/4850/4296/files/98666ff3a2f32c6d421cffe42bcd70bbdd6f0489ee197c3eb52dd4d9104637f5.png?v=1791499104"
+    },
+    {
+     "key": "elhee-coconut-weighted-straw-cup_5",
+     "src": "https://cdn.shopify.com/s/files/1/0707/4850/4296/files/7aa9d3fa5de0dcef8b9594ad944723aa55698cebb60264a97743da219ba15815.jpg?v=1791499104"
+    }
+   ],
+   "img": "elhee-coconut-weighted-straw-cup",
+   "img_src": "https://cdn.shopify.com/s/files/1/0707/4850/4296/files/fd52e740fbff192c41ad80c23da6d81890811f849eb54daac84e47665a466ed6.png?v=1791499100"
+  },
+  {
+   "id": "ingenuity-3dlite-jewel-stroller",
+   "type": "strollers",
+   "brand": "Ingenuity",
+   "line": "3Dlite Jewel Convenience Stroller",
+   "uses": [
+    "Steel frame"
+   ],
+   "free": [],
+   "unconfirmed": [
+    "Fibre of the seat and canopy fabric",
+    "Padded harness",
+    "Wheels",
+    "Flame retardants"
+   ],
+   "outside": [
+    "Plastic parts (15% of the materials by the maker’s breakdown)"
+   ],
+   "facts": {
+    "main": "no",
+    "parts": "unknown",
+    "flame": "unknown"
+   },
+   "unstated": {
+    "parts": [
+     "Padded harness",
+     "Wheels"
+    ],
+    "flame": [
+     "Flame retardants"
+    ]
+   },
+   "standards": [],
+   "contains": [],
+   "quote": "Materials: 45% Fabric, 40% Metal, 15% Plastic",
+   "products": [
+    {
+     "name": "Ingenuity 3Dlite Jewel Convenience Stroller",
+     "url": "https://www.kids2.com/products/17564-091-ingenuity-3dlite-jewel-convenience-stroller-grey",
+     "store": "Kids2",
+     "price": "$89.99 (MSRP)",
+     "ships_from": null
+    }
+   ],
+   "age": {
+    "min_months": 6,
+    "max_months": 48,
+    "text": "6 - 48 months"
+   },
+   "read": "2026-11-03",
+   "photos": [
+    {
+     "key": "ingenuity-3dlite-jewel-stroller",
+     "src": "https://cdn.shopify.com/s/files/1/0468/2521/0022/files/d5b1aee069bba63159a55303ee3e34d45d1dee3a.jpg?v=1789489685"
+    },
+    {
+     "key": "ingenuity-3dlite-jewel-stroller_2",
+     "src": "https://cdn.shopify.com/s/files/1/0468/2521/0022/files/99dfdaaa4c942010772eeb70b421ef2754c3acbd.jpg?v=1783955909"
+    },
+    {
+     "key": "ingenuity-3dlite-jewel-stroller_3",
+     "src": "https://cdn.shopify.com/s/files/1/0468/2521/0022/files/5ebdbe2d44faf036787083629ea70282f350f2df.jpg?v=1783955911"
+    },
+    {
+     "key": "ingenuity-3dlite-jewel-stroller_4",
+     "src": "https://cdn.shopify.com/s/files/1/0468/2521/0022/files/0f27dd883d2f9660fadcd8519bb5982b5c92a0ab.jpg?v=1783955910"
+    },
+    {
+     "key": "ingenuity-3dlite-jewel-stroller_5",
+     "src": "https://cdn.shopify.com/s/files/1/0468/2521/0022/files/b3f8363aec214b0a458827c1e0ec6b6d539111a7.jpg?v=1783955910"
+    },
+    {
+     "key": "ingenuity-3dlite-jewel-stroller_6",
+     "src": "https://cdn.shopify.com/s/files/1/0468/2521/0022/files/aa3807fdfccbe9030af9e471b36d4cd138724290.jpg?v=1783955910"
+    },
+    {
+     "key": "ingenuity-3dlite-jewel-stroller_7",
+     "src": "https://cdn.shopify.com/s/files/1/0468/2521/0022/files/dc570b06904a8bd189aa23749fec6433697ec051.jpg?v=1783955910"
+    },
+    {
+     "key": "ingenuity-3dlite-jewel-stroller_8",
+     "src": "https://cdn.shopify.com/s/files/1/0468/2521/0022/files/7cb8dd7423a7c17e50caae00684bb154d1b2f22b.jpg?v=1783955910"
+    },
+    {
+     "key": "ingenuity-3dlite-jewel-stroller_9",
+     "src": "https://www.kids2.com/cdn/shop/files/preview_images/hqdefault_e6b5c2ec-d625-41aa-a05d-52d0dcd68790.jpg?v=1752781600"
+    }
+   ],
+   "img": "ingenuity-3dlite-jewel-stroller",
+   "img_src": "https://cdn.shopify.com/s/files/1/0468/2521/0022/files/d5b1aee069bba63159a55303ee3e34d45d1dee3a.jpg?v=1789489685"
+  },
+  {
+   "id": "kanga-care-rumparooz-g3-pocket-diaper",
+   "type": "diapers",
+   "brand": "Kanga Care",
+   "line": "Rumparooz G3 Stay Dry One Size Pocket Cloth Diaper (shell)",
+   "uses": [],
+   "free": [],
+   "unconfirmed": [
+    "Snaps",
+    "Back and leg elastic",
+    "Thread",
+    "Inks for the prints"
+   ],
+   "outside": [
+    "Waterproof outer: 100% plant-based polyester with bio-TPU laminate",
+    "Inner: 100% polyester stay-dry microchamois"
+   ],
+   "facts": {
+    "main": "no",
+    "parts": "unknown",
+    "color": "unknown",
+    "lead": "yes"
+   },
+   "unstated": {
+    "parts": [
+     "Snaps",
+     "Back and leg elastic",
+     "Thread"
+    ],
+    "color": [
+     "Inks for the prints"
+    ]
+   },
+   "standards": [
+    "us-toy"
+   ],
+   "contains": [],
+   "quote": "Materials Waterproof Outer :: 100% plant-based polyester + bio-TPU laminate Inner :: 100% polyester stay-dry microchamois",
+   "products": [
+    {
+     "name": "Kanga Care - G3 Stay Dry One Size Pocket Cloth Diaper",
+     "url": "https://www.thenaturalbabyco.com/products/rumparooz-g3-stay-dry-one-size-pocket-cloth-diaper",
+     "store": "The Natural Baby Co",
+     "price": "$14.99",
+     "ships_from": null,
+     "note": "Diaper only - inserts sold separately"
+    },
+    {
+     "name": "Rumparooz Stay Dry G3 One Size Pocket Cloth Diaper - Stargazing",
+     "url": "https://www.kangacare.com/products/rumparooz-stay-dry-g3-one-size-pocket-cloth-diaper-stargazing",
+     "store": "Kanga Care",
+     "price": "$14.99",
+     "ships_from": null,
+     "note": "No insert (pocket shell only); inserts +$6 to +$11"
+    }
+   ],
+   "note": "Inserts sold separately: microfiber (100% polyester), bamboo fleece (50% bamboo viscose, 20% organic cotton, 30% polyester), hemp fleece (55% hemp, 45% organic cotton), per Kanga Care.",
+   "read": "2026-11-03",
+   "photos": [
+    {
+     "key": "kanga-care-rumparooz-g3-pocket-diaper",
+     "src": "https://cdn.shopify.com/s/files/1/2386/1081/files/d6ea90eba7c214762307f9e4f3d1cb8cdbc12c109bee407ec10f245244ed23da.jpg?v=1790385004"
+    },
+    {
+     "key": "kanga-care-rumparooz-g3-pocket-diaper_2",
+     "src": "https://cdn.shopify.com/s/files/1/2386/1081/files/stay_dry.jpg?v=1790385000"
+    },
+    {
+     "key": "kanga-care-rumparooz-g3-pocket-diaper_3",
+     "src": "https://cdn.shopify.com/s/files/1/2386/1081/files/kanga_care_2.jpg?v=1790385000"
+    },
+    {
+     "key": "kanga-care-rumparooz-g3-pocket-diaper_4",
+     "src": "https://cdn.shopify.com/s/files/1/2386/1081/files/stay_dry_2.jpg?v=1790384999"
+    },
+    {
+     "key": "kanga-care-rumparooz-g3-pocket-diaper_5",
+     "src": "https://cdn.shopify.com/s/files/1/2386/1081/files/Kanga_care_-How_many_cloth_daipers_per_day_26cf39d2-9ea2-442e-90e0-9e8c55a50f4c.jpg?v=1790384998"
+    },
+    {
+     "key": "kanga-care-rumparooz-g3-pocket-diaper_6",
+     "src": "https://cdn.shopify.com/s/files/1/2386/1081/files/kanga_care_chart.jpg?v=1790384998"
+    },
+    {
+     "key": "kanga-care-rumparooz-g3-pocket-diaper_7",
+     "src": "https://cdn.shopify.com/s/files/1/2386/1081/files/Kanga_care.jpg?v=1790384998"
+    }
+   ],
+   "img": "kanga-care-rumparooz-g3-pocket-diaper",
+   "img_src": "https://cdn.shopify.com/s/files/1/2386/1081/files/d6ea90eba7c214762307f9e4f3d1cb8cdbc12c109bee407ec10f245244ed23da.jpg?v=1790385004"
+  },
+  {
+   "id": "lorena-canals-handloom-rug-natural",
+   "type": "rugs",
+   "brand": "Lorena Canals",
+   "line": "Handloom Area Rug, Natural",
+   "uses": [
+    "Natural cotton, woven on a handloom"
+   ],
+   "free": [],
+   "unconfirmed": [
+    "Backing, if any",
+    "Dyes or bleach"
+   ],
+   "outside": [],
+   "facts": {
+    "main": "yes",
+    "color": "unknown"
+   },
+   "unstated": {
+    "color": [
+     "Dyes or bleach"
+    ]
+   },
+   "standards": [],
+   "contains": [],
+   "quote": "Handcrafted from natural cotton • Woven on a traditional handloom",
+   "products": [
+    {
+     "name": "Handloom Area Rug Natural",
+     "url": "https://easytot.com/products/handloom-rug-natural",
+     "store": "EasyTot",
+     "price": "$439.00 – $949.00",
+     "ships_from": null,
+     "shipping": "Free shipping $75+",
+     "note": "4’ 7” x 6’ 7” $439.00"
+    }
+   ],
+   "read": "2026-11-03",
+   "photos": [
+    {
+     "key": "lorena-canals-handloom-rug-natural",
+     "src": "https://cdn.shopify.com/s/files/1/0556/0519/8922/files/HL-C-NAT-topo.jpg?v=1770920033"
+    },
+    {
+     "key": "lorena-canals-handloom-rug-natural_2",
+     "src": "https://cdn.shopify.com/s/files/1/0556/0519/8922/files/HL-C-NAT_2.jpg?v=1770920033"
+    },
+    {
+     "key": "lorena-canals-handloom-rug-natural_3",
+     "src": "https://cdn.shopify.com/s/files/1/0556/0519/8922/files/HL-C-NAT_3.jpg?v=1770920033"
+    },
+    {
+     "key": "lorena-canals-handloom-rug-natural_4",
+     "src": "https://cdn.shopify.com/s/files/1/0556/0519/8922/files/HL-C-NAT_5.jpg?v=1770920033"
+    },
+    {
+     "key": "lorena-canals-handloom-rug-natural_5",
+     "src": "https://cdn.shopify.com/s/files/1/0556/0519/8922/files/HL-C-NAT_6.jpg?v=1770920033"
+    },
+    {
+     "key": "lorena-canals-handloom-rug-natural_6",
+     "src": "https://cdn.shopify.com/s/files/1/0556/0519/8922/files/HL-C-NAT_7.jpg?v=1770920033"
+    }
+   ],
+   "img": "lorena-canals-handloom-rug-natural",
+   "img_src": "https://cdn.shopify.com/s/files/1/0556/0519/8922/files/HL-C-NAT-topo.jpg?v=1770920033"
+  },
+  {
+   "id": "manymonths-wool-leggings",
+   "type": "clothes",
+   "brand": "ManyMonths",
+   "line": "Wool Unisex Leggings",
+   "uses": [
+    "100% merino wool rib knit"
+   ],
+   "free": [
+    "Superwash treatment",
+    "Moth treatment",
+    "Mulesing"
+   ],
+   "unconfirmed": [
+    "Waistband elastic",
+    "Button",
+    "Thread",
+    "What the dyes are"
+   ],
+   "outside": [],
+   "facts": {
+    "main": "yes",
+    "wool": "yes",
+    "parts": "unknown",
+    "color": "unknown"
+   },
+   "unstated": {
+    "parts": [
+     "Waistband elastic",
+     "Button",
+     "Thread"
+    ],
+    "color": [
+     "What the dyes are"
+    ]
+   },
+   "standards": [
+    "oeko-tex"
+   ],
+   "contains": [],
+   "quote": "Material: rib-knit 100% merino wool no mulesing no superwash no moth treatment",
+   "products": [
+    {
+     "name": "ManyMonths Wool Unisex Leggings",
+     "url": "https://www.greenmountaindiapers.com/products/manymonths-wool-leggings",
+     "store": "Green Mountain Diapers",
+     "price": "$54.95",
+     "ships_from": null,
+     "shipping": "Shipping calculated at checkout",
+     "note": "1-2/2.5 years size $56.95"
+    }
+   ],
+   "age": {
+    "min_months": 3,
+    "max_months": 30,
+    "text": "3 months to 2–2.5 years"
+   },
+   "note": "Made in China (store page).",
+   "read": "2026-11-03",
+   "photos": [
+    {
+     "key": "manymonths-wool-leggings",
+     "src": "https://cdn.shopify.com/s/files/1/1583/5087/files/mma-leggingsredcanyon2048.jpg?v=1757822485"
+    },
+    {
+     "key": "manymonths-wool-leggings_2",
+     "src": "https://cdn.shopify.com/s/files/1/1583/5087/files/leggingsmallteal2048.jpg?v=1757879401"
+    },
+    {
+     "key": "manymonths-wool-leggings_3",
+     "src": "https://cdn.shopify.com/s/files/1/1583/5087/files/leggingssizecompared2048.jpg?v=1757879541"
+    },
+    {
+     "key": "manymonths-wool-leggings_4",
+     "src": "https://cdn.shopify.com/s/files/1/1583/5087/files/leggingsizesmeasured2048.jpg?v=1757880203"
+    }
+   ],
+   "img": "manymonths-wool-leggings",
+   "img_src": "https://cdn.shopify.com/s/files/1/1583/5087/files/mma-leggingsredcanyon2048.jpg?v=1757822485"
+  },
+  {
+   "id": "mushie-organic-cotton-hooded-towel",
+   "type": "towels",
+   "brand": "Mushie",
+   "line": "Organic Cotton Baby Hooded Towel, 30.5 x 30.5 in",
+   "uses": [
+    "100% organic cotton"
+   ],
+   "free": [],
+   "unconfirmed": [
+    "Thread",
+    "Dyes"
+   ],
+   "outside": [],
+   "facts": {
+    "main": "yes",
+    "parts": "unknown",
+    "color": "unknown",
+    "lead": "yes"
+   },
+   "unstated": {
+    "parts": [
+     "Thread"
+    ],
+    "color": [
+     "Dyes"
+    ]
+   },
+   "standards": [
+    "us-toy"
+   ],
+   "contains": [],
+   "quote": "Made from 100% organic cotton, our hooded towel is gentle on sensitive skin",
+   "products": [
+    {
+     "name": "Organic Cotton Baby Hooded Towel",
+     "url": "https://mushie.com/products/hooded-towel",
+     "store": "Mushie",
+     "price": "$29.99",
+     "ships_from": null
+    }
+   ],
+   "age": {
+    "min_months": 0,
+    "max_months": 24,
+    "text": "0-24 months"
+   },
+   "read": "2026-11-03",
+   "photos": [
+    {
+     "key": "mushie-organic-cotton-hooded-towel",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/Fog_HoodedTowel_folded_71f30e14-a0e4-4fc3-b780-5c970666ea36.jpg?v=1755283453"
+    },
+    {
+     "key": "mushie-organic-cotton-hooded-towel_2",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/hooded-towel-1-info.jpg?v=1755283453"
+    },
+    {
+     "key": "mushie-organic-cotton-hooded-towel_3",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/products/towels-4.jpg?v=1755283453"
+    },
+    {
+     "key": "mushie-organic-cotton-hooded-towel_4",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/products/towels_3stshoot-41.jpg?v=1771367949"
+    },
+    {
+     "key": "mushie-organic-cotton-hooded-towel_5",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/products/towels_1stshoot-5.jpg?v=1771367949"
+    },
+    {
+     "key": "mushie-organic-cotton-hooded-towel_6",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/products/beautiful_house_shoot-25.jpg?v=1771367949"
+    },
+    {
+     "key": "mushie-organic-cotton-hooded-towel_7",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/athena_-36.jpg?v=1771367949"
+    },
+    {
+     "key": "mushie-organic-cotton-hooded-towel_8",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/products/ODDbirdxmushie_shoot-102.jpg?v=1771367949"
+    },
+    {
+     "key": "mushie-organic-cotton-hooded-towel_9",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/megan_shoot-8-2_a47fe058-dd1e-4fdd-bc3a-43c487e624a6.jpg?v=1771367949"
+    },
+    {
+     "key": "mushie-organic-cotton-hooded-towel_10",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/products/Flower_swaddle-33.jpg?v=1771367949"
+    }
+   ],
+   "img": "mushie-organic-cotton-hooded-towel",
+   "img_src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/Fog_HoodedTowel_folded_71f30e14-a0e4-4fc3-b780-5c970666ea36.jpg?v=1755283453"
+  },
+  {
+   "id": "paige-tate-black-white-crinkle-book",
+   "type": "books",
+   "brand": "Paige Tate & Co.",
+   "line": "Baby’s Black & White Crinkle Book Made With Organic Cotton (Tabitha Paige)",
+   "uses": [
+    "Organic cotton"
+   ],
+   "free": [],
+   "unconfirmed": [
+    "Material of the crinkle layer",
+    "Inks or dyes for the printed art",
+    "Thread",
+    "Material of the stroller loop"
+   ],
+   "outside": [],
+   "facts": {
+    "main": "unknown",
+    "parts": "unknown",
+    "color": "unknown"
+   },
+   "unstated": {
+    "main": [
+     "Material of the crinkle layer"
+    ],
+    "parts": [
+     "Thread",
+     "Material of the stroller loop"
+    ],
+    "color": [
+     "Inks or dyes for the printed art"
+    ]
+   },
+   "standards": [],
+   "contains": [],
+   "quote": "transforms Tabitha Paige’s beloved hand-painted animal art into a cloth book that babies can touch, crinkle, and explore",
+   "products": [
+    {
+     "name": "Baby’s Black & White Crinkle Book Made With Organic Cotton",
+     "url": "https://enlightenedbaby.com/products/baby-s-black-white-crinkle-book-made-with-organic-cotton",
+     "store": "Enlightened Baby",
+     "price": "$22.99",
+     "ships_from": null
+    }
+   ],
+   "read": "2026-11-03",
+   "photos": [
+    {
+     "key": "paige-tate-black-white-crinkle-book",
+     "src": "https://cdn.shopify.com/s/files/1/0707/4850/4296/files/7f114d45569bfbf648515e2fceefbf2c7f5390d8c968f45546aaa7f21b4fdc36.jpg?v=1787704816"
+    },
+    {
+     "key": "paige-tate-black-white-crinkle-book_2",
+     "src": "https://cdn.shopify.com/s/files/1/0707/4850/4296/files/c81c6bce161041f3a2af0b71bc23dc083d0bad104e1460d4bb23443662a6569f.jpg?v=1787704818"
+    },
+    {
+     "key": "paige-tate-black-white-crinkle-book_3",
+     "src": "https://cdn.shopify.com/s/files/1/0707/4850/4296/files/c5698cf455e06837a8f52fb83fca337fbaddcd77560a3318d54c0cb60f25d16c.jpg?v=1787704818"
+    },
+    {
+     "key": "paige-tate-black-white-crinkle-book_4",
+     "src": "https://cdn.shopify.com/s/files/1/0707/4850/4296/files/be3bb9852649364fb19ea12fb734f47b8f8a62fd3dd4d8994d0f59d16cc514d5.jpg?v=1787704818"
+    },
+    {
+     "key": "paige-tate-black-white-crinkle-book_5",
+     "src": "https://cdn.shopify.com/s/files/1/0707/4850/4296/files/5529e5995f20bb38274caafab2ded78d6c97e995bc58c6f832572a3db6c832b0.jpg?v=1787704818"
+    },
+    {
+     "key": "paige-tate-black-white-crinkle-book_6",
+     "src": "https://cdn.shopify.com/s/files/1/0707/4850/4296/files/5e1f7213b6f9421d5bb05a7761f1034124eb9915498185a785e468ffcf75c256.jpg?v=1787704818"
+    },
+    {
+     "key": "paige-tate-black-white-crinkle-book_7",
+     "src": "https://cdn.shopify.com/s/files/1/0707/4850/4296/files/35ae78da5f00cba779505ac31878c2c8be72a597a8319857fcd9f0ffb062a3ef.jpg?v=1787704818"
+    },
+    {
+     "key": "paige-tate-black-white-crinkle-book_8",
+     "src": "https://cdn.shopify.com/s/files/1/0707/4850/4296/files/1d58561b05d0018cf72297c926ad7f966839a355e1856034d69608b3f930af10.jpg?v=1787704819"
+    },
+    {
+     "key": "paige-tate-black-white-crinkle-book_9",
+     "src": "https://cdn.shopify.com/s/files/1/0707/4850/4296/files/a16de2628932d44a3aa821d3b93d5c9240f2f720fddd93f3c141c3b38eaee672.jpg?v=1787704818"
+    },
+    {
+     "key": "paige-tate-black-white-crinkle-book_10",
+     "src": "https://cdn.shopify.com/s/files/1/0707/4850/4296/files/808751d53db857c9cbf79ab6521d5df9e88ebd814497bcd6a77383b7d50fe1d3.jpg?v=1787704818"
+    }
+   ],
+   "img": "paige-tate-black-white-crinkle-book",
+   "img_src": "https://cdn.shopify.com/s/files/1/0707/4850/4296/files/7f114d45569bfbf648515e2fceefbf2c7f5390d8c968f45546aaa7f21b4fdc36.jpg?v=1787704816"
+  },
+  {
+   "id": "piccalio-beeswax-crayons",
+   "type": "art",
+   "brand": "Piccalio",
+   "line": "Beeswax Crayons (Junior and Classic)",
+   "uses": [
+    "Beeswax",
+    "Organic pigments"
+   ],
+   "free": [
+    "Paraffin wax"
+   ],
+   "unconfirmed": [
+    "Which natural waxes and oils",
+    "What the organic pigments are"
+   ],
+   "outside": [],
+   "facts": {
+    "main": "yes",
+    "color": "unknown"
+   },
+   "unstated": {
+    "color": [
+     "What the organic pigments are"
+    ]
+   },
+   "standards": [
+    "us-toy"
+   ],
+   "contains": [],
+   "quote": "Our crayons are handmade by a family of beeskeepers in Slovenia",
+   "products": [
+    {
+     "name": "Beeswax Crayons",
+     "url": "https://www.piccalio.com/products/beeswax-crayons",
+     "store": "Piccalio",
+     "price": "$29",
+     "ships_from": null,
+     "note": "Pre-order, estimated shipping mid-November 2026"
+    }
+   ],
+   "age": {
+    "min_months": 12,
+    "text": "Junior 1 year +, Classic 3 years +"
+   },
+   "read": "2026-11-03",
+   "photos": [
+    {
+     "key": "piccalio-beeswax-crayons",
+     "src": "https://cdn.shopify.com/s/files/1/0411/8868/8026/files/Piccalio-Beeswax-Crayons-Classic-Box-Open.jpg?v=1793220081"
+    },
+    {
+     "key": "piccalio-beeswax-crayons_2",
+     "src": "https://cdn.shopify.com/s/files/1/0411/8868/8026/files/Piccalio-Large-Coloring-Pages-Bedroom-Arcc-Beeswax-Junior-Crayons.jpg?v=1793120488"
+    },
+    {
+     "key": "piccalio-beeswax-crayons_3",
+     "src": "https://cdn.shopify.com/s/files/1/0411/8868/8026/files/Piccalio-Beeswax-Crayons-Classic-Box-Front.jpg?v=1793220080"
+    },
+    {
+     "key": "piccalio-beeswax-crayons_4",
+     "src": "https://cdn.shopify.com/s/files/1/0411/8868/8026/files/Piccalio-Beeswax-Crayons-Junior-Box-Front.jpg?v=1793220080"
+    },
+    {
+     "key": "piccalio-beeswax-crayons_5",
+     "src": "https://cdn.shopify.com/s/files/1/0411/8868/8026/files/Piccalio-Large-Coloring-Pages-Farm-Animals-Beeswax-Crayons-Toddler-Girl.jpg?v=1793128089"
+    },
+    {
+     "key": "piccalio-beeswax-crayons_6",
+     "src": "https://cdn.shopify.com/s/files/1/0411/8868/8026/files/Piccalio-Beeswax-Crayons-Classic.jpg?v=1793220081"
+    },
+    {
+     "key": "piccalio-beeswax-crayons_7",
+     "src": "https://cdn.shopify.com/s/files/1/0411/8868/8026/files/Piccalio-Beeswax-Junior-Crayons-Coloring-Pages-Farm-Animals-Toddler-Table.jpg?v=1793128585"
+    },
+    {
+     "key": "piccalio-beeswax-crayons_8",
+     "src": "https://cdn.shopify.com/s/files/1/0411/8868/8026/files/Piccalio-Beeswax-Crayons-Junior.jpg?v=1793220080"
+    },
+    {
+     "key": "piccalio-beeswax-crayons_9",
+     "src": "https://cdn.shopify.com/s/files/1/0411/8868/8026/files/Piccalio-Beeswax-Crayons-Classic-Junior-Infographic-Vertical.jpg?v=1793128692"
+    }
+   ],
+   "img": "piccalio-beeswax-crayons",
+   "img_src": "https://cdn.shopify.com/s/files/1/0411/8868/8026/files/Piccalio-Beeswax-Crayons-Classic-Box-Open.jpg?v=1793220081"
+  },
+  {
+   "id": "tag-toys-watch-me-count-number-puzzle",
+   "type": "puzzles",
+   "brand": "TAG Toys",
+   "line": "Watch Me Count Number Puzzle",
+   "uses": [
+    "Solid hardwood"
+   ],
+   "free": [],
+   "unconfirmed": [
+    "Material of the counting beads",
+    "What the water-based finishes are"
+   ],
+   "outside": [
+    "Plywood"
+   ],
+   "facts": {
+    "wood": "no",
+    "color": "unknown",
+    "parts": "unknown"
+   },
+   "unstated": {
+    "color": [
+     "What the water-based finishes are"
+    ],
+    "parts": [
+     "Material of the counting beads"
+    ]
+   },
+   "standards": [],
+   "contains": [],
+   "quote": "Crafted from solid hardwood and durable plywood with non-toxic, water-based finishes.",
+   "products": [
+    {
+     "name": "Watch Me Count Number Puzzle",
+     "url": "https://radchildrensfurniture.com/products/wooden-number-puzzle",
+     "store": "RAD Children’s Furniture",
+     "price": "$65.00",
+     "ships_from": "US",
+     "shipping": "Contiguous USA: Free Shipping on all orders"
+    }
+   ],
+   "age": {
+    "min_months": 36,
+    "max_months": 60,
+    "text": "3 to 5"
+   },
+   "note": "Made in the USA (store page).",
+   "read": "2026-11-03",
+   "photos": [
+    {
+     "key": "tag-toys-watch-me-count-number-puzzle",
+     "src": "https://cdn.shopify.com/s/files/1/0087/4230/5892/files/WoodenNumberPuzzle.jpg?v=1762459817"
+    }
+   ],
+   "img": "tag-toys-watch-me-count-number-puzzle",
+   "img_src": "https://cdn.shopify.com/s/files/1/0087/4230/5892/files/WoodenNumberPuzzle.jpg?v=1762459817"
+  },
+  {
+   "id": "ubbi-foam-changing-pad",
+   "type": "changing-pads",
+   "brand": "Ubbi",
+   "line": "Foam Changing Pad, Oat",
+   "uses": [
+    "Non-skid rubber feet"
+   ],
+   "free": [
+    "BPA (in the base)"
+   ],
+   "unconfirmed": [
+    "Material of the foam cushion",
+    "Material of the base",
+    "Safety strap",
+    "Natural or synthetic rubber in the feet",
+    "Flame retardants"
+   ],
+   "outside": [],
+   "facts": {
+    "main": "unknown",
+    "parts": "unknown",
+    "rubber": "unknown",
+    "flame": "unknown"
+   },
+   "unstated": {
+    "main": [
+     "Material of the foam cushion",
+     "Material of the base"
+    ],
+    "parts": [
+     "Safety strap"
+    ],
+    "rubber": [
+     "Natural or synthetic rubber in the feet"
+    ],
+    "flame": [
+     "Flame retardants"
+    ]
+   },
+   "standards": [],
+   "contains": [],
+   "quote": "our foam pad does not absorb liquids or smells",
+   "products": [
+    {
+     "name": "Ubbi Foam Changing Pad - Oat",
+     "url": "https://enlightenedbaby.com/products/ubbi-foam-changing-pad-oat",
+     "store": "Enlightened Baby",
+     "price": "$89.99",
+     "ships_from": null
+    }
+   ],
+   "read": "2026-11-03",
+   "photos": [
+    {
+     "key": "ubbi-foam-changing-pad",
+     "src": "https://cdn.shopify.com/s/files/1/0707/4850/4296/files/6a70932c30cddf5f75a92df98d987509ee79f08c684802417c48e057931acfe8.jpg?v=1787864225"
+    },
+    {
+     "key": "ubbi-foam-changing-pad_2",
+     "src": "https://cdn.shopify.com/s/files/1/0707/4850/4296/files/ab27381b07ca50bb896f1c9dfeb1789872446f144e2270529c639ab831fdfb4f.jpg?v=1787864227"
+    },
+    {
+     "key": "ubbi-foam-changing-pad_3",
+     "src": "https://cdn.shopify.com/s/files/1/0707/4850/4296/files/bba60288d4ea3af74c720a1f44aa7e8e7fdef1f48a9c081a660d556f68aecb84.jpg?v=1787864226"
+    },
+    {
+     "key": "ubbi-foam-changing-pad_4",
+     "src": "https://cdn.shopify.com/s/files/1/0707/4850/4296/files/b6b9bd61a239cff5c1bbbc4d035d9e89f6232497475eee39053ce4fd7ea561a4.jpg?v=1787864225"
+    },
+    {
+     "key": "ubbi-foam-changing-pad_5",
+     "src": "https://cdn.shopify.com/s/files/1/0707/4850/4296/files/f4193c87be9c861d0edf3784e86cbe527ad4f7ce1aea2c3360a068fe37b997d1.jpg?v=1787864226"
+    },
+    {
+     "key": "ubbi-foam-changing-pad_6",
+     "src": "https://cdn.shopify.com/s/files/1/0707/4850/4296/files/ce986736c9fd4c4336f0455e505673bd1a92adcd4c08d7862b203b861fb76fc0.jpg?v=1787864226"
+    },
+    {
+     "key": "ubbi-foam-changing-pad_7",
+     "src": "https://cdn.shopify.com/s/files/1/0707/4850/4296/files/5099e1d993466a159d175e19193b0a5c9e98dc927b9eba565e6b7ceb1eb27c8e.jpg?v=1787864226"
+    },
+    {
+     "key": "ubbi-foam-changing-pad_8",
+     "src": "https://cdn.shopify.com/s/files/1/0707/4850/4296/files/8bd093fedd324b018443fa5b8c749f7ae72b8e833ec057e854ce62cb8eb0db79.jpg?v=1787864227"
+    },
+    {
+     "key": "ubbi-foam-changing-pad_9",
+     "src": "https://cdn.shopify.com/s/files/1/0707/4850/4296/files/ea583177227b6d7dd2609ae0f629914df1f01f326b1a715f377cd4f4e5de5edd.jpg?v=1787864226"
+    }
+   ],
+   "img": "ubbi-foam-changing-pad",
+   "img_src": "https://cdn.shopify.com/s/files/1/0707/4850/4296/files/6a70932c30cddf5f75a92df98d987509ee79f08c684802417c48e057931acfe8.jpg?v=1787864225"
+  },
+  {
+   "id": "wooden-story-natural-pound-a-peg",
+   "type": "bench",
+   "brand": "Wooden Story",
+   "line": "Natural Pound A Peg",
+   "uses": [
+    "Wood from FSC certified suppliers",
+    "Beeswax and botanical oil finish"
+   ],
+   "free": [],
+   "unconfirmed": [
+    "Whether the wood is solid or glued board"
+   ],
+   "outside": [],
+   "facts": {
+    "main": "yes",
+    "color": "yes",
+    "wood": "unknown"
+   },
+   "unstated": {
+    "wood": [
+     "Whether the wood is solid or glued board"
+    ]
+   },
+   "standards": [
+    "fsc"
+   ],
+   "contains": [],
+   "quote": "Game with a wooden hammer and natural pegs gives a lot of joy.",
+   "products": [
+    {
+     "name": "Natural Pound A Peg",
+     "url": "https://odinparker.com/products/natural-pound-a-peg",
+     "store": "Odin Parker",
+     "price": "$58.00",
+     "ships_from": null
+    }
+   ],
+   "note": "Made in the Beskidy Mountains, Poland (store page). Out of stock when read.",
+   "read": "2026-11-03",
+   "photos": [
+    {
+     "key": "wooden-story-natural-pound-a-peg",
+     "src": "https://cdn.shopify.com/s/files/1/0020/4180/6905/files/2J2A0681-2.jpg?v=1685219325"
+    },
+    {
+     "key": "wooden-story-natural-pound-a-peg_2",
+     "src": "https://cdn.shopify.com/s/files/1/0020/4180/6905/products/s429774018884280427_p242_i3_w3298.jpg?v=1685219325"
+    },
+    {
+     "key": "wooden-story-natural-pound-a-peg_3",
+     "src": "https://cdn.shopify.com/s/files/1/0020/4180/6905/products/s429774018884280427_p242_i1_w775.png?v=1685219325"
+    },
+    {
+     "key": "wooden-story-natural-pound-a-peg_4",
+     "src": "https://cdn.shopify.com/s/files/1/0020/4180/6905/products/s429774018884280427_p242_i2_w1000.png?v=1685219325"
+    },
+    {
+     "key": "wooden-story-natural-pound-a-peg_5",
+     "src": "https://odinparker.com/cdn/shop/files/2J2A0681-2_1200x1200_crop_center.jpg"
+    }
+   ],
+   "img": "wooden-story-natural-pound-a-peg",
+   "img_src": "https://cdn.shopify.com/s/files/1/0020/4180/6905/files/2J2A0681-2.jpg?v=1685219325"
   }
  ]
 }

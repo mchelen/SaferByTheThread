@@ -11230,7 +11230,8 @@
    "type": "puzzles",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "tag-toys-watch-me-count-number-puzzle"
   },
   {
    "url": "https://radchildrensfurniture.com/products/wooden-alphabet-toy",
@@ -22069,7 +22070,8 @@
    "type": "towels",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "mushie-organic-cotton-hooded-towel"
   },
   {
    "url": "https://mushie.com/products/frigg-moon-natural-rubber-baby-pacifier-2-pack",
@@ -23323,7 +23325,8 @@
    "type": "clothes",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "manymonths-wool-leggings"
   },
   {
    "url": "https://www.greenmountaindiapers.com/products/manymonths-baby-hood",
@@ -23632,7 +23635,8 @@
    "type": "blankets",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "cloth-eez-muslin-organic-baby-blanket"
   },
   {
    "url": "https://www.greenmountaindiapers.com/products/cloth-eez-stretchy-preflat",
@@ -52430,7 +52434,8 @@
    "type": "cups",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "elhee-coconut-weighted-straw-cup"
   },
   {
    "url": "https://enlightenedbaby.com/products/newborn-gift-box-maxi",
@@ -53250,7 +53255,8 @@
    "type": "changing-pads",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "ubbi-foam-changing-pad"
   },
   {
    "url": "https://enlightenedbaby.com/products/doll-house-living-room-set-incl-1-character",
@@ -54188,7 +54194,8 @@
    "type": "books",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "paige-tate-black-white-crinkle-book"
   },
   {
    "url": "https://enlightenedbaby.com/products/stokke-steps-baby-set-cushion-new",
@@ -59115,7 +59122,8 @@
    "type": "pretend",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "camden-rose-hearth-play-kitchen-cherry"
   },
   {
    "url": "https://camdenrose.com/products/the-stork-card-with-envelope",
@@ -66659,7 +66667,8 @@
    "type": "car-seats",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "ingenuity-3dlite-jewel-stroller"
   },
   {
    "url": "https://www.kids2.com/products/17905-000-bright-starts-off-the-gym-3piece-baby-rattles-and-toys",
@@ -86153,7 +86162,8 @@
    "type": "stacking",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "wooden-story-natural-pound-a-peg"
   },
   {
    "url": "https://odinparker.com/products/uncle-goose-moon-phase-blocks",
@@ -92782,7 +92792,8 @@
    "type": "carriers",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "skipped",
+   "reason": "duplicate of mushie-baby-wrap"
   },
   {
    "url": "https://thebabypenguin.com/products/extra-soft-muslin-crib-sheet-2-pack",
@@ -106505,7 +106516,8 @@
    "type": "diapers",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "kanga-care-rumparooz-g3-pocket-diaper"
   },
   {
    "url": "https://www.thenaturalbabyco.com/products/jellycat-the-playful-polar-bears-book",
@@ -123638,7 +123650,8 @@
    "type": "pacifiers",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "bibs-liberty-boheme-pacifier"
   },
   {
    "url": "https://pacifierkids.com/products/pacifier-clip-loop-by-bibs",
@@ -127014,7 +127027,8 @@
    "type": "accessories",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "skipped",
+   "reason": "adult sizes only"
   },
   {
    "url": "https://woodlandmod.com/products/sashiko-the-japanese-art-of-visible-repair",
@@ -135852,7 +135866,8 @@
    "type": "rugs",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "lorena-canals-handloom-rug-natural"
   },
   {
    "url": "https://easytot.com/products/handloom-rug-kaki",
@@ -137302,7 +137317,8 @@
    "type": "furniture",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "bush-acres-roman-toddler-chair"
   },
   {
    "url": "https://easytot.com/products/youth-straight-leg-bamboo-pajamas-christmas-plaid",
@@ -161929,7 +161945,8 @@
    "type": "art",
    "source": "watchlist",
    "first_seen": "2026-10-29",
-   "status": "new"
+   "status": "listed",
+   "listing": "piccalio-beeswax-crayons"
   },
   {
    "url": "https://coloredorganics.com/products/little-one-baby-book-copy",
