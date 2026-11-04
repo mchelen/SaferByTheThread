@@ -657,3 +657,27 @@ test('the header Filters button opens every filter from any page, at desktop and
     await page.close();
   }
 });
+
+// Bug (2026-11-04): Quick view was pinned to the bottom of the whole card, which since the card grew a Buy button
+// put it on top of "Buy at store". It belongs on the photo, clear of the buy row, in every grid and rail.
+test('Quick view sits on the photo and never covers the Buy button', async () => {
+  for (const [url, width] of [['/shop', 1280], ['/shop', 1000], ['/shop', 700], ['/', 1280]]) {
+    const page = await open(url, { width, height: 900 });
+    await page.waitForSelector('.card .card-buy');
+    const card = page.locator('.card:has(.card-buy)').first();
+    await card.scrollIntoViewIfNeeded();
+    await card.hover();
+    await page.waitForTimeout(300);
+    const box = await card.evaluate(c => {
+      const r = el => { const b = c.querySelector(el).getBoundingClientRect(); return { l: b.left, r: b.right, t: b.top, b: b.bottom }; };
+      return { qv: r('.qv-btn'), buy: r('.card-buy'), ph: r('.ph'), vis: getComputedStyle(c.querySelector('.qv-btn')).opacity };
+    });
+    const hit = (a, b) => a.l < b.r && b.l < a.r && a.t < b.b && b.t < a.b;
+    const at = `${url} at ${width}px`;
+    assert.equal(box.vis, '1', `Quick view shows on hover (${at})`);
+    assert.ok(!hit(box.qv, box.buy), `Quick view overlaps Buy at store (${at}): ${JSON.stringify(box)}`);
+    assert.ok(box.qv.t >= box.ph.t && box.qv.b <= box.ph.b + 1, `Quick view sits on the photo (${at}): ${JSON.stringify(box)}`);
+    assert.deepEqual(page.errors, []);
+    await page.close();
+  }
+});
