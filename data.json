@@ -1,6 +1,6 @@
 {
  "schema": 4,
- "updated": "2026-11-03",
+ "updated": "2026-11-04",
  "ask": [
   "Thread on any sewn item (cotton or polyester).",
   "Wheels and axles on push toys and cars.",
@@ -27161,6 +27161,1057 @@
    ],
    "img": "wooden-story-natural-pound-a-peg",
    "img_src": "https://cdn.shopify.com/s/files/1/0020/4180/6905/files/2J2A0681-2.jpg?v=1685219325"
+  },
+  {
+   "id": "crywolf-packable-jacket",
+   "type": "rainwear",
+   "brand": "Crywolf",
+   "line": "Packable Jacket",
+   "uses": [
+    "Non-slip silicone zipper pull"
+   ],
+   "outside": [
+    "Outer: 100% recycled nylon",
+    "Hood lining: 100% recycled polyester",
+    "Body lining: polyester mesh",
+    "Bionic-Finish® Eco water repellent coating"
+   ],
+   "unconfirmed": [
+    "Front zipper",
+    "Elastic in the wrist cuffs",
+    "Seam tape"
+   ],
+   "facts": {
+    "main": "no",
+    "parts": "unknown",
+    "finish": "no"
+   },
+   "unstated": {
+    "parts": [
+     "Front zipper",
+     "Elastic in the wrist cuffs",
+     "Seam tape"
+    ]
+   },
+   "standards": [
+    "oeko-tex"
+   ],
+   "age": {
+    "min_months": 12,
+    "text": "Sizes 1YR and up"
+   },
+   "quote": "Materials Outer: 100% recycled nylon Hood lining: 100% recycled polyester Body lining: polyester mesh",
+   "note": "The page says: “Waterproof to 5,000mm” and that the jacket packs into its own pocket.",
+   "products": [
+    {
+     "name": "PACKABLE JACKET Ash Colourblock",
+     "url": "https://crywolfchild.com/products/packable-jacket-ash-colourblock",
+     "store": "Crywolf",
+     "price": "NZ$62.99 (sale; was NZ$89.99)",
+     "ships_from": "New Zealand"
+    }
+   ],
+   "free": [],
+   "contains": [],
+   "read": "2026-11-04",
+   "photos": [
+    {
+     "key": "crywolf-packable-jacket",
+     "src": "https://cdn.shopify.com/s/files/1/2228/8463/files/CRYWOL_3_4cd7fce3-669e-4639-a2d2-b422c58372cb.jpg?v=1773709821"
+    },
+    {
+     "key": "crywolf-packable-jacket_2",
+     "src": "https://cdn.shopify.com/s/files/1/2228/8463/files/CRYWOLF-AW26-Packable-Jacket-Ash-Colourblock-d-WEB-JPG.jpg?v=1773938144"
+    },
+    {
+     "key": "crywolf-packable-jacket_3",
+     "src": "https://cdn.shopify.com/s/files/1/2228/8463/files/CRYWOL_1_e7712fd8-95bc-481f-9e51-c84d653b4d4c.jpg?v=1773938144"
+    },
+    {
+     "key": "crywolf-packable-jacket_4",
+     "src": "https://cdn.shopify.com/s/files/1/2228/8463/files/CRYWOLF-AW26-Packable-Jacket-Ash-Colourblock-a-WEB-JPG.jpg?v=1773938144"
+    },
+    {
+     "key": "crywolf-packable-jacket_5",
+     "src": "https://cdn.shopify.com/s/files/1/2228/8463/files/CRYWOLF-AW26-Packable-Jacket-Ash-Colourblock-b-WEB-JPG.jpg?v=1773938144"
+    }
+   ],
+   "img": "crywolf-packable-jacket",
+   "img_src": "https://cdn.shopify.com/s/files/1/2228/8463/files/CRYWOL_3_4cd7fce3-669e-4639-a2d2-b422c58372cb.jpg?v=1773709821"
+  },
+  {
+   "id": "crywolf-reversible-bucket-hat",
+   "type": "accessories",
+   "brand": "Crywolf",
+   "line": "Reversible Bucket Hat",
+   "uses": [
+    "Natural cotton twill"
+   ],
+   "unconfirmed": [
+    "Fill of the lightly padded brim",
+    "Fibre of the chin strap",
+    "Toggle and quick-release clips",
+    "Rubber in the branded patch (natural or synthetic not stated)",
+    "Dyes and print inks"
+   ],
+   "facts": {
+    "main": "unknown",
+    "parts": "unknown",
+    "color": "unknown"
+   },
+   "unstated": {
+    "main": [
+     "Fill of the lightly padded brim"
+    ],
+    "parts": [
+     "Fibre of the chin strap",
+     "Toggle and quick-release clips",
+     "Rubber in the branded patch (natural or synthetic not stated)"
+    ],
+    "color": [
+     "Dyes and print inks"
+    ]
+   },
+   "age": {
+    "min_months": 6,
+    "text": "XS fits 6-12 months; S 1-2 years; M 3-6 years"
+   },
+   "quote": "Made from natural cotton twill and available in a range of colours and prints.",
+   "note": "Size L (7-10 years) is also sold.",
+   "products": [
+    {
+     "name": "REVERSIBLE BUCKET HAT Shell",
+     "url": "https://crywolfchild.com/products/reversible-bucket-hat-shell",
+     "store": "Crywolf",
+     "price": "NZ$39.99 (backordered when read)",
+     "ships_from": "New Zealand"
+    }
+   ],
+   "free": [],
+   "outside": [],
+   "standards": [],
+   "contains": [],
+   "read": "2026-11-04",
+   "photos": [
+    {
+     "key": "crywolf-reversible-bucket-hat",
+     "src": "https://cdn.shopify.com/s/files/1/2228/8463/files/CRYWOLF-SS2627-ReversibleBucketHat-Shells-set-WEB-JPG.jpg?v=1788221520"
+    },
+    {
+     "key": "crywolf-reversible-bucket-hat_2",
+     "src": "https://cdn.shopify.com/s/files/1/2228/8463/files/CR919C_1.jpg?v=1787282652"
+    },
+    {
+     "key": "crywolf-reversible-bucket-hat_3",
+     "src": "https://cdn.shopify.com/s/files/1/2228/8463/files/CRB475_1.jpg?v=1787282653"
+    },
+    {
+     "key": "crywolf-reversible-bucket-hat_4",
+     "src": "https://cdn.shopify.com/s/files/1/2228/8463/files/CRYWOLF-SS2627-Rev-BucketHat-Shell-1-Campaign-WEB.jpg?v=1787282664"
+    },
+    {
+     "key": "crywolf-reversible-bucket-hat_5",
+     "src": "https://cdn.shopify.com/s/files/1/2228/8463/files/CRYWOLF-SS2627-Rev-BucketHat-Shell-2-Campaign-WEB.jpg?v=1787282664"
+    },
+    {
+     "key": "crywolf-reversible-bucket-hat_6",
+     "src": "https://cdn.shopify.com/s/files/1/2228/8463/files/CRYWOLF-SS2627-Rev-BucketHat-Shell-3-Campaign-WEB.jpg?v=1787282664"
+    }
+   ],
+   "img": "crywolf-reversible-bucket-hat",
+   "img_src": "https://cdn.shopify.com/s/files/1/2228/8463/files/CRYWOLF-SS2627-ReversibleBucketHat-Shells-set-WEB-JPG.jpg?v=1788221520"
+  },
+  {
+   "id": "crywolf-splash-suit",
+   "type": "rainwear",
+   "brand": "Crywolf",
+   "line": "Splash Suit (one-piece rain suit)",
+   "outside": [
+    "Ripstop 100% recycled polyester"
+   ],
+   "unconfirmed": [
+    "YKK zipper",
+    "Elastic in the cuffs and back",
+    "Seam tape",
+    "Waterproof layer or treatment (not named)"
+   ],
+   "facts": {
+    "main": "no",
+    "parts": "unknown",
+    "finish": "unknown"
+   },
+   "unstated": {
+    "parts": [
+     "YKK zipper",
+     "Elastic in the cuffs and back",
+     "Seam tape"
+    ],
+    "finish": [
+     "Waterproof layer or treatment (not named)"
+    ]
+   },
+   "standards": [
+    "oeko-tex"
+   ],
+   "age": {
+    "min_months": 6,
+    "text": "Sizes 6-12 months to 6 years"
+   },
+   "quote": "Materials Ripstop 100% recycled polyester",
+   "note": "The page says: “Waterproof to 5,000mm” and “Designed in New Zealand”.",
+   "products": [
+    {
+     "name": "SPLASH SUIT Puppies",
+     "url": "https://crywolfchild.com/products/splash-suit-puppies",
+     "store": "Crywolf",
+     "price": "NZ$49.99 (sale; was NZ$79.99)",
+     "ships_from": "New Zealand"
+    }
+   ],
+   "uses": [],
+   "free": [],
+   "contains": [],
+   "read": "2026-11-04",
+   "photos": [
+    {
+     "key": "crywolf-splash-suit",
+     "src": "https://cdn.shopify.com/s/files/1/2228/8463/files/CRYWOLF-AW26-Splash-Suit-Puppies-Front-WEB-JPG.jpg?v=1773781292"
+    },
+    {
+     "key": "crywolf-splash-suit_2",
+     "src": "https://cdn.shopify.com/s/files/1/2228/8463/files/CRYWOLF-AW26-Splash-Suit-Puppies-a-WEB-JPG.jpg?v=1773933386"
+    },
+    {
+     "key": "crywolf-splash-suit_3",
+     "src": "https://cdn.shopify.com/s/files/1/2228/8463/files/CRYWOLF-AW26-Splash-Suit-Puppies-b-WEB-JPG.jpg?v=1773933360"
+    },
+    {
+     "key": "crywolf-splash-suit_4",
+     "src": "https://cdn.shopify.com/s/files/1/2228/8463/files/CRYWOLF-AW26-Splash-Suit-Puppies-d-WEB-JPG.jpg?v=1773933360"
+    }
+   ],
+   "img": "crywolf-splash-suit",
+   "img_src": "https://cdn.shopify.com/s/files/1/2228/8463/files/CRYWOLF-AW26-Splash-Suit-Puppies-Front-WEB-JPG.jpg?v=1773781292"
+  },
+  {
+   "id": "frankenmuth-wool-nursing-pillow",
+   "type": "nursing-pillows",
+   "brand": "Frankenmuth Woolen Mill",
+   "line": "Wool Nursing Pillow and Cover",
+   "uses": [
+    "Climate Beneficial Wool filling",
+    "Certified organic cotton zip cover"
+   ],
+   "unconfirmed": [
+    "Zipper",
+    "Thread",
+    "Whether the wool is treated (superwash or not)"
+   ],
+   "facts": {
+    "main": "yes",
+    "parts": "unknown",
+    "wool": "unknown"
+   },
+   "unstated": {
+    "parts": [
+     "Zipper",
+     "Thread"
+    ],
+    "wool": [
+     "Whether the wool is treated (superwash or not)"
+    ]
+   },
+   "quote": "Material & Origin Climate Beneficial Wool Filling Certified Organic Cotton Fabric Cover Made in the U.S.A. in Frankenmuth, Michigan",
+   "note": "16 x 20 x 5.5 inches with 2 1/3 lb of wool; the page says “Spot clean only.” Bedding is returnable only unused in its original packaging within 7 days.",
+   "products": [
+    {
+     "name": "Wool Nursing Pillow and Cover",
+     "url": "https://wool-bedding.com/products/wool-nursing-pillow-and-cover",
+     "store": "Frankenmuth Woolen Mill",
+     "price": "$225.00",
+     "ships_from": "US",
+     "shipping": "Free ground shipping (contiguous USA only)"
+    }
+   ],
+   "free": [],
+   "outside": [],
+   "standards": [],
+   "contains": [],
+   "read": "2026-11-04",
+   "photos": [
+    {
+     "key": "frankenmuth-wool-nursing-pillow",
+     "src": "https://cdn.shopify.com/s/files/1/2471/0492/files/WoolNursingPillowInCase.jpg?v=1692647606"
+    },
+    {
+     "key": "frankenmuth-wool-nursing-pillow_2",
+     "src": "https://cdn.shopify.com/s/files/1/2471/0492/files/WoolNursingPillowWithCover.jpg?v=1690293861"
+    }
+   ],
+   "img": "frankenmuth-wool-nursing-pillow",
+   "img_src": "https://cdn.shopify.com/s/files/1/2471/0492/files/WoolNursingPillowInCase.jpg?v=1692647606"
+  },
+  {
+   "id": "happy-baby-revolution-carrier",
+   "type": "carriers",
+   "brand": "Happy Baby",
+   "line": "Revolution Carrier (soft structured carrier)",
+   "uses": [
+    "Yarn-dyed linen",
+    "Leather label"
+   ],
+   "unconfirmed": [
+    "Material of the shock absorbing foam in the shoulder straps",
+    "Buckles",
+    "Thread",
+    "Dyes in the yarn-dyed linen",
+    "Tanning of the leather label"
+   ],
+   "facts": {
+    "main": "unknown",
+    "parts": "unknown",
+    "color": "unknown",
+    "tanning": "unknown"
+   },
+   "unstated": {
+    "main": [
+     "Material of the shock absorbing foam in the shoulder straps"
+    ],
+    "parts": [
+     "Buckles",
+     "Thread"
+    ],
+    "color": [
+     "Dyes in the yarn-dyed linen"
+    ],
+    "tanning": [
+     "Tanning of the leather label"
+    ]
+   },
+   "standards": [
+    "us-toy"
+   ],
+   "contains": [
+    "leather"
+   ],
+   "age": {
+    "min_months": 0,
+    "text": "Newborn (7 lbs) to 45 lbs"
+   },
+   "quote": "No detail was overlooked with this carrier, from the yarn-dyed linen and stylish leather label to the ergonomic shoulder straps with shock absorbing foam.",
+   "note": "The page says: “Made in the USA with imported fabric”. Sold by The Natural Baby Company in Pebble; not returnable.",
+   "products": [
+    {
+     "name": "Happy Baby Revolution Carrier Pebble",
+     "url": "https://www.thenaturalbabyco.com/products/happy-baby-revolution-carrier-pebble",
+     "store": "The Natural Baby Company",
+     "price": "$198.00",
+     "ships_from": null
+    }
+   ],
+   "free": [],
+   "outside": [],
+   "read": "2026-11-04",
+   "photos": [
+    {
+     "key": "happy-baby-revolution-carrier",
+     "src": "https://cdn.shopify.com/s/files/1/2386/1081/files/Screenshot2026-07-27at7.41.50PM.png?v=1785283927"
+    }
+   ],
+   "img": "happy-baby-revolution-carrier",
+   "img_src": "https://cdn.shopify.com/s/files/1/2386/1081/files/Screenshot2026-07-27at7.41.50PM.png?v=1785283927"
+  },
+  {
+   "id": "hevea-bath-buddy",
+   "type": "bath",
+   "brand": "Hevea",
+   "line": "Bath Buddy (floating dog with life buoy)",
+   "uses": [
+    "100% natural rubber from the Hevea brasiliensis tree"
+   ],
+   "unconfirmed": [
+    "Other additives in the rubber compound",
+    "Colour pigments"
+   ],
+   "facts": {
+    "main": "yes",
+    "color": "unknown",
+    "rubber": "unknown"
+   },
+   "unstated": {
+    "rubber": [
+     "Other additives in the rubber compound"
+    ],
+    "color": [
+     "Colour pigments"
+    ]
+   },
+   "contains": [
+    "latex"
+   ],
+   "quote": "Made from 100% natural rubber from the Hevea brasiliensis tree, this floating bath toy features a detachable life buoy that adds an interactive element for little hands to explore.",
+   "note": "Comes as Charlie, Maggie or Max. The page says the FSC certified packaging folds into a small dog house.",
+   "products": [
+    {
+     "name": "Bath Buddy",
+     "url": "https://us.heveaplanet.com/products/bath-buddy-puppy",
+     "store": "Hevea Planet USA",
+     "price": "$23.95",
+     "ships_from": null
+    }
+   ],
+   "free": [],
+   "outside": [],
+   "standards": [],
+   "read": "2026-11-04",
+   "photos": [
+    {
+     "key": "hevea-bath-buddy",
+     "src": "https://cdn.shopify.com/s/files/1/1027/0038/4590/files/HEVEA_Product_Bath_Buddies_Puppies_Maggie_1_6000fe81-87c6-4727-bc49-98342c33da4d.jpg?v=1777032696"
+    },
+    {
+     "key": "hevea-bath-buddy_2",
+     "src": "https://cdn.shopify.com/s/files/1/1027/0038/4590/files/HEVEA_Lifestyle_Bath_Buddies_Puppies_Max_0c51cdf1-a35d-4687-a03d-21b1a3e20b58.jpg?v=1777032696"
+    },
+    {
+     "key": "hevea-bath-buddy_3",
+     "src": "https://cdn.shopify.com/s/files/1/1027/0038/4590/files/HEVEA_Lifestyle_Bath_Buddies_Puppies_252ce975-4988-4ed5-85c7-151b0fb8e722.jpg?v=1777032696"
+    },
+    {
+     "key": "hevea-bath-buddy_4",
+     "src": "https://cdn.shopify.com/s/files/1/1027/0038/4590/files/HEVEA_Lifestyle_Bath_Buddies_Puppies_Max_2_ada62e3b-4344-4376-b801-cdaf5cdf544f.jpg?v=1777032696"
+    },
+    {
+     "key": "hevea-bath-buddy_5",
+     "src": "https://cdn.shopify.com/s/files/1/1027/0038/4590/files/HEVEA_Lifestyle_Bath_Buddies_Puppies_Maggie_290bee3b-0a1c-44e7-a73d-346b3fa56bee.jpg?v=1777032696"
+    },
+    {
+     "key": "hevea-bath-buddy_6",
+     "src": "https://cdn.shopify.com/s/files/1/1027/0038/4590/files/HEVEA_Product_Packaging_Bath_Buddies_Puppies_Maggie_3_fcc8c64c-525a-4479-8174-40f557b8da3d.jpg?v=1777032696"
+    },
+    {
+     "key": "hevea-bath-buddy_7",
+     "src": "https://cdn.shopify.com/s/files/1/1027/0038/4590/files/HEVEA_Lifestyle_Bath_Buddies_Puppies_Charlie_01cc9233-d546-49a8-8415-555c05defdd7.jpg?v=1777032696"
+    }
+   ],
+   "img": "hevea-bath-buddy",
+   "img_src": "https://cdn.shopify.com/s/files/1/1027/0038/4590/files/HEVEA_Product_Bath_Buddies_Puppies_Maggie_1_6000fe81-87c6-4727-bc49-98342c33da4d.jpg?v=1777032696"
+  },
+  {
+   "id": "little-green-radicals-ankle-socks",
+   "type": "accessories",
+   "brand": "Little Green Radicals",
+   "line": "Ankle Socks 3 Pack",
+   "uses": [
+    "71% organic cotton",
+    "Non-slip silicone stars on the soles (sizes 0-2y)"
+   ],
+   "outside": [
+    "20% recycled nylon, 7% nylon, 2% elastane"
+   ],
+   "unconfirmed": [
+    "Dyes"
+   ],
+   "facts": {
+    "main": "no",
+    "color": "unknown",
+    "organic": "yes"
+   },
+   "unstated": {
+    "color": [
+     "Dyes"
+    ]
+   },
+   "standards": [
+    "gots"
+   ],
+   "age": {
+    "min_months": 0,
+    "max_months": 96,
+    "text": "Sizes 0-6 months to 6-8 years"
+   },
+   "quote": "Material: 71% Organic Cotton 20% Recycled Nylon 7% Nylon 2% Elastane",
+   "products": [
+    {
+     "name": "Blue Penguins Ankle Socks 3 Pack",
+     "url": "https://littlegreenradicals.com/products/blue-penguins-ankle-socks-3-pack",
+     "store": "Little Green Radicals",
+     "price": "$25.20",
+     "ships_from": null,
+     "shipping": "USA standard delivery (8-12 working days) $15, free on orders over $100"
+    }
+   ],
+   "free": [],
+   "contains": [],
+   "read": "2026-11-04",
+   "photos": [
+    {
+     "key": "little-green-radicals-ankle-socks",
+     "src": "https://cdn.shopify.com/s/files/1/0258/8147/7195/files/A26-760-BLU_1_5056630698617_1_2000x2000_20799d4e-d4d0-4c08-abbe-5576e8f65000.jpg?v=1785746393"
+    },
+    {
+     "key": "little-green-radicals-ankle-socks_2",
+     "src": "https://cdn.shopify.com/s/files/1/0258/8147/7195/files/A26-760-BLU_4_5056630698617_1_2000x2000_acf54b21-e88d-45a0-bae2-a9f9008ce977.jpg?v=1785746393"
+    },
+    {
+     "key": "little-green-radicals-ankle-socks_3",
+     "src": "https://cdn.shopify.com/s/files/1/0258/8147/7195/files/A26-760-BLU_5_5056630698617_1_2000x2000_0a12ec57-913b-4bd0-bf3c-6184f85441a0.jpg?v=1785746393"
+    },
+    {
+     "key": "little-green-radicals-ankle-socks_4",
+     "src": "https://littlegreenradicals.com/cdn/shop/files/A26-760-BLU_1_5056630698617_1_2000x2000_20799d4e-d4d0-4c08-abbe-5576e8f65000.jpg?v=1785746393&width=1920"
+    }
+   ],
+   "img": "little-green-radicals-ankle-socks",
+   "img_src": "https://cdn.shopify.com/s/files/1/0258/8147/7195/files/A26-760-BLU_1_5056630698617_1_2000x2000_20799d4e-d4d0-4c08-abbe-5576e8f65000.jpg?v=1785746393"
+  },
+  {
+   "id": "little-green-radicals-hooded-snug-suit",
+   "type": "rainwear",
+   "brand": "Little Green Radicals",
+   "line": "Hooded Reversible Snug Suit",
+   "uses": [
+    "100% organic & Fairtrade interlock cotton"
+   ],
+   "facts": {
+    "main": "yes",
+    "parts": "unknown",
+    "color": "unknown",
+    "organic": "yes"
+   },
+   "standards": [
+    "gots"
+   ],
+   "age": {
+    "min_months": 0,
+    "max_months": 36,
+    "text": "Sizes 0-3 months to 2-3 years"
+   },
+   "quote": "Material: 100% Organic & Fairtrade Interlock Cotton",
+   "products": [
+    {
+     "name": "Blue Penguins Hooded Reversible Snug Suit",
+     "url": "https://littlegreenradicals.com/products/blue-penguins-hooded-snug-suit",
+     "store": "Little Green Radicals",
+     "price": "$68.40",
+     "ships_from": null,
+     "shipping": "USA standard delivery (8-12 working days) $15, free on orders over $100"
+    }
+   ],
+   "unconfirmed": [
+    "Fastenings",
+    "Thread",
+    "Dyes and print inks"
+   ],
+   "unstated": {
+    "parts": [
+     "Fastenings",
+     "Thread"
+    ],
+    "color": [
+     "Dyes and print inks"
+    ]
+   },
+   "note": "Two layers of interlock cotton, reversible, with thumbholes; not described as waterproof.",
+   "free": [],
+   "outside": [],
+   "contains": [],
+   "read": "2026-11-04",
+   "photos": [
+    {
+     "key": "little-green-radicals-hooded-snug-suit",
+     "src": "https://cdn.shopify.com/s/files/1/0258/8147/7195/files/A26-877-PEN_5056890011157_7_2000x2000_310f2283-37bc-4ab1-9e89-fa6818d6995d.jpg?v=1785746257"
+    },
+    {
+     "key": "little-green-radicals-hooded-snug-suit_2",
+     "src": "https://cdn.shopify.com/s/files/1/0258/8147/7195/files/A26-877-PEN_1_5056890011157_1_2000x2000_36ad0112-6137-42da-96a4-378d63358283.jpg?v=1785746256"
+    },
+    {
+     "key": "little-green-radicals-hooded-snug-suit_3",
+     "src": "https://cdn.shopify.com/s/files/1/0258/8147/7195/files/A26-877-PEN_5056890011157_3_2000x2000_52986b42-62a4-4d83-9fb8-5b3be1928ca2.jpg?v=1785746257"
+    },
+    {
+     "key": "little-green-radicals-hooded-snug-suit_4",
+     "src": "https://cdn.shopify.com/s/files/1/0258/8147/7195/files/A26-877-PEN_5056890011157_6_2000x2000_f2354f22-f852-451f-a706-c3f67e4b1e49.jpg?v=1785746257"
+    },
+    {
+     "key": "little-green-radicals-hooded-snug-suit_5",
+     "src": "https://cdn.shopify.com/s/files/1/0258/8147/7195/files/A26-877-PEN_2_5056890011157_5_2000x2000_5a91d438-c626-431b-bee1-71173ea1ee9b.jpg?v=1785746256"
+    },
+    {
+     "key": "little-green-radicals-hooded-snug-suit_6",
+     "src": "https://cdn.shopify.com/s/files/1/0258/8147/7195/files/A26-877-PEN_2_5056890011157_4_2000x2000_5765409e-163b-49bf-8b0c-1c506c00210d.jpg?v=1785746256"
+    },
+    {
+     "key": "little-green-radicals-hooded-snug-suit_7",
+     "src": "https://cdn.shopify.com/s/files/1/0258/8147/7195/files/A26-877-PEN_5056890011157_2_2000x2000_1ab86a90-2b68-4d70-a292-0f3826756831.jpg?v=1785746257"
+    },
+    {
+     "key": "little-green-radicals-hooded-snug-suit_8",
+     "src": "https://cdn.shopify.com/s/files/1/0258/8147/7195/files/A26-877-PEN_1_5056890011157_4_2000x2000_d25c0354-bae9-4513-bb33-be26a7d130f6.jpg?v=1785746256"
+    },
+    {
+     "key": "little-green-radicals-hooded-snug-suit_9",
+     "src": "https://cdn.shopify.com/s/files/1/0258/8147/7195/files/A26-877-PEN_1_5056890011157_5_2000x2000_54e5fdf7-294c-4062-a29b-f021b7dc8bf3.jpg?v=1785746256"
+    }
+   ],
+   "img": "little-green-radicals-hooded-snug-suit",
+   "img_src": "https://cdn.shopify.com/s/files/1/0258/8147/7195/files/A26-877-PEN_5056890011157_7_2000x2000_310f2283-37bc-4ab1-9e89-fa6818d6995d.jpg?v=1785746257"
+  },
+  {
+   "id": "little-green-radicals-knitted-beanie-hat",
+   "type": "accessories",
+   "brand": "Little Green Radicals",
+   "line": "Knitted Beanie Hat",
+   "uses": [
+    "100% organic & Fairtrade cotton"
+   ],
+   "facts": {
+    "main": "yes",
+    "parts": "unknown",
+    "color": "unknown",
+    "organic": "yes"
+   },
+   "standards": [
+    "gots"
+   ],
+   "age": {
+    "min_months": 0,
+    "max_months": 96,
+    "text": "Sizes 0-6 months to 5-8 years"
+   },
+   "quote": "Material: 100% Organic & Fairtrade Cotton",
+   "products": [
+    {
+     "name": "Ginger Squares Knitted Beanie Hat",
+     "url": "https://littlegreenradicals.com/products/ginger-squares-knitted-beanie-hat",
+     "store": "Little Green Radicals",
+     "price": "$30.60",
+     "ships_from": null,
+     "shipping": "USA standard delivery (8-12 working days) $15, free on orders over $100"
+    }
+   ],
+   "unconfirmed": [
+    "Thread",
+    "Dyes"
+   ],
+   "unstated": {
+    "parts": [
+     "Thread"
+    ],
+    "color": [
+     "Dyes"
+    ]
+   },
+   "free": [],
+   "outside": [],
+   "contains": [],
+   "read": "2026-11-04",
+   "photos": [
+    {
+     "key": "little-green-radicals-knitted-beanie-hat",
+     "src": "https://cdn.shopify.com/s/files/1/0258/8147/7195/files/A26-843-DIA_5056890002759_1_2000x2000_7aae3971-97c1-4543-8a82-50a83ef96771.jpg?v=1785426872"
+    },
+    {
+     "key": "little-green-radicals-knitted-beanie-hat_2",
+     "src": "https://cdn.shopify.com/s/files/1/0258/8147/7195/files/A26-843-DIA_5056890002759_5_2000x2000_f357aea5-2e19-4793-9077-9192961090f5.jpg?v=1785426873"
+    },
+    {
+     "key": "little-green-radicals-knitted-beanie-hat_3",
+     "src": "https://cdn.shopify.com/s/files/1/0258/8147/7195/files/A26-843-DIA_5056890002759_4_2000x2000_8d2fff5d-c564-4f73-96f0-2dd24ccebf10.jpg?v=1785426873"
+    }
+   ],
+   "img": "little-green-radicals-knitted-beanie-hat",
+   "img_src": "https://cdn.shopify.com/s/files/1/0258/8147/7195/files/A26-843-DIA_5056890002759_1_2000x2000_7aae3971-97c1-4543-8a82-50a83ef96771.jpg?v=1785426872"
+  },
+  {
+   "id": "little-green-radicals-sherpa-lined-mittens",
+   "type": "accessories",
+   "brand": "Little Green Radicals",
+   "line": "Sherpa Lined Mittens",
+   "uses": [
+    "100% organic Fairtrade cotton poplin and cotton sherpa lining"
+   ],
+   "facts": {
+    "main": "yes",
+    "parts": "unknown",
+    "color": "unknown",
+    "organic": "yes"
+   },
+   "standards": [
+    "gots"
+   ],
+   "age": {
+    "min_months": 0,
+    "max_months": 96,
+    "text": "Sizes 0-6 months to 5-8 years"
+   },
+   "quote": "Material: 100% Organic Fairtrade Poplin & Sherpa Cotton",
+   "products": [
+    {
+     "name": "Blue Bears Sherpa Lined Mittens",
+     "url": "https://littlegreenradicals.com/products/blue-bears-sherpa-lined-mittens",
+     "store": "Little Green Radicals",
+     "price": "$39.60",
+     "ships_from": null,
+     "shipping": "USA standard delivery (8-12 working days) $15, free on orders over $100"
+    }
+   ],
+   "unconfirmed": [
+    "Fibre of the wrist band",
+    "Thread",
+    "Dyes and print inks"
+   ],
+   "unstated": {
+    "parts": [
+     "Fibre of the wrist band",
+     "Thread"
+    ],
+    "color": [
+     "Dyes and print inks"
+    ]
+   },
+   "note": "Size 0-6 months has no thumbs.",
+   "free": [],
+   "outside": [],
+   "contains": [],
+   "read": "2026-11-04",
+   "photos": [
+    {
+     "key": "little-green-radicals-sherpa-lined-mittens",
+     "src": "https://cdn.shopify.com/s/files/1/0258/8147/7195/files/A26-805-BEA_5056890005903_1_2000x2000_86090565-b0d6-42ef-99b6-09428fc7abb6.jpg?v=1785745710"
+    },
+    {
+     "key": "little-green-radicals-sherpa-lined-mittens_2",
+     "src": "https://cdn.shopify.com/s/files/1/0258/8147/7195/files/A26-805-BEA_5056890005903_4_2000x2000_3927c0c4-fcfc-4762-8e4c-18e12f486431.jpg?v=1785745710"
+    },
+    {
+     "key": "little-green-radicals-sherpa-lined-mittens_3",
+     "src": "https://cdn.shopify.com/s/files/1/0258/8147/7195/files/A26-805-BEA_5056890005903_5_2000x2000_966fc5d9-3020-40b9-9712-a35d5aca07e8.jpg?v=1785745710"
+    }
+   ],
+   "img": "little-green-radicals-sherpa-lined-mittens",
+   "img_src": "https://cdn.shopify.com/s/files/1/0258/8147/7195/files/A26-805-BEA_5056890005903_1_2000x2000_86090565-b0d6-42ef-99b6-09428fc7abb6.jpg?v=1785745710"
+  },
+  {
+   "id": "misha-and-puff-baby-wrap-set",
+   "type": "clothes",
+   "brand": "Misha and Puff",
+   "line": "Baby Wrap Set (wrap top and pull-on bottoms)",
+   "uses": [
+    "100% organic pima cotton"
+   ],
+   "unconfirmed": [
+    "Front snaps",
+    "Thread",
+    "Dyes and print inks"
+   ],
+   "facts": {
+    "main": "yes",
+    "parts": "unknown",
+    "color": "unknown",
+    "organic": "yes"
+   },
+   "unstated": {
+    "parts": [
+     "Front snaps",
+     "Thread"
+    ],
+    "color": [
+     "Dyes and print inks"
+    ]
+   },
+   "standards": [
+    "organic-unnamed"
+   ],
+   "age": {
+    "min_months": 0,
+    "max_months": 9,
+    "text": "Sizes newborn to 6-9 months"
+   },
+   "quote": "100% organic pima cotton Made in Peru",
+   "note": "Made in Peru (store page). Sold by Acorn Toy Shop in Mist Bunny Meadow; sold out when read.",
+   "products": [
+    {
+     "name": "Misha and Puff Baby Wrap Set · Mist Bunny Meadow",
+     "url": "https://www.acorntoyshop.com/products/misha-and-puff-baby-wrap-set-mist-bunny-meadow",
+     "store": "Acorn Toy Shop",
+     "price": "$46.80 (sale; was $78.00; sold out when read)",
+     "ships_from": null
+    }
+   ],
+   "free": [],
+   "outside": [],
+   "contains": [],
+   "read": "2026-11-04",
+   "photos": [
+    {
+     "key": "misha-and-puff-baby-wrap-set",
+     "src": "https://cdn.shopify.com/s/files/1/0050/2048/3699/files/MishaandPuffBabyWrapSet_MistBunnyMeadow.png?v=1770495858"
+    }
+   ],
+   "img": "misha-and-puff-baby-wrap-set",
+   "img_src": "https://cdn.shopify.com/s/files/1/0050/2048/3699/files/MishaandPuffBabyWrapSet_MistBunnyMeadow.png?v=1770495858"
+  },
+  {
+   "id": "mushie-water-wheel-bath-toy",
+   "type": "bath",
+   "brand": "Mushie",
+   "line": "Water Wheel Bath Toy",
+   "uses": [
+    "Food grade silicone"
+   ],
+   "outside": [
+    "ABS plastic"
+   ],
+   "free": [
+    "BPA",
+    "BPS",
+    "PVC",
+    "Phthalates"
+   ],
+   "unconfirmed": [
+    "Pigments"
+   ],
+   "facts": {
+    "main": "no",
+    "color": "unknown",
+    "lead": "yes"
+   },
+   "unstated": {
+    "color": [
+     "Pigments"
+    ]
+   },
+   "standards": [
+    "us-toy"
+   ],
+   "age": {
+    "min_months": 10,
+    "text": "10 months and up"
+   },
+   "quote": "Made with high-quality food grade silicone and ABS plastic",
+   "note": "A spinning wheel that suctions to the tub, with a spoon.",
+   "products": [
+    {
+     "name": "Water Wheel Bath Toy",
+     "url": "https://mushie.com/products/water-wheel-bath-toy",
+     "store": "Mushie",
+     "price": "$19.99",
+     "ships_from": null,
+     "shipping": "Free Shipping for US orders $75+"
+    }
+   ],
+   "contains": [],
+   "read": "2026-11-04",
+   "photos": [
+    {
+     "key": "mushie-water-wheel-bath-toy",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/WaterWheelBathToy_BlushConfetti.jpg?v=1790711907"
+    },
+    {
+     "key": "mushie-water-wheel-bath-toy_2",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/Water-Wheel-Info.jpg?v=1768517693"
+    },
+    {
+     "key": "mushie-water-wheel-bath-toy_3",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/03_flatlays_july-70.jpg?v=1790712331"
+    },
+    {
+     "key": "mushie-water-wheel-bath-toy_4",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/04_june_shoot-27.jpg?v=1790712331"
+    },
+    {
+     "key": "mushie-water-wheel-bath-toy_5",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/june12shoot_val-28.jpg?v=1768517693"
+    },
+    {
+     "key": "mushie-water-wheel-bath-toy_6",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/AZADE-9_852d4f0d-6642-4d54-9b11-4ea3f47cb111.jpg?v=1768517693"
+    },
+    {
+     "key": "mushie-water-wheel-bath-toy_7",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/Noe_girl-66-2.jpg?v=1779816698"
+    },
+    {
+     "key": "mushie-water-wheel-bath-toy_8",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/NUSAxMushie-43.jpg?v=1768517693"
+    },
+    {
+     "key": "mushie-water-wheel-bath-toy_9",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/05_june12shoot_val-25.jpg?v=1790712331"
+    },
+    {
+     "key": "mushie-water-wheel-bath-toy_10",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/ebba_19.11-104.jpg?v=1768517693"
+    }
+   ],
+   "img": "mushie-water-wheel-bath-toy",
+   "img_src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/WaterWheelBathToy_BlushConfetti.jpg?v=1790711907"
+  },
+  {
+   "id": "western-chief-lucy-ladybug-raincoat",
+   "type": "rainwear",
+   "brand": "Western Chief",
+   "line": "Kids Lucy Ladybug Raincoat",
+   "outside": [
+    "Water-resistant polyurethane shell",
+    "Jersey polyester/cotton lining"
+   ],
+   "unconfirmed": [
+    "Zipper",
+    "Button snaps",
+    "Elastic at the waist and cuffs",
+    "3-D details",
+    "Print on the shell"
+   ],
+   "facts": {
+    "main": "no",
+    "parts": "unknown",
+    "color": "unknown"
+   },
+   "unstated": {
+    "parts": [
+     "Zipper",
+     "Button snaps",
+     "Elastic at the waist and cuffs"
+    ],
+    "color": [
+     "Print on the shell"
+    ]
+   },
+   "age": {
+    "min_months": 24,
+    "text": "Sizes 2 Toddler to 6 Toddler"
+   },
+   "quote": "Water-resistant polyurethane shell",
+   "products": [
+    {
+     "name": "Kids Lucy Ladybug Raincoat - Red",
+     "url": "https://www.westernchief.com/products/kids-lucy-ladybug-rain-coat-red",
+     "store": "Western Chief",
+     "price": "$29.95 (sale; regular $50.00)",
+     "ships_from": null,
+     "shipping": "Free shipping on orders $80+"
+    }
+   ],
+   "uses": [],
+   "free": [],
+   "standards": [],
+   "contains": [],
+   "read": "2026-11-04",
+   "photos": [
+    {
+     "key": "western-chief-lucy-ladybug-raincoat",
+     "src": "https://cdn.shopify.com/s/files/1/0834/2683/products/kids-lucy-ladybug-raincoat-red-732102.jpg?v=1705388116"
+    },
+    {
+     "key": "western-chief-lucy-ladybug-raincoat_2",
+     "src": "https://cdn.shopify.com/s/files/1/0834/2683/products/kids-lucy-ladybug-raincoat-red-378747.jpg?v=1705388116"
+    }
+   ],
+   "img": "western-chief-lucy-ladybug-raincoat",
+   "img_src": "https://cdn.shopify.com/s/files/1/0834/2683/products/kids-lucy-ladybug-raincoat-red-732102.jpg?v=1705388116"
+  },
+  {
+   "id": "wildbird-linen-ring-sling",
+   "type": "carriers",
+   "brand": "WildBird",
+   "line": "Linen Ring Sling",
+   "uses": [
+    "100% natural linen"
+   ],
+   "unconfirmed": [
+    "Rings",
+    "Thread",
+    "Low-impact dyes (not named)"
+   ],
+   "facts": {
+    "main": "yes",
+    "parts": "unknown",
+    "color": "unknown"
+   },
+   "unstated": {
+    "parts": [
+     "Rings",
+     "Thread"
+    ],
+    "color": [
+     "Low-impact dyes (not named)"
+    ]
+   },
+   "standards": [
+    "us-toy"
+   ],
+   "age": {
+    "min_months": 0,
+    "max_months": 36,
+    "text": "0–36 months, up to 35 lbs"
+   },
+   "quote": "Material: 100% natural linen woven with European linen fibers.",
+   "note": "Standard (74 inch) and Long (90 inch) sizes; worn on the front or hip.",
+   "products": [
+    {
+     "name": "WildBird Linen Sling – Acadian",
+     "url": "https://www.bambibaby.com/products/willow-linen-sling",
+     "store": "Bambi Baby",
+     "price": "$68",
+     "ships_from": "US",
+     "shipping": "Free shipping on orders over $28"
+    },
+    {
+     "name": "Wildbird Ring Sling",
+     "url": "https://www.kidslandusa.com/products/wildbird-ring-sling",
+     "store": "Kidsland USA",
+     "price": "$68",
+     "ships_from": "US",
+     "shipping": "Free shipping on orders over $49"
+    }
+   ],
+   "free": [],
+   "outside": [],
+   "contains": [],
+   "read": "2026-11-04",
+   "photos": [
+    {
+     "key": "wildbird-linen-ring-sling",
+     "src": "https://www.bambibaby.com/cdn/shop/files/02._Acadian_Sling_800x800_1b789b7d-999f-4f19-b173-5586deabb4f3.webp?v=1793079669&width=1280"
+    },
+    {
+     "key": "wildbird-linen-ring-sling_2",
+     "src": "https://www.bambibaby.com/cdn/shop/files/Acadian-sling-lifestyle-2_3_800x800_ca0fba8c-9b8a-48b1-a5fa-0c814d14a8c8.webp?v=1793079672&width=1280"
+    },
+    {
+     "key": "wildbird-linen-ring-sling_3",
+     "src": "https://www.bambibaby.com/cdn/shop/files/Acadian-sling-lifestyle-2_1_800x800_124fbec4-2d8e-46f1-bd26-47bd2050e460.jpg?v=1793079675&width=1280"
+    },
+    {
+     "key": "wildbird-linen-ring-sling_4",
+     "src": "https://www.bambibaby.com/cdn/shop/files/Acadian-sling-lifestyle_800x800_2ead060a-9500-4278-8709-0c245f4852f9.webp?v=1793079681&width=1280"
+    },
+    {
+     "key": "wildbird-linen-ring-sling_5",
+     "src": "https://www.bambibaby.com/cdn/shop/files/WildBird_Linen_Sling_-_Desert_Lark_4_800x800_72ad2d3a-9491-41d0-8a46-c7c8257965d8.webp?v=1793079838&width=1280"
+    },
+    {
+     "key": "wildbird-linen-ring-sling_6",
+     "src": "https://www.bambibaby.com/cdn/shop/files/01._Swan_Sling_1_800x800_31c112a8-4597-48aa-9af2-c547580721e2.webp?v=1793079914&width=1280"
+    },
+    {
+     "key": "wildbird-linen-ring-sling_7",
+     "src": "https://www.bambibaby.com/cdn/shop/files/raven_sling_wildbird_3_800x800_565e0646-2bc3-44dc-880c-b42d1172cb73.webp?v=1793080001&width=1280"
+    },
+    {
+     "key": "wildbird-linen-ring-sling_8",
+     "src": "https://www.bambibaby.com/cdn/shop/files/sparrow_sling_2_800x800_a9a31454-7088-4e60-a29a-12128d337e6f.webp?v=1793080073&width=1280"
+    },
+    {
+     "key": "wildbird-linen-ring-sling_9",
+     "src": "https://www.bambibaby.com/cdn/shop/files/Ring_Sling_Graphic_Desktop_800x800_5d5c827e-8c55-4bae-8d78-1bef5c958b5c.webp?v=1793079685&width=2048"
+    }
+   ],
+   "img": "wildbird-linen-ring-sling",
+   "img_src": "https://www.bambibaby.com/cdn/shop/files/02._Acadian_Sling_800x800_1b789b7d-999f-4f19-b173-5586deabb4f3.webp?v=1793079669&width=1280"
   }
  ]
 }
