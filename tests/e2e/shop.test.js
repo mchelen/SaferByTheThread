@@ -288,6 +288,19 @@ test('product page compares the item with similar ones and keeps a buy bar in re
   await page.close();
 });
 
+test('the "This item" label does not push the current item\'s photo below the other photos in the similar items', async () => {
+  for (const viewport of [{ width: 1280, height: 900 }, { width: 390, height: 800 }]) {
+    const page = await open('/p/home-of-wool-organic-baby-play-mat', viewport);
+    await page.waitForSelector('.similar .cmp');
+    const tops = await page.evaluate(() => [...document.querySelectorAll('.similar thead th .ph')].map(p => Math.round(p.getBoundingClientRect().top)));
+    assert.ok(tops.length >= 2, 'the current item and at least one similar item');
+    assert.deepEqual(tops, tops.map(() => tops[0]), `photo tops line up at ${viewport.width}px`);
+    assert.ok(await page.locator('.similar thead th.here .here-t').isVisible(), 'the label still shows');
+    assert.deepEqual(page.errors, []);
+    await page.close();
+  }
+});
+
 test('scrolling the similar items sideways keeps the label column on top of photos, buttons and icons', async () => {
   const page = await open('/p/hevea-star-activity-ball-natural-rubber-colour', { width: 390, height: 800 });
   await page.waitForSelector('.similar .cmp');
