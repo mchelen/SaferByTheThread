@@ -288,6 +288,19 @@ test('product page compares the item with similar ones and keeps a buy bar in re
   await page.close();
 });
 
+test('the "This item" label does not push the current item\'s photo below the other photos in the similar items', async () => {
+  for (const viewport of [{ width: 1280, height: 900 }, { width: 390, height: 800 }]) {
+    const page = await open('/p/home-of-wool-organic-baby-play-mat', viewport);
+    await page.waitForSelector('.similar .cmp');
+    const tops = await page.evaluate(() => [...document.querySelectorAll('.similar thead th .ph')].map(p => Math.round(p.getBoundingClientRect().top)));
+    assert.ok(tops.length >= 2, 'the current item and at least one similar item');
+    assert.deepEqual(tops, tops.map(() => tops[0]), `photo tops line up at ${viewport.width}px`);
+    assert.ok(await page.locator('.similar thead th.here .here-t').isVisible(), 'the label still shows');
+    assert.deepEqual(page.errors, []);
+    await page.close();
+  }
+});
+
 test('scrolling the similar items sideways keeps the label column on top of photos, buttons and icons', async () => {
   const page = await open('/p/hevea-star-activity-ball-natural-rubber-colour', { width: 390, height: 800 });
   await page.waitForSelector('.similar .cmp');
@@ -685,4 +698,28 @@ test('a category menu opened by hover stays open while the pointer rests on it (
   }
   assert.deepEqual(page.errors, []);
   await page.close();
+});
+
+// Bug (2026-11-04): Quick view was pinned to the bottom of the whole card, which since the card grew a Buy button
+// put it on top of "Buy at store". It belongs on the photo, clear of the buy row, in every grid and rail.
+test('Quick view sits on the photo and never covers the Buy button', async () => {
+  for (const [url, width] of [['/shop', 1280], ['/shop', 1000], ['/shop', 700], ['/', 1280]]) {
+    const page = await open(url, { width, height: 900 });
+    await page.waitForSelector('.card .card-buy');
+    const card = page.locator('.card:has(.card-buy)').first();
+    await card.scrollIntoViewIfNeeded();
+    await card.hover();
+    await page.waitForTimeout(300);
+    const box = await card.evaluate(c => {
+      const r = el => { const b = c.querySelector(el).getBoundingClientRect(); return { l: b.left, r: b.right, t: b.top, b: b.bottom }; };
+      return { qv: r('.qv-btn'), buy: r('.card-buy'), ph: r('.ph'), vis: getComputedStyle(c.querySelector('.qv-btn')).opacity };
+    });
+    const hit = (a, b) => a.l < b.r && b.l < a.r && a.t < b.b && b.t < a.b;
+    const at = `${url} at ${width}px`;
+    assert.equal(box.vis, '1', `Quick view shows on hover (${at})`);
+    assert.ok(!hit(box.qv, box.buy), `Quick view overlaps Buy at store (${at}): ${JSON.stringify(box)}`);
+    assert.ok(box.qv.t >= box.ph.t && box.qv.b <= box.ph.b + 1, `Quick view sits on the photo (${at}): ${JSON.stringify(box)}`);
+    assert.deepEqual(page.errors, []);
+    await page.close();
+  }
 });

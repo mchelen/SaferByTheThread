@@ -6,10 +6,14 @@ All notable changes to the site are listed here. The format follows [Keep a Chan
 
 ### Fixed
 - On desktop, a category or Materials menu in the top bar no longer disappears a moment after it opens when the mouse comes from the logo or search box.
+- Quick view on result cards sits on the bottom of the photo again instead of on top of the Buy at store button.
 
 ### Changed
 - Share (on cards, the buy box, the phone buy bar, similar items, compare, quick view and shared lists) opens a menu instead of copying straight away: Copy link, Email, WhatsApp, Facebook, X, Pinterest (with the product photo) and Instagram, plus Messages on touch devices and More (the device's own share sheet) where the browser has one. Instagram has no web link for sharing, so its tile opens the share sheet where the Instagram app appears, or else copies the link and opens Instagram messages. It is a small panel under the button on desktop and a sheet from the bottom on phones. Every option shares this site's page, never the store's.
 - Filters on result pages (departments, product types, materials, brands, search, the shop) sit in one row of chips above the results, as on Amazon: Filters (the full panel), Product type, Age range, Brand, Materials, Tests, Price, Shipping, Ships from and a Free shipping toggle. Each chip opens its options in a dropdown (a sheet from the bottom on phones); the Materials dropdown is the same tree, with the same checked-is-included rules. A chip with something on shows filled, with its choice or a count, and Clear all appears at the end. The row scrolls sideways and stays under the header on phones. The left filter rail, the quick-filter row and the row of removable filter chips are gone, so results use the full width (five across on desktop).
+
+### Fixed
+- "Compare with similar items" on product pages: the "This item" label sits as a small badge on the current item's photo, so all the photos line up on one line. Before, the label pushed that photo lower than the others.
 
 ### Added
 - Glossary entry "Wood" (54 terms), with sources from the USDA Forest Products Laboratory, Britannica and the EPA. "Made with" lines that name wood or a wooden part without a kind ("Sustainably forested wood", "Wooden storage jars") now link to it, where before they linked to nothing.

@@ -208,7 +208,7 @@ h3 { font-size: 15px; }
 /* ---------- product grid and cards ---------- */
 .grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px 16px; }
 .grid.cols-3 { grid-template-columns: repeat(3, 1fr); }
-.card { position: relative; display: flex; flex-direction: column; min-width: 0; }
+.card { position: relative; display: flex; flex-direction: column; min-width: 0; container-type: inline-size; }
 .card-link { text-decoration: none; color: inherit; display: flex; flex-direction: column; flex: 1; }
 .ph { position: relative; aspect-ratio: 4 / 5; background: var(--plate); border: 1px solid var(--line); border-radius: var(--r); overflow: hidden; display: grid; place-items: center; }
 .ph img { width: 100%; height: 100%; object-fit: contain; padding: 8%; transition: transform .35s; }
@@ -225,7 +225,8 @@ h3 { font-size: 15px; }
 .act-ib[aria-pressed="true"] svg { fill: var(--clay); stroke: var(--clay); }
 .cmp-acts { display: flex; gap: 8px; margin-top: 8px; }
 .save-btn[aria-pressed="true"] svg { fill: var(--clay); stroke: var(--clay); }
-.qv-btn { position: absolute; left: 10px; right: 10px; bottom: 10px; z-index: 2; min-height: 38px; background: rgba(255, 255, 255, .95); color: #1b1b1b; border-radius: 6px; font-weight: 600; font-size: 13px; opacity: 0; transform: translateY(6px); transition: opacity .2s, transform .2s; box-shadow: 0 1px 3px rgba(0, 0, 0, .15); }
+/* Quick view sits on the bottom edge of the photo (4:5, full card width, so 125cqw tall), clear of the Buy row below. */
+.qv-btn { position: absolute; left: 10px; right: 10px; top: calc(125cqw - 48px); z-index: 2; min-height: 38px; background: rgba(255, 255, 255, .95); color: #1b1b1b; border-radius: 6px; font-weight: 600; font-size: 13px; opacity: 0; transform: translateY(6px); transition: opacity .2s, transform .2s; box-shadow: 0 1px 3px rgba(0, 0, 0, .15); }
 .card:hover .qv-btn, .card:focus-within .qv-btn { opacity: 1; transform: none; }
 .card-body { padding: 10px 2px 0; display: flex; flex-direction: column; gap: 3px; min-width: 0; overflow-wrap: anywhere; }
 .card .brand { margin: 0; font-size: 11px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
@@ -569,7 +570,9 @@ body.tray-on .toast { bottom: 88px; }
 .shared-note p { margin: 0; }
 .shared-note div { display: flex; gap: 8px; flex-wrap: wrap; }
 .similar .cmp th.here, .similar .cmp td.here { background: var(--surface); }
-.here-t { display: inline-block; margin-bottom: 6px; font-size: 11px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--accent-strong); }
+/* The label sits on the photo's corner so this item's photo lines up with the others. z-index 0 keeps it under the sticky label column. */
+.cmp th.here { position: relative; z-index: 0; }
+.here-t { position: absolute; top: 18px; left: 16px; z-index: 1; padding: 3px 7px; border-radius: 4px; background: var(--bg); box-shadow: 0 0 0 1px var(--line); font-size: 11px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--accent-strong); }
 .buybar { display: none; }
 @media (max-width: 900px) {
   .buybar:not([hidden]) { display: block; position: fixed; z-index: 34; left: 0; right: 0; bottom: 0; background: var(--bg); border-top: 1px solid var(--line); box-shadow: 0 -6px 24px rgba(0, 0, 0, .08); padding: 10px 16px calc(10px + env(safe-area-inset-bottom, 0px)); }
