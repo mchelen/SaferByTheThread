@@ -1295,9 +1295,14 @@
     var item = ev.target.closest && ev.target.closest('#cats .cat-item[data-dept]');
     clearTimeout(hoverT);
     if (item) { closeMegas(item); item.classList.add('open'); $('.cat-a', item).setAttribute('aria-expanded', 'true'); }
-    else if (!ev.target.closest('#cats')) hoverT = setTimeout(closeMegas, 200);
+    else if (!ev.target.closest('#cats') && $$('#cats .cat-item.open').length) hoverT = setTimeout(closeMegas, 200);
   });
-  document.addEventListener('mouseleave', function () { if (!isPhone()) hoverT = setTimeout(closeMegas, 200); }, true);
+  // Close when the pointer leaves the window (no element to go to). Only one close timer runs at a time,
+  // so a timer started while crossing the header can't fire after a menu opens.
+  document.addEventListener('mouseout', function (ev) {
+    if (isPhone() || ev.relatedTarget) return;
+    clearTimeout(hoverT); hoverT = setTimeout(closeMegas, 200);
+  });
 
   var sugg = document.getElementById('sugg'), qInput = document.getElementById('q'), suggT = null;
   function suggestions(q) {

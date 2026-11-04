@@ -657,3 +657,32 @@ test('the header Filters button opens every filter from any page, at desktop and
     await page.close();
   }
 });
+
+test('a category menu opened by hover stays open while the pointer rests on it (desktop)', async () => {
+  // Bug: moving the mouse from the header (logo, search) onto a category opened its menu, which then
+  // vanished 200 ms later, because a close timer started while crossing the header was never cleared.
+  const page = await open('/');
+  const items = page.locator('#cats .cat-item[data-dept]');
+  for (const i of [0, (await items.count()) - 1]) {
+    const item = items.nth(i);
+    const bb = await item.locator('> .cat-a').boundingBox();
+    // Start on the header above the category bar, as a person coming from the logo or search would.
+    await page.mouse.move(bb.x + bb.width / 2, bb.y - 20);
+    await page.waitForTimeout(300);
+    await page.mouse.move(bb.x + bb.width / 2, bb.y + bb.height / 2, { steps: 8 });
+    await page.waitForTimeout(600);
+    assert.ok(await item.evaluate(el => el.classList.contains('open')), `menu ${i} is still open while hovered`);
+    assert.ok(await item.locator('.mega').isVisible(), `menu ${i} is visible while hovered`);
+    // Moving down into the menu keeps it open.
+    await page.mouse.move(bb.x + bb.width / 2 + 30, bb.y + bb.height + 60, { steps: 10 });
+    await page.waitForTimeout(600);
+    assert.ok(await item.locator('.mega').isVisible(), `menu ${i} stays open with the pointer inside it`);
+    // Leaving for the page below closes it.
+    await page.mouse.move(bb.x + bb.width / 2, 860, { steps: 4 });
+    await page.mouse.move(10, 880, { steps: 4 });
+    await page.waitForTimeout(400);
+    assert.equal(await item.locator('.mega').isVisible(), false, `menu ${i} closes once the pointer leaves`);
+  }
+  assert.deepEqual(page.errors, []);
+  await page.close();
+});
