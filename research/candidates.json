@@ -1732,7 +1732,8 @@
    "type": "bath",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "hevea-bath-buddy"
   },
   {
    "url": "https://us.heveaplanet.com/products/natural-rubber-bumibebe-pacifier-round-newborn-0-months-two-pack-round-0-3-months",
@@ -5800,7 +5801,8 @@
    "type": "accessories",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "little-green-radicals-ankle-socks"
   },
   {
    "url": "https://littlegreenradicals.com/products/red-flowers-ankle-socks-3-pack",
@@ -5947,7 +5949,8 @@
    "type": "accessories",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "little-green-radicals-sherpa-lined-mittens"
   },
   {
    "url": "https://littlegreenradicals.com/products/sleeping-swans-sherpa-lined-hat",
@@ -6499,7 +6502,8 @@
    "type": "rainwear",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "little-green-radicals-hooded-snug-suit"
   },
   {
    "url": "https://littlegreenradicals.com/products/little-unicorns-hooded-snug-suit",
@@ -7040,7 +7044,8 @@
    "type": "accessories",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "little-green-radicals-knitted-beanie-hat"
   },
   {
    "url": "https://littlegreenradicals.com/products/burnt-ochre-knitted-beanie-hat",
@@ -8867,7 +8872,8 @@
    "type": "accessories",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "crywolf-reversible-bucket-hat"
   },
   {
    "url": "https://crywolfchild.com/products/reversible-bucket-hat-flamingo-stripe",
@@ -9184,7 +9190,8 @@
    "type": "rainwear",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "crywolf-packable-jacket"
   },
   {
    "url": "https://crywolfchild.com/products/explorer-jacket-apple-grove",
@@ -9337,7 +9344,8 @@
    "type": "rainwear",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "crywolf-splash-suit"
   },
   {
    "url": "https://crywolfchild.com/products/chill-romper-heather",
@@ -21431,7 +21439,8 @@
    "type": "bath",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "mushie-water-wheel-bath-toy"
   },
   {
    "url": "https://mushie.com/products/coin-tube-sorting-set",
@@ -30664,7 +30673,8 @@
    "type": "rainwear",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "western-chief-lucy-ladybug-raincoat"
   },
   {
    "url": "https://www.westernchief.com/products/kids-fritz-frog-rain-coat-green",
@@ -41735,7 +41745,8 @@
    "type": "carriers",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "skipped",
+   "reason": "page names no material"
   },
   {
    "url": "https://www.deltachildren.com/products/personalized-contoured-changing-pad-with-plush-cover-embroidered",
@@ -54774,7 +54785,8 @@
    "type": "bath",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "skipped",
+   "reason": "page has no product description"
   },
   {
    "url": "https://enlightenedbaby.com/products/smart-bottoms-reusable-bamboo-cotton-cloth-wipes-10pk",
@@ -106488,7 +106500,8 @@
    "type": "carriers",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "skipped",
+   "reason": "duplicate of solly-baby-soft-buckle-carrier"
   },
   {
    "url": "https://www.thenaturalbabyco.com/products/solly-baby-wrap-orion",
@@ -110355,7 +110368,8 @@
    "type": "carriers",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "happy-baby-revolution-carrier"
   },
   {
    "url": "https://www.thenaturalbabyco.com/products/happy-baby-revolution-carrier-teal",
@@ -134687,7 +134701,8 @@
    "type": "carriers",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "misha-and-puff-baby-wrap-set"
   },
   {
    "url": "https://www.acorntoyshop.com/products/misha-and-puff-baby-short-sleeve-scout-onesie-root-bunny-meadow",
@@ -138543,7 +138558,8 @@
    "type": "nursing-pillows",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "skipped",
+   "reason": "nursing pillow cover sold without its pillow"
   },
   {
    "url": "https://easytot.com/products/ghostly-giggles-pajama-set",
@@ -138579,7 +138595,8 @@
    "type": "nursing-pillows",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "skipped",
+   "reason": "nursing pillow cover sold without its pillow"
   },
   {
    "url": "https://easytot.com/products/leopard-trees-nani-blanket",
@@ -169146,7 +169163,8 @@
    "type": "carriers",
    "source": "watchlist",
    "first_seen": "2026-10-31",
-   "status": "new"
+   "status": "skipped",
+   "reason": "page names no material"
   },
   {
    "url": "https://easytot.com/products/blue-stripe-santa-claus-embroidery-romper",
