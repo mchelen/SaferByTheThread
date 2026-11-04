@@ -686,6 +686,27 @@ body.tray-on .toast { bottom: 88px; }
   .facts { grid-template-columns: 1fr; }
   .brand-list { grid-template-columns: 1fr; }
 }
+/* Share menu: a small panel under the Share button; a bottom sheet on phones. */
+.sharepop { position: fixed; z-index: 72; width: 320px; max-width: calc(100vw - 32px); background: var(--bg); color: var(--ink); border: 1px solid var(--line); border-radius: var(--r); box-shadow: var(--shadow-lg); padding: 6px 10px 12px; }
+.sharepop-h { display: flex; align-items: center; justify-content: space-between; padding: 4px 0 4px 6px; }
+.sharepop-h h2 { font-size: 15px; margin: 0; }
+.share-grid { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, 1fr); gap: 4px; }
+.share-opt { width: 100%; display: flex; flex-direction: column; align-items: center; gap: 6px; padding: 8px 2px; border-radius: 10px; color: var(--ink); text-decoration: none; font: inherit; font-size: 12px; background: none; border: 0; cursor: pointer; }
+.share-opt:hover, .share-opt:focus-visible { background: var(--surface); }
+.sh-ic { width: 44px; height: 44px; border-radius: 50%; display: grid; place-items: center; background: var(--surface); color: var(--ink); border: 1px solid var(--line); }
+.sh-ic svg { width: 22px; height: 22px; }
+.sh-l { white-space: nowrap; }
+.sh-whatsapp { background: #25d366; color: #fff; border-color: transparent; }
+.sh-facebook { background: #1877f2; color: #fff; border-color: transparent; }
+.sh-x { background: #000; color: #fff; border-color: rgba(255, 255, 255, .25); }
+.sh-pinterest { background: #e60023; color: #fff; border-color: transparent; }
+.sh-instagram { background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fd5949 45%, #d6249f 60%, #285aeb 90%); color: #fff; border-color: transparent; }
+.sharescrim { display: none; }
+@media (max-width: 600px) {
+  .sharepop { left: 0; right: 0; bottom: 0; top: auto; width: auto; max-width: none; border-radius: 14px 14px 0 0; padding: 8px 12px calc(14px + env(safe-area-inset-bottom, 0px)); box-shadow: 0 -8px 32px rgba(0,0,0,.18); }
+  .sharepop-h h2 { font-size: 17px; }
+  .sharescrim:not([hidden]) { display: block; position: fixed; inset: 0; z-index: 71; background: rgba(0,0,0,.35); }
+}
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { transition: none !important; animation: none !important; scroll-behavior: auto !important; }
 }

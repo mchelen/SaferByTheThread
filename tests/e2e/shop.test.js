@@ -368,6 +368,7 @@ test('every Buy button has Save and Share beside it, and Share copies this site\
   const card = page.locator('.card').first(), id = await card.getAttribute('data-id');
   assert.equal(await card.locator('[data-save]').count(), 1);
   await card.locator('.share-btn').click();
+  await page.click('#sharepop [data-share-opt="copy"]');
   assert.equal(await page.evaluate(() => navigator.clipboard.readText()), base + '/p/' + id);
   await page.goto(base + '/p/' + id, { waitUntil: 'networkidle' });
   await page.waitForSelector('.buybox');
@@ -381,6 +382,62 @@ test('every Buy button has Save and Share beside it, and Share copies this site\
   assert.equal(await page.locator('#buybar [data-share]').count(), 1);
   assert.equal(await page.evaluate(() => document.documentElement.scrollWidth), 390, 'the buy bar fits a phone');
   assert.deepEqual(page.errors, []);
+  await page.close();
+});
+
+test('Share opens a menu with copy link, email and social networks, all pointing at this site\'s page', async () => {
+  const page = await open('/shop', { width: 1280, height: 900 });
+  await page.context().grantPermissions(['clipboard-read', 'clipboard-write'], { origin: base });
+  await page.waitForSelector('.card');
+  const card = page.locator('.card').first(), id = await card.getAttribute('data-id'), url = base + '/p/' + id;
+  const btn = card.locator('.share-btn');
+  assert.equal(await btn.getAttribute('aria-expanded'), 'false');
+  await btn.click();
+  await page.waitForSelector('#sharepop:not([hidden])');
+  assert.equal(await btn.getAttribute('aria-expanded'), 'true');
+  const opts = await page.locator('#sharepop [data-share-opt]').evaluateAll(l => l.map(e => e.getAttribute('data-share-opt')));
+  for (const k of ['copy', 'email', 'whatsapp', 'facebook', 'x', 'pinterest', 'instagram']) assert.ok(opts.includes(k), 'menu offers ' + k);
+  const href = async (k) => decodeURIComponent(await page.getAttribute(`#sharepop [data-share-opt="${k}"]`, 'href'));
+  assert.match(await href('email'), /^mailto:/);
+  for (const k of ['email', 'whatsapp', 'facebook', 'x', 'pinterest']) assert.ok((await href(k)).includes(url), k + ' shares the product page on this site');
+  assert.match(await href('pinterest'), /media=http.*\.(jpe?g|png|webp)/i, 'Pinterest gets the product photo');
+  assert.equal(await page.getAttribute('#sharepop [data-share-opt="facebook"]', 'target'), '_blank');
+  // The menu sits beside its button and inside the window.
+  const box = await page.locator('#sharepop').boundingBox(), b = await btn.boundingBox();
+  assert.ok(box.x >= 0 && box.x + box.width <= 1280 && Math.abs(box.y - (b.y + b.height + 8)) < 2, 'menu opens under the button');
+  // Escape closes it and puts focus back on Share; a click outside closes it too.
+  await page.keyboard.press('Escape');
+  assert.ok(await page.locator('#sharepop').isHidden());
+  assert.equal(await page.evaluate(() => document.activeElement.classList.contains('share-btn')), true);
+  await btn.click(); await page.mouse.click(5, 5);
+  assert.ok(await page.locator('#sharepop').isHidden());
+  await btn.click(); await page.click('#sharepop [data-share-opt="copy"]');
+  assert.equal(await page.evaluate(() => navigator.clipboard.readText()), url);
+  assert.ok(await page.locator('#sharepop').isHidden());
+  assert.deepEqual(page.errors, []);
+  await page.close();
+});
+
+test('on a phone Share opens a bottom sheet, and Instagram and More use the phone\'s share sheet', async () => {
+  const page = await browser.newPage({ viewport: { width: 390, height: 844 }, hasTouch: true, isMobile: true });
+  await page.addInitScript(() => { window.__shared = []; navigator.share = (d) => { window.__shared.push(d); return Promise.resolve(); }; });
+  await page.goto(base + '/shop', { waitUntil: 'networkidle' });
+  await page.waitForSelector('.card');
+  const id = await page.locator('.card').first().getAttribute('data-id');
+  await page.locator('.card').first().locator('.share-btn').click();
+  await page.waitForSelector('#sharepop:not([hidden])');
+  const box = await page.locator('#sharepop').boundingBox();
+  assert.ok(box.x === 0 && Math.round(box.width) === 390 && Math.round(box.y + box.height) === 844, 'a sheet along the bottom');
+  assert.ok(await page.locator('#sharescrim').isVisible(), 'the page behind is dimmed');
+  for (const k of ['sms', 'more']) assert.equal(await page.locator(`#sharepop [data-share-opt="${k}"]`).count(), 1, 'phone menu offers ' + k);
+  assert.match(decodeURIComponent(await page.getAttribute('#sharepop [data-share-opt="sms"]', 'href')), new RegExp('^sms:.*/p/' + id, 's'));
+  await page.click('#sharepop [data-share-opt="instagram"]');
+  assert.deepEqual(await page.evaluate(() => window.__shared.map(d => d.url)), [base + '/p/' + id]);
+  assert.ok(await page.locator('#sharepop').isHidden());
+  await page.locator('.card').first().locator('.share-btn').click();
+  await page.click('#sharescrim', { position: { x: 20, y: 20 } });
+  assert.ok(await page.locator('#sharepop').isHidden(), 'a tap on the dimmed page closes the sheet');
+  assert.equal(await page.evaluate(() => document.documentElement.scrollWidth), 390);
   await page.close();
 });
 
