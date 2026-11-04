@@ -5,6 +5,7 @@ All notable changes to the site are listed here. The format follows [Keep a Chan
 ## [Unreleased]
 
 ### Fixed
+- On desktop, a category or Materials menu in the top bar no longer disappears a moment after it opens when the mouse comes from the logo or search box.
 - Quick view on result cards sits on the bottom of the photo again instead of on top of the Buy at store button.
 
 ### Changed
