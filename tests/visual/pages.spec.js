@@ -52,12 +52,12 @@ test.afterEach(async ({ page }) => {
 });
 
 test('home page', async ({ page }) => {
-  await open(page, '/', '.tiles a');
+  await open(page, '/', '.dept .ttile');
   await expect(page).toHaveScreenshot('home.png', { fullPage: true });
 });
 
 test('home page, aisle menu open', async ({ page }, testInfo) => {
-  await open(page, '/', '.tiles a');
+  await open(page, '/', '.dept .ttile');
   if (isPhone(testInfo)) {
     await page.click('#menu-open');
     await expect(page.locator('#menu')).toBeVisible();
@@ -138,7 +138,7 @@ test('quick view', async ({ page }, testInfo) => {
 });
 
 test('search suggestions and results', async ({ page }) => {
-  await open(page, '/', '.tiles a');
+  await open(page, '/', '.dept .ttile');
   await page.fill('#q', 'merino');
   await page.waitForSelector('#sugg a');
   await expect(page).toHaveScreenshot('search-suggestions.png');

@@ -35,8 +35,9 @@ async function chip(page, id) {
 
 test('home page renders product types, aisles, featured products and the menu', async () => {
   const page = await open('/');
-  await page.waitForSelector('.tiles a');
-  assert.equal(await page.locator('.tiles a').count(), 7);
+  await page.waitForSelector('.dept .ttile');
+  assert.equal(await page.locator('main .tiles').count(), 0, 'no separate category tiles: departments are the rows');
+  assert.equal(await page.locator('.dept').count(), 7);
   assert.ok((await page.locator('.ttile').count()) >= 20, 'every product type has a picture tile under its category');
   assert.ok((await page.locator('.age-chip').count()) >= 4, 'age chips');
   assert.ok((await count(page)) >= 4, 'featured rail shows products');
@@ -45,6 +46,35 @@ test('home page renders product types, aisles, featured products and the menu', 
   await page.waitForSelector('#cats .cat-item.open .mega a');
   assert.deepEqual(page.errors, []);
   await page.close();
+});
+
+// Each department takes one row: its types sit on one line in a strip that scrolls sideways, with arrows on desktop
+// and swiping on phones, and the page itself never scrolls sideways.
+test('home page departments are one-row strips that scroll sideways', async () => {
+  for (const vp of [{ width: 1280, height: 900 }, { width: 390, height: 844 }]) {
+    const page = vp.width > 900 ? await open('/', vp) : await browser.newPage({ viewport: vp, hasTouch: true, isMobile: true });
+    if (!page.errors) { page.errors = []; page.on('pageerror', e => page.errors.push(e.message)); await page.goto(base + '/', { waitUntil: 'networkidle' }); }
+    await page.waitForSelector('.dept .strip .ttile');
+    const rows = await page.$$eval('.dept .strip', l => l.map(s => new Set([...s.children].map(c => c.offsetTop)).size));
+    assert.ok(rows.length >= 7 && rows.every(n => n === 1), 'every department strip holds a single line of tiles');
+    const toys = '.dept[data-dept="toys"] .strip';
+    assert.ok(await page.$eval(toys, s => s.scrollWidth > s.clientWidth + 20), 'toys has more types than fit');
+    assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), 'the page does not scroll sideways');
+    if (vp.width > 900) {
+      assert.equal(await page.$eval('.dept[data-dept="toys"] .s-arrow.prev', b => b.disabled), true, 'nothing to the left at first');
+      await page.click('.dept[data-dept="toys"] .s-arrow.next');
+      await page.waitForFunction(s => document.querySelector(s).scrollLeft > 100, toys);
+      await page.waitForFunction(() => !document.querySelector('.dept[data-dept="toys"] .s-arrow.prev').disabled);
+      await page.click('.dept[data-dept="toys"] .s-arrow.prev');
+      await page.waitForFunction(s => document.querySelector(s).scrollLeft < 3, toys);
+    } else {
+      assert.equal(await page.$eval('.dept .s-arrow', b => getComputedStyle(b).display), 'none', 'phones swipe; no arrows');
+      await page.$eval(toys, s => { s.scrollLeft = 300; });
+      await page.waitForFunction(s => document.querySelector(s).scrollLeft > 100, toys);
+    }
+    assert.deepEqual(page.errors, []);
+    await page.close();
+  }
 });
 
 test('a type tile and an age chip on the home page open the matching listing', async () => {
