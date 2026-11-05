@@ -47,7 +47,7 @@
     { id: 'leather', label: 'Leather, suede or sheepskin', contains: 'leather', nrx: /leather|suede|sheepskin|calfskin|nappa/i },
     { id: 'plant-fill', label: 'Coir, kapok or buckwheat', rx: /coir|kapok|buckwheat/i },
     { id: 'silicone', label: 'Silicone', rx: /silicone/i },
-    { id: 'metal', label: 'Metal', rx: /stainless|steel|metal|\bbell\b|brass|alumin/i },
+    { id: 'metal', label: 'Metal', rx: /stainless|steel|metal|\bbell\b|brass|alumin|titanium/i },
     { id: 'synthetic', label: 'Plastic or synthetics', rx: /plastic|polyester|polypropylene|polyethylene|polycarbonate|pvc|vinyl|\btpu\b|\btpr\b|\beva\b|nylon|acrylic|polyurethane|synthetic|\bpla\b|(?<!latex )foam(?! loop)|micro-fleece|spandex|elastane/i }
   ];
 

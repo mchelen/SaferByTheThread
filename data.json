@@ -1,6 +1,6 @@
 {
  "schema": 4,
- "updated": "2026-11-04",
+ "updated": "2026-11-05",
  "ask": [
   "Thread on any sewn item (cotton or polyester).",
   "Wheels and axles on push toys and cars.",
@@ -28212,6 +28212,933 @@
    ],
    "img": "wildbird-linen-ring-sling",
    "img_src": "https://www.bambibaby.com/cdn/shop/files/02._Acadian_Sling_800x800_1b789b7d-999f-4f19-b173-5586deabb4f3.webp?v=1793079669&width=1280"
+  },
+  {
+   "id": "ahimsa-balanced-bites-divided-plate",
+   "type": "plates",
+   "brand": "Ahimsa",
+   "line": "Balanced Bites Divided Plate",
+   "uses": [
+    "304 (18/8) food-grade stainless steel",
+    "Titanium PVD colour finish"
+   ],
+   "free": [
+    "Paint or powder coatings",
+    "BPA, PVC, phthalates, lead, siloxanes, melamine and formaldehyde"
+   ],
+   "facts": {
+    "main": "yes",
+    "color": "yes",
+    "melamine": "yes"
+   },
+   "age": {
+    "min_months": 12,
+    "max_months": 60,
+    "text": "Ages 1 to 5"
+   },
+   "quote": "304 (18/8) Food-Grade Stainless Steel Medical-Grade PVD Titanium Color Finish",
+   "note": "Three sections (2 oz, 4 oz, 12 oz). The page says it is “MADE SAFE® certified”. Sold by Grove; the page also showed a member price of $17.59.",
+   "products": [
+    {
+     "name": "Ahimsa Balanced Bites Divided Plate",
+     "url": "https://grove.co/products/balanced-bites-divided-plate",
+     "store": "Grove",
+     "price": "$21.99",
+     "ships_from": "US"
+    }
+   ],
+   "outside": [],
+   "unconfirmed": [],
+   "contains": [],
+   "standards": [],
+   "read": "2026-11-05",
+   "photos": [
+    {
+     "key": "ahimsa-balanced-bites-divided-plate",
+     "src": "https://cdn.shopify.com/s/files/1/0884/6816/0824/files/1_Ahimsa_BalancedBitesPlate_classic_front.jpg?v=1767047714"
+    },
+    {
+     "key": "ahimsa-balanced-bites-divided-plate_2",
+     "src": "https://cdn.shopify.com/s/files/1/0884/6816/0824/files/1_Ahimsa_BalancedBitesPlates_4-pack_classic_front_1.jpg?v=1767047714"
+    },
+    {
+     "key": "ahimsa-balanced-bites-divided-plate_3",
+     "src": "https://cdn.shopify.com/s/files/1/0884/6816/0824/files/1_Ahimsa_BalancedBitesPlate_rainbow_front.jpg?v=1767047714"
+    },
+    {
+     "key": "ahimsa-balanced-bites-divided-plate_4",
+     "src": "https://cdn.shopify.com/s/files/1/0884/6816/0824/files/2_Ahimsa_BalancedBitesPlates_4-pack_classic_mealtime.jpg?v=1767047715"
+    },
+    {
+     "key": "ahimsa-balanced-bites-divided-plate_5",
+     "src": "https://cdn.shopify.com/s/files/1/0884/6816/0824/files/2_Ahimsa_BalancedBitesPlates_4-pack_rainbow_lifestyleboy.jpg?v=1767047714"
+    },
+    {
+     "key": "ahimsa-balanced-bites-divided-plate_6",
+     "src": "https://cdn.shopify.com/s/files/1/0884/6816/0824/files/3_Ahimsa_BalancedBitesPlates_4-pack_classic_lifestyleboy.jpg?v=1767047714"
+    },
+    {
+     "key": "ahimsa-balanced-bites-divided-plate_7",
+     "src": "https://cdn.shopify.com/s/files/1/0884/6816/0824/files/3_Ahimsa_BalancedBitesPlates_4-pack_rainbow_charcuterie.jpg?v=1767047715"
+    },
+    {
+     "key": "ahimsa-balanced-bites-divided-plate_8",
+     "src": "https://cdn.shopify.com/s/files/1/0884/6816/0824/files/4_Ahimsa_BalancedBitesPlates_4-pack_classic_reflection.jpg?v=1767047714"
+    },
+    {
+     "key": "ahimsa-balanced-bites-divided-plate_9",
+     "src": "https://cdn.shopify.com/s/files/1/0884/6816/0824/files/4_Ahimsa_BalancedBitesPlates_4-pack_rainbow_lifestylevalueprops.jpg?v=1767047714"
+    },
+    {
+     "key": "ahimsa-balanced-bites-divided-plate_10",
+     "src": "https://cdn.shopify.com/s/files/1/0884/6816/0824/files/5_Ahimsa_BalancedBitesPlates_4-pack_classic_breakfast.jpg?v=1767047715"
+    }
+   ],
+   "img": "ahimsa-balanced-bites-divided-plate",
+   "img_src": "https://cdn.shopify.com/s/files/1/0884/6816/0824/files/1_Ahimsa_BalancedBitesPlate_classic_front.jpg?v=1767047714"
+  },
+  {
+   "id": "ahimsa-conscious-cup",
+   "type": "cups",
+   "brand": "Ahimsa",
+   "line": "Conscious Cup (8 oz)",
+   "uses": [
+    "304 (18/8) food-grade stainless steel",
+    "Titanium PVD colour finish"
+   ],
+   "free": [
+    "Plastic lacquers, liners or coatings",
+    "Paint or powder coatings",
+    "BPA, PVC, phthalates, lead, siloxanes, melamine and formaldehyde"
+   ],
+   "facts": {
+    "main": "yes",
+    "color": "yes",
+    "melamine": "yes"
+   },
+   "age": {
+    "min_months": 12,
+    "max_months": 60,
+    "text": "Ages 1 to 5"
+   },
+   "quote": "304 (18/8) Food-Grade Stainless Steel Medical-Grade PVD Titanium Color Finish",
+   "note": "Open cup with a weighted base, no handles or lid. The page says it is “MADE SAFE® certified”. Sold by Grove; the page also showed a member price of $10.39.",
+   "products": [
+    {
+     "name": "Ahimsa Conscious Cup",
+     "url": "https://grove.co/products/conscious-cup",
+     "store": "Grove",
+     "price": "$12.99",
+     "ships_from": "US"
+    }
+   ],
+   "outside": [],
+   "unconfirmed": [],
+   "contains": [],
+   "standards": [],
+   "read": "2026-11-05",
+   "photos": [
+    {
+     "key": "ahimsa-conscious-cup",
+     "src": "https://cdn.shopify.com/s/files/1/0884/6816/0824/files/1_Ahimsa_ConsciousCup8oz_rainbow_front.jpg?v=1767049963"
+    },
+    {
+     "key": "ahimsa-conscious-cup_2",
+     "src": "https://cdn.shopify.com/s/files/1/0884/6816/0824/files/1_Ahimsa_ConsciousCups8oz_4-pack_classic_front.jpg?v=1767049963"
+    },
+    {
+     "key": "ahimsa-conscious-cup_3",
+     "src": "https://cdn.shopify.com/s/files/1/0884/6816/0824/files/8_Ahimsa_ConsciousCups8oz_4-pack_rainbow_stackedreflection.jpg?v=1767049927"
+    },
+    {
+     "key": "ahimsa-conscious-cup_4",
+     "src": "https://cdn.shopify.com/s/files/1/0884/6816/0824/files/7_Ahimsa_ConsciousCups8oz_4-pack_rainbow_anatomy.jpg?v=1767049927"
+    },
+    {
+     "key": "ahimsa-conscious-cup_5",
+     "src": "https://cdn.shopify.com/s/files/1/0884/6816/0824/files/7_Ahimsa_ConsciousCups8oz_4-pack_classic_drinking.jpg?v=1767049927"
+    },
+    {
+     "key": "ahimsa-conscious-cup_6",
+     "src": "https://cdn.shopify.com/s/files/1/0884/6816/0824/files/6_Ahimsa_ConsciousCups8oz_4-pack_rainbow_multi-use.jpg?v=1767049926"
+    },
+    {
+     "key": "ahimsa-conscious-cup_7",
+     "src": "https://cdn.shopify.com/s/files/1/0884/6816/0824/files/5_Ahimsa_ConsciousCups8oz_4-pack_rainbow_cupdetail.jpg?v=1767049927"
+    },
+    {
+     "key": "ahimsa-conscious-cup_8",
+     "src": "https://cdn.shopify.com/s/files/1/0884/6816/0824/files/5_Ahimsa_ConsciousCups8oz_4-pack_classic_valueprops.jpg?v=1767049927"
+    },
+    {
+     "key": "ahimsa-conscious-cup_9",
+     "src": "https://cdn.shopify.com/s/files/1/0884/6816/0824/files/4_Ahimsa_ConsciousCups8oz_4-pack_rainbow_valueprops.jpg?v=1767049927"
+    },
+    {
+     "key": "ahimsa-conscious-cup_10",
+     "src": "https://cdn.shopify.com/s/files/1/0884/6816/0824/files/4_Ahimsa_ConsciousCups8oz_4-pack_classic_lifestylenoodles.jpg?v=1767049927"
+    }
+   ],
+   "img": "ahimsa-conscious-cup",
+   "img_src": "https://cdn.shopify.com/s/files/1/0884/6816/0824/files/1_Ahimsa_ConsciousCup8oz_rainbow_front.jpg?v=1767049963"
+  },
+  {
+   "id": "bunny-hopkins-my-first-climber-playset",
+   "type": "climbers",
+   "brand": "Bunny Hopkins",
+   "line": "My First Climber Playset, Mini Triangle & Ramp",
+   "uses": [
+    "Maple wood triangle and ramp"
+   ],
+   "free": [
+    "Sealant on the Raw Timber option"
+   ],
+   "unconfirmed": [
+    "Ingredients of the water-based stains and sealants (coloured and Maple Magic finishes)",
+    "Whether the maple is solid wood or plywood",
+    "Hardware",
+    "Climbing holds on the rockwall ramp"
+   ],
+   "facts": {
+    "main": "yes",
+    "wood": "unknown",
+    "color": "unknown",
+    "parts": "unknown"
+   },
+   "unstated": {
+    "color": [
+     "Ingredients of the water-based stains and sealants (coloured and Maple Magic finishes)"
+    ],
+    "wood": [
+     "Whether the maple is solid wood or plywood"
+    ],
+    "parts": [
+     "Hardware",
+     "Climbing holds on the rockwall ramp"
+    ]
+   },
+   "age": {
+    "min_months": 12,
+    "max_months": 36,
+    "text": "12–36 months (bundle page); the triangle alone from 18 months"
+   },
+   "quote": "Maple wood, handcrafted in Georgia, USA. Raw Timber is unfinished with no protective sealant.",
+   "note": "Mini climbing triangle with one reversible ramp (Rockwall / Slide or Ladder / Slide). The page says “Maple Magic and colored finishes use water-based stains or sealants.” Sold by The Baby Penguin.",
+   "products": [
+    {
+     "name": "Bunny Hopkins My First Climber Playset, Mini Triangle & Ramp",
+     "url": "https://thebabypenguin.com/products/my-first-climber-playset",
+     "store": "The Baby Penguin",
+     "price": "$429.00",
+     "ships_from": "US",
+     "shipping": "Free standard shipping on orders of $50 or more within the contiguous United States"
+    }
+   ],
+   "outside": [],
+   "contains": [],
+   "standards": [],
+   "read": "2026-11-05",
+   "photos": [
+    {
+     "key": "bunny-hopkins-my-first-climber-playset",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/My-First-Climber-Playset-Bunny-Hopkins-128973820.jpg?v=1781454190"
+    },
+    {
+     "key": "bunny-hopkins-my-first-climber-playset_2",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/My-First-Climber-Playset-Bunny-Hopkins-128973925.jpg?v=1781454190"
+    },
+    {
+     "key": "bunny-hopkins-my-first-climber-playset_3",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/My-First-Climber-Playset-Bunny-Hopkins-128974067.jpg?v=1781454190"
+    },
+    {
+     "key": "bunny-hopkins-my-first-climber-playset_4",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/My-First-Climber-Playset-Bunny-Hopkins-128974177.jpg?v=1781454194"
+    },
+    {
+     "key": "bunny-hopkins-my-first-climber-playset_5",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/My-First-Climber-Playset-Bunny-Hopkins-128974257.jpg?v=1781454194"
+    },
+    {
+     "key": "bunny-hopkins-my-first-climber-playset_6",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/My-First-Climber-Playset-Bunny-Hopkins-128974358.jpg?v=1781454194"
+    },
+    {
+     "key": "bunny-hopkins-my-first-climber-playset_7",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/My-First-Climber-Playset-Bunny-Hopkins-128974754.jpg?v=1781454203"
+    },
+    {
+     "key": "bunny-hopkins-my-first-climber-playset_8",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/My-First-Climber-Playset-Bunny-Hopkins-128974994.jpg?v=1781454203"
+    },
+    {
+     "key": "bunny-hopkins-my-first-climber-playset_9",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/My-First-Climber-Playset-Bunny-Hopkins-128975020.jpg?v=1781454208"
+    },
+    {
+     "key": "bunny-hopkins-my-first-climber-playset_10",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/My-First-Climber-Playset-Bunny-Hopkins-128975686.jpg?v=1781454220"
+    }
+   ],
+   "img": "bunny-hopkins-my-first-climber-playset",
+   "img_src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/My-First-Climber-Playset-Bunny-Hopkins-128973820.jpg?v=1781454190"
+  },
+  {
+   "id": "camden-rose-everyday-wooden-chair",
+   "type": "furniture",
+   "brand": "Camden Rose",
+   "line": "Everyday Wooden Chair, Cherry/Maple, Child Height",
+   "uses": [
+    "Cherry and maple hardwoods",
+    "Beeswax polish of organic jojoba oil and local beeswax"
+   ],
+   "free": [
+    "Plywood, press board or soft pine"
+   ],
+   "unconfirmed": [
+    "Glue or fasteners in the joints"
+   ],
+   "facts": {
+    "main": "yes",
+    "wood": "yes",
+    "color": "yes",
+    "parts": "unknown"
+   },
+   "unstated": {
+    "parts": [
+     "Glue or fasteners in the joints"
+    ]
+   },
+   "quote": "Materials: Cherry and Maple hardwoods",
+   "note": "Sold fully assembled. Also offered with a matte water-based hard finish (custom order) and, on request, a tung oil finish. Made in the USA.",
+   "products": [
+    {
+     "name": "Everyday Wooden Chair - Cherry/Maple Wood - 2 Finish Options - Child Height",
+     "url": "https://camdenrose.com/products/everyday-wooden-chair-cherry-maple-wood-2-finish-options-child-height",
+     "store": "Camden Rose",
+     "price": "$165.00",
+     "ships_from": null,
+     "variant": "Beeswax"
+    }
+   ],
+   "outside": [],
+   "contains": [],
+   "standards": [],
+   "read": "2026-11-05",
+   "photos": [
+    {
+     "key": "camden-rose-everyday-wooden-chair",
+     "src": "https://cdn.shopify.com/s/files/1/0658/7164/2856/files/1351-everydaychair-906_1_5e8d6c6f-699d-43fa-a9d4-398c2ee50b6e.jpg?v=1775576023"
+    },
+    {
+     "key": "camden-rose-everyday-wooden-chair_2",
+     "src": "https://cdn.shopify.com/s/files/1/0658/7164/2856/files/1351-everydaychair-907_1_bdc46a22-58b5-475f-93f0-253605ec59da.jpg?v=1775576455"
+    },
+    {
+     "key": "camden-rose-everyday-wooden-chair_3",
+     "src": "https://cdn.shopify.com/s/files/1/0658/7164/2856/files/1351-everydaychair-908_1_8f95f53b-3c0b-436b-804f-7e46182efb4c.jpg?v=1775576455"
+    },
+    {
+     "key": "camden-rose-everyday-wooden-chair_4",
+     "src": "https://cdn.shopify.com/s/files/1/0658/7164/2856/files/1351-everydaychair-909_1_454c2372-76b6-48a0-b492-a9ee217727d1.jpg?v=1775576455"
+    },
+    {
+     "key": "camden-rose-everyday-wooden-chair_5",
+     "src": "https://cdn.shopify.com/s/files/1/0658/7164/2856/files/1470-2EverydayChairs-3638.jpg?v=1775576156"
+    },
+    {
+     "key": "camden-rose-everyday-wooden-chair_6",
+     "src": "https://cdn.shopify.com/s/files/1/0658/7164/2856/files/1351-everydaychairwbfinish-1006_dc402f6b-a2ad-4dc9-9e90-bd5d10f15f96.jpg?v=1775576156"
+    },
+    {
+     "key": "camden-rose-everyday-wooden-chair_7",
+     "src": "https://cdn.shopify.com/s/files/1/0658/7164/2856/files/1351-everydaychairwbfinish-1007_06b4bc2a-591a-4598-9268-d8390ef5dac7.jpg?v=1775576156"
+    },
+    {
+     "key": "camden-rose-everyday-wooden-chair_8",
+     "src": "https://cdn.shopify.com/s/files/1/0658/7164/2856/files/1351-everydaychairwbfinish-1008_c2361335-5b76-4ccb-b3ec-e96e9f292e60.jpg?v=1775576156"
+    },
+    {
+     "key": "camden-rose-everyday-wooden-chair_9",
+     "src": "https://cdn.shopify.com/s/files/1/0658/7164/2856/files/Untitled_5.jpg?v=1773862025"
+    },
+    {
+     "key": "camden-rose-everyday-wooden-chair_10",
+     "src": "https://cdn.shopify.com/s/files/1/0658/7164/2856/files/img_2651_365a1689-bc96-40a1-b124-6986910d2e7f.jpg?v=1775576023"
+    }
+   ],
+   "img": "camden-rose-everyday-wooden-chair",
+   "img_src": "https://cdn.shopify.com/s/files/1/0658/7164/2856/files/1351-everydaychair-906_1_5e8d6c6f-699d-43fa-a9d4-398c2ee50b6e.jpg?v=1775576023"
+  },
+  {
+   "id": "corolle-bebe-calin-loving-teddy-bear",
+   "type": "dolls",
+   "brand": "Corolle",
+   "line": "Bébé Câlin Loving Teddy Bear (12-inch baby doll)",
+   "outside": [
+    "Vinyl head, arms and legs"
+   ],
+   "unconfirmed": [
+    "Fibre and fill of the soft body",
+    "Fibre of the onesie and bear lovey",
+    "Bottle",
+    "Sleeping eyes",
+    "Ingredients of the vanilla scent",
+    "Colours on the face and hair"
+   ],
+   "facts": {
+    "main": "no",
+    "color": "unknown",
+    "parts": "unknown"
+   },
+   "unstated": {
+    "color": [
+     "Colours on the face and hair"
+    ],
+    "parts": [
+     "Bottle",
+     "Sleeping eyes"
+    ]
+   },
+   "age": {
+    "min_months": 18,
+    "text": "Ages 18 months and up"
+   },
+   "quote": "Soft, posable body with blue sleeping eyes and vinyl head, arms, and legs delicately scented with vanilla",
+   "note": "Comes with a removable bear onesie, a bottle and a matching bear lovey. Sold by Fantasy Island Toys (Fairhope, Alabama).",
+   "products": [
+    {
+     "name": "Corolle Bebe Calin Loving Teddy Bear",
+     "url": "https://fantasyislandtoys.com/products/corolle-bebe-calin-loving-teddy-bear",
+     "store": "Fantasy Island Toys",
+     "price": "$49.99",
+     "ships_from": "US",
+     "shipping": "Free shipping on orders $100+"
+    }
+   ],
+   "free": [],
+   "uses": [],
+   "contains": [],
+   "standards": [],
+   "read": "2026-11-05",
+   "photos": [
+    {
+     "key": "corolle-bebe-calin-loving-teddy-bear",
+     "src": "https://cdn.shopify.com/s/files/1/0632/9502/9469/files/coro100720.jpg?v=1721372717"
+    },
+    {
+     "key": "corolle-bebe-calin-loving-teddy-bear_2",
+     "src": "https://cdn.shopify.com/s/files/1/0632/9502/9469/files/coro100720_1.jpg?v=1721372717"
+    },
+    {
+     "key": "corolle-bebe-calin-loving-teddy-bear_3",
+     "src": "https://cdn.shopify.com/s/files/1/0632/9502/9469/files/coro100720_2.jpg?v=1721372717"
+    },
+    {
+     "key": "corolle-bebe-calin-loving-teddy-bear_4",
+     "src": "https://cdn.shopify.com/s/files/1/0632/9502/9469/files/tgtg_ho24_100720_1.jpg?v=1727768696"
+    }
+   ],
+   "img": "corolle-bebe-calin-loving-teddy-bear",
+   "img_src": "https://cdn.shopify.com/s/files/1/0632/9502/9469/files/coro100720.jpg?v=1721372717"
+  },
+  {
+   "id": "green-toys-recycling-truck",
+   "type": "cars",
+   "brand": "Green Toys",
+   "line": "Recycling Truck",
+   "outside": [
+    "100% recycled plastic"
+   ],
+   "free": [
+    "BPA, phthalates and PVC",
+    "Metal axles"
+   ],
+   "unconfirmed": [
+    "Type of plastic",
+    "Colourant in the plastic"
+   ],
+   "facts": {
+    "main": "no",
+    "color": "unknown"
+   },
+   "unstated": {
+    "color": [
+     "Colourant in the plastic"
+    ]
+   },
+   "quote": "Made from 100% recycled plastic No BPA, phthalates or PVC",
+   "note": "Truck with a movable recycling bed and an opening rear door; sold out on the maker’s store when read.",
+   "products": [
+    {
+     "name": "Recycling Truck",
+     "url": "https://www.greentoys.com/products/gt-recycling-truck",
+     "store": "Green Toys",
+     "price": "$30.99",
+     "ships_from": null
+    }
+   ],
+   "uses": [],
+   "contains": [],
+   "standards": [],
+   "read": "2026-11-05",
+   "photos": [
+    {
+     "key": "green-toys-recycling-truck",
+     "src": "https://cdn.shopify.com/s/files/1/0149/8336/4708/products/594683.jpg?v=1669658264"
+    },
+    {
+     "key": "green-toys-recycling-truck_2",
+     "src": "https://cdn.shopify.com/s/files/1/0149/8336/4708/products/Recycling_2.jpg?v=1669658264"
+    },
+    {
+     "key": "green-toys-recycling-truck_3",
+     "src": "https://cdn.shopify.com/s/files/1/0149/8336/4708/products/150630_recycle_truck_038.jpg?v=1669658264"
+    },
+    {
+     "key": "green-toys-recycling-truck_4",
+     "src": "https://cdn.shopify.com/s/files/1/0149/8336/4708/products/150630_recycle_truck_059.jpg?v=1669658264"
+    },
+    {
+     "key": "green-toys-recycling-truck_5",
+     "src": "https://cdn.shopify.com/s/files/1/0149/8336/4708/products/150630_recycle_truck_080.jpg?v=1669658264"
+    }
+   ],
+   "img": "green-toys-recycling-truck",
+   "img_src": "https://cdn.shopify.com/s/files/1/0149/8336/4708/products/594683.jpg?v=1669658264"
+  },
+  {
+   "id": "klean-kanteen-10oz-kids-cup-4-pack",
+   "type": "cups",
+   "brand": "Klean Kanteen",
+   "line": "10oz Brushed Stainless Steel Kid’s Cup, 4 Pack",
+   "uses": [
+    "Certified 90% post-consumer recycled 18/8 stainless steel"
+   ],
+   "free": [
+    "Coating on the Brushed Stainless finish",
+    "BPA and lead"
+   ],
+   "facts": {
+    "main": "yes",
+    "color": "yes"
+   },
+   "quote": "Certified 90% post-consumer recycled 18/8 stainless steel",
+   "note": "Nesting 10 oz cups; sippy and straw caps are sold separately. Sold by Pacifier (Minneapolis); out of stock when read.",
+   "products": [
+    {
+     "name": "10oz Brushed Stainless Steel Kid's Cup - 4 Pack by Klean Kanteen",
+     "url": "https://pacifierkids.com/products/10oz-brushed-stainless-steel-kids-cup-4-pack-by-klean-kanteen",
+     "store": "Pacifier",
+     "price": "$34.95",
+     "ships_from": "US"
+    }
+   ],
+   "outside": [],
+   "unconfirmed": [],
+   "contains": [],
+   "standards": [],
+   "read": "2026-11-05",
+   "photos": [
+    {
+     "key": "klean-kanteen-10oz-kids-cup-4-pack",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/product_photo_-_white_background_-_2026-07-08T220813.067.jpg?v=1783520128"
+    },
+    {
+     "key": "klean-kanteen-10oz-kids-cup-4-pack_2",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/KSSC10-RT-steel-cup-girl-style_81ecfcf5-163f-4262-9b02-cf3acbcf1187.jpg?v=1783519731"
+    },
+    {
+     "key": "klean-kanteen-10oz-kids-cup-4-pack_3",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/Klean-Day1-Boulder-0403-kid-cup-lifestyle_a362db30-18bd-4708-8381-eaddf6cb91ba.jpg?v=1783519739"
+    },
+    {
+     "key": "klean-kanteen-10oz-kids-cup-4-pack_4",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/10oz_cup_kids_4pack_dad_kiss_square.jpg?v=1783519735"
+    },
+    {
+     "key": "klean-kanteen-10oz-kids-cup-4-pack_5",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/10oz_4pack.jpg?v=1783519748"
+    }
+   ],
+   "img": "klean-kanteen-10oz-kids-cup-4-pack",
+   "img_src": "https://cdn.shopify.com/s/files/1/0281/8056/files/product_photo_-_white_background_-_2026-07-08T220813.067.jpg?v=1783520128"
+  },
+  {
+   "id": "piccalio-acrobat-balance-beam",
+   "type": "climbers",
+   "brand": "Piccalio",
+   "line": "Acrobat Balance Beam",
+   "uses": [
+    "Solid pine"
+   ],
+   "outside": [
+    "FSC birch plywood"
+   ],
+   "free": [
+    "Formaldehyde and lead in the finish"
+   ],
+   "unconfirmed": [
+    "Ingredients of the water-based finish",
+    "Which parts are plywood and which are pine"
+   ],
+   "facts": {
+    "main": "yes",
+    "wood": "no",
+    "color": "unknown"
+   },
+   "unstated": {
+    "color": [
+     "Ingredients of the water-based finish"
+    ]
+   },
+   "standards": [
+    "fsc",
+    "us-toy"
+   ],
+   "age": {
+    "min_months": 18,
+    "max_months": 96,
+    "text": "18 months to 8 years"
+   },
+   "quote": "The Acrobat Balance Beam is made from FSC© Certified (sustainably harvested) birch plywood and solid pine.",
+   "note": "Four beams and five connectors that can be set out in different shapes. The page lists “Materials: FSC® birch plywood and New Zealand pine wood”.",
+   "products": [
+    {
+     "name": "Acrobat Balance Beam",
+     "url": "https://www.piccalio.com/products/balance-beam",
+     "store": "Piccalio",
+     "price": "$139",
+     "ships_from": "US",
+     "shipping": "Ships free"
+    }
+   ],
+   "contains": [],
+   "read": "2026-11-05",
+   "photos": [
+    {
+     "key": "piccalio-acrobat-balance-beam",
+     "src": "https://cdn.shopify.com/s/files/1/0411/8868/8026/products/piccalio-balance-beam-wood-lifestyle.jpg?v=1768885455"
+    },
+    {
+     "key": "piccalio-acrobat-balance-beam_2",
+     "src": "https://cdn.shopify.com/s/files/1/0411/8868/8026/files/piccalio-balance-beam-wood-studio.png?v=1768841855"
+    },
+    {
+     "key": "piccalio-acrobat-balance-beam_3",
+     "src": "https://cdn.shopify.com/s/files/1/0411/8868/8026/products/piccalio-balance-beam-wooden-lifestyle.jpg?v=1768885897"
+    },
+    {
+     "key": "piccalio-acrobat-balance-beam_4",
+     "src": "https://cdn.shopify.com/s/files/1/0411/8868/8026/products/piccalio-balance-beam-toddler-lifestyle.jpg?v=1768885925"
+    },
+    {
+     "key": "piccalio-acrobat-balance-beam_5",
+     "src": "https://cdn.shopify.com/s/files/1/0411/8868/8026/files/piccalio-balance-beam-car-lifestyle.jpg?v=1768885952"
+    },
+    {
+     "key": "piccalio-acrobat-balance-beam_6",
+     "src": "https://cdn.shopify.com/s/files/1/0411/8868/8026/products/piccalio-balance-beam-assembly-lifestyle.jpg?v=1768885969"
+    },
+    {
+     "key": "piccalio-acrobat-balance-beam_7",
+     "src": "https://cdn.shopify.com/s/files/1/0411/8868/8026/products/piccalio-balance-beam-pinewood-lifestyle.jpg?v=1768886005"
+    }
+   ],
+   "img": "piccalio-acrobat-balance-beam",
+   "img_src": "https://cdn.shopify.com/s/files/1/0411/8868/8026/products/piccalio-balance-beam-wood-lifestyle.jpg?v=1768885455"
+  },
+  {
+   "id": "rad-childrens-furniture-toddler-tower",
+   "type": "furniture",
+   "brand": "RAD Children’s Furniture",
+   "line": "Toddler Tower",
+   "uses": [
+    "Solid hardwood rungs and legs"
+   ],
+   "outside": [
+    "13-ply European birch plywood"
+   ],
+   "free": [
+    "Urea-formaldehyde adhesives in the plywood"
+   ],
+   "unconfirmed": [
+    "Ingredients of the UV-cured and water-based finishes",
+    "Screws and hardware"
+   ],
+   "facts": {
+    "wood": "no",
+    "color": "unknown",
+    "parts": "unknown"
+   },
+   "unstated": {
+    "color": [
+     "Ingredients of the UV-cured and water-based finishes"
+    ],
+    "parts": [
+     "Screws and hardware"
+    ]
+   },
+   "age": {
+    "min_months": 18,
+    "max_months": 72,
+    "text": "18 months to about 6 years"
+   },
+   "quote": "Crafted from premium 13-ply European birch plywood made without urea-formaldehyde adhesives",
+   "note": "Kitchen tower with a platform at 12 or 17.5 inches, Solo or Double size. The page says it is “Finished with zero-VOC UV-cured and low-VOC water-based finishes.” Made in the maker’s Los Angeles woodshop.",
+   "products": [
+    {
+     "name": "Toddler Tower",
+     "url": "https://radchildrensfurniture.com/products/learning-tower",
+     "store": "RAD Children’s Furniture",
+     "price": "$225.00",
+     "ships_from": "US",
+     "shipping": "Free shipping on all domestic orders",
+     "variant": "Solo"
+    }
+   ],
+   "contains": [],
+   "standards": [],
+   "read": "2026-11-05",
+   "photos": [
+    {
+     "key": "rad-childrens-furniture-toddler-tower",
+     "src": "https://cdn.shopify.com/s/files/1/0087/4230/5892/files/toddler_towers_in_multiple_sizes.jpg?v=1762457207"
+    },
+    {
+     "key": "rad-childrens-furniture-toddler-tower_2",
+     "src": "https://cdn.shopify.com/s/files/1/0087/4230/5892/files/LearningTowerdoublesizedfortwochildren_1.jpg?v=1747781089"
+    },
+    {
+     "key": "rad-childrens-furniture-toddler-tower_3",
+     "src": "https://cdn.shopify.com/s/files/1/0087/4230/5892/files/Screenshot2025-02-04133454-Edited.png?v=1752524992"
+    },
+    {
+     "key": "rad-childrens-furniture-toddler-tower_4",
+     "src": "https://cdn.shopify.com/s/files/1/0087/4230/5892/files/rumi8.jpg?v=1782506410"
+    },
+    {
+     "key": "rad-childrens-furniture-toddler-tower_5",
+     "src": "https://cdn.shopify.com/s/files/1/0087/4230/5892/products/2021-05-08_09-12-05_804_1.jpg?v=1752524992"
+    },
+    {
+     "key": "rad-childrens-furniture-toddler-tower_6",
+     "src": "https://cdn.shopify.com/s/files/1/0087/4230/5892/files/0061-5965484521912890806.jpg?v=1752524992"
+    },
+    {
+     "key": "rad-childrens-furniture-toddler-tower_7",
+     "src": "https://cdn.shopify.com/s/files/1/0087/4230/5892/files/learningtowerinkitchen.jpg?v=1752524992"
+    },
+    {
+     "key": "rad-childrens-furniture-toddler-tower_8",
+     "src": "https://cdn.shopify.com/s/files/1/0087/4230/5892/products/2021-05-11_15-43-34_000_1.jpg?v=1752524992"
+    },
+    {
+     "key": "rad-childrens-furniture-toddler-tower_9",
+     "src": "https://cdn.shopify.com/s/files/1/0087/4230/5892/products/IMG_9487_1.jpg?v=1752524992"
+    },
+    {
+     "key": "rad-childrens-furniture-toddler-tower_10",
+     "src": "https://cdn.shopify.com/s/files/1/0087/4230/5892/files/learningtowerbigenoughfor3children.jpg?v=1752524992"
+    }
+   ],
+   "img": "rad-childrens-furniture-toddler-tower",
+   "img_src": "https://cdn.shopify.com/s/files/1/0087/4230/5892/files/toddler_towers_in_multiple_sizes.jpg?v=1762457207"
+  },
+  {
+   "id": "sigg-kids-cup-set",
+   "type": "cups",
+   "brand": "SIGG",
+   "line": "Kids Cup Set (0.35 L)",
+   "uses": [
+    "18/8 stainless steel"
+   ],
+   "free": [
+    "Plastic"
+   ],
+   "unconfirmed": [
+    "Colour and print of the Daydream and Wildlife designs"
+   ],
+   "facts": {
+    "main": "yes",
+    "color": "unknown"
+   },
+   "unstated": {
+    "color": [
+     "Colour and print of the Daydream and Wildlife designs"
+    ]
+   },
+   "quote": "The new Kids Cup made of 18/8 stainless steel is all you need to make sure your child drinks enough water.",
+   "note": "Stackable cups sized for children’s hands; a matching lid is sold separately. Country of origin on the page: CN. Sold out on the maker’s US store when read.",
+   "products": [
+    {
+     "name": "Kids Cup Set",
+     "url": "https://sigg.com/us/kids-cup-set-0-35-l",
+     "store": "SIGG",
+     "price": "$47.99",
+     "ships_from": null
+    }
+   ],
+   "outside": [],
+   "contains": [],
+   "standards": [],
+   "read": "2026-11-05",
+   "photos": [
+    {
+     "key": "sigg-kids-cup-set",
+     "src": "https://sigg.com/cdn/shop/files/6043.40_0.35L_Kids_Cup_Set_Daydream_stacked-rfw.png?v=1747916249&width=1920"
+    },
+    {
+     "key": "sigg-kids-cup-set_2",
+     "src": "https://cdn.shopify.com/extensions/01a01439-3ec4-7412-aa82-5f5995743ef0/widerruf-sigg-11/assets/gwl-en_1654x.png"
+    },
+    {
+     "key": "sigg-kids-cup-set_3",
+     "src": "https://sigg.com//cdn//shop//files//6043.40_0.35L_Kids_Cup_Set_Daydream_stacked-rfw.png"
+    }
+   ],
+   "img": "sigg-kids-cup-set",
+   "img_src": "https://sigg.com/cdn/shop/files/6043.40_0.35L_Kids_Cup_Set_Daydream_stacked-rfw.png?v=1747916249&width=1920"
+  },
+  {
+   "id": "the-montessori-room-nylon-scarves",
+   "type": "silks",
+   "brand": "The Montessori Room",
+   "line": "Set of 6 Nylon Scarves",
+   "outside": [
+    "Nylon scarves"
+   ],
+   "unconfirmed": [
+    "Dyes"
+   ],
+   "facts": {
+    "main": "no",
+    "color": "unknown"
+   },
+   "unstated": {
+    "color": [
+     "Dyes"
+    ]
+   },
+   "age": {
+    "min_months": 36,
+    "text": "3 years +"
+   },
+   "quote": "This set of 6 scarves are made from nylon and includes the primary and secondary colours.",
+   "note": "Six scarves of about 27 x 27 inches in primary and secondary colours. Store in Toronto; price in Canadian dollars.",
+   "products": [
+    {
+     "name": "Set of 6 Nylon Scarves",
+     "url": "https://themontessoriroom.com/collections/toddlers/products/set-of-6-nylon-scarves",
+     "store": "The Montessori Room",
+     "price": "$24.99 CAD",
+     "ships_from": "Canada",
+     "shipping": "Free shipping over $149"
+    }
+   ],
+   "free": [],
+   "uses": [],
+   "contains": [],
+   "standards": [],
+   "read": "2026-11-05",
+   "photos": [
+    {
+     "key": "the-montessori-room-nylon-scarves",
+     "src": "https://cdn.shopify.com/s/files/1/0536/5530/6394/products/set-of-6-nylon-scarves-491643.png?v=1637364531"
+    }
+   ],
+   "img": "the-montessori-room-nylon-scarves",
+   "img_src": "https://cdn.shopify.com/s/files/1/0536/5530/6394/products/set-of-6-nylon-scarves-491643.png?v=1637364531"
+  },
+  {
+   "id": "wonder-wise-awesome-activity-walker",
+   "type": "push",
+   "brand": "Wonder & Wise",
+   "line": "Awesome Activity Walker",
+   "uses": [
+    "Wood, parts not named"
+   ],
+   "outside": [
+    "Plastic, parts not named"
+   ],
+   "unconfirmed": [
+    "Whether the wood is solid wood or plywood",
+    "Paint and finish",
+    "Mirror",
+    "Bead maze and abacus beads",
+    "Wheels",
+    "Toy cell phone"
+   ],
+   "facts": {
+    "main": "no",
+    "wood": "unknown",
+    "color": "unknown",
+    "parts": "unknown"
+   },
+   "unstated": {
+    "wood": [
+     "Whether the wood is solid wood or plywood"
+    ],
+    "color": [
+     "Paint and finish"
+    ],
+    "parts": [
+     "Bead maze and abacus beads",
+     "Wheels"
+    ]
+   },
+   "age": {
+    "min_months": 9,
+    "text": "9 Months & up"
+   },
+   "quote": "Materials: Wood & Plastic",
+   "note": "Push walker with a shape sorter, toy cell phone, mirror, bead maze, abacus and counting flaps. Sold by FAO Schwarz; a shipping fee applies because of its size.",
+   "products": [
+    {
+     "name": "Wonder & Wise Awesome Activity Walker",
+     "url": "https://faoschwarz.com/products/awesome-activity-walker",
+     "store": "FAO Schwarz",
+     "price": "$129.00",
+     "ships_from": "US",
+     "shipping": "Oversize item: does not qualify for free shipping"
+    }
+   ],
+   "free": [],
+   "contains": [],
+   "standards": [],
+   "read": "2026-11-05",
+   "photos": [
+    {
+     "key": "wonder-wise-awesome-activity-walker",
+     "src": "https://cdn.shopify.com/s/files/1/2284/6393/files/Awesome-Activity-Walker-Infants-25383935606871.jpg?v=1776922769"
+    },
+    {
+     "key": "wonder-wise-awesome-activity-walker_2",
+     "src": "https://cdn.shopify.com/s/files/1/2284/6393/files/Awesome-Activity-Walker-Infants-25383935639639.jpg?v=1776922769"
+    },
+    {
+     "key": "wonder-wise-awesome-activity-walker_3",
+     "src": "https://cdn.shopify.com/s/files/1/2284/6393/files/Awesome-Activity-Walker-Infants-25383935672407.jpg?v=1776922769"
+    },
+    {
+     "key": "wonder-wise-awesome-activity-walker_4",
+     "src": "https://cdn.shopify.com/s/files/1/2284/6393/files/Awesome-Activity-Walker-Infants-25383935901783.jpg?v=1776922769"
+    },
+    {
+     "key": "wonder-wise-awesome-activity-walker_5",
+     "src": "https://cdn.shopify.com/s/files/1/2284/6393/files/Awesome-Activity-Walker-Infants-25383935934551.jpg?v=1776922769"
+    },
+    {
+     "key": "wonder-wise-awesome-activity-walker_6",
+     "src": "https://cdn.shopify.com/s/files/1/2284/6393/files/Awesome-Activity-Walker-Infants-25383935967319.jpg?v=1776922769"
+    },
+    {
+     "key": "wonder-wise-awesome-activity-walker_7",
+     "src": "https://cdn.shopify.com/s/files/1/2284/6393/files/Awesome-Activity-Walker-Infants-25383936000087.jpg?v=1776922769"
+    }
+   ],
+   "img": "wonder-wise-awesome-activity-walker",
+   "img_src": "https://cdn.shopify.com/s/files/1/2284/6393/files/Awesome-Activity-Walker-Infants-25383935606871.jpg?v=1776922769"
   }
  ]
 }

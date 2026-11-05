@@ -4049,7 +4049,8 @@
    "type": "climbers",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "piccalio-acrobat-balance-beam"
   },
   {
    "url": "https://www.piccalio.com/products/convertible-toddler-tower",
@@ -11358,7 +11359,8 @@
    "type": "furniture",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "rad-childrens-furniture-toddler-tower"
   },
   {
    "url": "https://radchildrensfurniture.com/products/shelves",
@@ -19490,7 +19492,8 @@
    "type": "ice-trays",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "skipped",
+   "reason": "Ice moulds sold for sensory and block play (ages 3+), not a kitchen ice tray; the page names no material"
   },
   {
    "url": "https://kodokids.com/products/language-blocks",
@@ -60306,7 +60309,8 @@
    "type": "furniture",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "camden-rose-everyday-wooden-chair"
   },
   {
    "url": "https://camdenrose.com/products/childs-large-play-table-activity-table-with-elevated-border-maple-wood-2-finish-options",
@@ -88363,7 +88367,8 @@
    "type": "climbers",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "bunny-hopkins-my-first-climber-playset"
   },
   {
    "url": "https://thebabypenguin.com/products/classic-climber-playset",
@@ -144455,7 +144460,8 @@
    "type": "plates",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "skipped",
+   "reason": "General household wooden tableware (plates) from a furniture maker; not made or sold for children"
   },
   {
    "url": "https://kalonstudios.com/shop/tableware/wooden-dish-set-for-children/",
@@ -144563,7 +144569,8 @@
    "type": "cups",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "skipped",
+   "reason": "General household wooden tableware (cup) from a furniture maker; not made or sold for children"
   },
   {
    "url": "https://kalonstudios.com/shop/tableware/2-piece-set/",
