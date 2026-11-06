@@ -1,6 +1,6 @@
 {
  "schema": 4,
- "updated": "2026-11-05",
+ "updated": "2026-11-06",
  "ask": [
   "Thread on any sewn item (cotton or polyester).",
   "Wheels and axles on push toys and cars.",
@@ -29139,6 +29139,971 @@
    ],
    "img": "wonder-wise-awesome-activity-walker",
    "img_src": "https://cdn.shopify.com/s/files/1/2284/6393/files/Awesome-Activity-Walker-Infants-25383935606871.jpg?v=1776922769"
+  },
+  {
+   "uses": [
+    "Stainless steel"
+   ],
+   "free": [],
+   "unconfirmed": [
+    "Material of the coloured handles",
+    "Grade of the stainless steel"
+   ],
+   "outside": [],
+   "contains": [],
+   "standards": [],
+   "id": "beaba-stainless-steel-pre-cutlery",
+   "type": "utensils",
+   "brand": "Béaba",
+   "line": "Stainless Steel Pre-Cutlery, Set of 2 (spoon and fork)",
+   "facts": {
+    "main": "unknown",
+    "color": "unknown",
+    "melamine": "unknown"
+   },
+   "unstated": {
+    "main": [
+     "Material of the coloured handles"
+    ],
+    "color": [
+     "Material of the coloured handles"
+    ],
+    "melamine": [
+     "Material of the coloured handles"
+    ]
+   },
+   "quote": "Set of 2 Stainless Steel Pre-Cutlery",
+   "note": "Short handle with a shallow spoon and a rounded fork; colours Sage Green, Velvet Grey, Praline and Cotton Candy. The page gives no material details beyond the name.",
+   "products": [
+    {
+     "name": "Set of 2 Stainless Steel Pre-Cutlery",
+     "url": "https://beaba.us/products/set-of-2-stainless-steel-pre-cutlery",
+     "store": "Béaba USA",
+     "price": "$15.95",
+     "ships_from": "US",
+     "shipping": "Free shipping on orders $140*"
+    }
+   ],
+   "read": "2026-11-06",
+   "photos": [
+    {
+     "key": "beaba-stainless-steel-pre-cutlery",
+     "src": "https://cdn.shopify.com/s/files/1/0673/7756/1739/files/913581_product_face_1_new.jpg?v=1755759692"
+    },
+    {
+     "key": "beaba-stainless-steel-pre-cutlery_2",
+     "src": "https://cdn.shopify.com/s/files/1/0673/7756/1739/files/913581_product_3-4_1.jpg?v=1761164760"
+    },
+    {
+     "key": "beaba-stainless-steel-pre-cutlery_3",
+     "src": "https://cdn.shopify.com/s/files/1/0673/7756/1739/files/913581_product_amb_7.jpg?v=1757624587"
+    },
+    {
+     "key": "beaba-stainless-steel-pre-cutlery_4",
+     "src": "https://cdn.shopify.com/s/files/1/0673/7756/1739/files/913581_product_amb_2.jpg?v=1757624715"
+    },
+    {
+     "key": "beaba-stainless-steel-pre-cutlery_5",
+     "src": "https://cdn.shopify.com/s/files/1/0673/7756/1739/files/913581_product_amb_10.jpg?v=1761164760"
+    },
+    {
+     "key": "beaba-stainless-steel-pre-cutlery_6",
+     "src": "https://cdn.shopify.com/s/files/1/0673/7756/1739/files/913581_product_amb_11.jpg?v=1757624715"
+    },
+    {
+     "key": "beaba-stainless-steel-pre-cutlery_7",
+     "src": "https://cdn.shopify.com/s/files/1/0673/7756/1739/files/913596_product_amb_1.jpg?v=1757624715"
+    },
+    {
+     "key": "beaba-stainless-steel-pre-cutlery_8",
+     "src": "https://cdn.shopify.com/s/files/1/0673/7756/1739/files/913596_product_amb_2.jpg?v=1757624715"
+    },
+    {
+     "key": "beaba-stainless-steel-pre-cutlery_9",
+     "src": "https://cdn.shopify.com/s/files/1/0673/7756/1739/files/913596_product_amb_3.jpg?v=1757624715"
+    },
+    {
+     "key": "beaba-stainless-steel-pre-cutlery_10",
+     "src": "https://cdn.shopify.com/s/files/1/0673/7756/1739/files/913595_product_amb_1.jpg?v=1757624715"
+    }
+   ],
+   "img": "beaba-stainless-steel-pre-cutlery",
+   "img_src": "https://cdn.shopify.com/s/files/1/0673/7756/1739/files/913581_product_face_1_new.jpg?v=1755759692"
+  },
+  {
+   "uses": [
+    "European Ash hardwood"
+   ],
+   "free": [],
+   "unconfirmed": [
+    "Stain or finish on the wood",
+    "Metal of the strings",
+    "Tuner and pick",
+    "Fibre and padding of the case",
+    "Glue"
+   ],
+   "outside": [],
+   "contains": [],
+   "standards": [],
+   "id": "bella-luna-wooden-zither",
+   "type": "instruments",
+   "brand": "Bella Luna Toys",
+   "line": "Wooden Zither (lap harp) with Case",
+   "facts": {
+    "main": "unknown",
+    "parts": "unknown",
+    "color": "unknown",
+    "wood": "unknown"
+   },
+   "unstated": {
+    "main": [
+     "Fibre and padding of the case"
+    ],
+    "parts": [
+     "Tuner and pick"
+    ],
+    "color": [
+     "Stain or finish on the wood"
+    ],
+    "wood": [
+     "Glue"
+    ]
+   },
+   "age": {
+    "min_months": 36,
+    "text": "Not for children under 3 years"
+   },
+   "quote": "MATERIALS : European Ash hardwood ORIGIN : Handmade in Mexico",
+   "note": "Comes with a tuner, pick, extra metal string, 12 song sheets and a padded case. The store’s note says its wooden products are “hand-stained”. Ships from New York.",
+   "products": [
+    {
+     "name": "Wooden Zither with Case",
+     "url": "https://www.bellalunatoys.com/products/wooden-zither-with-case",
+     "store": "Bella Luna Toys",
+     "price": "$79.99",
+     "ships_from": "US",
+     "shipping": "Free shipping on orders over $99 within the contiguous 48 states"
+    }
+   ],
+   "read": "2026-11-06",
+   "photos": [
+    {
+     "key": "bella-luna-wooden-zither",
+     "src": "https://cdn.shopify.com/s/files/1/1114/2810/files/music-maker-lap-harp-zither-1500x1500_cee818f8-9efb-4907-a73f-d6ad287708c5.jpg?v=1697026632"
+    },
+    {
+     "key": "bella-luna-wooden-zither_2",
+     "src": "https://cdn.shopify.com/s/files/1/1114/2810/files/music-maker-lap-harp-new_4e9f1a46-fe07-488f-a6c7-587fce8fd865.jpg?v=1697026632"
+    },
+    {
+     "key": "bella-luna-wooden-zither_3",
+     "src": "https://cdn.shopify.com/s/files/1/1114/2810/files/zither-lap-harp-case-red_09d1c4f5-2cb9-4cdc-a920-bdb05a5b16ee.jpg?v=1697026632"
+    },
+    {
+     "key": "bella-luna-wooden-zither_4",
+     "src": "https://www.bellalunatoys.com/cdn/shop/files/music-maker-lap-harp-zither-1500x1500_cee818f8-9efb-4907-a73f-d6ad287708c5_1024x1024.jpg?v=1697026632"
+    }
+   ],
+   "img": "bella-luna-wooden-zither",
+   "img_src": "https://cdn.shopify.com/s/files/1/1114/2810/files/music-maker-lap-harp-zither-1500x1500_cee818f8-9efb-4907-a73f-d6ad287708c5.jpg?v=1697026632"
+  },
+  {
+   "uses": [
+    "Beech wood"
+   ],
+   "free": [],
+   "unconfirmed": [
+    "Finish on the wood",
+    "What makes the rattle sound inside",
+    "Solid or glued wood"
+   ],
+   "outside": [],
+   "contains": [],
+   "standards": [],
+   "id": "enlightened-baby-wooden-maracas",
+   "type": "instruments",
+   "brand": "All Wooden Elements",
+   "line": "Handmade Wooden Maracas",
+   "facts": {
+    "main": "unknown",
+    "color": "unknown",
+    "wood": "unknown"
+   },
+   "unstated": {
+    "main": [
+     "What makes the rattle sound inside"
+    ],
+    "color": [
+     "Finish on the wood"
+    ],
+    "wood": [
+     "Solid or glued wood"
+    ]
+   },
+   "quote": "Our handmade minimalist Wooden Maracas are made of beech wood",
+   "note": "Sized for baby and toddler hands, the page says; the price is for one maraca. Sold by Enlightened Baby.",
+   "products": [
+    {
+     "name": "Handmade Wooden Maracas for Kids Musical Toy Baby Rattle (each)",
+     "url": "https://enlightenedbaby.com/products/handmade-wooden-maracas-for-kids-musical-toy-baby-rattle",
+     "store": "Enlightened Baby",
+     "price": "$12.99",
+     "ships_from": null
+    }
+   ],
+   "read": "2026-11-06",
+   "photos": [
+    {
+     "key": "enlightened-baby-wooden-maracas",
+     "src": "https://cdn.shopify.com/s/files/1/0707/4850/4296/files/dec1e815da9cc14a3a3f5085a8430dad3c3c5de12051be53ae9cd42c94568dc8.jpg?v=1788202430"
+    },
+    {
+     "key": "enlightened-baby-wooden-maracas_2",
+     "src": "https://cdn.shopify.com/s/files/1/0707/4850/4296/files/35cc96ff568b8dbac95743912db2e169a0f7cd9f0659f70e0e2f542a6a6722ce.jpg?v=1788202432"
+    },
+    {
+     "key": "enlightened-baby-wooden-maracas_3",
+     "src": "https://cdn.shopify.com/s/files/1/0707/4850/4296/files/d14e697e1461876e5845cfc5778484b5693c96dc729a90b7246ed65bfef1e9dd.jpg?v=1788202432"
+    },
+    {
+     "key": "enlightened-baby-wooden-maracas_4",
+     "src": "https://cdn.shopify.com/s/files/1/0707/4850/4296/files/87755dd9e5ac90cefa4d6d5d77cbf893dd4630adbe4de2e055a9001979e6db14.jpg?v=1788202432"
+    },
+    {
+     "key": "enlightened-baby-wooden-maracas_5",
+     "src": "https://cdn.shopify.com/s/files/1/0707/4850/4296/files/d0820b52d05569394c2b541dd3769f578b05f4b15f3644f03fe9c298e9545ef5.jpg?v=1788202432"
+    }
+   ],
+   "img": "enlightened-baby-wooden-maracas",
+   "img_src": "https://cdn.shopify.com/s/files/1/0707/4850/4296/files/dec1e815da9cc14a3a3f5085a8430dad3c3c5de12051be53ae9cd42c94568dc8.jpg?v=1788202430"
+  },
+  {
+   "uses": [
+    "100% natural rubber from the Hevea brasiliensis tree"
+   ],
+   "free": [],
+   "unconfirmed": [
+    "Colourant in the rubber",
+    "Plasticisers or other additives in the rubber"
+   ],
+   "outside": [],
+   "contains": [
+    "latex"
+   ],
+   "standards": [],
+   "id": "hevea-panda-teether",
+   "type": "teethers",
+   "brand": "Hevea",
+   "line": "Panda Teether",
+   "facts": {
+    "main": "yes",
+    "color": "unknown",
+    "rubber": "unknown"
+   },
+   "unstated": {
+    "color": [
+     "Colourant in the rubber"
+    ],
+    "rubber": [
+     "Plasticisers or other additives in the rubber"
+    ]
+   },
+   "quote": "Made from 100% natural rubber from the Hevea brasiliensis tree, the teether is naturally soft and flexible.",
+   "products": [
+    {
+     "name": "Panda Teether",
+     "url": "https://us.heveaplanet.com/products/panda-soothing-toy-1x1",
+     "store": "Hevea Planet USA",
+     "price": "$13.95",
+     "ships_from": null
+    }
+   ],
+   "read": "2026-11-06",
+   "photos": [
+    {
+     "key": "hevea-panda-teether",
+     "src": "https://cdn.shopify.com/s/files/1/1027/0038/4590/files/Panda_soothing_toy_1x1_def475e8-08be-4a04-a59b-18186e1741a8.jpg?v=1777032599"
+    },
+    {
+     "key": "hevea-panda-teether_2",
+     "src": "https://cdn.shopify.com/s/files/1/1027/0038/4590/files/HEVEA_natural_rubber_teethers_panda_kawan_kawanring_1_15eab503-4b5d-4aaa-ad48-fc4b255b34ab.jpg?v=1790244600"
+    },
+    {
+     "key": "hevea-panda-teether_3",
+     "src": "https://cdn.shopify.com/s/files/1/1027/0038/4590/files/HEVEA_PANDA_TEETHER_GROUP.jpg?v=1790244608"
+    },
+    {
+     "key": "hevea-panda-teether_4",
+     "src": "https://cdn.shopify.com/s/files/1/1027/0038/4590/files/HEVEAPandaTeether_Aura_d709343f-ed40-469e-95b0-fbbcc7130806.jpg?v=1777032600"
+    }
+   ],
+   "img": "hevea-panda-teether",
+   "img_src": "https://cdn.shopify.com/s/files/1/1027/0038/4590/files/Panda_soothing_toy_1x1_def475e8-08be-4a04-a59b-18186e1741a8.jpg?v=1777032599"
+  },
+  {
+   "uses": [
+    "Cotton"
+   ],
+   "free": [],
+   "unconfirmed": [
+    "Share of cotton and polyester",
+    "Velcro neck closure",
+    "Elastic cuffs",
+    "Print inks"
+   ],
+   "outside": [
+    "Polyester",
+    "Waterproof TPU coating"
+   ],
+   "contains": [],
+   "standards": [
+    "us-toy"
+   ],
+   "id": "mushie-long-sleeve-bib",
+   "type": "bibs",
+   "brand": "Mushie",
+   "line": "Long Sleeve Bib",
+   "facts": {
+    "main": "no",
+    "parts": "no",
+    "color": "unknown",
+    "lead": "yes"
+   },
+   "unstated": {
+    "color": [
+     "Print inks"
+    ]
+   },
+   "age": {
+    "min_months": 6,
+    "max_months": 24,
+    "text": "Recommended age: 6-24 months"
+   },
+   "quote": "Made with cotton and non-toxic polyester with embedded waterproof TPU coating",
+   "note": "Water-resistant bib with sleeves and a front pocket, 12.75 x 16.25 in. The page says it is “Third-party tested to meet CPSIA, ASTM, and Prop 65 standards”.",
+   "products": [
+    {
+     "name": "Mushie Long Sleeve Bib",
+     "url": "https://mushie.com/products/long-sleeve-bib",
+     "store": "Mushie",
+     "price": "$14.99",
+     "ships_from": null,
+     "shipping": "Free Shipping for US orders $75+"
+    }
+   ],
+   "read": "2026-11-06",
+   "photos": [
+    {
+     "key": "mushie-long-sleeve-bib",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/LongSleeveBib_PinkFlowers.jpg?v=1792779808"
+    },
+    {
+     "key": "mushie-long-sleeve-bib_2",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/long-sleeve-bib-info.jpg?v=1769016455"
+    },
+    {
+     "key": "mushie-long-sleeve-bib_3",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/flatyay-6.jpg?v=1789143082"
+    },
+    {
+     "key": "mushie-long-sleeve-bib_4",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/multy_cover_shoot.jpg?v=1769016455"
+    },
+    {
+     "key": "mushie-long-sleeve-bib_5",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/05_twinsgirls-11_9fc1deef-04ec-4b98-8896-9f3e6dbd62b7.jpg?v=1776796221"
+    },
+    {
+     "key": "mushie-long-sleeve-bib_6",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/malmo_l_a-310.jpg?v=1792438011"
+    },
+    {
+     "key": "mushie-long-sleeve-bib_7",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/shoot_11.01-27.jpg?v=1776796221"
+    },
+    {
+     "key": "mushie-long-sleeve-bib_8",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/Ebbe_shoot_jan26-29-2.jpg?v=1776796221"
+    },
+    {
+     "key": "mushie-long-sleeve-bib_9",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/baby_vinsent-15.jpg?v=1776796221"
+    },
+    {
+     "key": "mushie-long-sleeve-bib_10",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/Ellionore_8m_-54.jpg?v=1792779850"
+    }
+   ],
+   "img": "mushie-long-sleeve-bib",
+   "img_src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/LongSleeveBib_PinkFlowers.jpg?v=1792779808"
+  },
+  {
+   "uses": [
+    "Cotton"
+   ],
+   "free": [],
+   "unconfirmed": [
+    "Share of cotton and polyester",
+    "Print inks"
+   ],
+   "outside": [
+    "Water resistant polyester fabric",
+    "Waterproof TPU coating"
+   ],
+   "contains": [],
+   "standards": [
+    "us-toy"
+   ],
+   "id": "mushie-splat-mat",
+   "type": "mats",
+   "brand": "Mushie",
+   "line": "Splat Mat (42.5 x 42.5 in)",
+   "facts": {
+    "main": "no",
+    "color": "unknown",
+    "lead": "yes"
+   },
+   "unstated": {
+    "color": [
+     "Print inks"
+    ]
+   },
+   "quote": "Made from our water resistant polyester fabric that can be quickly wiped clean on-the-go and is machine washable for bigger spills.",
+   "note": "Mat to go under a high chair or for tummy time. The page says it is “Third-party tested to meet CPSIA, ASTM, and Prop 65 standards”.",
+   "products": [
+    {
+     "name": "Mushie Splat Mat",
+     "url": "https://mushie.com/products/splat-mat",
+     "store": "Mushie",
+     "price": "$24.99",
+     "ships_from": null,
+     "shipping": "Free Shipping for US orders $75+"
+    }
+   ],
+   "read": "2026-11-06",
+   "photos": [
+    {
+     "key": "mushie-splat-mat",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/SplatMat_Fog.jpg?v=1752248508"
+    },
+    {
+     "key": "mushie-splat-mat_2",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/SplatMat_OliveCheck_b7a9ba04-918d-4cc6-b66a-ce7bec160218.jpg?v=1757610213"
+    },
+    {
+     "key": "mushie-splat-mat_3",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/splat-mat-info.jpg?v=1752248509"
+    },
+    {
+     "key": "mushie-splat-mat_4",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/flat_lays-39.jpg?v=1771319095"
+    },
+    {
+     "key": "mushie-splat-mat_5",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/Malmo_shoot-9.jpg?v=1771964109"
+    },
+    {
+     "key": "mushie-splat-mat_6",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/mathilda_shoot-11.jpg?v=1771964109"
+    },
+    {
+     "key": "mushie-splat-mat_7",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/Liona_-084-2.jpg?v=1771964109"
+    },
+    {
+     "key": "mushie-splat-mat_8",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/multy_cover_shoot-6.jpg?v=1780694006"
+    },
+    {
+     "key": "mushie-splat-mat_9",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/flatlay_31.10-42.jpg?v=1771964109"
+    },
+    {
+     "key": "mushie-splat-mat_10",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/marmar-clothes_2girls-2.jpg?v=1771964109"
+    }
+   ],
+   "img": "mushie-splat-mat",
+   "img_src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/SplatMat_Fog.jpg?v=1752248508"
+  },
+  {
+   "uses": [
+    "Cotton muslin"
+   ],
+   "free": [],
+   "unconfirmed": [
+    "Whether the fabric is 100% cotton",
+    "Elastic edges",
+    "Thread",
+    "Dyes",
+    "Organic or not"
+   ],
+   "outside": [],
+   "contains": [],
+   "standards": [],
+   "id": "newton-compact-travel-crib-sheets",
+   "type": "sheets",
+   "brand": "Newton Baby",
+   "line": "Compact Travel Crib Sheets",
+   "facts": {
+    "main": "unknown",
+    "parts": "unknown",
+    "color": "unknown",
+    "finish": "unknown"
+   },
+   "unstated": {
+    "main": [
+     "Whether the fabric is 100% cotton"
+    ],
+    "parts": [
+     "Elastic edges",
+     "Thread"
+    ],
+    "color": [
+     "Dyes"
+    ]
+   },
+   "quote": "our ultra-breathable cotton muslin sheets are supremely soft and feature a snug fit",
+   "note": "Made to fit the Newton Compact Travel Crib & Play Yard floor mattress; pre-shrunk and machine washable, the page says.",
+   "products": [
+    {
+     "name": "Compact Travel Crib Sheets",
+     "url": "https://www.newtonbaby.com/products/compact-travel-crib-sheets",
+     "store": "Newton Baby",
+     "price": "$39.99",
+     "ships_from": null,
+     "shipping": "Free shipping in the 48 contiguous US states when joining the mailing list"
+    }
+   ],
+   "read": "2026-11-06",
+   "photos": [
+    {
+     "key": "newton-compact-travel-crib-sheets",
+     "src": "https://cdn.shopify.com/s/files/1/0792/0323/files/SheetsCompactTravelCrib3000-1.jpg?v=1759853070"
+    },
+    {
+     "key": "newton-compact-travel-crib-sheets_2",
+     "src": "https://cdn.shopify.com/s/files/1/0792/0323/files/SheetsCompactTravelCrib3000-2.jpg?v=1759853082"
+    },
+    {
+     "key": "newton-compact-travel-crib-sheets_3",
+     "src": "https://cdn.shopify.com/s/files/1/0792/0323/files/SheetsCompactTravelCrib3000-3.jpg?v=1759853082"
+    },
+    {
+     "key": "newton-compact-travel-crib-sheets_4",
+     "src": "https://cdn.shopify.com/s/files/1/0792/0323/files/SheetsCompactTravelCrib3000-4.jpg?v=1759853070"
+    },
+    {
+     "key": "newton-compact-travel-crib-sheets_5",
+     "src": "https://cdn.shopify.com/s/files/1/0792/0323/files/SheetsCompactTravelCrib3000-5.jpg?v=1759847932"
+    },
+    {
+     "key": "newton-compact-travel-crib-sheets_6",
+     "src": "https://cdn.shopify.com/s/files/1/0792/0323/files/SheetsCompactTravelCrib3000-6.jpg?v=1759847932"
+    },
+    {
+     "key": "newton-compact-travel-crib-sheets_7",
+     "src": "https://cdn.shopify.com/s/files/1/0792/0323/files/Sheets_Compact_Travel_Crib_-_Sandstone_-_2.jpg?v=1773244675"
+    },
+    {
+     "key": "newton-compact-travel-crib-sheets_8",
+     "src": "https://cdn.shopify.com/s/files/1/0792/0323/files/Sheets_Compact_Travel_Crib_-_Sandstone_-_3.jpg?v=1773244675"
+    },
+    {
+     "key": "newton-compact-travel-crib-sheets_9",
+     "src": "https://cdn.shopify.com/s/files/1/0792/0323/files/Sheets_Compact_Travel_Crib_-_Sandstone_-_4.jpg?v=1773244675"
+    },
+    {
+     "key": "newton-compact-travel-crib-sheets_10",
+     "src": "https://cdn.shopify.com/s/files/1/0792/0323/files/Sheets_Compact_Travel_Crib_-_Sandstone_-_5.jpg?v=1773244675"
+    }
+   ],
+   "img": "newton-compact-travel-crib-sheets",
+   "img_src": "https://cdn.shopify.com/s/files/1/0792/0323/files/SheetsCompactTravelCrib3000-1.jpg?v=1759853070"
+  },
+  {
+   "uses": [
+    "Rubberwood",
+    "Organic pigments and water-based dyes",
+    "Drumheads of fabric coated with natural rubber"
+   ],
+   "free": [
+    "Formaldehyde in the glue"
+   ],
+   "unconfirmed": [
+    "Fibre of the drumhead fabric",
+    "Metal of the cymbal",
+    "What the glue is made of",
+    "Whether the rubber coating has additives"
+   ],
+   "outside": [],
+   "contains": [
+    "latex"
+   ],
+   "standards": [],
+   "id": "plantoys-musical-band",
+   "type": "instruments",
+   "brand": "PlanToys",
+   "line": "Musical Band (drums, cymbal and guiro)",
+   "facts": {
+    "main": "unknown",
+    "parts": "unknown",
+    "color": "unknown",
+    "wood": "unknown",
+    "rubber": "unknown"
+   },
+   "unstated": {
+    "main": [
+     "Fibre of the drumhead fabric"
+    ],
+    "parts": [
+     "Metal of the cymbal"
+    ],
+    "wood": [
+     "What the glue is made of"
+    ],
+    "rubber": [
+     "Whether the rubber coating has additives"
+    ]
+   },
+   "quote": "MATERIALS : Made of chemical-free rubberwood, formaldehyde-free glue, organic pigments and water-based dyes.",
+   "note": "Two drumsticks, large and small drums, cymbal and guiro on one stand; needs adult assembly. Made in Thailand; ships from the maker within the 48 contiguous states.",
+   "products": [
+    {
+     "name": "PlanToys Musical Band",
+     "url": "https://www.bellalunatoys.com/products/plantoys-musical-band",
+     "store": "Bella Luna Toys",
+     "price": "$79.99",
+     "ships_from": "US",
+     "shipping": "Ships separately from the manufacturer, 48 contiguous states only"
+    }
+   ],
+   "read": "2026-11-06",
+   "photos": [
+    {
+     "key": "plantoys-musical-band",
+     "src": "https://cdn.shopify.com/s/files/1/1114/2810/products/6410_-_Packshot_-_04_bb7ee397-f219-40f0-959e-64aa28772c0c.png?v=1683735347"
+    },
+    {
+     "key": "plantoys-musical-band_2",
+     "src": "https://cdn.shopify.com/s/files/1/1114/2810/products/6410_-_Lifestyle_-_01.jpg?v=1683735347"
+    },
+    {
+     "key": "plantoys-musical-band_3",
+     "src": "https://cdn.shopify.com/s/files/1/1114/2810/products/6410_-_Lifestyle_-_02.jpg?v=1683735347"
+    },
+    {
+     "key": "plantoys-musical-band_4",
+     "src": "https://cdn.shopify.com/s/files/1/1114/2810/products/6410_-_Lifestyle_-_04.jpg?v=1683735347"
+    },
+    {
+     "key": "plantoys-musical-band_5",
+     "src": "https://cdn.shopify.com/s/files/1/1114/2810/products/6410_-_Packshot_-_05.jpg?v=1683735347"
+    }
+   ],
+   "img": "plantoys-musical-band",
+   "img_src": "https://cdn.shopify.com/s/files/1/1114/2810/products/6410_-_Packshot_-_04_bb7ee397-f219-40f0-959e-64aa28772c0c.png?v=1683735347"
+  },
+  {
+   "uses": [
+    "Hardwood"
+   ],
+   "free": [],
+   "unconfirmed": [
+    "Which parts are laminate",
+    "Finishes (“child-safe”, type not named)",
+    "Wood species",
+    "Glue"
+   ],
+   "outside": [
+    "High-impact laminate"
+   ],
+   "contains": [],
+   "standards": [],
+   "id": "rad-montessori-spatial-puzzle",
+   "type": "puzzles",
+   "brand": "TAG Toys (RAD Children’s Furniture)",
+   "line": "Montessori Spatial Puzzle (18 pieces)",
+   "facts": {
+    "main": "no",
+    "color": "unknown",
+    "wood": "no"
+   },
+   "unstated": {
+    "color": [
+     "Finishes (“child-safe”, type not named)"
+    ]
+   },
+   "age": {
+    "min_months": 24,
+    "max_months": 48,
+    "text": "Recommended for ages 2 to 4"
+   },
+   "quote": "Crafted from durable hardwood and brightly colored, high-impact laminate with child-safe finishes and smooth, raised shapes.",
+   "note": "12 x 12 in board with raised pieces; made in Los Angeles, the page says.",
+   "products": [
+    {
+     "name": "Montessori Spatial Puzzle",
+     "url": "https://radchildrensfurniture.com/products/montessori-spatial-puzzle-part-to-whole-thinking-toy",
+     "store": "RAD Children’s Furniture",
+     "price": "$75.00",
+     "ships_from": "US",
+     "shipping": "Free shipping in the contiguous USA"
+    }
+   ],
+   "read": "2026-11-06",
+   "photos": [
+    {
+     "key": "rad-montessori-spatial-puzzle",
+     "src": "https://cdn.shopify.com/s/files/1/0087/4230/5892/files/MontessoriSpatialPuzzle_Part-to-WholeThinkingToy.jpg?v=1762459821"
+    }
+   ],
+   "img": "rad-montessori-spatial-puzzle",
+   "img_src": "https://cdn.shopify.com/s/files/1/0087/4230/5892/files/MontessoriSpatialPuzzle_Part-to-WholeThinkingToy.jpg?v=1762459821"
+  },
+  {
+   "uses": [
+    "Solid hardwood"
+   ],
+   "free": [],
+   "unconfirmed": [
+    "Wood species",
+    "Finish (“water-based”, type not named)"
+   ],
+   "outside": [],
+   "contains": [],
+   "standards": [],
+   "id": "rad-montessori-wooden-stacking-tower",
+   "type": "stacking",
+   "brand": "TAG Toys (RAD Children’s Furniture)",
+   "line": "Montessori Wooden Stacking Tower (5 pieces)",
+   "facts": {
+    "main": "yes",
+    "wood": "yes",
+    "color": "unknown"
+   },
+   "unstated": {
+    "color": [
+     "Finish (“water-based”, type not named)"
+    ]
+   },
+   "age": {
+    "min_months": 12,
+    "max_months": 36,
+    "text": "Recommended for ages 1 to 3"
+   },
+   "quote": "Crafted from solid hardwood with non-toxic, water-based finishes and smooth, rounded edges.",
+   "note": "Five colored nesting pieces, 6 x 6 x 10 in; made in Los Angeles, the page says.",
+   "products": [
+    {
+     "name": "Montessori Wooden Stacking Tower",
+     "url": "https://radchildrensfurniture.com/products/montessori-wooden-stacking-tower",
+     "store": "RAD Children’s Furniture",
+     "price": "$79.00",
+     "ships_from": "US",
+     "shipping": "Free shipping in the contiguous USA"
+    }
+   ],
+   "read": "2026-11-06",
+   "photos": [
+    {
+     "key": "rad-montessori-wooden-stacking-tower",
+     "src": "https://cdn.shopify.com/s/files/1/0087/4230/5892/files/MontessoriWoodenStackingToy.jpg?v=1762459821"
+    }
+   ],
+   "img": "rad-montessori-wooden-stacking-tower",
+   "img_src": "https://cdn.shopify.com/s/files/1/0087/4230/5892/files/MontessoriWoodenStackingToy.jpg?v=1762459821"
+  },
+  {
+   "uses": [
+    "Solid hardwood",
+    "Organic oil finish"
+   ],
+   "free": [],
+   "unconfirmed": [
+    "Wood species",
+    "Which oils are in the “homegrown organic oil blend”"
+   ],
+   "outside": [],
+   "contains": [],
+   "standards": [],
+   "id": "smiling-tree-toys-giraffe-rattle",
+   "type": "rattles",
+   "brand": "Smiling Tree Toys",
+   "line": "Giraffe Rattle (Imperfect, sold as-is)",
+   "facts": {
+    "main": "yes",
+    "wood": "yes",
+    "color": "unknown"
+   },
+   "unstated": {
+    "color": [
+     "Which oils are in the “homegrown organic oil blend”"
+    ]
+   },
+   "quote": "solid hardwood organic oil finish",
+   "note": "Sold as an “Imperfect” second (marks in the wood grain), at $9.50 instead of $18.00; cannot be returned. 5.25 x 2.75 in, handmade in Minnesota, the page says.",
+   "products": [
+    {
+     "name": "Imperfect Giraffe Rattle",
+     "url": "https://smilingtreetoys.com/products/giraffe-rattle-on-sale",
+     "store": "Smiling Tree Toys",
+     "price": "$9.50",
+     "ships_from": "US"
+    }
+   ],
+   "read": "2026-11-06",
+   "photos": [
+    {
+     "key": "smiling-tree-toys-giraffe-rattle",
+     "src": "https://cdn.shopify.com/s/files/1/0455/9189/files/wood-baby-rattles-on-sale-discount-made-USA-new-baby-first-christmas-gift-Smiling-Tree-Toys.jpg?v=1684416779"
+    },
+    {
+     "key": "smiling-tree-toys-giraffe-rattle_2",
+     "src": "https://cdn.shopify.com/s/files/1/0455/9189/files/wood-baby-rattles-on-sale-discount-made-USA-new-baby-first-christmas-gift-Smiling-Tree-Toys-4.jpg?v=1684416779"
+    },
+    {
+     "key": "smiling-tree-toys-giraffe-rattle_3",
+     "src": "https://cdn.shopify.com/s/files/1/0455/9189/files/wood-baby-rattles-on-sale-discount-made-USA-new-baby-first-christmas-gift-Smiling-Tree-Toys-1copy.jpg?v=1683628612"
+    },
+    {
+     "key": "smiling-tree-toys-giraffe-rattle_4",
+     "src": "https://cdn.shopify.com/s/files/1/0455/9189/files/wood-baby-rattles-on-sale-discount-made-USA-new-baby-first-christmas-gift-Smiling-Tree-Toys-2.jpg?v=1683628612"
+    }
+   ],
+   "img": "smiling-tree-toys-giraffe-rattle",
+   "img_src": "https://cdn.shopify.com/s/files/1/0455/9189/files/wood-baby-rattles-on-sale-discount-made-USA-new-baby-first-christmas-gift-Smiling-Tree-Toys.jpg?v=1684416779"
+  },
+  {
+   "uses": [
+    "Midwestern basswood"
+   ],
+   "free": [],
+   "unconfirmed": [
+    "What the inks are made of",
+    "Finish on the blocks",
+    "Solid or glued wood"
+   ],
+   "outside": [],
+   "contains": [],
+   "standards": [],
+   "id": "uncle-goose-constellation-blocks",
+   "type": "blocks",
+   "brand": "Uncle Goose",
+   "line": "Constellation Blocks (16 blocks, 1.75 in)",
+   "facts": {
+    "main": "yes",
+    "color": "unknown",
+    "wood": "unknown"
+   },
+   "unstated": {
+    "color": [
+     "What the inks are made of"
+    ],
+    "wood": [
+     "Solid or glued wood"
+    ]
+   },
+   "age": {
+    "min_months": 24,
+    "text": "Ages 2+"
+   },
+   "quote": "Made using sustainable Midwestern basswood Printed with safe-to-touch inks 100% made in the USA",
+   "note": "Printed with 16 constellations from the northern and southern skies. The page says the blocks are printed with “safe-to-touch inks”. Sold by Colored Organics.",
+   "products": [
+    {
+     "name": "Uncle Goose Constellation Blocks",
+     "url": "https://coloredorganics.com/products/nautical-blocks-copy",
+     "store": "Colored Organics",
+     "price": "$32",
+     "ships_from": "US",
+     "shipping": "Free U.S. shipping on orders over $50"
+    }
+   ],
+   "read": "2026-11-06",
+   "photos": [
+    {
+     "key": "uncle-goose-constellation-blocks",
+     "src": "https://cdn.shopify.com/s/files/1/1643/4857/files/infant-unisex-constellation-blocks.multi.flat_front.jpg?v=1784316133"
+    },
+    {
+     "key": "uncle-goose-constellation-blocks_2",
+     "src": "https://cdn.shopify.com/s/files/1/1643/4857/files/infant-unisex-constellation-blocks.multi.flat_detail.2.jpg?v=1784316132"
+    },
+    {
+     "key": "uncle-goose-constellation-blocks_3",
+     "src": "https://cdn.shopify.com/s/files/1/1643/4857/files/infant-unisex-constellation-blocks.multi.flat_detail.3.jpg?v=1784316133"
+    },
+    {
+     "key": "uncle-goose-constellation-blocks_4",
+     "src": "https://cdn.shopify.com/s/files/1/1643/4857/files/infant-unisex-constellation-blocks.multi.flat_detail.jpg?v=1784316133"
+    }
+   ],
+   "img": "uncle-goose-constellation-blocks",
+   "img_src": "https://cdn.shopify.com/s/files/1/1643/4857/files/infant-unisex-constellation-blocks.multi.flat_front.jpg?v=1784316133"
+  },
+  {
+   "uses": [
+    "100% GOTS certified organic Egyptian cotton",
+    "Organic cotton stuffing in the head, hands and feet"
+   ],
+   "free": [],
+   "unconfirmed": [
+    "Thread",
+    "Dyes",
+    "How the face is made"
+   ],
+   "outside": [],
+   "contains": [],
+   "standards": [
+    "gots"
+   ],
+   "id": "under-the-nile-duke-the-dog",
+   "type": "animals",
+   "brand": "Under the Nile",
+   "line": "Duke the Dog Stuffed Toy (flat dog, 9 in)",
+   "facts": {
+    "main": "yes",
+    "parts": "unknown",
+    "color": "unknown",
+    "organic": "yes"
+   },
+   "unstated": {
+    "parts": [
+     "Thread"
+    ],
+    "color": [
+     "Dyes"
+    ]
+   },
+   "quote": "is made and stuffed with 100% GOTS certified organic Egyptian Cotton",
+   "note": "Made in a “Certified Fair Trade facility”, the store says. Sold by Green Mountain Diapers.",
+   "products": [
+    {
+     "name": "Under the Nile Duke the Dog Stuffed Toy, Flat Dog",
+     "url": "https://www.greenmountaindiapers.com/products/under-the-nile-duke-the-dog-stuffed-toy",
+     "store": "Green Mountain Diapers",
+     "price": "$19.00",
+     "ships_from": null
+    }
+   ],
+   "read": "2026-11-06",
+   "photos": [
+    {
+     "key": "under-the-nile-duke-the-dog",
+     "src": "https://cdn.shopify.com/s/files/1/1583/5087/files/utn-dukedog2048.jpg?v=1754607457"
+    },
+    {
+     "key": "under-the-nile-duke-the-dog_2",
+     "src": "https://cdn.shopify.com/s/files/1/1583/5087/files/utn-dukethedog2048.jpg?v=1754607457"
+    },
+    {
+     "key": "under-the-nile-duke-the-dog_3",
+     "src": "https://cdn.shopify.com/s/files/1/1583/5087/files/utn-ceceandduke.jpg?v=1754608376"
+    }
+   ],
+   "img": "under-the-nile-duke-the-dog",
+   "img_src": "https://cdn.shopify.com/s/files/1/1583/5087/files/utn-dukedog2048.jpg?v=1754607457"
   }
  ]
 }
