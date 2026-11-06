@@ -54,6 +54,16 @@
    "url": "https://kodokids.com/products/ice-molds",
    "reason": "Ice moulds sold for sensory and block play (ages 3+), not a kitchen ice tray; the page names no material",
    "date": "2026-11-05"
+  },
+  {
+   "url": "https://mushie.com/products/frigg-natural-rubber-6-pack",
+   "reason": "Duplicate: same materials as the listed FRIGG Natural Rubber Pacifier 4-Pack",
+   "date": "2026-11-06"
+  },
+  {
+   "url": "https://www.deltachildren.com/products/world-map-round-area-rug-for-kids-39-inch",
+   "reason": "Duplicate: same rug and materials as the listed Delta Children Outer Space Round Area Rug",
+   "date": "2026-11-06"
   }
  ]
 }

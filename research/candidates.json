@@ -1357,7 +1357,8 @@
    "type": "blocks",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "uncle-goose-constellation-blocks"
   },
   {
    "url": "https://coloredorganics.com/products/organic-cotton-baby-and-kids-aw26-idris-corduroy-snap-vest-95611-25-taupe",
@@ -1959,7 +1960,8 @@
    "type": "teethers",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "hevea-panda-teether"
   },
   {
    "url": "https://us.heveaplanet.com/products/star-treat-activity-dog-toy-1x1",
@@ -3158,7 +3160,8 @@
    "type": "utensils",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "beaba-stainless-steel-pre-cutlery"
   },
   {
    "url": "https://beaba.us/products/set-of-2-easy-grip-1st-stage-silicone-spoons-storage-case",
@@ -3482,7 +3485,8 @@
    "type": "sheets",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "newton-compact-travel-crib-sheets"
   },
   {
    "url": "https://www.newtonbaby.com/products/compact-travel-crib",
@@ -11193,7 +11197,8 @@
    "type": "puzzles",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "rad-montessori-spatial-puzzle"
   },
   {
    "url": "https://radchildrensfurniture.com/products/montessori-wooden-stacking-tower",
@@ -11202,7 +11207,8 @@
    "type": "stacking",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "rad-montessori-wooden-stacking-tower"
   },
   {
    "url": "https://radchildrensfurniture.com/products/montessori-wooden-stacking-ring-tower",
@@ -18744,7 +18750,8 @@
    "type": "changing-pads",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "skipped",
+   "reason": "Page names no material for the changing pad"
   },
   {
    "url": "https://freshlypicked.com/products/aspen-classic-stroller-clip",
@@ -21490,7 +21497,8 @@
    "type": "pacifiers",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "skipped",
+   "reason": "Duplicate: same materials as the listed FRIGG Natural Rubber Pacifier 4-Pack"
   },
   {
    "url": "https://mushie.com/products/silicone-animal-finger-puppets",
@@ -21708,7 +21716,8 @@
    "type": "bibs",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "mushie-long-sleeve-bib"
   },
   {
    "url": "https://mushie.com/products/splat-mat",
@@ -21717,7 +21726,8 @@
    "type": "bibs",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "mushie-splat-mat"
   },
   {
    "url": "https://mushie.com/products/daisy-rattle-teether-dusty-rose",
@@ -23227,7 +23237,8 @@
    "type": "animals",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "under-the-nile-duke-the-dog"
   },
   {
    "url": "https://www.greenmountaindiapers.com/products/puppi-merino-wool-diaper-cover",
@@ -24668,7 +24679,8 @@
    "type": "rattles",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "smiling-tree-toys-giraffe-rattle"
   },
   {
    "url": "https://smilingtreetoys.com/products/love-bug-car-on-sale",
@@ -44743,7 +44755,8 @@
    "type": "rugs",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "skipped",
+   "reason": "Duplicate: same rug and materials as the listed Delta Children Outer Space Round Area Rug"
   },
   {
    "url": "https://www.deltachildren.com/products/watercolor-rectangle-area-rug-for-kids-53-inch-x-59-inch",
@@ -52124,7 +52137,8 @@
    "type": "instruments",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "plantoys-musical-band"
   },
   {
    "url": "https://www.bellalunatoys.com/products/plantoys-classic-wooden-dollhouse",
@@ -52286,7 +52300,8 @@
    "type": "instruments",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "bella-luna-wooden-zither"
   },
   {
    "url": "https://www.bellalunatoys.com/products/maileg-sleigh-mouse-red",
@@ -54318,7 +54333,8 @@
    "type": "instruments",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "enlightened-baby-wooden-maracas"
   },
   {
    "url": "https://enlightenedbaby.com/products/maxi-cosi-nursery-double-topper",
