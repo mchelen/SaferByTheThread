@@ -3224,7 +3224,8 @@
    "type": "food-storage",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "skipped",
+   "reason": "Duplicate: 5 oz size of the listed Béaba Glass Baby Food Jars, 8 oz (set of 6), same materials"
   },
   {
    "url": "https://beaba.us/products/1st-meal-set",
@@ -6617,7 +6618,8 @@
    "type": "bodysuits",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "little-green-radicals-baby-bodysuit-2-pack"
   },
   {
    "url": "https://littlegreenradicals.com/products/olive-ducks-baby-bodysuit-2-pack",
@@ -7131,7 +7133,8 @@
    "type": "blankets",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "little-green-radicals-knitted-organic-baby-blanket"
   },
   {
    "url": "https://littlegreenradicals.com/products/mountain-fairisle-snuggly-woollen-jumper",
@@ -8859,7 +8862,8 @@
    "type": "towels",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "crywolf-rapid-dry-towel"
   },
   {
    "url": "https://crywolfchild.com/products/rapid-dry-towel-sea-green-check",
@@ -19463,7 +19467,8 @@
    "type": "freezer-trays",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "skipped",
+   "reason": "Not made for babies or children: a general kitchen tray for four 1-cup meal portions (soups, sauces, baked goods)"
   },
   {
    "url": "https://www.soupercubes.com/products/cookie-dough-freezer-tray",
@@ -22895,7 +22900,8 @@
    "type": "freezer-trays",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "weesprout-plastic-baby-food-storage-containers"
   },
   {
    "url": "https://www.weesprout.com/products/silicone-divided-toddler-plates",
@@ -23422,7 +23428,8 @@
    "type": "towels",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "cloth-eez-terry-baby-washcloths"
   },
   {
    "url": "https://www.greenmountaindiapers.com/products/mother-ease-sandys-absorbent-liners-doublers",
@@ -23467,7 +23474,8 @@
    "type": "diapers",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "mother-ease-wizard-uno-newborn"
   },
   {
    "url": "https://www.greenmountaindiapers.com/products/under-the-nile-playyard-sheet",
@@ -23521,7 +23529,8 @@
    "type": "changing-pads",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "under-the-nile-changing-pad-cover"
   },
   {
    "url": "https://www.greenmountaindiapers.com/products/under-the-nile-bassinet-sheet",
@@ -23649,7 +23658,8 @@
    "type": "diapers",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "thirsties-natural-pocket-diaper"
   },
   {
    "url": "https://www.greenmountaindiapers.com/products/crinkle-muslin-baby-blanket",
@@ -24480,7 +24490,8 @@
    "type": "sleep-sacks",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "babee-greens-wool-swaddle-blanket"
   },
   {
    "url": "https://www.greenmountaindiapers.com/products/growing-greens-organic-diaper",
@@ -27988,7 +27999,8 @@
    "type": "pillows",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "toki-kids-tutu-support-pillow"
   },
   {
    "url": "https://tokikids.com/products/sandcastle-support-pillow-cover-1",
@@ -33052,7 +33064,8 @@
    "type": "ice-trays",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "tovolo-perfect-cube-ice-mold-with-lid"
   },
   {
    "url": "https://www.tovolo.com/products/mixing-bowl-7-5-qt",
@@ -73231,7 +73244,8 @@
    "type": "pillows",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "home-of-wool-reflux-wool-pillow"
   },
   {
    "url": "https://homeofwool.com/shop/flat-sheet/",
@@ -73845,7 +73859,8 @@
    "type": "rugs",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "home-of-wool-flat-woven-wool-rug"
   },
   {
    "url": "https://homeofwool.com/shop/wool-slippers/",
@@ -73926,7 +73941,8 @@
    "type": "changing-pads",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "home-of-wool-portable-changing-pad"
   },
   {
    "url": "https://homeofwool.com/shop/baby-pillow/",
@@ -141227,7 +141243,8 @@
    "type": "pajamas",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "people-wear-organic-frottee-pyjama"
   },
   {
    "url": "https://www.pololo.com/shop/people-wear-organic-pyjama-gots-5/",
@@ -160761,7 +160778,8 @@
    "type": "pacifiers",
    "source": "watchlist",
    "first_seen": "2026-10-28",
-   "status": "new"
+   "status": "listed",
+   "listing": "hevea-newborn-pacifier-round-teat"
   },
   {
    "url": "https://www.obasan.com/products/organic-cotton-sheet-set-sca_clone_freegift",
