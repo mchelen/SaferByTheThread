@@ -1,6 +1,6 @@
 {
  "schema": 4,
- "updated": "2026-11-06",
+ "updated": "2026-11-07",
  "ask": [
   "Thread on any sewn item (cotton or polyester).",
   "Wheels and axles on push toys and cars.",
@@ -30104,6 +30104,1166 @@
    ],
    "img": "under-the-nile-duke-the-dog",
    "img_src": "https://cdn.shopify.com/s/files/1/1583/5087/files/utn-dukedog2048.jpg?v=1754607457"
+  },
+  {
+   "id": "babee-greens-wool-swaddle-blanket",
+   "type": "sleep-sacks",
+   "brand": "Babee Greens",
+   "line": "Wool Swaddle Blanket, 28 x 30 in",
+   "uses": [
+    "Merino wool knit",
+    "Natural cotton edge stitching"
+   ],
+   "free": [
+    "Polyester",
+    "Vinyl"
+   ],
+   "outside": [],
+   "unconfirmed": [
+    "Whether the wool is treated (superwash or not)",
+    "Dyes"
+   ],
+   "facts": {
+    "main": "yes",
+    "wool": "unknown",
+    "color": "unknown"
+   },
+   "unstated": {
+    "wool": [
+     "Whether the wool is treated (superwash or not)"
+    ],
+    "color": [
+     "Dyes"
+    ]
+   },
+   "contains": [],
+   "standards": [
+    "oeko-tex"
+   ],
+   "quote": "Made of Okeo Tex Merino wool. No polyester, no vinyl. Natural cotton edge stitching, too!",
+   "note": "Stretchy knit; made in the USA, the store says. The page spells the label “Okeo Tex” and also calls the wool “organic merino wool” without naming a certificate. Sold by Green Mountain Diapers; sold out when read.",
+   "products": [
+    {
+     "name": "Babee Greens Wool Swaddle Blanket",
+     "url": "https://www.greenmountaindiapers.com/products/babee-greens-wool-swaddle-blanket",
+     "store": "Green Mountain Diapers",
+     "price": "$59.00 (sold out when read)",
+     "ships_from": null,
+     "shipping": "Shipping calculated at checkout"
+    }
+   ],
+   "read": "2026-11-07",
+   "photos": [
+    {
+     "key": "babee-greens-wool-swaddle-blanket",
+     "src": "https://cdn.shopify.com/s/files/1/1583/5087/products/Babee-Greens-Wool-Swaddle-Blanket-1024.jpg?v=1521563595"
+    },
+    {
+     "key": "babee-greens-wool-swaddle-blanket_2",
+     "src": "https://cdn.shopify.com/s/files/1/1583/5087/files/babeeswaddlechangingtable2048.jpg?v=1785347600"
+    },
+    {
+     "key": "babee-greens-wool-swaddle-blanket_3",
+     "src": "https://cdn.shopify.com/s/files/1/1583/5087/files/babeegreensswadddlefolded.jpg?v=1785347933"
+    },
+    {
+     "key": "babee-greens-wool-swaddle-blanket_4",
+     "src": "https://cdn.shopify.com/s/files/1/1583/5087/files/babeeswaddledarkspots.jpg?v=1785346532"
+    }
+   ],
+   "img": "babee-greens-wool-swaddle-blanket",
+   "img_src": "https://cdn.shopify.com/s/files/1/1583/5087/products/Babee-Greens-Wool-Swaddle-Blanket-1024.jpg?v=1521563595"
+  },
+  {
+   "id": "cloth-eez-terry-baby-washcloths",
+   "type": "towels",
+   "brand": "Cloth-eez",
+   "line": "Cotton Terry Baby Washcloths, 7 x 7 in (pack of 12)",
+   "uses": [
+    "100% cotton zero-twist terry, one layer"
+   ],
+   "free": [],
+   "outside": [],
+   "unconfirmed": [
+    "Trim",
+    "Thread",
+    "Dye of the tan colour"
+   ],
+   "facts": {
+    "main": "yes",
+    "parts": "unknown",
+    "color": "unknown"
+   },
+   "unstated": {
+    "parts": [
+     "Trim",
+     "Thread"
+    ],
+    "color": [
+     "Dye of the tan colour"
+    ]
+   },
+   "contains": [],
+   "standards": [],
+   "quote": "100% cotton exclusive of trim.",
+   "note": "Made in Pakistan, the store says. Sold by Green Mountain Diapers in packs of 12.",
+   "products": [
+    {
+     "name": "Cloth-eez Cotton Terry Baby Washcloths, Pack of 12",
+     "url": "https://www.greenmountaindiapers.com/products/terry-baby-washcloths",
+     "store": "Green Mountain Diapers",
+     "price": "$12.95",
+     "ships_from": null,
+     "shipping": "Shipping calculated at checkout"
+    }
+   ],
+   "read": "2026-11-07",
+   "photos": [
+    {
+     "key": "cloth-eez-terry-baby-washcloths",
+     "src": "https://cdn.shopify.com/s/files/1/1583/5087/files/washcloth7x72048.jpg?v=1752175960"
+    },
+    {
+     "key": "cloth-eez-terry-baby-washcloths_2",
+     "src": "https://cdn.shopify.com/s/files/1/1583/5087/files/terrywipessideboard.jpg?v=1752175960"
+    }
+   ],
+   "img": "cloth-eez-terry-baby-washcloths",
+   "img_src": "https://cdn.shopify.com/s/files/1/1583/5087/files/washcloth7x72048.jpg?v=1752175960"
+  },
+  {
+   "id": "crywolf-rapid-dry-towel",
+   "type": "towels",
+   "brand": "Crywolf",
+   "line": "Rapid Dry Towel, 40 x 120 cm",
+   "uses": [],
+   "free": [],
+   "outside": [
+    "100% polyester microfibre (390 gsm)"
+   ],
+   "unconfirmed": [
+    "Hanging loop",
+    "Elasticated pouch",
+    "Dyes and print"
+   ],
+   "facts": {
+    "main": "no",
+    "parts": "unknown",
+    "color": "unknown"
+   },
+   "unstated": {
+    "parts": [
+     "Hanging loop"
+    ],
+    "color": [
+     "Dyes and print"
+    ]
+   },
+   "contains": [],
+   "standards": [],
+   "quote": "Materials 100% Polyester Microfibre 390gsm weight",
+   "note": "Weft-knit microfibre towel with a hanging loop and its own pouch; designed in New Zealand. Price in New Zealand dollars.",
+   "products": [
+    {
+     "name": "Rapid Dry Towel – Flamingo Check",
+     "url": "https://crywolfchild.com/products/rapid-dry-towel-flamingo-check",
+     "store": "Crywolf",
+     "price": "$39.99 NZD (backordered when read)",
+     "ships_from": null,
+     "shipping": null
+    }
+   ],
+   "read": "2026-11-07",
+   "photos": [
+    {
+     "key": "crywolf-rapid-dry-towel",
+     "src": "https://cdn.shopify.com/s/files/1/2228/8463/files/CRYWOL_1_fbb52cee-b559-48b6-88a6-875aaea7e5fb.jpg?v=1787282730"
+    },
+    {
+     "key": "crywolf-rapid-dry-towel_2",
+     "src": "https://cdn.shopify.com/s/files/1/2228/8463/files/CRYWOL_2_09781703-3ba8-4132-ae2c-f7292cc2f9fd.jpg?v=1787282730"
+    },
+    {
+     "key": "crywolf-rapid-dry-towel_3",
+     "src": "https://cdn.shopify.com/s/files/1/2228/8463/files/CRYWOLF-SS2627-Rapid-Dry-Towel-Flamingo-1-Campaign-WEB.jpg?v=1787282744"
+    },
+    {
+     "key": "crywolf-rapid-dry-towel_4",
+     "src": "https://cdn.shopify.com/s/files/1/2228/8463/files/CRYWOLF-SS2627-Rapid-Dry-Towels-1-Campaign-WEB.jpg?v=1787282745"
+    }
+   ],
+   "img": "crywolf-rapid-dry-towel",
+   "img_src": "https://cdn.shopify.com/s/files/1/2228/8463/files/CRYWOL_1_fbb52cee-b559-48b6-88a6-875aaea7e5fb.jpg?v=1787282730"
+  },
+  {
+   "id": "hevea-newborn-pacifier-round-teat",
+   "type": "pacifiers",
+   "brand": "Hevea",
+   "line": "Natural Rubber Pacifier, Newborn 0 to 3 months, Round Teat",
+   "uses": [
+    "100% natural rubber latex, one piece"
+   ],
+   "free": [],
+   "outside": [],
+   "unconfirmed": [
+    "What the colour pigments are (coloured version)",
+    "Plasticisers or other additives in the rubber"
+   ],
+   "facts": {
+    "main": "yes",
+    "parts": "yes",
+    "rubber": "unknown",
+    "color": "unknown"
+   },
+   "unstated": {
+    "rubber": [
+     "Plasticisers or other additives in the rubber"
+    ],
+    "color": [
+     "What the colour pigments are (coloured version)"
+    ]
+   },
+   "contains": [
+    "latex"
+   ],
+   "standards": [],
+   "age": {
+    "min_months": 0,
+    "max_months": 3,
+    "text": "Newborns 0 to 3 months"
+   },
+   "quote": "Material: 100% natural rubber latex derived from the Hevea brasiliensis tree.",
+   "note": "Single pacifier in natural or Baby Blue. Packaging is FSC-certified paper with a PLA window film, the maker says.",
+   "products": [
+    {
+     "name": "Pacifiers Newborn 0+ Months Round Teat",
+     "url": "https://us.heveaplanet.com/products/pacifiers-newborn-0-3-months-round-teat",
+     "store": "Hevea",
+     "price": "$14.95",
+     "ships_from": null,
+     "shipping": null
+    }
+   ],
+   "read": "2026-11-07",
+   "photos": [
+    {
+     "key": "hevea-newborn-pacifier-round-teat",
+     "src": "https://cdn.shopify.com/s/files/1/1027/0038/4590/files/zhbe0r2hbimgiy1ipcqa_34438e5d-4634-4c51-a9d5-7ad27408c770.jpg?v=1793181145"
+    },
+    {
+     "key": "hevea-newborn-pacifier-round-teat_2",
+     "src": "https://cdn.shopify.com/s/files/1/1027/0038/4590/files/Hevea_Product_Pacfier_Capri.jpg?v=1793178067"
+    },
+    {
+     "key": "hevea-newborn-pacifier-round-teat_3",
+     "src": "https://cdn.shopify.com/s/files/1/1027/0038/4590/files/4607.png?v=1788524521"
+    }
+   ],
+   "img": "hevea-newborn-pacifier-round-teat",
+   "img_src": "https://cdn.shopify.com/s/files/1/1027/0038/4590/files/zhbe0r2hbimgiy1ipcqa_34438e5d-4634-4c51-a9d5-7ad27408c770.jpg?v=1793181145"
+  },
+  {
+   "id": "home-of-wool-flat-woven-wool-rug",
+   "type": "rugs",
+   "brand": "Home of Wool",
+   "line": "Flat Woven Wool Rug",
+   "uses": [
+    "Undyed wool"
+   ],
+   "free": [
+    "Dyes",
+    "Treatments",
+    "Synthetics"
+   ],
+   "outside": [],
+   "unconfirmed": [],
+   "facts": {
+    "main": "yes",
+    "color": "yes",
+    "wool": "yes",
+    "finish": "yes"
+   },
+   "unstated": {},
+   "contains": [],
+   "standards": [],
+   "quote": "The Home of Wool flat-woven rug is handcrafted to order, using only pure wool in its natural hues of cream, grey, brown. With no dyes or treatments, the fibers remain undyed",
+   "note": "Handcrafted to order in natural cream, grey, brown or a striped mix, with or without fringe.",
+   "products": [
+    {
+     "name": "Flat Woven Wool Rug",
+     "url": "https://homeofwool.com/shop/flatwoven-rug/",
+     "store": "Home of Wool",
+     "price": "From $202.00",
+     "ships_from": null,
+     "shipping": "Free worldwide shipping on all orders"
+    }
+   ],
+   "read": "2026-11-07",
+   "photos": [
+    {
+     "key": "home-of-wool-flat-woven-wool-rug",
+     "src": "https://homeofwool.com/wp-content/uploads/2025/09/home-of-wool-flat-woven-wool-rug-colors-eng-scaled.jpg"
+    }
+   ],
+   "img": "home-of-wool-flat-woven-wool-rug",
+   "img_src": "https://homeofwool.com/wp-content/uploads/2025/09/home-of-wool-flat-woven-wool-rug-colors-eng-scaled.jpg"
+  },
+  {
+   "id": "home-of-wool-portable-changing-pad",
+   "type": "changing-pads",
+   "brand": "Home of Wool",
+   "line": "Portable Changing Pad (folding)",
+   "uses": [
+    "100% wool batting filling",
+    "Cover: 100% organic cotton or 100% virgin wool (your choice)"
+   ],
+   "free": [
+    "Synthetics"
+   ],
+   "outside": [],
+   "unconfirmed": [
+    "Zipper",
+    "Ties",
+    "Thread",
+    "Whether the wool is treated (superwash or not)"
+   ],
+   "facts": {
+    "main": "yes",
+    "parts": "unknown",
+    "wool": "unknown"
+   },
+   "unstated": {
+    "parts": [
+     "Zipper",
+     "Ties",
+     "Thread"
+    ],
+    "wool": [
+     "Whether the wool is treated (superwash or not)"
+    ]
+   },
+   "contains": [],
+   "standards": [],
+   "quote": "Filled with breathable wool and wrapped in organic cotton, it folds neatly for travel",
+   "note": "Handmade; folds to 9 x 14 x 3 in, with a pocket for wipes and cream and ties to keep it closed. The cover unzips for washing.",
+   "products": [
+    {
+     "name": "Portable Changing Pad",
+     "url": "https://homeofwool.com/shop/travel-changing-mat/",
+     "store": "Home of Wool",
+     "price": "$206.00 – $313.00",
+     "ships_from": null,
+     "shipping": "Free worldwide shipping on all orders"
+    }
+   ],
+   "read": "2026-11-07",
+   "photos": [
+    {
+     "key": "home-of-wool-portable-changing-pad",
+     "src": "https://homeofwool.com/wp-content/uploads/2025/09/home-of-wool-portable-changing-pad-2.jpg"
+    }
+   ],
+   "img": "home-of-wool-portable-changing-pad",
+   "img_src": "https://homeofwool.com/wp-content/uploads/2025/09/home-of-wool-portable-changing-pad-2.jpg"
+  },
+  {
+   "id": "home-of-wool-reflux-wool-pillow",
+   "type": "pillows",
+   "brand": "Home of Wool",
+   "line": "Acid Reflux Wool Pillow for Babies (wedge), 28 x 17 x 7 in",
+   "uses": [
+    "Organic wool filling",
+    "Insert in 100% organic cotton fabric"
+   ],
+   "free": [
+    "Synthetics"
+   ],
+   "outside": [],
+   "unconfirmed": [
+    "Fibre of the pillowcase (several fabric choices)",
+    "Zipper",
+    "Thread",
+    "Whether the wool is treated (superwash or not)"
+   ],
+   "facts": {
+    "main": "yes",
+    "parts": "unknown",
+    "wool": "unknown"
+   },
+   "unstated": {
+    "parts": [
+     "Zipper",
+     "Thread"
+    ],
+    "wool": [
+     "Whether the wool is treated (superwash or not)"
+    ]
+   },
+   "contains": [],
+   "standards": [],
+   "quote": "Crafted from pure organic wool and fabrics, this natural baby pillow is free of chemicals, off-gassing, and VOCs.",
+   "note": "Wedge pillow with a 3-sided zipper to change the fill; optional side rails. Handmade to order.",
+   "products": [
+    {
+     "name": "Acid Reflux Wool Pillow For Babies",
+     "url": "https://homeofwool.com/shop/anti-reflux-pillow/",
+     "store": "Home of Wool",
+     "price": "From $266.00",
+     "ships_from": null,
+     "shipping": "Free worldwide shipping on all orders"
+    }
+   ],
+   "read": "2026-11-07",
+   "photos": [
+    {
+     "key": "home-of-wool-reflux-wool-pillow",
+     "src": "https://homeofwool.com/wp-content/uploads/2025/09/home-of-wool-acid-reflux-wool-pillow-for-babies-1-main.jpg"
+    }
+   ],
+   "img": "home-of-wool-reflux-wool-pillow",
+   "img_src": "https://homeofwool.com/wp-content/uploads/2025/09/home-of-wool-acid-reflux-wool-pillow-for-babies-1-main.jpg"
+  },
+  {
+   "id": "little-green-radicals-baby-bodysuit-2-pack",
+   "type": "bodysuits",
+   "brand": "Little Green Radicals",
+   "line": "Baby Bodysuit 2 Pack (one printed, one striped)",
+   "uses": [
+    "100% organic and Fairtrade interlock cotton"
+   ],
+   "free": [
+    "Nickel in the poppers"
+   ],
+   "outside": [],
+   "unconfirmed": [
+    "Material of the poppers",
+    "Thread",
+    "Dyes and print"
+   ],
+   "facts": {
+    "main": "yes",
+    "parts": "unknown",
+    "color": "unknown",
+    "organic": "yes"
+   },
+   "unstated": {
+    "parts": [
+     "Material of the poppers",
+     "Thread"
+    ],
+    "color": [
+     "Dyes and print"
+    ]
+   },
+   "contains": [],
+   "standards": [
+    "gots"
+   ],
+   "age": {
+    "min_months": 0,
+    "max_months": 24,
+    "text": "Sizes 0-3 months to 18-24 months"
+   },
+   "quote": "Material: 100% Organic & Fairtrade Interlock Cotton",
+   "note": "Envelope neck and poppers at the leg openings; shown in Blue Bears. US orders carry no duty or sales tax, the store says.",
+   "products": [
+    {
+     "name": "Blue Bears Baby Bodysuit 2 Pack",
+     "url": "https://littlegreenradicals.com/products/blue-bears-baby-bodysuit-2-pack",
+     "store": "Little Green Radicals",
+     "price": "$46.80",
+     "ships_from": null,
+     "shipping": "USA standard delivery $15, or free on orders over $100"
+    }
+   ],
+   "read": "2026-11-07",
+   "photos": [
+    {
+     "key": "little-green-radicals-baby-bodysuit-2-pack",
+     "src": "https://cdn.shopify.com/s/files/1/0258/8147/7195/files/A26-302-BEA_1_5056890009574_1_2000x2000_b8f4fc41-f2f1-46aa-8db0-f0fc224197c2.jpg?v=1785746313"
+    },
+    {
+     "key": "little-green-radicals-baby-bodysuit-2-pack_2",
+     "src": "https://cdn.shopify.com/s/files/1/0258/8147/7195/files/A26-302-BEA_3_5056890009574_4_2000x2000_a5b70d6f-846e-42cb-b615-ba38ad435209.jpg?v=1785746313"
+    },
+    {
+     "key": "little-green-radicals-baby-bodysuit-2-pack_3",
+     "src": "https://cdn.shopify.com/s/files/1/0258/8147/7195/files/A26-302-BEA_2_5056890009574_1_2000x2000_b754dc65-b5af-4348-bb09-b964494cae23.jpg?v=1785746313"
+    },
+    {
+     "key": "little-green-radicals-baby-bodysuit-2-pack_4",
+     "src": "https://cdn.shopify.com/s/files/1/0258/8147/7195/files/A26-302-BEA_2_5056890009574_4_2000x2000_84078eaa-dc76-45c3-811f-83e9f1fde31e.jpg?v=1785746314"
+    },
+    {
+     "key": "little-green-radicals-baby-bodysuit-2-pack_5",
+     "src": "https://cdn.shopify.com/s/files/1/0258/8147/7195/files/A26-302-BEA_2_5056890009574_5_2000x2000_385c8e34-ef50-4e12-a003-b084244520ac.jpg?v=1785746313"
+    },
+    {
+     "key": "little-green-radicals-baby-bodysuit-2-pack_6",
+     "src": "https://cdn.shopify.com/s/files/1/0258/8147/7195/files/A26-302-BEA_3_5056890009574_1_2000x2000_4a3256f0-3621-4730-80a8-aa4ed1cd36c9.jpg?v=1785746313"
+    },
+    {
+     "key": "little-green-radicals-baby-bodysuit-2-pack_7",
+     "src": "https://cdn.shopify.com/s/files/1/0258/8147/7195/files/A26-302-BEA_3_5056890009574_5_2000x2000_d588fab5-b34d-4add-a499-1dfef78fd31c.jpg?v=1785746314"
+    },
+    {
+     "key": "little-green-radicals-baby-bodysuit-2-pack_8",
+     "src": "https://cdn.shopify.com/s/files/1/0258/8147/7195/files/A26-302-BEA_1_5056890009574_4_2000x2000_83092079-7b1e-4379-864d-5c52d6985e17.jpg?v=1785746314"
+    },
+    {
+     "key": "little-green-radicals-baby-bodysuit-2-pack_9",
+     "src": "https://cdn.shopify.com/s/files/1/0258/8147/7195/files/A26-302-BEA_1_5056890009574_5_2000x2000_410e49b5-8bfb-4b5b-b58e-51133d3a7b29.jpg?v=1785746313"
+    }
+   ],
+   "img": "little-green-radicals-baby-bodysuit-2-pack",
+   "img_src": "https://cdn.shopify.com/s/files/1/0258/8147/7195/files/A26-302-BEA_1_5056890009574_1_2000x2000_b8f4fc41-f2f1-46aa-8db0-f0fc224197c2.jpg?v=1785746313"
+  },
+  {
+   "id": "little-green-radicals-knitted-organic-baby-blanket",
+   "type": "blankets",
+   "brand": "Little Green Radicals",
+   "line": "Knitted Organic Baby Blanket, 100 x 75 cm",
+   "uses": [
+    "100% organic knitted cotton"
+   ],
+   "free": [
+    "Plastics in the labels"
+   ],
+   "outside": [],
+   "unconfirmed": [
+    "Fibre of the brand label",
+    "Thread",
+    "Dyes"
+   ],
+   "facts": {
+    "main": "yes",
+    "parts": "unknown",
+    "color": "unknown",
+    "organic": "yes"
+   },
+   "unstated": {
+    "parts": [
+     "Thread"
+    ],
+    "color": [
+     "Dyes"
+    ]
+   },
+   "contains": [],
+   "standards": [
+    "gots"
+   ],
+   "quote": "Made from wonderfully soft 100% organic knitted cotton",
+   "note": "Shown in the Moon design. The no-plastics line comes from the store’s reply to a customer review about a sewn-in label. US orders carry no duty or sales tax, the store says.",
+   "products": [
+    {
+     "name": "Moon Knitted Organic Baby Blanket",
+     "url": "https://littlegreenradicals.com/products/moon-knitted-organic-baby-blanket",
+     "store": "Little Green Radicals",
+     "price": "$82.80",
+     "ships_from": null,
+     "shipping": "USA standard delivery $15, or free on orders over $100"
+    }
+   ],
+   "read": "2026-11-07",
+   "photos": [
+    {
+     "key": "little-green-radicals-knitted-organic-baby-blanket",
+     "src": "https://cdn.shopify.com/s/files/1/0258/8147/7195/files/A26-847-MOO_5056890003039_2_2000x2000_6cb74566-a8a7-4a5e-a31e-1dad000ca1ea.jpg?v=1785426863"
+    },
+    {
+     "key": "little-green-radicals-knitted-organic-baby-blanket_2",
+     "src": "https://cdn.shopify.com/s/files/1/0258/8147/7195/files/A26-847-MOO_5056890003039_1_2000x2000_70a4ec9f-6965-411b-bec8-c52df7a2c93a.jpg?v=1785426862"
+    },
+    {
+     "key": "little-green-radicals-knitted-organic-baby-blanket_3",
+     "src": "https://cdn.shopify.com/s/files/1/0258/8147/7195/files/A26-847-MOO_5056890003039_5_2000x2000_257ca6dd-4e04-4408-bef1-f0ab7c206ee0.jpg?v=1785426863"
+    },
+    {
+     "key": "little-green-radicals-knitted-organic-baby-blanket_4",
+     "src": "https://cdn.shopify.com/s/files/1/0258/8147/7195/files/A26-847-MOO_5056890003039_4_2000x2000_a180d2b3-eedc-4287-becf-a6f62c984a7e.jpg?v=1785426863"
+    }
+   ],
+   "img": "little-green-radicals-knitted-organic-baby-blanket",
+   "img_src": "https://cdn.shopify.com/s/files/1/0258/8147/7195/files/A26-847-MOO_5056890003039_2_2000x2000_6cb74566-a8a7-4a5e-a31e-1dad000ca1ea.jpg?v=1785426863"
+  },
+  {
+   "id": "mother-ease-wizard-uno-newborn",
+   "type": "diapers",
+   "brand": "Mother-ease",
+   "line": "Wizard Uno All-In-One Diaper, Newborn (6 to 12 lb)",
+   "uses": [
+    "Natural cotton terry inner (next to baby)"
+   ],
+   "free": [],
+   "outside": [
+    "Polyester base grid under the cotton terry",
+    "Outer: 100% polyester with TPU",
+    "Nylon edge binding on the waterproof gusset"
+   ],
+   "unconfirmed": [
+    "Snaps",
+    "Elastics",
+    "Thread"
+   ],
+   "facts": {
+    "main": "no",
+    "parts": "unknown"
+   },
+   "unstated": {
+    "parts": [
+     "Snaps",
+     "Elastics",
+     "Thread"
+    ]
+   },
+   "contains": [],
+   "standards": [],
+   "quote": "Content: Inner: 100% cotton knit with a 100% polyester base grid under the cotton terry knit which does not touch baby. Outer: 100% polyester with TPU.",
+   "note": "Made in Canada; the cotton is unbleached, the store says. Sold by Green Mountain Diapers; sold out when read.",
+   "products": [
+    {
+     "name": "Mother-ease Wizard Uno All-In-One Diaper - Newborn",
+     "url": "https://www.greenmountaindiapers.com/products/mother-ease-newborn-uno-all-in-one-diaper",
+     "store": "Green Mountain Diapers",
+     "price": "$22.99 (sold out when read)",
+     "ships_from": null,
+     "shipping": "Shipping calculated at checkout"
+    }
+   ],
+   "read": "2026-11-07",
+   "photos": [
+    {
+     "key": "mother-ease-wizard-uno-newborn",
+     "src": "https://cdn.shopify.com/s/files/1/1583/5087/files/Leopard-NB_jpg.webp?v=1775085735"
+    },
+    {
+     "key": "mother-ease-wizard-uno-newborn_2",
+     "src": "https://cdn.shopify.com/s/files/1/1583/5087/files/leapardinsideb.jpg?v=1792431758"
+    },
+    {
+     "key": "mother-ease-wizard-uno-newborn_3",
+     "src": "https://cdn.shopify.com/s/files/1/1583/5087/files/moth-wizard-newborn-bearbottom2048.jpg?v=1789065953"
+    },
+    {
+     "key": "mother-ease-wizard-uno-newborn_4",
+     "src": "https://cdn.shopify.com/s/files/1/1583/5087/files/Art-NB_jpg.webp?v=1775085735"
+    },
+    {
+     "key": "mother-ease-wizard-uno-newborn_5",
+     "src": "https://cdn.shopify.com/s/files/1/1583/5087/files/Bee-Kind-NB_jpg.webp?v=1775085735"
+    },
+    {
+     "key": "mother-ease-wizard-uno-newborn_6",
+     "src": "https://cdn.shopify.com/s/files/1/1583/5087/files/mothunonbsageopen2048.jpg?v=1775085735"
+    },
+    {
+     "key": "mother-ease-wizard-uno-newborn_7",
+     "src": "https://cdn.shopify.com/s/files/1/1583/5087/files/uno-nb-hand1700_1a53cd69-6f3b-4bac-9bf5-84fee1a484f7.jpg?v=1775085735"
+    },
+    {
+     "key": "mother-ease-wizard-uno-newborn_8",
+     "src": "https://cdn.shopify.com/s/files/1/1583/5087/files/moth-wizard-3prints-2048.jpg?v=1789065567"
+    },
+    {
+     "key": "mother-ease-wizard-uno-newborn_9",
+     "src": "https://cdn.shopify.com/s/files/1/1583/5087/files/uno-compared2000.jpg?v=1775085735"
+    },
+    {
+     "key": "mother-ease-wizard-uno-newborn_10",
+     "src": "https://cdn.shopify.com/s/files/1/1583/5087/files/mothnbcozyfox.jpg?v=1781192420"
+    }
+   ],
+   "img": "mother-ease-wizard-uno-newborn",
+   "img_src": "https://cdn.shopify.com/s/files/1/1583/5087/files/Leopard-NB_jpg.webp?v=1775085735"
+  },
+  {
+   "id": "people-wear-organic-frottee-pyjama",
+   "type": "pajamas",
+   "brand": "People Wear Organic",
+   "line": "Frottée (terry) Pyjama, EU sizes 98 to 146",
+   "uses": [
+    "100% organic cotton terry"
+   ],
+   "free": [],
+   "outside": [],
+   "unconfirmed": [
+    "Elastic in the waistband and cuffs",
+    "Thread",
+    "Dyes for the stripes"
+   ],
+   "facts": {
+    "main": "yes",
+    "parts": "unknown",
+    "color": "unknown",
+    "organic": "yes"
+   },
+   "unstated": {
+    "parts": [
+     "Elastic in the waistband and cuffs",
+     "Thread"
+    ],
+    "color": [
+     "Dyes for the stripes"
+    ]
+   },
+   "contains": [],
+   "standards": [
+    "gots"
+   ],
+   "quote": "100% Baumwolle (bio)",
+   "note": "German store; the page is in German (“100% Baumwolle (bio)” means 100% organic cotton). Navy striped terry pyjama; the page also names the Grüner Knopf label. Price in euros including German VAT.",
+   "products": [
+    {
+     "name": "People Wear Organic Frottée-Pyjama GOTS",
+     "url": "https://www.pololo.com/shop/people-wear-organic-frottee-pyjama-gots-2/",
+     "store": "POLOLO",
+     "price": "€34.95 (incl. 19% VAT)",
+     "ships_from": null,
+     "shipping": null
+    }
+   ],
+   "read": "2026-11-07",
+   "photos": [
+    {
+     "key": "people-wear-organic-frottee-pyjama",
+     "src": "https://www.pololo.com/wp-content/uploads/2026/10/extra_large-199.jpg"
+    },
+    {
+     "key": "people-wear-organic-frottee-pyjama_2",
+     "src": "https://www.pololo.com/wp-content/uploads/2026/10/extra_large-200.jpg"
+    },
+    {
+     "key": "people-wear-organic-frottee-pyjama_3",
+     "src": "https://www.pololo.com/wp-content/uploads/2026/10/extra_large-201.jpg"
+    },
+    {
+     "key": "people-wear-organic-frottee-pyjama_4",
+     "src": "https://www.pololo.com/wp-content/uploads/2026/10/extra_large-203.jpg"
+    }
+   ],
+   "img": "people-wear-organic-frottee-pyjama",
+   "img_src": "https://www.pololo.com/wp-content/uploads/2026/10/extra_large-199.jpg"
+  },
+  {
+   "id": "thirsties-natural-pocket-diaper",
+   "type": "diapers",
+   "brand": "Thirsties",
+   "line": "Natural One Size Pocket Diaper, hook and loop, with inserts",
+   "uses": [
+    "Inner (pocket): 100% organic cotton",
+    "Newborn insert: 100% organic cotton",
+    "Full size insert: 55% hemp, 45% organic cotton"
+   ],
+   "free": [],
+   "outside": [
+    "Outer: 100% polyester with waterproof urethane coating"
+   ],
+   "unconfirmed": [
+    "Hook and loop closures",
+    "Leg and back elastic",
+    "Thread"
+   ],
+   "facts": {
+    "main": "no",
+    "parts": "unknown",
+    "finish": "no"
+   },
+   "unstated": {
+    "parts": [
+     "Hook and loop closures",
+     "Leg and back elastic",
+     "Thread"
+    ]
+   },
+   "contains": [],
+   "standards": [],
+   "age": {
+    "min_months": 3,
+    "text": "From 3 or 4 months, about 13 to 40 lb"
+   },
+   "quote": "Diaper content - Outer: 100% polyester with waterproof urethane coating; Inner: 100% organic cotton; Newborn Insert: 100% organic cotton; Full Size Insert: 55% hemp, 45% organic cotton",
+   "note": "Made in the USA, the store says. A snap version is also sold. Sold by Green Mountain Diapers.",
+   "products": [
+    {
+     "name": "Thirsties Natural One Size Pocket Diaper - Hook and Loop",
+     "url": "https://www.greenmountaindiapers.com/products/thirsties-natural-pocket-diaper-hl",
+     "store": "Green Mountain Diapers",
+     "price": "$26.90",
+     "ships_from": null,
+     "shipping": "Shipping calculated at checkout"
+    }
+   ],
+   "read": "2026-11-07",
+   "photos": [
+    {
+     "key": "thirsties-natural-pocket-diaper",
+     "src": "https://cdn.shopify.com/s/files/1/1583/5087/files/blowing-kisses-thirsties-duo-wrap-hook-loop_96ed5add-3da3-4aee-91b0-7256b29a6b1e.jpg?v=1786625161"
+    },
+    {
+     "key": "thirsties-natural-pocket-diaper_2",
+     "src": "https://cdn.shopify.com/s/files/1/1583/5087/files/let-it-bee-thirsties-pocket-diaper-hook-loop.jpg?v=1786625191"
+    },
+    {
+     "key": "thirsties-natural-pocket-diaper_3",
+     "src": "https://cdn.shopify.com/s/files/1/1583/5087/files/oh-chute-thirsties-pocket-diaper-hook-loop.jpg?v=1786625219"
+    },
+    {
+     "key": "thirsties-natural-pocket-diaper_4",
+     "src": "https://cdn.shopify.com/s/files/1/1583/5087/files/Reptile-Wranglers-Thirsties-Pocket-Diaper-HL.jpg?v=1778212824"
+    },
+    {
+     "key": "thirsties-natural-pocket-diaper_5",
+     "src": "https://cdn.shopify.com/s/files/1/1583/5087/files/Ferm-stockin-Thirsties_OS_Pocket_H_L.jpg?v=1774911422"
+    },
+    {
+     "key": "thirsties-natural-pocket-diaper_6",
+     "src": "https://cdn.shopify.com/s/files/1/1583/5087/files/Bearly-Thirsties_OS_Pocket_H_L.jpg?v=1775051902"
+    },
+    {
+     "key": "thirsties-natural-pocket-diaper_7",
+     "src": "https://cdn.shopify.com/s/files/1/1583/5087/files/Blueberry-Thirsties_OS_Pocket_H_L.jpg?v=1774803575"
+    },
+    {
+     "key": "thirsties-natural-pocket-diaper_8",
+     "src": "https://cdn.shopify.com/s/files/1/1583/5087/files/Drizzly-Thirsties_OS_Pocket_H_L.jpg?v=1767818713"
+    },
+    {
+     "key": "thirsties-natural-pocket-diaper_9",
+     "src": "https://cdn.shopify.com/s/files/1/1583/5087/files/Sunny-Thirsties_OS_Pocket_H_L.jpg?v=1767818713"
+    },
+    {
+     "key": "thirsties-natural-pocket-diaper_10",
+     "src": "https://cdn.shopify.com/s/files/1/1583/5087/files/Super-Hero-Thirsties_OS_Pocket_H_L1300.jpg?v=1767818713"
+    }
+   ],
+   "img": "thirsties-natural-pocket-diaper",
+   "img_src": "https://cdn.shopify.com/s/files/1/1583/5087/files/blowing-kisses-thirsties-duo-wrap-hook-loop_96ed5add-3da3-4aee-91b0-7256b29a6b1e.jpg?v=1786625161"
+  },
+  {
+   "id": "toki-kids-tutu-support-pillow",
+   "type": "nursing-pillows",
+   "brand": "Toki Kids",
+   "line": "Tutu Organic Cotton Support Pillow",
+   "uses": [
+    "Certified organic latex foam scraps (insert)",
+    "100% certified organic cotton cover",
+    "Organic cotton drawstring duster bag"
+   ],
+   "free": [
+    "Synthetic chemicals in the latex foam"
+   ],
+   "outside": [],
+   "unconfirmed": [
+    "Hidden zipper",
+    "Thread",
+    "Dyes for the print"
+   ],
+   "facts": {
+    "main": "yes",
+    "parts": "unknown",
+    "color": "unknown",
+    "rubber": "yes",
+    "organic": "yes",
+    "lead": "yes"
+   },
+   "unstated": {
+    "parts": [
+     "Hidden zipper",
+     "Thread"
+    ],
+    "color": [
+     "Dyes for the print"
+    ]
+   },
+   "contains": [
+    "latex"
+   ],
+   "standards": [
+    "gots",
+    "gols"
+   ],
+   "age": {
+    "min_months": 0,
+    "text": "From birth (0+)"
+   },
+   "quote": "Pillow insert: Certified organic 100% latex foam scraps.",
+   "note": "Multi-use support pillow for tummy time, feeding and pregnancy. Toki Kids says it is “Tested for harmful substances including phthalates, PFAs, BPA and heavy metals.” Sold out when read.",
+   "products": [
+    {
+     "name": "Tutu Organic Cotton Support Pillow",
+     "url": "https://tokikids.com/products/tutu-organic-cotton-support-pillow",
+     "store": "Toki Kids",
+     "price": "$75 (sold out when read)",
+     "ships_from": null,
+     "shipping": "Free shipping on orders over $200"
+    }
+   ],
+   "read": "2026-11-07",
+   "photos": [
+    {
+     "key": "toki-kids-tutu-support-pillow",
+     "src": "https://cdn.shopify.com/s/files/1/1986/4079/products/6_438a8939-af41-4ded-8f18-aa5dbbe6a02d.jpg?v=1671749125"
+    },
+    {
+     "key": "toki-kids-tutu-support-pillow_2",
+     "src": "https://cdn.shopify.com/s/files/1/1986/4079/products/6.jpg?v=1671749125"
+    },
+    {
+     "key": "toki-kids-tutu-support-pillow_3",
+     "src": "https://cdn.shopify.com/s/files/1/1986/4079/products/7_c36458c6-37d3-4730-a8a5-35bf97fa9c30.png?v=1671749125"
+    },
+    {
+     "key": "toki-kids-tutu-support-pillow_4",
+     "src": "https://cdn.shopify.com/s/files/1/1986/4079/products/SupportPillowsToki_b5a41bd6-2eb7-4ee7-84fb-95cbfd620f4a.png?v=1671749125"
+    },
+    {
+     "key": "toki-kids-tutu-support-pillow_5",
+     "src": "https://cdn.shopify.com/s/files/1/1986/4079/products/SupportPillowTokiMats.png?v=1671749125"
+    }
+   ],
+   "img": "toki-kids-tutu-support-pillow",
+   "img_src": "https://cdn.shopify.com/s/files/1/1986/4079/products/6_438a8939-af41-4ded-8f18-aa5dbbe6a02d.jpg?v=1671749125"
+  },
+  {
+   "id": "tovolo-perfect-cube-ice-mold-with-lid",
+   "type": "ice-trays",
+   "brand": "Tovolo",
+   "line": "Perfect Cube Silicone Ice Mold with Lid (fifteen 1.25 in cubes)",
+   "uses": [
+    "Food-grade, fade resistant silicone"
+   ],
+   "free": [
+    "BPA"
+   ],
+   "outside": [
+    "BPA-free nylon lid"
+   ],
+   "unconfirmed": [
+    "Silicone testing standard",
+    "Pigments"
+   ],
+   "facts": {
+    "main": "yes",
+    "color": "unknown",
+    "silicone": "unknown",
+    "accessory": "no"
+   },
+   "unstated": {
+    "color": [
+     "Pigments"
+    ],
+    "silicone": [
+     "Silicone testing standard"
+    ]
+   },
+   "contains": [],
+   "standards": [],
+   "quote": "Materials: Silicone, BPA-free nylon.",
+   "note": "Tray of fifteen 1.25 in cubes with a lid; the page also says “Set of 2 trays”. Tovolo lists baby food among its uses.",
+   "products": [
+    {
+     "name": "Perfect Cube Silicone Ice Mold with Lid",
+     "url": "https://www.tovolo.com/products/perfect-cube-ice-mold-with-lid",
+     "store": "Tovolo",
+     "price": "$9.99",
+     "ships_from": null,
+     "shipping": "Free ground shipping on orders over $50 in the continental US"
+    }
+   ],
+   "read": "2026-11-07",
+   "photos": [
+    {
+     "key": "tovolo-perfect-cube-ice-mold-with-lid",
+     "src": "https://cdn.shopify.com/s/files/1/0808/9862/1474/files/22022-200_01_Perfect_20Cube_20Ice_20Trays_20with_20Lid_Charcoal_SILO_3.png?v=1792464831"
+    },
+    {
+     "key": "tovolo-perfect-cube-ice-mold-with-lid_2",
+     "src": "https://cdn.shopify.com/s/files/1/0808/9862/1474/files/81-9516_02_Perfect_Cube_Ice_Trays_Lifestyle_2.jpg?v=1792464830"
+    },
+    {
+     "key": "tovolo-perfect-cube-ice-mold-with-lid_3",
+     "src": "https://cdn.shopify.com/s/files/1/0808/9862/1474/files/22022-200_03_Perfect-Cube-Ice-Tray-with-Lid_Charcoal_FEATURES.jpg?v=1792464830"
+    },
+    {
+     "key": "tovolo-perfect-cube-ice-mold-with-lid_4",
+     "src": "https://cdn.shopify.com/s/files/1/0808/9862/1474/files/22022-200_05_Perfect_20Cube_20Ice_20Trays_20with_20Lid_Charcoal_DETAIL.png?v=1792464831"
+    },
+    {
+     "key": "tovolo-perfect-cube-ice-mold-with-lid_5",
+     "src": "https://cdn.shopify.com/s/files/1/0808/9862/1474/files/81-10208_05_Perfect-Cube-Ice-Trays-S2_Charcoal_DETAIL_db1325da-2e3f-447e-b818-dc3a2db2d2f9.png?v=1792464831"
+    },
+    {
+     "key": "tovolo-perfect-cube-ice-mold-with-lid_6",
+     "src": "https://cdn.shopify.com/s/files/1/0808/9862/1474/files/22022-200_02_Perfect-Cube-Ice-Tray-with-Lid_Charcoal_IN-FREEZER.jpg?v=1792464830"
+    },
+    {
+     "key": "tovolo-perfect-cube-ice-mold-with-lid_7",
+     "src": "https://cdn.shopify.com/s/files/1/0808/9862/1474/files/22022-201_01_Perfect-Cube-Ice-Tray-with-Lid_Oyster-Gray_SILO.png?v=1792464831"
+    },
+    {
+     "key": "tovolo-perfect-cube-ice-mold-with-lid_8",
+     "src": "https://cdn.shopify.com/s/files/1/0808/9862/1474/files/22022-201_04_Perfect-Cube-Ice-Tray-with-Lid_Oyster-Gray_PROPPED.png?v=1792464831"
+    }
+   ],
+   "img": "tovolo-perfect-cube-ice-mold-with-lid",
+   "img_src": "https://cdn.shopify.com/s/files/1/0808/9862/1474/files/22022-200_01_Perfect_20Cube_20Ice_20Trays_20with_20Lid_Charcoal_SILO_3.png?v=1792464831"
+  },
+  {
+   "id": "under-the-nile-changing-pad-cover",
+   "type": "changing-pads",
+   "brand": "Under the Nile",
+   "line": "Changing Pad Cover, 78 x 45 cm",
+   "uses": [
+    "100% organic Egyptian cotton"
+   ],
+   "free": [
+    "Azo colorants",
+    "BPA",
+    "Flame retardants",
+    "Formaldehyde",
+    "Fragrance",
+    "PVC",
+    "Lead"
+   ],
+   "outside": [],
+   "unconfirmed": [
+    "Elastic in the hem",
+    "Thread",
+    "Dyes for the prints"
+   ],
+   "facts": {
+    "main": "yes",
+    "parts": "unknown",
+    "color": "unknown",
+    "flame": "yes",
+    "organic": "yes"
+   },
+   "unstated": {
+    "parts": [
+     "Elastic in the hem",
+     "Thread"
+    ],
+    "color": [
+     "Dyes for the prints"
+    ]
+   },
+   "contains": [],
+   "standards": [
+    "gots"
+   ],
+   "quote": "Made of 100% organic Egyptian cotton | Certified by GOTS Global Organic Textile Standard",
+   "note": "Fitted cover with a continuous elastic hem for most changing pads; made in Egypt in “Certified Fair Trade facilities”, the store says. Sold by Green Mountain Diapers.",
+   "products": [
+    {
+     "name": "Under the Nile Changing Pad Cover",
+     "url": "https://www.greenmountaindiapers.com/products/under-the-nile-changing-pad-cover",
+     "store": "Green Mountain Diapers",
+     "price": "$23.00 (sale; was $25.00)",
+     "ships_from": null,
+     "shipping": "Shipping calculated at checkout"
+    }
+   ],
+   "read": "2026-11-07",
+   "photos": [
+    {
+     "key": "under-the-nile-changing-pad-cover",
+     "src": "https://cdn.shopify.com/s/files/1/1583/5087/files/utncribsheetshadowfloral.jpg?v=1754609509"
+    },
+    {
+     "key": "under-the-nile-changing-pad-cover_2",
+     "src": "https://cdn.shopify.com/s/files/1/1583/5087/files/utn-change-moonstars.jpg?v=1754623925"
+    },
+    {
+     "key": "under-the-nile-changing-pad-cover_3",
+     "src": "https://cdn.shopify.com/s/files/1/1583/5087/files/utnshadowchangetable.jpg?v=1757170249"
+    }
+   ],
+   "img": "under-the-nile-changing-pad-cover",
+   "img_src": "https://cdn.shopify.com/s/files/1/1583/5087/files/utncribsheetshadowfloral.jpg?v=1754609509"
+  },
+  {
+   "id": "weesprout-plastic-baby-food-storage-containers",
+   "type": "food-storage",
+   "brand": "WeeSprout",
+   "line": "Plastic Baby Food Storage Containers, 4 oz (set of 12)",
+   "uses": [],
+   "free": [
+    "BPA",
+    "PVC",
+    "Phthalates"
+   ],
+   "outside": [
+    "Reusable plastic containers (type of plastic not named)"
+   ],
+   "unconfirmed": [
+    "Type of plastic",
+    "Material of the twist-on lids"
+   ],
+   "facts": {
+    "main": "no",
+    "accessory": "unknown"
+   },
+   "unstated": {
+    "accessory": [
+     "Material of the twist-on lids"
+    ]
+   },
+   "contains": [],
+   "standards": [],
+   "age": {
+    "min_months": 4,
+    "text": "4 months and up"
+   },
+   "quote": "Set of 12 reusable plastic baby food containers",
+   "note": "4 oz containers with twist-on lids; stackable and nesting. Do not microwave, the page says.",
+   "products": [
+    {
+     "name": "Plastic Baby Food Storage Containers (Set of 12)",
+     "url": "https://www.weesprout.com/products/weesprout-baby-food-storage-containers",
+     "store": "WeeSprout",
+     "price": "$18.98",
+     "ships_from": null,
+     "shipping": "Free shipping on orders $60+"
+    }
+   ],
+   "read": "2026-11-07",
+   "photos": [
+    {
+     "key": "weesprout-plastic-baby-food-storage-containers",
+     "src": "https://cdn.shopify.com/s/files/1/0957/4574/files/BFS-Matte.jpg?v=1776354431"
+    },
+    {
+     "key": "weesprout-plastic-baby-food-storage-containers_2",
+     "src": "https://cdn.shopify.com/s/files/1/0957/4574/files/BFS_a.jpg?v=1776354431"
+    },
+    {
+     "key": "weesprout-plastic-baby-food-storage-containers_3",
+     "src": "https://cdn.shopify.com/s/files/1/0957/4574/files/BFS_b.jpg?v=1776354431"
+    },
+    {
+     "key": "weesprout-plastic-baby-food-storage-containers_4",
+     "src": "https://cdn.shopify.com/s/files/1/0957/4574/files/BFS_c.jpg?v=1776354431"
+    },
+    {
+     "key": "weesprout-plastic-baby-food-storage-containers_5",
+     "src": "https://cdn.shopify.com/s/files/1/0957/4574/files/BFS_d.jpg?v=1776354431"
+    },
+    {
+     "key": "weesprout-plastic-baby-food-storage-containers_6",
+     "src": "https://cdn.shopify.com/s/files/1/0957/4574/files/BFS_e.jpg?v=1776354431"
+    },
+    {
+     "key": "weesprout-plastic-baby-food-storage-containers_7",
+     "src": "https://cdn.shopify.com/s/files/1/0957/4574/files/BFS_f.jpg?v=1776354431"
+    },
+    {
+     "key": "weesprout-plastic-baby-food-storage-containers_8",
+     "src": "https://cdn.shopify.com/s/files/1/0957/4574/files/bfs-pblmtpppk-temp.jpg?v=1776354431"
+    }
+   ],
+   "img": "weesprout-plastic-baby-food-storage-containers",
+   "img_src": "https://cdn.shopify.com/s/files/1/0957/4574/files/BFS-Matte.jpg?v=1776354431"
   }
  ]
 }
