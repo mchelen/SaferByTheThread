@@ -956,7 +956,8 @@
    "type": "books",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "skipped",
+   "reason": "Page names no material (board book; publisher description only)"
   },
   {
    "url": "https://coloredorganics.com/products/bajo-rocking-horse-toy-copy",
@@ -1310,7 +1311,8 @@
    "type": "art",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "ooly-lil-watercolor-paint-pad"
   },
   {
    "url": "https://coloredorganics.com/products/chroma-blends-pearlescent-watercolor-set-copy",
@@ -3681,7 +3683,8 @@
    "type": "cribs",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "babyletto-origami-mini-crib"
   },
   {
    "url": "https://www.newtonbaby.com/products/harlow-acrylic-3-in-1-convertible-crib-with-toddler-bed-conversion-kit",
@@ -3708,7 +3711,8 @@
    "type": "cribs",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "skipped",
+   "reason": "Duplicate: same materials as the listed Babyletto Liberty Convertible Crib"
   },
   {
    "url": "https://www.newtonbaby.com/products/sprout-3-drawer-changer-dresser-with-removable-changing-tray",
@@ -3744,7 +3748,8 @@
    "type": "cribs",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "skipped",
+   "reason": "Duplicate: same materials as the listed Babyletto Liberty Convertible Crib"
   },
   {
    "url": "https://www.newtonbaby.com/products/bassinet-and-play-yard-sheets",
@@ -19377,7 +19382,8 @@
    "type": "freezer-trays",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "skipped",
+   "reason": "Duplicate: set of the listed Souper Cubes MyMilk trays"
   },
   {
    "url": "https://www.soupercubes.com/products/no-mess-serving-utensils",
@@ -40247,7 +40253,8 @@
    "type": "toddler-beds",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "delta-children-magic-magnet-toddler-bed"
   },
   {
    "url": "https://www.deltachildren.com/products/turboglyde-stroller-wagon-extended-footwell",
@@ -41629,7 +41636,8 @@
    "type": "high-chairs",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "delta-children-slimfold-high-chair"
   },
   {
    "url": "https://www.deltachildren.com/products/play-n-store-building-bricks-play-table-with-100-plus-play-bricks-included",
@@ -42729,7 +42737,8 @@
    "type": "high-chairs",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "delta-children-milestone-high-chair"
   },
   {
    "url": "https://www.deltachildren.com/products/icon-ultra-compact-everyday-travel-stroller",
@@ -93275,7 +93284,8 @@
    "type": "balls",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "plantoys-miracle-pounding-ii"
   },
   {
    "url": "https://thebabypenguin.com/products/gears-puzzles",
@@ -185351,7 +185361,8 @@
    "type": "art",
    "source": "watchlist",
    "first_seen": "2026-11-07",
-   "status": "new"
+   "status": "listed",
+   "listing": "ooly-lil-watercolor-paint-pad"
   },
   {
    "url": "https://coloredorganics.com/products/chunkies-paint-sticks",

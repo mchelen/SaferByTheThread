@@ -1,6 +1,6 @@
 {
  "schema": 4,
- "updated": "2026-11-07",
+ "updated": "2026-11-08",
  "ask": [
   "Thread on any sewn item (cotton or polyester).",
   "Wheels and axles on push toys and cars.",
@@ -31264,6 +31264,1047 @@
    ],
    "img": "weesprout-plastic-baby-food-storage-containers",
    "img_src": "https://cdn.shopify.com/s/files/1/0957/4574/files/BFS-Matte.jpg?v=1776354431"
+  },
+  {
+   "id": "babyletto-origami-mini-crib",
+   "type": "cribs",
+   "brand": "Babyletto",
+   "line": "Origami Mini Crib",
+   "uses": [
+    "Solid New Zealand pine wood"
+   ],
+   "outside": [
+    "Engineered wood mattress support"
+   ],
+   "free": [
+    "Lead in the paint",
+    "Phthalates in the paint"
+   ],
+   "unconfirmed": [
+    "Paint and stain ingredients (“non-toxic”, not named)",
+    "Caster wheels",
+    "Hardware"
+   ],
+   "facts": {
+    "main": "yes",
+    "wood": "no",
+    "color": "unknown",
+    "parts": "unknown"
+   },
+   "unstated": {
+    "color": [
+     "Paint and stain ingredients (“non-toxic”, not named)"
+    ],
+    "parts": [
+     "Caster wheels",
+     "Hardware"
+    ]
+   },
+   "age": {
+    "min_months": 0,
+    "max_months": 18,
+    "text": "Newborn to about 18 months (35 in tall or starting to climb)"
+   },
+   "quote": "Made with sustainably sourced solid New Zealand pine wood. The mattress support is TSCA compliant engineered wood.",
+   "note": "Folding portable mini crib on removable locking casters. The page also says it is GREENGUARD Gold certified. Sold by Newton Baby, shipped by Babyletto.",
+   "products": [
+    {
+     "name": "Origami Mini Crib",
+     "url": "https://www.newtonbaby.com/products/origami-mini-crib",
+     "store": "Newton Baby",
+     "price": "$329.00",
+     "ships_from": null,
+     "shipping": "Free shipping in the contiguous 48 states"
+    }
+   ],
+   "contains": [],
+   "standards": [],
+   "read": "2026-11-08",
+   "photos": [
+    {
+     "key": "babyletto-origami-mini-crib",
+     "src": "https://cdn.shopify.com/s/files/1/0792/0323/files/NB-OrigamiMiniCrib_M6698CYN_ATC.jpg?v=1683834912"
+    },
+    {
+     "key": "babyletto-origami-mini-crib_2",
+     "src": "https://cdn.shopify.com/s/files/1/0792/0323/files/NB-OrigamiMiniCrib_greennew_2.jpg?v=1759172458"
+    },
+    {
+     "key": "babyletto-origami-mini-crib_3",
+     "src": "https://cdn.shopify.com/s/files/1/0792/0323/files/NB-OrigamiMiniCrib_greennew_1.jpg?v=1759172458"
+    },
+    {
+     "key": "babyletto-origami-mini-crib_4",
+     "src": "https://cdn.shopify.com/s/files/1/0792/0323/files/NB-OrigamiMiniCrib_greennew_3.jpg?v=1687549694"
+    },
+    {
+     "key": "babyletto-origami-mini-crib_5",
+     "src": "https://cdn.shopify.com/s/files/1/0792/0323/files/NB-OrigamiMiniCrib_greennew_4.jpg?v=1687549694"
+    },
+    {
+     "key": "babyletto-origami-mini-crib_6",
+     "src": "https://cdn.shopify.com/s/files/1/0792/0323/files/NB-OrigamiMiniCrib_greennew_5.jpg?v=1687549694"
+    },
+    {
+     "key": "babyletto-origami-mini-crib_7",
+     "src": "https://cdn.shopify.com/s/files/1/0792/0323/files/NB-OrigamiMiniCrib_greennew_6.jpg?v=1687549694"
+    },
+    {
+     "key": "babyletto-origami-mini-crib_8",
+     "src": "https://cdn.shopify.com/s/files/1/0792/0323/files/NB-OrigamiMiniCrib_greennew_8.jpg?v=1687549694"
+    },
+    {
+     "key": "babyletto-origami-mini-crib_9",
+     "src": "https://cdn.shopify.com/s/files/1/0792/0323/files/NB-OrigamiMiniCrib_M6698G_1.jpg?v=1687549694"
+    },
+    {
+     "key": "babyletto-origami-mini-crib_10",
+     "src": "https://cdn.shopify.com/s/files/1/0792/0323/files/NB-OrigamiMiniCrib_M6698G_4.jpg?v=1687549694"
+    }
+   ],
+   "img": "babyletto-origami-mini-crib",
+   "img_src": "https://cdn.shopify.com/s/files/1/0792/0323/files/NB-OrigamiMiniCrib_M6698CYN_ATC.jpg?v=1683834912"
+  },
+  {
+   "id": "delta-children-collins-wood-toddler-bed",
+   "type": "toddler-beds",
+   "brand": "Delta Children",
+   "line": "Collins Wood Toddler Bed",
+   "uses": [
+    "New Zealand pine and poplar"
+   ],
+   "outside": [
+    "Engineered wood"
+   ],
+   "free": [
+    "Added fire retardants",
+    "Lead",
+    "Phthalates"
+   ],
+   "unconfirmed": [
+    "Which parts are engineered wood",
+    "Paint ingredients (“non-toxic”, not named)",
+    "Hardware"
+   ],
+   "facts": {
+    "main": "yes",
+    "wood": "no",
+    "color": "unknown",
+    "parts": "unknown",
+    "flame": "yes"
+   },
+   "unstated": {
+    "color": [
+     "Paint ingredients (“non-toxic”, not named)"
+    ],
+    "parts": [
+     "Hardware"
+    ]
+   },
+   "quote": "Made of sustainable woods like New Zealand Pine, Poplar and TSCA compliant engineered wood",
+   "note": "Low toddler bed with two attached guardrails; fits a crib mattress. The page also says it is GREENGUARD Gold certified.",
+   "products": [
+    {
+     "name": "Collins Wood Toddler Bed",
+     "url": "https://www.deltachildren.com/products/collins-wood-toddler-bed-greenguard-gold-certified",
+     "store": "Delta Children",
+     "price": "$99.99",
+     "ships_from": null,
+     "shipping": "Free shipping sitewide; oversized items may carry a charge to out-of-network zip codes"
+    }
+   ],
+   "contains": [],
+   "standards": [],
+   "read": "2026-11-08",
+   "photos": [
+    {
+     "key": "delta-children-collins-wood-toddler-bed",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/products/krbdawosbira0thkozoz.jpg?v=1634858952"
+    },
+    {
+     "key": "delta-children-collins-wood-toddler-bed_2",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/products/sqaa42jf0i0260jm0top.jpg?v=1634858952"
+    },
+    {
+     "key": "delta-children-collins-wood-toddler-bed_3",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/products/ktjxwncdkb3hn1s7y7ar.jpg?v=1634858952"
+    },
+    {
+     "key": "delta-children-collins-wood-toddler-bed_4",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/products/tbnmi64abkpfp2cpjgce.jpg?v=1634858952"
+    },
+    {
+     "key": "delta-children-collins-wood-toddler-bed_5",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/products/htshinbn621z17d7hete.jpg?v=1634858952"
+    },
+    {
+     "key": "delta-children-collins-wood-toddler-bed_6",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/products/j93pkuvqvb3ojgxmx9lx.jpg?v=1634858953"
+    },
+    {
+     "key": "delta-children-collins-wood-toddler-bed_7",
+     "src": "https://www.deltachildren.com/cdn/shop/products/krbdawosbira0thkozoz_600x600_crop_center.jpg"
+    }
+   ],
+   "img": "delta-children-collins-wood-toddler-bed",
+   "img_src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/products/krbdawosbira0thkozoz.jpg?v=1634858952"
+  },
+  {
+   "id": "delta-children-magic-magnet-toddler-bed",
+   "type": "toddler-beds",
+   "brand": "Delta Children",
+   "line": "Magic Magnet Toddler Bed",
+   "uses": [
+    "Metal frame"
+   ],
+   "free": [
+    "Added fire retardants",
+    "Lead",
+    "Phthalates"
+   ],
+   "unconfirmed": [
+    "Type of metal",
+    "Finish or coating on the frame",
+    "Magnet sheets",
+    "Bungee cord book storage"
+   ],
+   "facts": {
+    "main": "yes",
+    "color": "unknown",
+    "parts": "unknown",
+    "flame": "yes"
+   },
+   "unstated": {
+    "color": [
+     "Finish or coating on the frame"
+    ],
+    "parts": [
+     "Magnet sheets",
+     "Bungee cord book storage"
+    ]
+   },
+   "age": {
+    "min_months": 15,
+    "text": "15 months and up, up to 50 lb"
+   },
+   "quote": "This sturdy bed features a sleek metal frame with attached guardrails",
+   "note": "Fits a full-size crib mattress, sold separately.",
+   "products": [
+    {
+     "name": "Magic Magnet Toddler Bed with Customizable Magnets & Built-In Book Storage",
+     "url": "https://www.deltachildren.com/products/magic-magnet-toddler-bed-with-customizable-magnets-and-built-in-book-storage",
+     "store": "Delta Children",
+     "price": "$59.94",
+     "ships_from": null,
+     "shipping": "Free shipping sitewide; oversized items may carry a charge to out-of-network zip codes"
+    }
+   ],
+   "outside": [],
+   "contains": [],
+   "standards": [],
+   "read": "2026-11-08",
+   "photos": [
+    {
+     "key": "delta-children-magic-magnet-toddler-bed",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/BB81497GN-1699_magic-magnet-bed_sage_lifestyle_05.jpg?v=1769355967"
+    },
+    {
+     "key": "delta-children-magic-magnet-toddler-bed_2",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/BB81497GN-1699_magic-magnet-bed_sage_callout_02.jpg?v=1769355967"
+    },
+    {
+     "key": "delta-children-magic-magnet-toddler-bed_3",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/BB81497GN-1699_magic-magnet-bed_sage_callout_012.jpg?v=1769355967"
+    },
+    {
+     "key": "delta-children-magic-magnet-toddler-bed_4",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/BB81497GN-1699_magic-magnet-bed_sage_callout_05.jpg?v=1769355967"
+    },
+    {
+     "key": "delta-children-magic-magnet-toddler-bed_5",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/BB81497GN-1699_magic-magnet-bed_sage_callout_04.jpg?v=1769355967"
+    },
+    {
+     "key": "delta-children-magic-magnet-toddler-bed_6",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/BB81497GN-1699_magic-magnet-bed_sage_callout_03.jpg?v=1769355967"
+    },
+    {
+     "key": "delta-children-magic-magnet-toddler-bed_7",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/BB81497GN-1699_magic-magnet-bed_sage_callout_01.jpg?v=1769355967"
+    },
+    {
+     "key": "delta-children-magic-magnet-toddler-bed_8",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/BB81497GN-1699_magic-magnet-bed_sage_lifestyle_104.jpg?v=1769355967"
+    },
+    {
+     "key": "delta-children-magic-magnet-toddler-bed_9",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/BB81497GN-1674_magic-magnet-bed_denim-blue_lifestyle_05.jpg?v=1769356127"
+    },
+    {
+     "key": "delta-children-magic-magnet-toddler-bed_10",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/BB81497GN-1687_magic-magnet-bed_oatmeal_lifestyle_103.jpg?v=1769356607"
+    }
+   ],
+   "img": "delta-children-magic-magnet-toddler-bed",
+   "img_src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/BB81497GN-1699_magic-magnet-bed_sage_lifestyle_05.jpg?v=1769355967"
+  },
+  {
+   "id": "delta-children-milestone-high-chair",
+   "type": "high-chairs",
+   "brand": "Delta Children",
+   "line": "Jeep Milestone 6-in-1 High Chair",
+   "outside": [
+    "Plastic chair (type of plastic not named)",
+    "Leatherette seat cover"
+   ],
+   "free": [
+    "Added fire retardants",
+    "Lead",
+    "Phthalates"
+   ],
+   "unconfirmed": [
+    "Type of plastic",
+    "Harness straps and buckle",
+    "Anti-slip feet"
+   ],
+   "facts": {
+    "main": "no",
+    "parts": "unknown",
+    "flame": "yes"
+   },
+   "unstated": {
+    "parts": [
+     "Harness straps and buckle",
+     "Anti-slip feet"
+    ]
+   },
+   "age": {
+    "min_months": 6,
+    "text": "6 months to 3 years or 35 in; converts to booster, stool, toddler seat, table and desk"
+   },
+   "quote": "Made of Safe, Non-Toxic Plastic",
+   "products": [
+    {
+     "name": "Milestone 6-in-1 High Chair",
+     "url": "https://www.deltachildren.com/products/milestone-6-in-1-high-chair",
+     "store": "Delta Children",
+     "price": "$99.99",
+     "ships_from": null,
+     "shipping": "Free shipping sitewide; oversized items may carry a charge to out-of-network zip codes"
+    }
+   ],
+   "uses": [],
+   "contains": [],
+   "standards": [],
+   "read": "2026-11-08",
+   "photos": [
+    {
+     "key": "delta-children-milestone-high-chair",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/23411-2446_Jeep-Milestone-6-in-1-High-Chair_Sage-Green_Lifestyle_01.jpg?v=1789582096"
+    },
+    {
+     "key": "delta-children-milestone-high-chair_2",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/23411-2446_Jeep-Milestone-6-in-1-High-Chair_Sage-Green_Lifestyle_02.jpg?v=1789582096"
+    },
+    {
+     "key": "delta-children-milestone-high-chair_3",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/23411JeepMilestoneHighChairSageGreenCallouts1-1.jpg?v=1790078042"
+    },
+    {
+     "key": "delta-children-milestone-high-chair_4",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/23411JeepMilestoneHighChairSageGreenCallouts2-2.jpg?v=1790078042"
+    },
+    {
+     "key": "delta-children-milestone-high-chair_5",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/23411JeepMilestoneHighChairSageGreenCallouts3-3.jpg?v=1790078042"
+    },
+    {
+     "key": "delta-children-milestone-high-chair_6",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/23411JeepMilestoneHighChairSageGreenCallouts4-4.jpg?v=1790078042"
+    },
+    {
+     "key": "delta-children-milestone-high-chair_7",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/23411JeepMilestoneHighChairSageGreenCallouts5-5.jpg?v=1790078042"
+    },
+    {
+     "key": "delta-children-milestone-high-chair_8",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/23411JeepMilestoneHighChairSageGreenCallouts6-6.jpg?v=1790078042"
+    },
+    {
+     "key": "delta-children-milestone-high-chair_9",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/23411-2182_Jeep-Milestone-6-in-1-High-Chair_Sage-Green_Silo_21.jpg?v=1709757232"
+    },
+    {
+     "key": "delta-children-milestone-high-chair_10",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/23411-2182_Jeep-Milestone-6-in-1-High-Chair_Sage-Green_Silo_25.jpg?v=1709757232"
+    }
+   ],
+   "img": "delta-children-milestone-high-chair",
+   "img_src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/23411-2446_Jeep-Milestone-6-in-1-High-Chair_Sage-Green_Lifestyle_01.jpg?v=1789582096"
+  },
+  {
+   "id": "delta-children-slimfold-high-chair",
+   "type": "high-chairs",
+   "brand": "Delta Children",
+   "line": "Little Folks 2-in-1 SlimFold High Chair",
+   "outside": [
+    "Leatherette seat"
+   ],
+   "free": [
+    "Added fire retardants",
+    "Lead",
+    "Phthalates"
+   ],
+   "unconfirmed": [
+    "Frame",
+    "Meal tray and tray top",
+    "Harness straps and buckle",
+    "Wheels"
+   ],
+   "facts": {
+    "main": "no",
+    "parts": "unknown",
+    "flame": "yes"
+   },
+   "unstated": {
+    "parts": [
+     "Harness straps and buckle",
+     "Wheels"
+    ]
+   },
+   "age": {
+    "min_months": 6,
+    "text": "6 months up to 50 lb or 35 in tall; converts to a toddler chair"
+   },
+   "quote": "The high chair's leatherette seat easily wipes clean",
+   "note": "Folding high chair on four locking wheels with a tray top the page says goes in the dishwasher. The page names no material for the frame or tray.",
+   "products": [
+    {
+     "name": "2-in-1 SlimFold High Chair for Babies and Toddler",
+     "url": "https://www.deltachildren.com/products/2-in-1-slimfold-high-chair-for-babies-and-toddler",
+     "store": "Delta Children",
+     "price": "$79.99",
+     "ships_from": null,
+     "shipping": "Free shipping sitewide; oversized items may carry a charge to out-of-network zip codes"
+    }
+   ],
+   "uses": [],
+   "contains": [],
+   "standards": [],
+   "read": "2026-11-08",
+   "photos": [
+    {
+     "key": "delta-children-slimfold-high-chair",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/LF23017-001_Little-Folks-High-Chair_Black_Lifestyle_03.jpg?v=1725376856"
+    },
+    {
+     "key": "delta-children-slimfold-high-chair_2",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/LF23017-001_Little-Folks-High-Chair_Black_Lifestyle_04.jpg?v=1725376856"
+    },
+    {
+     "key": "delta-children-slimfold-high-chair_3",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/LF23017-001_Little-Folks-High-Chair_Black_Silo_05.jpg?v=1725376856"
+    },
+    {
+     "key": "delta-children-slimfold-high-chair_4",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/LF23017-001_Little-Folks-High-Chair_Black_Silo_21.jpg?v=1725377137"
+    },
+    {
+     "key": "delta-children-slimfold-high-chair_5",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/LF23017-001_Little-Folks-High-Chair_Black_Silo_03.jpg?v=1725376855"
+    },
+    {
+     "key": "delta-children-slimfold-high-chair_6",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/LF23017-001_Little-Folks-High-Chair_Black_Silo_29.jpg?v=1725377137"
+    },
+    {
+     "key": "delta-children-slimfold-high-chair_7",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/LF23017-001_Little-Folks-High-Chair_Black_Silo_14.jpg?v=1725376856"
+    },
+    {
+     "key": "delta-children-slimfold-high-chair_8",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/LF23017-001_Little-Folks-High-Chair_Black_Silo_01.jpg?v=1725376856"
+    },
+    {
+     "key": "delta-children-slimfold-high-chair_9",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/LF23017-001_Little-Folks-High-Chair_Black_Silo_06.jpg?v=1725376856"
+    },
+    {
+     "key": "delta-children-slimfold-high-chair_10",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/LF23017-001_Little-Folks-High-Chair_Black_Silo_08.jpg?v=1725376856"
+    }
+   ],
+   "img": "delta-children-slimfold-high-chair",
+   "img_src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/LF23017-001_Little-Folks-High-Chair_Black_Lifestyle_03.jpg?v=1725376856"
+  },
+  {
+   "id": "green-toys-cookware-and-dining-set",
+   "type": "pretend",
+   "brand": "Green Toys",
+   "line": "Cookware & Dining Set (27 pieces)",
+   "outside": [
+    "100% recycled plastic (type not named)"
+   ],
+   "free": [
+    "BPA",
+    "Phthalates",
+    "PVC"
+   ],
+   "unconfirmed": [
+    "Type of plastic"
+   ],
+   "facts": {
+    "main": "no"
+   },
+   "quote": "Made from 100% recycled plastic No BPA, phthalates or PVC",
+   "note": "Stock pot with lid, skillet, four plates, bowls, cups and utensil sets. Made in the USA, the page says; sold out when read.",
+   "products": [
+    {
+     "name": "Cookware & Dining Set",
+     "url": "https://www.greentoys.com/products/gt-cookware-and-dining-set-27-piece-set",
+     "store": "Green Toys",
+     "price": "$50.99",
+     "ships_from": "US"
+    }
+   ],
+   "uses": [],
+   "contains": [],
+   "standards": [],
+   "read": "2026-11-08",
+   "photos": [
+    {
+     "key": "green-toys-cookware-and-dining-set",
+     "src": "https://cdn.shopify.com/s/files/1/0149/8336/4708/products/Cookware_DiningSet-Square.jpg?v=1574820455"
+    },
+    {
+     "key": "green-toys-cookware-and-dining-set_2",
+     "src": "https://cdn.shopify.com/s/files/1/0149/8336/4708/products/Cookwear_Dining_2.jpg?v=1574820455"
+    },
+    {
+     "key": "green-toys-cookware-and-dining-set_3",
+     "src": "https://cdn.shopify.com/s/files/1/0149/8336/4708/products/cook_dine_set_902.jpg?v=1574820455"
+    },
+    {
+     "key": "green-toys-cookware-and-dining-set_4",
+     "src": "https://cdn.shopify.com/s/files/1/0149/8336/4708/products/cook_dine_set_908.jpg?v=1574820455"
+    },
+    {
+     "key": "green-toys-cookware-and-dining-set_5",
+     "src": "https://cdn.shopify.com/s/files/1/0149/8336/4708/products/cook_dine_set_939.jpg?v=1574820455"
+    },
+    {
+     "key": "green-toys-cookware-and-dining-set_6",
+     "src": "https://cdn.shopify.com/s/files/1/0149/8336/4708/products/cook_dine_set_942.jpg?v=1574820455"
+    },
+    {
+     "key": "green-toys-cookware-and-dining-set_7",
+     "src": "https://cdn.shopify.com/s/files/1/0149/8336/4708/products/Cookwear_Dining_3_0.jpg?v=1574820455"
+    },
+    {
+     "key": "green-toys-cookware-and-dining-set_8",
+     "src": "https://cdn.shopify.com/s/files/1/0149/8336/4708/products/dish_set_1015_0.jpg?v=1574820455"
+    }
+   ],
+   "img": "green-toys-cookware-and-dining-set",
+   "img_src": "https://cdn.shopify.com/s/files/1/0149/8336/4708/products/Cookware_DiningSet-Square.jpg?v=1574820455"
+  },
+  {
+   "id": "natural-earth-paint-petite-kit",
+   "type": "art",
+   "brand": "Natural Earth Paint",
+   "line": "Petite Natural Earth Paint Kit (6 colours)",
+   "uses": [
+    "Organic corn starch and gum arabic",
+    "Natural earth and mineral pigments",
+    "Bamboo paint brush"
+   ],
+   "free": [
+    "Nuts, dairy and gluten"
+   ],
+   "unconfirmed": [
+    "Brush bristles"
+   ],
+   "facts": {
+    "main": "yes",
+    "color": "yes",
+    "parts": "unknown"
+   },
+   "unstated": {
+    "parts": [
+     "Brush bristles"
+    ]
+   },
+   "quote": "Ingredients: Organic Corn starch, Gum Arabic, Natural Earth & Mineral Pigments",
+   "note": "Powdered paint mixed with water; six packets (venetian red, orange ochre, yellow ochre, terre verte, ultramarine blue, raw umber) and one brush. The page says it carries the ACMI AP seal and is made in the USA.",
+   "products": [
+    {
+     "name": "Petite Natural Earth Paint Kit",
+     "url": "https://naturalearthpaint.com/products/petite-natural-earth-paint-kit-1",
+     "store": "Natural Earth Paint",
+     "price": "$16.95",
+     "ships_from": "US",
+     "shipping": "Free standard shipping on orders above $150 for U.S. customers"
+    }
+   ],
+   "outside": [],
+   "contains": [],
+   "standards": [],
+   "read": "2026-11-08",
+   "photos": [
+    {
+     "key": "natural-earth-paint-petite-kit",
+     "src": "https://cdn.shopify.com/s/files/1/0600/9343/1862/files/Natural-Earth-Paint-Petite-Kit-2025.jpg?v=1740509219"
+    },
+    {
+     "key": "natural-earth-paint-petite-kit_2",
+     "src": "https://cdn.shopify.com/s/files/1/0600/9343/1862/files/natural-earth-paint-petite-kit.jpg?v=1740595120"
+    },
+    {
+     "key": "natural-earth-paint-petite-kit_3",
+     "src": "https://cdn.shopify.com/s/files/1/0600/9343/1862/files/how-to-make-kids-paint-low-res.jpg?v=1776274038"
+    },
+    {
+     "key": "natural-earth-paint-petite-kit_4",
+     "src": "https://cdn.shopify.com/s/files/1/0600/9343/1862/files/vibrant-colors-kids-paints-testimonial-low-res.jpg?v=1774464564"
+    },
+    {
+     "key": "natural-earth-paint-petite-kit_5",
+     "src": "https://cdn.shopify.com/s/files/1/0600/9343/1862/files/petite-natural-earth-paint-kit__20433.1712355364.1280.1280.jpg?v=1761593537"
+    },
+    {
+     "key": "natural-earth-paint-petite-kit_6",
+     "src": "https://cdn.shopify.com/s/files/1/0600/9343/1862/files/NEP_painted_rocks.jpg?v=1779901329"
+    },
+    {
+     "key": "natural-earth-paint-petite-kit_7",
+     "src": "https://cdn.shopify.com/s/files/1/0600/9343/1862/files/Kids_using_NEP.jpg?v=1779901329"
+    },
+    {
+     "key": "natural-earth-paint-petite-kit_8",
+     "src": "https://cdn.shopify.com/s/files/1/0600/9343/1862/files/Petite-Natural-Earth-Paint-Kit-get-25-off_png.jpg?v=1761593537"
+    },
+    {
+     "key": "natural-earth-paint-petite-kit_9",
+     "src": "https://cdn.shopify.com/s/files/1/0600/9343/1862/files/petite-natural-earth-paint-kit__44440.1712355375.1280.1280.jpg?v=1761593537"
+    },
+    {
+     "key": "natural-earth-paint-petite-kit_10",
+     "src": "https://review-images.judgeme.com/natural-earth-paint/1793036315__8d98b6c6-2d32-4c3a-a001-1fcfc38b4b0b-1_a__original.jpg?quality=80&width=1024"
+    }
+   ],
+   "img": "natural-earth-paint-petite-kit",
+   "img_src": "https://cdn.shopify.com/s/files/1/0600/9343/1862/files/Natural-Earth-Paint-Petite-Kit-2025.jpg?v=1740509219"
+  },
+  {
+   "id": "ooly-lil-watercolor-paint-pad",
+   "type": "art",
+   "brand": "OOLY",
+   "line": "Lil' Watercolor Paper Pad, 9 x 12 in (20 sheets)",
+   "uses": [
+    "200gsm acid-free watercolor paper"
+   ],
+   "unconfirmed": [
+    "Pad backing and binding glue"
+   ],
+   "facts": {
+    "main": "yes"
+   },
+   "age": {
+    "min_months": 36,
+    "text": "3 years and up"
+   },
+   "quote": "20 sheets of thick, durable watercolor paper, 9\" x 12\" 200gsm acid-free paper",
+   "products": [
+    {
+     "name": "Lil' Watercolor Paint Pad",
+     "url": "https://coloredorganics.com/products/lil-watercolor-paint-pad",
+     "store": "Colored Organics",
+     "price": "$12",
+     "ships_from": null,
+     "shipping": "Free U.S. shipping on orders over $50"
+    }
+   ],
+   "free": [],
+   "outside": [],
+   "contains": [],
+   "standards": [],
+   "read": "2026-11-08",
+   "photos": [
+    {
+     "key": "ooly-lil-watercolor-paint-pad",
+     "src": "https://cdn.shopify.com/s/files/1/1643/4857/files/infant-unisex-lil-watercolor-paint-pad.multi.flat_front.jpg?v=1785444590"
+    },
+    {
+     "key": "ooly-lil-watercolor-paint-pad_2",
+     "src": "https://cdn.shopify.com/s/files/1/1643/4857/files/infant-unisex-lil-watercolor-paint-pad.multi.flat_detail.jpg?v=1785444590"
+    }
+   ],
+   "img": "ooly-lil-watercolor-paint-pad",
+   "img_src": "https://cdn.shopify.com/s/files/1/1643/4857/files/infant-unisex-lil-watercolor-paint-pad.multi.flat_front.jpg?v=1785444590"
+  },
+  {
+   "id": "plantoys-hammering-peg-bucket",
+   "type": "bench",
+   "brand": "PlanToys",
+   "line": "Hammering Peg Bucket",
+   "uses": [
+    "Rubberwood",
+    "Organic pigments and water-based dyes"
+   ],
+   "outside": [
+    "Polyester rope"
+   ],
+   "free": [
+    "Formaldehyde in the glue"
+   ],
+   "unconfirmed": [
+    "What the organic pigments and water-based dyes are made of",
+    "Water-based coating (type not named)",
+    "Solid rubberwood or plywood"
+   ],
+   "facts": {
+    "main": "yes",
+    "parts": "no",
+    "color": "unknown",
+    "wood": "unknown"
+   },
+   "unstated": {
+    "color": [
+     "What the organic pigments and water-based dyes are made of",
+     "Water-based coating (type not named)"
+    ],
+    "wood": [
+     "Solid rubberwood or plywood"
+    ]
+   },
+   "quote": "Made using chemical-free rubberwood, formaldehyde-free glue, organic pigments and water-based dyes and polyester rope",
+   "note": "Bucket with a two-hole lid, two pegs and a hammer. Made in Thailand.",
+   "products": [
+    {
+     "name": "PlanToys Hammering Peg Bucket",
+     "url": "https://www.bellalunatoys.com/products/plan-toys-hammering-peg-bucket",
+     "store": "Bella Luna Toys",
+     "price": "$24.99",
+     "ships_from": "US",
+     "shipping": "Free shipping on orders over $99 within the contiguous 48 states"
+    }
+   ],
+   "contains": [],
+   "standards": [],
+   "read": "2026-11-08",
+   "photos": [
+    {
+     "key": "plantoys-hammering-peg-bucket",
+     "src": "https://cdn.shopify.com/s/files/1/1114/2810/files/plan-toys-montessori-collection-hammering-peg-bucket-2.jpg?v=1755561912"
+    },
+    {
+     "key": "plantoys-hammering-peg-bucket_2",
+     "src": "https://cdn.shopify.com/s/files/1/1114/2810/files/plan-toys-montessori-collection-hammering-peg-bucket-3.jpg?v=1755561912"
+    },
+    {
+     "key": "plantoys-hammering-peg-bucket_3",
+     "src": "https://cdn.shopify.com/s/files/1/1114/2810/files/plan-toys-montessori-collection-hammering-peg-bucket.jpg?v=1755561911"
+    },
+    {
+     "key": "plantoys-hammering-peg-bucket_4",
+     "src": "https://www.bellalunatoys.com/cdn/shop/files/plan-toys-montessori-collection-hammering-peg-bucket-2_1024x1024.jpg?v=1755561912"
+    }
+   ],
+   "img": "plantoys-hammering-peg-bucket",
+   "img_src": "https://cdn.shopify.com/s/files/1/1114/2810/files/plan-toys-montessori-collection-hammering-peg-bucket-2.jpg?v=1755561912"
+  },
+  {
+   "id": "plantoys-miracle-pounding-ii",
+   "type": "bench",
+   "brand": "PlanToys",
+   "line": "Miracle Pounding II",
+   "uses": [
+    "Rubberwood"
+   ],
+   "unconfirmed": [
+    "Solid rubberwood or plywood",
+    "Finish or colour on the balls"
+   ],
+   "facts": {
+    "main": "yes",
+    "wood": "unknown",
+    "color": "unknown"
+   },
+   "unstated": {
+    "wood": [
+     "Solid rubberwood or plywood"
+    ],
+    "color": [
+     "Finish or colour on the balls"
+    ]
+   },
+   "age": {
+    "min_months": 24,
+    "text": "2 years and up"
+   },
+   "quote": "Materials: Rubberwood",
+   "note": "Pounding one ball raises another; includes a mallet the store calls wooden. Made in Thailand.",
+   "products": [
+    {
+     "name": "PlanToys Miracle Pounding II Wooden Ball Toy",
+     "url": "https://thebabypenguin.com/products/miracle-pounding-ii",
+     "store": "The Baby Penguin",
+     "price": "$44.99",
+     "ships_from": null,
+     "shipping": "Free standard shipping on orders of $50 or more within the contiguous United States"
+    }
+   ],
+   "free": [],
+   "outside": [],
+   "contains": [],
+   "standards": [],
+   "read": "2026-11-08",
+   "photos": [
+    {
+     "key": "plantoys-miracle-pounding-ii",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Miracle-Pounding-II-PlanToys-USA-124129292.jpg?v=1781462099"
+    },
+    {
+     "key": "plantoys-miracle-pounding-ii_2",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Miracle-Pounding-II-PlanToys-USA-124129384.jpg?v=1781462099"
+    },
+    {
+     "key": "plantoys-miracle-pounding-ii_3",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Miracle-Pounding-II-PlanToys-USA-124129426.jpg?v=1781462099"
+    },
+    {
+     "key": "plantoys-miracle-pounding-ii_4",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Miracle-Pounding-II-PlanToys-USA-124129527.jpg?v=1781462099"
+    },
+    {
+     "key": "plantoys-miracle-pounding-ii_5",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Miracle-Pounding-II-PlanToys-USA-124129612.jpg?v=1781462099"
+    },
+    {
+     "key": "plantoys-miracle-pounding-ii_6",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Miracle-Pounding-II-PlanToys-USA-124129776.jpg?v=1781462105"
+    },
+    {
+     "key": "plantoys-miracle-pounding-ii_7",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Miracle-Pounding-II-PlanToys-USA-124129844.jpg?v=1781462105"
+    },
+    {
+     "key": "plantoys-miracle-pounding-ii_8",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Miracle-Pounding-II-PlanToys-USA-124129982.jpg?v=1781462105"
+    },
+    {
+     "key": "plantoys-miracle-pounding-ii_9",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Miracle-Pounding-II-PlanToys-USA-124130028.jpg?v=1781462105"
+    }
+   ],
+   "img": "plantoys-miracle-pounding-ii",
+   "img_src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Miracle-Pounding-II-PlanToys-USA-124129292.jpg?v=1781462099"
+  },
+  {
+   "id": "plantoys-wooden-tableware-set",
+   "type": "pretend",
+   "brand": "PlanToys",
+   "line": "Wooden Tableware Set (12 pieces)",
+   "uses": [
+    "Rubberwood",
+    "Organic pigments and water-based dyes"
+   ],
+   "outside": [
+    "PlanWood (composite of reclaimed wood particles)"
+   ],
+   "free": [
+    "Formaldehyde in the glue"
+   ],
+   "unconfirmed": [
+    "Which pieces are PlanWood and which are rubberwood",
+    "What the organic pigments and water-based dyes are made of",
+    "Type of glue"
+   ],
+   "facts": {
+    "main": "yes",
+    "wood": "no",
+    "color": "unknown",
+    "parts": "unknown"
+   },
+   "unstated": {
+    "color": [
+     "What the organic pigments and water-based dyes are made of"
+    ],
+    "parts": [
+     "Type of glue"
+    ]
+   },
+   "age": {
+    "min_months": 36,
+    "text": "Not for children under 3 years (small parts)"
+   },
+   "quote": "Made from Rubber Wood and PlanWood™ an eco-friendly composite material made from reclaimed wood particles",
+   "note": "Two plates, bowls, cups, forks, knives and spoons. The description names rubberwood and PlanWood; the materials line names rubberwood only. Made in Thailand.",
+   "products": [
+    {
+     "name": "PlanToys Wooden Tableware Set - Play Dishes",
+     "url": "https://www.bellalunatoys.com/products/plan-toys-tableware-play-dishes",
+     "store": "Bella Luna Toys",
+     "price": "$39.99",
+     "ships_from": "US",
+     "shipping": "Free shipping on orders over $99 within the contiguous 48 states"
+    }
+   ],
+   "contains": [],
+   "standards": [],
+   "read": "2026-11-08",
+   "photos": [
+    {
+     "key": "plantoys-wooden-tableware-set",
+     "src": "https://cdn.shopify.com/s/files/1/1114/2810/products/Plan-Toys-Wooden-Toy-Dish-Set-Play-Tableware-Set.jpg?v=1663824274"
+    }
+   ],
+   "img": "plantoys-wooden-tableware-set",
+   "img_src": "https://cdn.shopify.com/s/files/1/1114/2810/products/Plan-Toys-Wooden-Toy-Dish-Set-Play-Tableware-Set.jpg?v=1663824274"
+  },
+  {
+   "id": "sabo-wooden-dinner-play-food-set",
+   "type": "pretend",
+   "brand": "Sabo",
+   "line": "Wooden Dinner Play Food Set",
+   "uses": [
+    "Linden and birch wood",
+    "Linen storage bag"
+   ],
+   "unconfirmed": [
+    "Water-based paint (ingredients not named)",
+    "Solid wood or plywood"
+   ],
+   "facts": {
+    "main": "yes",
+    "color": "unknown",
+    "wood": "unknown"
+   },
+   "unstated": {
+    "color": [
+     "Water-based paint (ingredients not named)"
+    ],
+    "wood": [
+     "Solid wood or plywood"
+    ]
+   },
+   "quote": "Made of linden and birch wood, and water-based paint.",
+   "note": "Steak, salmon, chicken leg, arugula leaves, asparagus, pepper rings, tomatoes, mushroom, potato pieces and a bun, hand-made in Ukraine, the page says.",
+   "products": [
+    {
+     "name": "Wooden Dinner Play Food Set",
+     "url": "https://www.bellalunatoys.com/products/sabo-play-food-set-dinner",
+     "store": "Bella Luna Toys",
+     "price": "$75.00",
+     "ships_from": "US",
+     "shipping": "Free shipping on orders over $99 within the contiguous 48 states"
+    }
+   ],
+   "free": [],
+   "outside": [],
+   "contains": [],
+   "standards": [],
+   "read": "2026-11-08",
+   "photos": [
+    {
+     "key": "sabo-wooden-dinner-play-food-set",
+     "src": "https://cdn.shopify.com/s/files/1/1114/2810/files/sabo-wooden-play-food-set-bella-luna-toys_7b6fb1b1-134b-427d-a68f-4ec478c87d9f.jpg?v=1687302765"
+    },
+    {
+     "key": "sabo-wooden-dinner-play-food-set_2",
+     "src": "https://cdn.shopify.com/s/files/1/1114/2810/files/sabo-wooden-play-food-set-bella-luna-toys_7.jpg?v=1687302765"
+    },
+    {
+     "key": "sabo-wooden-dinner-play-food-set_3",
+     "src": "https://cdn.shopify.com/s/files/1/1114/2810/files/sabo-wooden-play-food-set-bella-luna-toys_2.jpg?v=1687302765"
+    },
+    {
+     "key": "sabo-wooden-dinner-play-food-set_4",
+     "src": "https://cdn.shopify.com/s/files/1/1114/2810/files/sabo-wooden-play-food-set-bella-luna-toys_3.jpg?v=1687302765"
+    },
+    {
+     "key": "sabo-wooden-dinner-play-food-set_5",
+     "src": "https://cdn.shopify.com/s/files/1/1114/2810/files/sabo-wooden-play-food-set-bella-luna-toys_4.jpg?v=1687302765"
+    },
+    {
+     "key": "sabo-wooden-dinner-play-food-set_6",
+     "src": "https://cdn.shopify.com/s/files/1/1114/2810/files/sabo-wooden-play-food-set-bella-luna-toys_5.jpg?v=1687302765"
+    },
+    {
+     "key": "sabo-wooden-dinner-play-food-set_7",
+     "src": "https://cdn.shopify.com/s/files/1/1114/2810/files/sabo-wooden-play-food-set-bella-luna-toys_6.jpg?v=1687302765"
+    }
+   ],
+   "img": "sabo-wooden-dinner-play-food-set",
+   "img_src": "https://cdn.shopify.com/s/files/1/1114/2810/files/sabo-wooden-play-food-set-bella-luna-toys_7b6fb1b1-134b-427d-a68f-4ec478c87d9f.jpg?v=1687302765"
+  },
+  {
+   "id": "tender-leaf-toys-woodpecker-game",
+   "type": "bench",
+   "brand": "Tender Leaf Toys",
+   "line": "Woodpecker Hammer and Ball Game",
+   "uses": [
+    "Wood"
+   ],
+   "unconfirmed": [
+    "Kind of wood",
+    "Solid wood or plywood",
+    "Paint or finish"
+   ],
+   "facts": {
+    "main": "yes",
+    "wood": "unknown",
+    "color": "unknown"
+   },
+   "unstated": {
+    "wood": [
+     "Solid wood or plywood"
+    ],
+    "color": [
+     "Paint or finish"
+    ]
+   },
+   "age": {
+    "min_months": 18,
+    "text": "18 months and up"
+   },
+   "quote": "Materials: Wood",
+   "note": "Tree-trunk base, four balls and a woodpecker-shaped hammer.",
+   "products": [
+    {
+     "name": "Tender Leaf Woodpecker Hammer and Ball Game",
+     "url": "https://thebabypenguin.com/products/woodpecker-game",
+     "store": "The Baby Penguin",
+     "price": "$44.99",
+     "ships_from": null,
+     "shipping": "Free standard shipping on orders of $50 or more within the contiguous United States"
+    }
+   ],
+   "free": [],
+   "outside": [],
+   "contains": [],
+   "standards": [],
+   "read": "2026-11-08",
+   "photos": [
+    {
+     "key": "tender-leaf-toys-woodpecker-game",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Woodpecker-Game-Tender-Leaf-93189787.jpg?v=1775014265"
+    },
+    {
+     "key": "tender-leaf-toys-woodpecker-game_2",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Woodpecker-Game-Tender-Leaf-93189890.jpg?v=1775014265"
+    },
+    {
+     "key": "tender-leaf-toys-woodpecker-game_3",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Woodpecker-Game-Tender-Leaf-93190033.jpg?v=1775014268"
+    },
+    {
+     "key": "tender-leaf-toys-woodpecker-game_4",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Woodpecker-Game-Tender-Leaf-93190180.jpg?v=1775014268"
+    }
+   ],
+   "img": "tender-leaf-toys-woodpecker-game",
+   "img_src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Woodpecker-Game-Tender-Leaf-93189787.jpg?v=1775014265"
   }
  ]
 }
