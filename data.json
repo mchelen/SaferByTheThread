@@ -1,6 +1,6 @@
 {
  "schema": 4,
- "updated": "2026-11-08",
+ "updated": "2026-11-09",
  "ask": [
   "Thread on any sewn item (cotton or polyester).",
   "Wheels and axles on push toys and cars.",
@@ -32305,6 +32305,1035 @@
    ],
    "img": "tender-leaf-toys-woodpecker-game",
    "img_src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Woodpecker-Game-Tender-Leaf-93189787.jpg?v=1775014265"
+  },
+  {
+   "id": "beaba-stainless-steel-divided-plate",
+   "type": "plates",
+   "brand": "Béaba",
+   "line": "Microwave-Safe Stainless Steel Divided Plate",
+   "uses": [
+    "Stainless steel plate",
+    "Removable silicone sleeve"
+   ],
+   "free": [
+    "BPA",
+    "Lead",
+    "Phthalates"
+   ],
+   "unconfirmed": [
+    "Grade of the stainless steel",
+    "LFGB or French Arrêté test for the silicone sleeve"
+   ],
+   "outside": [],
+   "facts": {
+    "main": "yes",
+    "silicone": "unknown"
+   },
+   "unstated": {
+    "silicone": [
+     "LFGB or French Arrêté test for the silicone sleeve"
+    ]
+   },
+   "quote": "Made from durable, hygienic stainless steel",
+   "note": "Divided plate the maker says can go in the microwave.",
+   "products": [
+    {
+     "name": "Microwave-Safe Stainless Steel Divided Plate",
+     "url": "https://beaba.us/products/microwave-safe-stainless-steel-divided-plate",
+     "store": "Béaba USA",
+     "price": "$15.99",
+     "ships_from": null,
+     "shipping": "Free shipping on orders $140*"
+    }
+   ],
+   "contains": [],
+   "standards": [],
+   "read": "2026-11-09",
+   "photos": [
+    {
+     "key": "beaba-stainless-steel-divided-plate",
+     "src": "https://cdn.shopify.com/s/files/1/0673/7756/1739/files/21_96bc80b1-c38c-4c9f-8069-749cc381c890.png?v=1782162139"
+    }
+   ],
+   "img": "beaba-stainless-steel-divided-plate",
+   "img_src": "https://cdn.shopify.com/s/files/1/0673/7756/1739/files/21_96bc80b1-c38c-4c9f-8069-749cc381c890.png?v=1782162139"
+  },
+  {
+   "id": "bugaboo-butterfly-2",
+   "type": "strollers",
+   "brand": "Bugaboo",
+   "line": "Butterfly 2 Complete Stroller",
+   "uses": [
+    "Recycled aluminum"
+   ],
+   "free": [],
+   "unconfirmed": [
+    "Which “bio-based material” (not named)",
+    "Fibre of the seat fabrics and canopy",
+    "Wheels",
+    "Harness and buckle",
+    "Flame retardants"
+   ],
+   "outside": [],
+   "facts": {
+    "main": "unknown",
+    "parts": "unknown",
+    "flame": "unknown"
+   },
+   "unstated": {
+    "main": [
+     "Which “bio-based material” (not named)",
+     "Fibre of the seat fabrics and canopy"
+    ],
+    "parts": [
+     "Wheels",
+     "Harness and buckle"
+    ],
+    "flame": [
+     "Flame retardants"
+    ]
+   },
+   "age": {
+    "min_months": 6,
+    "max_months": 48,
+    "text": "6 months to about 4 years (up to 48.5 lb)"
+   },
+   "quote": "Built to last with durable bio-based material and recycled aluminum",
+   "note": "Compact travel stroller with a one-second fold sized for airline overhead bins (IATA).",
+   "products": [
+    {
+     "name": "Butterfly 2 Complete Stroller by Bugaboo",
+     "url": "https://pacifierkids.com/products/butterfly-2-complete-stroller-by-bugaboo",
+     "store": "Pacifier",
+     "price": "$499.00 (sale; regular $599.00)",
+     "ships_from": "US",
+     "shipping": "$5.95 flat rate ground shipping"
+    }
+   ],
+   "contains": [],
+   "standards": [],
+   "read": "2026-11-09",
+   "photos": [
+    {
+     "key": "bugaboo-butterfly-2",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/100338025_3.jpg?v=1748051890"
+    },
+    {
+     "key": "bugaboo-butterfly-2_2",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/100338025_1.jpg?v=1748052511"
+    },
+    {
+     "key": "bugaboo-butterfly-2_3",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/100338025_8.jpg?v=1748052511"
+    },
+    {
+     "key": "bugaboo-butterfly-2_4",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/100338025.jpg?v=1748052511"
+    },
+    {
+     "key": "bugaboo-butterfly-2_5",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/100338025_7_1.jpg?v=1748052511"
+    },
+    {
+     "key": "bugaboo-butterfly-2_6",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/100338025_6.jpg?v=1748052511"
+    },
+    {
+     "key": "bugaboo-butterfly-2_7",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/100338025_4.jpg?v=1748052511"
+    },
+    {
+     "key": "bugaboo-butterfly-2_8",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/100338025_4_1.jpg?v=1748052511"
+    },
+    {
+     "key": "bugaboo-butterfly-2_9",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/100338027_4.jpg?v=1748052511"
+    },
+    {
+     "key": "bugaboo-butterfly-2_10",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/100338027_7_1.jpg?v=1748052511"
+    }
+   ],
+   "img": "bugaboo-butterfly-2",
+   "img_src": "https://cdn.shopify.com/s/files/1/0281/8056/files/100338025_3.jpg?v=1748051890"
+  },
+  {
+   "id": "camden-rose-35-inch-play-silks",
+   "type": "silks",
+   "brand": "Camden Rose",
+   "line": "35-inch Play Silks, hand-dyed",
+   "uses": [
+    "8mm habotai China silk"
+   ],
+   "free": [],
+   "unconfirmed": [
+    "Which dyes (“colorfast dyes”, not named)",
+    "Thread of the hand-rolled hem"
+   ],
+   "outside": [],
+   "facts": {
+    "main": "yes",
+    "color": "unknown"
+   },
+   "unstated": {
+    "color": [
+     "Which dyes (“colorfast dyes”, not named)"
+    ]
+   },
+   "quote": "Materials: 8mm Habotai China Silk",
+   "note": "Single 35 x 35 inch silks in eight colours, hand-dyed in the USA.",
+   "products": [
+    {
+     "name": "35\" Play Silks - Select Individually",
+     "url": "https://camdenrose.com/products/35-inch-play-silks-select-individually",
+     "store": "Camden Rose",
+     "price": "$24.00",
+     "ships_from": "US",
+     "shipping": "Free standard domestic shipping on orders over $150 to the contiguous US"
+    }
+   ],
+   "contains": [],
+   "standards": [],
+   "read": "2026-11-09",
+   "photos": [
+    {
+     "key": "camden-rose-35-inch-play-silks",
+     "src": "https://cdn.shopify.com/s/files/1/0658/7164/2856/files/1805-35-6setvibrant-423_1_fd1048d5-bce8-41fb-a595-5cef39a1bc55.jpg?v=1739301644"
+    },
+    {
+     "key": "camden-rose-35-inch-play-silks_2",
+     "src": "https://cdn.shopify.com/s/files/1/0658/7164/2856/files/1805-35-6setpastel-426_1_b73a261a-3fb5-4473-84f8-37f0a13c1387.jpg?v=1738174444"
+    },
+    {
+     "key": "camden-rose-35-inch-play-silks_3",
+     "src": "https://cdn.shopify.com/s/files/1/0658/7164/2856/files/1805-35-6setpastel-427_2afa3293-14b1-468d-a293-013e642d6fcb.jpg?v=1738174444"
+    },
+    {
+     "key": "camden-rose-35-inch-play-silks_4",
+     "src": "https://cdn.shopify.com/s/files/1/0658/7164/2856/files/1805-35-vibrantgreen-1.jpg?v=1741878412"
+    },
+    {
+     "key": "camden-rose-35-inch-play-silks_5",
+     "src": "https://cdn.shopify.com/s/files/1/0658/7164/2856/files/1805-35-pastelgreen-1.jpg?v=1741878727"
+    },
+    {
+     "key": "camden-rose-35-inch-play-silks_6",
+     "src": "https://cdn.shopify.com/s/files/1/0658/7164/2856/files/1805-35-pastelpeach-2.jpg?v=1741878902"
+    },
+    {
+     "key": "camden-rose-35-inch-play-silks_7",
+     "src": "https://cdn.shopify.com/s/files/1/0658/7164/2856/files/1805-35-pastelpink-2.jpg?v=1741878948"
+    },
+    {
+     "key": "camden-rose-35-inch-play-silks_8",
+     "src": "https://cdn.shopify.com/s/files/1/0658/7164/2856/files/1805-35-vibrantyellow-1.jpg?v=1741879072"
+    },
+    {
+     "key": "camden-rose-35-inch-play-silks_9",
+     "src": "https://cdn.shopify.com/s/files/1/0658/7164/2856/files/DSCF1392.jpg?v=1771427632"
+    },
+    {
+     "key": "camden-rose-35-inch-play-silks_10",
+     "src": "https://cdn.shopify.com/s/files/1/0658/7164/2856/files/1805-35-pastelpurple-2-3560.jpg?v=1772039972"
+    }
+   ],
+   "img": "camden-rose-35-inch-play-silks",
+   "img_src": "https://cdn.shopify.com/s/files/1/0658/7164/2856/files/1805-35-6setvibrant-423_1_fd1048d5-bce8-41fb-a595-5cef39a1bc55.jpg?v=1739301644"
+  },
+  {
+   "id": "clek-olli",
+   "type": "car-seats",
+   "brand": "Clek",
+   "line": "Olli Backless Booster Seat",
+   "uses": [],
+   "free": [
+    "Added flame retardants",
+    "PFAS",
+    "Fluorine",
+    "Phthalates"
+   ],
+   "unconfirmed": [
+    "Seat base",
+    "Seat cushion fill",
+    "Drink-thingy cup holder",
+    "Thread"
+   ],
+   "outside": [
+    "100% polyester fabric (Latte)",
+    "99% polyester and 1% wool fabric (Railroad, Vintage)"
+   ],
+   "facts": {
+    "main": "no",
+    "parts": "unknown",
+    "flame": "yes",
+    "finish": "yes"
+   },
+   "unstated": {
+    "parts": [
+     "Drink-thingy cup holder",
+     "Thread"
+    ]
+   },
+   "age": {
+    "min_months": 48,
+    "text": "4 years and up (recommended), 40 to 120 lb"
+   },
+   "quote": "Fabric Content: Latte: 100% Polyester Railroad, Vintage: 99% Polyester + 1% Wool",
+   "note": "Backless booster with Rigid-LATCH, 5 lb. The page says “Made in Canada with Domestic and Imported Components.”",
+   "products": [
+    {
+     "name": "olli Backless Booster Seat",
+     "url": "https://clekinc.com/products/olli",
+     "store": "Clek",
+     "price": "$149.99",
+     "ships_from": "US",
+     "shipping": "Free shipping on orders over $99*"
+    }
+   ],
+   "contains": [],
+   "standards": [],
+   "read": "2026-11-09",
+   "photos": [
+    {
+     "key": "clek-olli",
+     "src": "https://cdn.shopify.com/s/files/1/0740/8875/files/clek-olli-railroad-flame-retardant-free.jpg?v=1708621755"
+    },
+    {
+     "key": "clek-olli_2",
+     "src": "https://cdn.shopify.com/s/files/1/0740/8875/files/clek-olli-latte.jpg?v=1751651597"
+    },
+    {
+     "key": "clek-olli_3",
+     "src": "https://cdn.shopify.com/s/files/1/0740/8875/files/Clek-Olli-Rigid-LATCH.jpg?v=1762366191"
+    },
+    {
+     "key": "clek-olli_4",
+     "src": "https://cdn.shopify.com/s/files/1/0740/8875/files/Clek-Olli-Belt-Positioning-Arm-Rests.jpg?v=1762366191"
+    },
+    {
+     "key": "clek-olli_5",
+     "src": "https://cdn.shopify.com/s/files/1/0740/8875/files/Clek-Olli-Quick-Release-Strap.jpg?v=1762366191"
+    },
+    {
+     "key": "clek-olli_6",
+     "src": "https://cdn.shopify.com/s/files/1/0740/8875/files/Clek-Olli-Comfort-Cube-Padding.jpg?v=1762366191"
+    },
+    {
+     "key": "clek-olli_7",
+     "src": "https://cdn.shopify.com/s/files/1/0740/8875/files/Clek-Olli-Drink-Thingy-Cup-Holder.jpg?v=1762366191"
+    },
+    {
+     "key": "clek-olli_8",
+     "src": "https://cdn.shopify.com/s/files/1/0740/8875/files/Clek-Olli-Removable-Cover.jpg?v=1762366191"
+    },
+    {
+     "key": "clek-olli_9",
+     "src": "https://cdn.shopify.com/s/files/1/0740/8875/products/Olli-In-Car-Install.jpg?v=1762366191"
+    },
+    {
+     "key": "clek-olli_10",
+     "src": "https://cdn.shopify.com/s/files/1/0740/8875/files/clek_olli_feature_highlights.jpg?v=1762366191"
+    }
+   ],
+   "img": "clek-olli",
+   "img_src": "https://cdn.shopify.com/s/files/1/0740/8875/files/clek-olli-railroad-flame-retardant-free.jpg?v=1708621755"
+  },
+  {
+   "id": "clek-oobr",
+   "type": "car-seats",
+   "brand": "Clek",
+   "line": "Oobr High Back Booster Seat",
+   "uses": [
+    "Mammoth Ziip fabric of 70% merino wool and 30% Tencel",
+    "Rigid metal base subframe",
+    "Steel rods joining the headrest to the frame"
+   ],
+   "free": [
+    "Added flame retardants",
+    "PFAS",
+    "Fluorine",
+    "Phthalates"
+   ],
+   "unconfirmed": [
+    "Treatment of the merino wool",
+    "Energy-absorbing foam layer",
+    "Seat cushion fill",
+    "Thread"
+   ],
+   "outside": [
+    "100% polyester fabric (Latte Ziip)",
+    "99% polyester and 1% wool fabric (Railroad, Edge, Highlands and Vintage Ziip)",
+    "High-impact copolymer frame"
+   ],
+   "facts": {
+    "main": "no",
+    "parts": "unknown",
+    "wool": "unknown",
+    "flame": "yes",
+    "finish": "yes"
+   },
+   "unstated": {
+    "parts": [
+     "Thread"
+    ],
+    "wool": [
+     "Treatment of the merino wool"
+    ]
+   },
+   "age": {
+    "min_months": 48,
+    "text": "4 years and up (recommended), 40 to 100 lb, high-back or backless"
+   },
+   "quote": "Mammoth Ziip: 70% Merino Wool + 30% Tencel",
+   "note": "Belt-positioning booster with Rigid-LATCH. The page says “Made in Canada with Domestic and Imported Components.” The Mammoth Ziip cover is the only one with merino wool; the other covers are polyester.",
+   "products": [
+    {
+     "name": "oobr High Back Booster Seat",
+     "url": "https://clekinc.com/products/oobr",
+     "store": "Clek",
+     "price": "$369.99",
+     "ships_from": "US",
+     "variant": "mammoth ziip",
+     "shipping": "Free shipping on orders over $99*"
+    }
+   ],
+   "contains": [],
+   "standards": [],
+   "read": "2026-11-09",
+   "photos": [
+    {
+     "key": "clek-oobr",
+     "src": "https://cdn.shopify.com/s/files/1/0740/8875/files/clek-oobr-railroad-ziip.jpg?v=1769014246"
+    },
+    {
+     "key": "clek-oobr_2",
+     "src": "https://cdn.shopify.com/s/files/1/0740/8875/files/clek-oobr-latte-ziip_2ce43c30-b413-4ab1-825a-b03d93ac0fd7.jpg?v=1769014246"
+    },
+    {
+     "key": "clek-oobr_3",
+     "src": "https://cdn.shopify.com/s/files/1/0740/8875/files/Clek-Oobr-Feature-Copolymer-Metal-Subframe.jpg?v=1771003877"
+    },
+    {
+     "key": "clek-oobr_4",
+     "src": "https://cdn.shopify.com/s/files/1/0740/8875/files/Clek-Oobr-Feature-Rigid-LATCH.jpg?v=1771003877"
+    },
+    {
+     "key": "clek-oobr_5",
+     "src": "https://cdn.shopify.com/s/files/1/0740/8875/files/Clek-Oobr-Feature-Reclining-Seat-Back.jpg?v=1771003877"
+    },
+    {
+     "key": "clek-oobr_6",
+     "src": "https://cdn.shopify.com/s/files/1/0740/8875/files/Clek-Oobr-Feature-Belt-Positioning_3b220579-1fa7-41b7-8969-14028e596f7a.jpg?v=1771003877"
+    },
+    {
+     "key": "clek-oobr_7",
+     "src": "https://cdn.shopify.com/s/files/1/0740/8875/files/Clek-Oobr-Feature-Adjustable-Headrest.jpg?v=1771003877"
+    },
+    {
+     "key": "clek-oobr_8",
+     "src": "https://cdn.shopify.com/s/files/1/0740/8875/files/Clek-Oobr-Feature-removable-seat-back.jpg?v=1771003877"
+    },
+    {
+     "key": "clek-oobr_9",
+     "src": "https://cdn.shopify.com/s/files/1/0740/8875/files/Clek-Oobr-Feature-Cup-Holder.jpg?v=1771003877"
+    },
+    {
+     "key": "clek-oobr_10",
+     "src": "https://cdn.shopify.com/s/files/1/0740/8875/files/Clek-Oobr-Feature-Lifetime-Warranty-9-year-expiry.jpg?v=1771003877"
+    }
+   ],
+   "img": "clek-oobr",
+   "img_src": "https://cdn.shopify.com/s/files/1/0740/8875/files/clek-oobr-railroad-ziip.jpg?v=1769014246"
+  },
+  {
+   "id": "jellycat-hello-moon-organic-fabric-book",
+   "type": "books",
+   "brand": "Jellycat",
+   "line": "Hello Moon Organic Fabric Book",
+   "uses": [
+    "Soft cotton"
+   ],
+   "free": [],
+   "unconfirmed": [
+    "Fibre of the recycled filling",
+    "Crinkle layer",
+    "Mirror",
+    "Printing inks"
+   ],
+   "outside": [],
+   "facts": {
+    "main": "unknown",
+    "parts": "unknown",
+    "color": "unknown"
+   },
+   "unstated": {
+    "main": [
+     "Fibre of the recycled filling"
+    ],
+    "parts": [
+     "Mirror",
+     "Crinkle layer"
+    ],
+    "color": [
+     "Printing inks"
+    ]
+   },
+   "age": {
+    "min_months": 0,
+    "text": "From birth"
+   },
+   "quote": "Hello Moon Fabric Book is made of soft cotton",
+   "note": "Six-page cloth book with crinkle pages, appliqué textures and a mirror on the last page. The store lists “Main Materials: New & Recycled Materials” and “Inner Filling: Recycled Fibres”.",
+   "products": [
+    {
+     "name": "Hello Moon Organic Fabric Book by Jellycat",
+     "url": "https://pacifierkids.com/products/hello-moon-organic-fabric-book-by-jellycat",
+     "store": "Pacifier",
+     "price": "$26.00",
+     "ships_from": "US",
+     "shipping": "$5.95 flat rate ground shipping"
+    }
+   ],
+   "contains": [],
+   "standards": [],
+   "read": "2026-11-09",
+   "photos": [
+    {
+     "key": "jellycat-hello-moon-organic-fabric-book",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/BB444HM__08890.1732750600.jpg?v=1764892187"
+    },
+    {
+     "key": "jellycat-hello-moon-organic-fabric-book_2",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/BB444HM_1__19460.1732750601.jpg?v=1764892192"
+    },
+    {
+     "key": "jellycat-hello-moon-organic-fabric-book_3",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/BB444HM_2__42963.1732750601.jpg?v=1764892199"
+    },
+    {
+     "key": "jellycat-hello-moon-organic-fabric-book_4",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/BB444HM_3__02527.1732750601.jpg?v=1764892209"
+    }
+   ],
+   "img": "jellycat-hello-moon-organic-fabric-book",
+   "img_src": "https://cdn.shopify.com/s/files/1/0281/8056/files/BB444HM__08890.1732750600.jpg?v=1764892187"
+  },
+  {
+   "id": "mushie-fresh-food-feeder-freezer-tray",
+   "type": "freezer-trays",
+   "brand": "Mushie",
+   "line": "Fresh Food Feeder Freezer Tray",
+   "uses": [
+    "Food grade silicone tray"
+   ],
+   "free": [
+    "BPA",
+    "BPS",
+    "PVC",
+    "Phthalates"
+   ],
+   "unconfirmed": [
+    "LFGB or French Arrêté test (the page names CPSIA, ASTM and Prop 65 testing)"
+   ],
+   "outside": [
+    "Frosted plastic lid"
+   ],
+   "facts": {
+    "main": "yes",
+    "accessory": "no",
+    "silicone": "unknown"
+   },
+   "unstated": {
+    "silicone": [
+     "LFGB or French Arrêté test (the page names CPSIA, ASTM and Prop 65 testing)"
+    ]
+   },
+   "quote": "The tray is made out of soft, non-toxic silicone",
+   "note": "Nine half-ounce compartments sized for Mushie Fresh Food Feeders.",
+   "products": [
+    {
+     "name": "Fresh Food Feeder Freezer Tray",
+     "url": "https://mushie.com/products/fresh-food-feeder-freezer-tray",
+     "store": "Mushie",
+     "price": "$11.99",
+     "ships_from": "US",
+     "shipping": "Free shipping for US orders $75+"
+    }
+   ],
+   "contains": [],
+   "standards": [],
+   "read": "2026-11-09",
+   "photos": [
+    {
+     "key": "mushie-fresh-food-feeder-freezer-tray",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/FreshFoodFeederFreezerTray_Blush.jpg?v=1752248398"
+    },
+    {
+     "key": "mushie-fresh-food-feeder-freezer-tray_2",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/mini.Baby-Food-Freezer-Tray-Info.jpg?v=1755272280"
+    },
+    {
+     "key": "mushie-fresh-food-feeder-freezer-tray_3",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/03flatlays_07.03-23.jpg?v=1755272280"
+    },
+    {
+     "key": "mushie-fresh-food-feeder-freezer-tray_4",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/ashley_08.03-24_0d6e7c8e-ce08-4640-b35c-879fc27730ae.jpg?v=1771362559"
+    },
+    {
+     "key": "mushie-fresh-food-feeder-freezer-tray_5",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/02FLAT_lays_15.02-48.jpg?v=1771362559"
+    },
+    {
+     "key": "mushie-fresh-food-feeder-freezer-tray_6",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/06flatlays_04.03-20.jpg?v=1771362559"
+    },
+    {
+     "key": "mushie-fresh-food-feeder-freezer-tray_7",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/07_flatlays_07.03-8.jpg?v=1771362559"
+    },
+    {
+     "key": "mushie-fresh-food-feeder-freezer-tray_8",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/liseth_shoot_april-106.jpg?v=1771362559"
+    },
+    {
+     "key": "mushie-fresh-food-feeder-freezer-tray_9",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/07_flatlays_07.03-3.jpg?v=1771362559"
+    },
+    {
+     "key": "mushie-fresh-food-feeder-freezer-tray_10",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/photo_mar_07_2024_9_59_00_pm-2.jpg?v=1771362559"
+    }
+   ],
+   "img": "mushie-fresh-food-feeder-freezer-tray",
+   "img_src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/FreshFoodFeederFreezerTray_Blush.jpg?v=1752248398"
+  },
+  {
+   "id": "nuna-mixx-next",
+   "type": "strollers",
+   "brand": "Nuna",
+   "line": "MIXX next Stroller",
+   "uses": [],
+   "free": [],
+   "unconfirmed": [
+    "Fibre of the seat fabric and mesh",
+    "Frame",
+    "Tires (“rubber foam filled”, tread material not named)",
+    "Magnetic buckle and harness",
+    "Water-repellent finish on the canopy",
+    "Flame retardants"
+   ],
+   "outside": [
+    "Leatherette accents on the push bar and arm bar"
+   ],
+   "facts": {
+    "main": "unknown",
+    "parts": "no",
+    "finish": "unknown",
+    "flame": "unknown"
+   },
+   "unstated": {
+    "main": [
+     "Fibre of the seat fabric and mesh",
+     "Frame"
+    ],
+    "finish": [
+     "Water-repellent finish on the canopy"
+    ],
+    "flame": [
+     "Flame retardants"
+    ]
+   },
+   "age": {
+    "min_months": 0,
+    "text": "Birth to 50 lb"
+   },
+   "quote": "Luxe leatherette accented height-adjustable push bar and removable arm bar",
+   "note": "Full-size stroller with a reversible seat and car seat adapters. Nuna says many of its products are GREENGUARD Gold certified.",
+   "products": [
+    {
+     "name": "MIXX Next Stroller (with magnetic buckles & adapters) by Nuna",
+     "url": "https://pacifierkids.com/products/mixx-next-stroller-with-magnetic-buckles-adapters-by-nuna",
+     "store": "Pacifier",
+     "price": "$900.00",
+     "ships_from": "US",
+     "shipping": "$5.95 flat rate ground shipping"
+    }
+   ],
+   "contains": [],
+   "standards": [],
+   "read": "2026-11-09",
+   "photos": [
+    {
+     "key": "nuna-mixx-next",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/products/ScreenShot2021-02-15at4.29.27PM.png?v=1619450691"
+    },
+    {
+     "key": "nuna-mixx-next_2",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/67bcca32_c600_40f2_83df_9af42ff3aceb_38ef.jpg?v=1736989755"
+    },
+    {
+     "key": "nuna-mixx-next_3",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/5079dad5_ee9c_4619_b2a0_4889b2574453_c0a9_503b167b-4ec3-4dc5-a40e-182d75963f3e.jpg?v=1736989755"
+    },
+    {
+     "key": "nuna-mixx-next_4",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/7699cadf_7a9f_4f89_8ab5_49412af45f4d_3593_f76aabeb-3ec4-494e-92c7-051dc42bfe3e.jpg?v=1736989755"
+    },
+    {
+     "key": "nuna-mixx-next_5",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/cd857208_6133_4a86_ac0a_a2337d8d0e7e_5569_4e7f8be5-c6fc-4842-80f6-f47d316ef201.jpg?v=1736989755"
+    },
+    {
+     "key": "nuna-mixx-next_6",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/b983b7b1_856e_4f16_9c11_6921f7da3763_59ca_7b993995-97eb-4b68-a732-9397d9c13624.jpg?v=1736989755"
+    },
+    {
+     "key": "nuna-mixx-next_7",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/23d01de9_d7a3_4afd_ab4a_6283c7159cdc_940f_eea5eecf-cc30-417e-936f-fdaf0062f17a.jpg?v=1736989755"
+    },
+    {
+     "key": "nuna-mixx-next_8",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/c9f97215_d7c3_45ad_8f22_cc799ddf7bc0_d106_e11fbf2e-3db2-4a52-8279-896704dee21b.jpg?v=1736989755"
+    },
+    {
+     "key": "nuna-mixx-next_9",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/products/008_StrollerNoTAVO_Comparison_Chart_US_Final_LR_0_724875a1-6b74-4520-b7d2-c19f764d5466.jpg?v=1736989755"
+    },
+    {
+     "key": "nuna-mixx-next_10",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/Nuna_MIXXnext_Brixy_Monterey_Angle_US_web_9f42.jpg?v=1736989755"
+    }
+   ],
+   "img": "nuna-mixx-next",
+   "img_src": "https://cdn.shopify.com/s/files/1/0281/8056/products/ScreenShot2021-02-15at4.29.27PM.png?v=1619450691"
+  },
+  {
+   "id": "nuna-pipa-rx",
+   "type": "car-seats",
+   "brand": "Nuna",
+   "line": "PIPA rx Infant Car Seat with RELX Base",
+   "uses": [
+    "Steel stability leg"
+   ],
+   "free": [
+    "Fire retardant additives in all materials"
+   ],
+   "unconfirmed": [
+    "Fibre of the seat fabric",
+    "Fibre of the organic jersey insert",
+    "Foams",
+    "Seat shell",
+    "Five-point harness and buckle",
+    "Canopy fabric"
+   ],
+   "outside": [
+    "Leatherette on the carry handle"
+   ],
+   "facts": {
+    "main": "unknown",
+    "parts": "no",
+    "flame": "yes"
+   },
+   "unstated": {
+    "main": [
+     "Fibre of the seat fabric",
+     "Seat shell"
+    ]
+   },
+   "age": {
+    "min_months": 0,
+    "text": "Newborn, 4 to 32 lb and 16 to 30 in, rear-facing"
+   },
+   "quote": "PIPA rx is fashioned solely from materials that are free of fire retardant additives",
+   "note": "The store says it is GREENGUARD Gold certified for chemical emissions. Sold with the RELX base.",
+   "products": [
+    {
+     "name": "PIPA RX + RELX Base by Nuna",
+     "url": "https://pacifierkids.com/products/pipa-rx-relx-base-by-nuna",
+     "store": "Pacifier",
+     "price": "$550.00",
+     "ships_from": "US",
+     "shipping": "$5.95 flat rate ground shipping"
+    }
+   ],
+   "contains": [],
+   "standards": [],
+   "read": "2026-11-09",
+   "photos": [
+    {
+     "key": "nuna-pipa-rx",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/products/ScreenShot2021-04-29at4.34.14PM.png?v=1619732081"
+    },
+    {
+     "key": "nuna-pipa-rx_2",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/20631506_a48d_4a60_b1e5_0be6c6993ea0_a5f7.jpg?v=1736990553"
+    },
+    {
+     "key": "nuna-pipa-rx_3",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/d807f0f6_b610_4c75_a6c6_b000b7d8a542_ffff.jpg?v=1736990553"
+    },
+    {
+     "key": "nuna-pipa-rx_4",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/a2ac2713_a804_4423_a62d_692b6a57a2e1_ed08.jpg?v=1736990553"
+    },
+    {
+     "key": "nuna-pipa-rx_5",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/99733bed_6457_4f00_93bc_7aad348fb5bb_5437.jpg?v=1736990553"
+    },
+    {
+     "key": "nuna-pipa-rx_6",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/566dcfb3_086f_49e8_9189_24453e34e7e9_2413.jpg?v=1736990553"
+    },
+    {
+     "key": "nuna-pipa-rx_7",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/a1dad4f1_8421_42a0_8c00_103ab4331a0b_dcd6.jpg?v=1736990553"
+    },
+    {
+     "key": "nuna-pipa-rx_8",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/d985451f_42f3_43d4_8f8e_33334c45b30e_0f93.jpg?v=1736990553"
+    },
+    {
+     "key": "nuna-pipa-rx_9",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/80f4b89e_9312_40cd_8e4d_844bbb3e9134_ccaa.jpg?v=1736990553"
+    },
+    {
+     "key": "nuna-pipa-rx_10",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/products/ScreenShot2020-04-15at2.24.38PM.png?v=1736990553"
+    }
+   ],
+   "img": "nuna-pipa-rx",
+   "img_src": "https://cdn.shopify.com/s/files/1/0281/8056/products/ScreenShot2021-04-29at4.34.14PM.png?v=1619732081"
+  },
+  {
+   "id": "tag-toys-wooden-stacking-ring-tower",
+   "type": "stacking",
+   "brand": "TAG Toys (RAD Children’s Furniture)",
+   "line": "Montessori Wooden Stacking Ring Tower (5 rings)",
+   "uses": [
+    "Solid hardwood"
+   ],
+   "free": [],
+   "unconfirmed": [
+    "Kind of hardwood",
+    "Water-based finishes (ingredients not named)",
+    "Colours of the rings (paint or stain not named)"
+   ],
+   "outside": [],
+   "facts": {
+    "main": "yes",
+    "wood": "yes",
+    "color": "unknown"
+   },
+   "unstated": {
+    "color": [
+     "Water-based finishes (ingredients not named)",
+     "Colours of the rings (paint or stain not named)"
+    ]
+   },
+   "age": {
+    "min_months": 12,
+    "max_months": 36,
+    "text": "1 to 3 years"
+   },
+   "quote": "Crafted from solid hardwood with non-toxic, water-based finishes and smooth, child-safe edges.",
+   "note": "Five coloured rings that stack and nest; made in Los Angeles.",
+   "products": [
+    {
+     "name": "Montessori Wooden Stacking Ring Tower",
+     "url": "https://radchildrensfurniture.com/products/montessori-wooden-stacking-ring-tower",
+     "store": "RAD Children’s Furniture",
+     "price": "$69.00",
+     "ships_from": "US",
+     "shipping": "Free shipping on all orders to the contiguous USA"
+    }
+   ],
+   "contains": [],
+   "standards": [],
+   "read": "2026-11-09",
+   "photos": [
+    {
+     "key": "tag-toys-wooden-stacking-ring-tower",
+     "src": "https://cdn.shopify.com/s/files/1/0087/4230/5892/files/MontessoriWoodenStackingRingTower.jpg?v=1762459820"
+    },
+    {
+     "key": "tag-toys-wooden-stacking-ring-tower_2",
+     "src": "https://cdn.shopify.com/s/files/1/0087/4230/5892/files/MontessoriWoodenStackingRing.jpg?v=1746645775"
+    },
+    {
+     "key": "tag-toys-wooden-stacking-ring-tower_3",
+     "src": "https://cdn.shopify.com/s/files/1/0087/4230/5892/files/MontessoriWoodenStackingtower.jpg?v=1746645778"
+    }
+   ],
+   "img": "tag-toys-wooden-stacking-ring-tower",
+   "img_src": "https://cdn.shopify.com/s/files/1/0087/4230/5892/files/MontessoriWoodenStackingRingTower.jpg?v=1762459820"
+  },
+  {
+   "id": "uppababy-vista-v3",
+   "type": "strollers",
+   "brand": "UPPAbaby",
+   "line": "Vista V3 Stroller",
+   "uses": [
+    "Full-grain leather details"
+   ],
+   "free": [],
+   "unconfirmed": [
+    "Fibre of the seat and canopy fabrics",
+    "Frame",
+    "Never-Flat tires",
+    "Magnetic buckle and harness",
+    "Basket",
+    "Water-repellent finish on the canopy",
+    "Flame retardants"
+   ],
+   "outside": [],
+   "facts": {
+    "main": "unknown",
+    "parts": "unknown",
+    "finish": "unknown",
+    "flame": "unknown"
+   },
+   "unstated": {
+    "main": [
+     "Fibre of the seat and canopy fabrics",
+     "Frame"
+    ],
+    "parts": [
+     "Never-Flat tires",
+     "Magnetic buckle and harness"
+    ],
+    "finish": [
+     "Water-repellent finish on the canopy"
+    ],
+    "flame": [
+     "Flame retardants"
+    ]
+   },
+   "age": {
+    "min_months": 3,
+    "text": "From 3 months, up to 50 lb (from birth with the bassinet or Infant SnugSeat)"
+   },
+   "quote": "Premium fabrics and full-grain, REACH-compliant leather details for a refined finish",
+   "note": "Full-size stroller that converts from single to triple seating. UPPAbaby says it is GREENGUARD Gold certified.",
+   "products": [
+    {
+     "name": "Vista V3 Stroller by UPPAbaby",
+     "url": "https://pacifierkids.com/products/vista-v3-stroller-by-uppababy",
+     "store": "Pacifier",
+     "price": "$999.99",
+     "ships_from": "US",
+     "shipping": "$5.95 flat rate ground shipping"
+    }
+   ],
+   "contains": [
+    "leather"
+   ],
+   "standards": [],
+   "read": "2026-11-09",
+   "photos": [
+    {
+     "key": "uppababy-vista-v3",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/product_photo_-_white_background_-_2025-11-01T095025.128.jpg?v=1761961902"
+    },
+    {
+     "key": "uppababy-vista-v3_2",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/0303-VIS-CLM_1-2.webp?v=1761961902"
+    },
+    {
+     "key": "uppababy-vista-v3_3",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/0303-VIS-CLM_1-3.webp?v=1761961902"
+    },
+    {
+     "key": "uppababy-vista-v3_4",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/0303-VIS-CLM_1-4.webp?v=1761961902"
+    },
+    {
+     "key": "uppababy-vista-v3_5",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/0303-VIS-CLM_1-5.webp?v=1761961902"
+    },
+    {
+     "key": "uppababy-vista-v3_6",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/0303-VIS-CLM_1-6.webp?v=1761961902"
+    }
+   ],
+   "img": "uppababy-vista-v3",
+   "img_src": "https://cdn.shopify.com/s/files/1/0281/8056/files/product_photo_-_white_background_-_2025-11-01T095025.128.jpg?v=1761961902"
+  },
+  {
+   "id": "wee-gallery-peek-a-boo-forest",
+   "type": "books",
+   "brand": "Wee Gallery",
+   "line": "Peek-a-boo Forest Soft Book",
+   "uses": [
+    "Organic cotton shell"
+   ],
+   "free": [],
+   "unconfirmed": [
+    "Printing inks",
+    "Thread"
+   ],
+   "outside": [
+    "Polyester fiber fill",
+    "Plastic crinkle paper fill"
+   ],
+   "facts": {
+    "main": "no",
+    "color": "unknown"
+   },
+   "unstated": {
+    "color": [
+     "Printing inks"
+    ]
+   },
+   "age": {
+    "min_months": 6,
+    "max_months": 36,
+    "text": "6 months to 3 years"
+   },
+   "quote": "Materials: Organic cotton shell; polyester fiber fill, plastic crinkle paper fill",
+   "note": "Eight-page soft book; each animal spread has a crinkle flap.",
+   "products": [
+    {
+     "name": "Wee Gallery: Peek-a-boo Forest",
+     "url": "https://weegallery.com/products/wee-gallery-peek-a-boo-forest",
+     "store": "Wee Gallery",
+     "price": "$24.95",
+     "ships_from": null,
+     "shipping": "Free shipping over $150"
+    }
+   ],
+   "contains": [],
+   "standards": [],
+   "read": "2026-11-09",
+   "photos": [
+    {
+     "key": "wee-gallery-peek-a-boo-forest",
+     "src": "https://cdn.shopify.com/s/files/1/0267/5087/7774/products/wee-gallery-baby-soft-book-with-crinkle-peekaboo-forest-8.jpg?v=1667324159"
+    },
+    {
+     "key": "wee-gallery-peek-a-boo-forest_2",
+     "src": "https://cdn.shopify.com/s/files/1/0267/5087/7774/products/wee-gallery-baby-soft-book-with-crinkle-peekaboo-forest-7.jpg?v=1667324159"
+    },
+    {
+     "key": "wee-gallery-peek-a-boo-forest_3",
+     "src": "https://cdn.shopify.com/s/files/1/0267/5087/7774/products/wee-gallery-baby-soft-book-with-crinkle-peekaboo-forest-5.jpg?v=1667324159"
+    },
+    {
+     "key": "wee-gallery-peek-a-boo-forest_4",
+     "src": "https://cdn.shopify.com/s/files/1/0267/5087/7774/products/wee-gallery-baby-soft-book-with-crinkle-peekaboo-forest-6.jpg?v=1667324159"
+    },
+    {
+     "key": "wee-gallery-peek-a-boo-forest_5",
+     "src": "https://cdn.shopify.com/s/files/1/0267/5087/7774/products/wee-gallery-baby-soft-book-with-crinkle-peekaboo-forest-4.jpg?v=1667324159"
+    },
+    {
+     "key": "wee-gallery-peek-a-boo-forest_6",
+     "src": "https://cdn.shopify.com/s/files/1/0267/5087/7774/products/wee-gallery-baby-soft-book-with-crinkle-peekaboo-forest.jpg?v=1667324159"
+    }
+   ],
+   "img": "wee-gallery-peek-a-boo-forest",
+   "img_src": "https://cdn.shopify.com/s/files/1/0267/5087/7774/products/wee-gallery-baby-soft-book-with-crinkle-peekaboo-forest-8.jpg?v=1667324159"
   }
  ]
 }

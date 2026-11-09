@@ -2893,7 +2893,8 @@
    "type": "plates",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "beaba-stainless-steel-divided-plate"
   },
   {
    "url": "https://beaba.us/products/set-of-4-2nd-age-silicone-spoon",
@@ -2912,7 +2913,8 @@
    "type": "plates",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "skipped",
+   "reason": "Page names no material"
   },
   {
    "url": "https://beaba.us/products/beaba-microwave-safe-stainless-steel-baby-bowls-with-lid-set-of-3",
@@ -11226,7 +11228,8 @@
    "type": "stacking",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "tag-toys-wooden-stacking-ring-tower"
   },
   {
    "url": "https://radchildrensfurniture.com/products/size-comparison-puzzle",
@@ -21609,7 +21612,8 @@
    "type": "freezer-trays",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "mushie-fresh-food-feeder-freezer-tray"
   },
   {
    "url": "https://mushie.com/products/changing-pad-liner-3-pack",
@@ -25248,7 +25252,8 @@
    "type": "rattles",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "skipped",
+   "reason": "Duplicate: same materials as the listed Smiling Tree Toys Giraffe Rattle"
   },
   {
    "url": "https://smilingtreetoys.com/products/giraffe-toy-rattle",
@@ -60248,7 +60253,8 @@
    "type": "silks",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "camden-rose-35-inch-play-silks"
   },
   {
    "url": "https://camdenrose.com/products/stockmar-comprehensive-watercolor-painting-box-set",
@@ -89943,7 +89949,8 @@
    "type": "freezer-trays",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "skipped",
+   "reason": "Duplicate of the listed Mushie Baby Food Freezer Tray"
   },
   {
    "url": "https://thebabypenguin.com/products/fresh-food-feeder-freezer-tray",
@@ -148511,7 +148518,8 @@
    "type": "high-chairs",
    "source": "watchlist",
    "first_seen": "2026-10-22",
-   "status": "new"
+   "status": "listed",
+   "listing": "clek-olli"
   },
   {
    "url": "https://clekinc.com/products/foonf",
@@ -148548,7 +148556,8 @@
    "type": "high-chairs",
    "source": "watchlist",
    "first_seen": "2026-10-22",
-   "status": "new"
+   "status": "listed",
+   "listing": "clek-oobr"
   },
   {
    "url": "https://coloredorganics.com/products/tiny-elliot-the-fawn",
