@@ -1,6 +1,6 @@
 {
  "schema": 4,
- "updated": "2026-11-09",
+ "updated": "2026-11-10",
  "ask": [
   "Thread on any sewn item (cotton or polyester).",
   "Wheels and axles on push toys and cars.",
@@ -33334,6 +33334,1113 @@
    ],
    "img": "wee-gallery-peek-a-boo-forest",
    "img_src": "https://cdn.shopify.com/s/files/1/0267/5087/7774/products/wee-gallery-baby-soft-book-with-crinkle-peekaboo-forest-8.jpg?v=1667324159"
+  },
+  {
+   "id": "babygap-truesleep-sleep-sack",
+   "type": "sleep-sacks",
+   "brand": "babyGap by Delta Children",
+   "line": "TrueSleep Sleep Sack, 6-12 Months (TOG 1)",
+   "uses": [
+    "100% organic cotton"
+   ],
+   "unconfirmed": [
+    "Two-way zipper",
+    "Embroidery thread",
+    "Dyes in the stripes"
+   ],
+   "facts": {
+    "main": "yes",
+    "parts": "unknown",
+    "color": "unknown",
+    "organic": "yes"
+   },
+   "unstated": {
+    "parts": [
+     "Two-way zipper",
+     "Embroidery thread"
+    ],
+    "color": [
+     "Dyes in the stripes"
+    ]
+   },
+   "standards": [
+    "gots",
+    "oeko-tex"
+   ],
+   "age": {
+    "min_months": 6,
+    "max_months": 12,
+    "text": "Fits 6-12 months; 15-24 lbs. or 26-30 inches"
+   },
+   "quote": "Made with GOTS and Oeko-Tex 100 certified 100% organic cotton",
+   "note": "Sleeveless wearable blanket with a two-way zipper.",
+   "products": [
+    {
+     "name": "babyGap TrueSleep Sleep Sack, 6-12 Months",
+     "url": "https://www.deltachildren.com/products/baby-gap-truesleep-sleep-sack-organic-cotton-2-way-zipper-large-6-12-months",
+     "store": "Delta Children",
+     "price": "$49.99",
+     "ships_from": "US"
+    }
+   ],
+   "free": [],
+   "outside": [],
+   "contains": [],
+   "read": "2026-11-10",
+   "photos": [
+    {
+     "key": "babygap-truesleep-sleep-sack",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/NU86601GP-1274_sleep-sack_blue-stripe_large_lifestyle_02.jpg?v=1691522076"
+    },
+    {
+     "key": "babygap-truesleep-sleep-sack_2",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/NU86601GP-1274_sleep-sack_blue-stripe_large_silo_01.jpg?v=1691522076"
+    },
+    {
+     "key": "babygap-truesleep-sleep-sack_3",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/NU86601GP-1275_sleep-sack_pink-stripe_large_lifestyle_01.jpg?v=1691522076"
+    },
+    {
+     "key": "babygap-truesleep-sleep-sack_4",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/hz4jdnenzvanectzchhy.jpg?v=1691522076"
+    },
+    {
+     "key": "babygap-truesleep-sleep-sack_5",
+     "src": "https://www.deltachildren.com/cdn/shop/files/NU86601GP-1274_sleep-sack_blue-stripe_large_lifestyle_02_600x600_crop_center.jpg"
+    }
+   ],
+   "img": "babygap-truesleep-sleep-sack",
+   "img_src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/NU86601GP-1274_sleep-sack_blue-stripe_large_lifestyle_02.jpg?v=1691522076"
+  },
+  {
+   "id": "coco-village-dog-pull-toy",
+   "type": "push",
+   "brand": "Coco Village",
+   "line": "Dog Pull Toy",
+   "uses": [
+    "Wooden dog"
+   ],
+   "unconfirmed": [
+    "Wood species",
+    "Paint or finish",
+    "Pull string",
+    "Wheels and axles"
+   ],
+   "facts": {
+    "main": "unknown",
+    "parts": "unknown",
+    "color": "unknown",
+    "wood": "unknown"
+   },
+   "unstated": {
+    "main": [
+     "Pull string"
+    ],
+    "parts": [
+     "Wheels and axles"
+    ],
+    "color": [
+     "Paint or finish"
+    ],
+    "wood": [
+     "Wood species"
+    ]
+   },
+   "quote": "This wooden dog pull toy is designed for little walkers",
+   "note": "6.9 x 4.3 x 2 in. Sold by Enlightened Baby.",
+   "products": [
+    {
+     "name": "Coco Village Dog Pull Toy",
+     "url": "https://enlightenedbaby.com/products/coco-village-dog-pull-toy",
+     "store": "Enlightened Baby",
+     "price": "$19.99",
+     "ships_from": null
+    }
+   ],
+   "free": [],
+   "outside": [],
+   "contains": [],
+   "standards": [],
+   "read": "2026-11-10",
+   "photos": [
+    {
+     "key": "coco-village-dog-pull-toy",
+     "src": "https://cdn.shopify.com/s/files/1/0707/4850/4296/files/Coco_Village_6_aout_ecom_13.webp?v=1781793439"
+    },
+    {
+     "key": "coco-village-dog-pull-toy_2",
+     "src": "https://cdn.shopify.com/s/files/1/0707/4850/4296/files/coco-village-evergrenn-products-lifestyle-high-18.webp?v=1781793444"
+    },
+    {
+     "key": "coco-village-dog-pull-toy_3",
+     "src": "https://cdn.shopify.com/s/files/1/0707/4850/4296/files/Coco_Village_6_aout_ecom_16.webp?v=1781793439"
+    },
+    {
+     "key": "coco-village-dog-pull-toy_4",
+     "src": "https://cdn.shopify.com/s/files/1/0707/4850/4296/files/coco-village-evergrenn-products-lifestyle-high-17_1.webp?v=1781793442"
+    },
+    {
+     "key": "coco-village-dog-pull-toy_5",
+     "src": "https://cdn.shopify.com/s/files/1/0707/4850/4296/files/Coco_Village_6_aout_ecom_15.webp?v=1781793439"
+    },
+    {
+     "key": "coco-village-dog-pull-toy_6",
+     "src": "https://cdn.shopify.com/s/files/1/0707/4850/4296/files/coco-village-evergrenn-products-lifestyle-high-22.webp?v=1781793442"
+    },
+    {
+     "key": "coco-village-dog-pull-toy_7",
+     "src": "https://cdn.shopify.com/s/files/1/0707/4850/4296/files/Coco_Village_6_aout_ecom_14.webp?v=1781793439"
+    }
+   ],
+   "img": "coco-village-dog-pull-toy",
+   "img_src": "https://cdn.shopify.com/s/files/1/0707/4850/4296/files/Coco_Village_6_aout_ecom_13.webp?v=1781793439"
+  },
+  {
+   "id": "delta-children-rainbow-dot-round-rug",
+   "type": "rugs",
+   "brand": "Delta Children",
+   "line": "Rainbow Dot Round Area Rug for Kids, 39 in",
+   "uses": [
+    "Latex backing"
+   ],
+   "unconfirmed": [
+    "Fibre of the plush pile (\"non-shedding materials\")",
+    "Whether the latex is natural or synthetic rubber",
+    "Dyes"
+   ],
+   "facts": {
+    "main": "unknown",
+    "rubber": "unknown",
+    "color": "unknown"
+   },
+   "unstated": {
+    "main": [
+     "Fibre of the plush pile (\"non-shedding materials\")"
+    ],
+    "rubber": [
+     "Whether the latex is natural or synthetic rubber"
+    ],
+    "color": [
+     "Dyes"
+    ]
+   },
+   "contains": [
+    "latex"
+   ],
+   "quote": "The rug’s non-slip latex backing makes it safe to use on types of flooring",
+   "note": "Pastel polka dots, reinforced border. Out of stock when read.",
+   "products": [
+    {
+     "name": "Delta Children Rainbow Dot Round Area Rug for Kids, 39-Inch",
+     "url": "https://www.deltachildren.com/products/rainbow-dot-round-area-rug-for-kids-39-inch",
+     "store": "Delta Children",
+     "price": "$26.99",
+     "ships_from": "US"
+    }
+   ],
+   "free": [],
+   "outside": [],
+   "standards": [],
+   "read": "2026-11-10",
+   "photos": [
+    {
+     "key": "delta-children-rainbow-dot-round-rug",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/products/N1802-3021_rug_rainbowdot_lifestyle_01.jpg?v=1659011101"
+    },
+    {
+     "key": "delta-children-rainbow-dot-round-rug_2",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/products/wd5r2lh57hv3crs2k0iu.jpg?v=1659011101"
+    },
+    {
+     "key": "delta-children-rainbow-dot-round-rug_3",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/products/e6hpfdluff7wag2b6d8k.jpg?v=1659011101"
+    },
+    {
+     "key": "delta-children-rainbow-dot-round-rug_4",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/products/zlerymetyj7x0bhrt5fm.jpg?v=1659011101"
+    },
+    {
+     "key": "delta-children-rainbow-dot-round-rug_5",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/products/N1802-3021_rug_rainbowdot_lifestyle_102.jpg?v=1663104445"
+    }
+   ],
+   "img": "delta-children-rainbow-dot-round-rug",
+   "img_src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/products/N1802-3021_rug_rainbowdot_lifestyle_01.jpg?v=1659011101"
+  },
+  {
+   "id": "disana-knitted-merino-wool-baby-blanket",
+   "type": "blankets",
+   "brand": "Disana",
+   "line": "Knitted Merino Woolen Baby Blanket, 100 x 80 cm",
+   "uses": [
+    "GOTS certified organic merino wool knit"
+   ],
+   "unconfirmed": [
+    "Whether the wool is treated (superwash or not)",
+    "Dyes in the coloured versions"
+   ],
+   "facts": {
+    "main": "yes",
+    "wool": "unknown",
+    "color": "unknown",
+    "organic": "yes"
+   },
+   "unstated": {
+    "wool": [
+     "Whether the wool is treated (superwash or not)"
+    ],
+    "color": [
+     "Dyes in the coloured versions"
+    ]
+   },
+   "standards": [
+    "gots"
+   ],
+   "quote": "Lovely knit merino wool blanket made in Germany. GOTS certified (Global Organic Textile Standard) organic.",
+   "note": "Openwork knit with a scalloped border; hand wash only. Sold by Green Mountain Diapers.",
+   "products": [
+    {
+     "name": "Disana Knitted Merino Woolen Baby Blanket",
+     "url": "https://www.greenmountaindiapers.com/products/disana-merino-wool-blanket",
+     "store": "Green Mountain Diapers",
+     "price": "$78.95",
+     "ships_from": "US"
+    }
+   ],
+   "free": [],
+   "outside": [],
+   "contains": [],
+   "read": "2026-11-10",
+   "photos": [
+    {
+     "key": "disana-knitted-merino-wool-baby-blanket",
+     "src": "https://cdn.shopify.com/s/files/1/1583/5087/files/disana-babydecke-natural2500.jpg?v=1757518550"
+    },
+    {
+     "key": "disana-knitted-merino-wool-baby-blanket_2",
+     "src": "https://cdn.shopify.com/s/files/1/1583/5087/files/babydecke-caramel-1800.jpg?v=1755716900"
+    },
+    {
+     "key": "disana-knitted-merino-wool-baby-blanket_3",
+     "src": "https://cdn.shopify.com/s/files/1/1583/5087/files/babedecke-cassis1800.jpg?v=1766628806"
+    },
+    {
+     "key": "disana-knitted-merino-wool-baby-blanket_4",
+     "src": "https://cdn.shopify.com/s/files/1/1583/5087/files/babydecke-doveblueadjusted.jpg?v=1757518550"
+    },
+    {
+     "key": "disana-knitted-merino-wool-baby-blanket_5",
+     "src": "https://cdn.shopify.com/s/files/1/1583/5087/files/Disana_Knitted_Grey1024.jpg?v=1755725777"
+    },
+    {
+     "key": "disana-knitted-merino-wool-baby-blanket_6",
+     "src": "https://cdn.shopify.com/s/files/1/1583/5087/files/babydecke-indigoadjusted.jpg?v=1757518550"
+    },
+    {
+     "key": "disana-knitted-merino-wool-baby-blanket_7",
+     "src": "https://cdn.shopify.com/s/files/1/1583/5087/files/disana-babydecke-cassis2500.jpg?v=1755716900"
+    },
+    {
+     "key": "disana-knitted-merino-wool-baby-blanket_8",
+     "src": "https://cdn.shopify.com/s/files/1/1583/5087/files/disanaBoiled-Wool-Seleeping-Bagcaramelinfant.jpg?v=1766628806"
+    },
+    {
+     "key": "disana-knitted-merino-wool-baby-blanket_9",
+     "src": "https://cdn.shopify.com/s/files/1/1583/5087/files/Babydecke2025-names.jpg?v=1766628806"
+    },
+    {
+     "key": "disana-knitted-merino-wool-baby-blanket_10",
+     "src": "https://cdn.shopify.com/s/files/1/1583/5087/files/babydeckenatural1900.jpg?v=1766628806"
+    }
+   ],
+   "img": "disana-knitted-merino-wool-baby-blanket",
+   "img_src": "https://cdn.shopify.com/s/files/1/1583/5087/files/disana-babydecke-natural2500.jpg?v=1757518550"
+  },
+  {
+   "id": "gunamuna-1-0-tog-footie-sleep-sack",
+   "type": "sleep-sacks",
+   "brand": "gunamuna",
+   "line": "1.0 Tog Footie Sleep Sack (legged, convertible footies)",
+   "uses": [
+    "Rayon from bamboo (95%)"
+   ],
+   "outside": [
+    "Spandex (5%)"
+   ],
+   "unconfirmed": [
+    "Fibre of the microfiber fill (\"down-alternative\")",
+    "Two-way zipper",
+    "Dyes in the print"
+   ],
+   "facts": {
+    "main": "no",
+    "parts": "unknown",
+    "color": "unknown"
+   },
+   "unstated": {
+    "parts": [
+     "Two-way zipper"
+    ],
+    "color": [
+     "Dyes in the print"
+    ]
+   },
+   "age": {
+    "min_months": 12,
+    "max_months": 36,
+    "text": "Sizes 12-18M and 18-36M"
+   },
+   "quote": "Materials: 95% Rayon from bamboo, 5% Spandex",
+   "note": "1.0 TOG sleep bag with legs and fold-over footies. Made in China, the store says.",
+   "products": [
+    {
+     "name": "1.0 Tog Footie Sleep Sack - Goose by gunamuna",
+     "url": "https://pacifierkids.com/products/10-tog-footie-sleep-sack-goose-by-gunamuna",
+     "store": "Pacifier",
+     "price": "$74.00",
+     "ships_from": "US"
+    }
+   ],
+   "free": [],
+   "contains": [],
+   "standards": [],
+   "read": "2026-11-10",
+   "photos": [
+    {
+     "key": "gunamuna-1-0-tog-footie-sleep-sack",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/product_photo_-_white_background_-_2026-08-25T201651.870.jpg?v=1787660232"
+    },
+    {
+     "key": "gunamuna-1-0-tog-footie-sleep-sack_2",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/cfefce2af47932313d9b64b2594b70ca6b536a25d5438b32c275b814908aa433.jpg?v=1787660233"
+    }
+   ],
+   "img": "gunamuna-1-0-tog-footie-sleep-sack",
+   "img_src": "https://cdn.shopify.com/s/files/1/0281/8056/files/product_photo_-_white_background_-_2026-08-25T201651.870.jpg?v=1787660232"
+  },
+  {
+   "id": "hevea-fish-teether-and-kawan-teether-ring",
+   "type": "teethers",
+   "brand": "Hevea",
+   "line": "Fish Teether & Kawan Teether Ring (gift set of two)",
+   "uses": [
+    "100% natural rubber from the Hevea brasiliensis tree"
+   ],
+   "unconfirmed": [
+    "Colourants in the pink, beige, blue and seafoam colours",
+    "Additives in the rubber compound"
+   ],
+   "facts": {
+    "main": "yes",
+    "parts": "yes",
+    "color": "unknown",
+    "rubber": "unknown"
+   },
+   "unstated": {
+    "color": [
+     "Colourants in the pink, beige, blue and seafoam colours"
+    ],
+    "rubber": [
+     "Additives in the rubber compound"
+    ]
+   },
+   "contains": [
+    "latex"
+   ],
+   "quote": "Made from 100% natural rubber from the Hevea brasiliensis tree",
+   "note": "Both teethers are one piece \"without joints or openings\", the maker says. Sold out when read.",
+   "products": [
+    {
+     "name": "Fish Teether & Kawan Teether Ring",
+     "url": "https://us.heveaplanet.com/products/fish-kawan-teether-ring-two-pack",
+     "store": "Hevea Planet USA",
+     "price": "$16.95",
+     "ships_from": null
+    }
+   ],
+   "free": [],
+   "outside": [],
+   "standards": [],
+   "read": "2026-11-10",
+   "photos": [
+    {
+     "key": "hevea-fish-teether-and-kawan-teether-ring",
+     "src": "https://cdn.shopify.com/s/files/1/1027/0038/4590/files/HEVEA_KawanTeetherRing_TwoPack_SandandSeafoamBlue_5710087449818_WebReady.jpg?v=1777032674"
+    },
+    {
+     "key": "hevea-fish-teether-and-kawan-teether-ring_2",
+     "src": "https://cdn.shopify.com/s/files/1/1027/0038/4590/files/Photo_30-1-2023_4_20_54_pm_1.jpg?v=1777032675"
+    },
+    {
+     "key": "hevea-fish-teether-and-kawan-teether-ring_3",
+     "src": "https://cdn.shopify.com/s/files/1/1027/0038/4590/files/FishTeether_Blue_jasper.jpg?v=1777032675"
+    },
+    {
+     "key": "hevea-fish-teether-and-kawan-teether-ring_4",
+     "src": "https://cdn.shopify.com/s/files/1/1027/0038/4590/files/HEVEAFishandRingTeether_pinkandtanbeige.jpg?v=1777032675"
+    },
+    {
+     "key": "hevea-fish-teether-and-kawan-teether-ring_5",
+     "src": "https://cdn.shopify.com/s/files/1/1027/0038/4590/files/FishTeether_Pink_Aura2.jpg?v=1777032676"
+    },
+    {
+     "key": "hevea-fish-teether-and-kawan-teether-ring_6",
+     "src": "https://cdn.shopify.com/s/files/1/1027/0038/4590/files/HEVEA_FishTeether_Pink_olive.jpg?v=1777032675"
+    },
+    {
+     "key": "hevea-fish-teether-and-kawan-teether-ring_7",
+     "src": "https://cdn.shopify.com/s/files/1/1027/0038/4590/files/HEVEA_FishTeether_Pink_Oakleigh.jpg?v=1777032675"
+    }
+   ],
+   "img": "hevea-fish-teether-and-kawan-teether-ring",
+   "img_src": "https://cdn.shopify.com/s/files/1/1027/0038/4590/files/HEVEA_KawanTeetherRing_TwoPack_SandandSeafoamBlue_5710087449818_WebReady.jpg?v=1777032674"
+  },
+  {
+   "id": "kodo-kids-korxx-building-blocks-small",
+   "type": "blocks",
+   "brand": "Korxx (Kodo Kids)",
+   "line": "Korxx Building Blocks Small (35 cork blocks)",
+   "uses": [
+    "Pressed natural cork"
+   ],
+   "free": [
+    "Phthalates",
+    "Dioxins",
+    "Formaldehyde"
+   ],
+   "unconfirmed": [
+    "Binder in the pressed cork",
+    "Storage box"
+   ],
+   "facts": {
+    "main": "unknown",
+    "accessory": "unknown",
+    "color": "yes"
+   },
+   "unstated": {
+    "main": [
+     "Binder in the pressed cork"
+    ],
+    "accessory": [
+     "Storage box"
+    ]
+   },
+   "standards": [
+    "us-toy"
+   ],
+   "age": {
+    "min_months": 12,
+    "text": "Age 12 months+"
+   },
+   "quote": "They consist of special pressed cork material and are free of harmful substances (z.B. Phthalate, dioxins, formaldehyde).",
+   "note": "25 rectangles and 10 squares with bevelled edges.",
+   "products": [
+    {
+     "name": "Korxx Building Blocks Small",
+     "url": "https://kodokids.com/products/korxx-building-blocks-small",
+     "store": "Kodo Kids",
+     "price": "$99.00",
+     "ships_from": "US"
+    }
+   ],
+   "outside": [],
+   "contains": [],
+   "read": "2026-11-10",
+   "photos": [
+    {
+     "key": "kodo-kids-korxx-building-blocks-small",
+     "src": "https://cdn.shopify.com/s/files/1/0629/8969/7163/files/korxx-building-blocks-small-3rd-party-korxx.jpg?v=1793139135"
+    },
+    {
+     "key": "kodo-kids-korxx-building-blocks-small_2",
+     "src": "https://cdn.shopify.com/s/files/1/0629/8969/7163/files/korxx-building-blocks-small-3rd-party-korxx-2.jpg?v=1793139136"
+    },
+    {
+     "key": "kodo-kids-korxx-building-blocks-small_3",
+     "src": "https://cdn.shopify.com/s/files/1/0629/8969/7163/files/korxx-building-blocks-small-3rd-party-korxx-3.jpg?v=1793139137"
+    }
+   ],
+   "img": "kodo-kids-korxx-building-blocks-small",
+   "img_src": "https://cdn.shopify.com/s/files/1/0629/8969/7163/files/korxx-building-blocks-small-3rd-party-korxx.jpg?v=1793139135"
+  },
+  {
+   "id": "maileg-plush-elephant",
+   "type": "animals",
+   "brand": "Maileg",
+   "line": "Plush Elephant (13.4 in)",
+   "outside": [
+    "Polyester plush",
+    "Recycled PE pellets in the base"
+   ],
+   "unconfirmed": [
+    "Fibre of the fill other than the pellets",
+    "Bow",
+    "Dyes"
+   ],
+   "facts": {
+    "main": "no",
+    "color": "unknown"
+   },
+   "unstated": {
+    "color": [
+     "Dyes"
+    ]
+   },
+   "quote": "MATERIALS : Made from polyester and filled with recycled PE pellets.",
+   "note": "Beans in the bottom let it sit up. Designed in Denmark, made in China. The store does not ship it to OH or PA.",
+   "products": [
+    {
+     "name": "Maileg Plush Elephant",
+     "url": "https://www.bellalunatoys.com/products/plush-elephant",
+     "store": "Bella Luna Toys",
+     "price": "$42.00",
+     "ships_from": "US",
+     "shipping": "Free shipping on orders over $99 within the contiguous 48 US states"
+    }
+   ],
+   "free": [],
+   "uses": [],
+   "contains": [],
+   "standards": [],
+   "read": "2026-11-10",
+   "photos": [
+    {
+     "key": "maileg-plush-elephant",
+     "src": "https://cdn.shopify.com/s/files/1/1114/2810/files/maileg-blue-plush-elephant.jpg?v=1791915306"
+    }
+   ],
+   "img": "maileg-plush-elephant",
+   "img_src": "https://cdn.shopify.com/s/files/1/1114/2810/files/maileg-blue-plush-elephant.jpg?v=1791915306"
+  },
+  {
+   "id": "mushie-animal-ring-teethers",
+   "type": "teethers",
+   "brand": "Mushie",
+   "line": "Animal Ring Teethers (Lion, Elephant, Koala or Dog)",
+   "uses": [
+    "100% food grade silicone"
+   ],
+   "free": [
+    "BPA",
+    "BPS",
+    "PVC",
+    "Phthalates"
+   ],
+   "unconfirmed": [
+    "Pigments",
+    "Silicone testing (no LFGB or French test named)"
+   ],
+   "facts": {
+    "main": "yes",
+    "parts": "yes",
+    "color": "unknown",
+    "silicone": "unknown"
+   },
+   "unstated": {
+    "color": [
+     "Pigments"
+    ],
+    "silicone": [
+     "Silicone testing (no LFGB or French test named)"
+    ]
+   },
+   "standards": [
+    "us-toy"
+   ],
+   "age": {
+    "min_months": 3,
+    "text": "3 months+"
+   },
+   "quote": "100% high-quality food grade silicone - Free of BPA, BPS, PVC and phthalates",
+   "note": "One teether per pack.",
+   "products": [
+    {
+     "name": "Animal Ring Teethers",
+     "url": "https://mushie.com/products/animal-ring-teethers",
+     "store": "Mushie",
+     "price": "$12.99",
+     "ships_from": "US"
+    }
+   ],
+   "outside": [],
+   "contains": [],
+   "read": "2026-11-10",
+   "photos": [
+    {
+     "key": "mushie-animal-ring-teethers",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/LionTeether_front.jpg?v=1773157294"
+    },
+    {
+     "key": "mushie-animal-ring-teethers_2",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/Lion-Teethers-infographic.jpg?v=1776116318"
+    },
+    {
+     "key": "mushie-animal-ring-teethers_3",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/products/7O0A6989_1_85b4621e-e562-4e10-be79-65053b3bf143.jpg?v=1776116318"
+    },
+    {
+     "key": "mushie-animal-ring-teethers_4",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/7o0a5259.jpg?v=1776116318"
+    },
+    {
+     "key": "mushie-animal-ring-teethers_5",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/Mushie-20.jpg?v=1776116318"
+    },
+    {
+     "key": "mushie-animal-ring-teethers_6",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/Vera-30.jpg?v=1776116318"
+    },
+    {
+     "key": "mushie-animal-ring-teethers_7",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/products/Vera_wrap_shoot-26.jpg?v=1776116318"
+    },
+    {
+     "key": "mushie-animal-ring-teethers_8",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/products/flat_lays_flowers_6969f722-c134-4af1-91a5-d8096c150d81.jpg?v=1776116318"
+    },
+    {
+     "key": "mushie-animal-ring-teethers_9",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/vera-42.jpg?v=1776116318"
+    },
+    {
+     "key": "mushie-animal-ring-teethers_10",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/babiesshoot-45.jpg?v=1776116318"
+    }
+   ],
+   "img": "mushie-animal-ring-teethers",
+   "img_src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/LionTeether_front.jpg?v=1773157294"
+  },
+  {
+   "id": "mushie-foam-bath-puzzle",
+   "type": "puzzles",
+   "brand": "Mushie",
+   "line": "Foam Bath Puzzle (10 two-piece puzzles with storage bag)",
+   "outside": [
+    "100% EVA foam pieces"
+   ],
+   "free": [
+    "BPA",
+    "BPS",
+    "PVC",
+    "Phthalates"
+   ],
+   "unconfirmed": [
+    "Mesh storage bag",
+    "Colourants"
+   ],
+   "facts": {
+    "main": "no",
+    "accessory": "unknown",
+    "color": "unknown"
+   },
+   "unstated": {
+    "accessory": [
+     "Mesh storage bag"
+    ],
+    "color": [
+     "Colourants"
+    ]
+   },
+   "standards": [
+    "us-toy"
+   ],
+   "age": {
+    "min_months": 36,
+    "text": "Recommended age: 3 years+"
+   },
+   "quote": "100% non-toxic EVA foam - Free of BPA, BPS, PVC and phthalates",
+   "note": "Pieces stick to the tub wall when wet.",
+   "products": [
+    {
+     "name": "Foam Bath Puzzle",
+     "url": "https://mushie.com/products/foam-bath-puzzle",
+     "store": "Mushie",
+     "price": "$16.99",
+     "ships_from": "US"
+    }
+   ],
+   "uses": [],
+   "contains": [],
+   "read": "2026-11-10",
+   "photos": [
+    {
+     "key": "mushie-foam-bath-puzzle",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/01_FoamBathPuzzle.jpg?v=1752247719"
+    },
+    {
+     "key": "mushie-foam-bath-puzzle_2",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/Foam-Bath-Puzzle-Info.jpg?v=1767913671"
+    },
+    {
+     "key": "mushie-foam-bath-puzzle_3",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/07_emma_shoot-19_1.jpg?v=1767913671"
+    },
+    {
+     "key": "mushie-foam-bath-puzzle_4",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/03_emma_shoot-9_1.jpg?v=1767913671"
+    },
+    {
+     "key": "mushie-foam-bath-puzzle_5",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/04_emma_shoot-24_1.jpg?v=1767913671"
+    },
+    {
+     "key": "mushie-foam-bath-puzzle_6",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/05_iris_shoot-35_1.jpg?v=1767913671"
+    },
+    {
+     "key": "mushie-foam-bath-puzzle_7",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/06_nelle-26.jpg?v=1767913671"
+    },
+    {
+     "key": "mushie-foam-bath-puzzle_8",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/02_emma_shoot-17_1.jpg?v=1767913671"
+    },
+    {
+     "key": "mushie-foam-bath-puzzle_9",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/08_emma_shoot-2_1.jpg?v=1767913671"
+    },
+    {
+     "key": "mushie-foam-bath-puzzle_10",
+     "src": "http://mushie.com/cdn/shop/files/preview_images/3275ad0142a6446abefd5179462fac03.thumbnail.0000000000.jpg?v=1735847861"
+    }
+   ],
+   "img": "mushie-foam-bath-puzzle",
+   "img_src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/01_FoamBathPuzzle.jpg?v=1752247719"
+  },
+  {
+   "id": "odin-parker-little-forest-animals-silk-rug",
+   "type": "rugs",
+   "brand": "Little Forest Animals (Odin Parker)",
+   "line": "The Palette Silk Rug, 160 x 230 cm, hand-tufted",
+   "uses": [
+    "100% silk, hand-tufted"
+   ],
+   "unconfirmed": [
+    "What gives the water-repellent, antistatic and mothproof features",
+    "Dyes",
+    "Backing"
+   ],
+   "facts": {
+    "main": "unknown",
+    "finish": "unknown",
+    "color": "unknown"
+   },
+   "unstated": {
+    "main": [
+     "Backing"
+    ],
+    "finish": [
+     "What gives the water-repellent, antistatic and mothproof features"
+    ],
+    "color": [
+     "Dyes"
+    ]
+   },
+   "quote": "Material 100% Silk · Hand-tufted",
+   "note": "16 kg; the maker says no rug pad is needed. Out of stock when read.",
+   "products": [
+    {
+     "name": "Little Forest Animals Silk Rug — The Palette",
+     "url": "https://odinparker.com/products/little-forest-animals-rug-the-palette",
+     "store": "Odin Parker",
+     "price": "$1,299.00",
+     "ships_from": null
+    }
+   ],
+   "free": [],
+   "outside": [],
+   "contains": [],
+   "standards": [],
+   "read": "2026-11-10",
+   "photos": [
+    {
+     "key": "odin-parker-little-forest-animals-silk-rug",
+     "src": "https://cdn.shopify.com/s/files/1/0020/4180/6905/files/the-palette-rug-kids-playing.webp?v=1784328951"
+    },
+    {
+     "key": "odin-parker-little-forest-animals-silk-rug_2",
+     "src": "https://cdn.shopify.com/s/files/1/0020/4180/6905/files/the-palette-rug-full-view.jpg?v=1784328947"
+    },
+    {
+     "key": "odin-parker-little-forest-animals-silk-rug_3",
+     "src": "https://cdn.shopify.com/s/files/1/0020/4180/6905/files/the-palette-rug-folded.webp?v=1784328949"
+    },
+    {
+     "key": "odin-parker-little-forest-animals-silk-rug_4",
+     "src": "https://cdn.shopify.com/s/files/1/0020/4180/6905/files/the-palette-rug-playtime.webp?v=1784328954"
+    }
+   ],
+   "img": "odin-parker-little-forest-animals-silk-rug",
+   "img_src": "https://cdn.shopify.com/s/files/1/0020/4180/6905/files/the-palette-rug-kids-playing.webp?v=1784328951"
+  },
+  {
+   "id": "oioiooi-my-little-car",
+   "type": "cars",
+   "brand": "Oioiooi",
+   "line": "My Little Car (wooden car, 5 emotion toppers, cardboard road)",
+   "uses": [
+    "Solid beech wood car and emotion objects",
+    "Cardboard road"
+   ],
+   "unconfirmed": [
+    "Paint or finish",
+    "Wheels and axles"
+   ],
+   "facts": {
+    "main": "yes",
+    "parts": "unknown",
+    "color": "unknown",
+    "wood": "yes"
+   },
+   "unstated": {
+    "parts": [
+     "Wheels and axles"
+    ],
+    "color": [
+     "Paint or finish"
+    ]
+   },
+   "age": {
+    "min_months": 36,
+    "text": "Age 3+"
+   },
+   "quote": "Solid beech wood Wooden car with 5 emotion objects Road (cardboard)",
+   "note": "Sold by Colored Organics.",
+   "products": [
+    {
+     "name": "My Little Car",
+     "url": "https://coloredorganics.com/products/wooden-car-glider-track-copy",
+     "store": "Colored Organics",
+     "price": "$42",
+     "ships_from": "US",
+     "shipping": "Free U.S. shipping on orders over $50"
+    }
+   ],
+   "free": [],
+   "outside": [],
+   "contains": [],
+   "standards": [],
+   "read": "2026-11-10",
+   "photos": [
+    {
+     "key": "oioiooi-my-little-car",
+     "src": "https://coloredorganics.com/cdn/shop/files/infant-unisex-oioiooi-my-little-car.multi.flat_front.2.jpg?v=1787156858&width=1024"
+    },
+    {
+     "key": "oioiooi-my-little-car_2",
+     "src": "https://coloredorganics.com/cdn/shop/files/infant-unisex-oioiooi-my-little-car.multi.flat_front.jpg?v=1787156858&width=1024"
+    }
+   ],
+   "img": "oioiooi-my-little-car",
+   "img_src": "https://coloredorganics.com/cdn/shop/files/infant-unisex-oioiooi-my-little-car.multi.flat_front.2.jpg?v=1787156858&width=1024"
+  },
+  {
+   "id": "petit-collage-outer-space-floor-puzzle",
+   "type": "puzzles",
+   "brand": "Petit Collage",
+   "line": "Outer Space 24-Piece Floor Puzzle",
+   "uses": [
+    "Recycled cardboard",
+    "Vegetable inks",
+    "Cotton rope handle on the box"
+   ],
+   "unconfirmed": [
+    "Glue",
+    "Coating on the printed surface"
+   ],
+   "facts": {
+    "main": "yes",
+    "color": "yes",
+    "accessory": "yes"
+   },
+   "unstated": {},
+   "age": {
+    "min_months": 36,
+    "text": "Perfect for ages 3+"
+   },
+   "quote": "Made using recycled cardboard and printed with vegetable inks",
+   "note": "Chunky pieces; keepsake carrying box. Made in China. Sold by Colored Organics.",
+   "products": [
+    {
+     "name": "Outer Space 24-Piece Floor Puzzle",
+     "url": "https://coloredorganics.com/products/safari-24-piece-floor-puzzle-copy",
+     "store": "Colored Organics",
+     "price": "$20",
+     "ships_from": "US",
+     "shipping": "Free U.S. shipping on orders over $50"
+    }
+   ],
+   "free": [],
+   "outside": [],
+   "contains": [],
+   "standards": [],
+   "read": "2026-11-10",
+   "photos": [
+    {
+     "key": "petit-collage-outer-space-floor-puzzle",
+     "src": "https://coloredorganics.com/cdn/shop/files/infant-unisex-outer-space-24-piece-floor-puzzle.multi.flat_front.jpg?v=1787080541&width=1024"
+    },
+    {
+     "key": "petit-collage-outer-space-floor-puzzle_2",
+     "src": "https://coloredorganics.com/cdn/shop/files/infant-unisex-outer-space-24-piece-floor-puzzle.multi.flat_detail.jpg?v=1787080541&width=1024"
+    },
+    {
+     "key": "petit-collage-outer-space-floor-puzzle_3",
+     "src": "https://coloredorganics.com/cdn/shop/files/infant-unisex-outer-space-24-piece-floor-puzzle.multi.flat_front.2.jpg?v=1787080541&width=1024"
+    }
+   ],
+   "img": "petit-collage-outer-space-floor-puzzle",
+   "img_src": "https://coloredorganics.com/cdn/shop/files/infant-unisex-outer-space-24-piece-floor-puzzle.multi.flat_front.jpg?v=1787080541&width=1024"
+  },
+  {
+   "id": "under-the-nile-receiving-blanket",
+   "type": "blankets",
+   "brand": "Under the Nile",
+   "line": "Receiving Blanket, 34 x 34 in",
+   "uses": [
+    "100% GOTS certified organic Egyptian cotton"
+   ],
+   "free": [
+    "Pesticides or chemicals in the making (\"without the use of pesticides or chemicals\")"
+   ],
+   "unconfirmed": [
+    "Dyes in the printed versions",
+    "Hem thread"
+   ],
+   "facts": {
+    "main": "yes",
+    "color": "unknown",
+    "organic": "yes"
+   },
+   "unstated": {
+    "color": [
+     "Dyes in the printed versions"
+    ]
+   },
+   "standards": [
+    "gots"
+   ],
+   "quote": "100% GOTS certified organic Egyptian Cotton. Made in Egypt.",
+   "note": "Made in a \"Certified Fair Trade facility\", the store says. Sold by Green Mountain Diapers.",
+   "products": [
+    {
+     "name": "Under the Nile Receiving Blanket",
+     "url": "https://www.greenmountaindiapers.com/products/under-the-nile-receiving-blanket",
+     "store": "Green Mountain Diapers",
+     "price": "$18.00",
+     "ships_from": "US"
+    }
+   ],
+   "outside": [],
+   "contains": [],
+   "read": "2026-11-10",
+   "photos": [
+    {
+     "key": "under-the-nile-receiving-blanket",
+     "src": "https://cdn.shopify.com/s/files/1/1583/5087/files/utnreceivingwhite2048.jpg?v=1791480645"
+    },
+    {
+     "key": "under-the-nile-receiving-blanket_2",
+     "src": "https://cdn.shopify.com/s/files/1/1583/5087/files/utnreceivingbabywhite.jpg?v=1791479409"
+    },
+    {
+     "key": "under-the-nile-receiving-blanket_3",
+     "src": "https://cdn.shopify.com/s/files/1/1583/5087/files/utnreceivingmeasured.jpg?v=1791479393"
+    },
+    {
+     "key": "under-the-nile-receiving-blanket_4",
+     "src": "https://cdn.shopify.com/s/files/1/1583/5087/files/utnreceivingshadow.jpg?v=1749741134"
+    },
+    {
+     "key": "under-the-nile-receiving-blanket_5",
+     "src": "https://cdn.shopify.com/s/files/1/1583/5087/files/utn-receiving-daisy1800.jpg?v=1739994964"
+    },
+    {
+     "key": "under-the-nile-receiving-blanket_6",
+     "src": "https://cdn.shopify.com/s/files/1/1583/5087/files/utnreceivingbluedotsrolled2.jpg?v=1740000007"
+    },
+    {
+     "key": "under-the-nile-receiving-blanket_7",
+     "src": "https://cdn.shopify.com/s/files/1/1583/5087/files/utn-receiving-shadowfloral.jpg?v=1749741134"
+    }
+   ],
+   "img": "under-the-nile-receiving-blanket",
+   "img_src": "https://cdn.shopify.com/s/files/1/1583/5087/files/utnreceivingwhite2048.jpg?v=1791480645"
+  },
+  {
+   "id": "under-the-nile-scrappy-cat",
+   "type": "animals",
+   "brand": "Under the Nile",
+   "line": "Scrappy Cat Stuffed Toy (10 in, from cotton scraps)",
+   "uses": [
+    "100% organic Egyptian cotton scraps",
+    "Organic cotton stuffing"
+   ],
+   "free": [
+    "Phthalates"
+   ],
+   "unconfirmed": [
+    "Thread",
+    "Dyes in the striped fabric",
+    "How the face is made"
+   ],
+   "facts": {
+    "main": "yes",
+    "parts": "unknown",
+    "color": "unknown"
+   },
+   "unstated": {
+    "parts": [
+     "Thread",
+     "How the face is made"
+    ],
+    "color": [
+     "Dyes in the striped fabric"
+    ]
+   },
+   "quote": "Scrappy Cat stuffed baby toy is made and stuffed with 100% organic Egyptian cotton scraps by Under the Nile.",
+   "note": "Sewn from cotton left over from clothing production; size varies a little. The page names no organic certificate. Sold by Green Mountain Diapers.",
+   "products": [
+    {
+     "name": "Under the Nile Scrappy Cat Stuffed Toy",
+     "url": "https://www.greenmountaindiapers.com/products/under-the-nile-scrappy-cat-stuffed-toy",
+     "store": "Green Mountain Diapers",
+     "price": "$19.00",
+     "ships_from": "US"
+    }
+   ],
+   "outside": [],
+   "contains": [],
+   "standards": [],
+   "read": "2026-11-10",
+   "photos": [
+    {
+     "key": "under-the-nile-scrappy-cat",
+     "src": "https://cdn.shopify.com/s/files/1/1583/5087/files/scrappypurplecatonwool.jpg?v=1765057323"
+    },
+    {
+     "key": "under-the-nile-scrappy-cat_2",
+     "src": "https://cdn.shopify.com/s/files/1/1583/5087/files/utncatnavyface2048.jpg?v=1765918676"
+    },
+    {
+     "key": "under-the-nile-scrappy-cat_3",
+     "src": "https://cdn.shopify.com/s/files/1/1583/5087/files/utncatnavyback2048.jpg?v=1765918676"
+    },
+    {
+     "key": "under-the-nile-scrappy-cat_4",
+     "src": "https://cdn.shopify.com/s/files/1/1583/5087/files/stuffies2.jpg?v=1765918676"
+    },
+    {
+     "key": "under-the-nile-scrappy-cat_5",
+     "src": "https://cdn.shopify.com/s/files/1/1583/5087/files/scrappypurplestripecatgril.jpg?v=1765918676"
+    },
+    {
+     "key": "under-the-nile-scrappy-cat_6",
+     "src": "https://cdn.shopify.com/s/files/1/1583/5087/files/utn-scrappycat-baby.jpg?v=1765918676"
+    }
+   ],
+   "img": "under-the-nile-scrappy-cat",
+   "img_src": "https://cdn.shopify.com/s/files/1/1583/5087/files/scrappypurplecatonwool.jpg?v=1765057323"
   }
  ]
 }

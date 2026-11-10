@@ -882,7 +882,8 @@
    "type": "cars",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "oioiooi-my-little-car"
   },
   {
    "url": "https://coloredorganics.com/products/wooden-duck-family-pull-toy-copy",
@@ -1020,7 +1021,8 @@
    "type": "puzzles",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "petit-collage-outer-space-floor-puzzle"
   },
   {
    "url": "https://coloredorganics.com/products/baby-wooden-reveal-puzzle-copy",
@@ -1799,7 +1801,8 @@
    "type": "teethers",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "hevea-fish-teether-and-kawan-teether-ring"
   },
   {
    "url": "https://us.heveaplanet.com/products/squeezensplash-whale-turtle-bath-toys-gift-set",
@@ -4471,7 +4474,8 @@
    "type": "cribs",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "skipped",
+   "reason": "The page names no material (2026-11-10)"
   },
   {
    "url": "https://www.avocadogreenmattress.com/products/affordable-eco-organic-topper",
@@ -20376,7 +20380,8 @@
    "type": "blocks",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "kodo-kids-korxx-building-blocks-small"
   },
   {
    "url": "https://kodokids.com/products/rainbow-pegboard",
@@ -21279,7 +21284,8 @@
    "type": "teethers",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "mushie-animal-ring-teethers"
   },
   {
    "url": "https://mushie.com/products/figurine-teether",
@@ -21454,7 +21460,8 @@
    "type": "puzzles",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "mushie-foam-bath-puzzle"
   },
   {
    "url": "https://mushie.com/products/water-wheel-bath-toy",
@@ -23300,7 +23307,8 @@
    "type": "dolls",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "skipped",
+   "reason": "Duplicate: same materials as the listed Under the Nile Scrappy Cat"
   },
   {
    "url": "https://www.greenmountaindiapers.com/products/under-the-nile-boys-boxer-briefs",
@@ -23420,7 +23428,8 @@
    "type": "animals",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "under-the-nile-scrappy-cat"
   },
   {
    "url": "https://www.greenmountaindiapers.com/products/under-the-nile-potty-training-pants-dino",
@@ -23814,7 +23823,8 @@
    "type": "blankets",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "under-the-nile-receiving-blanket"
   },
   {
    "url": "https://www.greenmountaindiapers.com/products/under-the-nile-organic-burp-cloths",
@@ -24428,7 +24438,8 @@
    "type": "blankets",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "disana-knitted-merino-wool-baby-blanket"
   },
   {
    "url": "https://www.greenmountaindiapers.com/products/disana-boiled-wool-sleeping-bag",
@@ -43448,7 +43459,8 @@
    "type": "sleep-sacks",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "babygap-truesleep-sleep-sack"
   },
   {
    "url": "https://www.deltachildren.com/products/baby-gap-memory-foam-toddler-pillow-with-2-cooling-covers",
@@ -44665,7 +44677,8 @@
    "type": "stacking",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "delta-children-rainbow-dot-round-rug"
   },
   {
    "url": "https://www.deltachildren.com/products/bentley-s-series-deluxe-6-in-1-convertible-crib",
@@ -45217,7 +45230,8 @@
    "type": "animals",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "maileg-plush-elephant"
   },
   {
    "url": "https://www.bellalunatoys.com/products/carrie-the-tree-fairy-a-fall-fairy-tale",
@@ -57518,7 +57532,8 @@
    "type": "push",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "coco-village-dog-pull-toy"
   },
   {
    "url": "https://enlightenedbaby.com/products/coco-village-duck-family-pull-toy",
@@ -86451,7 +86466,8 @@
    "type": "rugs",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "odin-parker-little-forest-animals-silk-rug"
   },
   {
    "url": "https://odinparker.com/products/little-forest-animals-silk-rug-the-dachshund",
@@ -126303,7 +126319,8 @@
    "type": "sleep-sacks",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "gunamuna-1-0-tog-footie-sleep-sack"
   },
   {
    "url": "https://pacifierkids.com/products/rabbits-sweatshirt-by-mini-rodini",
