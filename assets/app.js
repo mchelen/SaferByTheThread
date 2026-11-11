@@ -1091,7 +1091,9 @@
             '<p class="t-shop"><a href="' + U('/search', { q: t.term }) + '">Search products for “' + esc(t.term) + '”</a></p></article>';
         }).join('') + '</div></section>';
       }).join('') + '</div></div>';
-    setNav('glossary'); setTitle('Glossary');
+    // A term's own address carries the term in the tab title, as its pre-rendered page does.
+    var term = termId && [].concat.apply([], GLOSS.sections.map(function (s) { return s.terms; })).filter(function (t) { return t.id === termId; })[0];
+    setNav('glossary'); setTitle(term ? term.term + ' · Glossary' : 'Glossary');
     if (termId) {
       var el = document.getElementById('t-' + termId);
       if (el) { el.classList.add('hl'); el.scrollIntoView(); var d = el.querySelector('details'); if (d) d.open = true; }
@@ -1282,7 +1284,8 @@
     $('#cats').innerHTML = h;
     $('#foot-shop').innerHTML = '<li><a href="' + U('/shop') + '">All products</a></li>' + C.groups.map(function (g) { return '<li><a href="' + U('/a/' + g.id) + '">' + esc(g.title) + '</a></li>'; }).join('') + '<li><a href="' + U('/m') + '">Materials</a></li>';
     $('#foot-brands').innerHTML = brandList().sort(function (a, b) { return b.items.length - a.items.length; }).slice(0, 6).map(function (b) { return '<li><a href="' + U('/b/' + b.id) + '">' + esc(b.name) + '</a></li>'; }).join('') + '<li><a href="' + U('/brands') + '">All brands →</a></li>';
-    $$('a[data-link]').forEach(function (a) { a.href = U(a.getAttribute('href')); });
+    // Pre-rendered pages (tools/prerender.js) already carry the base path in these links.
+    $$('a[data-link]').forEach(function (a) { var h = a.getAttribute('href'); if (h.indexOf(BASE_PATH) !== 0) a.href = U(h); });
   }
   function closeMegas(except) {
     $$('#cats .cat-item.open').forEach(function (d) { if (d !== except) { d.classList.remove('open'); var b = $('.cat-a', d); if (b) b.setAttribute('aria-expanded', 'false'); } });
