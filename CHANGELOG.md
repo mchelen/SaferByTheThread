@@ -4,6 +4,9 @@ All notable changes to the site are listed here. The format follows [Keep a Chan
 
 ## [Unreleased]
 
+### Added
+- Search engines can find every page: each deploy writes a real page for every product, product type, department, brand, material and glossary term (so those addresses answer 200 instead of going through the 404 hand-off), each with its own title, description, canonical address, share preview (photo, title and description for WhatsApp, Facebook and others) and structured data (Product, BreadcrumbList, ItemList, DefinedTerm), plus `sitemap.xml` and `robots.txt`. Pull request previews are marked noindex. Glossary term addresses show the term in the tab title.
+
 ### Fixed
 - On desktop, a category or Materials menu in the top bar no longer disappears a moment after it opens when the mouse comes from the logo or search box.
 - Quick view on result cards sits on the bottom of the photo again instead of on top of the Buy at store button.

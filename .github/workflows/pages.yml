@@ -76,6 +76,19 @@ jobs:
           done
           grep -o 'assets/styles.css[^"]*' _site/index.html
       - uses: actions/configure-pages@v5
+        id: pages
+      - name: Write a page per address, sitemap.xml and robots.txt so search engines can find every page
+        env:
+          SITE_URL: ${{ steps.pages.outputs.base_url }}
+        run: |
+          set -euo pipefail
+          # Runs main's own tools/prerender.js on main's copy only; PR previews keep the plain hand-off.
+          node tools/prerender.js _site "${SITE_URL%/}/"
+          # Previews are copies of the site: keep them out of search results.
+          for f in _site/pr/*/index.html; do
+            [ -f "$f" ] && sed -i 's#<meta charset="utf-8">#<meta charset="utf-8">\n<meta name="robots" content="noindex">#' "$f"
+          done
+          grep -c '<url>' _site/sitemap.xml
       - uses: actions/upload-pages-artifact@v3
         with:
           path: _site
