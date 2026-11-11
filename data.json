@@ -1,6 +1,6 @@
 {
  "schema": 4,
- "updated": "2026-11-10",
+ "updated": "2026-11-11",
  "ask": [
   "Thread on any sewn item (cotton or polyester).",
   "Wheels and axles on push toys and cars.",
@@ -34441,6 +34441,1118 @@
    ],
    "img": "under-the-nile-scrappy-cat",
    "img_src": "https://cdn.shopify.com/s/files/1/1583/5087/files/scrappypurplecatonwool.jpg?v=1765057323"
+  },
+  {
+   "free": [
+    "Polyurethane",
+    "TPU",
+    "Formaldehyde",
+    "PVC",
+    "Vinyl",
+    "Laminates",
+    "Adhesives",
+    "Chemical finishes",
+    "Waterproof coatings"
+   ],
+   "outside": [],
+   "uses": [
+    "Organic cotton sateen"
+   ],
+   "unconfirmed": [
+    "Fill or layers inside the pad",
+    "Elastic in the 7\" pocket",
+    "Thread"
+   ],
+   "standards": [
+    "gots"
+   ],
+   "contains": [],
+   "id": "avocado-organic-crib-mattress-pad-protector",
+   "type": "protectors",
+   "brand": "Avocado",
+   "line": "Organic Crib Mattress Pad Protector (absorbent, not waterproof)",
+   "facts": {
+    "main": "yes",
+    "organic": "yes",
+    "finish": "yes",
+    "parts": "unknown"
+   },
+   "unstated": {
+    "parts": [
+     "Elastic in the 7\" pocket",
+     "Thread"
+    ]
+   },
+   "quote": "Made with organic cotton sateen and certified to MADE SAFE® standards, it's an organic — absorbent, never waterproof — alternative to plastic-based waterproof crib protectors.",
+   "note": "Absorbent pad, not a liquid barrier; Crib and Mini Crib sizes. The page also says it is “certified to MADE SAFE® standards”.",
+   "products": [
+    {
+     "name": "Organic Crib Mattress Pad Protector (Standard Crib)",
+     "url": "https://www.avocadogreenmattress.com/products/organic-crib-mattress-pad-protector",
+     "store": "Avocado Green Mattress",
+     "price": "$111",
+     "ships_from": "US"
+    }
+   ],
+   "read": "2026-11-11",
+   "photos": [
+    {
+     "key": "avocado-organic-crib-mattress-pad-protector",
+     "src": "https://cdn.shopify.com/s/files/1/0444/9488/0918/files/Avocado_Organic_Crib_Mattress_Pad_Protector_0061_95f3282d-fa95-4ae4-9d00-d5e23fcd0311.jpg?v=1783011171"
+    },
+    {
+     "key": "avocado-organic-crib-mattress-pad-protector_2",
+     "src": "https://cdn.shopify.com/s/files/1/0444/9488/0918/files/Avocado_Organic_Crib_Mattress_Pad_Proector_0130.jpg?v=1783005826"
+    },
+    {
+     "key": "avocado-organic-crib-mattress-pad-protector_3",
+     "src": "https://cdn.shopify.com/s/files/1/0444/9488/0918/files/Avocado_Organic_Crib_Mattress_Pad_Protector_0219.jpg?v=1783005827"
+    },
+    {
+     "key": "avocado-organic-crib-mattress-pad-protector_4",
+     "src": "https://cdn.shopify.com/s/files/1/0444/9488/0918/files/Avocado_Organic_Crib_Mattress_Pad_Protector_0103.jpg?v=1783005826"
+    },
+    {
+     "key": "avocado-organic-crib-mattress-pad-protector_5",
+     "src": "https://cdn.shopify.com/s/files/1/0444/9488/0918/files/Avocado_Organic_Crib_Mattress_Pad_Protector_0166.jpg?v=1783005826"
+    },
+    {
+     "key": "avocado-organic-crib-mattress-pad-protector_6",
+     "src": "https://cdn.shopify.com/s/files/1/0444/9488/0918/files/Avocado_Organic_Crib_Mattress_Pad_Protector_0040.jpg?v=1783005826"
+    },
+    {
+     "key": "avocado-organic-crib-mattress-pad-protector_7",
+     "src": "https://cdn.shopify.com/s/files/1/0444/9488/0918/files/Avocado_Organic_Crib_Mattress_Pad_Protector_0110.jpg?v=1783005826"
+    }
+   ],
+   "img": "avocado-organic-crib-mattress-pad-protector",
+   "img_src": "https://cdn.shopify.com/s/files/1/0444/9488/0918/files/Avocado_Organic_Crib_Mattress_Pad_Protector_0061_95f3282d-fa95-4ae4-9d00-d5e23fcd0311.jpg?v=1783011171"
+  },
+  {
+   "free": [],
+   "outside": [],
+   "uses": [
+    "GOTS-certified organic muslin cotton"
+   ],
+   "unconfirmed": [
+    "Elastic",
+    "Thread",
+    "Dyes in the printed and coloured versions"
+   ],
+   "standards": [
+    "gots"
+   ],
+   "contains": [],
+   "id": "babyletto-organic-muslin-crib-sheet",
+   "type": "sheets",
+   "brand": "Babyletto",
+   "line": "Crib Sheet in GOTS Certified Organic Muslin Cotton",
+   "facts": {
+    "main": "yes",
+    "organic": "yes",
+    "parts": "unknown",
+    "color": "unknown"
+   },
+   "unstated": {
+    "parts": [
+     "Elastic",
+     "Thread"
+    ],
+    "color": [
+     "Dyes in the printed and coloured versions"
+    ]
+   },
+   "quote": "Babyletto's crib sheets are consciously crafted from breathable and soft GOTS-certified organic muslin cotton",
+   "note": "Sold by Avocado Green Mattress in white and many prints; white $38, prints $48.",
+   "products": [
+    {
+     "name": "Babyletto Crib Sheet in GOTS Certified Organic Muslin Cotton (White)",
+     "url": "https://www.avocadogreenmattress.com/products/babyletto-crib-sheet-in-gots-certified-organic-muslin-cotton",
+     "store": "Avocado Green Mattress",
+     "price": "$38",
+     "ships_from": "US"
+    }
+   ],
+   "read": "2026-11-11",
+   "photos": [
+    {
+     "key": "babyletto-organic-muslin-crib-sheet",
+     "src": "https://cdn.shopify.com/s/files/1/0444/9488/0918/files/dqsdpojgxphxpvse2rx3.jpg?v=1762274299"
+    },
+    {
+     "key": "babyletto-organic-muslin-crib-sheet_2",
+     "src": "https://cdn.shopify.com/s/files/1/0444/9488/0918/files/jsldnqju6erpjs1nloal.jpg?v=1762274299"
+    },
+    {
+     "key": "babyletto-organic-muslin-crib-sheet_3",
+     "src": "https://cdn.shopify.com/s/files/1/0444/9488/0918/files/a8zrhhush4immwunmarb.jpg?v=1762274300"
+    },
+    {
+     "key": "babyletto-organic-muslin-crib-sheet_4",
+     "src": "https://cdn.shopify.com/s/files/1/0444/9488/0918/files/av7xcl9pkd3duczrwp8k.jpg?v=1762274299"
+    },
+    {
+     "key": "babyletto-organic-muslin-crib-sheet_5",
+     "src": "https://cdn.shopify.com/s/files/1/0444/9488/0918/files/utciijcpghr43ugmcuwr.jpg?v=1762274300"
+    },
+    {
+     "key": "babyletto-organic-muslin-crib-sheet_6",
+     "src": "https://cdn.shopify.com/s/files/1/0444/9488/0918/files/xocjgdhe25eljgoswrvx.jpg?v=1762274300"
+    },
+    {
+     "key": "babyletto-organic-muslin-crib-sheet_7",
+     "src": "https://cdn.shopify.com/s/files/1/0444/9488/0918/files/h46vctqosbddnjgzgbgk.jpg?v=1762274300"
+    },
+    {
+     "key": "babyletto-organic-muslin-crib-sheet_8",
+     "src": "https://cdn.shopify.com/s/files/1/0444/9488/0918/files/xiueqksetapbmwup1gqv.jpg?v=1762274300"
+    },
+    {
+     "key": "babyletto-organic-muslin-crib-sheet_9",
+     "src": "https://cdn.shopify.com/s/files/1/0444/9488/0918/files/cqtrbtqe3rfnhzy8kxme.jpg?v=1762274300"
+    },
+    {
+     "key": "babyletto-organic-muslin-crib-sheet_10",
+     "src": "https://cdn.shopify.com/s/files/1/0444/9488/0918/files/ortn9nkopz5h6wjvilyn.jpg?v=1762274300"
+    }
+   ],
+   "img": "babyletto-organic-muslin-crib-sheet",
+   "img_src": "https://cdn.shopify.com/s/files/1/0444/9488/0918/files/dqsdpojgxphxpvse2rx3.jpg?v=1762274299"
+  },
+  {
+   "free": [
+    "BPA",
+    "BPF",
+    "BPS",
+    "PVC",
+    "Phthalates"
+   ],
+   "outside": [],
+   "uses": [
+    "Silicone spoons"
+   ],
+   "unconfirmed": [
+    "Container material",
+    "Lid material",
+    "Spoon handles"
+   ],
+   "standards": [],
+   "contains": [],
+   "id": "beaba-first-meals-storage-container-set",
+   "type": "food-storage",
+   "brand": "Béaba",
+   "line": "First Meals 12 Piece Storage Container Set (with 2 spoons)",
+   "facts": {
+    "main": "unknown",
+    "accessory": "unknown"
+   },
+   "unstated": {
+    "main": [
+     "Container material",
+     "Lid material"
+    ]
+   },
+   "quote": "Includes: 6 x 8.5 oz. clip containers, 4 x 5 oz. containers, and 2 x 3 oz. containers and 2 silicone spoons",
+   "note": "Screw-thread airtight lids that clip onto each other; graduated ml/oz markings; reheat with the lid off. The page does not name what the containers are made of.",
+   "products": [
+    {
+     "name": "First Meals 12 Piece Storage Container Set",
+     "url": "https://beaba.us/products/1st-meal-set",
+     "store": "Béaba",
+     "price": "$34.99",
+     "ships_from": null,
+     "shipping": "Free shipping on orders $140*"
+    }
+   ],
+   "read": "2026-11-11",
+   "photos": [
+    {
+     "key": "beaba-first-meals-storage-container-set",
+     "src": "https://cdn.shopify.com/s/files/1/0673/7756/1739/files/913501_product_face_1.jpg?v=1755766014"
+    },
+    {
+     "key": "beaba-first-meals-storage-container-set_2",
+     "src": "https://cdn.shopify.com/s/files/1/0673/7756/1739/files/913502_product_face_2.jpg?v=1755766014"
+    },
+    {
+     "key": "beaba-first-meals-storage-container-set_3",
+     "src": "https://cdn.shopify.com/s/files/1/0673/7756/1739/files/913502_product_amb_2.jpg?v=1757627850"
+    },
+    {
+     "key": "beaba-first-meals-storage-container-set_4",
+     "src": "https://cdn.shopify.com/s/files/1/0673/7756/1739/files/913501_product_amb_3.jpg?v=1757627886"
+    },
+    {
+     "key": "beaba-first-meals-storage-container-set_5",
+     "src": "https://cdn.shopify.com/s/files/1/0673/7756/1739/files/913501_product_amb_2.jpg?v=1757627869"
+    }
+   ],
+   "img": "beaba-first-meals-storage-container-set",
+   "img_src": "https://cdn.shopify.com/s/files/1/0673/7756/1739/files/913501_product_face_1.jpg?v=1755766014"
+  },
+  {
+   "free": [],
+   "outside": [],
+   "uses": [
+    "Soft silicone"
+   ],
+   "unconfirmed": [
+    "Pigments in the sage green and terracotta colours",
+    "Silicone testing standard"
+   ],
+   "standards": [],
+   "contains": [],
+   "id": "beaba-silicone-pre-spoons",
+   "type": "utensils",
+   "brand": "Béaba",
+   "line": "Set of 2 Silicone Pre-Spoons",
+   "facts": {
+    "main": "yes",
+    "color": "unknown",
+    "silicone": "unknown"
+   },
+   "unstated": {
+    "color": [
+     "Pigments in the sage green and terracotta colours"
+    ],
+    "silicone": [
+     "Silicone testing standard"
+    ]
+   },
+   "age": {
+    "min_months": 4,
+    "text": "From 4 months"
+   },
+   "quote": "Soft silicone: soft, pleasant material that won't hurt",
+   "note": "Flexible-tipped starter spoons for self-feeding, usable in either hand; hand wash or dishwasher top rack.",
+   "products": [
+    {
+     "name": "Set of 2 Silicone Pre-Spoons",
+     "url": "https://beaba.us/products/set-of-2-silicone-pre-spoons",
+     "store": "Béaba",
+     "price": "$12.99",
+     "ships_from": null,
+     "shipping": "Free shipping on orders $140*"
+    }
+   ],
+   "read": "2026-11-11",
+   "photos": [
+    {
+     "key": "beaba-silicone-pre-spoons",
+     "src": "https://cdn.shopify.com/s/files/1/0673/7756/1739/files/913579_product_face_1.jpg?v=1756436429"
+    },
+    {
+     "key": "beaba-silicone-pre-spoons_2",
+     "src": "https://cdn.shopify.com/s/files/1/0673/7756/1739/files/913579_product_3-4_1.jpg?v=1757624028"
+    },
+    {
+     "key": "beaba-silicone-pre-spoons_3",
+     "src": "https://cdn.shopify.com/s/files/1/0673/7756/1739/files/913579_product_amb_1_new.jpg?v=1757624028"
+    },
+    {
+     "key": "beaba-silicone-pre-spoons_4",
+     "src": "https://cdn.shopify.com/s/files/1/0673/7756/1739/files/913593_product_amb_1.jpg?v=1757624028"
+    },
+    {
+     "key": "beaba-silicone-pre-spoons_5",
+     "src": "https://cdn.shopify.com/s/files/1/0673/7756/1739/files/913578_product_amb_1_new.jpg?v=1761239597"
+    },
+    {
+     "key": "beaba-silicone-pre-spoons_6",
+     "src": "https://cdn.shopify.com/s/files/1/0673/7756/1739/files/913578_product_amb_2.jpg?v=1757624028"
+    },
+    {
+     "key": "beaba-silicone-pre-spoons_7",
+     "src": "https://cdn.shopify.com/s/files/1/0673/7756/1739/files/913578_product_amb_4.jpg?v=1761234564"
+    },
+    {
+     "key": "beaba-silicone-pre-spoons_8",
+     "src": "https://cdn.shopify.com/s/files/1/0673/7756/1739/files/913578_product_amb_3.jpg?v=1757624028"
+    }
+   ],
+   "img": "beaba-silicone-pre-spoons",
+   "img_src": "https://cdn.shopify.com/s/files/1/0673/7756/1739/files/913579_product_face_1.jpg?v=1756436429"
+  },
+  {
+   "free": [
+    "Nickel in the snaps"
+   ],
+   "outside": [
+    "Elastane (5%)"
+   ],
+   "uses": [
+    "Organic cotton rib (95%)",
+    "Cotton poplin ruffles at the shoulders"
+   ],
+   "unconfirmed": [
+    "Snaps (“nickel-free”, metal not named)",
+    "Dyes (“water-based”, type not named)",
+    "Thread"
+   ],
+   "standards": [],
+   "contains": [],
+   "id": "colored-organics-edwina-ribbed-ruffle-bodysuit",
+   "type": "bodysuits",
+   "brand": "Colored Organics",
+   "line": "Edwina Ribbed Ruffle Long Sleeve Bodysuit",
+   "facts": {
+    "main": "no",
+    "parts": "unknown",
+    "color": "unknown"
+   },
+   "unstated": {
+    "parts": [
+     "Snaps (“nickel-free”, metal not named)",
+     "Thread"
+    ],
+    "color": [
+     "Dyes (“water-based”, type not named)"
+    ]
+   },
+   "quote": "Made from soft organic cotton rib, this charming staple features delicate poplin ruffles at the shoulders",
+   "note": "Long-sleeve bodysuit with snap placket at the neck and snap leg opening. Sizes 0-3M to 18-24M.",
+   "products": [
+    {
+     "name": "Edwina Ribbed Ruffle Long Sleeve Bodysuit - Ivory",
+     "url": "https://coloredorganics.com/products/organic-cotton-baby-aw26-fireside-collection-edwina-ribbed-ruffle-bodysuit-95525-26-ivory",
+     "store": "Colored Organics",
+     "price": "$28",
+     "ships_from": null,
+     "shipping": "Free U.S. shipping on orders over $50"
+    }
+   ],
+   "read": "2026-11-11",
+   "photos": [
+    {
+     "key": "colored-organics-edwina-ribbed-ruffle-bodysuit",
+     "src": "https://cdn.shopify.com/s/files/1/1643/4857/files/95525-26-edwina-ribbed-ruffle-ls-bodysuit.ivory.flat_front_3332cdbf-7fef-4bc2-9239-d09a3588755f.jpg?v=1790712851"
+    }
+   ],
+   "img": "colored-organics-edwina-ribbed-ruffle-bodysuit",
+   "img_src": "https://cdn.shopify.com/s/files/1/1643/4857/files/95525-26-edwina-ribbed-ruffle-ls-bodysuit.ivory.flat_front_3332cdbf-7fef-4bc2-9239-d09a3588755f.jpg?v=1790712851"
+  },
+  {
+   "free": [
+    "Flame resistant treatment"
+   ],
+   "outside": [
+    "Elastane (5%)"
+   ],
+   "uses": [
+    "Organic cotton (95%)"
+   ],
+   "unconfirmed": [
+    "Two-way zipper",
+    "Footed grips (6-12M and up)",
+    "Dyes",
+    "Thread"
+   ],
+   "standards": [],
+   "contains": [],
+   "id": "colored-organics-kit-ribbed-zipper-sleeper",
+   "type": "pajamas",
+   "brand": "Colored Organics",
+   "line": "Kit Ribbed Zipper Sleeper",
+   "facts": {
+    "main": "no",
+    "flame": "yes",
+    "parts": "unknown",
+    "color": "unknown"
+   },
+   "unstated": {
+    "parts": [
+     "Two-way zipper",
+     "Footed grips (6-12M and up)",
+     "Thread"
+    ],
+    "color": [
+     "Dyes"
+    ]
+   },
+   "quote": "Made of 95% Organic Cotton / 5% Elastane",
+   "note": "Ribbed footed sleeper with a two-way zipper; fold-over mitts on NB and 0-3M. Sizes NB to 18-24M.",
+   "products": [
+    {
+     "name": "Kit Ribbed Zipper Sleeper - Ivory",
+     "url": "https://coloredorganics.com/products/organic-cotton-baby-aw26-woodford-collection-kit-ribbed-zipper-sleeper-95508-23-ivory",
+     "store": "Colored Organics",
+     "price": "$36",
+     "ships_from": null,
+     "shipping": "Free U.S. shipping on orders over $50"
+    }
+   ],
+   "read": "2026-11-11",
+   "photos": [
+    {
+     "key": "colored-organics-kit-ribbed-zipper-sleeper",
+     "src": "https://cdn.shopify.com/s/files/1/1643/4857/files/95508-23-peyton-ribbed-sleeper.ivory.flat_front_7504fa78-2ebf-486c-b7a1-419221a3c4b0.jpg?v=1783539846"
+    }
+   ],
+   "img": "colored-organics-kit-ribbed-zipper-sleeper",
+   "img_src": "https://cdn.shopify.com/s/files/1/1643/4857/files/95508-23-peyton-ribbed-sleeper.ivory.flat_front_7504fa78-2ebf-486c-b7a1-419221a3c4b0.jpg?v=1783539846"
+  },
+  {
+   "free": [
+    "Added fire retardants",
+    "Lead",
+    "Phthalates"
+   ],
+   "outside": [
+    "Nylon cover",
+    "Polyester fill"
+   ],
+   "uses": [],
+   "unconfirmed": [
+    "Hidden zipper",
+    "Thread",
+    "Dyes in the cover"
+   ],
+   "standards": [
+    "oeko-tex"
+   ],
+   "contains": [],
+   "id": "delta-children-cooling-toddler-pillow",
+   "type": "pillows",
+   "brand": "Delta Children",
+   "line": "Cooling Toddler Pillow",
+   "facts": {
+    "main": "no",
+    "flame": "yes",
+    "parts": "unknown",
+    "color": "unknown"
+   },
+   "unstated": {
+    "parts": [
+     "Hidden zipper",
+     "Thread"
+    ],
+    "color": [
+     "Dyes in the cover"
+    ]
+   },
+   "quote": "this premium toddler pillow features a cool-to-the-touch nylon cover",
+   "note": "Removable cover; pillow and cover are machine washable. 13\" x 18\". The store page lists its fire retardant, lead and phthalate statement for all Delta Children products.",
+   "products": [
+    {
+     "name": "Delta Children Cooling Toddler Pillow",
+     "url": "https://www.deltachildren.com/products/delta-children-cooling-toddler-pillow",
+     "store": "Delta Children",
+     "price": "$12.99",
+     "ships_from": "US",
+     "shipping": "Ships only to the contiguous 48 US states"
+    }
+   ],
+   "read": "2026-11-11",
+   "photos": [
+    {
+     "key": "delta-children-cooling-toddler-pillow",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/P30555-5555-NO_Delta-Cooling-Toddler-Pillow_Blue_callout_01.jpg?v=1792074471"
+    },
+    {
+     "key": "delta-children-cooling-toddler-pillow_2",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/P30555-5555-NO_Delta-Cooling-Toddler-Pillow_Blue_callout_02.jpg?v=1792074471"
+    },
+    {
+     "key": "delta-children-cooling-toddler-pillow_3",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/P30555-5555-NO_Delta-Cooling-Toddler-Pillow_Blue_callout_03.jpg?v=1792074470"
+    },
+    {
+     "key": "delta-children-cooling-toddler-pillow_4",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/P30555-5555-NO_Delta-Cooling-Toddler-Pillow_Blue_callout_04.jpg?v=1792074470"
+    },
+    {
+     "key": "delta-children-cooling-toddler-pillow_5",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/P30555-5555-NO_Delta-Cooling-Toddler-Pillow_Blue_callout_05.jpg?v=1792074470"
+    },
+    {
+     "key": "delta-children-cooling-toddler-pillow_6",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/P30555-5555-NO_Delta-Cooling-Toddler-Pillow_Blue_callout_06.jpg?v=1792074470"
+    },
+    {
+     "key": "delta-children-cooling-toddler-pillow_7",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/P30555-5555-NO_Delta-Cooling-Toddler-Pillow_Blue_callout_07.jpg?v=1792074470"
+    },
+    {
+     "key": "delta-children-cooling-toddler-pillow_8",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/P30555-5555-NO_Delta-Cooling-Toddler-Pillow_Blue_callout_08.jpg?v=1792074470"
+    },
+    {
+     "key": "delta-children-cooling-toddler-pillow_9",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/P30555-5555-NO_Delta-Cooling-Toddler-Pillow_Blue_callout_101.jpg?v=1792074471"
+    },
+    {
+     "key": "delta-children-cooling-toddler-pillow_10",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/P30666-6666-NO_Delta-Cooling-Toddler-Pillow_Pink_callout_07.jpg?v=1792074487"
+    }
+   ],
+   "img": "delta-children-cooling-toddler-pillow",
+   "img_src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/P30555-5555-NO_Delta-Cooling-Toddler-Pillow_Blue_callout_01.jpg?v=1792074471"
+  },
+  {
+   "free": [
+    "BPA",
+    "BPS",
+    "PVC",
+    "Phthalates"
+   ],
+   "outside": [
+    "100% food grade PP plastic shield"
+   ],
+   "uses": [
+    "100% natural rubber latex nipple"
+   ],
+   "unconfirmed": [
+    "Pigments in the sunflower and fuchsia shields"
+   ],
+   "standards": [
+    "us-toy"
+   ],
+   "contains": [
+    "latex"
+   ],
+   "id": "frigg-rope-daisy-natural-rubber-pacifier",
+   "type": "pacifiers",
+   "brand": "FRIGG",
+   "line": "Rope/Daisy Natural Rubber Pacifier 2-Pack (6-18 months)",
+   "facts": {
+    "main": "no",
+    "color": "unknown",
+    "rubber": "yes",
+    "lead": "yes"
+   },
+   "unstated": {
+    "color": [
+     "Pigments in the sunflower and fuchsia shields"
+    ]
+   },
+   "age": {
+    "min_months": 6,
+    "max_months": 18,
+    "text": "6-18 months"
+   },
+   "quote": "100% natural rubber latex nipple - 100% food grade PP plastic shield",
+   "note": "One rope-border and one daisy-edge pacifier with Click-Lock system; made in Denmark by FRIGG, sold by Mushie.",
+   "products": [
+    {
+     "name": "FRIGG Rope/Daisy Natural Rubber Pacifier (Sunflower/Fuchsia) 2-Pack (6-18 Months)",
+     "url": "https://mushie.com/products/frigg-rope-daisy-natural-rubber-baby-pacifier-sunflower-fuchsia-2-pack-6-18-months",
+     "store": "Mushie",
+     "price": "$14.99",
+     "ships_from": null,
+     "shipping": "Free Shipping for US orders $75+"
+    }
+   ],
+   "read": "2026-11-11",
+   "photos": [
+    {
+     "key": "frigg-rope-daisy-natural-rubber-pacifier",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/RopeSunflower_DaisyFuchsia_Daisy_rubber_6-18.jpg?v=1752248566"
+    },
+    {
+     "key": "frigg-rope-daisy-natural-rubber-pacifier_2",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/RopeSunflower_DaisyFuchsia_f_f_daisyrubber.jpg?v=1752248566"
+    },
+    {
+     "key": "frigg-rope-daisy-natural-rubber-pacifier_3",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/frigg-nipple-info-daisy.jpg?v=1770926603"
+    },
+    {
+     "key": "frigg-rope-daisy-natural-rubber-pacifier_4",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/Flatlay_29juni-43.jpg?v=1770926538"
+    },
+    {
+     "key": "frigg-rope-daisy-natural-rubber-pacifier_5",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/moa_summer_shoot_vol1_2024-41.jpg?v=1776106761"
+    },
+    {
+     "key": "frigg-rope-daisy-natural-rubber-pacifier_6",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/Flatlay_29juni-45_fdb76601-4bc5-44f4-8510-aec7338a32eb.jpg?v=1770926538"
+    }
+   ],
+   "img": "frigg-rope-daisy-natural-rubber-pacifier",
+   "img_src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/RopeSunflower_DaisyFuchsia_Daisy_rubber_6-18.jpg?v=1752248566"
+  },
+  {
+   "free": [
+    "Lead in the paints and stains",
+    "Phthalates in the paints and stains"
+   ],
+   "outside": [],
+   "uses": [
+    "Solid beech wood",
+    "Solid rubberwood"
+   ],
+   "unconfirmed": [
+    "Paint and stain ingredients (“non-toxic”, not named)",
+    "Fibre of the mesh bassinet liner",
+    "Bassinet mattress (material not named on this page)",
+    "Wheels",
+    "Mattress support",
+    "Hardware"
+   ],
+   "standards": [],
+   "contains": [],
+   "id": "newton-nest-convertible-crib",
+   "type": "cribs",
+   "brand": "Newton",
+   "line": "Nest 4-in-1 Convertible Crib (bassinet, crib, toddler bed, junior bed)",
+   "facts": {
+    "main": "yes",
+    "wood": "yes",
+    "color": "unknown",
+    "parts": "unknown"
+   },
+   "unstated": {
+    "color": [
+     "Paint and stain ingredients (“non-toxic”, not named)"
+    ],
+    "parts": [
+     "Fibre of the mesh bassinet liner",
+     "Wheels",
+     "Mattress support",
+     "Hardware"
+    ]
+   },
+   "age": {
+    "min_months": 0,
+    "max_months": 60,
+    "text": "From birth to 5 years"
+   },
+   "quote": "Made from solid, sustainably sourced beech and rubberwood Finished in non-toxic, lead and phthalate-free paints and stains",
+   "note": "Starts as a bassinet on wheels with a mesh liner and Wovenaire bassinet mattress included, then converts to a full-size crib, toddler bed and junior bed. The page also says the wood is PEFC certified and the crib is GREENGUARD Gold certified.",
+   "products": [
+    {
+     "name": "Newton Nest Convertible Crib",
+     "url": "https://www.newtonbaby.com/products/newton-nest-crib",
+     "store": "Newton Baby",
+     "price": "$799.00",
+     "ships_from": null,
+     "shipping": "Free shipping"
+    }
+   ],
+   "read": "2026-11-11",
+   "photos": [
+    {
+     "key": "newton-nest-convertible-crib",
+     "src": "https://cdn.shopify.com/s/files/1/0792/0323/files/Newton_PDP_Carousel_Hero_Nest-Essential.jpg?v=1785924057"
+    },
+    {
+     "key": "newton-nest-convertible-crib_2",
+     "src": "https://cdn.shopify.com/s/files/1/0792/0323/files/1_Nest_Crib_White.jpg?v=1788529380"
+    },
+    {
+     "key": "newton-nest-convertible-crib_3",
+     "src": "https://cdn.shopify.com/s/files/1/0792/0323/files/2_Nest_Crib_White.jpg?v=1788529380"
+    },
+    {
+     "key": "newton-nest-convertible-crib_4",
+     "src": "https://cdn.shopify.com/s/files/1/0792/0323/files/3_white_nest_sandstone.jpg?v=1788529380"
+    },
+    {
+     "key": "newton-nest-convertible-crib_5",
+     "src": "https://cdn.shopify.com/s/files/1/0792/0323/files/4_Nest_Crib_White_PDP_3000.jpg?v=1788529379"
+    },
+    {
+     "key": "newton-nest-convertible-crib_6",
+     "src": "https://cdn.shopify.com/s/files/1/0792/0323/files/6_Nest_Crib_White.jpg?v=1788529380"
+    },
+    {
+     "key": "newton-nest-convertible-crib_7",
+     "src": "https://cdn.shopify.com/s/files/1/0792/0323/files/9_Nest_Crib_White.jpg?v=1788529380"
+    },
+    {
+     "key": "newton-nest-convertible-crib_8",
+     "src": "https://cdn.shopify.com/s/files/1/0792/0323/files/7_Nest_Crib_White_PDP_3000.jpg?v=1788529380"
+    },
+    {
+     "key": "newton-nest-convertible-crib_9",
+     "src": "https://cdn.shopify.com/s/files/1/0792/0323/files/11B_UPDATE-Color_Comparison.jpg?v=1789491798"
+    },
+    {
+     "key": "newton-nest-convertible-crib_10",
+     "src": "https://cdn.shopify.com/s/files/1/0792/0323/files/10_Nest_Crib_White.jpg?v=1788529379"
+    }
+   ],
+   "img": "newton-nest-convertible-crib",
+   "img_src": "https://cdn.shopify.com/s/files/1/0792/0323/files/Newton_PDP_Carousel_Hero_Nest-Essential.jpg?v=1785924057"
+  },
+  {
+   "free": [],
+   "outside": [],
+   "uses": [
+    "Solid hardwood",
+    "Organic oil finish"
+   ],
+   "unconfirmed": [
+    "Oils in the “organic oil blend” (not named)",
+    "Rattle pieces inside"
+   ],
+   "standards": [],
+   "contains": [],
+   "id": "smiling-tree-toys-imperfect-heart-rattle",
+   "type": "rattles",
+   "brand": "Smiling Tree Toys",
+   "line": "Imperfect Heart Rattle (sold as-is)",
+   "facts": {
+    "main": "yes",
+    "wood": "yes",
+    "color": "yes",
+    "parts": "unknown"
+   },
+   "unstated": {
+    "parts": [
+     "Rattle pieces inside"
+    ]
+   },
+   "quote": "solid hardwood organic oil finish",
+   "note": "Discounted for dark spots or discoloration in the wood grain; sold as-is, no returns. Handmade in Minnesota; 3.5\" x 3\".",
+   "products": [
+    {
+     "name": "Imperfect Heart Rattle",
+     "url": "https://smilingtreetoys.com/products/heart-rattle-on-sale",
+     "store": "Smiling Tree Toys",
+     "price": "$9.50",
+     "ships_from": "US"
+    }
+   ],
+   "read": "2026-11-11",
+   "photos": [
+    {
+     "key": "smiling-tree-toys-imperfect-heart-rattle",
+     "src": "https://cdn.shopify.com/s/files/1/0455/9189/files/baby-rattle-wooden-heart-toys-on-sale-natural-gift-for-new-baby-Smiling-Tree-Toys-4.jpg?v=1741786188"
+    },
+    {
+     "key": "smiling-tree-toys-imperfect-heart-rattle_2",
+     "src": "https://cdn.shopify.com/s/files/1/0455/9189/files/baby-rattle-wooden-heart-toys-on-sale-natural-gift-for-new-baby-Smiling-Tree-Toys-5.jpg?v=1741786188"
+    },
+    {
+     "key": "smiling-tree-toys-imperfect-heart-rattle_3",
+     "src": "https://cdn.shopify.com/s/files/1/0455/9189/files/baby-rattle-wooden-heart-toys-on-sale-natural-gift-for-new-baby-Smiling-Tree-Toys-10.jpg?v=1741786188"
+    },
+    {
+     "key": "smiling-tree-toys-imperfect-heart-rattle_4",
+     "src": "https://cdn.shopify.com/s/files/1/0455/9189/files/baby-rattle-wooden-heart-toys-on-sale-natural-gift-for-new-baby-Smiling-Tree-Toys-2.jpg?v=1741786185"
+    },
+    {
+     "key": "smiling-tree-toys-imperfect-heart-rattle_5",
+     "src": "https://cdn.shopify.com/s/files/1/0455/9189/files/baby-rattle-wooden-heart-toys-on-sale-natural-gift-for-new-baby-Smiling-Tree-Toys.jpg?v=1741786085"
+    }
+   ],
+   "img": "smiling-tree-toys-imperfect-heart-rattle",
+   "img_src": "https://cdn.shopify.com/s/files/1/0455/9189/files/baby-rattle-wooden-heart-toys-on-sale-natural-gift-for-new-baby-Smiling-Tree-Toys-4.jpg?v=1741786188"
+  },
+  {
+   "free": [
+    "BPA",
+    "Lead",
+    "PVC",
+    "Phthalates"
+   ],
+   "outside": [],
+   "uses": [
+    "100% US FDA-food grade silicone tray",
+    "Embedded steel frame"
+   ],
+   "unconfirmed": [
+    "Lid material",
+    "Pigments in the coloured silicone",
+    "Silicone testing standard"
+   ],
+   "standards": [],
+   "contains": [],
+   "id": "souper-cubes-2-tablespoon-freezer-tray",
+   "type": "freezer-trays",
+   "brand": "Souper Cubes",
+   "line": "Freezer Tray, 2 Tablespoon (ten 1 oz portions)",
+   "facts": {
+    "main": "yes",
+    "accessory": "unknown",
+    "color": "unknown",
+    "silicone": "unknown"
+   },
+   "unstated": {
+    "accessory": [
+     "Lid material"
+    ],
+    "color": [
+     "Pigments in the coloured silicone"
+    ],
+    "silicone": [
+     "Silicone testing standard"
+    ]
+   },
+   "quote": "Freeze and store tomato paste, pesto, baby food, sofrito and other foods in 2 tablespoon / 1 ounce portions.",
+   "note": "Ten portions per tray with a snug-fitting lid; fill lines at 1 Tbsp, 2 Tbsp, 15 mL and 30 mL. The page says the tray can go in the oven up to 415F.",
+   "products": [
+    {
+     "name": "Freezer Tray - 2 Tablespoon",
+     "url": "https://www.soupercubes.com/products/2-tablespoon-food-freezer-tray",
+     "store": "Souper Cubes",
+     "price": "$22.00",
+     "ships_from": "US",
+     "shipping": "Free shipping on orders $45+ (site banner says $95+)"
+    }
+   ],
+   "read": "2026-11-11",
+   "photos": [
+    {
+     "key": "souper-cubes-2-tablespoon-freezer-tray",
+     "src": "https://cdn.shopify.com/s/files/1/0023/4995/7235/files/2_Tbsp._Individual_Trays_Aqua.jpg?v=1771536211"
+    },
+    {
+     "key": "souper-cubes-2-tablespoon-freezer-tray_2",
+     "src": "https://cdn.shopify.com/s/files/1/0023/4995/7235/files/2_Tbsp._Individual_Trays_Blueberry.jpg?v=1771536211"
+    },
+    {
+     "key": "souper-cubes-2-tablespoon-freezer-tray_3",
+     "src": "https://cdn.shopify.com/s/files/1/0023/4995/7235/files/2_Tbsp._Individual_Trays_Kale.jpg?v=1763766952"
+    },
+    {
+     "key": "souper-cubes-2-tablespoon-freezer-tray_4",
+     "src": "https://cdn.shopify.com/s/files/1/0023/4995/7235/files/Product_-_2Tbsp_tray_CCY-Shopify_Main_Image-233.jpg?v=1774671108"
+    },
+    {
+     "key": "souper-cubes-2-tablespoon-freezer-tray_5",
+     "src": "https://cdn.shopify.com/s/files/1/0023/4995/7235/files/2_Tablespoon_Tray_Plum_26b41f47-4650-4ddf-88d1-fe9907f8adc6.jpg?v=1787980282"
+    }
+   ],
+   "img": "souper-cubes-2-tablespoon-freezer-tray",
+   "img_src": "https://cdn.shopify.com/s/files/1/0023/4995/7235/files/2_Tbsp._Individual_Trays_Aqua.jpg?v=1771536211"
+  },
+  {
+   "free": [
+    "PVC",
+    "Phthalates",
+    "Lead"
+   ],
+   "outside": [
+    "100% polyester outer",
+    "Waterproof TPU laminate"
+   ],
+   "uses": [],
+   "unconfirmed": [
+    "Fibre of the soft mesh lining",
+    "Snaps",
+    "Dyes in the prints",
+    "Thread"
+   ],
+   "standards": [],
+   "contains": [],
+   "id": "thirsties-pocket-bib",
+   "type": "bibs",
+   "brand": "Thirsties",
+   "line": "Pocket Bib",
+   "facts": {
+    "main": "no",
+    "parts": "unknown",
+    "color": "unknown"
+   },
+   "unstated": {
+    "parts": [
+     "Snaps",
+     "Thread"
+    ],
+    "color": [
+     "Dyes in the prints"
+    ]
+   },
+   "quote": "100% polyester with a waterproof TPU laminate, lined with soft mesh.",
+   "note": "Waterproof bib with a crumb-catching pocket and two snap settings; made in Colorado, USA. Many prints.",
+   "products": [
+    {
+     "name": "Thirsties Pocket Bib",
+     "url": "https://www.greenmountaindiapers.com/products/thirsties-pocket-bib",
+     "store": "Green Mountain Diapers",
+     "price": "$10.05",
+     "ships_from": "US"
+    },
+    {
+     "name": "Pocket Bib",
+     "url": "https://thirstiesbaby.com/products/pocket-bib",
+     "store": "Thirsties",
+     "price": "$8.05",
+     "ships_from": "US",
+     "shipping": "Free US shipping over $99"
+    }
+   ],
+   "read": "2026-11-11",
+   "photos": [
+    {
+     "key": "thirsties-pocket-bib",
+     "src": "https://cdn.shopify.com/s/files/1/1583/5087/files/blowing-kisses-thirsties-pocket-bib.jpg?v=1786716903"
+    },
+    {
+     "key": "thirsties-pocket-bib_2",
+     "src": "https://cdn.shopify.com/s/files/1/1583/5087/files/Thirsties-Bib-Sloth-Life-1300.jpg?v=1767723354"
+    },
+    {
+     "key": "thirsties-pocket-bib_3",
+     "src": "https://cdn.shopify.com/s/files/1/1583/5087/files/Sloth-Life-Bib1800.jpg?v=1767723354"
+    },
+    {
+     "key": "thirsties-pocket-bib_4",
+     "src": "https://cdn.shopify.com/s/files/1/1583/5087/files/Thirsties-new-bibs2048.jpg?v=1767723354"
+    },
+    {
+     "key": "thirsties-pocket-bib_5",
+     "src": "https://cdn.shopify.com/s/files/1/1583/5087/files/bibs2048.jpg?v=1767723354"
+    }
+   ],
+   "img": "thirsties-pocket-bib",
+   "img_src": "https://cdn.shopify.com/s/files/1/1583/5087/files/blowing-kisses-thirsties-pocket-bib.jpg?v=1786716903"
+  },
+  {
+   "free": [
+    "BPA in the nylon"
+   ],
+   "outside": [
+    "BPA-free nylon (part not named)"
+   ],
+   "uses": [
+    "Silicone"
+   ],
+   "unconfirmed": [
+    "Which part is nylon",
+    "Popsicle sticks",
+    "Pigments",
+    "Silicone testing standard"
+   ],
+   "standards": [],
+   "contains": [],
+   "id": "tovolo-twin-pop-molds",
+   "type": "pop-molds",
+   "brand": "Tovolo",
+   "line": "Twin Pop Molds",
+   "facts": {
+    "main": "unknown",
+    "accessory": "unknown",
+    "color": "unknown",
+    "silicone": "unknown"
+   },
+   "unstated": {
+    "main": [
+     "Which part is nylon"
+    ],
+    "accessory": [
+     "Popsicle sticks"
+    ],
+    "color": [
+     "Pigments"
+    ],
+    "silicone": [
+     "Silicone testing standard"
+    ]
+   },
+   "quote": "Materials: Silicone, BPA-free nylon.",
+   "note": "Slimline tray with six popsicle sticks and a fill line; goes in the dishwasher. 8.0 x 5.8 x 3.4 in.",
+   "products": [
+    {
+     "name": "Twin Pop Molds",
+     "url": "https://www.tovolo.com/products/twin-pop-molds",
+     "store": "Tovolo",
+     "price": "$12.99",
+     "ships_from": "US",
+     "shipping": "Free ground shipping on orders over $50"
+    }
+   ],
+   "read": "2026-11-11",
+   "photos": [
+    {
+     "key": "tovolo-twin-pop-molds",
+     "src": "https://cdn.shopify.com/s/files/1/0808/9862/1474/files/81-3002_04_Twin-Pop-Molds_DETAIL-02.png?v=1792258773"
+    },
+    {
+     "key": "tovolo-twin-pop-molds_2",
+     "src": "https://cdn.shopify.com/s/files/1/0808/9862/1474/files/81-3002_02_Twin-Pop-Molds_LIFESTYLE-01.jpg?v=1792258771"
+    },
+    {
+     "key": "tovolo-twin-pop-molds_3",
+     "src": "https://cdn.shopify.com/s/files/1/0808/9862/1474/files/81-3002_01_Twin-Pop-Molds_SILO-02.png?v=1792258771"
+    },
+    {
+     "key": "tovolo-twin-pop-molds_4",
+     "src": "https://cdn.shopify.com/s/files/1/0808/9862/1474/files/81-3002_05_Twin-Pop-Molds_SILO-01.png?v=1792258772"
+    }
+   ],
+   "img": "tovolo-twin-pop-molds",
+   "img_src": "https://cdn.shopify.com/s/files/1/0808/9862/1474/files/81-3002_04_Twin-Pop-Molds_DETAIL-02.png?v=1792258773"
+  },
+  {
+   "free": [
+    "BPA in the nylon"
+   ],
+   "outside": [
+    "BPA-free nylon (part not named)"
+   ],
+   "uses": [
+    "Silicone"
+   ],
+   "unconfirmed": [
+    "Which part is nylon",
+    "Lid material",
+    "Pigments",
+    "Silicone testing standard"
+   ],
+   "standards": [],
+   "contains": [],
+   "id": "tovolo-water-bottle-ice-mold",
+   "type": "ice-trays",
+   "brand": "Tovolo",
+   "line": "Water Bottle Ice Mold (5 ice sticks, with lid)",
+   "facts": {
+    "main": "yes",
+    "accessory": "unknown",
+    "color": "unknown",
+    "silicone": "unknown"
+   },
+   "unstated": {
+    "accessory": [
+     "Lid material"
+    ],
+    "color": [
+     "Pigments"
+    ],
+    "silicone": [
+     "Silicone testing standard"
+    ]
+   },
+   "quote": "Materials: Silicone, BPA-free nylon.",
+   "note": "Makes five ice sticks for narrow bottle openings; tight-fitting lid; goes in the dishwasher. 12.5 x 3 x 3 in.",
+   "products": [
+    {
+     "name": "Water Bottle Ice Cube Tray",
+     "url": "https://www.tovolo.com/products/water-bottle-ice-mold",
+     "store": "Tovolo",
+     "price": "$11.99",
+     "ships_from": "US",
+     "shipping": "Free ground shipping on orders over $50"
+    }
+   ],
+   "read": "2026-11-11",
+   "photos": [
+    {
+     "key": "tovolo-water-bottle-ice-mold",
+     "src": "https://cdn.shopify.com/s/files/1/0808/9862/1474/files/81-34525_01_Bottle-Ice-Molds_Charcoal_SILO_3.png?v=1792258594"
+    },
+    {
+     "key": "tovolo-water-bottle-ice-mold_2",
+     "src": "https://cdn.shopify.com/s/files/1/0808/9862/1474/files/81-34525_02_Bottle-Ice-Molds_In-use-1.jpg?v=1792258594"
+    },
+    {
+     "key": "tovolo-water-bottle-ice-mold_3",
+     "src": "https://cdn.shopify.com/s/files/1/0808/9862/1474/files/81-34525_03_Bottle-Ice-Molds_Charcoal_FEATURES.jpg?v=1792258594"
+    },
+    {
+     "key": "tovolo-water-bottle-ice-mold_4",
+     "src": "https://cdn.shopify.com/s/files/1/0808/9862/1474/files/81-34525_04_Bottle-Ice-Molds_Charcoal_SILO_4.png?v=1792258595"
+    },
+    {
+     "key": "tovolo-water-bottle-ice-mold_5",
+     "src": "https://cdn.shopify.com/s/files/1/0808/9862/1474/files/81-34525_05_Bottle-Ice-Molds_Charcoal_DETAIL.png?v=1792258597"
+    }
+   ],
+   "img": "tovolo-water-bottle-ice-mold",
+   "img_src": "https://cdn.shopify.com/s/files/1/0808/9862/1474/files/81-34525_01_Bottle-Ice-Molds_Charcoal_SILO_3.png?v=1792258594"
   }
  ]
 }
