@@ -1,6 +1,6 @@
 {
  "schema": 4,
- "updated": "2026-11-11",
+ "updated": "2026-11-12",
  "ask": [
   "Thread on any sewn item (cotton or polyester).",
   "Wheels and axles on push toys and cars.",
@@ -35553,6 +35553,1102 @@
    ],
    "img": "tovolo-water-bottle-ice-mold",
    "img_src": "https://cdn.shopify.com/s/files/1/0808/9862/1474/files/81-34525_01_Bottle-Ice-Molds_Charcoal_SILO_3.png?v=1792258594"
+  },
+  {
+   "id": "babybjorn-baby-carrier-one-air",
+   "type": "carriers",
+   "brand": "BabyBjörn",
+   "line": "Baby Carrier One Air (3D mesh)",
+   "uses": [
+    "100% cotton leg position zip protection"
+   ],
+   "free": [],
+   "outside": [
+    "100% polyester main fabric (mesh)",
+    "100% polyester waist belt lining"
+   ],
+   "unconfirmed": [
+    "Shoulder strap and waistband padding",
+    "Buckles",
+    "Zippers",
+    "Webbing",
+    "Dyes"
+   ],
+   "facts": {
+    "main": "no",
+    "parts": "unknown",
+    "color": "unknown"
+   },
+   "unstated": {
+    "parts": [
+     "Buckles",
+     "Zippers"
+    ],
+    "color": [
+     "Dyes"
+    ]
+   },
+   "contains": [],
+   "standards": [
+    "oeko-tex"
+   ],
+   "age": {
+    "min_months": 0,
+    "max_months": 36,
+    "text": "Weight limit: 8-33 lbs Age: approx. 0-3 years"
+   },
+   "quote": "Main fabric: 100% polyester Waist belt lining: 100% polyester Leg position zip protection: 100% cotton",
+   "note": "Listed on Babylist as no longer available there; Babylist shows it at Amazon and babybjorn.com for $219.99. IHDI certified, according to the listing.",
+   "products": [
+    {
+     "name": "BabyBjörn Baby Carrier One Air",
+     "url": "https://babylist.com/gp/babybjorn-baby-carrier-one-air/14364/6692",
+     "store": "Babylist (prices at Amazon and babybjorn.com)",
+     "price": "$219.99",
+     "ships_from": "US"
+    }
+   ],
+   "read": "2026-11-12",
+   "photos": [
+    {
+     "key": "babybjorn-baby-carrier-one-air",
+     "src": "https://images.ctfassets.net/50gzycvace50/c92452f3df0b35d9a45ce8528d836cb67ffe0d965e63ff24d5033695c79158ca/6382652657952dfc67eb4878b17fced8/c92452f3df0b35d9a45ce8528d836cb67ffe0d965e63ff24d5033695c79158ca.png?fl=progressive&fm=jpg&bg=rgb:fafafa&w=1240&h=1240"
+    }
+   ],
+   "img": "babybjorn-baby-carrier-one-air",
+   "img_src": "https://images.ctfassets.net/50gzycvace50/c92452f3df0b35d9a45ce8528d836cb67ffe0d965e63ff24d5033695c79158ca/6382652657952dfc67eb4878b17fced8/c92452f3df0b35d9a45ce8528d836cb67ffe0d965e63ff24d5033695c79158ca.png?fl=progressive&fm=jpg&bg=rgb:fafafa&w=1240&h=1240"
+  },
+  {
+   "id": "camden-rose-organic-cotton-bunny-doll",
+   "type": "dolls",
+   "brand": "Camden Rose",
+   "line": "Organic Cotton Bunny Doll",
+   "uses": [
+    "100% organic cotton Sherpa"
+   ],
+   "free": [],
+   "outside": [],
+   "unconfirmed": [
+    "Filling",
+    "Thread",
+    "Embroidery or features",
+    "Dyes"
+   ],
+   "facts": {
+    "main": "unknown",
+    "parts": "unknown",
+    "color": "unknown",
+    "organic": "yes"
+   },
+   "unstated": {
+    "main": [
+     "Filling"
+    ],
+    "parts": [
+     "Thread"
+    ],
+    "color": [
+     "Dyes",
+     "Embroidery or features"
+    ]
+   },
+   "contains": [],
+   "standards": [
+    "organic-unnamed"
+   ],
+   "quote": "Snuggly tag-a-long bunny made from 100% organic cotton Sherpa",
+   "note": "Handmade in the USA.",
+   "products": [
+    {
+     "name": "Organic Cotton Bunny Doll",
+     "url": "https://camdenrose.com/products/organic-cotton-bunny-doll-with-legs",
+     "store": "Camden Rose",
+     "price": "$29.99",
+     "ships_from": "US",
+     "shipping": "Free standard domestic shipping on orders over $150 to the contiguous US"
+    }
+   ],
+   "read": "2026-11-12",
+   "photos": [
+    {
+     "key": "camden-rose-organic-cotton-bunny-doll",
+     "src": "https://cdn.shopify.com/s/files/1/0658/7164/2856/files/3293-bunnydoll-3334.jpg?v=1769182612"
+    },
+    {
+     "key": "camden-rose-organic-cotton-bunny-doll_2",
+     "src": "https://cdn.shopify.com/s/files/1/0658/7164/2856/files/3293-bunnydoll-3335.jpg?v=1769182612"
+    },
+    {
+     "key": "camden-rose-organic-cotton-bunny-doll_3",
+     "src": "https://cdn.shopify.com/s/files/1/0658/7164/2856/files/3293-bunnydoll_d55cf1db-4532-4c39-ac55-5f9f2be46b3c.jpg?v=1769182612"
+    }
+   ],
+   "img": "camden-rose-organic-cotton-bunny-doll",
+   "img_src": "https://cdn.shopify.com/s/files/1/0658/7164/2856/files/3293-bunnydoll-3334.jpg?v=1769182612"
+  },
+  {
+   "id": "crywolf-chill-sweater",
+   "type": "clothes",
+   "brand": "Crywolf",
+   "line": "Chill Sweater (brushed organic cotton)",
+   "uses": [
+    "95% organic cotton"
+   ],
+   "free": [],
+   "outside": [
+    "5% elastane"
+   ],
+   "unconfirmed": [
+    "Logo print",
+    "Dyes",
+    "Thread"
+   ],
+   "facts": {
+    "main": "no",
+    "parts": "unknown",
+    "color": "unknown",
+    "organic": "yes"
+   },
+   "unstated": {
+    "parts": [
+     "Thread"
+    ],
+    "color": [
+     "Dyes",
+     "Logo print"
+    ]
+   },
+   "contains": [],
+   "standards": [
+    "organic-unnamed"
+   ],
+   "age": {
+    "min_months": 12,
+    "text": "Sizes 1YR and up"
+   },
+   "quote": "Materials 320gsm 95% organic cotton 5% elastane",
+   "note": "Designed in New Zealand. Price shown in New Zealand dollars on the maker's store.",
+   "products": [
+    {
+     "name": "CHILL SWEATER Bows",
+     "url": "https://crywolfchild.com/products/chill-sweater-bows",
+     "store": "Crywolf",
+     "price": "$41.99 NZD (sale; was $59.99 NZD)",
+     "ships_from": "New Zealand"
+    }
+   ],
+   "read": "2026-11-12",
+   "photos": [
+    {
+     "key": "crywolf-chill-sweater",
+     "src": "https://cdn.shopify.com/s/files/1/2228/8463/files/CRYWOLF-AW26-Chill-Sweater-Bows-Front-WEB-JPG.jpg?v=1773694490"
+    },
+    {
+     "key": "crywolf-chill-sweater_2",
+     "src": "https://cdn.shopify.com/s/files/1/2228/8463/files/CRYWOLF-AW26-Chill-Sweater-Bows-b-WEB-JPG.jpg?v=1773936400"
+    },
+    {
+     "key": "crywolf-chill-sweater_3",
+     "src": "https://cdn.shopify.com/s/files/1/2228/8463/files/CRYWOLF-AW26-Chill-Sweater-Bows-c-WEB-JPG.jpg?v=1773936400"
+    },
+    {
+     "key": "crywolf-chill-sweater_4",
+     "src": "https://cdn.shopify.com/s/files/1/2228/8463/files/CRYWOLF-AW26-Chill-Sweater-Bows-a-WEB-JPG.jpg?v=1773936400"
+    },
+    {
+     "key": "crywolf-chill-sweater_5",
+     "src": "https://cdn.shopify.com/s/files/1/2228/8463/files/CRYWOLF-AW26-Chill-Sweater-Bows-d-WEB-JPG.jpg?v=1773936400"
+    },
+    {
+     "key": "crywolf-chill-sweater_6",
+     "src": "https://cdn.shopify.com/s/files/1/2228/8463/files/CRYWOLF-AW26-Chill-Sweater-Bows-f-WEB-JPG_2f68e2e5-3cef-47ac-9c5b-bc017d45924b.jpg?v=1774384998"
+    },
+    {
+     "key": "crywolf-chill-sweater_7",
+     "src": "https://cdn.shopify.com/s/files/1/2228/8463/files/CRYWOLF-AW26-Chill-Sweater-Bows-e-WEB-JPG_6c07ffc7-62fc-4173-a0c2-a84f53f94d28.jpg?v=1774384998"
+    },
+    {
+     "key": "crywolf-chill-sweater_8",
+     "src": "https://crywolfchild.com/cdn/shop/files/preview_images/c9f49d1c27fc4795ba8412e42b65f475.thumbnail.0000000000.jpg?v=1776984631"
+    }
+   ],
+   "img": "crywolf-chill-sweater",
+   "img_src": "https://cdn.shopify.com/s/files/1/2228/8463/files/CRYWOLF-AW26-Chill-Sweater-Bows-Front-WEB-JPG.jpg?v=1773694490"
+  },
+  {
+   "id": "disana-boiled-wool-pants",
+   "type": "clothes",
+   "brand": "Disana",
+   "line": "Boiled Wool Pants (Pumphose, style 3351)",
+   "uses": [
+    "100% organic merino wool, boiled, 260 g/m²"
+   ],
+   "free": [
+    "No synthetic polyester (store's words)"
+   ],
+   "outside": [],
+   "unconfirmed": [
+    "Elastic hidden in the waistband",
+    "Dyes",
+    "Thread",
+    "Wool treatment"
+   ],
+   "facts": {
+    "main": "yes",
+    "parts": "unknown",
+    "color": "unknown",
+    "wool": "unknown",
+    "organic": "yes"
+   },
+   "unstated": {
+    "parts": [
+     "Elastic hidden in the waistband",
+     "Thread"
+    ],
+    "color": [
+     "Dyes"
+    ],
+    "wool": [
+     "Wool treatment"
+    ]
+   },
+   "contains": [],
+   "standards": [
+    "gots"
+   ],
+   "age": {
+    "min_months": 3,
+    "max_months": 48,
+    "text": "Sizes 62/68 3-6 months to 98/104 3-4 years"
+   },
+   "quote": "Soft wool pants in organic merino wool are pliable and gentle on skin, perfect for play or use as pajama pants.",
+   "note": "Hand wash only. Made in Germany. Sold by Green Mountain Diapers (Vermont).",
+   "products": [
+    {
+     "name": "Disana Boiled Wool Pants",
+     "url": "https://www.greenmountaindiapers.com/products/disana-boiled-wool-pants-grey",
+     "store": "Green Mountain Diapers",
+     "price": "$64.95",
+     "ships_from": "US"
+    }
+   ],
+   "read": "2026-11-12",
+   "photos": [
+    {
+     "key": "disana-boiled-wool-pants",
+     "src": "https://cdn.shopify.com/s/files/1/1583/5087/files/pumphose-softpink1800.jpg?v=1770431468"
+    },
+    {
+     "key": "disana-boiled-wool-pants_2",
+     "src": "https://cdn.shopify.com/s/files/1/1583/5087/files/33501223.jpg?v=1770431468"
+    },
+    {
+     "key": "disana-boiled-wool-pants_3",
+     "src": "https://cdn.shopify.com/s/files/1/1583/5087/files/disanaBloomerssoftpinkbaby.jpg?v=1770431468"
+    },
+    {
+     "key": "disana-boiled-wool-pants_4",
+     "src": "https://cdn.shopify.com/s/files/1/1583/5087/files/disanaBloomerssoftpinkbackbaby.jpg?v=1770431468"
+    },
+    {
+     "key": "disana-boiled-wool-pants_5",
+     "src": "https://cdn.shopify.com/s/files/1/1583/5087/files/pumphosebabychristmas1300-74-80.jpg?v=1770431468"
+    },
+    {
+     "key": "disana-boiled-wool-pants_6",
+     "src": "https://cdn.shopify.com/s/files/1/1583/5087/files/greypumpose2000.jpg?v=1770431468"
+    },
+    {
+     "key": "disana-boiled-wool-pants_7",
+     "src": "https://cdn.shopify.com/s/files/1/1583/5087/files/bloomers-bluegirl.jpg?v=1770431468"
+    },
+    {
+     "key": "disana-boiled-wool-pants_8",
+     "src": "https://cdn.shopify.com/s/files/1/1583/5087/files/pumphose-caramel2048.jpg?v=1770431468"
+    },
+    {
+     "key": "disana-boiled-wool-pants_9",
+     "src": "https://cdn.shopify.com/s/files/1/1583/5087/files/pumphosecassisfrontback2048.jpg?v=1770431468"
+    },
+    {
+     "key": "disana-boiled-wool-pants_10",
+     "src": "https://cdn.shopify.com/s/files/1/1583/5087/files/pumphosedoveblue2048.jpg?v=1770431468"
+    }
+   ],
+   "img": "disana-boiled-wool-pants",
+   "img_src": "https://cdn.shopify.com/s/files/1/1583/5087/files/pumphose-softpink1800.jpg?v=1770431468"
+  },
+  {
+   "id": "estella-organic-nyc-taxi-rattle",
+   "type": "rattles",
+   "brand": "Estella",
+   "line": "Organic NYC Taxi Rattle (hand-knit)",
+   "uses": [
+    "GOTS certified organic cotton knit"
+   ],
+   "free": [],
+   "outside": [
+    "Polyester filling"
+   ],
+   "unconfirmed": [
+    "Rattle insert",
+    "Names of the dyes",
+    "Embroidery thread"
+   ],
+   "facts": {
+    "main": "no",
+    "parts": "unknown",
+    "color": "unknown",
+    "organic": "yes"
+   },
+   "unstated": {
+    "parts": [
+     "Rattle insert",
+     "Embroidery thread"
+    ],
+    "color": [
+     "Names of the dyes"
+    ]
+   },
+   "contains": [],
+   "standards": [
+    "gots"
+   ],
+   "age": {
+    "min_months": 6,
+    "text": "Ages 6 months+"
+   },
+   "quote": "GOTS certified organic cotton, polyester filling, non-toxic dyes",
+   "note": "Hand-knit in Peru; the store says \"non-toxic dyes\" without naming them. Sold by Acorn Toy Shop.",
+   "products": [
+    {
+     "name": "Estella Organic NYC Taxi Rattle",
+     "url": "https://www.acorntoyshop.com/products/estella-organic-nyc-taxi-rattle",
+     "store": "Acorn Toy Shop",
+     "price": "$28.00",
+     "ships_from": "US"
+    }
+   ],
+   "read": "2026-11-12",
+   "photos": [
+    {
+     "key": "estella-organic-nyc-taxi-rattle",
+     "src": "https://cdn.shopify.com/s/files/1/0050/2048/3699/files/EstellaOrganicNYCTaxiRattle.jpg?v=1762463662"
+    }
+   ],
+   "img": "estella-organic-nyc-taxi-rattle",
+   "img_src": "https://cdn.shopify.com/s/files/1/0050/2048/3699/files/EstellaOrganicNYCTaxiRattle.jpg?v=1762463662"
+  },
+  {
+   "id": "fairyshadow-yellow-flower-baby-doll",
+   "type": "dolls",
+   "brand": "Fairyshadow",
+   "line": "Yellow Flower Baby Doll (3-inch flower child)",
+   "uses": [
+    "Cotton knit velour (80% cotton)",
+    "Wool felt",
+    "Wooden core head"
+   ],
+   "free": [],
+   "outside": [
+    "20% polyester in the cotton knit velour"
+   ],
+   "unconfirmed": [
+    "Stuffing",
+    "Ink on the face",
+    "Dyes in the felt",
+    "Thread"
+   ],
+   "facts": {
+    "main": "no",
+    "parts": "unknown",
+    "color": "unknown"
+   },
+   "unstated": {
+    "color": [
+     "Ink on the face",
+     "Dyes in the felt"
+    ],
+    "parts": [
+     "Thread"
+    ]
+   },
+   "contains": [],
+   "standards": [],
+   "age": {
+    "min_months": 36,
+    "text": "From age three and up"
+   },
+   "quote": "Material Cotton knit velour (80% cotton, 20% polyester), wool felt, wood",
+   "note": "A 3-inch flower child that sits in a wool felt nest of grass; the store says the face is drawn in \"permanent, non-toxic ink\". Sewn by hand in Bodega, California.",
+   "products": [
+    {
+     "name": "Fairyshadow Yellow Flower Baby Doll",
+     "url": "https://mytoywagon.com/products/fairyshadow-yellow-flower-baby-doll",
+     "store": "My Toy Wagon",
+     "price": "$21.00",
+     "ships_from": "US",
+     "shipping": "Free shipping on orders $150+, lower 48 only"
+    }
+   ],
+   "read": "2026-11-12",
+   "photos": [
+    {
+     "key": "fairyshadow-yellow-flower-baby-doll",
+     "src": "https://cdn.shopify.com/s/files/1/0522/0882/8586/files/Yellowflowerbabydoll3.png?v=1742153827"
+    },
+    {
+     "key": "fairyshadow-yellow-flower-baby-doll_2",
+     "src": "https://cdn.shopify.com/s/files/1/0522/0882/8586/files/Yellowflowerbabydoll6.png?v=1742153827"
+    },
+    {
+     "key": "fairyshadow-yellow-flower-baby-doll_3",
+     "src": "https://cdn.shopify.com/s/files/1/0522/0882/8586/files/Yellowflowerbabydoll7.png?v=1742153827"
+    },
+    {
+     "key": "fairyshadow-yellow-flower-baby-doll_4",
+     "src": "https://cdn.shopify.com/s/files/1/0522/0882/8586/files/Yellowflowerbabydoll5.png?v=1742153727"
+    },
+    {
+     "key": "fairyshadow-yellow-flower-baby-doll_5",
+     "src": "https://cdn.shopify.com/s/files/1/0522/0882/8586/files/Yellowflowerbabydoll4.png?v=1742153727"
+    }
+   ],
+   "img": "fairyshadow-yellow-flower-baby-doll",
+   "img_src": "https://cdn.shopify.com/s/files/1/0522/0882/8586/files/Yellowflowerbabydoll3.png?v=1742153827"
+  },
+  {
+   "id": "haba-snug-up-rumbi-soft-doll",
+   "type": "dolls",
+   "brand": "HABA",
+   "line": "Snug Up Rumbi Soft Doll",
+   "uses": [
+    "Cotton",
+    "Enclosed washed sand in the weighted bottom"
+   ],
+   "free": [],
+   "outside": [
+    "Polyester (blended with the cotton)"
+   ],
+   "unconfirmed": [
+    "Which parts are cotton and which polyester",
+    "Filling of the soft body",
+    "Red shoes",
+    "Dyes",
+    "Thread"
+   ],
+   "facts": {
+    "main": "no",
+    "parts": "unknown",
+    "color": "unknown"
+   },
+   "unstated": {
+    "parts": [
+     "Red shoes",
+     "Thread"
+    ],
+    "color": [
+     "Dyes"
+    ]
+   },
+   "contains": [],
+   "standards": [],
+   "age": {
+    "min_months": 18,
+    "text": "Recommended age: 18 months and up"
+   },
+   "quote": "Made from cotton and polyester, Rumbi has a weighted bottom containing enclosed washed sand.",
+   "note": "Removable overalls with a real pocket; machine wash cold/delicate.",
+   "products": [
+    {
+     "name": "HABA Snug Up Rumbi Soft Doll",
+     "url": "https://thebabypenguin.com/products/snug-up-doll-rumbi",
+     "store": "The Baby Penguin",
+     "price": "$19.99",
+     "ships_from": "US",
+     "shipping": "Free standard shipping on orders of $50 or more"
+    }
+   ],
+   "read": "2026-11-12",
+   "photos": [
+    {
+     "key": "haba-snug-up-rumbi-soft-doll",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Snug-Up-Doll-Rumbi-HABA-USA-125881515.jpg?v=1781463418"
+    },
+    {
+     "key": "haba-snug-up-rumbi-soft-doll_2",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Snug-Up-Doll-Rumbi-HABA-USA-125881657.jpg?v=1781463418"
+    },
+    {
+     "key": "haba-snug-up-rumbi-soft-doll_3",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Snug-Up-Doll-Rumbi-HABA-USA-125881794.jpg?v=1781463421"
+    },
+    {
+     "key": "haba-snug-up-rumbi-soft-doll_4",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Snug-Up-Doll-Rumbi-HABA-USA-125881867.jpg?v=1781463421"
+    },
+    {
+     "key": "haba-snug-up-rumbi-soft-doll_5",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Snug-Up-Doll-Rumbi-HABA-USA-125881920.jpg?v=1781463423"
+    },
+    {
+     "key": "haba-snug-up-rumbi-soft-doll_6",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Snug-Up-Doll-Rumbi-HABA-USA-125882097.jpg?v=1781463423"
+    },
+    {
+     "key": "haba-snug-up-rumbi-soft-doll_7",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Snug-Up-Doll-Rumbi-HABA-USA-125882148.jpg?v=1781463426"
+    },
+    {
+     "key": "haba-snug-up-rumbi-soft-doll_8",
+     "src": "https://thebabypenguin.com/cdn/shop/files/Snug-Up-Doll-Rumbi-HABA-USA-125881515.jpg?v=1781463418&width=1920"
+    }
+   ],
+   "img": "haba-snug-up-rumbi-soft-doll",
+   "img_src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Snug-Up-Doll-Rumbi-HABA-USA-125881515.jpg?v=1781463418"
+  },
+  {
+   "id": "konges-slojd-celia-baby-doll",
+   "type": "dolls",
+   "brand": "Konges Sløjd",
+   "line": "Celia Baby Doll (32 cm)",
+   "uses": [
+    "Cotton body shell",
+    "Cotton clothes"
+   ],
+   "free": [],
+   "outside": [
+    "Vinyl doll head and limbs",
+    "Polyester filling",
+    "Polypropylene (PP) pacifier"
+   ],
+   "unconfirmed": [
+    "Eyes",
+    "Thread",
+    "Dyes and face paint"
+   ],
+   "facts": {
+    "main": "no",
+    "parts": "unknown",
+    "color": "unknown",
+    "accessory": "no"
+   },
+   "unstated": {
+    "parts": [
+     "Eyes",
+     "Thread"
+    ],
+    "color": [
+     "Dyes and face paint"
+    ]
+   },
+   "contains": [],
+   "standards": [],
+   "age": {
+    "min_months": 18,
+    "text": "Suitable from 18m+"
+   },
+   "quote": "Material: Doll Vinyl, Body Shell Cotton, Filling Polyester, Clothes Cotton, Pacifier Pp",
+   "note": "Comes with a two-piece cotton set and a pacifier. CE marked. Sold by Pacifier (Minneapolis).",
+   "products": [
+    {
+     "name": "Celia Baby Doll - Rosetto by Konges Sløjd",
+     "url": "https://pacifierkids.com/products/celia-baby-doll-rosetto-by-konges-sljd",
+     "store": "Pacifier",
+     "price": "$57.60",
+     "ships_from": "US"
+    }
+   ],
+   "read": "2026-11-12",
+   "photos": [
+    {
+     "key": "konges-slojd-celia-baby-doll",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/PACK_KS105942_P05261_1_1__260619114109.jpg?v=1788970139"
+    },
+    {
+     "key": "konges-slojd-celia-baby-doll_2",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/MOOD_KS105966_P10092_KS105942_P05261_KS106215_S20071_1_260707091124.jpg?v=1788956498"
+    },
+    {
+     "key": "konges-slojd-celia-baby-doll_3",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/MOOD_KS105967_P30142_KS105942_P05261_1_260707091237.jpg?v=1788956501"
+    },
+    {
+     "key": "konges-slojd-celia-baby-doll_4",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/PACK_KS105942_P05261_2_1__260619114110.jpg?v=1788956512"
+    },
+    {
+     "key": "konges-slojd-celia-baby-doll_5",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/PACK_KS105942_P05261_3_1__260619114111.jpg?v=1788956516"
+    },
+    {
+     "key": "konges-slojd-celia-baby-doll_6",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/PACK_KS105942_P05261_4_1__260619114111.jpg?v=1788956521"
+    },
+    {
+     "key": "konges-slojd-celia-baby-doll_7",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/PACK_KS105942_P05261_5_1__260619114112.jpg?v=1788956527"
+    },
+    {
+     "key": "konges-slojd-celia-baby-doll_8",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/product_photo_-_white_background_24_160a0e80-d32c-4d4f-ab8e-b147ea533552.jpg?v=1788956495"
+    }
+   ],
+   "img": "konges-slojd-celia-baby-doll",
+   "img_src": "https://cdn.shopify.com/s/files/1/0281/8056/files/PACK_KS105942_P05261_1_1__260619114109.jpg?v=1788970139"
+  },
+  {
+   "id": "little-mae-co-ring-sling-carrier",
+   "type": "carriers",
+   "brand": "Little Mae & Co",
+   "line": "Ring Sling Carrier (Red Plaid)",
+   "uses": [
+    "Double cotton fabric",
+    "Two aluminum rings"
+   ],
+   "free": [],
+   "outside": [],
+   "unconfirmed": [
+    "Other fibres in the \"cotton blend\"",
+    "Thread",
+    "Dyes in the plaid"
+   ],
+   "facts": {
+    "main": "unknown",
+    "parts": "unknown",
+    "color": "unknown"
+   },
+   "unstated": {
+    "main": [
+     "Other fibres in the \"cotton blend\""
+    ],
+    "parts": [
+     "Thread"
+    ],
+    "color": [
+     "Dyes in the plaid"
+    ]
+   },
+   "contains": [],
+   "standards": [],
+   "age": {
+    "min_months": 0,
+    "text": "Supports newborns up to 35 lbs"
+   },
+   "quote": "Made from sturdy double cotton fabric for year-round use",
+   "note": "The page also says \"Cotton blend composition for comfort\" without naming the other fibres. 80\" length. Sold by EasyTot.",
+   "products": [
+    {
+     "name": "Red Plaid Ring Sling Carrier",
+     "url": "https://easytot.com/products/red-plaid-ring-sling-carrier",
+     "store": "EasyTot",
+     "price": "$69.99",
+     "ships_from": null,
+     "shipping": "Free shipping $75+"
+    }
+   ],
+   "read": "2026-11-12",
+   "photos": [
+    {
+     "key": "little-mae-co-ring-sling-carrier",
+     "src": "https://cdn.shopify.com/s/files/1/0556/0519/8922/files/IMG_6061.jpg?v=1793894635"
+    },
+    {
+     "key": "little-mae-co-ring-sling-carrier_2",
+     "src": "https://cdn.shopify.com/s/files/1/0556/0519/8922/files/IMG_5970_8d4c694a-11e9-45d5-89ef-fa1fd40bc015.jpg?v=1793894635"
+    }
+   ],
+   "img": "little-mae-co-ring-sling-carrier",
+   "img_src": "https://cdn.shopify.com/s/files/1/0556/0519/8922/files/IMG_6061.jpg?v=1793894635"
+  },
+  {
+   "id": "quincy-mae-luca-corduroy-pant",
+   "type": "clothes",
+   "brand": "Quincy Mae",
+   "line": "Luca Corduroy Pant",
+   "uses": [
+    "98% organic cotton corduroy"
+   ],
+   "free": [],
+   "outside": [
+    "2% elastane"
+   ],
+   "unconfirmed": [
+    "Elastic waistband",
+    "Drawstring",
+    "Dyes",
+    "Thread"
+   ],
+   "facts": {
+    "main": "no",
+    "parts": "unknown",
+    "color": "unknown",
+    "organic": "yes"
+   },
+   "unstated": {
+    "parts": [
+     "Elastic waistband",
+     "Drawstring",
+     "Thread"
+    ],
+    "color": [
+     "Dyes"
+    ]
+   },
+   "contains": [],
+   "standards": [
+    "gots"
+   ],
+   "age": {
+    "min_months": 0,
+    "text": "Sizes from 0-3M"
+   },
+   "quote": "Made from 98% organic cotton, 2% elastane for soft, durable all-day comfort. GOTS certified.",
+   "note": "Sold by The Natural Baby Co.",
+   "products": [
+    {
+     "name": "Quincy Mae Luca Corduroy Pant- Midnight",
+     "url": "https://www.thenaturalbabyco.com/products/quincy-mae-luca-pant-midnight",
+     "store": "The Natural Baby Co.",
+     "price": "$38.00",
+     "ships_from": "US"
+    }
+   ],
+   "read": "2026-11-12",
+   "photos": [
+    {
+     "key": "quincy-mae-luca-corduroy-pant",
+     "src": "https://cdn.shopify.com/s/files/1/2386/1081/files/QM260SNOO-MIDNIGHT-1.jpg?v=1789001870"
+    },
+    {
+     "key": "quincy-mae-luca-corduroy-pant_2",
+     "src": "https://cdn.shopify.com/s/files/1/2386/1081/files/QM-AW26-D2-LIFESTYLE-OCEANSIDE-WEB-174.jpg?v=1789001870"
+    },
+    {
+     "key": "quincy-mae-luca-corduroy-pant_3",
+     "src": "https://cdn.shopify.com/s/files/1/2386/1081/files/QM-AW26-D2-STUDIO-WEB-112.jpg?v=1789001870"
+    }
+   ],
+   "img": "quincy-mae-luca-corduroy-pant",
+   "img_src": "https://cdn.shopify.com/s/files/1/2386/1081/files/QM260SNOO-MIDNIGHT-1.jpg?v=1789001870"
+  },
+  {
+   "id": "quut-beedi-floating-bath-lacing-beads",
+   "type": "bath",
+   "brand": "Quut",
+   "line": "Beedi Floating Bath Lacing Beads (Fish)",
+   "uses": [],
+   "free": [],
+   "outside": [
+    "Soft EVA foam beads",
+    "Silicone (part not named)"
+   ],
+   "unconfirmed": [
+    "Lacing cord",
+    "Suction cup",
+    "Colourants"
+   ],
+   "facts": {
+    "main": "no",
+    "parts": "unknown",
+    "color": "unknown",
+    "silicone": "unknown"
+   },
+   "unstated": {
+    "parts": [
+     "Lacing cord",
+     "Suction cup"
+    ],
+    "color": [
+     "Colourants"
+    ]
+   },
+   "contains": [],
+   "standards": [],
+   "age": {
+    "min_months": 10,
+    "text": "Floating and shape play from 10 months"
+   },
+   "quote": "Materials: soft EVA foam and silicone.",
+   "note": "Foam beads float and cling to wet bath walls; includes a suction cup. Sold by The Baby Penguin.",
+   "products": [
+    {
+     "name": "Quut Beedi Fish Floating Bath Lacing Beads",
+     "url": "https://thebabypenguin.com/products/beedi-fish-soft-eva-foam-lacing-beads-for-toddlers",
+     "store": "The Baby Penguin",
+     "price": "$22.00",
+     "ships_from": "US",
+     "shipping": "Free standard shipping on orders of $50 or more"
+    }
+   ],
+   "read": "2026-11-12",
+   "photos": [
+    {
+     "key": "quut-beedi-floating-bath-lacing-beads",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Beedi-Fish-_-Soft-EVA-Foam-Lacing-Beads-for-Toddlers-Quut-Toys-USA-128031298.webp?v=1771692953"
+    },
+    {
+     "key": "quut-beedi-floating-bath-lacing-beads_2",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Beedi-Fish-_-Soft-EVA-Foam-Lacing-Beads-for-Toddlers-Quut-Toys-USA-128031469.webp?v=1771692958"
+    },
+    {
+     "key": "quut-beedi-floating-bath-lacing-beads_3",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Beedi-Fish-_-Soft-EVA-Foam-Lacing-Beads-for-Toddlers-Quut-Toys-USA-128031598.webp?v=1771692960"
+    },
+    {
+     "key": "quut-beedi-floating-bath-lacing-beads_4",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Beedi-Fish-_-Soft-EVA-Foam-Lacing-Beads-for-Toddlers-Quut-Toys-USA-128031656.webp?v=1771692963"
+    },
+    {
+     "key": "quut-beedi-floating-bath-lacing-beads_5",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Beedi-Fish-_-Soft-EVA-Foam-Lacing-Beads-for-Toddlers-Quut-Toys-USA-128031711.webp?v=1771692966"
+    },
+    {
+     "key": "quut-beedi-floating-bath-lacing-beads_6",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Beedi-Fish-_-Soft-EVA-Foam-Lacing-Beads-for-Toddlers-Quut-Toys-USA-128031862.webp?v=1771692969"
+    }
+   ],
+   "img": "quut-beedi-floating-bath-lacing-beads",
+   "img_src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Beedi-Fish-_-Soft-EVA-Foam-Lacing-Beads-for-Toddlers-Quut-Toys-USA-128031298.webp?v=1771692953"
+  },
+  {
+   "id": "viverano-organics-jacquard-knit-baby-cardigan",
+   "type": "clothes",
+   "brand": "Viverano Organics",
+   "line": "Jacquard Knit Baby Cardigan (organic cotton)",
+   "uses": [
+    "100% organic cotton knit"
+   ],
+   "free": [],
+   "outside": [],
+   "unconfirmed": [
+    "Buttons",
+    "Thread",
+    "Names of the dyes"
+   ],
+   "facts": {
+    "main": "yes",
+    "parts": "unknown",
+    "color": "unknown",
+    "organic": "yes"
+   },
+   "unstated": {
+    "parts": [
+     "Buttons",
+     "Thread"
+    ],
+    "color": [
+     "Names of the dyes"
+    ]
+   },
+   "contains": [],
+   "standards": [
+    "gots"
+   ],
+   "age": {
+    "min_months": 3,
+    "max_months": 48,
+    "text": "Sizes 3-6M to 3-4T"
+   },
+   "quote": "Our 100% organic cotton baby sweater is thoughtfully made as a truly special piece",
+   "note": "Button-front cardigan with a horse and horseshoe jacquard; the maker describes \"gentle dyes\". Designed in the USA, made in India. Sold by Enlightened Baby.",
+   "products": [
+    {
+     "name": "Western Jacquard Knit Baby Cardigan (Organic Cotton)",
+     "url": "https://enlightenedbaby.com/products/western-jacquard-knit-baby-cardigan-organic-cotton",
+     "store": "Enlightened Baby",
+     "price": "$52.99",
+     "ships_from": "US"
+    }
+   ],
+   "read": "2026-11-12",
+   "photos": [
+    {
+     "key": "viverano-organics-jacquard-knit-baby-cardigan",
+     "src": "https://cdn.shopify.com/s/files/1/0707/4850/4296/files/22d56fb5f22b71406e04acad69239a58d91369ebf80c423daf0f9be26df8c8ab.png?v=1785864402"
+    },
+    {
+     "key": "viverano-organics-jacquard-knit-baby-cardigan_2",
+     "src": "https://cdn.shopify.com/s/files/1/0707/4850/4296/files/51c7f66ea45a6c5e57fd8896a8755398e525932305be75fb20f0daac2c0b9d28.png?v=1785864404"
+    },
+    {
+     "key": "viverano-organics-jacquard-knit-baby-cardigan_3",
+     "src": "https://cdn.shopify.com/s/files/1/0707/4850/4296/files/a4bc17b91c6c7029c9e5af29f66d980a19acb0e13f18ddc0cbb0612633a08166.jpg?v=1785864403"
+    },
+    {
+     "key": "viverano-organics-jacquard-knit-baby-cardigan_4",
+     "src": "https://cdn.shopify.com/s/files/1/0707/4850/4296/files/361f1e4f04053f9715101ff11f5c4746792c6c262b18c07cc4955f6b6d6a8cd6.jpg?v=1785864404"
+    },
+    {
+     "key": "viverano-organics-jacquard-knit-baby-cardigan_5",
+     "src": "https://cdn.shopify.com/s/files/1/0707/4850/4296/files/6c1cba4d12b39bcb9c621168ae8678b9bb62258e00c7cb87cae85532fcab5c91.jpg?v=1785864404"
+    },
+    {
+     "key": "viverano-organics-jacquard-knit-baby-cardigan_6",
+     "src": "https://cdn.shopify.com/s/files/1/0707/4850/4296/files/eb8adcf6081f39bb6ce49f68dfc126bb824debc0a0af37e6aa44fabfcf379db6.png?v=1785864403"
+    }
+   ],
+   "img": "viverano-organics-jacquard-knit-baby-cardigan",
+   "img_src": "https://cdn.shopify.com/s/files/1/0707/4850/4296/files/22d56fb5f22b71406e04acad69239a58d91369ebf80c423daf0f9be26df8c8ab.png?v=1785864402"
+  },
+  {
+   "id": "wee-gallery-taggy-ball-with-rattle",
+   "type": "rattles",
+   "brand": "Wee Gallery",
+   "line": "Taggy Ball with Rattle (Woodland)",
+   "uses": [
+    "100% organic cotton fabric shell"
+   ],
+   "free": [],
+   "outside": [
+    "Polyester fill (Oeko-Tex Standard 100)"
+   ],
+   "unconfirmed": [
+    "Rattle insert inside the ball",
+    "Print inks",
+    "Fibre of the tags",
+    "Thread"
+   ],
+   "facts": {
+    "main": "no",
+    "parts": "unknown",
+    "color": "unknown",
+    "organic": "yes"
+   },
+   "unstated": {
+    "parts": [
+     "Rattle insert inside the ball",
+     "Thread"
+    ],
+    "color": [
+     "Print inks"
+    ]
+   },
+   "contains": [],
+   "standards": [
+    "oeko-tex"
+   ],
+   "quote": "Made of: 100% Organic Cotton fabric and washable Oeko-Tex Standard 100 Polyester Fill. Made in a GOTS Certified facility in India.",
+   "note": "4-inch soft patchwork ball with tags and a rattle inside. Sold by My Toy Wagon.",
+   "products": [
+    {
+     "name": "Taggy Ball with Rattle - Woodland",
+     "url": "https://mytoywagon.com/products/taggy-ball-with-rattle-woodland",
+     "store": "My Toy Wagon",
+     "price": "$41.95",
+     "ships_from": "US",
+     "shipping": "Free shipping on orders $150+, lower 48 only"
+    }
+   ],
+   "read": "2026-11-12",
+   "photos": [
+    {
+     "key": "wee-gallery-taggy-ball-with-rattle",
+     "src": "https://cdn.shopify.com/s/files/1/0522/0882/8586/files/wee-gallery-texture-taggy-ball-toy-for-baby-woodland-1.jpg?v=1725765165"
+    },
+    {
+     "key": "wee-gallery-taggy-ball-with-rattle_2",
+     "src": "https://cdn.shopify.com/s/files/1/0522/0882/8586/files/wee-gallery-taggy-ball-for-baby-organic-cotton-woodland-2.jpg?v=1725765165"
+    },
+    {
+     "key": "wee-gallery-taggy-ball-with-rattle_3",
+     "src": "https://cdn.shopify.com/s/files/1/0522/0882/8586/files/wee-gallery-organic-fabric-taggy-balls-clutch-ball-for-baby-woodland.jpg?v=1725765166"
+    },
+    {
+     "key": "wee-gallery-taggy-ball-with-rattle_4",
+     "src": "https://cdn.shopify.com/s/files/1/0522/0882/8586/files/baby-taggy-ball-toy-textures-montessoriy-high-contrast-1_c8ec0289-a834-47ef-a643-8a1aaceb7ac1.jpg?v=1725765167"
+    },
+    {
+     "key": "wee-gallery-taggy-ball-with-rattle_5",
+     "src": "https://cdn.shopify.com/s/files/1/0522/0882/8586/files/wee-gallery-organic-fabric-taggy-balls-for-baby.jpg?v=1725765166"
+    }
+   ],
+   "img": "wee-gallery-taggy-ball-with-rattle",
+   "img_src": "https://cdn.shopify.com/s/files/1/0522/0882/8586/files/wee-gallery-texture-taggy-ball-toy-for-baby-woodland-1.jpg?v=1725765165"
+  },
+  {
+   "id": "wildride-toddler-carrier-linen",
+   "type": "carriers",
+   "brand": "Wildride",
+   "line": "Toddler Carrier, Sand Linen (hip carrier)",
+   "uses": [
+    "Linen"
+   ],
+   "free": [],
+   "outside": [],
+   "unconfirmed": [
+    "Buckles and adjusters",
+    "Seat padding",
+    "Webbing",
+    "Thread",
+    "Dye"
+   ],
+   "facts": {
+    "main": "unknown",
+    "parts": "unknown",
+    "color": "unknown"
+   },
+   "unstated": {
+    "main": [
+     "Seat padding",
+     "Webbing"
+    ],
+    "parts": [
+     "Buckles and adjusters",
+     "Thread"
+    ],
+    "color": [
+     "Dye"
+    ]
+   },
+   "contains": [],
+   "standards": [],
+   "age": {
+    "min_months": 9,
+    "max_months": 48,
+    "text": "Suitable for toddlers 9 months–4 years, up to 20 kg / 44 lbs"
+   },
+   "quote": "Crafted from linen for lasting comfort and durability.",
+   "note": "Hip carrier for toddlers; the page says it is SGS-tested and Dutch-designed. Sold by EasyTot.",
+   "products": [
+    {
+     "name": "Toddler Carrier Sand Linen",
+     "url": "https://easytot.com/products/toddler-carrier-sand-linen",
+     "store": "EasyTot",
+     "price": "$99.00",
+     "ships_from": null,
+     "shipping": "Free shipping $75+"
+    }
+   ],
+   "read": "2026-11-12",
+   "photos": [
+    {
+     "key": "wildride-toddler-carrier-linen",
+     "src": "https://cdn.shopify.com/s/files/1/0556/0519/8922/files/sand-linen-best-carrier-for-toddlers-folded-00004.png?v=1793373146"
+    },
+    {
+     "key": "wildride-toddler-carrier-linen_2",
+     "src": "https://cdn.shopify.com/s/files/1/0556/0519/8922/files/sand-linnen-2-toddler-carrier.jpg?v=1793373221"
+    },
+    {
+     "key": "wildride-toddler-carrier-linen_3",
+     "src": "https://cdn.shopify.com/s/files/1/0556/0519/8922/files/sand-linen-save-toddler-carrier-unfolded-00005.png?v=1793373190"
+    },
+    {
+     "key": "wildride-toddler-carrier-linen_4",
+     "src": "https://cdn.shopify.com/s/files/1/0556/0519/8922/files/toddler-carrier-sand-linen-dad-walking.png?v=1793373239"
+    },
+    {
+     "key": "wildride-toddler-carrier-linen_5",
+     "src": "https://cdn.shopify.com/s/files/1/0556/0519/8922/files/sand-linen-toddler-carrier-for-dads-00003-2.png?v=1793373267"
+    },
+    {
+     "key": "wildride-toddler-carrier-linen_6",
+     "src": "https://cdn.shopify.com/s/files/1/0556/0519/8922/files/sand-linen-toddler-carrier-for-walking-000010.png?v=1793373267"
+    }
+   ],
+   "img": "wildride-toddler-carrier-linen",
+   "img_src": "https://cdn.shopify.com/s/files/1/0556/0519/8922/files/sand-linen-best-carrier-for-toddlers-folded-00004.png?v=1793373146"
   }
  ]
 }

@@ -9319,7 +9319,8 @@
    "type": "clothes",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "crywolf-chill-sweater"
   },
   {
    "url": "https://crywolfchild.com/products/chill-sweater-pony-club",
@@ -24044,7 +24045,8 @@
    "type": "clothes",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "disana-boiled-wool-pants"
   },
   {
    "url": "https://www.greenmountaindiapers.com/products/grab-bag",
@@ -45796,7 +45798,8 @@
    "type": "dolls",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "skipped",
+   "reason": "page names no material (only jersey hair)"
   },
   {
    "url": "https://www.bellalunatoys.com/products/blanches-evening-dress-up-wardrobe",
@@ -45814,7 +45817,8 @@
    "type": "dolls",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "skipped",
+   "reason": "page names no material (only jersey hair)"
   },
   {
    "url": "https://www.bellalunatoys.com/products/garden-turtle-activity-toy",
@@ -53468,7 +53472,8 @@
    "type": "clothes",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "viverano-organics-jacquard-knit-baby-cardigan"
   },
   {
    "url": "https://enlightenedbaby.com/products/clara-floral-knit-baby-tutu-dress-organic-cotton",
@@ -62376,7 +62381,8 @@
    "type": "dolls",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "camden-rose-organic-cotton-bunny-doll"
   },
   {
    "url": "https://camdenrose.com/products/mercurius-blackboard-pastel-chalk-16-assorted-colors",
@@ -88936,7 +88942,8 @@
    "type": "bath",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "quut-beedi-floating-bath-lacing-beads"
   },
   {
    "url": "https://thebabypenguin.com/products/blokki-soft-foam-stacking-blocks-for-toddlers-and-kids",
@@ -91908,7 +91915,8 @@
    "type": "dolls",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "haba-snug-up-rumbi-soft-doll"
   },
   {
    "url": "https://thebabypenguin.com/products/snug-up-doll-lauren",
@@ -99015,7 +99023,8 @@
    "type": "rattles",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "wee-gallery-taggy-ball-with-rattle"
   },
   {
    "url": "https://mytoywagon.com/products/wood-stacker-panda",
@@ -101445,7 +101454,8 @@
    "type": "dolls",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "fairyshadow-yellow-flower-baby-doll"
   },
   {
    "url": "https://mytoywagon.com/products/fairyshadow-pocket-mama-waldorf-doll-assorted-colors",
@@ -104460,7 +104470,8 @@
    "type": "clothes",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "quincy-mae-luca-corduroy-pant"
   },
   {
    "url": "https://www.thenaturalbabyco.com/products/jellycat-munro-scottie-dog",
@@ -124327,7 +124338,8 @@
    "type": "dolls",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "konges-slojd-celia-baby-doll"
   },
   {
    "url": "https://pacifierkids.com/products/cattie-baby-doll-with-lift-ciao-miao-rose-by-konges-sljd",
@@ -154467,7 +154479,8 @@
    "type": "rattles",
    "source": "watchlist",
    "first_seen": "2026-10-26",
-   "status": "new"
+   "status": "listed",
+   "listing": "estella-organic-nyc-taxi-rattle"
   },
   {
    "url": "https://www.acorntoyshop.com/products/estella-organic-basketball-rattle",
@@ -169617,7 +169630,8 @@
    "type": "carriers",
    "source": "watchlist",
    "first_seen": "2026-10-31",
-   "status": "new"
+   "status": "skipped",
+   "reason": "page names no material"
   },
   {
    "url": "https://easytot.com/products/green-christmas-tree-truck-embroidery-plaid-jonjon",
@@ -187960,7 +187974,8 @@
    "type": "carriers",
    "source": "watchlist",
    "first_seen": "2026-11-07",
-   "status": "new"
+   "status": "listed",
+   "listing": "little-mae-co-ring-sling-carrier"
   },
   {
    "url": "https://easytot.com/products/blue-puppy-rattle",
@@ -194881,7 +194896,8 @@
    "type": "carriers",
    "source": "watchlist",
    "first_seen": "2026-11-10",
-   "status": "new"
+   "status": "listed",
+   "listing": "wildride-toddler-carrier-linen"
   },
   {
    "url": "https://easytot.com/products/toddler-carrier-black",
