@@ -502,6 +502,22 @@
     var items = C.items.filter(function (i) { return i.aisles.indexOf(g.id) >= 0 && i.img; });
     return items.filter(function (i) { return status(i).ok; })[0] || items[0] || null;
   }
+  // A row of tiles that scrolls sideways with snap; arrow buttons page it on devices with a pointer. `lead` is an
+  // extra first tile (the department's own "All ..." tile in one layout option).
+  function scroller(strip, lead) {
+    if (lead) strip = strip.replace('>', '>' + lead);
+    return '<div class="scroller">' + strip +
+      '<button type="button" class="s-arrow prev" data-sstep="-1" aria-label="Scroll left" tabindex="-1" disabled>' + icon('chev') + '</button>' +
+      '<button type="button" class="s-arrow next" data-sstep="1" aria-label="Scroll right" tabindex="-1">' + icon('chev') + '</button></div>';
+  }
+  function scrollSync(st) {
+    var max = st.scrollWidth - st.clientWidth;
+    $$('.s-arrow', st.parentNode).forEach(function (b) { b.disabled = b.classList.contains('prev') ? st.scrollLeft <= 2 : st.scrollLeft >= max - 2; });
+  }
+  function scrollSyncAll() { $$('.scroller > .strip').forEach(scrollSync); }
+  function scrollStep(st, dir) {
+    st.scrollBy({ left: dir * Math.max(120, st.clientWidth - 140), behavior: REDUCED() ? 'auto' : 'smooth' });
+  }
   // `pool` limits the photos to those items, and `within` sends each tile to that page filtered to the type instead of
   // to the type's own page (a material page's types stay on the material page and show that material).
   function typeTiles(ids, cls, current, query, pool, within) {
@@ -600,14 +616,20 @@
     var okItems = C.items.filter(function (i) { return status(i).ok; });
     var groups = liveGroups();
     var art = groups.map(groupPic).filter(Boolean).slice(0, 3);
-    var tiles = aisleTiles(groups);
     var ages = S.AGE_BANDS.map(function (b) {
       var n = C.items.filter(function (i) { return i.ageBands.indexOf(b.id) >= 0; }).length;
       return n ? '<a class="age-chip" href="' + U('/shop', { age: b.id }) + '">' + esc(b.label) + '</a>' : '';
     }).join('');
-    var rows = groups.map(function (g) {
-      return '<section class="sec row-sec"><div class="sec-h"><h2><a href="' + U('/a/' + g.id) + '">' + esc(g.title) + '</a></h2><a href="' + U('/a/' + g.id) + '">All ' + esc(g.title.toLowerCase()) + ' →</a></div>' + typeTiles(g.cats) + '</section>';
-    }).join('');
+    // Each department takes one row: its name, then its product types in a strip that scrolls sideways (arrows on
+    // desktop). Layout options for review: ?home=a|b|c|d.
+    var opt = /^[abcd]$/.test(parseQuery(location.search).home || '') ? parseQuery(location.search).home : 'a';
+    var rows = '<div class="depts opt-' + opt + '">' + groups.map(function (g) {
+      var all = 'All ' + g.title.toLowerCase(), shown = g.cats.map(function (id) { var t = typePic(id); return t && t.img; });
+      var pic = C.items.filter(function (i) { return i.aisles.indexOf(g.id) >= 0 && i.img && shown.indexOf(i.img) < 0 && status(i).ok; })[0] || groupPic(g);
+      var lead = opt === 'b' ? '<a class="ttile dept-lead" href="' + U('/a/' + g.id) + '"><span class="ttile-img">' + picSpan(pic, 'ttile-ph', g.title) + '</span><span class="ttile-t">' + esc(all) + '</span></a>' : '';
+      return '<section class="sec row-sec dept" data-dept="' + g.id + '"><div class="sec-h"><h2><a href="' + U('/a/' + g.id) + '">' + esc(g.title) + '</a></h2>' +
+        (opt === 'b' ? '' : '<a href="' + U('/a/' + g.id) + '">' + esc(all) + ' →</a>') + '</div>' + scroller(typeTiles(g.cats, 'strip'), lead) + '</section>';
+    }).join('') + '</div>';
     var topBrands = brandList().sort(function (a, b) { return b.items.length - a.items.length || S.fold(a.name).localeCompare(S.fold(b.name)); }).slice(0, 18)
       .map(function (b) { return '<a href="' + U('/b/' + b.id) + '">' + esc(b.name) + '</a>'; }).join('');
     var featured = okItems.filter(function (i) { return i.img; }).filter(function (i, k, a) { return a.findIndex(function (x) { return x.brandId === i.brandId; }) === k; }).slice(0, 8);
@@ -616,16 +638,18 @@
       '<p class="lede">What ' + C.items.length + ' babies’ and toddlers’ things are made of, in their makers’ own words.</p>' +
       '<div class="hero-cta"><a class="btn" href="' + U('/shop') + '">Shop all products</a></div></div>' +
       '<div class="hero-art" aria-hidden="true">' + art.map(function (i) { return '<a href="' + U('/p/' + i.id) + '" tabindex="-1"><img src="' + esc(asset(i.img)) + '" alt="" decoding="async"></a>'; }).join('') + '</div></section>' +
-      '<section class="sec"><div class="sec-h"><h2>Shop by category</h2><a href="' + U('/shop') + '">All products →</a></div>' + tiles + '</section>' +
-      '<section class="sec"><div class="sec-h"><h2>Shop by material</h2><a href="' + U('/m') + '">All materials →</a></div>' + matTiles(liveMats(), 'mat-row') + '</section>' +
-      '<section class="sec"><div class="sec-h"><h2>Shop by age</h2></div><div class="ages">' + ages + '</div></section>' +
       rows +
+      '<section class="sec"><div class="sec-h"><h2>Shop by material</h2><a href="' + U('/m') + '">All materials →</a></div>' + scroller(matTiles(liveMats(), 'mat-row strip')) + '</section>' +
+      '<section class="sec"><div class="sec-h"><h2>Shop by age</h2></div><div class="ages">' + ages + '</div></section>' +
       cardRail(listGet(RECENT_KEY).map(byId).filter(Boolean).slice(0, 8), 'Pick up where you left off', U('/saved'), 'Your saved products') +
       cardRail(featured, 'Featured products', U('/shop'), 'See all ' + okItems.length) +
       '</div>' +
       '<section class="band"><div class="wrap"><div><h2>Brands</h2><div class="brand-strip">' + topBrands + '</div><a class="link-b" href="' + U('/brands') + '">All ' + Object.keys(C.brands).length + ' brands</a></div>' +
-      '<div><h2>Materials glossary</h2><p>' + Object.keys(TERMS).length + ' materials and terms from store pages, each with its sources.</p><a class="btn-2" href="' + U('/glossary') + '">Browse the glossary</a></div></div></section>';
-    setNav('home'); setTitle('');
+      '<div><h2>Materials glossary</h2><p>' + Object.keys(TERMS).length + ' materials and terms from store pages, each with its sources.</p><a class="btn-2" href="' + U('/glossary') + '">Browse the glossary</a></div></div></section>' +
+      (parseQuery(location.search).home ? '<nav class="opt-switch" aria-label="Layout options">' + ['a', 'b', 'c', 'd'].map(function (k) {
+        return '<a href="' + U('/', { home: k }) + '"' + (k === opt ? ' aria-current="page"' : '') + '>' + k.toUpperCase() + '</a>';
+      }).join('') + '</nav>' : '');
+    setNav('home'); setTitle(''); scrollSyncAll();
   }
 
   // ---------- listing page ----------
@@ -1207,7 +1231,8 @@
     });
   }
   // Scroll events don't bubble, so one capturing listener keeps every photo strip's counter and thumbnails current.
-  document.addEventListener('scroll', function (ev) { var tr = ev.target; if (tr.classList && tr.classList.contains('g-track')) trackSync(tr); }, true);
+  document.addEventListener('scroll', function (ev) { var tr = ev.target; if (tr.classList && tr.classList.contains('g-track')) trackSync(tr); else if (tr.classList && tr.classList.contains('strip')) scrollSync(tr); }, true);
+  window.addEventListener('resize', scrollSyncAll);
   var tray = document.getElementById('tray');
   function renderTray() {
     var items = listGet(CMP_KEY).map(byId).filter(Boolean);
@@ -1578,6 +1603,8 @@
       closeQuickView();
     } else if (t.matches('[data-gto]')) {
       trackGo($('.g-track', t.closest('.gallery')), +t.getAttribute('data-gto'));
+    } else if (t.matches('[data-sstep]')) {
+      scrollStep($('.strip', t.parentNode), +t.getAttribute('data-sstep'));
     } else if (t.matches('[data-gstep]')) {
       var gt = $('.g-track', t.parentNode); trackGo(gt, trackAt(gt) + +t.getAttribute('data-gstep'));
     } else if (t.matches('[data-zoom]')) {
