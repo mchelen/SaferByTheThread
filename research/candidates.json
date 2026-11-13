@@ -923,7 +923,8 @@
    "type": "towels",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "snuggle-me-organic-robe-towel"
   },
   {
    "url": "https://coloredorganics.com/products/rabbit-crochet-rattle-teether-copy",
@@ -2853,7 +2854,8 @@
    "type": "plates",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "beaba-duralex-glass-plates"
   },
   {
    "url": "https://beaba.us/products/mommy-me-stainless-steel-tumbler-set",
@@ -5087,7 +5089,8 @@
    "type": "pillows",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "avocado-organic-toddler-waterproof-pillow-protector"
   },
   {
    "url": "https://www.avocadogreenmattress.com/products/organic-yoga-meditation-pillow",
@@ -19538,7 +19541,8 @@
    "type": "blocks",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "uncle-goose-language-blocks"
   },
   {
    "url": "https://kodokids.com/products/wheel-axle-kit",
@@ -20238,7 +20242,8 @@
    "type": "balls",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "kodo-kids-marbled-colors-wool-balls"
   },
   {
    "url": "https://kodokids.com/products/natural-number-stacker",
@@ -21704,7 +21709,8 @@
    "type": "stacking",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "mushie-wooden-multi-shape-stacker"
   },
   {
    "url": "https://mushie.com/products/silicone-starter-cup",
@@ -21861,7 +21867,8 @@
    "type": "pacifiers",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "frigg-lucky-symmetrical-silicone-pacifier"
   },
   {
    "url": "https://mushie.com/products/frigg-butterfly-anatomical-silicone-6-18-months",
@@ -22218,7 +22225,8 @@
    "type": "changing-pads",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "mushie-extra-soft-muslin-changing-pad-cover"
   },
   {
    "url": "https://mushie.com/products/star-lovey-blanket",
@@ -22300,7 +22308,8 @@
    "type": "utensils",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "mushie-silicone-feeding-spoons"
   },
   {
    "url": "https://mushie.com/products/snack-cup",
@@ -25351,7 +25360,8 @@
    "type": "cars",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "smiling-tree-toys-love-bug-car"
   },
   {
    "url": "https://smilingtreetoys.com/products/wood-toy-race-car",
@@ -26692,7 +26702,8 @@
    "type": "toddler-beds",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "unavailable"
+   "status": "listed",
+   "listing": "little-partners-mod-toddler-bed"
   },
   {
    "url": "https://www.littlepartners.com/products/explore-n-store-tower",
@@ -33570,7 +33581,8 @@
    "type": "pop-molds",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "tovolo-zoo-crew-pop-molds"
   },
   {
    "url": "https://www.tovolo.com/products/twin-pop-molds",
@@ -41101,7 +41113,8 @@
    "type": "push",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "skipped",
+   "reason": "page names no material (read 2026-11-13)"
   },
   {
    "url": "https://www.deltachildren.com/products/phoebe-3-drawer-dresser-with-interlocking-drawers",
@@ -57121,7 +57134,8 @@
    "type": "bibs",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "babynetic-magnetic-silicone-bucket-bib"
   },
   {
    "url": "https://enlightenedbaby.com/products/maxi-cosi-oxford-modular-travel-system",
@@ -59830,7 +59844,8 @@
    "type": "silks",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "camden-rose-play-silk-canopy"
   },
   {
    "url": "https://camdenrose.com/products/maple-wood-doll-garment-rack-clothes-caddy-optional-hangers-add-on",
