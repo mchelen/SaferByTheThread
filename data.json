@@ -1,6 +1,6 @@
 {
  "schema": 4,
- "updated": "2026-11-12",
+ "updated": "2026-11-13",
  "ask": [
   "Thread on any sewn item (cotton or polyester).",
   "Wheels and axles on push toys and cars.",
@@ -36649,6 +36649,1173 @@
    ],
    "img": "wildride-toddler-carrier-linen",
    "img_src": "https://cdn.shopify.com/s/files/1/0556/0519/8922/files/sand-linen-best-carrier-for-toddlers-folded-00004.png?v=1793373146"
+  },
+  {
+   "id": "avocado-organic-toddler-waterproof-pillow-protector",
+   "type": "pillows",
+   "brand": "Avocado",
+   "line": "Organic Toddler Waterproof Pillow Protector, 21.5 x 14 in",
+   "uses": [
+    "GOTS-certified organic cotton on both sides"
+   ],
+   "free": [
+    "Vinyl",
+    "PVC",
+    "Chemical flame retardants",
+    "PFAS (none detected in lab tests of the same materials)"
+   ],
+   "outside": [
+    "Thin polyurethane waterproof membrane (about 5% of materials)"
+   ],
+   "unconfirmed": [
+    "Thread"
+   ],
+   "facts": {
+    "main": "no",
+    "parts": "unknown",
+    "color": "yes",
+    "flame": "yes",
+    "organic": "yes"
+   },
+   "unstated": {
+    "parts": [
+     "Thread"
+    ]
+   },
+   "standards": [
+    "gots"
+   ],
+   "quote": "GOTS-certified organic cotton (CU863637) on both sides of a thin polyurethane waterproof membrane",
+   "note": "Envelope closure, no zipper. Made for Avocado's Organic Toddler Pillow and Organic Mini Pillow; the page says the cotton is left undyed. The PFAS result is from Intertek's tests of the matching Organic Waterproof Mattress Protector, which the page says uses the same materials.",
+   "products": [
+    {
+     "name": "Organic Toddler Waterproof Pillow Protector",
+     "url": "https://www.avocadogreenmattress.com/products/organic-toddler-waterproof-pillow-protector",
+     "store": "Avocado Green Mattress",
+     "price": "$39",
+     "ships_from": "US"
+    }
+   ],
+   "contains": [],
+   "read": "2026-11-13",
+   "photos": [
+    {
+     "key": "avocado-organic-toddler-waterproof-pillow-protector",
+     "src": "https://cdn.shopify.com/s/files/1/0444/9488/0918/products/AvocadoOrganicToddlerWaterproofPillowProtector.jpg?v=1762201308"
+    },
+    {
+     "key": "avocado-organic-toddler-waterproof-pillow-protector_2",
+     "src": "https://cdn.shopify.com/s/files/1/0444/9488/0918/files/toddler-waterproof-pillow-protector-4.jpg?v=1793116402"
+    },
+    {
+     "key": "avocado-organic-toddler-waterproof-pillow-protector_3",
+     "src": "https://cdn.shopify.com/s/files/1/0444/9488/0918/files/toddler-waterproof-pillow-protector-3.jpg?v=1793116402"
+    }
+   ],
+   "img": "avocado-organic-toddler-waterproof-pillow-protector",
+   "img_src": "https://cdn.shopify.com/s/files/1/0444/9488/0918/products/AvocadoOrganicToddlerWaterproofPillowProtector.jpg?v=1762201308"
+  },
+  {
+   "id": "babynetic-magnetic-silicone-bucket-bib",
+   "type": "bibs",
+   "brand": "Babynetic",
+   "line": "Magnetic Silicone Bucket Bib, Jelly",
+   "uses": [
+    "100% platinum-cured silicone"
+   ],
+   "free": [
+    "PFAs",
+    "BPA",
+    "BPS",
+    "PVC",
+    "Phthalates"
+   ],
+   "unconfirmed": [
+    "Magnets and their casing",
+    "Sparkle and colour pigments"
+   ],
+   "facts": {
+    "main": "yes",
+    "parts": "unknown",
+    "color": "unknown",
+    "silicone": "yes"
+   },
+   "unstated": {
+    "parts": [
+     "Magnets and their casing"
+    ],
+    "color": [
+     "Sparkle and colour pigments"
+    ]
+   },
+   "quote": "our Jelly Bibs are made from 100% platinum-cured silicone and meet LFGB standards",
+   "note": "Translucent bib with sparkles and a magnetic closure, 9 in wide. Sold by Enlightened Baby.",
+   "products": [
+    {
+     "name": "Babynetic Magnetic Silicone Bucket Bib - JELLY",
+     "url": "https://enlightenedbaby.com/products/babynetic-magnetic-silicone-bucket-bib-jelly",
+     "store": "Enlightened Baby",
+     "price": "$28.00",
+     "ships_from": "US"
+    }
+   ],
+   "outside": [],
+   "contains": [],
+   "standards": [],
+   "read": "2026-11-13",
+   "photos": [
+    {
+     "key": "babynetic-magnetic-silicone-bucket-bib",
+     "src": "https://cdn.shopify.com/s/files/1/0707/4850/4296/files/Babynetic-Magnetic-Bib-Strawberry-Jelly.jpg?v=1784406507"
+    },
+    {
+     "key": "babynetic-magnetic-silicone-bucket-bib_2",
+     "src": "https://cdn.shopify.com/s/files/1/0707/4850/4296/files/Babynetic-Magnetic-Bib-Strawberry-Jelly_2.jpg?v=1784406507"
+    },
+    {
+     "key": "babynetic-magnetic-silicone-bucket-bib_3",
+     "src": "https://cdn.shopify.com/s/files/1/0707/4850/4296/files/Babynetic-Magnetic-Bib-Grape-Jelly_1.png?v=1784406658"
+    },
+    {
+     "key": "babynetic-magnetic-silicone-bucket-bib_4",
+     "src": "https://cdn.shopify.com/s/files/1/0707/4850/4296/files/Babynetic-Magnetic-Bib-Kiwi-Jelly_1.png?v=1784406752"
+    },
+    {
+     "key": "babynetic-magnetic-silicone-bucket-bib_5",
+     "src": "https://cdn.shopify.com/s/files/1/0707/4850/4296/files/Babynetic-Magnetic-Bib-Sugar-Jelly.png?v=1784406916"
+    },
+    {
+     "key": "babynetic-magnetic-silicone-bucket-bib_6",
+     "src": "https://cdn.shopify.com/s/files/1/0707/4850/4296/files/Babynetic-Magnetic-Bib-Sugar-Jelly_2.png?v=1784406933"
+    },
+    {
+     "key": "babynetic-magnetic-silicone-bucket-bib_7",
+     "src": "https://cdn.shopify.com/s/files/1/0707/4850/4296/files/Babynetic-Magnetic-Bib-Strawberry-Jelly_3.jpg?v=1784406507"
+    },
+    {
+     "key": "babynetic-magnetic-silicone-bucket-bib_8",
+     "src": "https://cdn.shopify.com/s/files/1/0707/4850/4296/files/Babynetic-Magnetic-Bib-Strawberry-Jelly_1.jpg?v=1784406507"
+    },
+    {
+     "key": "babynetic-magnetic-silicone-bucket-bib_9",
+     "src": "https://cdn.shopify.com/s/files/1/0707/4850/4296/files/Babynetic-Magnetic-Bib-Sugar-Jelly_1.png?v=1784406933"
+    }
+   ],
+   "img": "babynetic-magnetic-silicone-bucket-bib",
+   "img_src": "https://cdn.shopify.com/s/files/1/0707/4850/4296/files/Babynetic-Magnetic-Bib-Strawberry-Jelly.jpg?v=1784406507"
+  },
+  {
+   "id": "beaba-duralex-glass-plates",
+   "type": "plates",
+   "brand": "Béaba",
+   "line": "Béaba x Duralex Glass Plates, set of 3",
+   "uses": [
+    "Tempered glass plates"
+   ],
+   "unconfirmed": [
+    "Material of the suction bases",
+    "Colourant"
+   ],
+   "facts": {
+    "main": "unknown",
+    "color": "unknown"
+   },
+   "unstated": {
+    "main": [
+     "Material of the suction bases"
+    ],
+    "color": [
+     "Colourant"
+    ]
+   },
+   "age": {
+    "min_months": 4,
+    "max_months": 36,
+    "text": "Age: 4mo - 36mo+"
+   },
+   "quote": "this plate set is crafted from tempered glass that's 2.5 times stronger than standard glass",
+   "note": "Made in France with Duralex. The page mentions “Flexible suction bases” without naming their material.",
+   "products": [
+    {
+     "name": "Béaba x Duralex Glass Plates - Set of 3",
+     "url": "https://beaba.us/products/beaba-x-duralex-3-piece-glass-plate-set",
+     "store": "Béaba USA",
+     "price": "$49.99",
+     "ships_from": "US",
+     "shipping": "Free shipping on orders $140*"
+    }
+   ],
+   "free": [],
+   "outside": [],
+   "contains": [],
+   "standards": [],
+   "read": "2026-11-13",
+   "photos": [
+    {
+     "key": "beaba-duralex-glass-plates",
+     "src": "https://cdn.shopify.com/s/files/1/0673/7756/1739/files/1_67b28ca2-12b3-4af0-9512-bab2aa18bb2f.png?v=1785185096"
+    },
+    {
+     "key": "beaba-duralex-glass-plates_2",
+     "src": "https://cdn.shopify.com/s/files/1/0673/7756/1739/files/2_71719331-af3c-4b50-9cd2-893d5c839516.png?v=1785185096"
+    },
+    {
+     "key": "beaba-duralex-glass-plates_3",
+     "src": "https://cdn.shopify.com/s/files/1/0673/7756/1739/files/3_c8e8c98e-9804-4020-8ad1-a1bc9ef3cd51.png?v=1785185097"
+    },
+    {
+     "key": "beaba-duralex-glass-plates_4",
+     "src": "https://cdn.shopify.com/s/files/1/0673/7756/1739/files/4_5efb6a54-859a-43c7-a479-bda16ca7eddc.png?v=1785185097"
+    },
+    {
+     "key": "beaba-duralex-glass-plates_5",
+     "src": "https://cdn.shopify.com/s/files/1/0673/7756/1739/files/5_5491ce9b-4155-4e1e-b643-f27b1608f3f9.png?v=1785185097"
+    },
+    {
+     "key": "beaba-duralex-glass-plates_6",
+     "src": "https://cdn.shopify.com/s/files/1/0673/7756/1739/files/6_fb340584-69ed-4c84-aaf0-909028129327.png?v=1785185097"
+    },
+    {
+     "key": "beaba-duralex-glass-plates_7",
+     "src": "https://cdn.shopify.com/s/files/1/0673/7756/1739/files/7_71bd0110-9f35-4e79-b508-a03b90528fe2.png?v=1785185097"
+    }
+   ],
+   "img": "beaba-duralex-glass-plates",
+   "img_src": "https://cdn.shopify.com/s/files/1/0673/7756/1739/files/1_67b28ca2-12b3-4af0-9512-bab2aa18bb2f.png?v=1785185096"
+  },
+  {
+   "id": "camden-rose-play-silk-canopy",
+   "type": "silks",
+   "brand": "Camden Rose",
+   "line": "Play Silk Canopy, 45 x 108 in, 8mm habotai",
+   "uses": [
+    "8mm habotai China silk"
+   ],
+   "unconfirmed": [
+    "Names of the dyes",
+    "Hem thread"
+   ],
+   "facts": {
+    "main": "yes",
+    "parts": "unknown",
+    "color": "unknown"
+   },
+   "unstated": {
+    "parts": [
+     "Hem thread"
+    ],
+    "color": [
+     "Names of the dyes"
+    ]
+   },
+   "quote": "Materials: 8mm Habotai China Silk",
+   "note": "Hand rolled hem; silk made in China and hand dyed in the USA, according to the page. Sold in Vibrant Rainbow, Pink, Orange / Yellow / Green, Purple and Blue.",
+   "products": [
+    {
+     "name": "Play Silk Canopy - 45\" x 108\" x 8mm",
+     "url": "https://camdenrose.com/products/silk-canopies-45-x-108-x-8mm",
+     "store": "Camden Rose",
+     "price": "$110.00",
+     "ships_from": "US",
+     "shipping": "Free Standard Domestic Shipping on orders over $150 to contiguous US"
+    }
+   ],
+   "free": [],
+   "outside": [],
+   "contains": [],
+   "standards": [],
+   "read": "2026-11-13",
+   "photos": [
+    {
+     "key": "camden-rose-play-silk-canopy",
+     "src": "https://cdn.shopify.com/s/files/1/0658/7164/2856/files/PlaystandCanopies-2979.jpg?v=1758812140"
+    },
+    {
+     "key": "camden-rose-play-silk-canopy_2",
+     "src": "https://cdn.shopify.com/s/files/1/0658/7164/2856/files/DSCF9934_db0c589b-6657-4665-854d-1c37912f10ed.jpg?v=1758812140"
+    },
+    {
+     "key": "camden-rose-play-silk-canopy_3",
+     "src": "https://cdn.shopify.com/s/files/1/0658/7164/2856/files/1820-purple-vert-4030.jpg?v=1787151251"
+    },
+    {
+     "key": "camden-rose-play-silk-canopy_4",
+     "src": "https://cdn.shopify.com/s/files/1/0658/7164/2856/files/1820-purple-vert-4031.jpg?v=1787151251"
+    },
+    {
+     "key": "camden-rose-play-silk-canopy_5",
+     "src": "https://cdn.shopify.com/s/files/1/0658/7164/2856/files/DSCF9916_486b18ef-d3d8-4413-820c-60637c514deb.jpg?v=1758812140"
+    },
+    {
+     "key": "camden-rose-play-silk-canopy_6",
+     "src": "https://cdn.shopify.com/s/files/1/0658/7164/2856/files/DSCF9919_5ec78adb-27e5-4e20-85e8-c8edc769106c.jpg?v=1758812140"
+    },
+    {
+     "key": "camden-rose-play-silk-canopy_7",
+     "src": "https://cdn.shopify.com/s/files/1/0658/7164/2856/files/1820-VibrantRainbow-vertical-1_43e18509-e1d3-4357-b6da-8a5bc31455c2.jpg?v=1760983599"
+    },
+    {
+     "key": "camden-rose-play-silk-canopy_8",
+     "src": "https://cdn.shopify.com/s/files/1/0658/7164/2856/files/1820-Pink-vertical-2474.jpg?v=1758812140"
+    },
+    {
+     "key": "camden-rose-play-silk-canopy_9",
+     "src": "https://cdn.shopify.com/s/files/1/0658/7164/2856/files/1820-Pink-vertical-2475.jpg?v=1758812140"
+    },
+    {
+     "key": "camden-rose-play-silk-canopy_10",
+     "src": "https://cdn.shopify.com/s/files/1/0658/7164/2856/files/1820-Pink-vertical-2476.jpg?v=1758812140"
+    }
+   ],
+   "img": "camden-rose-play-silk-canopy",
+   "img_src": "https://cdn.shopify.com/s/files/1/0658/7164/2856/files/PlaystandCanopies-2979.jpg?v=1758812140"
+  },
+  {
+   "id": "frigg-lucky-symmetrical-silicone-pacifier",
+   "type": "pacifiers",
+   "brand": "FRIGG",
+   "line": "Lucky Symmetrical Silicone Pacifier 2-Pack (0-6 months)",
+   "uses": [
+    "100% medical grade silicone nipple"
+   ],
+   "free": [
+    "BPA",
+    "BPS",
+    "PVC",
+    "Phthalates"
+   ],
+   "outside": [
+    "100% food grade PP plastic shield"
+   ],
+   "unconfirmed": [
+    "Pigments"
+   ],
+   "facts": {
+    "main": "no",
+    "color": "unknown",
+    "silicone": "unknown",
+    "lead": "yes"
+   },
+   "unstated": {
+    "color": [
+     "Pigments"
+    ]
+   },
+   "standards": [
+    "us-toy"
+   ],
+   "age": {
+    "min_months": 0,
+    "max_months": 6,
+    "text": "0-6 Months"
+   },
+   "quote": "SilkySoft™ nipple made from 100% medical grade silicone - 100% food grade PP plastic shield",
+   "note": "Made in Denmark by FRIGG; sold by Mushie. Clover-shaped shield with a symmetrical nipple.",
+   "products": [
+    {
+     "name": "FRIGG Lucky Symmetrical Silicone Pacifier 2-Pack (0-6 Months)",
+     "url": "https://mushie.com/products/frigg-lucky-symmetrical-silicone-2-pack-0-6-months",
+     "store": "Mushie",
+     "price": "$16.99",
+     "ships_from": null,
+     "shipping": "Free Shipping for US orders $75+"
+    }
+   ],
+   "contains": [],
+   "read": "2026-11-13",
+   "photos": [
+    {
+     "key": "frigg-lucky-symmetrical-silicone-pacifier",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/frigg-lucky-size_1-info.jpg?v=1770849539"
+    },
+    {
+     "key": "frigg-lucky-symmetrical-silicone-pacifier_2",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/FRIGG-Nipple-Shape.infographic_147b380f-7666-4b51-bb7a-292fc80144ff.jpg?v=1771435736"
+    },
+    {
+     "key": "frigg-lucky-symmetrical-silicone-pacifier_3",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/FLATLAYSENDOFMARCH-49.jpg?v=1774903785"
+    },
+    {
+     "key": "frigg-lucky-symmetrical-silicone-pacifier_4",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/FLATLAYSENDOFMARCH-39_7e6fbfdf-c612-4eb7-b274-ad530a3ac462.jpg?v=1774903785"
+    },
+    {
+     "key": "frigg-lucky-symmetrical-silicone-pacifier_5",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/malmo_shoot-91.jpg?v=1775514607"
+    },
+    {
+     "key": "frigg-lucky-symmetrical-silicone-pacifier_6",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/Malmo_shoot-102.jpg?v=1774902973"
+    },
+    {
+     "key": "frigg-lucky-symmetrical-silicone-pacifier_7",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/SHOOT_16.12-77.jpg?v=1774902253"
+    },
+    {
+     "key": "frigg-lucky-symmetrical-silicone-pacifier_8",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/2shoots_-28.jpg?v=1776107156"
+    },
+    {
+     "key": "frigg-lucky-symmetrical-silicone-pacifier_9",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/Mathilda_shoot-24_9515e244-25dd-4840-b172-9bf3f1aaa1bf.jpg?v=1774902253"
+    },
+    {
+     "key": "frigg-lucky-symmetrical-silicone-pacifier_10",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/LONDON-45_023e3eb3-701c-4335-aa3b-6484847e18a3.jpg?v=1774902253"
+    }
+   ],
+   "img": "frigg-lucky-symmetrical-silicone-pacifier",
+   "img_src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/frigg-lucky-size_1-info.jpg?v=1770849539"
+  },
+  {
+   "id": "kodo-kids-marbled-colors-wool-balls",
+   "type": "balls",
+   "brand": "Kodo Kids",
+   "line": "Marbled Colors Wool Balls (5)",
+   "uses": [
+    "Natural wool",
+    "Natural dyes"
+   ],
+   "unconfirmed": [
+    "Names of the natural dyes",
+    "Whether the wool is shrink-proofed (superwash)"
+   ],
+   "facts": {
+    "main": "yes",
+    "parts": "yes",
+    "color": "yes",
+    "wool": "unknown"
+   },
+   "unstated": {
+    "wool": [
+     "Whether the wool is shrink-proofed (superwash)"
+    ]
+   },
+   "age": {
+    "min_months": 18,
+    "text": "Age 18 months+"
+   },
+   "quote": "This handmade set of 5 features beautiful, bright shades made using only natural dyes.",
+   "note": "Five handmade balls, each about 3 in across. The page says some shrinkage may occur in washing and that natural-dye colours may fade.",
+   "products": [
+    {
+     "name": "Marbled Colors Wool Balls",
+     "url": "https://kodokids.com/products/marbled-colors-wool-balls",
+     "store": "Kodo Kids",
+     "price": "$30.00",
+     "ships_from": "US"
+    }
+   ],
+   "free": [],
+   "outside": [],
+   "contains": [],
+   "standards": [],
+   "read": "2026-11-13",
+   "photos": [
+    {
+     "key": "kodo-kids-marbled-colors-wool-balls",
+     "src": "https://cdn.shopify.com/s/files/1/0629/8969/7163/files/marbled-colors-wool-balls-3rd-party-papoose.jpg?v=1793805031"
+    },
+    {
+     "key": "kodo-kids-marbled-colors-wool-balls_2",
+     "src": "https://cdn.shopify.com/s/files/1/0629/8969/7163/files/marbled-colors-wool-balls-3rd-party-papoose-2.jpg?v=1793805032"
+    }
+   ],
+   "img": "kodo-kids-marbled-colors-wool-balls",
+   "img_src": "https://cdn.shopify.com/s/files/1/0629/8969/7163/files/marbled-colors-wool-balls-3rd-party-papoose.jpg?v=1793805031"
+  },
+  {
+   "id": "little-partners-mod-toddler-bed",
+   "type": "toddler-beds",
+   "brand": "Little Partners",
+   "line": "MOD Toddler Bed with sides",
+   "outside": [
+    "Layered birch and poplar"
+   ],
+   "unconfirmed": [
+    "Paint ingredients (“non-toxic”, not named)",
+    "Glue in the layered wood",
+    "Hardware"
+   ],
+   "facts": {
+    "main": "yes",
+    "wood": "no",
+    "color": "unknown",
+    "parts": "unknown",
+    "lead": "yes"
+   },
+   "unstated": {
+    "color": [
+     "Paint ingredients (“non-toxic”, not named)"
+    ],
+    "parts": [
+     "Hardware"
+    ]
+   },
+   "age": {
+    "min_months": 15,
+    "text": "Start use at 15 months, holds up to 50 lbs."
+   },
+   "quote": "Constructed from the highest-quality layered Birch and Poplar that is EPA TSCA Title VI compliant. Finished in child-safe, non-toxic paints and materials.",
+   "note": "Low toddler bed with two center-mount guard rails; mattress not included. The page also says “Solid wood construction”, while naming the wood as layered birch and poplar.",
+   "products": [
+    {
+     "name": "MOD Toddler Bed",
+     "url": "https://www.littlepartners.com/products/mod-toddler-bed",
+     "store": "Little Partners",
+     "price": "$179.99",
+     "ships_from": "US",
+     "shipping": "Free Shipping to Continental U.S."
+    }
+   ],
+   "uses": [],
+   "free": [],
+   "contains": [],
+   "standards": [],
+   "read": "2026-11-13",
+   "photos": [
+    {
+     "key": "little-partners-mod-toddler-bed",
+     "src": "https://cdn.shopify.com/s/files/1/0007/7545/4838/files/LP91425-WhitewithEspresso-5_2a6108a9-f378-462c-9a47-4afe335588bf.jpg?v=1772571694"
+    },
+    {
+     "key": "little-partners-mod-toddler-bed_2",
+     "src": "https://cdn.shopify.com/s/files/1/0007/7545/4838/files/LP91425-WhitewithEspresso-1_af9a48bf-042d-4b63-8d82-5873b207ca40.jpg?v=1772571694"
+    },
+    {
+     "key": "little-partners-mod-toddler-bed_3",
+     "src": "https://cdn.shopify.com/s/files/1/0007/7545/4838/files/LP91425-WhitewithEspresso-3_5fd3fbbe-b7a3-4da4-9b0e-2b67d8941360.jpg?v=1772571694"
+    },
+    {
+     "key": "little-partners-mod-toddler-bed_4",
+     "src": "https://cdn.shopify.com/s/files/1/0007/7545/4838/files/LP91425-3_b5abea3d-f43a-42e8-8a5f-2262d0415bbf.jpg?v=1772571694"
+    },
+    {
+     "key": "little-partners-mod-toddler-bed_5",
+     "src": "https://cdn.shopify.com/s/files/1/0007/7545/4838/files/LP91425_-_Non_Toxic_Safety.jpg?v=1772571694"
+    },
+    {
+     "key": "little-partners-mod-toddler-bed_6",
+     "src": "https://cdn.shopify.com/s/files/1/0007/7545/4838/files/LP91428_-_Non_Toxic_Safety.jpg?v=1772571694"
+    },
+    {
+     "key": "little-partners-mod-toddler-bed_7",
+     "src": "https://cdn.shopify.com/s/files/1/0007/7545/4838/files/LP91425-WhitewithEspresso-6_17e49912-334b-4200-b0bc-6be855e7fc32.jpg?v=1772571694"
+    },
+    {
+     "key": "little-partners-mod-toddler-bed_8",
+     "src": "https://cdn.shopify.com/s/files/1/0007/7545/4838/files/LP91428-Measurements_d6965dc6-f33c-42a2-b28e-7923d9109d54.jpg?v=1772571694"
+    }
+   ],
+   "img": "little-partners-mod-toddler-bed",
+   "img_src": "https://cdn.shopify.com/s/files/1/0007/7545/4838/files/LP91425-WhitewithEspresso-5_2a6108a9-f378-462c-9a47-4afe335588bf.jpg?v=1772571694"
+  },
+  {
+   "id": "mushie-extra-soft-muslin-changing-pad-cover",
+   "type": "changing-pads",
+   "brand": "Mushie",
+   "line": "Extra Soft Muslin Changing Pad Cover",
+   "uses": [
+    "100% cotton muslin"
+   ],
+   "unconfirmed": [
+    "Elastic",
+    "Dyes",
+    "Thread"
+   ],
+   "facts": {
+    "main": "yes",
+    "parts": "unknown",
+    "color": "unknown",
+    "lead": "yes"
+   },
+   "unstated": {
+    "parts": [
+     "Elastic",
+     "Thread"
+    ],
+    "color": [
+     "Dyes"
+    ]
+   },
+   "standards": [
+    "us-toy"
+   ],
+   "quote": "Made from 100% cotton, our cozy, extra-soft muslin changing pad cover is pre-washed",
+   "note": "Fits standard 18.5 x 30 x 3.5 in changing pads; fully elastic edge and two safety-belt holes. Changing pad not included.",
+   "products": [
+    {
+     "name": "Extra Soft Muslin Changing Pad Cover",
+     "url": "https://mushie.com/products/extra-soft-muslin-changing-pad-cover",
+     "store": "Mushie",
+     "price": "$19.99",
+     "ships_from": null,
+     "shipping": "Free Shipping for US orders $75+"
+    }
+   ],
+   "free": [],
+   "outside": [],
+   "contains": [],
+   "read": "2026-11-13",
+   "photos": [
+    {
+     "key": "mushie-extra-soft-muslin-changing-pad-cover",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/OliveCheck_ChangingPadCover.jpg?v=1755209975"
+    },
+    {
+     "key": "mushie-extra-soft-muslin-changing-pad-cover_2",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/medium_f761f9dd-5d53-44e6-b650-4c6446d3598f.jpg?v=1787160598"
+    },
+    {
+     "key": "mushie-extra-soft-muslin-changing-pad-cover_3",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/white_changing_pad_cover.jpg?v=1768250515"
+    },
+    {
+     "key": "mushie-extra-soft-muslin-changing-pad-cover_4",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/Tradewinds_ChangingPadCover_Front_Clips_3000px.jpg?v=1768250515"
+    },
+    {
+     "key": "mushie-extra-soft-muslin-changing-pad-cover_5",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/Changing-cover-info_8a255939-05fd-4ba3-946b-569db3a48528.jpg?v=1768426179"
+    },
+    {
+     "key": "mushie-extra-soft-muslin-changing-pad-cover_6",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/products/flatlays_lite-9.jpg?v=1768426488"
+    },
+    {
+     "key": "mushie-extra-soft-muslin-changing-pad-cover_7",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/products/task_swaadles_sheets_mushie-110.jpg?v=1768426488"
+    },
+    {
+     "key": "mushie-extra-soft-muslin-changing-pad-cover_8",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/products/Henry_val-17.jpg?v=1768426488"
+    },
+    {
+     "key": "mushie-extra-soft-muslin-changing-pad-cover_9",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/products/F_love_val-24.jpg?v=1768426488"
+    },
+    {
+     "key": "mushie-extra-soft-muslin-changing-pad-cover_10",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/products/Flower_swaddle-33_18d52b36-3c4d-4145-b920-6a621058597d.jpg?v=1768426488"
+    }
+   ],
+   "img": "mushie-extra-soft-muslin-changing-pad-cover",
+   "img_src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/OliveCheck_ChangingPadCover.jpg?v=1755209975"
+  },
+  {
+   "id": "mushie-silicone-feeding-spoons",
+   "type": "utensils",
+   "brand": "Mushie",
+   "line": "Silicone Feeding Spoons (2 pack)",
+   "uses": [
+    "Food grade silicone"
+   ],
+   "free": [
+    "BPA",
+    "BPS",
+    "PVC",
+    "Phthalates"
+   ],
+   "unconfirmed": [
+    "Pigments",
+    "Silicone testing standard"
+   ],
+   "facts": {
+    "main": "yes",
+    "melamine": "yes",
+    "color": "unknown",
+    "silicone": "unknown",
+    "lead": "yes"
+   },
+   "unstated": {
+    "color": [
+     "Pigments"
+    ],
+    "silicone": [
+     "Silicone testing standard"
+    ]
+   },
+   "standards": [
+    "us-toy"
+   ],
+   "age": {
+    "min_months": 6,
+    "text": "Recommended age: 6 months+"
+   },
+   "quote": "Made with high-quality food grade silicone - Free of BPA, BPS, PVC and phthalates",
+   "products": [
+    {
+     "name": "Silicone Feeding Spoons, 2-Pack",
+     "url": "https://mushie.com/products/silicone-feeding-spoons-2-pack",
+     "store": "Mushie",
+     "price": "$12.99",
+     "ships_from": null,
+     "shipping": "Free Shipping for US orders $75+"
+    }
+   ],
+   "outside": [],
+   "contains": [],
+   "read": "2026-11-13",
+   "photos": [
+    {
+     "key": "mushie-silicone-feeding-spoons",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/flatlays_may6.jpg?v=1771364225"
+    },
+    {
+     "key": "mushie-silicone-feeding-spoons_2",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/products/julia_shoot-53_86d226fa-0c9c-4b68-bc15-8d7fc7e12b06.jpg?v=1771364225"
+    },
+    {
+     "key": "mushie-silicone-feeding-spoons_3",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/tray_katie-14.jpg?v=1781287203"
+    },
+    {
+     "key": "mushie-silicone-feeding-spoons_4",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/products/Bella_dinnerware-28_8934421b-6d3c-4229-8420-bcb90028d7bc.jpg?v=1771364225"
+    },
+    {
+     "key": "mushie-silicone-feeding-spoons_5",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/products/Blondeboy-21_890c9289-b8ee-40bf-b9ef-44f96887f517.jpg?v=1771364307"
+    },
+    {
+     "key": "mushie-silicone-feeding-spoons_6",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/products/Bella_dinnerware-25_43c2a977-c5f6-4fb1-ad83-afd74f441a8b.jpg?v=1771364307"
+    },
+    {
+     "key": "mushie-silicone-feeding-spoons_7",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/products/7O0A4941_02002039-6311-43bd-9379-3c2e146a47df.jpg?v=1771364307"
+    },
+    {
+     "key": "mushie-silicone-feeding-spoons_8",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/products/lily_zion-14_dbced38f-3ca8-4a01-8b30-1b0eaf224de7.jpg?v=1771364307"
+    },
+    {
+     "key": "mushie-silicone-feeding-spoons_9",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/products/julia_shoot_7dd07159-68da-4835-87e0-866070eed1cf.jpg?v=1771364307"
+    },
+    {
+     "key": "mushie-silicone-feeding-spoons_10",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/products/freja_shoot2-36_c58b68e6-7ffb-4157-a078-fe899ca6d6c9.jpg?v=1771364307"
+    }
+   ],
+   "img": "mushie-silicone-feeding-spoons",
+   "img_src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/flatlays_may6.jpg?v=1771364225"
+  },
+  {
+   "id": "mushie-wooden-multi-shape-stacker",
+   "type": "stacking",
+   "brand": "Mushie",
+   "line": "Wooden Multi Shape Stacker (20 shapes, 4 pegs)",
+   "uses": [
+    "FSC-certified wood"
+   ],
+   "free": [
+    "BPA",
+    "BPS",
+    "PVC",
+    "Phthalates"
+   ],
+   "unconfirmed": [
+    "Paint ingredients (“non-toxic”, not named)",
+    "Solid or composite wood",
+    "Fibre of the storage bag"
+   ],
+   "facts": {
+    "main": "unknown",
+    "color": "unknown",
+    "wood": "unknown",
+    "lead": "yes"
+   },
+   "unstated": {
+    "color": [
+     "Paint ingredients (“non-toxic”, not named)"
+    ],
+    "wood": [
+     "Solid or composite wood"
+    ],
+    "main": [
+     "Fibre of the storage bag"
+    ]
+   },
+   "standards": [
+    "us-toy"
+   ],
+   "age": {
+    "min_months": 36,
+    "text": "Recommended age: 3 years+"
+   },
+   "quote": "Made with FSC-certified wood and non-toxic paint",
+   "products": [
+    {
+     "name": "Wooden Multi Shape Stacker",
+     "url": "https://mushie.com/products/wooden-multi-shape-stacker-sunrise",
+     "store": "Mushie",
+     "price": "$24.99",
+     "ships_from": null,
+     "shipping": "Free Shipping for US orders $75+"
+    }
+   ],
+   "outside": [],
+   "contains": [],
+   "read": "2026-11-13",
+   "photos": [
+    {
+     "key": "mushie-wooden-multi-shape-stacker",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/WoodenMultiShapeStacker_OriginalV4.jpg?v=1752248417"
+    },
+    {
+     "key": "mushie-wooden-multi-shape-stacker_2",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/Wooden-Multi-Shape-Stacker-Info.jpg?v=1768430344"
+    },
+    {
+     "key": "mushie-wooden-multi-shape-stacker_3",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/PhotoJan042024_80616PM.jpg?v=1768430344"
+    },
+    {
+     "key": "mushie-wooden-multi-shape-stacker_4",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/ebba_fl26.02-77.jpg?v=1768430344"
+    },
+    {
+     "key": "mushie-wooden-multi-shape-stacker_5",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/shoot_zion_lily_2kids-42.jpg?v=1768430344"
+    },
+    {
+     "key": "mushie-wooden-multi-shape-stacker_6",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/BellaandDante-77.jpg?v=1768430344"
+    },
+    {
+     "key": "mushie-wooden-multi-shape-stacker_7",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/shoot_zion_lily_2kids-31_a5e39c3e-21b1-4de0-bdf4-1bede4d644c9.jpg?v=1768430344"
+    },
+    {
+     "key": "mushie-wooden-multi-shape-stacker_8",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/towel_studio-16.jpg?v=1768430344"
+    },
+    {
+     "key": "mushie-wooden-multi-shape-stacker_9",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/PhotoJan292024_93500PM.jpg?v=1768430344"
+    },
+    {
+     "key": "mushie-wooden-multi-shape-stacker_10",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/PhotoJan052024_80819PM.jpg?v=1768430344"
+    }
+   ],
+   "img": "mushie-wooden-multi-shape-stacker",
+   "img_src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/WoodenMultiShapeStacker_OriginalV4.jpg?v=1752248417"
+  },
+  {
+   "id": "smiling-tree-toys-love-bug-car",
+   "type": "cars",
+   "brand": "Smiling Tree Toys",
+   "line": "Love Bug Wooden Toy Car",
+   "uses": [
+    "Solid hardwood",
+    "Organic oil finish"
+   ],
+   "unconfirmed": [
+    "Wheels and axles",
+    "Which oil the finish is"
+   ],
+   "facts": {
+    "main": "yes",
+    "parts": "unknown",
+    "color": "yes",
+    "wood": "yes"
+   },
+   "unstated": {
+    "parts": [
+     "Wheels and axles"
+    ]
+   },
+   "quote": "solid hardwood organic oil finish sturdy wheels for smooth driving",
+   "note": "Handmade in Minnesota, 3.5 x 4.5 in; can be engraved.",
+   "products": [
+    {
+     "name": "Love Bug Wooden Toy Car",
+     "url": "https://smilingtreetoys.com/products/wooden-toy-car-love-bug",
+     "store": "Smiling Tree Toys",
+     "price": "$19.00",
+     "ships_from": "US"
+    }
+   ],
+   "free": [],
+   "outside": [],
+   "contains": [],
+   "standards": [],
+   "read": "2026-11-13",
+   "photos": [
+    {
+     "key": "smiling-tree-toys-love-bug-car",
+     "src": "https://cdn.shopify.com/s/files/1/0455/9189/products/wooden-toy-car-for-girls-boys-Smiling-Tree-Toys-USA-1.jpg?v=1653504857"
+    },
+    {
+     "key": "smiling-tree-toys-love-bug-car_2",
+     "src": "https://cdn.shopify.com/s/files/1/0455/9189/products/Love-Bug-Wooden-Toy-Car-for-girl-boy-first-birthday-gifts-Smiling-Tree-Toys.jpg?v=1653509895"
+    },
+    {
+     "key": "smiling-tree-toys-love-bug-car_3",
+     "src": "https://cdn.shopify.com/s/files/1/0455/9189/products/wooden-toy-car-for-girls-boys-Smiling-Tree-Toys-USA.jpg?v=1653504857"
+    },
+    {
+     "key": "smiling-tree-toys-love-bug-car_4",
+     "src": "https://cdn.shopify.com/s/files/1/0455/9189/products/wooden-toy-car-for-girls-boys-Smiling-Tree-Toys-USA-2.jpg?v=1653504857"
+    },
+    {
+     "key": "smiling-tree-toys-love-bug-car_5",
+     "src": "https://cdn.shopify.com/s/files/1/0455/9189/products/LoveBugWoodenToyCarsforgirlboyfirstbirthdaygiftsSmilingTreeToys.jpg?v=1653504857"
+    },
+    {
+     "key": "smiling-tree-toys-love-bug-car_6",
+     "src": "https://cdn.shopify.com/s/files/1/0455/9189/products/Love-Bug-toy-cars-for-girls-boys-personalized-wooden-baby-gift-Smiling-Tree-Toys.jpg?v=1653504857"
+    },
+    {
+     "key": "smiling-tree-toys-love-bug-car_7",
+     "src": "https://cdn.shopify.com/s/files/1/0455/9189/products/Wooden-Toy-Car-for-boys-personalizedbaby-gift-love-bug-car-Smiling-Tree-Toys.jpg?v=1653504857"
+    },
+    {
+     "key": "smiling-tree-toys-love-bug-car_8",
+     "src": "https://cdn.shopify.com/s/files/1/0455/9189/products/Wooden-Toy-Cars-for-girl-boy-birthday-gift-one-year-old-Smiling-Tree-Toys.jpg?v=1653504857"
+    },
+    {
+     "key": "smiling-tree-toys-love-bug-car_9",
+     "src": "https://review-images.judgeme.com/smiling-tree/1640713102__3fa012f7-7e4a-4192-ba40-84ab56b4d6c0__original.jpeg?quality=80&width=1024"
+    },
+    {
+     "key": "smiling-tree-toys-love-bug-car_10",
+     "src": "https://review-images.judgeme.com/smiling-tree/1558805983__51CEF77D-CA5B-4145-A24D-FFB0962446AC__original.jpeg?quality=80&width=1024"
+    }
+   ],
+   "img": "smiling-tree-toys-love-bug-car",
+   "img_src": "https://cdn.shopify.com/s/files/1/0455/9189/products/wooden-toy-car-for-girls-boys-Smiling-Tree-Toys-USA-1.jpg?v=1653504857"
+  },
+  {
+   "id": "snuggle-me-organic-robe-towel",
+   "type": "towels",
+   "brand": "Snuggle Me Organic",
+   "line": "Robe Towel, 1-3 years",
+   "uses": [
+    "100% organic cotton yarn-dyed terry"
+   ],
+   "unconfirmed": [
+    "Names of the yarn dyes",
+    "Thread"
+   ],
+   "facts": {
+    "main": "yes",
+    "parts": "unknown",
+    "color": "unknown",
+    "organic": "yes"
+   },
+   "unstated": {
+    "parts": [
+     "Thread"
+    ],
+    "color": [
+     "Names of the yarn dyes"
+    ]
+   },
+   "age": {
+    "min_months": 12,
+    "max_months": 36,
+    "text": "Fits 1-3 years"
+   },
+   "quote": "Crafted from premium high-weight 100% organic cotton yarn-dyed terry",
+   "note": "Hooded robe, 22 x 14.5 in. Sold by Colored Organics as a final sale item.",
+   "products": [
+    {
+     "name": "Snuggle Me Organic Robe Towel",
+     "url": "https://coloredorganics.com/products/hooded-towel-copy",
+     "store": "Colored Organics",
+     "price": "$59",
+     "ships_from": "US",
+     "shipping": "FREE SHIPPING U.S. Domestic Orders Over $50"
+    }
+   ],
+   "free": [],
+   "outside": [],
+   "contains": [],
+   "standards": [],
+   "read": "2026-11-13",
+   "photos": [
+    {
+     "key": "snuggle-me-organic-robe-towel",
+     "src": "https://coloredorganics.com/cdn/shop/files/infant-unisex-robe-towel.birch.flat_front.jpg?v=1787167868&width=1024"
+    },
+    {
+     "key": "snuggle-me-organic-robe-towel_2",
+     "src": "https://coloredorganics.com/cdn/shop/files/infant-unisex-robe-towel.natural.flat_front.jpg?v=1787167834&width=1024"
+    },
+    {
+     "key": "snuggle-me-organic-robe-towel_3",
+     "src": "https://coloredorganics.com/cdn/shop/files/infant-unisex-robe-towel.birch.flat_detail.jpg?v=1787167834&width=1024"
+    },
+    {
+     "key": "snuggle-me-organic-robe-towel_4",
+     "src": "https://coloredorganics.com/cdn/shop/files/infant-unisex-robe-towel.natural.flat_detail.jpg?v=1787167834&width=1024"
+    }
+   ],
+   "img": "snuggle-me-organic-robe-towel",
+   "img_src": "https://coloredorganics.com/cdn/shop/files/infant-unisex-robe-towel.birch.flat_front.jpg?v=1787167868&width=1024"
+  },
+  {
+   "id": "tovolo-zoo-crew-pop-molds",
+   "type": "pop-molds",
+   "brand": "Tovolo",
+   "line": "Zoo Crew Pop Molds",
+   "uses": [
+    "Silicone"
+   ],
+   "free": [
+    "BPA"
+   ],
+   "outside": [
+    "BPA-free nylon parts"
+   ],
+   "unconfirmed": [
+    "Silicone testing standard",
+    "Which parts are nylon",
+    "Pigments"
+   ],
+   "facts": {
+    "main": "no",
+    "color": "unknown",
+    "silicone": "unknown"
+   },
+   "unstated": {
+    "color": [
+     "Pigments"
+    ],
+    "silicone": [
+     "Silicone testing standard"
+    ]
+   },
+   "quote": "Materials: Silicone, BPA-free nylon.",
+   "note": "Animal-shaped pops with drip-guard handles and a base that holds the molds upright; the page also lists “BPA-free plastic”.",
+   "products": [
+    {
+     "name": "Zoo Crew Pop Molds",
+     "url": "https://www.tovolo.com/products/zoo-crew-pop-molds",
+     "store": "Tovolo",
+     "price": "$15.99",
+     "ships_from": "US",
+     "shipping": "free shipping on $45+"
+    }
+   ],
+   "contains": [],
+   "standards": [],
+   "read": "2026-11-13",
+   "photos": [
+    {
+     "key": "tovolo-zoo-crew-pop-molds",
+     "src": "https://cdn.shopify.com/s/files/1/0808/9862/1474/files/1000472_01_Zoo-Crew-Pop-Molds_Elephant-Pop_DETAIL.png?v=1792258775"
+    },
+    {
+     "key": "tovolo-zoo-crew-pop-molds_2",
+     "src": "https://cdn.shopify.com/s/files/1/0808/9862/1474/files/1000472_02_Zoo-Crew-Pop-Molds_LIFESTYLE-01_1ac94018-ddbe-4413-91ed-e2db0d7fc64f_2.png?v=1793638816"
+    },
+    {
+     "key": "tovolo-zoo-crew-pop-molds_3",
+     "src": "https://cdn.shopify.com/s/files/1/0808/9862/1474/files/1000472_04_Zoo-Crew-Pop-Molds_SILO-01.png?v=1792258775"
+    },
+    {
+     "key": "tovolo-zoo-crew-pop-molds_4",
+     "src": "https://cdn.shopify.com/s/files/1/0808/9862/1474/files/1000472_05_Zoo-Crew-Pop-Molds_SILO-02.png?v=1792258775"
+    }
+   ],
+   "img": "tovolo-zoo-crew-pop-molds",
+   "img_src": "https://cdn.shopify.com/s/files/1/0808/9862/1474/files/1000472_01_Zoo-Crew-Pop-Molds_Elephant-Pop_DETAIL.png?v=1792258775"
+  },
+  {
+   "id": "uncle-goose-language-blocks",
+   "type": "blocks",
+   "brand": "Uncle Goose",
+   "line": "Language Blocks (24 to 32 blocks, 1.75 in)",
+   "uses": [
+    "Michigan basswood"
+   ],
+   "unconfirmed": [
+    "What the inks are made of",
+    "Finish on the blocks",
+    "Solid or glued wood"
+   ],
+   "facts": {
+    "main": "yes",
+    "color": "unknown",
+    "wood": "unknown"
+   },
+   "unstated": {
+    "color": [
+     "What the inks are made of"
+    ],
+    "wood": [
+     "Solid or glued wood"
+    ]
+   },
+   "age": {
+    "min_months": 24,
+    "text": "Age 2 years+"
+   },
+   "quote": "Made from sustainable Michigan basswood, these wooden blocks support open-ended play and early literacy",
+   "note": "Sets in 21 languages, including Sign Language, Spanish, Hindi, Arabic, Japanese and Cherokee; block count varies by language. Sold by Kodo Kids.",
+   "products": [
+    {
+     "name": "Uncle Goose Language Blocks",
+     "url": "https://kodokids.com/products/language-blocks",
+     "store": "Kodo Kids",
+     "price": "$50.00",
+     "ships_from": "US"
+    }
+   ],
+   "free": [],
+   "outside": [],
+   "contains": [],
+   "standards": [],
+   "read": "2026-11-13",
+   "photos": [
+    {
+     "key": "uncle-goose-language-blocks",
+     "src": "https://cdn.shopify.com/s/files/1/0629/8969/7163/files/language-blocks.jpg?v=1793140637"
+    },
+    {
+     "key": "uncle-goose-language-blocks_2",
+     "src": "https://cdn.shopify.com/s/files/1/0629/8969/7163/files/language-blocks-2.jpg?v=1793140637"
+    },
+    {
+     "key": "uncle-goose-language-blocks_3",
+     "src": "https://cdn.shopify.com/s/files/1/0629/8969/7163/files/language-blocks-3.jpg?v=1793140638"
+    },
+    {
+     "key": "uncle-goose-language-blocks_4",
+     "src": "https://cdn.shopify.com/s/files/1/0629/8969/7163/files/language-blocks-4.jpg?v=1793140639"
+    },
+    {
+     "key": "uncle-goose-language-blocks_5",
+     "src": "https://cdn.shopify.com/s/files/1/0629/8969/7163/files/language-blocks-5.jpg?v=1793140640"
+    },
+    {
+     "key": "uncle-goose-language-blocks_6",
+     "src": "https://cdn.shopify.com/s/files/1/0629/8969/7163/files/language-blocks-6.jpg?v=1793140641"
+    },
+    {
+     "key": "uncle-goose-language-blocks_7",
+     "src": "https://cdn.shopify.com/s/files/1/0629/8969/7163/files/language-blocks-7.jpg?v=1793140642"
+    },
+    {
+     "key": "uncle-goose-language-blocks_8",
+     "src": "https://cdn.shopify.com/s/files/1/0629/8969/7163/files/language-blocks-8.jpg?v=1793140643"
+    },
+    {
+     "key": "uncle-goose-language-blocks_9",
+     "src": "https://cdn.shopify.com/s/files/1/0629/8969/7163/files/language-blocks-9.jpg?v=1793140644"
+    },
+    {
+     "key": "uncle-goose-language-blocks_10",
+     "src": "https://cdn.shopify.com/s/files/1/0629/8969/7163/files/language-blocks-10.jpg?v=1793140645"
+    }
+   ],
+   "img": "uncle-goose-language-blocks",
+   "img_src": "https://cdn.shopify.com/s/files/1/0629/8969/7163/files/language-blocks.jpg?v=1793140637"
   }
  ]
 }
