@@ -119,6 +119,21 @@
    "url": "https://moonboon.com/products/moon-nursing-pillow",
    "reason": "duplicate of moonboon-nursing-pillow: the page gives the same materials text (organic buckwheat hulls, quilted organic cotton cover)",
    "date": "2026-11-13"
+  },
+  {
+   "url": "https://sprout-kids.com/products/climbing-triangle-ramp",
+   "reason": "Duplicate: add-on ramp sold as an option of the Sprout Wooden Climbing Triangle, listed as sprout-kids-wooden-climbing-triangle (same Baltic birch plywood)",
+   "date": "2026-11-14"
+  },
+  {
+   "url": "https://radchildrensfurniture.com/products/montessori-infant-shelf",
+   "reason": "Duplicate: same materials text as the RAD Montessori Shelf 3-Tier (13-ply European birch plywood, solid hardwood parts, same finishes), listed as rad-childrens-furniture-montessori-shelf-3-tier",
+   "date": "2026-11-14"
+  },
+  {
+   "url": "https://littlegreenradicals.com/products/berry-check-check-classic-pyjamas",
+   "reason": "Duplicate: a print of the Little Green Radicals organic cotton interlock pyjamas (same materials text), listed as little-green-radicals-blue-bears-pyjamas",
+   "date": "2026-11-14"
   }
  ]
 }
