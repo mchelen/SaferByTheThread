@@ -1,6 +1,6 @@
 {
  "schema": 4,
- "updated": "2026-11-13",
+ "updated": "2026-11-14",
  "ask": [
   "Thread on any sewn item (cotton or polyester).",
   "Wheels and axles on push toys and cars.",
@@ -37816,6 +37816,889 @@
    ],
    "img": "uncle-goose-language-blocks",
    "img_src": "https://cdn.shopify.com/s/files/1/0629/8969/7163/files/language-blocks.jpg?v=1793140637"
+  },
+  {
+   "id": "camden-rose-finger-paint",
+   "type": "art",
+   "brand": "Camden Rose",
+   "line": "Finger Paint (organic fruit and vegetable extracts)",
+   "uses": [
+    "Organic fruit and vegetable extracts"
+   ],
+   "free": [],
+   "unconfirmed": [
+    "Full ingredient list (“non GMO ingredients”, not named)",
+    "Colourants",
+    "Container material"
+   ],
+   "outside": [],
+   "facts": {
+    "main": "unknown",
+    "color": "unknown",
+    "accessory": "unknown"
+   },
+   "unstated": {
+    "main": [
+     "Full ingredient list (“non GMO ingredients”, not named)"
+    ],
+    "color": [
+     "Colourants"
+    ],
+    "accessory": [
+     "Container material"
+    ]
+   },
+   "contains": [],
+   "standards": [],
+   "age": {
+    "min_months": 36,
+    "text": "For ages 3 and up"
+   },
+   "quote": "Made with organic fruit and vegetable extracts For ages 3 and up Made in the USA",
+   "note": "Sold as “Non-Toxic Finger Paint”; the page says it is made in the USA.",
+   "products": [
+    {
+     "name": "Non-Toxic Finger Paint",
+     "url": "https://camdenrose.com/products/finger-paint-eco-paint",
+     "store": "Camden Rose",
+     "price": "$20.00",
+     "ships_from": "US"
+    }
+   ],
+   "read": "2026-11-14",
+   "photos": [
+    {
+     "key": "camden-rose-finger-paint",
+     "src": "https://camdenrose.com/cdn/shop/files/5886-9737_e6094ac2-7c95-43ad-8632-2b8f72425a83.jpg?v=1733501879&width=1920"
+    },
+    {
+     "key": "camden-rose-finger-paint_2",
+     "src": "https://camdenrose.com/cdn/shop/files/5886-9741_790d4c21-990d-45a9-bd2e-d2ac85cc497a.jpg?v=1738276041"
+    },
+    {
+     "key": "camden-rose-finger-paint_3",
+     "src": "https://camdenrose.com/cdn/shop/files/5886-9739_c53dfd15-b317-4763-8562-8218a3f88e31.jpg?v=1738276041"
+    }
+   ],
+   "img": "camden-rose-finger-paint",
+   "img_src": "https://camdenrose.com/cdn/shop/files/5886-9737_e6094ac2-7c95-43ad-8632-2b8f72425a83.jpg?v=1733501879&width=1920"
+  },
+  {
+   "id": "colored-organics-carson-flannel-bodysuit",
+   "type": "bodysuits",
+   "brand": "Colored Organics",
+   "line": "Carson Flannel Long Sleeve Collared Button Down Bodysuit",
+   "uses": [
+    "100% organic cotton flannel"
+   ],
+   "free": [
+    "Nickel in the snaps"
+   ],
+   "unconfirmed": [
+    "Snap material",
+    "Buttons",
+    "Elastic in the leg openings",
+    "Dye ingredients (“water-based”, not named)",
+    "Thread"
+   ],
+   "outside": [],
+   "facts": {
+    "main": "yes",
+    "parts": "unknown",
+    "color": "unknown"
+   },
+   "unstated": {
+    "parts": [
+     "Snap material",
+     "Buttons",
+     "Elastic in the leg openings"
+    ],
+    "color": [
+     "Dye ingredients (“water-based”, not named)"
+    ]
+   },
+   "contains": [],
+   "standards": [],
+   "quote": "Made of 100% Organic Cotton Flannel Fabric Nickel-free snaps Elastic leg openings Water-based dyes",
+   "products": [
+    {
+     "name": "Carson Flannel Long Sleeve Collared Button Down Bodysuit",
+     "url": "https://coloredorganics.com/products/carson-flannel-long-sleeve-collared-button-down-bodysuit-aw25",
+     "store": "Colored Organics",
+     "price": "$19.95 (sale, final sale; regular $42)",
+     "ships_from": "US",
+     "shipping": "Free shipping on U.S. domestic orders over $50"
+    }
+   ],
+   "read": "2026-11-14",
+   "photos": [
+    {
+     "key": "colored-organics-carson-flannel-bodysuit",
+     "src": "https://coloredorganics.com/cdn/shop/files/96004-23-carson-flannel-lscollared-button-down-bodysuit.navy-plaid.flat_front.jpg?v=1749140856&width=1024"
+    },
+    {
+     "key": "colored-organics-carson-flannel-bodysuit_2",
+     "src": "https://coloredorganics.com/cdn/shop/files/96004-23-carson-flannel-lscollared-button-down-bodysuit.houndstooth.flat_front.jpg?v=1749140856&width=1024"
+    }
+   ],
+   "img": "colored-organics-carson-flannel-bodysuit",
+   "img_src": "https://coloredorganics.com/cdn/shop/files/96004-23-carson-flannel-lscollared-button-down-bodysuit.navy-plaid.flat_front.jpg?v=1749140856&width=1024"
+  },
+  {
+   "id": "delta-children-jeep-classic-high-chair",
+   "type": "high-chairs",
+   "brand": "Delta Children",
+   "line": "Jeep Classic Convertible 2-in-1 High Chair",
+   "uses": [
+    "Steel frame"
+   ],
+   "free": [],
+   "unconfirmed": [
+    "Seat padding",
+    "Harness straps and buckle",
+    "Tray insert material"
+   ],
+   "outside": [
+    "Plastic tray",
+    "PU leather seat fabric (water-repellent)"
+   ],
+   "facts": {
+    "main": "no",
+    "finish": "no",
+    "parts": "unknown"
+   },
+   "unstated": {
+    "parts": [
+     "Harness straps and buckle",
+     "Tray insert material"
+    ]
+   },
+   "contains": [],
+   "standards": [],
+   "quote": "3 position adjustable plastic tray The chair's PU leather fabric is built for durability & easy cleaning Durable steel frame ensure long-lasting use",
+   "products": [
+    {
+     "name": "Jeep Classic Convertible 2-in-1 High Chair",
+     "url": "https://www.deltachildren.com/products/jeep-classic-convertible-2-in-1-high-chair-for-babies-and-toddlers-with-adjustable-height-recline-footrest-dishwasher-safe-meal-tray",
+     "store": "Delta Children",
+     "price": "$109.99",
+     "ships_from": null
+    }
+   ],
+   "read": "2026-11-14",
+   "photos": [
+    {
+     "key": "delta-children-jeep-classic-high-chair",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/25008A-2182_Jeep-Classic-High-Chair_Green_Lifestyle_101.jpg?v=1742767441"
+    },
+    {
+     "key": "delta-children-jeep-classic-high-chair_2",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/25008A-001_Jeep-Classic-High-Chair_Lifestyle_03.jpg?v=1740410806"
+    },
+    {
+     "key": "delta-children-jeep-classic-high-chair_3",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/25008A-001_Jeep-Classic-High-Chair_Lifestyle_02.jpg?v=1740410806"
+    },
+    {
+     "key": "delta-children-jeep-classic-high-chair_4",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/25008A-001_JeepClassicHighChair_Silo_01.jpg?v=1742767475"
+    },
+    {
+     "key": "delta-children-jeep-classic-high-chair_5",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/25008A-001_JeepClassicHighChair_Silo_03.jpg?v=1742767475"
+    },
+    {
+     "key": "delta-children-jeep-classic-high-chair_6",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/25008A-001_JeepClassicHighChair_Silo_09.jpg?v=1742767475"
+    },
+    {
+     "key": "delta-children-jeep-classic-high-chair_7",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/25008A-001_JeepClassicHighChair_Silo_25.jpg?v=1742767475"
+    },
+    {
+     "key": "delta-children-jeep-classic-high-chair_8",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/25008A-2182_Jeep-Classic-High-Chair_Green_Lifestyle_01.jpg?v=1742767441"
+    }
+   ],
+   "img": "delta-children-jeep-classic-high-chair",
+   "img_src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/25008A-2182_Jeep-Classic-High-Chair_Green_Lifestyle_101.jpg?v=1742767441"
+  },
+  {
+   "id": "green-cradle-bassinet-organic-cotton-fitted-sheet",
+   "type": "sheets",
+   "brand": "Green Cradle",
+   "line": "Bassinet Organic Cotton Fitted Sheet (17 x 28 in)",
+   "uses": [
+    "GOTS certified organic cotton, 300 thread count"
+   ],
+   "free": [],
+   "unconfirmed": [
+    "Elastic pockets",
+    "Dye or bleach on the ivory cotton",
+    "Thread"
+   ],
+   "outside": [],
+   "facts": {
+    "main": "yes",
+    "parts": "unknown",
+    "color": "unknown",
+    "organic": "yes"
+   },
+   "unstated": {
+    "parts": [
+     "Elastic pockets"
+    ],
+    "color": [
+     "Dye or bleach on the ivory cotton"
+    ]
+   },
+   "contains": [],
+   "standards": [
+    "gots"
+   ],
+   "quote": "Designed to fit securely and snuggly on any bassinet mattress with elastic pockets. Machine washable. Materials & Finish GOTS Certified Organic Cotton",
+   "products": [
+    {
+     "name": "Bassinet Organic Cotton Fitted Sheet, Ivory",
+     "url": "https://www.greencradle.com/products/bassinet-organic-cotton-fitted-sheet-1",
+     "store": "Green Cradle",
+     "price": "$95.00",
+     "ships_from": "US",
+     "shipping": "Free shipping on all orders"
+    }
+   ],
+   "read": "2026-11-14",
+   "photos": [
+    {
+     "key": "green-cradle-bassinet-organic-cotton-fitted-sheet",
+     "src": "https://cdn.shopify.com/s/files/1/0216/9339/9104/products/OT-crib-fitted-sheet_b53e7d20-9796-4181-b5fc-af9b7d7c0919.jpg?v=1564418821"
+    }
+   ],
+   "img": "green-cradle-bassinet-organic-cotton-fitted-sheet",
+   "img_src": "https://cdn.shopify.com/s/files/1/0216/9339/9104/products/OT-crib-fitted-sheet_b53e7d20-9796-4181-b5fc-af9b7d7c0919.jpg?v=1564418821"
+  },
+  {
+   "id": "moonboon-soft-book",
+   "type": "books",
+   "brand": "Moonboon",
+   "line": "Soft Book (Ole Lukøje, Over the Moon collection)",
+   "uses": [
+    "Organic cotton book (made with leftover fabrics)"
+   ],
+   "free": [],
+   "unconfirmed": [
+    "Fibre of the Velcro strap",
+    "Embroidery thread",
+    "Filling",
+    "Dyes"
+   ],
+   "outside": [],
+   "facts": {
+    "main": "unknown",
+    "parts": "unknown",
+    "color": "unknown"
+   },
+   "unstated": {
+    "main": [
+     "Filling"
+    ],
+    "parts": [
+     "Fibre of the Velcro strap"
+    ],
+    "color": [
+     "Dyes"
+    ]
+   },
+   "contains": [],
+   "standards": [],
+   "age": {
+    "min_months": 0,
+    "text": "Age: 0+"
+   },
+   "quote": "Materials: Book: Organic cotton Strap: velcro Age: 0+",
+   "note": "Fabric book with a Velcro strap for strollers and baby arches; comes with a bedtime story book. Ships from Moonboon’s warehouse; the page says import duties and taxes may arise outside the EU.",
+   "products": [
+    {
+     "name": "Soft Book",
+     "url": "https://moonboon.com/products/soft-book",
+     "store": "Moonboon",
+     "price": "€30",
+     "ships_from": "Denmark"
+    }
+   ],
+   "read": "2026-11-14",
+   "photos": [
+    {
+     "key": "moonboon-soft-book",
+     "src": "https://moonboon.com/cdn/shop/files/play-book-packshot01.jpg?v=1740388391&width=3000"
+    },
+    {
+     "key": "moonboon-soft-book_2",
+     "src": "https://moonboon.com/cdn/shop/files/soft-book-lifestyle02.jpg?v=1740388406"
+    },
+    {
+     "key": "moonboon-soft-book_3",
+     "src": "https://moonboon.com/cdn/shop/files/soft-book-lifestyle01.jpg?v=1740388406"
+    },
+    {
+     "key": "moonboon-soft-book_4",
+     "src": "https://moonboon.com/cdn/shop/files/play-book-packshot02.jpg?v=1740388406"
+    }
+   ],
+   "img": "moonboon-soft-book",
+   "img_src": "https://moonboon.com/cdn/shop/files/play-book-packshot01.jpg?v=1740388391&width=3000"
+  },
+  {
+   "id": "mother-ease-one-size-fitted-diaper",
+   "type": "diapers",
+   "brand": "Mother-ease",
+   "line": "One-Size Fitted Diaper with Liner",
+   "uses": [
+    "Unbleached natural cotton terry (skin side)"
+   ],
+   "free": [],
+   "unconfirmed": [
+    "Snaps",
+    "Elastics around the waist and legs",
+    "Thread"
+   ],
+   "outside": [
+    "Polyester core knit into the fabric (82% cotton, 18% polyester)"
+   ],
+   "facts": {
+    "main": "no",
+    "parts": "unknown",
+    "color": "yes"
+   },
+   "unstated": {
+    "parts": [
+     "Snaps",
+     "Elastics around the waist and legs"
+    ]
+   },
+   "contains": [],
+   "standards": [],
+   "quote": "Made of 82% cotton, 18% polyester. Made in Canada.",
+   "products": [
+    {
+     "name": "Mother-ease One-Size Fitted Diaper with Liner",
+     "url": "https://www.greenmountaindiapers.com/products/mother-ease-one-size-fitted-diaper",
+     "store": "Green Mountain Diapers",
+     "price": "$22.98",
+     "ships_from": "US",
+     "shipping": "Shipping calculated at checkout"
+    }
+   ],
+   "read": "2026-11-14",
+   "photos": [
+    {
+     "key": "mother-ease-one-size-fitted-diaper",
+     "src": "https://cdn.shopify.com/s/files/1/1583/5087/files/moth-One-Size-Diaper-Unbleached-Cotton.jpg?v=1712674827"
+    },
+    {
+     "key": "mother-ease-one-size-fitted-diaper_2",
+     "src": "https://cdn.shopify.com/s/files/1/1583/5087/files/mothsnapinincluded.jpg?v=1781724333"
+    },
+    {
+     "key": "mother-ease-one-size-fitted-diaper_3",
+     "src": "https://cdn.shopify.com/s/files/1/1583/5087/files/moth-os-openwings1900.jpg?v=1732043367"
+    },
+    {
+     "key": "mother-ease-one-size-fitted-diaper_4",
+     "src": "https://cdn.shopify.com/s/files/1/1583/5087/files/moth-os-inside1700.jpg?v=1732042449"
+    },
+    {
+     "key": "mother-ease-one-size-fitted-diaper_5",
+     "src": "https://cdn.shopify.com/s/files/1/1583/5087/files/moth-os-folded1900.jpg?v=1732042959"
+    },
+    {
+     "key": "mother-ease-one-size-fitted-diaper_6",
+     "src": "https://cdn.shopify.com/s/files/1/1583/5087/files/moth-one-size-three-adjustments.jpg?v=1712675185"
+    },
+    {
+     "key": "mother-ease-one-size-fitted-diaper_7",
+     "src": "https://cdn.shopify.com/s/files/1/1583/5087/files/moth-3sizes-one-size-fitted1024.jpg?v=1712675185"
+    },
+    {
+     "key": "mother-ease-one-size-fitted-diaper_8",
+     "src": "https://cdn.shopify.com/s/files/1/1583/5087/files/mothossnapindemo.jpg?v=1781724921"
+    }
+   ],
+   "img": "mother-ease-one-size-fitted-diaper",
+   "img_src": "https://cdn.shopify.com/s/files/1/1583/5087/files/moth-One-Size-Diaper-Unbleached-Cotton.jpg?v=1712674827"
+  },
+  {
+   "id": "mushie-silicone-baby-food-containers",
+   "type": "food-storage",
+   "brand": "Mushie",
+   "line": "Silicone Baby Food Containers (3 pack, 4 fl oz)",
+   "uses": [
+    "100% food grade silicone (3 containers, 3 lids)"
+   ],
+   "free": [
+    "BPA",
+    "BPS",
+    "PVC",
+    "Phthalates"
+   ],
+   "unconfirmed": [
+    "Pigments",
+    "Silicone testing standard"
+   ],
+   "outside": [],
+   "facts": {
+    "main": "yes",
+    "melamine": "yes",
+    "color": "unknown",
+    "silicone": "unknown"
+   },
+   "unstated": {
+    "color": [
+     "Pigments"
+    ],
+    "silicone": [
+     "Silicone testing standard"
+    ]
+   },
+   "contains": [],
+   "standards": [
+    "us-toy"
+   ],
+   "quote": "What's included: 3 containers, 3 lids - 100% high-quality food grade silicone - Free of BPA, BPS, PVC and phthalates",
+   "products": [
+    {
+     "name": "Silicone Baby Food Containers, 3-Pack",
+     "url": "https://mushie.com/products/silicone-baby-food-containers-3-pack",
+     "store": "Mushie",
+     "price": "$19.99",
+     "ships_from": null,
+     "shipping": "Free Shipping for US orders $75+"
+    }
+   ],
+   "read": "2026-11-14",
+   "photos": [
+    {
+     "key": "mushie-silicone-baby-food-containers",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/food-containers-infographic.jpg?v=1757693268"
+    },
+    {
+     "key": "mushie-silicone-baby-food-containers_2",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/2025_04_29_9999_6.jpg?v=1757693268"
+    },
+    {
+     "key": "mushie-silicone-baby-food-containers_3",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/03_PhotoApr252025_35655AM.jpg?v=1771364770"
+    },
+    {
+     "key": "mushie-silicone-baby-food-containers_4",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/04_2025_04_25_9999_13.jpg?v=1771364770"
+    },
+    {
+     "key": "mushie-silicone-baby-food-containers_5",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/picknickthaksgiving-121_50a1946c-08fd-4254-b758-224d8aac9048.jpg?v=1792602372"
+    },
+    {
+     "key": "mushie-silicone-baby-food-containers_6",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/PiuPiuxmushie_collabshoot-76.jpg?v=1771364770"
+    },
+    {
+     "key": "mushie-silicone-baby-food-containers_7",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/ashley_baby-42.jpg?v=1771364770"
+    },
+    {
+     "key": "mushie-silicone-baby-food-containers_8",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/03_rio-45.jpg?v=1771364770"
+    },
+    {
+     "key": "mushie-silicone-baby-food-containers_9",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/picknickthaksgiving-054.jpg?v=1792602349"
+    },
+    {
+     "key": "mushie-silicone-baby-food-containers_10",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/xmas2026-77.jpg?v=1790624376"
+    }
+   ],
+   "img": "mushie-silicone-baby-food-containers",
+   "img_src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/food-containers-infographic.jpg?v=1757693268"
+  },
+  {
+   "id": "newton-marin-convertible-crib",
+   "type": "cribs",
+   "brand": "Babyletto",
+   "line": "Marin with Cane 3-in-1 Convertible Crib",
+   "uses": [
+    "Solid American poplar hardwood",
+    "Natural cane side panels"
+   ],
+   "free": [
+    "Lead in the paint",
+    "Phthalates in the paint"
+   ],
+   "unconfirmed": [
+    "Paint and stain ingredients (“non-toxic”, not named)",
+    "Mattress support",
+    "Hardware"
+   ],
+   "outside": [
+    "TSCA-compliant MDF (engineered wood)"
+   ],
+   "facts": {
+    "wood": "no",
+    "color": "unknown",
+    "parts": "unknown"
+   },
+   "unstated": {
+    "color": [
+     "Paint and stain ingredients (“non-toxic”, not named)"
+    ],
+    "parts": [
+     "Mattress support",
+     "Hardware"
+    ]
+   },
+   "contains": [],
+   "standards": [
+    "us-toy"
+   ],
+   "age": {
+    "min_months": 0,
+    "max_months": 48,
+    "text": "Suitable from newborn up to 4 years old"
+   },
+   "quote": "Made of solid, sustainable American Poplar hardwood and TSCA compliant engineered wood. Flush solid end panels, hidden hardware construction and cane side panels",
+   "note": "Crib with cane side panels that converts to a toddler bed and daybed (conversion kit sold separately); the page also says it is GREENGUARD Gold certified. Sold by Newton Baby; warranty by Babyletto.",
+   "products": [
+    {
+     "name": "Marin with Cane 3-in-1 Convertible Crib",
+     "url": "https://www.newtonbaby.com/products/marin-with-cane-3-in-1-convertible-crib",
+     "store": "Newton Baby",
+     "price": "$799.00",
+     "ships_from": "US",
+     "shipping": "Ships free in the 48 contiguous US states; not available to Hawaii, Alaska or Canada"
+    }
+   ],
+   "read": "2026-11-14",
+   "photos": [
+    {
+     "key": "newton-marin-convertible-crib",
+     "src": "https://cdn.shopify.com/s/files/1/0792/0323/files/Babyletto_M23701HYHC_-_600x600_Cart.jpg?v=1727288848"
+    },
+    {
+     "key": "newton-marin-convertible-crib_2",
+     "src": "https://cdn.shopify.com/s/files/1/0792/0323/files/BabylettoM23701HYHC-800x552TopSlider_5.jpg?v=1759162117"
+    },
+    {
+     "key": "newton-marin-convertible-crib_3",
+     "src": "https://cdn.shopify.com/s/files/1/0792/0323/files/BabylettoM23701HYHC-800x552TopSlider_1.jpg?v=1759162117"
+    },
+    {
+     "key": "newton-marin-convertible-crib_4",
+     "src": "https://cdn.shopify.com/s/files/1/0792/0323/files/BabylettoM23701HYHC-800x552TopSlider_2.jpg?v=1759162117"
+    },
+    {
+     "key": "newton-marin-convertible-crib_5",
+     "src": "https://cdn.shopify.com/s/files/1/0792/0323/files/BabylettoM23701HYHC-800x552TopSlider_3.jpg?v=1759162117"
+    },
+    {
+     "key": "newton-marin-convertible-crib_6",
+     "src": "https://cdn.shopify.com/s/files/1/0792/0323/files/BabylettoM23701HYHC-800x552TopSlider_6.jpg?v=1727288940"
+    }
+   ],
+   "img": "newton-marin-convertible-crib",
+   "img_src": "https://cdn.shopify.com/s/files/1/0792/0323/files/Babyletto_M23701HYHC_-_600x600_Cart.jpg?v=1727288848"
+  },
+  {
+   "id": "obasan-organic-wool-mattress-protector",
+   "type": "protectors",
+   "brand": "Obasan",
+   "line": "Organic Wool Mattress Protector (crib size)",
+   "uses": [
+    "GOTS-certified organic wool"
+   ],
+   "free": [
+    "Chemical treatments",
+    "Flame retardants",
+    "Synthetic coatings",
+    "Petroleum-based foams"
+   ],
+   "unconfirmed": [
+    "Thread fibre",
+    "Wool treatment (superwash or not)"
+   ],
+   "outside": [],
+   "facts": {
+    "main": "yes",
+    "parts": "unknown",
+    "flame": "yes",
+    "finish": "yes",
+    "wool": "unknown",
+    "organic": "yes"
+   },
+   "unstated": {
+    "parts": [
+     "Thread fibre"
+    ],
+    "wool": [
+     "Wool treatment (superwash or not)"
+    ]
+   },
+   "contains": [],
+   "standards": [
+    "gots"
+   ],
+   "quote": "This eco-responsible option avoids chemical treatments, flame retardants, or synthetic coatings",
+   "note": "The page says the baby size is made without elastic straps.",
+   "products": [
+    {
+     "name": "Organic Wool Mattress Protector, Crib (28\"x52\")",
+     "url": "https://www.obasan.com/products/organic-wool-moisture-pad-protector",
+     "store": "Obasan",
+     "price": "$98.00",
+     "variant": "Crib",
+     "ships_from": "Canada",
+     "shipping": "Shipping calculated at checkout"
+    }
+   ],
+   "read": "2026-11-14",
+   "photos": [
+    {
+     "key": "obasan-organic-wool-mattress-protector",
+     "src": "https://cdn.shopify.com/s/files/1/0626/1810/8138/files/WoolProtector-1of3_40ff3762-9d54-4dd7-b5eb-a0f1458e18a8.jpg?v=1775082198"
+    },
+    {
+     "key": "obasan-organic-wool-mattress-protector_2",
+     "src": "https://cdn.shopify.com/s/files/1/0626/1810/8138/files/WoolProtector-2of3_222ee9ff-f7a5-4249-81c3-c145d8040688.jpg?v=1775082200"
+    },
+    {
+     "key": "obasan-organic-wool-mattress-protector_3",
+     "src": "https://cdn.shopify.com/s/files/1/0626/1810/8138/files/WoolProtector-3of3_78e11782-6689-499a-a288-adffdca88554.jpg?v=1775082202"
+    }
+   ],
+   "img": "obasan-organic-wool-mattress-protector",
+   "img_src": "https://cdn.shopify.com/s/files/1/0626/1810/8138/files/WoolProtector-1of3_40ff3762-9d54-4dd7-b5eb-a0f1458e18a8.jpg?v=1775082198"
+  },
+  {
+   "id": "stockmar-modeling-beeswax-6-colors",
+   "type": "art",
+   "brand": "Stockmar",
+   "line": "Modeling Beeswax Gift/Introduction Set, 6 colours",
+   "uses": [
+    "Beeswax sheets"
+   ],
+   "free": [],
+   "unconfirmed": [
+    "Other waxes or ingredients in the sheets",
+    "Pigments"
+   ],
+   "outside": [],
+   "facts": {
+    "main": "unknown",
+    "color": "unknown"
+   },
+   "unstated": {
+    "main": [
+     "Other waxes or ingredients in the sheets"
+    ],
+    "color": [
+     "Pigments"
+    ]
+   },
+   "contains": [],
+   "standards": [],
+   "quote": "It includes 6 different vivid beeswax sheets. Each sheet is 4\" long and 1\" wide",
+   "products": [
+    {
+     "name": "Stockmar Modeling Beeswax Gift/Introduction Set - 6 Colors",
+     "url": "https://camdenrose.com/products/modeling-beeswax-gift-introduction-set-6-colors",
+     "store": "Camden Rose",
+     "price": "$23.00",
+     "ships_from": "US"
+    }
+   ],
+   "read": "2026-11-14",
+   "photos": [
+    {
+     "key": "stockmar-modeling-beeswax-6-colors",
+     "src": "https://cdn.shopify.com/s/files/1/0658/7164/2856/files/DSCF8040.jpg?v=1737132680"
+    },
+    {
+     "key": "stockmar-modeling-beeswax-6-colors_2",
+     "src": "https://cdn.shopify.com/s/files/1/0658/7164/2856/files/DSCF8038.jpg?v=1737132680"
+    }
+   ],
+   "img": "stockmar-modeling-beeswax-6-colors",
+   "img_src": "https://cdn.shopify.com/s/files/1/0658/7164/2856/files/DSCF8040.jpg?v=1737132680"
+  },
+  {
+   "id": "under-the-nile-crib-sheet",
+   "type": "sheets",
+   "brand": "Under the Nile",
+   "line": "Crib Sheet (fitted, 52 x 27 in)",
+   "uses": [
+    "100% organic Egyptian cotton"
+   ],
+   "free": [
+    "Azo colorants",
+    "BPA",
+    "Flame retardants",
+    "Formaldehyde",
+    "Fragrance",
+    "PVC",
+    "Lead"
+   ],
+   "unconfirmed": [
+    "Continuous elastic hem",
+    "Print inks and dyes",
+    "Thread"
+   ],
+   "outside": [],
+   "facts": {
+    "main": "yes",
+    "parts": "unknown",
+    "color": "unknown",
+    "flame": "yes",
+    "organic": "yes"
+   },
+   "unstated": {
+    "parts": [
+     "Continuous elastic hem"
+    ],
+    "color": [
+     "Print inks and dyes"
+    ]
+   },
+   "contains": [],
+   "standards": [
+    "gots"
+   ],
+   "quote": "Made of 100% organic Egyptian cotton | Certified by GOTS Global Organic Textile Standard Free of Azo colorants, BPA, flame retardants, formaldehyde, fragrance, PVC or lead",
+   "products": [
+    {
+     "name": "Under the Nile Crib Sheet",
+     "url": "https://www.greenmountaindiapers.com/products/under-the-nile-crib-sheet",
+     "store": "Green Mountain Diapers",
+     "price": "$25.00",
+     "ships_from": "US",
+     "shipping": "Shipping calculated at checkout"
+    }
+   ],
+   "read": "2026-11-14",
+   "photos": [
+    {
+     "key": "under-the-nile-crib-sheet",
+     "src": "https://cdn.shopify.com/s/files/1/1583/5087/files/utncribbluedotsadj2048b.jpg?v=1754609509"
+    },
+    {
+     "key": "under-the-nile-crib-sheet_2",
+     "src": "https://cdn.shopify.com/s/files/1/1583/5087/files/utncribside.jpg?v=1754609281"
+    },
+    {
+     "key": "under-the-nile-crib-sheet_3",
+     "src": "https://cdn.shopify.com/s/files/1/1583/5087/files/utn-crib-hearts.jpg?v=1754609281"
+    },
+    {
+     "key": "under-the-nile-crib-sheet_4",
+     "src": "https://cdn.shopify.com/s/files/1/1583/5087/files/utn-crib-dino.jpg?v=1754609281"
+    },
+    {
+     "key": "under-the-nile-crib-sheet_5",
+     "src": "https://cdn.shopify.com/s/files/1/1583/5087/files/utncribmoderndaisy.jpg?v=1754609281"
+    },
+    {
+     "key": "under-the-nile-crib-sheet_6",
+     "src": "https://cdn.shopify.com/s/files/1/1583/5087/files/utn-crib-pinkdots2048.jpg?v=1754609281"
+    },
+    {
+     "key": "under-the-nile-crib-sheet_7",
+     "src": "https://cdn.shopify.com/s/files/1/1583/5087/files/utn-crib-woodland2048.jpg?v=1754606898"
+    },
+    {
+     "key": "under-the-nile-crib-sheet_8",
+     "src": "https://cdn.shopify.com/s/files/1/1583/5087/files/utn-crib-pinkdotsbaby2048.jpg?v=1754609509"
+    },
+    {
+     "key": "under-the-nile-crib-sheet_9",
+     "src": "https://cdn.shopify.com/s/files/1/1583/5087/files/utn-crib-woodlandelastic-2048.jpg?v=1754609509"
+    },
+    {
+     "key": "under-the-nile-crib-sheet_10",
+     "src": "https://cdn.shopify.com/s/files/1/1583/5087/files/utn-crib-heartselastic.jpg?v=1754609509"
+    }
+   ],
+   "img": "under-the-nile-crib-sheet",
+   "img_src": "https://cdn.shopify.com/s/files/1/1583/5087/files/utncribbluedotsadj2048b.jpg?v=1754609509"
+  },
+  {
+   "id": "weesprout-baby-food-feeders-with-freezer-tray",
+   "type": "freezer-trays",
+   "brand": "WeeSprout",
+   "line": "Baby Food Feeders with Freezer Tray (12 x 0.25 oz)",
+   "uses": [
+    "Food-grade silicone"
+   ],
+   "free": [
+    "BPA in the plastic"
+   ],
+   "unconfirmed": [
+    "Which parts are silicone and which are plastic",
+    "Pigments",
+    "Silicone testing standard"
+   ],
+   "outside": [
+    "BPA-free plastic (parts not named)"
+   ],
+   "facts": {
+    "main": "unknown",
+    "parts": "no",
+    "color": "unknown",
+    "silicone": "unknown"
+   },
+   "unstated": {
+    "main": [
+     "Which parts are silicone and which are plastic"
+    ],
+    "color": [
+     "Pigments"
+    ],
+    "silicone": [
+     "Silicone testing standard"
+    ]
+   },
+   "contains": [],
+   "standards": [],
+   "age": {
+    "min_months": 6,
+    "text": "Age: 6 months +"
+   },
+   "quote": "All components are crafted from food-grade silicone and BPA-free plastic and are dishwasher safe for easy cleanup.",
+   "note": "Set of 2 mesh-style feeders, 2 travel lids, extra silicone pouches and 1 freezer tray with snap-on lid.",
+   "products": [
+    {
+     "name": "Baby Food Feeders with Freezer Tray",
+     "url": "https://www.weesprout.com/products/silicone-baby-food-feeders",
+     "store": "WeeSprout",
+     "price": "$19.98",
+     "ships_from": null,
+     "shipping": "Free shipping on orders $60+"
+    }
+   ],
+   "read": "2026-11-14",
+   "photos": [
+    {
+     "key": "weesprout-baby-food-feeders-with-freezer-tray",
+     "src": "https://cdn.shopify.com/s/files/1/0957/4574/files/BFF-PBLCL.jpg?v=1773105546"
+    },
+    {
+     "key": "weesprout-baby-food-feeders-with-freezer-tray_2",
+     "src": "http://www.weesprout.com/cdn/shop/files/BFF_a.jpg?v=1773105546"
+    },
+    {
+     "key": "weesprout-baby-food-feeders-with-freezer-tray_3",
+     "src": "http://www.weesprout.com/cdn/shop/files/BFF_b.jpg?v=1773105546"
+    }
+   ],
+   "img": "weesprout-baby-food-feeders-with-freezer-tray",
+   "img_src": "https://cdn.shopify.com/s/files/1/0957/4574/files/BFF-PBLCL.jpg?v=1773105546"
   }
  ]
 }

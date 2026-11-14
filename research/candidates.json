@@ -711,7 +711,8 @@
    "type": "bodysuits",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "colored-organics-carson-flannel-bodysuit"
   },
   {
    "url": "https://coloredorganics.com/products/lev-flannel-long-sleeve-collared-button-down-shirt-aw25",
@@ -3633,7 +3634,8 @@
    "type": "cribs",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "newton-marin-convertible-crib"
   },
   {
    "url": "https://www.newtonbaby.com/products/kiwi-gliding-ottoman",
@@ -5932,7 +5934,8 @@
    "type": "pajamas",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "skipped",
+   "reason": "Duplicate: a print of the Little Green Radicals organic cotton interlock pyjamas (same materials text), listed as little-green-radicals-blue-bears-pyjamas"
   },
   {
    "url": "https://littlegreenradicals.com/products/sleeping-swans-organic-cotton-sherpa-lined-snowsuit",
@@ -7355,7 +7358,8 @@
    "type": "protectors",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "obasan-organic-wool-mattress-protector"
   },
   {
    "url": "https://www.obasan.com/products/organic-cotton-sheet-set",
@@ -11366,7 +11370,8 @@
    "type": "furniture",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "skipped",
+   "reason": "Duplicate: same materials text as the RAD Montessori Shelf 3-Tier (13-ply European birch plywood, solid hardwood parts, same finishes), listed as rad-childrens-furniture-montessori-shelf-3-tier"
   },
   {
    "url": "https://radchildrensfurniture.com/products/montessori-shelves",
@@ -21438,7 +21443,8 @@
    "type": "food-storage",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "mushie-silicone-baby-food-containers"
   },
   {
    "url": "https://mushie.com/products/zipper-pajama",
@@ -22637,7 +22643,8 @@
    "type": "freezer-trays",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "weesprout-baby-food-feeders-with-freezer-tray"
   },
   {
    "url": "https://www.weesprout.com/products/3-in-1-stainless-steel-cups",
@@ -23560,7 +23567,8 @@
    "type": "sheets",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "under-the-nile-crib-sheet"
   },
   {
    "url": "https://www.greenmountaindiapers.com/products/under-the-nile-changing-pad-cover",
@@ -23808,7 +23816,8 @@
    "type": "diapers",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "mother-ease-one-size-fitted-diaper"
   },
   {
    "url": "https://www.greenmountaindiapers.com/products/mother-ease-bedwetter-pant",
@@ -27252,7 +27261,8 @@
    "type": "sheets",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "green-cradle-bassinet-organic-cotton-fitted-sheet"
   },
   {
    "url": "https://www.greencradle.com/products/natural-rubber-latex-molded-pillows",
@@ -27767,7 +27777,8 @@
    "type": "climbers",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "skipped",
+   "reason": "Duplicate: add-on ramp sold as an option of the Sprout Wooden Climbing Triangle, listed as sprout-kids-wooden-climbing-triangle (same Baltic birch plywood)"
   },
   {
    "url": "https://sprout-kids.com/products/wooden-foldable-climbing-triangle",
@@ -43959,7 +43970,8 @@
    "type": "high-chairs",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "delta-children-jeep-classic-high-chair"
   },
   {
    "url": "https://www.deltachildren.com/products/365-plus-stroller",
@@ -62460,7 +62472,8 @@
    "type": "art",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "stockmar-modeling-beeswax-6-colors"
   },
   {
    "url": "https://camdenrose.com/products/esma-farouk-lost-in-the-souk-hardcover",
@@ -63189,7 +63202,8 @@
    "type": "art",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "camden-rose-finger-paint"
   },
   {
    "url": "https://camdenrose.com/products/4-inch-waldorf-dollhouse-little-girl-doll",
