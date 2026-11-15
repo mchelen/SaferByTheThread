@@ -1,6 +1,6 @@
 {
  "schema": 4,
- "updated": "2026-11-14",
+ "updated": "2026-11-15",
  "ask": [
   "Thread on any sewn item (cotton or polyester).",
   "Wheels and axles on push toys and cars.",
@@ -38699,6 +38699,1071 @@
    ],
    "img": "weesprout-baby-food-feeders-with-freezer-tray",
    "img_src": "https://cdn.shopify.com/s/files/1/0957/4574/files/BFF-PBLCL.jpg?v=1773105546"
+  },
+  {
+   "id": "burts-bees-baby-organic-sleep-play-footie",
+   "type": "pajamas",
+   "brand": "Burt’s Bees Baby",
+   "line": "Organic Sleep & Play Footie Pajamas",
+   "uses": [
+    "100% organic cotton"
+   ],
+   "free": [],
+   "outside": [],
+   "unconfirmed": [
+    "Non-slip bee grips on the feet",
+    "Zipper",
+    "Thread",
+    "Dyes"
+   ],
+   "facts": {
+    "main": "yes",
+    "parts": "unknown",
+    "color": "unknown",
+    "organic": "yes"
+   },
+   "unstated": {
+    "parts": [
+     "Non-slip bee grips on the feet",
+     "Zipper"
+    ],
+    "color": [
+     "Dyes"
+    ]
+   },
+   "standards": [
+    "gots"
+   ],
+   "contains": [],
+   "quote": "Made of 100% organic cotton, these footies are extra gentle on baby’s sensitive skin.",
+   "note": "Diagonal zip front, convertible mittens on NB and 0-3M. Sold by Babylist.",
+   "products": [
+    {
+     "name": "Burt’s Bees Baby Organic Sleep & Play Footie Pajamas",
+     "url": "https://www.babylist.com/gp/burt-s-bees-baby-organic-sleep-play-footie-pajamas/15166/2837087",
+     "store": "Babylist",
+     "price": "$18.95",
+     "ships_from": "US",
+     "shipping": "Free shipping & returns for Babylist orders $45+"
+    }
+   ],
+   "read": "2026-11-15",
+   "photos": [
+    {
+     "key": "burts-bees-baby-organic-sleep-play-footie",
+     "src": "https://images.ctfassets.net/50gzycvace50/48f4086974a62bb6e53a79558b68bd0ea01519691e00fcc6cbe9ec253fce00ac/9c16d343c04f80af5dea55c656561d82/48f4086974a62bb6e53a79558b68bd0ea01519691e00fcc6cbe9ec253fce00ac.png?fl=progressive&fm=jpg&bg=rgb:fafafa&w=1240&h=1240"
+    }
+   ],
+   "img": "burts-bees-baby-organic-sleep-play-footie",
+   "img_src": "https://images.ctfassets.net/50gzycvace50/48f4086974a62bb6e53a79558b68bd0ea01519691e00fcc6cbe9ec253fce00ac/9c16d343c04f80af5dea55c656561d82/48f4086974a62bb6e53a79558b68bd0ea01519691e00fcc6cbe9ec253fce00ac.png?fl=progressive&fm=jpg&bg=rgb:fafafa&w=1240&h=1240"
+  },
+  {
+   "id": "coco-village-duck-family-pull-toy",
+   "type": "push",
+   "brand": "Coco Village",
+   "line": "Duck Family Pull Toy",
+   "uses": [
+    "Wooden ducks"
+   ],
+   "free": [],
+   "outside": [],
+   "unconfirmed": [
+    "Wood species",
+    "Paint or finish",
+    "Pull string",
+    "Wheels and axles"
+   ],
+   "facts": {
+    "main": "unknown",
+    "parts": "unknown",
+    "color": "unknown",
+    "wood": "unknown"
+   },
+   "unstated": {
+    "main": [
+     "Pull string"
+    ],
+    "parts": [
+     "Wheels and axles"
+    ],
+    "color": [
+     "Paint or finish"
+    ],
+    "wood": [
+     "Wood species"
+    ]
+   },
+   "standards": [],
+   "contains": [],
+   "quote": "This wooden duck family pull toy is designed for little walkers",
+   "note": "18.9 x 4.5 x 2 in. Sold by Enlightened Baby.",
+   "products": [
+    {
+     "name": "Coco Village Duck Family Pull Toy",
+     "url": "https://enlightenedbaby.com/products/coco-village-duck-family-pull-toy",
+     "store": "Enlightened Baby",
+     "price": "$34.99",
+     "ships_from": null
+    }
+   ],
+   "read": "2026-11-15",
+   "photos": [
+    {
+     "key": "coco-village-duck-family-pull-toy",
+     "src": "https://cdn.shopify.com/s/files/1/0707/4850/4296/files/Coco_Village_6_aout_ecom_17.webp?v=1781793436"
+    },
+    {
+     "key": "coco-village-duck-family-pull-toy_2",
+     "src": "https://cdn.shopify.com/s/files/1/0707/4850/4296/files/coco-village-evergrenn-products-lifestyle-high-19.webp?v=1781793439"
+    },
+    {
+     "key": "coco-village-duck-family-pull-toy_3",
+     "src": "https://cdn.shopify.com/s/files/1/0707/4850/4296/files/Coco_Village_6_aout_ecom_18.webp?v=1781793436"
+    },
+    {
+     "key": "coco-village-duck-family-pull-toy_4",
+     "src": "https://cdn.shopify.com/s/files/1/0707/4850/4296/files/coco-village-evergrenn-products-lifestyle-high-3.webp?v=1781793438"
+    },
+    {
+     "key": "coco-village-duck-family-pull-toy_5",
+     "src": "https://cdn.shopify.com/s/files/1/0707/4850/4296/files/Coco_Village_6_aout_ecom_20.webp?v=1781793437"
+    },
+    {
+     "key": "coco-village-duck-family-pull-toy_6",
+     "src": "https://cdn.shopify.com/s/files/1/0707/4850/4296/files/coco-village-evergrenn-products-lifestyle-high-21.webp?v=1781793439"
+    },
+    {
+     "key": "coco-village-duck-family-pull-toy_7",
+     "src": "https://cdn.shopify.com/s/files/1/0707/4850/4296/files/Coco_Village_6_aout_ecom_19.webp?v=1781793437"
+    }
+   ],
+   "img": "coco-village-duck-family-pull-toy",
+   "img_src": "https://cdn.shopify.com/s/files/1/0707/4850/4296/files/Coco_Village_6_aout_ecom_17.webp?v=1781793436"
+  },
+  {
+   "id": "delta-children-mysize-table-chairs-set",
+   "type": "furniture",
+   "brand": "Delta Children",
+   "line": "MySize Table & 2 Chairs Set",
+   "uses": [
+    "Wood construction"
+   ],
+   "free": [],
+   "outside": [
+    "Painted finish (paint not named)"
+   ],
+   "unconfirmed": [
+    "Whether the wood is solid, plywood or MDF",
+    "Hardware"
+   ],
+   "facts": {
+    "wood": "unknown",
+    "color": "no",
+    "parts": "unknown"
+   },
+   "unstated": {
+    "wood": [
+     "Whether the wood is solid, plywood or MDF"
+    ],
+    "parts": [
+     "Hardware"
+    ]
+   },
+   "standards": [],
+   "contains": [],
+   "age": {
+    "min_months": 36,
+    "text": "3 years and up"
+   },
+   "quote": "Super cute painted finish with matching chairs",
+   "note": "Table and two chairs, each chair rated to 50 lb. The page says all Delta Children products are “free from added toxic fire retardants, lead, and phthalates”.",
+   "products": [
+    {
+     "name": "MySize Table and Chair Set",
+     "url": "https://www.deltachildren.com/products/delta-children-mysize-table-chairs-set",
+     "store": "Delta Children",
+     "price": "$54.99",
+     "ships_from": "US"
+    }
+   ],
+   "read": "2026-11-15",
+   "photos": [
+    {
+     "key": "delta-children-mysize-table-chairs-set",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/products/TT89601GN-026-GREY-tnc-hangtag-hi-res_b24795e8-1507-4428-a259-4705a3e5f99d.jpg?v=1611757462"
+    },
+    {
+     "key": "delta-children-mysize-table-chairs-set_2",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/products/TT89601GN-026-GREY-tnc-hangtag-hi-res_a8b6b19d-10a6-4e27-89b9-f3ee138c5671.jpg?v=1611757462"
+    },
+    {
+     "key": "delta-children-mysize-table-chairs-set_3",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/TT89601GN-026-GREY-tnc-right.jpg?v=1742765359"
+    },
+    {
+     "key": "delta-children-mysize-table-chairs-set_4",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/products/TT89601GN-026-GREY-tnc-right-hi-res_3b2f87d1-5f25-4f77-a6ea-2234fe022172.jpg?v=1742765359"
+    },
+    {
+     "key": "delta-children-mysize-table-chairs-set_5",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/products/TT89601GN-026-GREY-tnc-left-hi-res_1b451a67-ddc4-4620-8771-295d84709a57.jpg?v=1742765359"
+    },
+    {
+     "key": "delta-children-mysize-table-chairs-set_6",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/products/TT89601GN-032c-my-size-poppy-tnc-set-hangtag.jpg?v=1742765359"
+    },
+    {
+     "key": "delta-children-mysize-table-chairs-set_7",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/products/TT89601GN-032c-my-size-poppy-room_3addb696-c533-4855-ae29-34e9e157b368.jpg?v=1742765359"
+    },
+    {
+     "key": "delta-children-mysize-table-chairs-set_8",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/products/TT89601GN-032c-my-size-poppy-room.jpg?v=1742765359"
+    },
+    {
+     "key": "delta-children-mysize-table-chairs-set_9",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/products/TT89601GN-032c-my-size-poppy-tnc-right.jpg?v=1742765359"
+    },
+    {
+     "key": "delta-children-mysize-table-chairs-set_10",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/products/TT89601GN-032c-my-size-poppy-tnc-tucked-left.jpg?v=1742765359"
+    }
+   ],
+   "img": "delta-children-mysize-table-chairs-set",
+   "img_src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/products/TT89601GN-026-GREY-tnc-hangtag-hi-res_b24795e8-1507-4428-a259-4705a3e5f99d.jpg?v=1611757462"
+  },
+  {
+   "id": "egmont-toys-crocodile-pull-along",
+   "type": "push",
+   "brand": "Egmont Toys",
+   "line": "Crocodile Pull-Along Toy",
+   "uses": [
+    "Knitted cotton body",
+    "Wooden base and wheels"
+   ],
+   "free": [],
+   "outside": [
+    "Poly fill"
+   ],
+   "unconfirmed": [
+    "Wood species and finish",
+    "Pull string",
+    "Axles"
+   ],
+   "facts": {
+    "main": "no",
+    "color": "unknown",
+    "wood": "unknown",
+    "parts": "unknown"
+   },
+   "unstated": {
+    "color": [
+     "Wood species and finish"
+    ],
+    "wood": [
+     "Wood species and finish"
+    ],
+    "parts": [
+     "Pull string",
+     "Axles"
+    ]
+   },
+   "standards": [],
+   "contains": [],
+   "age": {
+    "min_months": 12,
+    "text": "1 year and up"
+   },
+   "quote": "MATERIALS : Knitted cotton, Poly fill, Wooden base",
+   "note": "About 17.9 in long. Designed in Belgium, made in China; ships from the store’s New York warehouse.",
+   "products": [
+    {
+     "name": "Egmont Toys Crocodile Pull-Along Toy",
+     "url": "https://www.bellalunatoys.com/products/egmont-toys-pull-along-croc",
+     "store": "Bella Luna Toys",
+     "price": "$55.99",
+     "ships_from": "US",
+     "shipping": "Free shipping on orders over $99 within the contiguous 48 USA"
+    }
+   ],
+   "read": "2026-11-15",
+   "photos": [
+    {
+     "key": "egmont-toys-crocodile-pull-along",
+     "src": "https://cdn.shopify.com/s/files/1/1114/2810/files/egmont-pull-along-croc.jpg?v=1755055838"
+    },
+    {
+     "key": "egmont-toys-crocodile-pull-along_2",
+     "src": "https://cdn.shopify.com/s/files/1/1114/2810/files/egmont-pull-along-croc-ls-2.jpg?v=1755055838"
+    },
+    {
+     "key": "egmont-toys-crocodile-pull-along_3",
+     "src": "https://cdn.shopify.com/s/files/1/1114/2810/files/egmont-pull-along-croc-ls.jpg?v=1755055838"
+    }
+   ],
+   "img": "egmont-toys-crocodile-pull-along",
+   "img_src": "https://cdn.shopify.com/s/files/1/1114/2810/files/egmont-pull-along-croc.jpg?v=1755055838"
+  },
+  {
+   "id": "gerber-childrenswear-footed-fleece-pajamas",
+   "type": "pajamas",
+   "brand": "Gerber Childrenswear",
+   "line": "Baby & Toddler Footed Fleece Pajamas",
+   "uses": [],
+   "free": [],
+   "outside": [
+    "100% polyester microfleece",
+    "100% polyester neck and sleeve cuffs"
+   ],
+   "unconfirmed": [
+    "Zipper",
+    "Non-skid soles (sizes 9M to 5T)",
+    "Dyes and print"
+   ],
+   "facts": {
+    "main": "no",
+    "parts": "unknown",
+    "color": "unknown",
+    "flame": "unknown"
+   },
+   "unstated": {
+    "parts": [
+     "Zipper",
+     "Non-skid soles (sizes 9M to 5T)"
+    ],
+    "color": [
+     "Dyes and print"
+    ]
+   },
+   "standards": [
+    "oeko-tex"
+   ],
+   "contains": [],
+   "quote": "Fabric: Microfleece 100% poly Neck & Sleeve Cuff Fabric: 100% poly",
+   "note": "The page calls it a “flame resistant blanket sleeper” without saying how. Several prints share the page.",
+   "products": [
+    {
+     "name": "Gerber Baby & Toddler Girls Pink Deer Footed Fleece Pajamas",
+     "url": "https://www.gerberchildrenswear.com/products/1-pack-baby-toddler-girl-deer-fleece-pajamas-op2409",
+     "store": "Gerber Childrenswear",
+     "price": "$6.97 (sale; regular $20.00)",
+     "ships_from": "US"
+    }
+   ],
+   "read": "2026-11-15",
+   "photos": [
+    {
+     "key": "gerber-childrenswear-footed-fleece-pajamas",
+     "src": "https://cdn.shopify.com/s/files/1/0074/6402/6227/files/Just-Born_1-pack-baby-toddler-girl-deer-fleece-pajamas-op2409_image_1.jpg?v=1723787705"
+    },
+    {
+     "key": "gerber-childrenswear-footed-fleece-pajamas_2",
+     "src": "https://cdn.shopify.com/s/files/1/0074/6402/6227/files/OP249548HK_LV1.jpg?v=1723866674"
+    },
+    {
+     "key": "gerber-childrenswear-footed-fleece-pajamas_3",
+     "src": "https://cdn.shopify.com/s/files/1/0074/6402/6227/files/just-born-2-pack-baby-and-toddler-girls-pink-deer-fleece-pajamas-eg-sleep_LV2_46f9acf3-9216-466d-b630-4727f89b4ca1.jpg?v=1734562045"
+    },
+    {
+     "key": "gerber-childrenswear-footed-fleece-pajamas_4",
+     "src": "https://cdn.shopify.com/s/files/1/0074/6402/6227/files/OP249171HK_2400x2400_95b635a1-0e0c-4e07-9ea6-3ea5d556cf20.jpg?v=1734558419"
+    }
+   ],
+   "img": "gerber-childrenswear-footed-fleece-pajamas",
+   "img_src": "https://cdn.shopify.com/s/files/1/0074/6402/6227/files/Just-Born_1-pack-baby-toddler-girl-deer-fleece-pajamas-op2409_image_1.jpg?v=1723787705"
+  },
+  {
+   "id": "grimms-pull-along-truck-rainbow-blocks",
+   "type": "push",
+   "brand": "Grimm’s Spiel & Holz",
+   "line": "Wooden Pull Along Truck with Rainbow Blocks",
+   "uses": [
+    "Alder and maple wood",
+    "Plant-based oil finish of linseed, olive, thistle, walnut and soybean oils"
+   ],
+   "free": [],
+   "outside": [],
+   "unconfirmed": [
+    "Ingredients of the water-based colour stain",
+    "Water-based coatings over the stains",
+    "Pull cord",
+    "Axles"
+   ],
+   "facts": {
+    "main": "unknown",
+    "wood": "unknown",
+    "color": "unknown",
+    "parts": "unknown"
+   },
+   "unstated": {
+    "main": [
+     "Pull cord"
+    ],
+    "color": [
+     "Ingredients of the water-based colour stain"
+    ],
+    "parts": [
+     "Axles"
+    ]
+   },
+   "standards": [],
+   "contains": [],
+   "quote": "Made from alder and maple wood, non-toxic plant based oil finish, non-toxic water based color stain.",
+   "note": "Truck 8.66 in long, carrying rainbow-stained blocks. Made in Germany; ships from the store’s New York warehouse.",
+   "products": [
+    {
+     "name": "Grimm’s Wooden Pull Along Truck with Rainbow Blocks",
+     "url": "https://www.bellalunatoys.com/products/grimms-pull-along-truck-with-rainbow-blocks",
+     "store": "Bella Luna Toys",
+     "price": "$62.00",
+     "ships_from": "US",
+     "shipping": "Free shipping on orders over $99 within the contiguous 48 USA"
+    }
+   ],
+   "read": "2026-11-15",
+   "photos": [
+    {
+     "key": "grimms-pull-along-truck-rainbow-blocks",
+     "src": "https://cdn.shopify.com/s/files/1/1114/2810/files/grimms-wooden-pull-along-truck.jpg?v=1719863367"
+    },
+    {
+     "key": "grimms-pull-along-truck-rainbow-blocks_2",
+     "src": "https://www.bellalunatoys.com/cdn/shop/files/grimms-wooden-pull-along-truck-1.jpg?v=1719863367&width=1800"
+    },
+    {
+     "key": "grimms-pull-along-truck-rainbow-blocks_3",
+     "src": "https://www.bellalunatoys.com/cdn/shop/files/grimms-wooden-pull-along-truck-ls.jpg?v=1719863367&width=1800"
+    }
+   ],
+   "img": "grimms-pull-along-truck-rainbow-blocks",
+   "img_src": "https://cdn.shopify.com/s/files/1/1114/2810/files/grimms-wooden-pull-along-truck.jpg?v=1719863367"
+  },
+  {
+   "id": "kodo-kids-toddler-table-towers",
+   "type": "stacking",
+   "brand": "Kodo Kids",
+   "line": "Toddler Table Towers",
+   "uses": [
+    "Wooden wheels, people, rings, spools and biscuits"
+   ],
+   "free": [],
+   "outside": [],
+   "unconfirmed": [
+    "Wood species",
+    "Finish on the wood",
+    "Fibre of the canvas storage bag"
+   ],
+   "facts": {
+    "main": "unknown",
+    "wood": "unknown",
+    "color": "unknown"
+   },
+   "unstated": {
+    "main": [
+     "Fibre of the canvas storage bag"
+    ],
+    "wood": [
+     "Wood species"
+    ],
+    "color": [
+     "Finish on the wood"
+    ]
+   },
+   "standards": [
+    "us-toy"
+   ],
+   "contains": [],
+   "age": {
+    "min_months": 24,
+    "text": "2 years and up"
+   },
+   "quote": "Each wooden block, wheel, ring, spool, and figure is just the right size for little fingers",
+   "note": "30 pieces in a canvas bag: 10 wheels, 5 people, 5 rings, 5 spools, 5 biscuits. The page shows “Made in the USA” in its footer without tying it to this set.",
+   "products": [
+    {
+     "name": "Toddler Table Towers",
+     "url": "https://kodokids.com/products/toddler-table-towers",
+     "store": "Kodo Kids",
+     "price": "$90.00",
+     "ships_from": "US"
+    }
+   ],
+   "read": "2026-11-15",
+   "photos": [
+    {
+     "key": "kodo-kids-toddler-table-towers",
+     "src": "https://kodokids.com/cdn/shop/files/toddler-table-towers-retail.png?v=1793883687&width=1920"
+    },
+    {
+     "key": "kodo-kids-toddler-table-towers_2",
+     "src": "https://kodokids.com/cdn/shop/files/toddler-table-towers-retail-2.jpg?v=1793139241&width=1920"
+    },
+    {
+     "key": "kodo-kids-toddler-table-towers_3",
+     "src": "https://kodokids.com/cdn/shop/files/toddler-table-towers-retail-3.jpg?v=1793883689&width=1920"
+    },
+    {
+     "key": "kodo-kids-toddler-table-towers_4",
+     "src": "https://kodokids.com/cdn/shop/files/toddler-table-towers-retail-4.jpg?v=1793804991&width=1920"
+    },
+    {
+     "key": "kodo-kids-toddler-table-towers_5",
+     "src": "https://kodokids.com/cdn/shop/files/toddler-table-towers-retail-5.jpg?v=1793139246&width=1920"
+    },
+    {
+     "key": "kodo-kids-toddler-table-towers_6",
+     "src": "https://kodokids.com/cdn/shop/files/toddler-table-towers-retail-6.jpg?v=1793139247&width=1920"
+    }
+   ],
+   "img": "kodo-kids-toddler-table-towers",
+   "img_src": "https://kodokids.com/cdn/shop/files/toddler-table-towers-retail.png?v=1793883687&width=1920"
+  },
+  {
+   "id": "kyte-baby-zippered-footie",
+   "type": "pajamas",
+   "brand": "Kyte Baby",
+   "line": "Zippered Footie",
+   "uses": [
+    "Bamboo rayon (97%)"
+   ],
+   "free": [],
+   "outside": [
+    "Spandex (3%)",
+    "100% polyester filling"
+   ],
+   "unconfirmed": [
+    "Zipper",
+    "Thread",
+    "Dyes"
+   ],
+   "facts": {
+    "main": "no",
+    "parts": "unknown",
+    "color": "unknown"
+   },
+   "unstated": {
+    "parts": [
+     "Zipper"
+    ],
+    "color": [
+     "Dyes"
+    ]
+   },
+   "standards": [],
+   "contains": [],
+   "quote": "Exterior: 97% Bamboo Rayon, 3% Spandex • Filling: 100% Polyester",
+   "note": "J-shaped double zipper; sizes preemie to 24 months. The fabric section lists a polyester filling.",
+   "products": [
+    {
+     "name": "Kyte Baby Zippered Footie in Oat",
+     "url": "https://kytebaby.com/products/zippered-footie-in-oat",
+     "store": "Kyte Baby",
+     "price": "$38.00",
+     "ships_from": "US",
+     "shipping": "Free shipping for US orders over $85"
+    }
+   ],
+   "read": "2026-11-15",
+   "photos": [
+    {
+     "key": "kyte-baby-zippered-footie",
+     "src": "https://kytebaby.com/cdn/shop/files/kyte-baby-zippered-footies-zippered-footie-in-oat-34274578530415.jpg?v=1762182798&width=1920"
+    },
+    {
+     "key": "kyte-baby-zippered-footie_2",
+     "src": "https://kytebaby.com/cdn/shop/files/kyte-baby-zippered-footies-zippered-footie-in-oat-32790620569711.jpg"
+    },
+    {
+     "key": "kyte-baby-zippered-footie_3",
+     "src": "https://kytebaby.com/cdn/shop/files/kyte-baby-zippered-footies-zippered-footie-in-oat-33338535346287.jpg"
+    },
+    {
+     "key": "kyte-baby-zippered-footie_4",
+     "src": "https://kytebaby.com/cdn/shop/files/kyte-baby-zippered-footies-zippered-footie-in-oat-32790620602479.jpg"
+    },
+    {
+     "key": "kyte-baby-zippered-footie_5",
+     "src": "https://kytebaby.com/cdn/shop/files/kyte-baby-zippered-footies-zippered-footie-in-oat-32790620635247.jpg"
+    }
+   ],
+   "img": "kyte-baby-zippered-footie",
+   "img_src": "https://kytebaby.com/cdn/shop/files/kyte-baby-zippered-footies-zippered-footie-in-oat-34274578530415.jpg?v=1762182798&width=1920"
+  },
+  {
+   "id": "piccalio-surfer-balance-board",
+   "type": "climbers",
+   "brand": "Piccalio",
+   "line": "Surfer Balance Board",
+   "uses": [],
+   "free": [
+    "Formaldehyde and lead in the finish"
+   ],
+   "outside": [
+    "FSC beech plywood"
+   ],
+   "unconfirmed": [
+    "Ingredients of the water-based finish"
+   ],
+   "facts": {
+    "wood": "no",
+    "color": "unknown"
+   },
+   "unstated": {
+    "color": [
+     "Ingredients of the water-based finish"
+    ]
+   },
+   "standards": [
+    "fsc",
+    "us-toy"
+   ],
+   "contains": [],
+   "age": {
+    "min_months": 12,
+    "max_months": 72,
+    "text": "12 months to 6 years"
+   },
+   "quote": "The Surfer Balance Board is made from FSC Certified (sustainably harvested) European Beech plywood.",
+   "note": "Curved rocker board, 32 x 12 in; no assembly.",
+   "products": [
+    {
+     "name": "Surfer Balance Board",
+     "url": "https://www.piccalio.com/products/wobble-balance-board",
+     "store": "Piccalio",
+     "price": "$129",
+     "ships_from": "US",
+     "shipping": "Ships free"
+    }
+   ],
+   "read": "2026-11-15",
+   "photos": [
+    {
+     "key": "piccalio-surfer-balance-board",
+     "src": "http://piccalio.com/cdn/shop/files/Pcl_Surfer_Balance_Board-min.jpg?v=1693150605&width=2048"
+    }
+   ],
+   "img": "piccalio-surfer-balance-board",
+   "img_src": "http://piccalio.com/cdn/shop/files/Pcl_Surfer_Balance_Board-min.jpg?v=1693150605&width=2048"
+  },
+  {
+   "id": "plantoys-pull-along-musical-bear",
+   "type": "push",
+   "brand": "PlanToys",
+   "line": "Pull Along Musical Bear",
+   "uses": [
+    "Rubberwood",
+    "Organic pigments and water-based dyes"
+   ],
+   "free": [
+    "Formaldehyde in the glue"
+   ],
+   "outside": [],
+   "unconfirmed": [
+    "What the glue is made of",
+    "What the water-based coatings are made of",
+    "Material of the xylophone bars",
+    "Fibre of the pull rope"
+   ],
+   "facts": {
+    "main": "unknown",
+    "wood": "unknown",
+    "color": "unknown",
+    "parts": "unknown"
+   },
+   "unstated": {
+    "main": [
+     "Fibre of the pull rope"
+    ],
+    "wood": [
+     "What the glue is made of"
+    ],
+    "color": [
+     "What the water-based coatings are made of"
+    ],
+    "parts": [
+     "Material of the xylophone bars"
+    ]
+   },
+   "standards": [],
+   "contains": [],
+   "quote": "MATERIALS : Chemical-free rubberwood, formaldehyde-free glue, organic pigments and water-based dyes",
+   "note": "Wooden bear that taps a xylophone as it is pulled. Made in Thailand; ships from the maker within the 48 contiguous states (store page).",
+   "products": [
+    {
+     "name": "PlanToys Pull Along Musical Bear",
+     "url": "https://www.bellalunatoys.com/products/plan-toys-pull-along-musical-bear",
+     "store": "Bella Luna Toys",
+     "price": "$69.99",
+     "ships_from": "US",
+     "shipping": "Free shipping on orders $99+"
+    }
+   ],
+   "read": "2026-11-15",
+   "photos": [
+    {
+     "key": "plantoys-pull-along-musical-bear",
+     "src": "https://www.bellalunatoys.com/cdn/shop/files/plan-toys-pull-along-musical-bear_b40adf60-1c31-4a0c-b1a0-c71203883616_1024x1024.jpg?v=1763608557"
+    },
+    {
+     "key": "plantoys-pull-along-musical-bear_2",
+     "src": "https://www.bellalunatoys.com/cdn/shop/files/plan-toys-pull-along-musical-bear-2_ec8affbc-9179-426e-a1c2-7bed5ca9bead.jpg?v=1763608557&width=1800"
+    },
+    {
+     "key": "plantoys-pull-along-musical-bear_3",
+     "src": "https://www.bellalunatoys.com/cdn/shop/files/plan-toys-pull-along-musical-bear-3_098e12f8-57ac-4355-9d20-8a5cd6835dbf.jpg?v=1763608557&width=1800"
+    },
+    {
+     "key": "plantoys-pull-along-musical-bear_4",
+     "src": "https://www.bellalunatoys.com/cdn/shop/files/plan-toys-pull-along-musical-bear-4_4046b5e4-73db-472b-96d8-d3b1f237003e.jpg?v=1763608557&width=1800"
+    }
+   ],
+   "img": "plantoys-pull-along-musical-bear",
+   "img_src": "https://www.bellalunatoys.com/cdn/shop/files/plan-toys-pull-along-musical-bear_b40adf60-1c31-4a0c-b1a0-c71203883616_1024x1024.jpg?v=1763608557"
+  },
+  {
+   "id": "plantoys-wooden-balance-board-with-rope",
+   "type": "climbers",
+   "brand": "PlanToys",
+   "line": "Wooden Balance Board with Rope",
+   "uses": [
+    "Rubberwood"
+   ],
+   "free": [],
+   "outside": [
+    "Plywood board"
+   ],
+   "unconfirmed": [
+    "Fibre of the rope",
+    "Finish on the wood"
+   ],
+   "facts": {
+    "main": "unknown",
+    "wood": "no",
+    "color": "unknown",
+    "parts": "unknown"
+   },
+   "unstated": {
+    "main": [
+     "Fibre of the rope"
+    ],
+    "color": [
+     "Finish on the wood"
+    ]
+   },
+   "standards": [],
+   "contains": [],
+   "age": {
+    "min_months": 36,
+    "text": "3 years and up"
+   },
+   "quote": "Materials: Rubberwood, Plywood",
+   "note": "Curved board with a rope handhold, 20.5 x 11.8 in. Made in Thailand.",
+   "products": [
+    {
+     "name": "PlanToys Wooden Balance Board with Rope",
+     "url": "https://thebabypenguin.com/products/balance-board",
+     "store": "The Baby Penguin",
+     "price": "$89.99",
+     "ships_from": "US",
+     "shipping": "Free standard shipping on orders of $50 or more within the contiguous United States"
+    }
+   ],
+   "read": "2026-11-15",
+   "photos": [
+    {
+     "key": "plantoys-wooden-balance-board-with-rope",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Balance-Board-PlanToys-USA-124157888.jpg?v=1781462409"
+    },
+    {
+     "key": "plantoys-wooden-balance-board-with-rope_2",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Balance-Board-PlanToys-USA-124157977.jpg?v=1781462413"
+    },
+    {
+     "key": "plantoys-wooden-balance-board-with-rope_3",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Balance-Board-PlanToys-USA-124158097.jpg?v=1781462413"
+    },
+    {
+     "key": "plantoys-wooden-balance-board-with-rope_4",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Balance-Board-PlanToys-USA-124158157.jpg?v=1781462413"
+    },
+    {
+     "key": "plantoys-wooden-balance-board-with-rope_5",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Balance-Board-PlanToys-USA-124158285.jpg?v=1781462416"
+    },
+    {
+     "key": "plantoys-wooden-balance-board-with-rope_6",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Balance-Board-PlanToys-USA-124158320.jpg?v=1781462416"
+    },
+    {
+     "key": "plantoys-wooden-balance-board-with-rope_7",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Balance-Board-PlanToys-USA-124158493.jpg?v=1781462416"
+    },
+    {
+     "key": "plantoys-wooden-balance-board-with-rope_8",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Balance-Board-PlanToys-USA-124158589.jpg?v=1781462419"
+    },
+    {
+     "key": "plantoys-wooden-balance-board-with-rope_9",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Balance-Board-PlanToys-USA-124158610.jpg?v=1781462419"
+    },
+    {
+     "key": "plantoys-wooden-balance-board-with-rope_10",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Balance-Board-PlanToys-USA-124158786.jpg?v=1781462419"
+    }
+   ],
+   "img": "plantoys-wooden-balance-board-with-rope",
+   "img_src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Balance-Board-PlanToys-USA-124157888.jpg?v=1781462409"
+  },
+  {
+   "id": "rad-childrens-furniture-balance-beam",
+   "type": "climbers",
+   "brand": "RAD Children’s Furniture",
+   "line": "Balance Beam",
+   "uses": [],
+   "free": [
+    "Urea-formaldehyde adhesives in the plywood"
+   ],
+   "outside": [
+    "13-ply European birch plywood"
+   ],
+   "unconfirmed": [
+    "Ingredients of the UV-cured and water-based finishes",
+    "Connectors and hardware"
+   ],
+   "facts": {
+    "wood": "no",
+    "color": "unknown",
+    "parts": "unknown"
+   },
+   "unstated": {
+    "color": [
+     "Ingredients of the UV-cured and water-based finishes"
+    ],
+    "parts": [
+     "Connectors and hardware"
+    ]
+   },
+   "standards": [
+    "fsc"
+   ],
+   "contains": [],
+   "quote": "Crafted from premium 13-ply European birch plywood made without urea-formaldehyde adhesives",
+   "note": "Four beams that link into different shapes; the page says it is for strong walkers and older. Made in the maker’s Los Angeles woodshop; the FSC line is on every RAD product page.",
+   "products": [
+    {
+     "name": "Balance Beam",
+     "url": "https://radchildrensfurniture.com/products/balance-beam",
+     "store": "RAD Children’s Furniture",
+     "price": "$149.00",
+     "ships_from": "US",
+     "shipping": "Free shipping to the contiguous USA"
+    }
+   ],
+   "read": "2026-11-15",
+   "photos": [
+    {
+     "key": "rad-childrens-furniture-balance-beam",
+     "src": "https://cdn.shopify.com/s/files/1/0087/4230/5892/files/children_s_balance_beam.jpg?v=1762457060"
+    },
+    {
+     "key": "rad-childrens-furniture-balance-beam_2",
+     "src": "https://cdn.shopify.com/s/files/1/0087/4230/5892/files/balancebeamwithchild.png?v=1748282963"
+    },
+    {
+     "key": "rad-childrens-furniture-balance-beam_3",
+     "src": "https://cdn.shopify.com/s/files/1/0087/4230/5892/products/balance-beam-with-child.jpg?v=1748282963"
+    },
+    {
+     "key": "rad-childrens-furniture-balance-beam_4",
+     "src": "https://cdn.shopify.com/s/files/1/0087/4230/5892/files/children_s_balance_beam_parts.jpg?v=1748282963"
+    },
+    {
+     "key": "rad-childrens-furniture-balance-beam_5",
+     "src": "https://cdn.shopify.com/s/files/1/0087/4230/5892/products/two_kids_on_balance_beam.jpg?v=1748282963"
+    },
+    {
+     "key": "rad-childrens-furniture-balance-beam_6",
+     "src": "https://cdn.shopify.com/s/files/1/0087/4230/5892/products/image_ae1e5c51-d663-41ee-8079-f00b5b921006_1.jpg?v=1748282963"
+    },
+    {
+     "key": "rad-childrens-furniture-balance-beam_7",
+     "src": "https://cdn.shopify.com/s/files/1/0087/4230/5892/products/2019-05-19_17-03-11_321.jpg?v=1748282963"
+    },
+    {
+     "key": "rad-childrens-furniture-balance-beam_8",
+     "src": "https://cdn.shopify.com/s/files/1/0087/4230/5892/files/childwalkingonwshapedbalancebeam.png?v=1748282963"
+    },
+    {
+     "key": "rad-childrens-furniture-balance-beam_9",
+     "src": "https://review-images.judgeme.com/rad-children-s-furniture/1786342390__img_9318__original.jpeg?quality=80&width=1024"
+    },
+    {
+     "key": "rad-childrens-furniture-balance-beam_10",
+     "src": "https://review-images.judgeme.com/rad-children-s-furniture/1689838927__img_1598__original.jpeg?quality=80&width=1024"
+    }
+   ],
+   "img": "rad-childrens-furniture-balance-beam",
+   "img_src": "https://cdn.shopify.com/s/files/1/0087/4230/5892/files/children_s_balance_beam.jpg?v=1762457060"
+  },
+  {
+   "id": "rad-childrens-furniture-ladder",
+   "type": "climbers",
+   "brand": "RAD Children’s Furniture",
+   "line": "Ladder",
+   "uses": [],
+   "free": [
+    "Urea-formaldehyde adhesives in the plywood"
+   ],
+   "outside": [
+    "13-ply European birch plywood"
+   ],
+   "unconfirmed": [
+    "Ingredients of the UV-cured and water-based finishes",
+    "Wood of the rungs"
+   ],
+   "facts": {
+    "wood": "no",
+    "color": "unknown",
+    "parts": "unknown"
+   },
+   "unstated": {
+    "color": [
+     "Ingredients of the UV-cured and water-based finishes"
+    ]
+   },
+   "standards": [
+    "fsc"
+   ],
+   "contains": [],
+   "age": {
+    "min_months": 30,
+    "max_months": 72,
+    "text": "2.5 to 6 years"
+   },
+   "quote": "Crafted from premium 13-ply European birch plywood made without urea-formaldehyde adhesives",
+   "note": "Hooks onto Pikler triangles, climbing arches and play cubes, or works as a ramp or bridge. The page says “Some parts such as rungs and table legs are solid hardwood” without naming which parts of the ladder.",
+   "products": [
+    {
+     "name": "Ladder",
+     "url": "https://radchildrensfurniture.com/products/ladder",
+     "store": "RAD Children’s Furniture",
+     "price": "$189.00",
+     "ships_from": "US",
+     "shipping": "Free shipping to the contiguous USA"
+    }
+   ],
+   "read": "2026-11-15",
+   "photos": [
+    {
+     "key": "rad-childrens-furniture-ladder",
+     "src": "https://cdn.shopify.com/s/files/1/0087/4230/5892/files/pikler_ladder.jpg?v=1762457057"
+    },
+    {
+     "key": "rad-childrens-furniture-ladder_2",
+     "src": "https://cdn.shopify.com/s/files/1/0087/4230/5892/files/0020-4851968293462594347.jpg?v=1747946744"
+    },
+    {
+     "key": "rad-childrens-furniture-ladder_3",
+     "src": "https://cdn.shopify.com/s/files/1/0087/4230/5892/products/2020-10-01_18-25-19_555_1.jpg?v=1747946744"
+    },
+    {
+     "key": "rad-childrens-furniture-ladder_4",
+     "src": "https://review-images.judgeme.com/rad-children-s-furniture/1613143565__C77819DC-AAB4-443C-BD29-01BD0CEFC7C6__original.jpeg?quality=80&width=1024"
+    },
+    {
+     "key": "rad-childrens-furniture-ladder_5",
+     "src": "https://review-images.judgeme.com/rad-children-s-furniture/1613143569__085BE911-BCAF-482F-AAD1-33E9005EEE60__original.jpeg?quality=80&width=1024"
+    }
+   ],
+   "img": "rad-childrens-furniture-ladder",
+   "img_src": "https://cdn.shopify.com/s/files/1/0087/4230/5892/files/pikler_ladder.jpg?v=1762457057"
+  },
+  {
+   "id": "rad-childrens-furniture-tiered-toy-shelf",
+   "type": "furniture",
+   "brand": "RAD Children’s Furniture",
+   "line": "Tiered Toy Shelf",
+   "uses": [],
+   "free": [
+    "Urea-formaldehyde adhesives in the plywood"
+   ],
+   "outside": [
+    "13-ply European birch plywood"
+   ],
+   "unconfirmed": [
+    "Ingredients of the UV-cured and water-based finishes",
+    "Mounting hardware"
+   ],
+   "facts": {
+    "wood": "no",
+    "color": "unknown",
+    "parts": "unknown"
+   },
+   "unstated": {
+    "color": [
+     "Ingredients of the UV-cured and water-based finishes"
+    ],
+    "parts": [
+     "Mounting hardware"
+    ]
+   },
+   "standards": [
+    "fsc"
+   ],
+   "contains": [],
+   "quote": "Crafted from premium 13-ply European birch plywood made without urea-formaldehyde adhesives",
+   "note": "Three-tier toy shelf, 14 x 30 x 32 in. Made in the maker’s Los Angeles woodshop.",
+   "products": [
+    {
+     "name": "Tiered Toy Shelf",
+     "url": "https://radchildrensfurniture.com/products/shelves",
+     "store": "RAD Children’s Furniture",
+     "price": "$299.00",
+     "ships_from": "US",
+     "shipping": "Free shipping to the contiguous USA"
+    }
+   ],
+   "read": "2026-11-15",
+   "photos": [
+    {
+     "key": "rad-childrens-furniture-tiered-toy-shelf",
+     "src": "https://cdn.shopify.com/s/files/1/0087/4230/5892/files/tiered_montesssori_toy_shelf.jpg?v=1762457204"
+    },
+    {
+     "key": "rad-childrens-furniture-tiered-toy-shelf_2",
+     "src": "https://cdn.shopify.com/s/files/1/0087/4230/5892/products/montessori_bookshelfwithtoddler_1.jpg?v=1748284270"
+    },
+    {
+     "key": "rad-childrens-furniture-tiered-toy-shelf_3",
+     "src": "https://cdn.shopify.com/s/files/1/0087/4230/5892/files/tieredtoyshelf_with_materials.jpg?v=1748284270"
+    },
+    {
+     "key": "rad-childrens-furniture-tiered-toy-shelf_4",
+     "src": "https://cdn.shopify.com/s/files/1/0087/4230/5892/files/angle_shot_of_tiered_toy_shelf.jpg?v=1748284270"
+    },
+    {
+     "key": "rad-childrens-furniture-tiered-toy-shelf_5",
+     "src": "https://cdn.shopify.com/s/files/1/0087/4230/5892/files/jilldelrossi1_b65dcbc5-1b12-420d-988b-e14cb424b1f8.jpg?v=1782506096"
+    },
+    {
+     "key": "rad-childrens-furniture-tiered-toy-shelf_6",
+     "src": "https://review-images.judgeme.com/rad-children-s-furniture/1765303014__image1__original.jpg?quality=80&width=1024"
+    },
+    {
+     "key": "rad-childrens-furniture-tiered-toy-shelf_7",
+     "src": "https://review-images.judgeme.com/rad-children-s-furniture/1688437657__img_7039__original.jpeg?quality=80&width=1024"
+    },
+    {
+     "key": "rad-childrens-furniture-tiered-toy-shelf_8",
+     "src": "https://review-images.judgeme.com/rad-children-s-furniture/1688437661__img_7041__original.jpeg?quality=80&width=1024"
+    },
+    {
+     "key": "rad-childrens-furniture-tiered-toy-shelf_9",
+     "src": "https://review-images.judgeme.com/rad-children-s-furniture/1634917699__A8E46114-8F56-44DE-B836-7F809DACE974__original.JPG?quality=80&width=1024"
+    }
+   ],
+   "img": "rad-childrens-furniture-tiered-toy-shelf",
+   "img_src": "https://cdn.shopify.com/s/files/1/0087/4230/5892/files/tiered_montesssori_toy_shelf.jpg?v=1762457204"
   }
  ]
 }

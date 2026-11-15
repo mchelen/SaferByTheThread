@@ -22,7 +22,8 @@ jobs:
 
   e2e:
     name: Browser smoke tests
-    runs-on: ubuntu-latest
+    # ubuntu-latest moved to 26.04 on 2026-11-15, which Playwright 1.56.1 cannot install browsers on.
+    runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
