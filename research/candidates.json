@@ -665,7 +665,8 @@
    "type": "animals",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "viverano-organics-dachshund-knit-stuffed-animal"
   },
   {
    "url": "https://coloredorganics.com/products/car-transporter-copy",
@@ -20921,7 +20922,8 @@
    "type": "balls",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "skipped",
+   "reason": "page names no material (read 2026-11-16)"
   },
   {
    "url": "https://kodokids.com/products/periodic-table-blocks",
@@ -27330,7 +27332,8 @@
    "type": "protectors",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "green-cradle-bassinet-wool-moisture-pad"
   },
   {
    "url": "https://www.greencradle.com/products/changing-table-organic-cotton-mattress-pad",
@@ -34410,7 +34413,8 @@
    "type": "ice-trays",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "zoku-jumbo-ice-trays"
   },
   {
    "url": "https://www.zokuhome.com/products/zoku-bunny-ice-pop-mold-set-of-2",
@@ -34879,7 +34883,8 @@
    "type": "ice-trays",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "zoku-cat-dog-ice-tray"
   },
   {
    "url": "https://www.zokuhome.com/products/zoku-lux-ice-mold",
@@ -41292,7 +41297,8 @@
    "type": "toddler-beds",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "skipped",
+   "reason": "page names no material for the bed, only the paint process (read 2026-11-16)"
   },
   {
    "url": "https://www.deltachildren.com/products/william-3-drawer-dresser-with-changing-top-and-interlocking-drawers",
@@ -54164,7 +54170,8 @@
    "type": "books",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "skipped",
+   "reason": "page names no material (read 2026-11-16)"
   },
   {
    "url": "https://enlightenedbaby.com/products/violet-floral-ruffle-quilted-baby-play-mat",
@@ -55035,7 +55042,8 @@
    "type": "books",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "skipped",
+   "reason": "page names no material, only “plush fabric” (read 2026-11-16)"
   },
   {
    "url": "https://enlightenedbaby.com/products/willow-pull-along-toy",
@@ -58349,7 +58357,8 @@
    "type": "bath",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "skipped",
+   "reason": "page names no material (read 2026-11-16)"
   },
   {
    "url": "https://enlightenedbaby.com/products/osocozy-one-size-cloth-diaper-covers",
@@ -59984,7 +59993,8 @@
    "type": "blocks",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "mokulock-locking-block-set-car"
   },
   {
    "url": "https://camdenrose.com/products/handknit-alpaca-15-inch-baby-doll-knitted-outfit-light-brown",
@@ -65167,7 +65177,8 @@
    "type": "pretend",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "unavailable",
+   "reason": "URL redirects to the home page (2026-11-16)"
   },
   {
    "url": "https://camdenrose.com/products/kite-paper-kit-with-instructions-6-25-inch",
@@ -74816,7 +74827,8 @@
    "type": "silks",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "sarahs-silks-giraffe-playsilk"
   },
   {
    "url": "https://www.sarahssilks.com/products/playsilk-tiger",
@@ -88428,7 +88440,8 @@
    "type": "cars",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "spiritnsprout-wooden-toy-airplane"
   },
   {
    "url": "https://thebabypenguin.com/products/tiny-land®-wooden-train-set-for-children",
@@ -88537,7 +88550,8 @@
    "type": "animals",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "sigikid-organic-bear-plush"
   },
   {
    "url": "https://thebabypenguin.com/products/basement-for-my-first-dollhouse",
@@ -88600,7 +88614,8 @@
    "type": "pretend",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "tender-leaf-bunnys-carrot-patch"
   },
   {
    "url": "https://thebabypenguin.com/products/kitchen-dresser-and-dishwasher",
@@ -88846,7 +88861,8 @@
    "type": "bath",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "quut-cana-watering-can"
   },
   {
    "url": "https://thebabypenguin.com/products/bath-puzzle-sea-side-floating-3d-bath-toy-set",
@@ -89243,7 +89259,8 @@
    "type": "bath",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "blossom-bloom-sea-animal-silicone-bath-toys"
   },
   {
    "url": "https://thebabypenguin.com/products/spring-garden-play-set-with-playdough",
@@ -92828,7 +92845,8 @@
    "type": "blocks",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "haba-colored-wooden-building-blocks-46"
   },
   {
    "url": "https://thebabypenguin.com/products/haba-cars-stunt-jump",
@@ -99397,7 +99415,8 @@
    "type": "balls",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "q-toys-pound-a-ball-tower"
   },
   {
    "url": "https://mytoywagon.com/products/rainbow-wooden-gnome",
@@ -141003,7 +141022,8 @@
    "type": "floor-beds",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "bush-acres-avi-floor-bed"
   },
   {
    "url": "https://easytot.com/products/caden-light-toy-car-storage",
@@ -165898,7 +165918,8 @@
    "type": "cars",
    "source": "watchlist",
    "first_seen": "2026-10-29",
-   "status": "new"
+   "status": "unavailable",
+   "reason": "product page no longer exists (2026-11-16)"
   },
   {
    "url": "https://www.thenaturalbabyco.com/products/bibs-usa-natural-rubber-pacifier-2-pack-petal-plum",
@@ -185079,7 +185100,8 @@
    "type": "animals",
    "source": "watchlist",
    "first_seen": "2026-11-07",
-   "status": "new"
+   "status": "listed",
+   "listing": "viverano-organics-dachshund-knit-stuffed-animal"
   },
   {
    "url": "https://coloredorganics.com/products/construction-truck",
@@ -187789,7 +187811,8 @@
    "type": "nursing-pillows",
    "source": "watchlist",
    "first_seen": "2026-11-07",
-   "status": "new"
+   "status": "listed",
+   "listing": "little-mae-gingham-ruffle-nursing-pillow-cover"
   },
   {
    "url": "https://easytot.com/products/dinosaur-rattle",
