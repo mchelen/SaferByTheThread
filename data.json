@@ -1,6 +1,6 @@
 {
  "schema": 4,
- "updated": "2026-11-15",
+ "updated": "2026-11-16",
  "ask": [
   "Thread on any sewn item (cotton or polyester).",
   "Wheels and axles on push toys and cars.",
@@ -39764,6 +39764,1092 @@
    ],
    "img": "rad-childrens-furniture-tiered-toy-shelf",
    "img_src": "https://cdn.shopify.com/s/files/1/0087/4230/5892/files/tiered_montesssori_toy_shelf.jpg?v=1762457204"
+  },
+  {
+   "uses": [
+    "100% food-grade silicone"
+   ],
+   "free": [
+    "BPA",
+    "PVC",
+    "Phthalates",
+    "BPS"
+   ],
+   "unconfirmed": [
+    "Silicone testing standard",
+    "Pigments"
+   ],
+   "outside": [],
+   "facts": {
+    "main": "yes",
+    "color": "unknown",
+    "silicone": "unknown"
+   },
+   "contains": [],
+   "standards": [],
+   "id": "blossom-bloom-sea-animal-silicone-bath-toys",
+   "type": "bath",
+   "brand": "Blossom & Bloom Kids",
+   "line": "Sea Animal Silicone Fidget & Bath Toys (3-pack)",
+   "unstated": {
+    "color": [
+     "Pigments"
+    ],
+    "silicone": [
+     "Silicone testing standard"
+    ]
+   },
+   "quote": "The manufacturer specifies 100% food-grade silicone, free from BPA, PVC, phthalates and BPS.",
+   "note": "Three sea-animal shapes sold as fidget toys that can also go in the bath.",
+   "products": [
+    {
+     "name": "Blossom & Bloom Kids Sea Animal Silicone Fidget & Bath Toys, 3-Pack",
+     "url": "https://thebabypenguin.com/products/sea-animal-silicone-fidget-bath-toy-3pcs",
+     "price": "$12.99",
+     "store": "The Baby Penguin",
+     "ships_from": "US",
+     "shipping": "Free standard shipping on orders of $50 or more"
+    }
+   ],
+   "read": "2026-11-16"
+  },
+  {
+   "uses": [],
+   "free": [],
+   "unconfirmed": [
+    "Glue in the plywood",
+    "Hardware"
+   ],
+   "outside": [
+    "Baltic birch plywood with veneer core"
+   ],
+   "facts": {
+    "wood": "no",
+    "color": "yes",
+    "parts": "unknown"
+   },
+   "contains": [],
+   "standards": [],
+   "id": "bush-acres-avi-floor-bed",
+   "type": "floor-beds",
+   "brand": "Bush Acres",
+   "line": "Avi Floor Bed",
+   "unstated": {
+    "parts": [
+     "Hardware"
+    ]
+   },
+   "quote": "Baltic birch plywood with veneer core; TSCA VI and CARB II compliant.",
+   "note": "Left unfinished: the page says it “Can be painted, stained, or sealed after assembly.” Crib, twin and full sizes, all sold out when read. Made in the USA (Las Vegas, NV). Sold by EasyTot.",
+   "products": [
+    {
+     "name": "Avi- Floor Bed",
+     "url": "https://easytot.com/products/avi-floor-bed",
+     "store": "EasyTot",
+     "price": "$561.00 (sold out when read)",
+     "ships_from": "US",
+     "shipping": "Shipping calculated at checkout"
+    }
+   ],
+   "read": "2026-11-16",
+   "photos": [
+    {
+     "key": "bush-acres-avi-floor-bed",
+     "src": "https://cdn.shopify.com/s/files/1/0556/0519/8922/files/avi_ai.png?v=1778897432"
+    },
+    {
+     "key": "bush-acres-avi-floor-bed_2",
+     "src": "https://cdn.shopify.com/s/files/1/0556/0519/8922/files/il_300x300.4854486585_own3.webp?v=1778897432"
+    },
+    {
+     "key": "bush-acres-avi-floor-bed_3",
+     "src": "https://cdn.shopify.com/s/files/1/0556/0519/8922/files/il_300x300.4806221218_51gb.webp?v=1778897432"
+    },
+    {
+     "key": "bush-acres-avi-floor-bed_4",
+     "src": "https://cdn.shopify.com/s/files/1/0556/0519/8922/files/il_300x300.4806221084_ktiy.webp?v=1778897432"
+    },
+    {
+     "key": "bush-acres-avi-floor-bed_5",
+     "src": "https://cdn.shopify.com/s/files/1/0556/0519/8922/files/il_300x300.4854486637_9y1o.webp?v=1778897432"
+    },
+    {
+     "key": "bush-acres-avi-floor-bed_6",
+     "src": "https://cdn.shopify.com/s/files/1/0556/0519/8922/files/il_300x300.4854486661_porv.webp?v=1778897432"
+    },
+    {
+     "key": "bush-acres-avi-floor-bed_7",
+     "src": "https://cdn.shopify.com/s/files/1/0556/0519/8922/files/il_300x300.6200893843_1r6k.webp?v=1778897432"
+    },
+    {
+     "key": "bush-acres-avi-floor-bed_8",
+     "src": "https://cdn.shopify.com/s/files/1/0556/0519/8922/files/il_300x300.3399476713_hjc7.webp?v=1778897432"
+    },
+    {
+     "key": "bush-acres-avi-floor-bed_9",
+     "src": "https://cdn.shopify.com/s/files/1/0556/0519/8922/files/il_794xN.5845422657_8fl3.webp?v=1778897432"
+    }
+   ],
+   "img": "bush-acres-avi-floor-bed",
+   "img_src": "https://cdn.shopify.com/s/files/1/0556/0519/8922/files/avi_ai.png?v=1778897432"
+  },
+  {
+   "uses": [
+    "100% natural wool"
+   ],
+   "free": [
+    "Polyurethane or synthetic materials"
+   ],
+   "unconfirmed": [
+    "Wool treatment"
+   ],
+   "outside": [],
+   "facts": {
+    "main": "yes",
+    "wool": "unknown"
+   },
+   "contains": [],
+   "standards": [],
+   "id": "green-cradle-bassinet-wool-moisture-pad",
+   "type": "protectors",
+   "brand": "Green Cradle",
+   "line": "Bassinet Wool Moisture Pad, 17 x 28 in",
+   "unstated": {
+    "wool": [
+     "Wool treatment"
+    ]
+   },
+   "quote": "Materials & Finish 100% natural wool sourced from Nortern California and Washington.",
+   "note": "Seamless woven wool pad that lies flat on a bassinet mattress under a fitted sheet; the page calls wool “naturally moisture resistant (not waterproof)”. Hand wash.",
+   "products": [
+    {
+     "name": "Bassinet Wool Moisture Pad",
+     "url": "https://www.greencradle.com/products/bassinet-wool-moisture-pad",
+     "store": "Green Cradle",
+     "price": "$140.00",
+     "ships_from": "US",
+     "shipping": "Shipping calculated at checkout"
+    }
+   ],
+   "read": "2026-11-16",
+   "photos": [
+    {
+     "key": "green-cradle-bassinet-wool-moisture-pad",
+     "src": "https://cdn.shopify.com/s/files/1/0216/9339/9104/files/OMI-crib-wool-pad.jpg?v=1715118362"
+    }
+   ],
+   "img": "green-cradle-bassinet-wool-moisture-pad",
+   "img_src": "https://cdn.shopify.com/s/files/1/0216/9339/9104/files/OMI-crib-wool-pad.jpg?v=1715118362"
+  },
+  {
+   "uses": [
+    "Wooden blocks",
+    "Cotton bag"
+   ],
+   "free": [],
+   "unconfirmed": [
+    "Paints and stains (“water-based, solvent-free”, type not named)",
+    "Wood species",
+    "Whether the blocks are solid wood"
+   ],
+   "outside": [],
+   "facts": {
+    "main": "yes",
+    "color": "unknown",
+    "wood": "unknown"
+   },
+   "contains": [],
+   "standards": [],
+   "id": "haba-colored-wooden-building-blocks-46",
+   "type": "blocks",
+   "brand": "HABA",
+   "line": "Colored Wooden Building Blocks, 46 Pieces",
+   "unstated": {
+    "color": [
+     "Paints and stains (“water-based, solvent-free”, type not named)"
+    ],
+    "wood": [
+     "Whether the blocks are solid wood"
+    ]
+   },
+   "age": {
+    "min_months": 12,
+    "text": "12 months and up"
+   },
+   "quote": "Includes 46 wooden building blocks and one cotton bag Water-based, solvent-free paints and stains",
+   "note": "Made in Germany; fits other HABA block sets.",
+   "products": [
+    {
+     "name": "HABA Colored Wooden Building Blocks, 46 Pieces",
+     "url": "https://thebabypenguin.com/products/colored-wooden-building-blocks-46-piece-set",
+     "price": "$89.99",
+     "store": "The Baby Penguin",
+     "ships_from": "US",
+     "shipping": "Free standard shipping on orders of $50 or more"
+    }
+   ],
+   "read": "2026-11-16",
+   "photos": [
+    {
+     "key": "haba-colored-wooden-building-blocks-46",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Colored-Wooden-Building-Blocks-46-Piece-Set-HABA-USA-124611827.jpg?v=1781463026"
+    },
+    {
+     "key": "haba-colored-wooden-building-blocks-46_2",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Colored-Wooden-Building-Blocks-46-Piece-Set-HABA-USA-124611962.jpg?v=1781463026"
+    },
+    {
+     "key": "haba-colored-wooden-building-blocks-46_3",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Colored-Wooden-Building-Blocks-46-Piece-Set-HABA-USA-124612054.jpg?v=1781463027"
+    },
+    {
+     "key": "haba-colored-wooden-building-blocks-46_4",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Colored-Wooden-Building-Blocks-46-Piece-Set-HABA-USA-124612110.jpg?v=1781463027"
+    },
+    {
+     "key": "haba-colored-wooden-building-blocks-46_5",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Colored-Wooden-Building-Blocks-46-Piece-Set-HABA-USA-124612254.jpg?v=1781463031"
+    },
+    {
+     "key": "haba-colored-wooden-building-blocks-46_6",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Colored-Wooden-Building-Blocks-46-Piece-Set-HABA-USA-124612334.jpg?v=1781463031"
+    },
+    {
+     "key": "haba-colored-wooden-building-blocks-46_7",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Colored-Wooden-Building-Blocks-46-Piece-Set-HABA-USA-124612420.jpg?v=1781463035"
+    },
+    {
+     "key": "haba-colored-wooden-building-blocks-46_8",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Colored-Wooden-Building-Blocks-46-Piece-Set-HABA-USA-124612574.jpg?v=1781463035"
+    }
+   ],
+   "img": "haba-colored-wooden-building-blocks-46",
+   "img_src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Colored-Wooden-Building-Blocks-46-Piece-Set-HABA-USA-124611827.jpg?v=1781463026"
+  },
+  {
+   "uses": [
+    "100% cotton cover"
+   ],
+   "free": [],
+   "unconfirmed": [
+    "Zipper",
+    "Thread",
+    "Dyes for the gingham"
+   ],
+   "outside": [],
+   "facts": {
+    "main": "yes",
+    "parts": "unknown",
+    "color": "unknown"
+   },
+   "contains": [],
+   "standards": [],
+   "id": "little-mae-gingham-ruffle-nursing-pillow-cover",
+   "type": "nursing-pillows",
+   "brand": "Little Mae & Co",
+   "line": "Gingham Ivory Eyelet Lace Ruffle Nursing Pillow Cover (cover only)",
+   "unstated": {
+    "parts": [
+     "Zipper",
+     "Thread"
+    ],
+    "color": [
+     "Dyes for the gingham"
+    ]
+   },
+   "quote": "Made from durable 100% cotton",
+   "note": "A cover only: the page says it “requires a separate pillow insert”. Horizontal zipper opening; fits most standard nursing pillows (20 x 16 x 5.5 in). Sold by EasyTot.",
+   "products": [
+    {
+     "name": "Gingham Ivory Eyelet Lace Ruffle New Nursing Pillow Cover",
+     "url": "https://easytot.com/products/gingham-ivory-eyelet-lace-ruffle-new-nursing-pillow-cover",
+     "store": "EasyTot",
+     "price": "$59.99",
+     "ships_from": null,
+     "shipping": "$10 shipping credit on orders of $100+"
+    }
+   ],
+   "read": "2026-11-16",
+   "photos": [
+    {
+     "key": "little-mae-gingham-ruffle-nursing-pillow-cover",
+     "src": "https://cdn.shopify.com/s/files/1/0556/0519/8922/files/IMG_2561_a2a79e00-37c5-440b-8fd4-6e51435a291e.jpg?v=1793906754"
+    },
+    {
+     "key": "little-mae-gingham-ruffle-nursing-pillow-cover_2",
+     "src": "https://cdn.shopify.com/s/files/1/0556/0519/8922/files/IMG_2562_a9359f6a-f001-447c-ab89-e5b358ae2f03.jpg?v=1793906754"
+    }
+   ],
+   "img": "little-mae-gingham-ruffle-nursing-pillow-cover",
+   "img_src": "https://cdn.shopify.com/s/files/1/0556/0519/8922/files/IMG_2561_a2a79e00-37c5-440b-8fd4-6e51435a291e.jpg?v=1793906754"
+  },
+  {
+   "uses": [
+    "Cherry, zelkova, bigleaf magnolia, birch, hornbeam and maple wood"
+   ],
+   "free": [],
+   "unconfirmed": [
+    "Finish (if any)",
+    "Whether the blocks are solid wood"
+   ],
+   "outside": [],
+   "facts": {
+    "main": "yes",
+    "color": "unknown",
+    "wood": "unknown"
+   },
+   "contains": [],
+   "standards": [],
+   "id": "mokulock-locking-block-set-car",
+   "type": "blocks",
+   "brand": "Mokulock",
+   "line": "Locking Wooden Block Set - Car",
+   "unstated": {
+    "color": [
+     "Finish (if any)"
+    ],
+    "wood": [
+     "Whether the blocks are solid wood"
+    ]
+   },
+   "age": {
+    "min_months": 36,
+    "text": "Not for children under 3 years (small parts)"
+   },
+   "quote": "Materials: Cherry, Zelkova, Bigleaf Manoglia, Birch, Hornbeam and Maple.",
+   "note": "Small interlocking blocks (16 x 32 x 13 mm) that build a car. Made in Japan.",
+   "products": [
+    {
+     "name": "Mokulock Locking Wooden Block Set - Car",
+     "url": "https://camdenrose.com/products/mokulock-locking-wooden-block-set-car",
+     "store": "Camden Rose",
+     "price": "$36.99",
+     "ships_from": "US",
+     "shipping": "Free standard domestic shipping on orders over $150 to contiguous US"
+    }
+   ],
+   "read": "2026-11-16",
+   "photos": [
+    {
+     "key": "mokulock-locking-block-set-car",
+     "src": "https://cdn.shopify.com/s/files/1/0658/7164/2856/files/3412-Car-2042.jpg?v=1735840253"
+    },
+    {
+     "key": "mokulock-locking-block-set-car_2",
+     "src": "https://cdn.shopify.com/s/files/1/0658/7164/2856/files/3412-Car-2044.jpg?v=1738346617"
+    },
+    {
+     "key": "mokulock-locking-block-set-car_3",
+     "src": "https://cdn.shopify.com/s/files/1/0658/7164/2856/files/3412-Car-2045.jpg?v=1738346617"
+    },
+    {
+     "key": "mokulock-locking-block-set-car_4",
+     "src": "https://cdn.shopify.com/s/files/1/0658/7164/2856/files/3412-Car-2043.jpg?v=1738346617"
+    },
+    {
+     "key": "mokulock-locking-block-set-car_5",
+     "src": "https://cdn.shopify.com/s/files/1/0658/7164/2856/files/3412-Car-2046.jpg?v=1735840253"
+    }
+   ],
+   "img": "mokulock-locking-block-set-car",
+   "img_src": "https://cdn.shopify.com/s/files/1/0658/7164/2856/files/3412-Car-2042.jpg?v=1735840253"
+  },
+  {
+   "uses": [
+    "Plantation rubberwood",
+    "Wooden hammer and three wooden balls"
+   ],
+   "free": [],
+   "unconfirmed": [
+    "Paint (“water-based”, type not named)",
+    "Whether the wood is solid or glued board",
+    "Glue"
+   ],
+   "outside": [],
+   "facts": {
+    "main": "yes",
+    "parts": "unknown",
+    "color": "unknown",
+    "wood": "unknown",
+    "lead": "yes"
+   },
+   "contains": [],
+   "standards": [
+    "us-toy"
+   ],
+   "id": "q-toys-pound-a-ball-tower",
+   "type": "bench",
+   "brand": "Q Toys",
+   "line": "Pound A Ball Tower",
+   "unstated": {
+    "color": [
+     "Paint (“water-based”, type not named)"
+    ],
+    "wood": [
+     "Whether the wood is solid or glued board"
+    ],
+    "parts": [
+     "Glue"
+    ]
+   },
+   "age": {
+    "min_months": 36,
+    "text": "Recommended for ages 3 and up"
+   },
+   "quote": "Material Plantation rubberwood, water-based paint",
+   "note": "Balls drop through a rainbow ramp to a tray at the base. The store says “Q Toys use only water-based paints and sealants with food-grade colors, or natural coconut oil.” Designed in Australia, made in Vietnam. Ships direct from Q Toys.",
+   "products": [
+    {
+     "name": "Q Toys Pound A Ball Tower",
+     "url": "https://mytoywagon.com/products/q-toys-pound-a-ball-tower",
+     "store": "My Toy Wagon",
+     "price": "$93.00",
+     "ships_from": "US",
+     "shipping": "$10.95 standard, free on orders $150+"
+    }
+   ],
+   "read": "2026-11-16",
+   "photos": [
+    {
+     "key": "q-toys-pound-a-ball-tower",
+     "src": "https://cdn.shopify.com/s/files/1/0522/0882/8586/files/QToysPoundABallTower2.jpg?v=1791144749"
+    },
+    {
+     "key": "q-toys-pound-a-ball-tower_2",
+     "src": "https://cdn.shopify.com/s/files/1/0522/0882/8586/files/QToysPoundABallTower.jpg?v=1791144763"
+    },
+    {
+     "key": "q-toys-pound-a-ball-tower_3",
+     "src": "https://cdn.shopify.com/s/files/1/0522/0882/8586/files/QToysPoundABallTower5.jpg?v=1791144791"
+    },
+    {
+     "key": "q-toys-pound-a-ball-tower_4",
+     "src": "https://cdn.shopify.com/s/files/1/0522/0882/8586/files/QToysPoundABallTower6.jpg?v=1716256086"
+    },
+    {
+     "key": "q-toys-pound-a-ball-tower_5",
+     "src": "https://cdn.shopify.com/s/files/1/0522/0882/8586/files/QToysPoundABallTower8.jpg?v=1791144880"
+    },
+    {
+     "key": "q-toys-pound-a-ball-tower_6",
+     "src": "https://cdn.shopify.com/s/files/1/0522/0882/8586/files/QToysPoundABallTower7.jpg?v=1791144808"
+    },
+    {
+     "key": "q-toys-pound-a-ball-tower_7",
+     "src": "https://cdn.shopify.com/s/files/1/0522/0882/8586/files/QToysPoundABallTower13.jpg?v=1791144825"
+    },
+    {
+     "key": "q-toys-pound-a-ball-tower_8",
+     "src": "https://cdn.shopify.com/s/files/1/0522/0882/8586/files/QToysPoundABallTower3.jpg?v=1716256086"
+    },
+    {
+     "key": "q-toys-pound-a-ball-tower_9",
+     "src": "https://cdn.shopify.com/s/files/1/0522/0882/8586/products/c00009ad7b8729319a481fab406261eab290f58cbd18f12f61df2db970bc4412.jpg?v=1716256086"
+    },
+    {
+     "key": "q-toys-pound-a-ball-tower_10",
+     "src": "https://cdn.shopify.com/s/files/1/0522/0882/8586/files/poundaball_2_999c1728-2bc7-4d61-a1f5-5fde92f6bdbf.png?v=1716256086"
+    }
+   ],
+   "img": "q-toys-pound-a-ball-tower",
+   "img_src": "https://cdn.shopify.com/s/files/1/0522/0882/8586/files/QToysPoundABallTower2.jpg?v=1791144749"
+  },
+  {
+   "uses": [],
+   "free": [],
+   "unconfirmed": [
+    "Colourants"
+   ],
+   "outside": [
+    "HDPE plastic can",
+    "TPR (thermoplastic rubber) pouring lids"
+   ],
+   "facts": {
+    "main": "no",
+    "color": "unknown"
+   },
+   "contains": [],
+   "standards": [],
+   "id": "quut-cana-watering-can",
+   "type": "bath",
+   "brand": "Quut",
+   "line": "Cana Watering Can, 0.5 L",
+   "unstated": {
+    "color": [
+     "Colourants"
+    ]
+   },
+   "quote": "Material: HDPE can with TPR pouring lids",
+   "note": "Two outlets, one to spray and one to pour; for bath, beach and garden.",
+   "products": [
+    {
+     "name": "Quut Cana Watering Can 0.5 L Spray & Pour Toy",
+     "url": "https://thebabypenguin.com/products/cana-watering-can-ergonomic-kids-bath-beach-and-garden-toy",
+     "price": "$17.00",
+     "store": "The Baby Penguin",
+     "ships_from": "US",
+     "shipping": "Free standard shipping on orders of $50 or more"
+    }
+   ],
+   "read": "2026-11-16",
+   "photos": [
+    {
+     "key": "quut-cana-watering-can",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Cana-Watering-Can-_-Ergonomic-Kids-Bath_-Beach_-and-Garden-Toy-Quut-Toys-USA-128046692.webp?v=1771693583"
+    },
+    {
+     "key": "quut-cana-watering-can_2",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Cana-Watering-Can-_-Ergonomic-Kids-Bath_-Beach_-and-Garden-Toy-Quut-Toys-USA-128046875.webp?v=1771693587"
+    },
+    {
+     "key": "quut-cana-watering-can_3",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Cana-Watering-Can-_-Ergonomic-Kids-Bath_-Beach_-and-Garden-Toy-Quut-Toys-USA-128046913.webp?v=1771693590"
+    },
+    {
+     "key": "quut-cana-watering-can_4",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Cana-Watering-Can-_-Ergonomic-Kids-Bath_-Beach_-and-Garden-Toy-Quut-Toys-USA-128047015.webp?v=1771693592"
+    },
+    {
+     "key": "quut-cana-watering-can_5",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Cana-Watering-Can-_-Ergonomic-Kids-Bath_-Beach_-and-Garden-Toy-Quut-Toys-USA-128047138.webp?v=1771693594"
+    },
+    {
+     "key": "quut-cana-watering-can_6",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Cana-Watering-Can-_-Ergonomic-Kids-Bath_-Beach_-and-Garden-Toy-Quut-Toys-USA-128047289.jpg?v=1771693595"
+    }
+   ],
+   "img": "quut-cana-watering-can",
+   "img_src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Cana-Watering-Can-_-Ergonomic-Kids-Bath_-Beach_-and-Garden-Toy-Quut-Toys-USA-128046692.webp?v=1771693583"
+  },
+  {
+   "uses": [
+    "100% silk"
+   ],
+   "free": [],
+   "unconfirmed": [
+    "Dyes and printed artwork"
+   ],
+   "outside": [],
+   "facts": {
+    "main": "yes",
+    "color": "unknown"
+   },
+   "contains": [],
+   "standards": [],
+   "id": "sarahs-silks-giraffe-playsilk",
+   "type": "silks",
+   "brand": "Sarah’s Silks",
+   "line": "Giraffe Playsilk, 35 x 35 in",
+   "unstated": {
+    "color": [
+     "Dyes and printed artwork"
+    ]
+   },
+   "quote": "Measures 35 x 35-inches and made from 100% silk.",
+   "note": "Giraffe-spot print. The page says the silks are dyed with “non-toxic, eco-friendly dyes”.",
+   "products": [
+    {
+     "name": "Giraffe Playsilk",
+     "url": "https://www.sarahssilks.com/products/playsilk-giraffe",
+     "store": "Sarah’s Silks",
+     "price": "$14.00 (sale; regular $28.00)",
+     "ships_from": "US",
+     "shipping": "Free standard shipping on US orders $99+"
+    }
+   ],
+   "read": "2026-11-16",
+   "photos": [
+    {
+     "key": "sarahs-silks-giraffe-playsilk",
+     "src": "https://cdn.shopify.com/s/files/1/1196/3462/files/SafariAnimals10.jpg?v=1723658243"
+    },
+    {
+     "key": "sarahs-silks-giraffe-playsilk_2",
+     "src": "https://cdn.shopify.com/s/files/1/1196/3462/files/2026_Animal_Collection_Lifestyles_8.jpg?v=1789148468"
+    },
+    {
+     "key": "sarahs-silks-giraffe-playsilk_3",
+     "src": "https://cdn.shopify.com/s/files/1/1196/3462/files/SafariAnimals5_2.jpg?v=1724969201"
+    },
+    {
+     "key": "sarahs-silks-giraffe-playsilk_4",
+     "src": "https://cdn.shopify.com/s/files/1/1196/3462/files/SafariAnimals4_4.jpg?v=1724969201"
+    },
+    {
+     "key": "sarahs-silks-giraffe-playsilk_5",
+     "src": "https://cdn.shopify.com/s/files/1/1196/3462/files/SafariAnimals.jpg?v=1723658210"
+    },
+    {
+     "key": "sarahs-silks-giraffe-playsilk_6",
+     "src": "https://cdn.shopify.com/s/files/1/1196/3462/files/SafariAnimals1.jpg?v=1723658239"
+    },
+    {
+     "key": "sarahs-silks-giraffe-playsilk_7",
+     "src": "https://cdn.shopify.com/s/files/1/1196/3462/files/SafariAnimals9.jpg?v=1723658210"
+    }
+   ],
+   "img": "sarahs-silks-giraffe-playsilk",
+   "img_src": "https://cdn.shopify.com/s/files/1/1196/3462/files/SafariAnimals10.jpg?v=1723658243"
+  },
+  {
+   "uses": [
+    "Certified organic cotton",
+    "Organic lambswool wadding"
+   ],
+   "free": [],
+   "unconfirmed": [
+    "Thread",
+    "Eyes and nose",
+    "Dyes",
+    "Wool treatment"
+   ],
+   "outside": [],
+   "facts": {
+    "main": "yes",
+    "parts": "unknown",
+    "color": "unknown",
+    "wool": "unknown",
+    "organic": "yes"
+   },
+   "contains": [],
+   "standards": [],
+   "id": "sigikid-organic-bear-plush",
+   "type": "animals",
+   "brand": "Sigikid",
+   "line": "Organic Bear Plush Toy (11.8 in)",
+   "unstated": {
+    "parts": [
+     "Thread",
+     "Eyes and nose"
+    ],
+    "color": [
+     "Dyes"
+    ],
+    "wool": [
+     "Wool treatment"
+    ]
+   },
+   "age": {
+    "min_months": 0,
+    "max_months": 36,
+    "text": "0 to 3 years"
+   },
+   "quote": "Material : Certified organically cultivated cotton. Wadding: organic lambswool.",
+   "note": "Made in Romania. Machine wash on the wool cycle.",
+   "products": [
+    {
+     "name": "Organic Bear Plush Toy",
+     "url": "https://thebabypenguin.com/products/organic-bear-plush-toy",
+     "price": "$59.95",
+     "store": "The Baby Penguin",
+     "ships_from": "US",
+     "shipping": "Free standard shipping on orders of $50 or more"
+    }
+   ],
+   "read": "2026-11-16",
+   "photos": [
+    {
+     "key": "sigikid-organic-bear-plush",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Organic-Bear-Plush-Toy-sigikid-128785383.jpg?v=1781454079"
+    },
+    {
+     "key": "sigikid-organic-bear-plush_2",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Organic-Bear-Plush-Toy-sigikid-128785449.jpg?v=1781454080"
+    },
+    {
+     "key": "sigikid-organic-bear-plush_3",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Organic-Bear-Plush-Toy-sigikid-128785573.jpg?v=1781454079"
+    },
+    {
+     "key": "sigikid-organic-bear-plush_4",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Organic-Bear-Plush-Toy-sigikid-128785663.jpg?v=1781454088"
+    },
+    {
+     "key": "sigikid-organic-bear-plush_5",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Organic-Bear-Plush-Toy-sigikid-128785773.jpg?v=1781454087"
+    },
+    {
+     "key": "sigikid-organic-bear-plush_6",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Organic-Bear-Plush-Toy-sigikid-128785845.jpg?v=1781454088"
+    },
+    {
+     "key": "sigikid-organic-bear-plush_7",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Organic-Bear-Plush-Toy-sigikid-128785910.jpg?v=1781454088"
+    },
+    {
+     "key": "sigikid-organic-bear-plush_8",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Organic-Bear-Plush-Toy-sigikid-128786067.jpg?v=1781454088"
+    }
+   ],
+   "img": "sigikid-organic-bear-plush",
+   "img_src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Organic-Bear-Plush-Toy-sigikid-128785383.jpg?v=1781454079"
+  },
+  {
+   "uses": [
+    "Wooden body and wheels"
+   ],
+   "free": [],
+   "unconfirmed": [
+    "Propeller",
+    "Axles",
+    "Blue or gold finish",
+    "Whether the wood is solid"
+   ],
+   "outside": [],
+   "facts": {
+    "main": "yes",
+    "parts": "unknown",
+    "color": "unknown",
+    "wood": "unknown"
+   },
+   "contains": [],
+   "standards": [],
+   "id": "spiritnsprout-wooden-toy-airplane",
+   "type": "cars",
+   "brand": "SpiritnSprout",
+   "line": "Wooden Toy Airplane",
+   "unstated": {
+    "parts": [
+     "Propeller",
+     "Axles"
+    ],
+    "color": [
+     "Blue or gold finish"
+    ],
+    "wood": [
+     "Whether the wood is solid"
+    ]
+   },
+   "age": {
+    "min_months": 36,
+    "text": "3 years and up"
+   },
+   "quote": "Construction: wooden body and wheels; propeller material is not separately specified for this stock",
+   "note": "Turning wheels and a spinning propeller; blue, gold or a 2-pack.",
+   "products": [
+    {
+     "name": "SpiritnSprout Wooden Toy Airplane",
+     "url": "https://thebabypenguin.com/products/airplane-toy",
+     "price": "$18.00",
+     "store": "The Baby Penguin",
+     "ships_from": "US",
+     "shipping": "Free standard shipping on orders of $50 or more"
+    }
+   ],
+   "read": "2026-11-16",
+   "photos": [
+    {
+     "key": "spiritnsprout-wooden-toy-airplane",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/1J1A3718.jpg?v=1787495147"
+    },
+    {
+     "key": "spiritnsprout-wooden-toy-airplane_2",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/1J1A3972.jpg?v=1787495148"
+    },
+    {
+     "key": "spiritnsprout-wooden-toy-airplane_3",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/1J1A3719.jpg?v=1787495147"
+    },
+    {
+     "key": "spiritnsprout-wooden-toy-airplane_4",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/1J1A3724.jpg?v=1787495147"
+    },
+    {
+     "key": "spiritnsprout-wooden-toy-airplane_5",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/1J1A3743.jpg?v=1787495147"
+    },
+    {
+     "key": "spiritnsprout-wooden-toy-airplane_6",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/1J1A3755.jpg?v=1787495147"
+    },
+    {
+     "key": "spiritnsprout-wooden-toy-airplane_7",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/1J1A3858.jpg?v=1787495148"
+    },
+    {
+     "key": "spiritnsprout-wooden-toy-airplane_8",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/1J1A3935.jpg?v=1787495147"
+    },
+    {
+     "key": "spiritnsprout-wooden-toy-airplane_9",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/1J1A3946.jpg?v=1787495147"
+    },
+    {
+     "key": "spiritnsprout-wooden-toy-airplane_10",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/1J1A3959.jpg?v=1787495147"
+    }
+   ],
+   "img": "spiritnsprout-wooden-toy-airplane",
+   "img_src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/1J1A3718.jpg?v=1787495147"
+  },
+  {
+   "uses": [
+    "Wood"
+   ],
+   "free": [],
+   "unconfirmed": [
+    "Paint",
+    "Whether the wood is solid or plywood",
+    "Glue"
+   ],
+   "outside": [],
+   "facts": {
+    "main": "yes",
+    "color": "unknown",
+    "wood": "unknown",
+    "parts": "unknown"
+   },
+   "contains": [],
+   "standards": [],
+   "id": "tender-leaf-bunnys-carrot-patch",
+   "type": "pretend",
+   "brand": "Tender Leaf Toys",
+   "line": "Bunny’s Carrot Patch Wooden Play Set",
+   "unstated": {
+    "color": [
+     "Paint"
+    ],
+    "wood": [
+     "Whether the wood is solid or plywood"
+    ],
+    "parts": [
+     "Glue"
+    ]
+   },
+   "age": {
+    "min_months": 36,
+    "text": "3 years and up"
+   },
+   "quote": "Materials: Wood",
+   "note": "A shed with removable roof and back wall, four rabbits, pretend carrots, turnips and beetroots, a crate pram and a cabbage bed.",
+   "products": [
+    {
+     "name": "Tender Leaf Bunny's Carrot Patch Wooden Play Set",
+     "url": "https://thebabypenguin.com/products/bunnys-carrot-patch",
+     "price": "$74.99",
+     "store": "The Baby Penguin",
+     "ships_from": "US",
+     "shipping": "Free standard shipping on orders of $50 or more"
+    }
+   ],
+   "read": "2026-11-16",
+   "photos": [
+    {
+     "key": "tender-leaf-bunnys-carrot-patch",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Bunny_s-Carrot-Patch-Tender-Leaf-128735441.jpg?v=1781453771"
+    },
+    {
+     "key": "tender-leaf-bunnys-carrot-patch_2",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Bunny_s-Carrot-Patch-Tender-Leaf-128735664.jpg?v=1781453771"
+    },
+    {
+     "key": "tender-leaf-bunnys-carrot-patch_3",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Bunny_s-Carrot-Patch-Tender-Leaf-128735719.jpg?v=1781453771"
+    },
+    {
+     "key": "tender-leaf-bunnys-carrot-patch_4",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Bunny_s-Carrot-Patch-Tender-Leaf-128735854.jpg?v=1781453781"
+    },
+    {
+     "key": "tender-leaf-bunnys-carrot-patch_5",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Bunny_s-Carrot-Patch-Tender-Leaf-128735938.jpg?v=1781453781"
+    },
+    {
+     "key": "tender-leaf-bunnys-carrot-patch_6",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Bunny_s-Carrot-Patch-Tender-Leaf-128736080.jpg?v=1781453781"
+    },
+    {
+     "key": "tender-leaf-bunnys-carrot-patch_7",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Bunny_s-Carrot-Patch-Tender-Leaf-128736191.jpg?v=1781453781"
+    },
+    {
+     "key": "tender-leaf-bunnys-carrot-patch_8",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Bunny_s-Carrot-Patch-Tender-Leaf-128736221.jpg?v=1781453781"
+    },
+    {
+     "key": "tender-leaf-bunnys-carrot-patch_9",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Bunny_s-Carrot-Patch-Tender-Leaf-128736320.jpg?v=1781453781"
+    },
+    {
+     "key": "tender-leaf-bunnys-carrot-patch_10",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Bunny_s-Carrot-Patch-Tender-Leaf-128736585.jpg?v=1781453792"
+    }
+   ],
+   "img": "tender-leaf-bunnys-carrot-patch",
+   "img_src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Bunny_s-Carrot-Patch-Tender-Leaf-128735441.jpg?v=1781453771"
+  },
+  {
+   "uses": [
+    "100% organic cotton outer shell"
+   ],
+   "free": [],
+   "unconfirmed": [
+    "Thread",
+    "Dyes"
+   ],
+   "outside": [
+    "Poly-fill stuffing"
+   ],
+   "facts": {
+    "main": "no",
+    "color": "unknown",
+    "organic": "yes"
+   },
+   "contains": [],
+   "standards": [],
+   "id": "viverano-organics-dachshund-knit-stuffed-animal",
+   "type": "animals",
+   "brand": "Viverano Organics",
+   "line": "Dachshund Dog Organic Knit Stuffed Animal",
+   "unstated": {
+    "color": [
+     "Dyes"
+    ]
+   },
+   "quote": "100% organic cotton outer shell, and poly-fill on the inside.",
+   "note": "Hand-knit; the page says it is made “at a GOTS certified facility in India”. Sold by Colored Organics.",
+   "products": [
+    {
+     "name": "Dachshund Dog Organic Knit Stuffed Animal",
+     "url": "https://coloredorganics.com/products/dachshund-dog-organic-knit-stuffed-animal",
+     "store": "Colored Organics",
+     "price": "$42",
+     "ships_from": "US",
+     "shipping": "Free shipping on U.S. orders over $50"
+    }
+   ],
+   "read": "2026-11-16",
+   "photos": [
+    {
+     "key": "viverano-organics-dachshund-knit-stuffed-animal",
+     "src": "https://cdn.shopify.com/s/files/1/1643/4857/files/infant-unisex-dachschund-dog-organic-knit-stuffed-animal.multi.flat_front.jpg?v=1787081004"
+    },
+    {
+     "key": "viverano-organics-dachshund-knit-stuffed-animal_2",
+     "src": "https://cdn.shopify.com/s/files/1/1643/4857/files/infant-unisex-dachschund-dog-organic-knit-stuffed-animal.multi.flat_detail.2.jpg?v=1787081004"
+    }
+   ],
+   "img": "viverano-organics-dachshund-knit-stuffed-animal",
+   "img_src": "https://cdn.shopify.com/s/files/1/1643/4857/files/infant-unisex-dachschund-dog-organic-knit-stuffed-animal.multi.flat_front.jpg?v=1787081004"
+  },
+  {
+   "uses": [
+    "BPA-free silicone trays"
+   ],
+   "free": [
+    "BPA"
+   ],
+   "unconfirmed": [
+    "Silicone testing standard",
+    "Pigments"
+   ],
+   "outside": [],
+   "facts": {
+    "main": "yes",
+    "color": "unknown",
+    "silicone": "unknown"
+   },
+   "contains": [],
+   "standards": [],
+   "id": "zoku-cat-dog-ice-tray",
+   "type": "ice-trays",
+   "brand": "Zoku",
+   "line": "Cat & Dog Ice Tray (2 trays, 12 mini spheres each)",
+   "unstated": {
+    "color": [
+     "Pigments"
+    ],
+    "silicone": [
+     "Silicone testing standard"
+    ]
+   },
+   "quote": "Made from flexible, BPA-free silicone",
+   "note": "0.5 fl oz per mold. Designed in the U.S.",
+   "products": [
+    {
+     "name": "Cat & Dog Ice Tray",
+     "url": "https://www.zokuhome.com/products/cat-dog-ice-tray",
+     "store": "Zoku",
+     "price": "$12.99",
+     "ships_from": "US",
+     "shipping": "Free shipping on U.S. orders over $50"
+    }
+   ],
+   "read": "2026-11-16",
+   "photos": [
+    {
+     "key": "zoku-cat-dog-ice-tray",
+     "src": "https://cdn.shopify.com/s/files/1/0038/1592/files/ZK181-ZokuCat_DogIce-Grey-Shopify.jpg?v=1712769633"
+    },
+    {
+     "key": "zoku-cat-dog-ice-tray_2",
+     "src": "https://cdn.shopify.com/s/files/1/0038/1592/files/ZK181-ZokuCat_DogIcePackaging-crop.jpg?v=1712769633"
+    },
+    {
+     "key": "zoku-cat-dog-ice-tray_3",
+     "src": "https://cdn.shopify.com/s/files/1/0038/1592/files/ZK181-ZokuCat_DogIce-Lifestyle-crop.jpg?v=1713551489"
+    }
+   ],
+   "img": "zoku-cat-dog-ice-tray",
+   "img_src": "https://cdn.shopify.com/s/files/1/0038/1592/files/ZK181-ZokuCat_DogIce-Grey-Shopify.jpg?v=1712769633"
+  },
+  {
+   "uses": [
+    "Silicone ice trays"
+   ],
+   "free": [
+    "BPA and phthalates"
+   ],
+   "unconfirmed": [
+    "Material of the flavor-guard lids",
+    "Silicone testing standard",
+    "Pigments"
+   ],
+   "outside": [],
+   "facts": {
+    "main": "yes",
+    "accessory": "unknown",
+    "color": "unknown",
+    "silicone": "unknown"
+   },
+   "contains": [],
+   "standards": [],
+   "id": "zoku-jumbo-ice-trays",
+   "type": "ice-trays",
+   "brand": "Zoku",
+   "line": "Jumbo Ice Trays (2 trays with lids, 6 large cubes each)",
+   "unstated": {
+    "accessory": [
+     "Material of the flavor-guard lids"
+    ],
+    "color": [
+     "Pigments"
+    ],
+    "silicone": [
+     "Silicone testing standard"
+    ]
+   },
+   "quote": "Includes: 2 Silicone ice trays with 6 large ice molds each and 2 flavor guard lids",
+   "note": "About 2.75 fl oz per cube; stackable. Sold in several colours. Designed in the U.S.",
+   "products": [
+    {
+     "name": "Jumbo Ice Trays - Blue",
+     "url": "https://www.zokuhome.com/products/jumbo-ice-trays-blue",
+     "store": "Zoku",
+     "price": "$16.99",
+     "ships_from": "US",
+     "shipping": "Free shipping on U.S. orders over $50"
+    }
+   ],
+   "read": "2026-11-16",
+   "photos": [
+    {
+     "key": "zoku-jumbo-ice-trays",
+     "src": "https://cdn.shopify.com/s/files/1/0038/1592/files/viber_image_2025-04-28_16-30-16-036.jpg?v=1745872995"
+    }
+   ],
+   "img": "zoku-jumbo-ice-trays",
+   "img_src": "https://cdn.shopify.com/s/files/1/0038/1592/files/viber_image_2025-04-28_16-30-16-036.jpg?v=1745872995"
   }
  ]
 }
