@@ -8,3 +8,7 @@ test('photo URLs at other sizes count as the same picture', () => {
   assert.deepEqual(PH.candidates([['https://a.com/logo.png', 'https://a.com/x_600x.jpg'], ['https://a.com/x.jpg', 'https://a.com/y.jpg']]), ['https://a.com/x_600x.jpg', 'https://a.com/y.jpg']);
   assert.deepEqual(PH.shopifyImages({ product: { images: [{ src: '//cdn.x/a.jpg' }] } }), ['https://cdn.x/a.jpg']);
 });
+test('product photos named "silicone" are not skipped as icons', () => {
+  const u = 'https://cdn.shopify.com/s/files/1/0684/files/Silicone-Starter-Cup-Mushie-126806380.jpg?v=1';
+  assert.deepEqual(PH.candidates([[u, 'https://a.com/cart-icon.png', 'https://a.com/icons/x.jpg']]), [u]);
+});

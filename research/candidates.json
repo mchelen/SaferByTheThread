@@ -501,7 +501,8 @@
    "type": "teethers",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "ali-oli-crinkle-bunny-ears-wooden-teether"
   },
   {
    "url": "https://coloredorganics.com/products/national-parks-coloring-book-copy",
@@ -1309,7 +1310,8 @@
    "type": "towels",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "natemia-muslin-washcloth-set"
   },
   {
    "url": "https://coloredorganics.com/products/travel-size-colored-pencils-copy",
@@ -3204,7 +3206,8 @@
    "type": "utensils",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "beaba-easy-grip-1st-stage-silicone-spoons-4"
   },
   {
    "url": "https://beaba.us/products/stainless-steel-straw-cup-8-5-fl-oz",
@@ -20052,7 +20055,8 @@
    "type": "balls",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "kodo-kids-wood-balls"
   },
   {
    "url": "https://kodokids.com/products/mad-mattr",
@@ -21686,7 +21690,8 @@
    "type": "pacifiers",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "frigg-babys-first-pacifier-4-pack"
   },
   {
    "url": "https://mushie.com/products/frigg-us-babys-first-pacifier-moonlight-sailing-powder-blue",
@@ -23742,7 +23747,8 @@
    "type": "changing-pads",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "cloth-eez-muslin-organic-changing-cloth"
   },
   {
    "url": "https://www.greenmountaindiapers.com/products/crinkle-muslin-adult-blanket",
@@ -24623,7 +24629,8 @@
    "type": "puzzles",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "skipped",
+   "reason": "Hidden $0.00 placeholder product (\"used with the Motivator application\"), not a product for sale"
   },
   {
    "url": "https://smilingtreetoys.com/products/pocket-block-puzzle-1",
@@ -39592,7 +39599,8 @@
    "type": "toddler-beds",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "delta-children-finley-metal-toddler-bed"
   },
   {
    "url": "https://www.deltachildren.com/products/elia-jacquard-carrier-blue",
@@ -54143,7 +54151,8 @@
    "type": "bibs",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "crane-baby-kendi-muslin-bib-set"
   },
   {
    "url": "https://enlightenedbaby.com/products/caspian-3-pc-muslin-bib-set",
@@ -66159,7 +66168,8 @@
    "type": "instruments",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "auris-pentatonic-glockenspiel"
   },
   {
    "url": "https://camdenrose.com/products/auris-3-tone-glockenspiel-a-b-d-pentatonic",
@@ -73520,7 +73530,8 @@
    "type": "pillows",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "home-of-wool-wool-toddler-pillow"
   },
   {
    "url": "https://homeofwool.com/shop/changing-table/",
@@ -90306,7 +90317,8 @@
    "type": "cups",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "mushie-silicone-starter-cup"
   },
   {
    "url": "https://thebabypenguin.com/products/wooden-balance-blocks",
@@ -90513,7 +90525,8 @@
    "type": "stacking",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "ella-bonna-cotton-snap-baby-booties"
   },
   {
    "url": "https://thebabypenguin.com/products/organic-cotton-baby-booties-non-slip-sole-cotton-newborn-booties-home-nursery-shoes-black",
