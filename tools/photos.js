@@ -17,7 +17,7 @@ const P = require('./prices.js');
 const ROOT = path.join(__dirname, '..');
 const IMG = path.join(ROOT, 'img');
 const MIN_SIDE = 300;
-const SKIP = /logo|icon|favicon|sprite|badge|payment|placeholder|banner|avatar|\.svg(\?|$)|\.gif(\?|$)/i;
+const SKIP = /logo|(?<!sil)icon|favicon|sprite|badge|payment|placeholder|banner|avatar|\.svg(\?|$)|\.gif(\?|$)/i;
 
 // ---------- finding image URLs (pure) ----------
 

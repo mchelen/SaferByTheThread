@@ -1,6 +1,6 @@
 {
  "schema": 4,
- "updated": "2026-11-16",
+ "updated": "2026-11-17",
  "ask": [
   "Thread on any sewn item (cotton or polyester).",
   "Wheels and axles on push toys and cars.",
@@ -10628,7 +10628,51 @@
     "min_months": 6,
     "text": "6 months and up"
    },
-   "read": "2026-10-20"
+   "read": "2026-10-20",
+   "photos": [
+    {
+     "key": "mushie-classic-silicone-suction-plate",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Classic-Silicone-Suction-Plate-Mushie-126404295.jpg?v=1768461967"
+    },
+    {
+     "key": "mushie-classic-silicone-suction-plate_2",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Classic-Silicone-Suction-Plate-Mushie-126404538.jpg?v=1768462025"
+    },
+    {
+     "key": "mushie-classic-silicone-suction-plate_3",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Classic-Silicone-Suction-Plate-Mushie-126405477.jpg?v=1768462149"
+    },
+    {
+     "key": "mushie-classic-silicone-suction-plate_4",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Classic-Silicone-Suction-Plate-Mushie-126405588.jpg?v=1768462180"
+    },
+    {
+     "key": "mushie-classic-silicone-suction-plate_5",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Classic-Silicone-Suction-Plate-Mushie-126405680.jpg?v=1768462181"
+    },
+    {
+     "key": "mushie-classic-silicone-suction-plate_6",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Classic-Silicone-Suction-Plate-Mushie-126405744.jpg?v=1768462208"
+    },
+    {
+     "key": "mushie-classic-silicone-suction-plate_7",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Classic-Silicone-Suction-Plate-Mushie-126405842.jpg?v=1768462208"
+    },
+    {
+     "key": "mushie-classic-silicone-suction-plate_8",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Classic-Silicone-Suction-Plate-Mushie-126405980.jpg?v=1768462239"
+    },
+    {
+     "key": "mushie-classic-silicone-suction-plate_9",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Classic-Silicone-Suction-Plate-Mushie-126406032.jpg?v=1768462240"
+    },
+    {
+     "key": "mushie-classic-silicone-suction-plate_10",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Classic-Silicone-Suction-Plate-Mushie-126406138.jpg?v=1768462299"
+    }
+   ],
+   "img": "mushie-classic-silicone-suction-plate",
+   "img_src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Classic-Silicone-Suction-Plate-Mushie-126404295.jpg?v=1768461967"
   },
   {
    "id": "mushie-first-feeding-spoons",
@@ -39811,7 +39855,27 @@
      "shipping": "Free standard shipping on orders of $50 or more"
     }
    ],
-   "read": "2026-11-16"
+   "read": "2026-11-16",
+   "photos": [
+    {
+     "key": "blossom-bloom-sea-animal-silicone-bath-toys",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Sea-Animal-Silicone-Fidget-_-Bath-Toy-_3pcs_-Blossom-_-Bloom-Kids-127532272.jpg?v=1781467246"
+    },
+    {
+     "key": "blossom-bloom-sea-animal-silicone-bath-toys_2",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Sea-Animal-Silicone-Fidget-_-Bath-Toy-_3pcs_-Blossom-_-Bloom-Kids-127532366.jpg?v=1781467248"
+    },
+    {
+     "key": "blossom-bloom-sea-animal-silicone-bath-toys_3",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Sea-Animal-Silicone-Fidget-_-Bath-Toy-_3pcs_-Blossom-_-Bloom-Kids-127532440.jpg?v=1781467248"
+    },
+    {
+     "key": "blossom-bloom-sea-animal-silicone-bath-toys_4",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Sea-Animal-Silicone-Fidget-_-Bath-Toy-_3pcs_-Blossom-_-Bloom-Kids-127532566.jpg?v=1781467251"
+    }
+   ],
+   "img": "blossom-bloom-sea-animal-silicone-bath-toys",
+   "img_src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Sea-Animal-Silicone-Fidget-_-Bath-Toy-_3pcs_-Blossom-_-Bloom-Kids-127532272.jpg?v=1781467246"
   },
   {
    "uses": [],
@@ -40850,6 +40914,1107 @@
    ],
    "img": "zoku-jumbo-ice-trays",
    "img_src": "https://cdn.shopify.com/s/files/1/0038/1592/files/viber_image_2025-04-28_16-30-16-036.jpg?v=1745872995"
+  },
+  {
+   "id": "ali-oli-crinkle-bunny-ears-wooden-teether",
+   "type": "teethers",
+   "brand": "Ali + Oli",
+   "line": "Crinkle Bunny Ears Wooden Teether (Bunny Rattle Teething Ring)",
+   "uses": [
+    "FSC certified beechwood ring",
+    "Corn fibre stuffing"
+   ],
+   "free": [],
+   "unconfirmed": [
+    "Fabric of the bunny ears",
+    "Rattle insert",
+    "Finish on the wood",
+    "Thread",
+    "Beechwood construction (solid vs plywood)"
+   ],
+   "outside": [],
+   "facts": {
+    "main": "unknown",
+    "parts": "unknown",
+    "color": "unknown",
+    "wood": "unknown"
+   },
+   "unstated": {
+    "main": [
+     "Fabric of the bunny ears"
+    ],
+    "parts": [
+     "Rattle insert",
+     "Thread"
+    ],
+    "color": [
+     "Finish on the wood"
+    ],
+    "wood": [
+     "Beechwood construction (solid vs plywood)"
+    ]
+   },
+   "contains": [],
+   "standards": [
+    "fsc"
+   ],
+   "quote": "100% FSC certified beechwood Stuffed with biodegradable corn fibers",
+   "note": "A wooden ring with crinkle bunny ears and a built-in rattle; sold by Colored Organics (final sale when read).",
+   "products": [
+    {
+     "name": "Bunny Rattle Teething Ring",
+     "url": "https://coloredorganics.com/products/bunny-rattle-teething-ring",
+     "store": "Colored Organics",
+     "price": "$22",
+     "ships_from": "US",
+     "shipping": "Free shipping on orders over $50"
+    }
+   ],
+   "read": "2026-11-17",
+   "photos": [
+    {
+     "key": "ali-oli-crinkle-bunny-ears-wooden-teether",
+     "src": "https://cdn.shopify.com/s/files/1/1643/4857/products/infant-unisex-bunny-rattle-teething-ring.cream.flat_front.jpg?v=1750285271"
+    }
+   ],
+   "img": "ali-oli-crinkle-bunny-ears-wooden-teether",
+   "img_src": "https://cdn.shopify.com/s/files/1/1643/4857/products/infant-unisex-bunny-rattle-teething-ring.cream.flat_front.jpg?v=1750285271"
+  },
+  {
+   "id": "auris-pentatonic-glockenspiel",
+   "type": "instruments",
+   "brand": "Auris",
+   "line": "Pentatonic Glockenspiel, 7 tones (432Hz), with 2 mallets",
+   "uses": [
+    "Maple wood body",
+    "Brass alloy tone bars",
+    "Rubber mallets",
+    "Shellac primer and beeswax polish on the body"
+   ],
+   "free": [],
+   "unconfirmed": [
+    "Maple construction (solid vs plywood)",
+    "Rubber type in the mallets"
+   ],
+   "outside": [],
+   "facts": {
+    "main": "yes",
+    "color": "yes",
+    "wood": "unknown",
+    "rubber": "unknown"
+   },
+   "unstated": {
+    "wood": [
+     "Maple construction (solid vs plywood)"
+    ],
+    "rubber": [
+     "Rubber type in the mallets"
+    ]
+   },
+   "contains": [],
+   "standards": [],
+   "quote": "Materials: Brass alloy tone bars, maple wood, rubber (mallets) Finish: Three BEEautiful Bees All Natural Beeswax Polish",
+   "note": "Sold by Camden Rose.",
+   "products": [
+    {
+     "name": "Auris Pentatonic Glockenspiel - 432Hz",
+     "url": "https://camdenrose.com/products/auris-pentatonic-glockenspiel-432hz",
+     "store": "Camden Rose",
+     "price": "$148.00",
+     "ships_from": "US",
+     "shipping": "Free shipping"
+    }
+   ],
+   "read": "2026-11-17",
+   "photos": [
+    {
+     "key": "auris-pentatonic-glockenspiel",
+     "src": "https://cdn.shopify.com/s/files/1/0658/7164/2856/files/5040-432hz23_5d5b107e-b5c6-4b3a-a708-7a485e9af656.jpg?v=1763750791"
+    },
+    {
+     "key": "auris-pentatonic-glockenspiel_2",
+     "src": "https://cdn.shopify.com/s/files/1/0658/7164/2856/files/5040-432hz24_6a404114-ccce-46fc-8ebb-656ecad8d671.jpg?v=1763750791"
+    },
+    {
+     "key": "auris-pentatonic-glockenspiel_3",
+     "src": "https://cdn.shopify.com/s/files/1/0658/7164/2856/files/5040-432hz25_511136bb-b1be-4d7f-8d54-369ccfd520a7.jpg?v=1733335356"
+    },
+    {
+     "key": "auris-pentatonic-glockenspiel_4",
+     "src": "https://camdenrose.com/cdn/shop/files/preview_images/59fcfc7d99ee4a3688dc59b80f8d9cbc.thumbnail.0000000000.jpg?v=1733335379"
+    }
+   ],
+   "img": "auris-pentatonic-glockenspiel",
+   "img_src": "https://cdn.shopify.com/s/files/1/0658/7164/2856/files/5040-432hz23_5d5b107e-b5c6-4b3a-a708-7a485e9af656.jpg?v=1763750791"
+  },
+  {
+   "id": "beaba-easy-grip-1st-stage-silicone-spoons-4",
+   "type": "utensils",
+   "brand": "Béaba",
+   "line": "Easy-Grip 1st Stage Silicone Spoons, set of 4",
+   "uses": [
+    "Silicone tip and covering"
+   ],
+   "free": [],
+   "unconfirmed": [
+    "Handle core under the silicone covering",
+    "Pigments",
+    "LFGB or French Arrêté test"
+   ],
+   "outside": [],
+   "facts": {
+    "main": "unknown",
+    "color": "unknown",
+    "silicone": "unknown"
+   },
+   "unstated": {
+    "main": [
+     "Handle core under the silicone covering"
+    ],
+    "color": [
+     "Pigments"
+    ],
+    "silicone": [
+     "LFGB or French Arrêté test"
+    ]
+   },
+   "contains": [],
+   "standards": [],
+   "quote": "Silicone: Tip and covering in silicone for easy cleaning",
+   "note": "Long-handled spoons for an adult to feed with.",
+   "products": [
+    {
+     "name": "Set of 4 Easy-Grip 1st Stage Silicone Spoons",
+     "url": "https://beaba.us/products/set-of-4-easy-grip-1st-stage-silicone-spoons",
+     "store": "Béaba USA",
+     "price": "$24.99",
+     "ships_from": null,
+     "shipping": "Free shipping on orders $140*"
+    }
+   ],
+   "read": "2026-11-17",
+   "photos": [
+    {
+     "key": "beaba-easy-grip-1st-stage-silicone-spoons-4",
+     "src": "https://cdn.shopify.com/s/files/1/0673/7756/1739/files/913418_product_amb_3.jpg?v=1756957376"
+    },
+    {
+     "key": "beaba-easy-grip-1st-stage-silicone-spoons-4_2",
+     "src": "https://cdn.shopify.com/s/files/1/0673/7756/1739/files/913624_product_face_1.jpg?v=1757111720"
+    },
+    {
+     "key": "beaba-easy-grip-1st-stage-silicone-spoons-4_3",
+     "src": "https://cdn.shopify.com/s/files/1/0673/7756/1739/files/913623_product_amb_1.jpg?v=1763413210"
+    },
+    {
+     "key": "beaba-easy-grip-1st-stage-silicone-spoons-4_4",
+     "src": "https://cdn.shopify.com/s/files/1/0673/7756/1739/files/913625_product_amb_1.jpg?v=1765317478"
+    },
+    {
+     "key": "beaba-easy-grip-1st-stage-silicone-spoons-4_5",
+     "src": "https://cdn.shopify.com/s/files/1/0673/7756/1739/files/913625_product_amb_2.jpg?v=1765317466"
+    },
+    {
+     "key": "beaba-easy-grip-1st-stage-silicone-spoons-4_6",
+     "src": "https://cdn.shopify.com/s/files/1/0673/7756/1739/files/913417_Product_Face_1.jpg?v=1765913732"
+    },
+    {
+     "key": "beaba-easy-grip-1st-stage-silicone-spoons-4_7",
+     "src": "https://cdn.shopify.com/s/files/1/0673/7756/1739/files/913624_product_amb_1.jpg?v=1765914490"
+    },
+    {
+     "key": "beaba-easy-grip-1st-stage-silicone-spoons-4_8",
+     "src": "https://cdn.shopify.com/s/files/1/0673/7756/1739/files/913624_product_amb_2.jpg?v=1765914490"
+    }
+   ],
+   "img": "beaba-easy-grip-1st-stage-silicone-spoons-4",
+   "img_src": "https://cdn.shopify.com/s/files/1/0673/7756/1739/files/913418_product_amb_3.jpg?v=1756957376"
+  },
+  {
+   "id": "cloth-eez-muslin-organic-changing-cloth",
+   "type": "changing-pads",
+   "brand": "Cloth-eez",
+   "line": "Muslin Organic Changing Cloth, 32 x 17 in",
+   "uses": [
+    "Organic cotton muslin, 180 gsm"
+   ],
+   "free": [
+    "Dyes in the white and natural colours"
+   ],
+   "unconfirmed": [
+    "Dyes in the coloured versions"
+   ],
+   "outside": [
+    "Polyester sewing thread"
+   ],
+   "facts": {
+    "main": "yes",
+    "parts": "no",
+    "color": "unknown"
+   },
+   "unstated": {
+    "color": [
+     "Dyes in the coloured versions"
+    ]
+   },
+   "contains": [],
+   "standards": [
+    "oeko-tex"
+   ],
+   "quote": "100% organic cotton is 180 gsm. Oeko-Tex Standard 100 certified to be free of harmful substances. Sewing thread is polyester for strength.",
+   "note": "A cloth laid over a changing pad or table, not a pad itself. The coloured versions are \"dyed and certified to Oeko-Tex Standard 100\"; the dyes are not named. Sold by Green Mountain Diapers.",
+   "products": [
+    {
+     "name": "Cloth-eez Muslin Organic Changing Cloth",
+     "url": "https://www.greenmountaindiapers.com/products/crinkle-muslin-changing-cloth",
+     "store": "Green Mountain Diapers",
+     "price": "$8.95",
+     "ships_from": "US",
+     "shipping": "Shipping calculated at checkout"
+    }
+   ],
+   "read": "2026-11-17",
+   "photos": [
+    {
+     "key": "cloth-eez-muslin-organic-changing-cloth",
+     "src": "https://cdn.shopify.com/s/files/1/1583/5087/files/crinklechangingtable2048.jpg?v=1760322257"
+    },
+    {
+     "key": "cloth-eez-muslin-organic-changing-cloth_2",
+     "src": "https://cdn.shopify.com/s/files/1/1583/5087/files/change-salmon2048.jpg?v=1760322257"
+    },
+    {
+     "key": "cloth-eez-muslin-organic-changing-cloth_3",
+     "src": "https://cdn.shopify.com/s/files/1/1583/5087/files/changeclothtable1900.jpg?v=1760322257"
+    },
+    {
+     "key": "cloth-eez-muslin-organic-changing-cloth_4",
+     "src": "https://cdn.shopify.com/s/files/1/1583/5087/files/changeclothfoldedontable1429.jpg?v=1752105574"
+    },
+    {
+     "key": "cloth-eez-muslin-organic-changing-cloth_5",
+     "src": "https://cdn.shopify.com/s/files/1/1583/5087/files/changingcloth-hand-1800.jpg?v=1752105574"
+    },
+    {
+     "key": "cloth-eez-muslin-organic-changing-cloth_6",
+     "src": "https://cdn.shopify.com/s/files/1/1583/5087/files/changecloth1900b.jpg?v=1752105574"
+    },
+    {
+     "key": "cloth-eez-muslin-organic-changing-cloth_7",
+     "src": "https://cdn.shopify.com/s/files/1/1583/5087/files/blue.jpg?v=1756500587"
+    },
+    {
+     "key": "cloth-eez-muslin-organic-changing-cloth_8",
+     "src": "https://cdn.shopify.com/s/files/1/1583/5087/files/unbleached_946718ad-149d-48ad-bb63-121707972716.jpg?v=1756500587"
+    }
+   ],
+   "img": "cloth-eez-muslin-organic-changing-cloth",
+   "img_src": "https://cdn.shopify.com/s/files/1/1583/5087/files/crinklechangingtable2048.jpg?v=1760322257"
+  },
+  {
+   "id": "crane-baby-kendi-muslin-bib-set",
+   "type": "bibs",
+   "brand": "Crane Baby",
+   "line": "Kendi 3-Pc. Muslin Bib Set",
+   "uses": [
+    "Cotton muslin, 4 layers"
+   ],
+   "free": [],
+   "unconfirmed": [
+    "Snaps",
+    "Print dyes",
+    "Thread"
+   ],
+   "outside": [],
+   "facts": {
+    "main": "yes",
+    "parts": "unknown",
+    "color": "unknown"
+   },
+   "unstated": {
+    "parts": [
+     "Snaps",
+     "Thread"
+    ],
+    "color": [
+     "Print dyes"
+    ]
+   },
+   "contains": [],
+   "standards": [],
+   "quote": "our 100% cotton 4 layer muslin bibs",
+   "note": "Three printed bibs with adjustable snaps; sold by Enlightened Baby.",
+   "products": [
+    {
+     "name": "Kendi 3-Pc. Muslin Bib Set",
+     "url": "https://enlightenedbaby.com/products/kendi-3-pc-muslin-bib-set",
+     "store": "Enlightened Baby",
+     "price": "$29.99",
+     "ships_from": "US"
+    }
+   ],
+   "read": "2026-11-17",
+   "photos": [
+    {
+     "key": "crane-baby-kendi-muslin-bib-set",
+     "src": "https://cdn.shopify.com/s/files/1/0707/4850/4296/files/82da1015c1b40a0bf0e7141418ab681a777794aa20992dbcb52acb603db1b96b.jpg?v=1789498421"
+    },
+    {
+     "key": "crane-baby-kendi-muslin-bib-set_2",
+     "src": "https://cdn.shopify.com/s/files/1/0707/4850/4296/files/ec4f27f599538a2be36fd160453d9dc5d7b5b87c57ba1711cbc71ed725ce9a87.jpg?v=1789498423"
+    },
+    {
+     "key": "crane-baby-kendi-muslin-bib-set_3",
+     "src": "https://cdn.shopify.com/s/files/1/0707/4850/4296/files/b68488ce7e3313923b9bab7a0601316d28df35e9184f4203fc01495fa04f6c98.jpg?v=1789498423"
+    },
+    {
+     "key": "crane-baby-kendi-muslin-bib-set_4",
+     "src": "https://cdn.shopify.com/s/files/1/0707/4850/4296/files/006eac5d1a7f69dfcb754b3c6bab977b8c962ed5ec27e2a0a551bfed24cb431a.jpg?v=1789498423"
+    }
+   ],
+   "img": "crane-baby-kendi-muslin-bib-set",
+   "img_src": "https://cdn.shopify.com/s/files/1/0707/4850/4296/files/82da1015c1b40a0bf0e7141418ab681a777794aa20992dbcb52acb603db1b96b.jpg?v=1789498421"
+  },
+  {
+   "id": "delta-children-finley-metal-toddler-bed",
+   "type": "toddler-beds",
+   "brand": "Delta Children",
+   "line": "Finley Metal Toddler Bed with Spindles",
+   "uses": [
+    "Metal frame"
+   ],
+   "free": [],
+   "unconfirmed": [
+    "Mattress support",
+    "Paint or coating on the frame",
+    "Hardware"
+   ],
+   "outside": [],
+   "facts": {
+    "main": "unknown",
+    "color": "unknown",
+    "parts": "unknown"
+   },
+   "unstated": {
+    "main": [
+     "Mattress support"
+    ],
+    "color": [
+     "Paint or coating on the frame"
+    ],
+    "parts": [
+     "Hardware"
+    ]
+   },
+   "contains": [],
+   "standards": [],
+   "age": {
+    "min_months": 15,
+    "text": "Recommended for ages 15 months+ and holds up to 50 lbs"
+   },
+   "quote": "A timeless metal frame with elegant spindle detailing",
+   "note": "Fits a standard crib mattress (sold separately); built-in guardrails. The page names no metal and no finish. Blue colour when read.",
+   "products": [
+    {
+     "name": "Finley Metal Toddler Bed with Spindles",
+     "url": "https://www.deltachildren.com/products/finley-metal-toddler-bed-with-spindles",
+     "store": "Delta Children",
+     "price": "$69.99",
+     "ships_from": "US",
+     "shipping": "Free shipping"
+    }
+   ],
+   "read": "2026-11-17",
+   "photos": [
+    {
+     "key": "delta-children-finley-metal-toddler-bed",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/BB81562GN-1773_metal-spindle-bed_blue_lifestyle_04.jpg?v=1790803614"
+    },
+    {
+     "key": "delta-children-finley-metal-toddler-bed_2",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/BB81562GN-1773_metal-spindle-bed_blue_callout_01.jpg?v=1790803614"
+    },
+    {
+     "key": "delta-children-finley-metal-toddler-bed_3",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/BB81562GN-1773_metal-spindle-bed_blue_callout_02.jpg?v=1790803614"
+    },
+    {
+     "key": "delta-children-finley-metal-toddler-bed_4",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/BB81562GN-1773_metal-spindle-bed_blue_callout_03.jpg?v=1790803614"
+    },
+    {
+     "key": "delta-children-finley-metal-toddler-bed_5",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/BB81562GN-1773_metal-spindle-bed_blue_callout_04.jpg?v=1790803614"
+    },
+    {
+     "key": "delta-children-finley-metal-toddler-bed_6",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/BB81562GN-1773_metal-spindle-bed_blue_callout_05.jpg?v=1790803615"
+    },
+    {
+     "key": "delta-children-finley-metal-toddler-bed_7",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/BB81562GN-1773_metal-spindle-bed_blue_silo_101_1.jpg?v=1790803614"
+    },
+    {
+     "key": "delta-children-finley-metal-toddler-bed_8",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/BB81562GN-1773_metal-spindle-bed_blue_lifestyle_103.jpg?v=1790803614"
+    },
+    {
+     "key": "delta-children-finley-metal-toddler-bed_9",
+     "src": "http://www.deltachildren.com/cdn/shop/files/BB81562GN-1687_metal-spindle-bed_oatmeal_callout_01.jpg?v=1790803499"
+    },
+    {
+     "key": "delta-children-finley-metal-toddler-bed_10",
+     "src": "https://www.deltachildren.com/cdn/shop/files/BB81562GN-1687_metal-spindle-bed_oatmeal_lifestyle_04_600x600_crop_center.jpg"
+    }
+   ],
+   "img": "delta-children-finley-metal-toddler-bed",
+   "img_src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/BB81562GN-1773_metal-spindle-bed_blue_lifestyle_04.jpg?v=1790803614"
+  },
+  {
+   "id": "ella-bonna-cotton-snap-baby-booties",
+   "type": "shoes",
+   "brand": "Ella Bonna Baby",
+   "line": "Cotton Snap Baby Booties, 0-6 to 24-36 months",
+   "uses": [
+    "Cotton outer fabric",
+    "Cotton lining"
+   ],
+   "free": [],
+   "unconfirmed": [
+    "Grip sole",
+    "Snaps",
+    "Elastic at the ankle",
+    "Dyes"
+   ],
+   "outside": [],
+   "facts": {
+    "main": "unknown",
+    "parts": "unknown",
+    "color": "unknown"
+   },
+   "unstated": {
+    "main": [
+     "Grip sole"
+    ],
+    "parts": [
+     "Snaps",
+     "Elastic at the ankle"
+    ],
+    "color": [
+     "Dyes"
+    ]
+   },
+   "contains": [],
+   "standards": [],
+   "quote": "Cotton outer fabric Cotton lining Adjustable snaps Grip-pattern sole",
+   "note": "Soft booties for indoor, nursery and stroller wear; the page says the month sizes are \"footwear fit ranges\". Rainbow design; sold by The Baby Penguin.",
+   "products": [
+    {
+     "name": "Ella Bonna Baby Cotton Snap Baby Booties - Rainbow",
+     "url": "https://thebabypenguin.com/products/organic-cotton-baby-booties-non-slip-sole-cotton-newborn-booties-home-nursery-shoes-rainbow",
+     "store": "The Baby Penguin",
+     "price": "$22.99",
+     "ships_from": "US",
+     "shipping": "Free shipping on orders over $50"
+    }
+   ],
+   "read": "2026-11-17",
+   "photos": [
+    {
+     "key": "ella-bonna-cotton-snap-baby-booties",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Organic-Cotton-Baby-Booties_-Non-Slip-Sole_-Cotton-Newborn-Booties-Home-Nursery-Shoes_-Rainbow-Ella-Bonna-Baby-126000924.jpg?v=1781464083"
+    },
+    {
+     "key": "ella-bonna-cotton-snap-baby-booties_2",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Organic-Cotton-Baby-Booties_-Non-Slip-Sole_-Cotton-Newborn-Booties-Home-Nursery-Shoes_-Rainbow-Ella-Bonna-Baby-126001095.jpg?v=1781464083"
+    },
+    {
+     "key": "ella-bonna-cotton-snap-baby-booties_3",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Organic-Cotton-Baby-Booties_-Non-Slip-Sole_-Cotton-Newborn-Booties-Home-Nursery-Shoes_-Rainbow-Ella-Bonna-Baby-126001291.jpg?v=1781464088"
+    },
+    {
+     "key": "ella-bonna-cotton-snap-baby-booties_4",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Organic-Cotton-Baby-Booties_-Non-Slip-Sole_-Cotton-Newborn-Booties-Home-Nursery-Shoes_-Rainbow-Ella-Bonna-Baby-126001335.jpg?v=1781464088"
+    },
+    {
+     "key": "ella-bonna-cotton-snap-baby-booties_5",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Organic-Cotton-Baby-Booties_-Non-Slip-Sole_-Cotton-Newborn-Booties-Home-Nursery-Shoes_-Rainbow-Ella-Bonna-Baby-126001463.jpg?v=1781464091"
+    },
+    {
+     "key": "ella-bonna-cotton-snap-baby-booties_6",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Organic-Cotton-Baby-Booties_-Non-Slip-Sole_-Cotton-Newborn-Booties-Home-Nursery-Shoes_-Rainbow-Ella-Bonna-Baby-126001584.jpg?v=1781464091"
+    }
+   ],
+   "img": "ella-bonna-cotton-snap-baby-booties",
+   "img_src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Organic-Cotton-Baby-Booties_-Non-Slip-Sole_-Cotton-Newborn-Booties-Home-Nursery-Shoes_-Rainbow-Ella-Bonna-Baby-126000924.jpg?v=1781464083"
+  },
+  {
+   "id": "frigg-babys-first-pacifier-4-pack",
+   "type": "pacifiers",
+   "brand": "FRIGG",
+   "line": "Baby's First Pacifier 4-Pack (Moonlight Sailing), 0-6 months",
+   "uses": [
+    "Medical grade silicone nipples (three pacifiers)",
+    "Natural rubber latex nipple (Rope pacifier)"
+   ],
+   "free": [
+    "BPA",
+    "BPS",
+    "PVC",
+    "Phthalates"
+   ],
+   "unconfirmed": [
+    "Pigments, including the glow-in-the-dark one",
+    "Rubber additives/plasticisers",
+    "LFGB or French Arrêté test"
+   ],
+   "outside": [
+    "PP plastic shield"
+   ],
+   "facts": {
+    "main": "no",
+    "color": "unknown",
+    "silicone": "unknown",
+    "rubber": "unknown"
+   },
+   "unstated": {
+    "color": [
+     "Pigments, including the glow-in-the-dark one"
+    ],
+    "silicone": [
+     "LFGB or French Arrêté test"
+    ],
+    "rubber": [
+     "Rubber additives/plasticisers"
+    ]
+   },
+   "contains": [
+    "latex"
+   ],
+   "standards": [
+    "us-toy"
+   ],
+   "age": {
+    "min_months": 0,
+    "max_months": 6,
+    "text": "Size: 0-6 months"
+   },
+   "quote": "Nipples made from medical grade silicone and natural rubber latex - 100% food grade PP plastic shield",
+   "note": "Four styles in one set: Butterfly (anatomical silicone), Lucky (symmetrical silicone), Moon Glow in the Dark (round silicone), Rope (round natural rubber). Made in Denmark; sold by Mushie.",
+   "products": [
+    {
+     "name": "FRIGG Baby's First Pacifier Moonlight Sailing (Cream) 4-Pack",
+     "url": "https://mushie.com/products/frigg-us-babys-first-pacifier-moonlight-sailing-cream",
+     "store": "Mushie",
+     "price": "$19.99",
+     "ships_from": "US",
+     "shipping": "Free shipping on orders over $75"
+    }
+   ],
+   "read": "2026-11-17",
+   "photos": [
+    {
+     "key": "frigg-babys-first-pacifier-4-pack",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/05715239025315_FriggBabysFirstPacifierSet_MoonlightSailingCream_01.jpg?v=1770413944"
+    },
+    {
+     "key": "frigg-babys-first-pacifier-4-pack_2",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/FriggNipples_BabysFirstPacifier_infographic.jpg?v=1777400197"
+    },
+    {
+     "key": "frigg-babys-first-pacifier-4-pack_3",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/05715239025315_FriggBabysFirstPacifierSet_MoonlightSailingCream_02.jpg?v=1770413959"
+    },
+    {
+     "key": "frigg-babys-first-pacifier-4-pack_4",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/05715239025315_FriggBabysFirstPacifierSet_MoonlightSailingCream_03.jpg?v=1770413968"
+    },
+    {
+     "key": "frigg-babys-first-pacifier-4-pack_5",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/Malmo_shoot-102.jpg?v=1774902973"
+    },
+    {
+     "key": "frigg-babys-first-pacifier-4-pack_6",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/Malmo_shoot-92.jpg?v=1774900568"
+    },
+    {
+     "key": "frigg-babys-first-pacifier-4-pack_7",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/WRAPS_day1-237.jpg?v=1774899278"
+    },
+    {
+     "key": "frigg-babys-first-pacifier-4-pack_8",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/LONDON-45.jpg?v=1774902973"
+    },
+    {
+     "key": "frigg-babys-first-pacifier-4-pack_9",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/flatlay_11.02-5.jpg?v=1771316751"
+    }
+   ],
+   "img": "frigg-babys-first-pacifier-4-pack",
+   "img_src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/05715239025315_FriggBabysFirstPacifierSet_MoonlightSailingCream_01.jpg?v=1770413944"
+  },
+  {
+   "id": "home-of-wool-wool-toddler-pillow",
+   "type": "pillows",
+   "brand": "Home of Wool",
+   "line": "Wool Toddler Pillow, 13 x 18 in",
+   "uses": [
+    "Wool batting fill",
+    "Ticking: organic cotton, linen/cotton (59/41) or virgin wool"
+   ],
+   "free": [
+    "Synthetics"
+   ],
+   "unconfirmed": [
+    "Seam thread",
+    "Shrink-proofing on the wool ticking option"
+   ],
+   "outside": [],
+   "facts": {
+    "main": "yes",
+    "parts": "unknown",
+    "wool": "unknown"
+   },
+   "unstated": {
+    "parts": [
+     "Seam thread"
+    ],
+    "wool": [
+     "Shrink-proofing on the wool ticking option"
+    ]
+   },
+   "contains": [],
+   "standards": [],
+   "quote": "The Wool Toddler Pillow is made with nothing but pure wool, giving your child gentle support without feeling bulky.",
+   "note": "Handmade to order; the ticking is not removable, and pillowcases and a wool protector are optional extras. Custom sizes on request. Free FedEx Economy shipping to the USA is one of the shipping options.",
+   "products": [
+    {
+     "name": "Wool Toddler Pillow",
+     "url": "https://homeofwool.com/shop/toddler-pillow/",
+     "store": "Home of Wool",
+     "price": "from $97.00",
+     "ships_from": "UK",
+     "shipping": "Free FedEx Economy shipping to the USA (7-10 business days)"
+    }
+   ],
+   "read": "2026-11-17",
+   "photos": [
+    {
+     "key": "home-of-wool-wool-toddler-pillow",
+     "src": "https://homeofwool.com/wp-content/uploads/2025/09/home-of-wool-toddler-pillow.jpg"
+    }
+   ],
+   "img": "home-of-wool-wool-toddler-pillow",
+   "img_src": "https://homeofwool.com/wp-content/uploads/2025/09/home-of-wool-toddler-pillow.jpg"
+  },
+  {
+   "id": "jabaloo-nursing-pillow",
+   "type": "nursing-pillows",
+   "brand": "Jabaloo",
+   "line": "Nursing Pillow, crescent, 25.5 x 10 x 4 in",
+   "uses": [
+    "Cotton (98%)"
+   ],
+   "free": [],
+   "unconfirmed": [
+    "Pillow fill",
+    "Dyes"
+   ],
+   "outside": [
+    "Spandex (2%)"
+   ],
+   "facts": {
+    "main": "no",
+    "color": "unknown"
+   },
+   "unstated": {
+    "color": [
+     "Dyes"
+    ]
+   },
+   "contains": [],
+   "standards": [],
+   "quote": "Materials: 98% cotton, 2% spandex",
+   "note": "The page gives one material line and a machine washable cover; it does not name the fill. Sold out when read at The Baby Penguin.",
+   "products": [
+    {
+     "name": "Jabaloo Nursing Pillow - Eucalyptus",
+     "url": "https://thebabypenguin.com/products/nursing-pillow-eucalyptus",
+     "store": "The Baby Penguin",
+     "price": "$49.00 (sold out when read)",
+     "ships_from": "US",
+     "shipping": "Free shipping on orders over $50"
+    }
+   ],
+   "read": "2026-11-17",
+   "photos": [
+    {
+     "key": "jabaloo-nursing-pillow",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Nursing-Pillow-Eucalyptus-Jabaloo-123348114.jpg?v=1781458885"
+    },
+    {
+     "key": "jabaloo-nursing-pillow_2",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Nursing-Pillow-Eucalyptus-Jabaloo-123348281.jpg?v=1781458885"
+    },
+    {
+     "key": "jabaloo-nursing-pillow_3",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Nursing-Pillow-Eucalyptus-Jabaloo-123348391.jpg?v=1781458885"
+    },
+    {
+     "key": "jabaloo-nursing-pillow_4",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Nursing-Pillow-Eucalyptus-Jabaloo-123348459.jpg?v=1781458889"
+    },
+    {
+     "key": "jabaloo-nursing-pillow_5",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Nursing-Pillow-Eucalyptus-Jabaloo-123348510.jpg?v=1781458889"
+    },
+    {
+     "key": "jabaloo-nursing-pillow_6",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Nursing-Pillow-Eucalyptus-Jabaloo-123348656.jpg?v=1781458889"
+    },
+    {
+     "key": "jabaloo-nursing-pillow_7",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Nursing-Pillow-Eucalyptus-Jabaloo-123348716.jpg?v=1781458893"
+    }
+   ],
+   "img": "jabaloo-nursing-pillow",
+   "img_src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Nursing-Pillow-Eucalyptus-Jabaloo-123348114.jpg?v=1781458885"
+  },
+  {
+   "id": "kodo-kids-wood-balls",
+   "type": "balls",
+   "brand": "Kodo Kids",
+   "line": "Wood Balls, 10 pack (1.5, 1.75 or 2 in)",
+   "uses": [
+    "Solid wood"
+   ],
+   "free": [],
+   "unconfirmed": [
+    "Wood species",
+    "Finish on the indoor balls"
+   ],
+   "outside": [],
+   "facts": {
+    "main": "yes",
+    "wood": "yes",
+    "color": "unknown"
+   },
+   "unstated": {
+    "color": [
+     "Finish on the indoor balls"
+    ]
+   },
+   "contains": [],
+   "standards": [
+    "us-toy"
+   ],
+   "quote": "Versatile and durable, these solid wood balls are an essential addition to any ramp set.",
+   "note": "Ramp rollers for classrooms. The page says the separate Outdoor Balls \"feature a specialized water-resistant finish\"; it names no finish for these. It calls the 1.5\" and 1.75\" sizes \"a choking hazard\". Made in the USA.",
+   "products": [
+    {
+     "name": "Wood Balls",
+     "url": "https://kodokids.com/products/wood-balls",
+     "store": "Kodo Kids",
+     "price": "$16.00",
+     "ships_from": "US"
+    }
+   ],
+   "read": "2026-11-17",
+   "photos": [
+    {
+     "key": "kodo-kids-wood-balls",
+     "src": "https://cdn.shopify.com/s/files/1/0629/8969/7163/files/2-wood-ball-10-pack-3rd-party.jpg?v=1793139781"
+    },
+    {
+     "key": "kodo-kids-wood-balls_2",
+     "src": "https://cdn.shopify.com/s/files/1/0629/8969/7163/files/2-wood-ball-10-pack-3rd-party-2.jpg?v=1793829611"
+    },
+    {
+     "key": "kodo-kids-wood-balls_3",
+     "src": "https://cdn.shopify.com/s/files/1/0629/8969/7163/files/2-wood-ball-10-pack-3rd-party-3.jpg?v=1793805327"
+    },
+    {
+     "key": "kodo-kids-wood-balls_4",
+     "src": "https://cdn.shopify.com/s/files/1/0629/8969/7163/files/2-wood-ball-10-pack-3rd-party-4.jpg?v=1793829616"
+    },
+    {
+     "key": "kodo-kids-wood-balls_5",
+     "src": "https://cdn.shopify.com/s/files/1/0629/8969/7163/files/2-wood-ball-10-pack-3rd-party-5.jpg?v=1793139787"
+    }
+   ],
+   "img": "kodo-kids-wood-balls",
+   "img_src": "https://cdn.shopify.com/s/files/1/0629/8969/7163/files/2-wood-ball-10-pack-3rd-party.jpg?v=1793139781"
+  },
+  {
+   "id": "maple-landmark-lift-learn-birds-puzzle",
+   "type": "puzzles",
+   "brand": "Maple Landmark",
+   "line": "Lift & Learn Birds Wooden Puzzle, 8 pieces",
+   "uses": [],
+   "free": [],
+   "unconfirmed": [
+    "Ink",
+    "Make-up of the water based finish",
+    "Glue in the plywood"
+   ],
+   "outside": [
+    "Birch plywood"
+   ],
+   "facts": {
+    "wood": "no",
+    "color": "unknown"
+   },
+   "unstated": {
+    "color": [
+     "Ink",
+     "Make-up of the water based finish"
+    ]
+   },
+   "contains": [],
+   "standards": [],
+   "age": {
+    "min_months": 36,
+    "text": "Recommended age: 3 years and up"
+   },
+   "quote": "Materials: Birch plywood. Finish: Ink, Water based finish.",
+   "note": "Bird facts are engraved under each piece. Made in Middlebury, Vermont, USA; sold by The Baby Penguin.",
+   "products": [
+    {
+     "name": "Lift & Learn Birds Wooden Puzzle, 8 Pieces",
+     "url": "https://thebabypenguin.com/products/lift-learn-birds-puzzle",
+     "store": "The Baby Penguin",
+     "price": "$29.95",
+     "ships_from": "US",
+     "shipping": "Free shipping on orders over $50"
+    }
+   ],
+   "read": "2026-11-17",
+   "photos": [
+    {
+     "key": "maple-landmark-lift-learn-birds-puzzle",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/maple-landmark-42302-ivory.webp?v=1791465816"
+    },
+    {
+     "key": "maple-landmark-lift-learn-birds-puzzle_2",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Lift-_-Learn-Birds-Puzzle---Sustainable-Toy_--Made-in-the-USA-Maple-Landmark-1691283890136.jpg?v=1691283892"
+    },
+    {
+     "key": "maple-landmark-lift-learn-birds-puzzle_3",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Lift-_-Learn-Birds-Puzzle---Sustainable-Toy_--Made-in-the-USA-Maple-Landmark-1691283893353.jpg?v=1748250579"
+    }
+   ],
+   "img": "maple-landmark-lift-learn-birds-puzzle",
+   "img_src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/maple-landmark-42302-ivory.webp?v=1791465816"
+  },
+  {
+   "id": "mushie-silicone-starter-cup",
+   "type": "cups",
+   "brand": "Mushie",
+   "line": "Silicone Starter Cup, 2 fl oz",
+   "uses": [
+    "Food-grade silicone"
+   ],
+   "free": [],
+   "unconfirmed": [
+    "Pigments",
+    "LFGB or French Arrêté test"
+   ],
+   "outside": [],
+   "facts": {
+    "main": "yes",
+    "color": "unknown",
+    "silicone": "unknown"
+   },
+   "unstated": {
+    "color": [
+     "Pigments"
+    ],
+    "silicone": [
+     "LFGB or French Arrêté test"
+    ]
+   },
+   "contains": [],
+   "standards": [],
+   "age": {
+    "min_months": 6,
+    "text": "Manufacturer-recommended age: 6 months+"
+   },
+   "quote": "100% food-grade silicone",
+   "note": "An open cup with a weighted base; sold by The Baby Penguin.",
+   "products": [
+    {
+     "name": "Mushie Silicone Starter Cup",
+     "url": "https://thebabypenguin.com/products/silicone-starter-cup",
+     "store": "The Baby Penguin",
+     "price": "$11.99",
+     "ships_from": "US",
+     "shipping": "Free shipping on orders over $50"
+    }
+   ],
+   "read": "2026-11-17",
+   "photos": [
+    {
+     "key": "mushie-silicone-starter-cup",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Silicone-Starter-Cup-Mushie-126806380.jpg?v=1769139705"
+    },
+    {
+     "key": "mushie-silicone-starter-cup_2",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Silicone-Starter-Cup-Mushie-126806859.jpg?v=1769139712"
+    },
+    {
+     "key": "mushie-silicone-starter-cup_3",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Silicone-Starter-Cup-Mushie-126806917.jpg?v=1769139713"
+    },
+    {
+     "key": "mushie-silicone-starter-cup_4",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Silicone-Starter-Cup-Mushie-126807063.jpg?v=1769139715"
+    },
+    {
+     "key": "mushie-silicone-starter-cup_5",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Silicone-Starter-Cup-Mushie-126807188.jpg?v=1769139715"
+    },
+    {
+     "key": "mushie-silicone-starter-cup_6",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Silicone-Starter-Cup-Mushie-126807269.jpg?v=1769139717"
+    },
+    {
+     "key": "mushie-silicone-starter-cup_7",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Silicone-Starter-Cup-Mushie-126807395.jpg?v=1769139718"
+    },
+    {
+     "key": "mushie-silicone-starter-cup_8",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Silicone-Starter-Cup-Mushie-126807454.jpg?v=1769139721"
+    },
+    {
+     "key": "mushie-silicone-starter-cup_9",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Silicone-Starter-Cup-Mushie-126807512.jpg?v=1769139721"
+    },
+    {
+     "key": "mushie-silicone-starter-cup_10",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Silicone-Starter-Cup-Mushie-126807615.jpg?v=1769139723"
+    }
+   ],
+   "img": "mushie-silicone-starter-cup",
+   "img_src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Silicone-Starter-Cup-Mushie-126806380.jpg?v=1769139705"
+  },
+  {
+   "id": "natemia-muslin-washcloth-set",
+   "type": "towels",
+   "brand": "Natemia",
+   "line": "Muslin Washcloth Set (bamboo and cotton), set of 5, 12 x 12 in",
+   "uses": [
+    "Rayon from bamboo (70%)",
+    "Cotton (30%)"
+   ],
+   "free": [],
+   "unconfirmed": [
+    "Dyes",
+    "Thread"
+   ],
+   "outside": [],
+   "facts": {
+    "main": "yes",
+    "parts": "unknown",
+    "color": "unknown"
+   },
+   "unstated": {
+    "parts": [
+     "Thread"
+    ],
+    "color": [
+     "Dyes"
+    ]
+   },
+   "contains": [],
+   "standards": [],
+   "quote": "6 Layers 70% rayon from bamboo, 30% cotton",
+   "note": "Six-layer muslin washcloths; sold by Colored Organics (final sale when read). Natemia also makes an organic cotton washcloth set, listed separately.",
+   "products": [
+    {
+     "name": "Muslin Washcloth Set",
+     "url": "https://coloredorganics.com/products/organic-cotton-washcloths-copy",
+     "store": "Colored Organics",
+     "price": "$32",
+     "ships_from": "US",
+     "shipping": "Free shipping on orders over $50"
+    }
+   ],
+   "read": "2026-11-17",
+   "photos": [
+    {
+     "key": "natemia-muslin-washcloth-set",
+     "src": "https://coloredorganics.com/cdn/shop/files/infant-unisex-muslin-washcloth-set.white.flat_front.jpg?v=1785447796&width=1024"
+    },
+    {
+     "key": "natemia-muslin-washcloth-set_2",
+     "src": "https://coloredorganics.com/cdn/shop/files/infant-unisex-muslin-washcloth-set.folkstone-grey.flat_front.jpg?v=1785447796&width=1024"
+    },
+    {
+     "key": "natemia-muslin-washcloth-set_3",
+     "src": "https://coloredorganics.com/cdn/shop/files/infant-unisex-muslin-washcloth-set.folkstone-grey.flat_detail.2.jpg?v=1785447796&width=1024"
+    },
+    {
+     "key": "natemia-muslin-washcloth-set_4",
+     "src": "https://coloredorganics.com/cdn/shop/files/infant-unisex-muslin-washcloth-set.folkstone-grey.flat_detail.jpg?v=1785447796&width=1024"
+    }
+   ],
+   "img": "natemia-muslin-washcloth-set",
+   "img_src": "https://coloredorganics.com/cdn/shop/files/infant-unisex-muslin-washcloth-set.white.flat_front.jpg?v=1785447796&width=1024"
+  },
+  {
+   "id": "snuggle-me-organic-feeding-support-pillow",
+   "type": "nursing-pillows",
+   "brand": "Snuggle Me",
+   "line": "Organic Feeding + Support Pillow",
+   "uses": [
+    "GOTS certified organic cotton fabric"
+   ],
+   "free": [],
+   "unconfirmed": [
+    "Thread"
+   ],
+   "outside": [
+    "Polyester fiber fill"
+   ],
+   "facts": {
+    "main": "no",
+    "organic": "yes",
+    "parts": "unknown"
+   },
+   "unstated": {
+    "parts": [
+     "Thread"
+    ]
+   },
+   "contains": [],
+   "standards": [
+    "gots"
+   ],
+   "quote": "Snuggle Me Organic Feeding + Support Pillows are made with GOTS certified organic cotton fabrics and a hypoallergenic polyester fiber fill.",
+   "note": "Made in the USA; about 20 x 18 x 6 inches. Sold by Pacifier.",
+   "products": [
+    {
+     "name": "Snuggle Me Feeding + Support Pillow",
+     "url": "https://pacifierkids.com/products/feedingsupportpillowbysnuggleme",
+     "store": "Pacifier",
+     "price": "$64.99",
+     "ships_from": "US",
+     "shipping": "Free shipping on orders over $100"
+    }
+   ],
+   "read": "2026-11-17",
+   "photos": [
+    {
+     "key": "snuggle-me-organic-feeding-support-pillow",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/products/natural_pillow_copy_900x_51e91284-b6f3-4b2f-934e-555068db1979.jpg?v=1619450570"
+    },
+    {
+     "key": "snuggle-me-organic-feeding-support-pillow_2",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/products/smholidayshoot-359_900x_ad7876b7-fb0a-43f3-b4a1-3e82c6c92636.jpg?v=1624373528"
+    }
+   ],
+   "img": "snuggle-me-organic-feeding-support-pillow",
+   "img_src": "https://cdn.shopify.com/s/files/1/0281/8056/products/natural_pillow_copy_900x_51e91284-b6f3-4b2f-934e-555068db1979.jpg?v=1619450570"
   }
  ]
 }
