@@ -1,6 +1,6 @@
 {
  "schema": 4,
- "updated": "2026-11-17",
+ "updated": "2026-11-18",
  "ask": [
   "Thread on any sewn item (cotton or polyester).",
   "Wheels and axles on push toys and cars.",
@@ -42021,6 +42021,1137 @@
    ],
    "img": "snuggle-me-organic-feeding-support-pillow",
    "img_src": "https://cdn.shopify.com/s/files/1/0281/8056/products/natural_pillow_copy_900x_51e91284-b6f3-4b2f-934e-555068db1979.jpg?v=1619450570"
+  },
+  {
+   "id": "amish-moyerton-solid-wood-convertible-crib",
+   "type": "cribs",
+   "brand": "Amish (Snyder’s)",
+   "line": "Moyerton Solid Wood 4-in-1 Convertible Crib",
+   "uses": [
+    "Solid wood frame",
+    "Red oak, brown maple or cherry (buyer’s choice)"
+   ],
+   "free": [],
+   "unconfirmed": [
+    "Stain or paint (one of “30 OCS stains and paints”, ingredients not named)",
+    "Mattress support",
+    "Hardware (“Allen-head bolts”, metal not named)"
+   ],
+   "outside": [],
+   "facts": {
+    "main": "yes",
+    "wood": "yes",
+    "color": "unknown",
+    "parts": "unknown"
+   },
+   "unstated": {
+    "color": [
+     "Stain or paint (one of “30 OCS stains and paints”, ingredients not named)"
+    ],
+    "parts": [
+     "Mattress support",
+     "Hardware (“Allen-head bolts”, metal not named)"
+    ]
+   },
+   "contains": [],
+   "standards": [],
+   "quote": "The Moyerton Crib is a solid wood 4-in-1 convertible crib, built to order in Lancaster County, PA.",
+   "note": "Built to order by an Amish shop; toddler/daybed and full-size conversion kits sold separately. Price is for the crib only. Sold by Snyder’s Furniture.",
+   "products": [
+    {
+     "name": "Amish Moyerton Solid Wood 4-in-1 Convertible Baby Crib (crib only)",
+     "url": "https://www.snydersfurniture.com/products/amish-moyerton-solid-wood-4-in-1-convertible-baby-crib",
+     "store": "Snyder’s Furniture",
+     "price": "$2,439.00",
+     "ships_from": "US",
+     "shipping": "Free curbside delivery"
+    }
+   ],
+   "read": "2026-11-18",
+   "photos": [
+    {
+     "key": "amish-moyerton-solid-wood-convertible-crib",
+     "src": "https://cdn.shopify.com/s/files/1/0660/5298/0966/files/amish-moyerton-solid-wood-4-in-1-convertible-baby-crib-7998542.jpg?v=1792017082"
+    },
+    {
+     "key": "amish-moyerton-solid-wood-convertible-crib_2",
+     "src": "https://cdn.shopify.com/s/files/1/0660/5298/0966/files/amish-moyerton-solid-wood-4-in-1-convertible-baby-crib-5952603.jpg?v=1792017082"
+    },
+    {
+     "key": "amish-moyerton-solid-wood-convertible-crib_3",
+     "src": "https://cdn.shopify.com/s/files/1/0660/5298/0966/files/amish-moyerton-solid-wood-4-in-1-convertible-baby-crib-8498935.jpg?v=1792017082"
+    },
+    {
+     "key": "amish-moyerton-solid-wood-convertible-crib_4",
+     "src": "https://cdn.shopify.com/s/files/1/0660/5298/0966/files/amish-moyerton-solid-wood-4-in-1-convertible-baby-crib-9716821.jpg?v=1792017082"
+    },
+    {
+     "key": "amish-moyerton-solid-wood-convertible-crib_5",
+     "src": "https://cdn.shopify.com/s/files/1/0660/5298/0966/files/amish-moyerton-solid-wood-4-in-1-convertible-baby-crib-9629656.jpg?v=1792017082"
+    },
+    {
+     "key": "amish-moyerton-solid-wood-convertible-crib_6",
+     "src": "https://cdn.shopify.com/s/files/1/0660/5298/0966/files/amish-moyerton-solid-wood-4-in-1-convertible-baby-crib-1093289.jpg?v=1792017082"
+    },
+    {
+     "key": "amish-moyerton-solid-wood-convertible-crib_7",
+     "src": "https://cdn.shopify.com/s/files/1/0660/5298/0966/files/amish-moyerton-solid-wood-4-in-1-convertible-baby-crib-5717823.jpg?v=1792017082"
+    },
+    {
+     "key": "amish-moyerton-solid-wood-convertible-crib_8",
+     "src": "https://cdn.shopify.com/s/files/1/0660/5298/0966/files/amish-moyerton-solid-wood-4-in-1-convertible-baby-crib-7338159.jpg?v=1792017082"
+    }
+   ],
+   "img": "amish-moyerton-solid-wood-convertible-crib",
+   "img_src": "https://cdn.shopify.com/s/files/1/0660/5298/0966/files/amish-moyerton-solid-wood-4-in-1-convertible-baby-crib-7998542.jpg?v=1792017082"
+  },
+  {
+   "id": "crywolf-sun-smart-romper",
+   "type": "bodysuits",
+   "brand": "Crywolf",
+   "line": "Sun Smart Romper (UPF 30+)",
+   "uses": [
+    "GOTS certified organic cotton (100%, 170gsm)"
+   ],
+   "free": [],
+   "unconfirmed": [
+    "Pops (snaps)",
+    "Dyes in the print",
+    "Thread"
+   ],
+   "outside": [],
+   "facts": {
+    "main": "yes",
+    "organic": "yes",
+    "color": "unknown",
+    "parts": "unknown"
+   },
+   "unstated": {
+    "color": [
+     "Dyes in the print"
+    ],
+    "parts": [
+     "Pops (snaps)"
+    ]
+   },
+   "contains": [],
+   "standards": [
+    "gots"
+   ],
+   "quote": "Crafted from super-soft GOTS certified organic cotton with UPF 30+ protection",
+   "note": "The page names no treatment for the UPF 30+ rating. Sizes 3-6 months to 3 years; Little Fish print backordered when read.",
+   "products": [
+    {
+     "name": "Sun Smart Romper, Little Fish",
+     "url": "https://crywolfchild.com/products/sun-smart-romper-little-fish",
+     "store": "Crywolf (New Zealand)",
+     "price": "NZ$44.99",
+     "ships_from": "New Zealand"
+    }
+   ],
+   "read": "2026-11-18",
+   "photos": [
+    {
+     "key": "crywolf-sun-smart-romper",
+     "src": "https://cdn.shopify.com/s/files/1/2228/8463/files/CRYWOL_2_7ca9f136-92c3-4a39-a67a-c7a0bdf24beb.jpg?v=1787272588"
+    },
+    {
+     "key": "crywolf-sun-smart-romper_2",
+     "src": "https://cdn.shopify.com/s/files/1/2228/8463/files/CRYWOLF-SS2627-SunSmartRomper-Little-Fish-1-Campaign-WEB_cb1ce618-6d08-4f51-a085-5138bc959164.jpg?v=1787272596"
+    }
+   ],
+   "img": "crywolf-sun-smart-romper",
+   "img_src": "https://cdn.shopify.com/s/files/1/2228/8463/files/CRYWOL_2_7ca9f136-92c3-4a39-a67a-c7a0bdf24beb.jpg?v=1787272588"
+  },
+  {
+   "id": "delta-children-elliot-6-in-1-convertible-crib",
+   "type": "cribs",
+   "brand": "Delta Children",
+   "line": "Elliot 6-in-1 Convertible Crib",
+   "uses": [
+    "Sustainably harvested wood (species not named)"
+   ],
+   "free": [],
+   "unconfirmed": [
+    "Whether the wood is solid or engineered",
+    "Paint (“non-toxic, baby-safe painting process”, ingredients not named)",
+    "Mattress support",
+    "Hardware"
+   ],
+   "outside": [],
+   "facts": {
+    "main": "yes",
+    "wood": "unknown",
+    "color": "unknown",
+    "parts": "unknown"
+   },
+   "unstated": {
+    "wood": [
+     "Whether the wood is solid or engineered"
+    ],
+    "color": [
+     "Paint (“non-toxic, baby-safe painting process”, ingredients not named)"
+    ],
+    "parts": [
+     "Mattress support",
+     "Hardware"
+    ]
+   },
+   "contains": [],
+   "standards": [],
+   "quote": "Crafted from sustainably harvested wood and non-toxic materials",
+   "note": "The page says it is Greenguard Gold certified and finished in a “lead-safe and phthalate-safe painting process”. Converts to toddler bed, daybed and full-size bed; mattress and full-size bed rails sold separately.",
+   "products": [
+    {
+     "name": "Delta Children Elliot 6-in-1 Convertible Crib, Chestnut",
+     "url": "https://www.deltachildren.com/products/elliot-6-in-1-convertible-crib",
+     "store": "Delta Children",
+     "price": "$199.99",
+     "ships_from": "US"
+    }
+   ],
+   "read": "2026-11-18",
+   "photos": [
+    {
+     "key": "delta-children-elliot-6-in-1-convertible-crib",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/W213150-130_Elliot-6in1-Crib_Bianca-White_Lifestyle_11.jpg?v=1779981957"
+    },
+    {
+     "key": "delta-children-elliot-6-in-1-convertible-crib_2",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/W213150-130_Elliot-6in1-Crib_Bianca-White_Callout_02.jpg?v=1782159443"
+    },
+    {
+     "key": "delta-children-elliot-6-in-1-convertible-crib_3",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/W213150-130_Elliot-6in1-Crib_Bianca-White_Callout_07.jpg?v=1782159442"
+    },
+    {
+     "key": "delta-children-elliot-6-in-1-convertible-crib_4",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/W213150-130_Elliot-6in1-Crib_Bianca-White_Callout_04.jpg?v=1782159445"
+    },
+    {
+     "key": "delta-children-elliot-6-in-1-convertible-crib_5",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/W213150-130_Elliot-6in1-Crib_Bianca-White_Callout_06.jpg?v=1782159442"
+    },
+    {
+     "key": "delta-children-elliot-6-in-1-convertible-crib_6",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/W213150-130_Elliot-6in1-Crib_Bianca-White_Callout_03.jpg?v=1782159443"
+    },
+    {
+     "key": "delta-children-elliot-6-in-1-convertible-crib_7",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/W213150-130_Elliot-6in1-Crib_Bianca-White_Callout_01.jpg?v=1782159443"
+    },
+    {
+     "key": "delta-children-elliot-6-in-1-convertible-crib_8",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/W213150-130_Elliot-6in1-Crib_Bianca-White_Callout_05.jpg?v=1782159444"
+    },
+    {
+     "key": "delta-children-elliot-6-in-1-convertible-crib_9",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/W213150-130_Elliot-6in1-Crib_Bianca-White_Silo_01.jpg?v=1779981957"
+    },
+    {
+     "key": "delta-children-elliot-6-in-1-convertible-crib_10",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/W213150-130_Elliot-6in1-Crib_Bianca-White_Silo_08.jpg?v=1779981957"
+    }
+   ],
+   "img": "delta-children-elliot-6-in-1-convertible-crib",
+   "img_src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/W213150-130_Elliot-6in1-Crib_Bianca-White_Lifestyle_11.jpg?v=1779981957"
+  },
+  {
+   "id": "delta-children-jeep-turboglyde-stroller-wagon",
+   "type": "strollers",
+   "brand": "Delta Children",
+   "line": "Jeep TurboGlyde Stroller Wagon",
+   "uses": [],
+   "free": [],
+   "unconfirmed": [
+    "Frame",
+    "Seat and canopy fabric",
+    "Wheels (“puncture-proof”, material not named)",
+    "Flame retardants"
+   ],
+   "outside": [
+    "Plastic child tray"
+   ],
+   "facts": {
+    "main": "unknown",
+    "accessory": "no",
+    "parts": "unknown",
+    "flame": "unknown"
+   },
+   "unstated": {
+    "main": [
+     "Frame",
+     "Seat and canopy fabric"
+    ],
+    "parts": [
+     "Wheels (“puncture-proof”, material not named)"
+    ],
+    "flame": [
+     "Flame retardants"
+    ]
+   },
+   "contains": [],
+   "standards": [],
+   "quote": "a plastic child tray with two cup holders and snack space",
+   "note": "The page says it is Greenguard Gold certified; canopy UPF 50+; car seat adapter sold separately. The page marks this colour “Exclusively at Walmart”.",
+   "products": [
+    {
+     "name": "Jeep TurboGlyde Stroller Wagon, Black/Green",
+     "url": "https://www.deltachildren.com/products/turboglyde-stroller-wagon-extended-footwell",
+     "store": "Delta Children",
+     "price": "$229.00",
+     "ships_from": "US"
+    }
+   ],
+   "read": "2026-11-18",
+   "photos": [
+    {
+     "key": "delta-children-jeep-turboglyde-stroller-wagon",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/60022-2378_JeepTurboglydeStrollerWagon_Black_Green_Lifestyle_06.jpg?v=1769352726"
+    },
+    {
+     "key": "delta-children-jeep-turboglyde-stroller-wagon_2",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/60022-2378_Jeep-Turboglyde-Wagon_Callout_01.jpg?v=1769352726"
+    },
+    {
+     "key": "delta-children-jeep-turboglyde-stroller-wagon_3",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/60022-2378_Jeep-Turboglyde-Wagon_Callout_02.jpg?v=1769352726"
+    },
+    {
+     "key": "delta-children-jeep-turboglyde-stroller-wagon_4",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/60022-2378_Jeep-Turboglyde-Wagon_Callout_03.jpg?v=1769352726"
+    },
+    {
+     "key": "delta-children-jeep-turboglyde-stroller-wagon_5",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/60022-2378_Jeep-Turboglyde-Wagon_Callout_04.jpg?v=1769352726"
+    },
+    {
+     "key": "delta-children-jeep-turboglyde-stroller-wagon_6",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/60022-2378_Jeep-Turboglyde-Wagon_Callout_05.jpg?v=1769352726"
+    },
+    {
+     "key": "delta-children-jeep-turboglyde-stroller-wagon_7",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/60022-2378_Jeep-Turboglyde-Wagon_Callout_06.jpg?v=1769352726"
+    },
+    {
+     "key": "delta-children-jeep-turboglyde-stroller-wagon_8",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/60022-2378_Jeep-Turboglyde-Wagon_Callout_07.jpg?v=1769352726"
+    },
+    {
+     "key": "delta-children-jeep-turboglyde-stroller-wagon_9",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/60022-2378_Jeep-Turboglyde-Wagon_Callout_08.jpg?v=1769352726"
+    },
+    {
+     "key": "delta-children-jeep-turboglyde-stroller-wagon_10",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/60022-2378_JeepTurboglydeStrollerWagon_Black_Green_Lifestyle_101.jpg?v=1769352726"
+    }
+   ],
+   "img": "delta-children-jeep-turboglyde-stroller-wagon",
+   "img_src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/60022-2378_JeepTurboglydeStrollerWagon_Black_Green_Lifestyle_06.jpg?v=1769352726"
+  },
+  {
+   "id": "freshly-picked-baby-bodysuit",
+   "type": "bodysuits",
+   "brand": "Freshly Picked",
+   "line": "Baby Bodysuit (Rabbit Skins onesie, FP logo)",
+   "uses": [
+    "100% cotton"
+   ],
+   "free": [],
+   "unconfirmed": [
+    "Ink of the printed FP logo",
+    "Snaps",
+    "Thread"
+   ],
+   "outside": [],
+   "facts": {
+    "main": "yes",
+    "color": "unknown",
+    "parts": "unknown"
+   },
+   "unstated": {
+    "color": [
+     "Ink of the printed FP logo"
+    ],
+    "parts": [
+     "Snaps"
+    ]
+   },
+   "contains": [],
+   "standards": [],
+   "quote": "100% cotton Rabbit Skins brand baby onesie",
+   "note": "A Rabbit Skins onesie with the Freshly Picked logo printed in black on the front; fits roughly 0-6 months. Final sale.",
+   "products": [
+    {
+     "name": "Freshly Picked Baby Bodysuit",
+     "url": "https://freshlypicked.com/products/fp-baby-bodysuit",
+     "store": "Freshly Picked",
+     "price": "$15.00",
+     "ships_from": "US"
+    }
+   ],
+   "read": "2026-11-18",
+   "photos": [
+    {
+     "key": "freshly-picked-baby-bodysuit",
+     "src": "https://cdn.shopify.com/s/files/1/0204/2258/products/Onesie_1.jpg?v=1568059273"
+    }
+   ],
+   "img": "freshly-picked-baby-bodysuit",
+   "img_src": "https://cdn.shopify.com/s/files/1/0204/2258/products/Onesie_1.jpg?v=1568059273"
+  },
+  {
+   "id": "huggalugs-newborn-knit-pom-pom-bonnet",
+   "type": "accessories",
+   "brand": "Huggalugs",
+   "line": "Newborn Knit Pom Pom Bonnet",
+   "uses": [],
+   "free": [],
+   "unconfirmed": [
+    "Dyes"
+   ],
+   "outside": [
+    "Acrylic yarn (label: “100% Angora Acrylic”)"
+   ],
+   "facts": {
+    "main": "no",
+    "color": "unknown"
+   },
+   "unstated": {
+    "color": [
+     "Dyes"
+    ]
+   },
+   "contains": [],
+   "standards": [],
+   "quote": "100% A ngora Acrylic Cold hand wash Hand-knit in China",
+   "note": "Hand-knit in China; newborn size. Sold by Colored Organics.",
+   "products": [
+    {
+     "name": "Knit Pom Pom Bonnet, Natural",
+     "url": "https://coloredorganics.com/products/baby-knit-pom-pom-bonnet",
+     "store": "Colored Organics",
+     "price": "$28",
+     "ships_from": null,
+     "shipping": "Free U.S. shipping on orders over $50"
+    }
+   ],
+   "read": "2026-11-18",
+   "photos": [
+    {
+     "key": "huggalugs-newborn-knit-pom-pom-bonnet",
+     "src": "https://cdn.shopify.com/s/files/1/1643/4857/products/infant-unisex-knit-pom-pom-bonnet.latte.flat_front.jpg?v=1750285225"
+    },
+    {
+     "key": "huggalugs-newborn-knit-pom-pom-bonnet_2",
+     "src": "https://cdn.shopify.com/s/files/1/1643/4857/products/infant-unisex-knit-pom-pom-bonnet.latte.fit_front.jpg?v=1750285226"
+    },
+    {
+     "key": "huggalugs-newborn-knit-pom-pom-bonnet_3",
+     "src": "https://cdn.shopify.com/s/files/1/1643/4857/products/infant-unisex-knit-pom-pom-bonnet.natural.flat_front.jpg?v=1750285226"
+    },
+    {
+     "key": "huggalugs-newborn-knit-pom-pom-bonnet_4",
+     "src": "https://cdn.shopify.com/s/files/1/1643/4857/products/infant-unisex-knit-pom-pom-bonnet.natural.fit_front.jpg?v=1750285226"
+    },
+    {
+     "key": "huggalugs-newborn-knit-pom-pom-bonnet_5",
+     "src": "https://cdn.shopify.com/s/files/1/1643/4857/products/infant-unisex-knit-pom-pom-bonnet.blush.fit_front.jpg?v=1750285226"
+    }
+   ],
+   "img": "huggalugs-newborn-knit-pom-pom-bonnet",
+   "img_src": "https://cdn.shopify.com/s/files/1/1643/4857/products/infant-unisex-knit-pom-pom-bonnet.latte.flat_front.jpg?v=1750285225"
+  },
+  {
+   "id": "kamik-riptide-kids-rain-boots",
+   "type": "rain-boots",
+   "brand": "Kamik",
+   "line": "Riptide Rain Boots (Kids)",
+   "uses": [
+    "Ground-CTRL Rubber shell"
+   ],
+   "free": [],
+   "unconfirmed": [
+    "Whether the Ground-CTRL Rubber is natural or synthetic",
+    "Plasticisers in the rubber",
+    "Dyes"
+   ],
+   "outside": [
+    "EVA insole"
+   ],
+   "facts": {
+    "main": "unknown",
+    "rubber": "unknown",
+    "parts": "no",
+    "color": "unknown"
+   },
+   "unstated": {
+    "main": [
+     "Whether the Ground-CTRL Rubber is natural or synthetic"
+    ],
+    "rubber": [
+     "Whether the Ground-CTRL Rubber is natural or synthetic",
+     "Plasticisers in the rubber"
+    ],
+    "color": [
+     "Dyes"
+    ]
+   },
+   "contains": [],
+   "standards": [],
+   "quote": "Material: Ground-CTRL Rubber Detail material: N/A Shell: Ground-CTRL Rubber Lining: N/A Insulation: N/A Waterproof: Waterproof Shell Toe: Plain Insole: EVA",
+   "note": "Made in Canada; the maker calls the rubber “proprietary” and “100% recyclable”. Little kids’ and big kids’ sizes 11 to 6. The page showed Canadian shipping terms when read.",
+   "products": [
+    {
+     "name": "Riptide - Rain Boots - Kids",
+     "url": "https://www.kamik.com/products/riptide-kids-rain-boots",
+     "store": "Kamik",
+     "price": "$49.99",
+     "ships_from": null,
+     "shipping": "Page showed Canadian terms: $8.99, free over $129.99"
+    }
+   ],
+   "read": "2026-11-18",
+   "photos": [
+    {
+     "key": "kamik-riptide-kids-rain-boots",
+     "src": "https://cdn.shopify.com/s/files/1/0281/2156/3273/files/Product-Image_RIPTIDE_Riptide-Kids-Black-Charcoal-Rain-Boots_BCH_02.jpg?v=1776190175"
+    },
+    {
+     "key": "kamik-riptide-kids-rain-boots_2",
+     "src": "https://cdn.shopify.com/s/files/1/0281/2156/3273/files/Product-Image_RIPTIDE_Riptide-Kids-Black-Charcoal-Rain-Boots_BCH_03.jpg?v=1776190175"
+    },
+    {
+     "key": "kamik-riptide-kids-rain-boots_3",
+     "src": "https://cdn.shopify.com/s/files/1/0281/2156/3273/files/Product-Image_RIPTIDE_Riptide-Kids-Black-Charcoal-Rain-Boots_BCH_04.jpg?v=1776190175"
+    },
+    {
+     "key": "kamik-riptide-kids-rain-boots_4",
+     "src": "https://cdn.shopify.com/s/files/1/0281/2156/3273/files/Product-Image_RIPTIDE_Riptide-Kids-Black-Charcoal-Rain-Boots_BCH_05.jpg?v=1776190175"
+    },
+    {
+     "key": "kamik-riptide-kids-rain-boots_5",
+     "src": "https://cdn.shopify.com/s/files/1/0281/2156/3273/files/Product-Image_RIPTIDE_Riptide-Kids-Black-Charcoal-Rain-Boots_BCH_06.jpg?v=1776190175"
+    },
+    {
+     "key": "kamik-riptide-kids-rain-boots_6",
+     "src": "https://cdn.shopify.com/s/files/1/0281/2156/3273/files/Product-Image_RIPTIDE_Riptide-Kids-Magenta-Rain-Boots_MAG_03.jpg?v=1776190175"
+    },
+    {
+     "key": "kamik-riptide-kids-rain-boots_7",
+     "src": "https://cdn.shopify.com/s/files/1/0281/2156/3273/files/Product-Image_RIPTIDE_Riptide-Kids-Magenta-Rain-Boots_MAG_04.jpg?v=1776190175"
+    },
+    {
+     "key": "kamik-riptide-kids-rain-boots_8",
+     "src": "https://cdn.shopify.com/s/files/1/0281/2156/3273/files/Product-Image_RIPTIDE_Riptide-Kids-Magenta-Rain-Boots_MAG_05.jpg?v=1776190175"
+    },
+    {
+     "key": "kamik-riptide-kids-rain-boots_9",
+     "src": "https://cdn.shopify.com/s/files/1/0281/2156/3273/files/Product-Image_RIPTIDE_Riptide-Kids-Light-Purple-Rain-Boots_LPU_05.jpg?v=1776190175"
+    }
+   ],
+   "img": "kamik-riptide-kids-rain-boots",
+   "img_src": "https://cdn.shopify.com/s/files/1/0281/2156/3273/files/Product-Image_RIPTIDE_Riptide-Kids-Black-Charcoal-Rain-Boots_BCH_02.jpg?v=1776190175"
+  },
+  {
+   "id": "maxi-cosi-norcal-4-in-1-convertible-crib",
+   "type": "cribs",
+   "brand": "Maxi-Cosi Nursery",
+   "line": "NorCal 4-in-1 Convertible Crib",
+   "uses": [
+    "Poplar wood"
+   ],
+   "free": [],
+   "unconfirmed": [
+    "Coatings (“non-toxic coatings”, ingredients not named)",
+    "Mattress support",
+    "Hardware"
+   ],
+   "outside": [
+    "Composite wood materials (TSCA title IV compliant)"
+   ],
+   "facts": {
+    "wood": "no",
+    "color": "unknown",
+    "parts": "unknown"
+   },
+   "unstated": {
+    "color": [
+     "Coatings (“non-toxic coatings”, ingredients not named)"
+    ],
+    "parts": [
+     "Mattress support",
+     "Hardware"
+    ]
+   },
+   "contains": [],
+   "standards": [],
+   "quote": "Made of poplar wood and composite wood materials, which comply with TSCA title IV formaldehyde standards.",
+   "note": "Toddler bed/daybed conversion kit included; fits a standard crib mattress (sold separately). Sold by Enlightened Baby.",
+   "products": [
+    {
+     "name": "Maxi-Cosi Nursery NorCal 4-in-1 Convertible Crib, Sunbleached Natural Stain",
+     "url": "https://enlightenedbaby.com/products/maxi-cosi-nursery-norcal-4-in-1-convertible-crib",
+     "store": "Enlightened Baby",
+     "price": "$959.99",
+     "ships_from": "US"
+    }
+   ],
+   "read": "2026-11-18",
+   "photos": [
+    {
+     "key": "maxi-cosi-norcal-4-in-1-convertible-crib",
+     "src": "https://cdn.shopify.com/s/files/1/0707/4850/4296/files/MC_US_CR024_Crib.jpg?v=1788398084"
+    },
+    {
+     "key": "maxi-cosi-norcal-4-in-1-convertible-crib_2",
+     "src": "https://cdn.shopify.com/s/files/1/0707/4850/4296/files/CR024SUS_Image_01.jpg?v=1788015659"
+    },
+    {
+     "key": "maxi-cosi-norcal-4-in-1-convertible-crib_3",
+     "src": "https://cdn.shopify.com/s/files/1/0707/4850/4296/files/CR024SUS_Image_02.jpg?v=1788015659"
+    },
+    {
+     "key": "maxi-cosi-norcal-4-in-1-convertible-crib_4",
+     "src": "https://cdn.shopify.com/s/files/1/0707/4850/4296/files/CR024SUS_Image_03.jpg?v=1788015659"
+    },
+    {
+     "key": "maxi-cosi-norcal-4-in-1-convertible-crib_5",
+     "src": "https://cdn.shopify.com/s/files/1/0707/4850/4296/files/CR024SUS_Image_04.jpg?v=1788015659"
+    },
+    {
+     "key": "maxi-cosi-norcal-4-in-1-convertible-crib_6",
+     "src": "https://cdn.shopify.com/s/files/1/0707/4850/4296/files/CR024SUS_Image_05.jpg?v=1788015659"
+    },
+    {
+     "key": "maxi-cosi-norcal-4-in-1-convertible-crib_7",
+     "src": "https://cdn.shopify.com/s/files/1/0707/4850/4296/files/CR024SUS_Image_06.jpg?v=1788015659"
+    },
+    {
+     "key": "maxi-cosi-norcal-4-in-1-convertible-crib_8",
+     "src": "https://cdn.shopify.com/s/files/1/0707/4850/4296/files/CR024SUS_Image_07.jpg?v=1788015659"
+    },
+    {
+     "key": "maxi-cosi-norcal-4-in-1-convertible-crib_9",
+     "src": "https://cdn.shopify.com/s/files/1/0707/4850/4296/files/CR024SUS_Image_08.jpg?v=1788015659"
+    }
+   ],
+   "img": "maxi-cosi-norcal-4-in-1-convertible-crib",
+   "img_src": "https://cdn.shopify.com/s/files/1/0707/4850/4296/files/MC_US_CR024_Crib.jpg?v=1788398084"
+  },
+  {
+   "id": "mother-ease-toddle-ease-fitted-diaper",
+   "type": "diapers",
+   "brand": "Mother-ease",
+   "line": "Toddle-Ease Fitted Diaper, 35-45 lb",
+   "uses": [
+    "Natural cotton terry"
+   ],
+   "free": [],
+   "unconfirmed": [
+    "Elastics around the waist and legs",
+    "Thread (serged edges)"
+   ],
+   "outside": [],
+   "facts": {
+    "main": "yes",
+    "parts": "unknown"
+   },
+   "unstated": {
+    "parts": [
+     "Elastics around the waist and legs"
+    ]
+   },
+   "contains": [],
+   "standards": [],
+   "quote": "Natural Cotton Terry for comfort and a great fit with a full set of elastics, around the waist and both legs.",
+   "note": "A bigger version of the Sandy’s Fitted Diaper, size 35-45 pounds; needs a separate cover. Sold by Green Mountain Diapers.",
+   "products": [
+    {
+     "name": "Mother-ease Toddle-Ease Fitted Diaper, 35-45 pounds",
+     "url": "https://www.greenmountaindiapers.com/products/mother-ease-toddle-ease-fitted-diaper",
+     "store": "Green Mountain Diapers",
+     "price": "$21.50",
+     "ships_from": "US",
+     "shipping": "Shipping calculated at checkout"
+    }
+   ],
+   "read": "2026-11-18",
+   "photos": [
+    {
+     "key": "mother-ease-toddle-ease-fitted-diaper",
+     "src": "https://cdn.shopify.com/s/files/1/1583/5087/files/moth-toddleease1300.jpg?v=1713021107"
+    },
+    {
+     "key": "mother-ease-toddle-ease-fitted-diaper_2",
+     "src": "https://cdn.shopify.com/s/files/1/1583/5087/files/toddleaseopen1900.jpg?v=1760980120"
+    }
+   ],
+   "img": "mother-ease-toddle-ease-fitted-diaper",
+   "img_src": "https://cdn.shopify.com/s/files/1/1583/5087/files/moth-toddleease1300.jpg?v=1713021107"
+  },
+  {
+   "id": "mushie-round-dinnerware-plates",
+   "type": "plates",
+   "brand": "Mushie",
+   "line": "Round Dinnerware Plates (set of 2)",
+   "uses": [],
+   "free": [],
+   "unconfirmed": [
+    "Pigments"
+   ],
+   "outside": [
+    "Polypropylene (PP) plastic"
+   ],
+   "facts": {
+    "main": "no",
+    "color": "unknown"
+   },
+   "unstated": {
+    "color": [
+     "Pigments"
+    ]
+   },
+   "contains": [],
+   "standards": [],
+   "age": {
+    "min_months": 6,
+    "text": "Manufacturer-recommended age: 6 months and up"
+   },
+   "quote": "Made from 100% food-grade polypropylene (PP) plastic",
+   "note": "Two 7.5 × 7.5 inch plates; made in Denmark. Sold by The Baby Penguin.",
+   "products": [
+    {
+     "name": "Mushie Round Dinnerware Plates",
+     "url": "https://thebabypenguin.com/products/round-dinnerware-plates",
+     "price": "$14.99",
+     "store": "The Baby Penguin",
+     "ships_from": "US",
+     "shipping": "Free shipping on orders over $50"
+    }
+   ],
+   "read": "2026-11-18",
+   "photos": [
+    {
+     "key": "mushie-round-dinnerware-plates",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Round-Dinnerware-Plates-Mushie-126526293.jpg?v=1768481073"
+    },
+    {
+     "key": "mushie-round-dinnerware-plates_2",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Round-Dinnerware-Plates-Mushie-126526346.jpg?v=1768481096"
+    },
+    {
+     "key": "mushie-round-dinnerware-plates_3",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Round-Dinnerware-Plates-Mushie-126526713.jpg?v=1768481159"
+    },
+    {
+     "key": "mushie-round-dinnerware-plates_4",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Round-Dinnerware-Plates-Mushie-126526845.jpg?v=1768481159"
+    },
+    {
+     "key": "mushie-round-dinnerware-plates_5",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Round-Dinnerware-Plates-Mushie-126526977.jpg?v=1768481208"
+    },
+    {
+     "key": "mushie-round-dinnerware-plates_6",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Round-Dinnerware-Plates-Mushie-126527027.jpg?v=1768481209"
+    },
+    {
+     "key": "mushie-round-dinnerware-plates_7",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Round-Dinnerware-Plates-Mushie-126527150.jpg?v=1768481210"
+    },
+    {
+     "key": "mushie-round-dinnerware-plates_8",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Round-Dinnerware-Plates-Mushie-126527297.jpg?v=1768481210"
+    },
+    {
+     "key": "mushie-round-dinnerware-plates_9",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Round-Dinnerware-Plates-Mushie-126527393.jpg?v=1768481240"
+    },
+    {
+     "key": "mushie-round-dinnerware-plates_10",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Round-Dinnerware-Plates-Mushie-126527471.jpg?v=1768481241"
+    }
+   ],
+   "img": "mushie-round-dinnerware-plates",
+   "img_src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Round-Dinnerware-Plates-Mushie-126526293.jpg?v=1768481073"
+  },
+  {
+   "id": "mushie-stretchy-swaddle",
+   "type": "sleep-sacks",
+   "brand": "Mushie",
+   "line": "Stretchy Swaddle, 47 x 47 in",
+   "uses": [
+    "Modal (95%)"
+   ],
+   "free": [],
+   "unconfirmed": [
+    "Dyes"
+   ],
+   "outside": [
+    "Spandex (5%)"
+   ],
+   "facts": {
+    "main": "no",
+    "color": "unknown"
+   },
+   "unstated": {
+    "color": [
+     "Dyes"
+    ]
+   },
+   "contains": [],
+   "standards": [],
+   "quote": "Made of 95% Modal and 5% Spandex",
+   "note": "A stretch swaddle that doubles as a blanket; the maker says it is “Third-party tested to meet CPSIA, ASTM, and Prop 65 standards”.",
+   "products": [
+    {
+     "name": "Mushie Stretchy Swaddle",
+     "url": "https://mushie.com/products/stretchy-swaddle",
+     "store": "Mushie",
+     "price": "$24.99",
+     "ships_from": null
+    }
+   ],
+   "read": "2026-11-18",
+   "photos": [
+    {
+     "key": "mushie-stretchy-swaddle",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/Blush_StretchySwaddle.jpg?v=1771274272"
+    },
+    {
+     "key": "mushie-stretchy-swaddle_2",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/stretchy-swaddle-info.jpg?v=1771274272"
+    },
+    {
+     "key": "mushie-stretchy-swaddle_3",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/products/Strechyswaddle_bigflatlay-4.jpg?v=1771274272"
+    },
+    {
+     "key": "mushie-stretchy-swaddle_4",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/products/valt-2-18.jpg?v=1771274272"
+    },
+    {
+     "key": "mushie-stretchy-swaddle_5",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/medium_015b25e1-af22-4d4c-be5d-dec99cc4f3ad.jpg?v=1787160575"
+    },
+    {
+     "key": "mushie-stretchy-swaddle_6",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/foto2st-9_b5330984-a441-4514-b821-4d2ede47743a.jpg?v=1771616279"
+    },
+    {
+     "key": "mushie-stretchy-swaddle_7",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/Jess-shoot-118.jpg?v=1771313516"
+    },
+    {
+     "key": "mushie-stretchy-swaddle_8",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/Olivia_malmo_shoot-110.jpg?v=1771313516"
+    },
+    {
+     "key": "mushie-stretchy-swaddle_9",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/Strechyswaddle_bigflatlay-42.jpg?v=1771313516"
+    },
+    {
+     "key": "mushie-stretchy-swaddle_10",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/Strechyswaddle_bigflatlay-55.jpg?v=1771313516"
+    }
+   ],
+   "img": "mushie-stretchy-swaddle",
+   "img_src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/Blush_StretchySwaddle.jpg?v=1771274272"
+  },
+  {
+   "id": "nouka-design-bento-lunch-box",
+   "type": "food-storage",
+   "brand": "Noüka Design",
+   "line": "Bento Lunch Box (6 compartments)",
+   "uses": [],
+   "free": [
+    "BPA",
+    "Phthalates"
+   ],
+   "unconfirmed": [
+    "Pigments in the printed design"
+   ],
+   "outside": [
+    "ABS shell",
+    "PP seals",
+    "TPE sealed ring",
+    "Tritan tray"
+   ],
+   "facts": {
+    "main": "no",
+    "parts": "no",
+    "color": "unknown"
+   },
+   "unstated": {
+    "color": [
+     "Pigments in the printed design"
+    ]
+   },
+   "contains": [],
+   "standards": [],
+   "quote": "Materials ABS shell + PP seals + TPE sealed ring + Tritan tray",
+   "note": "The page says the 2-compartment insert is not leakproof. Sold by The Natural Baby Co.",
+   "products": [
+    {
+     "name": "Noüka Design Bento Lunch Box, Dino Ville",
+     "url": "https://www.thenaturalbabyco.com/products/nouka-design-bento-lunch-box",
+     "store": "The Natural Baby Co",
+     "price": "$31.99",
+     "ships_from": "US"
+    }
+   ],
+   "read": "2026-11-18",
+   "photos": [
+    {
+     "key": "nouka-design-bento-lunch-box",
+     "src": "https://cdn.shopify.com/s/files/1/2386/1081/files/Dino_bento.jpg?v=1786062050"
+    },
+    {
+     "key": "nouka-design-bento-lunch-box_2",
+     "src": "https://cdn.shopify.com/s/files/1/2386/1081/files/Dino_Bento_4.jpg?v=1786062050"
+    },
+    {
+     "key": "nouka-design-bento-lunch-box_3",
+     "src": "https://cdn.shopify.com/s/files/1/2386/1081/files/Dino_BEnto_5.jpg?v=1786062049"
+    },
+    {
+     "key": "nouka-design-bento-lunch-box_4",
+     "src": "https://cdn.shopify.com/s/files/1/2386/1081/files/Dino_bento_2.jpg?v=1786062049"
+    },
+    {
+     "key": "nouka-design-bento-lunch-box_5",
+     "src": "https://cdn.shopify.com/s/files/1/2386/1081/files/oukabento.png?v=1755629297"
+    },
+    {
+     "key": "nouka-design-bento-lunch-box_6",
+     "src": "https://cdn.shopify.com/s/files/1/2386/1081/files/noukabentoboxes4.png?v=1755629297"
+    },
+    {
+     "key": "nouka-design-bento-lunch-box_7",
+     "src": "https://cdn.shopify.com/s/files/1/2386/1081/files/NoukaBentoboxes.png?v=1755629297"
+    }
+   ],
+   "img": "nouka-design-bento-lunch-box",
+   "img_src": "https://cdn.shopify.com/s/files/1/2386/1081/files/Dino_bento.jpg?v=1786062050"
+  },
+  {
+   "id": "spiritnsprout-cinnamon-waffle-baby-blanket",
+   "type": "blankets",
+   "brand": "SpiritnSprout",
+   "line": "Cinnamon Waffle Baby Blanket, 40 × 40 in",
+   "uses": [
+    "Bamboo (70%)",
+    "Cotton (30%)"
+   ],
+   "free": [],
+   "unconfirmed": [
+    "How the bamboo fibre is made (rayon or other, not stated)",
+    "Dyes (Cinnamon colour)",
+    "Thread"
+   ],
+   "outside": [],
+   "facts": {
+    "main": "yes",
+    "color": "unknown"
+   },
+   "unstated": {
+    "color": [
+     "Dyes (Cinnamon colour)"
+    ]
+   },
+   "contains": [],
+   "standards": [],
+   "quote": "Supplier-listed fabric blend: 70% bamboo and 30% cotton",
+   "note": "Waffle weave, 40 inches square; regular price $22.00. Sold by The Baby Penguin.",
+   "products": [
+    {
+     "name": "SpiritnSprout Cinnamon Waffle Baby Blanket",
+     "url": "https://thebabypenguin.com/products/cinnamon-waffle-baby-blanket",
+     "price": "$20.00",
+     "store": "The Baby Penguin",
+     "ships_from": "US",
+     "shipping": "Free shipping on orders over $50"
+    }
+   ],
+   "read": "2026-11-18",
+   "photos": [
+    {
+     "key": "spiritnsprout-cinnamon-waffle-baby-blanket",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/cinnamon-waffle-bamboo-baby-blanket-40x40-soft-baby-swaddle-blanket-gender-neutral-baby-shower-gift-886463_18c11584-3951-4643-bff8-67031c57bf4c.jpg?v=1787495152"
+    },
+    {
+     "key": "spiritnsprout-cinnamon-waffle-baby-blanket_2",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/cinnamon-waffle-bamboo-baby-blanket-40x40-soft-baby-swaddle-blanket-gender-neutral-baby-shower-gift-565090_85906383-939d-43ce-89dc-0ce7b8665e81.jpg?v=1787495152"
+    },
+    {
+     "key": "spiritnsprout-cinnamon-waffle-baby-blanket_3",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/cinnamon-waffle-bamboo-baby-blanket-40x40-soft-baby-swaddle-blanket-gender-neutral-baby-shower-gift-904084_50ef3e2b-2468-46ba-9ccf-84fcb1de89ff.jpg?v=1787495151"
+    },
+    {
+     "key": "spiritnsprout-cinnamon-waffle-baby-blanket_4",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/cinnamon-waffle-bamboo-baby-blanket-40x40-soft-baby-swaddle-blanket-gender-neutral-baby-shower-gift-211628_b2753b39-49e4-49e3-8697-d3d7aee8a62e.jpg?v=1787495152"
+    },
+    {
+     "key": "spiritnsprout-cinnamon-waffle-baby-blanket_5",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/cinnamon-waffle-bamboo-baby-blanket-40x40-soft-baby-swaddle-blanket-gender-neutral-baby-shower-gift-510950_f5cdaf8b-32d3-4536-bba5-380156c5e665.jpg?v=1787495152"
+    },
+    {
+     "key": "spiritnsprout-cinnamon-waffle-baby-blanket_6",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/cinnamon-waffle-bamboo-baby-blanket-40x40-soft-baby-swaddle-blanket-gender-neutral-baby-shower-gift-449838_6b8b44f8-7a35-4c45-a71d-dbcf5cbca8a6.jpg?v=1787495152"
+    },
+    {
+     "key": "spiritnsprout-cinnamon-waffle-baby-blanket_7",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/cinnamon-waffle-bamboo-baby-blanket-40x40-soft-baby-swaddle-blanket-gender-neutral-baby-shower-gift-413342_e40c7ec0-5714-4a52-8764-b42ecdd36374.jpg?v=1787495152"
+    },
+    {
+     "key": "spiritnsprout-cinnamon-waffle-baby-blanket_8",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/cinnamon-waffle-bamboo-baby-blanket-40x40-soft-baby-swaddle-blanket-gender-neutral-baby-shower-gift-205232_e779bcde-efc5-42fb-9969-19d1914085f7.jpg?v=1787495152"
+    },
+    {
+     "key": "spiritnsprout-cinnamon-waffle-baby-blanket_9",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/cinnamon-waffle-bamboo-baby-blanket-40x40-soft-baby-swaddle-blanket-gender-neutral-baby-shower-gift-393169_28ea8bc1-e740-43fc-8f0a-b70c2ceaf6c9.jpg?v=1787495152"
+    },
+    {
+     "key": "spiritnsprout-cinnamon-waffle-baby-blanket_10",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/cinnamon-waffle-bamboo-baby-blanket-40x40-soft-baby-swaddle-blanket-gender-neutral-baby-shower-gift-988519_e764854a-9eb9-4141-a152-3682c28bdc4e.jpg?v=1787495152"
+    }
+   ],
+   "img": "spiritnsprout-cinnamon-waffle-baby-blanket",
+   "img_src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/cinnamon-waffle-bamboo-baby-blanket-40x40-soft-baby-swaddle-blanket-gender-neutral-baby-shower-gift-886463_18c11584-3951-4643-bff8-67031c57bf4c.jpg?v=1787495152"
+  },
+  {
+   "id": "tovolo-star-pop-molds",
+   "type": "pop-molds",
+   "brand": "Tovolo",
+   "line": "Star Pop Molds (4 molds, 4 fl oz each)",
+   "uses": [
+    "Silicone"
+   ],
+   "free": [],
+   "unconfirmed": [
+    "Which part is nylon",
+    "Pigments",
+    "Silicone testing standard"
+   ],
+   "outside": [
+    "BPA-free nylon (part not named)"
+   ],
+   "facts": {
+    "main": "unknown",
+    "color": "unknown",
+    "silicone": "unknown"
+   },
+   "unstated": {
+    "main": [
+     "Which part is nylon"
+    ],
+    "color": [
+     "Pigments"
+    ],
+    "silicone": [
+     "Silicone testing standard"
+    ]
+   },
+   "contains": [],
+   "standards": [],
+   "quote": "Materials: Silicone, BPA-free nylon.",
+   "note": "Four star-shaped molds with drip-guard handles in a freezer tray.",
+   "products": [
+    {
+     "name": "Tovolo Star Pop Molds",
+     "url": "https://www.tovolo.com/products/star-pop-molds",
+     "store": "Tovolo",
+     "price": "$14.99",
+     "ships_from": "US",
+     "shipping": "Free shipping on orders over $45"
+    }
+   ],
+   "read": "2026-11-18",
+   "photos": [
+    {
+     "key": "tovolo-star-pop-molds",
+     "src": "https://cdn.shopify.com/s/files/1/0808/9862/1474/files/80-4562P_Pink-Star-Ice-Pop-Molds_DETAIL.png?v=1792258769"
+    },
+    {
+     "key": "tovolo-star-pop-molds_2",
+     "src": "https://cdn.shopify.com/s/files/1/0808/9862/1474/files/80-4562P_Pink-Star-Ice-Pop-Molds_LIFESTYLE-01.jpg?v=1792258767"
+    },
+    {
+     "key": "tovolo-star-pop-molds_3",
+     "src": "https://cdn.shopify.com/s/files/1/0808/9862/1474/files/80-4562P_Pink-Star-Ice-Pop-Molds_INFO.jpg?v=1792258767"
+    },
+    {
+     "key": "tovolo-star-pop-molds_4",
+     "src": "https://cdn.shopify.com/s/files/1/0808/9862/1474/files/80-4562P_Pink-Star-Ice-Pop-Molds_SILO-02.png?v=1792258768"
+    },
+    {
+     "key": "tovolo-star-pop-molds_5",
+     "src": "https://cdn.shopify.com/s/files/1/0808/9862/1474/files/80-4562P_Pink-Star-Ice-Pop-Molds_SILO-01.png?v=1792258768"
+    }
+   ],
+   "img": "tovolo-star-pop-molds",
+   "img_src": "https://cdn.shopify.com/s/files/1/0808/9862/1474/files/80-4562P_Pink-Star-Ice-Pop-Molds_DETAIL.png?v=1792258769"
+  },
+  {
+   "id": "viverano-organics-jacquard-knit-baby-blanket",
+   "type": "blankets",
+   "brand": "Viverano Organics",
+   "line": "Organic Jacquard Knit Baby Blanket, Grey Heather Bunny",
+   "uses": [
+    "100% organic cotton jacquard knit"
+   ],
+   "free": [],
+   "unconfirmed": [
+    "Certification of the cotton itself (the page names a “GOTS-certified facility”)",
+    "Dyes (grey heather)",
+    "Thread"
+   ],
+   "outside": [],
+   "facts": {
+    "main": "yes",
+    "color": "unknown",
+    "organic": "unknown"
+   },
+   "unstated": {
+    "color": [
+     "Dyes (grey heather)"
+    ],
+    "organic": [
+     "Certification of the cotton itself (the page names a “GOTS-certified facility”)"
+    ]
+   },
+   "contains": [],
+   "standards": [],
+   "quote": "this 100% organic cotton jacquard baby blanket features a beautifully textured thick-and-thin knit with a sweet bunny motif",
+   "note": "Designed in the USA and made in India. Sold by Pacifier.",
+   "products": [
+    {
+     "name": "Organic Jacquard Knit Baby Blanket - Grey Heather Bunny by Viverano Organics",
+     "url": "https://pacifierkids.com/products/organic-jacquard-knit-baby-blanket-grey-heather-bunny-by-viverano-organics",
+     "store": "Pacifier",
+     "price": "$56.00",
+     "ships_from": "US",
+     "shipping": "$5.95 flat rate shipping"
+    }
+   ],
+   "read": "2026-11-18",
+   "photos": [
+    {
+     "key": "viverano-organics-jacquard-knit-baby-blanket",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/product_photo_-_white_background_96_6546098b-75e8-4025-9542-9caa310a3e65.jpg?v=1789485123"
+    },
+    {
+     "key": "viverano-organics-jacquard-knit-baby-blanket_2",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/e3645f00510127a6ee5cd920c325513698324100737f51eb9ce593e9f4cb72e7.jpg?v=1789485123"
+    },
+    {
+     "key": "viverano-organics-jacquard-knit-baby-blanket_3",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/3f1d3f1aaa523e743ea899b3123e24d33d5ed06ecdf0a71ab9bda69562c44cd0.jpg?v=1789485129"
+    }
+   ],
+   "img": "viverano-organics-jacquard-knit-baby-blanket",
+   "img_src": "https://cdn.shopify.com/s/files/1/0281/8056/files/product_photo_-_white_background_96_6546098b-75e8-4025-9542-9caa310a3e65.jpg?v=1789485123"
   }
  ]
 }

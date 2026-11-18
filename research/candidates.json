@@ -1211,7 +1211,8 @@
    "type": "accessories",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "huggalugs-newborn-knit-pom-pom-bonnet"
   },
   {
    "url": "https://coloredorganics.com/products/baby-winter-white-pom-pom-beanie-hat",
@@ -5042,7 +5043,8 @@
    "type": "bodysuits",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "skipped",
+   "reason": "Adult clothing (sizes XS to XL), not for children up to 5"
   },
   {
    "url": "https://www.avocadogreenmattress.com/products/modal-pajama-long-sleeve-tee",
@@ -7500,7 +7502,8 @@
    "type": "rain-boots",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "kamik-riptide-kids-rain-boots"
   },
   {
    "url": "https://www.kamik.com/products/stomp-camo-kids-rain-boots",
@@ -8758,7 +8761,8 @@
    "type": "bodysuits",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "crywolf-sun-smart-romper"
   },
   {
    "url": "https://crywolfchild.com/products/sun-smart-romper-hibiscus-stripe",
@@ -19136,7 +19140,8 @@
    "type": "bodysuits",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "freshly-picked-baby-bodysuit"
   },
   {
    "url": "https://freshlypicked.com/products/cognac-classic-park-pack",
@@ -21988,7 +21993,8 @@
    "type": "sleep-sacks",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "mushie-stretchy-swaddle"
   },
   {
    "url": "https://mushie.com/products/ribbed-baby-blanket",
@@ -23802,7 +23808,8 @@
    "type": "diapers",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "mother-ease-toddle-ease-fitted-diaper"
   },
   {
    "url": "https://www.greenmountaindiapers.com/products/mother-ease-air-flow-cover",
@@ -33627,7 +33634,8 @@
    "type": "pop-molds",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "tovolo-star-pop-molds"
   },
   {
    "url": "https://www.tovolo.com/products/penguin-pop-molds",
@@ -34430,7 +34438,8 @@
    "type": "pop-molds",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "skipped",
+   "reason": "Page names no material"
   },
   {
    "url": "https://www.zokuhome.com/products/10oz-neat-stack-food-jar-teal",
@@ -34493,7 +34502,8 @@
    "type": "food-storage",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "skipped",
+   "reason": "Adult food jar for commuting and the office, not a children’s product"
   },
   {
    "url": "https://www.zokuhome.com/products/16oz-neat-stack-food-jar-gray",
@@ -39918,7 +39928,8 @@
    "type": "cribs",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "delta-children-elliot-6-in-1-convertible-crib"
   },
   {
    "url": "https://www.deltachildren.com/products/grow-with-me-9-in-1-convertible-bassinet-to-crib",
@@ -40338,7 +40349,8 @@
    "type": "strollers",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "delta-children-jeep-turboglyde-stroller-wagon"
   },
   {
    "url": "https://www.deltachildren.com/products/dune-compact-travel-high-chair",
@@ -44839,7 +44851,8 @@
    "type": "rugs",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "skipped",
+   "reason": "Duplicate: same materials text as the Delta Children kids’ rugs already listed (non-shedding face, latex backing)"
   },
   {
    "url": "https://www.deltachildren.com/products/unicorn-rectangle-area-rug-for-kids-39-inch-x-59-inch",
@@ -54463,7 +54476,8 @@
    "type": "cribs",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "maxi-cosi-norcal-4-in-1-convertible-crib"
   },
   {
    "url": "https://enlightenedbaby.com/products/maxi-cosi-nursery-reid-6-in-1-crib",
@@ -73684,7 +73698,8 @@
    "type": "sleep-sacks",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "skipped",
+   "reason": "Adult camping sleeping bag made to custom length and width (Nomad Heat), not a baby sleep sack"
   },
   {
    "url": "https://homeofwool.com/shop/diy-mattress-kit/",
@@ -88406,7 +88421,8 @@
    "type": "blankets",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "spiritnsprout-cinnamon-waffle-baby-blanket"
   },
   {
    "url": "https://thebabypenguin.com/products/farm-wooden-stacking-train",
@@ -89875,7 +89891,8 @@
    "type": "plates",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "mushie-round-dinnerware-plates"
   },
   {
    "url": "https://thebabypenguin.com/products/silicone-sippy-cup",
@@ -92804,7 +92821,8 @@
    "type": "sleep-sacks",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "skipped",
+   "reason": "Sleepover sleeping bag for ages 5 and up, not a wearable baby sleep sack"
   },
   {
    "url": "https://thebabypenguin.com/products/baby-milestone-mat",
@@ -102715,7 +102733,8 @@
    "type": "cribs",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "amish-moyerton-solid-wood-convertible-crib"
   },
   {
    "url": "https://www.snydersfurniture.com/products/amish-bloomington-solid-wood-4-in-1-convertible-crib-4-pc-storage-bedroom-set",
@@ -109834,7 +109853,8 @@
    "type": "food-storage",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "nouka-design-bento-lunch-box"
   },
   {
    "url": "https://www.thenaturalbabyco.com/products/cuddle-kind-my-first-baby-buttercup",
@@ -123861,7 +123881,8 @@
    "type": "blankets",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "viverano-organics-jacquard-knit-baby-blanket"
   },
   {
    "url": "https://pacifierkids.com/products/organic-jacquard-knit-baby-blanket-blush-bunny-by-viverano-organics",
@@ -153490,7 +153511,8 @@
    "type": "food-storage",
    "source": "watchlist",
    "first_seen": "2026-10-26",
-   "status": "new"
+   "status": "skipped",
+   "reason": "Duplicate: the Béaba Stainless Steel Lunch Box, 25.7 oz, already listed"
   },
   {
    "url": "https://coloredorganics.com/products/organic-cotton-baby-ottoman-rib-collection-aw25-arma-ottoman-rib-pants-95702-25",
@@ -169506,7 +169528,8 @@
    "type": "high-chairs",
    "source": "watchlist",
    "first_seen": "2026-10-31",
-   "status": "new"
+   "status": "skipped",
+   "reason": "Page names no material (Colugo clip-on high chair)"
   },
   {
    "url": "https://easytot.com/products/taupe-ribbed-bamboo-newborn-knot-hat",
@@ -185014,7 +185037,8 @@
    "type": "plates",
    "source": "watchlist",
    "first_seen": "2026-11-07",
-   "status": "new"
+   "status": "skipped",
+   "reason": "Duplicate: the Micasso & Co Stainless Steel Children’s Plate, already listed"
   },
   {
    "url": "https://coloredorganics.com/products/2-in-1-stainless-steel-baby-cup",

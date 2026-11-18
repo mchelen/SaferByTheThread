@@ -139,6 +139,41 @@
    "url": "https://smilingtreetoys.com/products/pocket-block-puzzle-2",
    "reason": "Hidden $0.00 placeholder product (\"used with the Motivator application\"), not a product for sale",
    "date": "2026-11-17"
+  },
+  {
+   "url": "https://www.avocadogreenmattress.com/products/modal-short-sleeve-jumpsuit",
+   "reason": "Adult clothing (sizes XS to XL), not for children up to 5",
+   "date": "2026-11-18"
+  },
+  {
+   "url": "https://coloredorganics.com/products/stainless-steel-childrens-plate",
+   "reason": "Duplicate: the Micasso & Co Stainless Steel Children’s Plate, already listed",
+   "date": "2026-11-18"
+  },
+  {
+   "url": "https://coloredorganics.com/products/stainless-steel-lunch-box",
+   "reason": "Duplicate: the Béaba Stainless Steel Lunch Box, 25.7 oz, already listed",
+   "date": "2026-11-18"
+  },
+  {
+   "url": "https://homeofwool.com/shop/sleeping-bag/",
+   "reason": "Adult camping sleeping bag made to custom length and width (Nomad Heat), not a baby sleep sack",
+   "date": "2026-11-18"
+  },
+  {
+   "url": "https://thebabypenguin.com/products/under-the-sea-sleeping-bag",
+   "reason": "Sleepover sleeping bag for ages 5 and up, not a wearable baby sleep sack",
+   "date": "2026-11-18"
+  },
+  {
+   "url": "https://www.zokuhome.com/products/16oz-neat-stack-food-jar-orange",
+   "reason": "Adult food jar for commuting and the office, not a children’s product",
+   "date": "2026-11-18"
+  },
+  {
+   "url": "https://www.deltachildren.com/products/play-laugh-create-rectangle-area-rug-for-kids-39-inch-x-59-inch",
+   "reason": "Duplicate: same materials text as the Delta Children kids’ rugs already listed (non-shedding face, latex backing)",
+   "date": "2026-11-18"
   }
  ]
 }
