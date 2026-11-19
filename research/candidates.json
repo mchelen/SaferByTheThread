@@ -2991,7 +2991,8 @@
    "type": "high-chairs",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "skipped",
+   "reason": "Replacement legs for the Childhome Evolu high chair, not a high chair on its own"
   },
   {
    "url": "https://beaba.us/products/set-of-4-easy-grip-1st-stage-single-tone-silicone-spoons",
@@ -9254,7 +9255,8 @@
    "type": "rainwear",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "crywolf-scout-jacket"
   },
   {
    "url": "https://crywolfchild.com/products/rain-overalls-rose",
@@ -9372,7 +9374,8 @@
    "type": "rainwear",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "crywolf-baby-wander-jacket"
   },
   {
    "url": "https://crywolfchild.com/products/splash-suit-flower-fields",
@@ -40675,7 +40678,8 @@
    "type": "high-chairs",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "delta-children-babygap-otto-3-in-1-high-chair"
   },
   {
    "url": "https://www.deltachildren.com/products/dreamer-6-inch-memory-foam-twin-mattress",
@@ -44898,7 +44902,8 @@
    "type": "rugs",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "skipped",
+   "reason": "Duplicate: same materials text as the Delta Children kids’ rugs already listed (non-shedding face, latex backing); sold only at Walmart"
   },
   {
    "url": "https://www.deltachildren.com/products/dinosaur-rectangle-area-rug-for-kids-39-inch-x-59-inch",
@@ -73099,7 +73104,8 @@
    "type": "rugs",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "home-of-wool-handwoven-linen-rug"
   },
   {
    "url": "https://homeofwool.com/shop/duvet-insert-and-cover-wool-blankets-custom-for-lauren/",
@@ -90082,7 +90088,8 @@
    "type": "freezer-trays",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "skipped",
+   "reason": "Duplicate: Mushie Fresh Food Feeder Freezer Tray is already listed"
   },
   {
    "url": "https://thebabypenguin.com/products/dinnerware-cutlery-set",
@@ -120558,7 +120565,8 @@
    "type": "car-seats",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "cybex-solution-g2-booster"
   },
   {
    "url": "https://pacifierkids.com/products/palmer-pant-holiday-plaid-by-rylee-cru",
@@ -136200,7 +136208,8 @@
    "type": "rugs",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "lorena-canals-wool-area-rug-bliss"
   },
   {
    "url": "https://easytot.com/products/wool-runner-rug-blur",

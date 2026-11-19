@@ -125,6 +125,9 @@ test('termRuns links glossary terms without overlapping and respects the known s
   assert.deepEqual(runs, [['GOTS', 'gots'], [' ', null], ['organic', 'organic'], [' ', null], ['cotton', 'cotton'], [' cover', null]]);
   assert.deepEqual(S.termRuns('Superwash merino', { superwash: 1 }), [['Superwash', 'superwash'], [' merino', null]]);
   assert.deepEqual(S.termRuns('No terms here', {}), [['No terms here', null]]);
+  // Rubberwood and basswood are hardwoods; "wood" alone cannot match inside one word.
+  assert.deepEqual(S.termRuns('Solid rubberwood', { hardwood: 1, wood: 1 }), [['Solid rubberwood', 'hardwood']]);
+  assert.deepEqual(S.termRuns('Michigan basswood', { hardwood: 1, wood: 1 }), [['Michigan ', null], ['basswood', 'hardwood']]);
 });
 
 test('fold and slug normalise accents and punctuation', () => {
