@@ -1,6 +1,6 @@
 {
  "schema": 4,
- "updated": "2026-11-18",
+ "updated": "2026-11-19",
  "ask": [
   "Thread on any sewn item (cotton or polyester).",
   "Wheels and axles on push toys and cars.",
@@ -43152,6 +43152,1084 @@
    ],
    "img": "viverano-organics-jacquard-knit-baby-blanket",
    "img_src": "https://cdn.shopify.com/s/files/1/0281/8056/files/product_photo_-_white_background_96_6546098b-75e8-4025-9542-9caa310a3e65.jpg?v=1789485123"
+  },
+  {
+   "id": "boon-pulp-freeze-silicone-feeder-freezer-tray",
+   "type": "freezer-trays",
+   "brand": "Boon",
+   "line": "PULP Freeze Silicone Feeder Freezer Tray (with lid and 2 PULP feeders)",
+   "uses": [
+    "100% food grade silicone tray and lid"
+   ],
+   "free": [
+    "BPA and PVC"
+   ],
+   "outside": [
+    "Polypropylene (part not named)"
+   ],
+   "unconfirmed": [
+    "Which part is polypropylene",
+    "Finished-product test for the silicone",
+    "Pigments"
+   ],
+   "facts": {
+    "main": "unknown",
+    "silicone": "unknown",
+    "color": "unknown"
+   },
+   "unstated": {
+    "main": [
+     "Which part is polypropylene"
+    ],
+    "silicone": [
+     "Finished-product test for the silicone"
+    ],
+    "color": [
+     "Pigments"
+    ]
+   },
+   "contains": [],
+   "standards": [],
+   "age": {
+    "min_months": 6,
+    "text": "6 months and up"
+   },
+   "quote": "The 100% food grade silicone mold and lid easily release the frozen cubes and are dishwasher safe",
+   "note": "Makes 6 cubes that fit Boon PULP feeders; two feeders included.",
+   "products": [
+    {
+     "name": "Pulp Freeze Silicone Feeder Freezer Tray by Boon",
+     "url": "https://pacifierkids.com/products/pulp-freeze-silicone-feeder-freezer-tray-by-boon",
+     "price": "$21.99",
+     "store": "Pacifier",
+     "ships_from": "US",
+     "shipping": "$5.95 flat rate ground shipping"
+    }
+   ],
+   "read": "2026-11-19",
+   "photos": [
+    {
+     "key": "boon-pulp-freeze-silicone-feeder-freezer-tray",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/product_photo_-_white_background_-_2026-08-04T184046.639.jpg?v=1785840088"
+    },
+    {
+     "key": "boon-pulp-freeze-silicone-feeder-freezer-tray_2",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/hqhf9fd4wg73mtzdybdm__30386.1746737726.jpg?v=1785840091"
+    },
+    {
+     "key": "boon-pulp-freeze-silicone-feeder-freezer-tray_3",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/so656ljjifbirugroujm__55892.1746737726.jpg?v=1785840095"
+    },
+    {
+     "key": "boon-pulp-freeze-silicone-feeder-freezer-tray_4",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/woaoy1yfqim6leglzvav__20517.1746737726.jpg?v=1785840105"
+    },
+    {
+     "key": "boon-pulp-freeze-silicone-feeder-freezer-tray_5",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/heqxklhctghbk4kcggzx__48340.1746737726.jpg?v=1785840101"
+    },
+    {
+     "key": "boon-pulp-freeze-silicone-feeder-freezer-tray_6",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/yquitxjsgywflszcqe2y__21835.1746737727.jpg?v=1785840110"
+    }
+   ],
+   "img": "boon-pulp-freeze-silicone-feeder-freezer-tray",
+   "img_src": "https://cdn.shopify.com/s/files/1/0281/8056/files/product_photo_-_white_background_-_2026-08-04T184046.639.jpg?v=1785840088"
+  },
+  {
+   "id": "crywolf-baby-wander-jacket",
+   "type": "rainwear",
+   "brand": "Crywolf",
+   "line": "Baby Wander Jacket (lined waterproof jacket)",
+   "uses": [],
+   "free": [],
+   "outside": [
+    "Shell: recycled polyester bonded with waterproof PU outer",
+    "Lining: polyester fleece"
+   ],
+   "unconfirmed": [
+    "YKK waterproof Vislon zipper",
+    "Logo",
+    "Dyes"
+   ],
+   "facts": {
+    "main": "no",
+    "parts": "unknown",
+    "color": "unknown"
+   },
+   "unstated": {
+    "parts": [
+     "YKK waterproof Vislon zipper"
+    ],
+    "color": [
+     "Dyes",
+     "Logo"
+    ]
+   },
+   "contains": [],
+   "standards": [
+    "oeko-tex"
+   ],
+   "age": {
+    "min_months": 6,
+    "text": "Sizes 6-12 months to 3 years"
+   },
+   "quote": "a lightweight, lined jacket to keep them dry and snug whether they’re cruising in the stroller or splashing through puddles",
+   "note": "Designed in New Zealand. Waterproof to 8,000mm, double welded seams. Price shown in New Zealand dollars on the maker's store.",
+   "products": [
+    {
+     "name": "BABY WANDER JACKET Pony Club",
+     "url": "https://crywolfchild.com/products/wander-jacket-pony-club",
+     "store": "Crywolf (New Zealand)",
+     "price": "$52.99 NZD (sale; was $79.99 NZD)",
+     "ships_from": "New Zealand"
+    }
+   ],
+   "read": "2026-11-19",
+   "photos": [
+    {
+     "key": "crywolf-baby-wander-jacket",
+     "src": "https://cdn.shopify.com/s/files/1/2228/8463/files/CRYWOLF-AW26-Wander-Jacket-Pony-Club-Front-WEB-JPG.jpg?v=1773781584"
+    },
+    {
+     "key": "crywolf-baby-wander-jacket_2",
+     "src": "https://cdn.shopify.com/s/files/1/2228/8463/files/CRYWOLF-AW26-Wander-Jacket-Pony-Club-a-WEB-JPG.jpg?v=1773934492"
+    },
+    {
+     "key": "crywolf-baby-wander-jacket_3",
+     "src": "https://cdn.shopify.com/s/files/1/2228/8463/files/CRYWOLF-AW26-Wander-Jacket-Pony-Club-b-WEB-JPG.jpg?v=1773933451"
+    }
+   ],
+   "img": "crywolf-baby-wander-jacket",
+   "img_src": "https://cdn.shopify.com/s/files/1/2228/8463/files/CRYWOLF-AW26-Wander-Jacket-Pony-Club-Front-WEB-JPG.jpg?v=1773781584"
+  },
+  {
+   "id": "crywolf-scout-jacket",
+   "type": "rainwear",
+   "brand": "Crywolf",
+   "line": "Scout Jacket (fleece-lined waterproof jacket)",
+   "uses": [],
+   "free": [],
+   "outside": [
+    "Shell: 100% recycled oxford polyester",
+    "Hood lining: 100% polyester faux-fur",
+    "Body lining: 100% polyester",
+    "Sleeve lining: 100% polyester",
+    "Bionic Finish Eco water repellent coating"
+   ],
+   "unconfirmed": [
+    "Concealed YKK zipper",
+    "Snap closures",
+    "Printed logo",
+    "Dyes"
+   ],
+   "facts": {
+    "main": "no",
+    "finish": "no",
+    "parts": "unknown",
+    "color": "unknown"
+   },
+   "unstated": {
+    "parts": [
+     "Concealed YKK zipper",
+     "Snap closures"
+    ],
+    "color": [
+     "Dyes",
+     "Printed logo"
+    ]
+   },
+   "contains": [],
+   "standards": [
+    "oeko-tex"
+   ],
+   "age": {
+    "min_months": 12,
+    "text": "Sizes 1YR to 14YR"
+   },
+   "quote": "Built for adventure, it’s waterproof, wind protective and breathable, with a cosy fleece lining and faux-fur trimmed hood",
+   "note": "Designed in New Zealand. Waterproof to 5,000mm. Price shown in New Zealand dollars on the maker's store.",
+   "products": [
+    {
+     "name": "SCOUT JACKET Highland Blue",
+     "url": "https://crywolfchild.com/products/scout-jacket-highland-blue",
+     "store": "Crywolf (New Zealand)",
+     "price": "$75.99 NZD (sale; was $109.99 NZD)",
+     "ships_from": "New Zealand"
+    }
+   ],
+   "read": "2026-11-19",
+   "photos": [
+    {
+     "key": "crywolf-scout-jacket",
+     "src": "https://cdn.shopify.com/s/files/1/2228/8463/files/CRYWOLF-AW26-Scout-Jacket-Highland-Blue-Front-WEB-JPG.jpg?v=1773780352"
+    },
+    {
+     "key": "crywolf-scout-jacket_2",
+     "src": "https://cdn.shopify.com/s/files/1/2228/8463/files/CRYWOLF-AW26-Scout-Jacket-Highland-Blue-d-WEB-JPG.jpg?v=1773938426"
+    },
+    {
+     "key": "crywolf-scout-jacket_3",
+     "src": "https://cdn.shopify.com/s/files/1/2228/8463/files/CRYWOLF-AW26-Scout-Jacket-Highland-Blue-b-WEB-JPG.jpg?v=1773938426"
+    },
+    {
+     "key": "crywolf-scout-jacket_4",
+     "src": "https://cdn.shopify.com/s/files/1/2228/8463/files/CRYWOLF-AW26-Scout-Jacket-Highland-Blue-e-WEB-JPG.jpg?v=1773938401"
+    },
+    {
+     "key": "crywolf-scout-jacket_5",
+     "src": "https://cdn.shopify.com/s/files/1/2228/8463/files/CRYWOLF-AW26-Scout-Jacket-Highland-Blue-f-WEB-JPG.jpg?v=1773938401"
+    },
+    {
+     "key": "crywolf-scout-jacket_6",
+     "src": "https://crywolfchild.com/cdn/shop/files/preview_images/f9b16a544a654da7a7cb2b210062ad23.thumbnail.0000000000.jpg?v=1776993337"
+    }
+   ],
+   "img": "crywolf-scout-jacket",
+   "img_src": "https://cdn.shopify.com/s/files/1/2228/8463/files/CRYWOLF-AW26-Scout-Jacket-Highland-Blue-Front-WEB-JPG.jpg?v=1773780352"
+  },
+  {
+   "id": "cybex-solution-g2-booster",
+   "type": "car-seats",
+   "brand": "Cybex",
+   "line": "Solution G2 Folding Travel High-Back Booster",
+   "uses": [],
+   "free": [],
+   "outside": [
+    "Plastic (85% of the seat; parts not named)",
+    "Polyester (5%)",
+    "Polyether foam pads in the headrest and backrest",
+    "Seat pad of polyether foam (74%) and polyester fibre (26%)"
+   ],
+   "unconfirmed": [
+    "Which metal (5% \"metal\")",
+    "Fibre of the mesh fabric"
+   ],
+   "facts": {
+    "main": "no",
+    "flame": "unknown"
+   },
+   "unstated": {},
+   "contains": [],
+   "standards": [],
+   "age": {
+    "min_months": 48,
+    "text": "4 to 12 years, 40 to 120 lbs"
+   },
+   "quote": "Material Composition: 85% plastic, 5% metal, 5% polyester, 5% polyether",
+   "note": "The page says it is GREENGUARD Gold certified for low VOC emissions. Folds for travel.",
+   "products": [
+    {
+     "name": "Solution G2 Folding Travel High-Back Booster by Cybex",
+     "url": "https://pacifierkids.com/products/solution-g2-folding-travel-high-back-booster-by-cybex",
+     "price": "$239.96 (sale; was $299.95)",
+     "store": "Pacifier",
+     "ships_from": "US",
+     "shipping": "$5.95 flat rate ground shipping"
+    }
+   ],
+   "read": "2026-11-19",
+   "photos": [
+    {
+     "key": "cybex-solution-g2-booster",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/CYB_24_US_y045_SolutionG2_ALBE_Plus_print_medium_4158a27a-c011-4939-a6ef-6b2a8d363234.jpg?v=1791858915"
+    },
+    {
+     "key": "cybex-solution-g2-booster_2",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/CYB_24_US_SolutionG2_CampaignImage_LSP_screen_HD.jpg?v=1791859412"
+    },
+    {
+     "key": "cybex-solution-g2-booster_3",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/02.03_Amazon_2500x2500px_MN-08.jpg?v=1791858915"
+    },
+    {
+     "key": "cybex-solution-g2-booster_4",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/02.03_Amazon_2500x2500px_MN-09.jpg?v=1791858915"
+    },
+    {
+     "key": "cybex-solution-g2-booster_5",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/CYB_SolutionG2FoldImage_MN_02.03.2025.jpg?v=1791858915"
+    },
+    {
+     "key": "cybex-solution-g2-booster_6",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/CYB_24_US_y000_SolutionG2_ALBE_Plus_print_medium_1.jpg?v=1791858915"
+    },
+    {
+     "key": "cybex-solution-g2-booster_7",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/CYB_24_US_Deta_SolutionG2_ALBE_Plus_Fabric_print_medium_989b4fb3-b16a-423b-acd6-c578e3147322.jpg?v=1791858915"
+    },
+    {
+     "key": "cybex-solution-g2-booster_8",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/CYB_24_US_y045_SolutionG2_ALBE_Plus_CupHolder_GreyedOut_print_medium_a39bd3db-cdc4-4469-8622-116a3ebe94ee.jpg?v=1791858915"
+    },
+    {
+     "key": "cybex-solution-g2-booster_9",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/CYB_24_US_Solution_G2_KV_Main_Square_screen_HD.jpg?v=1791858915"
+    },
+    {
+     "key": "cybex-solution-g2-booster_10",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/CYB_24_US_y045_SolutionG2_MOOB_Plus_print_medium_cdf687c3-4f10-4fb5-95f9-e5d632f805a1.jpg?v=1791858915"
+    }
+   ],
+   "img": "cybex-solution-g2-booster",
+   "img_src": "https://cdn.shopify.com/s/files/1/0281/8056/files/CYB_24_US_y045_SolutionG2_ALBE_Plus_print_medium_4158a27a-c011-4939-a6ef-6b2a8d363234.jpg?v=1791858915"
+  },
+  {
+   "id": "delta-children-babygap-otto-3-in-1-high-chair",
+   "type": "high-chairs",
+   "brand": "Delta Children",
+   "line": "babyGap Otto 3-in-1 High Chair",
+   "uses": [
+    "FSC-certified beechwood legs",
+    "Anti-slip rubber feet"
+   ],
+   "free": [
+    "Added fire retardants, lead and phthalates (statement for all Delta Children products)"
+   ],
+   "outside": [
+    "Polypropylene (PP) meal tray"
+   ],
+   "unconfirmed": [
+    "Material of the seat",
+    "Material of the top tray",
+    "Whether the legs are solid wood",
+    "Finish on the legs",
+    "Whether the rubber of the feet is natural or synthetic",
+    "Harness"
+   ],
+   "facts": {
+    "main": "no",
+    "wood": "unknown",
+    "color": "unknown",
+    "parts": "unknown"
+   },
+   "unstated": {
+    "wood": [
+     "Whether the legs are solid wood"
+    ],
+    "color": [
+     "Finish on the legs"
+    ],
+    "parts": [
+     "Harness"
+    ]
+   },
+   "contains": [],
+   "standards": [
+    "fsc"
+   ],
+   "age": {
+    "min_months": 6,
+    "text": "6 months and up, up to 50 lbs"
+   },
+   "quote": "Sustainably sourced, FSC-certified beechwood legs",
+   "note": "Converts from high chair to toddler seat to booster. Colours Blue, Sage Green, Oatmeal and Black.",
+   "products": [
+    {
+     "name": "babyGap Otto 3-in-1 High Chair",
+     "url": "https://www.deltachildren.com/products/otto-3-in-1-high-chair",
+     "store": "Delta Children",
+     "price": "$119.99",
+     "ships_from": "US"
+    }
+   ],
+   "read": "2026-11-19",
+   "photos": [
+    {
+     "key": "delta-children-babygap-otto-3-in-1-high-chair",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/23057-2428_Gap-High-Chair_Oatmeal_Lifestyle_04.jpg?v=1769192401"
+    },
+    {
+     "key": "delta-children-babygap-otto-3-in-1-high-chair_2",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/23057-2428_Gap-High-Chair_Oatmeal_Lifestyle_06.jpg?v=1769192401"
+    },
+    {
+     "key": "delta-children-babygap-otto-3-in-1-high-chair_3",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/23057-2428_Gap-High-Chair_Oatmeal_Lifestyle_05_2.jpg?v=1769192401"
+    },
+    {
+     "key": "delta-children-babygap-otto-3-in-1-high-chair_4",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/23057-2428_Gap-High-Chair_Beige_Silo_01.jpg?v=1769192401"
+    },
+    {
+     "key": "delta-children-babygap-otto-3-in-1-high-chair_5",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/23057-2428_Gap-High-Chair_Beige_Silo_07.jpg?v=1769192401"
+    },
+    {
+     "key": "delta-children-babygap-otto-3-in-1-high-chair_6",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/23057-2428_Gap-High-Chair_Beige_Silo_04.jpg?v=1769192401"
+    },
+    {
+     "key": "delta-children-babygap-otto-3-in-1-high-chair_7",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/23057-2428_Gap-High-Chair_Beige_Silo_10.jpg?v=1769192401"
+    },
+    {
+     "key": "delta-children-babygap-otto-3-in-1-high-chair_8",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/23057-2428_Gap-High-Chair_Beige_Silo_11.jpg?v=1769192401"
+    },
+    {
+     "key": "delta-children-babygap-otto-3-in-1-high-chair_9",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/23057-2428_Gap-High-Chair_Beige_Silo_13.jpg?v=1769192401"
+    },
+    {
+     "key": "delta-children-babygap-otto-3-in-1-high-chair_10",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/23057-2428_Gap-High-Chair_Oatmeal_Hangtag_1x1_6be091e4-4b0e-4778-8a9d-fda18da9e9a9.jpg?v=1769192401"
+    }
+   ],
+   "img": "delta-children-babygap-otto-3-in-1-high-chair",
+   "img_src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/23057-2428_Gap-High-Chair_Oatmeal_Lifestyle_04.jpg?v=1769192401"
+  },
+  {
+   "id": "haakaa-baby-food-breast-milk-freezer-tray",
+   "type": "freezer-trays",
+   "brand": "Haakaa",
+   "line": "Baby Food and Breast Milk Freezer Tray (4, 6 or 9 compartments)",
+   "uses": [
+    "100% food grade silicone"
+   ],
+   "free": [
+    "BPA, PVC and phthalates"
+   ],
+   "outside": [],
+   "unconfirmed": [
+    "Finished-product test for the silicone",
+    "Pigments (Pea Green, Banana, Apricot, Blush)",
+    "Lid, if any"
+   ],
+   "facts": {
+    "main": "yes",
+    "color": "unknown",
+    "silicone": "unknown"
+   },
+   "unstated": {
+    "color": [
+     "Pigments (Pea Green, Banana, Apricot, Blush)"
+    ],
+    "silicone": [
+     "Finished-product test for the silicone"
+    ]
+   },
+   "contains": [],
+   "standards": [],
+   "quote": "Made from 100% food grade silicone the Haakaa freezer tray is perfect for freezing puree, home made baby food, breast milk",
+   "note": "Sold in 4, 6 and 9 compartment sizes, same price.",
+   "products": [
+    {
+     "name": "Haakaa Baby Food and Breast Milk Freezer Tray",
+     "url": "https://haakaausa.com/products/haakaa-baby-food-and-breast-milk-freezer-tray",
+     "store": "Haakaa USA",
+     "price": "$17.43",
+     "ships_from": "US",
+     "shipping": "Free shipping on U.S. retail orders over $19.99"
+    }
+   ],
+   "read": "2026-11-19",
+   "photos": [
+    {
+     "key": "haakaa-baby-food-breast-milk-freezer-tray",
+     "src": "https://cdn.shopify.com/s/files/1/1379/0465/files/UTE32-PG_1.jpg?v=1717517914"
+    },
+    {
+     "key": "haakaa-baby-food-breast-milk-freezer-tray_2",
+     "src": "https://cdn.shopify.com/s/files/1/1379/0465/products/IMG_6542.jpg?v=1717517914"
+    },
+    {
+     "key": "haakaa-baby-food-breast-milk-freezer-tray_3",
+     "src": "https://cdn.shopify.com/s/files/1/1379/0465/products/IMG_6541.jpg?v=1717517914"
+    },
+    {
+     "key": "haakaa-baby-food-breast-milk-freezer-tray_4",
+     "src": "https://cdn.shopify.com/s/files/1/1379/0465/products/Tray-1.jpg?v=1717517914"
+    },
+    {
+     "key": "haakaa-baby-food-breast-milk-freezer-tray_5",
+     "src": "https://cdn.shopify.com/s/files/1/1379/0465/files/UTE32_2.jpg?v=1717517914"
+    },
+    {
+     "key": "haakaa-baby-food-breast-milk-freezer-tray_6",
+     "src": "https://cdn.shopify.com/s/files/1/1379/0465/files/UTE31_2.jpg?v=1717517914"
+    },
+    {
+     "key": "haakaa-baby-food-breast-milk-freezer-tray_7",
+     "src": "https://cdn.shopify.com/s/files/1/1379/0465/files/UTE32_3.jpg?v=1717517914"
+    },
+    {
+     "key": "haakaa-baby-food-breast-milk-freezer-tray_8",
+     "src": "https://cdn.shopify.com/s/files/1/1379/0465/files/UTE32_4.jpg?v=1717517914"
+    },
+    {
+     "key": "haakaa-baby-food-breast-milk-freezer-tray_9",
+     "src": "https://cdn.shopify.com/s/files/1/1379/0465/files/UTE32_5.jpg?v=1717517914"
+    },
+    {
+     "key": "haakaa-baby-food-breast-milk-freezer-tray_10",
+     "src": "https://cdn.shopify.com/s/files/1/1379/0465/products/UTE31-R.jpg?v=1717517914"
+    }
+   ],
+   "img": "haakaa-baby-food-breast-milk-freezer-tray",
+   "img_src": "https://cdn.shopify.com/s/files/1/1379/0465/files/UTE32-PG_1.jpg?v=1717517914"
+  },
+  {
+   "id": "home-of-wool-handwoven-linen-rug",
+   "type": "rugs",
+   "brand": "Home of Wool",
+   "line": "Handwoven Linen Rug (reclaimed fabric scraps)",
+   "uses": [
+    "Reclaimed cotton, linen, wool and cotton-linen scraps"
+   ],
+   "free": [
+    "Plastic",
+    "Foam or coating",
+    "Synthetics"
+   ],
+   "outside": [],
+   "unconfirmed": [
+    "Dyes in the reclaimed fabric",
+    "Whether the wool scraps are superwash"
+   ],
+   "facts": {
+    "main": "yes",
+    "color": "unknown",
+    "wool": "unknown"
+   },
+   "unstated": {
+    "color": [
+     "Dyes in the reclaimed fabric"
+    ],
+    "wool": [
+     "Whether the wool scraps are superwash"
+    ]
+   },
+   "contains": [],
+   "standards": [],
+   "quote": "A handwoven flatwoven rug from reclaimed cotton, linen, and cotton-linen scraps.",
+   "note": "Handmade; five sizes from 57\" x 36\" to 69\" x 56\".",
+   "products": [
+    {
+     "name": "Handwoven Linen Rugs",
+     "url": "https://homeofwool.com/shop/handwoven-linen-rugs/",
+     "store": "Home of Wool",
+     "price": "$276.00 – $556.00 (sale; was $425.00 – $856.00)",
+     "ships_from": null
+    }
+   ],
+   "read": "2026-11-19",
+   "photos": [
+    {
+     "key": "home-of-wool-handwoven-linen-rug",
+     "src": "https://homeofwool.com/wp-content/uploads/2026/02/Linen-Rugs-front-main.jpg"
+    }
+   ],
+   "img": "home-of-wool-handwoven-linen-rug",
+   "img_src": "https://homeofwool.com/wp-content/uploads/2026/02/Linen-Rugs-front-main.jpg"
+  },
+  {
+   "id": "jellycat-bartholomew-bear-loves-you-fabric-book",
+   "type": "books",
+   "brand": "Jellycat",
+   "line": "Bartholomew Bear Loves You Fabric Book",
+   "uses": [],
+   "free": [],
+   "outside": [
+    "Recycled polyester fibres"
+   ],
+   "unconfirmed": [
+    "Fibre of the inner filling (\"Recycled Fibers\")",
+    "Crinkle panels",
+    "Dyes and prints",
+    "Thread"
+   ],
+   "facts": {
+    "main": "no",
+    "parts": "unknown",
+    "color": "unknown"
+   },
+   "unstated": {
+    "parts": [
+     "Thread",
+     "Crinkle panels"
+    ],
+    "color": [
+     "Dyes and prints"
+    ]
+   },
+   "contains": [],
+   "standards": [],
+   "age": {
+    "min_months": 0,
+    "text": "Suitable from birth"
+   },
+   "quote": "This scrumptious book has soft golden paws, tactile fabrics, crinkle panels, hidden surprises beneath lift-up flaps",
+   "note": "8 pages with lift-up flaps. The page says it is tested to EN71, ASTM and ISO 8124.",
+   "products": [
+    {
+     "name": "Bartholomew Bear Loves You Fabric Book by Jellycat",
+     "url": "https://pacifierkids.com/products/bartholomew-bear-loves-you-fabric-book-by-jellycat",
+     "price": "$26.00",
+     "store": "Pacifier",
+     "ships_from": "US",
+     "shipping": "$5.95 flat rate ground shipping"
+    }
+   ],
+   "read": "2026-11-19",
+   "photos": [
+    {
+     "key": "jellycat-bartholomew-bear-loves-you-fabric-book",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/BK4BBRLY__80261.1715963090.jpg?v=1718853940"
+    },
+    {
+     "key": "jellycat-bartholomew-bear-loves-you-fabric-book_2",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/BK4BBRLY_2__61118.1715963091.jpg?v=1718853951"
+    },
+    {
+     "key": "jellycat-bartholomew-bear-loves-you-fabric-book_3",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/BK4BBRLY_3__55634.1715963092.jpg?v=1718853960"
+    },
+    {
+     "key": "jellycat-bartholomew-bear-loves-you-fabric-book_4",
+     "src": "https://review-images.judgeme.com/pacifier-kids-boutique/1792804855__img_6688__original.jpeg?quality=80&width=1024"
+    },
+    {
+     "key": "jellycat-bartholomew-bear-loves-you-fabric-book_5",
+     "src": "https://review-images.judgeme.com/pacifier-kids-boutique/1784058343__855d9b7d-c873-4716-918e-df630f4fcff4__original.jpeg?quality=80&width=1024"
+    },
+    {
+     "key": "jellycat-bartholomew-bear-loves-you-fabric-book_6",
+     "src": "https://review-images.judgeme.com/pacifier-kids-boutique/1782470613__img_2167__original.jpeg?quality=80&width=1024"
+    },
+    {
+     "key": "jellycat-bartholomew-bear-loves-you-fabric-book_7",
+     "src": "https://review-images.judgeme.com/pacifier-kids-boutique/1773972173__image__original.jpg?quality=80&width=1024"
+    },
+    {
+     "key": "jellycat-bartholomew-bear-loves-you-fabric-book_8",
+     "src": "https://review-images.judgeme.com/pacifier-kids-boutique/1772210609__img_9050__original.jpeg?quality=80&width=1024"
+    },
+    {
+     "key": "jellycat-bartholomew-bear-loves-you-fabric-book_9",
+     "src": "https://review-images.judgeme.com/pacifier-kids-boutique/1771430198__img_5827__original.jpeg?quality=80&width=1024"
+    },
+    {
+     "key": "jellycat-bartholomew-bear-loves-you-fabric-book_10",
+     "src": "https://review-images.judgeme.com/pacifier-kids-boutique/1770902908__img_1916__original.jpeg?quality=80&width=1024"
+    }
+   ],
+   "img": "jellycat-bartholomew-bear-loves-you-fabric-book",
+   "img_src": "https://cdn.shopify.com/s/files/1/0281/8056/files/BK4BBRLY__80261.1715963090.jpg?v=1718853940"
+  },
+  {
+   "id": "lorena-canals-wool-area-rug-bliss",
+   "type": "rugs",
+   "brand": "Lorena Canals",
+   "line": "Wool Area Rug Bliss (machine washable)",
+   "uses": [
+    "Wool"
+   ],
+   "free": [],
+   "outside": [
+    "Machine-washable wool (WOOLABLE patent; treatment not named)"
+   ],
+   "unconfirmed": [
+    "Material of the anti-slip underlay",
+    "Backing, if any",
+    "Dyes"
+   ],
+   "facts": {
+    "main": "yes",
+    "wool": "no",
+    "accessory": "unknown",
+    "color": "unknown"
+   },
+   "unstated": {
+    "accessory": [
+     "Material of the anti-slip underlay"
+    ],
+    "color": [
+     "Dyes"
+    ]
+   },
+   "contains": [],
+   "standards": [],
+   "quote": "A Handcrafted wool rug with a refined geometric design that develops unique character over time.",
+   "note": "Comes in a cotton tote bag with an anti-slip underlay. Sizes 5' 7\" x 7' 10\" to 8' 2\" x 11' 5\"; larger sizes sold out when read.",
+   "products": [
+    {
+     "name": "Wool Area Rug Bliss",
+     "url": "https://easytot.com/products/wool-rug-bliss",
+     "store": "EasyTot",
+     "price": "$755.00",
+     "ships_from": null,
+     "shipping": "Shipping calculated at checkout"
+    }
+   ],
+   "read": "2026-11-19",
+   "photos": [
+    {
+     "key": "lorena-canals-wool-area-rug-bliss",
+     "src": "https://cdn.shopify.com/s/files/1/0556/0519/8922/files/WO-BASICS-SAND_1.1.jpg?v=1770920028"
+    },
+    {
+     "key": "lorena-canals-wool-area-rug-bliss_2",
+     "src": "https://cdn.shopify.com/s/files/1/0556/0519/8922/files/BASICS-SAN-BLISS_2.jpg?v=1770920029"
+    },
+    {
+     "key": "lorena-canals-wool-area-rug-bliss_3",
+     "src": "https://cdn.shopify.com/s/files/1/0556/0519/8922/files/BASICSAND_BLISS_3.jpg?v=1770920029"
+    },
+    {
+     "key": "lorena-canals-wool-area-rug-bliss_4",
+     "src": "https://cdn.shopify.com/s/files/1/0556/0519/8922/files/BASICSAND_BLISS_4.jpg?v=1770920029"
+    },
+    {
+     "key": "lorena-canals-wool-area-rug-bliss_5",
+     "src": "https://cdn.shopify.com/s/files/1/0556/0519/8922/files/BASICSAND_BLISS_5.jpg?v=1770920029"
+    },
+    {
+     "key": "lorena-canals-wool-area-rug-bliss_6",
+     "src": "https://cdn.shopify.com/s/files/1/0556/0519/8922/files/BASICSAND_BLISS_6.jpg?v=1770920029"
+    }
+   ],
+   "img": "lorena-canals-wool-area-rug-bliss",
+   "img_src": "https://cdn.shopify.com/s/files/1/0556/0519/8922/files/WO-BASICS-SAND_1.1.jpg?v=1770920028"
+  },
+  {
+   "id": "nuna-aace-booster-car-seat",
+   "type": "car-seats",
+   "brand": "Nuna",
+   "line": "AACE Booster Car Seat (FR free)",
+   "uses": [],
+   "free": [
+    "Added fire retardant chemicals"
+   ],
+   "outside": [],
+   "unconfirmed": [
+    "Fibre of the knit cover",
+    "Material of the shell",
+    "Material of the energy-absorbing foam",
+    "Material of the side impact (SIP) pods"
+   ],
+   "facts": {
+    "main": "unknown",
+    "flame": "yes"
+   },
+   "unstated": {
+    "main": [
+     "Fibre of the knit cover",
+     "Material of the shell",
+     "Material of the energy-absorbing foam"
+    ]
+   },
+   "contains": [],
+   "standards": [],
+   "age": {
+    "min_months": 48,
+    "text": "At least 4 years old (high-back booster, 40 to 110 lbs)"
+   },
+   "quote": "From fabric to foam and beyond, each element is smartly sourced to be both flame resistant and contain no added fire retardant chemicals",
+   "note": "High-back booster that converts to a backless booster (50 to 120 lbs).",
+   "products": [
+    {
+     "name": "Aace Booster Car Seat FR Free by Nuna",
+     "url": "https://pacifierkids.com/products/aace-booster-car-seat-fr-free-by-nuna",
+     "price": "$300.00",
+     "store": "Pacifier",
+     "ships_from": "US",
+     "shipping": "$5.95 flat rate ground shipping"
+    }
+   ],
+   "read": "2026-11-19",
+   "photos": [
+    {
+     "key": "nuna-aace-booster-car-seat",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/4e1491da_ff2e_48e6_8c82_4b105ee45f73_783d.jpg?v=1761270514"
+    },
+    {
+     "key": "nuna-aace-booster-car-seat_2",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/f35c8257_a925_4bf8_b3c9_19523dd65d89_d4e9.jpg?v=1761270514"
+    },
+    {
+     "key": "nuna-aace-booster-car-seat_3",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/6f04f4dd_72da_4992_856e_bb248f264efb_1ef9.jpg?v=1761270514"
+    },
+    {
+     "key": "nuna-aace-booster-car-seat_4",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/7c4614f1_b596_43a8_a1d2_84e48b6d9121_41d2.jpg?v=1761270514"
+    },
+    {
+     "key": "nuna-aace-booster-car-seat_5",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/1fc49b42_9c4d_49f2_a279_7c19d402bc24_aa3c.jpg?v=1761270514"
+    },
+    {
+     "key": "nuna-aace-booster-car-seat_6",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/product_photo_-_white_background_-_2026-02-01T100705.880.jpg?v=1769911658"
+    },
+    {
+     "key": "nuna-aace-booster-car-seat_7",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/Nuna_AACE_Cedar_BeltGuide_US_2400_1800x1800_b5052526-f45b-4f21-8885-f264af21628b.jpg?v=1769992421"
+    },
+    {
+     "key": "nuna-aace-booster-car-seat_8",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/Nuna_AACE_Cedar_Front_Backless_US_2400_1800x1800_5c878dd1-84a0-4dca-80a8-e1684d83989d.jpg?v=1769992424"
+    },
+    {
+     "key": "nuna-aace-booster-car-seat_9",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/Nuna_AACE_Cedar_Front_HRU_Position1_US_2400_1800x1800_16b0cc8b-1628-4f0c-99bd-faef1d2ebb5e.jpg?v=1769992430"
+    },
+    {
+     "key": "nuna-aace-booster-car-seat_10",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/Nuna_AACE_Cedar_SIP_US_2400_1800x1800_83cd78a0-1947-4825-9456-2bb07b1f349c.jpg?v=1769992471"
+    }
+   ],
+   "img": "nuna-aace-booster-car-seat",
+   "img_src": "https://cdn.shopify.com/s/files/1/0281/8056/files/4e1491da_ff2e_48e6_8c82_4b105ee45f73_783d.jpg?v=1761270514"
+  },
+  {
+   "id": "nuna-rava-next-convertible-car-seat",
+   "type": "car-seats",
+   "brand": "Nuna",
+   "line": "RAVA Next Convertible Car Seat",
+   "uses": [
+    "All-steel frame"
+   ],
+   "free": [
+    "Fire-retardant chemicals"
+   ],
+   "outside": [
+    "EPO energy-absorbing foam"
+   ],
+   "unconfirmed": [
+    "Fibre of the knit fabric (\"premium moisture-wicking fabric\")",
+    "Material of the shell",
+    "Material of the side impact (SIP) pods",
+    "Harness webbing"
+   ],
+   "facts": {
+    "main": "no",
+    "flame": "yes",
+    "parts": "unknown"
+   },
+   "unstated": {
+    "parts": [
+     "Harness webbing"
+    ]
+   },
+   "contains": [],
+   "standards": [],
+   "age": {
+    "min_months": 0,
+    "text": "Birth to 2+ years rear facing (5 to 50 lb), then forward facing to 65 lb"
+   },
+   "quote": "All-steel frame and reinforced belt path for superior protection",
+   "note": "Seat pad, body and head support and harness covers are machine washable.",
+   "products": [
+    {
+     "name": "Rava Next Convertible Car Seat by Nuna",
+     "url": "https://pacifierkids.com/products/rava-next-convertible-car-seat-by-nuna",
+     "price": "$580.00",
+     "store": "Pacifier",
+     "ships_from": "US",
+     "shipping": "$5.95 flat rate ground shipping"
+    }
+   ],
+   "read": "2026-11-19",
+   "photos": [
+    {
+     "key": "nuna-rava-next-convertible-car-seat",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/product_photo_-_white_background_60_b2112227-df7a-4314-bc60-feeb283353c8.jpg?v=1766460949"
+    },
+    {
+     "key": "nuna-rava-next-convertible-car-seat_2",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/RAVA2024_Cedar_US_4138__1100x1100_web_cdc7_638c1b3b-dd7b-433a-a3c3-10ef0ae80ecc.jpg?v=1766460949"
+    },
+    {
+     "key": "nuna-rava-next-convertible-car-seat_3",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/RAVA2024_Cedar_US_4107__1100x1100_web_12d8_e7967f14-aaea-4796-aa20-ad641d9014e0.jpg?v=1766460949"
+    },
+    {
+     "key": "nuna-rava-next-convertible-car-seat_4",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/RAVA2024_Installation_Thistle_US_4264__1100x1100_web_0ac5_330ae8af-d830-4794-902b-53cb1fe097e5.jpg?v=1766460949"
+    },
+    {
+     "key": "nuna-rava-next-convertible-car-seat_5",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/RAVA2024_Thistle_US_3751__1100x1100_web_afbd.jpg?v=1766460949"
+    },
+    {
+     "key": "nuna-rava-next-convertible-car-seat_6",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/RAVA2024_Thistle_US_3670__1100x1100_web_4c52_f0eb8b02-2d4c-4ac2-8974-20c21abcc84d.jpg?v=1766460949"
+    },
+    {
+     "key": "nuna-rava-next-convertible-car-seat_7",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/Nuna_RAVA_2024_Caviar_Angle_US_web_93f8_2429d1fb-6ed7-41b1-b7cc-18268130e23d.jpg?v=1766460949"
+    },
+    {
+     "key": "nuna-rava-next-convertible-car-seat_8",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/Nuna_RAVA_2024_Caviar_Front_US_web_e869_9363f8cc-e2b6-4376-bb33-851df4eee15b.jpg?v=1766460949"
+    },
+    {
+     "key": "nuna-rava-next-convertible-car-seat_9",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/Nuna_RAVA_2024_Caviar_Profile_FF_HRU_US_web_99a6_084cdd5e-03a9-43fa-a2bf-da37f01320e4.jpg?v=1766460949"
+    },
+    {
+     "key": "nuna-rava-next-convertible-car-seat_10",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/Nuna_RAVA_2024_Caviar_Profile_RF_Recline_5_US_web_ea04_a34146b2-9d11-4849-a004-2df93fadcd89.jpg?v=1766460949"
+    }
+   ],
+   "img": "nuna-rava-next-convertible-car-seat",
+   "img_src": "https://cdn.shopify.com/s/files/1/0281/8056/files/product_photo_-_white_background_60_b2112227-df7a-4314-bc60-feeb283353c8.jpg?v=1766460949"
+  },
+  {
+   "id": "stokke-clikk-high-chair",
+   "type": "high-chairs",
+   "brand": "Stokke",
+   "line": "Clikk High Chair with tray and harness",
+   "uses": [],
+   "free": [
+    "Phthalates"
+   ],
+   "outside": [],
+   "unconfirmed": [
+    "Material of the seat, legs and footrest",
+    "Material of the tray",
+    "Harness"
+   ],
+   "facts": {
+    "main": "unknown",
+    "parts": "unknown"
+   },
+   "unstated": {
+    "main": [
+     "Material of the seat, legs and footrest",
+     "Material of the tray"
+    ],
+    "parts": [
+     "Harness"
+    ]
+   },
+   "contains": [],
+   "standards": [],
+   "age": {
+    "min_months": 6,
+    "max_months": 36,
+    "text": "From 6 to 36 months"
+   },
+   "quote": "Tool-free assembly in only one minute.",
+   "note": "White. An optional cushion is sold separately.",
+   "products": [
+    {
+     "name": "Clikk High Chair by Stokke",
+     "url": "https://pacifierkids.com/products/clikk-high-chair-by-stokke",
+     "price": "$149.00",
+     "store": "Pacifier",
+     "ships_from": "US",
+     "shipping": "$5.95 flat rate ground shipping"
+    }
+   ],
+   "read": "2026-11-19",
+   "photos": [
+    {
+     "key": "stokke-clikk-high-chair",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/products/ScreenShot2020-07-02at3.00.42PM.png?v=1762914909"
+    },
+    {
+     "key": "stokke-clikk-high-chair_2",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/products/ScreenShot2020-07-02at3.00.53PM.png?v=1762914909"
+    },
+    {
+     "key": "stokke-clikk-high-chair_3",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/products/ScreenShot2020-07-02at3.01.01PM.png?v=1762914909"
+    },
+    {
+     "key": "stokke-clikk-high-chair_4",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/products/ScreenShot2020-07-02at3.01.16PM.png?v=1762914909"
+    },
+    {
+     "key": "stokke-clikk-high-chair_5",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/products/StokkeClikk_White_Harness_FootrestHigh_190612_4749_SP_49465.jpg?v=1762914909"
+    },
+    {
+     "key": "stokke-clikk-high-chair_6",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/products/StokkeClikk_CloudGrey_FUNCTION_190612_4740_SP_49867.jpg?v=1762914909"
+    },
+    {
+     "key": "stokke-clikk-high-chair_7",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/products/ClikkPDPfeatures_CONCEPT_1500x1500_3_3__legacy.jpg?v=1762914909"
+    },
+    {
+     "key": "stokke-clikk-high-chair_8",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/products/ScreenShot2020-07-02at3.00.04PM.png?v=1762914909"
+    },
+    {
+     "key": "stokke-clikk-high-chair_9",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/products/Clikk_FjordBlue_1_5000x_afb0afc8-8d79-445b-ad3f-32cdce3a0a04.jpg?v=1762914909"
+    },
+    {
+     "key": "stokke-clikk-high-chair_10",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/products/stokke-clikk-high-chair-black-natural-6.jpg?v=1762914909"
+    }
+   ],
+   "img": "stokke-clikk-high-chair",
+   "img_src": "https://cdn.shopify.com/s/files/1/0281/8056/products/ScreenShot2020-07-02at3.00.42PM.png?v=1762914909"
+  },
+  {
+   "id": "stokke-nomi-highchair-natural",
+   "type": "high-chairs",
+   "brand": "Stokke",
+   "line": "Nomi Highchair, Natural",
+   "uses": [
+    "Wooden stem"
+   ],
+   "free": [],
+   "outside": [],
+   "unconfirmed": [
+    "Material of the seat and footrest (\"7 chair color variations\")",
+    "Wood species of the stem",
+    "Whether the stem is solid wood, plywood or veneer",
+    "Finish on the wood",
+    "Harness"
+   ],
+   "facts": {
+    "main": "unknown",
+    "wood": "unknown",
+    "color": "unknown",
+    "parts": "unknown"
+   },
+   "unstated": {
+    "main": [
+     "Material of the seat and footrest (\"7 chair color variations\")"
+    ],
+    "wood": [
+     "Whether the stem is solid wood, plywood or veneer"
+    ],
+    "color": [
+     "Finish on the wood"
+    ],
+    "parts": [
+     "Harness"
+    ]
+   },
+   "contains": [],
+   "standards": [],
+   "quote": "the strong and sturdy wooden stem holds up to 330 lbs",
+   "note": "Designed by Peter Opsvik (Evomove). The page says \"Manufactured in Europe\". The newborn bouncer and baby set are sold separately.",
+   "products": [
+    {
+     "name": "Nomi Highchair - Natural by Stokke",
+     "url": "https://pacifierkids.com/products/nomihighchair-whiteoakbyevomove",
+     "price": "$369.00",
+     "store": "Pacifier",
+     "ships_from": "US",
+     "shipping": "$5.95 flat rate ground shipping"
+    }
+   ],
+   "read": "2026-11-19",
+   "photos": [
+    {
+     "key": "stokke-nomi-highchair-natural",
+     "src": "https://pacifierkids.com/cdn/shop/files/43979378910_4d3518b8d9_z.jpg?v=1694728206&width=1920"
+    }
+   ],
+   "img": "stokke-nomi-highchair-natural",
+   "img_src": "https://pacifierkids.com/cdn/shop/files/43979378910_4d3518b8d9_z.jpg?v=1694728206&width=1920"
   }
  ]
 }
