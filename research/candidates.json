@@ -686,7 +686,8 @@
    "type": "cars",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "goki-wooden-fire-truck"
   },
   {
    "url": "https://coloredorganics.com/products/our-little-adventure-at-easter-board-book-copy-2",
@@ -1037,7 +1038,8 @@
    "type": "puzzles",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "skipped",
+   "reason": "magnetic play set in a tin: not a puzzle, and the page names no material for the magnets"
   },
   {
    "url": "https://coloredorganics.com/products/time-for-bed-pull-and-play-boardbook-copy",
@@ -1490,7 +1492,8 @@
    "type": "stacking",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "egmont-wooden-pyramid-bear-marcel"
   },
   {
    "url": "https://coloredorganics.com/products/lets-go-explore-book-copy",
@@ -3301,7 +3304,8 @@
    "type": "utensils",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "beaba-ergonomic-toddler-cutlery"
   },
   {
    "url": "https://beaba.us/products/glass-containers-250-ml-1",
@@ -3843,7 +3847,8 @@
    "type": "mattresses",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "newton-essential-crib-mattress"
   },
   {
    "url": "https://www.newtonbaby.com/products/newton-crib-mattress",
@@ -8480,7 +8485,8 @@
    "type": "sheets",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "naturepedic-organic-sateen-crib-sheets"
   },
   {
    "url": "https://www.naturepedic.com/products/organic-body-pillow",
@@ -20018,7 +20024,8 @@
    "type": "cars",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "kodo-kids-wooden-cars"
   },
   {
    "url": "https://kodokids.com/products/sensory-stackers",
@@ -20898,7 +20905,8 @@
    "type": "puzzles",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "kodo-kids-geometric-puzzle-set"
   },
   {
    "url": "https://kodokids.com/products/big-shadows-puzzle-set",
@@ -21361,7 +21369,8 @@
    "type": "teethers",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "mushie-teething-ring"
   },
   {
    "url": "https://mushie.com/products/wooden-magnetic-rainbow-maze",
@@ -21670,7 +21679,8 @@
    "type": "changing-pads",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "mushie-changing-pad-liners"
   },
   {
    "url": "https://mushie.com/products/bear-poncho-towel",
@@ -21930,7 +21940,8 @@
    "type": "sheets",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "mushie-stretchy-crib-sheet"
   },
   {
    "url": "https://mushie.com/products/silicone-baby-rattle-toy",
@@ -22326,7 +22337,8 @@
    "type": "bibs",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "mushie-silicone-baby-bib"
   },
   {
    "url": "https://mushie.com/products/silicone-feeding-spoons-2-pack",
@@ -25339,7 +25351,8 @@
    "type": "rattles",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "smiling-tree-toys-cross-rattle"
   },
   {
    "url": "https://smilingtreetoys.com/products/milestone-baby-age-blocks",
@@ -47200,7 +47213,8 @@
    "type": "instruments",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "skipped",
+   "reason": "activity cube: no product type fits it yet"
   },
   {
    "url": "https://www.bellalunatoys.com/products/wooden-tabletop-theatre",
@@ -52081,7 +52095,8 @@
    "type": "silks",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "sarahs-silks-northern-coast-silk-cape"
   },
   {
    "url": "https://www.bellalunatoys.com/products/sarahs-silks-northern-coast-silk-garland",
@@ -54179,7 +54194,8 @@
    "type": "bibs",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "skipped",
+   "reason": "Duplicate: Crane Baby muslin bib set in another print; the Crane Baby Kendi set is already listed"
   },
   {
    "url": "https://enlightenedbaby.com/products/charlie-farmhouse-quilted-play-mat",
@@ -54546,7 +54562,8 @@
    "type": "instruments",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "skipped",
+   "reason": "page names no material"
   },
   {
    "url": "https://enlightenedbaby.com/products/air-toobz-switch",
@@ -61645,7 +61662,8 @@
    "type": "silks",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "skipped",
+   "reason": "page not found (404)"
   },
   {
    "url": "https://camdenrose.com/products/wood-pirate-cutlass-4-color-options",
@@ -74085,7 +74103,8 @@
    "type": "pillows",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "home-of-wool-wool-baby-pillow"
   },
   {
    "url": "https://homeofwool.com/shop/diy-stuffed-animals/",
@@ -141102,7 +141121,8 @@
    "type": "floor-beds",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "skipped",
+   "reason": "Duplicate: Bush Acres floor bed of the same Baltic birch plywood as the Bush Acres Avi Floor Bed, already listed"
   },
   {
    "url": "https://easytot.com/products/carlie-scalloped-bed",

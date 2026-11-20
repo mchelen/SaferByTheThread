@@ -1,6 +1,6 @@
 {
  "schema": 4,
- "updated": "2026-11-19",
+ "updated": "2026-11-20",
  "ask": [
   "Thread on any sewn item (cotton or polyester).",
   "Wheels and axles on push toys and cars.",
@@ -44230,6 +44230,1111 @@
    ],
    "img": "stokke-nomi-highchair-natural",
    "img_src": "https://pacifierkids.com/cdn/shop/files/43979378910_4d3518b8d9_z.jpg?v=1694728206&width=1920"
+  },
+  {
+   "type": "utensils",
+   "brand": "Béaba",
+   "line": "Ergonomic Toddler Cutlery Set of 10",
+   "outside": [
+    "Spoons and forks of “high grade food plastic”"
+   ],
+   "free": [
+    "BPA",
+    "Lead",
+    "Phthalates"
+   ],
+   "unconfirmed": [
+    "Which plastic (not named)",
+    "Pigments in the pastel colours"
+   ],
+   "facts": {
+    "main": "no",
+    "color": "unknown"
+   },
+   "unstated": {
+    "color": [
+     "Pigments in the pastel colours"
+    ]
+   },
+   "age": {
+    "min_months": 8,
+    "text": "8mo+"
+   },
+   "quote": "Made from a high grade food plastic, the thick & wide handle is adapted to a toddler’s grasp",
+   "note": "Six spoons and four forks.",
+   "products": [
+    {
+     "name": "Ergonomic Toddler Cutlery Set of 10",
+     "url": "https://beaba.us/products/ergonomic-toddler-cutlery-set-of-10-assorted",
+     "store": "Béaba",
+     "price": "$9.99",
+     "ships_from": null,
+     "shipping": "Free shipping on orders $140*"
+    }
+   ],
+   "id": "beaba-ergonomic-toddler-cutlery",
+   "uses": [],
+   "contains": [],
+   "standards": [],
+   "read": "2026-11-20",
+   "photos": [
+    {
+     "key": "beaba-ergonomic-toddler-cutlery",
+     "src": "https://cdn.shopify.com/s/files/1/0673/7756/1739/files/913471_pack_3-4.jpg?v=1757618590"
+    },
+    {
+     "key": "beaba-ergonomic-toddler-cutlery_2",
+     "src": "https://cdn.shopify.com/s/files/1/0673/7756/1739/files/913471_pack.jpg?v=1757618590"
+    },
+    {
+     "key": "beaba-ergonomic-toddler-cutlery_3",
+     "src": "https://cdn.shopify.com/s/files/1/0673/7756/1739/files/913471_2_1.jpg?v=1757618590"
+    },
+    {
+     "key": "beaba-ergonomic-toddler-cutlery_4",
+     "src": "https://cdn.shopify.com/s/files/1/0673/7756/1739/files/913471_3_1.jpg?v=1757618590"
+    },
+    {
+     "key": "beaba-ergonomic-toddler-cutlery_5",
+     "src": "https://cdn.shopify.com/s/files/1/0673/7756/1739/files/913401_product_amb_1.jpg?v=1757618590"
+    },
+    {
+     "key": "beaba-ergonomic-toddler-cutlery_6",
+     "src": "https://cdn.shopify.com/s/files/1/0673/7756/1739/files/913401_product_amb_2.jpg?v=1757618590"
+    },
+    {
+     "key": "beaba-ergonomic-toddler-cutlery_7",
+     "src": "https://cdn.shopify.com/s/files/1/0673/7756/1739/files/913471_4_1.jpg?v=1757618590"
+    }
+   ],
+   "img": "beaba-ergonomic-toddler-cutlery",
+   "img_src": "https://cdn.shopify.com/s/files/1/0673/7756/1739/files/913471_pack_3-4.jpg?v=1757618590"
+  },
+  {
+   "type": "stacking",
+   "brand": "Egmont Toys",
+   "line": "Wooden Pyramid Bear Marcel",
+   "uses": [
+    "Solid wood"
+   ],
+   "unconfirmed": [
+    "Wood species",
+    "Colour on the rings (“soft blush, peach, and caramel hues”)",
+    "The “silky-smooth finish”",
+    "Fibre of the felt ears"
+   ],
+   "facts": {
+    "wood": "yes",
+    "main": "unknown",
+    "color": "unknown"
+   },
+   "unstated": {
+    "main": [
+     "Fibre of the felt ears"
+    ],
+    "color": [
+     "Colour on the rings (“soft blush, peach, and caramel hues”)",
+     "The “silky-smooth finish”"
+    ]
+   },
+   "quote": "Crafted from solid wood with a silky-smooth finish",
+   "note": "Five rings on a bear-topped base. Sold out at Colored Organics when read.",
+   "products": [
+    {
+     "name": "Wooden Pyramid Bear Marcel",
+     "url": "https://coloredorganics.com/products/animal-tower-copy",
+     "store": "Colored Organics",
+     "price": "$38 (sold out when read)",
+     "ships_from": "US",
+     "shipping": "Free shipping on orders over $50"
+    }
+   ],
+   "id": "egmont-wooden-pyramid-bear-marcel",
+   "free": [],
+   "outside": [],
+   "contains": [],
+   "standards": [],
+   "read": "2026-11-20",
+   "photos": [
+    {
+     "key": "egmont-wooden-pyramid-bear-marcel",
+     "src": "https://coloredorganics.com/cdn/shop/files/infant-unisex-wooden-pyramid-bear-marcel.multi.flat_front_a5f56cee-109e-4a2f-bbe9-7a121001ffb5.jpg?v=1782763438&width=1024"
+    },
+    {
+     "key": "egmont-wooden-pyramid-bear-marcel_2",
+     "src": "https://coloredorganics.com/cdn/shop/files/infant-unisex-wooden-pyramid-bear-marcel.multi.flat_detail.2_8edfa924-da71-4c10-9b32-d72bfae43271.jpg?v=1782763437&width=1024"
+    },
+    {
+     "key": "egmont-wooden-pyramid-bear-marcel_3",
+     "src": "https://coloredorganics.com/cdn/shop/files/infant-unisex-wooden-pyramid-bear-marcel.multi.flat_detail_f3285c94-dbd8-4185-b3be-8cc06dc74ad0.jpg?v=1782763437&width=1024"
+    }
+   ],
+   "img": "egmont-wooden-pyramid-bear-marcel",
+   "img_src": "https://coloredorganics.com/cdn/shop/files/infant-unisex-wooden-pyramid-bear-marcel.multi.flat_front_a5f56cee-109e-4a2f-bbe9-7a121001ffb5.jpg?v=1782763438&width=1024"
+  },
+  {
+   "type": "cars",
+   "brand": "Goki",
+   "line": "Wooden Fire Truck",
+   "uses": [
+    "Solid wood",
+    "Rubber tires"
+   ],
+   "unconfirmed": [
+    "Wood species",
+    "Red paint",
+    "Material of the firefighter figure",
+    "Natural or synthetic rubber (not stated)"
+   ],
+   "facts": {
+    "wood": "yes",
+    "main": "unknown",
+    "color": "unknown",
+    "rubber": "unknown"
+   },
+   "unstated": {
+    "main": [
+     "Material of the firefighter figure"
+    ],
+    "color": [
+     "Red paint"
+    ],
+    "rubber": [
+     "Natural or synthetic rubber (not stated)"
+    ]
+   },
+   "age": {
+    "min_months": 24,
+    "text": "ages 2 and up"
+   },
+   "quote": "it features real rubber tires for smooth rolling on any surface",
+   "note": "7.5 x 3.9 x 5 in; made in China, the page says. Sold by Colored Organics.",
+   "products": [
+    {
+     "name": "Fire Truck",
+     "url": "https://coloredorganics.com/products/construction-truck-copy",
+     "store": "Colored Organics",
+     "price": "$50",
+     "ships_from": "US",
+     "shipping": "Free shipping on orders over $50"
+    }
+   ],
+   "id": "goki-wooden-fire-truck",
+   "free": [],
+   "outside": [],
+   "contains": [],
+   "standards": [],
+   "read": "2026-11-20",
+   "photos": [
+    {
+     "key": "goki-wooden-fire-truck",
+     "src": "https://coloredorganics.com/cdn/shop/files/infant-unisex-fire-truck.multi.flat_front.jpg?v=1787156160&width=1024"
+    },
+    {
+     "key": "goki-wooden-fire-truck_2",
+     "src": "https://coloredorganics.com/cdn/shop/files/infant-unisex-fire-truck.multi.flat_detail.2.jpg?v=1787156159&width=1024"
+    },
+    {
+     "key": "goki-wooden-fire-truck_3",
+     "src": "https://coloredorganics.com/cdn/shop/files/infant-unisex-fire-truck.multi.flat_detail.jpg?v=1787156160&width=1024"
+    }
+   ],
+   "img": "goki-wooden-fire-truck",
+   "img_src": "https://coloredorganics.com/cdn/shop/files/infant-unisex-fire-truck.multi.flat_front.jpg?v=1787156160&width=1024"
+  },
+  {
+   "type": "pillows",
+   "brand": "Home of Wool",
+   "line": "Wool Baby Pillow",
+   "uses": [
+    "Wool filling (“100% pure wool”)",
+    "Organic cotton ticking (one option)",
+    "59% linen / 41% cotton ticking (one option)",
+    "Virgin wool ticking (one option)"
+   ],
+   "free": [
+    "Synthetics",
+    "Dyes",
+    "Chemical treatments",
+    "Flame retardants"
+   ],
+   "unconfirmed": [
+    "Side zipper",
+    "Thread"
+   ],
+   "facts": {
+    "main": "yes",
+    "color": "yes",
+    "wool": "yes",
+    "flame": "yes",
+    "parts": "unknown"
+   },
+   "unstated": {
+    "parts": [
+     "Side zipper"
+    ]
+   },
+   "standards": [
+    "gots",
+    "oeko-tex"
+   ],
+   "quote": "Entirely free from synthetics, dyes, chemical treatments, off-gassing, and VOCs",
+   "note": "9 x 11.8 in, made to order; the fabric choices are “either GOTS or OEKO-TEX certified”, without saying which is which. Pillowcases and a protector are extra.",
+   "products": [
+    {
+     "name": "Wool Baby Pillow",
+     "url": "https://homeofwool.com/shop/baby-pillow/",
+     "store": "Home of Wool",
+     "price": "From $102.00",
+     "ships_from": "UK"
+    }
+   ],
+   "id": "home-of-wool-wool-baby-pillow",
+   "outside": [],
+   "contains": [],
+   "read": "2026-11-20",
+   "photos": [
+    {
+     "key": "home-of-wool-wool-baby-pillow",
+     "src": "https://homeofwool.com/wp-content/uploads/2025/09/home-of-wool-wool-baby-pillow-base-baby-pillow.jpg"
+    }
+   ],
+   "img": "home-of-wool-wool-baby-pillow",
+   "img_src": "https://homeofwool.com/wp-content/uploads/2025/09/home-of-wool-wool-baby-pillow-base-baby-pillow.jpg"
+  },
+  {
+   "type": "puzzles",
+   "brand": "Kodo Kids",
+   "line": "Geometric Puzzle Set",
+   "uses": [
+    "Wooden puzzle pieces",
+    "Cotton storage bag"
+   ],
+   "unconfirmed": [
+    "Wood species",
+    "Solid or glued wood",
+    "Colour on the coloured side"
+   ],
+   "facts": {
+    "main": "yes",
+    "wood": "unknown",
+    "color": "unknown"
+   },
+   "unstated": {
+    "wood": [
+     "Solid or glued wood"
+    ],
+    "color": [
+     "Colour on the coloured side"
+    ]
+   },
+   "standards": [
+    "us-toy"
+   ],
+   "age": {
+    "min_months": 18,
+    "text": "18 months+"
+   },
+   "quote": "These wooden jigsaw puzzles are an excellent tool for developing dexterity and spatial awareness.",
+   "note": "Four shapes in 14 pieces, coloured on one side and plain wood on the other.",
+   "products": [
+    {
+     "name": "Geometric Puzzle Set",
+     "url": "https://kodokids.com/products/geometric-puzzle-set",
+     "store": "Kodo Kids",
+     "price": "$68.00",
+     "ships_from": "US"
+    }
+   ],
+   "id": "kodo-kids-geometric-puzzle-set",
+   "free": [],
+   "outside": [],
+   "contains": [],
+   "read": "2026-11-20",
+   "photos": [
+    {
+     "key": "kodo-kids-geometric-puzzle-set",
+     "src": "https://cdn.shopify.com/s/files/1/0629/8969/7163/files/geometric-puzzle-set-3rd-party-dusyma.jpg?v=1793138626"
+    },
+    {
+     "key": "kodo-kids-geometric-puzzle-set_2",
+     "src": "https://cdn.shopify.com/s/files/1/0629/8969/7163/files/geometric-puzzle-set-3rd-party-dusyma-2.jpg?v=1793138627"
+    },
+    {
+     "key": "kodo-kids-geometric-puzzle-set_3",
+     "src": "https://cdn.shopify.com/s/files/1/0629/8969/7163/files/geometric-puzzle-set-3rd-party-dusyma-3.jpg?v=1793138628"
+    },
+    {
+     "key": "kodo-kids-geometric-puzzle-set_4",
+     "src": "https://cdn.shopify.com/s/files/1/0629/8969/7163/files/geometric-puzzle-set-3rd-party-dusyma-4.jpg?v=1793138629"
+    },
+    {
+     "key": "kodo-kids-geometric-puzzle-set_5",
+     "src": "https://cdn.shopify.com/s/files/1/0629/8969/7163/files/geometric-puzzle-set-3rd-party-dusyma-5.jpg?v=1793138630"
+    },
+    {
+     "key": "kodo-kids-geometric-puzzle-set_6",
+     "src": "https://cdn.shopify.com/s/files/1/0629/8969/7163/files/geometric-puzzle-set-3rd-party-dusyma-6.jpg?v=1793138631"
+    },
+    {
+     "key": "kodo-kids-geometric-puzzle-set_7",
+     "src": "https://cdn.shopify.com/s/files/1/0629/8969/7163/files/geometric-puzzle-set-3rd-party-dusyma-7.jpg?v=1793138632"
+    }
+   ],
+   "img": "kodo-kids-geometric-puzzle-set",
+   "img_src": "https://cdn.shopify.com/s/files/1/0629/8969/7163/files/geometric-puzzle-set-3rd-party-dusyma.jpg?v=1793138626"
+  },
+  {
+   "type": "cars",
+   "brand": "Kodo Kids",
+   "line": "Wooden Cars (small 3 1/2 in or large 5 1/2 in)",
+   "uses": [
+    "Solid hardwood",
+    "Steel axles",
+    "Natural lacquer"
+   ],
+   "unconfirmed": [
+    "Wood species",
+    "Which “natural lacquer” (not named)"
+   ],
+   "facts": {
+    "main": "yes",
+    "wood": "yes",
+    "color": "unknown"
+   },
+   "unstated": {
+    "color": [
+     "Which “natural lacquer” (not named)"
+    ]
+   },
+   "standards": [
+    "us-toy"
+   ],
+   "age": {
+    "min_months": 18,
+    "text": "18 months+"
+   },
+   "quote": "Made of solid hardwood, steel axles. Natural lacquer.",
+   "note": "One car per order; $19.60 was a 30% sale price (regular $28.00).",
+   "products": [
+    {
+     "name": "Wooden Cars (Small Wooden Car)",
+     "url": "https://kodokids.com/products/wooden-cars",
+     "store": "Kodo Kids",
+     "price": "$19.60",
+     "ships_from": "US",
+     "variant": "Small"
+    }
+   ],
+   "id": "kodo-kids-wooden-cars",
+   "free": [],
+   "outside": [],
+   "contains": [],
+   "read": "2026-11-20",
+   "photos": [
+    {
+     "key": "kodo-kids-wooden-cars",
+     "src": "https://cdn.shopify.com/s/files/1/0629/8969/7163/files/small-wooden-car-3rd-party-dusyma.jpg?v=1793139921"
+    },
+    {
+     "key": "kodo-kids-wooden-cars_2",
+     "src": "https://cdn.shopify.com/s/files/1/0629/8969/7163/files/small-wooden-car-3rd-party-dusyma-2.jpg?v=1793139923"
+    },
+    {
+     "key": "kodo-kids-wooden-cars_3",
+     "src": "https://cdn.shopify.com/s/files/1/0629/8969/7163/files/small-wooden-car-3rd-party-dusyma-3.webp?v=1793139924"
+    }
+   ],
+   "img": "kodo-kids-wooden-cars",
+   "img_src": "https://cdn.shopify.com/s/files/1/0629/8969/7163/files/small-wooden-car-3rd-party-dusyma.jpg?v=1793139921"
+  },
+  {
+   "type": "changing-pads",
+   "brand": "Mushie",
+   "line": "Muslin Changing Pad Liners (3-pack)",
+   "uses": [
+    "100% organic cotton top"
+   ],
+   "unconfirmed": [
+    "Fibres in the “bamboo blend” bottom (blend not named)",
+    "Material of the water repellent layer",
+    "Thread"
+   ],
+   "facts": {
+    "main": "unknown",
+    "finish": "unknown",
+    "color": "unknown",
+    "lead": "yes"
+   },
+   "unstated": {
+    "main": [
+     "Fibres in the “bamboo blend” bottom (blend not named)",
+     "Material of the water repellent layer"
+    ],
+    "finish": [
+     "Material of the water repellent layer"
+    ]
+   },
+   "standards": [
+    "us-toy"
+   ],
+   "quote": "Crafted with 100% organic cotton on the top and a soft bamboo blend on the bottom. A water repellent layer helps prevent messes",
+   "note": "Three liners, 27.5 x 14 in, sized to lie on top of a changing pad.",
+   "products": [
+    {
+     "name": "Changing Pad Liners",
+     "url": "https://mushie.com/products/changing-pad-liner-3-pack",
+     "store": "Mushie",
+     "price": "$19.99",
+     "ships_from": "US",
+     "shipping": "Free shipping for US orders $75+"
+    }
+   ],
+   "id": "mushie-changing-pad-liners",
+   "free": [],
+   "outside": [],
+   "contains": [],
+   "read": "2026-11-20",
+   "photos": [
+    {
+     "key": "mushie-changing-pad-liners",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/ChangingPadLiner3Pack_WhalesCombo_512d6886-310a-49a7-8372-93c8f66f45e5.jpg?v=1787165290"
+    },
+    {
+     "key": "mushie-changing-pad-liners_2",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/ChangingPadLiner3Pack_PinkFlowersCombo_86611985-8c4c-4a8d-910b-11e3f22567d6.jpg?v=1787165290"
+    },
+    {
+     "key": "mushie-changing-pad-liners_3",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/ChangingPadLiner3Pack_BlueCheckCombo_53d1b5db-c49f-4852-9b9e-4ea92dfae94a.jpg?v=1787165290"
+    },
+    {
+     "key": "mushie-changing-pad-liners_4",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/ChangingPadLiner3Pack_BeesCombo.jpg?v=1787165290"
+    },
+    {
+     "key": "mushie-changing-pad-liners_5",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/ChangingPadLiner3Pack_BlueCombo.jpg?v=1787165290"
+    },
+    {
+     "key": "mushie-changing-pad-liners_6",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/medium_b6b0d332-e8c9-4e50-adc6-fec3e8f8bca3.jpg?v=1787160583"
+    },
+    {
+     "key": "mushie-changing-pad-liners_7",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/medium_ecc6e1b4-d4e9-4c62-a64f-ccd2b300e402.jpg?v=1787160583"
+    },
+    {
+     "key": "mushie-changing-pad-liners_8",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/medium_e4687a99-898a-44d4-bf93-11cc620d3f83.jpg?v=1787160583"
+    },
+    {
+     "key": "mushie-changing-pad-liners_9",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/04_bluecheck_june_shoot-54.jpg?v=1791838199"
+    },
+    {
+     "key": "mushie-changing-pad-liners_10",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/medium_de4b77ae-3e86-40f4-81d2-eb7766157d1a.jpg?v=1787160583"
+    }
+   ],
+   "img": "mushie-changing-pad-liners",
+   "img_src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/ChangingPadLiner3Pack_WhalesCombo_512d6886-310a-49a7-8372-93c8f66f45e5.jpg?v=1787165290"
+  },
+  {
+   "type": "bibs",
+   "brand": "Mushie",
+   "line": "Silicone Baby Bib",
+   "uses": [
+    "100% food grade silicone"
+   ],
+   "free": [
+    "BPA",
+    "BPS",
+    "PVC",
+    "Phthalates"
+   ],
+   "unconfirmed": [
+    "Pigments and print inks",
+    "Silicone testing (no LFGB or French test named)"
+   ],
+   "facts": {
+    "main": "yes",
+    "color": "unknown",
+    "silicone": "unknown",
+    "lead": "yes"
+   },
+   "unstated": {
+    "color": [
+     "Pigments and print inks"
+    ],
+    "silicone": [
+     "Silicone testing (no LFGB or French test named)"
+    ]
+   },
+   "standards": [
+    "us-toy"
+   ],
+   "quote": "100% high-quality food grade silicone - Free of BPA, BPS, PVC and phthalates",
+   "note": "Adjustable neck strap and a front pocket; plain and printed versions.",
+   "products": [
+    {
+     "name": "Silicone Baby Bib",
+     "url": "https://mushie.com/products/silicone-baby-bib",
+     "store": "Mushie",
+     "price": "$13.99",
+     "ships_from": "US",
+     "shipping": "Free shipping for US orders $75+"
+    }
+   ],
+   "id": "mushie-silicone-baby-bib",
+   "outside": [],
+   "contains": [],
+   "read": "2026-11-20",
+   "photos": [
+    {
+     "key": "mushie-silicone-baby-bib",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/HanukkahDoves_SiliconeBabyBib.jpg?v=1777912476"
+    },
+    {
+     "key": "mushie-silicone-baby-bib_2",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/blush_silicone_bib_d85d1ecf-55ae-4eb6-ace3-2e9417a6d56e.jpg?v=1767918925"
+    }
+   ],
+   "img": "mushie-silicone-baby-bib",
+   "img_src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/HanukkahDoves_SiliconeBabyBib.jpg?v=1777912476"
+  },
+  {
+   "type": "sheets",
+   "brand": "Mushie",
+   "line": "Stretchy Crib Sheet",
+   "uses": [
+    "Organic cotton knit"
+   ],
+   "unconfirmed": [
+    "Fibre that gives the “gentle stretch” (not named)",
+    "Elastic edges",
+    "Dyes"
+   ],
+   "facts": {
+    "main": "unknown",
+    "parts": "unknown",
+    "color": "unknown",
+    "lead": "yes"
+   },
+   "unstated": {
+    "main": [
+     "Fibre that gives the “gentle stretch” (not named)"
+    ],
+    "parts": [
+     "Elastic edges"
+    ],
+    "color": [
+     "Dyes"
+    ]
+   },
+   "standards": [
+    "us-toy"
+   ],
+   "quote": "Made with organic cotton, our stretchy crib sheet is pre-washed for softness",
+   "note": "Fits a standard 28 x 52 x 5 in crib mattress.",
+   "products": [
+    {
+     "name": "Stretchy Crib Sheet",
+     "url": "https://mushie.com/products/stretchy-crib-sheet",
+     "store": "Mushie",
+     "price": "$19.99",
+     "ships_from": "US",
+     "shipping": "Free shipping for US orders $75+"
+    }
+   ],
+   "id": "mushie-stretchy-crib-sheet",
+   "free": [],
+   "outside": [],
+   "contains": [],
+   "read": "2026-11-20",
+   "photos": [
+    {
+     "key": "mushie-stretchy-crib-sheet",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/White_StretchyCribSheet_Bed.jpg?v=1755635113"
+    },
+    {
+     "key": "mushie-stretchy-crib-sheet_2",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/Stretchy-Crib-Sheets-Standard-Info.jpg?v=1771434082"
+    },
+    {
+     "key": "mushie-stretchy-crib-sheet_3",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/flatlays_may3--33.jpg?v=1771434082"
+    },
+    {
+     "key": "mushie-stretchy-crib-sheet_4",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/flat_lay_may18-10.jpg?v=1771434082"
+    },
+    {
+     "key": "mushie-stretchy-crib-sheet_5",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/Olivia_malmo_shoot.jpg?v=1771617881"
+    },
+    {
+     "key": "mushie-stretchy-crib-sheet_6",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/flatlays_may2--39_fixed.jpg?v=1771434082"
+    },
+    {
+     "key": "mushie-stretchy-crib-sheet_7",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/flatlay31maj-43.jpg?v=1771434082"
+    },
+    {
+     "key": "mushie-stretchy-crib-sheet_8",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/flatlays_may2--41_fixed.jpg?v=1771310888"
+    },
+    {
+     "key": "mushie-stretchy-crib-sheet_9",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/White_StretchyCribSheet_2940fab1-8ad4-4125-b9e4-3b32165c7023.jpg?v=1771310888"
+    },
+    {
+     "key": "mushie-stretchy-crib-sheet_10",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/Rainbows_StretchyCribSheet.jpg?v=1771310888"
+    }
+   ],
+   "img": "mushie-stretchy-crib-sheet",
+   "img_src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/White_StretchyCribSheet_Bed.jpg?v=1755635113"
+  },
+  {
+   "type": "teethers",
+   "brand": "Mushie",
+   "line": "Teething Ring (Nature, Space, Dino, Western or Fairy)",
+   "uses": [
+    "100% food grade silicone"
+   ],
+   "free": [
+    "BPA",
+    "BPS",
+    "PVC",
+    "Phthalates"
+   ],
+   "unconfirmed": [
+    "Pigments",
+    "Silicone testing (no LFGB or French test named)"
+   ],
+   "facts": {
+    "main": "yes",
+    "parts": "yes",
+    "color": "unknown",
+    "silicone": "unknown",
+    "lead": "yes"
+   },
+   "unstated": {
+    "color": [
+     "Pigments"
+    ],
+    "silicone": [
+     "Silicone testing (no LFGB or French test named)"
+    ]
+   },
+   "standards": [
+    "us-toy"
+   ],
+   "age": {
+    "min_months": 3,
+    "text": "3 months+"
+   },
+   "quote": "100% high-quality food grade silicone - Free of BPA, BPS, PVC and phthalates",
+   "note": "One teething ring with three attached shapes.",
+   "products": [
+    {
+     "name": "Teething Ring",
+     "url": "https://mushie.com/products/teething-ring",
+     "store": "Mushie",
+     "price": "$14.99",
+     "ships_from": "US",
+     "shipping": "Free shipping for US orders $75+"
+    }
+   ],
+   "id": "mushie-teething-ring",
+   "outside": [],
+   "contains": [],
+   "read": "2026-11-20",
+   "photos": [
+    {
+     "key": "mushie-teething-ring",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/FairyTeethingRing.jpg?v=1774884466"
+    },
+    {
+     "key": "mushie-teething-ring_2",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/WesternTeethingRing.jpg?v=1774884466"
+    },
+    {
+     "key": "mushie-teething-ring_3",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/Teething-Ring-Fairy-Info.jpg?v=1774884563"
+    },
+    {
+     "key": "mushie-teething-ring_4",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/02_Baby_elianore_jan26-13.jpg?v=1774884563"
+    },
+    {
+     "key": "mushie-teething-ring_5",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/untitled-16.jpg?v=1780345381"
+    },
+    {
+     "key": "mushie-teething-ring_6",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/elionor-60.jpg?v=1790615144"
+    },
+    {
+     "key": "mushie-teething-ring_7",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/maja_4thjuly-81.jpg?v=1776106666"
+    },
+    {
+     "key": "mushie-teething-ring_8",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/CA_shoot-13_a55975c4-6e03-4a67-8f3c-19e94ef69d21.jpg?v=1781022141"
+    },
+    {
+     "key": "mushie-teething-ring_9",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/03_emma_shoot-37.jpg?v=1776106666"
+    },
+    {
+     "key": "mushie-teething-ring_10",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/MOLOxMushieval1-062.jpg?v=1776106641"
+    }
+   ],
+   "img": "mushie-teething-ring",
+   "img_src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/FairyTeethingRing.jpg?v=1774884466"
+  },
+  {
+   "type": "sheets",
+   "brand": "Naturepedic",
+   "line": "Organic Sateen Crib Sheets",
+   "uses": [
+    "100% GOTS-certified organic cotton sateen"
+   ],
+   "free": [
+    "GOTS-prohibited dyes or chemical treatments",
+    "Formaldehyde-based finishes"
+   ],
+   "unconfirmed": [
+    "How the fitted edge is held (not described)",
+    "Thread"
+   ],
+   "facts": {
+    "main": "yes",
+    "color": "yes",
+    "finish": "yes",
+    "organic": "yes",
+    "parts": "unknown"
+   },
+   "unstated": {
+    "parts": [
+     "How the fitted edge is held (not described)"
+    ]
+   },
+   "standards": [
+    "gots"
+   ],
+   "quote": "Materials: 100% GOTS-certified organic cotton",
+   "note": "Standard crib (27.5 x 52 x 6 in) and Stokke Sleepi oval sizes; made in India, the page says. Also “MADE SAFE” and “PETA-Approved Vegan”, the page says.",
+   "products": [
+    {
+     "name": "Organic Sateen Crib Sheets",
+     "url": "https://www.naturepedic.com/products/organic-crib-sheets",
+     "store": "Naturepedic",
+     "price": "$21.75 (sale; regular $29.00)",
+     "ships_from": "US",
+     "shipping": "Free shipping (continental US)"
+    }
+   ],
+   "id": "naturepedic-organic-sateen-crib-sheets",
+   "outside": [],
+   "contains": [],
+   "read": "2026-11-20",
+   "photos": [
+    {
+     "key": "naturepedic-organic-sateen-crib-sheets",
+     "src": "https://cdn.shopify.com/s/files/1/0968/8691/5390/files/NP_PDP_Bedding_OrganicSateenCribSheets_List-1.jpg?v=1783536055"
+    },
+    {
+     "key": "naturepedic-organic-sateen-crib-sheets_2",
+     "src": "https://cdn.shopify.com/s/files/1/0968/8691/5390/files/NP_PDP_Bedding_OrganicSateenCribSheets_List-2.jpg?v=1783536055"
+    },
+    {
+     "key": "naturepedic-organic-sateen-crib-sheets_3",
+     "src": "https://cdn.shopify.com/s/files/1/0968/8691/5390/files/NP_PDP_Bedding_OrganicSateenCribSheets_List-3.jpg?v=1783536054"
+    },
+    {
+     "key": "naturepedic-organic-sateen-crib-sheets_4",
+     "src": "https://cdn.shopify.com/s/files/1/0968/8691/5390/files/NP_PDP_Bedding_OrganicSateenCribSheets_List-4.jpg?v=1783536054"
+    },
+    {
+     "key": "naturepedic-organic-sateen-crib-sheets_5",
+     "src": "https://cdn.shopify.com/s/files/1/0968/8691/5390/files/NP_PDP_Bedding_OrganicSateenCribSheets_List-5.jpg?v=1783536055"
+    },
+    {
+     "key": "naturepedic-organic-sateen-crib-sheets_6",
+     "src": "https://cdn.shopify.com/s/files/1/0968/8691/5390/files/sc50w-white-sheet-crib-fitted-2_sq_1000x1000_1_2ea5b3f9-b4c0-433c-b733-e3412e4deba9.jpg?v=1777478461"
+    },
+    {
+     "key": "naturepedic-organic-sateen-crib-sheets_7",
+     "src": "https://cdn.shopify.com/s/files/1/0968/8691/5390/files/sc50i-ivory-sheet-crib-fitted-2_sq_1000x1000_1_9e73fb4a-4c6d-4570-b3e8-8f73ea16200f.jpg?v=1777478461"
+    }
+   ],
+   "img": "naturepedic-organic-sateen-crib-sheets",
+   "img_src": "https://cdn.shopify.com/s/files/1/0968/8691/5390/files/NP_PDP_Bedding_OrganicSateenCribSheets_List-1.jpg?v=1783536055"
+  },
+  {
+   "type": "mattresses",
+   "brand": "Newton Baby",
+   "line": "Essential Crib Mattress",
+   "uses": [
+    "Viscose liner sewn to the outer cover"
+   ],
+   "outside": [
+    "Outer cover of spacer material (polyester)",
+    "Wovenaire core of “food-grade material”"
+   ],
+   "free": [
+    "Foam",
+    "Glue",
+    "Latex",
+    "Springs",
+    "Vinyl and PVC"
+   ],
+   "unconfirmed": [
+    "Specific polymer of the Wovenaire core",
+    "Zipper",
+    "Thread"
+   ],
+   "facts": {
+    "main": "no",
+    "parts": "unknown",
+    "color": "unknown"
+   },
+   "unstated": {
+    "parts": [
+     "Zipper",
+     "Thread"
+    ]
+   },
+   "quote": "soft, single-layer eyelet cover made from cushiony spacer material (polyester) Viscose liner (sewn to outer cover)",
+   "note": "4 in thick, single-layer washable cover; UL GREENGUARD Gold certified, the page says.",
+   "products": [
+    {
+     "name": "Essential Crib Mattress (Standard)",
+     "url": "https://www.newtonbaby.com/products/essential-crib-mattress",
+     "store": "Newton Baby",
+     "price": "$199.99",
+     "ships_from": "US",
+     "shipping": "Free shipping in the contiguous 48 states"
+    }
+   ],
+   "id": "newton-essential-crib-mattress",
+   "contains": [],
+   "standards": [],
+   "read": "2026-11-20",
+   "photos": [
+    {
+     "key": "newton-essential-crib-mattress",
+     "src": "https://cdn.shopify.com/s/files/1/0792/0323/files/Essential_Mattress_3.jpg?v=1791983588"
+    },
+    {
+     "key": "newton-essential-crib-mattress_2",
+     "src": "https://cdn.shopify.com/s/files/1/0792/0323/files/EssentialMattress3000_2.jpg?v=1775573314"
+    },
+    {
+     "key": "newton-essential-crib-mattress_3",
+     "src": "https://cdn.shopify.com/s/files/1/0792/0323/files/EssentialMattress3000x3000_4.jpg?v=1775573314"
+    },
+    {
+     "key": "newton-essential-crib-mattress_4",
+     "src": "https://cdn.shopify.com/s/files/1/0792/0323/files/EssentialMattress3000x3000_9.jpg?v=1775573314"
+    },
+    {
+     "key": "newton-essential-crib-mattress_5",
+     "src": "https://cdn.shopify.com/s/files/1/0792/0323/files/EssentialMattress3000_3.jpg?v=1775573314"
+    },
+    {
+     "key": "newton-essential-crib-mattress_6",
+     "src": "https://cdn.shopify.com/s/files/1/0792/0323/files/EssentialMattress3000_6.jpg?v=1775573314"
+    },
+    {
+     "key": "newton-essential-crib-mattress_7",
+     "src": "https://cdn.shopify.com/s/files/1/0792/0323/files/EssentialMattress3000x3000_5.jpg?v=1775573314"
+    },
+    {
+     "key": "newton-essential-crib-mattress_8",
+     "src": "https://cdn.shopify.com/s/files/1/0792/0323/files/EssentialMattress3000_7_1.jpg?v=1775573314"
+    },
+    {
+     "key": "newton-essential-crib-mattress_9",
+     "src": "https://cdn.shopify.com/s/files/1/0792/0323/files/EssentialMattress3000x3000_8.jpg?v=1775573314"
+    },
+    {
+     "key": "newton-essential-crib-mattress_10",
+     "src": "https://cdn.shopify.com/s/files/1/0792/0323/files/PDP_Newsweek_Update-Essential_Crib_Mattress.jpg?v=1775764540"
+    }
+   ],
+   "img": "newton-essential-crib-mattress",
+   "img_src": "https://cdn.shopify.com/s/files/1/0792/0323/files/Essential_Mattress_3.jpg?v=1791983588"
+  },
+  {
+   "type": "silks",
+   "brand": "Sarah's Silks",
+   "line": "Northern Coast Silk Cape",
+   "uses": [
+    "100% silk"
+   ],
+   "unconfirmed": [
+    "Which dyes (“non-toxic dyes”, not named)",
+    "Fibre of the elastic neckband",
+    "Thread"
+   ],
+   "facts": {
+    "main": "unknown",
+    "color": "unknown",
+    "parts": "unknown"
+   },
+   "unstated": {
+    "main": [
+     "Fibre of the elastic neckband"
+    ],
+    "color": [
+     "Which dyes (“non-toxic dyes”, not named)"
+    ],
+    "parts": [
+     "Fibre of the elastic neckband"
+    ]
+   },
+   "age": {
+    "min_months": 36,
+    "text": "fit most children ages 3-8"
+   },
+   "quote": "MATERIALS : Made from 100% silk and non-toxic dyes.",
+   "note": "32 in long, neckband stretches from 18 to 28 in. Made in China and hand finished in the USA, the page says.",
+   "products": [
+    {
+     "name": "Sarah's Silks Northern Coast Silk Cape",
+     "url": "https://www.bellalunatoys.com/products/sarahs-silks-northern-coast-silk-capes",
+     "store": "Bella Luna Toys",
+     "price": "$38.40",
+     "ships_from": "US",
+     "shipping": "Free shipping on orders over $99 (contiguous US)"
+    }
+   ],
+   "id": "sarahs-silks-northern-coast-silk-cape",
+   "free": [],
+   "outside": [],
+   "contains": [],
+   "standards": [],
+   "read": "2026-11-20",
+   "photos": [
+    {
+     "key": "sarahs-silks-northern-coast-silk-cape",
+     "src": "https://cdn.shopify.com/s/files/1/1114/2810/files/15_72292726-680f-49fe-9c95-2b18d43a0142.jpg?v=1706549138"
+    },
+    {
+     "key": "sarahs-silks-northern-coast-silk-cape_2",
+     "src": "https://cdn.shopify.com/s/files/1/1114/2810/files/sarahs-silks-northern-coast-playsilks-tidewater-ls.jpg?v=1706549138"
+    },
+    {
+     "key": "sarahs-silks-northern-coast-silk-cape_3",
+     "src": "https://cdn.shopify.com/s/files/1/1114/2810/files/TWCROWN-TWCAPE-TWWAND_MACROWN-MACAPE_SFT-100011_Sarahs_SilksExclusive_Northern_Coast_Colorways_Lifestyle_IdreaminFlowersPhotography_Spring_2024_product_lifestyle_1000x1000_1_198e9337-533b-40b9-8de4-732dfe9fcf97.jpg?v=1710779846"
+    },
+    {
+     "key": "sarahs-silks-northern-coast-silk-cape_4",
+     "src": "https://cdn.shopify.com/s/files/1/1114/2810/files/sarahs-silks-northern-coast-playsilks-rosehip-ls.jpg?v=1710779846"
+    },
+    {
+     "key": "sarahs-silks-northern-coast-silk-cape_5",
+     "src": "https://cdn.shopify.com/s/files/1/1114/2810/files/sarahs-silks-northern-coast-playsilks-cape-moss-ls2.jpg?v=1710779846"
+    },
+    {
+     "key": "sarahs-silks-northern-coast-silk-cape_6",
+     "src": "https://cdn.shopify.com/s/files/1/1114/2810/files/sarahs-silks-northern-coast-playsilks-tidewater-ls2.jpg?v=1710779846"
+    },
+    {
+     "key": "sarahs-silks-northern-coast-silk-cape_7",
+     "src": "https://cdn.shopify.com/s/files/1/1114/2810/files/sarahs-silks-northern-coast-playsilks-cape-moss-ls.jpg?v=1710779846"
+    },
+    {
+     "key": "sarahs-silks-northern-coast-silk-cape_8",
+     "src": "https://cdn.shopify.com/s/files/1/1114/2810/files/TWCROWN-TWCAPE-TWWAND_MACROWN-MACAPE_SFT-100011_Sarahs_SilksExclusive_Northern_Coast_Colorways_Lifestyle_IdreaminFlowersPhotography_Spring_2024_product_lifestyle_1000x1000_10_7a2f60df-8074-47ae-893e-015bfad7a516.jpg?v=1710779846"
+    },
+    {
+     "key": "sarahs-silks-northern-coast-silk-cape_9",
+     "src": "https://cdn.shopify.com/s/files/1/1114/2810/files/TWCROWN-TWCAPE-TWWAND_MACROWN-MACAPE_SFT-100011_Sarahs_SilksExclusive_Northern_Coast_Colorways_Lifestyle_IdreaminFlowersPhotography_Spring_2024_product_lifestyle_1000x1000_2_dd690384-83b2-43b4-a945-5f7a1b94833d.jpg?v=1710779846"
+    },
+    {
+     "key": "sarahs-silks-northern-coast-silk-cape_10",
+     "src": "https://cdn.shopify.com/s/files/1/1114/2810/files/TWCROWN-TWCAPE-TWWAND_MACROWN-MACAPE_SFT-100011_Sarahs_SilksExclusive_Northern_Coast_Colorways_Lifestyle_IdreaminFlowersPhotography_Spring_2024_product_lifestyle_1000x1000_6.jpg?v=1710779846"
+    }
+   ],
+   "img": "sarahs-silks-northern-coast-silk-cape",
+   "img_src": "https://cdn.shopify.com/s/files/1/1114/2810/files/15_72292726-680f-49fe-9c95-2b18d43a0142.jpg?v=1706549138"
+  },
+  {
+   "type": "rattles",
+   "brand": "Smiling Tree Toys",
+   "line": "Cross Wooden Toy Rattle (personalized)",
+   "uses": [
+    "Hardwood",
+    "Organic oil and beeswax finish"
+   ],
+   "unconfirmed": [
+    "Wood species",
+    "Oils in the “homegrown blend of organic oil” (not named)",
+    "Solid or glued wood"
+   ],
+   "facts": {
+    "main": "yes",
+    "color": "yes",
+    "wood": "unknown"
+   },
+   "unstated": {
+    "wood": [
+     "Solid or glued wood"
+    ]
+   },
+   "age": {
+    "min_months": 4,
+    "text": "4 months and older"
+   },
+   "quote": "Finished with our homegrown blend of organic oil and beeswax.",
+   "note": "The name is engraved, the page’s reviews say. Handmade in Minnesota, the page says.",
+   "products": [
+    {
+     "name": "Cross Wooden Toy Rattle",
+     "url": "https://smilingtreetoys.com/products/cross-toy-rattle",
+     "store": "Smiling Tree Toys",
+     "price": "$18.00",
+     "ships_from": "US",
+     "shipping": "Free shipping on $50+"
+    }
+   ],
+   "id": "smiling-tree-toys-cross-rattle",
+   "free": [],
+   "outside": [],
+   "contains": [],
+   "standards": [],
+   "read": "2026-11-20",
+   "photos": [
+    {
+     "key": "smiling-tree-toys-cross-rattle",
+     "src": "https://cdn.shopify.com/s/files/1/0455/9189/products/cross-rattle-wooden-rattles-for-babies-baby-baptism-gift-Smiling-Tree-Toys-4.jpg?v=1664481914"
+    },
+    {
+     "key": "smiling-tree-toys-cross-rattle_2",
+     "src": "https://cdn.shopify.com/s/files/1/0455/9189/products/Personalized-wooden-cross-rattle-baby-toy-baptism-gift-newborn-Smiling-Tree-Toys-4.png?v=1666281924"
+    },
+    {
+     "key": "smiling-tree-toys-cross-rattle_3",
+     "src": "https://cdn.shopify.com/s/files/1/0455/9189/products/Personalized-wooden-cross-rattle-baby-toy-baptism-gift-newborn-Smiling-Tree-Toys-3.png?v=1666281924"
+    },
+    {
+     "key": "smiling-tree-toys-cross-rattle_4",
+     "src": "https://cdn.shopify.com/s/files/1/0455/9189/products/Personalized-wooden-cross-rattle-baby-toy-baptism-gift-newborn-Smiling-Tree-Toys-5.png?v=1666281924"
+    },
+    {
+     "key": "smiling-tree-toys-cross-rattle_5",
+     "src": "https://cdn.shopify.com/s/files/1/0455/9189/products/cross-rattle-wooden-rattles-for-babies-baby-baptism-gift-Smiling-Tree-Toys-2.jpg?v=1666281924"
+    }
+   ],
+   "img": "smiling-tree-toys-cross-rattle",
+   "img_src": "https://cdn.shopify.com/s/files/1/0455/9189/products/cross-rattle-wooden-rattles-for-babies-baby-baptism-gift-Smiling-Tree-Toys-4.jpg?v=1664481914"
   }
  ]
 }
