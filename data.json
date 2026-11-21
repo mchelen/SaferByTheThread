@@ -1,6 +1,6 @@
 {
  "schema": 4,
- "updated": "2026-11-20",
+ "updated": "2026-11-21",
  "ask": [
   "Thread on any sewn item (cotton or polyester).",
   "Wheels and axles on push toys and cars.",
@@ -45335,6 +45335,1039 @@
    ],
    "img": "smiling-tree-toys-cross-rattle",
    "img_src": "https://cdn.shopify.com/s/files/1/0455/9189/products/cross-rattle-wooden-rattles-for-babies-baby-baptism-gift-Smiling-Tree-Toys-4.jpg?v=1664481914"
+  },
+  {
+   "id": "beaba-porcelain-divided-plate-set",
+   "type": "plates",
+   "brand": "Béaba",
+   "line": "Mix & Match Porcelain Divided Plate Set with Silicone Suction Sleeve",
+   "uses": [
+    "Reinforced porcelain plate",
+    "Silicone suction sleeve and removable compartments"
+   ],
+   "free": [
+    "Plastic touching food"
+   ],
+   "unconfirmed": [
+    "LFGB or French Arrêté testing of the silicone",
+    "Colourant in the silicone",
+    "Glaze on the porcelain"
+   ],
+   "outside": [],
+   "facts": {
+    "main": "yes",
+    "color": "unknown",
+    "silicone": "unknown"
+   },
+   "unstated": {
+    "silicone": [
+     "LFGB or French Arrêté testing of the silicone"
+    ],
+    "color": [
+     "Colourant in the silicone",
+     "Glaze on the porcelain"
+    ]
+   },
+   "standards": [],
+   "contains": [],
+   "quote": "Reinforced porcelain with silicone sleeve + silicone compartment.",
+   "products": [
+    {
+     "name": "BEABA Mix & Match Porcelain Divided Plate Set with Silicone Suction Sleeve",
+     "url": "https://beaba.us/products/beaba-mix-match-porcelain-divided-plate-set-with-silicone-suction-sleeve",
+     "store": "Béaba USA",
+     "price": "$29.99",
+     "ships_from": "US",
+     "variant": "Cotton Candy"
+    }
+   ],
+   "read": "2026-11-21",
+   "photos": [
+    {
+     "key": "beaba-porcelain-divided-plate-set",
+     "src": "https://cdn.shopify.com/s/files/1/0673/7756/1739/files/PorcelainDividedPlateSetCottonCandy913653.png?v=1790795579"
+    },
+    {
+     "key": "beaba-porcelain-divided-plate-set_2",
+     "src": "https://cdn.shopify.com/s/files/1/0673/7756/1739/files/PorcelainDividedPlateSetCottonCandy913653_2.png?v=1790795579"
+    },
+    {
+     "key": "beaba-porcelain-divided-plate-set_3",
+     "src": "https://cdn.shopify.com/s/files/1/0673/7756/1739/files/PorcelainDividedPlateSetCottonCandy913653_1.png?v=1790795579"
+    },
+    {
+     "key": "beaba-porcelain-divided-plate-set_4",
+     "src": "https://cdn.shopify.com/s/files/1/0673/7756/1739/files/Porcelainrangeoverview.png?v=1791388605"
+    },
+    {
+     "key": "beaba-porcelain-divided-plate-set_5",
+     "src": "https://cdn.shopify.com/s/files/1/0673/7756/1739/files/Porcelaindividedplate.jpg?v=1795203568"
+    },
+    {
+     "key": "beaba-porcelain-divided-plate-set_6",
+     "src": "https://cdn.shopify.com/s/files/1/0673/7756/1739/files/Porcelaindividedplate3.jpg?v=1795203747"
+    }
+   ],
+   "img": "beaba-porcelain-divided-plate-set",
+   "img_src": "https://cdn.shopify.com/s/files/1/0673/7756/1739/files/PorcelainDividedPlateSetCottonCandy913653.png?v=1790795579"
+  },
+  {
+   "id": "bella-luna-wooden-doll-stroller",
+   "type": "push",
+   "brand": "Bella Luna Toys",
+   "line": "Wooden Doll Stroller (SP4008)",
+   "uses": [
+    "FSC certified wood"
+   ],
+   "free": [],
+   "unconfirmed": [
+    "Wood species",
+    "Whether any panels are plywood or MDF",
+    "Which paint (“Child Safe Non-toxic Paint”, not named)"
+   ],
+   "outside": [],
+   "facts": {
+    "main": "yes",
+    "color": "unknown",
+    "wood": "unknown"
+   },
+   "unstated": {
+    "color": [
+     "Which paint (“Child Safe Non-toxic Paint”, not named)"
+    ],
+    "wood": [
+     "Whether any panels are plywood or MDF"
+    ]
+   },
+   "standards": [
+    "fsc"
+   ],
+   "contains": [],
+   "quote": "MATERIALS : FSC Certified Wood, Child Safe Non-toxic Paint",
+   "note": "A push-along stroller for dolls and soft toys, sized for toddlers. Made in China.",
+   "products": [
+    {
+     "name": "Wooden Doll Stroller",
+     "url": "https://www.bellalunatoys.com/products/wooden-doll-stroller",
+     "store": "Bella Luna Toys",
+     "price": "$89.99",
+     "ships_from": "US",
+     "shipping": "Free shipping on orders $99+"
+    }
+   ],
+   "read": "2026-11-21",
+   "photos": [
+    {
+     "key": "bella-luna-wooden-doll-stroller",
+     "src": "https://cdn.shopify.com/s/files/1/1114/2810/files/speedy-monkey-doll-pram.jpg?v=1783967528"
+    },
+    {
+     "key": "bella-luna-wooden-doll-stroller_2",
+     "src": "https://cdn.shopify.com/s/files/1/1114/2810/files/speedy-monkey-doll-pram-2.jpg?v=1783967528"
+    }
+   ],
+   "img": "bella-luna-wooden-doll-stroller",
+   "img_src": "https://cdn.shopify.com/s/files/1/1114/2810/files/speedy-monkey-doll-pram.jpg?v=1783967528"
+  },
+  {
+   "id": "colored-organics-stainless-steel-suction-bowl",
+   "type": "plates",
+   "brand": "Micasso & Co",
+   "line": "Stainless Steel Suction Bowl For Baby",
+   "uses": [
+    "Stainless steel interior",
+    "Food-grade silicone base (removable)"
+   ],
+   "free": [],
+   "unconfirmed": [
+    "Grade of the stainless steel",
+    "LFGB or French Arrêté testing of the silicone",
+    "Colourant in the silicone"
+   ],
+   "outside": [],
+   "facts": {
+    "main": "yes",
+    "color": "unknown",
+    "silicone": "unknown"
+   },
+   "unstated": {
+    "silicone": [
+     "LFGB or French Arrêté testing of the silicone"
+    ],
+    "color": [
+     "Colourant in the silicone"
+    ]
+   },
+   "standards": [],
+   "contains": [],
+   "quote": "The Micasso & Co suction bowl combines a stainless steel interior with a non-slip food-grade silicone base.",
+   "note": "Sold by Colored Organics; marked final sale.",
+   "products": [
+    {
+     "name": "Micasso & Co Stainless Steel Suction Bowl For Baby",
+     "url": "https://coloredorganics.com/products/stainless-steel-suction-bowl-for-baby",
+     "store": "Colored Organics",
+     "price": "$18",
+     "ships_from": null,
+     "shipping": "Free U.S. shipping on orders over $50",
+     "variant": "Old Rose"
+    }
+   ],
+   "read": "2026-11-21",
+   "photos": [
+    {
+     "key": "colored-organics-stainless-steel-suction-bowl",
+     "src": "https://cdn.shopify.com/s/files/1/1643/4857/files/infant-unisex-stainless-steel-suction-bowl-for-baby.majestic-blue.flat_front.jpg?v=1787166780"
+    },
+    {
+     "key": "colored-organics-stainless-steel-suction-bowl_2",
+     "src": "https://cdn.shopify.com/s/files/1/1643/4857/files/infant-unisex-stainless-steel-suction-bowl-for-baby.majestic-blue.flat_detail.jpg?v=1787166781"
+    },
+    {
+     "key": "colored-organics-stainless-steel-suction-bowl_3",
+     "src": "https://cdn.shopify.com/s/files/1/1643/4857/files/infant-unisex-stainless-steel-suction-bowl-for-baby.old-rose.flat_front.jpg?v=1787166780"
+    },
+    {
+     "key": "colored-organics-stainless-steel-suction-bowl_4",
+     "src": "https://cdn.shopify.com/s/files/1/1643/4857/files/infant-unisex-stainless-steel-suction-bowl-for-baby.creamy-white.flat_front.jpg?v=1787166780"
+    }
+   ],
+   "img": "colored-organics-stainless-steel-suction-bowl",
+   "img_src": "https://cdn.shopify.com/s/files/1/1643/4857/files/infant-unisex-stainless-steel-suction-bowl-for-baby.majestic-blue.flat_front.jpg?v=1787166780"
+  },
+  {
+   "id": "cozypure-organic-cotton-swaddle-blanket",
+   "type": "sleep-sacks",
+   "brand": "CozyPure",
+   "line": "Organic Cotton Swaddle Blanket (set of 2)",
+   "uses": [
+    "Organic cotton brushed flannel"
+   ],
+   "free": [
+    "Synthetic blends"
+   ],
+   "unconfirmed": [
+    "Trim",
+    "Thread",
+    "Dyes of the yellow and green trim"
+   ],
+   "outside": [],
+   "facts": {
+    "main": "yes",
+    "parts": "unknown",
+    "color": "unknown",
+    "organic": "unknown"
+   },
+   "unstated": {
+    "parts": [
+     "Thread"
+    ],
+    "color": [
+     "Dyes of the yellow and green trim"
+    ]
+   },
+   "standards": [],
+   "contains": [],
+   "quote": "There is only ONE ingredient in our Swaddle Blankets, organic cotton!",
+   "note": "Sewn in the maker's Norfolk, Virginia workshop. One blanket with yellow trim and one with green trim per pack.",
+   "products": [
+    {
+     "name": "Organic Cotton Swaddle Blanket – set of 2 per pack",
+     "url": "https://cozypure.com/product/organic-cotton-swaddle-blanket-set-of-2-per-pack/",
+     "store": "CozyPure",
+     "price": "$32.00",
+     "ships_from": "US",
+     "shipping": "Free shipping over $200"
+    }
+   ],
+   "read": "2026-11-21",
+   "photos": [
+    {
+     "key": "cozypure-organic-cotton-swaddle-blanket",
+     "src": "https://cozypure.com/wp-content/uploads/2019/04/baby-swaddle-bear.jpg"
+    }
+   ],
+   "img": "cozypure-organic-cotton-swaddle-blanket",
+   "img_src": "https://cozypure.com/wp-content/uploads/2019/04/baby-swaddle-bear.jpg"
+  },
+  {
+   "id": "disana-waterproof-bed-pad",
+   "type": "protectors",
+   "brand": "Disana",
+   "line": "Waterproof Pad (50 x 70 cm or 70 x 90 cm)",
+   "uses": [
+    "Organic cotton outer on both sides"
+   ],
+   "free": [],
+   "unconfirmed": [
+    "Thread",
+    "Edge binding"
+   ],
+   "outside": [
+    "Polyurethane moisture-proof layer"
+   ],
+   "facts": {
+    "main": "no",
+    "parts": "unknown",
+    "organic": "unknown"
+   },
+   "unstated": {
+    "parts": [
+     "Thread",
+     "Edge binding"
+    ]
+   },
+   "standards": [],
+   "contains": [],
+   "quote": "The outer material on both sides is organic cotton and it has a thin layer of moisture-proof polyurethane in between.",
+   "note": "The store says it has no padding: a flat pad, not a diaper cover. Large size sold out when read.",
+   "products": [
+    {
+     "name": "Disana Waterproof Pad",
+     "url": "https://www.greenmountaindiapers.com/products/disana-waterproof-baby-bed-pad",
+     "store": "Green Mountain Diapers",
+     "price": "$41.95",
+     "ships_from": null,
+     "shipping": "Shipping calculated at checkout",
+     "variant": "Small 50 x 70 cm"
+    }
+   ],
+   "read": "2026-11-21",
+   "photos": [
+    {
+     "key": "disana-waterproof-bed-pad",
+     "src": "https://www.greenmountaindiapers.com/cdn/shop/products/Disana-Waterproof-Pad-Folded-1800.jpg?v=1665928558&width=1024"
+    },
+    {
+     "key": "disana-waterproof-bed-pad_2",
+     "src": "https://www.greenmountaindiapers.com/cdn/shop/products/Disana-Waterproof-Pad-1800.jpg?v=1665928558&width=1800"
+    },
+    {
+     "key": "disana-waterproof-bed-pad_3",
+     "src": "https://www.greenmountaindiapers.com/cdn/shop/products/waterproofpads1112.jpg?v=1673227264&width=1800"
+    },
+    {
+     "key": "disana-waterproof-bed-pad_4",
+     "src": "https://www.greenmountaindiapers.com/cdn/shop/files/dwaterprooftag2000.jpg?v=1760733207&width=1800"
+    },
+    {
+     "key": "disana-waterproof-bed-pad_5",
+     "src": "https://www.greenmountaindiapers.com/cdn/shop/files/disanainstructions-changepad2048.jpg?v=1760733207&width=1800"
+    },
+    {
+     "key": "disana-waterproof-bed-pad_6",
+     "src": "https://www.greenmountaindiapers.com/cdn/shop/files/disanawaterproofpadwashed2048.jpg?v=1760733207&width=1800"
+    }
+   ],
+   "img": "disana-waterproof-bed-pad",
+   "img_src": "https://www.greenmountaindiapers.com/cdn/shop/products/Disana-Waterproof-Pad-Folded-1800.jpg?v=1665928558&width=1024"
+  },
+  {
+   "id": "grovia-biosoaker-pad",
+   "type": "diapers",
+   "brand": "GroVia",
+   "line": "Disposable BioSoaker Pad (50 per pack)",
+   "uses": [
+    "Wood pulp fibre core",
+    "Fecula bio-film waterproof outer"
+   ],
+   "free": [
+    "Fragrance and dye",
+    "Plastic and chlorine"
+   ],
+   "unconfirmed": [
+    "Elastic",
+    "Adhesive of the sticky tabs"
+   ],
+   "outside": [
+    "Ingeo (PLA) spunbond non-woven lining",
+    "SAP gel in the core"
+   ],
+   "facts": {
+    "main": "no",
+    "parts": "unknown"
+   },
+   "unstated": {
+    "parts": [
+     "Elastic",
+     "Adhesive of the sticky tabs"
+    ]
+   },
+   "standards": [
+    "oeko-tex"
+   ],
+   "contains": [],
+   "quote": "Core Sustainably harvested wood pulp fibers, containing a minimal amount of SAP gel.",
+   "note": "A disposable insert laid inside a GroVia shell or another diaper cover. The page says the elastic \"has not been tested for biodegradability & compostability\". Made in China.",
+   "products": [
+    {
+     "name": "GroVia Disposable BioSoaker Pad",
+     "url": "https://www.thenaturalbabyco.com/products/grovia-biosoaker-50-count",
+     "store": "The Natural Baby Co",
+     "price": "$22.95",
+     "ships_from": "US"
+    }
+   ],
+   "read": "2026-11-21",
+   "photos": [
+    {
+     "key": "grovia-biosoaker-pad",
+     "src": "https://www.thenaturalbabyco.com/cdn/shop/products/grovia-biosoaker-2018_1024x1024.jpg?v=1683438022"
+    },
+    {
+     "key": "grovia-biosoaker-pad_2",
+     "src": "https://www.thenaturalbabyco.com/cdn/shop/products/grovia_biosoaker_back.jpg?v=1683438013&width=1800"
+    },
+    {
+     "key": "grovia-biosoaker-pad_3",
+     "src": "https://www.thenaturalbabyco.com/cdn/shop/products/biosoaker_tabs_INST.jpg?v=1683438054&width=1800"
+    },
+    {
+     "key": "grovia-biosoaker-pad_4",
+     "src": "https://www.thenaturalbabyco.com/cdn/shop/products/c590f41e033a2aeb9bc6bd17ef5a7bd8.jpg?v=1683438033&width=1800"
+    }
+   ],
+   "img": "grovia-biosoaker-pad",
+   "img_src": "https://www.thenaturalbabyco.com/cdn/shop/products/grovia-biosoaker-2018_1024x1024.jpg?v=1683438022"
+  },
+  {
+   "id": "little-green-radicals-knitted-booties",
+   "type": "shoes",
+   "brand": "Little Green Radicals",
+   "line": "Organic Knitted Booties (Hazelnut)",
+   "uses": [
+    "Organic Fairtrade knitted cotton outer",
+    "Organic Fairtrade cotton sherpa lining"
+   ],
+   "free": [],
+   "unconfirmed": [
+    "Ties",
+    "Dyes",
+    "Thread"
+   ],
+   "outside": [],
+   "facts": {
+    "main": "yes",
+    "parts": "unknown",
+    "color": "unknown",
+    "organic": "yes"
+   },
+   "unstated": {
+    "parts": [
+     "Ties",
+     "Thread"
+    ],
+    "color": [
+     "Dyes"
+    ]
+   },
+   "standards": [
+    "gots"
+   ],
+   "contains": [],
+   "quote": "Material: 100% Organic & Fairtrade True Knit Cotton & Sherpa",
+   "products": [
+    {
+     "name": "Hazelnut Knitted Booties",
+     "url": "https://littlegreenradicals.com/products/hazelnut-knitted-booties",
+     "store": "Little Green Radicals",
+     "price": "$29.70",
+     "ships_from": null,
+     "shipping": "USA standard delivery $15 or free on orders over $125",
+     "variant": "00-06m"
+    }
+   ],
+   "read": "2026-11-21",
+   "photos": [
+    {
+     "key": "little-green-radicals-knitted-booties",
+     "src": "https://cdn.shopify.com/s/files/1/0258/8147/7195/files/Rust_Knitted_Baby_Booties_with_Bows.png?v=1791882146"
+    }
+   ],
+   "img": "little-green-radicals-knitted-booties",
+   "img_src": "https://cdn.shopify.com/s/files/1/0258/8147/7195/files/Rust_Knitted_Baby_Booties_with_Bows.png?v=1791882146"
+  },
+  {
+   "id": "mushie-bear-robe",
+   "type": "towels",
+   "brand": "Mushie",
+   "line": "Bear Robe (2-4 or 4-6 years)",
+   "uses": [
+    "100% organic cotton"
+   ],
+   "free": [],
+   "unconfirmed": [
+    "Dyes",
+    "Thread"
+   ],
+   "outside": [],
+   "facts": {
+    "main": "yes",
+    "parts": "unknown",
+    "color": "unknown",
+    "lead": "unknown",
+    "organic": "unknown"
+   },
+   "unstated": {
+    "color": [
+     "Dyes"
+    ],
+    "parts": [
+     "Thread"
+    ]
+   },
+   "standards": [],
+   "contains": [],
+   "age": {
+    "min_months": 24,
+    "text": "Size: 2-4 years, 4-6 years"
+   },
+   "quote": "100% organic cotton - Size: 2-4 years, 4-6 years - Third-party tested to meet CPSIA, ASTM, and Prop 65 standards",
+   "products": [
+    {
+     "name": "Bear Robe",
+     "url": "https://mushie.com/products/bear-robe",
+     "store": "Mushie",
+     "price": "$49.99",
+     "ships_from": "US",
+     "variant": "Fog, 2-4 Years"
+    }
+   ],
+   "read": "2026-11-21",
+   "photos": [
+    {
+     "key": "mushie-bear-robe",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/BearRobe_Fog_a6ebae70-1475-4668-8b82-9b96cc6412de.jpg?v=1768951726"
+    },
+    {
+     "key": "mushie-bear-robe_2",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/BearRobe-info.jpg?v=1771368370"
+    },
+    {
+     "key": "mushie-bear-robe_3",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/02_flatlay_june-8.jpg?v=1771368370"
+    },
+    {
+     "key": "mushie-bear-robe_4",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/2026_04_02_9999_128.jpg?v=1777481737"
+    },
+    {
+     "key": "mushie-bear-robe_5",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/flatlays_twins-155.jpg?v=1777481737"
+    },
+    {
+     "key": "mushie-bear-robe_6",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/PhotoJun242025_112432PM_2_1.jpg?v=1771368370"
+    },
+    {
+     "key": "mushie-bear-robe_7",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/2026_04_02_9999_155.jpg?v=1777481737"
+    },
+    {
+     "key": "mushie-bear-robe_8",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/edvin_flatlays-108.jpg?v=1778611814"
+    },
+    {
+     "key": "mushie-bear-robe_9",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/05_june12shoot_val-12.jpg?v=1771368370"
+    },
+    {
+     "key": "mushie-bear-robe_10",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/04_blush_june12shoot_val-44.jpg?v=1775511029"
+    }
+   ],
+   "img": "mushie-bear-robe",
+   "img_src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/BearRobe_Fog_a6ebae70-1475-4668-8b82-9b96cc6412de.jpg?v=1768951726"
+  },
+  {
+   "id": "mushie-organic-cotton-muslin-swaddle",
+   "type": "sleep-sacks",
+   "brand": "Mushie",
+   "line": "Organic Cotton Muslin Swaddle Blanket, 47 x 47 in",
+   "uses": [
+    "100% organic cotton muslin"
+   ],
+   "free": [],
+   "unconfirmed": [
+    "Dyes and print inks",
+    "Thread"
+   ],
+   "outside": [],
+   "facts": {
+    "main": "yes",
+    "parts": "unknown",
+    "color": "unknown",
+    "lead": "unknown",
+    "organic": "unknown"
+   },
+   "unstated": {
+    "color": [
+     "Dyes and print inks"
+    ],
+    "parts": [
+     "Thread"
+    ]
+   },
+   "standards": [],
+   "contains": [],
+   "quote": "Made from 100% organic cotton, our extra soft muslin swaddle is pre-washed for softness",
+   "products": [
+    {
+     "name": "Organic Cotton Muslin Swaddle Blanket",
+     "url": "https://mushie.com/products/muslin-swaddle-blanket-organic-cotton",
+     "store": "Mushie",
+     "price": "$19.99",
+     "ships_from": "US"
+    }
+   ],
+   "read": "2026-11-21",
+   "photos": [
+    {
+     "key": "mushie-organic-cotton-muslin-swaddle",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/Space_Swaddles.jpg?v=1768865854"
+    },
+    {
+     "key": "mushie-organic-cotton-muslin-swaddle_2",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/pastel_blooms_swaddle.jpg?v=1768865854"
+    },
+    {
+     "key": "mushie-organic-cotton-muslin-swaddle_3",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/Muslin-Swaddle-Info.jpg?v=1768865854"
+    },
+    {
+     "key": "mushie-organic-cotton-muslin-swaddle_4",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/products/task_swaadles_sheets_mushie-75-2.jpg?v=1768865854"
+    },
+    {
+     "key": "mushie-organic-cotton-muslin-swaddle_5",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/products/FOG_a7cb50ac-1b3d-4fa5-a034-4a0b97c5a2cc.jpg?v=1771311402"
+    },
+    {
+     "key": "mushie-organic-cotton-muslin-swaddle_6",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/valt_-32.jpg?v=1771541494"
+    },
+    {
+     "key": "mushie-organic-cotton-muslin-swaddle_7",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/05_EBBA_sofiero-31.jpg?v=1776285025"
+    },
+    {
+     "key": "mushie-organic-cotton-muslin-swaddle_8",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/valt_-38.jpg?v=1773770922"
+    },
+    {
+     "key": "mushie-organic-cotton-muslin-swaddle_9",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/products/3kids_5_of_66.jpg?v=1771541494"
+    },
+    {
+     "key": "mushie-organic-cotton-muslin-swaddle_10",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/04_PhotoJun252025_124210AM_2.jpg?v=1776285025"
+    }
+   ],
+   "img": "mushie-organic-cotton-muslin-swaddle",
+   "img_src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/Space_Swaddles.jpg?v=1768865854"
+  },
+  {
+   "id": "naturepedic-breathable-ultra-crib-cover",
+   "type": "protectors",
+   "brand": "Naturepedic",
+   "line": "Breathable Ultra Crib Mattress Cover (fitted cover + flat waterproof pad)",
+   "uses": [
+    "Certified organic cotton quilted cover"
+   ],
+   "free": [
+    "Flame retardants",
+    "Phthalates",
+    "Vinyl/PVC"
+   ],
+   "unconfirmed": [
+    "Elastic",
+    "Thread"
+   ],
+   "outside": [
+    "3D polyester lattice airflow layer",
+    "TPU waterproofing"
+   ],
+   "facts": {
+    "main": "no",
+    "parts": "unknown",
+    "flame": "yes",
+    "organic": "yes"
+   },
+   "unstated": {
+    "parts": [
+     "Elastic",
+     "Thread"
+    ]
+   },
+   "standards": [],
+   "contains": [],
+   "quote": "Materials : Organic cotton, 3D polyester lattice, and TPU waterproofing.",
+   "note": "Made in the USA. Certifications named: \"MADE SAFE\" and \"PETA-Approved Vegan\". $119.25 was a sale price (regular $159.00).",
+   "products": [
+    {
+     "name": "Breathable Ultra Crib Mattress Cover",
+     "url": "https://www.naturepedic.com/products/organic-breathable-ultra-crib-cover",
+     "store": "Naturepedic",
+     "price": "$119.25",
+     "ships_from": "US",
+     "shipping": "Free shipping (Continental U.S.)"
+    }
+   ],
+   "read": "2026-11-21",
+   "photos": [
+    {
+     "key": "naturepedic-breathable-ultra-crib-cover",
+     "src": "https://cdn.shopify.com/s/files/1/0968/8691/5390/files/NP_PDP_BABY_Breathable-Ultra-Crib-Mattress-Cover_List-1.png?v=1784571649"
+    },
+    {
+     "key": "naturepedic-breathable-ultra-crib-cover_2",
+     "src": "https://cdn.shopify.com/s/files/1/0968/8691/5390/files/NP_PDP_BABY_Breathable-Ultra-Crib-Mattress-Cover_List-5.png?v=1784571649"
+    },
+    {
+     "key": "naturepedic-breathable-ultra-crib-cover_3",
+     "src": "https://cdn.shopify.com/s/files/1/0968/8691/5390/files/NP_PDP_BABY_Breathable-Ultra-Crib-Mattress-Cover_List-4.png?v=1784571649"
+    },
+    {
+     "key": "naturepedic-breathable-ultra-crib-cover_4",
+     "src": "https://cdn.shopify.com/s/files/1/0968/8691/5390/files/NP_PDP_BABY_Breathable-Ultra-Crib-Mattress-Cover_List-2.png?v=1784571650"
+    },
+    {
+     "key": "naturepedic-breathable-ultra-crib-cover_5",
+     "src": "https://cdn.shopify.com/s/files/1/0968/8691/5390/files/NP_PDP_BABY_Breathable-Ultra-Crib-Mattress-Cover_List-6.png?v=1784571650"
+    },
+    {
+     "key": "naturepedic-breathable-ultra-crib-cover_6",
+     "src": "https://cdn.shopify.com/s/files/1/0968/8691/5390/files/NP_PDP_BABY_Breathable-Ultra-Crib-Mattress-Cover_List-3.png?v=1784571650"
+    },
+    {
+     "key": "naturepedic-breathable-ultra-crib-cover_7",
+     "src": "https://cdn.shopify.com/s/files/1/0968/8691/5390/files/NP_PDP_BABY_Breathable-Ultra-Crib-Mattress-Cover_List-7.png?v=1784571649"
+    }
+   ],
+   "img": "naturepedic-breathable-ultra-crib-cover",
+   "img_src": "https://cdn.shopify.com/s/files/1/0968/8691/5390/files/NP_PDP_BABY_Breathable-Ultra-Crib-Mattress-Cover_List-1.png?v=1784571649"
+  },
+  {
+   "id": "q-toys-mini-rainmaker",
+   "type": "instruments",
+   "brand": "Q Toys",
+   "line": "Mini Rainmaker",
+   "uses": [
+    "Rubberwood"
+   ],
+   "free": [],
+   "unconfirmed": [
+    "Material of the “food-grade colored beads”",
+    "Colourant on the beads",
+    "Finish on the wood"
+   ],
+   "outside": [],
+   "facts": {
+    "main": "unknown",
+    "wood": "unknown",
+    "color": "unknown",
+    "lead": "unknown"
+   },
+   "unstated": {
+    "main": [
+     "Material of the “food-grade colored beads”"
+    ],
+    "color": [
+     "Colourant on the beads",
+     "Finish on the wood"
+    ]
+   },
+   "standards": [
+    "us-toy"
+   ],
+   "contains": [],
+   "age": {
+    "min_months": 12,
+    "text": "Recommended for ages 1 and up"
+   },
+   "quote": "Material Rubberwood, food-grade colored beads",
+   "note": "Ships from Q Toys' California warehouse.",
+   "products": [
+    {
+     "name": "Q Toys Mini Rainmaker",
+     "url": "https://mytoywagon.com/products/q-toys-mini-rainmaker",
+     "store": "My Toy Wagon",
+     "price": "$42.00",
+     "ships_from": "US",
+     "shipping": "Shipping and tax calculated at checkout"
+    }
+   ],
+   "read": "2026-11-21",
+   "photos": [
+    {
+     "key": "q-toys-mini-rainmaker",
+     "src": "https://cdn.shopify.com/s/files/1/0522/0882/8586/files/minirainmaker2.webp?v=1791224320"
+    },
+    {
+     "key": "q-toys-mini-rainmaker_2",
+     "src": "https://cdn.shopify.com/s/files/1/0522/0882/8586/files/minirainmaker24.webp?v=1791224270"
+    },
+    {
+     "key": "q-toys-mini-rainmaker_3",
+     "src": "https://cdn.shopify.com/s/files/1/0522/0882/8586/files/minirainmaker5.webp?v=1791224254"
+    }
+   ],
+   "img": "q-toys-mini-rainmaker",
+   "img_src": "https://cdn.shopify.com/s/files/1/0522/0882/8586/files/minirainmaker2.webp?v=1791224320"
+  },
+  {
+   "id": "sprout-kids-school-kids-chair",
+   "type": "furniture",
+   "brand": "Sprout Kids",
+   "line": "School Kids Chair (11.5 in seat)",
+   "uses": [
+    "Baltic Birch wood"
+   ],
+   "free": [],
+   "unconfirmed": [
+    "Which “clear UV finish”",
+    "Paint of the two-tone white option",
+    "Whether the Baltic Birch is plywood or solid"
+   ],
+   "outside": [],
+   "facts": {
+    "main": "yes",
+    "color": "unknown",
+    "wood": "unknown"
+   },
+   "unstated": {
+    "color": [
+     "Which “clear UV finish”",
+     "Paint of the two-tone white option"
+    ],
+    "wood": [
+     "Whether the Baltic Birch is plywood or solid"
+    ]
+   },
+   "standards": [],
+   "contains": [],
+   "quote": "The quality Baltic Birch wood is strong, easy to clean, and gives a modern feel to the chairs. The chairs come with fully finished lacquered edges.",
+   "note": "Seat height 11.5 in, which the maker sizes for ages 2 to 6. GREENGUARD Gold certified per the page. Flat-pack; ships from the maker's Utah workshop.",
+   "products": [
+    {
+     "name": "School Kids Chair",
+     "url": "https://sprout-kids.com/products/school-wooden-kids-chairs",
+     "store": "Sprout Kids",
+     "price": "$100.00",
+     "ships_from": "US",
+     "shipping": "Free shipping on orders $100+",
+     "variant": "Finished Birch"
+    }
+   ],
+   "read": "2026-11-21",
+   "photos": [
+    {
+     "key": "sprout-kids-school-kids-chair",
+     "src": "https://cdn.shopify.com/s/files/1/0067/2522/files/school-kids-chair-kids-table-set-montessori-school-finished-birch-829164_1_0b64c5b5-35bc-482f-9f8e-b3f63ef57c3d.jpg?v=1776888371"
+    },
+    {
+     "key": "sprout-kids-school-kids-chair_2",
+     "src": "https://cdn.shopify.com/s/files/1/0067/2522/files/school-kids-chair-kids-table-set-montessori-school-white-birch-two-tone-675131fullback.jpg?v=1776888348"
+    },
+    {
+     "key": "sprout-kids-school-kids-chair_3",
+     "src": "https://cdn.shopify.com/s/files/1/0067/2522/files/school-kids-chair-kids-table-set-montessori-school-747509.jpg?v=1776881950"
+    },
+    {
+     "key": "sprout-kids-school-kids-chair_4",
+     "src": "https://sprout-kids.com/cdn/shop/files/wooden-kids-chairs-kids-table-set-tables-seating-903652.jpg?v=1776888309"
+    },
+    {
+     "key": "sprout-kids-school-kids-chair_5",
+     "src": "https://sprout-kids.com/cdn/shop/files/wooden-kids-chairs-kids-table-set-tables-seating-689317.jpg?v=1776888329"
+    },
+    {
+     "key": "sprout-kids-school-kids-chair_6",
+     "src": "https://sprout-kids.com/cdn/shop/files/school-kids-chair-kids-table-set-montessori-school-622591.jpg?v=1776881929"
+    },
+    {
+     "key": "sprout-kids-school-kids-chair_7",
+     "src": "https://sprout-kids.com/cdn/shop/files/school-kids-chair-kids-table-set-montessori-school-848546.jpg?v=1776881909"
+    }
+   ],
+   "img": "sprout-kids-school-kids-chair",
+   "img_src": "https://cdn.shopify.com/s/files/1/0067/2522/files/school-kids-chair-kids-table-set-montessori-school-finished-birch-829164_1_0b64c5b5-35bc-482f-9f8e-b3f63ef57c3d.jpg?v=1776888371"
+  },
+  {
+   "id": "weesprout-glass-cups",
+   "type": "cups",
+   "brand": "WeeSprout",
+   "line": "3-in-1 Glass Cups for Kids, 8 oz or 12 oz (Set of 4)",
+   "uses": [
+    "Glass jars",
+    "Food-grade silicone straws",
+    "Silicone sleeves"
+   ],
+   "free": [],
+   "unconfirmed": [
+    "Which plastic the lids are",
+    "LFGB or French Arrêté testing of the silicone",
+    "Colourant in the silicone"
+   ],
+   "outside": [
+    "Hard plastic drinking and storage lids"
+   ],
+   "facts": {
+    "main": "yes",
+    "accessory": "no",
+    "color": "unknown",
+    "silicone": "unknown"
+   },
+   "unstated": {
+    "silicone": [
+     "LFGB or French Arrêté testing of the silicone"
+    ],
+    "color": [
+     "Colourant in the silicone"
+    ]
+   },
+   "standards": [],
+   "contains": [],
+   "age": {
+    "min_months": 36,
+    "text": "Recommended Age: 3 years and up (use with adult supervision)"
+   },
+   "quote": "Made from durable glass with airtight, premium hard plastic lids and food-grade silicone straws",
+   "note": "The 8 oz set showed as sold out when read.",
+   "products": [
+    {
+     "name": "3-in-1 Glass Cups for Kids – 8 oz or 12 oz (Set of 4)",
+     "url": "https://www.weesprout.com/products/toddler-glass-cups",
+     "store": "WeeSprout",
+     "price": "$29.98",
+     "ships_from": "US",
+     "variant": "8 oz, Bright Blue/Green/Purple/Yellow"
+    }
+   ],
+   "read": "2026-11-21",
+   "photos": [
+    {
+     "key": "weesprout-glass-cups",
+     "src": "https://cdn.shopify.com/s/files/1/0957/4574/files/61DggE0eBSL.jpg?v=1773105578"
+    },
+    {
+     "key": "weesprout-glass-cups_2",
+     "src": "https://cdn.shopify.com/s/files/1/0957/4574/files/81pjs0rcZ_L.jpg?v=1773105578"
+    },
+    {
+     "key": "weesprout-glass-cups_3",
+     "src": "https://cdn.shopify.com/s/files/1/0957/4574/files/81FArAroIIL.jpg?v=1773105578"
+    },
+    {
+     "key": "weesprout-glass-cups_4",
+     "src": "https://cdn.shopify.com/s/files/1/0957/4574/files/61aCbpcyrqL.jpg?v=1773105578"
+    },
+    {
+     "key": "weesprout-glass-cups_5",
+     "src": "https://cdn.shopify.com/s/files/1/0957/4574/files/81LM6h1mp3L.jpg?v=1773105578"
+    },
+    {
+     "key": "weesprout-glass-cups_6",
+     "src": "https://cdn.shopify.com/s/files/1/0957/4574/files/81Evus24SAL.jpg?v=1773105578"
+    },
+    {
+     "key": "weesprout-glass-cups_7",
+     "src": "https://cdn.shopify.com/s/files/1/0957/4574/files/GDJ-Bright-BGPY-8oz-22.jpg?v=1773105578"
+    }
+   ],
+   "img": "weesprout-glass-cups",
+   "img_src": "https://cdn.shopify.com/s/files/1/0957/4574/files/61DggE0eBSL.jpg?v=1773105578"
+  },
+  {
+   "id": "weesprout-stainless-steel-food-storage-containers",
+   "type": "food-storage",
+   "brand": "WeeSprout",
+   "line": "Stainless Steel Food Storage Containers, Set of 3 (3 oz, 6.10 oz, 12.85 oz)",
+   "uses": [
+    "18/8 stainless steel containers",
+    "Food-grade silicone lids"
+   ],
+   "free": [
+    "BPA, PVC and phthalates"
+   ],
+   "unconfirmed": [
+    "LFGB or French Arrêté testing of the silicone",
+    "Colourant in the silicone lids",
+    "Coating behind the matte colours"
+   ],
+   "outside": [],
+   "facts": {
+    "main": "yes",
+    "color": "unknown",
+    "silicone": "unknown"
+   },
+   "unstated": {
+    "silicone": [
+     "LFGB or French Arrêté testing of the silicone"
+    ],
+    "color": [
+     "Colourant in the silicone lids",
+     "Coating behind the matte colours"
+    ]
+   },
+   "standards": [],
+   "contains": [],
+   "age": {
+    "min_months": 36,
+    "text": "Recommended Age: 3 years and up"
+   },
+   "quote": "Made from ultra-durable 18/8 stainless steel and topped with leakproof food-grade silicone lids",
+   "products": [
+    {
+     "name": "Stainless Steel Food Storage Containers – Set of 3",
+     "url": "https://www.weesprout.com/products/stainless-steel-food-storage-containers-with-silicone-lids",
+     "store": "WeeSprout",
+     "price": "$18.98",
+     "ships_from": "US",
+     "variant": "Matte Blue/Dark Gray/Green"
+    }
+   ],
+   "read": "2026-11-21",
+   "photos": [
+    {
+     "key": "weesprout-stainless-steel-food-storage-containers",
+     "src": "https://cdn.shopify.com/s/files/1/0957/4574/files/SSSC-Pastel-MTBLCL.jpg?v=1776624376"
+    },
+    {
+     "key": "weesprout-stainless-steel-food-storage-containers_2",
+     "src": "https://cdn.shopify.com/s/files/1/0957/4574/files/SSSC_a.jpg?v=1776624376"
+    },
+    {
+     "key": "weesprout-stainless-steel-food-storage-containers_3",
+     "src": "https://cdn.shopify.com/s/files/1/0957/4574/files/SSSC_b.jpg?v=1776624376"
+    },
+    {
+     "key": "weesprout-stainless-steel-food-storage-containers_4",
+     "src": "https://cdn.shopify.com/s/files/1/0957/4574/files/SSSC_c.jpg?v=1776624376"
+    },
+    {
+     "key": "weesprout-stainless-steel-food-storage-containers_5",
+     "src": "https://cdn.shopify.com/s/files/1/0957/4574/files/SSSC_d.jpg?v=1776624376"
+    },
+    {
+     "key": "weesprout-stainless-steel-food-storage-containers_6",
+     "src": "https://cdn.shopify.com/s/files/1/0957/4574/files/SSSC_e.jpg?v=1776624376"
+    },
+    {
+     "key": "weesprout-stainless-steel-food-storage-containers_7",
+     "src": "https://cdn.shopify.com/s/files/1/0957/4574/files/SSSC_f.jpg?v=1776624376"
+    },
+    {
+     "key": "weesprout-stainless-steel-food-storage-containers_8",
+     "src": "https://cdn.shopify.com/s/files/1/0957/4574/files/SSSC_g.jpg?v=1776624376"
+    },
+    {
+     "key": "weesprout-stainless-steel-food-storage-containers_9",
+     "src": "https://cdn.shopify.com/s/files/1/0957/4574/files/SSSC_h.jpg?v=1776624376"
+    }
+   ],
+   "img": "weesprout-stainless-steel-food-storage-containers",
+   "img_src": "https://cdn.shopify.com/s/files/1/0957/4574/files/SSSC-Pastel-MTBLCL.jpg?v=1776624376"
   }
  ]
 }

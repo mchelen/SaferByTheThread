@@ -211,7 +211,8 @@
    "type": "plates",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "colored-organics-stainless-steel-suction-bowl"
   },
   {
    "url": "https://coloredorganics.com/products/silicone-baby-led-weaning-spoons-copy",
@@ -2835,7 +2836,8 @@
    "type": "plates",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "beaba-porcelain-divided-plate-set"
   },
   {
    "url": "https://beaba.us/products/beaba-3-piece-porcelain-meal-set-with-silicone-suction-sleeves",
@@ -2901,7 +2903,8 @@
    "type": "food-storage",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "skipped",
+   "reason": "Duplicate: size variant of listed beaba-glass-baby-food-jars"
   },
   {
    "url": "https://beaba.us/products/microwave-safe-stainless-steel-divided-plate",
@@ -5708,7 +5711,8 @@
    "type": "shoes",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "little-green-radicals-knitted-booties"
   },
   {
    "url": "https://littlegreenradicals.com/products/turquoise-rainbows-long-sleeve-t-shirt",
@@ -7870,7 +7874,8 @@
    "type": "protectors",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "naturepedic-breathable-ultra-crib-cover"
   },
   {
    "url": "https://www.naturepedic.com/products/wooly-organic-mattress-topper",
@@ -9796,7 +9801,8 @@
    "type": "shoes",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "skipped",
+   "reason": "Product page redirects to the store home page"
   },
   {
    "url": "https://robeez.com/products/bear-hugs-soft-soles-tan-rbn20577",
@@ -11316,7 +11322,8 @@
    "type": "floor-beds",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "skipped",
+   "reason": "Twin to king elevated platform bed, not a child-size bed"
   },
   {
    "url": "https://radchildrensfurniture.com/products/the-sierra-house-bed",
@@ -11559,7 +11566,8 @@
    "type": "rain-boots",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "skipped",
+   "reason": "Rain boots already have 5 conventional listings (man-made upper and outsole, faux fur lining)"
   },
   {
    "url": "https://www.hunterboots.com/products/womens-wales-waterproof-rain-booties-in-medium-green-w-wales-mgn01",
@@ -20300,7 +20308,8 @@
    "type": "plates",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "skipped",
+   "reason": "Loose-part sorting bowls (age 3+), no matching product type; page names only \"wooden\""
   },
   {
    "url": "https://kodokids.com/products/wooden-stacking-cones",
@@ -21416,7 +21425,8 @@
    "type": "towels",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "mushie-bear-robe"
   },
   {
    "url": "https://mushie.com/products/silicone-placemat-bluey",
@@ -22291,7 +22301,8 @@
    "type": "sleep-sacks",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "mushie-organic-cotton-muslin-swaddle"
   },
   {
    "url": "https://mushie.com/products/mini-muslin-crib-sheet",
@@ -22696,7 +22707,8 @@
    "type": "cups",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "weesprout-glass-cups"
   },
   {
    "url": "https://www.weesprout.com/products/glass-baby-food-jars-with-silicone-lids",
@@ -22914,7 +22926,8 @@
    "type": "food-storage",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "weesprout-stainless-steel-food-storage-containers"
   },
   {
    "url": "https://www.weesprout.com/products/kids-stainless-steel-bento-box",
@@ -24171,7 +24184,8 @@
    "type": "protectors",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "disana-waterproof-bed-pad"
   },
   {
    "url": "https://www.greenmountaindiapers.com/products/lanacare-merino-wool-night",
@@ -27698,7 +27712,8 @@
    "type": "furniture",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "sprout-kids-school-kids-chair"
   },
   {
    "url": "https://sprout-kids.com/products/copy-of-wooden-kids-stools",
@@ -33621,7 +33636,8 @@
    "type": "pop-molds",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "skipped",
+   "reason": "Pop molds already have 6 conventional listings (Silicone, BPA-free nylon)"
   },
   {
    "url": "https://www.tovolo.com/products/zoo-crew-pop-molds",
@@ -34417,7 +34433,8 @@
    "type": "pop-molds",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "skipped",
+   "reason": "Pop molds already have 6 conventional listings; page names no material"
   },
   {
    "url": "https://www.zokuhome.com/products/jumbo-ice-trays-red",
@@ -36204,7 +36221,8 @@
    "type": "sleep-sacks",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "cozypure-organic-cotton-swaddle-blanket"
   },
   {
    "url": "https://cozypure.com/product/organic-cotton-sateen-crib-sheet/",
@@ -45965,7 +45983,8 @@
    "type": "strollers",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "bella-luna-wooden-doll-stroller"
   },
   {
    "url": "https://www.bellalunatoys.com/products/wooden-rainbow-abacus",
@@ -57707,7 +57726,8 @@
    "type": "art",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "skipped",
+   "reason": "Page names no material"
   },
   {
    "url": "https://enlightenedbaby.com/products/coco-village-set-of-6-oversized-stacking-boxes-the-buildings",
@@ -60770,7 +60790,8 @@
    "type": "instruments",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "skipped",
+   "reason": "Product page redirects to the store home page"
   },
   {
    "url": "https://camdenrose.com/products/i-like-it-when-me-gusta-cuando-by-mary-murphy",
@@ -78633,7 +78654,8 @@
    "type": "rain-boots",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "skipped",
+   "reason": "Only big-kid sizes (US 1-4) offered on the page"
   },
   {
    "url": "https://pedterra.com/products/astral-loyak-ez-ht",
@@ -99346,7 +99368,8 @@
    "type": "instruments",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "q-toys-mini-rainmaker"
   },
   {
    "url": "https://mytoywagon.com/products/wooden-space-puzzle",
@@ -104569,7 +104592,8 @@
    "type": "instruments",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "skipped",
+   "reason": "Duplicate: animal variant of listed djeco-animambo-wooden-maraca"
   },
   {
    "url": "https://www.thenaturalbabyco.com/products/lou-lou-company-zippered-footie-hazel",
@@ -110945,7 +110969,8 @@
    "type": "diapers",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "grovia-biosoaker-pad"
   },
   {
    "url": "https://www.thenaturalbabyco.com/products/10-little-rabbits-board-book",
@@ -185094,7 +185119,8 @@
    "type": "plates",
    "source": "watchlist",
    "first_seen": "2026-11-07",
-   "status": "new"
+   "status": "listed",
+   "listing": "colored-organics-stainless-steel-suction-bowl"
   },
   {
    "url": "https://coloredorganics.com/products/childrens-stainless-steel-cutlery-set",
