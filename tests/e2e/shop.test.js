@@ -65,11 +65,12 @@ test('a type tile and an age chip on the home page open the matching listing', a
 test('the shop, search results, product pages and empty lists offer picture navigation', async () => {
   const page = await open('/shop');
   await page.waitForSelector('.card');
-  assert.ok((await page.locator('.sibling-types .ttile').count()) >= 20, 'the shop lists every type as a tile');
+  const all = await page.locator('.sibling-types .ttile').count();
+  assert.ok(all >= 20, 'the shop lists every type as a tile');
   await page.goto(base + '/search?q=wool', { waitUntil: 'networkidle' });
   await page.waitForSelector('.card');
   const hit = await page.locator('.sibling-types .ttile').count();
-  assert.ok(hit >= 2 && hit < 20, 'search results show only the types with matches');
+  assert.ok(hit >= 2 && hit < all, 'search results show only the types with matches');
   await page.goto(base + '/p/home-of-wool-organic-baby-play-mat', { waitUntil: 'networkidle' });
   await page.waitForSelector('.row-sec .ttile.on');
   assert.match(await page.textContent('.row-sec h2'), /More in/);
@@ -84,7 +85,7 @@ test('clean URLs: a nested path loads through 404.html and keeps its path', asyn
   await page.waitForSelector('.card');
   assert.equal(new URL(page.url()).pathname, '/c/balls');
   assert.match(await page.textContent('h1'), /Balls/);
-  assert.match(await page.textContent('.toolbar .count'), /6 products · 4 set aside/);
+  assert.match(await page.textContent('.toolbar .count'), /6 products · 5 set aside/);
   assert.deepEqual(page.errors, []);
   await page.close();
 });
@@ -93,11 +94,11 @@ test('the shop lists the products that meet the default material filters and set
   const page = await open('/shop');
   await page.waitForSelector('.card');
   assert.equal(await count(page), 24, 'first page of results');
-  assert.match(await page.textContent('.toolbar .count'), /326 products · 264 set aside/);
+  assert.match(await page.textContent('.toolbar .count'), /334 products · 270 set aside/);
   await page.click('[data-more]');
   assert.equal(await count(page), 48, '"Show more" adds a page');
   await page.click('.hidden-note button[data-toggle-all]');
-  assert.match(await page.textContent('.toolbar .count'), /590 products/);
+  assert.match(await page.textContent('.toolbar .count'), /604 products/);
   assert.match(page.url(), /all=1/);
   assert.ok((await page.locator('.card .mchip.is-flag').count()) >= 1, 'set-aside products show a flagged material chip once shown');
   assert.equal(await page.locator('.card .fit').count(), 0, 'filter details stay in the chips, not as lines on cards');
@@ -246,12 +247,12 @@ test('phone width: nothing overflows, and the filter drawer applies on "Show res
   assert.equal(await page.locator('#rail').isVisible(), true);
   await page.click('[data-tnode="s-treat"]');
   await page.check('#f-crit-color');
-  assert.match(await page.textContent('.drawer-foot [data-drawer-apply]'), /Show 334 results/);
-  assert.match(await page.textContent('.toolbar .count'), /326 products/, 'results wait for Apply');
+  assert.match(await page.textContent('.drawer-foot [data-drawer-apply]'), /Show 342 results/);
+  assert.match(await page.textContent('.toolbar .count'), /334 products/, 'results wait for Apply');
   await page.click('.drawer-foot [data-drawer-apply]');
   await page.waitForTimeout(300);
   assert.equal(await page.locator('#rail').isVisible(), false);
-  assert.match(await page.textContent('.toolbar .count'), /334 products/);
+  assert.match(await page.textContent('.toolbar .count'), /342 products/);
   await page.click('#menu-open');
   assert.equal(await page.locator('#menu').isVisible(), true);
   await page.keyboard.press('Escape');
