@@ -21277,7 +21277,8 @@
    "type": "balls",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "mushie-suction-spinner-ball"
   },
   {
    "url": "https://mushie.com/products/whale-bath-stackers",
@@ -22108,7 +22109,8 @@
    "type": "accessories",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "mushie-ribbed-baby-bonnet"
   },
   {
    "url": "https://mushie.com/products/ribbed-baby-beanie",
@@ -33676,7 +33678,8 @@
    "type": "pop-molds",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "tovolo-penguin-pop-molds"
   },
   {
    "url": "https://www.tovolo.com/products/pop-molds-copy-6",
@@ -33982,7 +33985,8 @@
    "type": "ice-trays",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "tovolo-mini-ice-mold"
   },
   {
    "url": "https://www.tovolo.com/products/pan-scrapers",
@@ -34979,7 +34983,8 @@
    "type": "pop-molds",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "skipped",
+   "reason": "page names no material for this product (the silicone line belongs to a Slush & Shake template block)"
   },
   {
    "url": "https://www.zokuhome.com/products/shark-ice-pop-mold",
@@ -39717,7 +39722,8 @@
    "type": "toddler-beds",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "skipped",
+   "reason": "page names no material (only \"soft foam\" and \"fabric base\")"
   },
   {
    "url": "https://www.deltachildren.com/products/bluey-foam-frame-toddler-bed",
@@ -73924,7 +73930,8 @@
    "type": "floor-beds",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "home-of-wool-montessori-bed-with-boards"
   },
   {
    "url": "https://homeofwool.com/shop/moses-basket-mattress/",
@@ -78952,7 +78959,8 @@
    "type": "rain-boots",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "reima-ankka-rainboots"
   },
   {
    "url": "https://pedterra.com/products/igor-womens-lona-5-1-sneakers",
@@ -88597,7 +88605,8 @@
    "type": "pretend",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "tiny-land-organic-dairy-pack"
   },
   {
    "url": "https://thebabypenguin.com/products/tiny-land-r-7-in-1-morandi-pikler-triangle-set",
@@ -93206,7 +93215,8 @@
    "type": "balls",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "plantoys-punch-and-drop-ball-bin"
   },
   {
    "url": "https://thebabypenguin.com/products/marina-blocks",
@@ -137495,7 +137505,8 @@
    "type": "books",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "skipped",
+   "reason": "page names no material"
   },
   {
    "url": "https://easytot.com/products/youth-straight-leg-bamboo-pajamas-vintage-santa",

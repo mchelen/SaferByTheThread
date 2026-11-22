@@ -1,6 +1,6 @@
 {
  "schema": 4,
- "updated": "2026-11-21",
+ "updated": "2026-11-22",
  "ask": [
   "Thread on any sewn item (cotton or polyester).",
   "Wheels and axles on push toys and cars.",
@@ -46368,6 +46368,1060 @@
    ],
    "img": "weesprout-stainless-steel-food-storage-containers",
    "img_src": "https://cdn.shopify.com/s/files/1/0957/4574/files/SSSC-Pastel-MTBLCL.jpg?v=1776624376"
+  },
+  {
+   "id": "baby-ktan-original-cotton-carrier",
+   "type": "carriers",
+   "brand": "Baby K'tan",
+   "line": "Original Cotton Baby Carrier (double-loop wrap)",
+   "uses": [
+    "100% cotton"
+   ],
+   "free": [
+    "Buckles, rings, snaps and zippers"
+   ],
+   "unconfirmed": [
+    "Seam thread",
+    "Dyes",
+    "Fabric of the matching carry bag and sash"
+   ],
+   "outside": [],
+   "facts": {
+    "main": "yes",
+    "parts": "unknown",
+    "color": "unknown",
+    "accessory": "unknown"
+   },
+   "unstated": {
+    "parts": [
+     "Seam thread"
+    ],
+    "color": [
+     "Dyes"
+    ],
+    "accessory": [
+     "Fabric of the matching carry bag and sash"
+    ]
+   },
+   "standards": [],
+   "contains": [],
+   "quote": "100% all-natural cotton baby carrier",
+   "products": [
+    {
+     "name": "Baby K'Tan Baby Carrier - Original Cotton",
+     "url": "https://pacifierkids.com/products/babyktanbabycarrier-originalcotton",
+     "store": "Pacifier",
+     "price": "$59.95",
+     "ships_from": "US",
+     "shipping": "$5.95 flat rate shipping",
+     "variant": "Basic Black / XS"
+    }
+   ],
+   "read": "2026-11-22",
+   "photos": [
+    {
+     "key": "baby-ktan-original-cotton-carrier",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/products/baby-k-tan-slings-baby-k-tan-original-baby-carrier-black-17645556924584.jpg?v=1619540440"
+    },
+    {
+     "key": "baby-ktan-original-cotton-carrier_2",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/products/baby-k-tan-slings-black-xxs-baby-k-tan-original-baby-carrier-black-21563183726760.jpg?v=1619540504"
+    },
+    {
+     "key": "baby-ktan-original-cotton-carrier_3",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/products/baby-k-tan-slings-baby-k-tan-original-baby-carrier-black-21571980165288.jpg?v=1619540517"
+    },
+    {
+     "key": "baby-ktan-original-cotton-carrier_4",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/products/baby-k-tan-slings-baby-k-tan-original-baby-carrier-black-21571980099752.jpg?v=1619540569"
+    },
+    {
+     "key": "baby-ktan-original-cotton-carrier_5",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/products/baby-k-tan-slings-baby-k-tan-original-baby-carrier-black-21571980132520.jpg?v=1619540589"
+    },
+    {
+     "key": "baby-ktan-original-cotton-carrier_6",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/products/baby-k-tan-slings-baby-k-tan-original-baby-carrier-black-17645556629672.jpg?v=1619540647"
+    },
+    {
+     "key": "baby-ktan-original-cotton-carrier_7",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/products/baby-k-tan-slings-baby-k-tan-original-baby-carrier-heather-grey-17646195179688.jpg?v=1619540729"
+    }
+   ],
+   "img": "baby-ktan-original-cotton-carrier",
+   "img_src": "https://cdn.shopify.com/s/files/1/0281/8056/products/baby-k-tan-slings-baby-k-tan-original-baby-carrier-black-17645556924584.jpg?v=1619540440"
+  },
+  {
+   "id": "ecokids-eco-dough-4-pack",
+   "type": "art",
+   "brand": "eco-kids",
+   "line": "eco-dough Natural Play Dough, 4 Pack",
+   "uses": [
+    "Non-GMO flour, salt, soy oil, water, sodium borate, citric acid and potassium sorbate",
+    "Organic rosemary oil and vitamin E oil",
+    "Soy-based organic and inorganic pigments"
+   ],
+   "free": [],
+   "unconfirmed": [
+    "Which pigment makes each colour",
+    "Material of the tubs"
+   ],
+   "outside": [],
+   "facts": {
+    "main": "yes",
+    "color": "unknown",
+    "accessory": "unknown"
+   },
+   "unstated": {
+    "color": [
+     "Which pigment makes each colour"
+    ],
+    "accessory": [
+     "Material of the tubs"
+    ]
+   },
+   "standards": [],
+   "contains": [],
+   "age": {
+    "min_months": 36,
+    "text": "Not for children under 3 years"
+   },
+   "quote": "MATERIALS : Non-GMO flour, salt, sodium borate, soy oil, organic rosemary oil, Vitamin E oil, water, citric acid, potassium sorbate, FDA-approved soy based organic and inorganic pigments",
+   "products": [
+    {
+     "name": "eco-dough - Natural Play Dough - 4 Pack",
+     "url": "https://www.bellalunatoys.com/products/ecokids-eco-kids-dough",
+     "store": "Bella Luna Toys",
+     "price": "$24.99",
+     "ships_from": "US"
+    }
+   ],
+   "read": "2026-11-22",
+   "photos": [
+    {
+     "key": "ecokids-eco-dough-4-pack",
+     "src": "https://cdn.shopify.com/s/files/1/1114/2810/files/EU_Eco-Dough-tube-w1-sq_1.webp?v=1782906867"
+    },
+    {
+     "key": "ecokids-eco-dough-4-pack_2",
+     "src": "https://cdn.shopify.com/s/files/1/1114/2810/products/eco-kids-natural-play-dough-toddler-blue.jpg?v=1663825146"
+    },
+    {
+     "key": "ecokids-eco-dough-4-pack_3",
+     "src": "https://cdn.shopify.com/s/files/1/1114/2810/files/EU_Eco-Dough-tube-w2-sq_1.webp?v=1782906882"
+    }
+   ],
+   "img": "ecokids-eco-dough-4-pack",
+   "img_src": "https://cdn.shopify.com/s/files/1/1114/2810/files/EU_Eco-Dough-tube-w1-sq_1.webp?v=1782906867"
+  },
+  {
+   "id": "home-of-wool-montessori-bed-with-boards",
+   "type": "toddler-beds",
+   "brand": "Home of Wool",
+   "line": "Wool Montessori Bed with Boards",
+   "uses": [
+    "Wool",
+    "Ticking: 100% organic cotton, 100% linen or 100% virgin wool",
+    "Hand-tied linen thread"
+   ],
+   "free": [
+    "Glues, flame retardants and synthetics"
+   ],
+   "unconfirmed": [
+    "Shrink-proofing on the wool",
+    "Dyes in the ticking"
+   ],
+   "outside": [],
+   "facts": {
+    "main": "yes",
+    "flame": "yes",
+    "wool": "unknown",
+    "color": "unknown"
+   },
+   "unstated": {
+    "wool": [
+     "Shrink-proofing on the wool"
+    ],
+    "color": [
+     "Dyes in the ticking"
+    ]
+   },
+   "standards": [],
+   "contains": [],
+   "quote": "This Montessori floor bed is carefully crafted with pure wool and organic fabrics to offer your little one the most natural and nurturing place to rest.",
+   "products": [
+    {
+     "name": "Wool Montessori Bed with Boards",
+     "url": "https://homeofwool.com/shop/montessori-bed/",
+     "store": "Home of Wool",
+     "price": "from $1,012.00",
+     "ships_from": null,
+     "shipping": "Free worldwide shipping"
+    }
+   ],
+   "read": "2026-11-22",
+   "photos": [
+    {
+     "key": "home-of-wool-montessori-bed-with-boards",
+     "src": "https://homeofwool.com/wp-content/uploads/2025/09/home-of-wool-wool-montessori-bed-with-boards-22.jpg"
+    },
+    {
+     "key": "home-of-wool-montessori-bed-with-boards_2",
+     "src": "https://homeofwool.com/wp-content/uploads/2025/09/home-of-wool-wool-montessori-bed-with-boards-6-mila.jpg"
+    }
+   ],
+   "img": "home-of-wool-montessori-bed-with-boards",
+   "img_src": "https://homeofwool.com/wp-content/uploads/2025/09/home-of-wool-wool-montessori-bed-with-boards-22.jpg"
+  },
+  {
+   "id": "itzy-ritzy-bitzy-pal-natural-rubber-pacifier",
+   "type": "pacifiers",
+   "brand": "Itzy Ritzy",
+   "line": "Bitzy Pal Natural Rubber Pacifier & Plush Lovey (Cow)",
+   "uses": [
+    "Natural rubber pacifier (Itzy Soother)",
+    "Cotton plush"
+   ],
+   "free": [
+    "BPA and PVC in the pacifier"
+   ],
+   "unconfirmed": [
+    "Fibre of the minky fabric",
+    "Fibre of the sherpa material",
+    "Stuffing of the lovey",
+    "Plasticisers in the natural rubber",
+    "Dyes"
+   ],
+   "outside": [],
+   "facts": {
+    "main": "unknown",
+    "rubber": "unknown",
+    "color": "unknown"
+   },
+   "unstated": {
+    "main": [
+     "Fibre of the minky fabric",
+     "Fibre of the sherpa material",
+     "Stuffing of the lovey"
+    ],
+    "rubber": [
+     "Plasticisers in the natural rubber"
+    ],
+    "color": [
+     "Dyes"
+    ]
+   },
+   "standards": [],
+   "contains": [
+    "latex"
+   ],
+   "quote": "Plush cow lovey with attached natural rubber pacifier keeps baby calm, cozy, and comforted anytime",
+   "products": [
+    {
+     "name": "Bitzy Pal Natural Rubber Pacifier & Plush Lovey - Cow by Itzy Ritzy",
+     "url": "https://pacifierkids.com/products/bitzy-pal-natural-rubber-pacifier-plush-lovey-cow-by-itzy-ritzy",
+     "store": "Pacifier",
+     "price": "$13.99",
+     "ships_from": "US",
+     "shipping": "$5.95 flat rate shipping"
+    }
+   ],
+   "read": "2026-11-22",
+   "photos": [
+    {
+     "key": "itzy-ritzy-bitzy-pal-natural-rubber-pacifier",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/product_photo_-_white_background_-_2026-03-18T210537.773.jpg?v=1773839179"
+    },
+    {
+     "key": "itzy-ritzy-bitzy-pal-natural-rubber-pacifier_2",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/f135ebcd632f857bdd92da5bf9c9809a06e73c3ca2fbd55343573d830ef29df8.jpg?v=1773864905"
+    },
+    {
+     "key": "itzy-ritzy-bitzy-pal-natural-rubber-pacifier_3",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/5b9509105303ac1e5eb0be34df0e98e9c466c000bba30849afce8caae7c8e3f2.jpg?v=1773839217"
+    },
+    {
+     "key": "itzy-ritzy-bitzy-pal-natural-rubber-pacifier_4",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/f0b4d6bc6793376ffcc2b66214a93474eb8e6fb1fb89d9df986205db363bb6e4.jpg?v=1773839222"
+    }
+   ],
+   "img": "itzy-ritzy-bitzy-pal-natural-rubber-pacifier",
+   "img_src": "https://cdn.shopify.com/s/files/1/0281/8056/files/product_photo_-_white_background_-_2026-03-18T210537.773.jpg?v=1773839179"
+  },
+  {
+   "id": "moby-wrap-evolution-bamboo",
+   "type": "carriers",
+   "brand": "Moby",
+   "line": "Wrap Evolution (Bamboo)",
+   "uses": [
+    "Viscose (70%)",
+    "Cotton knit (30%)"
+   ],
+   "free": [],
+   "unconfirmed": [
+    "Source fibre of the viscose",
+    "Dyes"
+   ],
+   "outside": [],
+   "facts": {
+    "main": "yes",
+    "color": "unknown"
+   },
+   "unstated": {
+    "color": [
+     "Dyes"
+    ]
+   },
+   "standards": [],
+   "contains": [],
+   "quote": "70% Viscose / 30% Cotton Knit",
+   "products": [
+    {
+     "name": "Moby Wrap Evolution (Bamboo)",
+     "url": "https://pacifierkids.com/products/mobywrapbamboo-charcoal",
+     "store": "Pacifier",
+     "price": "$49.99",
+     "ships_from": "US",
+     "shipping": "$5.95 flat rate shipping",
+     "variant": "Charcoal"
+    }
+   ],
+   "read": "2026-11-22",
+   "photos": [
+    {
+     "key": "moby-wrap-evolution-bamboo",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/products/ScreenShot2020-07-29at4.38.32PM.png?v=1661896806"
+    },
+    {
+     "key": "moby-wrap-evolution-bamboo_2",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/products/Evo-Black-7729.jpg?v=1661896785"
+    },
+    {
+     "key": "moby-wrap-evolution-bamboo_3",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/products/Evolution_Black_Back_2.jpg?v=1661896785"
+    },
+    {
+     "key": "moby-wrap-evolution-bamboo_4",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/products/Evolution_Black_Front_1.jpg?v=1661896785"
+    },
+    {
+     "key": "moby-wrap-evolution-bamboo_5",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/products/Evolution_Black_Side_2.jpg?v=1661896785"
+    },
+    {
+     "key": "moby-wrap-evolution-bamboo_6",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/products/Evolution_Black_Side_3.jpg?v=1661896785"
+    },
+    {
+     "key": "moby-wrap-evolution-bamboo_7",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/products/Caramel_Back_1.jpg?v=1661896785"
+    },
+    {
+     "key": "moby-wrap-evolution-bamboo_8",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/products/Caramel_Back_2.jpg?v=1661896785"
+    },
+    {
+     "key": "moby-wrap-evolution-bamboo_9",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/products/Caramel_Front_1.jpg?v=1661896785"
+    },
+    {
+     "key": "moby-wrap-evolution-bamboo_10",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/products/Caramel-72-7305.jpg?v=1661896785"
+    }
+   ],
+   "img": "moby-wrap-evolution-bamboo",
+   "img_src": "https://cdn.shopify.com/s/files/1/0281/8056/products/ScreenShot2020-07-29at4.38.32PM.png?v=1661896806"
+  },
+  {
+   "id": "mushie-ribbed-baby-bonnet",
+   "type": "accessories",
+   "brand": "Mushie",
+   "line": "Ribbed Baby Bonnet",
+   "uses": [
+    "Organic cotton (95%)"
+   ],
+   "free": [],
+   "unconfirmed": [
+    "Organic certification",
+    "Dyes"
+   ],
+   "outside": [
+    "Elastane (5%)"
+   ],
+   "facts": {
+    "main": "no",
+    "color": "unknown"
+   },
+   "unstated": {
+    "color": [
+     "Dyes"
+    ]
+   },
+   "standards": [
+    "us-toy"
+   ],
+   "contains": [],
+   "age": {
+    "min_months": 0,
+    "text": "Recommended ages: 0-3 Months"
+   },
+   "quote": "Made with 95% organic cotton and 5% elastane",
+   "products": [
+    {
+     "name": "Ribbed Baby Bonnet",
+     "url": "https://mushie.com/products/ribbed-baby-bonnet",
+     "store": "Mushie",
+     "price": "$14.99",
+     "ships_from": "US",
+     "shipping": "Free shipping for US orders $75+",
+     "variant": "Ivory"
+    }
+   ],
+   "read": "2026-11-22",
+   "photos": [
+    {
+     "key": "mushie-ribbed-baby-bonnet",
+     "src": "https://mushie.com/cdn/shop/products/Bonnet_Ivory.jpg?v=1752248879&width=1920"
+    },
+    {
+     "key": "mushie-ribbed-baby-bonnet_2",
+     "src": "http://mushie.com/cdn/shop/products/Bonnet_Blush_a8ea82f2-8bfd-4d3a-b348-64f261d91286.jpg?v=1752248879"
+    },
+    {
+     "key": "mushie-ribbed-baby-bonnet_3",
+     "src": "http://mushie.com/cdn/shop/products/Bonnet_GreyMelange.jpg?v=1752248879"
+    }
+   ],
+   "img": "mushie-ribbed-baby-bonnet",
+   "img_src": "https://mushie.com/cdn/shop/products/Bonnet_Ivory.jpg?v=1752248879&width=1920"
+  },
+  {
+   "id": "mushie-suction-spinner-ball",
+   "type": "balls",
+   "brand": "Mushie",
+   "line": "Suction Spinner Ball",
+   "uses": [
+    "Food grade silicone"
+   ],
+   "free": [
+    "BPA, BPS, PVC and phthalates"
+   ],
+   "unconfirmed": [
+    "Which parts are silicone, PP or ABS",
+    "LFGB or French Arrêté testing of the silicone",
+    "Colourant"
+   ],
+   "outside": [
+    "PP and ABS plastic"
+   ],
+   "facts": {
+    "main": "no",
+    "silicone": "unknown",
+    "color": "unknown"
+   },
+   "unstated": {
+    "silicone": [
+     "LFGB or French Arrêté testing of the silicone"
+    ],
+    "color": [
+     "Colourant"
+    ]
+   },
+   "standards": [
+    "us-toy"
+   ],
+   "contains": [],
+   "age": {
+    "min_months": 10,
+    "text": "Recommended age: 10 months+"
+   },
+   "quote": "Made with high-quality food grade silicone, PP and ABS plastic",
+   "products": [
+    {
+     "name": "Suction Spinner Ball",
+     "url": "https://mushie.com/products/suction-spinner-ball",
+     "store": "Mushie",
+     "price": "$16.99",
+     "ships_from": "US",
+     "shipping": "Free shipping for US orders $75+"
+    }
+   ],
+   "read": "2026-11-22",
+   "photos": [
+    {
+     "key": "mushie-suction-spinner-ball",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/RoundBallSuctionSpinner.jpg?v=1762546333"
+    },
+    {
+     "key": "mushie-suction-spinner-ball_2",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/Suction-Spinner-Ball-Info_f3d1bfbb-4c65-4860-b757-748614531120.jpg?v=1768517644"
+    },
+    {
+     "key": "mushie-suction-spinner-ball_3",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/2026_01_29_9999_324.jpg?v=1781643781"
+    },
+    {
+     "key": "mushie-suction-spinner-ball_4",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/2026_04_10_9999_395.jpg?v=1781643782"
+    },
+    {
+     "key": "mushie-suction-spinner-ball_5",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/07_Bikeshoot-119.jpg?v=1769536519"
+    },
+    {
+     "key": "mushie-suction-spinner-ball_6",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/FLATLAYSENDOFMARCH-84_1.jpg?v=1781643782"
+    },
+    {
+     "key": "mushie-suction-spinner-ball_7",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/04_Bikeshoot-20.jpg?v=1769536518"
+    },
+    {
+     "key": "mushie-suction-spinner-ball_8",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/04_Bows_xmas2026-33_b06d3543-6127-4652-926b-65d49b53e862.jpg?v=1769536518"
+    },
+    {
+     "key": "mushie-suction-spinner-ball_9",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/08_flatlays_jan26-14.jpg?v=1769536518"
+    },
+    {
+     "key": "mushie-suction-spinner-ball_10",
+     "src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/MOLOxMushieval1-181.jpg?v=1781643921"
+    }
+   ],
+   "img": "mushie-suction-spinner-ball",
+   "img_src": "https://cdn.shopify.com/s/files/1/0125/6131/7945/files/RoundBallSuctionSpinner.jpg?v=1762546333"
+  },
+  {
+   "id": "nuna-tavo-next-stroller",
+   "type": "strollers",
+   "brand": "Nuna",
+   "line": "TAVO next Stroller",
+   "uses": [],
+   "free": [],
+   "unconfirmed": [
+    "Fibre of the seat fabric and mesh insert",
+    "Frame material",
+    "Canopy fabric",
+    "Rear tyre compound",
+    "Flame retardants"
+   ],
+   "outside": [
+    "Leatherette accents on the pushbar"
+   ],
+   "facts": {
+    "main": "unknown",
+    "parts": "no",
+    "flame": "unknown"
+   },
+   "unstated": {
+    "main": [
+     "Fibre of the seat fabric and mesh insert",
+     "Frame material",
+     "Canopy fabric"
+    ],
+    "flame": [
+     "Flame retardants"
+    ]
+   },
+   "standards": [],
+   "contains": [],
+   "quote": "Luxe leatherette accented and height-adjustable pushbar",
+   "products": [
+    {
+     "name": "TAVO Next Stroller by Nuna",
+     "url": "https://pacifierkids.com/products/tavo-next-stroller-by-nuna",
+     "store": "Pacifier",
+     "price": "$700.00",
+     "ships_from": "US",
+     "shipping": "$5.95 flat rate shipping",
+     "variant": "Caviar"
+    }
+   ],
+   "read": "2026-11-22",
+   "photos": [
+    {
+     "key": "nuna-tavo-next-stroller",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/products/008_StrollerNoTAVO_Comparison_Chart_US_Final_LR_0_dc2ead84-56eb-481a-acc6-dce9b1829cde.jpg?v=1760666276"
+    },
+    {
+     "key": "nuna-tavo-next-stroller_2",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/1df901c3_c1f8_4a31_a59e_8fd5ae9683b5_12e7.jpg?v=1760666276"
+    },
+    {
+     "key": "nuna-tavo-next-stroller_3",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/dc6a0ec0_ccf3_4a47_9c17_e84badef7e75_7d21_217891e1-b7b6-4593-afe2-5b865b095814.jpg?v=1760666276"
+    },
+    {
+     "key": "nuna-tavo-next-stroller_4",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/867c80fc_0da2_455e_8be4_90a58a781fbd_32be.jpg?v=1760666276"
+    }
+   ],
+   "img": "nuna-tavo-next-stroller",
+   "img_src": "https://cdn.shopify.com/s/files/1/0281/8056/products/008_StrollerNoTAVO_Comparison_Chart_US_Final_LR_0_dc2ead84-56eb-481a-acc6-dce9b1829cde.jpg?v=1760666276"
+  },
+  {
+   "id": "plantoys-punch-and-drop-ball-bin",
+   "type": "bench",
+   "brand": "PlanToys",
+   "line": "Punch and Drop Ball Bin",
+   "uses": [
+    "Rubberwood"
+   ],
+   "free": [],
+   "unconfirmed": [
+    "Colourant on the balls",
+    "Solid wood or plywood in the bentwood bin",
+    "Glue"
+   ],
+   "outside": [],
+   "facts": {
+    "main": "yes",
+    "color": "unknown",
+    "wood": "unknown"
+   },
+   "unstated": {
+    "color": [
+     "Colourant on the balls"
+    ],
+    "wood": [
+     "Solid wood or plywood in the bentwood bin"
+    ]
+   },
+   "standards": [],
+   "contains": [],
+   "age": {
+    "min_months": 12,
+    "text": "Recommended age: 12 months+"
+   },
+   "quote": "Ball-pounding activity in a bentwood bin.",
+   "products": [
+    {
+     "name": "PlanToys Wooden Punch and Drop Ball Bin",
+     "url": "https://thebabypenguin.com/products/punch-drop-bin",
+     "store": "The Baby Penguin",
+     "price": "$44.99",
+     "ships_from": "US",
+     "shipping": "Free standard shipping on orders of $50 or more within the contiguous United States"
+    }
+   ],
+   "read": "2026-11-22",
+   "photos": [
+    {
+     "key": "plantoys-punch-and-drop-ball-bin",
+     "src": "https://thebabypenguin.com/cdn/shop/files/Punch-_-Drop-Bin-PlanToys-USA-124109888.jpg?v=1781461890&width=1920"
+    },
+    {
+     "key": "plantoys-punch-and-drop-ball-bin_2",
+     "src": "https://thebabypenguin.com/cdn/shop/files/Punch-_-Drop-Bin-PlanToys-USA-124109964.jpg"
+    },
+    {
+     "key": "plantoys-punch-and-drop-ball-bin_3",
+     "src": "https://thebabypenguin.com/cdn/shop/files/Punch-_-Drop-Bin-PlanToys-USA-124110059.jpg"
+    },
+    {
+     "key": "plantoys-punch-and-drop-ball-bin_4",
+     "src": "https://thebabypenguin.com/cdn/shop/files/Punch-_-Drop-Bin-PlanToys-USA-124110131.jpg"
+    },
+    {
+     "key": "plantoys-punch-and-drop-ball-bin_5",
+     "src": "https://thebabypenguin.com/cdn/shop/files/Punch-_-Drop-Bin-PlanToys-USA-124110275.jpg"
+    },
+    {
+     "key": "plantoys-punch-and-drop-ball-bin_6",
+     "src": "https://thebabypenguin.com/cdn/shop/files/Punch-_-Drop-Bin-PlanToys-USA-124110362.jpg"
+    },
+    {
+     "key": "plantoys-punch-and-drop-ball-bin_7",
+     "src": "https://thebabypenguin.com/cdn/shop/files/Punch-_-Drop-Bin-PlanToys-USA-124110469.jpg"
+    },
+    {
+     "key": "plantoys-punch-and-drop-ball-bin_8",
+     "src": "https://thebabypenguin.com/cdn/shop/files/Punch-_-Drop-Bin-PlanToys-USA-124110538.jpg"
+    },
+    {
+     "key": "plantoys-punch-and-drop-ball-bin_9",
+     "src": "https://thebabypenguin.com/cdn/shop/files/Punch-_-Drop-Bin-PlanToys-USA-124110667.jpg"
+    }
+   ],
+   "img": "plantoys-punch-and-drop-ball-bin",
+   "img_src": "https://thebabypenguin.com/cdn/shop/files/Punch-_-Drop-Bin-PlanToys-USA-124109888.jpg?v=1781461890&width=1920"
+  },
+  {
+   "id": "reima-ankka-rainboots",
+   "type": "rain-boots",
+   "brand": "Reima",
+   "line": "Ankka Rainboots",
+   "uses": [
+    "Cotton lining"
+   ],
+   "free": [
+    "PVA and PFC"
+   ],
+   "unconfirmed": [
+    "Natural or synthetic rubber in the outsole",
+    "Dyes"
+   ],
+   "outside": [
+    "Synthetic rubber upper",
+    "Removable EVA insoles"
+   ],
+   "facts": {
+    "main": "no",
+    "rubber": "no",
+    "color": "unknown"
+   },
+   "unstated": {
+    "color": [
+     "Dyes"
+    ]
+   },
+   "standards": [],
+   "contains": [],
+   "quote": "UPPER MATERIALS Synthetic Rubber INSOLE MATERIALS Removable EVA Insoles LINING MATERIALS Cotton Lined SOLE MATERIALS Flexible Rubber Outsole",
+   "products": [
+    {
+     "name": "Reima Ankka Rainboots",
+     "url": "https://pedterra.com/products/reima-ankka-rainboots",
+     "store": "PedTerra",
+     "price": "$85.00",
+     "ships_from": "US",
+     "shipping": "Free standard shipping on all domestic orders",
+     "variant": "Green / US 6/6.5 Toddler"
+    }
+   ],
+   "read": "2026-11-22",
+   "photos": [
+    {
+     "key": "reima-ankka-rainboots",
+     "src": "https://cdn.shopify.com/s/files/1/0087/6245/8197/files/33_53d55e70-ee4d-45f9-a02e-15751ed8511e.png?v=1771622098"
+    },
+    {
+     "key": "reima-ankka-rainboots_2",
+     "src": "https://cdn.shopify.com/s/files/1/0087/6245/8197/files/30_27cf6000-4b63-414d-a78e-41b0dd87d78a.png?v=1771622098"
+    },
+    {
+     "key": "reima-ankka-rainboots_3",
+     "src": "https://cdn.shopify.com/s/files/1/0087/6245/8197/files/37_10fdb073-a739-4a5a-8b71-8f9475973877.png?v=1771622098"
+    },
+    {
+     "key": "reima-ankka-rainboots_4",
+     "src": "https://cdn.shopify.com/s/files/1/0087/6245/8197/files/34_c4017732-db02-493d-9019-976fac6cb3ef.png?v=1771622098"
+    },
+    {
+     "key": "reima-ankka-rainboots_5",
+     "src": "https://cdn.shopify.com/s/files/1/0087/6245/8197/files/36_51de1258-09e6-478a-99f1-160e5850771a.png?v=1771622098"
+    },
+    {
+     "key": "reima-ankka-rainboots_6",
+     "src": "https://cdn.shopify.com/s/files/1/0087/6245/8197/files/35_d936d53b-c003-4c95-aafe-3afc10973f9a.png?v=1771622098"
+    },
+    {
+     "key": "reima-ankka-rainboots_7",
+     "src": "https://cdn.shopify.com/s/files/1/0087/6245/8197/files/39_da4b31c4-6692-4fc4-827b-590f8783e955.png?v=1771622098"
+    },
+    {
+     "key": "reima-ankka-rainboots_8",
+     "src": "https://cdn.shopify.com/s/files/1/0087/6245/8197/files/Reima_Size_Chart_Astelu-Rantaan-Tepastelu-Tallustelu.png?v=1742598224"
+    }
+   ],
+   "img": "reima-ankka-rainboots",
+   "img_src": "https://cdn.shopify.com/s/files/1/0087/6245/8197/files/33_53d55e70-ee4d-45f9-a02e-15751ed8511e.png?v=1771622098"
+  },
+  {
+   "id": "sprout-kids-sparrow-bed",
+   "type": "floor-beds",
+   "brand": "Sprout Kids",
+   "line": "Sparrow Bed (low platform bed with rails, twin to queen)",
+   "uses": [
+    "Solid hard maple or walnut, American-grown",
+    "Clear water-based finish"
+   ],
+   "free": [
+    "MDF or binders"
+   ],
+   "unconfirmed": [
+    "Composition of the clear water-based finish",
+    "Metal of the black plated screws"
+   ],
+   "outside": [],
+   "facts": {
+    "main": "yes",
+    "wood": "yes",
+    "color": "unknown"
+   },
+   "unstated": {
+    "color": [
+     "Composition of the clear water-based finish"
+    ]
+   },
+   "standards": [],
+   "contains": [],
+   "quote": "Materials American-grown, solid Hard Maple or Walnut. Made with no MDF or binders",
+   "products": [
+    {
+     "name": "Sparrow Bed",
+     "url": "https://sprout-kids.com/products/sparrow-bed",
+     "store": "Sprout Kids",
+     "price": "$1,265.00",
+     "ships_from": "US",
+     "shipping": "Free shipping on orders $100+ in the contiguous U.S.",
+     "variant": "Maple / Twin / (2)Headboards+Full Side+3/4 Side+Legs"
+    }
+   ],
+   "read": "2026-11-22",
+   "photos": [
+    {
+     "key": "sprout-kids-sparrow-bed",
+     "src": "https://cdn.shopify.com/s/files/1/0067/2522/files/IMG_1763_4ec15139-0d73-45f9-8f88-f72e34ee9041.jpg?v=1776880993"
+    },
+    {
+     "key": "sprout-kids-sparrow-bed_2",
+     "src": "https://cdn.shopify.com/s/files/1/0067/2522/files/Walnut_Dowel_Day_Legs.jpg?v=1776880967"
+    },
+    {
+     "key": "sprout-kids-sparrow-bed_3",
+     "src": "https://cdn.shopify.com/s/files/1/0067/2522/files/Gentle_Bed_Listing_28.jpg?v=1776880535"
+    },
+    {
+     "key": "sprout-kids-sparrow-bed_4",
+     "src": "https://cdn.shopify.com/s/files/1/0067/2522/files/IMG_1080Square.jpg?v=1776880952"
+    },
+    {
+     "key": "sprout-kids-sparrow-bed_5",
+     "src": "https://cdn.shopify.com/s/files/1/0067/2522/files/Gentle_Bed_Listing_27.jpg?v=1776880551"
+    },
+    {
+     "key": "sprout-kids-sparrow-bed_6",
+     "src": "https://cdn.shopify.com/s/files/1/0067/2522/files/IMG_1312-2.jpg?v=1776880932"
+    },
+    {
+     "key": "sprout-kids-sparrow-bed_7",
+     "src": "https://cdn.shopify.com/s/files/1/0067/2522/files/Walnut_dowel_3_4_floor.jpg?v=1776880908"
+    },
+    {
+     "key": "sprout-kids-sparrow-bed_8",
+     "src": "https://cdn.shopify.com/s/files/1/0067/2522/files/Walnut_dowel_day_floor.jpg?v=1776880871"
+    },
+    {
+     "key": "sprout-kids-sparrow-bed_9",
+     "src": "https://cdn.shopify.com/s/files/1/0067/2522/files/IMG_0250_1bbc0f8e-51ce-4b29-a37a-70e753475c4a.jpg?v=1776880847"
+    },
+    {
+     "key": "sprout-kids-sparrow-bed_10",
+     "src": "https://cdn.shopify.com/s/files/1/0067/2522/files/3qphoto.jpg?v=1776880830"
+    }
+   ],
+   "img": "sprout-kids-sparrow-bed",
+   "img_src": "https://cdn.shopify.com/s/files/1/0067/2522/files/IMG_1763_4ec15139-0d73-45f9-8f88-f72e34ee9041.jpg?v=1776880993"
+  },
+  {
+   "id": "tiny-land-organic-dairy-pack",
+   "type": "pretend",
+   "brand": "Tiny Land",
+   "line": "Organic Dairy Pack, pretend play food (7 pieces)",
+   "uses": [
+    "FSC-certified wood",
+    "Cotton rope"
+   ],
+   "free": [],
+   "unconfirmed": [
+    "Fibre of the fabric pieces",
+    "Composition of the paint (described as “non-toxic”)",
+    "Solid wood, plywood or MDF",
+    "Glue"
+   ],
+   "outside": [],
+   "facts": {
+    "main": "unknown",
+    "color": "unknown",
+    "wood": "unknown"
+   },
+   "unstated": {
+    "main": [
+     "Fibre of the fabric pieces"
+    ],
+    "color": [
+     "Composition of the paint (described as “non-toxic”)"
+    ],
+    "wood": [
+     "Solid wood, plywood or MDF"
+    ]
+   },
+   "standards": [
+    "fsc"
+   ],
+   "contains": [],
+   "quote": "With a mix of wood, cotton rope, and fabric, kids can grip, pour, stack, and serve like pros.",
+   "products": [
+    {
+     "name": "Tiny Land® Organic Dairy Pack - Pretend Play",
+     "url": "https://thebabypenguin.com/products/tiny-land-r-organic-dairy-pack",
+     "store": "The Baby Penguin",
+     "price": "$37.99 (sale; regular $42.99)",
+     "ships_from": "US",
+     "shipping": "Free standard shipping on orders of $50 or more within the contiguous United States"
+    }
+   ],
+   "read": "2026-11-22",
+   "photos": [
+    {
+     "key": "tiny-land-organic-dairy-pack",
+     "src": "https://thebabypenguin.com/cdn/shop/files/Tiny-Landr-Organic-Dairy-Pack-Tiny-Land-INC-128969785.webp?v=1781468786&width=1920"
+    },
+    {
+     "key": "tiny-land-organic-dairy-pack_2",
+     "src": "https://thebabypenguin.com/cdn/shop/files/Tiny-Landr-Organic-Dairy-Pack-Tiny-Land-INC-128969832.webp"
+    },
+    {
+     "key": "tiny-land-organic-dairy-pack_3",
+     "src": "https://thebabypenguin.com/cdn/shop/files/Tiny-Landr-Organic-Dairy-Pack-Tiny-Land-INC-128969994.webp"
+    },
+    {
+     "key": "tiny-land-organic-dairy-pack_4",
+     "src": "https://thebabypenguin.com/cdn/shop/files/Tiny-Landr-Organic-Dairy-Pack-Tiny-Land-INC-128970014.webp"
+    },
+    {
+     "key": "tiny-land-organic-dairy-pack_5",
+     "src": "https://thebabypenguin.com/cdn/shop/files/Tiny-Landr-Organic-Dairy-Pack-Tiny-Land-INC-128970153.webp"
+    },
+    {
+     "key": "tiny-land-organic-dairy-pack_6",
+     "src": "https://thebabypenguin.com/cdn/shop/files/Tiny-Landr-Organic-Dairy-Pack-Tiny-Land-INC-128970217.webp"
+    }
+   ],
+   "img": "tiny-land-organic-dairy-pack",
+   "img_src": "https://thebabypenguin.com/cdn/shop/files/Tiny-Landr-Organic-Dairy-Pack-Tiny-Land-INC-128969785.webp?v=1781468786&width=1920"
+  },
+  {
+   "id": "tovolo-mini-ice-mold",
+   "type": "ice-trays",
+   "brand": "Tovolo",
+   "line": "Mini Ice Mold (135 cubes per tray)",
+   "uses": [
+    "Silicone"
+   ],
+   "free": [
+    "BPA"
+   ],
+   "unconfirmed": [
+    "Which parts are nylon",
+    "Silicone testing standard",
+    "Pigments"
+   ],
+   "outside": [
+    "BPA-free nylon parts"
+   ],
+   "facts": {
+    "main": "no",
+    "color": "unknown",
+    "silicone": "unknown"
+   },
+   "unstated": {
+    "color": [
+     "Pigments"
+    ],
+    "silicone": [
+     "Silicone testing standard"
+    ]
+   },
+   "standards": [],
+   "contains": [],
+   "quote": "Materials: Silicone, BPA-free nylon.",
+   "products": [
+    {
+     "name": "Mini Ice Mold",
+     "url": "https://www.tovolo.com/products/mini-ice-mold",
+     "store": "Tovolo",
+     "price": "$6.99",
+     "ships_from": "US",
+     "shipping": "Free ground shipping on orders over $50 in the continental US"
+    }
+   ],
+   "read": "2026-11-22",
+   "photos": [
+    {
+     "key": "tovolo-mini-ice-mold",
+     "src": "https://tovolo.com/cdn/shop/files/1000109_04_Mini_Ice_Mold_Charcoal_SILO_02.png?v=1792258314&width=1920"
+    },
+    {
+     "key": "tovolo-mini-ice-mold_2",
+     "src": "https://tovolo.com/cdn/shop/files/1000110_04_Mini_Ice_Mold_Stratus-Blue_SILO_02_04-23.png?v=1792258315&width=1920"
+    }
+   ],
+   "img": "tovolo-mini-ice-mold",
+   "img_src": "https://tovolo.com/cdn/shop/files/1000109_04_Mini_Ice_Mold_Charcoal_SILO_02.png?v=1792258314&width=1920"
+  },
+  {
+   "id": "tovolo-penguin-pop-molds",
+   "type": "pop-molds",
+   "brand": "Tovolo",
+   "line": "Penguin Pop Molds",
+   "uses": [
+    "Silicone"
+   ],
+   "free": [
+    "BPA"
+   ],
+   "unconfirmed": [
+    "Which parts are nylon",
+    "Silicone testing standard",
+    "Pigments"
+   ],
+   "outside": [
+    "BPA-free nylon parts"
+   ],
+   "facts": {
+    "main": "no",
+    "color": "unknown",
+    "silicone": "unknown"
+   },
+   "unstated": {
+    "color": [
+     "Pigments"
+    ],
+    "silicone": [
+     "Silicone testing standard"
+    ]
+   },
+   "standards": [],
+   "contains": [],
+   "quote": "Materials: Silicone, BPA-free nylon.",
+   "products": [
+    {
+     "name": "Penguin Pop Molds",
+     "url": "https://www.tovolo.com/products/penguin-pop-molds",
+     "store": "Tovolo",
+     "price": "$15.99",
+     "ships_from": "US",
+     "shipping": "Free ground shipping on orders over $50 in the continental US"
+    }
+   ],
+   "read": "2026-11-22",
+   "photos": [
+    {
+     "key": "tovolo-penguin-pop-molds",
+     "src": "https://cdn.shopify.com/s/files/1/0808/9862/1474/files/81-16910_Penguin_Pop_Molds_DETAIL.png?v=1792258765"
+    },
+    {
+     "key": "tovolo-penguin-pop-molds_2",
+     "src": "https://cdn.shopify.com/s/files/1/0808/9862/1474/files/81-16910_Penguin_Pop_Molds_LIFESTYLE-01_cd5ce00a-251d-40ad-9e94-361d44f2b5a3_2.png?v=1793638497"
+    },
+    {
+     "key": "tovolo-penguin-pop-molds_3",
+     "src": "https://cdn.shopify.com/s/files/1/0808/9862/1474/files/81-16910_Penguin_Pop_Molds_SILO-02.png?v=1792258764"
+    },
+    {
+     "key": "tovolo-penguin-pop-molds_4",
+     "src": "https://cdn.shopify.com/s/files/1/0808/9862/1474/files/81-16910_Penguin_Pop_Molds_SILO-01.png?v=1792258764"
+    },
+    {
+     "key": "tovolo-penguin-pop-molds_5",
+     "src": "https://cdn.shopify.com/s/files/1/0808/9862/1474/files/81-16910_Penguin_Pop_Molds_INFO_01.jpg?v=1792258764"
+    }
+   ],
+   "img": "tovolo-penguin-pop-molds",
+   "img_src": "https://cdn.shopify.com/s/files/1/0808/9862/1474/files/81-16910_Penguin_Pop_Molds_DETAIL.png?v=1792258765"
   }
  ]
 }
