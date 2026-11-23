@@ -1934,7 +1934,8 @@
    "type": "bath",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "skipped",
+   "reason": "Duplicate: same Squeeze'n'Splash line and materials as hevea-squeeze-n-splash-whale"
   },
   {
    "url": "https://us.heveaplanet.com/products/loop-cup-combo-size-1-2",
@@ -19721,7 +19722,8 @@
    "type": "blocks",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "kodo-kids-korxx-big-block-column"
   },
   {
    "url": "https://kodokids.com/products/korxx-blue-car",
@@ -20318,7 +20320,8 @@
    "type": "stacking",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "kodo-kids-wooden-stacking-cones"
   },
   {
    "url": "https://kodokids.com/products/wool-stacking-pebbles-earth-colors-set",
@@ -20327,7 +20330,8 @@
    "type": "stacking",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "kodo-kids-wool-stacking-pebbles"
   },
   {
    "url": "https://kodokids.com/products/nested-wool-bowls-earth-colors",
@@ -21398,7 +21402,8 @@
    "type": "teethers",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "mushie-sun-teether"
   },
   {
    "url": "https://mushie.com/products/soft-spout-sippy-cup",
@@ -25123,7 +25128,8 @@
    "type": "teethers",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "skipped",
+   "reason": "Hidden placeholder product (\"used with the Product Options application\"), not a product for sale"
   },
   {
    "url": "https://smilingtreetoys.com/products/keeps-block-birth-boy-top",
@@ -28032,7 +28038,8 @@
    "type": "mats",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "toki-kids-poppy-vegan-leather-mat"
   },
   {
    "url": "https://tokikids.com/products/poppy-organic-cotton-cover",
@@ -46180,7 +46187,8 @@
    "type": "dolls",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "bella-luna-dog-hand-puppet"
   },
   {
    "url": "https://www.bellalunatoys.com/products/kangaroo-hand-puppet",
@@ -48476,7 +48484,8 @@
    "type": "dolls",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "lowercase-toys-starter-felt-doll-set"
   },
   {
    "url": "https://www.bellalunatoys.com/products/lowercase-toys-deluxe-felt-doll-set",
@@ -48503,7 +48512,8 @@
    "type": "rattles",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "grimms-mini-rolling-wheel-rattle"
   },
   {
    "url": "https://www.bellalunatoys.com/products/a-year-and-a-day-issue-23-spiders-webs",
@@ -48521,7 +48531,8 @@
    "type": "rattles",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "grimms-honeycomb-hexagon-baby-rattle"
   },
   {
    "url": "https://www.bellalunatoys.com/products/eeboo-haunted-house-100-piece-puzzle",
@@ -54421,7 +54432,8 @@
    "type": "bath",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "living-textiles-silicone-squeezy-bath-birds"
   },
   {
    "url": "https://enlightenedbaby.com/products/nuby-x-safe-in-the-seat-backseat-baby-mirror",
@@ -58410,7 +58422,8 @@
    "type": "rattles",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "sophie-la-girafe-so-pure-natur-soft-rattle"
   },
   {
    "url": "https://enlightenedbaby.com/products/sophie-la-girafe-white-box-classic",
@@ -90083,7 +90096,8 @@
    "type": "bibs",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "skipped",
+   "reason": "Duplicate: Mushie Silicone Baby Bib, already listed as mushie-silicone-baby-bib"
   },
   {
    "url": "https://thebabypenguin.com/products/no-drop-sensory-teether",
@@ -122583,7 +122597,8 @@
    "type": "bibs",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "copper-pearl-bandana-bib"
   },
   {
    "url": "https://pacifierkids.com/products/single-bandana-bib-all-star-by-copper-pearl",
@@ -168962,7 +168977,8 @@
    "type": "books",
    "source": "watchlist",
    "first_seen": "2026-10-31",
-   "status": "new"
+   "status": "skipped",
+   "reason": "Page names no material"
   },
   {
    "url": "https://odinparker.com/products/winnie-the-pooh-poohs-birthday-surprise-water-reveal",
@@ -187978,7 +187994,8 @@
    "type": "nursing-pillows",
    "source": "watchlist",
    "first_seen": "2026-11-07",
-   "status": "new"
+   "status": "skipped",
+   "reason": "Duplicate: pattern variant of the Little Mae & Co ruffle cover already listed (little-mae-gingham-ruffle-nursing-pillow-cover)"
   },
   {
    "url": "https://easytot.com/products/pink-puppy-rattle",
@@ -189095,7 +189112,8 @@
    "type": "books",
    "source": "watchlist",
    "first_seen": "2026-11-07",
-   "status": "new"
+   "status": "skipped",
+   "reason": "Page did not show the product (no title, price or description in the text served)"
   },
   {
    "url": "https://easytot.com/products/little-fire-and-rescue-creative-play-maxi",

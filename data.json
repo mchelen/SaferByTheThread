@@ -1,6 +1,6 @@
 {
  "schema": 4,
- "updated": "2026-11-22",
+ "updated": "2026-11-23",
  "ask": [
   "Thread on any sewn item (cotton or polyester).",
   "Wheels and axles on push toys and cars.",
@@ -47422,6 +47422,852 @@
    ],
    "img": "tovolo-penguin-pop-molds",
    "img_src": "https://cdn.shopify.com/s/files/1/0808/9862/1474/files/81-16910_Penguin_Pop_Molds_DETAIL.png?v=1792258765"
+  },
+  {
+   "id": "bella-luna-dog-hand-puppet",
+   "type": "dolls",
+   "brand": "Bella Luna Toys",
+   "line": "Dog Hand Puppet",
+   "uses": [
+    "Cotton"
+   ],
+   "free": [],
+   "outside": [
+    "Polyester"
+   ],
+   "unconfirmed": [
+    "Which parts are polyester",
+    "Embroidery thread",
+    "Fibre of the scarf"
+   ],
+   "facts": {
+    "main": "no",
+    "color": "unknown"
+   },
+   "unstated": {
+    "color": [
+     "Embroidery thread"
+    ]
+   },
+   "standards": [],
+   "quote": "MATERIALS : Cotton, Polyester",
+   "note": "10.6 in hand puppet with floppy ears and a scarf. The description says “Crafted from natural cotton”; the materials line names cotton and polyester. Designed in Belgium, made in China; ships from the store’s New York warehouse.",
+   "products": [
+    {
+     "name": "Dog Hand Puppet",
+     "url": "https://www.bellalunatoys.com/products/dog-hand-puppet",
+     "store": "Bella Luna Toys",
+     "price": "$22.99",
+     "ships_from": "US",
+     "shipping": "Free shipping on orders over $99"
+    }
+   ],
+   "contains": [],
+   "read": "2026-11-23",
+   "photos": [
+    {
+     "key": "bella-luna-dog-hand-puppet",
+     "src": "https://www.bellalunatoys.com/cdn/shop/files/egmont-dog-hand-puppet-pretend-play_1080x.jpg?v=1781533164"
+    }
+   ],
+   "img": "bella-luna-dog-hand-puppet",
+   "img_src": "https://www.bellalunatoys.com/cdn/shop/files/egmont-dog-hand-puppet-pretend-play_1080x.jpg?v=1781533164"
+  },
+  {
+   "id": "copper-pearl-bandana-bib",
+   "type": "bibs",
+   "brand": "Copper Pearl",
+   "line": "Single Bandana Bib (Natalie and other prints)",
+   "uses": [
+    "100% cotton knit front"
+   ],
+   "free": [
+    "Nickel in the snaps"
+   ],
+   "outside": [
+    "100% polyester fleece back"
+   ],
+   "unconfirmed": [
+    "Material of the snaps",
+    "Thread",
+    "Dyes for the prints"
+   ],
+   "facts": {
+    "main": "no",
+    "parts": "unknown",
+    "color": "unknown",
+    "organic": "yes"
+   },
+   "unstated": {
+    "parts": [
+     "Material of the snaps"
+    ],
+    "color": [
+     "Dyes for the prints"
+    ]
+   },
+   "standards": [
+    "gots"
+   ],
+   "age": {
+    "min_months": 3,
+    "max_months": 36,
+    "text": "ages ranging from 3-36 months"
+   },
+   "quote": "These stylish drool bibs are made of 100% absorbent cotton on the front and 100% polyester fleece on the back.",
+   "note": "Two snaps adjust the fit. Further down, the same page also says “Six layers of premium muslin”. Sold by Pacifier at $6.00 on sale (regular $7.50).",
+   "products": [
+    {
+     "name": "Single Bandana Bib - Natalie by Copper Pearl",
+     "url": "https://pacifierkids.com/products/single-bandana-bib-natalie-by-copper-pearl",
+     "store": "Pacifier",
+     "price": "$6.00",
+     "ships_from": null,
+     "shipping": "$5.95 Flat Rate Shipping"
+    }
+   ],
+   "contains": [],
+   "read": "2026-11-23",
+   "photos": [
+    {
+     "key": "copper-pearl-bandana-bib",
+     "src": "https://pacifierkids.com/cdn/shop/files/product_photo_-_white_background_-_2026-09-22T194013.038.jpg?v=1790077318&width=1920"
+    },
+    {
+     "key": "copper-pearl-bandana-bib_2",
+     "src": "https://pacifierkids.com/cdn/shop/files/Bib_Set_Natalie_Main.jpg?v=1790077319&width=5000"
+    },
+    {
+     "key": "copper-pearl-bandana-bib_3",
+     "src": "https://pacifierkids.com/cdn/shop/files/Bib_Set_Natalie_2.jpg?v=1790077325&width=5000"
+    },
+    {
+     "key": "copper-pearl-bandana-bib_4",
+     "src": "https://pacifierkids.com/cdn/shop/files/Bib_Set_Natalie_6.jpg?v=1790077329&width=5000"
+    },
+    {
+     "key": "copper-pearl-bandana-bib_5",
+     "src": "https://pacifierkids.com/cdn/shop/files/Bib_Set_Natalie_4.jpg?v=1790077335&width=5000"
+    },
+    {
+     "key": "copper-pearl-bandana-bib_6",
+     "src": "https://pacifierkids.com/cdn/shop/files/Bib_Set_Natalie_5.jpg?v=1790077339&width=5000"
+    },
+    {
+     "key": "copper-pearl-bandana-bib_7",
+     "src": "https://pacifierkids.com/cdn/shop/files/Bib_Set_Natalie_3.jpg?v=1790077344&width=5000"
+    },
+    {
+     "key": "copper-pearl-bandana-bib_8",
+     "src": "https://pacifierkids.com/cdn/shop/files/Bib_Set_Natalie_7.jpg?v=1790077349&width=5000"
+    },
+    {
+     "key": "copper-pearl-bandana-bib_9",
+     "src": "https://pacifierkids.com/cdn/shop/files/Bib_Set_Natalie_8.jpg?v=1790077355&width=5000"
+    }
+   ],
+   "img": "copper-pearl-bandana-bib",
+   "img_src": "https://pacifierkids.com/cdn/shop/files/product_photo_-_white_background_-_2026-09-22T194013.038.jpg?v=1790077318&width=1920"
+  },
+  {
+   "id": "grimms-honeycomb-hexagon-baby-rattle",
+   "type": "rattles",
+   "brand": "Grimm’s Spiel & Holz",
+   "line": "Honeycomb Hexagon Baby Rattle",
+   "uses": [
+    "Alder and maple wood",
+    "Plant-based oil finish"
+   ],
+   "free": [],
+   "outside": [],
+   "unconfirmed": [
+    "Ingredients of the water-based stains",
+    "Water-based coatings over the stains",
+    "Whether the wood is solid"
+   ],
+   "facts": {
+    "main": "yes",
+    "wood": "unknown",
+    "color": "unknown"
+   },
+   "unstated": {
+    "wood": [
+     "Whether the wood is solid"
+    ],
+    "color": [
+     "Ingredients of the water-based stains",
+     "Water-based coatings over the stains"
+    ]
+   },
+   "standards": [],
+   "quote": "Made from sustainably sourced alder and maple wood finished with non-toxic, water-based stains",
+   "note": "Hexagonal frame holding seven rainbow-stained discs, 3.14 in. Made in Germany; out of stock at Bella Luna Toys when read.",
+   "products": [
+    {
+     "name": "Grimm's Honeycomb Hexagon Baby Rattle",
+     "url": "https://www.bellalunatoys.com/products/grimms-wooden-toys-honeycomb-hexagon-baby-rattle",
+     "store": "Bella Luna Toys",
+     "price": "$20.00",
+     "ships_from": "US",
+     "shipping": "Free shipping on orders over $99"
+    }
+   ],
+   "contains": [],
+   "read": "2026-11-23",
+   "photos": [
+    {
+     "key": "grimms-honeycomb-hexagon-baby-rattle",
+     "src": "https://cdn.shopify.com/s/files/1/1114/2810/files/grimms-hexoganal-honeycomb-wooden-teething-and-clutching-toy.jpg?v=1755557375"
+    },
+    {
+     "key": "grimms-honeycomb-hexagon-baby-rattle_2",
+     "src": "https://cdn.shopify.com/s/files/1/1114/2810/files/grimms-hexoganal-honeycomb-wooden-teething-and-clutching-toy-2.jpg?v=1755557375"
+    }
+   ],
+   "img": "grimms-honeycomb-hexagon-baby-rattle",
+   "img_src": "https://cdn.shopify.com/s/files/1/1114/2810/files/grimms-hexoganal-honeycomb-wooden-teething-and-clutching-toy.jpg?v=1755557375"
+  },
+  {
+   "id": "grimms-mini-rolling-wheel-rattle",
+   "type": "rattles",
+   "brand": "Grimm’s Spiel & Holz",
+   "line": "Mini Rolling Wheel Rattle",
+   "uses": [
+    "Limewood",
+    "Wooden beads inside",
+    "Metal bell"
+   ],
+   "free": [],
+   "outside": [],
+   "unconfirmed": [
+    "Ingredients of the water-based stains",
+    "Water-based coatings over the stains",
+    "Whether the limewood is solid"
+   ],
+   "facts": {
+    "main": "yes",
+    "parts": "yes",
+    "wood": "unknown",
+    "color": "unknown"
+   },
+   "unstated": {
+    "wood": [
+     "Whether the limewood is solid"
+    ],
+    "color": [
+     "Ingredients of the water-based stains",
+     "Water-based coatings over the stains"
+    ]
+   },
+   "standards": [],
+   "quote": "MATERIALS : Sustainably sourced limewood finished with non-toxic, water-based stains, metal bell",
+   "note": "2.3 in rolling wheel with beads and a bell inside. Made in Germany; ships from the store’s New York warehouse.",
+   "products": [
+    {
+     "name": "Grimm's Mini Rolling Wheel Rattle",
+     "url": "https://www.bellalunatoys.com/products/grimms-mini-rolling-wheel-rattle",
+     "store": "Bella Luna Toys",
+     "price": "$32.00",
+     "ships_from": "US",
+     "shipping": "Free shipping on orders over $99"
+    }
+   ],
+   "contains": [],
+   "read": "2026-11-23",
+   "photos": [
+    {
+     "key": "grimms-mini-rolling-wheel-rattle",
+     "src": "https://www.bellalunatoys.com/cdn/shop/files/grimms-mini-wooden-rolling-rattle_1080x.jpg?v=1755557446"
+    },
+    {
+     "key": "grimms-mini-rolling-wheel-rattle_2",
+     "src": "https://www.bellalunatoys.com/cdn/shop/files/grimms-mini-wooden-rolling-rattle-2.jpg?v=1755557446&width=1800"
+    },
+    {
+     "key": "grimms-mini-rolling-wheel-rattle_3",
+     "src": "https://www.bellalunatoys.com/cdn/shop/files/grimms-mini-wooden-rolling-rattle-3.jpg?v=1755557446&width=1800"
+    }
+   ],
+   "img": "grimms-mini-rolling-wheel-rattle",
+   "img_src": "https://www.bellalunatoys.com/cdn/shop/files/grimms-mini-wooden-rolling-rattle_1080x.jpg?v=1755557446"
+  },
+  {
+   "id": "kodo-kids-korxx-big-block-column",
+   "type": "blocks",
+   "brand": "Korxx (Kodo Kids)",
+   "line": "Korxx Big Block Column (6 cork cylinders)",
+   "uses": [
+    "Cork"
+   ],
+   "free": [],
+   "outside": [],
+   "unconfirmed": [
+    "Binder in the cork"
+   ],
+   "facts": {
+    "main": "unknown"
+   },
+   "unstated": {
+    "main": [
+     "Binder in the cork"
+    ]
+   },
+   "standards": [
+    "us-toy"
+   ],
+   "age": {
+    "min_months": 12,
+    "text": "Age 12 months+"
+   },
+   "quote": "They are large, durable cylinders made from eco-friendly cork",
+   "note": "Six cylinders, 3.5 in across, 3.5 or 7 in tall; made to add to Korxx building sets.",
+   "products": [
+    {
+     "name": "Korxx Big Block Column",
+     "url": "https://kodokids.com/products/korxx-big-block-column",
+     "store": "Kodo Kids",
+     "price": "$105.00",
+     "ships_from": null
+    }
+   ],
+   "contains": [],
+   "read": "2026-11-23",
+   "photos": [
+    {
+     "key": "kodo-kids-korxx-big-block-column",
+     "src": "https://cdn.shopify.com/s/files/1/0629/8969/7163/files/korxx-big-block-column-3rd-party-korxx.jpg?v=1793826872"
+    },
+    {
+     "key": "kodo-kids-korxx-big-block-column_2",
+     "src": "https://cdn.shopify.com/s/files/1/0629/8969/7163/files/korxx-big-block-column-3rd-party-korxx-2.jpg?v=1793140485"
+    },
+    {
+     "key": "kodo-kids-korxx-big-block-column_3",
+     "src": "https://cdn.shopify.com/s/files/1/0629/8969/7163/files/korxx-big-block-column-3rd-party-korxx-3.png?v=1793140487"
+    }
+   ],
+   "img": "kodo-kids-korxx-big-block-column",
+   "img_src": "https://cdn.shopify.com/s/files/1/0629/8969/7163/files/korxx-big-block-column-3rd-party-korxx.jpg?v=1793826872"
+  },
+  {
+   "id": "kodo-kids-wooden-stacking-cones",
+   "type": "stacking",
+   "brand": "Kodo Kids",
+   "line": "Wooden Stacking Cones (12 cones in 3 sizes)",
+   "uses": [
+    "Handcrafted wooden cones"
+   ],
+   "free": [],
+   "outside": [],
+   "unconfirmed": [
+    "Wood species",
+    "Finish on the wood"
+   ],
+   "facts": {
+    "main": "yes",
+    "wood": "unknown",
+    "color": "unknown"
+   },
+   "unstated": {
+    "wood": [
+     "Wood species"
+    ],
+    "color": [
+     "Finish on the wood"
+    ]
+   },
+   "standards": [
+    "us-toy"
+   ],
+   "age": {
+    "min_months": 36,
+    "text": "Age 3 years+"
+   },
+   "quote": "Four 6\" handcrafted wooden cones Four 3.5\" handcrafted wooden cones Four 1.75\" handcrafted wooden cones.",
+   "note": "Twelve cones: four each at 6, 3.5 and 1.75 in.",
+   "products": [
+    {
+     "name": "Wooden Stacking Cones",
+     "url": "https://kodokids.com/products/wooden-stacking-cones",
+     "store": "Kodo Kids",
+     "price": "$65.00",
+     "ships_from": null
+    }
+   ],
+   "contains": [],
+   "read": "2026-11-23",
+   "photos": [
+    {
+     "key": "kodo-kids-wooden-stacking-cones",
+     "src": "https://kodokids.com/cdn/shop/files/wooden-stacking-cones-3rd-party-papoose.jpg?v=1793139220&width=1920"
+    },
+    {
+     "key": "kodo-kids-wooden-stacking-cones_2",
+     "src": "https://kodokids.com/cdn/shop/files/wooden-stacking-cones-3rd-party-papoose-2.jpg?v=1793139221&width=1920"
+    },
+    {
+     "key": "kodo-kids-wooden-stacking-cones_3",
+     "src": "https://kodokids.com/cdn/shop/files/wooden-stacking-cones-3rd-party-papoose-3.jpg?v=1793139222&width=1920"
+    },
+    {
+     "key": "kodo-kids-wooden-stacking-cones_4",
+     "src": "https://kodokids.com/cdn/shop/files/wooden-stacking-cones-3rd-party-papoose-4.jpg?v=1793139223&width=1920"
+    },
+    {
+     "key": "kodo-kids-wooden-stacking-cones_5",
+     "src": "https://kodokids.com/cdn/shop/files/wooden-stacking-cones-3rd-party-papoose-5.jpg?v=1793139224&width=1920"
+    }
+   ],
+   "img": "kodo-kids-wooden-stacking-cones",
+   "img_src": "https://kodokids.com/cdn/shop/files/wooden-stacking-cones-3rd-party-papoose.jpg?v=1793139220&width=1920"
+  },
+  {
+   "id": "kodo-kids-wool-stacking-pebbles",
+   "type": "stacking",
+   "brand": "Kodo Kids",
+   "line": "Wool Stacking Pebbles Earth Colors Set (12 pebbles)",
+   "uses": [
+    "Wool pebbles",
+    "Natural dyes"
+   ],
+   "free": [],
+   "outside": [],
+   "unconfirmed": [
+    "Whether the wool is superwash or shrink-proofed",
+    "Inner core of the pebbles"
+   ],
+   "facts": {
+    "main": "yes",
+    "color": "yes",
+    "wool": "unknown"
+   },
+   "unstated": {
+    "wool": [
+     "Whether the wool is superwash or shrink-proofed"
+    ]
+   },
+   "standards": [
+    "us-toy"
+   ],
+   "age": {
+    "min_months": 6,
+    "text": "Age 6 months+"
+   },
+   "quote": "Three wool pebbles per stack in soft sage, pale blue, natural brick, and golden brown",
+   "note": "Four stacks of three pebbles, about 2.5 to 3.5 in across. The page says colours may fade “due to the nature of natural dyes”.",
+   "products": [
+    {
+     "name": "Wool Stacking Pebbles Earth Colors Set",
+     "url": "https://kodokids.com/products/wool-stacking-pebbles-earth-colors-set",
+     "store": "Kodo Kids",
+     "price": "$60.00",
+     "ships_from": null
+    }
+   ],
+   "contains": [],
+   "read": "2026-11-23",
+   "photos": [
+    {
+     "key": "kodo-kids-wool-stacking-pebbles",
+     "src": "https://cdn.shopify.com/s/files/1/0629/8969/7163/files/wool-stacking-pebbles-earth-colors-set-3rd-party-papoose.jpg?v=1793139214"
+    },
+    {
+     "key": "kodo-kids-wool-stacking-pebbles_2",
+     "src": "https://cdn.shopify.com/s/files/1/0629/8969/7163/files/wool-stacking-pebbles-earth-colors-set-3rd-party-papoose-2.jpg?v=1793139216"
+    },
+    {
+     "key": "kodo-kids-wool-stacking-pebbles_3",
+     "src": "https://cdn.shopify.com/s/files/1/0629/8969/7163/files/wool-stacking-pebbles-earth-colors-set-3rd-party-papoose-3.jpg?v=1793139217"
+    },
+    {
+     "key": "kodo-kids-wool-stacking-pebbles_4",
+     "src": "https://cdn.shopify.com/s/files/1/0629/8969/7163/files/wool-stacking-pebbles-earth-colors-set-3rd-party-papoose-4.jpg?v=1793139219"
+    },
+    {
+     "key": "kodo-kids-wool-stacking-pebbles_5",
+     "src": "https://kodokids.com/cdn/shop/files/wool-stacking-pebbles-earth-colors-set-3rd-party-papoose.jpg?v=1793139214&width=1920"
+    }
+   ],
+   "img": "kodo-kids-wool-stacking-pebbles",
+   "img_src": "https://cdn.shopify.com/s/files/1/0629/8969/7163/files/wool-stacking-pebbles-earth-colors-set-3rd-party-papoose.jpg?v=1793139214"
+  },
+  {
+   "id": "living-textiles-silicone-squeezy-bath-birds",
+   "type": "bath",
+   "brand": "Living Textiles",
+   "line": "Silicone Squeezy Bath Birds (3 pack)",
+   "uses": [
+    "Food-grade silicone"
+   ],
+   "free": [
+    "BPA"
+   ],
+   "outside": [],
+   "unconfirmed": [
+    "Pigments",
+    "Silicone testing (no LFGB or French test named)"
+   ],
+   "facts": {
+    "main": "yes",
+    "color": "unknown",
+    "silicone": "unknown"
+   },
+   "unstated": {
+    "color": [
+     "Pigments"
+    ],
+    "silicone": [
+     "Silicone testing (no LFGB or French test named)"
+    ]
+   },
+   "standards": [],
+   "quote": "BPA-Free, food-grade silicone",
+   "note": "Three squirting birds that open up for cleaning; the page says “Dishwasher or steriliser safe”.",
+   "products": [
+    {
+     "name": "Silicone 3pk Squeezy Bath Birds",
+     "url": "https://enlightenedbaby.com/products/silicone-3pk-squeezy-bath-birds",
+     "store": "Enlightened Baby",
+     "price": "$16.99",
+     "ships_from": null
+    }
+   ],
+   "contains": [],
+   "read": "2026-11-23",
+   "photos": [
+    {
+     "key": "living-textiles-silicone-squeezy-bath-birds",
+     "src": "https://cdn.shopify.com/s/files/1/0707/4850/4296/files/f762c100feb32a020633e6d95f128844527f53a23c57788b8e38275f6ece562b.jpg?v=1789079724"
+    },
+    {
+     "key": "living-textiles-silicone-squeezy-bath-birds_2",
+     "src": "https://cdn.shopify.com/s/files/1/0707/4850/4296/files/56f62c6ac4378841e244e3ef711da93ff978c91103f7849814ad773b501ad405.jpg?v=1789079727"
+    },
+    {
+     "key": "living-textiles-silicone-squeezy-bath-birds_3",
+     "src": "https://cdn.shopify.com/s/files/1/0707/4850/4296/files/9cc04267c8a5b0dc4cecff1b0c7c957d2cc7fa3d5f00409e479dbbaf0bd5405f.jpg?v=1789079727"
+    },
+    {
+     "key": "living-textiles-silicone-squeezy-bath-birds_4",
+     "src": "https://cdn.shopify.com/s/files/1/0707/4850/4296/files/893b2d18950b3e33843b386fabf6529fcb9ddfe8598d23b64df7593ec554132a.jpg?v=1789079727"
+    },
+    {
+     "key": "living-textiles-silicone-squeezy-bath-birds_5",
+     "src": "https://cdn.shopify.com/s/files/1/0707/4850/4296/files/345c7efa2d274cb78dce835a9fa74e4bcd645713688a1d64c58d3343f70dd2f2.jpg?v=1789079727"
+    },
+    {
+     "key": "living-textiles-silicone-squeezy-bath-birds_6",
+     "src": "https://cdn.shopify.com/s/files/1/0707/4850/4296/files/c1e35907726e960812964a7d13c023f28bda2bf582b9f39c67f846bfb7f3b4b4.jpg?v=1789079727"
+    }
+   ],
+   "img": "living-textiles-silicone-squeezy-bath-birds",
+   "img_src": "https://cdn.shopify.com/s/files/1/0707/4850/4296/files/f762c100feb32a020633e6d95f128844527f53a23c57788b8e38275f6ece562b.jpg?v=1789079724"
+  },
+  {
+   "id": "lowercase-toys-starter-felt-doll-set",
+   "type": "dolls",
+   "brand": "Lowercase Toys",
+   "line": "Starter Felt Doll Set (1 doll, 7 apparel pieces)",
+   "uses": [],
+   "free": [],
+   "outside": [
+    "Felt made from recycled water bottles"
+   ],
+   "unconfirmed": [
+    "Dyes"
+   ],
+   "facts": {
+    "main": "no",
+    "color": "unknown"
+   },
+   "unstated": {
+    "color": [
+     "Dyes"
+    ]
+   },
+   "standards": [],
+   "age": {
+    "min_months": 36,
+    "text": "Recommended for ages 3+"
+   },
+   "quote": "Made from felt that is made from recycled water bottles",
+   "note": "A flat felt dress-up doll in three skin tones with 7 clothing pieces. Made in the USA; ships from Bella Luna Toys’ New York warehouse.",
+   "products": [
+    {
+     "name": "Lowercase Toys Starter Felt Doll Set",
+     "url": "https://www.bellalunatoys.com/products/lowercase-toys-starter-felt-doll-set",
+     "store": "Bella Luna Toys",
+     "price": "$24.00",
+     "ships_from": "US",
+     "shipping": "Free shipping on orders over $99"
+    }
+   ],
+   "contains": [],
+   "read": "2026-11-23",
+   "photos": [
+    {
+     "key": "lowercase-toys-starter-felt-doll-set",
+     "src": "https://cdn.shopify.com/s/files/1/1114/2810/files/lowercase-toys-felt-doll-starter-set.jpg?v=1755555066"
+    },
+    {
+     "key": "lowercase-toys-starter-felt-doll-set_2",
+     "src": "https://cdn.shopify.com/s/files/1/1114/2810/files/lowercase-toys-felt-doll-starter-set-ls-2.jpg?v=1755555066"
+    },
+    {
+     "key": "lowercase-toys-starter-felt-doll-set_3",
+     "src": "https://cdn.shopify.com/s/files/1/1114/2810/files/lowercase-toys-felt-doll-starter-set-ls-3.jpg?v=1755555066"
+    },
+    {
+     "key": "lowercase-toys-starter-felt-doll-set_4",
+     "src": "https://cdn.shopify.com/s/files/1/1114/2810/files/lowercase-toys-felt-doll-starter-set-ls.jpg?v=1755555066"
+    },
+    {
+     "key": "lowercase-toys-starter-felt-doll-set_5",
+     "src": "https://cdn.shopify.com/s/files/1/1114/2810/files/lowercase-toys-felt-doll-starter-set-dark.jpg?v=1755555066"
+    }
+   ],
+   "img": "lowercase-toys-starter-felt-doll-set",
+   "img_src": "https://cdn.shopify.com/s/files/1/1114/2810/files/lowercase-toys-felt-doll-starter-set.jpg?v=1755555066"
+  },
+  {
+   "id": "mushie-sun-teether",
+   "type": "teethers",
+   "brand": "Mushie",
+   "line": "Sun Teether",
+   "uses": [
+    "100% food grade silicone"
+   ],
+   "free": [
+    "BPA",
+    "BPS",
+    "PVC",
+    "Phthalates"
+   ],
+   "outside": [],
+   "unconfirmed": [
+    "Pigments",
+    "Silicone testing (no LFGB or French test named)"
+   ],
+   "facts": {
+    "main": "yes",
+    "parts": "yes",
+    "color": "unknown",
+    "silicone": "unknown",
+    "lead": "yes"
+   },
+   "unstated": {
+    "color": [
+     "Pigments"
+    ],
+    "silicone": [
+     "Silicone testing (no LFGB or French test named)"
+    ]
+   },
+   "standards": [
+    "us-toy"
+   ],
+   "age": {
+    "min_months": 3,
+    "text": "Recommended age: 3 months+"
+   },
+   "quote": "100% high-quality food grade silicone - Free of BPA, BPS, PVC and phthalates",
+   "note": "One sun-shaped teether, 4.5 x 2.75 in.",
+   "products": [
+    {
+     "name": "Sun Teether, Shifting Sand",
+     "url": "https://mushie.com/products/sun-teether",
+     "store": "Mushie",
+     "price": "$12.99",
+     "ships_from": null
+    }
+   ],
+   "contains": [],
+   "read": "2026-11-23",
+   "photos": [
+    {
+     "key": "mushie-sun-teether",
+     "src": "https://mushie.com/cdn/shop/files/Sun_Teether_ShiftingSand.jpg?v=1773181705&width=1920"
+    },
+    {
+     "key": "mushie-sun-teether_2",
+     "src": "http://mushie.com/cdn/shop/files/bigdinnerware_shoot_77of88.jpg?v=1768256945"
+    },
+    {
+     "key": "mushie-sun-teether_3",
+     "src": "http://mushie.com/cdn/shop/files/babyletto2_all_32d132d5-b4f8-4c70-8cde-ecd28d9b22b8.jpg?v=1768256945"
+    }
+   ],
+   "img": "mushie-sun-teether",
+   "img_src": "https://mushie.com/cdn/shop/files/Sun_Teether_ShiftingSand.jpg?v=1773181705&width=1920"
+  },
+  {
+   "id": "sophie-la-girafe-so-pure-natur-soft-rattle",
+   "type": "rattles",
+   "brand": "Sophie la Girafe",
+   "line": "So’pure Natur Soft Rattle",
+   "uses": [
+    "Natural rubber",
+    "Organic cotton"
+   ],
+   "free": [],
+   "outside": [
+    "Bio-plastic"
+   ],
+   "unconfirmed": [
+    "Which part is made of which material",
+    "Bell",
+    "Dyes"
+   ],
+   "facts": {
+    "main": "no",
+    "parts": "unknown",
+    "color": "unknown",
+    "rubber": "unknown",
+    "organic": "unknown"
+   },
+   "unstated": {
+    "parts": [
+     "Bell"
+    ],
+    "color": [
+     "Dyes"
+    ],
+    "rubber": [
+     "Which part is made of which material"
+    ],
+    "organic": [
+     "Which part is made of which material"
+    ]
+   },
+   "contains": [
+    "latex"
+   ],
+   "standards": [],
+   "age": {
+    "min_months": 3,
+    "text": "Recommended age: 3 m+"
+   },
+   "quote": "First Sophie la girafe rattle mixed with 3 natural materials: ‐Natural rubber ‐Organic cotton ‐Bio-plastic",
+   "note": "Handle, Sophie’s head to chew and a bell. The page calls all three materials “natural”. Sold out at Enlightened Baby when read.",
+   "products": [
+    {
+     "name": "So'pure Natur soft rattle",
+     "url": "https://enlightenedbaby.com/products/sopure-natur-soft-rattle-new",
+     "store": "Enlightened Baby",
+     "price": "$29.99",
+     "ships_from": null
+    }
+   ],
+   "read": "2026-11-23",
+   "photos": [
+    {
+     "key": "sophie-la-girafe-so-pure-natur-soft-rattle",
+     "src": "https://enlightenedbaby.com/cdn/shop/files/c71819abcd5504b1fc1ee17c4d04fc06a3a3dc4c849f9aef0dde0d7fd26abca5_1024x1024.jpg?v=1780596330"
+    },
+    {
+     "key": "sophie-la-girafe-so-pure-natur-soft-rattle_2",
+     "src": "https://enlightenedbaby.com/cdn/shop/files/f61731194a322cd253697dba0dc6048dbcb83596e7950b477748938d6cc63e71_926x1300.jpg?v=1780596332"
+    },
+    {
+     "key": "sophie-la-girafe-so-pure-natur-soft-rattle_3",
+     "src": "https://enlightenedbaby.com/cdn/shop/files/6b2067cfaa403f3844862e12c626063545f17478da3a9340f5f019b58df419d9_1034x690.jpg?v=1780596332"
+    }
+   ],
+   "img": "sophie-la-girafe-so-pure-natur-soft-rattle",
+   "img_src": "https://enlightenedbaby.com/cdn/shop/files/c71819abcd5504b1fc1ee17c4d04fc06a3a3dc4c849f9aef0dde0d7fd26abca5_1024x1024.jpg?v=1780596330"
+  },
+  {
+   "id": "toki-kids-poppy-vegan-leather-mat",
+   "type": "mats",
+   "brand": "Toki Kids",
+   "line": "Poppy Vegan Leather Mat (40 x 40 or 55 x 55 in)",
+   "uses": [
+    "Dunlop latex foam insert made from natural rubber tree sap",
+    "Organic cotton duster bag (packaging)"
+   ],
+   "free": [
+    "Synthetic chemicals in the latex foam"
+   ],
+   "outside": [
+    "Microfiber PU leather cover"
+   ],
+   "unconfirmed": [
+    "Side zippers",
+    "Thread",
+    "Inks for the Poppy print"
+   ],
+   "facts": {
+    "main": "no",
+    "parts": "unknown",
+    "color": "unknown",
+    "rubber": "yes",
+    "lead": "yes"
+   },
+   "unstated": {
+    "parts": [
+     "Side zippers",
+     "Thread"
+    ],
+    "color": [
+     "Inks for the Poppy print"
+    ]
+   },
+   "contains": [
+    "latex"
+   ],
+   "standards": [
+    "oeko-tex"
+   ],
+   "age": {
+    "min_months": 0,
+    "text": "Recommended ages 0+"
+   },
+   "quote": "Our vegan leather cover is made from water based micro fiber PU leather",
+   "note": "1 in thick play mat; the Mega size is 55 x 55 in at $325. Sold out when read (restock “expected mid November”). Toki Kids says it is “Tested for harmful substances including phthalates, PFAs, BPA and heavy metals.”",
+   "products": [
+    {
+     "name": "Poppy Vegan Leather Mat, Standard 40 x 40 in",
+     "url": "https://tokikids.com/products/poppy-vegan-leather-mat",
+     "store": "Toki Kids",
+     "price": "$225",
+     "ships_from": null,
+     "variant": "Standard",
+     "shipping": "Free shipping over $200"
+    }
+   ],
+   "read": "2026-11-23",
+   "photos": [
+    {
+     "key": "toki-kids-poppy-vegan-leather-mat",
+     "src": "https://cdn.shopify.com/s/files/1/1986/4079/files/1_531886ed-1908-406f-9aac-ed22be89e029.png?v=1785913380"
+    },
+    {
+     "key": "toki-kids-poppy-vegan-leather-mat_2",
+     "src": "https://cdn.shopify.com/s/files/1/1986/4079/files/8_59b12bee-06b9-4253-a265-f315ebdd1343.png?v=1785913536"
+    },
+    {
+     "key": "toki-kids-poppy-vegan-leather-mat_3",
+     "src": "https://cdn.shopify.com/s/files/1/1986/4079/files/13_83c17f23-c21a-4f83-8404-72d74b0b4674.png?v=1785913535"
+    },
+    {
+     "key": "toki-kids-poppy-vegan-leather-mat_4",
+     "src": "https://cdn.shopify.com/s/files/1/1986/4079/files/12_795a6dcf-27af-4771-b56a-c619f57a3e3e.png?v=1785913535"
+    },
+    {
+     "key": "toki-kids-poppy-vegan-leather-mat_5",
+     "src": "https://cdn.shopify.com/s/files/1/1986/4079/files/14_0b3ee420-85a0-4be9-aa4e-af0e67189e3c.png?v=1785913543"
+    },
+    {
+     "key": "toki-kids-poppy-vegan-leather-mat_6",
+     "src": "https://cdn.shopify.com/s/files/1/1986/4079/files/11_da456d48-3db4-4629-9778-6bb82afad346.png?v=1785913535"
+    },
+    {
+     "key": "toki-kids-poppy-vegan-leather-mat_7",
+     "src": "https://cdn.shopify.com/s/files/1/1986/4079/files/9_7c4b517c-a9a9-439a-8902-dca56cfb03ab.png?v=1785913536"
+    }
+   ],
+   "img": "toki-kids-poppy-vegan-leather-mat",
+   "img_src": "https://cdn.shopify.com/s/files/1/1986/4079/files/1_531886ed-1908-406f-9aac-ed22be89e029.png?v=1785913380"
   }
  ]
 }
