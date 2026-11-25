@@ -1,6 +1,6 @@
 {
  "schema": 4,
- "updated": "2026-11-24",
+ "updated": "2026-11-25",
  "ask": [
   "Thread on any sewn item (cotton or polyester).",
   "Wheels and axles on push toys and cars.",
@@ -49429,6 +49429,1190 @@
    ],
    "img": "wee-gallery-organic-bear-flippy-friend",
    "img_src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Organic-Bear-Flippy-Friend-Wee-Gallery-123639751.jpg?v=1781460149"
+  },
+  {
+   "id": "bella-luna-toys-earth-mother-play-silks",
+   "type": "silks",
+   "brand": "Bella Luna Toys",
+   "line": "Earth Mother Play Silks, 35 x 35 in",
+   "uses": [
+    "100% mulberry silk, 8 momme"
+   ],
+   "free": [
+    "Heavy metals in the dyes"
+   ],
+   "outside": [],
+   "unconfirmed": [
+    "Dye type (the page says \"non-toxic, heavy-metal-free dyes\")"
+   ],
+   "facts": {
+    "main": "yes",
+    "color": "unknown",
+    "lead": "unknown"
+   },
+   "unstated": {
+    "color": [
+     "Dye type (the page says \"non-toxic, heavy-metal-free dyes\")"
+    ]
+   },
+   "standards": [],
+   "contains": [],
+   "quote": "MATERIALS : Made with 100% pure 8 momme silk dyed with non-toxic, child-safe dyes.",
+   "note": "Six muted shades (Sea Glass, First Light, Meadow, Sprout, Heather, Driftwood), sold one at a time. Made in China; ships from New York (store page).",
+   "products": [
+    {
+     "name": "Bella Luna Toys Earth Mother Play Silk Collection",
+     "url": "https://www.bellalunatoys.com/products/bella-luna-toys-earth-mother-play-silk-collection",
+     "store": "Bella Luna Toys",
+     "price": "$18.00",
+     "ships_from": "US",
+     "shipping": "Free shipping on orders over $99 within the contiguous 48 USA"
+    }
+   ],
+   "read": "2026-11-25",
+   "photos": [
+    {
+     "key": "bella-luna-toys-earth-mother-play-silks",
+     "src": "https://cdn.shopify.com/s/files/1/1114/2810/files/OPT---Earth-Mother-Play-Silk-Collection.jpg?v=1792681587"
+    },
+    {
+     "key": "bella-luna-toys-earth-mother-play-silks_2",
+     "src": "https://cdn.shopify.com/s/files/1/1114/2810/files/bella-luna-toys-earth-mother-play-silks.jpg?v=1792723168"
+    },
+    {
+     "key": "bella-luna-toys-earth-mother-play-silks_3",
+     "src": "https://cdn.shopify.com/s/files/1/1114/2810/files/bella-luna-toys-earth-mother-play-silks-beach-6.jpg?v=1792722977"
+    },
+    {
+     "key": "bella-luna-toys-earth-mother-play-silks_4",
+     "src": "https://cdn.shopify.com/s/files/1/1114/2810/files/Earth-Mother-Play-Silk-Collection-Full-Collection-LS2.jpg?v=1792631327"
+    },
+    {
+     "key": "bella-luna-toys-earth-mother-play-silks_5",
+     "src": "https://cdn.shopify.com/s/files/1/1114/2810/files/bella-luna-toys-play-silks-earth-mother-collection.jpg?v=1792711270"
+    },
+    {
+     "key": "bella-luna-toys-earth-mother-play-silks_6",
+     "src": "https://cdn.shopify.com/s/files/1/1114/2810/files/bella-luna-toys-earth-mother-play-silks-beach-2.jpg?v=1792722977"
+    },
+    {
+     "key": "bella-luna-toys-earth-mother-play-silks_7",
+     "src": "https://cdn.shopify.com/s/files/1/1114/2810/files/bella-luna-toys-earth-mother-play-silks-beach-7.jpg?v=1792722977"
+    },
+    {
+     "key": "bella-luna-toys-earth-mother-play-silks_8",
+     "src": "https://cdn.shopify.com/s/files/1/1114/2810/files/bella-luna-toys-earth-mother-play-silks-beach.jpg?v=1792722977"
+    },
+    {
+     "key": "bella-luna-toys-earth-mother-play-silks_9",
+     "src": "https://cdn.shopify.com/s/files/1/1114/2810/files/bella-luna-toys-grimms-starry-dawn-puzzle-5.jpg?v=1792711270"
+    },
+    {
+     "key": "bella-luna-toys-earth-mother-play-silks_10",
+     "src": "https://cdn.shopify.com/s/files/1/1114/2810/files/bella-luna-toys-earth-mother-play-silks-beach-8.jpg?v=1792722977"
+    }
+   ],
+   "img": "bella-luna-toys-earth-mother-play-silks",
+   "img_src": "https://cdn.shopify.com/s/files/1/1114/2810/files/OPT---Earth-Mother-Play-Silk-Collection.jpg?v=1792681587"
+  },
+  {
+   "id": "bibs-original-pacifier-2-pack",
+   "type": "pacifiers",
+   "brand": "BIBS",
+   "line": "Original Pacifier, 2 pack (natural rubber latex)",
+   "uses": [
+    "Natural rubber latex nipple"
+   ],
+   "free": [
+    "BPA",
+    "PVC",
+    "Phthalates"
+   ],
+   "outside": [],
+   "unconfirmed": [
+    "Material of the shield (\"100% food-safe material\")",
+    "Plasticisers or other additives in the rubber",
+    "Pigments for the shield colours"
+   ],
+   "facts": {
+    "main": "unknown",
+    "rubber": "unknown",
+    "color": "unknown"
+   },
+   "unstated": {
+    "main": [
+     "Material of the shield (\"100% food-safe material\")"
+    ],
+    "rubber": [
+     "Plasticisers or other additives in the rubber"
+    ],
+    "color": [
+     "Pigments for the shield colours"
+    ]
+   },
+   "standards": [],
+   "contains": [
+    "latex"
+   ],
+   "age": {
+    "min_months": 0,
+    "max_months": 18,
+    "text": "Size 1 (0-6M), Size 2 (6-18M)"
+   },
+   "quote": "Available in natural rubber latex.",
+   "note": "The round-nipple BIBS pacifier with a vented round shield. Designed and manufactured in Denmark/EU (store page).",
+   "products": [
+    {
+     "name": "Bibs Original Pacifier 2 Pack - Baby Blue + White",
+     "url": "https://pacifierkids.com/products/bibs-original-pacifier-2pk-baby-blue-white",
+     "price": "$12.80 (sale; regular $16.00)",
+     "store": "Pacifier",
+     "ships_from": "US",
+     "shipping": "$5.95 Flat Rate Shipping"
+    }
+   ],
+   "read": "2026-11-25",
+   "photos": [
+    {
+     "key": "bibs-original-pacifier-2-pack",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/products/Screenshot2022-12-05at12.28.30PM.png?v=1670264972"
+    },
+    {
+     "key": "bibs-original-pacifier-2-pack_2",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/products/Screenshot2022-12-05at12.29.41PM.png?v=1670265033"
+    }
+   ],
+   "img": "bibs-original-pacifier-2-pack",
+   "img_src": "https://cdn.shopify.com/s/files/1/0281/8056/products/Screenshot2022-12-05at12.28.30PM.png?v=1670264972"
+  },
+  {
+   "id": "colored-organics-theo-poplin-collar-bodysuit",
+   "type": "bodysuits",
+   "brand": "Colored Organics",
+   "line": "Theo Poplin Collar Bodysuit",
+   "uses": [
+    "100% organic cotton poplin",
+    "Wood buttons"
+   ],
+   "free": [
+    "Nickel in the snaps"
+   ],
+   "outside": [],
+   "unconfirmed": [
+    "Snap material",
+    "Elastic in the leg openings",
+    "Dye ingredients (“water-based”, not named)",
+    "Thread"
+   ],
+   "facts": {
+    "main": "yes",
+    "parts": "unknown",
+    "color": "unknown"
+   },
+   "unstated": {
+    "parts": [
+     "Snap material",
+     "Elastic in the leg openings"
+    ],
+    "color": [
+     "Dye ingredients (“water-based”, not named)"
+    ]
+   },
+   "standards": [],
+   "contains": [],
+   "age": {
+    "min_months": 0,
+    "max_months": 24,
+    "text": "Sizes 0-3M to 18-24M"
+   },
+   "quote": "Made of 100% Organic Cotton Poplin Wood button front closure",
+   "note": "Collared bodysuit with a button front, patch pocket and button cuffs; taupe or agave plaid.",
+   "products": [
+    {
+     "name": "Theo Poplin Collar Bodysuit",
+     "url": "https://coloredorganics.com/products/organic-cotton-baby-aw25-theo-poplin-collar-bodysuit-96504-25",
+     "store": "Colored Organics",
+     "price": "$32 (sale; regular $40)",
+     "ships_from": "US",
+     "shipping": "Free shipping on U.S. domestic orders over $50"
+    }
+   ],
+   "read": "2026-11-25",
+   "photos": [
+    {
+     "key": "colored-organics-theo-poplin-collar-bodysuit",
+     "src": "https://cdn.shopify.com/s/files/1/1643/4857/files/96804-25-theo-poplin-collar-bodysuit.agave-plaid.flat_front_d68edb3a-53a0-4793-b632-381442f7ed01.jpg?v=1757538458"
+    }
+   ],
+   "img": "colored-organics-theo-poplin-collar-bodysuit",
+   "img_src": "https://cdn.shopify.com/s/files/1/1643/4857/files/96804-25-theo-poplin-collar-bodysuit.agave-plaid.flat_front_d68edb3a-53a0-4793-b632-381442f7ed01.jpg?v=1757538458"
+  },
+  {
+   "id": "disana-wool-pull-on-cover",
+   "type": "diapers",
+   "brand": "Disana",
+   "line": "Wool Pull-On Cover (2-layer knit), 0-3 months to 3-4 years",
+   "uses": [
+    "100% merino wool from organic farming"
+   ],
+   "free": [
+    "Wool treatment (\"totally untreated\")"
+   ],
+   "outside": [],
+   "unconfirmed": [
+    "Dyes for the coloured versions",
+    "Organic certification scheme"
+   ],
+   "facts": {
+    "main": "yes",
+    "color": "unknown",
+    "wool": "yes",
+    "organic": "unknown"
+   },
+   "unstated": {
+    "color": [
+     "Dyes for the coloured versions"
+    ],
+    "organic": [
+     "Organic certification scheme"
+    ]
+   },
+   "standards": [],
+   "contains": [],
+   "age": {
+    "min_months": 0,
+    "max_months": 48,
+    "text": "Sizes 0-3 months (50/56 cm) to 3-4 years (98/104 cm)"
+   },
+   "quote": "Disana Wool Pull-On is a natural merino wool 2-layer pull-on diaper cover. An excellent natural, soft, breathable nighttime option. 100% merino wool from organic farming. Made in Germany.",
+   "note": "Knitted pull-on cover; the store says to hand wash and lanolize it. Made in Germany; the 5-6 year size is sold on a separate page.",
+   "products": [
+    {
+     "name": "Disana Wool Pull-On Cover",
+     "url": "https://www.greenmountaindiapers.com/products/disana-wool-pull-on",
+     "store": "Green Mountain Diapers",
+     "price": "$46.95",
+     "ships_from": "US",
+     "shipping": "Shipping calculated at checkout"
+    }
+   ],
+   "read": "2026-11-25",
+   "photos": [
+    {
+     "key": "disana-wool-pull-on-cover",
+     "src": "https://cdn.shopify.com/s/files/1/1583/5087/files/dpulldoveblue.jpg?v=1767725348"
+    },
+    {
+     "key": "disana-wool-pull-on-cover_2",
+     "src": "https://cdn.shopify.com/s/files/1/1583/5087/files/disana-pullon-caramel1800.jpg?v=1767725348"
+    },
+    {
+     "key": "disana-wool-pull-on-cover_3",
+     "src": "https://cdn.shopify.com/s/files/1/1583/5087/products/Disana_Wool_Pull_on_Grey_Resized.jpg?v=1767642631"
+    },
+    {
+     "key": "disana-wool-pull-on-cover_4",
+     "src": "https://cdn.shopify.com/s/files/1/1583/5087/files/dpullnatural2048_6f4d450b-beee-45ee-939c-ece3e2941bff.jpg?v=1767725348"
+    },
+    {
+     "key": "disana-wool-pull-on-cover_5",
+     "src": "https://cdn.shopify.com/s/files/1/1583/5087/files/disanastack2025-2048.jpg?v=1767725348"
+    },
+    {
+     "key": "disana-wool-pull-on-cover_6",
+     "src": "https://cdn.shopify.com/s/files/1/1583/5087/files/dpull-softpink2048.jpg?v=1767642631"
+    },
+    {
+     "key": "disana-wool-pull-on-cover_7",
+     "src": "https://cdn.shopify.com/s/files/1/1583/5087/files/disana-pull-on-measured.jpg?v=1767642631"
+    },
+    {
+     "key": "disana-wool-pull-on-cover_8",
+     "src": "https://cdn.shopify.com/s/files/1/1583/5087/files/new-washedb.jpg?v=1767642631"
+    },
+    {
+     "key": "disana-wool-pull-on-cover_9",
+     "src": "https://cdn.shopify.com/s/files/1/1583/5087/files/disanacerts2000_404de7d7-f9c0-4342-b71b-55ac7aabf916.jpg?v=1767642631"
+    },
+    {
+     "key": "disana-wool-pull-on-cover_10",
+     "src": "https://www.greenmountaindiapers.com/cdn/shop/files/dpulldoveblue.jpg?v=1767725348&width=1024"
+    }
+   ],
+   "img": "disana-wool-pull-on-cover",
+   "img_src": "https://cdn.shopify.com/s/files/1/1583/5087/files/dpulldoveblue.jpg?v=1767725348"
+  },
+  {
+   "id": "ella-bonna-fleece-snap-baby-booties",
+   "type": "shoes",
+   "brand": "Ella Bonna Baby",
+   "line": "Fleece Snap Baby Booties, 0-6 to 24-36 months",
+   "uses": [
+    "Cotton lining"
+   ],
+   "free": [],
+   "outside": [],
+   "unconfirmed": [
+    "Fibre of the fleece outer fabric",
+    "Sole",
+    "Snaps",
+    "Elastic at the ankle",
+    "Dyes"
+   ],
+   "facts": {
+    "main": "unknown",
+    "parts": "unknown",
+    "color": "unknown"
+   },
+   "unstated": {
+    "main": [
+     "Fibre of the fleece outer fabric",
+     "Sole"
+    ],
+    "parts": [
+     "Snaps",
+     "Elastic at the ankle"
+    ],
+    "color": [
+     "Dyes"
+    ]
+   },
+   "standards": [],
+   "contains": [],
+   "quote": "Fleece outer fabric Cotton lining Three adjustable snap settings",
+   "note": "Soft booties for indoor, nursery and stroller wear; the page says the month sizes are \"footwear fit ranges\". Beige; sold by The Baby Penguin.",
+   "products": [
+    {
+     "name": "Ella Bonna Baby Fleece Snap Baby Booties - Beige",
+     "url": "https://thebabypenguin.com/products/anti-slip-sole-fleece-baby-booties-newborn-home-booties-sweat-proof-organic-cotton-lining-beige",
+     "price": "$21.99",
+     "store": "The Baby Penguin",
+     "ships_from": "US",
+     "shipping": "Free shipping on orders of $50 or more within the contiguous United States"
+    }
+   ],
+   "read": "2026-11-25",
+   "photos": [
+    {
+     "key": "ella-bonna-fleece-snap-baby-booties",
+     "src": "https://thebabypenguin.com/cdn/shop/files/Anti-Slip-Sole_-Fleece-Baby-Booties_-Newborn-Home-Booties_-Sweat-Proof-Organic-Cotton-Lining_-Beige-Ella-Bonna-Baby-126002777.jpg?v=1781464109&width=1920"
+    },
+    {
+     "key": "ella-bonna-fleece-snap-baby-booties_2",
+     "src": "https://thebabypenguin.com/cdn/shop/files/Anti-Slip-Sole_-Fleece-Baby-Booties_-Newborn-Home-Booties_-Sweat-Proof-Organic-Cotton-Lining_-Beige-Ella-Bonna-Baby-126002863.jpg"
+    },
+    {
+     "key": "ella-bonna-fleece-snap-baby-booties_3",
+     "src": "https://thebabypenguin.com/cdn/shop/files/Anti-Slip-Sole_-Fleece-Baby-Booties_-Newborn-Home-Booties_-Sweat-Proof-Organic-Cotton-Lining_-Beige-Ella-Bonna-Baby-126002959.jpg"
+    },
+    {
+     "key": "ella-bonna-fleece-snap-baby-booties_4",
+     "src": "https://thebabypenguin.com/cdn/shop/files/Anti-Slip-Sole_-Fleece-Baby-Booties_-Newborn-Home-Booties_-Sweat-Proof-Organic-Cotton-Lining_-Beige-Ella-Bonna-Baby-126003082.jpg"
+    },
+    {
+     "key": "ella-bonna-fleece-snap-baby-booties_5",
+     "src": "https://thebabypenguin.com/cdn/shop/files/Anti-Slip-Sole_-Fleece-Baby-Booties_-Newborn-Home-Booties_-Sweat-Proof-Organic-Cotton-Lining_-Beige-Ella-Bonna-Baby-126003151.jpg"
+    },
+    {
+     "key": "ella-bonna-fleece-snap-baby-booties_6",
+     "src": "https://thebabypenguin.com/cdn/shop/files/Anti-Slip-Sole_-Fleece-Baby-Booties_-Newborn-Home-Booties_-Sweat-Proof-Organic-Cotton-Lining_-Beige-Ella-Bonna-Baby-126003270.jpg"
+    },
+    {
+     "key": "ella-bonna-fleece-snap-baby-booties_7",
+     "src": "https://thebabypenguin.com/cdn/shop/files/Anti-Slip-Sole_-Fleece-Baby-Booties_-Newborn-Home-Booties_-Sweat-Proof-Organic-Cotton-Lining_-Beige-Ella-Bonna-Baby-126003381.jpg"
+    }
+   ],
+   "img": "ella-bonna-fleece-snap-baby-booties",
+   "img_src": "https://thebabypenguin.com/cdn/shop/files/Anti-Slip-Sole_-Fleece-Baby-Booties_-Newborn-Home-Booties_-Sweat-Proof-Organic-Cotton-Lining_-Beige-Ella-Bonna-Baby-126002777.jpg?v=1781464109&width=1920"
+  },
+  {
+   "id": "huttelihut-balaclava-ears-wool-teddy",
+   "type": "accessories",
+   "brand": "HUTTEliHUT",
+   "line": "Balaclava with Ears, Wool Teddy",
+   "uses": [
+    "100% wool teddy outer",
+    "Cotton jersey lining"
+   ],
+   "free": [],
+   "outside": [],
+   "unconfirmed": [
+    "Wool treatment",
+    "Fibre of the ribbed trim",
+    "Dyes",
+    "Thread"
+   ],
+   "facts": {
+    "main": "yes",
+    "parts": "unknown",
+    "color": "unknown",
+    "wool": "unknown"
+   },
+   "unstated": {
+    "parts": [
+     "Fibre of the ribbed trim",
+     "Thread"
+    ],
+    "color": [
+     "Dyes"
+    ],
+    "wool": [
+     "Wool treatment"
+    ]
+   },
+   "standards": [],
+   "contains": [],
+   "age": {
+    "min_months": 6,
+    "max_months": 72,
+    "text": "Sizes 6-12M, 12-24M, 2-4Y, 4-6Y"
+   },
+   "quote": "Made from 100% wool with a soft teddy finish, this double-layer balaclava provides natural warmth while covering the head, ears, neck and upper chest. The soft cotton jersey lining feels comfortable against delicate skin",
+   "note": "Double-layer balaclava with bear ears and long front and back panels. Camel melange; sold by Pacifier.",
+   "products": [
+    {
+     "name": "Balaclava Ears Wool Teddy - Camel Melange by Huttelihut",
+     "url": "https://pacifierkids.com/products/balaclava-ears-wool-teddy-camel-melange-by-huttelihut",
+     "price": "$56.00 (sale; regular $70.00)",
+     "store": "Pacifier",
+     "ships_from": "US",
+     "shipping": "$5.95 Flat Rate Shipping"
+    }
+   ],
+   "read": "2026-11-25",
+   "photos": [
+    {
+     "key": "huttelihut-balaclava-ears-wool-teddy",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/product_photo_-_white_background_-_2026-10-20T091924.850.jpg?v=1792459175"
+    },
+    {
+     "key": "huttelihut-balaclava-ears-wool-teddy_2",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/product_photo_-_white_background_79_b479cc65-c103-486b-9393-8f0272457cd7.jpg?v=1792407818"
+    },
+    {
+     "key": "huttelihut-balaclava-ears-wool-teddy_3",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/940034.jpg?v=1792407818"
+    }
+   ],
+   "img": "huttelihut-balaclava-ears-wool-teddy",
+   "img_src": "https://cdn.shopify.com/s/files/1/0281/8056/files/product_photo_-_white_background_-_2026-10-20T091924.850.jpg?v=1792459175"
+  },
+  {
+   "id": "itzy-ritzy-itzy-friends-lovey-plush",
+   "type": "animals",
+   "brand": "Itzy Ritzy",
+   "line": "Itzy Friends Lovey Plush (Billie the Bunny) with silicone teether",
+   "uses": [
+    "Silicone teether"
+   ],
+   "free": [],
+   "outside": [],
+   "unconfirmed": [
+    "Fibre of the sherpa fabric",
+    "Fibre of the ribbons",
+    "Crinkle material in the arms",
+    "Filling",
+    "Hook and loop strap",
+    "Silicone testing (no LFGB or French test named)",
+    "Dyes"
+   ],
+   "facts": {
+    "main": "unknown",
+    "parts": "unknown",
+    "color": "unknown",
+    "silicone": "unknown"
+   },
+   "unstated": {
+    "main": [
+     "Fibre of the sherpa fabric",
+     "Filling"
+    ],
+    "parts": [
+     "Fibre of the ribbons",
+     "Hook and loop strap",
+     "Crinkle material in the arms"
+    ],
+    "color": [
+     "Dyes"
+    ],
+    "silicone": [
+     "Silicone testing (no LFGB or French test named)"
+    ]
+   },
+   "standards": [],
+   "contains": [],
+   "age": {
+    "min_months": 0,
+    "text": "For ages 0m+"
+   },
+   "quote": "Features woolly sherpa fabric and textured ribbons Includes a silicone, textured teether",
+   "note": "Small lovey with crinkly arms, ribbons and a teether ring; 8.2 in long. Made in China (store page). The page names the fabric only as \"sherpa\".",
+   "products": [
+    {
+     "name": "Itzy Friends Lovey Plush - Taupe Bunny by Itzy Ritzy",
+     "url": "https://pacifierkids.com/products/itzy-friends-lovey-plush-taupe-bunny-by-itzy-ritzy",
+     "price": "$11.99 (sale; regular $14.99)",
+     "store": "Pacifier",
+     "ships_from": "US",
+     "shipping": "$5.95 Flat Rate Shipping"
+    }
+   ],
+   "read": "2026-11-25",
+   "photos": [
+    {
+     "key": "itzy-ritzy-itzy-friends-lovey-plush",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/product_photo_-_white_background_-_2026-02-09T223329.020.jpg?v=1770647668"
+    },
+    {
+     "key": "itzy-ritzy-itzy-friends-lovey-plush_2",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/a17432435b108fb09cc1307730f4704b99ceb65bfbada60d581e44738afe1cbb.jpg?v=1770647668"
+    },
+    {
+     "key": "itzy-ritzy-itzy-friends-lovey-plush_3",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/cc9eb23a699256c3e406bb985fbd43e328cfeb83b005345c37d102a625b51bfe.jpg?v=1770647668"
+    },
+    {
+     "key": "itzy-ritzy-itzy-friends-lovey-plush_4",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/179712c38ce7719d562b14ac5b157a55dcda316b80dd83b3ce4af8517ec8f594.jpg?v=1770647668"
+    },
+    {
+     "key": "itzy-ritzy-itzy-friends-lovey-plush_5",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/bc3bdc91cc88acc784b786a0a192b8bee169225d5f56724f216ba887e75ad2ee.jpg?v=1770647668"
+    },
+    {
+     "key": "itzy-ritzy-itzy-friends-lovey-plush_6",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/91bcee0f833f86c0420c00d5293071bd770cad2b2b5df0000f0ba79661cb6ee8.jpg?v=1770647668"
+    },
+    {
+     "key": "itzy-ritzy-itzy-friends-lovey-plush_7",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/e9256d82a4aa3bb6daa8fe59a092abfa2cd37df208d744765e381a86720b141f.jpg?v=1770647668"
+    },
+    {
+     "key": "itzy-ritzy-itzy-friends-lovey-plush_8",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/cdf519bf85c667cfcdf042e50f17a1642d5ff3142fea3416f9ddd1d9dd332fe9.jpg?v=1770647668"
+    }
+   ],
+   "img": "itzy-ritzy-itzy-friends-lovey-plush",
+   "img_src": "https://cdn.shopify.com/s/files/1/0281/8056/files/product_photo_-_white_background_-_2026-02-09T223329.020.jpg?v=1770647668"
+  },
+  {
+   "id": "itzy-ritzy-latch-soothe-silicone-pacifier",
+   "type": "pacifiers",
+   "brand": "Itzy Ritzy",
+   "line": "Latch & Soothe Silicone Breastlike Pacifier, 2 pack",
+   "uses": [
+    "100% silicone"
+   ],
+   "free": [],
+   "outside": [],
+   "unconfirmed": [
+    "Pigments",
+    "Silicone testing (no LFGB or French test named)"
+   ],
+   "facts": {
+    "main": "yes",
+    "color": "unknown",
+    "silicone": "unknown"
+   },
+   "unstated": {
+    "color": [
+     "Pigments"
+    ],
+    "silicone": [
+     "Silicone testing (no LFGB or French test named)"
+    ]
+   },
+   "standards": [],
+   "contains": [],
+   "quote": "It’s made from 100% silicone and is clear for easy visibility of baby’s latch.",
+   "note": "One-piece clear pacifier with a wide nipple base and a handle; two per pack. Made in China (store page).",
+   "products": [
+    {
+     "name": "Latch & Soothe Silicone Breastlike Pacifier by Itzy Ritzy",
+     "url": "https://pacifierkids.com/products/latch-soothe-silicone-breastlike-pacifier-taupe-by-itzy-ritzy",
+     "price": "$7.99 (sale; regular $9.99)",
+     "store": "Pacifier",
+     "ships_from": "US",
+     "shipping": "$5.95 Flat Rate Shipping"
+    }
+   ],
+   "read": "2026-11-25",
+   "photos": [
+    {
+     "key": "itzy-ritzy-latch-soothe-silicone-pacifier",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/product_photo_-_white_background_-_2026-06-16T195227.682.jpg?v=1781610927"
+    },
+    {
+     "key": "itzy-ritzy-latch-soothe-silicone-pacifier_2",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/3cb788282b5d17a98c563d9659894b5fc4877b05288f207c5c49679fde625b52.jpg?v=1781610929"
+    },
+    {
+     "key": "itzy-ritzy-latch-soothe-silicone-pacifier_3",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/776c5cf7d23cbec9f2bc91ab58149c1c0acf15654e2d472e2dd2fdf48291d9ee.jpg?v=1781610952"
+    },
+    {
+     "key": "itzy-ritzy-latch-soothe-silicone-pacifier_4",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/20a1294e2c6bf672c6c0b51f86926b23cd3f1239a0a41777f0a176eb4cc030b4.jpg?v=1781610947"
+    },
+    {
+     "key": "itzy-ritzy-latch-soothe-silicone-pacifier_5",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/cddbfab5d16fa75d515ce7d0854a799bd2a61ab8db5b798cfa098e50d97463e8.jpg?v=1781610947"
+    },
+    {
+     "key": "itzy-ritzy-latch-soothe-silicone-pacifier_6",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/1d71861e79abc8321e681d7460372f95919b0fc2a3c014642d409bcb28934c51.jpg?v=1781610952"
+    },
+    {
+     "key": "itzy-ritzy-latch-soothe-silicone-pacifier_7",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/64553fd69f9e83489c50a50f0b6c93ff321fe6bb58cf064432efac654b24eba5.jpg?v=1781610957"
+    },
+    {
+     "key": "itzy-ritzy-latch-soothe-silicone-pacifier_8",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/d5574ba7c5bb5206bee29018695aeb6f7fd557c5caa334e6b79d0949d1f30111.jpg?v=1781610959"
+    },
+    {
+     "key": "itzy-ritzy-latch-soothe-silicone-pacifier_9",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/0637076114fe6301a1bde722be820b8ea7d815551021fba3aee1ab88444a3cc1.jpg?v=1781610964"
+    },
+    {
+     "key": "itzy-ritzy-latch-soothe-silicone-pacifier_10",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/cfff9b434f6f278c0b91a4897ff5017b2683e60ce638ec0d70258a1e01a8bc7a.jpg?v=1781610971"
+    }
+   ],
+   "img": "itzy-ritzy-latch-soothe-silicone-pacifier",
+   "img_src": "https://cdn.shopify.com/s/files/1/0281/8056/files/product_photo_-_white_background_-_2026-06-16T195227.682.jpg?v=1781610927"
+  },
+  {
+   "id": "lorena-canals-washable-animal-cotton-rug-ducky",
+   "type": "rugs",
+   "brand": "Lorena Canals",
+   "line": "Washable Animal Cotton Rug Ducky, 3 ft 1 in x 4 ft",
+   "uses": [
+    "Washable cotton"
+   ],
+   "free": [],
+   "outside": [],
+   "unconfirmed": [
+    "Material of the Rugcycled base (\"made from production leftovers\")",
+    "Dyes"
+   ],
+   "facts": {
+    "main": "unknown",
+    "color": "unknown"
+   },
+   "unstated": {
+    "main": [
+     "Material of the Rugcycled base (\"made from production leftovers\")"
+    ],
+    "color": [
+     "Dyes"
+    ]
+   },
+   "standards": [],
+   "contains": [],
+   "quote": "Handcrafted from washable cotton for practicality.",
+   "note": "Duck-shaped play rug with short and high piles and a raised beak; machine washable. Sold by EasyTot.",
+   "products": [
+    {
+     "name": "Washable Animal Cotton Rug Ducky",
+     "url": "https://easytot.com/products/washable-animal-cotton-rug-ducky",
+     "store": "EasyTot",
+     "price": "$189.05 (sale; regular $199.00)",
+     "ships_from": null,
+     "shipping": "Shipping calculated at checkout"
+    }
+   ],
+   "read": "2026-11-25",
+   "photos": [
+    {
+     "key": "lorena-canals-washable-animal-cotton-rug-ducky",
+     "src": "https://cdn.shopify.com/s/files/1/0556/0519/8922/files/LorenaCanals_PaulaAmenta-200.jpg?v=1727733292"
+    },
+    {
+     "key": "lorena-canals-washable-animal-cotton-rug-ducky_2",
+     "src": "https://cdn.shopify.com/s/files/1/0556/0519/8922/files/LorenaCanals_PaulaAmenta-193-2.jpg?v=1727733293"
+    },
+    {
+     "key": "lorena-canals-washable-animal-cotton-rug-ducky_3",
+     "src": "https://cdn.shopify.com/s/files/1/0556/0519/8922/files/LorenaCanals_PaulaAmenta-195.jpg?v=1727733293"
+    },
+    {
+     "key": "lorena-canals-washable-animal-cotton-rug-ducky_4",
+     "src": "https://easytot.com/cdn/shop/files/C-AR-DUCK.jpg?v=1727733290&width=1920"
+    }
+   ],
+   "img": "lorena-canals-washable-animal-cotton-rug-ducky",
+   "img_src": "https://cdn.shopify.com/s/files/1/0556/0519/8922/files/LorenaCanals_PaulaAmenta-200.jpg?v=1727733292"
+  },
+  {
+   "id": "mayoral-baby-polo-collar-sweater",
+   "type": "clothes",
+   "brand": "Mayoral",
+   "line": "Baby Polo Collar Sweater, 6M to 18M",
+   "uses": [],
+   "free": [],
+   "outside": [
+    "Jersey of 60% cotton, 30% polyamide and 10% wool"
+   ],
+   "unconfirmed": [
+    "Wool treatment",
+    "Dyes",
+    "Thread"
+   ],
+   "facts": {
+    "main": "no",
+    "parts": "unknown",
+    "color": "unknown",
+    "wool": "unknown"
+   },
+   "unstated": {
+    "parts": [
+     "Thread"
+    ],
+    "color": [
+     "Dyes"
+    ],
+    "wool": [
+     "Wool treatment"
+    ]
+   },
+   "standards": [],
+   "contains": [],
+   "age": {
+    "min_months": 6,
+    "max_months": 18,
+    "text": "Sizes 6M, 9M, 12M, 18M"
+   },
+   "quote": "Jersey: 60% Cotton, 30% Polyamide, 10% Wool.",
+   "note": "Knit sweater with a polo collar; oat colour. Sold by Pacifier.",
+   "products": [
+    {
+     "name": "Baby Polo Collar Sweater - Oat by Mayoral",
+     "url": "https://pacifierkids.com/products/baby-polo-collar-sweater-oat-by-mayoral",
+     "price": "$32.89 (sale; regular $46.99)",
+     "store": "Pacifier",
+     "ships_from": "US",
+     "shipping": "$5.95 Flat Rate Shipping"
+    }
+   ],
+   "read": "2026-11-25",
+   "photos": [
+    {
+     "key": "mayoral-baby-polo-collar-sweater",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/product_photo_-_white_background_-_2026-08-27T144641.181.jpg?v=1787813305"
+    },
+    {
+     "key": "mayoral-baby-polo-collar-sweater_2",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/jersey-cuello-polo-bebe-cereal-vigore-XL-6.jpg?v=1787813312"
+    },
+    {
+     "key": "mayoral-baby-polo-collar-sweater_3",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/jersey-cuello-polo-bebe-cereal-vigore-XL-5.jpg?v=1787813306"
+    },
+    {
+     "key": "mayoral-baby-polo-collar-sweater_4",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/eco-label-762959_007d6570-601b-4239-8b36-32ed94bf9d9c.jpg?v=1787813320"
+    }
+   ],
+   "img": "mayoral-baby-polo-collar-sweater",
+   "img_src": "https://cdn.shopify.com/s/files/1/0281/8056/files/product_photo_-_white_background_-_2026-08-27T144641.181.jpg?v=1787813305"
+  },
+  {
+   "id": "mushie-moon-lovey-blanket",
+   "type": "blankets",
+   "brand": "Mushie",
+   "line": "Moon Lovey Blanket, 8 x 20 in",
+   "uses": [
+    "Organic cotton"
+   ],
+   "free": [],
+   "outside": [],
+   "unconfirmed": [
+    "Other materials (the page says only \"made with organic cotton\")",
+    "Dyes",
+    "Thread"
+   ],
+   "facts": {
+    "main": "unknown",
+    "parts": "unknown",
+    "color": "unknown"
+   },
+   "unstated": {
+    "main": [
+     "Other materials (the page says only \"made with organic cotton\")"
+    ],
+    "parts": [
+     "Thread"
+    ],
+    "color": [
+     "Dyes"
+    ]
+   },
+   "standards": [],
+   "contains": [],
+   "quote": "Made with organic cotton, this moon lovey blanket is the perfect tagalong piece",
+   "note": "Small moon-shaped lovey, 8 × 1.5 × 20 inches. The store page repeats the AAP advice to keep soft toys and loose blankets out of infants’ sleep spaces. Sold by The Baby Penguin.",
+   "products": [
+    {
+     "name": "Mushie Moon Lovey Blanket",
+     "url": "https://thebabypenguin.com/products/moon-lovey-blanket",
+     "price": "$14.99",
+     "store": "The Baby Penguin",
+     "ships_from": "US",
+     "shipping": "Free shipping on orders of $50 or more within the contiguous United States"
+    }
+   ],
+   "read": "2026-11-25",
+   "photos": [
+    {
+     "key": "mushie-moon-lovey-blanket",
+     "src": "https://thebabypenguin.com/cdn/shop/files/Moon-Lovey-Blanket-Mushie-126809880.jpg?v=1769139756&width=1920"
+    },
+    {
+     "key": "mushie-moon-lovey-blanket_2",
+     "src": "https://thebabypenguin.com/cdn/shop/files/Moon-Lovey-Blanket-Mushie-126809981.jpg"
+    },
+    {
+     "key": "mushie-moon-lovey-blanket_3",
+     "src": "https://thebabypenguin.com/cdn/shop/files/Moon-Lovey-Blanket-Mushie-126810071.jpg"
+    },
+    {
+     "key": "mushie-moon-lovey-blanket_4",
+     "src": "https://thebabypenguin.com/cdn/shop/files/Moon-Lovey-Blanket-Mushie-126810191.jpg"
+    },
+    {
+     "key": "mushie-moon-lovey-blanket_5",
+     "src": "https://thebabypenguin.com/cdn/shop/files/Moon-Lovey-Blanket-Mushie-126810281.jpg"
+    },
+    {
+     "key": "mushie-moon-lovey-blanket_6",
+     "src": "https://thebabypenguin.com/cdn/shop/files/Moon-Lovey-Blanket-Mushie-126810375.jpg"
+    },
+    {
+     "key": "mushie-moon-lovey-blanket_7",
+     "src": "https://thebabypenguin.com/cdn/shop/files/Moon-Lovey-Blanket-Mushie-126810441.jpg"
+    },
+    {
+     "key": "mushie-moon-lovey-blanket_8",
+     "src": "https://thebabypenguin.com/cdn/shop/files/Moon-Lovey-Blanket-Mushie-126810570.jpg"
+    },
+    {
+     "key": "mushie-moon-lovey-blanket_9",
+     "src": "https://thebabypenguin.com/cdn/shop/files/Moon-Lovey-Blanket-Mushie-126810671.jpg"
+    },
+    {
+     "key": "mushie-moon-lovey-blanket_10",
+     "src": "https://thebabypenguin.com/cdn/shop/files/Moon-Lovey-Blanket-Mushie-126810791.jpg"
+    }
+   ],
+   "img": "mushie-moon-lovey-blanket",
+   "img_src": "https://thebabypenguin.com/cdn/shop/files/Moon-Lovey-Blanket-Mushie-126809880.jpg?v=1769139756&width=1920"
+  },
+  {
+   "id": "nuna-trvl-dubl-winter-footmuff",
+   "type": "strollers",
+   "brand": "Nuna",
+   "line": "TRVL dubl Winter Footmuff (for the TRVL dubl double stroller)",
+   "uses": [
+    "Merino wool and TENCEL lyocell lining"
+   ],
+   "free": [],
+   "outside": [],
+   "unconfirmed": [
+    "Fibre of the water-repellent outer fabric",
+    "Water-repellent treatment",
+    "Wool treatment",
+    "Zips",
+    "Flame retardant chemicals"
+   ],
+   "facts": {
+    "main": "unknown",
+    "parts": "unknown",
+    "finish": "unknown",
+    "wool": "unknown",
+    "flame": "unknown"
+   },
+   "unstated": {
+    "main": [
+     "Fibre of the water-repellent outer fabric"
+    ],
+    "parts": [
+     "Zips"
+    ],
+    "finish": [
+     "Water-repellent treatment"
+    ],
+    "wool": [
+     "Wool treatment"
+    ],
+    "flame": [
+     "Flame retardant chemicals"
+    ]
+   },
+   "standards": [],
+   "contains": [],
+   "quote": "Merino wool and TENCEL lyocell fiber blend lines the inside for optimal warmth",
+   "note": "Covers both seats of the TRVL dubl; folds down and holds with magnets, zip-open foot area with a shoe shield, carry bag included. The page calls the outer \"durable and water-repellent material\" without naming it.",
+   "products": [
+    {
+     "name": "TRVL Dubl Winter Footmuff - Caviar by Nuna",
+     "url": "https://pacifierkids.com/products/trvl-dubl-winter-footmuff-caviar-by-nuna",
+     "price": "$150.00",
+     "store": "Pacifier",
+     "ships_from": "US",
+     "shipping": "$5.95 Flat Rate Shipping"
+    }
+   ],
+   "read": "2026-11-25",
+   "photos": [
+    {
+     "key": "nuna-trvl-dubl-winter-footmuff",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/Nuna_TRVLdubl_Caviar_Front_Footmuff_AL_web_a354.jpg?v=1768257627"
+    },
+    {
+     "key": "nuna-trvl-dubl-winter-footmuff_2",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/Nuna_TRVLdubl_Caviar_Angle_Footmuff_HRU_AL_web_ac1e.jpg?v=1768257633"
+    },
+    {
+     "key": "nuna-trvl-dubl-winter-footmuff_3",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/Nuna_TRVLdubl_Caviar_Footmuff_Overhead_AL_web_8485.jpg?v=1768257638"
+    },
+    {
+     "key": "nuna-trvl-dubl-winter-footmuff_4",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/Nuna_TRVLdubl_Caviar_Detail_AL_web_902d.jpg?v=1768257644"
+    },
+    {
+     "key": "nuna-trvl-dubl-winter-footmuff_5",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/Nuna_TRVLdubl_Caviar_Footmuff_Bag_AL_web_81d9.jpg?v=1768257652"
+    }
+   ],
+   "img": "nuna-trvl-dubl-winter-footmuff",
+   "img_src": "https://cdn.shopify.com/s/files/1/0281/8056/files/Nuna_TRVLdubl_Caviar_Front_Footmuff_AL_web_a354.jpg?v=1768257627"
+  },
+  {
+   "id": "sigikid-patchwork-snail-plush-toy",
+   "type": "animals",
+   "brand": "sigikid",
+   "line": "Patchwork Snail Plush Toy (11.4 in)",
+   "uses": [],
+   "free": [],
+   "outside": [
+    "Polyester fabric",
+    "Polyester wadding"
+   ],
+   "unconfirmed": [
+    "Thread",
+    "Dyes"
+   ],
+   "facts": {
+    "main": "no",
+    "parts": "unknown",
+    "color": "unknown",
+    "organic": "no"
+   },
+   "unstated": {
+    "parts": [
+     "Thread"
+    ],
+    "color": [
+     "Dyes"
+    ]
+   },
+   "standards": [],
+   "contains": [],
+   "age": {
+    "min_months": 3,
+    "text": "3 months+"
+   },
+   "quote": "Material : Polyester. Wadding: Polyester",
+   "note": "Soft snail with a patchwork shell, 11.4 in. Sold by The Baby Penguin.",
+   "products": [
+    {
+     "name": "sigikid Patchwork Snail Plush Toy",
+     "url": "https://thebabypenguin.com/products/patchwork-snail-plush-toy",
+     "price": "$29.95 (sale; regular $39.95)",
+     "store": "The Baby Penguin",
+     "ships_from": "US",
+     "shipping": "Free shipping on orders of $50 or more within the contiguous United States"
+    }
+   ],
+   "read": "2026-11-25",
+   "photos": [
+    {
+     "key": "sigikid-patchwork-snail-plush-toy",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Patchwork-Snail-Plush-Toy-sigikid-122742578.jpg?v=1781458323"
+    },
+    {
+     "key": "sigikid-patchwork-snail-plush-toy_2",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Patchwork-Snail-Plush-Toy-sigikid-122742619.jpg?v=1781458323"
+    },
+    {
+     "key": "sigikid-patchwork-snail-plush-toy_3",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Patchwork-Snail-Plush-Toy-sigikid-122742776.jpg?v=1781458323"
+    },
+    {
+     "key": "sigikid-patchwork-snail-plush-toy_4",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Patchwork-Snail-Plush-Toy-sigikid-122742822.jpg?v=1781458327"
+    },
+    {
+     "key": "sigikid-patchwork-snail-plush-toy_5",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Patchwork-Snail-Plush-Toy-sigikid-122742923.jpg?v=1781458327"
+    },
+    {
+     "key": "sigikid-patchwork-snail-plush-toy_6",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Patchwork-Snail-Plush-Toy-sigikid-122743096.jpg?v=1781458327"
+    },
+    {
+     "key": "sigikid-patchwork-snail-plush-toy_7",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Patchwork-Snail-Plush-Toy-sigikid-122743189.jpg?v=1781458327"
+    }
+   ],
+   "img": "sigikid-patchwork-snail-plush-toy",
+   "img_src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Patchwork-Snail-Plush-Toy-sigikid-122742578.jpg?v=1781458323"
+  },
+  {
+   "id": "snuggle-me-changing-pad",
+   "type": "changing-pads",
+   "brand": "Snuggle Me",
+   "line": "Changing Pad with wooden base",
+   "uses": [
+    "Wooden base"
+   ],
+   "free": [],
+   "outside": [],
+   "unconfirmed": [
+    "Material of the waterproof surface",
+    "Material of the cushioning",
+    "Whether the base is solid wood",
+    "Flame retardant chemicals"
+   ],
+   "facts": {
+    "main": "unknown",
+    "wood": "unknown",
+    "flame": "unknown"
+   },
+   "unstated": {
+    "main": [
+     "Material of the waterproof surface",
+     "Material of the cushioning"
+    ],
+    "wood": [
+     "Whether the base is solid wood"
+    ],
+    "flame": [
+     "Flame retardant chemicals"
+    ]
+   },
+   "standards": [],
+   "contains": [],
+   "quote": "Its Scandinavian-inspired design and warm wooden base bring calm",
+   "note": "The page describes a \"smooth, waterproof surface\" and a \"cushioned design\" without naming their materials. Made in United States (store page).",
+   "products": [
+    {
+     "name": "Changing Pad by Snuggle Me",
+     "url": "https://pacifierkids.com/products/changing-pad-by-snuggle-me",
+     "price": "$103.99 (sale; regular $129.99)",
+     "store": "Pacifier",
+     "ships_from": "US",
+     "shipping": "$5.95 Flat Rate Shipping"
+    }
+   ],
+   "read": "2026-11-25",
+   "photos": [
+    {
+     "key": "snuggle-me-changing-pad",
+     "src": "https://pacifierkids.com/cdn/shop/files/product_photo_-_white_background_-_2026-02-23T220931.610.jpg?v=1771855860&width=1920"
+    },
+    {
+     "key": "snuggle-me-changing-pad_2",
+     "src": "https://pacifierkids.com/cdn/shop/files/6269d365be84c036e5380a871226904028119d8cc462aa2adea895b8bd09bf88.jpg?v=1771855860&width=5000"
+    },
+    {
+     "key": "snuggle-me-changing-pad_3",
+     "src": "https://pacifierkids.com/cdn/shop/files/07d8bea9d8637d03d92f122cde04e5b2d6efc77dd3c33fccfc8b328a15ca6799.jpg?v=1771855860&width=5000"
+    },
+    {
+     "key": "snuggle-me-changing-pad_4",
+     "src": "https://pacifierkids.com/cdn/shop/files/b543f377be0b63817adcd78d0b9dbbdfb72b4173dc02d640a033c189807ac8f3.jpg?v=1771855860&width=5000"
+    },
+    {
+     "key": "snuggle-me-changing-pad_5",
+     "src": "https://pacifierkids.com/cdn/shop/files/fb5360e8899994676be1452f7fa7114043efe6940a181fb0d7a805d567e0e33a.jpg?v=1771855860&width=5000"
+    },
+    {
+     "key": "snuggle-me-changing-pad_6",
+     "src": "https://pacifierkids.com/cdn/shop/files/118f33bba7f675bce7e6c2bdd7caef26f6b2e78cd1b7761387d35786acafd981.jpg?v=1771855860&width=5000"
+    },
+    {
+     "key": "snuggle-me-changing-pad_7",
+     "src": "https://pacifierkids.com/cdn/shop/files/b074f937b1233b0bf9e7e6bf585972121ff44344836f0fa72221401b355d7ff1.jpg?v=1771855860&width=5000"
+    }
+   ],
+   "img": "snuggle-me-changing-pad",
+   "img_src": "https://pacifierkids.com/cdn/shop/files/product_photo_-_white_background_-_2026-02-23T220931.610.jpg?v=1771855860&width=1920"
+  },
+  {
+   "id": "zutano-cozie-fleece-gripper-booties",
+   "type": "shoes",
+   "brand": "Zutano",
+   "line": "Cozie Fleece Gripper Booties, 12M to 24M",
+   "uses": [
+    "100% organic cotton lining"
+   ],
+   "free": [],
+   "outside": [
+    "Shell of 70% cotton and 30% polyester"
+   ],
+   "unconfirmed": [
+    "Gripper soles",
+    "Snaps",
+    "Dyes"
+   ],
+   "facts": {
+    "main": "no",
+    "parts": "unknown",
+    "color": "unknown"
+   },
+   "unstated": {
+    "parts": [
+     "Gripper soles",
+     "Snaps"
+    ],
+    "color": [
+     "Dyes"
+    ]
+   },
+   "standards": [],
+   "contains": [],
+   "quote": "Shell: 70% Cotton / 30% Polyester Lining: 100% Organic Cotton",
+   "note": "Two-snap fleece booties; the page says gripper soles come on sizes 12M to 24M. Imported (store page).",
+   "products": [
+    {
+     "name": "Cozie Fleece Gripper Booties - Khaki by Zutano",
+     "url": "https://pacifierkids.com/products/cozie-fleece-gripper-booties-khaki-by-zutano",
+     "price": "$18.40 (sale; regular $23.00)",
+     "store": "Pacifier",
+     "ships_from": "US",
+     "shipping": "$5.95 Flat Rate Shipping"
+    }
+   ],
+   "read": "2026-11-25",
+   "photos": [
+    {
+     "key": "zutano-cozie-fleece-gripper-booties",
+     "src": "https://pacifierkids.com/cdn/shop/files/product_photo_-_white_background_-_2025-10-13T163740.584.jpg?v=1760344791&width=1920"
+    },
+    {
+     "key": "zutano-cozie-fleece-gripper-booties_2",
+     "src": "https://pacifierkids.com/cdn/shop/files/Cozie_fleece_gripper_baby_booties.jpg?v=1760344791&width=5000"
+    },
+    {
+     "key": "zutano-cozie-fleece-gripper-booties_3",
+     "src": "https://pacifierkids.com/cdn/shop/files/Zutano_gripper_baby_booties.png?v=1760344791&width=5000"
+    }
+   ],
+   "img": "zutano-cozie-fleece-gripper-booties",
+   "img_src": "https://pacifierkids.com/cdn/shop/files/product_photo_-_white_background_-_2025-10-13T163740.584.jpg?v=1760344791&width=1920"
   }
  ]
 }

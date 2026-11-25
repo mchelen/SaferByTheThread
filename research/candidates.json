@@ -762,7 +762,8 @@
    "type": "bodysuits",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "colored-organics-theo-poplin-collar-bodysuit"
   },
   {
    "url": "https://coloredorganics.com/products/organic-cotton-baby-and-kids-aw25-earl-poplin-collar-shirt-96503-25",
@@ -23669,7 +23670,8 @@
    "type": "animals",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "skipped",
+   "reason": "Duplicate: Under the Nile flat cat with the same materials text as the listed Duke the Dog flat toy (under-the-nile-duke-the-dog)"
   },
   {
    "url": "https://www.greenmountaindiapers.com/products/many-months-reversible-longies",
@@ -24517,7 +24519,8 @@
    "type": "diapers",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "disana-wool-pull-on-cover"
   },
   {
    "url": "https://www.greenmountaindiapers.com/products/disana-merino-wool-blanket",
@@ -90457,7 +90460,8 @@
    "type": "blankets",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "mushie-moon-lovey-blanket"
   },
   {
    "url": "https://thebabypenguin.com/products/pearl-teether-bracelet",
@@ -91034,7 +91038,8 @@
    "type": "shoes",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "ella-bonna-fleece-snap-baby-booties"
   },
   {
    "url": "https://thebabypenguin.com/products/ella-bonna-non-slip-sole-balloons-patterned-baby-booties-home-boot-slippers-nursery-shoes",
@@ -125966,7 +125971,8 @@
    "type": "clothes",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "mayoral-baby-polo-collar-sweater"
   },
   {
    "url": "https://pacifierkids.com/products/baby-patterned-sweatshirt-forest-friends-by-mayoral",
@@ -149242,7 +149248,8 @@
    "type": "silks",
    "source": "watchlist",
    "first_seen": "2026-10-23",
-   "status": "new"
+   "status": "listed",
+   "listing": "bella-luna-toys-earth-mother-play-silks"
   },
   {
    "url": "https://www.deltachildren.com/products/riley-collection-copy",
