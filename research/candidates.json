@@ -3112,7 +3112,8 @@
    "type": "food-storage",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "beaba-toddler-lunch-bag-set"
   },
   {
    "url": "https://beaba.us/products/stainless-steel-lunch-box-1",
@@ -4802,7 +4803,8 @@
    "type": "mattresses",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "avocado-eco-organic-crib-mattress"
   },
   {
    "url": "https://www.avocadogreenmattress.com/products/weighted-blanket",
@@ -5191,7 +5193,8 @@
    "type": "floor-beds",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "avocado-kids-bed-frame"
   },
   {
    "url": "https://www.avocadogreenmattress.com/products/mini-pillowcase",
@@ -8058,7 +8061,8 @@
    "type": "mattresses",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "naturepedic-breathable-organic-2-stage-crib-mattress"
   },
   {
    "url": "https://www.naturepedic.com/products/adagio-organic-latex-topper",
@@ -8548,7 +8552,8 @@
    "type": "floor-beds",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "naturepedic-savona-oak-kids-bed"
   },
   {
    "url": "https://www.naturepedic.com/products/eos-pillowtop-organic-mattress-buy",
@@ -11587,7 +11592,8 @@
    "type": "rain-boots",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "skipped",
+   "reason": "Page did not show the product (redirected to the home page)"
   },
   {
    "url": "https://www.hunterboots.com/products/womens-debra-waterproof-snow-booties-in-ivory-w-debra-ivo01",
@@ -27769,7 +27775,8 @@
    "type": "furniture",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "sprout-kids-whale-rocking-chair"
   },
   {
    "url": "https://sprout-kids.com/products/value-grade-lexico-book-display-shelf",
@@ -27942,7 +27949,8 @@
    "type": "furniture",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "skipped",
+   "reason": "page names no material beyond \"wood\""
   },
   {
    "url": "https://sprout-kids.com/products/sous-chef-toddler-tower",
@@ -29096,7 +29104,8 @@
    "type": "rain-boots",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "skipped",
+   "reason": "page names no material"
   },
   {
    "url": "https://www.westernchief.com/products/quin-storm-lug-chelsea-rain-boot-black",
@@ -33725,7 +33734,8 @@
    "type": "pop-molds",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "tovolo-groovy-pop-molds"
   },
   {
    "url": "https://www.tovolo.com/products/pop-molds-copy-3",
@@ -34649,7 +34659,8 @@
    "type": "food-storage",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "skipped",
+   "reason": "page names no material"
   },
   {
    "url": "https://www.zokuhome.com/products/neat-bento-pink",
@@ -40051,7 +40062,8 @@
    "type": "mattresses",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "delta-children-serta-cloudcool-crib-mattress"
   },
   {
    "url": "https://www.deltachildren.com/products/breathecool-2-stage-crib-and-toddler-mattress",
@@ -40353,7 +40365,8 @@
    "type": "furniture",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "skipped",
+   "reason": "page names no material (foam chair, \"soft fabric\" slipcover)"
   },
   {
    "url": "https://www.deltachildren.com/products/checkered-cozee-flip-out-2-in-1-convertible-chair-to-lounger",
@@ -40879,7 +40892,8 @@
    "type": "toddler-beds",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "skipped",
+   "reason": "page names no material beyond \"wood\" in the title"
   },
   {
    "url": "https://www.deltachildren.com/products/duet-2-in-1-high-chair-and-infant-seat",
@@ -43593,7 +43607,8 @@
    "type": "pillows",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "delta-children-babygap-memory-foam-toddler-pillow"
   },
   {
    "url": "https://www.deltachildren.com/products/baby-gap-truesleep-sleep-sack-with-built-in-swaddle-organic-cotton-2-way-zipper-small-0-6-months",
@@ -59682,7 +59697,8 @@
    "type": "food-storage",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "camden-rose-natural-canvas-lunch-bag"
   },
   {
    "url": "https://camdenrose.com/products/set-of-three-natural-canvas-organizer-bags",
@@ -60758,7 +60774,8 @@
    "type": "furniture",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "camden-rose-folding-step-stool-chair"
   },
   {
    "url": "https://camdenrose.com/products/three-knitted-carrots",
@@ -104439,7 +104456,8 @@
    "type": "pajamas",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "lou-lou-company-zippered-footie"
   },
   {
    "url": "https://www.thenaturalbabyco.com/products/oli-carol-cathy-the-carrot-mini-doudou-teether",
@@ -121132,7 +121150,8 @@
    "type": "pajamas",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "petit-lem-ribbed-pajama-set"
   },
   {
    "url": "https://pacifierkids.com/products/ribbed-pajama-set-figure-skates-print-on-misty-pink-by-petit-lem",
@@ -137389,7 +137408,8 @@
    "type": "pajamas",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "forever-french-baby-bamboo-zip-pajamas"
   },
   {
    "url": "https://easytot.com/products/pink-corduroy-overalls",
@@ -141204,7 +141224,8 @@
    "type": "floor-beds",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "skipped",
+   "reason": "Duplicate: Bush Acres floor beds share one material set (Baltic birch plywood, untreated), already listed as bush-acres-avi-floor-bed"
   },
   {
    "url": "https://easytot.com/products/cory-toddler-shoe-tower",
@@ -204644,7 +204665,8 @@
    "type": "toddler-beds",
    "source": "watchlist",
    "first_seen": "2026-11-16",
-   "status": "new"
+   "status": "listed",
+   "listing": "halo-aden-anais-woodland-toddler-bed"
   },
   {
    "url": "https://easytot.com/products/woodland-toddler-bed-brushed-truffle",

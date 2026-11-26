@@ -1,6 +1,6 @@
 {
  "schema": 4,
- "updated": "2026-11-25",
+ "updated": "2026-11-26",
  "ask": [
   "Thread on any sewn item (cotton or polyester).",
   "Wheels and axles on push toys and cars.",
@@ -50613,6 +50613,1194 @@
    ],
    "img": "zutano-cozie-fleece-gripper-booties",
    "img_src": "https://pacifierkids.com/cdn/shop/files/product_photo_-_white_background_-_2025-10-13T163740.584.jpg?v=1760344791&width=1920"
+  },
+  {
+   "id": "avocado-eco-organic-crib-mattress",
+   "type": "mattresses",
+   "brand": "Avocado",
+   "line": "Eco Organic Crib Mattress",
+   "uses": [
+    "GOTS-certified organic cotton ticking",
+    "GOTS-certified organic wool",
+    "GOLS-certified coconut husk pad infused with organic latex",
+    "242 individually wrapped coils of recycled steel"
+   ],
+   "free": [
+    "Polyurethane foams",
+    "Vinyl",
+    "Flame retardants",
+    "Waterproofing chemicals",
+    "Fiberglass",
+    "Rayon or polyester blended with the wool",
+    "PFAS (tested: none detected)"
+   ],
+   "outside": [],
+   "unconfirmed": [
+    "Thread",
+    "Glue or binding in the coil unit"
+   ],
+   "facts": {
+    "main": "yes",
+    "flame": "yes",
+    "finish": "yes",
+    "organic": "yes",
+    "parts": "unknown"
+   },
+   "unstated": {
+    "parts": [
+     "Thread"
+    ]
+   },
+   "contains": [
+    "latex"
+   ],
+   "standards": [
+    "gots",
+    "gols",
+    "oeko-tex"
+   ],
+   "quote": "Made with organic cotton, wool, and coconut fiber, it naturally regulates temperature for a cool, comfortable sleep— without using water-resistant chemicals, vinyl, antimicrobial treatments, fiberglass, or other harmful materials.",
+   "note": "No latex foam layer; the ½\" coconut husk pad is infused with organic latex. Standard or dual-sided (infant and toddler sides). Made in Los Angeles; the page says it is EWG Verified and “MADE SAFE” certified.",
+   "products": [
+    {
+     "name": "Eco Organic Crib Mattress",
+     "url": "https://www.avocadogreenmattress.com/products/affordable-eco-organic-crib-mattress",
+     "store": "Avocado",
+     "price": "$314.00 (Standard); $359.00 (Dual Sided)",
+     "ships_from": "US",
+     "shipping": null
+    }
+   ],
+   "read": "2026-11-26",
+   "photos": [
+    {
+     "key": "avocado-eco-organic-crib-mattress",
+     "src": "https://cdn.shopify.com/s/files/1/0444/9488/0918/files/Avocado-Affordable-Eco-Organic-Crib-Mattress.jpg?v=1755799805"
+    },
+    {
+     "key": "avocado-eco-organic-crib-mattress_2",
+     "src": "https://cdn.shopify.com/s/files/1/0444/9488/0918/files/Avocado-Eco-Organic-Crib-Mattress.jpg?v=1755799861"
+    },
+    {
+     "key": "avocado-eco-organic-crib-mattress_3",
+     "src": "https://cdn.shopify.com/s/files/1/0444/9488/0918/files/Avocado_Eco_Organic_Crib_Mattress_0044.jpg?v=1725484048"
+    },
+    {
+     "key": "avocado-eco-organic-crib-mattress_4",
+     "src": "https://cdn.shopify.com/s/files/1/0444/9488/0918/files/Avocado_Eco_Organic_Crib_Mattress_0377.jpg?v=1725550100"
+    },
+    {
+     "key": "avocado-eco-organic-crib-mattress_5",
+     "src": "https://cdn.shopify.com/s/files/1/0444/9488/0918/files/Avocado_Eco_Organic_Crib_Mattress_0060.jpg?v=1725484048"
+    },
+    {
+     "key": "avocado-eco-organic-crib-mattress_6",
+     "src": "https://cdn.shopify.com/s/files/1/0444/9488/0918/files/Avocado_Eco_Organic_Crib_Mattress_0006.jpg?v=1725484048"
+    },
+    {
+     "key": "avocado-eco-organic-crib-mattress_7",
+     "src": "https://cdn.shopify.com/s/files/1/0444/9488/0918/files/Avocado_Eco_Organic_Crib_Mattress_0730.jpg?v=1725484048"
+    },
+    {
+     "key": "avocado-eco-organic-crib-mattress_8",
+     "src": "https://cdn.shopify.com/s/files/1/0444/9488/0918/files/Avocado_Eco_Organic_Crib_Mattress_0687.jpg?v=1725484048"
+    },
+    {
+     "key": "avocado-eco-organic-crib-mattress_9",
+     "src": "https://cdn.shopify.com/s/files/1/0444/9488/0918/files/AvocadoEcoOrganicCribMattess.jpg?v=1726779704"
+    },
+    {
+     "key": "avocado-eco-organic-crib-mattress_10",
+     "src": "https://cdn.shopify.com/s/files/1/0444/9488/0918/files/Avocado_Eco_Organic_Crib_Mattress_0023.jpg?v=1740421505"
+    }
+   ],
+   "img": "avocado-eco-organic-crib-mattress",
+   "img_src": "https://cdn.shopify.com/s/files/1/0444/9488/0918/files/Avocado-Affordable-Eco-Organic-Crib-Mattress.jpg?v=1755799805"
+  },
+  {
+   "id": "avocado-kids-bed-frame",
+   "type": "floor-beds",
+   "brand": "Avocado",
+   "line": "Kids Bed Frame (with or without trundle)",
+   "uses": [
+    "Solid beech wood frame"
+   ],
+   "free": [],
+   "outside": [],
+   "unconfirmed": [
+    "Glue ingredients (“non-toxic, zero-VOC glues”, not named)",
+    "Paint and varnish ingredients (“non-toxic, zero-VOC”, not named)",
+    "Hardware"
+   ],
+   "facts": {
+    "main": "yes",
+    "color": "unknown",
+    "parts": "unknown"
+   },
+   "unstated": {
+    "color": [
+     "Paint and varnish ingredients (“non-toxic, zero-VOC”, not named)"
+    ],
+    "parts": [
+     "Hardware"
+    ]
+   },
+   "quote": "We craft the solid wood bed frame ourselves with beech — a sustainable hardwood — in our own woodshop in Los Angeles.",
+   "note": "Twin or full size, frame only or with a trundle; white or natural wood finish. Made in Los Angeles.",
+   "products": [
+    {
+     "name": "Kids Bed Frame",
+     "url": "https://www.avocadogreenmattress.com/products/kids-trundle-bed-frame",
+     "store": "Avocado",
+     "price": "$1,839.00 (twin, frame only); $1,999.00 (twin with trundle)",
+     "ships_from": "US",
+     "shipping": null
+    }
+   ],
+   "contains": [],
+   "standards": [],
+   "read": "2026-11-26",
+   "photos": [
+    {
+     "key": "avocado-kids-bed-frame",
+     "src": "https://cdn.shopify.com/s/files/1/0444/9488/0918/files/Avocado_Kids_Trundle_Bed_Frame_Beechwood_0388.jpg?v=1762200479"
+    },
+    {
+     "key": "avocado-kids-bed-frame_2",
+     "src": "https://cdn.shopify.com/s/files/1/0444/9488/0918/files/Avocado_Kids_Trundle_Bed_Frame_Beechwood_0047_DOB.jpg?v=1790779901"
+    },
+    {
+     "key": "avocado-kids-bed-frame_3",
+     "src": "https://cdn.shopify.com/s/files/1/0444/9488/0918/files/Avocado_Kids_Trundle_Bed_Frame_Beechwood_0110.jpg?v=1739299906"
+    },
+    {
+     "key": "avocado-kids-bed-frame_4",
+     "src": "https://cdn.shopify.com/s/files/1/0444/9488/0918/files/Avocado_Kids_Trundle_Bed_Frame_Beechwood_076.jpg?v=1739299906"
+    },
+    {
+     "key": "avocado-kids-bed-frame_5",
+     "src": "https://cdn.shopify.com/s/files/1/0444/9488/0918/files/Avocado_Kids_Trundle_Bed_Frame_Beechwood_00476_cd3d3b9c-0e3d-47df-b593-ae4f4b5d7f48.jpg?v=1741703040"
+    },
+    {
+     "key": "avocado-kids-bed-frame_6",
+     "src": "https://cdn.shopify.com/s/files/1/0444/9488/0918/files/Avocado_Kids_Trundle_Bed_Frame_Beechwood_0012.jpg?v=1741703040"
+    },
+    {
+     "key": "avocado-kids-bed-frame_7",
+     "src": "https://cdn.shopify.com/s/files/1/0444/9488/0918/files/Avocado_Kids_Trundle_Bed_Frame_Beechwood_008.jpg?v=1741703040"
+    },
+    {
+     "key": "avocado-kids-bed-frame_8",
+     "src": "https://cdn.shopify.com/s/files/1/0444/9488/0918/files/Avocado_Kids_Trundle_Bed_Frame_White_1432.jpg?v=1741703040"
+    },
+    {
+     "key": "avocado-kids-bed-frame_9",
+     "src": "https://cdn.shopify.com/s/files/1/0444/9488/0918/files/Avocado_Kids_Trundle_Bed_Frame_White_3eb5305b-8386-4870-b198-869116fd2c6f.jpg?v=1741703040"
+    },
+    {
+     "key": "avocado-kids-bed-frame_10",
+     "src": "https://cdn.shopify.com/s/files/1/0444/9488/0918/files/Avocado_Kids_Trundle_Bed_Frame_White_00013_29aafab3-7dac-4b2c-98b2-12ac9e581c6c.jpg?v=1741703040"
+    }
+   ],
+   "img": "avocado-kids-bed-frame",
+   "img_src": "https://cdn.shopify.com/s/files/1/0444/9488/0918/files/Avocado_Kids_Trundle_Bed_Frame_Beechwood_0388.jpg?v=1762200479"
+  },
+  {
+   "id": "beaba-toddler-lunch-bag-set",
+   "type": "food-storage",
+   "brand": "Béaba",
+   "line": "Toddler Lunch Bag Set",
+   "uses": [
+    "Double-walled stainless steel Thermo-Portion (500 ml)",
+    "Double-walled stainless steel Straw Cup (250 ml)",
+    "Silicone spoon"
+   ],
+   "free": [
+    "BPA",
+    "BPS",
+    "Phthalates"
+   ],
+   "outside": [],
+   "unconfirmed": [
+    "Fabric of the isothermal lunch bag (“water-repellent fabric”)",
+    "Insulation of the bag",
+    "Lids, straw and seals of the jar and cup",
+    "Handle of the spoon",
+    "Zip"
+   ],
+   "facts": {
+    "main": "unknown",
+    "finish": "no",
+    "parts": "unknown",
+    "silicone": "unknown"
+   },
+   "unstated": {
+    "main": [
+     "Fabric of the isothermal lunch bag (“water-repellent fabric”)",
+     "Insulation of the bag"
+    ],
+    "parts": [
+     "Lids, straw and seals of the jar and cup"
+    ],
+    "silicone": [
+     "Handle of the spoon"
+    ]
+   },
+   "quote": "Straw Cup and Thermo-Portion in double walled stainless steel",
+   "note": "Set of a 5 L isothermal lunch bag with handles and outer pocket, an insulated food jar, a straw cup and a 2nd-age spoon. Colour: Rose.",
+   "products": [
+    {
+     "name": "Toddler Lunch Bag Set",
+     "url": "https://beaba.us/products/on-the-go-mealtime",
+     "store": "Béaba",
+     "price": "$74.95",
+     "ships_from": "US",
+     "shipping": "Free shipping on orders $140"
+    }
+   ],
+   "contains": [],
+   "standards": [],
+   "read": "2026-11-26",
+   "photos": [
+    {
+     "key": "beaba-toddler-lunch-bag-set",
+     "src": "https://cdn.shopify.com/s/files/1/0673/7756/1739/files/913530_product_face_3.jpg?v=1758250623"
+    },
+    {
+     "key": "beaba-toddler-lunch-bag-set_2",
+     "src": "https://cdn.shopify.com/s/files/1/0673/7756/1739/files/913530_product_amb_2.jpg?v=1758250623"
+    },
+    {
+     "key": "beaba-toddler-lunch-bag-set_3",
+     "src": "https://cdn.shopify.com/s/files/1/0673/7756/1739/files/913530_product_face_1.jpg?v=1758250623"
+    },
+    {
+     "key": "beaba-toddler-lunch-bag-set_4",
+     "src": "https://cdn.shopify.com/s/files/1/0673/7756/1739/files/913530_product_amb_5.jpg?v=1758250623"
+    }
+   ],
+   "img": "beaba-toddler-lunch-bag-set",
+   "img_src": "https://cdn.shopify.com/s/files/1/0673/7756/1739/files/913530_product_face_3.jpg?v=1758250623"
+  },
+  {
+   "id": "camden-rose-folding-step-stool-chair",
+   "type": "furniture",
+   "brand": "Camden Rose",
+   "line": "Folding Step Stool/Chair, Maple, Beeswax Finish",
+   "uses": [
+    "Maple hardwood",
+    "Beeswax polish of organic jojoba oil and local beeswax"
+   ],
+   "free": [],
+   "outside": [],
+   "unconfirmed": [
+    "Hinges and fasteners",
+    "Glue in the joints"
+   ],
+   "facts": {
+    "main": "yes",
+    "wood": "yes",
+    "color": "yes",
+    "parts": "unknown"
+   },
+   "unstated": {
+    "parts": [
+     "Hinges and fasteners"
+    ]
+   },
+   "quote": "Materials: Maple Hardwood Finish: Three BEEautiful Bees All Natural Beeswax Polish",
+   "note": "Two step heights (3 3/4\" and 7 1/2\"); folds into a toddler-height chair. 19 1/2\" L x 12 1/4\" W x 15 1/8\" H. Made in the USA.",
+   "products": [
+    {
+     "name": "Folding Step Stool/Chair - Maple Wood - Beeswax Finish - 7 1/2\" High Seat",
+     "url": "https://camdenrose.com/products/folding-step-stool-chair-maple-wood-beeswax-finish",
+     "store": "Camden Rose",
+     "price": "$99.00",
+     "ships_from": "US",
+     "shipping": "Free Standard Domestic Shipping on orders over $150 to contiguous US"
+    }
+   ],
+   "contains": [],
+   "standards": [],
+   "read": "2026-11-26",
+   "photos": [
+    {
+     "key": "camden-rose-folding-step-stool-chair",
+     "src": "https://cdn.shopify.com/s/files/1/0658/7164/2856/files/6510-maple-3297.jpg?v=1771431528"
+    },
+    {
+     "key": "camden-rose-folding-step-stool-chair_2",
+     "src": "https://cdn.shopify.com/s/files/1/0658/7164/2856/files/6510-maple-3296.jpg?v=1771431528"
+    },
+    {
+     "key": "camden-rose-folding-step-stool-chair_3",
+     "src": "https://cdn.shopify.com/s/files/1/0658/7164/2856/files/6510-maple-3298.jpg?v=1768580957"
+    },
+    {
+     "key": "camden-rose-folding-step-stool-chair_4",
+     "src": "https://cdn.shopify.com/s/files/1/0658/7164/2856/files/6510-maple-3295.jpg?v=1768580957"
+    }
+   ],
+   "img": "camden-rose-folding-step-stool-chair",
+   "img_src": "https://cdn.shopify.com/s/files/1/0658/7164/2856/files/6510-maple-3297.jpg?v=1771431528"
+  },
+  {
+   "id": "camden-rose-natural-canvas-lunch-bag",
+   "type": "food-storage",
+   "brand": "Camden Rose",
+   "line": "Natural Canvas Lunch Bag",
+   "uses": [
+    "100% cotton canvas"
+   ],
+   "free": [],
+   "outside": [],
+   "unconfirmed": [
+    "Hook-and-loop closure",
+    "Thread"
+   ],
+   "facts": {
+    "main": "yes",
+    "parts": "unknown"
+   },
+   "unstated": {
+    "parts": [
+     "Hook-and-loop closure",
+     "Thread"
+    ]
+   },
+   "quote": "The bag is 100% cotton canvas and closes with a hook-and-loop closure at the top.",
+   "note": "6\" x 9\" x 5\". Made in India.",
+   "products": [
+    {
+     "name": "Natural Canvas Lunch Bag",
+     "url": "https://camdenrose.com/products/natural-canvas-lunch-bag",
+     "store": "Camden Rose",
+     "price": "$9.00",
+     "ships_from": "US",
+     "shipping": "Free Standard Domestic Shipping on orders over $150 to contiguous US"
+    }
+   ],
+   "contains": [],
+   "standards": [],
+   "read": "2026-11-26",
+   "photos": [
+    {
+     "key": "camden-rose-natural-canvas-lunch-bag",
+     "src": "https://cdn.shopify.com/s/files/1/0658/7164/2856/files/DSF0656.jpg?v=1787766624"
+    },
+    {
+     "key": "camden-rose-natural-canvas-lunch-bag_2",
+     "src": "https://cdn.shopify.com/s/files/1/0658/7164/2856/files/DSF0670.jpg?v=1787766624"
+    }
+   ],
+   "img": "camden-rose-natural-canvas-lunch-bag",
+   "img_src": "https://cdn.shopify.com/s/files/1/0658/7164/2856/files/DSF0656.jpg?v=1787766624"
+  },
+  {
+   "id": "delta-children-babygap-memory-foam-toddler-pillow",
+   "type": "pillows",
+   "brand": "Delta Children",
+   "line": "babyGap Memory Foam Toddler Pillow with 2 Cooling Covers",
+   "uses": [],
+   "free": [
+    "Added fire retardants",
+    "Lead",
+    "Phthalates"
+   ],
+   "outside": [],
+   "unconfirmed": [
+    "Polymer of the memory foam core",
+    "Fibre of the “cooling fiber” pillowcases",
+    "Material of the water-resistant inner cover",
+    "Thread",
+    "Dyes in the navy pillowcase and logo"
+   ],
+   "facts": {
+    "main": "unknown",
+    "flame": "yes",
+    "finish": "no",
+    "parts": "unknown",
+    "color": "unknown"
+   },
+   "unstated": {
+    "main": [
+     "Polymer of the memory foam core",
+     "Fibre of the “cooling fiber” pillowcases"
+    ],
+    "parts": [
+     "Thread"
+    ],
+    "color": [
+     "Dyes in the navy pillowcase and logo"
+    ]
+   },
+   "age": {
+    "min_months": 24,
+    "text": "Recommended for kids 2-5 years old"
+   },
+   "quote": "Memory foam core helps target pressure point relief for a more restorative",
+   "note": "Set of one pillow and two removable, machine-washable pillowcases (white and navy). The store page lists its fire retardant, lead and phthalate statement for all Delta Children products.",
+   "products": [
+    {
+     "name": "babyGap Memory Foam Toddler Pillow with 2 Cooling Covers",
+     "url": "https://www.deltachildren.com/products/baby-gap-memory-foam-toddler-pillow-with-2-cooling-covers",
+     "store": "Delta Children",
+     "price": "$39.99",
+     "ships_from": "US",
+     "shipping": null
+    }
+   ],
+   "contains": [],
+   "standards": [],
+   "read": "2026-11-26",
+   "photos": [
+    {
+     "key": "delta-children-babygap-memory-foam-toddler-pillow",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/IMG_90128.png?v=1691157468"
+    },
+    {
+     "key": "delta-children-babygap-memory-foam-toddler-pillow_2",
+     "src": "https://www.deltachildren.com/cdn/shop/files/IMG_91071_1996x.png?v=1691157468"
+    },
+    {
+     "key": "delta-children-babygap-memory-foam-toddler-pillow_3",
+     "src": "http://www.deltachildren.com/cdn/shop/files/IMG_92689390.png?v=1691157468"
+    },
+    {
+     "key": "delta-children-babygap-memory-foam-toddler-pillow_4",
+     "src": "http://www.deltachildren.com/cdn/shop/files/IMG_92689434.png?v=1691157468"
+    }
+   ],
+   "img": "delta-children-babygap-memory-foam-toddler-pillow",
+   "img_src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/IMG_90128.png?v=1691157468"
+  },
+  {
+   "id": "delta-children-serta-cloudcool-crib-mattress",
+   "type": "mattresses",
+   "brand": "Delta Children",
+   "line": "Serta CloudCool Crib and Toddler Mattress",
+   "uses": [],
+   "free": [
+    "Flame retardants in the foam (“harmful flame retardants”)",
+    "Mercury, lead and heavy metals in the foam",
+    "Added fire retardants, lead and phthalates (brand-wide statement)"
+   ],
+   "outside": [],
+   "unconfirmed": [
+    "Polymer of the CertiPUR-US certified foam",
+    "Material of the Cloud Core (“crafted from upcycled materials”)",
+    "Fibre of the soft knit cover",
+    "Material of the waterproof barrier",
+    "Zipper",
+    "Thread"
+   ],
+   "facts": {
+    "main": "unknown",
+    "flame": "yes",
+    "parts": "unknown",
+    "color": "unknown"
+   },
+   "unstated": {
+    "main": [
+     "Polymer of the CertiPUR-US certified foam",
+     "Material of the Cloud Core (“crafted from upcycled materials”)",
+     "Fibre of the soft knit cover",
+     "Material of the waterproof barrier"
+    ],
+    "parts": [
+     "Zipper",
+     "Thread"
+    ]
+   },
+   "quote": "CertiPUR-US certified foam is free of harmful flame retardants, mercury, lead, and heavy metals",
+   "note": "Dual-sided (infant and toddler sides), removable machine-washable knit cover, 28\" x 5\" x 52\". The page says it is GREENGUARD Gold certified and made in the USA with foreign and domestic parts.",
+   "products": [
+    {
+     "name": "Serta CloudCool Crib and Toddler Mattress",
+     "url": "https://www.deltachildren.com/products/cloudcool-crib-and-toddler-mattress",
+     "store": "Delta Children",
+     "price": "$99.99",
+     "ships_from": "US",
+     "shipping": null
+    }
+   ],
+   "contains": [],
+   "standards": [],
+   "read": "2026-11-26",
+   "photos": [
+    {
+     "key": "delta-children-serta-cloudcool-crib-mattress",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/Sertamattresredo_Styling.jpg?v=1783183513"
+    },
+    {
+     "key": "delta-children-serta-cloudcool-crib-mattress_2",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/Sertamattressredotoddlerbed_Styling.jpg?v=1783183515"
+    },
+    {
+     "key": "delta-children-serta-cloudcool-crib-mattress_3",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/Serta-iComfort_Callout_04.jpg?v=1780509829"
+    },
+    {
+     "key": "delta-children-serta-cloudcool-crib-mattress_4",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/Serta-iComfort_Callout_05.jpg?v=1780509829"
+    },
+    {
+     "key": "delta-children-serta-cloudcool-crib-mattress_5",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/Serta-iComfort_Callout_09.jpg?v=1780509829"
+    },
+    {
+     "key": "delta-children-serta-cloudcool-crib-mattress_6",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/Serta-iComfort_Callout_07.jpg?v=1780509829"
+    },
+    {
+     "key": "delta-children-serta-cloudcool-crib-mattress_7",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/Serta-iComfort_Callout_08.jpg?v=1780509829"
+    },
+    {
+     "key": "delta-children-serta-cloudcool-crib-mattress_8",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/Serta-iComfort_Callout_06.jpg?v=1780509829"
+    },
+    {
+     "key": "delta-children-serta-cloudcool-crib-mattress_9",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/Serta-iComfort_Callout_10.jpg?v=1780509829"
+    },
+    {
+     "key": "delta-children-serta-cloudcool-crib-mattress_10",
+     "src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/A41555-3040_Serta-iComfort_CloudCool_MIB_lifestyle02.jpg?v=1777083283"
+    }
+   ],
+   "img": "delta-children-serta-cloudcool-crib-mattress",
+   "img_src": "https://cdn.shopify.com/s/files/1/0522/6912/1736/files/Sertamattresredo_Styling.jpg?v=1783183513"
+  },
+  {
+   "id": "forever-french-baby-bamboo-zip-pajamas",
+   "type": "pajamas",
+   "brand": "Forever French Baby",
+   "line": "Bamboo Zip Pajamas, Gingersnap",
+   "uses": [
+    "Bamboo viscose (95%)"
+   ],
+   "free": [],
+   "outside": [
+    "Spandex (5%)"
+   ],
+   "unconfirmed": [
+    "Zipper",
+    "Dyes in the print",
+    "Thread"
+   ],
+   "facts": {
+    "main": "no",
+    "parts": "unknown",
+    "color": "unknown"
+   },
+   "unstated": {
+    "parts": [
+     "Zipper"
+    ],
+    "color": [
+     "Dyes in the print"
+    ]
+   },
+   "quote": "Fabric composition: 95% bamboo viscose, 5% spandex",
+   "note": "Zip sleeper with rollover hand cuffs (smallest sizes) and foot cuffs; sizes newborn to 24 months. Gingerbread print. Sold by EasyTot.",
+   "products": [
+    {
+     "name": "Bamboo Zip Pajamas | Gingersnap",
+     "url": "https://easytot.com/products/bamboo-zip-pajamas-gingersnap",
+     "store": "EasyTot",
+     "price": "$39.00",
+     "ships_from": null,
+     "shipping": "Shipping calculated at checkout"
+    }
+   ],
+   "contains": [],
+   "standards": [],
+   "read": "2026-11-26",
+   "photos": [
+    {
+     "key": "forever-french-baby-bamboo-zip-pajamas",
+     "src": "https://cdn.shopify.com/s/files/1/0556/0519/8922/files/0924F84D-B630-4972-A07F-64AE59203809.jpg?v=1792178617"
+    },
+    {
+     "key": "forever-french-baby-bamboo-zip-pajamas_2",
+     "src": "https://cdn.shopify.com/s/files/1/0556/0519/8922/files/EA29C483-05FE-4EF8-BBAB-CC57C98580B3.jpg?v=1792178617"
+    },
+    {
+     "key": "forever-french-baby-bamboo-zip-pajamas_3",
+     "src": "https://cdn.shopify.com/s/files/1/0556/0519/8922/files/AFE12A76-6CDC-4E5C-9962-CA39A1EAA7C2.jpg?v=1792178617"
+    },
+    {
+     "key": "forever-french-baby-bamboo-zip-pajamas_4",
+     "src": "https://cdn.shopify.com/s/files/1/0556/0519/8922/files/C09D6FB4-D812-4B73-B0CD-BA435FE9CDD6.jpg?v=1792178618"
+    },
+    {
+     "key": "forever-french-baby-bamboo-zip-pajamas_5",
+     "src": "https://cdn.shopify.com/s/files/1/0556/0519/8922/files/D4C0FED5-BBD6-462B-AB86-56ADE243A0BB.jpg?v=1792178617"
+    },
+    {
+     "key": "forever-french-baby-bamboo-zip-pajamas_6",
+     "src": "https://cdn.shopify.com/s/files/1/0556/0519/8922/files/DF2645DD-C642-46BD-A78A-0A5388A50D2A.jpg?v=1792178617"
+    },
+    {
+     "key": "forever-french-baby-bamboo-zip-pajamas_7",
+     "src": "https://cdn.shopify.com/s/files/1/0556/0519/8922/files/DD66BBB7-9FD4-474E-BD65-F47A52B4638C.jpg?v=1792178617"
+    },
+    {
+     "key": "forever-french-baby-bamboo-zip-pajamas_8",
+     "src": "https://cdn.shopify.com/s/files/1/0556/0519/8922/files/7D49B585-8769-4405-8747-4E08142D892D.jpg?v=1792178617"
+    },
+    {
+     "key": "forever-french-baby-bamboo-zip-pajamas_9",
+     "src": "https://cdn.shopify.com/s/files/1/0556/0519/8922/files/F5132572-4965-4501-8D0A-6FC587BDA120.jpg?v=1792178617"
+    },
+    {
+     "key": "forever-french-baby-bamboo-zip-pajamas_10",
+     "src": "https://cdn.shopify.com/s/files/1/0556/0519/8922/files/227DC985-D858-4DED-9EF8-F96C10C2FF91.jpg?v=1792178617"
+    }
+   ],
+   "img": "forever-french-baby-bamboo-zip-pajamas",
+   "img_src": "https://cdn.shopify.com/s/files/1/0556/0519/8922/files/0924F84D-B630-4972-A07F-64AE59203809.jpg?v=1792178617"
+  },
+  {
+   "id": "halo-aden-anais-woodland-toddler-bed",
+   "type": "toddler-beds",
+   "brand": "Halo x aden + anais",
+   "line": "Woodland Toddler Bed, Brushed Cotton",
+   "uses": [
+    "Pine"
+   ],
+   "free": [],
+   "outside": [
+    "Pine veneers"
+   ],
+   "unconfirmed": [
+    "Stain and finish ingredients (“non‑toxic, baby‑safe finishes”, not named)",
+    "Core under the pine veneers",
+    "Glue",
+    "Hardware"
+   ],
+   "facts": {
+    "main": "yes",
+    "wood": "no",
+    "color": "unknown",
+    "parts": "unknown"
+   },
+   "unstated": {
+    "color": [
+     "Stain and finish ingredients (“non‑toxic, baby‑safe finishes”, not named)"
+    ],
+    "parts": [
+     "Hardware"
+    ]
+   },
+   "quote": "Constructed from pine and pine veneers",
+   "note": "Low bed with integrated rails and wood slats; fits a standard crib mattress (sold separately). Wire-brushed, stained finish in three colours (this one Brushed Cotton). Sold by EasyTot.",
+   "products": [
+    {
+     "name": "Woodland Toddler Bed, Brushed Cotton",
+     "url": "https://easytot.com/products/woodland-toddler-bed-brushed-cotton",
+     "store": "EasyTot",
+     "price": "$171.00",
+     "ships_from": null,
+     "shipping": "Shipping calculated at checkout"
+    }
+   ],
+   "contains": [],
+   "standards": [],
+   "read": "2026-11-26",
+   "photos": [
+    {
+     "key": "halo-aden-anais-woodland-toddler-bed",
+     "src": "https://cdn.shopify.com/s/files/1/0556/0519/8922/files/F49101.17_SL001_Woodland_SoloLifestyleCropped.jpg?v=1794503561"
+    },
+    {
+     "key": "halo-aden-anais-woodland-toddler-bed_2",
+     "src": "https://cdn.shopify.com/s/files/1/0556/0519/8922/files/F49101.17_MI006_Woodland_AplusFeature.jpg?v=1794503560"
+    },
+    {
+     "key": "halo-aden-anais-woodland-toddler-bed_3",
+     "src": "https://cdn.shopify.com/s/files/1/0556/0519/8922/files/F49101.17_WS002_Woodland_IN.jpg?v=1794503561"
+    },
+    {
+     "key": "halo-aden-anais-woodland-toddler-bed_4",
+     "src": "https://cdn.shopify.com/s/files/1/0556/0519/8922/files/F49101.17_WS013_Woodland_straight.jpg?v=1794503561"
+    },
+    {
+     "key": "halo-aden-anais-woodland-toddler-bed_5",
+     "src": "https://cdn.shopify.com/s/files/1/0556/0519/8922/files/F49101.17_SS001_Woodland_SeamlessSoloCropped.jpg?v=1794503561"
+    },
+    {
+     "key": "halo-aden-anais-woodland-toddler-bed_6",
+     "src": "https://cdn.shopify.com/s/files/1/0556/0519/8922/files/F49101.17_MI001_Woodland_AplusFeature.jpg?v=1794503561"
+    }
+   ],
+   "img": "halo-aden-anais-woodland-toddler-bed",
+   "img_src": "https://cdn.shopify.com/s/files/1/0556/0519/8922/files/F49101.17_SL001_Woodland_SoloLifestyleCropped.jpg?v=1794503561"
+  },
+  {
+   "id": "lou-lou-company-zippered-footie",
+   "type": "pajamas",
+   "brand": "Lou Lou & Company",
+   "line": "Zippered Footie, Honey",
+   "uses": [
+    "Rayon"
+   ],
+   "free": [],
+   "outside": [
+    "Spandex"
+   ],
+   "unconfirmed": [
+    "Share of each fibre",
+    "Source of the rayon",
+    "Material of the non-slip soles",
+    "Zipper",
+    "Dyes",
+    "Thread"
+   ],
+   "facts": {
+    "main": "no",
+    "parts": "unknown",
+    "color": "unknown"
+   },
+   "unstated": {
+    "parts": [
+     "Zipper",
+     "Material of the non-slip soles"
+    ],
+    "color": [
+     "Dyes"
+    ]
+   },
+   "quote": "Materials: Rayon/Spandex Blend",
+   "note": "Two-way zipper with zipper cover; non-slip soles. Sizes preemie to 12-24 months. Sold by The Natural Baby Co.",
+   "products": [
+    {
+     "name": "Lou Lou & Company Zippered Footie - Honey",
+     "url": "https://www.thenaturalbabyco.com/products/lou-lou-company-zippered-footie-honey",
+     "store": "The Natural Baby Co",
+     "price": "$30.40 (sale; regular $38.00)",
+     "ships_from": "US",
+     "shipping": null
+    }
+   ],
+   "contains": [],
+   "standards": [],
+   "read": "2026-11-26",
+   "photos": [
+    {
+     "key": "lou-lou-company-zippered-footie",
+     "src": "https://cdn.shopify.com/s/files/1/2386/1081/files/Honeyfootie.jpg?v=1792200760"
+    },
+    {
+     "key": "lou-lou-company-zippered-footie_2",
+     "src": "https://cdn.shopify.com/s/files/1/2386/1081/files/HoneyFootie2.jpg?v=1792200760"
+    },
+    {
+     "key": "lou-lou-company-zippered-footie_3",
+     "src": "https://cdn.shopify.com/s/files/1/2386/1081/files/newfooties.jpg?v=1792200759"
+    },
+    {
+     "key": "lou-lou-company-zippered-footie_4",
+     "src": "https://cdn.shopify.com/s/files/1/2386/1081/files/HoneyandTheodore.jpg?v=1792200759"
+    }
+   ],
+   "img": "lou-lou-company-zippered-footie",
+   "img_src": "https://cdn.shopify.com/s/files/1/2386/1081/files/Honeyfootie.jpg?v=1792200760"
+  },
+  {
+   "id": "naturepedic-breathable-organic-2-stage-crib-mattress",
+   "type": "mattresses",
+   "brand": "Naturepedic",
+   "line": "Breathable Organic 2-Stage Crib Mattress",
+   "uses": [
+    "GOTS-certified organic cotton fabric and fill",
+    "Steel coils (innerspring model)",
+    "Steel fasteners"
+   ],
+   "free": [
+    "Polyurethane foam",
+    "Flame retardants"
+   ],
+   "outside": [
+    "Polyethylene waterproofing made from non-GMO sugarcane",
+    "Food-grade polyethylene foam core (lightweight models)",
+    "PLA foam loop and firmness support layer",
+    "Polypropylene interlinings",
+    "Elastane elastic band",
+    "TPU waterproofing in the breathable cover",
+    "Polyester lattice in the breathable cover",
+    "Polyester fabric backing and thread"
+   ],
+   "unconfirmed": [
+    "Dyes"
+   ],
+   "facts": {
+    "main": "no",
+    "flame": "yes",
+    "organic": "yes",
+    "color": "unknown"
+   },
+   "unstated": {
+    "color": [
+     "Dyes"
+    ]
+   },
+   "standards": [
+    "gots"
+   ],
+   "quote": "Materials: GOTS-certified organic cotton fabric and fill, polyethylene waterproofing made from non-GMO sugarcane, steel coils (innerspring model), food-grade polyethylene foam (lightweight models), PLA foam loop (2-stage models), PLA firmness support layer, steel fasteners, polypropylene interlinings, elastane elastic band, TPU waterproofing, and polyester fabric backing and thread.",
+   "note": "Removable breathable layer over a seamless waterproof surface; flips from an infant side to a toddler side. Lightweight or innerspring core. The page lists GOTS, GREENGUARD Gold, “MADE SAFE” and UL Non-Detectable PFAS among its certifications. Made in the USA.",
+   "products": [
+    {
+     "name": "Breathable Organic 2-Stage Baby Crib Mattress",
+     "url": "https://www.naturepedic.com/products/organic-breathable-baby-crib-mattress-buy",
+     "store": "Naturepedic",
+     "price": "$295.20 (sale; regular $369.00)",
+     "ships_from": "US",
+     "shipping": "Free Shipping & Free Returns"
+    }
+   ],
+   "contains": [],
+   "read": "2026-11-26",
+   "photos": [
+    {
+     "key": "naturepedic-breathable-organic-2-stage-crib-mattress",
+     "src": "https://cdn.shopify.com/s/files/1/0968/8691/5390/files/NP_PDP_Baby_Crib-Breathable_List-1_fcd3fe38-8ab7-4c38-925a-bdcbf93bb1bc.jpg?v=1788373672"
+    },
+    {
+     "key": "naturepedic-breathable-organic-2-stage-crib-mattress_2",
+     "src": "https://cdn.shopify.com/s/files/1/0968/8691/5390/files/NP_PDP_Baby_Crib-Breathable_List-3.jpg?v=1783728052"
+    },
+    {
+     "key": "naturepedic-breathable-organic-2-stage-crib-mattress_3",
+     "src": "https://cdn.shopify.com/s/files/1/0968/8691/5390/files/NP_PDP_Baby_Crib-Breathable_List-2.jpg?v=1783728052"
+    },
+    {
+     "key": "naturepedic-breathable-organic-2-stage-crib-mattress_4",
+     "src": "https://cdn.shopify.com/s/files/1/0968/8691/5390/files/NP_PDP_Baby_Crib-Breathable_List-4.jpg?v=1783728052"
+    },
+    {
+     "key": "naturepedic-breathable-organic-2-stage-crib-mattress_5",
+     "src": "https://cdn.shopify.com/s/files/1/0968/8691/5390/files/NP_PDP_Baby_Crib-Breathable_List-5.jpg?v=1783728052"
+    },
+    {
+     "key": "naturepedic-breathable-organic-2-stage-crib-mattress_6",
+     "src": "https://cdn.shopify.com/s/files/1/0968/8691/5390/files/MC46-Lightweight-LABEL.jpg?v=1784320775"
+    }
+   ],
+   "img": "naturepedic-breathable-organic-2-stage-crib-mattress",
+   "img_src": "https://cdn.shopify.com/s/files/1/0968/8691/5390/files/NP_PDP_Baby_Crib-Breathable_List-1_fcd3fe38-8ab7-4c38-925a-bdcbf93bb1bc.jpg?v=1788373672"
+  },
+  {
+   "id": "naturepedic-savona-oak-kids-bed",
+   "type": "floor-beds",
+   "brand": "Naturepedic",
+   "line": "Savona FSC-Certified Oak Kids Bed/Bunk Bed",
+   "uses": [
+    "Solid white oak frame",
+    "Pine slats"
+   ],
+   "free": [
+    "MDF"
+   ],
+   "outside": [],
+   "unconfirmed": [
+    "Water-based finish ingredients (low-VOC, not named)",
+    "Hardware"
+   ],
+   "facts": {
+    "main": "yes",
+    "wood": "yes",
+    "color": "unknown",
+    "parts": "unknown"
+   },
+   "unstated": {
+    "color": [
+     "Water-based finish ingredients (low-VOC, not named)"
+    ],
+    "parts": [
+     "Hardware"
+    ]
+   },
+   "standards": [
+    "fsc"
+   ],
+   "quote": "Materials: Durable solid white oak frame and pine slats (no MDF).",
+   "note": "Twin or full platform bed, or a convertible bunk that separates into two beds; Natural or Washed White finish. The page says it was tested for lead, phthalates, formaldehyde and heavy metals and lists FSC and “MADE SAFE” certifications.",
+   "products": [
+    {
+     "name": "Savona FSC®-Certified Oak Kids Bed/Bunk Bed",
+     "url": "https://www.naturepedic.com/products/savona-bed-fsc-oak",
+     "store": "Naturepedic",
+     "price": "$799.20 (sale; regular $999.00)",
+     "ships_from": "US",
+     "shipping": null
+    }
+   ],
+   "contains": [],
+   "read": "2026-11-26",
+   "photos": [
+    {
+     "key": "naturepedic-savona-oak-kids-bed",
+     "src": "https://cdn.shopify.com/s/files/1/0968/8691/5390/files/NP_PDP_Furniture_Savona_Bed-Bunk_List-1.jpg?v=1783044488"
+    },
+    {
+     "key": "naturepedic-savona-oak-kids-bed_2",
+     "src": "https://cdn.shopify.com/s/files/1/0968/8691/5390/files/NP_PDP_Furniture_Savona_Bed-Bunk_List-3.jpg?v=1783044488"
+    },
+    {
+     "key": "naturepedic-savona-oak-kids-bed_3",
+     "src": "https://cdn.shopify.com/s/files/1/0968/8691/5390/files/NP_PDP_Furniture_Savona_Bed-Bunk_List-2.jpg?v=1783044488"
+    },
+    {
+     "key": "naturepedic-savona-oak-kids-bed_4",
+     "src": "https://cdn.shopify.com/s/files/1/0968/8691/5390/files/NP_Web_PDP_Furniture_Savona-Bed_RealWood_1000x1000px_1.jpg?v=1783177358"
+    },
+    {
+     "key": "naturepedic-savona-oak-kids-bed_5",
+     "src": "https://cdn.shopify.com/s/files/1/0968/8691/5390/files/NP_PDP_Furniture_Savona_Bed-Bunk_List-6.jpg?v=1783044488"
+    },
+    {
+     "key": "naturepedic-savona-oak-kids-bed_6",
+     "src": "https://cdn.shopify.com/s/files/1/0968/8691/5390/files/NP_PDP_Furniture_Savona_Bed-Bunk_List-5.jpg?v=1783044488"
+    },
+    {
+     "key": "naturepedic-savona-oak-kids-bed_7",
+     "src": "https://cdn.shopify.com/s/files/1/0968/8691/5390/files/NP_PDP_Furniture_Savona_Bed-Bunk_List-7.jpg?v=1783044488"
+    },
+    {
+     "key": "naturepedic-savona-oak-kids-bed_8",
+     "src": "https://cdn.shopify.com/s/files/1/0968/8691/5390/files/NP_PDP_Furniture_Savona_Bed-Bunk_List-4.jpg?v=1783044488"
+    },
+    {
+     "key": "naturepedic-savona-oak-kids-bed_9",
+     "src": "https://cdn.shopify.com/s/files/1/0968/8691/5390/files/NP_PDP_Furniture_Savona_Bed-Bunk_List-9.jpg?v=1783044488"
+    },
+    {
+     "key": "naturepedic-savona-oak-kids-bed_10",
+     "src": "https://cdn.shopify.com/s/files/1/0968/8691/5390/files/Savona_Twin-Twin-Bunk-Bed_Dimensions.jpg?v=1783176537"
+    }
+   ],
+   "img": "naturepedic-savona-oak-kids-bed",
+   "img_src": "https://cdn.shopify.com/s/files/1/0968/8691/5390/files/NP_PDP_Furniture_Savona_Bed-Bunk_List-1.jpg?v=1783044488"
+  },
+  {
+   "id": "petit-lem-ribbed-pajama-set",
+   "type": "pajamas",
+   "brand": "Petit Lem",
+   "line": "Ribbed Pajama Set, Slapstick Print",
+   "uses": [
+    "Organically grown cotton (95%), 3x2 rib"
+   ],
+   "free": [],
+   "outside": [
+    "Elastane (5%)"
+   ],
+   "unconfirmed": [
+    "Elastic in the waistband",
+    "Dyes in the print",
+    "Thread"
+   ],
+   "facts": {
+    "main": "no",
+    "color": "unknown",
+    "organic": "unknown"
+   },
+   "unstated": {
+    "color": [
+     "Dyes in the print"
+    ]
+   },
+   "quote": "Composition: 95% Organically grown cotton, 5% elastane 3x2 rib",
+   "note": "Two-piece long-sleeved top and long pants with an elasticated waistband; sizes 2 to 7 years. Hockey-stick print. No organic certification named. Sold by Pacifier.",
+   "products": [
+    {
+     "name": "Ribbed Pajama Set - Slapstick Print on Ribbed Lunar Rock by Petit Lem",
+     "url": "https://pacifierkids.com/products/ribbed-pajama-set-slapstick-print-on-ribbed-lunar-rock-by-petit-lem",
+     "store": "Pacifier",
+     "price": "$30.80 (sale; regular $44.00)",
+     "ships_from": "US",
+     "shipping": "$5.95 Flat Rate Shipping"
+    }
+   ],
+   "contains": [],
+   "standards": [],
+   "read": "2026-11-26",
+   "photos": [
+    {
+     "key": "petit-lem-ribbed-pajama-set",
+     "src": "https://pacifierkids.com/cdn/shop/files/product_photo_-_white_background_28.jpg?v=1791321628&width=1920"
+    },
+    {
+     "key": "petit-lem-ribbed-pajama-set_2",
+     "src": "https://pacifierkids.com/cdn/shop/files/26FRS36Q44_crop.jpg?v=1791176201&width=5000"
+    },
+    {
+     "key": "petit-lem-ribbed-pajama-set_3",
+     "src": "https://pacifierkids.com/cdn/shop/files/product_photo_-_white_background_-_2026-11-10T113948.807.jpg"
+    },
+    {
+     "key": "petit-lem-ribbed-pajama-set_4",
+     "src": "https://pacifierkids.com/cdn/shop/files/product_photo_-_white_background_30_fd8da738-d224-469e-a38a-01f0b58f81d3.jpg"
+    },
+    {
+     "key": "petit-lem-ribbed-pajama-set_5",
+     "src": "https://pacifierkids.com/cdn/shop/files/product_photo_-_white_background_29_4ba73224-aaef-4e3a-bda4-6c5347b4c790.jpg"
+    },
+    {
+     "key": "petit-lem-ribbed-pajama-set_6",
+     "src": "https://pacifierkids.com/cdn/shop/files/product_photo_-_white_background_17_bb66d60f-7f67-4335-ace2-19de77da5deb.jpg"
+    },
+    {
+     "key": "petit-lem-ribbed-pajama-set_7",
+     "src": "https://pacifierkids.com/cdn/shop/files/product_photo_-_white_background_-_2026-09-16T204326.693.jpg"
+    },
+    {
+     "key": "petit-lem-ribbed-pajama-set_8",
+     "src": "https://pacifierkids.com/cdn/shop/files/product_photo_-_white_background_-_2026-03-11T154701.238.jpg"
+    },
+    {
+     "key": "petit-lem-ribbed-pajama-set_9",
+     "src": "https://pacifierkids.com/cdn/shop/files/product_photo_-_white_background_-_2026-11-23T212053.489.jpg"
+    },
+    {
+     "key": "petit-lem-ribbed-pajama-set_10",
+     "src": "https://pacifierkids.com/cdn/shop/files/product_photo_-_white_background_-_2026-11-23T202614.577.jpg"
+    }
+   ],
+   "img": "petit-lem-ribbed-pajama-set",
+   "img_src": "https://pacifierkids.com/cdn/shop/files/product_photo_-_white_background_28.jpg?v=1791321628&width=1920"
+  },
+  {
+   "id": "sprout-kids-whale-rocking-chair",
+   "type": "furniture",
+   "brand": "Sprout Kids",
+   "line": "Whale Rocking Chair",
+   "uses": [],
+   "free": [],
+   "outside": [
+    "Baltic birch plywood",
+    "Melamine (white)"
+   ],
+   "unconfirmed": [
+    "Glue in the plywood",
+    "Finish on the birch"
+   ],
+   "facts": {
+    "main": "no",
+    "wood": "no",
+    "melamine": "no",
+    "color": "unknown"
+   },
+   "unstated": {
+    "color": [
+     "Finish on the birch"
+    ]
+   },
+   "quote": "Made of Baltic Birch Plywood and Melamine (white)",
+   "note": "Child-sized rocker with footrest and handles; toolless assembly, packs flat. White or white and birch two-tone. The page says the furniture is GREENGUARD Gold certified. Out of stock (backordered) when read. Ships from Utah.",
+   "products": [
+    {
+     "name": "Whale Rocking Chair",
+     "url": "https://sprout-kids.com/products/whale-chair-wc",
+     "store": "Sprout Kids",
+     "price": "$195.00 (White); $175.00 (White & Birch Two-Tone)",
+     "ships_from": "US",
+     "shipping": null
+    }
+   ],
+   "contains": [],
+   "standards": [],
+   "read": "2026-11-26",
+   "photos": [
+    {
+     "key": "sprout-kids-whale-rocking-chair",
+     "src": "https://cdn.shopify.com/s/files/1/0067/2522/files/whale-rocking-chair-whale-rocking-chair-tables-seating-white-197687.jpg?v=1776891696"
+    },
+    {
+     "key": "sprout-kids-whale-rocking-chair_2",
+     "src": "https://cdn.shopify.com/s/files/1/0067/2522/files/whale-rocking-chair-whale-rocking-chair-tables-seating-192874.jpg?v=1776891677"
+    },
+    {
+     "key": "sprout-kids-whale-rocking-chair_3",
+     "src": "https://cdn.shopify.com/s/files/1/0067/2522/products/whale-rocking-chair-whale-rocking-chair-tables-seating-white-birch-two-tone-420579.jpg?v=1776891650"
+    },
+    {
+     "key": "sprout-kids-whale-rocking-chair_4",
+     "src": "https://cdn.shopify.com/s/files/1/0067/2522/files/whale-rocking-chair-whale-rocking-chair-tables-seating-981143.jpg?v=1776891639"
+    },
+    {
+     "key": "sprout-kids-whale-rocking-chair_5",
+     "src": "https://cdn.shopify.com/s/files/1/0067/2522/files/whale-rocking-chair-whale-rocking-chair-tables-seating-576261.jpg?v=1749143901"
+    }
+   ],
+   "img": "sprout-kids-whale-rocking-chair",
+   "img_src": "https://cdn.shopify.com/s/files/1/0067/2522/files/whale-rocking-chair-whale-rocking-chair-tables-seating-white-197687.jpg?v=1776891696"
+  },
+  {
+   "id": "tovolo-groovy-pop-molds",
+   "type": "pop-molds",
+   "brand": "Tovolo",
+   "line": "Groovy Pop Molds",
+   "uses": [
+    "Silicone"
+   ],
+   "free": [
+    "BPA (in the nylon)"
+   ],
+   "outside": [
+    "BPA-free nylon"
+   ],
+   "unconfirmed": [
+    "Which parts are silicone and which nylon",
+    "Silicone testing (LFGB or French Arrêté) not stated",
+    "Pigments"
+   ],
+   "facts": {
+    "main": "no",
+    "silicone": "unknown",
+    "color": "unknown"
+   },
+   "unstated": {
+    "silicone": [
+     "Silicone testing (LFGB or French Arrêté) not stated"
+    ],
+    "color": [
+     "Pigments"
+    ]
+   },
+   "quote": "Materials: Silicone, BPA-free nylon.",
+   "note": "Set of 4 fl oz pop molds with drip-guard handles and a no-tip base; Spring Green, Blueberry or Red. The page says “Dishwasher safe.”",
+   "products": [
+    {
+     "name": "Groovy Pop Molds",
+     "url": "https://www.tovolo.com/products/groovy-pop-molds",
+     "store": "Tovolo",
+     "price": "$14.99",
+     "ships_from": null,
+     "shipping": "Free ground shipping on orders over $40 in the continental US"
+    }
+   ],
+   "contains": [],
+   "standards": [],
+   "read": "2026-11-26",
+   "photos": [
+    {
+     "key": "tovolo-groovy-pop-molds",
+     "src": "https://cdn.shopify.com/s/files/1/0808/9862/1474/files/81-9172_Groovy-Pop-Molds_Green_DETAIL-02.png?v=1792258753"
+    },
+    {
+     "key": "tovolo-groovy-pop-molds_2",
+     "src": "https://cdn.shopify.com/s/files/1/0808/9862/1474/files/61-34211_Elements-Groovy-Pop-Molds_Blueberry_SILO-011.png?v=1792258752"
+    },
+    {
+     "key": "tovolo-groovy-pop-molds_3",
+     "src": "https://cdn.shopify.com/s/files/1/0808/9862/1474/files/N113__1793555666023_1.jpg?v=1793639056"
+    }
+   ],
+   "img": "tovolo-groovy-pop-molds",
+   "img_src": "https://cdn.shopify.com/s/files/1/0808/9862/1474/files/81-9172_Groovy-Pop-Molds_Green_DETAIL-02.png?v=1792258753"
   }
  ]
 }
