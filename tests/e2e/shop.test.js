@@ -85,7 +85,7 @@ test('clean URLs: a nested path loads through 404.html and keeps its path', asyn
   await page.waitForSelector('.card');
   assert.equal(new URL(page.url()).pathname, '/c/balls');
   assert.match(await page.textContent('h1'), /Balls/);
-  assert.match(await page.textContent('.toolbar .count'), /7 products · 5 set aside/);
+  assert.match(await page.textContent('.toolbar .count'), /8 products · 5 set aside/);
   assert.deepEqual(page.errors, []);
   await page.close();
 });
@@ -94,11 +94,11 @@ test('the shop lists the products that meet the default material filters and set
   const page = await open('/shop');
   await page.waitForSelector('.card');
   assert.equal(await count(page), 24, 'first page of results');
-  assert.match(await page.textContent('.toolbar .count'), /364 products · 297 set aside/);
+  assert.match(await page.textContent('.toolbar .count'), /370 products · 306 set aside/);
   await page.click('[data-more]');
   assert.equal(await count(page), 48, '"Show more" adds a page');
   await page.click('.hidden-note button[data-toggle-all]');
-  assert.match(await page.textContent('.toolbar .count'), /661 products/);
+  assert.match(await page.textContent('.toolbar .count'), /676 products/);
   assert.match(page.url(), /all=1/);
   assert.ok((await page.locator('.card .mchip.is-flag').count()) >= 1, 'set-aside products show a flagged material chip once shown');
   assert.equal(await page.locator('.card .fit').count(), 0, 'filter details stay in the chips, not as lines on cards');
@@ -125,7 +125,7 @@ test('material filters sit in the chip row like any other facet and change the r
   assert.ok((await count(page)) > 7, 'allowing synthetic dyes brings painted balls in');
   assert.match(page.url(), /m=/);
   await page.uncheck('#f-crit-color');
-  assert.equal(await count(page), 7);
+  assert.equal(await count(page), 8);
   assert.doesNotMatch(page.url(), /m=/, 'the default set leaves the URL clean');
   await page.close();
 });
@@ -247,12 +247,12 @@ test('phone width: nothing overflows, and the filter drawer applies on "Show res
   assert.equal(await page.locator('#rail').isVisible(), true);
   await page.click('[data-tnode="s-treat"]');
   await page.check('#f-crit-color');
-  assert.match(await page.textContent('.drawer-foot [data-drawer-apply]'), /Show 372 results/);
-  assert.match(await page.textContent('.toolbar .count'), /364 products/, 'results wait for Apply');
+  assert.match(await page.textContent('.drawer-foot [data-drawer-apply]'), /Show 382 results/);
+  assert.match(await page.textContent('.toolbar .count'), /370 products/, 'results wait for Apply');
   await page.click('.drawer-foot [data-drawer-apply]');
   await page.waitForTimeout(300);
   assert.equal(await page.locator('#rail').isVisible(), false);
-  assert.match(await page.textContent('.toolbar .count'), /372 products/);
+  assert.match(await page.textContent('.toolbar .count'), /382 products/);
   await page.click('#menu-open');
   assert.equal(await page.locator('#menu').isVisible(), true);
   await page.keyboard.press('Escape');
