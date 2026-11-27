@@ -6403,7 +6403,8 @@
    "type": "rain-boots",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "skipped",
+   "reason": "duplicate: same materials as the listed Little Green Radicals Lined Natural Rubber Rain Boots (ankle-height version)"
   },
   {
    "url": "https://littlegreenradicals.com/products/plum-natural-rubber-ankle-rain-boots",
@@ -6412,7 +6413,8 @@
    "type": "rain-boots",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "skipped",
+   "reason": "duplicate: same materials as the listed Little Green Radicals Lined Natural Rubber Rain Boots (ankle-height version)"
   },
   {
    "url": "https://littlegreenradicals.com/products/autumn-polkadot-raglan-sweatshirt",
@@ -9236,7 +9238,8 @@
    "type": "rainwear",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "crywolf-magic-jacket"
   },
   {
    "url": "https://crywolfchild.com/products/explorer-jacket-blush-ponies",
@@ -9511,7 +9514,8 @@
    "type": "rainwear",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "crywolf-reversible-eco-puffer"
   },
   {
    "url": "https://crywolfchild.com/products/pom-pom-beanie-mauve-speckle",
@@ -23526,7 +23530,8 @@
    "type": "diapers",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "under-the-nile-potty-training-pants"
   },
   {
    "url": "https://www.greenmountaindiapers.com/products/terry-baby-washcloths",
@@ -45634,7 +45639,8 @@
    "type": "cars",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "goki-construction-tow-truck"
   },
   {
    "url": "https://www.bellalunatoys.com/products/maileg-rocking-horse-mouse-light-brown",
@@ -48731,7 +48737,8 @@
    "type": "balls",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "miniland-eco-sensory-ball-set"
   },
   {
    "url": "https://www.bellalunatoys.com/products/haba-underwater-world-wooden-shape-sorter",
@@ -49020,7 +49027,8 @@
    "type": "teethers",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "bella-luna-toys-wooden-owl-teether"
   },
   {
    "url": "https://www.bellalunatoys.com/products/wooden-peace-sign-baby-teether",
@@ -52369,7 +52377,8 @@
    "type": "climbers",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "bella-luna-toys-natural-climbing-triangle"
   },
   {
    "url": "https://www.bellalunatoys.com/products/tara-treasures-large-sea-and-rockpool-play-mat-playscape",
@@ -88648,7 +88657,8 @@
    "type": "climbers",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "tiny-land-morandi-pikler-triangle-set"
   },
   {
    "url": "https://thebabypenguin.com/products/tiny-land-r-double-sided-arched-magnet-chalkboard",
@@ -88988,7 +88998,8 @@
    "type": "bath",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "quut-bath-puzzle-sea-side"
   },
   {
    "url": "https://thebabypenguin.com/products/squeezi-whale-soft-silicone-squeeze-bath-toy",
@@ -89097,7 +89108,8 @@
    "type": "bath",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "new"
+   "status": "listed",
+   "listing": "quut-fishing-frog-pond"
   },
   {
    "url": "https://thebabypenguin.com/products/squeezi-croco-kids-bath-toy-soft-squeeze-water-play",

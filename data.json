@@ -1,6 +1,6 @@
 {
  "schema": 4,
- "updated": "2026-11-26",
+ "updated": "2026-11-27",
  "ask": [
   "Thread on any sewn item (cotton or polyester).",
   "Wheels and axles on push toys and cars.",
@@ -51801,6 +51801,1129 @@
    ],
    "img": "tovolo-groovy-pop-molds",
    "img_src": "https://cdn.shopify.com/s/files/1/0808/9862/1474/files/81-9172_Groovy-Pop-Molds_Green_DETAIL-02.png?v=1792258753"
+  },
+  {
+   "id": "bella-luna-toys-natural-climbing-triangle",
+   "type": "climbers",
+   "brand": "Bella Luna Toys",
+   "line": "Natural Climbing Triangle (folding, maple)",
+   "uses": [
+    "Maple hardwood dowels"
+   ],
+   "outside": [
+    "Hard maple plywood sides",
+    "Water-based stains and clear finish, type not named"
+   ],
+   "unconfirmed": [
+    "Glue in the plywood",
+    "Locking pins"
+   ],
+   "facts": {
+    "main": "yes",
+    "wood": "no",
+    "color": "no",
+    "parts": "unknown"
+   },
+   "unstated": {
+    "parts": [
+     "Locking pins"
+    ]
+   },
+   "quote": "MATERIALS : Made of hard maple plywood sides and maple hardwood dowels, non-toxic water-based stains and clear finish.",
+   "note": "Folds flat with locking pins; 4 legs and 11 rungs. Assembled H 24 5/8 x L 35 5/16 in. Made in the USA, as stated on the page.",
+   "products": [
+    {
+     "name": "Bella Luna Toys Natural Climbing Triangle",
+     "url": "https://www.bellalunatoys.com/products/bella-luna-toys-natural-climbing-triangle",
+     "price": "$275.00",
+     "store": "Bella Luna Toys",
+     "ships_from": "US",
+     "shipping": "Free shipping on orders over $99 within the contiguous 48 states"
+    }
+   ],
+   "free": [],
+   "contains": [],
+   "standards": [],
+   "read": "2026-11-27",
+   "photos": [
+    {
+     "key": "bella-luna-toys-natural-climbing-triangle",
+     "src": "https://cdn.shopify.com/s/files/1/1114/2810/files/bella-luna-toys-natural-wooden-climbing-triangle.png?v=1699895062"
+    },
+    {
+     "key": "bella-luna-toys-natural-climbing-triangle_2",
+     "src": "https://cdn.shopify.com/s/files/1/1114/2810/files/bella-luna-toys-natural-wooden-climbing-triangle_4.jpg?v=1699895062"
+    },
+    {
+     "key": "bella-luna-toys-natural-climbing-triangle_3",
+     "src": "https://cdn.shopify.com/s/files/1/1114/2810/files/bella-luna-toys-natural-wooden-climbing-triangle_3.jpg?v=1699895062"
+    }
+   ],
+   "img": "bella-luna-toys-natural-climbing-triangle",
+   "img_src": "https://cdn.shopify.com/s/files/1/1114/2810/files/bella-luna-toys-natural-wooden-climbing-triangle.png?v=1699895062"
+  },
+  {
+   "id": "bella-luna-toys-wooden-owl-teether",
+   "type": "teethers",
+   "brand": "Bella Luna Toys",
+   "line": "Wooden Owl Baby Teether (unfinished maple)",
+   "uses": [
+    "Unfinished maple wood"
+   ],
+   "free": [
+    "Finishes and stains"
+   ],
+   "unconfirmed": [
+    "Whether the maple is solid wood"
+   ],
+   "facts": {
+    "main": "yes",
+    "color": "yes",
+    "finish": "yes",
+    "wood": "unknown"
+   },
+   "unstated": {
+    "wood": [
+     "Whether the maple is solid wood"
+    ]
+   },
+   "quote": "MATERIALS : Made from unfinished maple wood.",
+   "note": "Owl shape with an open centre, 3.9 x 3.1 x 0.6 in. Handcrafted in the USA, as stated on the page.",
+   "products": [
+    {
+     "name": "Wooden Owl Baby Teether",
+     "url": "https://www.bellalunatoys.com/products/wooden-owl-baby-teether",
+     "price": "$13.50",
+     "store": "Bella Luna Toys",
+     "ships_from": "US",
+     "shipping": "Free shipping on orders over $99 within the contiguous 48 states"
+    }
+   ],
+   "outside": [],
+   "contains": [],
+   "standards": [],
+   "read": "2026-11-27",
+   "photos": [
+    {
+     "key": "bella-luna-toys-wooden-owl-teether",
+     "src": "https://cdn.shopify.com/s/files/1/1114/2810/files/wooden-maple-teething-toy-owl.jpg?v=1749449545"
+    }
+   ],
+   "img": "bella-luna-toys-wooden-owl-teether",
+   "img_src": "https://cdn.shopify.com/s/files/1/1114/2810/files/wooden-maple-teething-toy-owl.jpg?v=1749449545"
+  },
+  {
+   "id": "crywolf-magic-jacket",
+   "type": "rainwear",
+   "brand": "Crywolf",
+   "line": "Magic Jacket (print appears when wet)",
+   "outside": [
+    "Recycled polyester shell (100%)",
+    "Lining of 65% recycled polyester and 35% cotton jersey",
+    "Bionic Finish Eco water repellent coating"
+   ],
+   "unconfirmed": [
+    "Concealed YKK Vislon zipper",
+    "Snap closures",
+    "Velcro wrist tabs",
+    "Elastic in the wrist cuffs",
+    "Ink of the colour-change print"
+   ],
+   "facts": {
+    "main": "no",
+    "finish": "no",
+    "parts": "unknown",
+    "color": "unknown"
+   },
+   "unstated": {
+    "parts": [
+     "Concealed YKK Vislon zipper",
+     "Snap closures",
+     "Velcro wrist tabs",
+     "Elastic in the wrist cuffs"
+    ],
+    "color": [
+     "Ink of the colour-change print"
+    ]
+   },
+   "standards": [
+    "oeko-tex"
+   ],
+   "age": {
+    "min_months": 12,
+    "text": "Sizes 1 year and up"
+   },
+   "quote": "Shell: 100% recycled polyester Lining: 65% recycled polyester with 35% cotton",
+   "note": "Waterproof to 5,000 mm, breathable to 3,000 g/m²/24h, lined hood and body. Designed in New Zealand; prices shown in NZ dollars.",
+   "products": [
+    {
+     "name": "MAGIC JACKET Olive Rope",
+     "url": "https://crywolfchild.com/products/magic-jacket-olive-rope",
+     "store": "Crywolf",
+     "price": "NZ$49.99 (sale; was NZ$99.99)",
+     "ships_from": "New Zealand"
+    }
+   ],
+   "uses": [],
+   "free": [],
+   "contains": [],
+   "read": "2026-11-27",
+   "photos": [
+    {
+     "key": "crywolf-magic-jacket",
+     "src": "https://cdn.shopify.com/s/files/1/2228/8463/files/CRYWOLF-AW26-Magic-Jacket-Olive-Rope-Front-WEB-JPG.jpg?v=1773703434"
+    },
+    {
+     "key": "crywolf-magic-jacket_2",
+     "src": "https://cdn.shopify.com/s/files/1/2228/8463/files/CRYWOLF-AW26-Magic-Jacket-Olive-a-WEB-JPG.jpg?v=1773938069"
+    },
+    {
+     "key": "crywolf-magic-jacket_3",
+     "src": "https://cdn.shopify.com/s/files/1/2228/8463/files/CRYWOLF-AW26-Magic-Jacket-Olive-b-WEB-JPG.jpg?v=1773938069"
+    },
+    {
+     "key": "crywolf-magic-jacket_4",
+     "src": "https://cdn.shopify.com/s/files/1/2228/8463/files/CRYWOLF-AW26-Magic-Jacket-Olive-c-WEB-JPG.jpg?v=1773938069"
+    },
+    {
+     "key": "crywolf-magic-jacket_5",
+     "src": "https://cdn.shopify.com/s/files/1/2228/8463/files/CRYWOLF-AW26-Magic-Jacket-Olive-d-WEB-JPG.jpg?v=1773938069"
+    },
+    {
+     "key": "crywolf-magic-jacket_6",
+     "src": "https://cdn.shopify.com/s/files/1/2228/8463/files/CRYWOLF-AW26-Magic-Jacket-Olive-e-WEB-JPG.jpg?v=1773938069"
+    },
+    {
+     "key": "crywolf-magic-jacket_7",
+     "src": "https://review-images.judgeme.com/crywolf-nz/1782007049__1782007028326-img_4293__original.jpeg?quality=80&width=1024"
+    },
+    {
+     "key": "crywolf-magic-jacket_8",
+     "src": "https://review-images.judgeme.com/crywolf-nz/1782007053__1782007028329-img_4284__original.jpeg?quality=80&width=1024"
+    }
+   ],
+   "img": "crywolf-magic-jacket",
+   "img_src": "https://cdn.shopify.com/s/files/1/2228/8463/files/CRYWOLF-AW26-Magic-Jacket-Olive-Rope-Front-WEB-JPG.jpg?v=1773703434"
+  },
+  {
+   "id": "crywolf-reversible-eco-puffer",
+   "type": "rainwear",
+   "brand": "Crywolf",
+   "line": "Reversible Eco-Puffer",
+   "outside": [
+    "Recycled polyester shell (100%)",
+    "Recycled polyester lining",
+    "Repreve recycled fill (200 g)",
+    "Bionic Finish Eco water-repellent finish"
+   ],
+   "unconfirmed": [
+    "YKK zips",
+    "Kind of rubber in the pull tags",
+    "Elastic in the wrist cuffs"
+   ],
+   "facts": {
+    "main": "no",
+    "finish": "no",
+    "parts": "unknown"
+   },
+   "unstated": {
+    "parts": [
+     "YKK zips",
+     "Kind of rubber in the pull tags",
+     "Elastic in the wrist cuffs"
+    ]
+   },
+   "standards": [
+    "oeko-tex"
+   ],
+   "age": {
+    "min_months": 12,
+    "text": "Sizes 1 year and up"
+   },
+   "quote": "Materials Shell: 100% recycled polyester Lining: recycled polyester Fill: certified Repreve® recycled fill",
+   "note": "Reversible: plain colour on one side, print on the other. The page says the OEKO-TEX certificate covers “all materials, threads, and accessories”. Designed in New Zealand; prices shown in NZ dollars.",
+   "products": [
+    {
+     "name": "REVERSIBLE ECO-PUFFER Blue Plaid",
+     "url": "https://crywolfchild.com/products/reversible-eco-puffer-blue-plaid-1",
+     "store": "Crywolf",
+     "price": "NZ$64.99 (sale; was NZ$129.99)",
+     "ships_from": "New Zealand"
+    }
+   ],
+   "uses": [],
+   "free": [],
+   "contains": [],
+   "read": "2026-11-27",
+   "photos": [
+    {
+     "key": "crywolf-reversible-eco-puffer",
+     "src": "https://cdn.shopify.com/s/files/1/2228/8463/files/CRYWOL_3_d5269c2e-ff37-4c7f-8681-6a17acc5d5cc.jpg?v=1773712569"
+    },
+    {
+     "key": "crywolf-reversible-eco-puffer_2",
+     "src": "https://cdn.shopify.com/s/files/1/2228/8463/files/CRD287_1.jpg?v=1774306626"
+    },
+    {
+     "key": "crywolf-reversible-eco-puffer_3",
+     "src": "https://cdn.shopify.com/s/files/1/2228/8463/files/CRYWOL_1_c4ad0cb6-4eee-4cb3-b343-7e55eec6206c.jpg?v=1774306626"
+    },
+    {
+     "key": "crywolf-reversible-eco-puffer_4",
+     "src": "https://cdn.shopify.com/s/files/1/2228/8463/files/CRYWOL_1_d9d905fc-30e7-4a21-856c-e4208d910c48.jpg?v=1774306626"
+    },
+    {
+     "key": "crywolf-reversible-eco-puffer_5",
+     "src": "https://cdn.shopify.com/s/files/1/2228/8463/files/CRYWOL_2_912f0661-b4a8-4e92-b812-660e3b9bbcf9.jpg?v=1774306626"
+    },
+    {
+     "key": "crywolf-reversible-eco-puffer_6",
+     "src": "https://cdn.shopify.com/s/files/1/2228/8463/files/CRYWOL_4_daf853bd-cb45-4a3a-9350-e99998ed4d19.jpg?v=1774306626"
+    },
+    {
+     "key": "crywolf-reversible-eco-puffer_7",
+     "src": "https://cdn.shopify.com/s/files/1/2228/8463/files/CRYWOL_3_8b7377ca-b395-46fc-9ec2-610fde402223.jpg?v=1774306626"
+    },
+    {
+     "key": "crywolf-reversible-eco-puffer_8",
+     "src": "https://cdn.shopify.com/s/files/1/2228/8463/files/CR88FA_1.jpg?v=1774306626"
+    },
+    {
+     "key": "crywolf-reversible-eco-puffer_9",
+     "src": "https://crywolfchild.com/cdn/shop/files/preview_images/abb69e7d23b74a8887688d862957fe99.thumbnail.0000000000.jpg?v=1776991516"
+    }
+   ],
+   "img": "crywolf-reversible-eco-puffer",
+   "img_src": "https://cdn.shopify.com/s/files/1/2228/8463/files/CRYWOL_3_d5269c2e-ff37-4c7f-8681-6a17acc5d5cc.jpg?v=1773712569"
+  },
+  {
+   "id": "goki-construction-tow-truck",
+   "type": "cars",
+   "brand": "Goki",
+   "line": "Wooden Construction Tow Truck",
+   "uses": [
+    "Solid maple and beech wood",
+    "Real rubber tires"
+   ],
+   "outside": [
+    "Watercolor paint, ingredients not named"
+   ],
+   "unconfirmed": [
+    "Kind of rubber in the tires",
+    "Axles",
+    "Water-based coating over the stains"
+   ],
+   "facts": {
+    "main": "yes",
+    "wood": "yes",
+    "color": "no",
+    "rubber": "unknown",
+    "parts": "unknown"
+   },
+   "unstated": {
+    "rubber": [
+     "Kind of rubber in the tires"
+    ],
+    "parts": [
+     "Axles"
+    ]
+   },
+   "age": {
+    "min_months": 24,
+    "text": "Ages 2 and up"
+   },
+   "quote": "MATERIALS : Maple and Beech wood, Watercolor Paint",
+   "note": "Tow truck with a lifting arm, 5.1 x 3.94 x 7.48 in. Made in China, as stated on the page.",
+   "products": [
+    {
+     "name": "Wooden Construction Tow Truck",
+     "url": "https://www.bellalunatoys.com/products/goki-construction-truck-tow-truck",
+     "price": "$46.99",
+     "store": "Bella Luna Toys",
+     "ships_from": "US",
+     "shipping": "Free shipping on orders over $99 within the contiguous 48 states"
+    }
+   ],
+   "free": [],
+   "contains": [],
+   "standards": [],
+   "read": "2026-11-27",
+   "photos": [
+    {
+     "key": "goki-construction-tow-truck",
+     "src": "https://cdn.shopify.com/s/files/1/1114/2810/files/new__0027_55965.jpg?v=1789049247"
+    }
+   ],
+   "img": "goki-construction-tow-truck",
+   "img_src": "https://cdn.shopify.com/s/files/1/1114/2810/files/new__0027_55965.jpg?v=1789049247"
+  },
+  {
+   "id": "hape-pound-and-tap-bench",
+   "type": "bench",
+   "brand": "Hape",
+   "line": "Pound and Tap Bench (with slide-out xylophone)",
+   "uses": [
+    "Wood"
+   ],
+   "outside": [
+    "Water-based finishes, type not named"
+   ],
+   "unconfirmed": [
+    "Kind of wood, solid or layered",
+    "Xylophone bars",
+    "Balls",
+    "Hammer"
+   ],
+   "facts": {
+    "main": "yes",
+    "color": "no",
+    "wood": "unknown",
+    "parts": "unknown"
+   },
+   "unstated": {
+    "wood": [
+     "Kind of wood, solid or layered"
+    ],
+    "parts": [
+     "Xylophone bars",
+     "Balls",
+     "Hammer"
+    ]
+   },
+   "standards": [
+    "us-toy"
+   ],
+   "age": {
+    "min_months": 12,
+    "text": "From 12 months"
+   },
+   "quote": "Crafted from durable wood with non-toxic, water-based finishes",
+   "note": "Pound balls down onto a xylophone that slides out to play on its own. 6 parts; 24 x 15 x 13.5 cm. The page says it meets EN 71 and ASTM F963.",
+   "products": [
+    {
+     "name": "Pound and Tap Bench by Hape",
+     "url": "https://pacifierkids.com/products/poundandtapbenchbyhape",
+     "price": "$31.99 (sale; was $39.99)",
+     "store": "Pacifier",
+     "ships_from": "US",
+     "shipping": "$5.95 Flat Rate Shipping"
+    }
+   ],
+   "free": [],
+   "contains": [],
+   "read": "2026-11-27",
+   "photos": [
+    {
+     "key": "hape-pound-and-tap-bench",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/products/E0305_5.jpg?v=1647056380"
+    },
+    {
+     "key": "hape-pound-and-tap-bench_2",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/products/E0305_3.jpg?v=1748069823"
+    },
+    {
+     "key": "hape-pound-and-tap-bench_3",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/E0305_33.jpg?v=1748069989"
+    },
+    {
+     "key": "hape-pound-and-tap-bench_4",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/E0305_34.jpg?v=1748069989"
+    },
+    {
+     "key": "hape-pound-and-tap-bench_5",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/E0305_30.jpg?v=1748069989"
+    },
+    {
+     "key": "hape-pound-and-tap-bench_6",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/E0305_12.jpg?v=1748069989"
+    },
+    {
+     "key": "hape-pound-and-tap-bench_7",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/E0305_14.jpg?v=1748069989"
+    },
+    {
+     "key": "hape-pound-and-tap-bench_8",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/products/E0305_1.jpg?v=1748069989"
+    },
+    {
+     "key": "hape-pound-and-tap-bench_9",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/products/E0305_4.jpg?v=1748069989"
+    },
+    {
+     "key": "hape-pound-and-tap-bench_10",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/E0305_32.jpg?v=1748069989"
+    }
+   ],
+   "img": "hape-pound-and-tap-bench",
+   "img_src": "https://cdn.shopify.com/s/files/1/0281/8056/products/E0305_5.jpg?v=1647056380"
+  },
+  {
+   "id": "miniland-eco-sensory-ball-set",
+   "type": "balls",
+   "brand": "Miniland",
+   "line": "Eco Rubber Sensory Ball Set (6 balls)",
+   "uses": [
+    "Natural rubber from hevea trees (100%)"
+   ],
+   "unconfirmed": [
+    "Colourants for the bright colors",
+    "Rubber additives"
+   ],
+   "facts": {
+    "main": "yes",
+    "color": "unknown",
+    "rubber": "unknown"
+   },
+   "unstated": {
+    "color": [
+     "Colourants for the bright colors"
+    ],
+    "rubber": [
+     "Rubber additives"
+    ]
+   },
+   "contains": [
+    "latex"
+   ],
+   "age": {
+    "min_months": 0,
+    "text": "Ages 0 to 3 years"
+   },
+   "quote": "MATERIALS : 100% made of natural rubber from hevea trees",
+   "note": "Six small balls with different colours and surface textures. Made in China, as stated on the page.",
+   "products": [
+    {
+     "name": "Miniland Eco Rubber Sensory Ball Set",
+     "url": "https://www.bellalunatoys.com/products/miniland-eco-sensory-ball-set",
+     "price": "$49.99",
+     "store": "Bella Luna Toys",
+     "ships_from": "US",
+     "shipping": "Free shipping on orders over $99 within the contiguous 48 states"
+    }
+   ],
+   "free": [],
+   "outside": [],
+   "standards": [],
+   "read": "2026-11-27",
+   "photos": [
+    {
+     "key": "miniland-eco-sensory-ball-set",
+     "src": "https://cdn.shopify.com/s/files/1/1114/2810/files/miniland-rubber-sensory-ball-set.jpg?v=1755025545"
+    },
+    {
+     "key": "miniland-eco-sensory-ball-set_2",
+     "src": "https://cdn.shopify.com/s/files/1/1114/2810/files/miniland-rubber-sensory-ball-set-2.jpg?v=1755025545"
+    },
+    {
+     "key": "miniland-eco-sensory-ball-set_3",
+     "src": "https://cdn.shopify.com/s/files/1/1114/2810/files/miniland-rubber-sensory-ball-set-ls.jpg?v=1755025545"
+    }
+   ],
+   "img": "miniland-eco-sensory-ball-set",
+   "img_src": "https://cdn.shopify.com/s/files/1/1114/2810/files/miniland-rubber-sensory-ball-set.jpg?v=1755025545"
+  },
+  {
+   "id": "quut-bath-puzzle-sea-side",
+   "type": "bath",
+   "brand": "Quut",
+   "line": "Bath Puzzle Sea Side (10 floating foam sea creatures)",
+   "outside": [
+    "Soft EVA foam pieces"
+   ],
+   "unconfirmed": [
+    "Colourants"
+   ],
+   "facts": {
+    "main": "no",
+    "color": "unknown"
+   },
+   "unstated": {
+    "color": [
+     "Colourants"
+    ]
+   },
+   "age": {
+    "min_months": 10,
+    "text": "10 months and older"
+   },
+   "quote": "Made from safe, soft EVA foam",
+   "note": "Ten foam sea creatures that float and cling to wet bath walls. Sold by The Baby Penguin.",
+   "products": [
+    {
+     "name": "Bath Puzzle Sea Side – Floating 3D Bath Toy Set",
+     "url": "https://thebabypenguin.com/products/bath-puzzle-sea-side-floating-3d-bath-toy-set",
+     "price": "$17.00",
+     "store": "The Baby Penguin",
+     "ships_from": "US",
+     "shipping": "Free standard shipping on orders of $50 or more within the contiguous United States"
+    }
+   ],
+   "uses": [],
+   "free": [],
+   "contains": [],
+   "standards": [],
+   "read": "2026-11-27",
+   "photos": [
+    {
+     "key": "quut-bath-puzzle-sea-side",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Bath-Puzzle-Sea-Side-_-Floating-3D-Bath-Toy-Set-Quut-Toys-USA-128039249.webp?v=1771693283"
+    },
+    {
+     "key": "quut-bath-puzzle-sea-side_2",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Bath-Puzzle-Sea-Side-_-Floating-3D-Bath-Toy-Set-Quut-Toys-USA-128039389.webp?v=1771693287"
+    },
+    {
+     "key": "quut-bath-puzzle-sea-side_3",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Bath-Puzzle-Sea-Side-_-Floating-3D-Bath-Toy-Set-Quut-Toys-USA-128039461.webp?v=1771693288"
+    },
+    {
+     "key": "quut-bath-puzzle-sea-side_4",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Bath-Puzzle-Sea-Side-_-Floating-3D-Bath-Toy-Set-Quut-Toys-USA-128039592.webp?v=1771693290"
+    },
+    {
+     "key": "quut-bath-puzzle-sea-side_5",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Bath-Puzzle-Sea-Side-_-Floating-3D-Bath-Toy-Set-Quut-Toys-USA-128039624.webp?v=1771693292"
+    }
+   ],
+   "img": "quut-bath-puzzle-sea-side",
+   "img_src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Bath-Puzzle-Sea-Side-_-Floating-3D-Bath-Toy-Set-Quut-Toys-USA-128039249.webp?v=1771693283"
+  },
+  {
+   "id": "quut-fishing-frog-pond",
+   "type": "bath",
+   "brand": "Quut",
+   "line": "Fishing Frog Pond Bath Game (8 foam pieces and a fishing rod)",
+   "uses": [
+    "Cotton (part not named)"
+   ],
+   "outside": [
+    "EVA foam pieces",
+    "Silicone (part not named)"
+   ],
+   "unconfirmed": [
+    "Fishing rod",
+    "Colourants",
+    "Silicone testing standard"
+   ],
+   "facts": {
+    "main": "no",
+    "parts": "unknown",
+    "color": "unknown",
+    "silicone": "unknown"
+   },
+   "unstated": {
+    "parts": [
+     "Fishing rod"
+    ],
+    "color": [
+     "Colourants"
+    ],
+    "silicone": [
+     "Silicone testing standard"
+    ]
+   },
+   "age": {
+    "min_months": 10,
+    "text": "Floating and wall play from 10 months; rod play from 18 months"
+   },
+   "quote": "Materials: EVA foam, silicone and cotton.",
+   "note": "Foam pieces float and cling to wet tub walls and are caught with the rod without magnets. Sold by The Baby Penguin.",
+   "products": [
+    {
+     "name": "Quut Fishing Frog Pond Bath Game",
+     "url": "https://thebabypenguin.com/products/fishing-frog-pond-kids-bath-fishing-game-for-toddlers",
+     "price": "$20.00",
+     "store": "The Baby Penguin",
+     "ships_from": "US",
+     "shipping": "Free standard shipping on orders of $50 or more within the contiguous United States"
+    }
+   ],
+   "free": [],
+   "contains": [],
+   "standards": [],
+   "read": "2026-11-27",
+   "photos": [
+    {
+     "key": "quut-fishing-frog-pond",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Fishing-Frog-Pond-_-Kids-Bath-Fishing-Game-for-Toddlers-Quut-Toys-USA-128032423.webp?v=1771693008"
+    },
+    {
+     "key": "quut-fishing-frog-pond_2",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Fishing-Frog-Pond-_-Kids-Bath-Fishing-Game-for-Toddlers-Quut-Toys-USA-128032563.webp?v=1771693008"
+    },
+    {
+     "key": "quut-fishing-frog-pond_3",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Fishing-Frog-Pond-_-Kids-Bath-Fishing-Game-for-Toddlers-Quut-Toys-USA-128032647.webp?v=1771693014"
+    },
+    {
+     "key": "quut-fishing-frog-pond_4",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Fishing-Frog-Pond-_-Kids-Bath-Fishing-Game-for-Toddlers-Quut-Toys-USA-128032772.jpg?v=1771693014"
+    },
+    {
+     "key": "quut-fishing-frog-pond_5",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Fishing-Frog-Pond-_-Kids-Bath-Fishing-Game-for-Toddlers-Quut-Toys-USA-128032878.webp?v=1771693018"
+    },
+    {
+     "key": "quut-fishing-frog-pond_6",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Fishing-Frog-Pond-_-Kids-Bath-Fishing-Game-for-Toddlers-Quut-Toys-USA-128032947.webp?v=1771693018"
+    },
+    {
+     "key": "quut-fishing-frog-pond_7",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Fishing-Frog-Pond-_-Kids-Bath-Fishing-Game-for-Toddlers-Quut-Toys-USA-128033087.webp?v=1771693023"
+    },
+    {
+     "key": "quut-fishing-frog-pond_8",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Fishing-Frog-Pond-_-Kids-Bath-Fishing-Game-for-Toddlers-Quut-Toys-USA-128033125.webp?v=1771693026"
+    }
+   ],
+   "img": "quut-fishing-frog-pond",
+   "img_src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Fishing-Frog-Pond-_-Kids-Bath-Fishing-Game-for-Toddlers-Quut-Toys-USA-128032423.webp?v=1771693008"
+  },
+  {
+   "id": "speedy-monkey-bus-pounding-bench",
+   "type": "bench",
+   "brand": "Speedy Monkey",
+   "line": "Bus Pounding Bench (pull-along bus with 8 wooden characters)",
+   "uses": [
+    "FSC-certified wood"
+   ],
+   "outside": [
+    "Paint (“non-toxic, child-safe”, ingredients not named)"
+   ],
+   "unconfirmed": [
+    "Kind of wood, solid or layered",
+    "Wheels and axles",
+    "Pull cord",
+    "Hammer"
+   ],
+   "facts": {
+    "main": "yes",
+    "color": "no",
+    "wood": "unknown",
+    "parts": "unknown"
+   },
+   "unstated": {
+    "wood": [
+     "Kind of wood, solid or layered"
+    ],
+    "parts": [
+     "Wheels and axles",
+     "Pull cord",
+     "Hammer"
+    ]
+   },
+   "standards": [
+    "fsc",
+    "us-toy"
+   ],
+   "age": {
+    "min_months": 24,
+    "text": "Recommended age: 2 years and up"
+   },
+   "quote": "This toy is made with FSC-certified wood and non-toxic, child-safe paints.",
+   "note": "Pull-along bus that doubles as a pounding bench, with 8 wooden characters and a hammer. Made in China, as stated on the page.",
+   "products": [
+    {
+     "name": "Bus Pounding Bench by Speedy Monkey",
+     "url": "https://pacifierkids.com/products/bus-pounding-bench-by-speedy-monkey",
+     "price": "$31.99 (sale; was $39.99)",
+     "store": "Pacifier",
+     "ships_from": "US",
+     "shipping": "$5.95 Flat Rate Shipping"
+    }
+   ],
+   "free": [],
+   "contains": [],
+   "read": "2026-11-27",
+   "photos": [
+    {
+     "key": "speedy-monkey-bus-pounding-bench",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/product_photo_-_white_background_-_2026-08-12T221608.433.jpg?v=1786557816"
+    },
+    {
+     "key": "speedy-monkey-bus-pounding-bench_2",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/5b3a94d49f01479a18deee33b71e48d3a2960875017d7861397b937b1909ee91.jpg?v=1786544184"
+    }
+   ],
+   "img": "speedy-monkey-bus-pounding-bench",
+   "img_src": "https://cdn.shopify.com/s/files/1/0281/8056/files/product_photo_-_white_background_-_2026-08-12T221608.433.jpg?v=1786557816"
+  },
+  {
+   "id": "speedy-monkey-hammer-bench",
+   "type": "bench",
+   "brand": "Speedy Monkey",
+   "line": "Hammer Bench (six pegs, flips over)",
+   "uses": [
+    "FSC-certified wood bench and six pegs"
+   ],
+   "outside": [
+    "Paint (“non-toxic, child-safe”, ingredients not named)"
+   ],
+   "unconfirmed": [
+    "Kind of wood, solid or layered",
+    "Hammer"
+   ],
+   "facts": {
+    "main": "yes",
+    "color": "no",
+    "wood": "unknown",
+    "parts": "unknown"
+   },
+   "unstated": {
+    "wood": [
+     "Kind of wood, solid or layered"
+    ],
+    "parts": [
+     "Hammer"
+    ]
+   },
+   "standards": [
+    "fsc",
+    "us-toy"
+   ],
+   "age": {
+    "min_months": 12,
+    "text": "Recommended age: 12 months and up"
+   },
+   "quote": "Material: FSC Certified Wood from certified supplier",
+   "note": "Tap six coloured pegs through the bench, then flip it over and start again. Made in China, as stated on the page.",
+   "products": [
+    {
+     "name": "Hammer Bench by Speedy Monkey",
+     "url": "https://pacifierkids.com/products/hammer-bench-by-speedy-monkey",
+     "price": "$18.39 (sale; was $22.99)",
+     "store": "Pacifier",
+     "ships_from": "US",
+     "shipping": "$5.95 Flat Rate Shipping"
+    }
+   ],
+   "free": [],
+   "contains": [],
+   "read": "2026-11-27",
+   "photos": [
+    {
+     "key": "speedy-monkey-hammer-bench",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/product_photo_-_white_background_-_2026-08-12T222448.363.jpg?v=1786544719"
+    }
+   ],
+   "img": "speedy-monkey-hammer-bench",
+   "img_src": "https://cdn.shopify.com/s/files/1/0281/8056/files/product_photo_-_white_background_-_2026-08-12T222448.363.jpg?v=1786544719"
+  },
+  {
+   "id": "tender-leaf-toys-table-top-tool-bench",
+   "type": "pretend",
+   "brand": "Tender Leaf Toys",
+   "line": "Wooden Table Top Tool Bench",
+   "uses": [
+    "Wood"
+   ],
+   "unconfirmed": [
+    "Kind of wood, solid or layered",
+    "Paint or finish on the coloured pieces",
+    "Chalkboard surface"
+   ],
+   "facts": {
+    "main": "yes",
+    "wood": "unknown",
+    "color": "unknown",
+    "parts": "unknown"
+   },
+   "unstated": {
+    "wood": [
+     "Kind of wood, solid or layered"
+    ],
+    "color": [
+     "Paint or finish on the coloured pieces"
+    ],
+    "parts": [
+     "Chalkboard surface"
+    ]
+   },
+   "age": {
+    "min_months": 36,
+    "text": "Recommended age: 3 years and up"
+   },
+   "quote": "Materials: Wood",
+   "note": "Table-top workbench with toy hammer, screwdriver, spanner, saw and drill, holes for building designs and a chalkboard. 16.54 x 10.16 x 19.29 in, 8.82 lb. Manufacturer model TL8562.",
+   "products": [
+    {
+     "name": "Tender Leaf Wooden Table Top Tool Bench",
+     "url": "https://thebabypenguin.com/products/table-top-tool-bench",
+     "price": "$119.99",
+     "store": "The Baby Penguin",
+     "ships_from": "US",
+     "shipping": "Free standard shipping on orders of $50 or more within the contiguous United States"
+    }
+   ],
+   "free": [],
+   "outside": [],
+   "contains": [],
+   "standards": [],
+   "read": "2026-11-27",
+   "photos": [
+    {
+     "key": "tender-leaf-toys-table-top-tool-bench",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Table-Top-Tool-Bench---Pretend-Play-Careers---Tender-Leaf-Tender-Leaf-1692910572793_e8732b6e-4996-494f-994b-644a0934b5c6.jpg?v=1692987165"
+    },
+    {
+     "key": "tender-leaf-toys-table-top-tool-bench_2",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Table-Top-Tool-Bench---Pretend-Play-Careers---Tender-Leaf-Tender-Leaf-1692910574416_9ffd8cfb-0869-472b-aa47-5f37558ebc26.jpg?v=1692987168"
+    },
+    {
+     "key": "tender-leaf-toys-table-top-tool-bench_3",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Table-Top-Tool-Bench---Pretend-Play-Careers---Tender-Leaf-Tender-Leaf-1692910577773_b9ac52b7-984f-4847-a534-c46a8ab65de4.jpg?v=1692987172"
+    }
+   ],
+   "img": "tender-leaf-toys-table-top-tool-bench",
+   "img_src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Table-Top-Tool-Bench---Pretend-Play-Careers---Tender-Leaf-Tender-Leaf-1692910572793_e8732b6e-4996-494f-994b-644a0934b5c6.jpg?v=1692987165"
+  },
+  {
+   "id": "tender-leaf-toys-tap-tap-tool-box",
+   "type": "pretend",
+   "brand": "Tender Leaf Toys",
+   "line": "Tap Tap Wooden Tool Box",
+   "uses": [
+    "Wood"
+   ],
+   "unconfirmed": [
+    "Kind of wood, solid or layered",
+    "Paint or finish on the coloured pieces",
+    "Fibre of the printed cloth bag",
+    "Chalkboard surface"
+   ],
+   "facts": {
+    "main": "yes",
+    "wood": "unknown",
+    "color": "unknown",
+    "parts": "unknown"
+   },
+   "unstated": {
+    "wood": [
+     "Kind of wood, solid or layered"
+    ],
+    "color": [
+     "Paint or finish on the coloured pieces"
+    ],
+    "parts": [
+     "Chalkboard surface"
+    ]
+   },
+   "age": {
+    "min_months": 36,
+    "text": "Recommended age: 3 years and up"
+   },
+   "quote": "Materials: Wood",
+   "note": "Woodpecker hammer, pliers, screwdriver and spanner, with screws, bolts, planks, nuts and pegs; two lids become screwable plates; printed cloth bag and end-panel chalkboard. Manufacturer model TL8563.",
+   "products": [
+    {
+     "name": "Tender Leaf Tap Tap Wooden Tool Box",
+     "url": "https://thebabypenguin.com/products/tap-tap-tool-box",
+     "price": "$62.99",
+     "store": "The Baby Penguin",
+     "ships_from": "US",
+     "shipping": "Free standard shipping on orders of $50 or more within the contiguous United States"
+    }
+   ],
+   "free": [],
+   "outside": [],
+   "contains": [],
+   "standards": [],
+   "read": "2026-11-27",
+   "photos": [
+    {
+     "key": "tender-leaf-toys-tap-tap-tool-box",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Tap-Tap-Tool-Box---Pretend-Play---Tender-Leaf-Tender-Leaf-1692910591518_14348c95-04f6-4aca-8326-9f49e7157b62.jpg?v=1692987200"
+    },
+    {
+     "key": "tender-leaf-toys-tap-tap-tool-box_2",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Tap-Tap-Tool-Box---Pretend-Play---Tender-Leaf-Tender-Leaf-1692910594863_e5594444-fda0-4816-a11f-5845d755ec84.jpg?v=1692987203"
+    },
+    {
+     "key": "tender-leaf-toys-tap-tap-tool-box_3",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Tap-Tap-Tool-Box---Pretend-Play---Tender-Leaf-Tender-Leaf-1692910597261_edd893d9-4517-43e4-8d73-5a2c001fe4f3.jpg?v=1692987206"
+    },
+    {
+     "key": "tender-leaf-toys-tap-tap-tool-box_4",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Tap-Tap-Tool-Box---Pretend-Play---Tender-Leaf-Tender-Leaf-1692910600697_118eff71-6e67-4c27-9c04-f8002fc392d7.jpg?v=1692987209"
+    },
+    {
+     "key": "tender-leaf-toys-tap-tap-tool-box_5",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Tap-Tap-Tool-Box---Pretend-Play---Tender-Leaf-Tender-Leaf-1692910602950_311d2cc2-a917-46bd-89bf-ac22cce251af.jpg?v=1692987212"
+    },
+    {
+     "key": "tender-leaf-toys-tap-tap-tool-box_6",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Tap-Tap-Tool-Box---Pretend-Play---Tender-Leaf-Tender-Leaf-1692910605903_6da52900-6146-422f-8374-354385771978.jpg?v=1692987215"
+    },
+    {
+     "key": "tender-leaf-toys-tap-tap-tool-box_7",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Tap-Tap-Tool-Box---Pretend-Play---Tender-Leaf-Tender-Leaf-1692910609270_b9240e8d-b858-44a4-a60f-08ef5fecb16b.jpg?v=1692987218"
+    }
+   ],
+   "img": "tender-leaf-toys-tap-tap-tool-box",
+   "img_src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Tap-Tap-Tool-Box---Pretend-Play---Tender-Leaf-Tender-Leaf-1692910591518_14348c95-04f6-4aca-8326-9f49e7157b62.jpg?v=1692987200"
+  },
+  {
+   "id": "tiny-land-morandi-pikler-triangle-set",
+   "type": "climbers",
+   "brand": "Tiny Land",
+   "line": "7-in-1 Morandi Pikler Triangle Set (triangle, reversible ramp, rocker)",
+   "uses": [
+    "Wood"
+   ],
+   "unconfirmed": [
+    "Kind of wood, solid or layered",
+    "Paint or finish on the Morandi colours",
+    "Anti-slip pads",
+    "Hardware"
+   ],
+   "facts": {
+    "main": "yes",
+    "wood": "unknown",
+    "color": "unknown",
+    "parts": "unknown"
+   },
+   "unstated": {
+    "wood": [
+     "Kind of wood, solid or layered"
+    ],
+    "color": [
+     "Paint or finish on the Morandi colours"
+    ],
+    "parts": [
+     "Anti-slip pads",
+     "Hardware"
+    ]
+   },
+   "quote": "child-safe wood construction supports up to 160 lbs",
+   "note": "Foldable climbing triangle with a reversible ramp and a rocker, seven ways to play. Holds up to 160 lb. Also sold in Rainbow colours. Sold by The Baby Penguin.",
+   "products": [
+    {
+     "name": "Tiny Land® 7-in-1 Morandi Pikler Triangle Set",
+     "url": "https://thebabypenguin.com/products/tiny-land-r-7-in-1-morandi-pikler-triangle-set",
+     "price": "$159.99 (sale; was $169.99)",
+     "store": "The Baby Penguin",
+     "ships_from": "US",
+     "shipping": "Free standard shipping on orders of $50 or more within the contiguous United States"
+    }
+   ],
+   "free": [],
+   "outside": [],
+   "contains": [],
+   "standards": [],
+   "read": "2026-11-27",
+   "photos": [
+    {
+     "key": "tiny-land-morandi-pikler-triangle-set",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Tiny-Landr-7-in-1-Morandi-Pikler-Triangle-Set-Tiny-Land-INC-128969034.webp?v=1781468778"
+    },
+    {
+     "key": "tiny-land-morandi-pikler-triangle-set_2",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Tiny-Landr-7-in-1-Morandi-Pikler-Triangle-Set-Tiny-Land-INC-128969179.webp?v=1781468779"
+    },
+    {
+     "key": "tiny-land-morandi-pikler-triangle-set_3",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Tiny-Landr-7-in-1-Morandi-Pikler-Triangle-Set-Tiny-Land-INC-128969293.webp?v=1781468781"
+    },
+    {
+     "key": "tiny-land-morandi-pikler-triangle-set_4",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Tiny-Landr-7-in-1-Morandi-Pikler-Triangle-Set-Tiny-Land-INC-128969344.webp?v=1781468782"
+    },
+    {
+     "key": "tiny-land-morandi-pikler-triangle-set_5",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Tiny-Landr-7-in-1-Morandi-Pikler-Triangle-Set-Tiny-Land-INC-128969485.webp?v=1781468783"
+    },
+    {
+     "key": "tiny-land-morandi-pikler-triangle-set_6",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Tiny-Landr-7-in-1-Morandi-Pikler-Triangle-Set-Tiny-Land-INC-128969521.webp?v=1781468784"
+    },
+    {
+     "key": "tiny-land-morandi-pikler-triangle-set_7",
+     "src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Tiny-Landr-7-in-1-Morandi-Pikler-Triangle-Set-Tiny-Land-INC-128969641.webp?v=1781468784"
+    }
+   ],
+   "img": "tiny-land-morandi-pikler-triangle-set",
+   "img_src": "https://cdn.shopify.com/s/files/1/0684/2295/9404/files/Tiny-Landr-7-in-1-Morandi-Pikler-Triangle-Set-Tiny-Land-INC-128969034.webp?v=1781468778"
+  },
+  {
+   "id": "under-the-nile-potty-training-pants",
+   "type": "diapers",
+   "brand": "Under the Nile",
+   "line": "Potty Training Pants (organic cotton padded underwear)",
+   "uses": [
+    "Organic Egyptian cotton (100%), GOTS certified",
+    "Organic cotton padding"
+   ],
+   "free": [
+    "Polyester padding",
+    "Waterproofing layer",
+    "Azo colorants, BPA, flame retardants, formaldehyde, fragrance, PVC and lead"
+   ],
+   "unconfirmed": [
+    "Elastic in the waist and legs",
+    "Thread",
+    "Dyes for the blue and pink"
+   ],
+   "facts": {
+    "main": "yes",
+    "flame": "yes",
+    "organic": "yes",
+    "color": "unknown",
+    "parts": "unknown"
+   },
+   "unstated": {
+    "color": [
+     "Dyes for the blue and pink"
+    ],
+    "parts": [
+     "Elastic in the waist and legs"
+    ]
+   },
+   "standards": [
+    "gots"
+   ],
+   "age": {
+    "min_months": 12,
+    "text": "Sizes 12-24 months (20-28 lb) and 2-4 years"
+   },
+   "quote": "Made of 100% organic Egyptian cotton | Certified by GOTS Global Organic Textile Standard",
+   "note": "Padded underwear, not a diaper: the page says “There is no waterproofing layer”. Sold individually. Made in Egypt.",
+   "products": [
+    {
+     "name": "Under the Nile Potty Training Pants (12-24 months, Blue)",
+     "url": "https://www.greenmountaindiapers.com/products/under-the-nile-potty-training-pants-dino",
+     "store": "Green Mountain Diapers",
+     "price": "$15.00",
+     "ships_from": null,
+     "shipping": "Shipping calculated at checkout"
+    }
+   ],
+   "outside": [],
+   "contains": [],
+   "read": "2026-11-27",
+   "photos": [
+    {
+     "key": "under-the-nile-potty-training-pants",
+     "src": "https://cdn.shopify.com/s/files/1/1583/5087/files/utntrainerwhite2000.jpg?v=1753902959"
+    },
+    {
+     "key": "under-the-nile-potty-training-pants_2",
+     "src": "https://cdn.shopify.com/s/files/1/1583/5087/files/utntrainerblue.jpg?v=1778121333"
+    },
+    {
+     "key": "under-the-nile-potty-training-pants_3",
+     "src": "https://cdn.shopify.com/s/files/1/1583/5087/files/utntrainingpink.jpg?v=1781720836"
+    },
+    {
+     "key": "under-the-nile-potty-training-pants_4",
+     "src": "https://cdn.shopify.com/s/files/1/1583/5087/files/utntrainerblueback.jpg?v=1778121404"
+    },
+    {
+     "key": "under-the-nile-potty-training-pants_5",
+     "src": "https://cdn.shopify.com/s/files/1/1583/5087/files/utn-trainer-diagram2-2000.jpg?v=1778121775"
+    }
+   ],
+   "img": "under-the-nile-potty-training-pants",
+   "img_src": "https://cdn.shopify.com/s/files/1/1583/5087/files/utntrainerwhite2000.jpg?v=1753902959"
   }
  ]
 }
