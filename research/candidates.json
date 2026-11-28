@@ -120504,7 +120504,8 @@
    "type": "plates",
    "source": "watchlist",
    "first_seen": "2026-10-20",
-   "status": "unavailable"
+   "status": "listed",
+   "listing": "avanchy-bamboo-silicone-divided-plate"
   },
   {
    "url": "https://pacifierkids.com/products/bamboo-silicone-baby-bowl-spoon-white-by-avanchy",
@@ -173528,7 +173529,8 @@
    "type": "blocks",
    "source": "watchlist",
    "first_seen": "2026-11-03",
-   "status": "unavailable"
+   "status": "listed",
+   "listing": "maison-rue-bergen-building-blocks"
   },
   {
    "url": "https://pacifierkids.com/products/barca-block-set-by-maison-rue",
