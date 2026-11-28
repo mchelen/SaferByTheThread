@@ -1,6 +1,6 @@
 {
  "schema": 4,
- "updated": "2026-11-27",
+ "updated": "2026-11-28",
  "ask": [
   "Thread on any sewn item (cotton or polyester).",
   "Wheels and axles on push toys and cars.",
@@ -52924,6 +52924,1182 @@
    ],
    "img": "under-the-nile-potty-training-pants",
    "img_src": "https://cdn.shopify.com/s/files/1/1583/5087/files/utntrainerwhite2000.jpg?v=1753902959"
+  },
+  {
+   "id": "avanchy-bamboo-silicone-divided-plate",
+   "type": "plates",
+   "brand": "Avanchy",
+   "line": "Bamboo & Silicone Baby Divided Plate + Spoon",
+   "uses": [
+    "Organic bamboo",
+    "Silicone spoon tines and neck"
+   ],
+   "outside": [
+    "Varnish on the bamboo handle, type not named"
+   ],
+   "free": [
+    "Plastic",
+    "BPA",
+    "PVC",
+    "Lead",
+    "Phthalates"
+   ],
+   "unconfirmed": [
+    "Whether the plate is solid bamboo or bamboo fibre with a binder",
+    "Material of the removable suction base",
+    "Finish on the plate"
+   ],
+   "facts": {
+    "main": "yes",
+    "melamine": "unknown",
+    "color": "no",
+    "silicone": "unknown"
+   },
+   "unstated": {
+    "melamine": [
+     "Whether the plate is solid bamboo or bamboo fibre with a binder"
+    ]
+   },
+   "standards": [],
+   "contains": [],
+   "quote": "Material: Organic bamboo and silicone Features: Silicone Tines and Neck",
+   "note": "Three sections, removable suction base, and a matching spoon. Made in China.",
+   "products": [
+    {
+     "name": "Bamboo & Silicone Baby Divided Plate + Spoon - White by Avanchy",
+     "url": "https://pacifierkids.com/products/bamboo-silicone-baby-divided-plate-spoon-white-by-avanchy",
+     "price": "$16.79 (sale; was $20.99)",
+     "store": "Pacifier",
+     "ships_from": "US",
+     "shipping": "$5.95 Flat Rate Shipping"
+    }
+   ],
+   "read": "2026-11-28",
+   "photos": [
+    {
+     "key": "avanchy-bamboo-silicone-divided-plate",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/product_photo_-_white_background_20_69d7daaa-d3a6-4daf-8056-dd0bdde4f2ec.jpg?v=1791877145"
+    },
+    {
+     "key": "avanchy-bamboo-silicone-divided-plate_2",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/7aa41e1ebbaead7a7e2985908a9739819930acf2a8e083520f64fb7060034559.jpg?v=1791877165"
+    },
+    {
+     "key": "avanchy-bamboo-silicone-divided-plate_3",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/8cc0ecfb3f2d46b54f5b5ea0842b4238ef9d2e82d65dc11e5114d46a44d37bbe.jpg?v=1791877170"
+    },
+    {
+     "key": "avanchy-bamboo-silicone-divided-plate_4",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/85286e45528733b1c82673eaf7055f17299872675f6d86908b3146bc2c6e8e69.jpg?v=1791877146"
+    },
+    {
+     "key": "avanchy-bamboo-silicone-divided-plate_5",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/bad516c0c98b2ec24021de2712852e680e5240e3a359265edb0897ea08f97a4a.jpg?v=1791877150"
+    },
+    {
+     "key": "avanchy-bamboo-silicone-divided-plate_6",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/6340a4583ecaf369d2e05ab4af3d882aede6aa3b4aeac5dfd100844038a0b023.jpg?v=1791877154"
+    },
+    {
+     "key": "avanchy-bamboo-silicone-divided-plate_7",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/3dbc4d7499133c81af14e67874c3722201ed098bab8b20a41dc2d09308a66e32_57419ed2-42ff-4345-b9c9-ffd094cfdb23.jpg?v=1791877158"
+    },
+    {
+     "key": "avanchy-bamboo-silicone-divided-plate_8",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/2882b1e248a047e6f83c4149f7c20abfdf9b0f84e494fa06131593aec92e1eb5.jpg?v=1791877177"
+    }
+   ],
+   "img": "avanchy-bamboo-silicone-divided-plate",
+   "img_src": "https://cdn.shopify.com/s/files/1/0281/8056/files/product_photo_-_white_background_20_69d7daaa-d3a6-4daf-8056-dd0bdde4f2ec.jpg?v=1791877145"
+  },
+  {
+   "id": "clementine-kids-cotton-muslin-crib-sheet",
+   "type": "sheets",
+   "brand": "Clementine Kids",
+   "line": "Cotton Muslin Crib Sheet (printed)",
+   "uses": [
+    "Cotton muslin"
+   ],
+   "outside": [],
+   "free": [],
+   "unconfirmed": [
+    "Material of the elastic corners",
+    "Dyes in the print",
+    "Thread"
+   ],
+   "facts": {
+    "main": "yes",
+    "parts": "unknown",
+    "color": "unknown"
+   },
+   "unstated": {
+    "parts": [
+     "Material of the elastic corners",
+     "Thread"
+    ],
+    "color": [
+     "Dyes in the print"
+    ]
+   },
+   "standards": [],
+   "contains": [],
+   "quote": "Made from 100% cotton muslin",
+   "note": "Fits a standard crib or toddler bed mattress (52 x 28 x 6 in). Several prints.",
+   "products": [
+    {
+     "name": "Cotton Muslin Crib Sheet - Butterfly Migration by Clementine Kids",
+     "url": "https://pacifierkids.com/products/cotton-muslin-crib-sheet-butterfly-migration-by-clementine-kids",
+     "price": "$24.00 (sale; was $30.00)",
+     "store": "Pacifier",
+     "ships_from": "US",
+     "shipping": "$5.95 Flat Rate Shipping"
+    }
+   ],
+   "read": "2026-11-28",
+   "photos": [
+    {
+     "key": "clementine-kids-cotton-muslin-crib-sheet",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/products/butterfly-migration-sheet-corner_1000x_5b66ce1b-46bd-4ad1-bcf0-fdf9c7b352e4.png?v=1644381845"
+    },
+    {
+     "key": "clementine-kids-cotton-muslin-crib-sheet_2",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/products/clementinebutterfly-20_1000x_fc56856c-e6dc-4b2d-951c-5805e7036baa.jpg?v=1644381854"
+    },
+    {
+     "key": "clementine-kids-cotton-muslin-crib-sheet_3",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/products/clementinebutterfly-2copy_1000x_edae7377-cd2d-4719-9e74-22396bbc1d93.jpg?v=1644381865"
+    },
+    {
+     "key": "clementine-kids-cotton-muslin-crib-sheet_4",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/products/butterfly-crib_art_1000x_567371a1-d84c-4127-939e-9ebaa686f843.png?v=1644381873"
+    }
+   ],
+   "img": "clementine-kids-cotton-muslin-crib-sheet",
+   "img_src": "https://cdn.shopify.com/s/files/1/0281/8056/products/butterfly-migration-sheet-corner_1000x_5b66ce1b-46bd-4ad1-bcf0-fdf9c7b352e4.png?v=1644381845"
+  },
+  {
+   "id": "grimms-wooden-heart-blocks",
+   "type": "blocks",
+   "brand": "Grimm’s",
+   "line": "Wooden Heart Blocks, Red (10 hearts and frame)",
+   "uses": [
+    "EU hardwood"
+   ],
+   "outside": [
+    "Water-based stains, type not named"
+   ],
+   "free": [],
+   "unconfirmed": [
+    "Kind of wood, solid or layered"
+   ],
+   "facts": {
+    "main": "yes",
+    "wood": "unknown",
+    "color": "no"
+   },
+   "unstated": {
+    "wood": [
+     "Kind of wood, solid or layered"
+    ]
+   },
+   "standards": [
+    "fsc"
+   ],
+   "contains": [],
+   "quote": "MATERIALS : EU hardwood dyed with non-toxic, safety-tested, water-based stains ORIGIN : Germany",
+   "note": "Ten hearts in reds, pinks and orange that fit into a 3-piece frame. Made in Germany.",
+   "products": [
+    {
+     "name": "Grimm’s Wooden Heart Blocks - Red",
+     "url": "https://www.bellalunatoys.com/products/grimms-wooden-heart-blocks-red",
+     "price": "$60.00",
+     "store": "Bella Luna Toys",
+     "ships_from": null,
+     "shipping": "Free Shipping on orders $99+"
+    }
+   ],
+   "read": "2026-11-28",
+   "photos": [
+    {
+     "key": "grimms-wooden-heart-blocks",
+     "src": "https://cdn.shopify.com/s/files/1/1114/2810/files/GR-10178_WoodenHeartBlocks-Red_2__0004_Layer2.jpg?v=1772635291"
+    },
+    {
+     "key": "grimms-wooden-heart-blocks_2",
+     "src": "https://cdn.shopify.com/s/files/1/1114/2810/products/grimms-wooden-heart-blocks.jpeg?v=1772635291"
+    },
+    {
+     "key": "grimms-wooden-heart-blocks_3",
+     "src": "https://cdn.shopify.com/s/files/1/1114/2810/files/GR-10178_WoodenHeartBlocks-Red_2__0003_Layer4.jpg?v=1772635291"
+    },
+    {
+     "key": "grimms-wooden-heart-blocks_4",
+     "src": "https://cdn.shopify.com/s/files/1/1114/2810/files/GR-10178_WoodenHeartBlocks-Red_2__0002_Layer6.jpg?v=1772635291"
+    },
+    {
+     "key": "grimms-wooden-heart-blocks_5",
+     "src": "https://cdn.shopify.com/s/files/1/1114/2810/files/GR-10178_WoodenHeartBlocks-Red_2__0000_Layer8.jpg?v=1772635291"
+    },
+    {
+     "key": "grimms-wooden-heart-blocks_6",
+     "src": "https://cdn.shopify.com/s/files/1/1114/2810/files/GR-10178_WoodenHeartBlocks-Red_optimized__0000_GR-10178_WoodenHeartBlocks-Red_CJ_8.jpg?v=1772635291"
+    },
+    {
+     "key": "grimms-wooden-heart-blocks_7",
+     "src": "https://cdn.shopify.com/s/files/1/1114/2810/files/GR-10178_WoodenHeartBlocks-Red_optimized__0003_GR-10178_WoodenHeartBlocks-Red_CJ_1.jpg?v=1772635291"
+    },
+    {
+     "key": "grimms-wooden-heart-blocks_8",
+     "src": "https://cdn.shopify.com/s/files/1/1114/2810/files/GR-10178_WoodenHeartBlocks-Red_optimized__0001_GR-10178_WoodenHeartBlocks-Red_CJ_5.jpg?v=1772635291"
+    },
+    {
+     "key": "grimms-wooden-heart-blocks_9",
+     "src": "https://cdn.shopify.com/s/files/1/1114/2810/files/GR-10178_WoodenHeartBlocks-Red_optimized__0002_GR-10178_WoodenHeartBlocks-Red_CJ_2.jpg?v=1772635291"
+    },
+    {
+     "key": "grimms-wooden-heart-blocks_10",
+     "src": "https://cdn.shopify.com/s/files/1/1114/2810/files/GR-10178_WoodenHeartBlocks-Red_2__0001_Layer7.jpg?v=1772635291"
+    }
+   ],
+   "img": "grimms-wooden-heart-blocks",
+   "img_src": "https://cdn.shopify.com/s/files/1/1114/2810/files/GR-10178_WoodenHeartBlocks-Red_2__0004_Layer2.jpg?v=1772635291"
+  },
+  {
+   "id": "hatley-kids-matte-rain-boots",
+   "type": "rain-boots",
+   "brand": "Hatley",
+   "line": "Kids Matte Rain Boots (navy with yellow, pink, lilac or red)",
+   "uses": [
+    "Vulcanized rubber boot"
+   ],
+   "outside": [],
+   "free": [
+    "PVC"
+   ],
+   "unconfirmed": [
+    "Kind of rubber in the “Rubber Mixture”, natural or synthetic",
+    "Removable insole",
+    "Lining",
+    "Glue",
+    "Dyes"
+   ],
+   "facts": {
+    "main": "unknown",
+    "rubber": "unknown",
+    "parts": "unknown",
+    "color": "unknown"
+   },
+   "unstated": {
+    "main": [
+     "Removable insole",
+     "Lining"
+    ],
+    "rubber": [
+     "Kind of rubber in the “Rubber Mixture”, natural or synthetic"
+    ],
+    "parts": [
+     "Glue"
+    ],
+    "color": [
+     "Dyes"
+    ]
+   },
+   "standards": [],
+   "contains": [],
+   "quote": "Handmade vulcanized rubber boots Waterproof Slip resistant soles Matte finish Removable insole Always PVC-free",
+   "note": "Hatley is a Canadian brand; its US store says all US orders ship from Montreal.",
+   "products": [
+    {
+     "name": "Kids Navy & Yellow Matte Rain Boots",
+     "url": "https://us.hatley.com/products/kids-navy-yellow-matte-rain-boots",
+     "store": "Hatley (US store)",
+     "price": "$41.30 (sale; was $59.00)",
+     "ships_from": "Canada",
+     "shipping": "Free Expedited Shipping on Orders Over $120"
+    }
+   ],
+   "read": "2026-11-28",
+   "photos": [
+    {
+     "key": "hatley-kids-matte-rain-boots",
+     "src": "https://cdn.shopify.com/s/files/1/0742/2489/4274/files/pdp_zoom_bd117979-f39e-4e88-bce6-5a800f458874.jpg?v=1720730271"
+    },
+    {
+     "key": "hatley-kids-matte-rain-boots_2",
+     "src": "https://cdn.shopify.com/s/files/1/0742/2489/4274/files/pdp_zoom_5626e0bc-078f-413e-be6d-53e0bf46d6f2.jpg?v=1720730275"
+    },
+    {
+     "key": "hatley-kids-matte-rain-boots_3",
+     "src": "https://cdn.shopify.com/s/files/1/0742/2489/4274/files/pdp_zoom_e7284e38-c5fa-4d2b-b723-df39ec2d3479.jpg?v=1720730279"
+    },
+    {
+     "key": "hatley-kids-matte-rain-boots_4",
+     "src": "https://cdn.shopify.com/s/files/1/0742/2489/4274/files/pdp_zoom_441f211d-58b4-41df-b659-46a23c11be6c.jpg?v=1720730287"
+    },
+    {
+     "key": "hatley-kids-matte-rain-boots_5",
+     "src": "https://cdn.shopify.com/s/files/1/0742/2489/4274/files/pdp_zoom_5f9dc189-f92f-4093-a760-fe394ad1b759.jpg?v=1720730291"
+    },
+    {
+     "key": "hatley-kids-matte-rain-boots_6",
+     "src": "https://cdn.shopify.com/s/files/1/0742/2489/4274/files/pdp_zoom_bec726e7-ee28-441d-86b6-fc68bf0dfdaf.jpg?v=1720730298"
+    }
+   ],
+   "img": "hatley-kids-matte-rain-boots",
+   "img_src": "https://cdn.shopify.com/s/files/1/0742/2489/4274/files/pdp_zoom_bd117979-f39e-4e88-bce6-5a800f458874.jpg?v=1720730271"
+  },
+  {
+   "id": "kyte-baby-crib-sheet",
+   "type": "sheets",
+   "brand": "Kyte Baby",
+   "line": "Crib Sheet (28 x 52 in)",
+   "uses": [
+    "Rayon made from bamboo (97%)"
+   ],
+   "outside": [
+    "Spandex (3%)"
+   ],
+   "free": [],
+   "unconfirmed": [
+    "Dyes",
+    "Thread"
+   ],
+   "facts": {
+    "main": "no",
+    "parts": "unknown",
+    "color": "unknown"
+   },
+   "unstated": {
+    "parts": [
+     "Thread"
+    ],
+    "color": [
+     "Dyes"
+    ]
+   },
+   "standards": [],
+   "contains": [],
+   "quote": "97% Rayon made from Bamboo, 3% Spandex",
+   "note": "Stretches over a standard crib mattress. Sold in several solid colours.",
+   "products": [
+    {
+     "name": "Crib Sheet - Sage by Kyte Baby",
+     "url": "https://pacifierkids.com/products/crib-sheet-sage-by-kyte-baby",
+     "price": "$34.40 (sale; was $43.00)",
+     "store": "Pacifier",
+     "ships_from": "US",
+     "shipping": "$5.95 Flat Rate Shipping"
+    }
+   ],
+   "read": "2026-11-28",
+   "photos": [
+    {
+     "key": "kyte-baby-crib-sheet",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/product_photo_-_white_background_-_2026-03-05T142721.015.jpg?v=1772692118"
+    },
+    {
+     "key": "kyte-baby-crib-sheet_2",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/Sage_Crib_Sheet_1_3000x_5d53098f-62c7-43d9-a98a-b990f16cbe7f.jpg?v=1772692118"
+    },
+    {
+     "key": "kyte-baby-crib-sheet_3",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/1803SG103_3000x_408fde69-c7dc-40e6-b2b2-4894c727af89.jpg?v=1772692118"
+    },
+    {
+     "key": "kyte-baby-crib-sheet_4",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/1803SG102_3000x_e62e8307-b3db-413c-a7e1-d65b338bdbc7.jpg?v=1772692069"
+    }
+   ],
+   "img": "kyte-baby-crib-sheet",
+   "img_src": "https://cdn.shopify.com/s/files/1/0281/8056/files/product_photo_-_white_background_-_2026-03-05T142721.015.jpg?v=1772692118"
+  },
+  {
+   "id": "magic-wood-tree-branch-eco-blocks",
+   "type": "blocks",
+   "brand": "Magic Wood",
+   "line": "Wooden Tree Branch Eco-Blocks (36 pieces)",
+   "uses": [
+    "White beech, alder and hazel wood",
+    "Linseed oil surface treatment"
+   ],
+   "outside": [],
+   "free": [],
+   "unconfirmed": [
+    "Fibre of the canvas storage bag"
+   ],
+   "facts": {
+    "main": "yes",
+    "wood": "yes",
+    "color": "yes"
+   },
+   "unstated": {},
+   "standards": [
+    "fsc"
+   ],
+   "contains": [],
+   "age": {
+    "min_months": 36,
+    "text": "Not for children under 3 years"
+   },
+   "quote": "MATERIALS : FSC-certified mixed woods from sustainable forests: white beech, alder, and hazel wood. Surface treated with linseed oil",
+   "note": "Blocks cut from branches with the bark left on the sides; the page says the bark may come loose. Comes with a canvas bag. Handcrafted in Poland.",
+   "products": [
+    {
+     "name": "Wooden Tree Branch Eco-Blocks - 36 Piece Set",
+     "url": "https://www.bellalunatoys.com/products/magic-wood-36-tree-branch-eco-blocks",
+     "price": "$140.00",
+     "store": "Bella Luna Toys",
+     "ships_from": null,
+     "shipping": "Free Shipping on orders $99+"
+    }
+   ],
+   "read": "2026-11-28",
+   "photos": [
+    {
+     "key": "magic-wood-tree-branch-eco-blocks",
+     "src": "https://cdn.shopify.com/s/files/1/1114/2810/products/magic-wooden-tree-blocks-36.jpg?v=1663825828"
+    },
+    {
+     "key": "magic-wood-tree-branch-eco-blocks_2",
+     "src": "https://cdn.shopify.com/s/files/1/1114/2810/products/magic-wooden-tree-branch-blocks-bag.jpg?v=1663825830"
+    }
+   ],
+   "img": "magic-wood-tree-branch-eco-blocks",
+   "img_src": "https://cdn.shopify.com/s/files/1/1114/2810/products/magic-wooden-tree-blocks-36.jpg?v=1663825828"
+  },
+  {
+   "id": "maison-rue-bergen-building-blocks",
+   "type": "blocks",
+   "brand": "Maison Rue",
+   "line": "Bergen Building Blocks, Pastel (village set)",
+   "uses": [
+    "Solid beech and maple wood"
+   ],
+   "outside": [],
+   "free": [],
+   "unconfirmed": [
+    "Paint on the pastel pieces",
+    "Finish"
+   ],
+   "facts": {
+    "main": "yes",
+    "wood": "yes",
+    "color": "unknown"
+   },
+   "unstated": {
+    "color": [
+     "Paint on the pastel pieces",
+     "Finish"
+    ]
+   },
+   "standards": [],
+   "contains": [],
+   "age": {
+    "min_months": 0,
+    "text": "Recommended Age: 0-2 Years and up"
+   },
+   "quote": "Crafted from solid beechwood and maplewood",
+   "note": "Wooden houses, trees and peg people for small-world play. Made in China.",
+   "products": [
+    {
+     "name": "Bergen Building Blocks - Pastel by Maison Rue",
+     "url": "https://pacifierkids.com/products/bergen-building-blocks-pastel-by-maison-rue",
+     "price": "$96.00 (sale; was $120.00)",
+     "store": "Pacifier",
+     "ships_from": "US",
+     "shipping": "$5.95 Flat Rate Shipping"
+    }
+   ],
+   "read": "2026-11-28",
+   "photos": [
+    {
+     "key": "maison-rue-bergen-building-blocks",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/product_photo_-_white_background_-_2026-11-03T175345.108.jpg?v=1793699637"
+    },
+    {
+     "key": "maison-rue-bergen-building-blocks_2",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/87e973b0ce6847b91dd4a7ee2f74e5ac37a3570f8a44e72988ff259a23ae62e4.jpg?v=1793699638"
+    },
+    {
+     "key": "maison-rue-bergen-building-blocks_3",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/3d526d8cc0e309b71daae906d9c3df3997aef54bbe4fbb50c1ec09c0be282665.jpg?v=1793699644"
+    },
+    {
+     "key": "maison-rue-bergen-building-blocks_4",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/47da2e5576b6f8b0017da3b5231bdf131fa0c14f0bb24e09d24050a6f835fb96.jpg?v=1793699651"
+    },
+    {
+     "key": "maison-rue-bergen-building-blocks_5",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/b021494c4a25dd52ec1833048c114f657494443cdce893d7c52fd1151f92035a.jpg?v=1793699657"
+    },
+    {
+     "key": "maison-rue-bergen-building-blocks_6",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/03a5215fb34c6981595e9356091d50773b1077185244650a18b0c51dfb757f07.jpg?v=1793699663"
+    },
+    {
+     "key": "maison-rue-bergen-building-blocks_7",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/250c748fd2a2eea2194dacac1f063edce2ca5fa23f7f231dae78bd564ed85a7f.jpg?v=1793699669"
+    },
+    {
+     "key": "maison-rue-bergen-building-blocks_8",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/f84d49a7cd7743453f660444ea02af28448e55ea973ec034ade5ea36de4fb417.jpg?v=1793699674"
+    },
+    {
+     "key": "maison-rue-bergen-building-blocks_9",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/85d5843ccd9ad966cebcee615b665a014d3c6cd8727d850672eb680e22d36f99.jpg?v=1793699678"
+    },
+    {
+     "key": "maison-rue-bergen-building-blocks_10",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/8d65b4dda48ec665c5f9617f06ba66bb9e40a3753546dbac6d19fbcfe70b07d5.jpg?v=1793699684"
+    }
+   ],
+   "img": "maison-rue-bergen-building-blocks",
+   "img_src": "https://cdn.shopify.com/s/files/1/0281/8056/files/product_photo_-_white_background_-_2026-11-03T175345.108.jpg?v=1793699637"
+  },
+  {
+   "id": "morepeas-baby-to-tots-spoons",
+   "type": "utensils",
+   "brand": "morepeas",
+   "line": "Baby to Tots Spoons (2 pack)",
+   "uses": [
+    "Food-grade silicone"
+   ],
+   "outside": [
+    "Nylon"
+   ],
+   "free": [
+    "BPA",
+    "BPS",
+    "PVC",
+    "Phthalates"
+   ],
+   "unconfirmed": [
+    "Which part is nylon",
+    "Pigments"
+   ],
+   "facts": {
+    "main": "no",
+    "color": "unknown",
+    "silicone": "unknown",
+    "lead": "yes"
+   },
+   "unstated": {
+    "color": [
+     "Pigments"
+    ]
+   },
+   "standards": [
+    "us-toy"
+   ],
+   "contains": [],
+   "age": {
+    "min_months": 4,
+    "text": "4 months +"
+   },
+   "quote": "FDA-approved (food-grade silicone) and nylon BPA-free, BPS-free, PVC free, and phthalate free",
+   "note": "Long enough for an adult to feed with and short enough for a child to self-feed. The page says it is CPSIA certified.",
+   "products": [
+    {
+     "name": "Baby to Tots Spoons 2 Pack by morepeas",
+     "url": "https://pacifierkids.com/products/baby-to-tots-spoons-2-pack-by-morepeas",
+     "price": "$11.99 (sale; was $14.99)",
+     "store": "Pacifier",
+     "ships_from": "US",
+     "shipping": "$5.95 Flat Rate Shipping"
+    }
+   ],
+   "read": "2026-11-28",
+   "photos": [
+    {
+     "key": "morepeas-baby-to-tots-spoons",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/products/spoons_morepeas_1500x_25dc2c38-1459-44a3-b956-03d0141bb599.png?v=1659463036"
+    },
+    {
+     "key": "morepeas-baby-to-tots-spoons_2",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/products/sherbert_spoon_set_morepeas_600x_68ee467b-a9f2-445a-9ea5-5cd02a03cbfd.png?v=1659463079"
+    }
+   ],
+   "img": "morepeas-baby-to-tots-spoons",
+   "img_src": "https://cdn.shopify.com/s/files/1/0281/8056/products/spoons_morepeas_1500x_25dc2c38-1459-44a3-b956-03d0141bb599.png?v=1659463036"
+  },
+  {
+   "id": "oeuf-classic-toddler-bed",
+   "type": "toddler-beds",
+   "brand": "Oeuf",
+   "line": "Classic Toddler Bed (White / Birch)",
+   "uses": [
+    "Solid birch"
+   ],
+   "outside": [
+    "Baltic birch plywood",
+    "Eco-MDF",
+    "Water-based finishes, type not named"
+   ],
+   "free": [],
+   "unconfirmed": [
+    "Glue and resin in the plywood and MDF",
+    "Hardware"
+   ],
+   "facts": {
+    "main": "unknown",
+    "wood": "no",
+    "color": "no",
+    "parts": "unknown"
+   },
+   "unstated": {
+    "main": [
+     "Glue and resin in the plywood and MDF"
+    ],
+    "parts": [
+     "Hardware"
+    ]
+   },
+   "standards": [],
+   "contains": [],
+   "quote": "Materials: Solid birch, baltic birch plywood and eco-MDF.",
+   "note": "Takes a standard crib mattress; for children up to age 6 or 45 in tall. Made in Europe. The page says it is GREENGUARD Gold certified.",
+   "products": [
+    {
+     "name": "Classic Toddler Bed - White / Birch by Oeuf",
+     "url": "https://pacifierkids.com/products/classic-toddler-bed-white-birch-by-oeuf",
+     "price": "$745.00 (out of stock when read)",
+     "store": "Pacifier",
+     "ships_from": "US",
+     "shipping": "$5.95 Flat Rate Shipping"
+    }
+   ],
+   "read": "2026-11-28",
+   "photos": [
+    {
+     "key": "oeuf-classic-toddler-bed",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/Classic_Toddler-Bed_High-Res_Graybg_02_ea0061d9-fdf6-44cd-b4e1-d0d33c734996.jpg?v=1745890973"
+    },
+    {
+     "key": "oeuf-classic-toddler-bed_2",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/Classic_Toddler-Bed_High-Res_Graybg_01_eba1769a-81dc-4303-bab5-7d10ee3f3907.jpg?v=1745890991"
+    },
+    {
+     "key": "oeuf-classic-toddler-bed_3",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/Classic_Toddler-Bed_Lifestyle_Web_01.jpg?v=1747880553"
+    },
+    {
+     "key": "oeuf-classic-toddler-bed_4",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/Measurements-Classic-Toddler.jpg?v=1747880553"
+    }
+   ],
+   "img": "oeuf-classic-toddler-bed",
+   "img_src": "https://cdn.shopify.com/s/files/1/0281/8056/files/Classic_Toddler-Bed_High-Res_Graybg_02_ea0061d9-fdf6-44cd-b4e1-d0d33c734996.jpg?v=1745890973"
+  },
+  {
+   "id": "oli-carol-cathy-the-carrot-plate-spoon-set",
+   "type": "plates",
+   "brand": "Oli & Carol",
+   "line": "Cathy the Carrot Plate & Spoon Set",
+   "uses": [
+    "Hevea wood plate and spoon"
+   ],
+   "outside": [],
+   "free": [
+    "Plastics",
+    "Phthalates"
+   ],
+   "unconfirmed": [
+    "Kind of natural pigments in the paint",
+    "Finish or coating on the wood",
+    "Kind of wood, solid or layered"
+   ],
+   "facts": {
+    "main": "yes",
+    "melamine": "yes",
+    "color": "unknown",
+    "wood": "unknown"
+   },
+   "unstated": {
+    "color": [
+     "Kind of natural pigments in the paint",
+     "Finish or coating on the wood"
+    ],
+    "wood": [
+     "Kind of wood, solid or layered"
+    ]
+   },
+   "standards": [],
+   "contains": [],
+   "age": {
+    "min_months": 6,
+    "text": "From 6 months"
+   },
+   "quote": "Crafted from Hevea wood, this set is phthalate-free, non-toxic, and free from plastics",
+   "note": "Two-section plate and a spoon, each hand-painted; the page says the paint uses natural pigments. Made in China.",
+   "products": [
+    {
+     "name": "Cathy the Carrot Plate & Spoon Set by Oli & Carol",
+     "url": "https://pacifierkids.com/products/cathy-the-carrot-plate-spoon-set-by-oli-carol",
+     "price": "$31.99 (sale; was $39.99)",
+     "store": "Pacifier",
+     "ships_from": "US",
+     "shipping": "$5.95 Flat Rate Shipping"
+    }
+   ],
+   "read": "2026-11-28",
+   "photos": [
+    {
+     "key": "oli-carol-cathy-the-carrot-plate-spoon-set",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/1aa87b96df31b1bf85f888e441d8f5ec64b1acec70149db11c2090c8671bab0b.jpg?v=1759652616"
+    },
+    {
+     "key": "oli-carol-cathy-the-carrot-plate-spoon-set_2",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/1eab035f65aa06a51c30edf4ca8271554b3d163fefa6775fe3e39a8bb9e82be8.jpg?v=1759652684"
+    },
+    {
+     "key": "oli-carol-cathy-the-carrot-plate-spoon-set_3",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/77e5143b1ec8b6f8c590c081deb9c17c7c12475b503a55e73ba6c9cd3c09ea44.jpg?v=1759652684"
+    },
+    {
+     "key": "oli-carol-cathy-the-carrot-plate-spoon-set_4",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/2bb4a14d675bf329ba68d990451470e20033d3e92d1a033790922c0e12ca28fc.jpg?v=1759652684"
+    },
+    {
+     "key": "oli-carol-cathy-the-carrot-plate-spoon-set_5",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/0b70a8d009afc801803de0f9b70060bb2c887b4b5f50e60ca4f9f4bc58785a5f.jpg?v=1759652645"
+    },
+    {
+     "key": "oli-carol-cathy-the-carrot-plate-spoon-set_6",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/dc4d0764b235df1a3ea44a2dc89b3f7484851af8c2eb368370138ed4d10f43c8.jpg?v=1759652650"
+    }
+   ],
+   "img": "oli-carol-cathy-the-carrot-plate-spoon-set",
+   "img_src": "https://cdn.shopify.com/s/files/1/0281/8056/files/1aa87b96df31b1bf85f888e441d8f5ec64b1acec70149db11c2090c8671bab0b.jpg?v=1759652616"
+  },
+  {
+   "id": "parklon-lemans-silky-folding-mat",
+   "type": "mats",
+   "brand": "Parklon",
+   "line": "LeMans Silky Folding Mat (78.7 x 55.1 in)",
+   "uses": [
+    "Cotton"
+   ],
+   "outside": [
+    "PE foam"
+   ],
+   "free": [
+    "Phthalates",
+    "BPA",
+    "Lead"
+   ],
+   "unconfirmed": [
+    "What makes the surface water-resistant",
+    "Inks or dyes in the print",
+    "Fibre of the woven edge"
+   ],
+   "facts": {
+    "main": "no",
+    "color": "unknown",
+    "finish": "unknown"
+   },
+   "unstated": {
+    "finish": [
+     "What makes the surface water-resistant"
+    ],
+    "color": [
+     "Inks or dyes in the print"
+    ]
+   },
+   "standards": [],
+   "contains": [],
+   "age": {
+    "min_months": 0,
+    "text": "From 0 months"
+   },
+   "quote": "The Silky Play Mat is made of PE foam and cotton resulting in a cloth-like surface",
+   "note": "Folds into its own carrying case; 0.4 in thick. Made in South Korea. The page says it is SGS tested.",
+   "products": [
+    {
+     "name": "LeMans Silky Folding Mat by Parklon",
+     "url": "https://pacifierkids.com/products/lemans-silky-folding-mat-by-parklon",
+     "price": "$71.99 (sale; was $89.99)",
+     "store": "Pacifier",
+     "ships_from": "US",
+     "shipping": "$5.95 Flat Rate Shipping"
+    }
+   ],
+   "read": "2026-11-28",
+   "photos": [
+    {
+     "key": "parklon-lemans-silky-folding-mat",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/LemansSilkyFoldingMat.png?v=1738112581"
+    },
+    {
+     "key": "parklon-lemans-silky-folding-mat_2",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/c9c56f61d4c93446ceb6fa7f351c3542d9e81ef07ef8ff84a056b9d3c44e5ec3.jpg?v=1738112585"
+    },
+    {
+     "key": "parklon-lemans-silky-folding-mat_3",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/597af4d2c5dfea57d88a12d4b97053d4c32f69f0cfdcc07f32929d73b89de366.jpg?v=1738112589"
+    },
+    {
+     "key": "parklon-lemans-silky-folding-mat_4",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/e0a3016fef76e4977268969ae8822984e1dc35f3920762406a002559a82becb1.jpg?v=1738112593"
+    },
+    {
+     "key": "parklon-lemans-silky-folding-mat_5",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/5b4e9255aecd8adbdadefd3125bcf11423eb35c72ac9945ea3ddbdab84f28cf8.jpg?v=1738112603"
+    },
+    {
+     "key": "parklon-lemans-silky-folding-mat_6",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/fd19311ef685ed26ef6d23753249eba8a2b595c68061cb21a344f67db8c81f3e.jpg?v=1738112610"
+    },
+    {
+     "key": "parklon-lemans-silky-folding-mat_7",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/24346f62711d86075ff6e1d6d08242783734d4de83a428be86b695611ecc87bc.jpg?v=1738112614"
+    },
+    {
+     "key": "parklon-lemans-silky-folding-mat_8",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/adc8e7deb2811db09b37f89c8a4f4cb2321f5d464c2378f29e1977132a66c70b.jpg?v=1738112618"
+    }
+   ],
+   "img": "parklon-lemans-silky-folding-mat",
+   "img_src": "https://cdn.shopify.com/s/files/1/0281/8056/files/LemansSilkyFoldingMat.png?v=1738112581"
+  },
+  {
+   "id": "stokke-tripp-trapp-chair",
+   "type": "high-chairs",
+   "brand": "Stokke",
+   "line": "Tripp Trapp Chair (chair only)",
+   "uses": [
+    "European beech wood"
+   ],
+   "outside": [],
+   "free": [],
+   "unconfirmed": [
+    "Wood-based parts the page mentions, kind not named",
+    "Paint or lacquer on the coloured versions",
+    "Screws and fittings"
+   ],
+   "facts": {
+    "main": "yes",
+    "wood": "unknown",
+    "color": "unknown",
+    "parts": "unknown"
+   },
+   "unstated": {
+    "wood": [
+     "Wood-based parts the page mentions, kind not named"
+    ],
+    "color": [
+     "Paint or lacquer on the coloured versions"
+    ],
+    "parts": [
+     "Screws and fittings"
+    ]
+   },
+   "standards": [
+    "us-toy"
+   ],
+   "contains": [],
+   "age": {
+    "min_months": 36,
+    "text": "From 36 months (chair alone)"
+   },
+   "quote": "Tripp Trapp chair made from strong and resilient European beech wood",
+   "note": "Seat and footplate adjust in height and depth; the baby set and tray are sold separately. Produced in the European Union.",
+   "products": [
+    {
+     "name": "Tripp Trapp Chair by Stokke",
+     "url": "https://pacifierkids.com/products/tripp-trapp-chair-by-stokke",
+     "price": "$199.20 (sale; was $249.00)",
+     "store": "Pacifier",
+     "ships_from": "US",
+     "shipping": "$5.95 Flat Rate Shipping"
+    }
+   ],
+   "read": "2026-11-28",
+   "photos": [
+    {
+     "key": "stokke-tripp-trapp-chair",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/product_photo_-_white_background_-_2025-11-13T133541.552.jpg?v=1763012374"
+    },
+    {
+     "key": "stokke-tripp-trapp-chair_2",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/TrippTrapp_Chair_Natural_240717-4934_eCom.jpg?v=1763012374"
+    },
+    {
+     "key": "stokke-tripp-trapp-chair_3",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/TrippTrapp_Chair_Natural_240717-2311_eCom.jpg?v=1763012374"
+    },
+    {
+     "key": "stokke-tripp-trapp-chair_4",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/USCA_TrippTrapp_Comparison-Image_938x1072px_option1.jpg?v=1763012374"
+    },
+    {
+     "key": "stokke-tripp-trapp-chair_5",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/TrippTrapp-Natural_BabySet_Storage_US_240718-4498_eCom.jpg?v=1763012374"
+    },
+    {
+     "key": "stokke-tripp-trapp-chair_6",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/Global_TT-EmoGallery_PDP-image_Babyset_1400x700px_f1a40fb5-28c8-49d1-a0e0-f0bc6dd97a97.jpg?v=1763012374"
+    },
+    {
+     "key": "stokke-tripp-trapp-chair_7",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/USCA_TT-EmoGallery_PDP-image_1400x700px-3_554f3d26-1bf0-4630-8147-7b2424905fa9.jpg?v=1763012374"
+    },
+    {
+     "key": "stokke-tripp-trapp-chair_8",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/TrippTrapp_Chair_Black_240717-1774b_eCom_edeab707-8cfd-4b9f-83e3-12cef73ea1cc.jpg?v=1763012374"
+    },
+    {
+     "key": "stokke-tripp-trapp-chair_9",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/TrippTrapp_StormGrey_BS_Cush_Black_US_240718-5782_eCom_59635d09-e778-4cf1-8f22-15948a98cced.jpg?v=1763012374"
+    },
+    {
+     "key": "stokke-tripp-trapp-chair_10",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/TrippTrapp_Chair_Natural_Engraving_Storage_240717-1444_eCom_1adac28b-879b-4a41-882a-46f4bdbd1ed4.jpg?v=1763012374"
+    }
+   ],
+   "img": "stokke-tripp-trapp-chair",
+   "img_src": "https://cdn.shopify.com/s/files/1/0281/8056/files/product_photo_-_white_background_-_2025-11-13T133541.552.jpg?v=1763012374"
+  },
+  {
+   "id": "stonz-original-rain-boots",
+   "type": "rain-boots",
+   "brand": "Stonz",
+   "line": "Original Rain Boots (toddler and kid)",
+   "uses": [
+    "Natural rubber (45% of the upper)"
+   ],
+   "outside": [
+    "Synthetic rubber (55% of the upper)",
+    "EVA insole"
+   ],
+   "free": [
+    "BPA"
+   ],
+   "unconfirmed": [
+    "Outsole compound",
+    "Glue",
+    "Pigments"
+   ],
+   "facts": {
+    "main": "no",
+    "rubber": "no",
+    "parts": "unknown",
+    "color": "unknown"
+   },
+   "unstated": {
+    "parts": [
+     "Glue"
+    ],
+    "color": [
+     "Pigments"
+    ]
+   },
+   "standards": [],
+   "contains": [
+    "latex"
+   ],
+   "quote": "Upper : 45% natural rubber, 55% synthetic rubber Insole : EVA",
+   "note": "Zero-drop sole and wide toe box. Stonz is a Canadian brand.",
+   "products": [
+    {
+     "name": "Original Rain Boots - Toddler & Kid",
+     "url": "https://www.stonz.com/products/waterproof-rain-boots-for-toddlers-and-kids-1",
+     "store": "Stonz",
+     "price": "$49.99",
+     "ships_from": null,
+     "shipping": "Free Shipping $75+"
+    }
+   ],
+   "read": "2026-11-28",
+   "photos": [
+    {
+     "key": "stonz-original-rain-boots",
+     "src": "https://cdn.shopify.com/s/files/1/0031/1413/9707/files/1301-RAIN_BOOTS-0002-HAZEPINK-01.png?v=1770747892"
+    },
+    {
+     "key": "stonz-original-rain-boots_2",
+     "src": "https://cdn.shopify.com/s/files/1/0031/1413/9707/files/1301-RAIN_BOOTS-0001-BLACK-01.png?v=1770747891"
+    },
+    {
+     "key": "stonz-original-rain-boots_3",
+     "src": "https://cdn.shopify.com/s/files/1/0031/1413/9707/files/1301-RAIN_BOOTS-0001-BLACK-05.png?v=1770747891"
+    },
+    {
+     "key": "stonz-original-rain-boots_4",
+     "src": "https://cdn.shopify.com/s/files/1/0031/1413/9707/files/1301-RAIN_BOOTS-0001-BLACK-06.png?v=1770747891"
+    },
+    {
+     "key": "stonz-original-rain-boots_5",
+     "src": "https://cdn.shopify.com/s/files/1/0031/1413/9707/files/RAIN_BOOTS_TODDLER_BLACK.png?v=1770747891"
+    },
+    {
+     "key": "stonz-original-rain-boots_6",
+     "src": "https://cdn.shopify.com/s/files/1/0031/1413/9707/files/1301-RAIN_BOOTS-0001-BLACK-03.png?v=1770747891"
+    },
+    {
+     "key": "stonz-original-rain-boots_7",
+     "src": "https://cdn.shopify.com/s/files/1/0031/1413/9707/files/1301-RAIN_BOOTS-0001-BLACK-07.png?v=1770747891"
+    },
+    {
+     "key": "stonz-original-rain-boots_8",
+     "src": "https://cdn.shopify.com/s/files/1/0031/1413/9707/files/1301-RAIN_BOOTS-0001-BLACK-02.png?v=1770747891"
+    },
+    {
+     "key": "stonz-original-rain-boots_9",
+     "src": "https://cdn.shopify.com/s/files/1/0031/1413/9707/files/1301-RAIN_BOOTS-0002-HAZEPINK-05_0ab20050-6283-4222-8430-6ec32f1add52.png?v=1770747891"
+    },
+    {
+     "key": "stonz-original-rain-boots_10",
+     "src": "https://cdn.shopify.com/s/files/1/0031/1413/9707/files/RAIN_BOOTS_TODDLER_HAZE_PINK.png?v=1770747891"
+    }
+   ],
+   "img": "stonz-original-rain-boots",
+   "img_src": "https://cdn.shopify.com/s/files/1/0031/1413/9707/files/1301-RAIN_BOOTS-0002-HAZEPINK-01.png?v=1770747892"
+  },
+  {
+   "id": "uppababy-bassinet-mattress-cover",
+   "type": "protectors",
+   "brand": "UPPAbaby",
+   "line": "Bassinet Mattress Cover 2024 (white or light grey)",
+   "uses": [
+    "Cotton-blend fabric (white cover)"
+   ],
+   "outside": [],
+   "free": [],
+   "unconfirmed": [
+    "Other fibres in the cotton blend",
+    "Fibre of the cozy-knit grey cover",
+    "Zipper",
+    "Dyes"
+   ],
+   "facts": {
+    "main": "unknown",
+    "parts": "unknown",
+    "color": "unknown"
+   },
+   "unstated": {
+    "main": [
+     "Other fibres in the cotton blend",
+     "Fibre of the cozy-knit grey cover"
+    ],
+    "parts": [
+     "Zipper"
+    ],
+    "color": [
+     "Dyes"
+    ]
+   },
+   "standards": [],
+   "contains": [],
+   "quote": "White Bassinet Mattress Cover Cotton-blend material Machine washable Light Grey Bassinet Mattress Cover Cozy-knit material",
+   "note": "Zips over the mattress pad of UPPAbaby bassinets made from 2018 on.",
+   "products": [
+    {
+     "name": "Bassinet Mattress Cover 2024 - White by UPPAbaby",
+     "url": "https://pacifierkids.com/products/bassinet-mattress-cover-2024-white-by-uppababy",
+     "price": "$24.99",
+     "store": "Pacifier",
+     "ships_from": "US",
+     "shipping": "$5.95 Flat Rate Shipping"
+    }
+   ],
+   "read": "2026-11-28",
+   "photos": [
+    {
+     "key": "uppababy-bassinet-mattress-cover",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/product_photo_-_white_background_-_2025-11-06T000219.171.jpg?v=1762358559"
+    },
+    {
+     "key": "uppababy-bassinet-mattress-cover_2",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/0902-BMC-WW-WHT_1-3.webp?v=1762358559"
+    }
+   ],
+   "img": "uppababy-bassinet-mattress-cover",
+   "img_src": "https://cdn.shopify.com/s/files/1/0281/8056/files/product_photo_-_white_background_-_2025-11-06T000219.171.jpg?v=1762358559"
+  },
+  {
+   "id": "wee-gallery-organic-forest-playmat",
+   "type": "mats",
+   "brand": "Wee Gallery",
+   "line": "Organic Forest Playmat (reversible, 40 x 40 in)",
+   "uses": [
+    "Organic cotton outer fabric (double layer of voile)"
+   ],
+   "outside": [
+    "Polyester fibre filling"
+   ],
+   "free": [],
+   "unconfirmed": [
+    "Thread",
+    "Dyes in the prints",
+    "Fibre of the canvas carry handle"
+   ],
+   "facts": {
+    "main": "no",
+    "parts": "unknown",
+    "color": "unknown",
+    "organic": "yes"
+   },
+   "unstated": {
+    "parts": [
+     "Thread"
+    ],
+    "color": [
+     "Dyes in the prints"
+    ]
+   },
+   "standards": [
+    "oeko-tex"
+   ],
+   "contains": [],
+   "quote": "Made of 100% Organic cotton outer fabric / Oeko-tex polyester fiber filling",
+   "note": "Forest animals on one side, a woodland pattern on the other. Made in India.",
+   "products": [
+    {
+     "name": "Organic Forest Playmat by Wee Gallery",
+     "url": "https://pacifierkids.com/products/forestplaymatbyweegallery",
+     "price": "$79.16 (sale; was $98.95)",
+     "store": "Pacifier",
+     "ships_from": "US",
+     "shipping": "$5.95 Flat Rate Shipping"
+    }
+   ],
+   "read": "2026-11-28",
+   "photos": [
+    {
+     "key": "wee-gallery-organic-forest-playmat",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/organic-play-mat-for-baby-forest-animals-minimal-style-design-playmat_1680x_b4c90848-4c05-4089-b1e6-3b793a0f556d.jpg?v=1746066441"
+    },
+    {
+     "key": "wee-gallery-organic-forest-playmat_2",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/organic-cotton-fabric-playmat-for-baby-tummy-time-high-contrast-play-forest_1680x_b2393f9b-ba1f-4d7f-934b-e3eb36abb7ee.jpg?v=1746066356"
+    },
+    {
+     "key": "wee-gallery-organic-forest-playmat_3",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/WhiteBackgroundsforProducts_62_f6086e1d-8e7c-4406-bb23-da510bbc14a8.png?v=1746066356"
+    },
+    {
+     "key": "wee-gallery-organic-forest-playmat_4",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/reversible-washable-tummy-time-mat-playmat-for-baby-forest-1_1680x_5de0d17d-ee5b-42d3-b4e9-67aa090f3242.jpg?v=1746066356"
+    },
+    {
+     "key": "wee-gallery-organic-forest-playmat_5",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/baby-organic-cotton-playmat-forest-animals-3_1680x_4aaad439-b7ab-46ea-abb0-d15988d73327.jpg?v=1746066356"
+    },
+    {
+     "key": "wee-gallery-organic-forest-playmat_6",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/Wee-Gallery-forest-play-mat-organic-cotton-playmat-for-baby-5_1680x_62f7ab25-3d24-4a40-804b-af0ee765b80e.jpg?v=1746066356"
+    },
+    {
+     "key": "wee-gallery-organic-forest-playmat_7",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/files/wee-gallery-forest-organic-cotton-playmat-for-baby-kids.jpg?v=1746066356"
+    },
+    {
+     "key": "wee-gallery-organic-forest-playmat_8",
+     "src": "https://cdn.shopify.com/s/files/1/0281/8056/products/wee-gallery-forest-organic-cotton-playmat-for-baby-kids-2_900x_c906cee9-f05e-45d6-ae17-459717478885.jpg?v=1746066356"
+    }
+   ],
+   "img": "wee-gallery-organic-forest-playmat",
+   "img_src": "https://cdn.shopify.com/s/files/1/0281/8056/files/organic-play-mat-for-baby-forest-animals-minimal-style-design-playmat_1680x_b4c90848-4c05-4089-b1e6-3b793a0f556d.jpg?v=1746066441"
   }
  ]
 }
